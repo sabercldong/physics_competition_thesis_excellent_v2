@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+~$*
+*.tmp
+*.bak
+*.log
+07_analysis/results/generated/*
+10_outputs/drafts/*

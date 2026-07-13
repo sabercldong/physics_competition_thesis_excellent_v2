@@ -1,0 +1,125 @@
+physics_competition_thesis_excellent_v2/
+├── 00_originals
+│   ├── 01_thesis_initial_draft.docx
+│   ├── 02_questionnaire_initial.docx
+│   ├── 03_presentation_initial.pptx
+│   ├── manifest.csv
+│   └── README.md
+├── 01_positioning
+│   ├── argument_map.md
+│   ├── contribution_matrix.csv
+│   ├── one_page_proposal.md
+│   ├── research_questions.md
+│   ├── scope_decision_memo.md
+│   ├── thesis_positioning.md
+│   └── title_decision.md
+├── 02_literature
+│   ├── exclusion_log.csv
+│   ├── literature_matrix.csv
+│   ├── reference_verification.csv
+│   ├── references.bib
+│   ├── review_protocol.md
+│   ├── search_log.csv
+│   └── synthesis_outline.md
+├── 03_corpus
+│   ├── raw_papers
+│   │   └── .gitkeep
+│   ├── raw_solutions
+│   │   └── .gitkeep
+│   ├── corpus_protocol.md
+│   ├── exclusion_log.csv
+│   ├── item_index.csv
+│   ├── paper_inventory.csv
+│   └── provenance_log.csv
+├── 04_framework
+│   ├── codebook.csv
+│   ├── coding_manual_v1.md
+│   ├── disagreement_log.csv
+│   ├── expert_review_form.md
+│   ├── expert_review_log.csv
+│   ├── pilot_coding.csv
+│   ├── reliability_plan.md
+│   └── theoretical_framework.md
+├── 05_fieldwork
+│   ├── consent_template.md
+│   ├── fieldwork_decision.md
+│   ├── interview_metadata.csv
+│   ├── interview_protocol.md
+│   ├── survey_codebook.csv
+│   ├── survey_responses.csv
+│   ├── teacher_questionnaire_v3.md
+│   └── transcript_coding.csv
+├── 06_teaching_validation
+│   ├── design_research_plan.md
+│   ├── fidelity_log.csv
+│   ├── lesson_design_template.md
+│   ├── prepost_or_performance_data.csv
+│   ├── student_artifact_index.csv
+│   ├── student_artifact_rubric.md
+│   ├── teacher_log_template.md
+│   └── teaching_design_matrix.md
+├── 07_analysis
+│   ├── data
+│   │   └── .gitkeep
+│   ├── results
+│   │   ├── archive
+│   │   │   └── .gitkeep
+│   │   ├── generated
+│   │   │   └── .gitkeep
+│   │   └── reviewed
+│   │       └── .gitkeep
+│   ├── scripts
+│   │   ├── build_descriptive_tables.py
+│   │   ├── compute_reliability.py
+│   │   ├── project_audit.py
+│   │   ├── requirements.txt
+│   │   └── validate_corpus.py
+│   ├── analysis_plan.md
+│   └── reproducibility_protocol.md
+├── 08_manuscript
+│   ├── 00_frontmatter.md
+│   ├── 01_introduction.md
+│   ├── 02_theory.md
+│   ├── 03_methods.md
+│   ├── 04_results.md
+│   ├── 05_cases_and_diagnosis.md
+│   ├── 06_teaching_design.md
+│   ├── 07_conclusion.md
+│   ├── chapter_blueprint.md
+│   ├── figure_table_plan.md
+│   └── writing_style_guide.md
+├── 09_quality
+│   ├── advisor_feedback_log.csv
+│   ├── chapter_review_checklist.md
+│   ├── claim_evidence_matrix.csv
+│   ├── final_submission_checklist.md
+│   ├── initial_audit_v2.md
+│   ├── quality_gates.md
+│   └── unverified_claims.csv
+├── 10_outputs
+│   ├── drafts
+│   │   └── .gitkeep
+│   ├── final
+│   │   └── .gitkeep
+│   ├── defense_storyline.md
+│   ├── likely_defense_questions.md
+│   └── README.md
+├── prompts
+│   ├── 00_codex_start.md
+│   ├── 01_corpus_build.md
+│   ├── 02_framework_development.md
+│   ├── 03_pilot_and_reliability.md
+│   ├── 04_results_analysis.md
+│   ├── 05_chapter_writer.md
+│   └── 06_excellent_thesis_audit.md
+├── .gitignore
+├── 00_READ_ME_FIRST.md
+├── AGENTS.md
+├── CHANGELOG.md
+├── DATA_MANAGEMENT.md
+├── EXCELLENT_THESIS_STANDARD.md
+├── GIT_WORKFLOW.md
+├── MASTER_PLAN.md
+├── MILESTONES.md
+├── PROJECT_STATUS.md
+└── TASKS.md
