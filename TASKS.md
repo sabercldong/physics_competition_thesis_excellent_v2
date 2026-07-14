@@ -40,9 +40,12 @@
 - [-] G3-04 编写编码手册V1及正反例
 - [-] G3-05 完成专家审查
   - 进度：已完成专家审查材料包准备，新增 `04_framework/expert_review_packet.md`、`expert_panel_template.csv`、`expert_indicator_review_form.csv`、`expert_review_sample_items.csv` 和 `expert_sample_item_review_form.csv`；尚未邀请真实专家、回收意见或修订手册。
+  - 内部预审：已完成Codex内部预审，新增 `codex_internal_pre_review_report.md`、`codex_internal_pre_review_log.csv`、`coding_manual_v2_draft.md`、`codebook_v2_draft.csv`、`rater_training_packet.md` 和 `pilot_coding_round1_template.csv`；该预审不能替代真实专家审查。
   - 前置：按 `03_corpus/manual_review_checklist.csv` 优先处理高风险OCR和公式符号问题，避免专家审查被文本错误干扰。
-- [ ] G3-06 完成两轮试编码
-- [ ] G3-07 计算并报告评分者一致性
+- [-] G3-06 完成两轮试编码
+  - 进度：已准备第一轮双人试编码模板 `04_framework/pilot_coding_round1_template.csv` 和评分者训练包 `04_framework/rater_training_packet.md`；尚未由两名真实评分者独立填写。
+- [-] G3-07 计算并报告评分者一致性
+  - 模拟测试：已完成Codex模拟双评分者试编码与一致性压力测试，新增 `codex_simulated_round1_coding.csv`、`codex_simulated_disagreement_log.csv`、`codex_simulated_reliability_stats.csv` 和 `codex_simulated_reliability_report.md`；该结果仅用于训练和发现手册边界，不代表真实评分者一致性。
 - [ ] G3-08 冻结正式编码手册V2
 
 ## G4 正式编码与分析

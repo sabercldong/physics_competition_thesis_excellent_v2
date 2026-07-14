@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 2026-07-14：G3-06S/G3-07S Codex模拟双评分者压力测试
+
+- 新增 `04_framework/codex_simulated_round1_coding.csv`，基于24个样本小问生成Codex模拟评分者A/B共192条试编码记录；
+- 新增 `04_framework/codex_simulated_disagreement_log.csv`，记录16条模拟分歧，主要集中在科学论证存在性和L3/L4等级边界；
+- 新增 `04_framework/codex_simulated_reliability_stats.csv`，计算模拟维度存在性一致率、Cohen kappa、等级一致率和加权kappa；
+- 新增 `04_framework/codex_simulated_reliability_report.md`，说明模拟一致性压力测试的数据、结果、局限和对手册训练的启示；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，明确模拟结果只用于训练和风险识别，不能替代真实双人独立编码与正式一致性检验。
+
+## 2026-07-14：G3-05P Codex内部预审与V2草案
+
+- 新增 `04_framework/codex_internal_pre_review_report.md`，记录Codex内部预审的性质、输入材料、主要发现和不可形成的结论；
+- 新增 `04_framework/codex_internal_pre_review_log.csv`，结构化记录19条内部预审发现和V2草案处理方式；
+- 新增 `04_framework/coding_manual_v2_draft.md`，在V1基础上强化SOLO适配边界、证据优先级、通用排除规则、科学论证边界和质疑创新保守编码原则；
+- 新增 `04_framework/codebook_v2_draft.csv`，形成16个维度-等级指标的V2草案结构化版本；
+- 新增 `04_framework/rater_training_packet.md` 和 `04_framework/pilot_coding_round1_template.csv`，为后续两名评分者独立试编码准备训练说明和192条空白编码记录；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，明确Codex内部预审不能替代真实专家审查，`expert_review_log.csv` 仍需真实专家意见。
+
 ## 2026-07-14：G3-05A 专家审查材料包准备
 
 - 新增 `04_framework/expert_review_packet.md`，说明专家审查目的、对象、评分规则、样本说明、回收处理和当前边界；
