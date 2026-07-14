@@ -46,6 +46,7 @@
   - 进度：已准备第一轮双人试编码模板 `04_framework/pilot_coding_round1_template.csv` 和评分者训练包 `04_framework/rater_training_packet.md`；尚未由两名真实评分者独立填写。
 - [-] G3-07 计算并报告评分者一致性
   - 模拟测试：已完成Codex模拟双评分者试编码与一致性压力测试，新增 `codex_simulated_round1_coding.csv`、`codex_simulated_disagreement_log.csv`、`codex_simulated_reliability_stats.csv` 和 `codex_simulated_reliability_report.md`；该结果仅用于训练和发现手册边界，不代表真实评分者一致性。
+  - 脚本：已升级 `07_analysis/scripts/compute_reliability.py`，可在真实评分者完成模板后生成一致性统计和分歧明细。
 - [ ] G3-08 冻结正式编码手册V2
 
 ## G4 正式编码与分析

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-14：G3-07R 一致性计算脚本升级
+
+- 更新 `07_analysis/scripts/compute_reliability.py`，支持正式试编码表和双评分者模板两种字段结构；
+- 脚本可输出维度存在性一致率、Cohen kappa、双方均判出现时的等级一致率、加权kappa和分歧明细；
+- 增加 `--allow-simulated` 保护参数，防止把Codex模拟评分者数据误当正式一致性结果；
+- 使用 `04_framework/codex_simulated_round1_coding.csv` 复跑压力测试，已在 `07_analysis/results/generated/` 生成可复现输出；该目录按项目规则不作为提交对象；
+- 更新 `04_framework/reliability_plan.md`，补充真实评分者数据回收后的推荐运行命令。
+
 ## 2026-07-14：G3-06S/G3-07S Codex模拟双评分者压力测试
 
 - 新增 `04_framework/codex_simulated_round1_coding.csv`，基于24个样本小问生成Codex模拟评分者A/B共192条试编码记录；
