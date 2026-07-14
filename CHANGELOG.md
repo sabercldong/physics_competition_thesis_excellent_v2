@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 2026-07-14：G3-05A 专家审查材料包准备
+
+- 新增 `04_framework/expert_review_packet.md`，说明专家审查目的、对象、评分规则、样本说明、回收处理和当前边界；
+- 更新 `04_framework/expert_review_form.md`，补充结构化填写文件、4级评分规则和回收修订要求；
+- 新增 `04_framework/expert_panel_template.csv`，用于匿名登记专家背景、邀请状态和反馈回收日期；
+- 新增 `04_framework/expert_indicator_review_form.csv`，将 `codebook.csv` 中16个指标转为专家逐项评分表；
+- 新增 `04_framework/expert_review_sample_items.csv`，按每届3个样本的原则选取24个样本小问，用于暴露编码手册边界问题；
+- 新增 `04_framework/expert_sample_item_review_form.csv`，为24个样本小问生成96条四维度审查记录；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将当前阶段推进到 `G3：分析框架开发`，并明确 `G3-05` 尚未完成真实专家审查。
+
+## 2026-07-14：G1-07 正式编码前人工校对清单
+
+- 新增 `03_corpus/manual_review_checklist.csv`，将第35—42届60道大题整理为154条人工待核项；
+- 新增 `03_corpus/manual_review_summary.md`，说明校对用途、问题类型、优先级、校对原则和当前边界；
+- 问题类型包括题干OCR校对、公式与特殊符号校对、题图裁边与图注校对、第35届分值边界复核和第42届第3题解答放大图一致性核对；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G1-07` 标记为完成，并把下一步调整为按清单人工销项与准备 `G3-05` 专家审查材料包；
+- 本轮不改写任何题干、参考解答或论文正文，不把 `pilot_coding.csv` 试编码作为正式统计结果。
+
 ## 2026-07-13：G1-06 第42届全卷整理与试编码
 
 - 新增 `03_corpus/item_texts/CPHO42-Q01.md` 至 `03_corpus/item_texts/CPHO42-Q07.md`，整理第42届7道题题干OCR与参考解答抽取文本；
