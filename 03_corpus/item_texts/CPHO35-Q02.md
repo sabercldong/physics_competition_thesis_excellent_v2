@@ -34,6 +34,30 @@
 路程。
 ```
 
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q02_formula_check_v1.csv`
+- 题面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-paper-page-1.png`
+- 答案证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-13.png`
+- 下一题排除边界：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-boundary-next-page-14.png`
+
+边界说明：第2题题面位于试题PDF第1页中部；答案PDF第9页下半部重印题面，第10-13页为参考解答，第13页下方进入第3题，第14页为第3题答案，仅作排除边界。本入口只建立核对路线，不代表公式、特殊符号、题图或分值已经完成正式人工销项。
+
+重点待复核：
+
+1. `mu mg/k` 阈值、式①至式⑳的式号、分段条件和不等号开闭。
+2. `B1`、`A1`、`Bn`、`An` 等上下标，以及 `An-1-Bn` 等跨字符排版。
+3. 式⑱至式⑳总路程分段与最终位置式⑬至式⑯的对应关系。
+4. 同题 `CPHO35-Q02-FIG` 题图问题仍未销项。
+5. 第35届大题分值在题面页未见清晰标注，`CPHO35-Q02-SCORE` 仍为待核实。
+
 ## 参考解答抽取文本
 
 ```text

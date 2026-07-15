@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-15：G1-07-B1-FORMULA-35Q02 第35届第2题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q02_formula_check_v1.csv`，依据第35届合并PDF第9-13页登记题面变量、摩擦阈值、往返递推、最终位置四段式、总路程三段式和边界等41条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第081项 `CPHO35-Q02-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第082项 `CPHO35-Q03-FORMULA`；
+- 新增第35届第2题共7张页面证据图：题面第1页、答案第9-13页和第14页下一题边界确认图；视觉检查确认第2题位于试题PDF第1页中部，答案从第9页下半部开始至第13页式⑳结束，第13页下方和第14页进入第3题；
+- 更新 `03_corpus/item_texts/CPHO35-Q02.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO35-Q02-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第35届第2题四个小问答案页入口统一为 `9-13`；
+- 保留同题 `CPHO35-Q02-FIG` 和 `CPHO35-Q02-SCORE` 为未销项状态；式①至式⑳的阈值、不等号开闭、`B1/A1/Bn/An` 上下标和式⑱至式⑳总路程分段均标记为待最终复核；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录B组第081项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-35Q03`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-15：G1-07-B1-FORMULA-39Q06 第39届第6题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO39-Q06_formula_check_v1.csv`，依据第39届合并PDF第23-27页登记题面模型设定、斐克定律、扩散系数、高斯定理、边界条件、线性化方程、`delta n(x)`、`delta T(x)`、Seebeck系数和评分标准等44条公式核对入口；

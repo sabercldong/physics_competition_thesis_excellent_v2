@@ -12,6 +12,7 @@
 | 078 | CPHO36-Q07-FORMULA | 第36届第7题 | 5 | 已建立答案公式核对入口，待最终复核 |
 | 079 | CPHO39-Q04-FORMULA | 第39届第4题 | 5 | 已建立答案公式核对入口，待最终复核 |
 | 080 | CPHO39-Q06-FORMULA | 第39届第6题 | 5 | 已建立答案公式核对入口，待最终复核 |
+| 081 | CPHO35-Q02-FORMULA | 第35届第2题 | 4 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -75,6 +76,19 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q06-solution-page-27.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q06-solution-boundary-next-page-28.png`
 
+### CPHO35-Q02
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q02_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-paper-page-1.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-boundary-next-page-14.png`
+
 ## 边界确认
 
 ### CPHO36-Q03
@@ -100,6 +114,12 @@
 经视觉检查，第39届第6题题面从试题PDF第3页下部开始，图6a和模型设定位于第3页下部，第4页顶部给出斐克定律与扩散系数，第4页中部给出第(2)至第(5)问并结束，第4页下部进入第7题。答案第23页上半部为第5题尾部和评分标准，第6题答案从第23页底部“六、”开始；第24至26页覆盖高斯定理、边界条件、线性化方程、`delta n(x)`、`delta T(x)` 与Seebeck系数推导；第27页给出Seebeck最终式、评分标准并进入第7题；第28页全部为第7题答案，仅作排除边界确认。
 
 本轮保留原清单的答案页范围 `23-27`，并将 `03_corpus/item_index.csv` 中第6题五个小问的答案页入口统一为 `23-27`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
+
+### CPHO35-Q02
+
+经视觉检查，第35届第2题题面位于试题PDF第1页中部，上方为第1题，下方进入第3题；题面页未见清晰的大题分值标注，因此同题 `CPHO35-Q02-SCORE` 仍需保留为待核实。答案第9页下半部为第2题题面重印，第10至13页覆盖第(1)至第(4)问的参考解答、递推关系、最终位置分段式和总路程分段式；第13页下方进入第3题，第14页为第3题答案，仅作排除边界确认。
+
+本轮保留原清单的答案页范围 `9-13`，并将 `03_corpus/item_index.csv` 中第2题四个小问的答案页入口统一为 `9-13`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
 
 ## 需最终复核点
 
@@ -135,6 +155,14 @@
 4. 第26页式(22)至式(25)中 `delta T(x)`、`sqrt(T0)`、Seebeck系数整体负一次方和解法二积分表达式需重点终核。
 5. 第27页评分标准中的式号引用用于边界和证据索引，不代表小问分值已正式拆分或人工校对完成。同题 `CPHO39-Q06-FIG` 仍为C组未销项问题；若第6题后续作为案例或附录图件使用，需另行完成图件和图注校对。
 
+### CPHO35-Q02
+
+1. 第10至13页式①至式⑳中 `mu mg/k` 阈值、分段条件、不等号开闭和等号取值说明需按源页终核。
+2. `B1`、`A1`、`Bn`、`An`、`An-1` 等上下标和递推链条存在OCR/排版误读风险，不能用文本层自动替代源页。
+3. 第13页式⑱至式⑳总路程分段需要与式⑬至式⑯最终位置分段逐项对应核对。
+4. 同题 `CPHO35-Q02-FIG` 仍为C组未销项问题；若第2题后续作为案例或附录图件使用，需另行完成题图、图注与裁边校对。
+5. 题面页未见清晰大题分值标注，`CPHO35-Q02-SCORE` 仍需在第35届分值边界复核任务中处理。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-35Q02`：继续B组中风险公式校对入口建设，处理队列第081项 `CPHO35-Q02-FORMULA`。
+`G1-07-B1-FORMULA-35Q03`：继续B组中风险公式校对入口建设，处理队列第082项 `CPHO35-Q03-FORMULA`。
