@@ -8,6 +8,14 @@
 - 题图：03_corpus/item_assets/CPHO39-Q06-figure1-page3-raw.png
 - 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
 
+## G1-07-B1公式核对入口
+
+- 任务编号：`G1-07-B1-FORMULA-39Q06`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q06_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q06-paper-page-3.png`、`CPHO39-Q06-paper-page-4.png`、`CPHO39-Q06-solution-page-23.png` 至 `CPHO39-Q06-solution-page-27.png`、`CPHO39-Q06-solution-boundary-next-page-28.png`
+- 边界记录：第6题题面从试题PDF第3页下部开始，延续至第4页中部结束；第4页下部进入第7题。答案从PDF第23页底部“六、”开始，第27页评分标准后进入第7题；第28页仅作排除边界确认。
+- 重点待复核：题面和答案中的 `sqrt(T(x))`、`sqrt(T0)`、`lambda` 定义、`sigma_+`/`sigma_-` 左右边界符号、`delta n(x)` 长式、`delta T(x)` 长式、Seebeck系数整体负一次方和评分标准中的式号引用。该入口不代表真实人工逐式校对完成。
+
 ## 题干抽取文本
 
 ```text

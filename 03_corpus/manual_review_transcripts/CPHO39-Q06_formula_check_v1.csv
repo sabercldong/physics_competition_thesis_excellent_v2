@@ -1,0 +1,45 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO39-Q06-FC001,CPHO39-Q06,题面-模型边界,3,金属平板厚度2L，区域 -L < x < L；|x| > L 为真空且电场为零,题面图6a与文字设定,待最终复核,题面第3页下部开始；上半页为第5题尾部。
+CPHO39-Q06-FC002,CPHO39-Q06,题面-变量定义,3,n(x)=n0+delta n(x)，T(x)=T0+delta T(x)，且小量条件成立,题面第6题文字,待最终复核,需终核delta符号、n0下标和小量不等号。
+CPHO39-Q06-FC003,CPHO39-Q06,题面-表面电荷,3,x=+/-L 内侧分别有 sigma_+ 与 sigma_-；电子电荷为 -e (e>0),题面第6题文字与图6a,待最终复核,图6a标签属于同题FIG风险，暂不销项。
+CPHO39-Q06-FC004,CPHO39-Q06,题面-斐克定律,4,j_x(x) = -D d n(x)/dx,题面第(1)问公式,待最终复核,题面公式位于第4页顶部。
+CPHO39-Q06-FC005,CPHO39-Q06,题面-扩散系数,4,D = c sqrt(T(x)) / n(x),题面第(1)问公式,待最终复核,原抽取文本易漏sqrt；需按源页终核。
+CPHO39-Q06-FC006,CPHO39-Q06,题面-电阻率设定,4,rho 与 n(x)、T(x) 等无关,题面第(1)问文字,待最终复核,rho与电阻率符号需终核。
+CPHO39-Q06-FC007,CPHO39-Q06,题面-高斯定理目标,4,由高斯定理导出 E_x(x) 微分方程，并消去 E_x(x) 得 n(x) 方程和边界条件,题面第(2)问,待最终复核,epsilon_0在题面文字中需核对。
+CPHO39-Q06-FC008,CPHO39-Q06,题面-线性化目标,4,只保留 delta n、delta T 等小量线性项，求 delta n(x),题面第(3)问,待最终复核,解可含 sigma_+ 与 sigma_-。
+CPHO39-Q06-FC009,CPHO39-Q06,题面-局域热平衡目标,4,导出并线性化 delta T(x) 微分方程，再结合第(3)问求 delta T(x),题面第(4)问,待最终复核,题面第4页中部结束第6题。
+CPHO39-Q06-FC010,CPHO39-Q06,题面-Seebeck系数,4,S=[U(L)-U(-L)]/[T(L)-T(-L)],题面第(5)问公式,待最终复核,第4页下部进入第7题，不纳入本题。
+CPHO39-Q06-FC011,CPHO39-Q06,答案-起始边界,23,第6题答案从PDF第23页底部“六、（1）净电流为零的条件是”开始,答案第23页,已定位,第23页上半部为第5题尾部，仅第6题起始之后纳入。
+CPHO39-Q06-FC012,CPHO39-Q06,答案-净电流为零,23,-e j_x(x) + (1/rho) E_x(x) = 0,答案式(1),待最终复核,需核对电荷符号和1/rho项。
+CPHO39-Q06-FC013,CPHO39-Q06,答案-电场表达式,23,E_x(x) = - e rho c [sqrt(T(x))/n(x)] d n(x)/dx,答案式(2),待最终复核,sqrt(T(x))为关键风险；旧抽取文本可能漏根号。
+CPHO39-Q06-FC014,CPHO39-Q06,答案-高斯定理,23,epsilon_0 dE_x(x)/dx = -e[n(x)-n0],答案式(3),待最终复核,第23页底部跨页进入式(4)。
+CPHO39-Q06-FC015,CPHO39-Q06,答案-n方程,24,epsilon_0 rho c d/dx{[sqrt(T(x))/n(x)] d n(x)/dx}=n(x)-n0,答案式(4),待最终复核,需核对根号和括号范围。
+CPHO39-Q06-FC016,CPHO39-Q06,答案-边界条件,24,epsilon_0 E_x(-L+0)=sigma_-；epsilon_0 E_x(L-0)=-sigma_+,答案式(5)(6),待最终复核,sigma正负号与左右边界需终核。
+CPHO39-Q06-FC017,CPHO39-Q06,答案-边界条件代入,24,-epsilon_0 e rho c [sqrt(T(x))/n(x)] d n(x)/dx |_{x=-L}=sigma_-；x=+L处为 -sigma_+,答案式(7)(8),待最终复核,需逐式核对左右边界和竖线下标。
+CPHO39-Q06-FC018,CPHO39-Q06,答案-电中性约束,24,sigma_- + sigma_+ + (-e) int_{-L}^{L}[n(x)-n0] dx = 0,答案第24页文字公式,待最终复核,作为边界条件一致性说明，不替代正式推导。
+CPHO39-Q06-FC019,CPHO39-Q06,答案-线性化方程,24,epsilon_0 rho c [sqrt(T0)/n0] d^2[delta n(x)]/dx^2 = delta n(x),答案式(9),待最终复核,sqrt(T0)为关键风险；旧抽取文本可能写成T0。
+CPHO39-Q06-FC020,CPHO39-Q06,答案-lambda定义,24,lambda = sqrt(epsilon_0 rho c sqrt(T0) / n0),答案第24页lambda定义,待最终复核,含嵌套sqrt(T0)，需终核量纲和根号范围。
+CPHO39-Q06-FC021,CPHO39-Q06,答案-线性边界条件,24,-epsilon_0 e rho c [sqrt(T0)/n0] d[delta n]/dx |_{x=-L}=sigma_-；x=+L处为 -sigma_+,答案式(10)(11),待最终复核,需核对式号、sigma符号和lambda改写。
+CPHO39-Q06-FC022,CPHO39-Q06,答案-lambda边界改写,24,-d[delta n]/dx|_{x=-L}=sigma_-/(lambda^2 e)；-d[delta n]/dx|_{x=+L}=-sigma_+/(lambda^2 e),答案第24页底部,待最终复核,第24页末尾跨页接通解。
+CPHO39-Q06-FC023,CPHO39-Q06,答案-双曲函数通解,25,delta n(x)=A1 cosh(x/lambda)+B1 sinh(x/lambda),答案式(12)prime,待最终复核,式号带prime需保留。
+CPHO39-Q06-FC024,CPHO39-Q06,答案-指数形式通解,25,delta n(x)=A exp(x/lambda)+B exp(-x/lambda),答案式(12),待最终复核,需核对A/B与A1/B1关系。
+CPHO39-Q06-FC025,CPHO39-Q06,答案-常数关系,25,A1=A+B；B1=A-B,答案第25页,待最终复核,作为两种通解等价关系。
+CPHO39-Q06-FC026,CPHO39-Q06,答案-边界代入方程,25,A e^{-L/lambda}-B e^{L/lambda}=-sigma_-/(lambda e)；A e^{L/lambda}-B e^{-L/lambda}=sigma_+/(lambda e),答案式(13)(14),待最终复核,sigma正负号、指数符号需终核。
+CPHO39-Q06-FC027,CPHO39-Q06,答案-A/B常数,25,A与B由sigma_+、sigma_-、e^{+/-L/lambda}和e^{2L/lambda}-e^{-2L/lambda}确定,答案第25页,待最终复核,长分式需以源页为准，勿用OCR自动替代。
+CPHO39-Q06-FC028,CPHO39-Q06,答案-delta n指数解,25,delta n(x)的指数表达式见式(15),答案式(15),待最终复核,长式含两个分式和exp(+/-x/lambda)，需终核。
+CPHO39-Q06-FC029,CPHO39-Q06,答案-delta n双曲解,25,delta n(x)=1/(lambda e)[(sigma_+ + sigma_-)/(2sinh(L/lambda)) cosh(x/lambda)+(sigma_+ - sigma_-)/(2cosh(L/lambda)) sinh(x/lambda)],答案式(15)prime,待最终复核,需核对分母sinh/cosh对应关系。
+CPHO39-Q06-FC030,CPHO39-Q06,答案-理想气体状态方程,25,p(x)=n(x) k_B T(x)=(dN/dV) k_B T(x),答案式(16),待最终复核,第25页下部进入第(4)问。
+CPHO39-Q06-FC031,CPHO39-Q06,答案-单电子受力,25,f(x)=-e E_x(x),答案式(17),待最终复核,电荷负号需保留。
+CPHO39-Q06-FC032,CPHO39-Q06,答案-压强平衡,26,d p(x)/dx = n(x) f(x),答案式(18),待最终复核,由薄层电子气力学平衡得到。
+CPHO39-Q06-FC033,CPHO39-Q06,答案-热平衡方程,26,d[n(x) k_B T(x)]/dx = -e E_x(x)n(x),答案式(19),待最终复核,评分标准中第(5)问似引用式号19/20，需终核是否为排版式号问题。
+CPHO39-Q06-FC034,CPHO39-Q06,答案-线性化温度方程,26,T0 d[delta n]/dx + n0 d[delta T]/dx = -(e n0/k_B)E_x(x),答案式(20),待最终复核,需核对k_B下标、n0位置。
+CPHO39-Q06-FC035,CPHO39-Q06,答案-E_x线性化,26,E_x(x) approx - e lambda^2/epsilon_0 d[delta n(x)]/dx,答案式(21),待最终复核,源页同时保留由sqrt(T(x))/n(x)得到的近似。
+CPHO39-Q06-FC036,CPHO39-Q06,答案-delta T与delta n导数关系,26,n0 d[delta T]/dx = (e n0 e lambda^2/(k_B epsilon_0)-T0)d[delta n]/dx = (e^2 rho c sqrt(T0)/k_B - T0)d[delta n]/dx,答案式(22),待最终复核,此行根号、e^2、lambda^2代换需重点终核。
+CPHO39-Q06-FC037,CPHO39-Q06,答案-delta T通解,26,delta T(x)/T0 = (e^2 rho c/(k_B sqrt(T0))-1) delta n(x)/n0 + C；并取C=0,答案第26页,待最终复核,旧抽取文本可能误作k_B T0分母，需按PDF终核。
+CPHO39-Q06-FC038,CPHO39-Q06,答案-delta T最终式,26,delta T(x)见式(23)，由delta n(x)表达式乘以 T0/n0 [e^2 rho c/(k_B sqrt(T0))-1],答案式(23),待最终复核,长式跨多个因子，需逐项核对。
+CPHO39-Q06-FC039,CPHO39-Q06,答案-Seebeck解法一,26,E_x(x)=-[e/k_B - sqrt(T0)/(e rho c)]^{-1} dT(x)/dx,答案式(24),待最终复核,括号整体负一次方和前置负号需终核。
+CPHO39-Q06-FC040,CPHO39-Q06,答案-Seebeck系数,26-27,S=dU/dT=[e/k_B - sqrt(T0)/(e rho c)]^{-1},答案式(25),待最终复核,第26页和第27页均出现同一最终结果。
+CPHO39-Q06-FC041,CPHO39-Q06,答案-Seebeck解法二-电势差,26,U(L)-U(-L)= -int_{-L}^{L} E_x dx approx e lambda^2/epsilon_0 [delta n(L)-delta n(-L)] = e rho c sqrt(T0)/n0 [delta n(L)-delta n(-L)],答案第26页解法二,待最终复核,需核对积分符号、partial_x记号和近似号。
+CPHO39-Q06-FC042,CPHO39-Q06,答案-Seebeck解法二-温度差,26,T(L)-T(-L)=T0/n0 [e^2 rho c/(k_B sqrt(T0))-1][delta n(L)-delta n(-L)],答案第26页底部,待最终复核,第26页底部跨至第27页比较。
+CPHO39-Q06-FC043,CPHO39-Q06,答案-评分标准,27,本题60分；第(1)问5分，第(2)问15分，第(3)问16分，第(4)问19分，第(5)问5分,答案第27页评分标准,待最终复核,评分标准只作为证据索引；小问分值尚未正式拆分。
+CPHO39-Q06-FC044,CPHO39-Q06,答案-结束边界,27-28,第27页评分标准后进入第7题；第28页全部为第7题内容,答案第27-28页视觉检查,已定位,第28页仅作排除边界，不纳入第6题公式证据。

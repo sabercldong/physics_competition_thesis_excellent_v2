@@ -6,10 +6,14 @@
 
 - [x] G0-00 建立优秀论文版项目
 - [x] G0-01 盘点所有真实资料与缺失材料
-- [ ] G0-02 与导师确定题目A/B/C及研究范围
-- [ ] G0-03 获取学校模板、字数、引用和优秀论文标准
-- [ ] G0-04 建立不可使用的初稿数字与表述清单
-- [ ] G0-05 制定伦理与数据管理方案
+- [-] G0-02 与导师确定题目A/B/C及研究范围
+  - 进度：已完成内部路线收敛备忘，新增 `01_positioning/route_convergence_memo.md`，并更新 `scope_decision_memo.md` 与 `title_decision.md`。当前内部建议以路线A稳健收缩版为默认工作路线；路线B仅在获得真实课堂材料后升级；路线C准实验路线冻结。该进度不等同于导师正式确认，最终题目与范围仍待作者或导师确认。
+- [-] G0-03 获取学校模板、字数、引用和优秀论文标准
+  - 进度：已完成 `G0-03-PREP`，新增 `01_positioning/school_requirements_request_packet.md` 和 `01_positioning/school_requirements_register.csv`，建立学校论文模板、字数、引用格式、匿名评审、查重、AI披露、伦理要求、优秀论文标准和提交流程的索取与登记机制。当前尚未获得学校正式文件，因此不能标记为完成，也不能据此定稿格式。
+- [x] G0-04 建立不可使用的初稿数字与表述清单
+  - 进度：已新增 `01_positioning/non_inheritable_claims_inventory.md`，并补充 `09_quality/unverified_claims.csv`；初稿中的届次年份、知识点比例、科学思维百分比、SOLO趋势、专家验证、问卷结果、教学实验、SPSS显著性、前后测均值和参考文献均按E0处理，不能直接进入新版正文。
+- [x] G0-05 制定伦理与数据管理方案
+  - 进度：已升级 `DATA_MANAGEMENT.md`，新增 `05_fieldwork/ethics_and_data_management_plan.md`、`05_fieldwork/consent_log.csv`、`05_fieldwork/data_collection_log.csv` 和 `06_teaching_validation/classroom_data_manifest.csv`，并更新 `.gitignore`，明确教师、专家、学生和课堂材料的同意、匿名化、私有保存、公开复现包和正文使用门槛；当前不代表已经完成真实招募、问卷、访谈、课堂或学生作品收集。
 
 ## G1 试题语料库
 
@@ -22,22 +26,81 @@
   - 进度：已完成第35届、第36届、第37届、第38届、第39届、第40届、第41届、第42届题干/解答整理、题图裁取/登记、元数据回填和四维度试编码；第40届已依据题面视觉复核由21个骨架条目细化为36个分析单元；第35—42届共219个分析单元均已完成试处理。正式编码前仍需人工校对OCR、公式、特殊符号和题图边缘。
 - [x] G1-07 建立正式编码前人工校对问题清单
   - 进度：已形成 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_summary.md`，覆盖60道大题、154条待核项；清单用于人工销项，不代表已经完成题干和公式校对。
+- [x] G1-07-FOLLOWUP 将人工校对项按正式编码影响程度分组
+  - 进度：已新增 `03_corpus/manual_review_priority_followup.csv` 和 `03_corpus/manual_review_priority_followup_summary.md`，将154条待核项分为A/B/C/D四组：A组76条直接阻塞正式编码证据，B组22条影响正式编码证据，C组47条影响图像表征、案例证据和附录图件，D组9条影响元数据或案例附属证据。该任务只建立销项顺序，不代表任何题干、公式、图件、分值或参考解答已经完成正式校对。
+- [-] G1-07-A1 处理A组高风险OCR、公式与特殊符号校对项
+  - 进度：已为A组全部76项 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA`、`CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA`、`CPHO40-Q03-OCR`、`CPHO40-Q03-FORMULA`、`CPHO42-Q02-OCR`、`CPHO42-Q02-FORMULA`、`CPHO42-Q05-OCR`、`CPHO42-Q05-FORMULA`、`CPHO40-Q02-OCR`、`CPHO40-Q02-FORMULA`、`CPHO40-Q05-OCR`、`CPHO40-Q05-FORMULA`、`CPHO40-Q08-OCR`、`CPHO40-Q08-FORMULA`、`CPHO42-Q06-OCR`、`CPHO42-Q06-FORMULA`、`CPHO37-Q03-OCR`、`CPHO37-Q03-FORMULA`、`CPHO37-Q08-OCR`、`CPHO37-Q08-FORMULA`、`CPHO38-Q05-OCR`、`CPHO38-Q05-FORMULA`、`CPHO38-Q06-OCR`、`CPHO38-Q06-FORMULA`、`CPHO40-Q01-OCR`、`CPHO40-Q01-FORMULA`、`CPHO40-Q06-OCR`、`CPHO40-Q06-FORMULA`、`CPHO40-Q07-OCR`、`CPHO40-Q07-FORMULA`、`CPHO41-Q01-OCR`、`CPHO41-Q01-FORMULA`、`CPHO41-Q05-OCR`、`CPHO41-Q05-FORMULA`、`CPHO41-Q06-OCR`、`CPHO41-Q06-FORMULA`、`CPHO37-Q06-OCR`、`CPHO37-Q06-FORMULA`、`CPHO37-Q07-OCR`、`CPHO37-Q07-FORMULA`、`CPHO38-Q01-OCR`、`CPHO38-Q01-FORMULA`、`CPHO38-Q03-OCR`、`CPHO38-Q03-FORMULA`、`CPHO38-Q04-OCR`、`CPHO38-Q04-FORMULA`、`CPHO38-Q07-OCR`、`CPHO38-Q07-FORMULA`、`CPHO38-Q08-OCR`、`CPHO38-Q08-FORMULA`、`CPHO40-Q04-OCR`、`CPHO40-Q04-FORMULA`、`CPHO42-Q01-OCR`、`CPHO42-Q01-FORMULA`、`CPHO42-Q03-OCR`、`CPHO42-Q03-FORMULA`、`CPHO42-Q04-OCR`、`CPHO42-Q04-FORMULA`、`CPHO42-Q07-OCR`、`CPHO42-Q07-FORMULA`、`CPHO37-Q01-OCR`、`CPHO37-Q01-FORMULA`、`CPHO37-Q02-OCR`、`CPHO37-Q02-FORMULA`、`CPHO37-Q04-OCR`、`CPHO37-Q04-FORMULA`、`CPHO37-Q05-OCR`、`CPHO37-Q05-FORMULA`、`CPHO38-Q02-OCR`、`CPHO38-Q02-FORMULA`、`CPHO41-Q03-OCR`、`CPHO41-Q03-FORMULA`、`CPHO41-Q04-OCR`、`CPHO41-Q04-FORMULA` 建立页面证据或转写入口，新增并持续更新 `03_corpus/manual_review_a1_batch_log.csv`、`03_corpus/manual_review_a1_render_index.csv`、`03_corpus/manual_review_a1_batch_summary.md` 和 `03_corpus/manual_review_renders/G1-07-A1/` 下页面渲染图；已在人工校对清单和优先队列回填阶段性状态。该进度不代表第41届第2题、第41届第7题、第40届第3题、第42届第2题、第42届第5题、第40届第2题、第40届第5题、第40届第8题、第42届第6题、第37届第3题、第37届第8题、第38届第5题、第38届第6题、第40届第1题、第40届第6题、第40届第7题、第41届第1题、第41届第5题、第41届第6题、第37届第6题、第37届第7题、第38届第1题、第38届第3题、第38届第4题、第38届第7题、第38届第8题、第40届第4题、第42届第1题、第42届第3题、第42届第4题、第42届第7题、第37届第1题、第37届第2题、第37届第4题、第37届第5题、第38届第2题、第41届第3题或第41届第4题已经完成题干、公式、图件、答案证据或小问边界的正式人工校对。
+  - TRANSCRIBE-41Q02：已新增 `03_corpus/manual_review_transcripts/CPHO41-Q02_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q02_formula_check_v1.csv`，并在 `03_corpus/item_texts/CPHO41-Q02.md` 挂接V1转写入口；`CPHO41-Q02-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO41-Q02-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。该进度不代表第2题已完成最终排版复核、题图裁边/图注销项或正式编码证据摘录。
+  - TRANSCRIBE-41Q07：已新增 `03_corpus/manual_review_transcripts/CPHO41-Q07_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q07_formula_check_v1.csv`，并在 `03_corpus/item_texts/CPHO41-Q07.md` 挂接V1转写入口；`CPHO41-Q07-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO41-Q07-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。该进度不代表第7题已完成最终排版复核、题图裁边/图注销项或正式编码证据摘录。
+  - FINALIZE-41Q02-Q07：已新增 `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_final_review_summary.md` 和 `CPHO41_Q02_Q07_final_review_v1.csv`；`CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA`、`CPHO41-Q07-OCR` 和 `CPHO41-Q07-FORMULA` 已推进为“终复核记录已建，未销项”，`CPHO41-Q02-FIG` 和 `CPHO41-Q07-FIG` 已推进为“题图风险复查完成，待重裁/重绘”。该进度不代表真实人工校对完成，也不代表题图达到论文用图标准。
+  - FIG-REDRAW-41Q02-Q07：已新增 `03_corpus/scripts/recrop_cpho41_q02_q07_figures.py`、`03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv`、`03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_recrop_review_v1.md` 和6张重裁候选图；覆盖第41届第2题图2a、图2b、图2c、空表及第41届第7题图7a、图7b；`CPHO41-Q02-FIG` 和 `CPHO41-Q07-FIG` 已推进为“重裁候选图已生成，待人工确认”。该进度只代表来源明确的候选图已生成，不代表真实人工校对完成，也不代表论文用图最终审定。
+  - FIG-FINALCHECK-41Q02-Q07：已新增 `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_finalcheck_v1.csv`、`CPHO41_Q02_Q07_figure_finalcheck_summary.md` 和 `03_corpus/manual_review_renders/G1-07-A1/CPHO41_Q02_Q07_recrop_finalcheck_contact_v1.png`；内部视觉终检确认图2a、图2b、空表、图7a和图7b关键要素可见，图2c仍建议正式论文使用前重绘；`CPHO41-Q02-FIG` 和 `CPHO41-Q07-FIG` 已推进为“内部视觉终检完成，待人工确认”。该进度不代表真实人工校对完成，也不代表论文用图最终审定。
+  - TRANSCRIBE-40Q03：已新增 `03_corpus/manual_review_transcripts/CPHO40-Q03_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO40-Q03_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-paper-page-2.png`、`CPHO40-Q03-solution-page-09.png` 至 `CPHO40-Q03-solution-page-12.png`；`CPHO40-Q03-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO40-Q03-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第3题答案至PDF第11页结束，第12页已进入第4题，仅作边界确认。该进度不代表真实人工校对完成，也不代表第40届第3题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-42Q02：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q02_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO42-Q02_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q02-paper-page-1.png`、`CPHO42-Q02-paper-page-2.png`、`CPHO42-Q02-solution-page-04.png` 至 `CPHO42-Q02-solution-page-07.png`；`CPHO42-Q02-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO42-Q02-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第2题答案至答案PDF第7页评分标准结束，第7页下半部已进入第3题，仅作边界确认。该进度不代表真实人工校对完成，也不代表第42届第2题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-42Q05：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q05_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO42-Q05_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q05-paper-page-3.png`、`CPHO42-Q05-paper-page-4.png`、`CPHO42-Q05-solution-page-14.png` 至 `CPHO42-Q05-solution-page-16.png`；`CPHO42-Q05-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO42-Q05-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第5题题面至试题PDF第4页中下部结束，第4页下部已进入第6题；第5题答案至答案PDF第16页评分标准结束，第16页下方已进入第6题，后续内容仅作边界确认。该进度不代表真实人工校对完成，也不代表第42届第5题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-40Q02：已新增 `03_corpus/manual_review_transcripts/CPHO40-Q02_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO40-Q02_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q02-paper-page-1.png`、`CPHO40-Q02-paper-page-2.png`、`CPHO40-Q02-solution-page-07.png` 至 `CPHO40-Q02-solution-page-09.png`；`CPHO40-Q02-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO40-Q02-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第2题题面至试题PDF第2页上部结束，第2页中部已进入第3题；第2题答案至PDF第9页评分标准结束，第9页下部已进入第3题，后续内容仅作边界确认。该进度不代表真实人工校对完成，也不代表第40届第2题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-40Q05：已新增 `03_corpus/manual_review_transcripts/CPHO40-Q05_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO40-Q05_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q05-paper-page-3.png`、`CPHO40-Q05-paper-page-4.png`、`CPHO40-Q05-solution-page-13.png` 至 `CPHO40-Q05-solution-page-16.png`；`CPHO40-Q05-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO40-Q05-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第5题题面从试题PDF第3页下部开始并延续至第4页顶部，第4页中部已进入第6题；第5题答案从PDF第13页下部开始，至第16页评分标准结束，第16页下部已进入第6题，后续内容仅作边界确认。该进度不代表真实人工校对完成，也不代表第40届第5题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-40Q08：已新增 `03_corpus/manual_review_transcripts/CPHO40-Q08_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO40-Q08_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q08-paper-page-5.png`、`CPHO40-Q08-solution-page-21.png` 至 `CPHO40-Q08-solution-page-23.png`；`CPHO40-Q08-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO40-Q08-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第8题题面从试题PDF第5页中部开始并在本页结束，第5页上部为第7题尾部；第8题答案从PDF第21页下部开始，至第23页评分标准结束且第23页为PDF末页。该进度不代表真实人工校对完成，也不代表第40届第8题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-42Q06：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q06_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO42-Q06_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-paper-page-4.png`、`CPHO42-Q06-paper-page-5.png`、`CPHO42-Q06-solution-page-16.png` 至 `CPHO42-Q06-solution-page-20.png`；`CPHO42-Q06-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO42-Q06-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第6题题面从试题PDF第4页下部开始，延续至第5页上半部结束，第4页上部为第5题尾部，第5页下半部进入第7题；第6题答案从答案PDF第16页下部开始，至第20页评分标准结束，第16页上部为第5题答案尾部，第20页底部进入第7题。该进度不代表真实人工校对完成，也不代表第42届第6题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-37Q03：已新增 `03_corpus/manual_review_transcripts/CPHO37-Q03_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO37-Q03_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q03-paper-page-2.png`、`CPHO37-Q03-solution-page-09.png` 至 `CPHO37-Q03-solution-page-11.png`；`CPHO37-Q03-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO37-Q03-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第3题题面位于试题PDF第2页上半部，第2页下半部进入第4题；第3题答案从PDF第9页中部“三、”开始，至第11页评分标准结束，第9页上部为第2题结尾和评分标准。该进度不代表真实人工校对完成，也不代表第37届第3题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-37Q08：已新增 `03_corpus/manual_review_transcripts/CPHO37-Q08_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO37-Q08_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-paper-page-4.png`、`CPHO37-Q08-paper-page-5.png`、`CPHO37-Q08-solution-page-19.png` 至 `CPHO37-Q08-solution-page-21.png`；`CPHO37-Q08-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO37-Q08-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第8题从试题PDF第4页底部开始，延续至第5页并结束，第4页上部为第6题尾部和第7题；第8题答案从PDF第19页下半部“八、”开始，至第21页评分标准结束，第19页上半部为第7题结尾和评分标准。该进度不代表真实人工校对完成，也不代表第37届第8题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-38Q05：已新增 `03_corpus/manual_review_transcripts/CPHO38-Q05_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO38-Q05_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q05-paper-page-2.png`、`CPHO38-Q05-solution-page-11.png` 至 `CPHO38-Q05-solution-page-14.png`；`CPHO38-Q05-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO38-Q05-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第5题题面从试题PDF第2页中部开始并在本页结束，第2页上半部为第4题尾部；第5题答案从PDF第12页下半部“五、”开始，至第14页上半部评分参考结束，第12页上半部为第4题尾部和评分参考，第14页下半部进入第6题。本轮将相关清单答案页范围由 `12-13` 纠偏为 `12-14`。该进度不代表真实人工校对完成，也不代表第38届第5题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-38Q06：已新增 `03_corpus/manual_review_transcripts/CPHO38-Q06_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO38-Q06_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q06-paper-page-3.png`、`CPHO38-Q06-solution-page-14.png` 至 `CPHO38-Q06-solution-page-17.png`；`CPHO38-Q06-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO38-Q06-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第6题题面从试题PDF第3页页首开始并在同页上半部结束，第3页下半部进入第7题和第8题；第6题答案从PDF第14页下半部“六、”开始，至第16页上半部评分参考结束，第14页上半部为第5题答案尾部和评分参考，第16页下半部和第17页进入第7题。本轮将相关清单答案页范围由 `14-15` 纠偏为 `14-16`。该进度不代表真实人工校对完成，也不代表第38届第6题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-40Q01：已新增 `03_corpus/manual_review_transcripts/CPHO40-Q01_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO40-Q01_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q01-paper-page-1.png`、`CPHO40-Q01-solution-page-06.png` 至 `CPHO40-Q01-solution-page-08.png`；`CPHO40-Q01-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO40-Q01-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第1题题面从试题PDF第1页中部“一、”开始，至同页中下部第(2)(ii)结束，第1页下部进入第2题；第1题答案从PDF第6页页首“一、”开始，至第7页中部评分参考结束，第7页下部和第8页进入第2题。该进度不代表真实人工校对完成，也不代表第40届第1题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-41Q01：已新增 `03_corpus/manual_review_transcripts/CPHO41-Q01_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q01_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q01-paper-page-1.png`、`CPHO41-Q01-paper-page-2.png`、`CPHO41-Q01-solution-page-01.png` 至 `CPHO41-Q01-solution-page-04.png`；`CPHO41-Q01-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO41-Q01-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第1题题面位于试题PDF第1页中部至下半部，第1页更下部进入第2题，第2页为边界页；第1题答案从答案PDF第1页开始，至第3页上半部评分标准结束，第3页下半部和第4页进入第2题。该进度不代表真实人工校对完成，也不代表第41届第1题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-41Q05：已新增 `03_corpus/manual_review_transcripts/CPHO41-Q05_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q05_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q05-paper-page-3.png`、`CPHO41-Q05-paper-page-4.png`、`CPHO41-Q05-solution-page-11.png` 至 `CPHO41-Q05-solution-page-14.png`；`CPHO41-Q05-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO41-Q05-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第5题题面完整位于试题PDF第3页中部至下部，第3页上部为第4题尾部且下部进入第6题；第5题答案从答案PDF第11页下部开始，至第13页评分标准结束，第13页下部和第14页进入第6题。该进度不代表真实人工校对完成，也不代表第41届第5题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-41Q06：已新增 `03_corpus/manual_review_transcripts/CPHO41-Q06_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q06_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q06-paper-page-3.png`、`CPHO41-Q06-paper-page-4.png`、`CPHO41-Q06-solution-page-13.png` 至 `CPHO41-Q06-solution-page-17.png`；`CPHO41-Q06-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO41-Q06-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第6题题面从试题PDF第3页底部开始并延续至第4页中部，第3页上部为第5题且第4页下半部进入第7题；第6题答案从答案PDF第13页下部开始，至第16页评分标准结束，第16页下部和第17页进入第7题。该进度不代表真实人工校对完成，也不代表第41届第6题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-37Q06：已新增 `03_corpus/manual_review_transcripts/CPHO37-Q06_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO37-Q06_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q06-paper-page-3.png`、`CPHO37-Q06-paper-page-4.png`、`CPHO37-Q06-solution-page-16.png` 至 `CPHO37-Q06-solution-page-18.png`；`CPHO37-Q06-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO37-Q06-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第6题题面从PDF第3页下半部开始并延续至第4页顶部，第3页上半部为第5题，第4页中部为第7题且下部进入第8题；第6题答案从PDF第16页页首开始，至第17页评分标准结束，第18页为第7题答案后边界。该进度不代表真实人工校对完成，也不代表第37届第6题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-37Q07：已新增 `03_corpus/manual_review_transcripts/CPHO37-Q07_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO37-Q07_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q07-paper-page-4.png`、`CPHO37-Q07-solution-page-18.png` 和 `CPHO37-Q07-solution-page-19.png`；`CPHO37-Q07-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO37-Q07-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第7题完整位于PDF第4页中部，第4页顶部为第6题尾部且下部进入第8题；第7题答案从PDF第18页页首开始，至第19页上半部评分标准结束，第19页下半部进入第8题。该进度不代表真实人工校对完成，也不代表第37届第7题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-38Q01：已新增 `03_corpus/manual_review_transcripts/CPHO38-Q01_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO38-Q01_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-paper-page-1.png`、`CPHO38-Q01-solution-page-05.png`、`CPHO38-Q01-solution-page-06.png` 和 `CPHO38-Q01-solution-page-07.png`；`CPHO38-Q01-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO38-Q01-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第1题位于试题PDF第1页上半部，第1页中下部进入第2题且底部进入第3题；第1题答案从PDF第5页页首开始，至第7页上半部评分参考结束，第7页中下部进入第2题。本轮将相关清单答案页范围由 `5-6` 纠偏为 `5-7`。该进度不代表真实人工校对完成，也不代表第38届第1题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-38Q03：已新增 `03_corpus/manual_review_transcripts/CPHO38-Q03_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO38-Q03_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q03-paper-page-1.png`、`CPHO38-Q03-solution-page-08.png`、`CPHO38-Q03-solution-page-09.png` 和 `CPHO38-Q03-solution-page-10.png`；`CPHO38-Q03-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO38-Q03-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第3题完整位于试题PDF第1页底部，第1页上半部为第1题且中部为第2题；第3题答案从PDF第8页底部开始，至第10页上半部评分参考结束，第10页下半部进入第4题。本轮将相关清单答案页范围由 `8-9` 纠偏为 `8-10`。该进度不代表真实人工校对完成，也不代表第38届第3题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-38Q04：已新增 `03_corpus/manual_review_transcripts/CPHO38-Q04_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO38-Q04_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q04-paper-page-2.png`、`CPHO38-Q04-solution-page-10.png`、`CPHO38-Q04-solution-page-11.png` 和 `CPHO38-Q04-solution-page-12.png`；`CPHO38-Q04-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO38-Q04-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第4题完整位于试题PDF第2页上半部，第2页中部进入第5题；第4题答案从PDF第10页下半部开始，至第12页上半部评分参考结束，第12页下半部进入第5题。本轮将相关清单答案页范围由 `10-11` 纠偏为 `10-12`。该进度不代表真实人工校对完成，也不代表第38届第4题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-38Q07：已新增 `03_corpus/manual_review_transcripts/CPHO38-Q07_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO38-Q07_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q07-paper-page-3.png`、`CPHO38-Q07-solution-page-16.png`、`CPHO38-Q07-solution-page-17.png` 和 `CPHO38-Q07-solution-page-18.png`；`CPHO38-Q07-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO38-Q07-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第7题完整位于试题PDF第3页中部，第3页上部为第6题尾部且下部进入第8题；第7题答案从PDF第16页下半部开始，至第18页上半部评分参考结束，第18页下半部进入第8题。本轮将相关清单答案页范围由 `16-17` 纠偏为 `16-18`。该进度不代表真实人工校对完成，也不代表第38届第7题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-38Q08：已新增 `03_corpus/manual_review_transcripts/CPHO38-Q08_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO38-Q08_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q08-paper-page-3.png`、`CPHO38-Q08-paper-page-4.png`、`CPHO38-Q08-solution-page-18.png`、`CPHO38-Q08-solution-page-19.png` 和 `CPHO38-Q08-solution-page-20.png`；`CPHO38-Q08-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO38-Q08-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第8题从试题PDF第3页底部开始，延续至第4页上半部结束，第3页上半部为第6题尾部和第7题；第8题答案从PDF第18页下半部开始，至第20页评分参考结束，第18页上半部为第7题尾部和评分参考。该进度不代表真实人工校对完成，也不代表第38届第8题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-40Q04：已新增 `03_corpus/manual_review_transcripts/CPHO40-Q04_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO40-Q04_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q04-paper-page-2.png`、`CPHO40-Q04-paper-page-3.png`、`CPHO40-Q04-solution-page-12.png` 和 `CPHO40-Q04-solution-page-13.png`；`CPHO40-Q04-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO40-Q04-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第4题从试题PDF第2页下半部开始，延续至第3页上半部结束，第2页上半部为第2题尾部和第3题，第3页下半部进入第5题；第4题答案从PDF第12页页首开始，至第13页评分参考结束，第13页下半部进入第5题。该进度不代表真实人工校对完成，也不代表第40届第4题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-42Q01：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q01_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO42-Q01_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q01-paper-page-1.png`、`CPHO42-Q01-solution-page-01.png` 至 `CPHO42-Q01-solution-page-04.png`；`CPHO42-Q01-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO42-Q01-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第1题完整位于试题PDF第1页上半部，第1页下半部进入第2题；第1题答案从答案PDF第1页开始，至第4页中部评分标准结束，第4页下半部进入第2题。该进度不代表真实人工校对完成，也不代表第42届第1题公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-42Q03：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q03_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO42-Q03_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q03-paper-page-2.png`、`CPHO42-Q03-paper-page-3.png`、`CPHO42-Q03-solution-page-07.png` 至 `CPHO42-Q03-solution-page-10.png`、`CPHO42-Q03-solution-figlarge-page-26.png` 和 `CPHO42-Q03-solution-figlarge-page-27.png`；`CPHO42-Q03-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO42-Q03-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第3题题面从试题PDF第2页下半部开始，第3页中上部结束；第3题答案从答案PDF第7页下半部开始，至第10页中部评分标准和说明结束；题解图放大页只作答案图件证据。该进度不代表真实人工校对完成，也不代表第42届第3题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-42Q04：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q04_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO42-Q04_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q04-paper-page-3.png`、`CPHO42-Q04-solution-page-10.png` 至 `CPHO42-Q04-solution-page-14.png`；`CPHO42-Q04-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO42-Q04-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第4题题面从试题PDF第3页中部开始，第3页下半部结束；第4题答案从答案PDF第10页中部开始，至第14页上半部评分标准结束。该进度不代表真实人工校对完成，也不代表第42届第4题公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-42Q07：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q07_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO42-Q07_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q07-paper-page-5.png`、`CPHO42-Q07-solution-page-20.png` 至 `CPHO42-Q07-solution-page-25.png`；`CPHO42-Q07-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO42-Q07-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第7题题面从试题PDF第5页中部开始，至页末结束；第7题答案从答案PDF第20页下部开始，至第25页评分标准结束。该进度不代表真实人工校对完成，也不代表第42届第7题图件、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-37Q01：已新增 `03_corpus/manual_review_transcripts/CPHO37-Q01_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO37-Q01_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q01-paper-page-1.png`、`CPHO37-Q01-solution-page-06.png` 和 `CPHO37-Q01-solution-page-07.png`；`CPHO37-Q01-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO37-Q01-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第1题题面从试题PDF第1页中部开始，至第(2)问结束；第1题答案从PDF第6页页首开始，至第7页中部评分标准结束。该进度不代表真实人工校对完成，也不代表第37届第1题题图、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-37Q02：已新增 `03_corpus/manual_review_transcripts/CPHO37-Q02_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO37-Q02_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q02-paper-page-1.png`、`CPHO37-Q02-solution-page-07.png` 至 `CPHO37-Q02-solution-page-09.png`；`CPHO37-Q02-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO37-Q02-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第2题题面位于试题PDF第1页下半部；第2题答案从PDF第7页下半部开始，至第9页上半部评分标准结束，第9页下半部进入第3题。该进度不代表真实人工校对完成，也不代表第37届第2题公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-37Q04：已新增 `03_corpus/manual_review_transcripts/CPHO37-Q04_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO37-Q04_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q04-paper-page-2.png`、`CPHO37-Q04-solution-page-12.png` 和 `CPHO37-Q04-solution-page-13.png`；`CPHO37-Q04-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO37-Q04-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第4题题面位于试题PDF第2页下半部；第4题答案从PDF第12页页首开始，至第13页评分标准结束。该进度不代表真实人工校对完成，也不代表第37届第4题公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-37Q05：已新增 `03_corpus/manual_review_transcripts/CPHO37-Q05_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO37-Q05_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q05-paper-page-3.png`、`CPHO37-Q05-solution-page-14.png` 和 `CPHO37-Q05-solution-page-15.png`；`CPHO37-Q05-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO37-Q05-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第5题题面位于试题PDF第3页上半部，第3页下半部进入第6题；第5题答案从PDF第14页页首开始，至第15页评分标准结束；图5a裁图仍未销项。该进度不代表真实人工校对完成，也不代表第37届第5题图件、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-38Q02：已新增 `03_corpus/manual_review_transcripts/CPHO38-Q02_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO38-Q02_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q02-paper-page-1.png`、`CPHO38-Q02-solution-page-07.png` 和 `CPHO38-Q02-solution-page-08.png`；`CPHO38-Q02-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO38-Q02-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第2题题面位于试题PDF第1页中下部；第2题答案从PDF第7页中部开始，至第8页评分标准结束；本轮将相关清单答案页范围由 `7` 纠偏为 `7-8`；图2a裁图仍未销项。该进度不代表真实人工校对完成，也不代表第38届第2题图件、公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-41Q03：已新增 `03_corpus/manual_review_transcripts/CPHO41-Q03_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q03_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q03-paper-page-2.png`、`CPHO41-Q03-solution-page-07.png` 至 `CPHO41-Q03-solution-page-09.png`；`CPHO41-Q03-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO41-Q03-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第3题题面位于试题PDF第2页下半部；第3题答案从答案PDF第7页下半部开始，至第9页评分标准结束，第9页下半部进入第4题。本题无题图。该进度不代表真实人工校对完成，也不代表第41届第3题公式排版或正式编码证据摘录已经销项。
+  - TRANSCRIBE-41Q04：已新增 `03_corpus/manual_review_transcripts/CPHO41-Q04_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q04_formula_check_v1.csv`，并生成 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q04-paper-page-3.png`、`CPHO41-Q04-solution-page-09.png` 至 `CPHO41-Q04-solution-page-11.png`；`CPHO41-Q04-OCR` 已推进为“V1视觉转写完成，待最终复核”，`CPHO41-Q04-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第4题题面完整位于试题PDF第3页上部；第4题答案从答案PDF第9页下半部开始，至第11页评分标准结束，第11页下半部进入第5题。本题无题图。答案第10页极端相对论J数值指数与GeV换算需最终复核。该进度不代表真实人工校对完成，也不代表第41届第4题公式排版或正式编码证据摘录已经销项。
+  - B1-FORMULA-36Q03：已新增 `03_corpus/manual_review_transcripts/CPHO36-Q03_formula_check_v1.csv`、`03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，并生成 `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-paper-page-2.png`、`CPHO36-Q03-paper-page-3.png`、`CPHO36-Q03-solution-page-18.png` 至 `CPHO36-Q03-solution-page-21.png`；`CPHO36-Q03-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第3题题面从试题PDF第2页下半部开始，第3页上半部结束；答案从PDF第18页中下部开始至第21页评分标准结束，本轮将答案页范围由 `18-20` 纠偏为 `18-21`。同题 `CPHO36-Q03-FIG` 仍未销项。该进度不代表真实人工校对完成，也不代表第36届第3题公式排版、图件或正式编码证据摘录已经销项。
+  - B1-FORMULA-36Q07：已新增 `03_corpus/manual_review_transcripts/CPHO36-Q07_formula_check_v1.csv`，更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，并生成 `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q07-paper-page-5.png` 至 `CPHO36-Q07-paper-page-7.png`、`CPHO36-Q07-solution-page-33.png` 至 `CPHO36-Q07-solution-page-40.png`；`CPHO36-Q07-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第7题题面从试题PDF第5页下部开始至第7页上部结束，答案第33至34页为题面重印，第35页开始参考解答，第40页给出第(5)问结果和评分标准并为PDF末页。同题 `CPHO36-Q07-FIG` 仍未销项。该进度不代表真实人工校对完成，也不代表第36届第7题公式排版、图件或正式编码证据摘录已经销项。
+  - B1-FORMULA-39Q04：已新增 `03_corpus/manual_review_transcripts/CPHO39-Q04_formula_check_v1.csv`，更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，并生成 `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q04-paper-page-2.png`、`CPHO39-Q04-paper-page-3.png`、`CPHO39-Q04-solution-page-12.png` 至 `CPHO39-Q04-solution-page-19.png` 及 `CPHO39-Q04-solution-boundary-next-page-20.png`；`CPHO39-Q04-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第4题题面从试题PDF第2页下部开始至第3页顶部结束，答案从PDF第12页下部开始至第19页评分标准结束，第20页进入第5题。同题 `CPHO39-Q04-FIG` 仍未销项。该进度不代表真实人工校对完成，也不代表第39届第4题公式排版、图件或正式编码证据摘录已经销项。
+  - B1-FORMULA-39Q06：已新增 `03_corpus/manual_review_transcripts/CPHO39-Q06_formula_check_v1.csv`，更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，并生成 `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q06-paper-page-3.png`、`CPHO39-Q06-paper-page-4.png`、`CPHO39-Q06-solution-page-23.png` 至 `CPHO39-Q06-solution-page-27.png` 及 `CPHO39-Q06-solution-boundary-next-page-28.png`；`CPHO39-Q06-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第6题题面从试题PDF第3页下部开始至第4页中部结束，答案从PDF第23页底部开始至第27页评分标准结束，第28页进入第7题。同题 `CPHO39-Q06-FIG` 仍未销项。该进度不代表真实人工校对完成，也不代表第39届第6题公式排版、图件或正式编码证据摘录已经销项。
+  - 下一步：继续 `G1-07-B1-FORMULA-35Q02`，处理B组队列第081项 `CPHO35-Q02-FORMULA`；若要关闭前序题目的相关项，需真实人工确认、正式排版复核、题图销项和正式编码证据摘录。
 
 ## G2 文献与理论
 
-- [ ] G2-01 制定数据库与检索式
-- [ ] G2-02 核验课程标准中的科学思维定义
-- [ ] G2-03 阅读SOLO原始理论及任务分析争议
-- [ ] G2-04 完成物理竞赛试题研究综述
-- [ ] G2-05 完成科学思维测评与教学研究综述
-- [ ] G2-06 形成概念关系图和研究空白
+- [x] G2-01 制定数据库与检索式
+  - 进度：已新增 `02_literature/literature_review_workplan.md` 和 `02_literature/search_strategy_g2_01.md`，明确第二章文献核验主题块、主张编号、数据库/来源组、检索式、筛选口径、记录规则和禁止事项；已在 `02_literature/search_log.csv` 登记14条计划检索式。该任务只完成检索方案，不代表已完成真实检索、筛选、全文阅读或引用核验。
+- [x] G2-02 核验课程标准中的科学思维定义
+  - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
+- [-] G2-03 阅读SOLO原始理论及任务分析争议
+  - 进度：已完成 `G2-03A` 阶段性来源核验，新增 `02_literature/solo_taxonomy_source_verification.md`，定位 Biggs 与 Collis 1982年SOLO原书和1989年SOLO用于课程开发与评价的论文记录，并更新文献核验表、文献矩阵、检索日志、参考文献表、主张—证据矩阵和第二章草稿。已完成 `G2-03B-ACCESS`，新增 `02_literature/solo_fulltext_access_audit.md`，确认当前未获得稳定公开全文。已完成 `G2-03B-FULLTEXT-PACKET`，新增 `02_literature/solo_fulltext_request_packet.md`，用于提交图书馆、馆际互借、导师协助或出版社授权访问请求。尚未完成原书全文阅读、关键页码摘录、任务/试题分析争议文献综述和“前结构”层级取舍论证。
+- [-] G2-04 完成物理竞赛试题研究综述
+  - 进度：已启动 `G2-04-PREP`，新增 `02_literature/physics_competition_review_prep.md`，定位预赛量化分析、复赛SOLO研究、竞赛试题整体研究和核心素养视角等候选来源；已更新 `search_log.csv`、`reference_verification.csv` 和 `literature_matrix.csv`。已完成 `G2-04-FULLTEXT-PACKET`，新增 `02_literature/physics_competition_fulltext_request_packet.md` 和 `02_literature/physics_competition_screening_matrix.csv`。已完成 `G2-04-FULLTEXT-ACCESS`，新增 `02_literature/physics_competition_access_audit.md`，确认 `PCOMP-001` 与 `PCOMP-005` 仅有CNKI题录和《物理教学》目录线索，`PCOMP-002`、`PCOMP-003`、`PCOMP-004` 仅有CNKI引用/题录线索，五项均未获合法全文。当前只完成候选来源定位、全文获取准备、访问审计和筛选模板，尚未获取全文或形成正式综述。
+- [-] G2-05 完成科学思维测评与教学研究综述
+  - 进度：已启动 `G2-05-PREP`，新增 `02_literature/scientific_thinking_review_prep.md`，定位科学推理测评、科学思维量化模型、控制变量推理任务、科学论证教学和国际科学实践框架等候选来源；已更新 `search_log.csv`、`reference_verification.csv` 和 `literature_matrix.csv`。已完成 `G2-05-FULLTEXT-PACKET`，新增 `02_literature/scientific_thinking_fulltext_request_packet.md` 和 `02_literature/scientific_thinking_screening_matrix.csv`。已完成 `G2-05-READ-ST003`，新增 `02_literature/scientific_thinking_st003_reading_notes.md`，将Bao等(2022)用于 `C2-02` 部分核验。已完成 `G2-05-READ-ST006`，新增 `02_literature/scientific_thinking_st006_reading_notes.md`，将NGSS Appendix F用于 `C2-06` 部分核验。已完成 `G2-05-READ-ST005`，新增 `02_literature/scientific_thinking_st005_reading_notes.md`，为 `C2-06` 补充科学论证教学任务、支架和评价框架证据。已完成 `G2-05-READ-ST002/G2-05-ACCESS-REST`，新增 `02_literature/scientific_thinking_st002_reading_notes.md` 与访问审计，确认ST-002可用于边界部分核验。已完成 `G2-05-ACCESS-ST001-ST004` 二次审计，确认ST-001有PER-Central/PhysPort/Wiley线索、ST-004有ScienceDirect预览/PubMed/PMC线索，但二者仍未获得完整全文。当前仍未完成 `ST-001` 和 `ST-004` 全文阅读，尚不能形成正式综述。
+- [-] G2-06 形成概念关系图和研究空白
+  - 进度：已启动 `G2-06-PREP`，新增 `02_literature/concept_map_and_gap_candidates.md`，形成概念关系图、概念边界表、研究空白候选清单和正式写作门槛。已完成 `G2-06-CLAIMS`，将 `C2-02`、`C2-04`、`C2-05`、`C2-06` 加入 `09_quality/claim_evidence_matrix.csv`；新增 `02_literature/content_analysis_reliability_review_prep.md` 并登记 METH-001 至 METH-005 方法文献候选。已完成 `G2-METHOD-FULLTEXT-PACKET`、`G2-METHOD-ACCESS-AUDIT`、`G2-METHOD-READ-METH004` 和 `G2-METHOD-ACCESS-REST`，将 `C2-04` 更新为“部分核验”，并确认 `METH-001`、`METH-002`、`METH-003`、`METH-005` 二次审计后仍需机构权限、合法电子书、数据库或馆际互借；Google Books、SAGE受限页、JSTOR/PubMed/OpenAIRE/Semantic Scholar只能作为题录、目录、摘要或访问状态线索。已完成 `G2-05-READ-ST003` 和 `G2-05-READ-ST002`，将 `C2-02` 持续增强为“部分核验”。已完成 `G2-05-READ-ST006` 和 `G2-05-READ-ST005`，将 `C2-06` 更新并增强为“部分核验”。当前研究空白仍为候选状态，需等待G2-03至G2-05其余全文阅读、其余方法文献核验和真实评分者数据后才能定稿。
 
 ## G3 分析框架开发
 
-- [ ] G3-01 明确分析单位和排除规则
-- [ ] G3-02 完成科学思维四维度操作性定义
-- [ ] G3-03 完成SOLO启发的认知结构等级定义
+- [-] G3-01 明确分析单位和排除规则
+  - 进度：已在 `04_framework/analysis_unit_and_coding_definitions_formal_draft.md` 中整理默认分析单位、拆分规则、合并规则、背景信息处理、纳入范围、暂不纳入范围和通用排除规则；当前为正式草案，仍待人工校对与评分者试用。
+- [-] G3-02 完成科学思维四维度操作性定义
+  - 进度：已在 `analysis_unit_and_coding_definitions_formal_draft.md` 和 `04_framework/codebook_v2_formal_draft.csv` 中整理模型建构、科学推理、科学论证、质疑创新四维度的操作性定义、纳入信号和排除信号；当前仍待真实评分者试编码和导师确认。
+- [-] G3-03 完成SOLO启发的认知结构等级定义
+  - 进度：已在 `analysis_unit_and_coding_definitions_formal_draft.md` 中明确 L1-L4 为“SOLO启发的任务认知结构要求等级”，并写入各维度等级定义；当前仍不得写成学生学习结果等级或正式编码手册冻结版。
 - [-] G3-04 编写编码手册V1及正反例
+  - 进度：已新增 `04_framework/rater_training_manual_formal_draft.md`、`04_framework/boundary_case_bank_formal_draft.csv` 和 `04_framework/evidence_note_and_disagreement_protocol_formal_draft.md`，把正式草案扩展为评分者培训版候选稿、边界案例库和证据/分歧记录协议；当前仍为候选材料，不代表真实评分者试编码、正式分歧裁决或正式编码手册冻结。
+  - QA：已新增 `04_framework/rater_training_package_index.md`、`rater_training_package_index.csv`、`rater_training_field_alignment_audit.csv` 和 `rater_training_return_checklist.csv`，完成培训包索引、字段对齐审计和回收核对表；仍需真实评分者试用后再修订手册。
 - [-] G3-05 完成专家审查
   - 进度：已完成专家审查材料包准备，新增 `04_framework/expert_review_packet.md`、`expert_panel_template.csv`、`expert_indicator_review_form.csv`、`expert_review_sample_items.csv` 和 `expert_sample_item_review_form.csv`；尚未邀请真实专家、回收意见或修订手册。
   - 内部预审：已完成Codex内部预审，新增 `codex_internal_pre_review_report.md`、`codex_internal_pre_review_log.csv`、`coding_manual_v2_draft.md`、`codebook_v2_draft.csv`、`rater_training_packet.md` 和 `pilot_coding_round1_template.csv`；该预审不能替代真实专家审查。
@@ -47,10 +110,89 @@
 - [-] G3-07 计算并报告评分者一致性
   - 模拟测试：已完成Codex模拟双评分者试编码与一致性压力测试，新增 `codex_simulated_round1_coding.csv`、`codex_simulated_disagreement_log.csv`、`codex_simulated_reliability_stats.csv` 和 `codex_simulated_reliability_report.md`；该结果仅用于训练和发现手册边界，不代表真实评分者一致性。
   - 脚本：已升级 `07_analysis/scripts/compute_reliability.py`，可在真实评分者完成模板后生成一致性统计和分歧明细。
+- [x] G3-08I 冻结内部版编码手册V2
+  - 进度：新增 `04_framework/coding_manual_v2_internal.md` 和 `04_framework/codebook_v2_internal.csv`，作为 Codex 内部分析准备、脚本联调和表格结构预演的稳定版本；该任务不等同于 `G3-08` 正式编码手册冻结。
 - [ ] G3-08 冻结正式编码手册V2
+  - 边界：当前未完成真实专家审查、导师确认、真实双评分者试编码和分歧裁决，因此正式编码手册V2仍未冻结。
 
 ## G4 正式编码与分析
 
+- [x] G4-00I 基于Codex试编码准备内部分析底稿
+  - 进度：新增 `07_analysis/data/internal_coding_v1.csv`、`07_analysis/scripts/build_internal_descriptive_tables.py` 和 `07_analysis/results/reviewed/internal_descriptive_summary.md`；输出仅用于内部数据质量检查与描述统计预演，不能作为论文正式结果。
+- [x] G4-00R 检查内部分析底稿的数据质量与证据缺口
+  - 进度：新增 `07_analysis/scripts/audit_internal_coding_quality.py`、`07_analysis/results/reviewed/internal_coding_quality_issues.csv` 和 `07_analysis/results/reviewed/internal_coding_quality_report.md`；结构性致命问题为0，但定位到版本继承、人工校对未销项、L4边界、质疑创新保守复核、编码把握度和证据文本薄弱等正式编码前风险。
+- [x] G4-00F 形成正式编码前复核样本包
+  - 进度：新增 `07_analysis/scripts/build_preformal_review_packet.py`、`preformal_review_sample_items.csv`、`preformal_review_coding_records.csv`、`preformal_review_manual_issues.csv` 和 `preformal_review_packet.md`；样本包覆盖74个分析单元、296条编码记录和99条关联人工校对问题。
+- [x] G4-00S 建立正式编码前复核记录表
+  - 进度：新增 `07_analysis/scripts/build_preformal_review_log.py`、`preformal_review_log.csv` 和 `preformal_review_log_protocol.md`；当前所有记录均为待复核，不代表完成校对、修订或裁决。
+- [x] G4-00T1 生成复核分流清单
+- [x] G4-00T2 生成正式任务阻塞与准备图
+- [x] G4-00T3 生成内部分析候选表
+- [x] G4-00T4 生成总体分布与等级分布预演
+- [x] G4-00T5 生成维度共现预演
+- [x] G4-00T6 生成分届次、模块、情境和答案结构分组比较预演
+- [x] G4-00T7 生成典型试题案例候选清单
+- [x] G4-00T8 生成内部结果稳健性与边界说明
+- [x] G4-00T9 生成教学转化种子矩阵
+- [x] G4-00T10 生成后续10项内部任务完成报告
+  - 进度：新增 `07_analysis/scripts/build_internal_batch10_outputs.py` 及 `batch10_*` 系列输出；全部为内部预演或正式编码前准备，不代表正式双人编码、正式分歧裁决或论文结果。
+- [x] G4-00U1 抽取P0复核子集
+- [x] G4-00U2 生成质疑创新内部建议
+- [x] G4-00U3 生成证据薄弱内部建议
+- [x] G4-00U4 生成P0建议版复核日志
+- [x] G4-00U5 生成P0修订建议表
+- [x] G4-00U6 生成P0覆盖候选表
+- [x] G4-00U7 生成P0影响预演
+- [x] G4-00U8 生成P0题目汇总
+- [x] G4-00U9 生成下一轮P1复核计划
+- [x] G4-00U10 生成P0内部复核完成报告
+  - 进度：新增 `07_analysis/scripts/build_p0_internal_review_outputs.py` 及 `p0_*` 系列输出；处理120条P0记录，形成内部建议，不代表正式校对、正式评分者复核或分歧裁决。
+- [x] G4-00V1 抽取P1复核子集
+- [x] G4-00V2 生成L4边界复核建议
+- [x] G4-00V3 生成人工校对联动表
+- [x] G4-00V4 生成中等把握度复核队列
+- [x] G4-00V5 生成P1建议版复核日志
+- [x] G4-00V6 生成P1修订建议表
+- [x] G4-00V7 生成P1覆盖候选表
+- [x] G4-00V8 生成P1影响预演
+- [x] G4-00V9 生成P1题目汇总与后续门槛
+- [x] G4-00V10 生成P1内部复核完成报告
+  - 进度：新增 `07_analysis/scripts/build_p1_internal_review_outputs.py` 及 `p1_*` 系列输出；处理176条P1记录，形成内部建议，不代表正式校对、正式评分者复核或分歧裁决。
+- [x] G4-00W1 生成P0/P1总建议表
+- [x] G4-00W2 生成正式编码前总门槛清单
+- [x] G4-00W3 生成人工校对优先队列
+- [x] G4-00W4 生成证据补强总表
+- [x] G4-00W5 生成L4总复核队列
+- [x] G4-00W6 生成质疑创新总复核队列
+- [x] G4-00W7 生成中等把握度总队列
+- [x] G4-00W8 生成正式分析准备度报告
+- [x] G4-00W9 生成正式数据字典
+- [x] G4-00W10 生成W组完成记录
+- [x] G4-00X1 生成评分者A正式空白编码模板
+- [x] G4-00X2 生成评分者B正式空白编码模板
+- [x] G4-00X3 生成正式裁决模板
+- [x] G4-00X4 生成真实评分者编码说明
+- [x] G4-00X5 生成正式分歧裁决协议草案
+- [x] G4-00X6 生成编码版本路线图
+- [x] G4-00X7 生成评分者交接清单
+- [x] G4-00X8 生成正式编码字段校验清单
+- [x] G4-00X9 生成分歧类型预设表
+- [x] G4-00X10 生成X组完成记录
+- [x] G4-00Y1 生成正式分析输入占位说明
+- [x] G4-00Y2 生成正式结果表占位
+- [x] G4-00Y3 生成正式图表清单
+- [x] G4-00Y4 生成主张证据占位
+- [x] G4-00Y5 生成论文写作门槛表
+- [x] G4-00Y6 生成结果章占位说明
+- [x] G4-00Y7 生成教学转化证据门槛
+- [x] G4-00Y8 生成归档清单
+- [x] G4-00Y9 生成下轮任务路线图
+- [x] G4-00Y10 生成30项正式编码前准备完成报告
+  - 进度：新增 `07_analysis/scripts/build_formal_coding_prep30_outputs.py`、`formal_coding_rater_A_template.csv`、`formal_coding_rater_B_template.csv`、`formal_adjudication_template.csv` 和 `prep30_*` 系列输出；全部为正式编码前准备，不代表正式编码或正式分析。
+- [x] G4-01-PREP 完成评分者交接检查
+  - 进度：新增 `07_analysis/scripts/build_g4_01_prep_handoff.py`、`g4_01_prep_rater_package_index.csv`、`g4_01_prep_handoff_audit.csv` 和 `g4_01_prep_handoff_report.md`；模板与交接包检查通过，但正式分析门槛仍未满足。
+- [x] G4-01-PREP-LOCK 冻结评分者交接包清单
+  - 进度：新增 `04_framework/rater_handoff_lock_v1.md`、`rater_handoff_lock_manifest.csv`、`rater_independent_coding_instructions_v1.md`、`rater_handoff_file_rules.csv` 和 `rater_handoff_unresolved_risks.csv`，明确A/B独立填写、命名回收、字段入口和未销项风险处理；该冻结只锁定交接流程，不代表真实评分者编码、正式分歧裁决或一致性检验完成。
 - [ ] G4-01 双人独立编码
 - [ ] G4-02 分歧裁决与日志
 - [ ] G4-03 数据清洗与唯一分析表
@@ -82,22 +224,55 @@
 
 ## G7 论文写作
 
-- [ ] G7-01 第三章研究设计与框架
-- [ ] G7-02 第四章试题结果
-- [ ] G7-03 第五章案例机制与教学转化
-- [ ] G7-04 第二章文献与理论
-- [ ] G7-05 第一章绪论
+- [-] G7-01 第三章研究设计与框架
+  - 进度：已将语料来源、分析单位、编码手册、专家审查边界、试编码、一致性准备、正式编码流程和质量控制写入 `08_manuscript/03_methods.md`；尚需真实评分者与正式一致性结果后定稿。
+- [-] G7-02 第四章试题结果
+  - 进度：已通过 `G8-03-APPLY-LITE` 将第四章改为正式结果占位与边界说明，保留样本与分析单位事实，删除具体内部维度分布、等级分布、共现和P0/P1复核数量的正文报告；尚需 `final_coding.csv` 后重写为正式结果。
+- [-] G7-03 第五章案例机制与教学转化
+  - 进度：已通过 `G8-03-APPLY-LITE` 将候选案例表改为候选材料清单，将模型建构/科学推理/科学论证/质疑创新段落改为待核实分析提纲，将教师/学生困难表改为采证提纲；当前仍为内部预备稿，尚需正式编码、分歧裁决、案例证据表和真实教师或课堂材料后定稿。
+- [-] G7-04 第二章文献与理论
+  - 进度：已将科学思维四维度、SOLO适用边界、试题认知要求分析逻辑、维度/等级结构和理论框架图写入 `08_manuscript/02_theory.md`；当前为核验式草稿，尚需课程标准、SOLO理论、科学思维测评、物理竞赛试题研究和内容分析方法文献逐条核验后定稿。
+- [-] G7-05 第一章绪论
+  - 进度：已更新 `08_manuscript/01_introduction.md`，形成证据边界版绪论，覆盖研究背景、问题提出、核心概念、研究边界、文献综述线索、研究问题、研究内容、技术路线和创新候选；新增 `09_quality/chapter1_intro_evidence_boundary.csv`，并在 `09_quality/claim_evidence_matrix.csv` 中登记 `C1-01` 至 `C1-06`。当前仍非定稿，尚需正式文献综述、正式编码结果、导师确认和学校格式要求。
 - [ ] G7-06 第六/七章结论
 - [ ] G7-07 摘要与英文摘要
-- [ ] G7-08 参考文献、附录和数据说明
+- [-] G7-08 参考文献、附录和数据说明
+  - 进度：已完成 `G7-08-PREP`，新增 `08_manuscript/g7_08_reference_appendix_data_prep.md`、`reference_readiness_register.csv`、`appendix_material_register.csv` 和 `data_availability_prep_register.csv`，整理第1至5章涉及的参考文献可用性、附录候选、数据说明和禁止使用边界。当前仍非定稿，学校格式、正式参考文献、正式附录和数据可用性声明需等待后续核验。
 
 ## G8 优秀论文封关
 
-- [ ] G8-01 主张—证据全审计
-- [ ] G8-02 引文逐条核验
-- [ ] G8-03 统计与图表可复现检查
-- [ ] G8-04 术语、编号、交叉引用和格式统一
-- [ ] G8-05 导师两轮内容反馈闭环
-- [ ] G8-06 模拟答辩与高风险问题清单
-- [ ] G8-07 学校规范与匿名评审版检查
-- [ ] G8-08 最终提交与归档
+- [-] G8-01 主张—证据全审计
+  - 进度：已完成 `G8-01-PREP`，新增 `09_quality/cross_chapter_claim_audit_prep.md`、`09_quality/cross_chapter_claim_audit_prep.csv` 和 `09_quality/cross_chapter_revision_queue.csv`，对第1至5章草稿进行跨章节预审，列出可保留、需降格、待补证和必须删除/不得出现的主张；已更新 `09_quality/claim_evidence_matrix.csv`，补充第三章、第四章、第五章和跨章节禁止继承主张。该进度不等同于全论文最终审计完成，摘要、结论、图表、引文、格式和正式数据仍待后续封关。
+  - APPLY：已完成 `G8-01-APPLY`，更新 `08_manuscript/01_introduction.md` 至 `08_manuscript/05_cases_and_diagnosis.md`，将研究内容、方法贡献、专家/评分者流程、内部预演数字、候选案例和教学诊断进一步降格为准备、候选、待核验或证据需求；新增 `09_quality/g8_01_apply_revision_log.csv` 记录修订位置和边界。当前仍不等同于全论文最终审计完成。
+  - 下一步：跟随 `G8-04` 子任务继续做第1至5章残留格式、术语和证据边界检查；若回收真实A/B评分者模板，则优先回到 `G4-01`。
+- [-] G8-02 引文逐条核验
+  - PREP：已完成 `G8-02-PREP`，新增 `09_quality/g8_02_citation_verification_entry.md`、`09_quality/g8_02_citation_verification_entry.csv` 和 `09_quality/g8_02_citation_action_queue.csv`，将第1至5章相关来源分为6项可引用、2项只能作线索、13项待读全文和2项不得引用；本轮不新增参考文献、不改正文、不把候选文献写成已读结论。
+  - VERIFY-FIRST：已完成 `G8-02-VERIFY-FIRST`，新增 `09_quality/g8_02_verify_first_report.md` 和 `09_quality/g8_02_verify_first_sources.csv`，核验 `CS-001`、`ST-002`、`ST-003`、`ST-005`、`ST-006` 和 `METH-004` 的版本、定位、可支持语句和禁止外推边界；更新 `08_manuscript/reference_readiness_register.csv`，将5项候选来源升级为限边界性引用。
+  - APPLY-LITE：已完成 `G8-02-APPLY-LITE`，更新第1至5章正文，为6个已核验来源补充保守来源ID占位；新增 `09_quality/g8_02_apply_lite_revision_log.csv` 记录9处修订。该进度不等同于最终参考文献格式完成。
+  - BIB-LITE：已完成 `G8-02-BIB-LITE`，新增 `09_quality/g8_02_bib_lite_mapping.csv`、`09_quality/g8_02_bib_lite_exclusion_register.csv` 和 `09_quality/g8_02_bib_lite_report.md`，将6个已核验来源ID与 `references.bib` 条目、正文占位位置、可支持主张、禁止外推边界和学校格式缺口对齐；更新 `02_literature/references.bib` 文件说明，标出 `biggs1982solo` 与 `biggs1989solo` 仍为全文待读工作候选。
+  - 下一步：跟随 `G8-04` 子任务继续做第1至5章残留格式、术语和证据边界检查。
+- [-] G8-03 统计与图表可复现检查
+  - PREP：已完成 `G8-03-PREP`，新增 `09_quality/g8_03_result_reproducibility_gate.csv` 和 `09_quality/g8_03_result_reproducibility_report.md`，对第1至5章涉及的20类数字、图表占位和结果性表述建立门禁判断。当前可作为语料或准备事实的是第35至42届、219个分析单元、154条待核项、876条内部试编码记录和A/B空白模板规模；必须降格为内部预演的是维度分布、等级分布、共现、分组比较、P0/P1复核、典型案例候选和教学转化种子；正式图表均需等待 `final_coding.csv`。
+  - FOLLOWUP：已完成 `G8-03-FOLLOWUP`，新增 `09_quality/g8_03_followup_manuscript_number_actions.csv` 和 `09_quality/g8_03_followup_manuscript_number_report.md`，形成40条逐章处理建议；第1至3章多数数字可作为准备事实保留，第4章内部预演数字需改为占位或移入质量说明，第5章候选案例与教师/学生困难表需降为候选池、案例提纲或采证工具。
+  - APPLY-LITE：已完成 `G8-03-APPLY-LITE`，更新 `08_manuscript/04_results.md` 和 `08_manuscript/05_cases_and_diagnosis.md`，新增 `09_quality/g8_03_apply_lite_revision_log.csv`；第四章已改为正式结果占位，第五章已改为候选材料、待核实提纲和采证工具。
+  - 下一步：跟随 `G8-04` 子任务继续做第1至5章残留格式、术语和证据边界检查。
+- [-] G8-04 术语、编号、交叉引用和格式统一
+  - PREP：已完成 `G8-04-PREP`，新增 `09_quality/g8_04_prep_term_crossref_audit.csv` 和 `09_quality/g8_04_prep_report.md`，登记12项术语、章节状态和交叉引用检查；已轻量修订第1章、第2章和第3章中4处与第4章、第5章新状态不一致或过时的句子。
+  - FORMAT-LITE：已完成 `G8-04-FORMAT-LITE`，新增 `09_quality/g8_04_format_lite_audit.csv` 和 `09_quality/g8_04_format_lite_report.md`，检查第1至5章标题层级、表格格式、引文占位格式、Mermaid图、文件路径和术语首次出现形式；已轻量修订第1章、第3章和第4章中的术语、路径和标题不一致问题。
+  - VERIFY-LITE：已完成 `G8-04-VERIFY-LITE`，新增 `09_quality/g8_04_verify_lite_audit.csv` 和 `09_quality/g8_04_verify_lite_report.md`，确认第1至5章未把内部预演数字、初稿禁用数字、候选案例、教师/课堂假设或引用占位写成正式结论；已轻量修订第2章、第4章和第5章中的路径、术语和 `final_coding.csv` 称呼。
+- [-] G8-05 导师两轮内容反馈闭环
+  - PREP：已完成 `G8-05-PREP`，新增 `09_quality/g8_05_prep_feedback_packet.md`、`09_quality/g8_05_prep_review_questions.csv`、`09_quality/g8_05_prep_review_index.csv` 和 `09_quality/g8_05_prep_gap_register.csv`，准备第1至5章当前状态说明、高风险缺口清单、需人工确认问题清单和可审阅文件索引；该任务只准备反馈材料，不代表导师已审阅或专家已认可。
+  - LOG-TEMPLATE：已完成 `G8-05-LOG-TEMPLATE`，新增 `09_quality/g8_05_feedback_log_template.csv` 和 `09_quality/g8_05_feedback_decision_protocol.md`，建立真实反馈回收、处理决定、责任文件和关闭状态的记录规则；本模板不预填导师、专家、教师、同门或作者反馈。
+  - 下一步：若收到真实反馈，复制模板并逐条登记；若没有真实反馈，进入 `G8-06-PREP`，建立模拟答辩与高风险问题清单准备版，但不得写成真实答辩或审查结果。
+- [-] G8-06 模拟答辩与高风险问题清单
+  - PREP：已完成 `G8-06-PREP`，新增 `09_quality/g8_06_prep_defense_risk_questions.csv`、`09_quality/g8_06_prep_defense_gate.csv` 和 `09_quality/g8_06_prep_simulated_response_boundaries.md`，建立16项高风险追问、10项答辩门禁和可答/不可答边界；该任务只做准备，不代表真实答辩、模拟答辩、导师审查或专家审查已经发生。
+  - 下一步：执行 `G8-07-PREP`，建立学校规范与匿名评审版检查准备清单；若收到真实A/B评分者模板，则优先回到 `G4-01`。
+- [-] G8-07 学校规范与匿名评审版检查
+  - PREP：已完成 `G8-07-PREP`，新增 `09_quality/g8_07_prep_school_format_checklist.csv`、`09_quality/g8_07_prep_anonymous_review_risk_register.csv` 和 `09_quality/g8_07_prep_markdown_to_submission_plan.md`，建立学校格式、匿名评审、AI披露、查重、伦理、附录、数据可用性和Markdown转提交版的准备清单；该任务不代表学校正式规范已取得，也不代表最终Word/PDF或匿名版已经生成。
+  - 下一步：执行 `G8-08-PREP`，建立最终提交与归档包准备清单；若收到真实A/B评分者模板，则优先回到 `G4-01`。
+- [-] G8-08 最终提交与归档
+  - PREP：已完成 `G8-08-PREP`，新增 `09_quality/g8_08_prep_final_submission_readiness.csv`、`09_quality/g8_08_prep_archive_package_manifest.csv` 和 `09_quality/g8_08_prep_finalization_roadmap.md`，建立最终提交准备度门禁、研究准备包归档清单和从当前状态走向真实提交版的最短路线；该任务不生成最终Word/PDF、匿名版、查重版、AI披露定稿或最终提交包。
+  - 下一步：执行 `G8-09-PREP`，将所有最终提交阻塞项压缩为一张可销项总表；若收到真实A/B评分者模板，则优先回到 `G4-01`。
+- [-] G8-09 最终提交阻塞项总表
+  - PREP：已完成 `G8-09-PREP`，新增 `09_quality/g8_09_final_pre_submission_blockers.csv` 和 `g8_09_blocker_closure_protocol.md`，登记20项最终提交前阻塞项，覆盖人工校对、真实双评分者编码、一致性、分歧裁决、`final_coding.csv`、正式结果、第五章教学证据、文献全文、学校规范、参考文献、摘要结论、附录数据说明、匿名版、AI/伦理声明、最终输出和Git版本审计；该任务只建立销项总表，不代表任何阻塞项已经关闭。
+  - 下一步：若没有真实A/B评分者回收文件，执行 `G1-07-FOLLOWUP`，将154条人工校对项按正式编码影响程度分组并优先处理高风险OCR、公式与特殊符号问题；若收到真实A/B评分者模板，则优先回到 `G4-01`。

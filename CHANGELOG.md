@@ -1,5 +1,1001 @@
 # CHANGELOG
 
+## 2026-07-15：G1-07-B1-FORMULA-39Q06 第39届第6题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO39-Q06_formula_check_v1.csv`，依据第39届合并PDF第23-27页登记题面模型设定、斐克定律、扩散系数、高斯定理、边界条件、线性化方程、`delta n(x)`、`delta T(x)`、Seebeck系数和评分标准等44条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第080项 `CPHO39-Q06-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第081项 `CPHO35-Q02-FORMULA`；
+- 新增第39届第6题共8张页面证据图：题面第3-4页、答案第23-27页和第28页下一题边界确认图；视觉检查确认第6题题面从PDF第3页下部开始至第4页中部结束，答案从第23页底部开始至第27页评分标准结束，第28页进入第7题；
+- 更新 `03_corpus/item_texts/CPHO39-Q06.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO39-Q06-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第39届第6题五个小问答案页入口统一为 `23-27`；
+- 保留同题 `CPHO39-Q06-FIG` 为未销项状态；`sqrt(T(x))`、`sqrt(T0)`、`lambda` 定义、`sigma_+`/`sigma_-` 左右边界符号、`delta T(x)` 长式、Seebeck系数整体负一次方和评分标准式号引用均标记为待最终复核；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录B组第080项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-35Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
+## 2026-07-15：G1-07-B1-FORMULA-39Q04 第39届第4题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO39-Q04_formula_check_v1.csv`，依据第39届合并PDF第12-19页登记题面常量、L系与S系机械能、平衡力矩条件、tan/cot两套图解法、第III象限参数条件、受力图入口、微扰法、势能法、稳定性判断和评分标准等56条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第079项 `CPHO39-Q04-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第080项 `CPHO39-Q06-FORMULA`；
+- 新增第39届第4题共11张页面证据图：题面第2-3页、答案第12-19页和第20页下一题边界确认图；视觉检查确认第4题题面从PDF第2页下部开始至第3页顶部结束，答案从第12页下部开始至第19页评分标准结束，第20页进入第5题；
+- 更新 `03_corpus/item_texts/CPHO39-Q04.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO39-Q04-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第39届第4题五个小问答案页入口统一为 `12-19`；
+- 保留同题 `CPHO39-Q04-FIG` 为未销项状态；第14页式(14)符号、第15至17页第III象限参数条件的幂次/不等号、第17至19页稳定性推导和解题图4a/4a'/4b均标记为待最终复核；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录B组第079项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-39Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-B1-FORMULA-36Q07 第36届第7题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q07_formula_check_v1.csv`，依据第36届合并PDF第35-40页登记题面常量、平行板电容模型、镜像电荷法、圆盘法、闪电通道电荷密度、光环几何速度、大气压强积分、空气密度、气球体积和评分标准等50条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第078项 `CPHO36-Q07-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第079项 `CPHO39-Q04-FORMULA`；
+- 新增第36届第7题共11张页面证据图：题面第5-7页、答案第33-40页；视觉检查确认第7题题面从PDF第5页下部开始至第7页上部结束，答案第33-34页为题面重印，第35页开始参考解答，第40页给出第(5)问结果和评分标准并为PDF末页；
+- 更新 `03_corpus/item_texts/CPHO36-Q07.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO36-Q07-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第36届第7题五个小问答案页入口统一为 `33-40`；
+- 保留同题 `CPHO36-Q07-FIG` 为未销项状态；第36页圆盘法地表电场表达式、第37至38页几何线段分母、第4问频率关系和第40页 `rho_1` 单位均标记为待最终复核；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录B组第078项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-39Q04`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-B1-FORMULA-36Q03 第36届第3题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q03_formula_check_v1.csv`，依据第36届合并PDF第18-21页登记磁场、安培力、加速度、出射速度、磁通量、电动势、电源端电压、恒流源做功、出射动能和能量比等28条公式核对入口；
+- 新增 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，启动B组中风险公式校对入口建设，并记录队列第077项 `CPHO36-Q03-FORMULA` 的证据边界；
+- 新增第36届第3题共6张页面证据图：题面第2-3页、答案第18-21页；视觉检查确认第3题题面从PDF第2页下半部开始，第3页上半部结束，答案从第18页中下部开始至第21页评分标准结束；
+- 更新 `03_corpus/item_texts/CPHO36-Q03.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将第36届第3题答案页范围由 `18-20` 纠偏为 `18-21`；
+- 将 `CPHO36-Q03-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭同题 `CPHO36-Q03-FIG` 图件问题；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录B组第077项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-36Q07`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-41Q04 第41届第4题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q04_transcription_v1.md`，基于第41届试题PDF第3页渲染图完成第4题题面V1视觉转写，覆盖质子断层扫描、狭义相对论与极端相对论比较、非相对论散射、固定靶和质子速率估算等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q04_formula_check_v1.csv`，依据答案PDF第9-11页登记不确定关系、相对论能量-动量关系、极端相对论近似、非相对论散射总能量、能量不确定度、`Delta r/r` 根号和入射质子速率等关键公式核对入口；
+- 新增第41届第4题共4张页面证据图：题面第3页、答案第9-11页；视觉检查确认第4题题面完整位于试题PDF第3页上部，同页中下部进入第5题和第6题，答案从PDF第9页下半部开始至第11页评分标准结束，第11页下半部进入第5题；
+- 更新 `03_corpus/item_texts/CPHO41-Q04.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q04-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO41-Q04-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第075-076项的证据、边界和下一步；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录A组76项均已建立阶段性证据入口或转写入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-36Q03`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-41Q03 第41届第3题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q03_transcription_v1.md`，基于第41届试题PDF第2页渲染图完成第3题题面V1视觉转写，覆盖表面张力、油气混合物、等体压强系数、注入“水”温度和分子模型推导等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q03_formula_check_v1.csv`，依据答案PDF第7-9页登记表面张力关系、等体压强系数、最小值温度、注入水温、分子邻近数模型、摩尔体积和最终表面张力系数表达式等关键公式核对入口；
+- 新增第41届第3题共4张页面证据图：题面第2页、答案第7-9页；视觉检查确认第3题题面位于试题PDF第2页下半部，第2页上半部为第2题尾部，答案从PDF第7页下半部开始至第9页评分标准结束，第9页下半部进入第4题；
+- 更新 `03_corpus/item_texts/CPHO41-Q03.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q03-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO41-Q03-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第073-074项的证据、边界和下一步；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第41届第3题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-41Q04`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-38Q02 第38届第2题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q02_transcription_v1.md`，基于第38届合并PDF第1页渲染图完成第2题题面V1视觉转写，覆盖薄壁玻璃管、水银封闭理想气体、绝热光滑活塞、定体摩尔热容、过程A/B和计算精度等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q02_formula_check_v1.csv`，依据PDF第7-8页登记过程A初末态、等压做功、过程B状态方程、稳定性判定、摩尔数、内能增加、气体做功、吸热量和评分标准等关键公式核对入口；
+- 新增第38届第2题共3张页面证据图：题面第1页、答案第7-8页；视觉检查确认第2题题面位于试题PDF第1页中下部，第1页上部为第1题、下部进入第3题，答案从PDF第7页中部开始至第8页评分标准结束；
+- 更新 `03_corpus/item_texts/CPHO38-Q02.md`，挂接V1转写稿、公式核对表、页面证据和图2a题图证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO38-Q02-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO38-Q02-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第38届第2题答案页范围由 `7` 纠偏为 `7-8`；`CPHO38-Q02-FIG` 保持未销项，不填写校对人和校对日期；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第071-072项的证据、边界和下一步；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第38届第2题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-41Q03`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第38届第2题图件问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-37Q05 第37届第5题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q05_transcription_v1.md`，基于第37届合并PDF第3页渲染图完成第5题题面V1视觉转写，覆盖惯性系 `Sigma`、坐标系 `O-xy`、三艘飞行器速度、光信号往返时间、货物速度和图5a边界等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q05_formula_check_v1.csv`，依据PDF第14-15页登记相对论速度合成、时间膨胀、甲乙追及时间、货物速度分量、发射速度大小、发射角、洛伦兹时间变换和评分标准等关键公式核对入口；
+- 新增第37届第5题共3张页面证据图：题面第3页、答案第14-15页；视觉检查确认第5题题面位于试题PDF第3页上半部，第3页下半部进入第6题，答案从PDF第14页页首开始至第15页评分标准结束；
+- 更新 `03_corpus/item_texts/CPHO37-Q05.md`，挂接V1转写稿、公式核对表、页面证据和图5a题图证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第069-070项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO37-Q05-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO37-Q05-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；`CPHO37-Q05-FIG` 保持未销项，不填写校对人和校对日期；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第37届第5题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-38Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第37届第5题图件问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-37Q04 第37届第4题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q04_transcription_v1.md`，基于第37届合并PDF第2页渲染图完成第4题题面V1视觉转写，覆盖劳伦斯、回旋加速器、Tevatron、高能质子同步加速器、最大回旋圆轨道周长、最大能量、靶质子、反质子产生反应和已知常量等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q04_formula_check_v1.csv`，依据PDF第12-13页登记相对论运动方程、相对论动量、回旋半径、最小磁感应强度、洛伦兹不变质量、反质子产生阈能、Tevatron能量比较和评分标准等关键公式核对入口；
+- 新增第37届第4题共3张页面证据图：题面第2页、答案第12-13页；视觉检查确认第4题题面从试题PDF第2页下半部开始并在本页结束，第2页上半部为第3题，答案从PDF第12页页首开始至第13页评分标准结束；
+- 更新 `03_corpus/item_texts/CPHO37-Q04.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第067-068项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO37-Q04-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO37-Q04-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第37届第4题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-37Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-37Q02 第37届第2题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q02_transcription_v1.md`，基于第37届合并PDF第1页渲染图完成第2题题面V1视觉转写，覆盖台球母球、滑动摩擦因数、水平冲量、击打高度、纯滚动时间以及B点位置/速度/加速度等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q02_formula_check_v1.csv`，依据PDF第7-9页登记动量/角动量关系、滑动摩擦阶段运动方程、纯滚动时间、质心速度、B点运动学表达式、加速度和评分标准等关键公式核对入口；
+- 新增第37届第2题共4张页面证据图：题面第1页、答案第7-9页；视觉检查确认第2题题面位于试题PDF第1页下半部，答案从PDF第7页下半部开始，至第9页上半部评分标准结束，第9页下半部进入第3题；
+- 更新 `03_corpus/item_texts/CPHO37-Q02.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第065-066项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO37-Q02-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO37-Q02-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第37届第2题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-37Q04`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-37Q01 第37届第1题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q01_transcription_v1.md`，基于第37届合并PDF第1页渲染图完成第1题题面V1视觉转写，覆盖空气弹簧、主气室、附加气室、簧上负载、有效承载面积、阀门开闭、等温过程和绝热过程等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q01_formula_check_v1.csv`，依据PDF第6-7页登记作用力公式、过程方程、劲度系数通式、阀门关闭等温/绝热结果、阀门打开低频/高频结果和评分标准等关键公式核对入口；
+- 新增第37届第1题共3张页面证据图：题面第1页、答案第6-7页；视觉检查确认第1题题面从试题PDF第1页中部开始，至第(2)问结束，第1页下部进入第2题；答案从PDF第6页页首开始，至第7页中部评分标准结束，第7页下半部进入第2题；
+- 更新 `03_corpus/item_texts/CPHO37-Q01.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第063-064项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO37-Q01-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO37-Q01-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第37届第1题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-37Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第37届第1题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-42Q07 第42届第7题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q07_transcription_v1.md`，基于第42届试题PDF第5页渲染图完成第7题题面V1视觉转写，覆盖自聚焦光纤、柱坐标、折射率根号公式、边界条件、离轴最远距离和直角坐标轨迹等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q07_formula_check_v1.csv`，依据答案PDF第20-25页登记主解法微分方程、不变量、`rho_max`、`x(z)`、`y(z)`、解法二和评分标准等关键公式核对入口；
+- 新增第42届第7题共7张页面证据图：题面第5页、答案第20-25页；视觉检查确认第7题题面从试题PDF第5页中部开始至页末结束，答案从第20页下部开始至第25页评分标准结束；
+- 更新 `03_corpus/item_texts/CPHO42-Q07.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第061-062项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO42-Q07-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO42-Q07-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第42届第7题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-37Q01`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第42届第7题图件问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-42Q04 第42届第4题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q04_transcription_v1.md`，基于第42届试题PDF第3页渲染图完成第4题题面V1视觉转写，覆盖真空激光加速、单色平面电磁波、相对论电子动力学、最大能量、入射角和辐射阻尼能量损失等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q04_formula_check_v1.csv`，依据答案PDF第10-14页登记相对论运动方程、动量与能量、位置隐函数、最大能量与入射角、辐射阻尼能量损失、`-40%` 数值结果和评分标准等关键公式核对入口；
+- 新增第42届第4题共6张页面证据图：题面第3页、答案第10-14页；视觉检查确认第4题题面从试题PDF第3页中部开始，第3页下半部结束，答案从第10页中部开始至第14页上半部评分标准结束；
+- 更新 `03_corpus/item_texts/CPHO42-Q04.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第059-060项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO42-Q04-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO42-Q04-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第42届第4题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-42Q07`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-42Q03 第42届第3题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q03_transcription_v1.md`，基于第42届试题PDF第2-3页渲染图完成第3题题面V1视觉转写，覆盖量子霍尔效应器件、端口接法、接触电阻、双器件连接和三重并联测量等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q03_formula_check_v1.csv`，依据答案PDF第7-10页和题解图放大页第26-27页登记霍尔电阻定义、断开/闭合开关推导、三重并联方程组、误差阶 `epsilon^2/epsilon^3`、评分标准和评分说明等关键公式核对入口；
+- 新增第42届第3题共8张页面证据图：题面第2-3页、答案第7-10页、题解图放大页第26-27页；视觉检查确认第3题题面从试题PDF第2页下半部开始，第3页中上部结束，答案从第7页下半部开始至第10页中部评分标准和说明结束；
+- 更新 `03_corpus/item_texts/CPHO42-Q03.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第057-058项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO42-Q03-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO42-Q03-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第42届第3题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-42Q04`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第42届第3题题图或答案图件问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-42Q01 第42届第1题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q01_transcription_v1.md`，基于第42届试题PDF第1页渲染图完成第1题题面V1视觉转写，覆盖磁光陷阱原子气、玻尔兹曼分布、`z = h` 平面测量、纵向数密度、原子流、极值时间和有效展宽等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q01_formula_check_v1.csv`，依据答案PDF第1-4页登记归一化分布函数、自由落体反推关系、`n(t)` 与 `I(t)` 闭式、强约束低温极限、`t_n/t_I` 替代解法、`sigma_t` 和评分标准等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q01-paper-page-1.png`、`CPHO42-Q01-solution-page-01.png`、`CPHO42-Q01-solution-page-02.png`、`CPHO42-Q01-solution-page-03.png` 和 `CPHO42-Q01-solution-page-04.png` 共5张页面证据图；视觉检查确认第1题完整位于试题PDF第1页上半部，第1页下半部进入第2题；第1题答案从答案PDF第1页开始，至第4页中部评分标准结束，第4页下半部进入第2题；
+- 更新 `03_corpus/item_texts/CPHO42-Q01.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第055-056项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO42-Q01-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO42-Q01-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第42届第1题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-42Q03`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-40Q04 第40届第4题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q04_transcription_v1.md`，基于第40届合并PDF第2-3页渲染图完成第4题题面V1视觉转写，覆盖编木拱桥、短杆、长杆、木材开槽、杆间静摩擦因数、地面静摩擦因数、几何量 `a/b/R` 和图4a至图4e等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q04_formula_check_v1.csv`，依据答案PDF第12-13页登记几何关系、C/D受力图、A/B/C/D杆力平衡、D杆力矩平衡、长分式求解、杆间摩擦因数 `mu`、地面摩擦因数 `mu'` 和评分参考等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q04-paper-page-2.png`、`CPHO40-Q04-paper-page-3.png`、`CPHO40-Q04-solution-page-12.png` 和 `CPHO40-Q04-solution-page-13.png` 共4张页面证据图；视觉检查确认第4题从试题PDF第2页下半部开始，延续至第3页上半部结束，第2页上半部为第2题尾部和第3题，第3页下半部进入第5题；第4题答案从PDF第12页页首开始，至第13页评分参考结束，第13页下半部进入第5题；
+- 更新 `03_corpus/item_texts/CPHO40-Q04.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第053-054项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO40-Q04-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO40-Q04-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第40届第4题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-42Q01`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第40届第4题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-38Q08 第38届第8题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q08_transcription_v1.md`，基于第38届合并PDF第3-4页渲染图完成第8题题面V1视觉转写，覆盖电动汽车简化模型、永磁直流电机、线圈参数、开路电压、内阻、变速比、加速时间、电池能量和能量转化效率等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q08_formula_check_v1.csv`，依据答案PDF第18-20页登记线圈力矩、反电动势、总电阻、力矩-转速关系、最大功率、最高车速、最大加速度、加速时间、电池能量、机械能增量和效率等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q08-paper-page-3.png`、`CPHO38-Q08-paper-page-4.png`、`CPHO38-Q08-solution-page-18.png`、`CPHO38-Q08-solution-page-19.png` 和 `CPHO38-Q08-solution-page-20.png` 共5张页面证据图；视觉检查确认第8题从试题PDF第3页底部开始，延续至第4页上半部结束，第3页上半部为第6题尾部和第7题；第8题答案从PDF第18页下半部开始，至第20页评分参考结束，第18页上半部为第7题尾部和评分参考；
+- 更新 `03_corpus/item_texts/CPHO38-Q08.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第051-052项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO38-Q08-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO38-Q08-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第38届第8题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-40Q04`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第38届第8题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-38Q07 第38届第7题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q07_transcription_v1.md`，基于第38届合并PDF第3页渲染图完成第7题题面V1视觉转写，覆盖汽车斜坡加速模型、前后轮、车身质心高度、滑动摩擦因数、转动惯量、发动机力矩、传动比和A型电动汽车参数等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q07_formula_check_v1.csv`，依据答案PDF第16-18页登记前后轮正压力、力矩平衡、安全加速度、滚动约束、后轮驱动力矩、传动比、水平/30度上坡加速度、后轮正压力/摩擦力和摩擦系数下限等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q07-paper-page-3.png`、`CPHO38-Q07-solution-page-16.png`、`CPHO38-Q07-solution-page-17.png` 和 `CPHO38-Q07-solution-page-18.png` 共4张页面证据图；视觉检查确认第7题完整位于试题PDF第3页中部，第3页上部为第6题尾部且下部进入第8题；第7题答案从PDF第16页下半部开始，至第18页上半部评分参考结束，第18页下半部进入第8题；
+- 更新 `03_corpus/item_texts/CPHO38-Q07.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第049-050项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO38-Q07-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO38-Q07-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；同时将答案页范围由 `16-17` 纠偏为 `16-18`；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第38届第7题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-38Q08`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第38届第7题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-38Q04 第38届第4题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q04_transcription_v1.md`，基于第38届合并PDF第2页渲染图完成第4题题面V1视觉转写，覆盖永磁针电流环模型、磁矩 `mu=IS`、`S=pi R^2`、坐标系、稳定平衡和受力平衡条件等题面信息；
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q04_formula_check_v1.csv`，依据答案PDF第10-12页登记毕奥-萨伐尔积分、远场近似、磁场方向、相互作用势能、力矩平衡、稳定平衡角、受力平衡位置和评分参考等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q04-paper-page-2.png`、`CPHO38-Q04-solution-page-10.png`、`CPHO38-Q04-solution-page-11.png` 和 `CPHO38-Q04-solution-page-12.png` 共4张页面证据图；视觉检查确认第4题完整位于试题PDF第2页上半部，第2页中部进入第5题；第4题答案从PDF第10页下半部开始，至第12页上半部评分参考结束，第12页下半部进入第5题；
+- 更新 `03_corpus/item_texts/CPHO38-Q04.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第047-048项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO38-Q04-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO38-Q04-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；同时将答案页范围由 `10-11` 纠偏为 `10-12`；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第38届第4题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-38Q07`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第38届第4题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-38Q03 第38届第3题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q03_transcription_v1.md`，基于第38届合并PDF第1页渲染图完成第3题题面V1视觉转写，覆盖均质超球、上下平行硬板、右手螺旋坐标系、三次碰撞、`v_0x`、`omega_0z` 和 `J=2mr^2/5` 等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q03_formula_check_v1.csv`，依据答案PDF第8-10页登记动量定理、角动量定理、无滑动条件、力矩反号、第1/2/3次碰撞后的速度和角速度结果及评分参考等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q03-paper-page-1.png`、`CPHO38-Q03-solution-page-08.png`、`CPHO38-Q03-solution-page-09.png` 和 `CPHO38-Q03-solution-page-10.png` 共4张页面证据图；视觉检查确认第3题完整位于试题PDF第1页底部，第1页上半部为第1题且中部为第2题；第3题答案从PDF第8页底部开始，至第10页上半部评分参考结束，第10页下半部进入第4题；
+- 更新 `03_corpus/item_texts/CPHO38-Q03.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第045-046项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO38-Q03-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO38-Q03-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；同时将答案页范围由 `8-9` 纠偏为 `8-10`；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第38届第3题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-38Q04`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第38届第3题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-38Q01 第38届第1题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q01_transcription_v1.md`，基于第38届合并PDF第1页渲染图完成第1题题面V1视觉转写，覆盖平凸透镜、平凹透镜、折射率 `n/n'`、`r_0/r_0'`、`theta_max` 和光束横截面半径比等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q01_formula_check_v1.csv`，依据答案PDF第5-7页登记等光程关系、极坐标方程、双曲线标准形式、撇号变量、光束半径比 `k` 和评分参考等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-paper-page-1.png`、`CPHO38-Q01-solution-page-05.png`、`CPHO38-Q01-solution-page-06.png` 和 `CPHO38-Q01-solution-page-07.png` 共4张页面证据图；视觉检查确认第1题位于试题PDF第1页上半部，第1页中下部进入第2题且底部进入第3题；第1题答案从PDF第5页页首开始，至第7页上半部评分参考结束，第7页中下部进入第2题；
+- 更新 `03_corpus/item_texts/CPHO38-Q01.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第043-044项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO38-Q01-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO38-Q01-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；同时将答案页范围由 `5-6` 纠偏为 `5-7`；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第38届第1题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-38Q03`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第38届第1题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-37Q07 第37届第7题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q07_transcription_v1.md`，基于第37届合并PDF第4页渲染图完成第7题题面V1视觉转写，覆盖LIGO探测双黑洞并合引力波、旋近/并合/衰荡阶段、牛顿近似、辐射功率量纲分析、两黑洞初始距离和半距转角等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q07_formula_check_v1.csv`，依据答案PDF第18-19页登记量纲分析、辐射功率 `P = alpha G I^2 omega^6/c^5`、圆周运动条件、系统能量、转动惯量、角速度微分方程、旋转一圈时间和半距转角等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q07-paper-page-4.png`、`CPHO37-Q07-solution-page-18.png` 和 `CPHO37-Q07-solution-page-19.png` 共3张页面证据图；视觉检查确认第7题完整位于PDF第4页中部，第4页顶部为第6题尾部且第4页下部进入第8题；第7题答案从PDF第18页页首开始，至第19页上半部评分标准结束，第19页下半部进入第8题；
+- 更新 `03_corpus/item_texts/CPHO37-Q07.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第041-042项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO37-Q07-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO37-Q07-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第37届第7题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-38Q01`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第37届第7题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-37Q06 第37届第6题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q06_transcription_v1.md`，基于第37届合并PDF第3-4页渲染图完成第6题题面V1视觉转写，覆盖光纤陀螺仪、Sagnac效应、分束器、逆时针/顺时针传播、光纤全反射、密绕 `N` 匝光纤、相位差和谐振式光学陀螺系统等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q06_formula_check_v1.csv`，依据答案PDF第16-17页登记折射定律、全反射临界条件、传播时间、相位差、折射率无关结论、共振条件、路径长度和 `Omega` 与 `Delta f` 关系等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q06-paper-page-3.png`、`CPHO37-Q06-paper-page-4.png` 和 `CPHO37-Q06-solution-page-16.png` 至 `CPHO37-Q06-solution-page-18.png` 共5张页面证据图；视觉检查确认第6题题面从PDF第3页下半部开始，延续至第4页顶部结束，第3页上半部为第5题且第4页中部为第7题、下部进入第8题；第6题答案从PDF第16页页首开始，至第17页评分标准结束，第18页为第7题答案后边界；
+- 更新 `03_corpus/item_texts/CPHO37-Q06.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第039-040项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO37-Q06-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO37-Q06-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第37届第6题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-37Q07`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第37届第6题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-41Q06 第41届第6题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q06_transcription_v1.md`，基于第41届试题PDF第3-4页渲染图完成第6题题面V1视觉转写，覆盖广义相对论预言、埃丁顿日全食观测、圆锥曲线轨道、半通径与偏心率、陨石/星光偏折、费马原理、弱场相对折射率和光线轨迹方程等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q06_formula_check_v1.csv`，依据答案PDF第13-16页登记轨道方程条件、系统能量、角动量、`p/e` 与 `E/L` 关系、牛顿偏折角、星光牛顿偏折角、弱场折射率方程、等效轨道参数和广义相对论偏折角 `4GM_sun/(c^2 R_sun)` 等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q06-paper-page-3.png`、`CPHO41-Q06-paper-page-4.png` 和 `CPHO41-Q06-solution-page-13.png` 至 `CPHO41-Q06-solution-page-17.png` 共7张页面证据图；视觉检查确认第6题题面从试题PDF第3页底部开始，延续至第4页中部结束，第3页上部为第5题且第4页下半部进入第7题；第6题答案从答案PDF第13页下部开始，至第16页评分标准结束，第16页下部和第17页进入第7题；
+- 更新 `03_corpus/item_texts/CPHO41-Q06.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第037-038项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q06-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO41-Q06-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第41届第6题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-37Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第41届第6题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-41Q05 第41届第5题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q05_transcription_v1.md`，基于第41届试题PDF第3页渲染图完成第5题题面V1视觉转写，覆盖诺贝尔奖背景、Ioffe势阱、四根无限长直导线、坐标系、`P(x,y,0)`、磁矩势能、磁场力和蒸发冷却圆柱区域等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q05_formula_check_v1.csv`，依据答案PDF第11-13页登记无限长直导线磁场、`B_x/B_y` 长式、小量近似、`W_m=-S·B` 证明、磁场力分量、约束势能、`N_1/E_1/bar(E)_1` 和冷却后 `N_2/E_2/bar(E)_2` 等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q05-paper-page-3.png`、`CPHO41-Q05-paper-page-4.png` 和 `CPHO41-Q05-solution-page-11.png` 至 `CPHO41-Q05-solution-page-14.png` 共6张页面证据图；视觉检查确认第5题题面完整位于试题PDF第3页中部至下部，第3页上部为第4题尾部且下部进入第6题；第5题答案从答案PDF第11页下部开始，至第13页评分标准结束，第13页下部和第14页进入第6题；
+- 更新 `03_corpus/item_texts/CPHO41-Q05.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第035-036项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q05-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO41-Q05-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第41届第5题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-41Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第41届第5题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-41Q01 第41届第1题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q01_transcription_v1.md`，基于第41届试题PDF第1页渲染图完成第1题题面V1视觉转写，覆盖高层建筑风致晃动、调谐质量阻尼器、摆锤质量 `m`、摆臂长度 `l`、谐振子质量 `M`、劲度系数 `k`、强迫力 `F(t)=H cos(omega t)`、`sqrt(0.99)` 倍频率和阻尼力 `f=-gamma v'` 等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q01_formula_check_v1.csv`，依据答案PDF第1-3页登记耦合运动方程、稳定振幅、`omega_0=sqrt(g/l)`、无阻尼共振频率、阻尼器条件 `l=Mg/k`、第(2)问质量比 `101/9900`、相对速度分量和带阻尼非线性方程等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q01-paper-page-1.png`、`CPHO41-Q01-paper-page-2.png` 和 `CPHO41-Q01-solution-page-01.png` 至 `CPHO41-Q01-solution-page-04.png` 共6张页面证据图；视觉检查确认第1题题面位于试题PDF第1页中部至下半部，第1页更下部进入第2题，第2页为边界页；第1题答案从答案PDF第1页开始，至第3页上半部评分标准结束，第3页下半部和第4页进入第2题；
+- 更新 `03_corpus/item_texts/CPHO41-Q01.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第033-034项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q01-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO41-Q01-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；同时恢复优先队列表为154行并保持第035-036项为第41届第5题；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第41届第1题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-41Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第41届第1题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-40Q07 第40届第7题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q07_transcription_v1.md`，基于第40届试题/答案合并PDF第4-5页渲染图完成第7题题面V1视觉转写，覆盖对流层、同温层、逆温层、绝热上升、摩尔质量 `mu`、`gamma`、密度 `rho`、声速、声波折射/全反射、声源和探测气球四种空间组合等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q07_formula_check_v1.csv`，依据答案PDF第19-21页登记气体密度、静力平衡、绝热温度梯度、声速、同温层内外声速比、折射关系、临界角、`l_1/l_2` 几何估算和A/B/C/D四种远距离传播结论等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q07-paper-page-4.png`、`CPHO40-Q07-paper-page-5.png` 和 `CPHO40-Q07-solution-page-19.png` 至 `CPHO40-Q07-solution-page-22.png` 共6张页面证据图；视觉检查确认第7题题面从试题PDF第4页底部“七、”开始，延续至第5页顶部第(4)问结束，第4页上部为第6题、第5页中部进入第8题；第7题答案从PDF第19页下半部“七、”开始，至第21页中部评分标准结束，第21页下部和第22页进入第8题；
+- 更新 `03_corpus/item_texts/CPHO40-Q07.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第031-032项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO40-Q07-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO40-Q07-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第40届第7题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-41Q01`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第40届第7题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-40Q06 第40届第6题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q06_transcription_v1.md`，基于第40届试题/答案合并PDF第4页渲染图完成第6题题面V1视觉转写，覆盖涡电流、线圈半径 `b`、交变电流 `I(t)=I_0 cos(omega t)`、导体球半径 `a`、电导率 `sigma`、球心高度 `h`、趋肤深度 `delta`、真空磁导率 `mu_0`、理想导体球、磁偶极矩和面电流密度等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q06_formula_check_v1.csv`，依据答案PDF第16-19页登记球外总磁场、法向连续条件、磁偶极矩、面电流密度、线圈轴线磁场、磁偶极受力、平均安培力、悬浮电流 `I_0`、趋肤层体电流、焦耳热功率和平均热功率等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q06-paper-page-4.png` 和 `CPHO40-Q06-solution-page-16.png` 至 `CPHO40-Q06-solution-page-20.png` 共6张页面证据图；视觉检查确认第6题题面位于试题PDF第4页中部，第4页上部为第5题尾部、下部进入第7题；第6题答案从PDF第16页下部“六、”开始，至第19页上部评分标准结束，第19页下半部和第20页进入第7题；
+- 更新 `03_corpus/item_texts/CPHO40-Q06.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第029-030项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO40-Q06-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO40-Q06-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第40届第6题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-40Q07`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第40届第6题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-40Q01 第40届第1题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q01_transcription_v1.md`，基于第40届试题/答案合并PDF第1页渲染图完成第1题题面V1视觉转写，覆盖手机相机镜头、共轴理想透镜组、主点 `H/H'`、物距 `u`、刻度尺长度 `l`、像长 `l_1/l_2`、焦距 `f_1/f_2`、光心 `O_1/O_2`、主平面和物方/像方焦距等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q01_formula_check_v1.csv`，依据答案PDF第6-7页登记薄透镜成像公式、横向放大率、等效焦距 `F`、物距 `u_1`、两透镜成像公式、透镜组放大率、主点位置、像方焦点位置和物方/像方焦距等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q01-paper-page-1.png` 和 `CPHO40-Q01-solution-page-06.png` 至 `CPHO40-Q01-solution-page-08.png` 共4张页面证据图；视觉检查确认第1题题面从试题PDF第1页中部“一、”开始，至同页中下部第(2)(ii)结束，第1页下部进入第2题；第1题答案从PDF第6页页首“一、”开始，至第7页中部评分参考结束，第7页下部和第8页进入第2题；
+- 更新 `03_corpus/item_texts/CPHO40-Q01.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第027-028项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO40-Q01-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO40-Q01-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第40届第1题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-40Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第40届第1题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-38Q06 第38届第6题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q06_transcription_v1.md`，基于第38届试题/答案合并PDF第3页渲染图完成第6题题面V1视觉转写，覆盖同轴带电薄壁圆筒、半径 `r_1/r_2`、单位长度质量 `m`、单位长度电荷 `q/-q`、电容率 `epsilon_0`、磁导率 `mu_0`、点电荷质量 `mu`、电荷量 `Q`、外力矩总冲量矩 `J` 和总机械角动量 `L` 等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q06_formula_check_v1.csv`，依据答案PDF第14-16页登记电场分布、等效电流、磁场分布、点电荷角动量与动能、到达外筒条件、感应电场、内外圆筒角速度关系、外力矩总冲量矩和总机械角动量等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q06-paper-page-3.png` 和 `CPHO38-Q06-solution-page-14.png` 至 `CPHO38-Q06-solution-page-17.png` 共5张页面证据图；视觉检查确认第6题题面从试题PDF第3页页首开始并在同页上半部结束，第3页下半部进入第7题和第8题；第6题答案从PDF第14页下半部“六、”开始，至第16页上半部评分参考结束，第14页上半部为第5题答案尾部和评分参考，第16页下半部和第17页进入第7题；
+- 更新 `03_corpus/item_texts/CPHO38-Q06.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第025-026项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO38-Q06-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO38-Q06-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；同时将第38届第6题相关答案页范围由 `14-15` 纠偏为 `14-16`；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第38届第6题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-40Q01`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第38届第6题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-38Q05 第38届第5题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q05_transcription_v1.md`，基于第38届试题/答案合并PDF第2页渲染图完成第5题题面V1视觉转写，覆盖原子激光制冷、塞曼减速装置、多普勒效应、塞曼效应、散射速率 `Gamma`、塞曼系数 `beta`、磁感应强度函数 `B(z)` 和题给常量等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q05_formula_check_v1.csv`，依据答案PDF第12-14页登记能量均分、`40K` 原子质量、方均根速率、光子动量、减速加速度、减速距离、多普勒频移、塞曼补偿磁场函数 `B(z)`、数值式和取值范围等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q05-paper-page-2.png` 和 `CPHO38-Q05-solution-page-11.png` 至 `CPHO38-Q05-solution-page-14.png` 共5张页面证据图；视觉检查确认第5题题面从试题PDF第2页中部开始并在本页结束，第2页上半部为第4题尾部；第5题答案从PDF第12页下半部“五、”开始，至第14页上半部评分参考结束，第12页上半部为第4题尾部和评分参考，第14页下半部进入第6题；
+- 更新 `03_corpus/item_texts/CPHO38-Q05.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第023-024项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO38-Q05-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO38-Q05-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；同时将第38届第5题相关答案页范围由 `12-13` 纠偏为 `12-14`；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第38届第5题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-38Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第38届第5题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-37Q08 第37届第8题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q08_transcription_v1.md`，基于第37届试题/答案合并PDF第4-5页渲染图完成第8题题面V1视觉转写，覆盖电光调制、铌酸锂电光晶体、起偏器 `P_1`、检偏器 `P_2`、坐标轴 `x_1/x_2/x_3`、快慢轴 `x_1'/x_2'`、半波电压 `V_pi`、`1/4` 波片、等效电路、低效率条件和并联谐振补偿等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q08_formula_check_v1.csv`，依据答案PDF第19-21页登记折射率变化、相位差、半波电压、未加/加 `1/4` 波片的光强透过率、复阻抗、低效率条件、并联谐振和 `|V_c| approx |V|` 等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-paper-page-4.png`、`CPHO37-Q08-paper-page-5.png` 和 `CPHO37-Q08-solution-page-19.png` 至 `CPHO37-Q08-solution-page-21.png` 共5张页面证据图；视觉检查确认第8题从试题PDF第4页底部开始，延续至第5页并结束，第4页上部为第6题尾部和第7题；第8题答案从PDF第19页下半部“八、”开始，至第21页评分标准结束，第19页上半部为第7题结尾和评分标准；
+- 更新 `03_corpus/item_texts/CPHO37-Q08.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第021-022项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO37-Q08-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO37-Q08-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第37届第8题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-38Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第37届第8题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-37Q03 第37届第3题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q03_transcription_v1.md`，基于第37届试题/答案合并PDF第2页渲染图完成第3题题面V1视觉转写，覆盖负微分电阻、隧道二极管、高频扼流圈 RFC、恒压直流电源 `V_0`、端电压 `V_D`、`R_0`、初始条件、谐振、RLC阻尼振荡和最大平均功率等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q03_formula_check_v1.csv`，依据答案PDF第9-11页登记回路方程、指数解与初始条件、特征方程、特征根、谐振电流与频率、阻尼振荡条件、电流与频率、工作电压范围、`V_0` 和最大平均功率等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q03-paper-page-2.png` 和 `CPHO37-Q03-solution-page-09.png` 至 `CPHO37-Q03-solution-page-11.png` 共4张页面证据图；视觉检查确认第3题题面位于试题PDF第2页上半部，第2页下半部进入第4题；第3题答案从PDF第9页中部“三、”开始，至第11页评分标准结束，第9页上部为第2题结尾和评分标准；
+- 更新 `03_corpus/item_texts/CPHO37-Q03.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第019-020项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO37-Q03-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO37-Q03-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第37届第3题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-37Q08`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第37届第3题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-42Q06 第42届第6题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q06_transcription_v1.md`，基于第42届试题PDF第4-5页渲染图完成第6题题面V1视觉转写，覆盖转速仪简化模型、轴承A/B、质量 `m_1/m_2`、匀质细杆、坐标系 O-xyz、单位矢量、盘簧回复力矩、匀速转动、冲击后角速度、小振动频率和一阶近似等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q06_formula_check_v1.csv`，依据答案PDF第16-20页登记力矩平衡、离心力矩积分、`omega_0`存在条件、角动量矢量、轴承作用力、z方向角动量守恒、机械能守恒、`Omega_0`根式、小振动角频率和 `omega(t)` 一阶近似等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-paper-page-4.png`、`CPHO42-Q06-paper-page-5.png` 和 `CPHO42-Q06-solution-page-16.png` 至 `CPHO42-Q06-solution-page-20.png` 共7张页面证据图；视觉检查确认第6题题面从试题PDF第4页下部开始，延续至第5页上半部结束，第4页上部为第5题尾部，第5页下半部进入第7题；第6题答案从答案PDF第16页下部开始，至第20页评分标准结束，第16页上部为第5题答案尾部，第20页底部进入第7题；
+- 更新 `03_corpus/item_texts/CPHO42-Q06.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第017-018项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO42-Q06-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO42-Q06-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第42届第6题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-37Q03`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第42届第6题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-40Q08 第40届第8题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q08_transcription_v1.md`，基于第40届试题/答案合并PDF第5页渲染图完成第8题题面V1视觉转写，覆盖X射线光谱与光电子能谱仪器结构、轫致辐射谱、特征谱、K壳层/L壳层、K_alpha线、里德堡常量、康普顿散射、光电子动能和散射光谱峰来源等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q08_formula_check_v1.csv`，依据答案PDF第21-23页登记最低加速电压、连续谱最短波长、K_alpha能量、莫塞莱关系、有效核电荷数、相对论能量动量、康普顿波长差、光电子动能和光谱峰来源等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q08-paper-page-5.png` 和 `CPHO40-Q08-solution-page-21.png` 至 `CPHO40-Q08-solution-page-23.png` 共4张页面证据图；视觉检查确认第8题题面从试题PDF第5页中部开始并在本页结束，第5页上部为第7题尾部；第8题答案从PDF第21页下部开始，至第23页评分标准结束且第23页为PDF末页；
+- 更新 `03_corpus/item_texts/CPHO40-Q08.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第015-016项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO40-Q08-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO40-Q08-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第40届第8题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-42Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第40届第8题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-40Q05 第40届第5题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q05_transcription_v1.md`，基于第40届试题/答案合并PDF第3-4页渲染图完成第5题题面V1视觉转写，覆盖电偶极子、点电荷、位置矢量、初始条件、电场与电势、圆周运动、角动量、径向速率、有界运动条件和无界运动距离变化等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q05_formula_check_v1.csv`，依据答案PDF第13-16页登记 `theta_0`、`v_0`、`L(theta)`、`v_r(r)`、有界条件、边界半圆轨道和 `r(t)` 等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q05-paper-page-3.png`、`CPHO40-Q05-paper-page-4.png` 和 `CPHO40-Q05-solution-page-13.png` 至 `CPHO40-Q05-solution-page-16.png` 共6张页面证据图；视觉检查确认第5题题面从试题PDF第3页下部开始并延续至第4页顶部，第4页中部已进入第6题；第5题答案从PDF第13页下部开始，至第16页评分标准结束，第16页下部已进入第6题，后续内容仅作边界确认；
+- 更新 `03_corpus/item_texts/CPHO40-Q05.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第013-014项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO40-Q05-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO40-Q05-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第40届第5题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-40Q08`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第40届第5题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-40Q02 第40届第2题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q02_transcription_v1.md`，基于第40届试题/答案合并PDF第1-2页渲染图完成第2题题面V1视觉转写，覆盖半圆玻璃管、活塞、两侧理想气体、临界温度、正中央稳定性、非零平衡位置、小振动圆频率和角速度等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q02_formula_check_v1.csv`，依据答案PDF第7-9页登记切向运动方程、小量展开、临界温度 `T_c`、`T = T_c` 三阶稳定性、非零平衡位置 `theta_0`、`omega_0(theta_0)`、温度略大于/略小于 `T_c` 的频率依赖和角速度能量积分等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q02-paper-page-1.png`、`CPHO40-Q02-paper-page-2.png` 和 `CPHO40-Q02-solution-page-07.png` 至 `CPHO40-Q02-solution-page-09.png` 共5张页面证据图；视觉检查确认第2题题面从试题PDF第1页下部开始并延续至第2页上部，第2页中部已进入第3题；第2题答案至PDF第9页评分标准结束，第9页下部已进入第3题，后续内容仅作边界确认；
+- 更新 `03_corpus/item_texts/CPHO40-Q02.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第011-012项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO40-Q02-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO40-Q02-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第40届第2题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-40Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第40届第2题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-42Q05 第42届第5题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q05_transcription_v1.md`，基于第42届试题PDF第3-4页渲染图完成第5题题面V1视觉转写，覆盖约瑟夫森结结构、相位差、约瑟夫森方程、外磁场下相位变化、穿透深度、并联等效电路、势函数、小振动频率和等离子体角频率等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q05_formula_check_v1.csv`，依据答案PDF第14-16页登记直流电压下 `j(t)` 与周期、外磁场下 `delta(y)`、总电流 `I_J`、`lambda_J`、三支路电流、相位微分方程、等效势、势阱条件、小振动角频率、`omega_J` 和 `c_bar/c` 等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q05-paper-page-3.png`、`CPHO42-Q05-paper-page-4.png` 和 `CPHO42-Q05-solution-page-14.png` 至 `CPHO42-Q05-solution-page-16.png` 共5张页面证据图；视觉检查确认第5题题面从试题PDF第3页底部开始并延续至第4页中下部，第4页下部已进入第6题；第5题答案至答案PDF第16页评分标准结束，第16页下方已进入第6题，后续内容仅作边界确认；
+- 更新 `03_corpus/item_texts/CPHO42-Q05.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第009-010项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO42-Q05-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO42-Q05-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第42届第5题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-40Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第42届第5题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-42Q02 第42届第2题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q02_transcription_v1.md`，基于第42届试题PDF第1-2页渲染图完成第2题题面V1视觉转写，覆盖重离子束探针、二次离子、普罗卡-格林平行板能量分析器、二级聚焦、上下半平面电流和测量位置电势等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q02_formula_check_v1.csv`，依据答案PDF第4-7页登记平行板内运动、`XD`表达式、二级聚焦条件、`theta_I = pi/6`、`VA`、离轴接收距离 `s`、电流比例、`K2` 和 `Phi` 等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q02-paper-page-1.png`、`CPHO42-Q02-paper-page-2.png` 和 `CPHO42-Q02-solution-page-04.png` 至 `CPHO42-Q02-solution-page-07.png` 共6张页面证据图；视觉检查确认第2题题面从试题PDF第1页下部开始并延续至第2页上半部，第2题答案至答案PDF第7页评分标准结束，第7页下半部已进入第3题，仅作边界确认；
+- 更新 `03_corpus/item_texts/CPHO42-Q02.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第007-008项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO42-Q02-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO42-Q02-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第42届第2题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-42Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第42届第2题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-40Q03 第40届第3题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q03_transcription_v1.md`，基于第40届试题/答案合并PDF第2页渲染图完成第3题题面V1视觉转写，覆盖楔块、匀质圆球、无滑滚动、连滚带滑、`a0`、`ac`、`N`、`N1`、`mu0` 和 `Delta t` 等题面条件；
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q03_formula_check_v1.csv`，依据答案第9至11页登记动力学基本式、水平方向动量关系、楔块加速度、圆球相对加速度、支持力、最小摩擦因数、连滚带滑条件和接触点 `P` 相对速度等关键公式核对入口；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-paper-page-2.png` 和 `CPHO40-Q03-solution-page-09.png` 至 `CPHO40-Q03-solution-page-12.png` 共5张页面证据图；视觉检查确认第3题答案至PDF第11页结束，第12页已进入第4题，仅作边界确认；
+- 更新 `03_corpus/item_texts/CPHO40-Q03.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅作错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_a1_batch_log.csv`、`manual_review_a1_render_index.csv` 和 `manual_review_a1_batch_summary.md`，登记A组队列第005-006项的证据、边界和下一步；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO40-Q03-OCR` 推进为“V1视觉转写完成，待最终复核”，将 `CPHO40-Q03-FORMULA` 推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第40届第3题已完成V1转写入口，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-42Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第40届第3题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不提交Git。
+
+## 2026-07-15：G1-07-A1-FIG-FINALCHECK-41Q02-Q07 题图内部视觉终检
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_finalcheck_v1.csv`，逐张登记第41届第2题图2a、图2b、图2c、空表及第41届第7题图7a、图7b的关键要素、内部视觉判断、残余风险、后续建议和关闭边界；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_finalcheck_summary.md`，汇总本轮内部视觉终检的材料、判断、可用边界和下一步建议；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/CPHO41_Q02_Q07_recrop_finalcheck_contact_v1.png`，作为6张重裁候选图的内部终检预览图；
+- 更新 `03_corpus/item_texts/CPHO41-Q02.md` 和 `03_corpus/item_texts/CPHO41-Q07.md`，挂接图件内部终检记录；其中第41届第2题明确图2c因原页贴近正文，正式论文使用前建议重绘；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q02-FIG` 与 `CPHO41-Q07-FIG` 推进为“内部视觉终检完成，待人工确认”；不填写校对人和校对日期，不关闭人工销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-40Q03`，继续处理A组后续高风险OCR/公式问题；
+- 本轮不改写论文正文，不修改原始PDF，不重绘图件，不关闭人工校对项，不补造真实人工校对、专家意见、评分者记录、正式编码结果、统计结论或案例结论，也不提交Git。
+
+## 2026-07-15：G1-07-A1-FIG-REDRAW-41Q02-Q07 题图重裁候选图
+
+- 新增 `03_corpus/scripts/recrop_cpho41_q02_q07_figures.py`，记录第41届第2题和第7题题图重裁的来源页、裁切框、输出文件和边界说明；
+- 新增6张题图重裁候选图：`CPHO41-Q02-figure2a-page1-recrop-v1.png`、`CPHO41-Q02-figure2b-page2-recrop-v1.png`、`CPHO41-Q02-figure2c-page2-recrop-v1.png`、`CPHO41-Q02-table-page2-recrop-v1.png`、`CPHO41-Q07-figure7a-page4-recrop-v1.png`、`CPHO41-Q07-figure7b-page4-recrop-v1.png`；
+- 新增 `03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv`，登记6张候选图的来源页、裁切坐标、输出尺寸、SHA-256校验值、复核要点和边界说明；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_recrop_review_v1.md`，说明本轮只从题面渲染页重裁，不重绘、不补字、不修图，不代表真实人工校对完成；
+- 更新 `03_corpus/item_texts/CPHO41-Q02.md` 和 `03_corpus/item_texts/CPHO41-Q07.md`，挂接题图重裁候选图与复核记录入口；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q02-FIG` 与 `CPHO41-Q07-FIG` 推进为“重裁候选图已生成，待人工确认”；不填写校对人和校对日期；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为候选图人工对照确认，或继续 `G1-07-A1-TRANSCRIBE-40Q03`；
+- 本轮不改写论文正文，不修改原始PDF，不关闭人工校对项，不补造题图、专家意见、评分者记录、正式编码结果、统计结论或案例结论，也不提交Git。
+
+## 2026-07-15：G1-07-A1-FINALIZE-41Q02-Q07 终复核准备记录
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_final_review_summary.md`，汇总第41届第2题和第7题V1转写、公式核对、页面证据、题图风险和不可声称边界；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_final_review_v1.csv`，逐项登记 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA`、`CPHO41-Q02-FIG`、`CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA`、`CPHO41-Q07-FIG` 的证据、复核判断、剩余阻塞和下一步；
+- 更新 `03_corpus/item_texts/CPHO41-Q02.md` 和 `03_corpus/item_texts/CPHO41-Q07.md`，挂接终复核准备记录入口；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将两题OCR/公式问题推进为“终复核记录已建，未销项”，将两题图件问题推进为“题图风险复查完成，待重裁/重绘”；不填写校对人和校对日期；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为第41届第2题/第7题题图重裁或继续处理A组后续高风险OCR/公式问题；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名，也不声称两题已完成正式人工校对。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-41Q07 第41届第7题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q07_transcription_v1.md`，基于第41届试题PDF第4-5页渲染图完成第7题题面V1视觉转写，覆盖题干、第(1)至第(5.2)问、图7a/7b说明和待复核点；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q07_formula_check_v1.csv`，依据答案PDF第16-19页登记单值条件、动量量子化、磁通与矢势、单电子能量、总能量周期、平均能量分段、奇偶比较、两环最低能量和极限比值的核对入口；
+- 更新 `03_corpus/item_texts/CPHO41-Q07.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅保留为错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q07-OCR` 状态推进为“V1视觉转写完成，待最终复核”，将 `CPHO41-Q07-FORMULA` 状态推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不声称人工校对全部完成；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第41届第7题已完成V1转写入口，并将下一最小任务调整为第41届第2题/第7题最终复核或继续处理A组后续高风险题目；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第7题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名。
+
+## 2026-07-15：G1-07-A1-TRANSCRIBE-41Q02 第41届第2题V1转写
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q02_transcription_v1.md`，基于第41届试题PDF第1-2页渲染图完成第2题题面V1视觉转写，覆盖题干、第(1)至第(4.3)问、图2a/2b/2c和空表说明；
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q02_formula_check_v1.csv`，依据答案PDF第3-7页登记第(1)问碰撞结果、第(2.1)至第(2.4)问接触点速度/纯滚时间/轨迹/最终速度、第(3)问击球高度、第(4)问30度经验规则公式和表格数值的核对入口；
+- 更新 `03_corpus/item_texts/CPHO41-Q02.md`，挂接V1转写稿、公式核对表和页面证据，明确原OCR文本仅保留为错误来源对照，不得用于正式编码证据；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO41-Q02-OCR` 状态推进为“V1视觉转写完成，待最终复核”，将 `CPHO41-Q02-FORMULA` 状态推进为“答案公式核对入口完成，待最终复核”；不填写校对人和校对日期，不声称人工校对全部完成；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录第41届第2题已完成V1转写入口，并将下一最小任务调整为第41届第7题转写或第2题最终复核；
+- 本轮不改写论文正文，不修改原始PDF，不关闭第2题题图问题，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名。
+
+## 2026-07-14：G1-07-A1 首批A组高风险校对证据包
+
+- 新增 `03_corpus/manual_review_a1_batch_log.csv`，登记A组前4项 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA`、`CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA` 的批次、影响小问、页面证据、当前文本风险、处置决定和下一步动作；
+- 新增 `03_corpus/manual_review_a1_render_index.csv`，索引第41届第2题和第7题题面/答案PDF渲染页，共13张页面证据图；
+- 新增 `03_corpus/manual_review_a1_batch_summary.md`，说明本批只建立证据包，不代表题干、公式、答案证据或小问边界已经完成正式校对；
+- 新增 `03_corpus/manual_review_renders/G1-07-A1/` 下13张PNG页面图，覆盖第41届第2题题面第1-2页、答案第3-7页，第41届第7题题面第4-5页、答案第16-19页；
+- 更新 `03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将上述4项回填为“A1证据包已建，未销项”，并在 `resolution_note` 中说明仍需逐字重转写和逐式公式核对；`reviewer` 与 `review_date` 保持为空，避免误写成已完成校对；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G1-07-A1` 已启动，并将下一最小任务调整为 `G1-07-A1-TRANSCRIBE-41Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不补造题干、公式、答案、校对人、校对日期、正式编码结果、统计结论或案例结论，也不提交Git。
+
+## 2026-07-14：G1-07-FOLLOWUP 人工校对优先队列
+
+- 新增 `03_corpus/manual_review_priority_followup.csv`，将154条人工校对待核项按正式编码影响程度分为A/B/C/D四组，并给出队列序号、推荐批次、受影响小问数、关闭条件和不得声称内容；
+- 新增 `03_corpus/manual_review_priority_followup_summary.md`，汇总A组76条直接阻塞正式编码证据问题、B组22条影响正式编码证据问题、C组47条图像表征/案例/附录图件问题和D组9条元数据或附属证据问题，并列出A组优先处理前12项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G1-07-FOLLOWUP` 已完成，并将下一最小任务调整为 `G1-07-A1`；
+- 本轮不修改题干、答案、题图、原始PDF、试编码或正式编码结果，不填写虚假校对人和日期，不声称人工校对已完成，也不提交Git。
+
+## 2026-07-14：G8-09-PREP 最终提交阻塞项总表
+
+- 新增 `09_quality/g8_09_final_pre_submission_blockers.csv`，登记20项最终提交前阻塞项，覆盖人工校对、真实A/B评分者独立编码、一致性、分歧裁决、`final_coding.csv`、第四章正式结果、第五章教学证据、文献全文、学校规范、参考文献、摘要结论、附录数据说明、匿名版、AI/伦理声明、最终输出、Git版本点和全论文终审；
+- 新增 `09_quality/g8_09_blocker_closure_protocol.md`，规定阻塞项优先级、最低销项证据、推荐销项顺序、关闭记录要求和不得用于销项的材料；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-09-PREP` 已完成，并将下一最小任务调整为 `G1-07-FOLLOWUP`；若收到真实A/B评分者回收文件，则优先回到 `G4-01`；
+- 本轮不改写论文正文，不关闭任何阻塞项，不生成正式编码结果、`final_coding.csv`、正式图表、教师/学生/课堂证据、导师意见、专家意见、学校规范、AI披露定稿、伦理审批、Word/PDF、匿名版或最终提交包，也不提交Git。
+
+## 2026-07-14：G8-08-PREP 最终提交与归档包准备
+
+- 新增 `09_quality/g8_08_prep_final_submission_readiness.csv`，登记14项最终提交材料准备度，覆盖学校格式Word/PDF、匿名评审版、第1至5章边界稿、结论、摘要、`final_coding.csv`、正式图表、参考文献、附录、数据可用性、AI使用声明、伦理声明和最终提交包；
+- 新增 `09_quality/g8_08_prep_archive_package_manifest.csv`，整理10类可归档研究准备材料，区分项目规则、原始审计、语料索引、编码框架、内部预演、正文草稿、文献工作包、附录/数据说明、教师课堂模板和最终输出目录；
+- 新增 `09_quality/g8_08_prep_finalization_roadmap.md`，说明当前可归档材料、当前不能生成的提交材料、最短最终化路线和短期无法取得外部材料时的稳妥处理方式；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-08-PREP` 已完成，并将下一最小任务调整为 `G8-09-PREP`；
+- 本轮不改写论文正文，不生成Word/PDF，不生成匿名评审版，不声明查重通过，不补造正式编码结果、`final_coding.csv`、导师意见、学校规范、AI披露要求、伦理审批、教师数据、学生数据或课堂证据，也不提交Git。
+
+## 2026-07-14：G8-07-PREP 学校规范与匿名评审版检查准备
+
+- 新增 `09_quality/g8_07_prep_school_format_checklist.csv`，登记14项学校提交前格式检查准备项，覆盖论文模板、写作规范、字数、引用格式、匿名评审、查重、AI披露、伦理要求、优秀论文标准、提交流程、Mermaid/图表、附录、数据可用性、摘要与结论；
+- 新增 `09_quality/g8_07_prep_anonymous_review_risk_register.csv`，登记8项匿名评审风险，覆盖作者导师信息、本地路径、致谢资助、真实评分者/专家、教师学生课堂材料、试题来源、AI使用痕迹和审计日志公开范围；
+- 新增 `09_quality/g8_07_prep_markdown_to_submission_plan.md`，整理当前Markdown/CSV材料包转学校提交版的顺序、当前不能生成的提交材料、可先准备的材料和进入正式 `G8-07` 的前置条件；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-07-PREP` 已完成，并将下一最小任务调整为 `G8-08-PREP`；
+- 本轮不改写论文正文，不生成Word/PDF，不生成匿名评审版，不声明查重通过，不补造学校规范、AI披露要求、伦理审批、导师意见、评分者数据、教师数据、学生数据或课堂证据，也不提交Git。
+
+## 2026-07-14：G8-06-PREP 模拟答辩与高风险问题清单准备版
+
+- 新增 `09_quality/g8_06_prep_defense_risk_questions.csv`，登记16项高风险追问，覆盖原初稿禁用结果、语料规模、人工校对、真实评分者、正式结果、SOLO理论、文献综述、教学转化、案例选择、创新性、可复现性、伦理数据、学校规范、英文术语、范围控制和最终闭环；
+- 新增 `09_quality/g8_06_prep_defense_gate.csv`，建立10项答辩门禁，标明当前状态、风险等级、能否回答、可答类型、阻塞问题和下一步动作；
+- 新增 `09_quality/g8_06_prep_simulated_response_boundaries.md`，整理模拟问答的可使用回答边界、不可声称内容、高风险追问优先级和后续补证顺序；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-06-PREP` 已完成，并将下一最小任务调整为 `G8-07-PREP`；
+- 本轮不改写论文正文，不生成正式结果，不生成答辩结论，不补造导师意见、专家意见、评分者数据、教师数据、学生数据、课堂证据、实验结果、显著性结论或文献结论，也不提交Git。
+
+## 2026-07-14：G8-05-LOG-TEMPLATE 导师/人工反馈记录模板
+
+- 新增 `09_quality/g8_05_feedback_log_template.csv`，建立真实反馈登记字段，包括来源类型、来源标识、接收日期、涉及章节、反馈摘要、证据状态、处理决定、责任文件和关闭状态；
+- 新增 `09_quality/g8_05_feedback_decision_protocol.md`，规定反馈处理决定类型、证据状态、关闭条件、推荐工作流和当前不可填写内容；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-05-LOG-TEMPLATE` 已完成，并将下一最小任务调整为 `G8-06-PREP`；
+- 本轮不填写任何导师、专家、教师、同门或作者反馈，不生成审阅通过结论，不改写论文正文，不补造评分者数据、教师数据、学生数据、课堂证据或文献结论，也不提交Git。
+
+## 2026-07-14：G8-05-PREP 导师/人工反馈闭环材料包准备
+
+- 新增 `09_quality/g8_05_prep_feedback_packet.md`，说明第1至5章当前可审阅版本、建议审阅顺序、高优先级确认问题、关键缺口和使用边界；
+- 新增 `09_quality/g8_05_prep_review_questions.csv`，登记12项需人工确认的问题，覆盖研究路线、研究问题、SOLO术语、内部预审边界、第四章结果占位、第五章证据状态、真实评分者、教师/课堂材料、文献全文、学校规范、案例选择和草稿形态；
+- 新增 `09_quality/g8_05_prep_review_index.csv`，整理15项可审阅文件索引，标明审阅用途、当前状态、是否优先阅读和注意事项；
+- 新增 `09_quality/g8_05_prep_gap_register.csv`，登记10项高风险缺口，覆盖真实评分者编码、分歧裁决、`final_coding.csv`、人工校对、教师/课堂证据、SOLO全文、竞赛文献全文、学校规范、真实专家审查和摘要/结论缺口；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-05-PREP` 已完成，并将下一最小任务调整为 `G8-05-LOG-TEMPLATE`；
+- 本轮不改写论文正文、不生成正式统计、不制作正式图表、不选择正式案例、不补造导师意见、专家意见、评分者数据、教师数据、学生数据或课堂证据，也不提交Git。
+
+## 2026-07-14：G8-04-VERIFY-LITE 第1至5章最终残留轻核查
+
+- 新增 `09_quality/g8_04_verify_lite_audit.csv`，登记12项残留风险核查，覆盖过强结论词、内部预演数字、初稿禁用数字、路径残留、正式分析文件称呼、候选案例边界、教学证据边界和引文占位；
+- 新增 `09_quality/g8_04_verify_lite_report.md`，汇总未发现的高风险残留、已修订位置、仍需保留的边界和下一步 `G8-05-PREP`；
+- 更新 `08_manuscript/02_theory.md`，补全内部版编码手册和codebook的项目内路径，并统一理论框架图中的“结果—问题—策略—任务—评价”写法；
+- 更新 `08_manuscript/04_results.md`，将多处 `final_coding.csv` 补为“裁决后的唯一分析表（final_coding.csv）”，继续强调正式结果尚未生成；
+- 更新 `08_manuscript/05_cases_and_diagnosis.md`，将下一步中的 `final_coding.csv` 补为“裁决后的唯一分析表（final_coding.csv）”；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-04-VERIFY-LITE` 已完成，并将下一最小任务调整为 `G8-05-PREP`；
+- 本轮不生成正式统计、不制作正式图表、不选择正式案例、不补造 `final_coding.csv`、导师意见、评分者数据、教师数据、学生数据或课堂证据，也不提交Git。
+
+## 2026-07-14：G8-04-FORMAT-LITE 第1至5章格式与占位轻审
+
+- 新增 `09_quality/g8_04_format_lite_audit.csv`，登记12项标题层级、表格格式、Mermaid图、术语写法、文件路径、引文占位和第五章表格语气检查；
+- 新增 `09_quality/g8_04_format_lite_report.md`，汇总本轮检查结论、已修订位置、仍需保留的边界和下一步 `G8-04-VERIFY-LITE`；
+- 更新 `08_manuscript/01_introduction.md`，将技术路线图中的“SOLO启发等级框架”改为“SOLO启发的任务认知结构要求等级框架”，并统一“结果—问题—策略—任务—评价”写法；
+- 更新 `08_manuscript/03_methods.md`，统一正文中的“第35至42届”写法，并补全 `internal_analysis_candidate_v0.csv`、A/B正式空白模板、裁决模板、G4-01交接报告和prep30门槛表的项目内相对路径；
+- 更新 `08_manuscript/04_results.md`，统一“第35至42届”写法，补入“裁决后的唯一分析表（final_coding.csv）”表述，并将4.5标题补为“届次、模块、情境、表征和数学工具差异正式输出占位”；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-04-FORMAT-LITE` 已完成，并将下一最小任务调整为 `G8-04-VERIFY-LITE`；
+- 本轮不生成正式统计、不制作正式图表、不选择正式案例、不补造 `final_coding.csv`、评分者数据、教师数据、学生数据或课堂证据，也不提交Git。
+
+## 2026-07-14：G8-04-PREP 第1至5章术语与交叉引用预审
+
+- 新增 `09_quality/g8_04_prep_term_crossref_audit.csv`，登记12项第1至5章术语、章节状态和交叉引用检查，覆盖“正式结果占位、内部预演、候选材料、待核实分析提纲、采证提纲、final_coding.csv、SOLO启发等级”等术语；
+- 新增 `09_quality/g8_04_prep_report.md`，汇总本轮标准术语、主要发现、已修订位置和下一步格式检查任务；
+- 更新 `08_manuscript/01_introduction.md`，将后续章节推进顺序从“正式结果、案例机制、教学转化”改为当前草稿状态下的“结果占位、案例候选、教学转化证据准备”；
+- 更新 `08_manuscript/02_theory.md`，将过时的“建立检索式、核验课程标准”下一步改为继续补齐SOLO全文、物理竞赛试题研究、方法文献和主张证据矩阵闭环；
+- 更新 `08_manuscript/03_methods.md`，将两处仍指向“内部预演结果”的第四章说明改为“正式结果占位与证据边界说明”；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-04-PREP` 已完成，并将下一最小任务调整为 `G8-04-FORMAT-LITE`；
+- 本轮不生成正式统计、不制作正式图表、不选择正式案例、不补造 `final_coding.csv`、评分者数据、教师数据、学生数据或课堂证据，也不提交Git。
+
+## 2026-07-14：G8-03-APPLY-LITE 第4章与第5章轻量正文处理
+
+- 更新 `08_manuscript/04_results.md`，将第四章改为“正式结果占位与边界说明”，保留第35至42届、219个分析单元和154条待核项等语料结构事实，删除具体内部维度分布、等级分布、共现计数和P0/P1复核数量的正文报告；
+- 更新 `08_manuscript/05_cases_and_diagnosis.md`，将候选案例表改为候选材料清单，将模型建构、科学推理、科学论证和质疑创新案例段落改为待核实分析提纲，将教师/学生困难表改为采证提纲；
+- 新增 `09_quality/g8_03_apply_lite_revision_log.csv`，登记8项正文修订、关联处理建议、证据边界和剩余工作；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-03-APPLY-LITE` 已完成，并将下一最小任务调整为 `G8-04-PREP` 术语、编号、交叉引用和格式统一审计；
+- 本轮不改第1至3章、不生成正式统计、不制作正式图表、不补造 `final_coding.csv`、评分者数据、教师数据、学生数据或课堂证据，也不提交Git。
+
+## 2026-07-14：G8-03-FOLLOWUP 第1至5章内部数字句处理建议
+
+- 新增 `09_quality/g8_03_followup_manuscript_number_actions.csv`，逐章登记40条正文数字、候选案例和结果性句子的处理建议，标明保留、维持边界、改为占位、移入质量说明、移入候选材料或后续删除条件；
+- 新增 `09_quality/g8_03_followup_manuscript_number_report.md`，汇总第1至3章可保留的准备事实、第4章正式稿需收缩的内部预演数字、第5章需降为候选池或采证提纲的案例和教学困难表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G8-03-APPLY-LITE`；
+- 本轮不改写正文、不生成正式统计、不制作正式图表、不补造 `final_coding.csv`、评分者数据、教师数据、学生数据或课堂证据。
+
+## 2026-07-14：G8-03-PREP 统计与图表可复现检查准备
+
+- 新增 `09_quality/g8_03_result_reproducibility_gate.csv`，建立20项数字、图表和结果性表述门禁清单，覆盖语料范围、219个分析单元、154条待核项、876条内部试编码记录、正式门槛、维度分布预演、等级分布预演、共现预演、分组比较预演、P0/P1复核、典型案例候选、教学转化种子和正式图表占位；
+- 新增 `09_quality/g8_03_result_reproducibility_report.md`，说明哪些内容可作为语料或准备事实，哪些必须降格为内部预演，哪些正式图表必须等待 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G8-03-FOLLOWUP`；
+- 本轮不改写正文、不生成正式统计、不制作正式图表、不把内部预演数字写成正式结果，也不补造评分者、教师、学生或课堂证据。
+
+## 2026-07-14：G8-02-BIB-LITE 正式参考文献候选清单与占位映射
+
+- 新增 `09_quality/g8_02_bib_lite_mapping.csv`，将 `CS-001`、`ST-002`、`ST-003`、`ST-005`、`ST-006` 和 `METH-004` 映射到 `references.bib` 条目、正文占位分布、可支持主张、禁止外推边界、格式缺口和后续动作；
+- 新增 `09_quality/g8_02_bib_lite_exclusion_register.csv`，明确 `SOLO-001/002`、`PCOMP-001` 至 `PCOMP-005`、`METH-001/002/003/005`、`ST-001/ST-004` 当前不得进入正式候选参考文献清单；
+- 新增 `09_quality/g8_02_bib_lite_report.md`，汇总六项正式候选、排除项、学校格式缺口和下一最小任务；
+- 更新 `02_literature/references.bib` 文件说明，将其定位为工作版BibTeX清单，并标注 `biggs1982solo` 与 `biggs1989solo` 仍为全文待读工作候选；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G8-03-PREP`；
+- 本轮不改写正文、不生成最终学校格式参考文献、不补造页码/图表号，也不把待读全文来源加入正式候选清单。
+
+## 2026-07-14：G8-02-APPLY-LITE 第1至5章保守引用占位接入
+
+- 更新 `08_manuscript/01_introduction.md`，为课程标准依据、任务要求与学生能力边界、教学转化边界、文献综述线索和研究内容中的一致性报告/教学转化设计补充保守来源ID占位；
+- 更新 `08_manuscript/02_theory.md`，将 `CS-001`、`ST-002`、`ST-003`、`METH-004`、`ST-005`、`ST-006` 接入科学思维四维度、任务要求边界、两层编码报告边界和理论框架图；
+- 更新 `08_manuscript/03_methods.md`，为研究对象边界、评分者一致性报告流程、正式编码数据处理、教学转化设计和质量控制补充来源ID占位；
+- 更新 `08_manuscript/04_results.md`，只为内部预演结果的解释边界和正式结果章质量报告边界补充来源ID占位，不用外部文献支撑内部数字；
+- 更新 `08_manuscript/05_cases_and_diagnosis.md`，为科学论证案例设计和教学转化任务—支架—评价链条补充 `ST-005`、`ST-006` 占位，同时保留“不证明教学效果”的边界；
+- 新增 `09_quality/g8_02_apply_lite_revision_log.csv`，登记9处引用占位修订、关联来源、支持主张和保留边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G8-02-BIB-LITE`；
+- 本轮不新增文献池、不写未复核页码或图表号、不把SOLO/物理竞赛/METH其余待读全文来源写成正式综述，也不提交Git。
+
+## 2026-07-14：G8-02-VERIFY-FIRST 优先来源版本与支撑语句核验
+
+- 新增 `09_quality/g8_02_verify_first_report.md`，汇总 `CS-001`、`ST-002`、`ST-003`、`ST-005`、`ST-006` 和 `METH-004` 的版本核验结论、可支持正文语句和禁止外推边界；
+- 新增 `09_quality/g8_02_verify_first_sources.csv`，逐项记录6个优先来源的候选参考文献格式、在线或本地证据、页码/定位状态、允许使用范围、禁止使用范围和后续动作；
+- 更新 `08_manuscript/reference_readiness_register.csv`，将 `ST-002`、`ST-003`、`ST-005`、`ST-006` 和 `METH-004` 从候选状态升级为“限边界性引用”，同时保留出版社PDF、补充材料、图表编号或中外框架边界的后续复核要求；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G8-02-APPLY-LITE`；
+- 本轮不改写正文、不新增文献池、不把待读全文来源写成正式综述，不补造页码、图表号、学校引用格式或教学效果证据。
+
+## 2026-07-14：G8-02-PREP 第1至5章引文核验入口表
+
+- 新增 `09_quality/g8_02_citation_verification_entry.md`，说明第1至5章引文核验范围、四类判定口径、分章使用边界、不能继承的原初稿引文内容和下一最小任务；
+- 新增 `09_quality/g8_02_citation_verification_entry.csv`，逐项登记23类正文相关来源，将其分为6项“可引用”、2项“只能作线索”、13项“待读全文”和2项“不得引用”，并写明允许用途、禁止用途、补证动作和证据文件；
+- 新增 `09_quality/g8_02_citation_action_queue.csv`，把 `CS-001`、`ST-002`、`ST-003`、`ST-005`、`ST-006` 和 `METH-004` 列为优先版本/页码/正文支撑语句复核对象；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G8-02` 标为进行中，并把下一最小任务调整为 `G8-02-VERIFY-FIRST`；
+- 本轮不改写正文、不新增参考文献、不进行外部检索、不把题录/摘要/预览/工作版bib写成正式引用，也不提交Git。
+
+## 2026-07-14：G8-01-APPLY 第1至5章正文降格修订
+
+- 更新 `08_manuscript/01_introduction.md`，将研究内容改为计划性表述，明确无真实教师或课堂证据时第五章只能保留为教学转化设计建议，并将方法价值表述降格为减少混淆风险；
+- 更新 `08_manuscript/02_theory.md`，区分课程标准已核验与SOLO/方法/竞赛文献未全文核验，将“两层编码”从方法贡献降格为设计意图，保留真实评分者一致性和分歧裁决门槛；
+- 更新 `08_manuscript/03_methods.md`，明确Codex内部预审不是专家效度证据，A/B空白模板不能写成真实评分者数据，第三章仍为研究设计与准备状态；
+- 更新 `08_manuscript/04_results.md`，将章节标题改为“内部预演结果”，把维度分布、等级分布、共现模式和分组比较解释降格为预演观察、候选检查路径和风险提示；
+- 更新 `08_manuscript/05_cases_and_diagnosis.md`，将章节标题改为“典型试题机制与教学转化证据准备”，把候选案例、质疑创新判断和教学错位诊断收束为待复核线索与证据需求；
+- 新增 `09_quality/g8_01_apply_revision_log.csv`，记录5项正文降格修订、关联队列、修订后证据边界和未完成事项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录 `G8-01-APPLY` 已完成，并把下一最小任务调整为 `G8-02-PREP` 引文逐条核验入口表；
+- 本轮不生成正式编码结果、不选择正式案例、不写教学验证、不补造专家/教师/学生/问卷/课堂/显著性证据，也不提交Git。
+
+## 2026-07-14：G8-01-PREP 跨章节主张—证据预审
+
+- 新增 `09_quality/cross_chapter_claim_audit_prep.md`，对第1至5章草稿进行跨章节证据体检，明确可保留、需降格、待补证和必须删除/不得出现的主张类型；
+- 新增 `09_quality/cross_chapter_claim_audit_prep.csv`，逐条登记25项章节主张或文本风险，包括第一章研究空白候选、第二章SOLO边界、第三章专家/评分者流程、第四章内部预演数字、第五章候选案例和教师/课堂证据缺口；
+- 新增 `09_quality/cross_chapter_revision_queue.csv`，形成12项后续正文降格修订队列，优先处理第四章内部预演结果、第五章质疑创新和教师/学生困难、第三章专家审查与真实评分者边界；
+- 更新 `09_quality/claim_evidence_matrix.csv`，补充 `C3-01`、`C3-02`、`C4-01`、`C4-02`、`C5-01`、`C5-02` 和 `CX-01`，把第三章至第五章及跨章节禁止继承主张纳入证据矩阵；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G8-01` 标为进行中，记录 `G8-01-PREP` 已完成，并把下一最小任务调整为 `G8-01-APPLY` 第一轮正文降格修订；
+- 本轮不改写第1至5章正文，不生成正式结果，不补造专家、评分者、教师、学生、问卷、课堂、显著性或参考文献证据。
+
+## 2026-07-14：G7-08-PREP 参考文献、附录和数据说明预备清单
+
+- 新增 `08_manuscript/g7_08_reference_appendix_data_prep.md`，汇总第1至5章当前正文状态、参考文献使用原则、附录候选结构、数据说明边界和后续定稿入口；
+- 新增 `08_manuscript/reference_readiness_register.csv`，区分课程标准、SOLO理论、物理竞赛研究、科学思维测评、科学论证教学、科学实践框架和方法文献的可引用状态、允许用途、禁止用途和下一步补证要求；
+- 新增 `08_manuscript/appendix_material_register.csv`，登记语料来源、小问索引、编码定义、评分者交接、正式编码模板、风险门槛、图表脚本、教师课堂模板和主张证据矩阵等附录候选；
+- 新增 `08_manuscript/data_availability_prep_register.csv`，登记原始初稿材料、复赛试题语料、小问级索引、人工校对清单、内部编码数据、正式空白模板、正式分析表缺口、分析脚本、教师课堂数据缺口和主张证据矩阵的数据可用性边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G7-08` 标为进行中，并把下一最小任务调整为 `G8-01-PREP` 跨章节主张—证据预审；
+- 本轮不新增参考文献，不补造正式附录，不定稿数据可用性声明，不写正式编码结果、教师/课堂证据、教学效果或学校格式要求。
+
+## 2026-07-14：G7-05-PREP 第一章绪论证据边界版
+
+- 更新 `08_manuscript/01_introduction.md`，将原占位稿扩展为第一章证据边界版，包含研究背景与问题提出、核心概念与研究边界、文献综述线索、研究问题、研究内容、技术路线、研究价值和创新候选；
+- 新增 `09_quality/chapter1_intro_evidence_boundary.csv`，逐条登记第一章可使用主张、证据等级、允许写法、禁止写法和后续补证要求；
+- 更新 `09_quality/claim_evidence_matrix.csv`，新增 `C1-01` 至 `C1-06`，覆盖课程标准依据、小问级语料基础、试题任务要求与学生能力边界、SOLO启发表述、研究空白候选和创新候选边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G7-05` 标为进行中，并把下一最小任务调整为 `G7-08-PREP` 参考文献、附录和数据说明预备清单；
+- 本轮不写正式统计结果、不引用未核验文献结论、不写教师/课堂效果、不写显著性结论、不把内部预演或原初稿数字作为正式论文发现。
+
+## 2026-07-14：G4-01-PREP-LOCK 评分者交接包冻结
+
+- 新增 `04_framework/rater_handoff_lock_v1.md`，冻结评分者交接包的文件清单、阅读顺序、发放前检查、回收入口规则和后续出口；
+- 新增 `04_framework/rater_handoff_lock_manifest.csv`，逐项登记本次交接冻结包的材料、接收对象、使用边界和下一步动作；
+- 新增 `04_framework/rater_independent_coding_instructions_v1.md`，明确评分者A/B独立填写要求、可用判断依据、字段取值、待核实处理和提交前自查；
+- 新增 `04_framework/rater_handoff_file_rules.csv`，规定A/B模板发放、回收、检查、一致性、分歧日志和裁决文件的命名规则；
+- 新增 `04_framework/rater_handoff_unresolved_risks.csv`，列出人工校对未销项、真实评分者缺失、一致性未发生、裁决未发生、内部预演误用、教师课堂证据缺失、文献全文核验不完整和学校规范缺失等风险；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G4-01-PREP-LOCK` 标记为完成，并把下一最小任务调整为 `G7-05-PREP` 第一章绪论证据边界草稿；
+- 本轮不启动真实评分者编码、不填写A/B模板、不计算一致性、不裁决分歧、不生成正式结果表，也不把内部预演写成正式论文结论。
+
+## 2026-07-14：G3-04-QA 评分者培训包索引与字段对齐
+
+- 新增 `04_framework/rater_training_package_index.md` 和 `04_framework/rater_training_package_index.csv`，将分析单位定义、codebook草案、评分者培训手册、边界案例库、证据分歧协议、A/B正式空白模板、裁决模板和回收核对表整理为可交接包；
+- 新增 `04_framework/rater_training_field_alignment_audit.csv`，逐字段检查 `formal_coding_rater_A/B_template.csv`、`formal_adjudication_template.csv`、评分者培训手册、证据协议和回收核对表之间的对应关系；
+- 新增 `04_framework/rater_training_return_checklist.csv`，规定交接前、A/B模板回收、分歧裁决前后需要检查的记录数、字段取值、证据完整性、版本信息、待核实标记和复制内部预演风险；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G3-04-QA` 记录为完成，并把下一最小任务调整为 `G4-01-PREP-LOCK` 评分者交接包冻结；
+- 本轮不启动真实评分者编码、不回填A/B模板、不生成分歧清单、不计算一致性、不形成正式论文结果。
+
+## 2026-07-14：G3-04-DRAFT 评分者培训版手册候选稿
+
+- 新增 `04_framework/rater_training_manual_formal_draft.md`，将分析单位、维度定义、等级边界、字段填写、停止条件和分歧处理顺序整理为评分者培训版候选稿；
+- 新增 `04_framework/boundary_case_bank_formal_draft.csv`，从 P0/P1 内部复核风险、证据补强清单和人工校对队列中抽取16个训练候选案例，用于训练 L3/L4 边界、质疑创新触发条件、证据薄弱和材料待核实处理；
+- 新增 `04_framework/evidence_note_and_disagreement_protocol_formal_draft.md`，规定证据摘记最低格式、可接受/不可接受证据、把握度、分歧类型、裁决记录字段和正式统计入口规则；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G3-04` 继续标为进行中，并把下一最小任务调整为 `G3-04-QA` 培训包字段对齐与回收核对表；
+- 本轮不进行真实评分者编码、不计算一致性、不裁决分歧、不把边界案例写作正式结果。
+
+## 2026-07-14：G3-01/G3-02/G3-03-DRAFT 分析单位与编码定义正式草案
+
+- 新增 `04_framework/analysis_unit_and_coding_definitions_formal_draft.md`，从内部冻结版手册抽取分析对象、分析单位、拆分/合并规则、纳入排除规则、证据优先级、科学思维四维度操作性定义和SOLO启发等级定义；
+- 新增 `04_framework/codebook_v2_formal_draft.csv`，将16个维度-等级指标整理为正式草案版 codebook，并为每项写入待真实评分者试编码和导师确认的使用边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G3-01`、`G3-02`、`G3-03` 标为进行中，明确当前只是正式草案，不是正式编码手册V2冻结版；
+- 下一最小任务调整为 `G3-04-DRAFT`：补充边界案例、证据摘记格式、分歧记录规则和正式评分者模板字段对齐；
+- 本轮不进行正式编码、不计算一致性、不把内部预演结果或草案定义写成正式论文结果。
+
+## 2026-07-14：G0-03-PREP 学校规范索取清单与登记表
+
+- 新增 `01_positioning/school_requirements_request_packet.md`，整理学校论文模板、写作规范、字数、引用格式、匿名评审、查重、AI使用声明、伦理要求、优秀论文标准和提交流程的索取清单；
+- 新增 `01_positioning/school_requirements_register.csv`，为后续收到学校或学院文件后的来源、版本、适用范围、影响文件、状态和下一步动作建立登记表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G0-03` 标为进行中，明确本轮只完成准备机制，不代表已经获得学校模板、引用规范、匿名评审规则或优秀论文评审细则；
+- 下一最小任务调整为 `G3-01/G3-02/G3-03`，将分析单位、排除规则、科学思维维度和SOLO启发等级从内部手册抽出为正式草案；若作者提供学校规范文件，则优先回到 `G0-03` 登记并更新格式门槛；
+- 本轮不改写论文正文，不预设学校字数、引用格式、匿名处理范围、AI披露文本或优秀论文评分细则。
+
+## 2026-07-14：G0-02-INTERNAL 路线A/B/C内部收敛备忘
+
+- 新增 `01_positioning/route_convergence_memo.md`，基于当前语料、正式编码准备、人工校对风险、文献全文缺口、教师/课堂证据缺口和G0-04/G0-05边界，对路线A、路线B、路线C进行内部收敛判断；
+- 更新 `01_positioning/scope_decision_memo.md`，将模板改为当前项目的实际范围备忘，记录已有资料、缺失资料、路线A/B/C可行性、风险和内部建议；
+- 更新 `01_positioning/title_decision.md`，把方案A标为默认工作题目，方案B标为有真实课堂材料时的条件性升级题目，方案C标为当前不建议默认使用；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G0-02` 标为进行中，明确当前只是内部路线收敛，不等同于导师正式确认；下一最小任务调整为 `G0-03-PREP` 学校模板与优秀论文标准索取清单；
+- 本轮不写论文正文，不伪造导师意见、教师数据、课堂材料、专家审查、问卷结果、准实验或显著性结论。
+
+## 2026-07-14：G0-05 伦理与数据管理方案
+
+- 升级 `DATA_MANAGEMENT.md`，将原有简要原则扩展为全项目数据分级、采集前门槛、知情同意、匿名化、清洗版本、公开复现包、正文写作门槛和AI工具使用边界；
+- 新增 `05_fieldwork/ethics_and_data_management_plan.md`，明确教师访谈、问卷、专家咨询、课堂设计型研究和准实验/前后测的最低证据包、路线分流、匿名编号、正文可用性判定和暂不执行事项；
+- 新增 `05_fieldwork/consent_log.csv`、`05_fieldwork/data_collection_log.csv` 和 `06_teaching_validation/classroom_data_manifest.csv`，作为后续真实同意记录、采集记录和课堂材料登记的空白模板；
+- 更新 `05_fieldwork/consent_template.md`，补充研究目的、参与内容、自愿退出、隐私匿名化、录音、数据保存和成果使用说明；
+- 更新 `.gitignore`，排除 `99_private_data/`、田野/课堂私有原始材料目录、私有身份对应表和常见音视频文件，避免真实姓名、联系方式、签名、录音、录像和未匿名学生作品进入公开仓库；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G0-05` 标为完成，并把下一最小任务调整为 `G0-02` 路线A/B/C内部收敛备忘；
+- 本轮不进行真实招募、问卷发放、访谈、课堂实施、学生作品收集、前后测、专家意见回收或任何显著性检验。
+
+## 2026-07-14：G0-04 初稿不可继承数字与表述清单
+
+- 新增 `01_positioning/non_inheritable_claims_inventory.md`，逐类登记原始初稿、问卷初稿和汇报PPT中不得直接进入新版论文的年份、试题统计、SOLO趋势、专家验证、问卷结果、教学实验、显著性结论、前后测均值、参考文献和模板化致谢；
+- 更新 `09_quality/unverified_claims.csv`，补登记复赛英文误译、2020至2027届次年份、力学40%至50%、情境复杂度趋势、SOLO跃迁、得分率/区分度相关、问卷结果、平行班实验、测评卷信效度、八周干预、四组前后测均值/t值/p值、分层提升和未核验参考文献；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G0-04` 标为完成，并把下一最小任务调整为 `G0-05` 伦理与数据管理方案；
+- 本轮不改写论文正文，不补造数据、文献、问卷、课堂、专家意见或显著性结果；所有初稿结果性表述仍为E0，不得作为正式论文结论。
+
+## 2026-07-14：G2-04-FULLTEXT-ACCESS 物理竞赛研究文献访问审计
+
+- 新增 `02_literature/physics_competition_access_audit.md`，记录 `PCOMP-001` 至 `PCOMP-005` 的合法访问状态、来源线索、排除边界、获取优先级和写作边界；
+- 更新 `02_literature/physics_competition_fulltext_request_packet.md`，加入二次请求文本，并将后续获取优先级调整为先取 `PCOMP-002` 与 `PCOMP-003` 学位论文全文；
+- 更新 `02_literature/physics_competition_screening_matrix.csv`、`reference_verification.csv`、`literature_matrix.csv`、`search_log.csv` 和 `09_quality/claim_evidence_matrix.csv`，将 `PCOMP-001` 与 `PCOMP-005` 标为仅有CNKI题录和《物理教学》目录线索，将 `PCOMP-002`、`PCOMP-003`、`PCOMP-004` 标为仅有CNKI引用/题录线索；
+- 补登记 `PCOMP-005` 到文献核验表和文献矩阵，明确其为单题赏析候选，不作为系统综述核心证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G0-04` 建立不可使用的初稿数字与表述清单；
+- 本轮未新增已读全文，不能转述候选文献的样本范围、统计结果、研究结论、教学建议或研究空白。
+
+## 2026-07-14：G2-METHOD-ACCESS-REST 方法文献二次访问审计
+
+- 更新 `02_literature/content_analysis_reliability_access_audit.md`，补充 `METH-001`、`METH-002`、`METH-003`、`METH-005` 的二次合法访问审计、精确获取路径和排除来源；
+- 更新 `02_literature/content_analysis_reliability_fulltext_request_packet.md`，加入二次请求文本，并将后续动作调整为申请剩余四项全文或关键章节；
+- 更新 `02_literature/content_analysis_reliability_screening_matrix.csv`、`reference_verification.csv`、`literature_matrix.csv` 和 `search_log.csv`，明确 Google Books 只支持书目/目录/预览核验，SAGE/JSTOR/PubMed/OpenAIRE/Semantic Scholar 只支持题录、摘要或访问状态核验；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G2-METHOD-ACCESS-REST` 标为完成，并把下一步调整为 `G2-04-FULLTEXT-ACCESS` 物理竞赛试题研究候选文献全文获取审计；
+- 本轮未新增已读全文；不得将非授权PDF、Sci-Hub/Scribd链接、Google Books预览或SAGE受限页写成正式方法依据。
+
+## 2026-07-14：G2-05-ACCESS-ST001-ST004 二次访问审计
+
+- 更新 `02_literature/scientific_thinking_access_audit.md`，补充 ST-001 的 PER-Central、PhysPort、Wiley 精确线索，以及 ST-004 的 ScienceDirect、PubMed、PMC 精确线索；
+- 更新 `02_literature/scientific_thinking_fulltext_request_packet.md`，加入 ST-001/ST-004 精确图书馆/馆际互借请求文本；
+- 更新 `scientific_thinking_screening_matrix.csv`、`reference_verification.csv`、`literature_matrix.csv` 和 `search_log.csv`，把 ST-001 标为“PER-Central/PhysPort线索已定位但全文未获”，把 ST-004 标为“ScienceDirect预览与PubMed摘要已核验但全文未读”；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一步调整为在外部权限未到位时并行推进方法文献或物理竞赛研究全文获取；
+- 本轮没有新增已读全文，不把 PhysPort 摘要、PER-Central题录或 ScienceDirect预览写成正式综述结论。
+
+## 2026-07-14：G2-05-READ-ST002 与剩余科学思维文献访问审计
+
+- 新增 `02_literature/scientific_thinking_st002_reading_notes.md`，完成 Bao 等 (2009) 作者个人站点PDF阅读，并通过 PubMed 核验题录；
+- 新增 `02_literature/scientific_thinking_access_audit.md`，审计 ST-001、ST-002 和 ST-004 的全文访问状态；
+- 更新 `scientific_thinking_screening_matrix.csv`、`reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`concept_map_and_gap_candidates.md` 和 `claim_evidence_matrix.csv`；
+- 将 ST-002 纳入 `C2-02` 的部分核验，支持区分内容知识、科学推理测评表现和试题任务要求；
+- 明确 ST-001 仍未获全文，ST-004 仅完成 PubMed 摘要/题录核验，均不得转述为已读全文结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为获取 ST-001 与 ST-004 全文，或并行推进方法文献/物理竞赛文献全文获取。
+
+## 2026-07-14：G2-05-READ-ST005 科学论证教学文献全文摘录
+
+- 新增 `02_literature/scientific_thinking_st005_reading_notes.md`，完成 Osborne、Erduran 与 Simon (2004) 关于科学课堂论证教学与评价支架的UCL开放仓储PDF阅读；
+- 更新 `02_literature/scientific_thinking_fulltext_request_packet.md` 和 `scientific_thinking_screening_matrix.csv`，将 `ST-005` 标为已读UCL开放仓储PDF，并记录版本复核风险；
+- 更新 `02_literature/reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`02_literature/concept_map_and_gap_candidates.md` 和 `09_quality/claim_evidence_matrix.csv`，为 `C2-06` 补充科学论证教学中的任务、支架和评价框架证据；
+- 该文可支持第五章教学转化需具备竞争性任务、证据材料、教师追问、写作框架和论证质量评价，但不能作为物理竞赛教学策略有效性、学生能力提升或本项目课堂验证完成的证据。
+
+## 2026-07-14：G2-05-READ-ST006 科学实践框架官方文本摘录
+
+- 新增 `02_literature/scientific_thinking_st006_reading_notes.md`，完成 NGSS Appendix F 官方在线章节阅读，提取科学与工程实践、任务表现、评价对象和中外框架可比边界；
+- 更新 `02_literature/scientific_thinking_screening_matrix.csv`，将 `ST-006` 标为已读官方在线章节，并记录摘录文件、证据要点和剩余风险；
+- 更新 `02_literature/reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`02_literature/concept_map_and_gap_candidates.md` 和 `09_quality/claim_evidence_matrix.csv`，将 `C2-06` 从“待核验”调整为“部分核验”；
+- 该文本仅作为科学与工程实践、任务表现和评价量规的国际框架参照，不能替代中国普通高中物理课程标准，不能证明物理竞赛教学策略有效，也不能代替真实教师、课堂或学生作品证据。
+
+## 2026-07-14：G2-05-READ-ST003 科学思维测评文献全文摘录
+
+- 新增 `02_literature/scientific_thinking_st003_reading_notes.md`，完成 Bao 等 (2022) 关于科学思维与科学推理理论模型及量化测评的开放全文内容摘录；
+- 更新 `02_literature/scientific_thinking_screening_matrix.csv`，新增阅读状态、摘录文件、证据要点和剩余风险字段，并将 `ST-003` 标为已完成开放全文内容阅读；
+- 更新 `02_literature/reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib` 和 `09_quality/claim_evidence_matrix.csv`，将 `C2-02` 从“待核验”调整为“部分核验”，并把 `ST-003` 作为 `C2-04` 的辅助参照；
+- 该文仅支持区分任务认知要求、学生作答表现和量化测评模型，不能替代中国课程标准、不能证明本项目编码框架有效，也不能说明学生实际能力或教学效果；正式引用前仍需人工下载APS PDF复核页码和图表编号。
+
+## 2026-07-14：G2-METHOD-READ-METH004 方法文献全文摘录
+
+- 新增 `02_literature/content_analysis_reliability_meth004_reading_notes.md`，完成 Lombard、Snyder-Duch 与 Bracken (2002) 关于内容分析编码者一致性评估与报告的全文方法摘录；
+- 更新 `02_literature/content_analysis_reliability_screening_matrix.csv`，新增阅读状态、摘录文件、方法要点和剩余风险字段，并将 `METH-004` 标为已读全文；
+- 更新 `02_literature/reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib` 和 `09_quality/claim_evidence_matrix.csv`，将 `C2-04` 从“待核验”调整为“部分核验”；
+- 该文仅支持逐变量一致性报告、指标选择说明、训练/样本/分歧处理记录等方法边界，不能证明本项目编码框架有效，不能替代真实评分者数据，也不能直接确定本项目一致性阈值。
+
+## 2026-07-14：G2-METHOD-ACCESS-AUDIT 方法文献合法获取审计
+
+- 新增 `02_literature/content_analysis_reliability_access_audit.md`，记录 `METH-001` 至 `METH-005` 的合法访问状态、来源线索、排除线索、阅读顺序和写作边界；
+- 更新 `02_literature/content_analysis_reliability_screening_matrix.csv`、`reference_verification.csv`、`literature_matrix.csv` 和 `search_log.csv`，将 `METH-004` 标为有开放仓储线索、可优先安排合法全文阅读，将 `METH-001`、`METH-002`、`METH-003`、`METH-005` 标为仍需机构权限或馆际互借；
+- 更新 `02_literature/content_analysis_reliability_fulltext_request_packet.md`、`PROJECT_STATUS.md` 和 `TASKS.md`，将下一步调整为优先阅读 `METH-004` 并继续申请其余方法文献全文；
+- 当前仍不得写成已阅读全文、已完成方法综述、已确定一致性阈值或已形成第三章正式方法结论。
+
+## 2026-07-14：G2-METHOD-FULLTEXT-PACKET 方法文献全文获取包
+
+- 新增 `02_literature/content_analysis_reliability_fulltext_request_packet.md`，整理 `METH-001` 至 `METH-005` 的全文获取优先级、图书馆/导师请求文本、获取后阅读记录模板、阅读问题和写作边界；
+- 新增 `02_literature/content_analysis_reliability_screening_matrix.csv`，为内容分析、codebook、评分者一致性和kappa解释等方法候选文献建立筛选决策、综述角色、待提取字段和正文边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一步调整为合法获取全文并填写方法文献筛选矩阵；
+- 当前仍不得写成已获全文、已完成方法综述、已确定一致性阈值或已验证本项目编码框架。
+
+## 2026-07-14：G2-06-CLAIMS 主张证据矩阵与方法文献候选
+
+- 更新 `09_quality/claim_evidence_matrix.csv`，新增 `C2-02`、`C2-04`、`C2-05`、`C2-06`，全部标为“待核验”，分别对应任务要求/学生能力边界、两层编码方法依据、竞赛试题研究空白候选和教学转化边界；
+- 新增 `02_literature/content_analysis_reliability_review_prep.md`，整理内容分析、编码手册、评分者一致性和一致性报告方法文献候选；
+- 更新 `02_literature/search_log.csv`，新增5条方法文献定位记录，覆盖Krippendorff内容分析、Cohen kappa、Landis & Koch分类一致性、Lombard等编码者一致性报告和Neuendorf内容分析指南；
+- 更新 `02_literature/reference_verification.csv` 与 `02_literature/literature_matrix.csv`，新增 `METH-001` 至 `METH-005` 及对应文献矩阵记录；当前均为候选或全文待读状态，不能作为正式方法结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一步调整为方法文献全文获取请求包和筛选矩阵。
+
+## 2026-07-14：G2-06-PREP 概念关系图与研究空白候选清单
+
+- 新增 `02_literature/concept_map_and_gap_candidates.md`，基于课程标准、SOLO阶段性来源核验、物理竞赛试题研究候选来源、科学思维测评与教学研究候选来源，整理概念关系图和研究空白候选清单；
+- 文件明确区分课程标准E2证据、SOLO/竞赛/科学思维候选E1证据和项目内部准备材料，避免把候选文献线索写成已证明研究空白；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G2-06` 标为进行中，并把下一步调整为主张—证据矩阵补充和内容分析/评分者一致性方法文献核验。
+
+## 2026-07-14：G2-05-FULLTEXT-PACKET 科学思维测评与教学研究全文获取包
+
+- 新增 `02_literature/scientific_thinking_fulltext_request_packet.md`，整理ST-001至ST-006的全文获取优先级、图书馆/导师请求文本、获取后阅读记录模板和写作边界；
+- 新增 `02_literature/scientific_thinking_screening_matrix.csv`，为科学思维测评与教学研究候选文献建立筛选决策、综述角色、待提取字段和写作边界；
+- 更新 `02_literature/scientific_thinking_review_prep.md`，将后续动作指向全文获取包和筛选矩阵；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，明确 `G2-05` 仍为进行中，当前尚未获得全文或完成正式综述。
+
+## 2026-07-14：G2-05-PREP 科学思维测评与教学研究综述准备
+
+- 新增 `02_literature/scientific_thinking_review_prep.md`，记录科学思维测评、科学推理、控制变量任务、科学论证教学和国际科学实践框架的候选来源与写作边界；
+- 更新 `02_literature/search_log.csv`，新增6条G2-05实际定位记录，覆盖Lawson形式推理测验、Bao等科学推理与科学思维测评研究、Zhou等控制变量推理任务、Osborne等科学论证教学和NGSS科学实践框架；
+- 更新 `02_literature/reference_verification.csv`，新增 `ST-001` 至 `ST-006` 作为候选来源；当前均不得直接写成正式综述结论；
+- 更新 `02_literature/literature_matrix.csv`，新增 `LM-ST-001` 至 `LM-ST-006`，以“全文待读”状态登记研究问题、理论、样本、方法和边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G2-05` 标为进行中；本轮不完成正式综述，不写入论文正文结论。
+
+## 2026-07-14：G2-04-FULLTEXT-PACKET 物理竞赛试题研究全文获取包
+
+- 新增 `02_literature/physics_competition_fulltext_request_packet.md`，整理PCOMP-001至PCOMP-005的全文获取优先级、图书馆/导师请求文本、获取后阅读记录模板和写作边界；
+- 新增 `02_literature/physics_competition_screening_matrix.csv`，为物理竞赛试题研究候选文献建立筛选决策、综述角色、待提取字段和写作边界；
+- 更新 `02_literature/physics_competition_review_prep.md`，将后续动作指向全文获取包和筛选矩阵；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，明确 `G2-04` 仍为进行中，当前尚未获得全文或完成正式综述。
+
+## 2026-07-14：G2-04-PREP 物理竞赛试题研究综述准备
+
+- 新增 `02_literature/physics_competition_review_prep.md`，记录物理竞赛试题研究的阶段性检索范围、候选文献、实践材料排除边界、初步综述结构和全文获取清单；
+- 更新 `02_literature/search_log.csv`，新增5条G2-04实际定位记录，覆盖预赛卷量化分析、复赛SOLO研究、竞赛试题整体研究、核心素养视角和复赛单题赏析线索；
+- 更新 `02_literature/reference_verification.csv`，新增 `PCOMP-001` 至 `PCOMP-004` 作为候选来源；当前均未获全文，不可转述结论；
+- 更新 `02_literature/literature_matrix.csv`，新增 `LM-PCOMP-001` 至 `LM-PCOMP-004`，以“全文待读”状态登记研究问题、样本和方法待核字段；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G2-04` 标为进行中；本轮不完成正式综述，不写入论文正文结论。
+
+## 2026-07-14：G2-03B-FULLTEXT-PACKET SOLO全文获取请求包
+
+- 新增 `02_literature/solo_fulltext_request_packet.md`，整理Biggs与Collis 1982年SOLO原书和1989年SOLO课程开发/评价论文的全文获取请求清单；
+- 写入可直接发送给图书馆/馆际互借和导师的请求文本，并附获取后阅读记录模板、重点摘录问题和正文写作边界；
+- 更新 `02_literature/solo_fulltext_access_audit.md`，将后续动作指向请求包；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，明确该任务只完成全文获取准备，不代表已获得全文、阅读全文或完成SOLO理论定稿；
+- `G2-03` 仍为进行中；等待全文期间可并行启动 `G2-04` 物理竞赛试题研究综述准备。
+
+## 2026-07-14：G2-03B-ACCESS SOLO全文获取审计
+
+- 新增 `02_literature/solo_fulltext_access_audit.md`，记录SOLO原书与1989年SOLO课程开发/评价论文的公开全文获取情况；
+- 更新 `02_literature/search_log.csv`，新增两条全文获取审计记录，说明未发现稳定公开全文或全文需访问权限；
+- 更新 `02_literature/reference_verification.csv`，将 `SOLO-001` 与 `SOLO-002` 的全文状态改为需图书馆、出版社授权访问或学校数据库补齐；
+- 更新 `02_literature/solo_taxonomy_source_verification.md` 和 `08_manuscript/02_theory.md`，明确当前只能使用“SOLO启发”这一保守表述，不能写成全文已读或理论定稿；
+- `G2-03` 仍为进行中，下一步为 `G2-03B-FULLTEXT` 合法全文获取与关键页码摘录。
+
+## 2026-07-14：G2-03A SOLO理论来源阶段性核验
+
+- 新增 `02_literature/solo_taxonomy_source_verification.md`，记录SOLO理论来源的阶段性核验结果与后续全文阅读要求；
+- 更新 `02_literature/reference_verification.csv`，新增 `SOLO-001` 和 `SOLO-002`，分别记录Biggs与Collis 1982年SOLO原书和1989年SOLO用于课程开发与评价论文的出版信息；
+- 更新 `02_literature/literature_matrix.csv` 与 `02_literature/search_log.csv`，登记SOLO来源定位、摘要/简介层面的阶段性判断和全文待读边界；
+- 更新 `02_literature/references.bib`，新增 `biggs1982solo` 与 `biggs1989solo`，并标注正式引用前仍需补全文阅读页码；
+- 更新 `09_quality/claim_evidence_matrix.csv`，新增 `C2-03A`，明确本研究只能表述为“SOLO启发的任务认知结构要求等级”；
+- 更新 `08_manuscript/02_theory.md` 的2.2节，避免将试题编码直接写成学生学习结果等级；`G2-03` 仍未完成，后续需补原书全文阅读和任务/试题分析争议文献。
+
+## 2026-07-14：G2-02 课程标准中科学思维定义核验
+
+- 核验教育部官方通知页 `教育部关于印发普通高中课程方案和语文等学科课程标准（2017年版2020年修订）的通知`，定位附件包中的 `普通高中物理课程标准（2017年版2020年修订）.pdf`；
+- 新增 `02_literature/curriculum_standard_verification.md`，记录官方发布页、发文字号、附件、SHA-256、PDF页码和正文页码；
+- 更新 `02_literature/reference_verification.csv` 与 `02_literature/literature_matrix.csv`，新增课程标准官方来源记录 `CS-001` 与 `LM-CS-001`；
+- 更新 `02_literature/search_log.csv`，新增一条G2-02实际核验记录；更新 `02_literature/references.bib`，加入 `moe2020physicscurriculum`；
+- 更新 `09_quality/claim_evidence_matrix.csv`，新增 `C2-01`，说明科学思维四维度的课程标准依据与边界；
+- 更新 `08_manuscript/02_theory.md`，将2.1中四维度的官方依据由待补改为已登记来源；当前仍需补充SOLO理论、科学思维测评、内容分析方法和专家审查证据。
+
+## 2026-07-14：G2-01 文献数据库与检索式制定
+
+- 新增 `02_literature/search_strategy_g2_01.md`，制定第二章文献核验的数据库/来源组、主题块检索式、纳入排除标准、记录规则和完成判据；
+- 更新 `02_literature/search_log.csv`，登记14条计划检索式，覆盖课程标准、科学思维测评、SOLO理论、SOLO任务分析边界、物理竞赛试题研究、内容分析与评分者一致性、教学转化与设计型研究；
+- 明确本轮记录均为计划检索式，结果数为“待检索”，筛选数和纳入数为0，不代表已完成真实检索、文献筛选、全文阅读或引用核验；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G2-01` 标为完成，下一步调整为 `G2-02` 课程标准中科学思维定义核验。
+
+## 2026-07-14：G7-04-PREP 第二章文献与理论核验式草稿
+
+- 更新 `08_manuscript/02_theory.md`，将空章节扩展为第二章核验式理论草稿；
+- 写入科学思维四维度的暂定操作化方向，并明确该划分仍需课程标准和科学思维研究文献核验；
+- 写入SOLO理论的使用边界，强调本研究分析的是试题任务认知结构要求，不直接测量学生真实学习结果；
+- 写入小问级“两层编码”逻辑、维度与等级结构、正式使用条件和理论框架图；
+- 新增 `02_literature/literature_review_workplan.md`，列出第二章待核验主题块、核验流程、主张编号和禁止事项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G7-04` 与 `G2-01` 标为进行中；第二章仍需文献检索、全文阅读和引用核验后才能定稿。
+
+## 2026-07-14：G7-03-PREP 第五章案例机制与教学诊断预备稿
+
+- 更新 `08_manuscript/05_cases_and_diagnosis.md`，将空章节扩展为第五章内部预备稿；
+- 写入案例选择原则、内部候选案例池和案例进入正式正文的最低证据条件；
+- 基于 `batch10_typical_case_candidates.csv` 和已整理题干/解答文本，列出 CPHO35-Q08-4、CPHO36-Q07-4/5、CPHO39-Q05-3/4、CPHO42-Q07-3 等候选案例及其边界；
+- 写入模型建构、科学推理、科学论证和质疑创新四类案例分析路径，并明确候选案例不能替代正式双评分者编码、分歧裁决和人工校对销项；
+- 写入教师/学生困难证据缺口和教学错位诊断框架，明确当前不得书写真实教师观点、学生困难分布、课堂可行性或教学效果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G7-03` 标为进行中；第五章仍需正式编码、案例裁决、案例证据表和真实教师或课堂证据后才能定稿。
+
+## 2026-07-14：G4-01-PREP评分者交接检查与第三、四章草稿启动
+
+- 新增 `07_analysis/scripts/build_g4_01_prep_handoff.py`，检查评分者交接包是否具备最低条件；
+- 新增 `g4_01_prep_rater_package_index.csv`、`g4_01_prep_handoff_audit.csv` 和 `g4_01_prep_handoff_report.md`，确认评分者A/B模板和裁决模板均为876条记录，可进入评分者交接准备，但不能进入正式结果分析；
+- 更新 `08_manuscript/03_methods.md`，写入研究设计、语料来源、分析单位、编码手册、专家审查边界、试编码与一致性准备、正式编码流程、教师/课堂研究设计和质量控制；
+- 更新 `08_manuscript/04_results.md`，写入内部预演版语料特征、维度分布、等级分布、共现模式、分组比较占位、结果稳健性与边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G4-01-PREP` 标为完成，并将 `G7-01`、`G7-02` 标为进行中；第三、四章仍需正式编码结果后定稿。
+
+## 2026-07-14：G4-00W1—G4-00Y10 正式编码前30项准备任务
+
+- 新增 `07_analysis/scripts/build_formal_coding_prep30_outputs.py`，一键生成正式编码前30项准备输出；
+- 新增 `prep30_combined_review_master.csv`、`prep30_gate_register.csv`、`prep30_manual_priority_queue.csv`、`prep30_evidence_strengthening_master.csv`、`prep30_l4_review_master.csv`、`prep30_innovation_review_master.csv` 和 `prep30_confidence_review_master.csv`，汇总P0/P1建议、门槛、校对、证据、L4、质疑创新和把握度风险；
+- 新增 `07_analysis/data/formal_coding_rater_A_template.csv`、`formal_coding_rater_B_template.csv` 和 `formal_adjudication_template.csv`，作为真实评分者独立编码和后续裁决的空白模板；
+- 新增 `prep30_rater_briefing.md`、`prep30_adjudication_protocol.md`、`prep30_version_route.csv`、`prep30_rater_handoff_checklist.csv`、`prep30_formal_coding_field_validation.csv` 和 `prep30_disagreement_type_schema.csv`，用于评分者交接、版本控制、字段校验和分歧裁决准备；
+- 新增 `prep30_formal_output_placeholders.csv`、`prep30_claim_evidence_placeholders.csv`、`prep30_final_figure_table_placeholders.csv`、`prep30_manuscript_gate_table.csv`、`prep30_results_chapter_placeholder.md` 和 `prep30_teaching_evidence_gate.csv`，明确正式结果、图表、主张证据、结果章和教学转化仍需等待正式编码与真实证据；
+- 新增 `prep30_archive_manifest.csv`、`prep30_next_task_route.csv`、`prep30_analysis_readiness_report.md` 和 `prep30_completion_report.md`，记录归档、下轮任务、准备度和30项完成情况；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G4-00W1`—`G4-00Y10` 标为完成，并将下一步调整为 `G4-01-PREP` 评分者交接检查。
+
+## 2026-07-14：G4-00V1—G4-00V10 P1内部复核建议
+
+- 新增 `07_analysis/scripts/build_p1_internal_review_outputs.py`，对P1优先记录生成内部复核建议；
+- 新增 `07_analysis/results/reviewed/p1_internal_review_log.csv`，形成176条P1记录的建议版复核日志；
+- 新增 `p1_internal_revision_suggestions.csv`、`p1_l4_boundary_checklist.csv`、`p1_confidence_review_queue.csv` 和 `p1_manual_issue_linkage.csv`，分别记录P1修订建议、L4边界复核、中等把握度队列和人工校对联动；
+- 新增 `p1_internal_candidate_overlay.csv`、`p1_internal_impact_preview.csv`、`p1_item_review_summary.csv` 和 `p1_next_gate_plan.csv`，用于候选表覆盖、影响预演、题目汇总和后续门槛规划；
+- 新增 `p1_internal_review_report.md`，汇总P1范围、建议类型和正式边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G4-00V1`—`G4-00V10` 标为完成，并保留 `G4-01`、`G4-02` 等正式任务未完成。
+
+## 2026-07-14：G4-00U1—G4-00U10 P0内部复核建议
+
+- 新增 `07_analysis/scripts/build_p0_internal_review_outputs.py`，对P0优先记录生成内部复核建议；
+- 新增 `07_analysis/results/reviewed/p0_internal_review_log.csv`，形成120条P0记录的建议版复核日志；
+- 新增 `07_analysis/results/reviewed/p0_internal_revision_suggestions.csv`，记录P0记录的建议保留、证据补强、待核实或后续P1复核建议；
+- 新增 `07_analysis/results/reviewed/p0_internal_candidate_overlay.csv`，在内部候选表上叠加P0建议字段；
+- 新增 `p0_internal_impact_preview.csv`、`p0_evidence_strengthening_checklist.csv`、`p0_item_review_summary.csv` 和 `p0_next_p1_review_plan.csv`，分别用于影响预演、证据补强、题目汇总和下一轮P1计划；
+- 新增 `p0_internal_review_report.md`，汇总P0范围、建议类型和正式边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G4-00U1`—`G4-00U10` 标为完成，并保留 `G4-01`、`G4-02` 等正式任务未完成。
+
+## 2026-07-14：G4-00T1—G4-00T10 后续10项内部预演任务
+
+- 新增 `07_analysis/scripts/build_internal_batch10_outputs.py`，一键生成后续10项内部预演输出；
+- 新增 `07_analysis/results/reviewed/batch10_preformal_review_triage.csv`，对296条样本复核记录进行优先级分流；
+- 新增 `07_analysis/results/reviewed/batch10_formal_readiness_map.csv`，说明正式双人编码、分歧裁决和正式唯一分析表当前仍受阻塞；
+- 新增 `07_analysis/data/internal_analysis_candidate_v0.csv`，形成876条内部分析候选记录，并保留风险标记；
+- 新增 `batch10_internal_overall_presence.csv`、`batch10_internal_level_distribution.csv`、`batch10_internal_cooccurrence.csv` 和 `batch10_internal_group_comparisons.csv`，生成内部描述统计、等级分布、维度共现和分组比较预演；
+- 新增 `batch10_typical_case_candidates.csv`，整理30个典型试题案例候选；
+- 新增 `batch10_internal_boundary_memo.md`，说明内部预演结果的稳健性风险和正式使用前置条件；
+- 新增 `batch10_teaching_transfer_seed_matrix.csv`，形成4条教学转化种子矩阵；
+- 新增 `batch10_completion_report.md`，记录10项内部任务完成情况和正式任务仍未完成的边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G4-00T1`—`G4-00T10` 标为完成，并保留 `G4-00T-REVIEW`、`G4-01` 和 `G4-02` 等正式任务未完成。
+
+## 2026-07-14：G4-00F/G4-00S 正式编码前复核样本包与记录表
+
+- 新增 `07_analysis/scripts/build_preformal_review_packet.py`，依据内部质量问题清单自动抽取正式编码前复核样本；
+- 新增 `07_analysis/results/reviewed/preformal_review_sample_items.csv`，形成74个分析单元的复核样本表，覆盖第35—42届并优先纳入质疑创新、证据薄弱、L4、人工校对未销项和中等把握度记录；
+- 新增 `07_analysis/results/reviewed/preformal_review_coding_records.csv`，整理样本对应的296条四维度内部编码记录；
+- 新增 `07_analysis/results/reviewed/preformal_review_manual_issues.csv`，整理样本关联的99条人工校对问题；
+- 新增 `07_analysis/results/reviewed/preformal_review_packet.md`，说明样本包性质、输入输出、分届覆盖、风险覆盖、复核流程和禁止事项；
+- 新增 `07_analysis/scripts/build_preformal_review_log.py`、`preformal_review_log.csv` 和 `preformal_review_log_protocol.md`，建立296条复核记录空表；所有记录均为待复核，不代表完成校对、修订或裁决；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G4-00F` 与 `G4-00S` 标为完成，并将下一步调整为 `G4-00T` 样本包逐条复核记录。
+
+## 2026-07-14：G4-00R 内部编码数据质量检查
+
+- 新增 `07_analysis/scripts/audit_internal_coding_quality.py`，对内部分析底稿执行字段、维度、存在性、等级、把握度、证据文本和人工校对关联检查；
+- 新增 `07_analysis/results/reviewed/internal_coding_quality_issues.csv`，形成正式编码前问题清单；
+- 新增 `07_analysis/results/reviewed/internal_coding_quality_report.md`，汇总结构性致命问题、高优先级风险、编码把握度、L4边界、质疑创新保守复核和内部维度分布预警；
+- 检查结果显示结构性致命问题为0，但源试编码仍来自 `coding_manual_v1`，且全部分析单元均关联未销项校对风险；当前结果仍不得写入论文正式结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G4-00R` 标为完成，并将下一步调整为 `G4-00F` 正式编码前复核样本包。
+
+## 2026-07-14：G3-08I/G4-00I 内部版V2冻结与描述分析准备
+
+- 新增 `04_framework/coding_manual_v2_internal.md`，将编码手册V2草案冻结为内部分析准备版本，并明确其不能替代真实专家审查、导师确认、真实双评分者一致性检验或正式编码手册；
+- 新增 `04_framework/codebook_v2_internal.csv`，将16个维度-等级指标标记为 `V2内部冻结-仅限内部分析`；
+- 新增 `07_analysis/data/internal_coding_v1.csv`，把219个分析单元的小问级元数据与876条 Codex 试编码合并为内部分析底稿；
+- 新增 `07_analysis/scripts/build_internal_descriptive_tables.py`，可复现生成内部描述统计预演表和内部说明；
+- 新增 `07_analysis/results/reviewed/internal_descriptive_summary.md`，记录数据范围、预演表、致命边界和下一步最小任务；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将 `G3-08I` 与 `G4-00I` 标为完成，同时保留 `G3-08` 正式编码手册冻结和正式 `G4` 分析为未完成。
+
 ## 2026-07-14：G3-07R 一致性计算脚本升级
 
 - 更新 `07_analysis/scripts/compute_reliability.py`，支持正式试编码表和双评分者模板两种字段结构；
