@@ -8,6 +8,32 @@
 - 题图：无
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
 
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q08_formula_check_v1.csv`
+- 题面证据图：`03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-paper-page-5.png`
+- 答案证据图：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-35.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-36.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-37.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-38.png`
+
+边界说明：
+
+- 第8题题面完整位于试题PDF第5页，未见题图。
+- 答案PDF第35页上部为第7题尾部，第8题从题面重印和“参考解答”开始。
+- 答案第36至38页覆盖式①至式⑳；第38页为PDF末页，无下一题边界页。
+- 本入口只建立逐式核对线索，不填写真实校对人和校对日期，不关闭 `CPHO35-Q08-SCORE`。
+
+重点待最终复核：
+
+- 题面常量 `E0`、`Gamma`、`m_Fe`、`h`、`c` 的指数、单位和约等号。
+- 发射/吸收过程中的 `nu_e`、`nu_a`、`nu_0`、`E_R`、`E_R'`、速度撇号和下标。
+- 答案第36页第(2)问文字中的 `nu_e` 与后续公式 `nu_a` 表述差异。
+- 频率范围式⑫、式⑬、重叠条件式⑭和 `Gamma > E_R` 的不等号方向。
+- 第37页能量范围和频率范围均编号⑰的重复式号。
+- 第38页相对论多普勒根号、式⑲速度范围单位和式⑳正负号。
+
 ## 题干
 
 ```text

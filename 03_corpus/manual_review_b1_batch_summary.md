@@ -14,6 +14,8 @@
 | 080 | CPHO39-Q06-FORMULA | 第39届第6题 | 5 | 已建立答案公式核对入口，待最终复核 |
 | 081 | CPHO35-Q02-FORMULA | 第35届第2题 | 4 | 已建立答案公式核对入口，待最终复核 |
 | 082 | CPHO35-Q03-FORMULA | 第35届第3题 | 4 | 已建立答案公式核对入口，待最终复核 |
+| 083 | CPHO35-Q04-FORMULA | 第35届第4题 | 4 | 已建立答案公式核对入口，待最终复核 |
+| 084 | CPHO35-Q08-FORMULA | 第35届第8题 | 4 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -103,6 +105,29 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-16.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-boundary-next-page-17.png`
 
+### CPHO35-Q04
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q04_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-paper-page-2.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-page-16.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-page-17.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-page-18.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-boundary-next-page-20.png`
+
+### CPHO35-Q08
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q08_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-paper-page-5.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-35.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-36.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-37.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-38.png`
+
 ## 边界确认
 
 ### CPHO36-Q03
@@ -146,6 +171,12 @@
 经视觉检查，第35届第4题题面位于试题PDF第2页中部，包含Ioffe-Pritchard磁阱装置图、四根长直导线、电流方向、外加匀强磁场 `B0 = B0 k` 和第(1)至第(4)问；第2页上方为第3题尾部，下方进入第5题。题面页未见清晰的大题分值标注，因此同题 `CPHO35-Q04-SCORE` 仍需保留为待核实。答案第16页上半部为第3题尾部，第4题题面重印后出现“参考解答”；第17页覆盖导线坐标、`B1` 至 `B4`、总磁场、近原点展开和 `B_tot`；第18页覆盖 `|B_tot|`、势能、作用力、逸出位置和势垒公式；第19页上半部给出式⑳并结束第4题，第19页下半部进入第5题；第20页已完全为第5题解法，仅作排除边界确认。
 
 本轮保留原清单的答案页范围 `16-19`，并将 `03_corpus/item_index.csv` 中第4题四个小问的答案页入口统一为 `16-19`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
+
+### CPHO35-Q08
+
+经视觉检查，第35届第8题题面完整位于试题PDF第5页，未见题图；题面页未见清晰的大题分值标注，因此同题 `CPHO35-Q08-SCORE` 仍需保留为待核实。答案第35页上部为第7题尾部，第8题题面重印后进入“参考解答”；第36页覆盖发射过程式①至式⑥、吸收过程式⑦至式⑨；第37页覆盖吸收反冲能式⑩、频率关系式⑪、频率范围式⑫⑬、重叠条件式⑭、`Gamma > E_R` 式⑮、`E_R >> Gamma` 式⑯，以及晶体无反冲情形下的能量/频率范围重复式号⑰；第38页覆盖多普勒公式、式⑱至式⑳、速度范围和频率微小变化测量原理，并为PDF末页。
+
+本轮保留原清单的答案页范围 `35-38`，并将 `03_corpus/item_index.csv` 中第8题四个小问的答案页入口统一为 `35-38`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
 
 ## 需最终复核点
 
@@ -205,6 +236,14 @@
 4. 第18页式⑫、式⑮、式⑯、式⑲和第19页式⑳均含大根号或根号内外边界，尤其要核对 `3sqrt(3)/8` 系数和式⑳中 `-1` 是否在根号外。
 5. 同题 `CPHO35-Q04-FIG` 仍为C组未销项问题；若第4题后续作为案例或附录图件使用，需另行完成题图、图注与裁边校对。`CPHO35-Q04-SCORE` 仍需在第35届分值边界复核任务中处理。
 
+### CPHO35-Q08
+
+1. 第36页第(2)问文字称吸收一频率为 `nu_e` 的光子，后续守恒方程使用 `nu_a`，需按源页终核，不由本轮擅自改写。
+2. 第36页式①至式⑨中的 `nu_e`、`nu_a`、`nu_0`、`E_R`、`E_R'`、上下标、撇号和频率差正负号需逐式终核。
+3. 第37页频率范围式⑫⑬、条件链、式⑭和式⑮的不等号方向，以及 `E_R/Gamma = 4.2 x 10^5` 的分式结构需最终复核。
+4. 第37页能量范围和频率范围均编号⑰，需在正式转写或论文引用时保留源页事实并说明式号处理。
+5. 第38页相对论多普勒根号、式⑲速度范围 `±0.19 mm s^-1`、式⑳速度 `±3 cm s^-1` 的正负号、方向定义和单位换算需最终复核。`CPHO35-Q08-SCORE` 仍需在第35届分值边界复核任务中处理。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-35Q08`：继续B组中风险公式校对入口建设，处理队列第084项 `CPHO35-Q08-FORMULA`。
+`G1-07-B1-FORMULA-39Q03`：继续B组中风险公式校对入口建设，处理队列第085项 `CPHO39-Q03-FORMULA`。

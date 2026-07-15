@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-15：G1-07-B1-FORMULA-35Q08 第35届第8题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q08_formula_check_v1.csv`，依据第35届合并PDF第35-38页登记题面常量、发射/吸收守恒方程、频率差、反冲能、共振条件、无反冲能量与频率范围、多普勒速度范围和频率变化测量速度等41条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第084项 `CPHO35-Q08-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第085项 `CPHO39-Q03-FORMULA`；
+- 新增第35届第8题共5张页面证据图：题面第5页、答案第35-38页；视觉检查确认第8题题面完整位于试题PDF第5页且无题图，答案第35页上部为第7题尾部，第8题从题面重印和参考解答开始，第36-38页覆盖式①至式⑳，第38页为答案收尾且为PDF末页；
+- 更新 `03_corpus/item_texts/CPHO35-Q08.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO35-Q08-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第35届第8题四个小问答案页入口统一为 `35-38`；
+- 保留同题 `CPHO35-Q08-SCORE` 为未销项状态；`nu_e/nu_a` 表述差异、`Gamma` 线宽范围、重复式号⑰、多普勒根号近似、式⑲速度单位与式⑳正负号均标记为待最终复核；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录B组第084项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-39Q03`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-15：G1-07-B1-FORMULA-35Q04 第35届第4题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q04_formula_check_v1.csv`，依据第35届合并PDF第16-19页登记题面变量、导线坐标、`B1` 至 `B4`、总磁场、近原点展开、势能、作用力、逸出位置和动能等36条公式核对入口；

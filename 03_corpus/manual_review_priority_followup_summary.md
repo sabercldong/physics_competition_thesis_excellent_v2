@@ -73,4 +73,4 @@
 
 ## 下一步最小任务
 
-`G1-07-B1-FORMULA-35Q08：继续B组中风险公式校对入口建设，处理队列第084项 CPHO35-Q08-FORMULA；真实销项仍需在 manual_review_checklist.csv 中补齐真实校对人、校对日期和逐式终核记录。`
+`G1-07-B1-FORMULA-39Q03：继续B组中风险公式校对入口建设，处理队列第085项 CPHO39-Q03-FORMULA；真实销项仍需在 manual_review_checklist.csv 中补齐真实校对人、校对日期和逐式终核记录。`

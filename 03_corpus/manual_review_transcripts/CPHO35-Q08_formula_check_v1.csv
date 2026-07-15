@@ -1,0 +1,42 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO35-Q08-F00,CPHO35-Q08,题面边界,paper p5,第8题题面完整位于试题PDF第5页；未见题图；页脚为第5页/共38页。,视觉检查 CPHO35-Q08-paper-page-5.png,待最终复核,第35届分值边界未见清晰题面标注，CPHO35-Q08-SCORE继续待核。
+CPHO35-Q08-F01,CPHO35-Q08,题面常量,paper p5,1958年穆斯堡尔效应；1961年诺贝尔物理学奖；57Fe跃迁情境。,题面第1段视觉核对,待最终复核,年份为题面科学史信息，非论文统计年份。
+CPHO35-Q08-F02,CPHO35-Q08,题面常量,paper p5,E0 = 2.31 x 10^-15 J；Gamma ~= 3.2 x 10^-13 E0。,题面常量行视觉核对,待最终复核,Gamma符号、约等号和指数需终核。
+CPHO35-Q08-F03,CPHO35-Q08,题面常量,paper p5,m_Fe ~= 9.5 x 10^-26 kg；h = 6.6 x 10^-34 J s；c = 3.0 x 10^8 m s^-1。,题面常量行视觉核对,待最终复核,单位点号和负指数需终核。
+CPHO35-Q08-F04,CPHO35-Q08,题面小问,paper p5,(1) 忽略能级宽度，求发射过程反冲能和考虑/不考虑核反冲的频率差。,题面第(1)问视觉核对,待最终复核,57Fe上标和文字断行需终核。
+CPHO35-Q08-F05,CPHO35-Q08,题面小问,paper p5,(2) 忽略能级宽度，求吸收过程反冲能和考虑/不考虑核反冲的频率差。,题面第(2)问视觉核对,待最终复核,57Fe上标和“吸收”表述需终核。
+CPHO35-Q08-F06,CPHO35-Q08,题面小问,paper p5,(3) 考虑能级宽度，判断静止57Fe*发射光子能否被静止57Fe共振吸收。,题面第(3)问视觉核对,待最终复核,57Fe*星号和“共振吸收”括注需终核。
+CPHO35-Q08-F07,CPHO35-Q08,题面小问,paper p5,(4) 晶体中无反冲，求发生共振吸收的速度V范围，并对相对变化10^-10设计测量。,题面第(4)问视觉核对,待最终复核,相对变化为10^-10，符号和指数需终核。
+CPHO35-Q08-F08,CPHO35-Q08,答案起点,solution p35,答案PDF第35页上部为第7题尾部；第8题题面重印后从“参考解答”开始。,视觉检查 CPHO35-Q08-solution-page-35.png,待最终复核,第35页只从第8题题面重印和参考解答起点开始使用。
+CPHO35-Q08-F09,CPHO35-Q08,答案(1)设定,solution p35,设静止57Fe*跃迁到57Fe，发出频率nu_e光子，同时57Fe获得反冲速度v。,答案第35页底部视觉核对,待最终复核,nu_e、上标星号和反冲速度v需终核。
+CPHO35-Q08-F10,CPHO35-Q08,答案(1)式①,solution p36,E0 = h nu_e + (1/2) m_Fe v^2。,答案第36页式①视觉核对,待最终复核,1/2、m_Fe下标和v^2需终核。
+CPHO35-Q08-F11,CPHO35-Q08,答案(1)式②,solution p36,0 = h nu_e / c - m_Fe v。,答案第36页式②视觉核对,待最终复核,动量方向符号需终核。
+CPHO35-Q08-F12,CPHO35-Q08,答案(1)式③,solution p36,nu_e = E0/h - h nu_e^2/(2 m_Fe c^2) = nu_0 - h nu_e^2/(2 m_Fe c^2)。,答案第36页式③视觉核对,待最终复核,nu_e平方、分母2m_Fe c^2和nu_0需终核。
+CPHO35-Q08-F13,CPHO35-Q08,答案(1)式④,solution p36,nu_0 = E0 / h。,答案第36页式④视觉核对,待最终复核,nu_0下标需终核。
+CPHO35-Q08-F14,CPHO35-Q08,答案(1)近似,solution p36,h nu_e/(m_Fe c^2) << 1；nu_e ~= nu_0 - h nu_0^2/(2m_Fe c^2) = nu_0(1 - E0/(2m_Fe c^2))。,答案第36页近似行视觉核对,待最终复核,小量条件、约等号和括号层级需终核。
+CPHO35-Q08-F15,CPHO35-Q08,答案(1)式⑤,solution p36,nu_e - nu_0 ~= -nu_0 E0/(2m_Fe c^2) = -4.7 x 10^11 Hz。,答案第36页式⑤视觉核对,待最终复核,负号、10^11和Hz需终核。
+CPHO35-Q08-F16,CPHO35-Q08,答案(1)式⑥,solution p36,E_R = E0 - h nu_e = E0^2/(2m_Fe c^2) = 3.1 x 10^-22 J。,答案第36页式⑥视觉核对,待最终复核,E_R下标、E0^2和10^-22需终核。
+CPHO35-Q08-F17,CPHO35-Q08,答案(2)设定,solution p36,吸收过程文字称吸收一频率为nu_e的光子，后续公式使用nu_a。,答案第36页第(2)问视觉核对,待最终复核,nu_e/nu_a表述不一致需终核，不在本轮擅自改写。
+CPHO35-Q08-F18,CPHO35-Q08,答案(2)式⑦,solution p36,h nu_a = E0 + (1/2) m_Fe v_prime^2。,答案第36页式⑦视觉核对,待最终复核,v_prime撇号和平方需终核。
+CPHO35-Q08-F19,CPHO35-Q08,答案(2)式⑧,solution p36,h nu_a / c = m_Fe v_prime。,答案第36页式⑧视觉核对,待最终复核,分式和v_prime需终核。
+CPHO35-Q08-F20,CPHO35-Q08,答案(2)近似,solution p36,nu_a = E0/h + h nu_a^2/(2m_Fe c^2) ~= nu_0 + nu_0 E0/(2m_Fe c^2)。,答案第36页式⑦⑧后推导视觉核对,待最终复核,源页中分母排版紧凑，需终核2m_Fe c^2。
+CPHO35-Q08-F21,CPHO35-Q08,答案(2)式⑨,solution p36,nu_a - nu_0 = nu_0 E0/(2m_Fe c^2) = 4.7 x 10^11 Hz。,答案第36页式⑨视觉核对,待最终复核,正号和10^11需终核。
+CPHO35-Q08-F22,CPHO35-Q08,答案(2)式⑩,solution p37,E_R_prime = h nu_a - E0 = E0^2/(2m_Fe c^2) = E_R = 3.1 x 10^-22 J。,答案第37页式⑩视觉核对,待最终复核,E_R_prime、等号链和单位需终核。
+CPHO35-Q08-F23,CPHO35-Q08,答案(3)式⑪,solution p37,nu_e < nu_0 < nu_a。,答案第37页式⑪视觉核对,待最终复核,不等号方向需终核。
+CPHO35-Q08-F24,CPHO35-Q08,答案(3)式⑫,solution p37,"发射光子频率范围：[nu_e - Gamma/h, nu_e + Gamma/h]。",答案第37页式⑫视觉核对,待最终复核,区间端点、Gamma/h和括号类型需终核。
+CPHO35-Q08-F25,CPHO35-Q08,答案(3)式⑬,solution p37,"可吸收光子频率范围：[nu_a - Gamma/h, nu_a + Gamma/h]。",答案第37页式⑬视觉核对,待最终复核,nu_a和Gamma/h需终核。
+CPHO35-Q08-F26,CPHO35-Q08,答案(3)重叠条件,solution p37,nu_e - Gamma/h < nu_a - Gamma/h <= nu_e + Gamma/h < nu_a + Gamma/h。,答案第37页条件链视觉核对,待最终复核,严格/非严格不等号需终核。
+CPHO35-Q08-F27,CPHO35-Q08,答案(3)式⑭,solution p37,nu_a - Gamma/h <= nu_e + Gamma/h。,答案第37页式⑭视觉核对,待最终复核,条件由频率范围重叠得出，需终核。
+CPHO35-Q08-F28,CPHO35-Q08,答案(3)式⑮,solution p37,Gamma > E_R。,答案第37页式⑮视觉核对,待最终复核,不等号方向需终核。
+CPHO35-Q08-F29,CPHO35-Q08,答案(3)比值,solution p37,E_R/Gamma = [E0/(2m_Fe c^2)] / [3.2 x 10^-13] = 4.2 x 10^5。,答案第37页比值行视觉核对,待最终复核,源页为分式排版，括号关系和10^-13需终核。
+CPHO35-Q08-F30,CPHO35-Q08,答案(3)式⑯,solution p37,E_R >> Gamma（大了5个数量级），因此不可能发生共振吸收。,答案第37页式⑯视觉核对,待最终复核,数量级表述源页保留，不能扩写为正式结论。
+CPHO35-Q08-F31,CPHO35-Q08,答案(4)式⑰,solution p37,"无反冲晶体中光子能量范围：[E0 - Gamma, E0 + Gamma]。",答案第37页式⑰视觉核对,待最终复核,能量范围式号为⑰。
+CPHO35-Q08-F32,CPHO35-Q08,答案(4)式⑰重复,solution p37,"对应频率范围：[nu_0 - Gamma/h, nu_0 + Gamma/h]。",答案第37页底部重复式⑰视觉核对,待最终复核,源页将能量范围和频率范围均编号⑰，需终核式号处理。
+CPHO35-Q08-F33,CPHO35-Q08,答案(4)多普勒,solution p38,nu_prime = nu sqrt((1+beta)/(1-beta)) ~= nu(1+beta) = (1+V/c)nu；beta = V/c。,答案第38页多普勒公式视觉核对,待最终复核,根号覆盖范围、beta定义和近似式需终核。
+CPHO35-Q08-F34,CPHO35-Q08,答案(4)式⑱,solution p38,V = (nu_prime/nu - 1)c = (E_prime/E - 1)c。,答案第38页式⑱视觉核对,待最终复核,E_prime = h nu_prime、E = h nu需联核。
+CPHO35-Q08-F35,CPHO35-Q08,答案(4)Vmax,solution p38,Vmax = ((E0 + Gamma)/(E0 - Gamma) - 1)c。,答案第38页Vmax视觉核对,待最终复核,分子分母和正方向含义需终核。
+CPHO35-Q08-F36,CPHO35-Q08,答案(4)Vmin,solution p38,Vmin = ((E0 - Gamma)/(E0 + Gamma) - 1)c。,答案第38页Vmin视觉核对,待最终复核,分子分母和负方向含义需终核。
+CPHO35-Q08-F37,CPHO35-Q08,答案(4)式⑲,solution p38,-0.19 mm s^-1 = -2Gamma/E0 c ~= -2Gamma/(E0+Gamma)c <= V <= 2Gamma/(E0-Gamma)c ~= 2Gamma/E0 c = 0.19 mm s^-1。,答案第38页式⑲视觉核对,待最终复核,单位mm s^-1、近似等号和不等式链需终核。
+CPHO35-Q08-F38,CPHO35-Q08,答案(4)频率变化,solution p38,相对变化：(nu - nu_0)/nu_0 = +/-1 x 10^-10；通过改变吸收晶体速度并测量共振吸收判断频率变化。,答案第38页测量原理段视觉核对,待最终复核,正负号和测量原理文字需终核。
+CPHO35-Q08-F39,CPHO35-Q08,答案(4)式⑳,solution p38,V_prime = -[(nu - nu_0)/nu]c ~= -[(nu - nu_0)/nu_0]c = +/-1 x 10^-10 c = +/-3 cm s^-1。,答案第38页式⑳视觉核对,待最终复核,源页显示正负号链；方向定义与符号需终核。
+CPHO35-Q08-F40,CPHO35-Q08,答案终点,solution p38,第38页末句：通过测量达到共振吸收时吸收晶体速度，能够测出光子频率改变量；第38页为PDF末页。,视觉检查 CPHO35-Q08-solution-page-38.png 和 pdfinfo Pages=38,待最终复核,答案到PDF末页结束，无下一题边界页。
