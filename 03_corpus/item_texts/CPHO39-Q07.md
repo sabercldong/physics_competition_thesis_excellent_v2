@@ -8,6 +8,18 @@
 - 题图：无
 - 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
 
+## G1-07-B1公式核对入口
+
+- 任务编号：`G1-07-B1-FORMULA-39Q07`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q07_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q07-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q07-solution-page-27.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q07-solution-page-28.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q07-solution-page-29.png`
+- 边界说明：第7题题面从试题PDF第4页中下部开始，上方为第6题尾部；答案第27页上半部为第6题评分标准，第7题答案从第27页中部开始，第28页覆盖第(1)(2)问积分推导和状态方程，第29页覆盖第(3)(4)问、最终半径和评分标准，且为PDF末页。
+- 状态：答案公式核对入口完成，待最终复核；本记录不代表真实人工校对销项。
+
 ## 题干抽取文本
 
 ```text

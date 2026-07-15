@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-15：G1-07-B1-FORMULA-39Q07 第39届第7题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO39-Q07_formula_check_v1.csv`，依据第39届合并PDF第27-29页登记题面分布函数、压强-能量密度关系、解法二压强积分、平均能量积分、`P=n k_B T`、摩尔热容、热容比、绝热膨胀半径和评分标准等31条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第087项 `CPHO39-Q07-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第088项 `CPHO35-Q05-FORMULA`；
+- 新增第39届第7题共4张页面证据图：题面第4页、答案第27-29页；视觉检查确认第7题题面从试题PDF第4页中下部开始，上方为第6题尾部，答案第27页上半部为第6题评分标准，第7题答案从第27页中部开始，第28页覆盖第(1)(2)问积分推导和状态方程，第29页覆盖第(3)(4)问、最终半径和评分标准，且为PDF末页；
+- 更新 `03_corpus/item_texts/CPHO39-Q07.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO39-Q07-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第39届第7题四个小问答案页入口统一为 `27-29`；
+- 标记题面分布函数、矢量点乘、上标 `(+)`、各向同性 `1/3` 因子、`beta=(k_B T)^(-1)`、`g(beta)` 导数、`C_P/C_V`、绝热指数、最终半径和评分标准为待最终复核；解题图7a/7b仅为答案推导图，未作真实人工销项；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第087项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-35Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-15：G1-07-B1-FORMULA-39Q05 第39届第5题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO39-Q05_formula_check_v1.csv`，依据第39届合并PDF第20-23页登记题面分段外力、运动方程、两种解法、初始条件、长度差、先断条件、相位区间、给定 `L` 条件、同时断裂关系和评分标准等38条公式核对入口；
