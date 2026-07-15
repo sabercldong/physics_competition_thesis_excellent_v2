@@ -1,0 +1,46 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO39-Q03-F00,CPHO39-Q03,题面边界,paper p2,第3题题面位于试题PDF第2页中部；上方为第2题尾部，下方进入第4题；图3a位于右侧。,视觉检查 CPHO39-Q03-paper-page-2.png,待最终复核,同题图3a有独立FIG问题，本轮只建立公式核对入口。
+CPHO39-Q03-F01,CPHO39-Q03,题面设定,paper p2,质量m、半径R的匀质实心球，从倾角theta的无限长固定斜面发射；球心初速度垂直斜面，大小V。,题面第3题开头视觉核对,待最终复核,m、R、theta、V和“无限长固定斜面”需终核。
+CPHO39-Q03-F02,CPHO39-Q03,题面设定,paper p2,初始自转角速度为零；坐标系x轴沿斜面向下，y轴垂直斜面向上。,题面坐标系文字与图3a视觉核对,待最终复核,x/y方向和图3a标签需与FIG销项联核。
+CPHO39-Q03-F03,CPHO39-Q03,题面设定,paper p2,碰撞弹性、时间极短、碰撞前后垂直斜面速度大小不变；斜面足够粗糙，接触点无相对滑动。,题面假设段视觉核对,待最终复核,“无相对滑动”是后续摩擦/转动方程边界。
+CPHO39-Q03-F04,CPHO39-Q03,题面常量,paper p2,绕直径转动惯量 I = (2/5)mR^2。,题面末行视觉核对,待最终复核,I、2/5、mR^2需终核。
+CPHO39-Q03-F05,CPHO39-Q03,题面小问,paper p2,(1) 第1次碰撞前的球心速度和自转角速度。,题面第(1)问视觉核对,待最终复核,小问边界。
+CPHO39-Q03-F06,CPHO39-Q03,题面小问,paper p2,(2) 第1次碰撞后的球心速度和自转角速度。,题面第(2)问视觉核对,待最终复核,小问边界。
+CPHO39-Q03-F07,CPHO39-Q03,题面小问,paper p2,(3) 第n次碰撞后球心沿x轴方向速度以及自转角速度。,题面第(3)问视觉核对,待最终复核,n、x轴方向和速度/角速度需终核。
+CPHO39-Q03-F08,CPHO39-Q03,题面小问,paper p2,(4) 前n次碰撞过程中斜面对球施加的总冲量。,题面第(4)问视觉核对,待最终复核,总冲量方向和单位矢量将在答案页终核。
+CPHO39-Q03-F09,CPHO39-Q03,答案起点,solution p9,答案PDF第9页以“三、”开始第3题参考解答；无前题尾部。,视觉检查 CPHO39-Q03-solution-page-09.png,待最终复核,第9页为第3题答案起点。
+CPHO39-Q03-F10,CPHO39-Q03,答案(1)式①,solution p9,a_x = g sin theta，a_y = -g cos theta。,答案第9页式①视觉核对,待最终复核,下标x/y、负号和theta需终核。
+CPHO39-Q03-F11,CPHO39-Q03,答案(1)式②,solution p9,v_x = gt sin theta，v_y = V - gt cos theta。,答案第9页式②视觉核对,待最终复核,t、V和符号需终核。
+CPHO39-Q03-F12,CPHO39-Q03,答案(1)位移式,solution p9,x = (1/2)gt^2 sin theta，y = Vt - (1/2)gt^2 cos theta。,答案第9页位移式视觉核对,待最终复核,源页未编号；1/2与t^2需终核。
+CPHO39-Q03-F13,CPHO39-Q03,答案(1)式③,solution p9,y(T)=0；T = 2V/(g cos theta)。,答案第9页式③视觉核对,待最终复核,T表达式分母g cos theta需终核。
+CPHO39-Q03-F14,CPHO39-Q03,答案(1)式④,solution p9,t=T时，v_x = Tg sin theta = 2V tan theta，v_y = -V。,答案第9页式④视觉核对,待最终复核,tan theta和-vy方向需终核。
+CPHO39-Q03-F15,CPHO39-Q03,答案(1)式⑤,solution p9,w = 2V tan theta；球在空中角速度不变，仍为零。,答案第9页式⑤附近视觉核对,待最终复核,式号⑤标在文字段，w定义与角速度结论需终核。
+CPHO39-Q03-F16,CPHO39-Q03,答案(2)式⑥,solution p9,-F_bar Delta t = m v_f - m v_i。,答案第9页式⑥视觉核对,待最终复核,F_bar、Delta t、v_f/v_i和负号需终核。
+CPHO39-Q03-F17,CPHO39-Q03,答案(2)式⑦,solution p9,R F_bar Delta t = I(omega_f - omega_i)。,答案第9页式⑦视觉核对,待最终复核,R、I和omega下标需终核。
+CPHO39-Q03-F18,CPHO39-Q03,答案(2)式⑧,solution p9,v_f - v_i = -(2/5)R(omega_f - omega_i)。,答案第9页式⑧视觉核对,待最终复核,2/5系数和负号需终核。
+CPHO39-Q03-F19,CPHO39-Q03,答案(2)式⑨,solution p9,(1/2)m v_f^2 + (1/2)I omega_f^2 = (1/2)m v_i^2 + (1/2)I omega_i^2。,答案第9页式⑨视觉核对,待最终复核,源页含I；文本层可能漏I，需重点终核。
+CPHO39-Q03-F20,CPHO39-Q03,答案(2)式⑩,solution p9,v_f^2 - v_i^2 = -(2/5)R^2(omega_f^2 - omega_i^2)。,答案第9页式⑩视觉核对,待最终复核,R^2、omega平方和负号需终核。
+CPHO39-Q03-F21,CPHO39-Q03,答案(2)式⑪,solution p9,v_f = (3/7)v_i + (4/7)R omega_i；R omega_f = (10/7)v_i - (3/7)R omega_i。,答案第9页式⑪视觉核对,待最终复核,两个表达式同属式⑪，分式系数需终核。
+CPHO39-Q03-F22,CPHO39-Q03,答案(2)式⑫,solution p9,v_1f = 6V tan theta/7；omega_1f = 20V tan theta/(7R)。,答案第9页式⑫视觉核对,待最终复核,第1次碰后结果和R分母需终核。
+CPHO39-Q03-F23,CPHO39-Q03,答案(2)速度矢量,solution p10,v_1f xhat + V yhat = V[(6/7)tan theta xhat + yhat]。,答案第10页页首视觉核对,待最终复核,xhat/yhat单位矢量和括号需终核。
+CPHO39-Q03-F24,CPHO39-Q03,答案(3)式⑬,solution p10,v_n = (3/7)(v_{n-1}+w) + (4/7)R omega_{n-1}。,答案第10页式⑬视觉核对,待最终复核,递推下标n-1和w括号需终核。
+CPHO39-Q03-F25,CPHO39-Q03,答案(3)式⑭,solution p10,R omega_n = (10/7)(v_{n-1}+w) - (3/7)R omega_{n-1}。,答案第10页式⑭视觉核对,待最终复核,10/7、-3/7和R omega下标需终核。
+CPHO39-Q03-F26,CPHO39-Q03,答案(3)解法一式⑮-⑰,solution p10,v_n + alpha R omega_n = [(3+10alpha)/7][v_{n-1}+((4-3alpha)/(3+10alpha))R omega_{n-1}+w]；(4-3alpha)/(3+10alpha)=alpha；alpha_1=-1，alpha_2=2/5。,答案第10页式⑮⑯⑰视觉核对,待最终复核,alpha、括号层级、分式和两个根需终核。
+CPHO39-Q03-F27,CPHO39-Q03,答案(3)解法一式⑱-⑲,solution p10,v_n - R omega_n = -(v_{n-1}-R omega_{n-1}) - w；v_n + (2/5)R omega_n = [v_{n-1}+(2/5)R omega_{n-1}] + w。,答案第10页式⑱⑲视觉核对,待最终复核,负号、2/5和括号需终核。
+CPHO39-Q03-F28,CPHO39-Q03,答案(3)解法一式⑳-㉑,solution p10,v_n - R omega_n + (1/2)w = (-1)^{n-1}[v_1 - R omega_1 + (1/2)w]；v_n + (2/5)R omega_n = [v_1+(2/5)R omega_1]+(n-1)w。,答案第10页式⑳㉑视觉核对,待最终复核,(-1)^{n-1}、1/2和n-1需终核。
+CPHO39-Q03-F29,CPHO39-Q03,答案(3)解法一式㉒-㉓,solution p10,v_n - R omega_n = [((-1)^n - 1)/2]w；v_n + (2/5)R omega_n = n w；v_n = (5/7)[n-(1-(-1)^n)/5]w；omega_n = (5/7)[n+(1-(-1)^n)/2]w/R。,答案第10页式㉒㉓视觉核对,待最终复核,奇偶项、指数n、w/R需重点终核。
+CPHO39-Q03-F30,CPHO39-Q03,答案(3)解法一式㉔-㉕,solution p10,n偶数：v_n = (10/7)nV tan theta，omega_n = (10/7)nV tan theta/R；n奇数：v_n=(2/7)(5n-2)V tan theta，omega_n=(10/7)(n+1)V tan theta/R。,答案第10页式㉔㉕视觉核对,待最终复核,奇偶结果、R分母和(5n-2)/(n+1)需终核。
+CPHO39-Q03-F31,CPHO39-Q03,答案(3)解法二式⑮prime-⑱prime,solution p11,v_2 = (10/7)w = (20/7)V tan theta = R omega_2；若v_n=R omega_n，则v_{n+1}=v_n+(3/7)w，R omega_{n+1}=v_n+(10/7)w，v_{n+2}=v_n+(10/7)w=R omega_{n+2}。,答案第11页式⑮prime至⑱prime视觉核对,待最终复核,带prime式号、v2、n+1/n+2递推需终核。
+CPHO39-Q03-F32,CPHO39-Q03,答案(3)解法二式⑲prime-⑳prime,solution p11,n偶数：v_n=(10/7)nV tan theta，omega_n=(10/7)nV tan theta/R；n奇数：v_n=(2/7)(5n-2)V tan theta，omega_n=(10/7)(n+1)V tan theta/R。,答案第11页式⑲prime⑳prime视觉核对,待最终复核,与解法一结果一致性需终核。
+CPHO39-Q03-F33,CPHO39-Q03,答案(3)解法三式⑮doubleprime-⑰doubleprime,solution p11,"矩阵递推：(v_n, R omega_n)^T = A(v_{n-1}+w, R omega_{n-1})^T = A(v_{n-1}, R omega_{n-1})^T + A(w,0)^T；A=(1/7)[[3,4],[10,-3]]；(v_1,R omega_1)^T=A(w,0)^T。",答案第11页式⑮doubleprime至⑰doubleprime视觉核对,待最终复核,矩阵元素、转置列向量和双撇式号需终核。
+CPHO39-Q03-F34,CPHO39-Q03,答案(3)解法三式⑱doubleprime-㉒doubleprime,solution p11,"(v_n,R omega_n)^T=(A^n+A^{n-1}+...+A^2+A)(w,0)^T；A^2=J；偶数n给出(5nw/7)(1,1)^T；奇数n给出(w/7)(5n-2,5(n+1))^T，并得到同样的v_n与omega_n。",答案第11页式⑱doubleprime至㉒doubleprime视觉核对,待最终复核,A幂次、J单位矩阵、奇偶列向量和5(n+1)需终核。
+CPHO39-Q03-F35,CPHO39-Q03,答案(4)起点,solution p11-p12,第(4)问从答案第11页底部开始，核心总冲量公式在第12页。,视觉检查 CPHO39-Q03-solution-page-11.png 和 page-12.png,待最终复核,第(4)问跨页。
+CPHO39-Q03-F36,CPHO39-Q03,答案(4)式㉖,solution p12,J_x = sum_{k=1}^n m[v_k-(v_{k-1}+w)] = m v_n - n m w。,答案第12页式㉖视觉核对,待最终复核,求和上下限、v_{k-1}+w和nmw需终核。
+CPHO39-Q03-F37,CPHO39-Q03,答案(4)式㉗,solution p12,J_y = sum_{k=1}^n 2mV = 2nmV。,答案第12页式㉗视觉核对,待最终复核,y方向冲量和求和需终核。
+CPHO39-Q03-F38,CPHO39-Q03,答案(4)式㉘,solution p12,J = m(v_n - n w)xhat + 2nmV yhat。,答案第12页式㉘视觉核对,待最终复核,矢量单位xhat/yhat和符号需终核。
+CPHO39-Q03-F39,CPHO39-Q03,答案(4)式㉙,solution p12,J = (2/7)mV{-[2n+1-(-1)^n]tan theta xhat + 7n yhat}。,答案第12页式㉙视觉核对,待最终复核,大括号、负号、奇偶项和7n需终核。
+CPHO39-Q03-F40,CPHO39-Q03,答案(4)式㉚,solution p12,n偶数：J = (2/7)nmV(-2 tan theta xhat + 7 yhat)。,答案第12页式㉚视觉核对,待最终复核,偶数结果和外部n因子需终核。
+CPHO39-Q03-F41,CPHO39-Q03,答案(4)式㉛,solution p12,n奇数：J = (2/7)nmV[-2(1+1/n)tan theta xhat + 7 yhat]。,答案第12页式㉛视觉核对,待最终复核,1+1/n、方括号和单位矢量需终核。
+CPHO39-Q03-F42,CPHO39-Q03,评分标准,solution p12,本题40分；第(1)问5分，第(2)问13分，第(3)问15分，第(4)问7分，并列出各式分值。,答案第12页评分标准视觉核对,待最终复核,分值信息用于边界和核对，不代表小问分值已正式拆分。
+CPHO39-Q03-F43,CPHO39-Q03,答案结束边界,solution p12,第12页上半部为第3题式㉖至㉛和评分标准；第12页下半部进入第4题答案。,视觉检查 CPHO39-Q03-solution-page-12.png,待最终复核,只使用第12页上半部第3题内容。
+CPHO39-Q03-F44,CPHO39-Q03,下一题排除边界,solution p13,答案PDF第13页为第4题答案延续，不属于第3题。,视觉检查 CPHO39-Q03-solution-boundary-next-page-13.png,待最终复核,仅作排除边界，不纳入第3题公式证据。

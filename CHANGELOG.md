@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-15：G1-07-B1-FORMULA-39Q03 第39届第3题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO39-Q03_formula_check_v1.csv`，依据第39届合并PDF第9-12页登记题面变量、抛体运动、碰撞动量/角动量、递推关系、三种解法、总冲量和评分标准等45条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第085项 `CPHO39-Q03-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第086项 `CPHO39-Q05-FORMULA`；
+- 新增第39届第3题共6张页面证据图：题面第2页、答案第9-12页和第13页下一题边界确认图；视觉检查确认第3题题面位于试题PDF第2页中部，答案第9页为起点，第10-11页覆盖第(3)问三种解法，第12页上半部为第(4)问式㉖至㉛和评分标准，第12页下半部与第13页进入第4题；
+- 更新 `03_corpus/item_texts/CPHO39-Q03.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO39-Q03-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第39届第3题四个小问答案页入口统一为 `9-12`；
+- 保留同题 `CPHO39-Q03-FIG` 为未销项状态；式⑨中的 `I`、`2/5` 和 `10/7` 等系数、prime/doubleprime式号、矩阵 `A`、`A^2=J`、总冲量矢量和单位矢量均标记为待最终复核；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第085项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-39Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-15：G1-07-B1-FORMULA-35Q08 第35届第8题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q08_formula_check_v1.csv`，依据第35届合并PDF第35-38页登记题面常量、发射/吸收守恒方程、频率差、反冲能、共振条件、无反冲能量与频率范围、多普勒速度范围和频率变化测量速度等41条公式核对入口；

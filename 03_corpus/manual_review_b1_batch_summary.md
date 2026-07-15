@@ -16,6 +16,7 @@
 | 082 | CPHO35-Q03-FORMULA | 第35届第3题 | 4 | 已建立答案公式核对入口，待最终复核 |
 | 083 | CPHO35-Q04-FORMULA | 第35届第4题 | 4 | 已建立答案公式核对入口，待最终复核 |
 | 084 | CPHO35-Q08-FORMULA | 第35届第8题 | 4 | 已建立答案公式核对入口，待最终复核 |
+| 085 | CPHO39-Q03-FORMULA | 第39届第3题 | 4 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -128,6 +129,18 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-37.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q08-solution-page-38.png`
 
+### CPHO39-Q03
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q03_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-paper-page-2.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-boundary-next-page-13.png`
+
 ## 边界确认
 
 ### CPHO36-Q03
@@ -177,6 +190,12 @@
 经视觉检查，第35届第8题题面完整位于试题PDF第5页，未见题图；题面页未见清晰的大题分值标注，因此同题 `CPHO35-Q08-SCORE` 仍需保留为待核实。答案第35页上部为第7题尾部，第8题题面重印后进入“参考解答”；第36页覆盖发射过程式①至式⑥、吸收过程式⑦至式⑨；第37页覆盖吸收反冲能式⑩、频率关系式⑪、频率范围式⑫⑬、重叠条件式⑭、`Gamma > E_R` 式⑮、`E_R >> Gamma` 式⑯，以及晶体无反冲情形下的能量/频率范围重复式号⑰；第38页覆盖多普勒公式、式⑱至式⑳、速度范围和频率微小变化测量原理，并为PDF末页。
 
 本轮保留原清单的答案页范围 `35-38`，并将 `03_corpus/item_index.csv` 中第8题四个小问的答案页入口统一为 `35-38`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
+
+### CPHO39-Q03
+
+经视觉检查，第39届第3题题面位于试题PDF第2页中部，含图3a，上方为第2题尾部，下方进入第4题；答案第9页为第3题答案起点，第10页为解法一，第11页为解法二/三和第(4)问起点，第12页上半部为第(4)问式㉖至㉛和评分标准，下半部进入第4题，第13页为第4题答案延续，仅作排除边界确认。
+
+本轮保留原清单答案页范围 `9-12`，并将 `03_corpus/item_index.csv` 中第3题四个小问的答案页入口统一为 `9-12`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
 
 ## 需最终复核点
 
@@ -244,6 +263,14 @@
 4. 第37页能量范围和频率范围均编号⑰，需在正式转写或论文引用时保留源页事实并说明式号处理。
 5. 第38页相对论多普勒根号、式⑲速度范围 `±0.19 mm s^-1`、式⑳速度 `±3 cm s^-1` 的正负号、方向定义和单位换算需最终复核。`CPHO35-Q08-SCORE` 仍需在第35届分值边界复核任务中处理。
 
+### CPHO39-Q03
+
+1. 式⑨转动能项中的 `I`、`omega_f/omega_i` 上下标和平方位置需按源页终核，不能用抽取文本自动替代。
+2. 式⑧/⑩中的 `2/5` 系数，式⑪/⑫中的 `3/7`、`4/7`、`10/7`、`20/7` 系数和 `R omega` 项需逐项复核。
+3. 解法一中的 `alpha`、`(-1)^n`、`w/R`、奇偶表达和第(3)问结果需最终复核。
+4. 解法二、解法三的 prime/doubleprime 式号、矩阵 `A`、`A^2=J`、列向量和式号引用需按源页终核。
+5. 式㉖至㉛的求和、总冲量矢量、`xhat/yhat` 单位矢量和奇偶表达需最终复核。同题 `CPHO39-Q03-FIG` 仍为C组未销项问题。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-39Q03`：继续B组中风险公式校对入口建设，处理队列第085项 `CPHO39-Q03-FORMULA`。
+`G1-07-B1-FORMULA-39Q05`：继续B组中风险公式校对入口建设，处理队列第086项 `CPHO39-Q05-FORMULA`。

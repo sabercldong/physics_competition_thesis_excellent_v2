@@ -77,7 +77,8 @@
   - B1-FORMULA-35Q03：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q03_formula_check_v1.csv`，更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，并生成 `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-paper-page-1.png`、`CPHO35-Q03-paper-page-2.png`、`CPHO35-Q03-solution-page-13.png` 至 `CPHO35-Q03-solution-page-16.png` 及 `CPHO35-Q03-solution-boundary-next-page-17.png`；`CPHO35-Q03-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第3题题面从试题PDF第1页页底开始至第2页上半部结束，答案从答案PDF第13页中部开始至第16页式⑳结束，第16页下半部和第17页进入第4题。同题 `CPHO35-Q03-FIG` 与 `CPHO35-Q03-SCORE` 仍未销项。该进度不代表真实人工校对完成，也不代表第35届第3题公式排版、图件、分值或正式编码证据摘录已经销项。
   - FORMULA-35Q04：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q04_formula_check_v1.csv`，并生成第35届第4题题面第2页、答案第16至19页及第20页下一题边界确认共6张页面证据图；`CPHO35-Q04-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第4题题面位于试题PDF第2页中部，答案第16页为题面重印和参考解答起点，第17至18页为核心公式，第19页上半部为式⑳和答案结束，第20页已进入第5题。该进度不代表真实人工校对完成，也不代表题图、图注、分值边界或正式编码证据摘录已经销项。
   - FORMULA-35Q08：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q08_formula_check_v1.csv`，并生成第35届第8题题面第5页、答案第35至38页共5张页面证据图；`CPHO35-Q08-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第8题题面完整位于试题PDF第5页且无题图，答案第35页上部为第7题尾部，第8题从题面重印和参考解答开始，第36至38页覆盖式①至式⑳，第38页为答案收尾且为PDF末页。该进度不代表真实人工校对完成，也不代表分值边界或正式编码证据摘录已经销项。
-  - 下一步：继续 `G1-07-B1-FORMULA-39Q03`，处理B组队列第085项 `CPHO39-Q03-FORMULA`；若要关闭前序题目的相关项，需真实人工确认、正式排版复核、题图销项、分值边界复核和正式编码证据摘录。
+  - FORMULA-39Q03：已新增 `03_corpus/manual_review_transcripts/CPHO39-Q03_formula_check_v1.csv`，并生成第39届第3题题面第2页、答案第9至12页及第13页下一题边界确认共6张页面证据图；`CPHO39-Q03-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第3题题面位于试题PDF第2页中部，答案第9页为起点，第10至11页覆盖第(3)问三种解法，第12页上半部为第(4)问式㉖至㉛和评分标准，第12页下半部与第13页进入第4题。该进度不代表真实人工校对完成，也不代表题图、公式排版或正式编码证据摘录已经销项。
+  - 下一步：继续 `G1-07-B1-FORMULA-39Q05`，处理B组队列第086项 `CPHO39-Q05-FORMULA`；若要关闭前序题目的相关项，需真实人工确认、正式排版复核、题图销项、分值边界复核和正式编码证据摘录。
 
 ## G2 文献与理论
 

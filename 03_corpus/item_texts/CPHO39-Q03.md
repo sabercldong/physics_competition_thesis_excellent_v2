@@ -8,6 +8,32 @@
 - 题图：03_corpus/item_assets/CPHO39-Q03-figure1-page2-raw.png
 - 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
 
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q03_formula_check_v1.csv`
+- 题面证据图：`03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-paper-page-2.png`
+- 答案证据图：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-boundary-next-page-13.png`
+
+边界说明：
+
+- 第3题题面位于试题PDF第2页中部，上方为第2题尾部，下方进入第4题。
+- 答案第9页为第3题答案起点，第10-11页覆盖第(3)问三种解法，第12页上半部为第(4)问总冲量和评分标准。
+- 第12页下半部已进入第4题，第13页为第4题答案延续，仅作排除边界。
+- 本入口只建立逐式核对线索，不填写真实校对人和校对日期，不关闭 `CPHO39-Q03-FIG`。
+
+重点待最终复核：
+
+- 题面图3a及坐标方向需与 `CPHO39-Q03-FIG` 联核。
+- 式⑨转动能中的 `I`、式⑧/⑩中的 `2/5` 系数、式⑪/⑫中的 `3/7`、`4/7`、`10/7` 系数。
+- 第(3)问解法一的 `alpha`、`(-1)^n`、奇偶结果以及 `w/R`。
+- 解法二、解法三的 prime/doubleprime 式号、矩阵 `A`、`A^2=J` 和列向量。
+- 第(4)问式㉖至㉛的求和、总冲量矢量、单位矢量和奇偶表达。
+
 ## 题干抽取文本
 
 ```text
