@@ -34,7 +34,7 @@ CPHO39-Q01,39,2022,1,03_corpus/item_texts/CPHO39-Q01.md,03_corpus/item_assets/CP
 CPHO39-Q02,39,2022,2,03_corpus/item_texts/CPHO39-Q02.md,无,2,6-8,PDF text,无题图,已整理；公式与特殊符号待人工校对
 CPHO39-Q03,39,2022,3,03_corpus/item_texts/CPHO39-Q03.md,03_corpus/item_assets/CPHO39-Q03-figure1-page2-raw.png,2,9-12,PDF text + rendered page crop,未去除来源/权属水印；原图裁切，边缘保留少量邻近题干以保证题图完整,已整理；G1-07-B1已建立公式核对入口，待最终复核；同题图3a仍需题图裁边与图注校对
 CPHO39-Q04,39,2022,4,03_corpus/item_texts/CPHO39-Q04.md,03_corpus/item_assets/CPHO39-Q04-figure1-page2-raw.png,2-3,12-19,PDF text + rendered page crop,未去除来源/权属水印；原图裁切，边缘保留少量邻近题干以保证题图完整,已整理；G1-07-B1已建立公式核对入口，待最终复核；图注与特殊符号仍需人工校对
-CPHO39-Q05,39,2022,5,03_corpus/item_texts/CPHO39-Q05.md,无,3,20-23,PDF text,无题图,已整理；公式与特殊符号待人工校对
+CPHO39-Q05,39,2022,5,03_corpus/item_texts/CPHO39-Q05.md,无,3,20-23,PDF text,无题图,已整理；G1-07-B1已建立公式核对入口，待最终复核；本题无题图
 CPHO39-Q06,39,2022,6,03_corpus/item_texts/CPHO39-Q06.md,03_corpus/item_assets/CPHO39-Q06-figure1-page3-raw.png,3-4,23-27,PDF text + rendered page crop,未去除来源/权属水印；原图裁切，边缘保留少量邻近题干以保证题图完整,已整理；G1-07-B1已建立公式核对入口，待最终复核；图注与特殊符号仍需人工校对
 CPHO39-Q07,39,2022,7,03_corpus/item_texts/CPHO39-Q07.md,无,4,27-29,PDF text,无题图,已整理；公式与特殊符号待人工校对
 CPHO40-Q01,40,2023,1,03_corpus/item_texts/CPHO40-Q01.md,03_corpus/item_assets/CPHO40-Q01-figure1-page1-raw.png,1,6-7,rendered page OCR + PDF text + rendered page crop,未去除来源/权属水印；原图裁切，边缘保留少量邻近题干以保证题图完整,已整理；题干OCR、公式、图注与特殊符号待人工校对

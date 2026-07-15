@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-15：G1-07-B1-FORMULA-39Q05 第39届第5题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO39-Q05_formula_check_v1.csv`，依据第39届合并PDF第20-23页登记题面分段外力、运动方程、两种解法、初始条件、长度差、先断条件、相位区间、给定 `L` 条件、同时断裂关系和评分标准等38条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第086项 `CPHO39-Q05-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第087项 `CPHO39-Q07-FORMULA`；
+- 新增第39届第5题共6张页面证据图：题面第3页、答案第20-23页和第24页下一题边界确认图；视觉检查确认第5题题面位于试题PDF第3页中上部且无题图，答案第20页为起点，第21页覆盖第(2)问收尾和第(3)问开头，第22页覆盖第(3)问相位条件，第23页上半部为第(4)问和评分标准，第23页下半部与第24页进入第6题；
+- 更新 `03_corpus/item_texts/CPHO39-Q05.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO39-Q05-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第39届第5题四个小问答案页入口统一为 `20-23`；
+- 标记二阶导数、平衡位置上横线、`omega=sqrt(k/m)`、`sqrt(m/k)`、`arcsin` 相位区间、端点开闭、`x1` 点号、给定 `L` 条件和同时断裂关系为待最终复核；本题无题图，但公式与评分标准仍未完成真实人工销项；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第086项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-39Q07`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-15：G1-07-B1-FORMULA-39Q03 第39届第3题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO39-Q03_formula_check_v1.csv`，依据第39届合并PDF第9-12页登记题面变量、抛体运动、碰撞动量/角动量、递推关系、三种解法、总冲量和评分标准等45条公式核对入口；

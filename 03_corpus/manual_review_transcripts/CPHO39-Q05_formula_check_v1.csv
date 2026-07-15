@@ -1,0 +1,39 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO39-Q05-F00,CPHO39-Q05,题面边界,试题PDF第3页,第5题题面完整位于第3页中上部；下方进入第6题,页面视觉检查,题面边界已定位，待最终复核,第6题内容仅作排除边界
+CPHO39-Q05-F01,CPHO39-Q05,题面设定,试题PDF第3页,两根相同理想轻弹簧，劲度系数k，自然长度0，中间小球质量m，临界长度大于mg/k,题面视觉检查,待最终复核,核对临界长度、mg/k分式和自然长度为0
+CPHO39-Q05-F02,CPHO39-Q05,题面外力函数,试题PDF第3页,"F(t)={0,t<0; alpha t,t>=0}",题面视觉检查,待最终复核,核对分段括号、alpha和不等号
+CPHO39-Q05-F03,CPHO39-Q05,题面小问,试题PDF第3页,第(1)-(4)问：运动方程、x1/x2解析式、先断条件、给定L时的alpha关系和同时断裂条件,题面视觉检查,待最终复核,核对x1(t)、x2(t)、t0、L和alpha等符号
+CPHO39-Q05-F04,CPHO39-Q05,答案起点,答案PDF第20页,第5题答案从第20页页首“五、”开始,页面视觉检查,答案边界已定位，待最终复核,第20页前无第4题残余
+CPHO39-Q05-F05,CPHO39-Q05,答案公式,答案PDF第20页,① m x1双点 = -k x1 + mg + F(t),源页式①,待最终复核,核对x1二阶导、负号和F(t)项
+CPHO39-Q05-F06,CPHO39-Q05,答案公式,答案PDF第20页,② -k xbar1(t) + mg + F(t) = 0,源页式②,待最终复核,核对平衡位置xbar1与x1的区别
+CPHO39-Q05-F07,CPHO39-Q05,答案公式,答案PDF第20页,③ xbar1(t)=mg/k + (alpha/k)t,源页式③,待最终复核,核对mg/k、alpha/k和t位置
+CPHO39-Q05-F08,CPHO39-Q05,答案公式,答案PDF第20页,④ Delta x(t) == x1(t)-xbar1(t),源页式④,待最终复核,核对Delta x定义和平衡位置上横线
+CPHO39-Q05-F09,CPHO39-Q05,答案公式,答案PDF第20页,⑤ Delta x双点 + omega^2 Delta x = 0；⑥ Delta x=A cos(omega t + phi),源页式⑤-⑥,待最终复核,核对omega^2、相位phi和A
+CPHO39-Q05-F10,CPHO39-Q05,答案公式,答案PDF第20页,⑦ x1(t)=A cos(omega t+phi)+(alpha/k)t+mg/k,源页式⑦,待最终复核,核对括号、alpha/k和mg/k
+CPHO39-Q05-F11,CPHO39-Q05,答案公式,答案PDF第20页,令x=x1-mg/k,源页文字与公式,待最终复核,核对变量替换与后续x/x1边界
+CPHO39-Q05-F12,CPHO39-Q05,答案公式,答案PDF第20页,"②' x双点 + omega^2 x = F(t)/m, omega^2=k/m",源页式②',待最终复核,核对撇号式号、F(t)/m和k/m
+CPHO39-Q05-F13,CPHO39-Q05,答案公式,答案PDF第20页,③' x双点 + omega^2 x = alpha t/m；④' x通=A cos(omega t+phi),源页式③'-④',待最终复核,核对非齐次方程和通解
+CPHO39-Q05-F14,CPHO39-Q05,答案公式,答案PDF第20页,x特=Bt；⑤' B=alpha/(m omega^2)=alpha/k,源页式⑤',待最终复核,核对m omega^2分母和alpha/k等式
+CPHO39-Q05-F15,CPHO39-Q05,答案公式,答案PDF第21页,⑥' x=A cos(omega t+phi)+(alpha/k)t；⑦' x1(t)=A cos(omega t+phi)+(alpha/k)t+mg/k,源页式⑥'-⑦',待最终复核,核对跨页延续与撇号式号
+CPHO39-Q05-F16,CPHO39-Q05,答案公式,答案PDF第21页,"⑧ x1(0)=mg/k, x1点(0)=0",源页式⑧,待最终复核,核对初始速度点号，文本层易误读为x1(0)
+CPHO39-Q05-F17,CPHO39-Q05,答案公式,答案PDF第21页,⑨ phi=±pi/2；⑩ A=alpha/(omega k sin phi)=±alpha/(omega k),源页式⑨-⑩,待最终复核,核对正负号、sin phi和omega k
+CPHO39-Q05-F18,CPHO39-Q05,答案公式,答案PDF第21页,"⑪ A=alpha/(omega k)=alpha/k*sqrt(m/k), phi=pi/2",源页式⑪,待最终复核,核对根号sqrt(m/k)和乘除关系
+CPHO39-Q05-F19,CPHO39-Q05,答案公式,答案PDF第21页,⑫ x1(t)=-(alpha/(omega k)) sin omega t + (alpha/k)t + mg/k,源页式⑫,待最终复核,核对负号、sin项和三个加项
+CPHO39-Q05-F20,CPHO39-Q05,答案公式,答案PDF第21页,F(t)=k x2(t)；⑬ x2(t)=(alpha/k)t,源页式⑬,待最终复核,核对x2长度与外力关系
+CPHO39-Q05-F21,CPHO39-Q05,答案公式,答案PDF第21页,⑭ Delta x=x1-x2=-(alpha/(omega k))sin omega t+mg/k=(alpha/(omega k))(mg omega/alpha - sin omega t),源页式⑭,待最终复核,核对整体因子、括号和mg omega/alpha
+CPHO39-Q05-F22,CPHO39-Q05,答案公式,答案PDF第22页,⑮ sin(omega t0)<mg omega/alpha；⑯ alpha<mg omega=g sqrt(km),源页式⑮-⑯,待最终复核,核对不等号方向和g sqrt(km)
+CPHO39-Q05-F23,CPHO39-Q05,答案公式,答案PDF第22页,⑰ alpha>=mg omega=g sqrt(km)时的两个相位区间,源页式⑰,待最终复核,核对arcsin(mg omega/alpha)、2npi和端点开闭
+CPHO39-Q05-F24,CPHO39-Q05,答案公式,答案PDF第22页,⑱ 首次达到临界长度所在时间段说明,源页式⑱及文字,待最终复核,核对式号位置与文字边界
+CPHO39-Q05-F25,CPHO39-Q05,答案公式,答案PDF第22页,⑲ x1点(t)=(alpha/k)(1-cos omega t)>=0,源页式⑲,待最终复核,核对点号；文本层存在漏点风险
+CPHO39-Q05-F26,CPHO39-Q05,答案公式,答案PDF第22页,⑳ 由单调性判断可能发生相位区间,源页式⑳及文字,待最终复核,核对其为文字结论而非新解析式
+CPHO39-Q05-F27,CPHO39-Q05,答案公式,答案PDF第22页,㉑ t0的两个时间区间，含sqrt(m/k)、arcsin((g/alpha)sqrt(km))和2npi sqrt(m/k),源页式㉑,待最终复核,核对根号、arcsin自变量、端点开闭和n为非负整数
+CPHO39-Q05-F28,CPHO39-Q05,答案公式,答案PDF第22页,㉒ sin(omega t0)>mg omega/alpha；alpha>g sqrt(km),源页式㉒及文字,待最终复核,核对先断弹簧2条件和严格不等号
+CPHO39-Q05-F29,CPHO39-Q05,答案公式,答案PDF第22页,㉓ arcsin(mg omega/alpha)+2npi < omega t0 < (2n+1)pi - arcsin(mg omega/alpha),源页式㉓,待最终复核,核对相位区间和n为非负整数
+CPHO39-Q05-F30,CPHO39-Q05,答案公式,答案PDF第22页,㉔ alpha越大，arcsin(mg omega/alpha)越小，弹簧2先断相位区间越大,源页式㉔及文字,待最终复核,核对极限alpha->infty和第I、II象限表述
+CPHO39-Q05-F31,CPHO39-Q05,答案公式,答案PDF第23页,㉕ t0=kL/alpha,源页式㉕,待最终复核,核对由x2=L得到的时刻
+CPHO39-Q05-F32,CPHO39-Q05,答案公式,答案PDF第23页,㉖ sin(omega kL/alpha)>omega mg/alpha,源页式㉖,待最终复核,核对sin自变量、右侧omega mg/alpha和不等号
+CPHO39-Q05-F33,CPHO39-Q05,答案公式,答案PDF第23页,㉗ sin((kL/alpha)sqrt(k/m)) > (mg/alpha)sqrt(k/m),源页式㉗,待最终复核,核对代入omega=sqrt(k/m)后的根号和括号
+CPHO39-Q05-F34,CPHO39-Q05,答案公式,答案PDF第23页,㉘ Delta x=(alpha/(omega k))(mg omega/alpha - sin omega t0)=0,源页式㉘,待最终复核,核对同时断裂条件和整体因子
+CPHO39-Q05-F35,CPHO39-Q05,答案公式,答案PDF第23页,㉙ sin((kL/alpha)sqrt(k/m)) = (mg/alpha)sqrt(k/m),源页式㉙,待最终复核,核对等号条件与㉗不等式区分
+CPHO39-Q05-F36,CPHO39-Q05,评分标准,答案PDF第23页,评分标准：第(1)问3分，第(2)问19分，第(3)问13分，第(4)问5分,源页评分标准,待最终复核,用于边界和证据索引，不代表小问分值已正式拆分
+CPHO39-Q05-F37,CPHO39-Q05,答案边界,答案PDF第24页,第24页为第6题答案延续，仅作排除边界,页面视觉检查,答案边界已定位，待最终复核,第23页下半部已进入第6题

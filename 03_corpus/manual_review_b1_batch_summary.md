@@ -17,6 +17,7 @@
 | 083 | CPHO35-Q04-FORMULA | 第35届第4题 | 4 | 已建立答案公式核对入口，待最终复核 |
 | 084 | CPHO35-Q08-FORMULA | 第35届第8题 | 4 | 已建立答案公式核对入口，待最终复核 |
 | 085 | CPHO39-Q03-FORMULA | 第39届第3题 | 4 | 已建立答案公式核对入口，待最终复核 |
+| 086 | CPHO39-Q05-FORMULA | 第39届第5题 | 4 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -141,6 +142,18 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-page-12.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q03-solution-boundary-next-page-13.png`
 
+### CPHO39-Q05
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q05_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-paper-page-3.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-page-20.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-page-21.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-page-22.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-page-23.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-boundary-next-page-24.png`
+
 ## 边界确认
 
 ### CPHO36-Q03
@@ -196,6 +209,12 @@
 经视觉检查，第39届第3题题面位于试题PDF第2页中部，含图3a，上方为第2题尾部，下方进入第4题；答案第9页为第3题答案起点，第10页为解法一，第11页为解法二/三和第(4)问起点，第12页上半部为第(4)问式㉖至㉛和评分标准，下半部进入第4题，第13页为第4题答案延续，仅作排除边界确认。
 
 本轮保留原清单答案页范围 `9-12`，并将 `03_corpus/item_index.csv` 中第3题四个小问的答案页入口统一为 `9-12`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
+
+### CPHO39-Q05
+
+经视觉检查，第39届第5题题面位于试题PDF第3页中上部，本题无题图，第3页下部进入第6题；答案第20页为第5题答案起点，第21页覆盖第(2)问收尾和第(3)问开头，第22页覆盖第(3)问相位条件，第23页上半部覆盖第(4)问与评分标准，下半部进入第6题，第24页为第6题答案延续，仅作排除边界确认。
+
+本轮保留原清单答案页范围 `20-23`，并将 `03_corpus/item_index.csv` 中第5题四个小问的答案页入口统一为 `20-23`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
 
 ## 需最终复核点
 
@@ -271,6 +290,14 @@
 4. 解法二、解法三的 prime/doubleprime 式号、矩阵 `A`、`A^2=J`、列向量和式号引用需按源页终核。
 5. 式㉖至㉛的求和、总冲量矢量、`xhat/yhat` 单位矢量和奇偶表达需最终复核。同题 `CPHO39-Q03-FIG` 仍为C组未销项问题。
 
+### CPHO39-Q05
+
+1. 题面临界长度 `mg/k`、分段外力 `F(t)`、`alpha` 和不等号方向需按源页终核，不能用抽取文本自动替代。
+2. 式①至⑭中的二阶导数、平衡位置上横线、`omega^2=k/m`、`sqrt(m/k)`、`x1(t)`、`x2(t)`、`Delta x` 和撇号式号需逐式复核。
+3. 式⑮至㉔中的 `alpha` 阈值、`g sqrt(km)`、`arcsin` 自变量、相位区间端点开闭和 `x1` 单调性的点号需最终复核。
+4. 式㉕至㉙中的给定 `L` 条件、`omega=sqrt(k/m)` 代入、确保弹簧2先断与同时断裂的等/不等式差异需最终复核。
+5. 第23页评分标准用于边界和证据索引，不代表小问分值已正式拆分或人工校对完成。本题无题图，但仍不得视为公式人工销项完成。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-39Q05`：继续B组中风险公式校对入口建设，处理队列第086项 `CPHO39-Q05-FORMULA`。
+`G1-07-B1-FORMULA-39Q07`：继续B组中风险公式校对入口建设，处理队列第087项 `CPHO39-Q07-FORMULA`。

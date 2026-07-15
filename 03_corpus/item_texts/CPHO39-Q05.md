@@ -8,6 +8,31 @@
 - 题图：无
 - 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
 
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q05_formula_check_v1.csv`
+- 题面证据图：`03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-paper-page-3.png`
+- 答案证据图：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-page-20.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-page-21.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-page-22.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-page-23.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q05-solution-boundary-next-page-24.png`
+
+边界说明：
+
+- 第5题题面位于试题PDF第3页中上部，本题无题图；第3页下部进入第6题。
+- 答案第20页为第5题答案起点，第21页覆盖第(2)问收尾和第(3)问开头，第22页覆盖第(3)问相位条件，第23页上半部覆盖第(4)问和评分标准。
+- 第23页下半部已进入第6题，第24页为第6题答案延续，仅作排除边界。
+- 本入口只建立逐式核对线索，不填写真实校对人和校对日期，不关闭人工销项。
+
+重点待最终复核：
+
+- 题面临界长度 `mg/k`、分段外力 `F(t)`、`alpha` 和不等号方向。
+- 式①至⑭中的二阶导数、平衡位置上横线、`omega^2=k/m`、`sqrt(m/k)`、`x1(t)` 与 `x2(t)`。
+- 式⑮至㉔中的 `alpha` 阈值、`arcsin` 自变量、相位区间端点开闭和 `x1` 单调性的点号。
+- 式㉕至㉙中的给定 `L` 条件、`omega=sqrt(k/m)` 代入、确保弹簧2先断与同时断裂的等/不等式差异。
+
 ## 题干抽取文本
 
 ```text
