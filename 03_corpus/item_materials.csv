@@ -3,7 +3,7 @@ CPHO35-Q01,35,2018,1,03_corpus/item_texts/CPHO35-Q01.md,无,1,6-8,pdftotext + re
 CPHO35-Q02,35,2018,2,03_corpus/item_texts/CPHO35-Q02.md,03_corpus/item_assets/CPHO35-Q02-figure1-page1-raw.png,1,9-13,pdftotext + rendered page crop,未去除来源/权属水印；本页题图未见遮挡水印，仅裁切研究用原图,样例已整理；G1-07-B1已建立公式核对入口，待最终复核；图件、分值边界与特殊符号仍需人工校对
 CPHO35-Q03,35,2018,3,03_corpus/item_texts/CPHO35-Q03.md,03_corpus/item_assets/CPHO35-Q03-figure1-page1-raw.png,1-2,13-16,pdftotext + rendered page crop,未去除来源/权属水印；原图裁切，左侧邻近题干较近，论文用图建议重绘,样例已整理；G1-07-B1已建立公式核对入口，待最终复核；图件、分值边界与特殊符号仍需人工校对
 CPHO35-Q04,35,2018,4,03_corpus/item_texts/CPHO35-Q04.md,03_corpus/item_assets/CPHO35-Q04-figure1-page2-raw.png,2,16-19,pdftotext + rendered page crop,未去除来源/权属水印；本题图未见遮挡水印，仅裁切研究用原图,样例已整理；G1-07-B1已建立公式核对入口，待最终复核；图件、分值边界与特殊符号仍需人工校对
-CPHO35-Q05,35,2018,5,03_corpus/item_texts/CPHO35-Q05.md,无,2-3,19-28,pdftotext,无题图,样例已整理；公式与特殊符号待人工校对
+CPHO35-Q05,35,2018,5,03_corpus/item_texts/CPHO35-Q05.md,无,2-3,19-28,pdftotext,无题图,样例已整理；答案公式核对入口完成，待最终复核；第35届分值边界仍待核
 CPHO35-Q06,35,2018,6,03_corpus/item_texts/CPHO35-Q06.md,03_corpus/item_assets/CPHO35-Q06-figure1-page3-raw.png,3,28-31,pdftotext + rendered page crop,未去除来源/权属水印；原图裁切，边缘有少量邻近文字，论文用图建议重绘,样例已整理；公式、图注与特殊符号待人工校对
 CPHO35-Q07,35,2018,7,03_corpus/item_texts/CPHO35-Q07.md,03_corpus/item_assets/CPHO35-Q07-figure1-page4-raw.png,4,31-35,pdftotext + rendered page crop,未去除来源/权属水印；本题图未见遮挡水印，仅裁切研究用原图,样例已整理；公式、图注与特殊符号待人工校对
 CPHO35-Q08,35,2018,8,03_corpus/item_texts/CPHO35-Q08.md,无,5,35-38,pdftotext,无题图,样例已整理；G1-07-B1已建立公式核对入口，待最终复核；第35届分值边界仍需人工校对

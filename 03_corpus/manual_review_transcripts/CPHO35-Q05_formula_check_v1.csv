@@ -1,0 +1,51 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO35-Q05-F00,CPHO35-Q05,题面边界,paper p.2-3,第5题题面从试题PDF第2页下部开始，延续至第3页上部；第2页上方为第4题， 第3页下部进入第6题。,页面证据图：CPHO35-Q05-paper-page-2.png；CPHO35-Q05-paper-page-3.png,边界已定位，待最终复核,只作为第5题题面边界，不关闭第35届分值边界。
+CPHO35-Q05-F01,CPHO35-Q05,题面设定,paper p.2-3,钠光D线在磁场中分裂为三条；价电子质量m，电荷量-e，e>0。,题面第5题首段视觉核对,待最终复核,
+CPHO35-Q05-F02,CPHO35-Q05,题面设定,paper p.2-3,线性回复力为 -m omega_0^2 r，价电子固有圆频率为 omega_0。,题面第5题首段视觉核对,待最终复核,需核对 omega_0^2、r矢量和负号。
+CPHO35-Q05-F03,CPHO35-Q05,题面设定,paper p.3,匀强磁场沿z轴正方向，B参数化为 B=(2m/e) omega_L。,题面第5题磁场参数行视觉核对,待最终复核,需核对2m/e分式与omega_L下标。
+CPHO35-Q05-F04,CPHO35-Q05,题面小问,paper p.3,第(1)问要求选择绕磁场方向匀角速转动的参考系，并导出分量方程及其解。,题面第(1)问视觉核对,待最终复核,
+CPHO35-Q05-F05,CPHO35-Q05,题面小问,paper p.3,第(2)问要求将第(1)问的旋转系解变换至实验室参考系直角坐标。,题面第(2)问视觉核对,待最终复核,
+CPHO35-Q05-F06,CPHO35-Q05,题面小问,paper p.3,第(3)问要求证明频率omega_0谱线在磁场中一分为三，并在弱磁场 omega_L << omega_0 情形求频率间隔。,题面第(3)问视觉核对,待最终复核,需核对 << 符号、omega_L和omega_0上下标。
+CPHO35-Q05-F07,CPHO35-Q05,题面已知,paper p.3,转动参考系中科里奥利力 fc = -2m omega x v_prime。,题面已知条件视觉核对,待最终复核,需核对矢量叉乘、prime符号和负号。
+CPHO35-Q05-F08,CPHO35-Q05,答案起始边界,solution p.19,答案PDF第19页上半部为第4题收尾；第5题题面重印后进入解法（一）。,页面证据图：CPHO35-Q05-solution-page-19.png,边界已定位，待最终复核,第4题动能式不得纳入第5题证据。
+CPHO35-Q05-F09,CPHO35-Q05,解法一-受力式,solution p.19-20,F_prime = -m omega_0^2 r - e v x B - m omega x (omega x r) - 2m omega x v_prime。,第19-20页解法（一）式①视觉核对,待最终复核,需核对prime、叉乘、惯性离心力和科里奥利力负号。
+CPHO35-Q05-F10,CPHO35-Q05,解法一-速度变换,solution p.20,r=r_prime；v=omega x r_prime + v_prime；分量含 v_xprime = v_prime_xprime - omega y_prime，v_yprime = v_prime_yprime + omega x_prime。,第20页式②视觉核对,待最终复核,需核对实验室速度分量与旋转系速度分量的prime位置。
+CPHO35-Q05-F11,CPHO35-Q05,解法一-等价受力式,solution p.20,F_prime = -m omega_0^2 r + m(2 omega_L - omega) x (omega x r) + 2m(omega_L - omega) x v_prime。,第20页式③视觉核对,待最终复核,需核对omega_L矢量、omega矢量和括号层级。
+CPHO35-Q05-F12,CPHO35-Q05,解法一-参考系选择,solution p.20,令 omega = omega_L。,第20页式④视觉核对,待最终复核,需核对选择的旋转角速度方向。
+CPHO35-Q05-F13,CPHO35-Q05,解法一-线性回复力,solution p.20,F_prime = -m omega_0^2 r + m omega_L x (omega_L x r) = -m[(omega_0^2+omega_L^2)(x_prime i_prime + y_prime j_prime)+omega_0^2 z_prime k_prime]。,第20页式⑤视觉核对,待最终复核,长式需逐项核对括号、平方和单位矢量。
+CPHO35-Q05-F14,CPHO35-Q05,解法一-动力学方程,solution p.20-21,旋转系分量方程：x_prime双点=-(omega_0^2+omega_L^2)x_prime，y_prime双点=-(omega_0^2+omega_L^2)y_prime，z_prime双点=-omega_0^2 z_prime。,第20页式⑥⑦视觉核对,待最终复核,需核对二阶导数点号在源页中的表达。
+CPHO35-Q05-F15,CPHO35-Q05,解法一-旋转系解,solution p.21,x_prime=A1 cos(sqrt(omega_0^2+omega_L^2)t+phi_1)，y_prime=A2 sin(sqrt(omega_0^2+omega_L^2)t+phi_2)，z_prime=A3 cos(omega_0 t+phi_3)。,第21页式⑧视觉核对,待最终复核,需核对x/y为cos或sin、根号覆盖范围和相位下标。
+CPHO35-Q05-F16,CPHO35-Q05,解法一-坐标变换,solution p.21,x=x_prime cos omega t - y_prime sin omega t；y=x_prime sin omega t + y_prime cos omega t；z=z_prime。,第21页式⑨视觉核对,待最终复核,需核对正负号和omega=omega_L代入。
+CPHO35-Q05-F17,CPHO35-Q05,解法一-实验室解,solution p.21,实验室解分解为omega_+与omega_-两组x、y分量，z=A3 cos(omega_0 t+phi_3)。,第21页式⑩视觉核对,待最终复核,长式含A1/2、A2/2和相位，需按源页逐式排版复核。
+CPHO35-Q05-F18,CPHO35-Q05,解法一-频率定义,solution p.21,omega_pm = sqrt(omega_0^2 + omega_L^2) ± omega_L。,第21页式⑪视觉核对,待最终复核,需核对根号范围和±位置。
+CPHO35-Q05-F19,CPHO35-Q05,解法一-合成振动,solution p.21,通过同方向同频率简谐振动合成，定义A_+、phi_+、A_-、phi_-。,第21页式⑫视觉核对,待最终复核,需核对四行合成式的正负号。
+CPHO35-Q05-F20,CPHO35-Q05,解法一-三频振动,solution p.21,x=A_+ cos(omega_+ t+phi_+) + A_- cos(omega_- t+phi_-)；y=A_+ sin(omega_+ t+phi_+) - A_- sin(omega_- t+phi_-)；z=A3 cos(omega_0 t+phi_3)。,第21页式⑬视觉核对,待最终复核,需核对y分量负号。
+CPHO35-Q05-F21,CPHO35-Q05,解法一-谱线结果,solution p.21,原子价电子参与三个频率振动，发出圆频率分别为 omega_+、omega_0、omega_- 的光。,第21页式⑭视觉核对,待最终复核,
+CPHO35-Q05-F22,CPHO35-Q05,解法一-弱场近似,solution p.21,弱磁场下 omega_pm ~= omega_0 ± omega_L；间隔 omega_+ - omega_0 = omega_0 - omega_- = omega_L。,第21页式⑮⑯视觉核对,待最终复核,需核对近似符号、omega_L方向和“圆频率间隔”。
+CPHO35-Q05-F23,CPHO35-Q05,解法二-牛顿方程,solution p.21,ma = -m omega_0^2 r - e v x B。,第21页解法（二）式①视觉核对,待最终复核,需核对Lorentz力负号。
+CPHO35-Q05-F24,CPHO35-Q05,解法二-实验室分量方程,solution p.21,x双点=-omega_0^2 x - 2 omega_L y点；y双点=-omega_0^2 y + 2 omega_L x点；z双点=-omega_0^2 z。,第21页式②视觉核对,待最终复核,需核对点号、正负号和omega_L项。
+CPHO35-Q05-F25,CPHO35-Q05,解法二-变换求导,solution p.21-22,对x=x_prime cos omega t - y_prime sin omega t，y=x_prime sin omega t + y_prime cos omega t两次求导并代入方程。,第21-22页式③④视觉核对,待最终复核,跨页长式需核对二阶导数、sin/cos项和括号。
+CPHO35-Q05-F26,CPHO35-Q05,解法二-旋转系方程,solution p.22,令omega=omega_L后得到与解法（一）相同的旋转系方程和解。,第22页式⑤至⑧视觉核对,待最终复核,需核对式⑤中(omega-omega_L)项和化简。
+CPHO35-Q05-F27,CPHO35-Q05,解法三-极坐标设定,solution p.23,r=rho e_rho + z e_z；v=rho点 e_rho + rho theta点 e_theta + z点 k；加速度分量含 a_rho、a_theta、a_z。,第23页解法（三）式①②视觉核对,待最终复核,需核对rho、theta点号和单位矢量下标。
+CPHO35-Q05-F28,CPHO35-Q05,解法三-极坐标动力学,solution p.23,ma=-m omega_0^2 r - e v x B = -m omega_0^2 r - 2m omega_L rho theta点 e_rho + 2m omega_L rho点 e_theta。,第23页动力学方程视觉核对,待最终复核,需核对rho theta点和rho点位置。
+CPHO35-Q05-F29,CPHO35-Q05,解法三-分量方程,solution p.23,极坐标分量方程包括 rho双点-rho theta点^2、(1/rho)d(rho^2 theta点)/dt 和 z双点=-omega_0^2 z。,第23页式③视觉核对,待最终复核,需核对第二式等号右端和分母rho。
+CPHO35-Q05-F30,CPHO35-Q05,解法三-旋转系选择,solution p.24,theta=omega t+theta_prime；选择omega=omega_L后角向方程给出 dtheta_prime/dt=0。,第24页式④至⑥视觉核对,待最终复核,需核对常量C=0的论证边界。
+CPHO35-Q05-F31,CPHO35-Q05,解法三-极坐标解,solution p.24,rho=A_rho cos(sqrt(omega_0^2+omega_L^2)t+phi_rho)，theta_prime=phi_theta，z=A_z cos(omega_0 t+phi_z)。,第24页式⑦⑧视觉核对,待最终复核,需核对根号范围和phi下标。
+CPHO35-Q05-F32,CPHO35-Q05,解法三-实验室极坐标解,solution p.25,theta=omega_L t+phi_theta，x=rho cos theta，y=rho sin theta，经积化和差得到omega_+与omega_-两组项。,第25页式⑨⑩视觉核对,待最终复核,需核对A_rho/2、相位组合和正负号。
+CPHO35-Q05-F33,CPHO35-Q05,解法三-替代表达,solution p.25,括号内给出由直角坐标变换得到的等价实验室解和omega_pm定义。,第25页方括号内式⑨至⑪视觉核对,待最终复核,需核对方括号内等价式是否与解法一一致。
+CPHO35-Q05-F34,CPHO35-Q05,解法四-分量方程,solution p.25-26,解法（四）从 ma=-m omega_0^2 r - e v x B 出发，直角坐标分量方程与解法（二）一致。,第25-26页解法（四）式①②视觉核对,待最终复核,第26页为本解法主体起点，需核对页间边界。
+CPHO35-Q05-F35,CPHO35-Q05,解法四-z解,solution p.26,z=A3 cos(omega_0 t+phi_3)。,第26页式③视觉核对,待最终复核,
+CPHO35-Q05-F36,CPHO35-Q05,解法四-试探解,solution p.26,设x=A1 cos(omega t+phi_1)，y=A2 sin(omega t+phi_2)，A1、A2不全为零。,第26页式④视觉核对,待最终复核,需核对A1/A2不全为零注释。
+CPHO35-Q05-F37,CPHO35-Q05,解法四-特征条件,solution p.26,代入后得到phi_1=phi_2=phi、A1^2=A2^2，以及 [(-omega^2+omega_0^2)^2-(2omega_L omega)^2]=0。,第26页式⑤视觉核对,待最终复核,需核对平方、括号和负号。
+CPHO35-Q05-F38,CPHO35-Q05,解法四-频率解,solution p.26,omega=omega_pm=sqrt(omega_0^2+omega_L^2) ± omega_L ~= omega_0 ± omega_L；A1=±A2。,第26页式⑥视觉核对,待最终复核,需核对近似只用于弱磁场。
+CPHO35-Q05-F39,CPHO35-Q05,解法四-叠加解,solution p.26,x=A_+ cos(omega_+ t+phi_1)+A_- cos(omega_- t+phi_1)，y=A_+ sin(omega_+ t+phi_2)-A_- sin(omega_- t+phi_2)，并给出等价式。,第26页式⑦⑧视觉核对,待最终复核,需核对phi_1/phi_2与phi_+/phi_-对应。
+CPHO35-Q05-F40,CPHO35-Q05,解法四-结论,solution p.26,三种圆频率omega_+、omega_0、omega_-；弱场间隔为omega_L。,第26页式⑨至⑪视觉核对,待最终复核,需核对式号引用中⑪是否指前文或本解法内部。
+CPHO35-Q05-F41,CPHO35-Q05,解法五-极坐标起点,solution p.26-27,解法（五）重新采用极坐标，给出r、v、a分量与牛顿第二定律。,第26-27页解法（五）式①②视觉核对,待最终复核,与解法三相近但式号重新编号，正式引用需避免混淆。
+CPHO35-Q05-F42,CPHO35-Q05,解法五-角向积分,solution p.27,由d(rho^2 theta点)/dt = omega_L d(rho^2)/dt 得 rho^2 theta点 = rho^2 omega_L + C，并令C=0。,第27页式③后推导视觉核对,待最终复核,需核对C=0理由和theta点=omega_L。
+CPHO35-Q05-F43,CPHO35-Q05,解法五-径向方程,solution p.27,rho双点=-(omega_0^2+omega_L^2)rho。,第27页式④视觉核对,待最终复核,需核对rho双点与omega_L^2符号。
+CPHO35-Q05-F44,CPHO35-Q05,解法五-坐标解,solution p.27-28,x=A_rho cos(sqrt(omega_0^2+omega_L^2)t+phi_rho)cos(omega_L t+phi_theta)，y=A_rho cos(...)sin(omega_L t+phi_theta)，z=A_z cos(omega_0 t+phi_z)。,第27-28页式⑤视觉核对,待最终复核,跨页公式，需核对A_rho、A_z、phi_rho、phi_theta。
+CPHO35-Q05-F45,CPHO35-Q05,解法五-积化和差,solution p.28,2cos(...)cos(...)与2cos(...)sin(...)分别化为omega_+、omega_-的cos/sin组合。,第28页式⑥视觉核对,待最终复核,需核对相位phi_+、phi_-定义。
+CPHO35-Q05-F46,CPHO35-Q05,解法五-最终解,solution p.28,x=A_+ cos(omega_+ t+phi_+) + A_- cos(omega_- t+phi_-)；y=A_+ sin(omega_+ t+phi_+) - A_- sin(omega_- t+phi_-)；z=A3 cos(omega_0 t+phi_3)。,第28页式⑧视觉核对,待最终复核,需核对y分量负号和A3/A_z符号一致性。
+CPHO35-Q05-F47,CPHO35-Q05,解法五-最终谱线间隔,solution p.28,再次给出三种圆频率omega_+、omega_0、omega_-；弱场下omega_pm ~= omega_0 ± omega_L，间隔为omega_L。,第28页式⑨至⑪视觉核对,待最终复核,需核对该处式号与解法（一）式号重复。
+CPHO35-Q05-F48,CPHO35-Q05,答案结束边界,solution p.28,第5题答案在第28页上半部式⑪后结束；第28页下半部进入第6题题面与参考解答。,页面证据图：CPHO35-Q05-solution-page-28.png,边界已定位，待最终复核,第6题内容仅作排除边界，不纳入第5题公式证据。
+CPHO35-Q05-F49,CPHO35-Q05,评分/销项边界,solution p.19-28,本轮只建立第5题公式核对入口；未填写真实校对人、校对日期，未关闭第35届分值边界。,manual_review_checklist.csv；页面证据图,不销项，待最终复核,正式编码前仍需逐式终核和证据摘录。

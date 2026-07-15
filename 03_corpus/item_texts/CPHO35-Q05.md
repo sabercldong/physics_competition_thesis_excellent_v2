@@ -8,6 +8,17 @@
 - 题图：无
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
 
+## G1-07-B1 公式核对入口
+
+- 任务：`G1-07-B1-FORMULA-35Q05`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q05_formula_check_v1.csv`
+- 页面证据：
+  - 题面：`03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-paper-page-2.png`；`03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-paper-page-3.png`
+  - 答案：`03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-19.png` 至 `CPHO35-Q05-solution-page-28.png`
+- 边界：第5题题面从试题PDF第2页下部开始，延续至第3页上部；答案PDF第19页上半部为第4题收尾，第5题从题面重印和解法（一）开始，第28页上半部为第5题解法（五）收尾，第28页下半部进入第6题。
+- 当前状态：答案公式核对入口完成，待最终复核；未填写真实校对人和校对日期，不代表人工校对销项完成。
+- 保留风险：`omega_L` 方向、prime符号、二阶导数点号、`sqrt(omega_0^2+omega_L^2)` 根号范围、`A_+/A_-` 相位组合、极坐标 `rho/theta` 点号、重复式号和第35届第5题分值边界仍需最终复核。
+
 ## 题干
 
 ```text

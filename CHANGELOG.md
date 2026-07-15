@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-15：G1-07-B1-FORMULA-35Q05 第35届第5题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q05_formula_check_v1.csv`，依据第35届合并PDF第19-28页登记题面变量、旋转参考系、受力方程、坐标变换、五种解法、三频谱线、弱场间隔和边界等50条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第088项 `CPHO35-Q05-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第089项 `CPHO35-Q06-FORMULA`；
+- 新增第35届第5题共12张页面证据图：题面第2-3页、答案第19-28页；视觉检查确认第5题题面从试题PDF第2页下部开始，第3页上部结束，答案第19页上半部为第4题收尾，第5题从第19页中下部开始，第28页上半部结束且下半部进入第6题；
+- 更新 `03_corpus/item_texts/CPHO35-Q05.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO35-Q05-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第35届第5题三个小问答案页入口统一为 `19-28`；
+- 标记题面 `B=(2m/e)omega_L`、科里奥利力、`omega_L` 方向、prime符号、二阶导数点号、`sqrt(omega_0^2+omega_L^2)` 根号范围、`A_+/A_-` 相位组合、极坐标 `rho/theta` 点号、重复式号和第35届第5题分值边界为待最终复核；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第088项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-35Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-15：G1-07-B1-FORMULA-39Q07 第39届第7题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO39-Q07_formula_check_v1.csv`，依据第39届合并PDF第27-29页登记题面分布函数、压强-能量密度关系、解法二压强积分、平均能量积分、`P=n k_B T`、摩尔热容、热容比、绝热膨胀半径和评分标准等31条公式核对入口；

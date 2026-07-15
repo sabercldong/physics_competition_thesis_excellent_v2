@@ -19,6 +19,7 @@
 | 085 | CPHO39-Q03-FORMULA | 第39届第3题 | 4 | 已建立答案公式核对入口，待最终复核 |
 | 086 | CPHO39-Q05-FORMULA | 第39届第5题 | 4 | 已建立答案公式核对入口，待最终复核 |
 | 087 | CPHO39-Q07-FORMULA | 第39届第7题 | 4 | 已建立答案公式核对入口，待最终复核 |
+| 088 | CPHO35-Q05-FORMULA | 第35届第5题 | 3 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -165,6 +166,24 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q07-solution-page-28.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q07-solution-page-29.png`
 
+### CPHO35-Q05
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q05_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-paper-page-2.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-paper-page-3.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-20.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-21.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-22.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-23.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-24.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-25.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-26.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-27.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q05-solution-page-28.png`
+
 ## 边界确认
 
 ### CPHO36-Q03
@@ -232,6 +251,12 @@
 经视觉检查，第39届第7题题面从试题PDF第4页中下部开始，上方为第6题尾部；第7题无题图。答案第27页上半部为第6题Seebeck系数收尾和评分标准，第7题答案从第27页中部“七、”开始；第28页覆盖解法二压强积分、第(2)问平均能量积分、`beta` 导数法、分部积分法和 `P = n k_B T`；第29页覆盖第(3)(4)问、式⑫至式⑳、最终半径和评分标准，且第29页为PDF末页。
 
 本轮保留原清单答案页范围 `27-29`，并将 `03_corpus/item_index.csv` 中第7题四个小问的答案页入口统一为 `27-29`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
+
+### CPHO35-Q05
+
+经视觉检查，第35届第5题题面从试题PDF第2页下部开始，延续至第3页上部；第2页上方为第4题，第3页下部进入第6题。答案第19页上半部为第4题收尾，第5题从第19页中下部题面重印和解法（一）开始；第20至21页覆盖解法（一）的受力式、旋转系方程、坐标变换和谱线间隔；第22页覆盖解法（二）的坐标变换与方程化简；第23至25页覆盖解法（三）的极坐标推导与实验室解；第25至26页覆盖解法（四）；第26至28页覆盖解法（五），第28页上半部给出三频结果与弱场间隔，第28页下半部进入第6题。
+
+本轮保留原清单答案页范围 `19-28`，并将 `03_corpus/item_index.csv` 中第5题三个小问的答案页入口统一为 `19-28`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。题面页未见清晰的大题分值标注，因此同题 `CPHO35-Q05-SCORE` 仍需保留为待核实。
 
 ## 需最终复核点
 
@@ -323,6 +348,14 @@
 4. 式⑥至⑪中的积分分子分母、`E(p)≈pc`、`beta=(k_B T)^(-1)`、`g(beta)` 导数、分部积分式⑨′和 `P=n k_B T` 需逐式复核。
 5. 式⑫至⑳中的 `N_A`、`C_V/C_P`、`gamma=4/3`、绝热式 `T V^(gamma-1)`、`T r=常量`、最终半径 `8.0 x 10^-15 m` 和评分标准均需最终复核；解题图7a/7b仅作为答案推导图，不代表题面题图已经另行销项。
 
+### CPHO35-Q05
+
+1. 题面 `B = (2m/e) omega_L`、价电子电荷 `-e`、弱磁场 `omega_L << omega_0` 和科里奥利力 `fc = -2m omega x v_prime` 需按源页终核。
+2. 解法（一）式①至式⑯中的惯性力、洛伦兹力、`omega = omega_L` 选择、`sqrt(omega_0^2+omega_L^2)` 根号范围、`omega_+`/`omega_-` 定义和谱线间隔需逐式复核。
+3. 解法（二）第21至22页的坐标变换两次求导、二阶导数点号、`sin/cos` 项正负号和 `(omega-omega_L)` 项需最终复核。
+4. 解法（三）和解法（五）中的极坐标 `rho`、`theta` 点号、单位矢量、角向积分常量 `C=0` 的处理和相位组合需最终复核。
+5. 解法（四）特征条件、`A1=±A2`、重复式号、弱场近似和第28页第6题边界需最终复核。`CPHO35-Q05-SCORE` 仍需在第35届分值边界复核任务中处理。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-35Q05`：继续B组中风险公式校对入口建设，处理队列第088项 `CPHO35-Q05-FORMULA`。
+`G1-07-B1-FORMULA-35Q06`：继续B组中风险公式校对入口建设，处理队列第089项 `CPHO35-Q06-FORMULA`。
