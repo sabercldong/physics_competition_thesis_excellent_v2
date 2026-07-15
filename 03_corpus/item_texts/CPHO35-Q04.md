@@ -36,6 +36,37 @@
 的动能。
 ```
 
+## G1-07-B1公式核对入口
+
+- 任务编号：`G1-07-B1-FORMULA-35Q04`
+- 核对表：`03_corpus/manual_review_transcripts/CPHO35-Q04_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-paper-page-2.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-page-16.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-page-17.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-page-18.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-solution-boundary-next-page-20.png`
+
+### 页边界
+
+- 题面：试题PDF第2页中部为第4题完整题面；上方为第3题尾部，下方进入第5题。
+- 答案：答案PDF第16页为第3题尾部、第4题题面重印和参考解答起点；第17至18页为核心公式；第19页上半部为第4题式⑳和答案结束；第20页为第5题解法，仅作排除边界。
+
+### 重点待复核公式
+
+| 范围 | 重点 |
+|---|---|
+| 式①至式④ | 四根导线磁场 `B1` 至 `B4` 的电流正负号、`x±a`、`y±a` 和分母平方项 |
+| 式⑤ | 总磁场长式的 `i/j` 分量、括号层级和四个分式项正负号 |
+| 式⑥至式⑪ | 近原点展开、`x i - y j`、`B_tot` 下标与 `B0 k` |
+| 式⑫至式⑯ | `|B_tot|`、势能、作用力、完整势能式和 `x` 轴势能式中的根号覆盖范围 |
+| 式⑰至式⑳ | 逸出位置、`(4/3)^(1/4)`、`3sqrt(3)/8` 系数和动能表达式中 `-1` 是否在根号外 |
+
+### 未销项说明
+
+本轮只建立 `CPHO35-Q04-FORMULA` 的公式核对入口和页面证据包，不填写真实校对人和校对日期，不关闭真实人工销项；同题 `CPHO35-Q04-FIG` 和 `CPHO35-Q04-SCORE` 仍为待人工校对，不能据此声称题图、图注、分值边界或正式编码证据已完成终核。
+
 ## 参考解答抽取文本
 
 ```text
