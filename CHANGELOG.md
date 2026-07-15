@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-15：G1-07-B1-FORMULA-35Q03 第35届第3题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q03_formula_check_v1.csv`，依据第35届合并PDF第13-16页登记题面变量、打击中心、碰撞后质心位置、角速度、转动惯量、轴力分量、撤轴后平抛叠加转动和高度差等42条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第082项 `CPHO35-Q03-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第083项 `CPHO35-Q04-FORMULA`；
+- 新增第35届第3题共7张页面证据图：题面第1-2页、答案第13-16页和第17页下一题边界确认图；视觉检查确认第3题题面从第1页页底开始至第2页上半部结束，答案从第13页中部开始至第16页式⑳结束，第16页下半部和第17页进入第4题；
+- 更新 `03_corpus/item_texts/CPHO35-Q03.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO35-Q03-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第35届第3题四个小问答案页入口统一为 `13-16`；
+- 保留同题 `CPHO35-Q03-FIG` 和 `CPHO35-Q03-SCORE` 为未销项状态；`l/1` 混淆、`L_c/x_B/y_B/omega_0/omega'/beta'` 上下标和撇号、式⑨/⑮/⑲/⑳根号和绝对值范围均标记为待最终复核；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，记录B组第082项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-35Q04`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-15：G1-07-B1-FORMULA-35Q02 第35届第2题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q02_formula_check_v1.csv`，依据第35届合并PDF第9-13页登记题面变量、摩擦阈值、往返递推、最终位置四段式、总路程三段式和边界等41条公式核对入口；

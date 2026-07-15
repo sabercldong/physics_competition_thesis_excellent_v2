@@ -35,6 +35,30 @@
 （4）求在撤除转轴后，杆再转半圈时 O 、 B 两点的高度差。
 ```
 
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q03_formula_check_v1.csv`
+- 题面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-paper-page-2.png`
+- 答案证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-14.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-15.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-16.png`
+- 下一题排除边界：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-boundary-next-page-17.png`
+
+边界说明：第3题题面从试题PDF第1页页底开始，延续至第2页上半部；答案PDF第13页中部开始，第14-15页覆盖核心推导，第16页式⑳后进入第4题，第17页为第4题答案，仅作排除边界。本入口只建立核对路线，不代表公式、特殊符号、题图或分值已经完成正式人工销项。
+
+重点待复核：
+
+1. `l` 与数字 `1` 的视觉混淆，尤其是 `Ml^2`、`(4m+3M)l` 和高度差公式中的 `l`。
+2. `L_c`、`x_B`、`y_B`、`omega_0`、`omega'`、`beta'` 等上下标和撇号。
+3. 式⑨、式⑮、式⑲、式⑳中的根号、负一次方、分母括号和绝对值范围。
+4. 式⑬、式⑭中的轴力分量、三角函数、`cos^2 theta` 和正负号。
+5. 同题 `CPHO35-Q03-FIG` 题图问题仍未销项；`CPHO35-Q03-SCORE` 分值边界仍为待核实。
+
 ## 参考解答抽取文本
 
 ```text

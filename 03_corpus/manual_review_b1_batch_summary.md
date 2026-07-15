@@ -13,6 +13,7 @@
 | 079 | CPHO39-Q04-FORMULA | 第39届第4题 | 5 | 已建立答案公式核对入口，待最终复核 |
 | 080 | CPHO39-Q06-FORMULA | 第39届第6题 | 5 | 已建立答案公式核对入口，待最终复核 |
 | 081 | CPHO35-Q02-FORMULA | 第35届第2题 | 4 | 已建立答案公式核对入口，待最终复核 |
+| 082 | CPHO35-Q03-FORMULA | 第35届第3题 | 4 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -89,6 +90,19 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-page-13.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-solution-boundary-next-page-14.png`
 
+### CPHO35-Q03
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q03_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-paper-page-2.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-14.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-15.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-page-16.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-solution-boundary-next-page-17.png`
+
 ## 边界确认
 
 ### CPHO36-Q03
@@ -120,6 +134,12 @@
 经视觉检查，第35届第2题题面位于试题PDF第1页中部，上方为第1题，下方进入第3题；题面页未见清晰的大题分值标注，因此同题 `CPHO35-Q02-SCORE` 仍需保留为待核实。答案第9页下半部为第2题题面重印，第10至13页覆盖第(1)至第(4)问的参考解答、递推关系、最终位置分段式和总路程分段式；第13页下方进入第3题，第14页为第3题答案，仅作排除边界确认。
 
 本轮保留原清单的答案页范围 `9-13`，并将 `03_corpus/item_index.csv` 中第2题四个小问的答案页入口统一为 `9-13`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
+
+### CPHO35-Q03
+
+经视觉检查，第35届第3题题面从试题PDF第1页页底开始，题图与起始条件位于第1页下方，第2页上半部给出第(1)至第(4)问并结束，第2页中部进入第4题。题面页未见清晰的大题分值标注，因此同题 `CPHO35-Q03-SCORE` 仍需保留为待核实。答案第13页上半部为第2题收尾，第3题答案从第13页中部“三、”开始，第14至15页覆盖第(1)(2)问核心推导和第(3)问开头，第16页上半部覆盖式⑯至式⑳并结束，第16页下半部进入第4题，第17页为第4题答案，仅作排除边界确认。
+
+本轮保留原清单的答案页范围 `13-16`，并将 `03_corpus/item_index.csv` 中第3题四个小问的答案页入口统一为 `13-16`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。
 
 ## 需最终复核点
 
@@ -163,6 +183,14 @@
 4. 同题 `CPHO35-Q02-FIG` 仍为C组未销项问题；若第2题后续作为案例或附录图件使用，需另行完成题图、图注与裁边校对。
 5. 题面页未见清晰大题分值标注，`CPHO35-Q02-SCORE` 仍需在第35届分值边界复核任务中处理。
 
+### CPHO35-Q03
+
+1. 第13至16页式①至式⑳中的 `l` 与数字 `1` 视觉混淆风险较高，尤其是 `Ml^2`、`(4m+3M)l` 和高度差公式中的 `l`。
+2. `L_c`、`x_B`、`y_B`、`omega_0`、`omega'`、`beta'` 等上下标和撇号需按源页终核，不能用OCR文本自动替代。
+3. 式⑨、式⑮、式⑲、式⑳含根号、负一次方、绝对值和多层分母括号，需逐式排版复核。
+4. 式⑬、式⑭轴力分量中的三角函数、`cos^2 theta`、正负号和分母 `(4m+3M)l` 需最终复核。
+5. 同题 `CPHO35-Q03-FIG` 仍为C组未销项问题；若第3题后续作为案例或附录图件使用，需另行完成题图、图注与裁边校对。`CPHO35-Q03-SCORE` 仍需在第35届分值边界复核任务中处理。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-35Q03`：继续B组中风险公式校对入口建设，处理队列第082项 `CPHO35-Q03-FORMULA`。
+`G1-07-B1-FORMULA-35Q04`：继续B组中风险公式校对入口建设，处理队列第083项 `CPHO35-Q04-FORMULA`。
