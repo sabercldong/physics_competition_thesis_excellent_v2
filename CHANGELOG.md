@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-C1-FIG-39Q04 第39届第4题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO39-Q04_figure_check_v1.csv`，登记图4a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO39-Q04-figure4a-page2-recrop-v1.png`，基于第39届试题PDF第2页整页渲染图重裁图4a，去除原裁图左侧和底部邻近题干文字；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q04-paper-page-2-figure4a-crop-box.png` 和 `CPHO39-Q04-figure4a-check-contact-v1.png`，记录图4a来源位置、原图/候选图对照以及左侧、下方题干边界；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第106项 `CPHO39-Q04-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO39-Q04-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-39Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不补造图注、正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-16：G1-07-C1-FIG-36Q07 第36届第7题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO36-Q07_figure_check_v1.csv`，登记图a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；

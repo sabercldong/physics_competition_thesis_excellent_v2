@@ -13,6 +13,7 @@
 | 103 | CPHO42-Q05-FIG | 第42届第5题 | 6 | 已建立题图核对入口和图5b重裁候选图，待最终复核 |
 | 104 | CPHO36-Q03-FIG | 第36届第3题 | 5 | 已建立题图核对入口和图a重裁候选图，待最终复核 |
 | 105 | CPHO36-Q07-FIG | 第36届第7题 | 5 | 已建立题图核对入口和图a重裁候选图，待最终复核 |
+| 106 | CPHO39-Q04-FIG | 第39届第4题 | 5 | 已建立题图核对入口和图4a重裁候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -91,6 +92,21 @@
 3. 重裁候选图基于第6页整页渲染图生成，去除上下邻近题干文字，保留云层正负电荷、闪电、12km高度箭头、地面和图注。
 4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
 
+## CPHO39-Q04
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO39-Q04_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO39-Q04-figure1-page2-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO39-Q04-figure4a-page2-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q04-paper-page-2-figure4a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q04-figure4a-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图4a位于第39届第4题题面第2页右下方，属于旋转圆环与铰接细杆题面证据；同页第3题图3a不得纳入本题题图证据。
+2. 原始裁图保留圆环、杆、`R`、`O`、`P`、`omega`、`theta`、`2a`、`mg` 和图注，但左侧与底部混入邻近题干文字。
+3. 重裁候选图基于第2页整页渲染图生成，去除左侧与底部邻近题干文字，保留图形主体和图注。
+4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-39Q04`：继续处理C组队列第106项 `CPHO39-Q04-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG` 和第105项 `CPHO36-Q07-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-39Q06`：继续处理C组队列第107项 `CPHO39-Q06-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG` 和第106项 `CPHO39-Q04-FIG` 均仍需真实确认记录才能正式销项。

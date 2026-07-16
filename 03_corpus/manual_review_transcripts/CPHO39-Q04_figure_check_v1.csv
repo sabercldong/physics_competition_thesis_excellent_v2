@@ -1,0 +1,6 @@
+﻿check_id,material_id,figure_id,source_page,evidence_file,check_item,observation,status,next_action
+F00,CPHO39-Q04,图4a,试题PDF第2页,03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q04-paper-page-2.png,页面位置,图4a位于第39届第4题题面第2页右下方，左侧为第4题题干文字，同页上方和中部仍含第2题、第3题及图3a，均不属于本题图4a裁切范围。,已定位，待最终复核,正式使用前复核图4a与左侧、下方题干边界，并确认第3题图3a未被纳入。
+F01,CPHO39-Q04,图4a,试题PDF第2页,03_corpus/item_assets/CPHO39-Q04-figure1-page2-raw.png,原始裁图,原始裁图保留水平圆环、刚性细杆、R、O、P、omega、theta、2a、mg和图注“图4a”，但左侧和底部混入邻近题干文字。,保留作来源对照,不建议直接作为论文插图定稿；优先使用重裁候选图或基于源页重绘。
+F02,CPHO39-Q04,图4a,试题PDF第2页,03_corpus/item_assets/CPHO39-Q04-figure4a-page2-recrop-v1.png,重裁候选图,重裁候选图基于第2页整页渲染图生成，去除左侧和下方邻近题干文字，保留圆环、杆、R、O、P、omega、theta、2a、mg和图注“图4a”。,候选可用，待最终复核,论文或附录使用前进行最终版式确认；若需高清定稿图，可基于源页重绘。
+F03,CPHO39-Q04,图4a,试题PDF第2页,03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q04-paper-page-2-figure4a-crop-box.png,裁框定位,裁框标出第2页图4a区域，并标记左侧题干和下方题干不属于题图裁切范围；同页第3题图3a不属于第4题图4a证据。,已记录，待最终复核,如后续重新裁图或重绘，保留本定位证据用于追溯来源。
+F04,CPHO39-Q04,图4a,试题PDF第2页,03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q04-figure4a-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和源页裁框，便于后续人工确认。,已生成，待最终复核,正式销项需补真实校对人和日期。
