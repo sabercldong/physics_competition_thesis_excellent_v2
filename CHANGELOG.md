@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-36Q04 第36届第4题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q04_figure_check_v1.csv`，登记第36届第4题图a/图b来源页、原始裁图、重裁候选图、裁框定位和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO36-Q04-figure1-page4-recrop-v1.png`，基于第36届试题PDF第4页整页渲染图重裁题图，保留图a微孔竹板照片、图b微孔竹板装置简化图、右侧亥姆霍兹共振器模型、`S/l/V0` 标注和两条图注；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q04-paper-page-4.png`、`CPHO36-Q04-paper-page-4-figure1-crop-box.png` 和 `CPHO36-Q04-figure1-check-contact-v1.png`，记录题图来源位置、原图/候选图对照和第5题正文边界；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第127项 `CPHO36-Q04-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO36-Q04-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-36Q05`；
+- 本轮明确记录：候选图未纳入第5题正文，仍需最终版式复核；本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-35Q06 第35届第6题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q06_figure_check_v1.csv`，登记第35届第6题题图来源页、原始裁图、重裁候选图、裁框定位和新旧对照证据；
