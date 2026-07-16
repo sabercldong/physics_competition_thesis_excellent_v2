@@ -1,0 +1,7 @@
+﻿check_id,material_id,figure_label,evidence_file,check_item,visual_observation,risk_level,decision
+F00,CPHO35-Q03,如图,03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q03-paper-page-1.png,来源页定位,题图位于第35届第3题题面第1页右下方，题面从第1页页底延续至第2页；第1页上方为第2题内容，页底下方无更多题图空间。,中,作为来源定位证据；第2题正文和页码区域不得纳入题图裁切范围。
+F01,CPHO35-Q03,如图,03_corpus/item_assets/CPHO35-Q03-figure1-page1-raw.png,原始裁图完整性,原始裁图保留y轴、O点、x轴、竖直细杆、l/M标注、B端、弹丸m和v0箭头，但左侧混入邻近题干残字，且底部B端贴边。,高,原始裁图不建议直接作为论文定稿图；保留为来源对照。
+F02,CPHO35-Q03,如图,03_corpus/item_assets/CPHO35-Q03-figure1-page1-recrop-v1.png,重裁候选图完整性,重裁候选图去除左侧题干残字，保留y、O、x、竖直杆、l/M、B端、弹丸m和v0箭头；因图位于页面底部，B端下方留白有限，仍需最终版式复核。,中,候选可进入后续论文/附录版式复核，但仍需最终人工确认。
+F03,CPHO35-Q03,如图,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q03-paper-page-1-figure1-crop-box.png,整页裁框证据,整页裁框显示第3题图位于第1页页底右侧，裁切需排除左侧题干残字并保留完整坐标系和细杆端点。,中,用于证明裁图来源和边界；不作为定稿图。
+F04,CPHO35-Q03,如图,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q03-figure1-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和整页裁框局部，便于后续复核左侧残字和底部B端边界。,低,用于后续人工确认；不代表正式销项。
+F05,CPHO35-Q03,如图,03_corpus/item_assets/CPHO35-Q03-figure1-page1-recrop-v1.png,不得声称范围,本轮只建立题图核对入口和候选图，未填写真实校对人/日期，未完成论文版式定稿；同题公式终核和第35届分值边界仍未销项。,高,不得声称第35届第3题题图、图注、裁边或附录用图已完成正式人工校对。

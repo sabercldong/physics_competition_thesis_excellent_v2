@@ -5,7 +5,7 @@
 - 试题文件：`03_corpus/raw_papers/cpho_35_2018_fusai_paper_solution_candidate.pdf`
 - 试题页码：1-2
 - 解答页码：13-16
-- 题图：03_corpus/item_assets/CPHO35-Q03-figure1-page1-raw.png
+- 题图：03_corpus/item_assets/CPHO35-Q03-figure1-page1-raw.png；重裁候选图：03_corpus/item_assets/CPHO35-Q03-figure1-page1-recrop-v1.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
 
 ## 题干
@@ -57,7 +57,17 @@
 2. `L_c`、`x_B`、`y_B`、`omega_0`、`omega'`、`beta'` 等上下标和撇号。
 3. 式⑨、式⑮、式⑲、式⑳中的根号、负一次方、分母括号和绝对值范围。
 4. 式⑬、式⑭中的轴力分量、三角函数、`cos^2 theta` 和正负号。
-5. 同题 `CPHO35-Q03-FIG` 题图问题仍未销项；`CPHO35-Q03-SCORE` 分值边界仍为待核实。
+5. 同题 `CPHO35-Q03-FIG` 已建立题图核对入口和重裁候选图，但仍未完成真实人工销项；`CPHO35-Q03-SCORE` 分值边界仍为待核实。
+
+## G1-07-C1题图核对入口
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO35-Q03_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO35-Q03-figure1-page1-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO35-Q03-figure1-page1-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q03-paper-page-1-figure1-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q03-figure1-check-contact-v1.png`
+
+边界说明：第3题题图位于试题PDF第1页页底右侧。原始裁图保留 `y`、`O`、`x`、竖直细杆、`l/M`、`B`、弹丸 `m` 和 `v0` 箭头，但左侧混入邻近题干残字且 `B` 端贴近底部。重裁候选图去除左侧残字并保留关键坐标和杆图；因图位于页底，`B` 端下方留白有限，论文或附录使用前仍需最终版式复核。本入口不填写真实校对人和日期，不代表题图正式销项。
 
 ## 参考解答抽取文本
 
