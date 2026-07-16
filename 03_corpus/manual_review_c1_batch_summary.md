@@ -15,6 +15,8 @@
 | 105 | CPHO36-Q07-FIG | 第36届第7题 | 5 | 已建立题图核对入口和图a重裁候选图，待最终复核 |
 | 106 | CPHO39-Q04-FIG | 第39届第4题 | 5 | 已建立题图核对入口和图4a重裁候选图，待最终复核 |
 | 107 | CPHO39-Q06-FIG | 第39届第6题 | 5 | 已建立题图核对入口和图6a重裁候选图，待最终复核 |
+| 108 | CPHO40-Q02-FIG | 第40届第2题 | 5 | 已建立题图核对入口和图2a重裁候选图，待最终复核 |
+| 109 | CPHO40-Q05-FIG | 第40届第5题 | 5 | 已建立题图核对入口和图5a重裁候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -138,6 +140,21 @@
 3. 重裁候选图基于第1页整页渲染图生成，去除正文残字，保留图形主体、关键标注和“图2a”。
 4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
 
+## CPHO40-Q05
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO40-Q05_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO40-Q05-figure1-page3-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO40-Q05-figure5a-page3-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q05-paper-page-3-figure5a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q05-figure5a-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图5a位于第40届第5题题面第3页右下方，属于电偶极子场中点电荷运动题面证据；第3页上方为第4题尾部，左侧和下方均有第5题题干或小问文字，不属于题图裁切范围。
+2. 原始裁图保留电偶极矩方向、`z` 轴、`p`、`O`、`theta`、`r`、点电荷 `e,m` 和图号，但左侧与下方混入邻近题干和小问文字。
+3. 重裁候选图基于第3页整页渲染图生成，去除正文残字，保留图形主体、关键标注和“图5a”。
+4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-40Q05`：继续处理C组队列第109项 `CPHO40-Q05-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG`、第106项 `CPHO39-Q04-FIG`、第107项 `CPHO39-Q06-FIG` 和第108项 `CPHO40-Q02-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-40Q08`：继续处理C组队列第110项 `CPHO40-Q08-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG`、第106项 `CPHO39-Q04-FIG`、第107项 `CPHO39-Q06-FIG`、第108项 `CPHO40-Q02-FIG` 和第109项 `CPHO40-Q05-FIG` 均仍需真实确认记录才能正式销项。

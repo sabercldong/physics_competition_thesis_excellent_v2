@@ -8,6 +8,30 @@
 - 题图：03_corpus/item_assets/CPHO40-Q05-figure1-page3-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-40Q05`
+- 题面V1转写稿：`03_corpus/manual_review_transcripts/CPHO40-Q05_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO40-Q05_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q05-paper-page-3.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q05-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q05-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q05-solution-page-14.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q05-solution-page-15.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q05-solution-page-16.png`
+- 当前状态：原OCR文本仅保留为错误来源和追溯材料；正式编码前应以V1转写稿、公式核对表和页面证据作为复核入口。`CPHO40-Q05-FIG` 尚未销项。
+
+## G1-07-C1 题图核对入口
+
+- 任务：`G1-07-C1-FIG-40Q05`
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO40-Q05_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO40-Q05-figure1-page3-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO40-Q05-figure5a-page3-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q05-paper-page-3-figure5a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q05-figure5a-check-contact-v1.png`
+- 当前状态：原始裁图保留图5a关键结构和图号，但左侧、下方混入邻近题干和小问文字；重裁候选图已排除正文残字并保留 `z` 轴、`p`、`O`、`theta`、`r`、点电荷 `e,m` 和“图5a”。本入口仍不代表真实人工校对完成或论文插图定稿。
+
 ## 题干OCR抽取文本
 
 ```text
