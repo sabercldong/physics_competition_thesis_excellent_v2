@@ -4,9 +4,22 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_35_2018_fusai_paper_solution_candidate.pdf`
 - 试题页码：1
-- 解答页码：6-8
+- 解答页码：6-9
 - 题图：无
 - 抽取状态：PDF文本层抽取，需人工校对公式与特殊符号。
+
+## G1-07-B1 公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q01_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-06.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-07.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-08.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-09.png`
+- 边界说明：经视觉检查，第35届第1题答案从PDF第6页开始，第9页上半部仍为第1题时间积分、参数 `a/b/c`、`Delta`、最终时间表达式和临界时间结果；第9页下半部进入第2题。本轮将原答案页范围 `6-8` 纠偏为 `6-9`。
+- 待终核重点：`v0min`、周期运动上下界、落地速度根号、`alpha` 展开式、极坐标能量式、径向速度式、式⑭时间积分、`a/b/c` 与 `Delta` 定义、式⑮最终时间表达式和临界时间。
+- 状态：答案公式核对入口完成，待最终复核；第35届分值边界 `CPHO35-Q01-SCORE` 仍待人工复核。
 
 ## 题干
 

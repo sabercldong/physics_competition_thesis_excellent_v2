@@ -24,6 +24,7 @@
 | 090 | CPHO36-Q04-FORMULA | 第36届第4题 | 3 | 已建立答案公式核对入口，待最终复核 |
 | 091 | CPHO36-Q05-FORMULA | 第36届第5题 | 3 | 已建立答案公式核对入口，待最终复核 |
 | 092 | CPHO39-Q01-FORMULA | 第39届第1题 | 3 | 已建立答案公式核对入口，待最终复核 |
+| 093 | CPHO35-Q01-FORMULA | 第35届第1题 | 2 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -235,7 +236,24 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q01-solution-page-06.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q01-solution-boundary-next-page-07.png`
 
+### CPHO35-Q01
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q01_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-paper-page-1.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-06.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-07.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-08.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-09.png`
+
 ## 边界确认
+
+### CPHO35-Q01
+
+经视觉检查，第35届第1题题面位于试题PDF第1页上半部，包含第(1)(2)问和给定积分公式；第1页下半部进入第2题和第3题，不属于第1题。答案第6页为第1题题面重印和解法一开头，第7页覆盖解法一收尾和解法二，第8页覆盖第(2)问落地条件、落地速度、方向角、极坐标方程和时间积分起点；第9页上半部仍为第1题式⑭时间积分、参数 `a/b/c`、`Delta`、式⑮最终时间表达式和临界时间结果，第9页下半部进入第2题。
+
+本轮将原清单答案页范围由 `6-8` 纠偏为 `6-9`，并将 `03_corpus/item_index.csv` 中第1题两个小问的答案页入口统一为 `6-9`。该更新只表示答案边界证据更完整，不代表公式已经完成真实人工校对。题面页未见清晰大题分值标注，因此同题 `CPHO35-Q01-SCORE` 仍需保留为待核实。
 
 ### CPHO36-Q03
 
@@ -463,6 +481,14 @@
 4. 第6页式⑭至式⑰含 `Delta L(theta)` 长式、`OA/AC/OB` 几何量、根号范围、小角展开和 `Delta N` 方向，文本抽取易漏根号，需以页面证据终核。
 5. 第6页评分标准只用于边界和证据索引，不代表小问分值已正式拆分或人工校对完成。同题 `CPHO39-Q01-FIG` 仍为C组未销项问题；若第1题后续作为案例或附录图件使用，需另行完成图1a/图1b和图注校对。
 
+### CPHO35-Q01
+
+1. 题面给定积分公式中的 `c<0`、`Delta=b^2-4ac>0`、`(-c)^(3/2)`、`2cx+b`、`arcsin` 自变量和积分变量需按源页终核。
+2. 第6至7页解法一中的 `E`、`L`、`v0min`、周期运动上下界、根号范围和不等号方向需逐式复核。
+3. 第7至8页解法二中的 `r1/r2/v1/v2`、关于 `1/r2` 的方程、韦达关系和 `0<1/r2<1/R` 需最终复核。
+4. 第8页第(2)问中的落地速度根号、水平速度 `v_theta`、方向角 `alpha` 展开式、极坐标能量式和径向速度式需按页面证据逐项终核。
+5. 第8至9页式⑭时间积分跨页，原 `6-8` 页范围会遗漏第9页的参数 `a/b/c`、`Delta`、式⑮最终时间表达式和临界时间结果；同题 `CPHO35-Q01-SCORE` 仍需在第35届分值边界复核任务中处理。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-35Q01`：继续B组中风险公式校对入口建设，处理队列第093项 `CPHO35-Q01-FORMULA`。
+`G1-07-B1-FORMULA-35Q07`：继续B组中风险公式校对入口建设，处理队列第094项 `CPHO35-Q07-FORMULA`。

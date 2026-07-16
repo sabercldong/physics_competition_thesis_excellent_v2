@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-B1-FORMULA-35Q01 第35届第1题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q01_formula_check_v1.csv`，依据第35届合并PDF第6-9页登记题面给定积分、能量守恒、角动量守恒、周期运动上下界、落地速度、方向角、极坐标方程、时间积分、`a/b/c` 与 `Delta`、最终时间表达式和临界时间等34条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第093项 `CPHO35-Q01-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第094项 `CPHO35-Q07-FORMULA`；
+- 新增第35届第1题共5张页面证据图：题面第1页、答案第6-9页；视觉检查确认第9页上半部仍为第1题式⑭时间积分、参数 `a/b/c`、`Delta`、式⑮最终时间表达式和临界时间结果，第9页下半部进入第2题；
+- 更新 `03_corpus/item_texts/CPHO35-Q01.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO35-Q01-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第35届第1题两个小问答案页入口由 `6-8` 纠偏为 `6-9`；
+- 标记 `v0min`、周期运动上下界、落地速度根号、`alpha` 展开式、极坐标能量式、径向速度式、式⑭时间积分、`a/b/c` 与 `Delta` 定义、式⑮最终时间表达式和临界时间为待最终复核；同题 `CPHO35-Q01-SCORE` 仍待人工复核；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第093项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-35Q07`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-16：G1-07-B1-FORMULA-39Q01 第39届第1题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO39-Q01_formula_check_v1.csv`，依据第39届合并PDF第5-6页登记相位突变差异、等倾干涉亮纹条件、反射镜移动周期、亮条纹数、石英槽倾角、光程差、折射率公式和评分标准等30条公式核对入口；
