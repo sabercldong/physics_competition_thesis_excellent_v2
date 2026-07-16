@@ -123,6 +123,21 @@
 3. 重裁候选图基于第3页整页渲染图生成，去除上方第5题尾部和下方第6题题干文字，保留图形主体和图注。
 4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
 
+## CPHO40-Q02
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO40-Q02_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO40-Q02-figure1-page1-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO40-Q02-figure2a-page1-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q02-paper-page-1-figure2a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q02-figure2a-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图2a位于第40届第2题题面第1页右下方，属于半圆玻璃管活塞稳定性题面证据；左侧题干和下方第(1)问文字不得纳入题图裁切范围。
+2. 原始裁图保留半圆玻璃管、地面线、活塞片、`theta`、`r` 和图号，但左侧、上方和下方混入邻近题干文字。
+3. 重裁候选图基于第1页整页渲染图生成，去除正文残字，保留图形主体、关键标注和“图2a”。
+4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-40Q02`：继续处理C组队列第108项 `CPHO40-Q02-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG`、第106项 `CPHO39-Q04-FIG` 和第107项 `CPHO39-Q06-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-40Q05`：继续处理C组队列第109项 `CPHO40-Q05-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG`、第106项 `CPHO39-Q04-FIG`、第107项 `CPHO39-Q06-FIG` 和第108项 `CPHO40-Q02-FIG` 均仍需真实确认记录才能正式销项。

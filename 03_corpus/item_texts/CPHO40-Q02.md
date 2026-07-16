@@ -8,6 +8,22 @@
 - 题图：03_corpus/item_assets/CPHO40-Q02-figure1-page1-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 校对转写稿：`03_corpus/manual_review_transcripts/CPHO40-Q02_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO40-Q02_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q02-paper-page-1.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q02-paper-page-2.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q02-solution-page-07.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q02-solution-page-08.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q02-solution-page-09.png`
+- 当前状态：已完成题面V1视觉转写和答案公式核对入口登记；经视觉检查，第2题题面从试题PDF第1页下部开始并延续至第2页上部，第2页中部已进入第3题，仅用于边界确认；第2题答案从PDF第7页下部开始，至第9页评分标准结束，第9页下部已进入第3题，仅用于边界确认。仍需最终排版复核、真实人工确认、题图校对和正式编码证据摘录。原始OCR文本保留在下方，仅作错误来源对照，不得用于正式编码证据。
+
+## G1-07-C1 题图核对入口
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO40-Q02_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO40-Q02-figure1-page1-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO40-Q02-figure2a-page1-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q02-paper-page-1-figure2a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q02-figure2a-check-contact-v1.png`
+- 当前状态：已完成图2a题图核对入口和重裁候选图；原始裁图保留半圆玻璃管、地面线、活塞片、`theta`、`r` 和图号，但左侧、上方和下方混入邻近题干文字；重裁候选图已去除正文残字并保留关键物理标注和图号。仍需真实人工确认、正式论文版式复核和正式编码证据摘录。
+
 ## 题干OCR抽取文本
 
 ```text

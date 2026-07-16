@@ -1,0 +1,6 @@
+﻿check_id,material_id,figure_id,source_page,evidence_file,check_item,observation,status,next_action
+F00,CPHO40-Q02,图2a,试题PDF第1页,03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q02-paper-page-1.png,页面位置,图2a位于第40届第2题题面第1页右下方，属于半圆玻璃管活塞稳定性题面证据；第1页上部为第1题，图下方开始第(1)问文字。,已定位，待最终复核,正式使用前复核图2a与左侧题干、下方第(1)问文字的边界。
+F01,CPHO40-Q02,图2a,试题PDF第1页,03_corpus/item_assets/CPHO40-Q02-figure1-page1-raw.png,原始裁图,原始裁图保留半圆玻璃管、地面线、活塞片、theta、r和图号，但左侧、上方和下方混入邻近题干文字。,保留作来源对照,不建议直接作为论文插图定稿；优先使用重裁候选图或基于源页重绘。
+F02,CPHO40-Q02,图2a,试题PDF第1页,03_corpus/item_assets/CPHO40-Q02-figure2a-page1-recrop-v1.png,重裁候选图,重裁候选图基于第1页整页渲染图生成，去除左侧和下方正文残字，保留半圆玻璃管、地面线、活塞片、角度theta、半径r和图号“图2a”。,候选可用，待最终复核,论文或附录使用前进行最终版式确认；若需高清定稿图，可基于源页重绘。
+F03,CPHO40-Q02,图2a,试题PDF第1页,03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q02-paper-page-1-figure2a-crop-box.png,裁框定位,裁框标出第1页图2a区域，并显示左侧题干和下方第(1)问文字不属于题图裁切范围。,已记录，待最终复核,如后续重新裁图或重绘，保留本定位证据用于追溯来源。
+F04,CPHO40-Q02,图2a,试题PDF第1页,03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q02-figure2a-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和源页裁框，便于后续人工确认。,已生成，待最终复核,正式销项需补真实校对人和日期。
