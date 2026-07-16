@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-37Q01 第37届第1题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO37-Q01_figure_check_v1.csv`，登记第37届第1题图1a的来源页、原始裁图、重裁候选、裁框和边界说明；
+- 新增 `03_corpus/item_assets/CPHO37-Q01-figure1a-page1-recrop-v1.png`，作为题面图1a重裁候选图；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q01-paper-page-1.png`、`CPHO37-Q01-paper-page-1-figure1a-crop-box.png` 和 `CPHO37-Q01-figure1a-check-contact-v1.png`，记录来源页、裁框和原图/候选图对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第143项 `CPHO37-Q01-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO37-Q01-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-37Q05`；
+- 本轮明确记录：原始裁图保留空气弹簧模型主体、阀门、附加气室、主气室、篓上负载和图号，但左侧与底部混入邻近题干正文；重裁候选去除正文残字并保留图1a主体、主要标签和图号，未纳入同页下部第2题。本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-36Q02 第36届第2题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO36-Q02_figure_check_v1.csv`，登记第36届第2题图a的来源页、原始裁图、重裁候选、裁框和边界说明；
