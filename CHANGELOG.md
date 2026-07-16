@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-42Q03 第42届第3题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q03_figure_check_v1.csv`，登记第42届第3题图3a、图3b、图3c、图3d的来源页、原始裁图、候选图、裁框和新旧对照证据；
+- 新增或更新 `03_corpus/item_assets/CPHO42-Q03-figure3a-page2-recrop-v1.png`、`CPHO42-Q03-figure3b-page2-recrop-v1.png`、`CPHO42-Q03-figure3c-page3-recrop-v1.png` 和 `CPHO42-Q03-figure3d-page3-recrop-v1.png`，其中图3a、图3c基于原始裁图内部保守修剪，图3b、图3d保留原始裁图完整主体作为候选；
+- 新增或更新 `03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q03-paper-page-2.png`、`CPHO42-Q03-paper-page-3.png`、两张裁框定位图和 `CPHO42-Q03-figure3a3b3c3d-check-contact-v1.png`，记录题图来源位置和原图/候选图对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第138项 `CPHO42-Q03-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO42-Q03-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-42Q07`；
+- 本轮明确记录：图3a原始裁图底部混入图3b的 `I4` 箭头，图3c原始裁图底部混入题干文字，第3页中部第4题和下部第5题图5a不得纳入本题证据；`CPHO42-Q03-SOLFIG` 解答放大图一致性仍待另行复核；本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-40Q04 第40届第4题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO40-Q04_figure_check_v1.csv`，登记第40届第4题图4a、图4b、图4c、图4d/图4e的来源页、原始裁图、重裁候选图、裁框和新旧对照证据；

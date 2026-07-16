@@ -613,6 +613,25 @@
 5. 第3页下半部进入第5题并出现图5a，不得纳入本题证据；图4a/图4b源图清晰度有限，论文或附录使用前仍需最终版式复核或重绘决策。
 6. 本轮只建立核对入口和候选图，不填写真实校对人和日期，不代表正式人工销项完成；同题OCR和公式终核仍需另行复核。
 
+## CPHO42-Q03
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO42-Q03_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO42-Q03-figure1-page2-raw.png`; `03_corpus/item_assets/CPHO42-Q03-figure2-page2-raw.png`; `03_corpus/item_assets/CPHO42-Q03-figure3-page3-raw.png`; `03_corpus/item_assets/CPHO42-Q03-figure4-page3-raw.png`
+- 候选图：`03_corpus/item_assets/CPHO42-Q03-figure3a-page2-recrop-v1.png`; `03_corpus/item_assets/CPHO42-Q03-figure3b-page2-recrop-v1.png`; `03_corpus/item_assets/CPHO42-Q03-figure3c-page3-recrop-v1.png`; `03_corpus/item_assets/CPHO42-Q03-figure3d-page3-recrop-v1.png`
+- 来源页裁框：`03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q03-paper-page-2-figure3a3b-crop-box.png`; `03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q03-paper-page-3-figure3c3d-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q03-figure3a3b3c3d-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图3a和图3b位于第42届第3题题面第2页下半部；第2页上半部为第2题尾部，仅作边界确认。
+2. 图3a原始裁图保留端口1-8、磁场 `B` 和图号，但底部混入图3b的 `I4` 箭头；候选图基于原始裁图内部修剪，去除下方残边并保留图3a主体和图注。
+3. 图3b原始裁图基本完整，候选图保留等效电路、电阻、电流标注、磁场 `B` 和图号，用于与来源页裁框对照。
+4. 图3c和图3d位于第3页上部；第3页中部进入第4题，下部出现第5题图5a，均不得纳入本题证据。
+5. 图3c原始裁图底部混入第(2.2)问题干文字；候选图去除主要下方文字并保留端口1a-8a、1b-8b、连接线、电流箭头和图号。
+6. 图3d原始裁图基本完整，候选图保留 `A/B/C/D` 端、两器件连接关系、端口标注、电流箭头和图号。
+7. 题解图放大页第26-27页与原题图一致性仍属于 `CPHO42-Q03-SOLFIG`，本轮不关闭。
+8. 本轮只建立核对入口和候选图，不填写真实校对人和日期，不代表正式人工销项完成；同题OCR和公式终核仍需另行复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-42Q03`：继续处理C组队列第138项 `CPHO42-Q03-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第137项 `CPHO40-Q04-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-42Q07`：继续处理C组队列第139项 `CPHO42-Q07-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第138项 `CPHO42-Q03-FIG` 均仍需真实确认记录才能正式销项。
