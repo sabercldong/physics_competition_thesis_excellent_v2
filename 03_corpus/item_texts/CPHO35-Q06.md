@@ -8,6 +8,14 @@
 - 题图：03_corpus/item_assets/CPHO35-Q06-figure1-page3-raw.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
 
+## G1-07-B1公式核对入口
+
+- 任务：`G1-07-B1-FORMULA-35Q06`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q06_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q06-paper-page-3.png`；`CPHO35-Q06-solution-page-28.png` 至 `CPHO35-Q06-solution-page-31.png`
+- 状态：已建立答案公式核对入口，待最终复核；未填写真实校对人和校对日期，不视为人工销项完成。
+- 边界：本入口只处理 `CPHO35-Q06-FORMULA`；同题 `CPHO35-Q06-FIG` 与 `CPHO35-Q06-SCORE` 仍需另行核对。
+
 ## 题干
 
 ```text

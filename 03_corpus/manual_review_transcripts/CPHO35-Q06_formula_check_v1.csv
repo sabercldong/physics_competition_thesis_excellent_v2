@@ -1,0 +1,39 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO35-Q06-F00,CPHO35-Q06,题面边界,paper p.3,第6题题面完整位于试题PDF第3页下半部；第3页上半部为第5题收尾，题面页脚为第3页/共38页。,页面证据图：CPHO35-Q06-paper-page-3.png,边界已定位，待最终复核,只作为第6题题面边界，不关闭同题FIG或SCORE问题。
+CPHO35-Q06-F01,CPHO35-Q06,题面设定,paper p.3,同心内球和球壳构成太空实验装置；内球与球壳内表面之间为真空。,题面第6题首段视觉核对,待最终复核,
+CPHO35-Q06-F02,CPHO35-Q06,题面常量,paper p.3,内球半径 r = 0.200 m；内球温度恒定；内球比辐射率 e = 0.800。,题面常量行视觉核对,待最终复核,需终核 e 与球壳内表面比辐射率 E 的大小写区分。
+CPHO35-Q06-F03,CPHO35-Q06,题面常量,paper p.3,球壳导热系数 kappa = 1.00 x 10^-2 J m^-1 s^-1 K^-1。,题面导热系数行视觉核对,待最终复核,kappa符号、10^-2和单位负指数需按源页终核。
+CPHO35-Q06-F04,CPHO35-Q06,题面常量,paper p.3,球壳内半径 R1 = 0.900 m，外半径 R2 = 1.00 m；各表面热辐射各向同性，外表面可视为黑体。,题面半径与表面性质行视觉核对,待最终复核,
+CPHO35-Q06-F05,CPHO35-Q06,题面常量,paper p.3,热稳定状态下，球壳内表面比辐射率 E = 0.800。,题面热稳定与比辐射率行视觉核对,待最终复核,E 与 e 均为0.800，但物理对象不同。
+CPHO35-Q06-F06,CPHO35-Q06,题面常量,paper p.3,Stefan常量 sigma = 5.67 x 10^-8 W m^-2 K^-4；宇宙微波背景辐射温度 T = 2.73 K。,题面常量行视觉核对,待最终复核,sigma、W m^-2 K^-4和T符号需终核。
+CPHO35-Q06-F07,CPHO35-Q06,题面常量,paper p.3,单位时间由球壳内表面传递到球壳外表面的热量 Q = 44.0 W。,题面Q值行视觉核对,待最终复核,
+CPHO35-Q06-F08,CPHO35-Q06,题面小问,paper p.3,求：(1) 球壳外表面温度 T2；(2) 球壳内表面温度 T1；(3) 内球温度 T0。,题面小问行视觉核对,待最终复核,T0/T1/T2下标需终核。
+CPHO35-Q06-F09,CPHO35-Q06,题面定义,paper p.3,吸收比等于同温度下比辐射率；傅里叶热传导定律给出单位面积热流为 -kappa dT/dz。,题面已知条件段视觉核对,待最终复核,dT/dz分式、负号和z方向说明需终核。
+CPHO35-Q06-F10,CPHO35-Q06,答案边界,solution p.28-31,答案第28页上半部为第5题收尾，第28页下半部开始第6题题面重印；第29-31页覆盖第6题参考解答；第31页下半部进入第7题。,页面证据图：CPHO35-Q06-solution-page-28.png 至 CPHO35-Q06-solution-page-31.png,边界已定位，待最终复核,第31页第7题内容不得纳入第6题公式证据。
+CPHO35-Q06-F11,CPHO35-Q06,答案第(1)问,solution p.29,外表面单位时间向外界辐射热量：Q_prime = 4 pi R2^2 sigma (T2^4 - T^4)。,答案第29页式①视觉核对,待最终复核,需核对 Q_prime、R2平方、T2^4与背景T^4。
+CPHO35-Q06-F12,CPHO35-Q06,答案第(1)问,solution p.29,热稳定条件：Q = Q_prime。,答案第29页式②视觉核对,待最终复核,Q 与 Q_prime 区分需终核。
+CPHO35-Q06-F13,CPHO35-Q06,答案第(1)问,solution p.29,T2 = [Q/(4 pi R2^2 sigma) + T^4]^(1/4)。,答案第29页式③视觉核对,待最终复核,分母R2^2和1/4次方需终核。
+CPHO35-Q06-F14,CPHO35-Q06,答案第(1)问,solution p.29,代入数据得 T2 = 88.6 K。,答案第29页式④视觉核对,待最终复核,数值只登记来源，未重算验算。
+CPHO35-Q06-F15,CPHO35-Q06,答案第(2)问,solution p.29,球壳内任意半径球面单位时间传导热量均为Q；傅里叶定律：Q = -4 pi R^2 kappa dT/dR。,答案第29页式⑤视觉核对,待最终复核,R^2、dT/dR和负号需终核。
+CPHO35-Q06-F16,CPHO35-Q06,答案第(2)问,solution p.29,式⑤改写为 Q dR/R^2 = -4 pi kappa dT，并对R1到R2、T1到T2积分。,答案第29页积分式视觉核对,待最终复核,积分上下限和变量对应需终核。
+CPHO35-Q06-F17,CPHO35-Q06,答案第(2)问,solution p.29-30,积分得 Q(1/R1 - 1/R2) = 4 pi kappa (T1 - T2)。,答案第29页至第30页跨页公式视觉核对,待最终复核,跨页公式需用源页逐项确认。
+CPHO35-Q06-F18,CPHO35-Q06,答案第(2)问,solution p.30,等价写为 Q = 4 pi kappa R1 R2 (T1 - T2)/(R2 - R1)。,答案第30页式⑥视觉核对,待最终复核,R1R2乘积、分母R2-R1和T1-T2顺序需终核。
+CPHO35-Q06-F19,CPHO35-Q06,答案第(2)问,solution p.30,T1 = [(R2 - R1)Q]/(4 pi kappa R1 R2) + T2。,答案第30页式⑦视觉核对,待最终复核,4 pi kappa R1R2分母需终核。
+CPHO35-Q06-F20,CPHO35-Q06,答案第(2)问,solution p.30,代入数据并利用T2结果得 T1 = 128 K。,答案第30页式⑧视觉核对,待最终复核,数值只登记来源，未重算验算。
+CPHO35-Q06-F21,CPHO35-Q06,答案第(3)问,solution p.30,记内球表面为I，SI = 4 pi r^2；球壳内表面为II，SII = 4 pi R1^2。,答案第30页面积定义视觉核对,待最终复核,SI/SII下标和R1平方需终核。
+CPHO35-Q06-F22,CPHO35-Q06,答案第(3)问,solution p.30,I单位时间发射热量：QI0 = e sigma T0^4 SI。,答案第30页式⑨视觉核对,待最终复核,QI0下标、e和T0^4需终核。
+CPHO35-Q06-F23,CPHO35-Q06,答案第(3)问,solution p.30,QI0被II单位时间吸收的热量：QIIa^(1) = E QI0 = E e sigma T0^4 SI。,答案第30页式⑩视觉核对,待最终复核,上标(1)、E/e和SI需终核。
+CPHO35-Q06-F24,CPHO35-Q06,答案第(3)问,solution p.30,QI0被II反射到小球的热量：QIIr^(1) = k(1-E)QI0 = k(1-E)e sigma T0^4 SI。,答案第30页式⑪视觉核对,待最终复核,k、(1-E)和反射量下标需终核。
+CPHO35-Q06-F25,CPHO35-Q06,答案第(3)问,solution p.30,几何份额 k 由角积分给出，k = sin^2 theta0 = (r/R1)^2。,答案第30页角积分公式视觉核对,待最终复核,双重积分、n_theta点乘、theta0和(r/R1)^2需重点终核。
+CPHO35-Q06-F26,CPHO35-Q06,答案第(3)问,solution p.30,QIIr^(1)被I反射的热量：QIr^(1) = (1-e)QIIr^(1) = (1-e)k(1-E)e sigma T0^4 SI。,答案第30页式⑫视觉核对,待最终复核,QIr/QIIr下标和(1-e)需终核。
+CPHO35-Q06-F27,CPHO35-Q06,答案第(3)问,solution p.30,QIr^(1)被II吸收的热量：QIIa^(2) = E QIr^(1) = E(1-e)(1-E)e sigma T0^4 SI。,答案第30页式⑬视觉核对,待最终复核,源页式⑬视觉上需与式⑫和式⑭级数中的k因子关系一并终核，不由本轮自行纠正。
+CPHO35-Q06-F28,CPHO35-Q06,答案第(3)问,solution p.30,多次反射吸收后，QIIa = QIIa^(1)+QIIa^(2)+... = E e sigma T0^4 SI [1+(1-e)k(1-E)+(1-e)^2 k^2 (1-E)^2+...]。,答案第30页式⑭视觉核对,待最终复核,级数幂次、k因子和省略号需终核。
+CPHO35-Q06-F29,CPHO35-Q06,答案第(3)问,solution p.31,II发射热量 QII0 = e sigma T1^4 SII；其被I吸收总热量 QIa = E e sigma T1^4 k SII[级数] = E e sigma T1^4 SI[级数]。,答案第31页式⑮视觉核对,待最终复核,QII0、QIa、kSII=SI替换和T1^4需终核。
+CPHO35-Q06-F30,CPHO35-Q06,答案第(3)问,solution p.31,内球与球壳内表面单位时间交换热量 Q_doubleprime = QIa - QIIa = E e sigma (T0^4 - T1^4) SI[级数]。,答案第31页式⑯视觉核对,待最终复核,Q_doubleprime、T0^4-T1^4顺序和级数整体因子需终核。
+CPHO35-Q06-F31,CPHO35-Q06,答案第(3)问,solution p.31,完成级数求和：Q_doubleprime = 4 pi E e sigma (T0^4 - T1^4) r^2 / [1 - (1-e)k(1-E)]。,答案第31页式⑰视觉核对,待最终复核,n->infinity极限、分母和k因子需终核。
+CPHO35-Q06-F32,CPHO35-Q06,答案第(3)问,solution p.31,利用 k = (r/R1)^2，分母可写为 1 - (1-e)(1-E) r^2/R1^2。,答案第31页式⑲等价式视觉核对,待最终复核,这一行是从源页式⑲右侧识别出的等价替换，需终核。
+CPHO35-Q06-F33,CPHO35-Q06,答案第(3)问,solution p.31,热稳定条件：Q_doubleprime = Q。,答案第31页式⑱视觉核对,待最终复核,Q_doubleprime与题面Q的对应需终核。
+CPHO35-Q06-F34,CPHO35-Q06,答案第(3)问,solution p.31,T0 = {[1-(1-e)k(1-E)]Q/(4 pi E e sigma r^2)+T1^4}^(1/4)。,答案第31页式⑲左式视觉核对,待最终复核,分母4piEe sigma r^2、T1^4和1/4次方需终核。
+CPHO35-Q06-F35,CPHO35-Q06,答案第(3)问,solution p.31,T0 = {[1-(1-e)(1-E)r^2/R1^2]Q/(4 pi E e sigma r^2)+T1^4}^(1/4)。,答案第31页式⑲右式视觉核对,待最终复核,r^2/R1^2与括号层级需终核。
+CPHO35-Q06-F36,CPHO35-Q06,答案第(3)问,solution p.31,代入数据并利用T1得 T0 = 227 K。,答案第31页式⑳视觉核对,待最终复核,数值只登记来源，未重算验算。
+CPHO35-Q06-F37,CPHO35-Q06,复核提示,solution p.29-31,本题重点复核 e/E 大小写、T/T0/T1/T2、Q_prime/Q_doubleprime、k几何因子、级数幂次、R1/R2/r平方和10^-2导热系数单位。,第29-31页公式链视觉核对,待最终复核,本行仅提示终核重点，不替代逐式人工确认。
