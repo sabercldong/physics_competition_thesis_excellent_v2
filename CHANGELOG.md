@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-B1-FORMULA-36Q06 第36届第6题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q06_formula_check_v1.csv`，依据第36届合并PDF第29-33页登记pi介子衰变、相对论动量能量、mu子静止系速度、速度变换、最大/最小速率、半衰期法和平均寿命法概率等31条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第097项 `CPHO36-Q06-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第098项 `CPHO39-Q02-FORMULA`；
+- 新增第36届第6题共7张页面证据图：题面第5页、答案第29-33页和第34页下一题边界确认图；视觉检查确认第33页上半部仍为第6题另一解法、概率结果和评分标准，第33页下半部进入第7题；
+- 更新 `03_corpus/item_texts/CPHO36-Q06.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO36-Q06-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第36届第6题两个小问答案页入口由 `29-32` 纠偏为 `29-33`；
+- 标记 pi/mu/nu上下标、`m_pi/m_mu` 数字、相对论速度变换长式、`u_min/u_max`、`T_1/2^(0)`、`tau_0`、`rho_max` 两套结果和评分标准为待最终复核；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第097项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-39Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名。
+
 ## 2026-07-16：G1-07-B1-FORMULA-36Q02 第36届第2题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO36-Q02_formula_check_v1.csv`，依据第36届合并PDF第11-18页登记碰前角速度、质心速度、碰撞冲量、滑滚阶段、纯滚阶段、总位移和评分标准等43条公式核对入口；

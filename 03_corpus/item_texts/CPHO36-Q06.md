@@ -4,9 +4,16 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf`
 - 试题页码：5
-- 解答页码：29-32
+- 解答页码：29-33
 - 题图：无
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
+
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO36-Q06_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q06-paper-page-5.png`、`CPHO36-Q06-solution-page-29.png` 至 `CPHO36-Q06-solution-page-33.png`、`CPHO36-Q06-solution-boundary-next-page-34.png`
+- 边界说明：本轮确认第33页上半部仍为第6题另一解法、概率结果和评分标准，第33页下半部进入第7题；原答案页范围 `29-32` 纠偏为 `29-33`。
+- 状态说明：已建立答案公式核对入口，待最终复核；未填写真实校对人/日期，不代表正式人工销项。
 
 ## 题干
 

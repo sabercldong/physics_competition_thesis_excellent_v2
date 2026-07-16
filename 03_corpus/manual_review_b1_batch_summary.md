@@ -556,6 +556,25 @@
 4. 第13至15页式(5)-(17)中的速度分量、碰撞冲量、静止阈值、阶段I摩擦力、约束反力、车轮转动方程和纯滚动条件需逐式复核，特别是负号、下标和根号。
 5. 第16至18页式(18)-(25)中的 `v1`、`s1`、阶段II受力方程、`a_C2`、`s2` 和总位移长式需最终排版复核。同题 `CPHO36-Q02-FIG` 仍需另行处理。
 
+### CPHO36-Q06
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO36-Q06_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q06-paper-page-5.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q06-solution-page-29.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q06-solution-page-30.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q06-solution-page-31.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q06-solution-page-32.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q06-solution-page-33.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q06-solution-boundary-next-page-34.png`
+
+1. 题面第6题位于试题PDF第5页中部；同页上方为第5题尾部，下方进入第7题。
+2. 答案第29页底部开始重印第6题题面，第30页进入参考解答，第33页上半部仍为第6题另一解法、概率结果和评分标准；本轮将答案页范围由 `29-32` 纠偏为 `29-33`。
+3. 第30至31页式(1)-(6)主解法与另一解法中的动量守恒、能量守恒、能量动量关系、`gamma` 和 `u_mu_prime=0.2714c` 需按源页终核。
+4. 第31至32页速度变换长式、`u_min`、`u_max`、`theta_prime=0/pi` 极值条件需逐式复核，特别是根号、分母、`cos theta_prime` 和数值 `2.82 x 10^8` / `2.94 x 10^8`。
+5. 第32至33页半衰期法与平均寿命法两套概率表达、`T_1/2^(0)`、`tau_0`、`rho_max` 和评分标准需最终复核。第36届第6题无题图，但不得视为公式人工销项完成。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-36Q06`：继续B组中风险公式校对入口建设，处理队列第097项 `CPHO36-Q06-FORMULA`。
+`G1-07-B1-FORMULA-39Q02`：继续B组中风险公式校对入口建设，处理队列第098项 `CPHO39-Q02-FORMULA`。

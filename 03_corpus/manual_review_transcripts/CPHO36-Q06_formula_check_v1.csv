@@ -1,0 +1,32 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO36-Q06-F00,CPHO36-Q06,题面边界,paper p.5,第6题题面位于试题PDF第5页中部；同页上部为第5题题图/尾部，下部进入第7题题面。,页面证据图：CPHO36-Q06-paper-page-5.png,边界已定位，待最终复核,只作为题面边界；第7题题面不得纳入第6题证据。
+CPHO36-Q06-F01,CPHO36-Q06,题面反应式,paper p.5,题面给出 pi -> mu + anti-nu_mu 衰变过程。,题面第5页视觉核对,待最终复核,pi、mu、反中微子符号和上下标需终核。
+CPHO36-Q06-F02,CPHO36-Q06,题面常量,paper p.5,m_pi = 139.57061 MeV/c^2，m_mu = 105.65837 MeV/c^2，v = 0.965c，c = 3.00 x 10^8 m/s。,题面第5页视觉核对,待最终复核,MeV/c^2、0.965c和10^8指数需终核。
+CPHO36-Q06-F03,CPHO36-Q06,题面半衰期,paper p.5,第(2)问给出高度h=10000 m，静止mu子的半衰期 T_1/2^(0) = 1.523 micro-s。,题面第5页视觉核对,待最终复核,T_1/2^(0)上标和micro-s单位需终核。
+CPHO36-Q06-F04,CPHO36-Q06,答案边界,solution pp.29-33,第6题答案从答案PDF第29页底部题面重印开始，第30页进入参考解答；第33页上半部仍为第6题另一解法、概率结果和评分标准；第33页下半部进入第7题，第34页为第7题题面延续。,页面证据图：CPHO36-Q06-solution-page-29.png 至 CPHO36-Q06-solution-page-33.png；下一题边界图：CPHO36-Q06-solution-boundary-next-page-34.png,边界已定位，待最终复核,本轮将原清单答案页29-32纠偏为29-33。
+CPHO36-Q06-F05,CPHO36-Q06,动量守恒,solution p.30,在pi介子静止系Sprime中，p_mu_prime + p_nu_prime = 0，源页标作式(1)。,答案第30页式(1)视觉核对,待最终复核,p_mu_prime、p_nu_prime、反中微子符号和矢量/标量写法需终核。
+CPHO36-Q06-F06,CPHO36-Q06,mu子相对论动量,solution p.30,p_mu_prime = m_mu u_mu_prime / sqrt(1-(u_mu_prime/c)^2)，源页标作式(2)。,答案第30页式(2)视觉核对,待最终复核,根号、平方和prime位置需终核。
+CPHO36-Q06-F07,CPHO36-Q06,能量守恒,solution p.30,E_mu_prime + E_nu_prime = m_pi c^2，源页标作式(3)。,答案第30页式(3)视觉核对,待最终复核,m_pi c^2和能量prime位置需终核。
+CPHO36-Q06-F08,CPHO36-Q06,粒子能量,solution p.30,E_mu_prime = m_mu c^2 / sqrt(1-(u_mu_prime/c)^2)，E_nu_prime = (-p_nu_prime)c，源页标作式(4)。,答案第30页式(4)视觉核对,待最终复核,反中微子能量符号、负号和根号需终核。
+CPHO36-Q06-F09,CPHO36-Q06,联立关系,solution p.30,代入后得到含 u_mu_prime/c 的质量比关系，源页标作式(5)。,答案第30页式(5)视觉核对,待最终复核,文本层对分式排版易错，需按源页逐项终核。
+CPHO36-Q06-F10,CPHO36-Q06,mu子静止系速度,solution p.30,u_mu_prime = [(m_pi^2 - m_mu^2)/(m_pi^2 + m_mu^2)]c = 0.2714c，源页标作式(6)。,答案第30页式(6)视觉核对,待最终复核,质量平方、数值105.65837和0.2714c需终核。
+CPHO36-Q06-F11,CPHO36-Q06,另一解法动量守恒,solution p.30,另一解法同样从 p_mu_prime + p_nu_prime = 0 开始，源页重新标作式(1)。,答案第30页另一解法式(1)视觉核对,待最终复核,同一式号在另一解法中重用，正式引用需注明源页事实。
+CPHO36-Q06-F12,CPHO36-Q06,另一解法能量守恒,solution p.31,(E_k_mu_prime + m_pi c^2) + E_nu_prime = m_pi c^2，源页标作另一解法式(2)。,答案第31页另一解法式(2)视觉核对,待最终复核,源页疑似应核对m_pi/m_mu位置，不能凭抽取文本改写。
+CPHO36-Q06-F13,CPHO36-Q06,能量动量关系,solution p.31,E_mu_prime^2 = (p_mu_prime c)^2 + (m_pi c^2)^2，E_nu_prime = p_nu_prime c，源页标作另一解法式(3)。,答案第31页另一解法式(3)视觉核对,待最终复核,源页中m_pi/m_mu和“动量”字样需按PDF终核。
+CPHO36-Q06-F14,CPHO36-Q06,gamma关系,solution p.31,E_nu_prime = m_pi c^2 + gamma_mu_prime m_mu c^2，源页标作另一解法式(4)。,答案第31页另一解法式(4)视觉核对,待最终复核,该式符号和正负号需特别终核。
+CPHO36-Q06-F15,CPHO36-Q06,gamma数值,solution p.31,gamma_mu_prime = 1 + (m_pi - m_mu)^2/(2 m_pi m_mu) = 1.0390，源页标作另一解法式(5)。,答案第31页另一解法式(5)视觉核对,待最终复核,质量差平方、2m_pi m_mu和105.658837/105.65837数字差异需终核。
+CPHO36-Q06-F16,CPHO36-Q06,速度由gamma导出,solution p.31,u_mu_prime = c sqrt(1 - 1/gamma_mu_prime^2) = 0.2714c，源页标作另一解法式(6)。,答案第31页另一解法式(6)视觉核对,待最终复核,根号和gamma平方需终核。
+CPHO36-Q06-F17,CPHO36-Q06,速度变换通式,solution pp.31-32,实验室系中mu子速度大小u_mu满足含u_mu_prime、v和cos theta_prime的相对论速度变换通式。,答案第31-32页视觉核对,待最终复核,长式跨页，sin^2 theta_prime项、分母和c^2位置需终核。
+CPHO36-Q06-F18,CPHO36-Q06,速度变换等价式,solution p.32,u_mu = c sqrt(1 - [(1-u_mu_prime^2/c^2)(1-v^2/c^2)]/[1+(u_mu_prime v/c^2)cos theta_prime]^2)。,答案第32页视觉核对,待最终复核,根号、整体分式、平方分母和cos theta_prime需终核。
+CPHO36-Q06-F19,CPHO36-Q06,极值方向,solution p.32,最大速率和最小速率分别出现在theta_prime=0和theta_prime=pi，并对应theta=0和theta=pi。,答案第32页文字与公式视觉核对,待最终复核,极值条件和角度对应关系需终核。
+CPHO36-Q06-F20,CPHO36-Q06,速度投影变换,solution p.32,u_mu cos theta = (u_mu_prime cos theta_prime + v)/(1+(u_mu_prime v/c^2)cos theta_prime)。,答案第32页视觉核对,待最终复核,分母和cos theta_prime位置需终核。
+CPHO36-Q06-F21,CPHO36-Q06,最小速率,solution p.32,u_mu_min = (-u_mu_prime + v)/(1+(-u_mu_prime)v/c^2) = 0.940c = 2.82 x 10^8 m/s，源页标作式(7)。,答案第32页式(7)视觉核对,待最终复核,负号、分母和数值2.82 x 10^8需终核。
+CPHO36-Q06-F22,CPHO36-Q06,最大速率,solution p.32,u_mu_max = (u_mu_prime + v)/(1+u_mu_prime v/c^2) = 0.980c = 2.94 x 10^8 m/s，源页标作式(8)。,答案第32页式(8)视觉核对,待最终复核,0.980c、2.94 x 10^8和分母需终核。
+CPHO36-Q06-F23,CPHO36-Q06,半衰期法衰变率,solution p.32,rho = N_t/N_0 = 2^[-Delta t/T_1/2]，源页标作式(9)。,答案第32页式(9)视觉核对,待最终复核,指数、T_1/2下标和rho含义需终核。
+CPHO36-Q06-F24,CPHO36-Q06,最短飞行时间,solution p.32,(Delta t)_min = h/u_mu_max = 10000m/(0.980 x 3.00 x 10^8 m/s) = 3.40 x 10^-5 s，源页标作式(10)。,答案第32页式(10)视觉核对,待最终复核,10^-5、单位和u_mu_max需终核。
+CPHO36-Q06-F25,CPHO36-Q06,地面系半衰期,solution p.32,T_1/2 = T_1/2^(0)/sqrt(1-u_mu^2/c^2) = 0.765 x 10^-5 s，源页标作式(11)。,答案第32页式(11)视觉核对,待最终复核,上标(0)、0.980^2和0.765 x 10^-5需终核。
+CPHO36-Q06-F26,CPHO36-Q06,最大概率,solution p.32,rho_max = 2^[-(Delta t)_min/T_1/2] = 0.0459 = 4.59%，源页标作式(12)。,答案第32页式(12)视觉核对,待最终复核,指数分母、百分号和0.0459需终核。
+CPHO36-Q06-F27,CPHO36-Q06,平均寿命法衰变率,solution p.33,另一解法 rho = N_t/N_0 = exp(-Delta t/tau)，源页重新标作式(9)。,答案第33页另一解法式(9)视觉核对,待最终复核,式号重用、tau和指数负号需终核。
+CPHO36-Q06-F28,CPHO36-Q06,平均寿命,solution p.33,tau_0 = T_1/2^(0)/ln2 = 2.197 x 10^-6 s；tau = tau_0/sqrt(1-u_mu^2/c^2) = 1.10 x 10^-5 s，源页标作式(11)。,答案第33页式(11)视觉核对,待最终复核,ln2、1.104 x 10^-5备选写法和式号需终核。
+CPHO36-Q06-F29,CPHO36-Q06,平均寿命法概率,solution p.33,rho_max = exp[-(Delta t)_min/tau] = 0.0455=4.55% 或 0.0459=4.59%，源页标作另一解法式(11)。,答案第33页视觉核对,待最终复核,3.09/3.082指数、两个数值版本和百分号需终核。
+CPHO36-Q06-F30,CPHO36-Q06,评分标准,solution p.33,本题40分：第(1)问26分，第(2)问14分；第33页列出主解法与另一解法的式号分配。,答案第33页评分标准视觉核对,待最终复核,评分标准只作边界和证据索引，不代表小问分值已正式拆分。

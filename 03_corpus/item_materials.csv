@@ -12,7 +12,7 @@ CPHO36-Q02,36,2019,2,03_corpus/item_texts/CPHO36-Q02.md,03_corpus/item_assets/CP
 CPHO36-Q03,36,2019,3,03_corpus/item_texts/CPHO36-Q03.md,03_corpus/item_assets/CPHO36-Q03-figure1-page3-raw.png,2-3,18-21,pdftotext + rendered page crop,未去除来源/权属水印；本题图未见遮挡水印，仅裁切研究用原图,已整理；公式核对入口已建，待最终复核；图注与特殊符号仍需人工校对
 CPHO36-Q04,36,2019,4,03_corpus/item_texts/CPHO36-Q04.md,03_corpus/item_assets/CPHO36-Q04-figure1-page4-raw.png,3-4,21-24,pdftotext + rendered page crop,未去除来源/权属水印；本题图未见遮挡水印，仅裁切研究用原图,已整理；答案公式核对入口完成，待最终复核；题图裁边与图注待人工校对
 CPHO36-Q05,36,2019,5,03_corpus/item_texts/CPHO36-Q05.md,03_corpus/item_assets/CPHO36-Q05-figure1-page5-raw.png,4-5,24-29,pdftotext + rendered page crop,未去除来源/权属水印；本题图未见遮挡水印，仅裁切研究用原图,已整理；答案公式核对入口完成，待最终复核；题图裁边与图注待人工校对
-CPHO36-Q06,36,2019,6,03_corpus/item_texts/CPHO36-Q06.md,无,5,29-32,pdftotext,无题图,已整理；公式与特殊符号待人工校对
+CPHO36-Q06,36,2019,6,03_corpus/item_texts/CPHO36-Q06.md,无,5,29-33,pdftotext,无题图,已整理；G1-07-B1已建立公式核对入口并纠偏答案页范围为29-33，待最终复核；本题无题图
 CPHO36-Q07,36,2019,7,03_corpus/item_texts/CPHO36-Q07.md,03_corpus/item_assets/CPHO36-Q07-figure1-page6-raw.png,5-7,33-40,pdftotext + rendered page crop,未去除来源/权属水印；原图裁切，上下缘保留少量题干文字以保证高度标注完整,已整理；G1-07-B1已建立公式核对入口，待最终复核；图注与特殊符号仍需人工校对
 CPHO37-Q01,37,2020,1,03_corpus/item_texts/CPHO37-Q01.md,03_corpus/item_assets/CPHO37-Q01-figure1-page1-raw.png,1,6-7,rendered page OCR + rendered page crop,未去除来源/权属水印；原图裁切，边缘保留少量邻近题干以保证题图完整,已整理；扫描OCR文本、公式、图注与特殊符号待人工校对
 CPHO37-Q02,37,2020,2,03_corpus/item_texts/CPHO37-Q02.md,无,1,7-9,rendered page OCR,无题图,已整理；扫描OCR文本、公式与特殊符号待人工校对
