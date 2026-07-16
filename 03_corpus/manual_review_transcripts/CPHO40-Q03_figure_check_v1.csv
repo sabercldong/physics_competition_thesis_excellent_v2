@@ -1,0 +1,6 @@
+check_id,material_id,figure_id,source_page,evidence_file,check_item,observation,status,next_action
+F00,CPHO40-Q03,图3a,试题PDF第2页,03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-paper-page-2.png,页面位置,图3a位于第40届第3题题面右侧；第4题图4a/图4b位于同页下半部，不属于本题。,已定位，待最终复核,正式使用前复核页面边界。
+F01,CPHO40-Q03,图3a,试题PDF第2页,03_corpus/item_assets/CPHO40-Q03-figure1-page2-raw.png,原始裁图,原始裁图保留球、楔块、水平地面线、theta和“图3a”，但左侧夹带邻近题干残字，边界偏紧。,保留作来源对照,不建议直接作为论文插图定稿。
+F02,CPHO40-Q03,图3a,试题PDF第2页,03_corpus/item_assets/CPHO40-Q03-figure3a-page2-recrop-v1.png,重裁候选图,重裁候选图去除左侧残字，保留球体、斜面、竖直边、水平地面线、角度theta和图号。,候选可用，待最终复核,论文或附录使用前进行最终版式确认。
+F03,CPHO40-Q03,图3a,试题PDF第2页,03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q03-paper-page-2-figure3a-crop-box.png,裁框定位,裁框位于第3题图3a区域，未覆盖第4题图4a、图4b或第4题正文。,已记录，待最终复核,如后续重裁需保留本定位证据。
+F04,CPHO40-Q03,图3a,试题PDF第2页,03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q03-figure3a-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和整页裁框，便于后续人工确认。,已生成，待最终复核,正式销项需补真实校对人和日期。

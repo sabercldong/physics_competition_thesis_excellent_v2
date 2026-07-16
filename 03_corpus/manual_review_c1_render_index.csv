@@ -1,0 +1,6 @@
+batch_id,material_id,evidence_type,source_pdf,page_no,file_path,observation,use_boundary
+G1-07-C1-BATCH-01,CPHO40-Q03,paper_page,03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf,2,03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-paper-page-2.png,第3题题图图3a位于第2页右侧；同页下半部进入第4题。,只用于第3题图3a来源定位；第4题图件不得纳入。
+G1-07-C1-BATCH-01,CPHO40-Q03,original_crop,03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf,2,03_corpus/item_assets/CPHO40-Q03-figure1-page2-raw.png,原始裁图保留关键图形与图号，但左侧有邻近题干残字。,作为来源对照，不建议直接用于论文定稿图。
+G1-07-C1-BATCH-01,CPHO40-Q03,recrop_candidate,03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf,2,03_corpus/item_assets/CPHO40-Q03-figure3a-page2-recrop-v1.png,重裁候选图保留球、楔块、地面线、theta和图3a，去除左侧残字。,候选可用于后续论文/附录版式复核，未正式销项。
+G1-07-C1-BATCH-01,CPHO40-Q03,crop_box,03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf,2,03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q03-paper-page-2-figure3a-crop-box.png,整页裁框显示图3a区域，未覆盖第4题内容。,用于证明裁图来源和边界。
+G1-07-C1-BATCH-01,CPHO40-Q03,contact_sheet,03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf,2,03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q03-figure3a-check-contact-v1.png,原始裁图、重裁候选图和整页裁框三联对照。,用于后续人工确认。

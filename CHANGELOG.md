@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-C1-FIG-40Q03 第40届第3题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q03_figure_check_v1.csv`，登记图3a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO40-Q03-figure3a-page2-recrop-v1.png`，从第40届试题PDF第2页整页渲染图重裁图3a，保留球、楔块、水平地面线、角度 `theta` 和“图3a”，去除原裁图左侧邻近题干残字；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q03-paper-page-2-figure3a-crop-box.png` 和 `CPHO40-Q03-figure3a-check-contact-v1.png`，记录裁框来源和原图/重裁图/整页位置三联对照；
+- 新增 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第101项 `CPHO40-Q03-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO40-Q03-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-42Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不重绘题图，不补造图注、正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-16：G1-07-B1-FORMULA-39Q02 第39届第2题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO39-Q02_formula_check_v1.csv`，依据第39届合并PDF第6-8页登记长直螺线管磁场、电感、弹性势能、恒流源做功、平衡方程、等效劲度、电流范围、零电阻闭合回路磁通守恒和评分标准等29条公式核对入口；
