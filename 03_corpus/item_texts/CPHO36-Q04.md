@@ -4,9 +4,17 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf`
 - 试题页码：3-4
-- 解答页码：21-23
+- 解答页码：21-24
 - 题图：03_corpus/item_assets/CPHO36-Q04-figure1-page4-raw.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
+
+## G1-07-B1 公式核对入口
+
+- 核对表：`03_corpus/manual_review_transcripts/CPHO36-Q04_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q04-paper-page-3.png`、`CPHO36-Q04-paper-page-4.png`、`CPHO36-Q04-solution-page-21.png` 至 `CPHO36-Q04-solution-page-24.png`
+- 边界说明：第4题答案在PDF第24页上半部仍包含式(13)至式(17)和评分标准，第24页下半部进入第5题；因此本轮将答案页入口由原清单 `21-23` 纠偏为 `21-24`。
+- 待终核重点：小写 `l` 与大写 `I` 的字形混淆、`V0` 下标、`kappa/rho`、`gamma=7/5`、根号覆盖范围、`S1/S2` 面积比方向和页内第5题边界。
+- 状态：答案公式核对入口完成，待最终复核；未填写真实校对人和校对日期，不代表人工销项完成。
 
 ## 题干
 

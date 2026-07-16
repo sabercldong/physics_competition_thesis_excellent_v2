@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-B1-FORMULA-36Q04 第36届第4题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q04_formula_check_v1.csv`，依据第36届合并PDF第21-24页登记题面声速与体积弹性模量关系、理想气体密度、绝热过程、空气柱简谐振动、亥姆霍兹共振频率、面积比和评分标准等31条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第090项 `CPHO36-Q04-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第091项 `CPHO36-Q05-FORMULA`；
+- 新增第36届第4题共6张页面证据图：题面第3-4页、答案第21-24页；视觉检查确认第4题题面从试题PDF第3页下半部开始，第4页上半部结束，答案第24页上半部仍包含第4题式(13)至式(17)和评分标准，下半部进入第5题；
+- 更新 `03_corpus/item_texts/CPHO36-Q04.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO36-Q04-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第36届第4题三个小问答案页入口由 `21-23` 纠偏为 `21-24`；
+- 标记小写 `l` 与大写 `I` 字形混淆、`V0` 下标、`kappa/rho`、`gamma=7/5`、`p_biao/rho_biao`、圆频率根号、`f0` 根号覆盖范围、`S1/S2` 面积比方向和页内第5题边界为待最终复核；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第090项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-36Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-16：G1-07-B1-FORMULA-35Q06 第35届第6题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q06_formula_check_v1.csv`，依据第35届合并PDF第28-31页登记题面常量、外表面辐射求 `T2`、球壳导热求 `T1`、多次反射吸收、几何因子 `k`、热稳定条件和 `T0 = 227 K` 等38条公式核对入口；

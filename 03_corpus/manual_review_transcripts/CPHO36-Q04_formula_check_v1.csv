@@ -1,0 +1,32 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO36-Q04-F00,CPHO36-Q04,题面边界,paper p.3-4,第4题题面从试题PDF第3页下半部开始，延续至第4页上半部并包含图a、图b和三个小问；第4页下半部进入第5题。,页面证据图：CPHO36-Q04-paper-page-3.png、CPHO36-Q04-paper-page-4.png,边界已定位，待最终复核,只作为第4题题面边界，不关闭同题FIG问题。
+CPHO36-Q04-F01,CPHO36-Q04,题面模型,paper p.3-4,微孔竹板后的单个微孔与空气层简化为亥姆霍兹共振器；微孔深度为 l，腔体体积为 V0，微孔横截面积为 S。,题面第4题模型设定视觉核对,待最终复核,小写 l 与大写 I 在文本抽取中易混淆，需按源页终核。
+CPHO36-Q04-F02,CPHO36-Q04,题面声学关系,paper p.3,声速关系：v_s = sqrt(kappa/rho)。,题面第3页声速公式视觉核对,待最终复核,根号覆盖 kappa/rho，kappa 与 rho 字形需终核。
+CPHO36-Q04-F03,CPHO36-Q04,题面弹性模量定义,paper p.3,体积弹性模量：kappa = - Delta p/(Delta V/V) = -V Delta p/Delta V。,题面第3页kappa定义视觉核对,待最终复核,负号、分母 Delta V/V 和等价式需逐项终核。
+CPHO36-Q04-F04,CPHO36-Q04,题面常量,paper p.3-4,标准状态 T=273 K，1 atm = 1.01 x 10^5 Pa；M_mol = 29.0 g/mol；gamma = 7/5；R = 8.31 J/(K mol)。,题面第3-4页常量视觉核对,待最终复核,10^5、g/mol到kg/mol换算、gamma=7/5和单位点号需终核。
+CPHO36-Q04-F05,CPHO36-Q04,题面小问,paper p.4,第(1)问求 rho 和 v_s；第(2)问求共振吸收频率；第(3)问求120 Hz和200 Hz对应微孔横截面积之比。,题面第4页小问视觉核对,待最终复核,第(2)问变量应按源页确认为 v_s、S、l、V0。
+CPHO36-Q04-F06,CPHO36-Q04,答案边界,solution p.21-24,答案第21页下部开始第4题题面重印；第22页继续题面并开始参考解答；第23页覆盖式(3)至式(12)；第24页上半部覆盖式(13)至式(17)和评分标准，下半部进入第5题。,页面证据图：CPHO36-Q04-solution-page-21.png 至 CPHO36-Q04-solution-page-24.png,边界已定位，待最终复核,原清单答案页21-23会遗漏式(13)-式(17)和评分标准，本轮纠偏为21-24。
+CPHO36-Q04-F07,CPHO36-Q04,答案第(1)问,solution p.22,理想气体状态方程：pV = (M/M_mol)RT。,答案第22页式(1)视觉核对,待最终复核,P/p大小写、M_mol下标和RT分母关系需终核。
+CPHO36-Q04-F08,CPHO36-Q04,答案第(1)问,solution p.22,空气密度：rho = M/V = M_mol p/(RT)。,答案第22页式(1)后推导视觉核对,待最终复核,rho、M/V和M_mol p/(RT)等号链需终核。
+CPHO36-Q04-F09,CPHO36-Q04,答案第(1)问,solution p.22,标准状态：rho_biao = M_mol p_biao/(R T_biao) = 1.29 kg/m^3。,答案第22页式(2)视觉核对,待最终复核,29.0 x 10^-3、1.01 x 10^5、8.31和273的排版需终核，数值只登记来源未重算。
+CPHO36-Q04-F10,CPHO36-Q04,答案第(1)问,solution p.23,理想气体绝热过程：pV^gamma = 常量。,答案第23页绝热过程式视觉核对,待最终复核,gamma上标位置需终核。
+CPHO36-Q04-F11,CPHO36-Q04,答案第(1)问,solution p.23,微分关系：Delta p V^gamma + gamma p V^(gamma-1) Delta V = 0。,答案第23页式(3)视觉核对,待最终复核,V^gamma、V^(gamma-1)和Delta V位置需终核。
+CPHO36-Q04-F12,CPHO36-Q04,答案第(1)问,solution p.23,体积弹性模量：kappa = -V Delta p/Delta V = gamma p。,答案第23页式(4)视觉核对,待最终复核,负号、V因子和gamma p结果需终核。
+CPHO36-Q04-F13,CPHO36-Q04,答案第(1)问,solution p.23,声速：v_s = sqrt(kappa/rho) = sqrt(gamma p/rho)。,答案第23页声速公式视觉核对,待最终复核,两个根号的覆盖范围和rho分母需终核。
+CPHO36-Q04-F14,CPHO36-Q04,答案第(1)问,solution p.23,"标准状态声速：v_s,biao = sqrt(gamma p_biao/rho_biao) = sqrt((7/5)*(1.01 x 10^5 Pa)/(1.29 kg/m^3)) = 331 m/s。",答案第23页式(5)视觉核对,待最终复核,根号内分式、7/5和331 m/s只登记源页，未重算验算。
+CPHO36-Q04-F15,CPHO36-Q04,答案第(2)问,solution p.23,细管内空气柱质量：m = rho S l。,答案第23页式(6)视觉核对,待最终复核,l为小写深度，需避免误读为大写I或数字1。
+CPHO36-Q04-F16,CPHO36-Q04,答案第(2)问,solution p.23,体积改变：Delta V = Sx。,答案第23页式(7)视觉核对,待最终复核,x方向为向外为正，需与力的负号一起终核。
+CPHO36-Q04-F17,CPHO36-Q04,答案第(2)问,solution p.23,压力变化：Delta p = - gamma p Delta V / V。,答案第23页式(8)视觉核对,待最终复核,负号、gamma p和V分母需终核。
+CPHO36-Q04-F18,CPHO36-Q04,答案第(2)问,solution p.23,空气柱受力：F = S Delta p = - gamma p S^2 x / V。,答案第23页式(9)视觉核对,待最终复核,S^2、x和V分母需终核。
+CPHO36-Q04-F19,CPHO36-Q04,答案第(2)问,solution p.23,运动方程：-(gamma p S^2/V)x = m x_ddot = rho S l x_ddot。,答案第23页式(10)视觉核对,待最终复核,源页使用x上二点；m= rho S l替换和负号需终核。
+CPHO36-Q04-F20,CPHO36-Q04,答案第(2)问,solution p.23,简谐形式：x_ddot = -omega^2 x。,答案第23页式(11)视觉核对,待最终复核,omega与文本层中的o误读风险需终核。
+CPHO36-Q04-F21,CPHO36-Q04,答案第(2)问,solution p.23,圆频率：omega = sqrt(gamma p S/(rho l V))。,答案第23页式(12)视觉核对,待最终复核,根号、rho l V分母和l字形需终核。
+CPHO36-Q04-F22,CPHO36-Q04,答案第(2)问,solution p.23-24,将 v_s = sqrt(gamma p/rho) 代入，得到共振频率入口。,答案第23页页底至第24页页首视觉核对,待最终复核,该公式跨页到第24页，原21-23答案范围会遗漏最终频率式。
+CPHO36-Q04-F23,CPHO36-Q04,答案第(2)问,solution p.24,f_0 = omega/(2 pi) = v_s/(2 pi) sqrt(S/(lV)) = v_s/(2 pi) sqrt(S/(lV_0))。,答案第24页式(13)视觉核对,待最终复核,sqrt(S/(lV))、V=V0替换和l/V0下标需重点终核。
+CPHO36-Q04-F24,CPHO36-Q04,答案第(3)问,solution p.24,频率比：f_01/f_02 = 120 Hz / 200 Hz = 0.60。,答案第24页式(14)视觉核对,待最终复核,f_01/f_02下标和120/200顺序需终核。
+CPHO36-Q04-F25,CPHO36-Q04,答案第(3)问,solution p.24,f_01 = v_s/(2 pi) sqrt(S_1/(lV_0))，f_02 = v_s/(2 pi) sqrt(S_2/(lV_0))。,答案第24页式(15)视觉核对,待最终复核,S1/S2、共同lV0分母和根号范围需终核。
+CPHO36-Q04-F26,CPHO36-Q04,答案第(3)问,solution p.24,sqrt(S_1)/sqrt(S_2) = f_01/f_02。,答案第24页式(16)视觉核对,待最终复核,根号上下分式和下标需终核。
+CPHO36-Q04-F27,CPHO36-Q04,答案第(3)问,solution p.24,S_1/S_2 = (f_01/f_02)^2 = 0.36。,答案第24页式(17)视觉核对,待最终复核,平方位置、0.36和面积比方向需终核。
+CPHO36-Q04-F28,CPHO36-Q04,评分标准,solution p.24,评分标准：第(1)问18分，式(1)4分，式(2)2分，式(3)(4)(5)各4分；第(2)问16分，式(8)2分，式(9)(11)各4分，式(13)6分；第(3)问6分，式(17)6分。,答案第24页评分标准视觉核对,待最终复核,评分标准用于边界和证据索引，不代表小问分值已经正式拆分。
+CPHO36-Q04-F29,CPHO36-Q04,答案边界,solution p.24,第24页评分标准后进入第5题题面，第5题内容不得纳入第4题公式证据。,答案第24页下半部视觉核对,边界已定位，待最终复核,同一页同时包含第4题收尾和第5题起始，后续引用需说明页内边界。
+CPHO36-Q04-F30,CPHO36-Q04,复核提示,paper p.3-4; solution p.21-24,本题重点复核 l/I字形、V0下标、kappa与rho、gamma=7/5、p_biao/rho_biao、根号覆盖范围、S1/S2面积比方向、以及答案页21-24边界。,第36届第4题题面与答案页视觉核对,待最终复核,本行仅提示终核重点，不替代逐式人工确认。
