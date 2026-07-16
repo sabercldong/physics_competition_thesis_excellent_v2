@@ -1,0 +1,7 @@
+﻿check_id,material_id,source_scope,source_file,check_item,evidence_file,check_status,boundary_note
+F01,CPHO36-Q05,第36届试题PDF第5页整页渲染,03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf,确认图a来源页和同页边界,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q05-paper-page-5.png,已建立入口，待最终复核,图a位于第5页上方；下方进入第6题，不能纳入第5题题图证据。
+F02,CPHO36-Q05,原始裁图,03_corpus/item_assets/CPHO36-Q05-figure1-page5-raw.png,检查原始裁图是否保留图a主体和图注,03_corpus/item_assets/CPHO36-Q05-figure1-page5-raw.png,已建立入口，待最终复核,原始裁图保留微球透镜、激光束、光纤、n/n1/n2/O标注和图注，未见明显邻题残字。
+F03,CPHO36-Q05,重裁候选图,03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-paper-page-5.png,从源页生成保守重裁候选图,03_corpus/item_assets/CPHO36-Q05-figure-a-page5-recrop-v1.png,已建立入口，待最终复核,候选图保留图a主体和图注，未纳入下方第6题正文。
+F04,CPHO36-Q05,裁框定位图,03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-paper-page-5.png,标出候选裁图来源区域,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q05-paper-page-5-figure-a-crop-box.png,已建立入口，待最终复核,用于确认裁图来自第5页图a区域并排除第6题边界。
+F05,CPHO36-Q05,新旧对照接触图,03_corpus/item_assets/CPHO36-Q05-figure1-page5-raw.png,对照原始裁图、重裁候选图和来源页裁框,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q05-figure-a-check-contact-v1.png,已建立入口，待最终复核,用于最终人工复核和论文/附录图件使用决策。
+F06,CPHO36-Q05,使用边界,03_corpus/manual_review_checklist.csv,记录仍需最终复核的限制,03_corpus/manual_review_transcripts/CPHO36-Q05_figure_check_v1.csv,未销项,本轮不填写真实校对人/日期，不代表正式人工校对完成，不关闭同题公式终核。
