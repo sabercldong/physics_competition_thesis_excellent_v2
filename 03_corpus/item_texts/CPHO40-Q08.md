@@ -8,6 +8,29 @@
 - 题图：03_corpus/item_assets/CPHO40-Q08-figure1-page5-raw.png;03_corpus/item_assets/CPHO40-Q08-figure2-page5-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-40Q08`
+- 题面V1转写稿：`03_corpus/manual_review_transcripts/CPHO40-Q08_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO40-Q08_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q08-paper-page-5.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q08-solution-page-21.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q08-solution-page-22.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q08-solution-page-23.png`
+- 当前状态：原OCR文本仅保留为错误来源和追溯材料；正式编码前应以V1转写稿、公式核对表和页面证据作为复核入口。`CPHO40-Q08-FIG` 尚未销项；答案页中康普顿波长差符号和题面/答案编号差异需重点最终复核。
+
+## G1-07-C1 题图核对入口
+
+- 任务：`G1-07-C1-FIG-40Q08`
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO40-Q08_figure_check_v1.csv`
+- 重裁候选图：
+  - `03_corpus/item_assets/CPHO40-Q08-figure8a-page5-recrop-v1.png`
+  - `03_corpus/item_assets/CPHO40-Q08-figure8b-page5-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q08-paper-page-5-figure8a8b-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q08-figure8a8b-check-contact-v1.png`
+- 当前状态：图8a/图8b原始裁图底部混入第(1)问题干文字；本轮已基于第5页整页渲染图生成重裁候选图，保留图8a装置结构、散射角 `theta`、图8b双峰散射谱、`lambda_0/lambda_1`、坐标轴、波长标注和图号。该入口仍未填写真实校对人和日期，不代表正式人工销项或论文定稿插图。
+
 ## 题干OCR抽取文本
 
 ```text
