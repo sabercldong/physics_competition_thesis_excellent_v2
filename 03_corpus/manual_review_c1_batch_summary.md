@@ -381,6 +381,21 @@
 3. 重裁候选图从第1页整页题面证据生成，补足摆长 `l`、偏角 `theta`、摆锤 `m`、质量块 `M`、外力 `F`、弹簧、地面和图号，未混入第2题图2a；论文或附录使用前仍需最终版式复核。
 4. 本轮只建立题面图1a核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式仍需最终复核。
 
+## CPHO41-Q05
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO41-Q05_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO41-Q05-figure1-page3-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO41-Q05-figure5a-page3-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO41-Q05-paper-page-3-figure5a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO41-Q05-figure5a-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图5a位于第41届第5题题面第3页右中部，属于Ioffe势阱四导线布置的题面表征；第3页上部为第4题尾部，下部进入第6题，不得纳入本题题图证据。
+2. 原始裁图保留四角导线符号、电流 `I`、`x/y` 轴、`O` 点、`P(x,y)`、`a/b` 标注和“图5a”，但左侧混入题干残字，不宜直接作为论文插图定稿。
+3. 重裁候选图从第3页整页题面证据生成，去除主要正文残字，并保留四角导线电流方向、`I`、`x/y` 轴、`O`、`P(x,y)`、`a/b` 和图号；左侧 `x` 轴延伸处贴近裁边，论文或附录使用前仍需最终版式复核。
+4. 本轮只建立题面图5a核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式仍需最终复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-41Q05`：继续处理C组队列第124项 `CPHO41-Q05-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第123项 `CPHO41-Q01-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-41Q06`：继续处理C组队列第125项 `CPHO41-Q06-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第124项 `CPHO41-Q05-FIG` 均仍需真实确认记录才能正式销项。

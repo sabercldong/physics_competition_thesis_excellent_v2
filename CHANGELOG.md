@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-41Q05 第41届第5题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO41-Q05_figure_check_v1.csv`，登记第41届第5题图5a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO41-Q05-figure5a-page3-recrop-v1.png`，基于第41届试题PDF第3页整页渲染图重裁图5a，去除原始裁图左侧题干残字，并保留四角导线电流方向、`I`、`x/y` 轴、`O`、`P(x,y)`、`a/b` 和图号；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO41-Q05-paper-page-3.png`、`CPHO41-Q05-paper-page-3-figure5a-crop-box.png` 和 `CPHO41-Q05-figure5a-check-contact-v1.png`，记录题图来源位置、原图/候选图对照和同页第4题、第6题边界；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第124项 `CPHO41-Q05-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO41-Q05-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-41Q06`；
+- 本轮明确记录：候选图左侧 `x` 轴延伸处贴近裁边，正式论文或附录使用前仍需最终版式复核；本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-41Q01 第41届第1题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO41-Q01_figure_check_v1.csv`，登记第41届第1题图1a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；
