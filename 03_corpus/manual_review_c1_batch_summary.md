@@ -36,6 +36,7 @@
 | 126 | CPHO35-Q06-FIG | 第35届第6题 | 3 | 已建立题图核对入口和重裁候选图，待最终复核 |
 | 127 | CPHO36-Q04-FIG | 第36届第4题 | 3 | 已建立题图核对入口和重裁候选图，待最终复核 |
 | 128 | CPHO36-Q05-FIG | 第36届第5题 | 3 | 已建立题图核对入口和图a重裁候选图，待最终复核 |
+| 129 | CPHO37-Q06-FIG | 第37届第6题 | 3 | 已建立题图核对入口和图6a/图6b内部修剪候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -462,6 +463,23 @@
 3. 重裁候选图从第5页整页题面证据生成，保留图a主体和图注，未纳入下方第6题正文；论文或附录使用前仍需最终版式复核。
 4. 本轮只建立第36届第5题图a核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题公式终核仍需另行复核。
 
+## CPHO37-Q06
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO37-Q06_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO37-Q06-figure1-page3-raw.png`; `03_corpus/item_assets/CPHO37-Q06-figure2-page3-raw.png`
+- 内部修剪候选图：`03_corpus/item_assets/CPHO37-Q06-figure6a-page3-recrop-v1.png`; `03_corpus/item_assets/CPHO37-Q06-figure6b-page3-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q06-paper-page-3-figure6a6b-crop-box.png`
+- 内部修剪框：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q06-figure6a6b-internal-trim-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q06-figure6a6b-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图6a和图6b均位于第37届第6题题面第3页；第3页上半部为第5题，图6b下方进入第(2)问正文，均不得混入候选题图。
+2. 原始图6a保留光纤环、A点、`CCW/CW`、`Omega`、`R` 和图号，但左侧混入题干残字，底部露出图6b边缘。
+3. 原始图6b保留光纤端口、`n0/n1/n2`、入射角 `i` 和图号，但左侧混入题干残字，下方混入第(2)问正文。
+4. 内部修剪候选图基于原始裁图保守修剪，去除主要正文残边并保留关键标注；论文或附录使用前仍需最终版式复核。
+5. 本轮只建立第37届第6题图6a/图6b核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式终核仍需另行复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-37Q06`：继续处理C组队列第129项 `CPHO37-Q06-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第128项 `CPHO36-Q05-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-37Q07`：继续处理C组队列第130项 `CPHO37-Q07-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第129项 `CPHO37-Q06-FIG` 均仍需真实确认记录才能正式销项。

@@ -1,0 +1,9 @@
+﻿check_id,material_id,source_scope,source_file,check_item,evidence_file,check_status,boundary_note
+F01,CPHO37-Q06,第37届试题PDF第3页整页渲染,03_corpus/raw_papers/cpho_37_2020_fusai_paper_solution_candidate.pdf,确认图6a/图6b来源页和同页边界,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q06-paper-page-3.png,已建立入口，待最终复核,图6a位于第6题题干右侧，图6b位于第(1)问右侧；第3页上半部为第5题，图6b下方进入第(2)问正文。
+F02,CPHO37-Q06,原始裁图,03_corpus/item_assets/CPHO37-Q06-figure1-page3-raw.png,检查图6a原始裁图边界,03_corpus/item_assets/CPHO37-Q06-figure1-page3-raw.png,已建立入口，待最终复核,原始图6a保留光纤环、A点、CCW/CW、Omega、R和图号，但左侧混入题干残字，底部露出图6b边缘。
+F03,CPHO37-Q06,原始裁图,03_corpus/item_assets/CPHO37-Q06-figure2-page3-raw.png,检查图6b原始裁图边界,03_corpus/item_assets/CPHO37-Q06-figure2-page3-raw.png,已建立入口，待最终复核,原始图6b保留光纤端口、n0/n1/n2、入射角i和图号，但左侧混入题干残字，下方混入第(2)问正文。
+F04,CPHO37-Q06,原始裁图内部修剪候选,03_corpus/item_assets/CPHO37-Q06-figure1-page3-raw.png,生成图6a内部修剪候选图,03_corpus/item_assets/CPHO37-Q06-figure6a-page3-recrop-v1.png,已建立入口，待最终复核,候选图6a保留光纤环、方向箭头、A点、Omega、R和图号，去除左侧正文残字和下方图6b边缘。
+F05,CPHO37-Q06,原始裁图内部修剪候选,03_corpus/item_assets/CPHO37-Q06-figure2-page3-raw.png,生成图6b内部修剪候选图,03_corpus/item_assets/CPHO37-Q06-figure6b-page3-recrop-v1.png,已建立入口，待最终复核,候选图6b保留光纤端口结构、n0/n1/n2、入射角i和图号，去除主要正文残字。
+F06,CPHO37-Q06,裁框定位图,03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q06-paper-page-3.png,标出图6a/图6b来源页位置和内部修剪框,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q06-paper-page-3-figure6a6b-crop-box.png;03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q06-figure6a6b-internal-trim-box.png,已建立入口，待最终复核,用于确认两图来自第3页第6题区域，并显示原始裁图内部修剪范围。
+F07,CPHO37-Q06,新旧对照接触图,03_corpus/item_assets/CPHO37-Q06-figure1-page3-raw.png;03_corpus/item_assets/CPHO37-Q06-figure2-page3-raw.png,对照原始裁图、重裁候选图和来源页裁框,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q06-figure6a6b-check-contact-v1.png,已建立入口，待最终复核,用于最终人工复核和论文/附录图件使用决策。
+F08,CPHO37-Q06,使用边界,03_corpus/manual_review_checklist.csv,记录仍需最终复核的限制,03_corpus/manual_review_transcripts/CPHO37-Q06_figure_check_v1.csv,未销项,本轮不填写真实校对人/日期，不代表正式人工校对完成，不关闭同题OCR和公式终核。
