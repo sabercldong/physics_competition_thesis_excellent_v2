@@ -1,0 +1,31 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO39-Q01-F00,CPHO39-Q01,题面边界,paper p.1,第1题题面完整位于试题PDF第1页，包含图1a、图1b和三个小问；同页还含考生必读。,页面证据图：CPHO39-Q01-paper-page-1.png,边界已定位，待最终复核,本行只作为题面边界，不关闭同题FIG问题。
+CPHO39-Q01-F01,CPHO39-Q01,题面图示,paper p.1,图1a为迈克尔逊干涉仪光路图；图1b为石英槽倾斜示意图。,题面第1页图示视觉核对,待最终复核,图件裁边与图注仍由CPHO39-Q01-FIG另行处理。
+CPHO39-Q01-F02,CPHO39-Q01,题面相位量,paper p.1,两束光在不同界面反射，相位突变差异记为 Delta phi。,题面第1页相位差定义视觉核对,待最终复核,需终核希腊字母、Delta符号和文字定义。
+CPHO39-Q01-F03,CPHO39-Q01,题面条纹计数,paper p.1,开始时中心亮斑、最外侧亮圆环，共20个亮条纹；中心明暗变化23个周期，最外侧变化20个周期。,题面第1页条纹计数视觉核对,待最终复核,20、23、20均为精确计数值，需终核是否计及中心亮斑。
+CPHO39-Q01-F04,CPHO39-Q01,题面小问参数,paper p.1,第(3)问给出 theta=5.00 deg、中心明暗变化10个周期、注液后恢复垂直变化17个周期、lambda=633 nm、t=2.00 mm、空气折射率1.00。,题面第1页第(3)问参数视觉核对,待最终复核,theta角度、N1/N2差值、单位nm/mm需终核。
+CPHO39-Q01-F05,CPHO39-Q01,答案边界,solution p.5-6,第1题答案从PDF第5页开始，第6页上半部给出第(2)(3)问、结果和评分标准；第6页下半部进入第2题，第7页为第2题延续。,页面证据图：CPHO39-Q01-solution-page-05.png、CPHO39-Q01-solution-page-06.png、CPHO39-Q01-solution-boundary-next-page-07.png,边界已定位，待最终复核,保留答案页范围5-6；第7页只作排除边界。
+CPHO39-Q01-F06,CPHO39-Q01,答案第(1)问,solution p.5,中心亮条纹条件：(2pi/lambda) 2d + Delta phi = 2k pi。,答案第5页式①视觉核对,待最终复核,2d、Delta phi、k的式号和空格需终核。
+CPHO39-Q01-F07,CPHO39-Q01,答案第(1)问,solution p.5,最外侧亮条纹条件：(2pi/lambda) 2d cos gamma_M + Delta phi = 2(k-19)pi。,答案第5页式②视觉核对,待最终复核,gamma_M下标和k-19需终核。
+CPHO39-Q01-F08,CPHO39-Q01,答案第(1)问,solution p.5,由中心和最外侧亮纹得：(2pi/lambda) 2d(1-cos gamma_M)=19 x 2pi。,答案第5页式③视觉核对,待最终复核,1-cos gamma_M、19和2pi需终核。
+CPHO39-Q01-F09,CPHO39-Q01,答案第(1)问,solution p.5,中心变化：(2pi/lambda) 2 Delta d = 23 x 2pi。,答案第5页式④视觉核对,待最终复核,Delta d符号和23需终核。
+CPHO39-Q01-F10,CPHO39-Q01,答案第(1)问,solution p.5,最外侧变化：(2pi/lambda) 2 Delta d cos gamma_M = 20 x 2pi。,答案第5页式⑤视觉核对,待最终复核,cos gamma_M和20需终核。
+CPHO39-Q01-F11,CPHO39-Q01,答案第(1)问,solution p.5,由式④⑤得：cos gamma_M = 20/23，Delta d = 23lambda/2。,答案第5页式⑥视觉核对,待最终复核,分数20/23和23lambda/2需终核。
+CPHO39-Q01-F12,CPHO39-Q01,答案第(1)问,solution p.5,代入式③： (2pi/lambda) 2d(1-20/23)=19 x 2pi。,答案第5页式⑦视觉核对,待最终复核,括号1-20/23需终核。
+CPHO39-Q01-F13,CPHO39-Q01,答案第(1)问,solution p.5,由此得：2d = (23 x 19 / 3) lambda = 145 2/3 lambda。,答案第5页式⑧视觉核对,待最终复核,带分数145 2/3及lambda位置需终核。
+CPHO39-Q01-F14,CPHO39-Q01,答案第(1)问,solution p.5,代入中心条件后得到 Delta phi = 2pi/3。,答案第5页式⑨至⑪视觉核对,待最终复核,需终核2pi周期注释：Delta phi=2pi/3+2k prime pi均可。
+CPHO39-Q01-F15,CPHO39-Q01,答案第(1)问注释,solution p.5,光波函数以2pi为周期，Delta phi=2pi/3+2k prime pi均算对。,答案第5页式⑪后注释视觉核对,待最终复核,prime符号和k prime表述需终核。
+CPHO39-Q01-F16,CPHO39-Q01,答案第(2)问,solution p.6,反射镜移动后亮条纹数方程：(2pi/lambda) 2(d-Delta d)(1-cos gamma_M) = (m-1)2pi。,答案第6页式⑫视觉核对,待最终复核,跨页承接自第5页，需终核d-Delta d和m-1。
+CPHO39-Q01-F17,CPHO39-Q01,答案第(2)问,solution p.6,由式⑫得 m=17。,答案第6页式⑬视觉核对,待最终复核,m=17与题面计数关系需终核。
+CPHO39-Q01-F18,CPHO39-Q01,答案第(3)问,solution p.6,设液体折射率为n，theta和i分别为入射角和折射角；折射定律 sin theta = n sin i。,答案第6页第(3)问开头视觉核对,待最终复核,theta/i与解题图1a标注需终核。
+CPHO39-Q01-F19,CPHO39-Q01,答案第(3)问,solution p.6,光程差表达式起点：Delta L(theta)=2(n OA + AC - OB)。,答案第6页式⑭首行视觉核对,待最终复核,OA、AC、OB和几何图对应关系需终核。
+CPHO39-Q01-F20,CPHO39-Q01,答案第(3)问,solution p.6,式⑭中间展开包含 nt/cos i、sin theta/cos theta、sin i/cos i、t/cos theta 等项。,答案第6页式⑭中间行视觉核对,待最终复核,长式排版复杂，需按源页逐项终核。
+CPHO39-Q01-F21,CPHO39-Q01,答案第(3)问,solution p.6,式⑭末行将Delta L(theta)化为含 sqrt(1 - sin^2 theta / n^2) 与 cos theta 的表达式。,答案第6页式⑭末行视觉核对,待最终复核,文本抽取易漏根号，必须以页面图为准。
+CPHO39-Q01-F22,CPHO39-Q01,答案第(3)问,solution p.6,Delta L(0)-Delta L(theta)=2nt(1-sqrt(1-sin^2 theta/n^2))-2t(1-cos theta)=-lambda Delta N。,答案第6页式⑮视觉核对,待最终复核,根号范围、负号和Delta N方向需终核。
+CPHO39-Q01-F23,CPHO39-Q01,答案第(3)问,solution p.6,小角近似：sin^2 theta/n^2 << 1，保留一阶小量。,答案第6页式⑮至⑯之间文字视觉核对,待最终复核,近似条件及阶数表述需终核。
+CPHO39-Q01-F24,CPHO39-Q01,答案第(3)问,solution p.6,由小量展开得：t sin^2 theta / n - 2t(1-cos theta) = -lambda Delta N。,答案第6页式⑯视觉核对,待最终复核,sin^2 theta/n、负号和Delta N需终核。
+CPHO39-Q01-F25,CPHO39-Q01,答案第(3)问,solution p.6,折射率公式：n = t sin^2 theta / [2t(1-cos theta) - lambda Delta N]。,答案第6页式⑰视觉核对,待最终复核,分母整体范围和负号需终核。
+CPHO39-Q01-F26,CPHO39-Q01,答案第(3)问,solution p.6,代入 t=2.00 mm、theta=5.00 deg、Delta N=N2-N1=7，得 n=1.41。,答案第6页式⑱视觉核对,待最终复核,N2-N1=7来自17-10，需终核。
+CPHO39-Q01-F27,CPHO39-Q01,评分标准,solution p.6,第(1)问23分；第(2)问5分；第(3)问12分；式①②、③、④⑤、⑥、⑧、⑪、⑬、⑭⑮⑱对应给分。,答案第6页评分标准视觉核对,待最终复核,评分标准只作边界和证据索引，不等于小问分值已正式拆分。
+CPHO39-Q01-F28,CPHO39-Q01,下一题边界,solution p.6-7,第6页评分标准后进入第2题；第7页为第2题答案延续，不属于第1题答案。,页面证据图：CPHO39-Q01-solution-page-06.png、CPHO39-Q01-solution-boundary-next-page-07.png,边界已定位，待最终复核,第7页不纳入第1题公式核对入口。
+CPHO39-Q01-F29,CPHO39-Q01,终核提示,solution p.5-6,正式使用前需逐式核对Delta phi、gamma_M、Delta d、m、theta/i、Delta L(theta)、根号范围、Delta N方向、n=1.41和评分标准。,本轮公式核对入口汇总,待最终复核,本表不填写真实校对人/日期，不代表人工校对完成。

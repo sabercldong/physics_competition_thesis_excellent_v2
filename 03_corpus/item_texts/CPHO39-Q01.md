@@ -8,6 +8,18 @@
 - 题图：03_corpus/item_assets/CPHO39-Q01-figure1-page1-raw.png;03_corpus/item_assets/CPHO39-Q01-figure2-page1-raw.png
 - 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
 
+## G1-07-B1 公式核对入口
+
+- 核对表：`03_corpus/manual_review_transcripts/CPHO39-Q01_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q01-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q01-solution-page-05.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q01-solution-page-06.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q01-solution-boundary-next-page-07.png`
+- 边界说明：题面完整位于试题PDF第1页；答案第5页为第1题参考解答起点，第6页上半部给出第(2)(3)问、`n=1.41` 和评分标准，第6页下半部进入第2题；第7页为第2题延续，仅作排除边界。
+- 待终核重点：`Delta phi`、`gamma_M`、`Delta d`、亮条纹数 `m`、`theta/i`、`Delta L(theta)`、根号范围、`Delta N=N2-N1=7`、`n=1.41` 和评分标准。
+- 状态：答案公式核对入口完成，待最终复核；同题题图裁边与图注仍待人工校对。
+
 ## 题干抽取文本
 
 ```text

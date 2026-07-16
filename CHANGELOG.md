@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-B1-FORMULA-39Q01 第39届第1题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO39-Q01_formula_check_v1.csv`，依据第39届合并PDF第5-6页登记相位突变差异、等倾干涉亮纹条件、反射镜移动周期、亮条纹数、石英槽倾角、光程差、折射率公式和评分标准等30条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第092项 `CPHO39-Q01-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第093项 `CPHO35-Q01-FORMULA`；
+- 新增第39届第1题共4张页面证据图：题面第1页、答案第5-6页和第7页下一题边界确认图；视觉检查确认第1题题面完整位于试题PDF第1页，答案第6页上半部仍为第1题，第6页下半部进入第2题，第7页为第2题延续；
+- 更新 `03_corpus/item_texts/CPHO39-Q01.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO39-Q01-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第39届第1题三个小问答案页入口统一为 `5-6`；
+- 标记 `Delta phi`、`gamma_M`、`Delta d`、亮条纹数 `m`、`theta/i`、`Delta L(theta)`、根号范围、`Delta N=N2-N1=7`、`n=1.41` 和评分标准为待最终复核；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第092项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-35Q01`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-16：G1-07-B1-FORMULA-36Q05 第36届第5题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO36-Q05_formula_check_v1.csv`，依据第36届合并PDF第24-29页登记光纤全反射条件、球面折射成像、虚物符号、微球透镜等效焦距、几何方法、长根式表达式和评分标准等46条公式核对入口；
