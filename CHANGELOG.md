@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-38Q01 第38届第1题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q01_figure_check_v1.csv`，登记第38届第1题图1a来源页、原始裁图、内部修剪候选图、来源页裁框、内部修剪框和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO38-Q01-figure1a-page1-recrop-v1.png`，基于原始裁图内部保守修剪，去除左侧正文残边并保留平凸透镜光路、入射平行光、曲面轮廓、`P/O`、`r0`、`n`、焦点 `F` 和图号；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO38-Q01-paper-page-1.png`、`CPHO38-Q01-paper-page-1-figure1a-crop-box.png`、`CPHO38-Q01-figure1a-internal-trim-box.png` 和 `CPHO38-Q01-figure1a-check-contact-v1.png`，记录图1a来源位置、内部修剪范围和新旧对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第131项 `CPHO38-Q01-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO38-Q01-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-38Q03`；
+- 本轮明确记录：候选图只做内部修剪，不补字、不重绘；第1页中下部第2题图2a和底部第3题图3a不得混入第1题图件证据；本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-37Q07 第37届第7题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO37-Q07_figure_check_v1.csv`，登记第37届第7题图7a来源页、原始裁图、内部修剪候选图、来源页裁框、内部修剪框和新旧对照证据；

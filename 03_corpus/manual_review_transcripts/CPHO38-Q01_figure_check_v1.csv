@@ -1,0 +1,7 @@
+﻿check_id,material_id,source_scope,source_file,check_item,evidence_file,check_status,boundary_note
+F01,CPHO38-Q01,第38届试题PDF第1页整页渲染,03_corpus/raw_papers/cpho_38_2021_fusai_paper_solution_candidate.pdf,确认图1a来源页和同页边界,03_corpus/manual_review_renders/G1-07-C1/CPHO38-Q01-paper-page-1.png,已建立入口，待最终复核,图1a位于第38届第1题题面第1页右上方；同页中下部进入第2题并出现图2a，底部进入第3题并出现图3a，均不能纳入第1题图件证据。
+F02,CPHO38-Q01,原始裁图,03_corpus/item_assets/CPHO38-Q01-figure1-page1-raw.png,检查原始裁图是否保留图1a主体和图号,03_corpus/item_assets/CPHO38-Q01-figure1-page1-raw.png,已建立入口，待最终复核,原始裁图保留平凸透镜光路、入射平行光、曲面轮廓、P/O、r0、n、焦点F和图号，但左侧混入题干残字。
+F03,CPHO38-Q01,原始裁图内部修剪候选,03_corpus/item_assets/CPHO38-Q01-figure1-page1-raw.png,生成图1a内部修剪候选图,03_corpus/item_assets/CPHO38-Q01-figure1a-page1-recrop-v1.png,已建立入口，待最终复核,候选图保留入射平行光、透镜曲面、P/O、r0、n、焦点F和图号，去除左侧正文残字，未补字、未重绘。
+F04,CPHO38-Q01,裁框定位图,03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-paper-page-1.png,标出图1a来源页区域和内部修剪框,03_corpus/manual_review_renders/G1-07-C1/CPHO38-Q01-paper-page-1-figure1a-crop-box.png;03_corpus/manual_review_renders/G1-07-C1/CPHO38-Q01-figure1a-internal-trim-box.png,已建立入口，待最终复核,用于确认图1a来自第1页第1题区域、内部修剪来自原始裁图，并排除第2题图2a和第3题图3a。
+F05,CPHO38-Q01,新旧对照接触图,03_corpus/item_assets/CPHO38-Q01-figure1-page1-raw.png,对照原始裁图、内部修剪候选图和来源页裁框,03_corpus/manual_review_renders/G1-07-C1/CPHO38-Q01-figure1a-check-contact-v1.png,已建立入口，待最终复核,用于最终人工复核和论文/附录图件使用决策，显示原始裁图左侧残字、候选图修剪边界和整页来源位置。
+F06,CPHO38-Q01,使用边界,03_corpus/manual_review_checklist.csv,记录仍需最终复核的限制,03_corpus/manual_review_transcripts/CPHO38-Q01_figure_check_v1.csv,未销项,本轮不填写真实校对人/日期，不代表正式人工校对完成，不关闭同题OCR和公式终核。
