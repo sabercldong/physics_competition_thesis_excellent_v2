@@ -93,7 +93,8 @@
   - FORMULA-39Q02：已新增 `03_corpus/manual_review_transcripts/CPHO39-Q02_formula_check_v1.csv`，并生成第39届第2题题面第2页、答案第6至8页及第9页下一题边界确认共5张页面证据图；`CPHO39-Q02-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。视觉检查确认第2题题面位于试题PDF第2页上半部，同页下半部进入第3题和第4题；答案第6页上部为第1题尾部，第6页中下部开始第2题，第7页覆盖式(4)-(14)，第8页覆盖式(15)-(23)和评分标准，第9页进入第3题；本轮保留答案页范围 `6-8`，并将两个小问答案页入口统一为 `6-8`。该进度不代表真实人工校对完成，也不代表公式排版或正式编码证据摘录已经销项。
   - FIG-40Q03：已新增 `03_corpus/manual_review_transcripts/CPHO40-Q03_figure_check_v1.csv`、`03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，并生成第40届第3题图3a重裁候选图、整页裁框定位图和新旧对照接触图；`CPHO40-Q03-FIG` 已推进为“题图核对入口完成，待最终复核”。该进度不代表真实人工校对完成，也不代表论文插图定稿。
   - FIG-42Q02：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q02_figure_check_v1.csv`、图2a/图2b修剪候选图、整页裁框定位图和新旧对照接触图；`CPHO42-Q02-FIG` 已推进为“题图核对入口完成，待最终复核”。图2a候选图去除底部图2b横线，图2b候选图去除页码残字，但图2b顶部 `VA` 标注仍需最终复核。该进度不代表真实人工校对完成，也不代表论文插图定稿。
-  - 下一步：进入 `G1-07-C1-FIG-42Q05`，处理C组队列第103项 `CPHO42-Q05-FIG`；队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 和第102项 `CPHO42-Q02-FIG` 均仍需真实确认记录才能正式销项。
+  - FIG-42Q05：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q05_figure_check_v1.csv`、第42届第5题图5b重裁候选图、两页裁框定位图和新旧对照接触图；`CPHO42-Q05-FIG` 已推进为“题图核对入口完成，待最终复核”。图5a原始裁图暂可作为来源对照，图5b候选图去除左侧正文残字并保留 `R`、`I`、`J`、`C`、并联结构和图号。该进度不代表真实人工校对完成，也不代表论文插图定稿。
+  - 下一步：进入 `G1-07-C1-FIG-36Q03`，处理C组队列第104项 `CPHO36-Q03-FIG`；队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG` 和第103项 `CPHO42-Q05-FIG` 均仍需真实确认记录才能正式销项。
 
 ## G2 文献与理论
 
