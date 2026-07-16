@@ -8,6 +8,21 @@
 - 题图：03_corpus/item_assets/CPHO35-Q07-figure1-page4-raw.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
 
+## G1-07-B1 公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q07_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-31.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-32.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-33.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-34.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-35.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-boundary-next-page-36.png`
+- 边界说明：题面完整位于试题PDF第4页；答案第31页上半部为第6题收尾，第31页下半部开始第7题题面重印，第32页为图a，第33页为图b和参考解答起点，第34页覆盖核心公式，第35页上半部覆盖 `p'` 与 `R'` 最终结果，第35页下半部进入第8题，第36页仅作下一题排除边界。
+- 待最终复核重点：`phi/phi'`、`X1/X2/X'`、`d1/d2/d'`、`p/R/p'/R'`、小角近似、图a/图b尺寸标注和“4级亮纹失踪”说明。
+- 状态：`CPHO35-Q07-FORMULA` 已建立答案公式核对入口，待最终复核；`CPHO35-Q07-FIG` 与 `CPHO35-Q07-SCORE` 仍待人工校对。本记录不填写真实校对人或日期，不代表人工销项完成。
+
 ## 题干
 
 ```text

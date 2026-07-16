@@ -1,0 +1,30 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO35-Q07-F00,CPHO35-Q07,题面边界,paper p.4,第7题题面位于试题PDF第4页，含弹簧衍射图a和DNA X射线衍射图b；页脚为第4页/共38页。,页面证据图：CPHO35-Q07-paper-page-4.png,边界已定位，待最终复核,只作为第7题题面边界，不关闭同题FIG或SCORE问题。
+CPHO35-Q07-F01,CPHO35-Q07,题面实验参数,paper p.4,图a对应波长633 nm激光、光屏距离4.2 m，并给出实际尺寸7.8 cm。,题面第4页视觉核对,待最终复核,图a刻度、方向和图注仍需在FIG问题中最终核对。
+CPHO35-Q07-F02,CPHO35-Q07,题面DNA参数,paper p.4,图b对应波长0.15 nm的X射线、底片距离9.0 cm，并给出实际尺寸9.4 cm。,题面第4页视觉核对,待最终复核,图b曝光强弱说明和“4级亮纹失踪”文字需终核。
+CPHO35-Q07-F03,CPHO35-Q07,题面小问,paper p.4,第(1)问估算弹簧钢丝直径d1、弹簧圈半径R和螺距p；第(2)问估算DNA螺旋结构半径R'和螺距p'。,题面小问视觉核对,待最终复核,d1、R、p、R'、p'的上下标和撇号需终核。
+CPHO35-Q07-F04,CPHO35-Q07,题面光学说明,paper p.4,题面说明弹簧上两段互成角度的细铁丝的衍射/干涉图像，与两条成同样角度、相同宽度的狭缝图像一致。,题面说明段视觉核对,待最终复核,“相同宽度”“同样角度”等关键词影响建模证据摘录。
+CPHO35-Q07-F05,CPHO35-Q07,答案边界,solution pp.31-35,答案第31页上半部为第6题收尾，第31页下半部开始第7题题面重印；第32页为图a，第33页为图b和参考解答起点，第34页为核心公式，第35页上半部为p'与R'结果，下半部进入第8题。,页面证据图：CPHO35-Q07-solution-page-31.png 至 CPHO35-Q07-solution-page-35.png；下一题边界图：CPHO35-Q07-solution-boundary-next-page-36.png,边界已定位，待最终复核,答案页范围保留31-35；第36页只作第8题排除边界。
+CPHO35-Q07-F06,CPHO35-Q07,答案图a证据,solution p.32,答案第32页给出图a放大页，含实际尺寸7.8 cm与衍射图样。,答案第32页图a视觉核对,待最终复核,本轮仅登记公式核对入口；图件裁边、图注和论文用图质量仍由CPHO35-Q07-FIG处理。
+CPHO35-Q07-F07,CPHO35-Q07,答案图b证据,solution p.33,答案第33页上部给出图b放大页，含实际尺寸9.4 cm、曝光强弱说明和4级亮纹说明。,答案第33页图b视觉核对,待最终复核,图b说明文字较长，仍需FIG最终核对。
+CPHO35-Q07-F08,CPHO35-Q07,夹角读数,solution p.33,图a中各组单缝衍射条纹中点连线之间的夹角 phi = 30 deg，源页标作式①。,答案第33页式①视觉核对,待最终复核,需终核phi符号、角度单位和读数来源。
+CPHO35-Q07-F09,CPHO35-Q07,单缝暗纹条件,solution p.33,对第n级暗纹近似有 d sin theta_n approx d theta_n = d x_n/L = n lambda，源页标作式②。,答案第33页式②视觉核对,待最终复核,theta_n、x_n、L、lambda、近似号和分式位置需终核。
+CPHO35-Q07-F10,CPHO35-Q07,相邻暗纹间距,solution p.34,相邻暗纹间距 X == x_{n+1}-x_n = lambda L/d，源页标作式③。,答案第34页式③视觉核对,待最终复核,需终核恒等号/定义号、下标n+1和分母d。
+CPHO35-Q07-F11,CPHO35-Q07,长空间周期,solution p.34,通过图a右图测量得到长的空间周期 X1 = 7.9 mm，源页标作式④。,答案第34页式④视觉核对,待最终复核,X1读数依赖图像测量，正式使用前需终核。
+CPHO35-Q07-F12,CPHO35-Q07,钢丝直径,solution p.34,由式③得细丝直径 d1 = lambda L/X1 = 0.34 mm，源页标作式⑤。,答案第34页式⑤视觉核对,待最终复核,d1下标、单位和数值0.34 mm需终核。
+CPHO35-Q07-F13,CPHO35-Q07,短空间周期,solution p.34,通过图a右图测量得到短的空间周期 X2 = 1.7 mm，源页标作式⑥。,答案第34页式⑥视觉核对,待最终复核,X2读数依赖图像测量，正式使用前需终核。
+CPHO35-Q07-F14,CPHO35-Q07,相邻平行细丝间距,solution p.34,由式③得相邻平行细丝间距 d2 = lambda L/X2 = 1.6 mm，源页标作式⑦。,答案第34页式⑦视觉核对,待最终复核,d2、X2和1.6 mm需终核。
+CPHO35-Q07-F15,CPHO35-Q07,螺距表达式,solution p.34,由螺旋展开几何关系，p = d2/cos(phi/2) = lambda L/(X2 cos(phi/2))，源页标作式⑧。,答案第34页式⑧视觉核对,待最终复核,cos(phi/2)分母、X2下标和几何图对应关系需终核。
+CPHO35-Q07-F16,CPHO35-Q07,弹簧螺距结果,solution p.34,代入数据得 p = 1.6 mm，源页标作式⑨。,答案第34页式⑨视觉核对,待最终复核,该数值与d2相近，需终核是否由四舍五入导致。
+CPHO35-Q07-F17,CPHO35-Q07,几何比值关系,solution p.34,右图几何关系给出 2 pi R/p = tan theta = cot(phi/2)。,答案第34页几何关系视觉核对,待最终复核,theta与phi/2的互余关系、cot符号需终核。
+CPHO35-Q07-F18,CPHO35-Q07,弹簧半径表达式,solution p.34,R = d2/(2 pi sin(phi/2)) = lambda L/(2 pi X2 sin(phi/2))，源页标作式⑩。,答案第34页式⑩视觉核对,待最终复核,2 pi、sin(phi/2)、X2分母和根式/分式排版需终核。
+CPHO35-Q07-F19,CPHO35-Q07,弹簧半径结果,solution p.34,代入数据得 R = 0.96 mm，源页标作式⑪。,答案第34页式⑪视觉核对,待最终复核,单位和有效数字需终核。
+CPHO35-Q07-F20,CPHO35-Q07,DNA夹角读数,solution p.34,由图b测得各组衍射条纹中心连线之间的夹角 phi' = 84 deg，源页标作式⑫。,答案第34页式⑫视觉核对,待最终复核,phi'撇号、角度读数和图b测量位置需终核。
+CPHO35-Q07-F21,CPHO35-Q07,DNA空间周期,solution p.34,测出条纹空间周期 X' = 4.7 mm，源页标作式⑬。,答案第34页式⑬视觉核对,待最终复核,X'撇号和4.7 mm读数需终核。
+CPHO35-Q07-F22,CPHO35-Q07,分子链间距,solution p.34,利用式③，相邻分子链间距 d' = lambda' L'/X' = 2.9 nm，源页标作式⑭。,答案第34页式⑭视觉核对,待最终复核,lambda'、L'、X'撇号及单位换算需终核。
+CPHO35-Q07-F23,CPHO35-Q07,DNA螺距,solution p.35,由类似式⑧，p' = d'/cos(phi'/2) = lambda'L'/(X'cos(phi'/2)) = 3.9 nm，源页标作式⑮。,答案第35页式⑮视觉核对,待最终复核,p'、cos(phi'/2)、3.9 nm和排版换行需终核。
+CPHO35-Q07-F24,CPHO35-Q07,DNA半径,solution p.35,由类似式⑩，R' = d'/(2 pi sin(phi'/2)) = lambda'L'/(2 pi X' sin(phi'/2)) = 0.68 nm，源页标作式⑯。,答案第35页式⑯视觉核对,待最终复核,R'、2 pi、sin(phi'/2)、0.68 nm和撇号需终核。
+CPHO35-Q07-F25,CPHO35-Q07,下一题边界,solution pp.35-36,第35页下半部开始第8题；第36页为第8题延续，仅作排除边界，不纳入第7题答案。,页面证据图：CPHO35-Q07-solution-page-35.png；CPHO35-Q07-solution-boundary-next-page-36.png,边界已定位，待最终复核,防止将第8题内容误作第7题公式证据。
+CPHO35-Q07-F26,CPHO35-Q07,测量值风险,solution pp.32-35,X1、X2、X'、phi、phi'均为依据图像测量得到的量，正式编码证据摘录前需与渲染页逐项核对。,图像测量与答案公式综合核对,待最终复核,这些值可作为核对入口，不能视为真实人工终核完成。
+CPHO35-Q07-F27,CPHO35-Q07,未关闭问题,checklist rows 140/154,同题CPHO35-Q07-FIG和CPHO35-Q07-SCORE仍为待人工校对。,manual_review_priority_followup.csv,待后续处理,本轮只处理FORMULA，不关闭图件裁边/图注和第35届分值边界。
+CPHO35-Q07-F28,CPHO35-Q07,正式编码影响,item rows CPHO35-Q07-1/2,本题公式和测量结果影响两个小问的答案证据摘录、表征形式和类比迁移案例证据；现阶段仅可作为待最终复核入口。,item_index.csv与人工校对清单联动,待最终复核,不得据此生成正式统计、正式案例结论或论文结果。

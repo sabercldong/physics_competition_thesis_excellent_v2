@@ -25,6 +25,7 @@
 | 091 | CPHO36-Q05-FORMULA | 第36届第5题 | 3 | 已建立答案公式核对入口，待最终复核 |
 | 092 | CPHO39-Q01-FORMULA | 第39届第1题 | 3 | 已建立答案公式核对入口，待最终复核 |
 | 093 | CPHO35-Q01-FORMULA | 第35届第1题 | 2 | 已建立答案公式核对入口，待最终复核 |
+| 094 | CPHO35-Q07-FORMULA | 第35届第7题 | 2 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -246,6 +247,19 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-07.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-08.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-09.png`
+
+### CPHO35-Q07
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO35-Q07_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-paper-page-4.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-31.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-32.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-33.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-34.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-35.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-boundary-next-page-36.png`
 
 ## 边界确认
 
@@ -489,6 +503,14 @@
 4. 第8页第(2)问中的落地速度根号、水平速度 `v_theta`、方向角 `alpha` 展开式、极坐标能量式和径向速度式需按页面证据逐项终核。
 5. 第8至9页式⑭时间积分跨页，原 `6-8` 页范围会遗漏第9页的参数 `a/b/c`、`Delta`、式⑮最终时间表达式和临界时间结果；同题 `CPHO35-Q01-SCORE` 仍需在第35届分值边界复核任务中处理。
 
+### CPHO35-Q07
+
+1. 题面激光波长 `633 nm`、光屏距离 `4.2 m`、X射线波长 `0.15 nm`、底片距离 `9.0 cm` 和图a/图b实际尺寸 `7.8 cm`、`9.4 cm` 需按源页终核。
+2. 第33页式①至式②中的 `phi = 30 deg`、`d sin theta_n approx d theta_n = d x_n/L = n lambda`、小角近似、上下标和分式位置需逐式复核。
+3. 第34页式③至式⑭中的 `X`、`X1 = 7.9 mm`、`d1 = 0.34 mm`、`X2 = 1.7 mm`、`d2 = 1.6 mm`、`p`、`R`、`phi' = 84 deg`、`X' = 4.7 mm` 和 `d' = 2.9 nm` 均依赖图像测量与公式换算，需最终复核。
+4. 第35页式⑮与式⑯中的 `p' = 3.9 nm` 和 `R' = 0.68 nm`、撇号、`cos(phi'/2)`、`sin(phi'/2)`、`2 pi` 和单位换算需按页面证据逐项终核。
+5. 图b中“中心零级亮纹不可见、1级亮纹刚好可见、2、3、5级较清晰、4级亮纹失踪”的说明影响案例证据，仍需在 `CPHO35-Q07-FIG` 中处理；`CPHO35-Q07-SCORE` 仍需在第35届分值边界复核任务中处理。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-35Q07`：继续B组中风险公式校对入口建设，处理队列第094项 `CPHO35-Q07-FORMULA`。
+`G1-07-B1-FORMULA-36Q01`：继续B组中风险公式校对入口建设，处理队列第095项 `CPHO36-Q01-FORMULA`。
