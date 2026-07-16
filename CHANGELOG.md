@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-42Q07 第42届第7题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q07_figure_check_v1.csv`，登记第42届第7题图7a来源页、原始裁图、保留候选图、来源页裁框和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO42-Q07-figure7a-page5-recrop-v1.png`，保留图7a原始裁图完整主体作为候选图；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q07-paper-page-5.png`、`CPHO42-Q07-paper-page-5-figure7a-crop-box.png` 和 `CPHO42-Q07-figure7a-check-contact-v1.png`，记录图7a来源位置和原图/候选图对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第139项 `CPHO42-Q07-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO42-Q07-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-35Q07`；
+- 本轮明确记录：图7a原始裁图已保留圆柱形自聚焦光纤、内部螺旋光线路径、`z` 轴方向箭头和图号，第5页上半部第6题尾部不得纳入本题证据；本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-42Q03 第42届第3题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO42-Q03_figure_check_v1.csv`，登记第42届第3题图3a、图3b、图3c、图3d的来源页、原始裁图、候选图、裁框和新旧对照证据；
