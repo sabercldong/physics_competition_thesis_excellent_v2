@@ -14,6 +14,7 @@
 | 104 | CPHO36-Q03-FIG | 第36届第3题 | 5 | 已建立题图核对入口和图a重裁候选图，待最终复核 |
 | 105 | CPHO36-Q07-FIG | 第36届第7题 | 5 | 已建立题图核对入口和图a重裁候选图，待最终复核 |
 | 106 | CPHO39-Q04-FIG | 第39届第4题 | 5 | 已建立题图核对入口和图4a重裁候选图，待最终复核 |
+| 107 | CPHO39-Q06-FIG | 第39届第6题 | 5 | 已建立题图核对入口和图6a重裁候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -107,6 +108,21 @@
 3. 重裁候选图基于第2页整页渲染图生成，去除左侧与底部邻近题干文字，保留图形主体和图注。
 4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
 
+## CPHO39-Q06
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO39-Q06_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO39-Q06-figure1-page3-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO39-Q06-figure6a-page3-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q06-paper-page-3-figure6a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q06-figure6a-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图6a位于第39届第6题题面第3页右下方，属于金属温差电效应经典模型题面证据；上方第5题尾部不得纳入本题题图证据。
+2. 原始裁图保留 `sigma-`、`sigma+`、`n(x)`、`T(x)`、`E(x)`、两侧 `E=0`、`x=-L`、`x=L` 和坐标轴，但上方混入第5题尾部文字，底部图注区域裁切偏紧。
+3. 重裁候选图基于第3页整页渲染图生成，去除上方第5题尾部和下方第6题题干文字，保留图形主体和图注。
+4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-39Q06`：继续处理C组队列第107项 `CPHO39-Q06-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG` 和第106项 `CPHO39-Q04-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-40Q02`：继续处理C组队列第108项 `CPHO40-Q02-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG`、第106项 `CPHO39-Q04-FIG` 和第107项 `CPHO39-Q06-FIG` 均仍需真实确认记录才能正式销项。
