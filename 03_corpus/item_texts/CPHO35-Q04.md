@@ -5,7 +5,7 @@
 - 试题文件：`03_corpus/raw_papers/cpho_35_2018_fusai_paper_solution_candidate.pdf`
 - 试题页码：2
 - 解答页码：16-19
-- 题图：03_corpus/item_assets/CPHO35-Q04-figure1-page2-raw.png
+- 题图：03_corpus/item_assets/CPHO35-Q04-figure1-page2-raw.png；重裁候选图：03_corpus/item_assets/CPHO35-Q04-figure1-page2-recrop-v1.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
 
 ## 题干
@@ -65,7 +65,17 @@
 
 ### 未销项说明
 
-本轮只建立 `CPHO35-Q04-FORMULA` 的公式核对入口和页面证据包，不填写真实校对人和校对日期，不关闭真实人工销项；同题 `CPHO35-Q04-FIG` 和 `CPHO35-Q04-SCORE` 仍为待人工校对，不能据此声称题图、图注、分值边界或正式编码证据已完成终核。
+本轮只建立 `CPHO35-Q04-FORMULA` 的公式核对入口和页面证据包，不填写真实校对人和校对日期，不关闭真实人工销项；同题 `CPHO35-Q04-FIG` 已建立题图核对入口和重裁候选图但仍未完成真实人工销项，`CPHO35-Q04-SCORE` 仍为待人工校对，不能据此声称题图、图注、分值边界或正式编码证据已完成终核。
+
+## G1-07-C1题图核对入口
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO35-Q04_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO35-Q04-figure1-page2-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO35-Q04-figure1-page2-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q04-paper-page-2-figure1-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q04-figure1-check-contact-v1.png`
+
+边界说明：第4题题图位于试题PDF第2页第4题题面右侧。原始裁图保留 `y` 轴、`x` 轴、`O` 点、四角导线符号、导线编号1-4、虚线正方形和 `a` 标注，未见明显正文残字。重裁候选图基于整页题面生成，去除左侧邻近正文边缘并保留关键坐标、四导线符号、编号和距离标注；图中未单独给出题图编号或图注。本入口不填写真实校对人和日期，不代表题图正式销项。
 
 ## 参考解答抽取文本
 

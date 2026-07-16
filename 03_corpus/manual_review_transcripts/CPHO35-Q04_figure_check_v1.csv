@@ -1,0 +1,7 @@
+﻿check_id,material_id,figure_label,evidence_file,check_item,visual_observation,risk_level,decision
+F00,CPHO35-Q04,如图,03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q04-paper-page-2.png,来源页定位,题图位于第35届第4题题面第2页右侧，属于Ioffe-Pritchard磁阱四导线示意图；第2页上方为第3题尾部，下方进入第5题。,中,作为来源定位证据；第3题尾部、第5题题干和页脚不得纳入第4题题图裁切范围。
+F01,CPHO35-Q04,如图,03_corpus/item_assets/CPHO35-Q04-figure1-page2-raw.png,原始裁图完整性,原始裁图保留y轴、x轴、O点、四角导线符号、导线编号1-4、虚线正方形和a标注，未见明显正文残字；右侧x标注与箭头、底部编号3/4均可见。,低,原始裁图可作为来源对照；仍需最终人工确认图中电流方向符号和编号无误。
+F02,CPHO35-Q04,如图,03_corpus/item_assets/CPHO35-Q04-figure1-page2-recrop-v1.png,重裁候选图完整性,重裁候选图基于整页题面生成，去除左侧邻近正文边缘，保留1/2/3/4、四个电流方向符号、虚线框、a、O、x、y和坐标箭头；图号/题图标题在原题中未单独标出。,低,候选可进入后续论文/附录版式复核，但仍需最终人工确认。
+F03,CPHO35-Q04,如图,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q04-paper-page-2-figure1-crop-box.png,整页裁框证据,整页裁框显示第4题图位于题面第2页右侧，裁框避开左侧题干正文和下方第5题内容。,低,用于证明裁图来源和边界；不作为定稿图。
+F04,CPHO35-Q04,如图,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q04-figure1-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和整页来源局部，便于后续核对左右边界、坐标箭头和四角导线符号。,低,用于后续人工确认；不代表正式销项。
+F05,CPHO35-Q04,如图,03_corpus/item_assets/CPHO35-Q04-figure1-page2-recrop-v1.png,不得声称范围,本轮只建立题图核对入口和候选图，未填写真实校对人/日期，未完成论文版式定稿；同题公式终核和第35届分值边界仍未销项。,高,不得声称第35届第4题题图、图注、裁边或附录用图已完成正式人工校对。
