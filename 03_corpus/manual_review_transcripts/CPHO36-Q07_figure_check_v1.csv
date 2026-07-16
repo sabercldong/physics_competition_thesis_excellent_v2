@@ -1,0 +1,6 @@
+﻿check_id,material_id,figure_id,source_page,evidence_file,check_item,observation,status,next_action
+F00,CPHO36-Q07,图a,试题PDF第6页,03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q07-paper-page-6.png,页面位置,图a位于第36届第7题题面第6页上部，承接第5页题干，位于第(1)问之前；第6页下方继续第(1)至第(5)问题干。,已定位，待最终复核,正式使用前复核第6页图a与上下题干边界。
+F01,CPHO36-Q07,图a,试题PDF第6页,03_corpus/item_assets/CPHO36-Q07-figure1-page6-raw.png,原始裁图,原始裁图保留雷电云正负电荷、闪电、12km高度标注、地面和图注，但上方与下方均混入邻近题干文字。,保留作来源对照,不建议直接作为论文插图定稿；优先使用重裁候选图或基于源页重绘。
+F02,CPHO36-Q07,图a,试题PDF第6页,03_corpus/item_assets/CPHO36-Q07-figure-a-page6-recrop-v1.png,重裁候选图,重裁候选图基于第6页整页渲染图生成，去除上下邻近题干文字，保留云层正负电荷、闪电、12km高度箭头、地面和“图a. 雷电云的电荷分布”图注。,候选可用，待最终复核,论文或附录使用前进行最终版式确认；若需高清定稿图，可基于源页重绘。
+F03,CPHO36-Q07,图a,试题PDF第6页,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q07-paper-page-6-figure-a-crop-box.png,裁框定位,裁框标出第6页图a区域，并标记上方题干和下方小问题干均不属于题图裁切范围。,已记录，待最终复核,如后续重新裁图或重绘，保留本定位证据用于追溯来源。
+F04,CPHO36-Q07,图a,试题PDF第6页,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q07-figure-a-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和源页裁框，便于后续人工确认。,已生成，待最终复核,正式销项需补真实校对人和日期。
