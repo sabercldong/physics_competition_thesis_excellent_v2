@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-36Q01 第36届第1题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q01_figure_check_v1.csv`，登记第36届第1题图a/图b的来源页、原始裁图、重裁候选、裁框和边界说明；
+- 新增 `03_corpus/item_assets/CPHO36-Q01-figure1ab-page1-recrop-v1.png`，作为题面图a/图b去除题干残字后的重裁候选图；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q01-paper-page-1.png`、`CPHO36-Q01-paper-page-1-figure1ab-crop-box.png` 和 `CPHO36-Q01-figure1ab-check-contact-v1.png`，记录来源页、裁框和原图/候选图对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第141项 `CPHO36-Q01-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO36-Q01-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-36Q02`；
+- 本轮明确记录：原始裁图保留图a/图b主体与关键标注，但上方混入题干文字；重裁候选去除上方题干残字并排除下方第2题正文；答案页第10页解题图a/b不作为本轮题面图销项对象。本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-35Q07 第35届第7题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q07_figure_check_v1.csv`，登记第35届第7题题面页图a/图b、答案页图a和答案页图b的来源页、候选图、裁框和边界说明；

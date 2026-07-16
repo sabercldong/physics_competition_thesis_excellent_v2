@@ -664,6 +664,22 @@
 4. 答案页第32页图a参考候选完整保留弹簧实物、衍射图、`7.8cm` 尺寸箭头和图号；第33页图b参考候选保留DNA衍射图、`9.4cm` 尺寸箭头、图号和说明文字。
 5. 本轮只建立题图核对入口和候选证据，不填写真实校对人和校对日期，不代表正式人工销项完成；同题公式终核和第35届分值边界仍需另行复核。
 
+## CPHO36-Q01
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO36-Q01_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO36-Q01-figure1-page1-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO36-Q01-figure1ab-page1-recrop-v1.png`
+- 来源页裁框：`03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q01-paper-page-1-figure1ab-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q01-figure1ab-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 第36届第1题图a/图b位于试题PDF第1页中部；第1页下半部进入第2题，不得纳入本题图件证据。
+2. 原始裁图保留图a/图b主体、三脚圆凳、凳面、三脚 `A/B/C`、`D` 点、`O/G`、`R/a` 标注和图号，但上方混入题干文字。
+3. 重裁候选图从题面整页证据生成，去除上方题干残字，保留图a/图b主体、虚线辅助线、关键点位与图号；论文或附录使用前仍需最终版式复核。
+4. 答案页第10页另有“解题图a/解题图b”，用于解答几何和受力分析，本轮不作为题面图a/图b销项对象。
+5. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题公式终核仍需另行复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-36Q01`：继续处理C组队列第141项 `CPHO36-Q01-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第140项 `CPHO35-Q07-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-36Q02`：继续处理C组队列第142项 `CPHO36-Q02-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第141项 `CPHO36-Q01-FIG` 均仍需真实确认记录才能正式销项。
