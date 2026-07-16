@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-40Q07 第40届第7题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q07_figure_check_v1.csv`，登记第40届第7题题面图7a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO40-Q07-figure7a-page4-recrop-v1.png`，基于第40届试题PDF第4页整页渲染图重裁图7a，补足原始裁图缺失的上半部大气分层环形结构，并保留对流层、同温层、逆温层、地球和图号；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q07-paper-page-4.png`、`CPHO40-Q07-paper-page-4-figure7a-crop-box.png` 和 `CPHO40-Q07-figure7a-check-contact-v1.png`，记录题图来源位置、原图/候选图对照和同页第6题图6a边界；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第122项 `CPHO40-Q07-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO40-Q07-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-41Q01`；
+- 本轮明确记录：图7a与邻近正文贴近，候选图仍可见残字，正式论文或附录使用前建议最终复核后重绘或版式清理；答案题解图7a/7b/7c/7d未在本项中销项；本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-40Q06 第40届第6题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO40-Q06_figure_check_v1.csv`，登记第40届第6题图6a页面位置、原始裁图、保守重裁候选图、裁框定位和新旧对照证据；
