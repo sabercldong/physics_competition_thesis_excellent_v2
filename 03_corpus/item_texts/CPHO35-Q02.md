@@ -58,6 +58,21 @@
 4. 同题 `CPHO35-Q02-FIG` 题图问题仍未销项。
 5. 第35届大题分值在题面页未见清晰标注，`CPHO35-Q02-SCORE` 仍为待核实。
 
+## G1-07-C1题图核对入口
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO35-Q02_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO35-Q02-figure1-page1-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO35-Q02-figure1-page1-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q02-paper-page-1-figure1-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q02-figure1-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 题图位于第35届第2题题面第1页右侧，嵌在第二题题干前两行之间；上方第1题和下方第3题均不得纳入本题题图证据。
+2. 原始裁图保留固定端、弹簧、小球、水平地面、坐标轴主体、`t=0` 和 `m`，但底部 `-A0`、`O`、`x` 坐标标注缺失或不完整。
+3. 重裁候选图基于题面整页渲染图生成，补足 `-A0`、`O`、`x` 并保留弹簧、小球、水平坐标轴和箭头。
+4. 本入口只建立题图核对路线，不填写真实校对人和校对日期，不代表题图、公式、分值边界或论文用图已经完成正式销项。
+
 ## 参考解答抽取文本
 
 ```text

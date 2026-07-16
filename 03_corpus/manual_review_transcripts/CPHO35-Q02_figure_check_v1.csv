@@ -1,0 +1,7 @@
+﻿check_id,material_id,figure_label,evidence_file,check_item,visual_observation,risk_level,decision
+F00,CPHO35-Q02,如图,03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q02-paper-page-1.png,来源页定位,题图位于第35届第2题题面第1页右侧，嵌在第二题题干前两行之间；第1页上方为第1题，下方进入第3题，均不得纳入本题题图。,中,作为来源定位证据；周边正文不得纳入题图裁切范围。
+F01,CPHO35-Q02,如图,03_corpus/item_assets/CPHO35-Q02-figure1-page1-raw.png,原始裁图完整性,原始裁图保留弹簧、固定端、小球、水平地面、运动方向箭头、t=0和m标注，但底部坐标标注-A0、O、x被裁掉或不完整。,高,原始裁图不建议直接作为论文定稿图；保留为来源对照。
+F02,CPHO35-Q02,如图,03_corpus/item_assets/CPHO35-Q02-figure1-page1-recrop-v1.png,重裁候选图完整性,重裁候选图保留固定端、弹簧、小球、t=0、m、水平坐标轴、箭头、-A0、O和x标注；左侧正文残字已排除。,中,候选可进入后续论文/附录版式复核，但仍需最终人工确认。
+F03,CPHO35-Q02,如图,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q02-paper-page-1-figure1-crop-box.png,整页裁框证据,整页裁框显示题图来源区域；题图贴近左侧题干和下方正文，裁切需优先保留物理标签，不能混入第1题或第3题内容。,中,用于证明裁图来源和边界；不作为定稿图。
+F04,CPHO35-Q02,如图,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q02-figure1-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和整页裁框局部，便于后续复核底部坐标标注是否补足。,低,用于后续人工确认；不代表正式销项。
+F05,CPHO35-Q02,如图,03_corpus/item_assets/CPHO35-Q02-figure1-page1-recrop-v1.png,不得声称范围,本轮只建立题图核对入口和候选图，未填写真实校对人/日期，未完成论文版式定稿；同题公式终核和第35届分值边界仍未销项。,高,不得声称第35届第2题题图、图注、裁边或附录用图已完成正式人工校对。
