@@ -680,6 +680,22 @@
 4. 答案页第10页另有“解题图a/解题图b”，用于解答几何和受力分析，本轮不作为题面图a/图b销项对象。
 5. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题公式终核仍需另行复核。
 
+## CPHO36-Q02
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO36-Q02_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO36-Q02-figure1-page2-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO36-Q02-figure2a-page2-recrop-v1.png`
+- 来源页裁框：`03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q02-paper-page-2-figure2a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q02-figure2a-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 第36届第2题图a位于试题PDF第2页上半部；第2页下半部进入第3题，不得纳入本题图件证据。
+2. 原始裁图保留农用平板车主体、两轮、平板、把手、`2l/l/r/m/2m`、把手前端/末端和图注，未见明显邻近正文残字。
+3. 重裁候选图从题面第2页整页证据生成，保留图a完整标注并排除下方第3题正文；论文或附录使用前仍需最终版式复核。
+4. 答案页第12页复印题面图a并出现解题图a，第14页出现解题图c/d，本轮不作为题面图a销项对象。
+5. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题公式终核仍需另行复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-36Q02`：继续处理C组队列第142项 `CPHO36-Q02-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第141项 `CPHO36-Q01-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-37Q01`：继续处理C组队列第143项 `CPHO37-Q01-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第142项 `CPHO36-Q02-FIG` 均仍需真实确认记录才能正式销项。

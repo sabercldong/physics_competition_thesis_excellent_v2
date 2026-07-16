@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-36Q02 第36届第2题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q02_figure_check_v1.csv`，登记第36届第2题图a的来源页、原始裁图、重裁候选、裁框和边界说明；
+- 新增 `03_corpus/item_assets/CPHO36-Q02-figure2a-page2-recrop-v1.png`，作为题面图a重裁候选图；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q02-paper-page-2.png`、`CPHO36-Q02-paper-page-2-figure2a-crop-box.png` 和 `CPHO36-Q02-figure2a-check-contact-v1.png`，记录来源页、裁框和原图/候选图对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第142项 `CPHO36-Q02-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO36-Q02-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-37Q01`；
+- 本轮明确记录：原始裁图保留图a主体、两轮、平板、把手、`2l/l/r/m/2m`、把手前端/末端和图注，未见明显邻近正文残字；重裁候选保留完整图a并排除下方第3题正文；答案页第12页复印题面图a，第14页另有解题图c/d，均不作为本轮题面图销项对象。本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-36Q01 第36届第1题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO36-Q01_figure_check_v1.csv`，登记第36届第1题图a/图b的来源页、原始裁图、重裁候选、裁框和边界说明；
