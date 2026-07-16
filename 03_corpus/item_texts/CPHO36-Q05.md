@@ -3,10 +3,26 @@
 ## 来源
 
 - 试题文件：`03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf`
-- 试题页码：4
-- 解答页码：24-28
+- 试题页码：4-5
+- 解答页码：24-29
 - 题图：03_corpus/item_assets/CPHO36-Q05-figure1-page5-raw.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
+
+## G1-07-B1 公式核对入口
+
+- 核对表：`03_corpus/manual_review_transcripts/CPHO36-Q05_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-paper-page-5.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-solution-page-24.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-solution-page-25.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-solution-page-26.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-solution-page-27.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-solution-page-28.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q05-solution-page-29.png`
+- 边界说明：题面从试题PDF第4页下部开始，延续至第5页上部；答案第24页下部开始第5题题面重印，第25-28页覆盖参考解答主体，第29页仍为第5题解法三收尾和评分标准，下部进入第6题。本轮将答案页范围由 `24-28` 纠偏为 `24-29`。
+- 待终核重点：`n0/n/n1/n2` 下标，`theta/theta_prime`，`alpha/beta/gamma`，`O/O'`，球面折射符号约定，`r2=-D/2`，近轴近似，长根式表达式，答案第29页评分边界。
+- 状态：答案公式核对入口完成，待最终复核；同题题图裁边与图注仍待人工校对。
 
 ## 题干
 

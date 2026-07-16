@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-B1-FORMULA-36Q05 第36届第5题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q05_formula_check_v1.csv`，依据第36届合并PDF第24-29页登记光纤全反射条件、球面折射成像、虚物符号、微球透镜等效焦距、几何方法、长根式表达式和评分标准等46条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第091项 `CPHO36-Q05-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第092项 `CPHO39-Q01-FORMULA`；
+- 新增第36届第5题共8张页面证据图：题面第4-5页、答案第24-29页；视觉检查确认第5题题面从试题PDF第4页下部开始并延续至第5页上部，答案第29页上半部仍包含第5题解法三收尾和评分标准，下半部进入第6题；
+- 更新 `03_corpus/item_texts/CPHO36-Q05.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO36-Q05-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第36届第5题三个小问答案页入口由 `24-28` 纠偏为 `24-29`；
+- 标记 `n0/n/n1/n2` 下标、`theta/theta_prime`、`O/O'`、球面折射符号、`r2=-D/2`、近轴近似、长根式表达式和第29页评分边界为待最终复核；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第091项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-39Q01`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-16：G1-07-B1-FORMULA-36Q04 第36届第4题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO36-Q04_formula_check_v1.csv`，依据第36届合并PDF第21-24页登记题面声速与体积弹性模量关系、理想气体密度、绝热过程、空气柱简谐振动、亥姆霍兹共振频率、面积比和评分标准等31条公式核对入口；

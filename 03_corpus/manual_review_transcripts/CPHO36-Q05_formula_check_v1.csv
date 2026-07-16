@@ -1,0 +1,47 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO36-Q05-F00,CPHO36-Q05,题面边界,paper p.4-5,第5题题面从试题PDF第4页下部开始，延续至第5页上部并包含光纤耦合光路图；第5页中下部进入第6题。,页面证据图：CPHO36-Q05-paper-page-4.png、CPHO36-Q05-paper-page-5.png,边界已定位，待最终复核,只作为第5题题面边界，不关闭同题FIG问题。
+CPHO36-Q05-F01,CPHO36-Q05,题面常量,paper p.4,光纤内芯直径50 micrometer；n1=1.46；外包层外径125 micrometer；n2=1.45。,题面第4页常量视觉核对,待最终复核,微米单位、n1/n2下标和外径/内芯直径对象需终核。
+CPHO36-Q05-F02,CPHO36-Q05,题面常量,paper p.4,微球透镜直径D=3.00 mm；折射率n=1.50；空气折射率n0=1.00。,题面第4页微球透镜参数视觉核对,待最终复核,n与n0下标、D单位和小数位需终核。
+CPHO36-Q05-F03,CPHO36-Q05,题面小问,paper p.4,第(1)问求光纤端面最大入射角；第(2)问求微球透镜后表面中心顶点O到光纤端面的距离；第(3)问求平行入射激光束最大直径。,题面第4页小问视觉核对,待最终复核,O点、光纤端面和最大入射角定义需结合图示终核。
+CPHO36-Q05-F04,CPHO36-Q05,题面图示,paper p.5,图a显示微球透镜、入射激光、光纤芯/包层及耦合几何关系。,题面第5页图a视觉核对,待最终复核,本行只登记图示入口，不关闭CPHO36-Q05-FIG。
+CPHO36-Q05-F05,CPHO36-Q05,答案边界,solution p.24-29,答案第24页上半部为第4题收尾，第5题从第24页下半部题面重印开始；第25-29页覆盖参考解答和评分标准；第29页下方进入第6题。,页面证据图：CPHO36-Q05-solution-page-24.png 至 CPHO36-Q05-solution-page-29.png,边界已定位，待最终复核,原清单答案页24-28会遗漏第29页解法三收尾和评分标准，本轮纠偏为24-29。
+CPHO36-Q05-F06,CPHO36-Q05,答案第(1)问,solution p.25,折射定律入口：n0 sin(theta) = n1 sin(alpha)。,答案第25页式(1)视觉核对,待最终复核,theta、alpha和n0/n1下标需终核。
+CPHO36-Q05-F07,CPHO36-Q05,答案第(1)问,solution p.25,全反射条件入口：n1 sin(90 degrees - alpha) = n2。,答案第25页式(2)视觉核对,待最终复核,源页式(2)中的三角函数与90度-alpha写法需按图终核，不能用OCR自动替换。
+CPHO36-Q05-F08,CPHO36-Q05,答案第(1)问,solution p.25,sin(theta)=sqrt((n1/n0)^2-(n2/n0)^2)=sqrt(1.46^2-1.45^2)=0.17。,答案第25页式(3)视觉核对,待最终复核,根号覆盖范围、0.17近似和n1/n2顺序需终核。
+CPHO36-Q05-F09,CPHO36-Q05,答案第(1)问,solution p.25,theta = arcsin(0.17) = 9.8 degrees。,答案第25页式(4)视觉核对,待最终复核,角度单位和9.8度只登记来源，未重算验算。
+CPHO36-Q05-F10,CPHO36-Q05,答案第(2)问解法一,solution p.25,前表面球面折射成像公式：n0/o1 + n/i1 = (n-n0)/r。,答案第25页式(5)视觉核对,待最终复核,o1/i1、r和左右介质折射率顺序需终核。
+CPHO36-Q05-F11,CPHO36-Q05,答案第(2)问解法一,solution p.25,平行光束O1=infinity；前表面曲率半径r=D/2。,答案第25页式(5)后文字视觉核对,待最终复核,O1无穷远和r正号需终核。
+CPHO36-Q05-F12,CPHO36-Q05,答案第(2)问解法一,solution p.25,一次成像位置：i1 = nD/[2(n-n0)] = 4.5 mm。,答案第25页式(6)视觉核对,待最终复核,分母2(n-n0)、1.50 x 3.00 mm和4.5 mm需终核。
+CPHO36-Q05-F13,CPHO36-Q05,答案第(2)问解法一,solution p.26,后表面球面折射成像公式：n/o2 + n0/i2 = (n0-n)/r2。,答案第26页式(7)视觉核对,待最终复核,o2/i2、n与n0的位置、r2符号需终核。
+CPHO36-Q05-F14,CPHO36-Q05,答案第(2)问解法一,solution p.26,相对后表面顶点O的物距：o2 = i1 - D = (2n0-n)D/[2(n-n0)] = 1.50 mm。,答案第26页式(8)视觉核对,待最终复核,式(8)先给正值，随后虚物取负，需按源页保留符号过程。
+CPHO36-Q05-F15,CPHO36-Q05,答案第(2)问解法一,solution p.26,虚物取负：o2 = (n-2n0)D/[2(n-n0)] = -1.50 mm。,答案第26页式(8)后文字视觉核对,待最终复核,负号和n-2n0顺序需终核。
+CPHO36-Q05-F16,CPHO36-Q05,答案第(2)问解法一,solution p.26,后表面曲率半径：r2 = -D/2。,答案第26页曲率半径行视觉核对,待最终复核,r2负号需结合球面方向终核。
+CPHO36-Q05-F17,CPHO36-Q05,答案第(2)问解法一,solution p.26,二次成像位置：i2 = (2n0-n)D/[4(n-n0)] = 0.75 mm。,答案第26页式(9)视觉核对,待最终复核,分母4(n-n0)、0.75 mm和O到光纤端面的物理含义需终核。
+CPHO36-Q05-F18,CPHO36-Q05,答案第(3)问解法一,solution p.26,等效主点与球心重合，等效焦距fe = (2n0-n)D/[4(n-n0)] + D/2 = nD/[4(n-n0)] = 2.25 mm。,答案第26页式(10)视觉核对,待最终复核,fe、主点、D/2加项和2.25 mm需终核。
+CPHO36-Q05-F19,CPHO36-Q05,答案第(3)问解法一,solution p.26,最大光束直径条件入口：由几何关系得到包含d/2与nD/[4(n-n0)]的分式，并等于sin(theta)。,答案第26页式(11)视觉核对,待最终复核,源页式(11)排版为多层分式，需逐式终核，不可依赖文本层。
+CPHO36-Q05-F20,CPHO36-Q05,答案第(3)问解法一,solution p.26,近似展开：忽略(d/D)^3项，得到用于代入式(11)的近似结果。,答案第26页式(11)后近似展开视觉核对,待最终复核,近似阶数、2(n-n0)d/(nD)和省略项需终核。
+CPHO36-Q05-F21,CPHO36-Q05,答案第(3)问解法一,solution p.27,d = n D sin(theta) / [2(n-n0)] = 0.76 mm。,答案第27页式(12)视觉核对,待最终复核,结果0.76 mm只登记来源，需终核与式(3)的sin theta对应。
+CPHO36-Q05-F22,CPHO36-Q05,答案第(2)问解法二,solution p.27,解题图b定义O prime为球心，A、B为球面交点，F为焦点，C为AB延长线与光轴交点。,答案第27页解题图b视觉核对,待最终复核,图b为答案推导图入口，不关闭题面FIG。
+CPHO36-Q05-F23,CPHO36-Q05,答案第(2)问解法二,solution p.27,小角度折射关系：n0 alpha = n beta。,答案第27页解法二文字视觉核对,待最终复核,这是近轴小角度形式，需与正弦折射式区分。
+CPHO36-Q05-F24,CPHO36-Q05,答案第(2)问解法二,solution p.27,beta = (2/3) alpha。,答案第27页式(5)视觉核对,待最终复核,2/3系数来自n0=1.00、n=1.50，需终核。
+CPHO36-Q05-F25,CPHO36-Q05,答案第(2)问解法二,solution p.27,gamma = alpha/3，theta_prime = 2 gamma。,答案第27页式(6)视觉核对,待最终复核,gamma与theta_prime定义需结合图b终核。
+CPHO36-Q05-F26,CPHO36-Q05,答案第(2)问解法二,solution p.27,angle CBF = gamma = angle FCB。,答案第27页式(7)视觉核对,待最终复核,角点和等腰三角形判定需终核。
+CPHO36-Q05-F27,CPHO36-Q05,答案第(2)问解法二,solution p.27,angle BO prime C = alpha - theta_prime = gamma。,答案第27页式(8)视觉核对,待最终复核,O prime与O的字形需终核。
+CPHO36-Q05-F28,CPHO36-Q05,答案第(2)问解法二,solution p.27,O prime O = OC；OF = FC = D/4 = 0.75 mm。,答案第27页式(9)视觉核对,待最终复核,近似认为O为O prime C中点，需按源页说明保留边界。
+CPHO36-Q05-F29,CPHO36-Q05,答案第(3)问解法二,solution p.27-28,最大入射角条件：theta_prime = theta = 0.17。,答案第27-28页式(10)视觉核对,待最终复核,源页视觉上theta与sin(theta)数值0.17关系需终核。
+CPHO36-Q05-F30,CPHO36-Q05,答案第(3)问解法二,solution p.28,由几何关系与式(6)(10)得 alpha = d/D = (3/2)theta。,答案第28页式(11)视觉核对,待最终复核,d/D、3/2系数和theta是否为小角度数值需终核。
+CPHO36-Q05-F31,CPHO36-Q05,答案第(3)问解法二,solution p.28,d = (3/2)D x 0.17 = 0.76 mm。,答案第28页式(12)视觉核对,待最终复核,0.17、3/2和0.76 mm需终核。
+CPHO36-Q05-F32,CPHO36-Q05,答案第(2)问解法三,solution p.28,折射定律：n0 sin(alpha) = n sin(beta)。,答案第28页解法三式(5)视觉核对,待最终复核,与解法二小角度式区分，sin beta和下标需终核。
+CPHO36-Q05-F33,CPHO36-Q05,答案第(2)问解法三,solution p.28,在triangle BO prime F中，O prime F/sin(alpha) = O prime B/sin(theta_prime)。,答案第28页式(6)视觉核对,待最终复核,正弦定理、O prime F/O prime B和theta_prime需终核。
+CPHO36-Q05-F34,CPHO36-Q05,答案第(2)问解法三,solution p.28,几何关系：beta + gamma = 2 beta；theta_prime = alpha - gamma = 2(alpha - beta)。,答案第28页式(7)(8)视觉核对,待最终复核,式(7)文字视觉上需终核，theta_prime表达需按源页确认。
+CPHO36-Q05-F35,CPHO36-Q05,答案第(2)问解法三,solution p.28,O prime F = [sin alpha / sin(2(alpha-beta))] D/2，并给出长式展开。,答案第28页式(8)后长式视觉核对,待最终复核,长式含多层根号、n0、sin^2 alpha，需重点终核。
+CPHO36-Q05-F36,CPHO36-Q05,答案第(2)问解法三,solution p.29,OF = O prime F - D/2 = [sin alpha/sin(2(alpha-beta)) - 1]D/2。,答案第29页式(9)前视觉核对,待最终复核,O prime F与OF差值、D/2和括号层级需终核。
+CPHO36-Q05-F37,CPHO36-Q05,答案第(2)问解法三,solution p.29,近轴近似：OF ≈ [n/(2(n-n0))-1]D/2 = (2n0-n)D/[4(n-n0)] = 0.75 mm。,答案第29页式(9)视觉核对,待最终复核,近轴近似省略O(alpha^2)项，需按源页终核。
+CPHO36-Q05-F38,CPHO36-Q05,答案第(3)问解法三,solution p.29,最大入射角条件：theta_prime = theta。,答案第29页式(10)视觉核对,待最终复核,theta_prime和theta对应需终核。
+CPHO36-Q05-F39,CPHO36-Q05,答案第(3)问解法三,solution p.29,sin theta = sin[2(alpha-beta)] = 2 sin(alpha-beta) cos(alpha-beta)，随后展开为含sin alpha、sin beta、n0/n的长式。,答案第29页式(10)后长式视觉核对,待最终复核,长式根号、n0^2 sin^2 alpha/n^2和括号层级需重点终核。
+CPHO36-Q05-F40,CPHO36-Q05,答案第(3)问解法三,solution p.29,忽略O(alpha^2)项后：sin theta = 2(1-n0/n) sin alpha。,答案第29页式(11)视觉核对,待最终复核,近似阶数、1-n0/n和sin alpha需终核。
+CPHO36-Q05-F41,CPHO36-Q05,答案第(3)问解法三,solution p.29,几何关系：sin alpha = d/D。,答案第29页几何关系视觉核对,待最终复核,d/D适用条件需结合图b终核。
+CPHO36-Q05-F42,CPHO36-Q05,答案第(3)问解法三,solution p.29,d = D sin(theta)/[2(1-n0/n)] = 0.76 mm。,答案第29页式(12)视觉核对,待最终复核,分母2(1-n0/n)和0.76 mm需终核。
+CPHO36-Q05-F43,CPHO36-Q05,评分标准,solution p.29,评分标准：第(1)问8分，式(1)(2)各2分，式(4)4分；第(2)问20分，式(5)4分，式(6)6分，式(7)2分，式(8)(9)各4分；第(3)问12分，式(10)(11)(12)各4分，式(12)结果0.75-0.76 mm之间均可。,答案第29页评分标准视觉核对,待最终复核,评分标准只作边界和证据索引，不代表小问分值正式拆分。
+CPHO36-Q05-F44,CPHO36-Q05,答案边界,solution p.29,第29页评分标准后进入第6题题面，第6题内容不得纳入第5题公式证据。,答案第29页下半部视觉核对,边界已定位，待最终复核,同一页同时包含第5题收尾和第6题起始，后续引用需说明页内边界。
+CPHO36-Q05-F45,CPHO36-Q05,复核提示,paper p.4-5; solution p.24-29,本题重点复核n0/n/n1/n2下标、theta/theta_prime、alpha/beta/gamma、O/O prime、球面折射公式正负号、r2=-D/2、近轴近似省略阶数、长根号式和答案页24-29边界。,第36届第5题题面与答案页视觉核对,待最终复核,本行仅提示终核重点，不替代逐式人工确认。
