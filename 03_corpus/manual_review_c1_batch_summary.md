@@ -37,6 +37,7 @@
 | 127 | CPHO36-Q04-FIG | 第36届第4题 | 3 | 已建立题图核对入口和重裁候选图，待最终复核 |
 | 128 | CPHO36-Q05-FIG | 第36届第5题 | 3 | 已建立题图核对入口和图a重裁候选图，待最终复核 |
 | 129 | CPHO37-Q06-FIG | 第37届第6题 | 3 | 已建立题图核对入口和图6a/图6b内部修剪候选图，待最终复核 |
+| 130 | CPHO37-Q07-FIG | 第37届第7题 | 3 | 已建立题图核对入口和图7a内部修剪候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -480,6 +481,22 @@
 4. 内部修剪候选图基于原始裁图保守修剪，去除主要正文残边并保留关键标注；论文或附录使用前仍需最终版式复核。
 5. 本轮只建立第37届第6题图6a/图6b核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式终核仍需另行复核。
 
+## CPHO37-Q07
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO37-Q07_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO37-Q07-figure1-page4-raw.png`
+- 内部修剪候选图：`03_corpus/item_assets/CPHO37-Q07-figure7a-page4-recrop-v1.png`
+- 来源页裁框：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q07-paper-page-4-figure7a-crop-box.png`
+- 内部修剪框：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q07-figure7a-internal-trim-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q07-figure7a-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图7a位于第37届第7题题面第4页右侧；第4页顶部为第6题尾部，下方进入第8题并出现图8a，均不得混入第7题图件证据。
+2. 原始裁图保留双黑洞质量点 `M/m`、质心 `O`、连接线、旋转箭头和图号，但左侧混入题干残字。
+3. 内部修剪候选图基于原始裁图保守修剪，去除左侧正文残边并保留 `M/m/O`、连接线、旋转箭头和图号；未纳入第8题图8a。论文或附录使用前仍需最终版式复核。
+4. 本轮只建立第37届第7题图7a核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式终核仍需另行复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-37Q07`：继续处理C组队列第130项 `CPHO37-Q07-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第129项 `CPHO37-Q06-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-38Q01`：继续处理C组队列第131项 `CPHO38-Q01-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第130项 `CPHO37-Q07-FIG` 均仍需真实确认记录才能正式销项。

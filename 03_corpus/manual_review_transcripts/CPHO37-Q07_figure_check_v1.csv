@@ -1,0 +1,7 @@
+﻿check_id,material_id,source_scope,source_file,check_item,evidence_file,check_status,boundary_note
+F01,CPHO37-Q07,第37届试题PDF第4页整页渲染,03_corpus/raw_papers/cpho_37_2020_fusai_paper_solution_candidate.pdf,确认图7a来源页和同页边界,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q07-paper-page-4.png,已建立入口，待最终复核,图7a位于第7题题面右侧；第4页顶部为第6题尾部，下方进入第8题并出现图8a，均不能纳入第7题图件证据。
+F02,CPHO37-Q07,原始裁图,03_corpus/item_assets/CPHO37-Q07-figure1-page4-raw.png,检查原始裁图是否保留图7a主体和图号,03_corpus/item_assets/CPHO37-Q07-figure1-page4-raw.png,已建立入口，待最终复核,原始裁图保留双黑洞质量点M/m、质心O、绕转箭头和图号，但左侧混入题干残字。
+F03,CPHO37-Q07,原始裁图内部修剪候选,03_corpus/item_assets/CPHO37-Q07-figure1-page4-raw.png,生成图7a内部修剪候选图,03_corpus/item_assets/CPHO37-Q07-figure7a-page4-recrop-v1.png,已建立入口，待最终复核,候选图保留M/m、O、连接线、旋转箭头和图号，去除左侧正文残字，未补字、未重绘。
+F04,CPHO37-Q07,裁框定位图,03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q07-paper-page-4.png,标出图7a来源页区域和内部修剪框,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q07-paper-page-4-figure7a-crop-box.png;03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q07-figure7a-internal-trim-box.png,已建立入口，待最终复核,用于确认图7a来自第4页第7题区域、内部修剪来自原始裁图，并排除第8题图8a。
+F05,CPHO37-Q07,新旧对照接触图,03_corpus/item_assets/CPHO37-Q07-figure1-page4-raw.png,对照原始裁图、重裁候选图和来源页裁框,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q07-figure7a-check-contact-v1.png,已建立入口，待最终复核,用于最终人工复核和论文/附录图件使用决策，显示原始裁图左侧残字和候选图修剪边界。
+F06,CPHO37-Q07,使用边界,03_corpus/manual_review_checklist.csv,记录仍需最终复核的限制,03_corpus/manual_review_transcripts/CPHO37-Q07_figure_check_v1.csv,未销项,本轮不填写真实校对人/日期，不代表正式人工校对完成，不关闭同题OCR和公式终核。
