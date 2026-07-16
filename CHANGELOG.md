@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-40Q01 第40届第1题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO40-Q01_figure_check_v1.csv`，登记第40届第1题图1a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO40-Q01-figure1a-page1-recrop-v1.png`，基于第40届试题PDF第1页整页渲染图重裁图1a，保留透镜组和薄透镜两套物像关系示意、`H/H'`、物距/像距、透镜组虚线框、薄透镜标注和图注，并裁去下方第(1)问题干正文；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q01-paper-page-1.png`、`CPHO40-Q01-paper-page-1-figure1a-crop-box.png` 和 `CPHO40-Q01-figure1a-check-contact-v1.png`，记录题图来源位置、原图/候选图对照和同页第2题图2a边界；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第120项 `CPHO40-Q01-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO40-Q01-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-40Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不补造图注、正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-39Q03 第39届第3题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO39-Q03_figure_check_v1.csv`，登记第39届第3题图3a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；
