@@ -1,0 +1,34 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO36-Q01-F00,CPHO36-Q01,题面边界,paper p.1,第1题题面位于试题PDF第1页上半部，含图a和图b；同页下半部进入第2题。,页面证据图：CPHO36-Q01-paper-page-1.png,边界已定位，待最终复核,只作为第1题题面边界，不关闭同题FIG问题。
+CPHO36-Q01-F01,CPHO36-Q01,题面变量,paper p.1,题面给出三脚圆凳半径R、凳脚端点等边三角形边长a、质心G、茶杯半径r、质量m、杯底质量m/5、杯高H、茶水密度rho和重力加速度g。,题面第1页视觉核对,待最终复核,m/5、rho、R/r/H/a等符号需终核。
+CPHO36-Q01-F02,CPHO36-Q01,题面小问,paper p.1,第(1)问求茶水杯所盛茶水尽可能多并保持稳定时的最佳高度；第(2)问求茶杯边缘与圆凳边缘内切于D点且OD⊥AC时各凳脚支持力相对于滑移前的改变。,题面小问视觉核对,待最终复核,图a/图b对应关系仍由FIG问题处理。
+CPHO36-Q01-F03,CPHO36-Q01,答案边界,solution pp.8-11,第1题答案从答案PDF第8页开始；第8-9页覆盖第(1)问质心和最佳高度；第10页覆盖第(2)问几何和力矩起点；第11页覆盖式(10)-(14)、正压力条件和评分标准；第11页下部进入第2题，第12页为第2题延续。,页面证据图：CPHO36-Q01-solution-page-08.png 至 CPHO36-Q01-solution-page-11.png；下一题边界图：CPHO36-Q01-solution-boundary-next-page-12.png,边界已定位，待最终复核,本轮将原清单答案页8-10纠偏为8-11。
+CPHO36-Q01-F04,CPHO36-Q01,质心公式,solution p.8,茶杯含水整体质心 y_CM = [(4m/5)(H/2)+rho(pi r^2 h)(h/2)]/[m+rho(pi r^2 h)]，源页标作式(1)。,答案第8页式(1)视觉核对,待最终复核,4m/5、H/2、h/2、rho pi r^2 h 和分母需终核。
+CPHO36-Q01-F05,CPHO36-Q01,lambda定义,solution p.8,令 lambda = rho pi r^2 后，式(1)改写为 y_CM = [(4m/5)(H/2)+lambda h^2/2]/(m+lambda h)。,答案第8页式(1)下方视觉核对,待最终复核,抽取文本易把lambda定义误读为h，需按源页终核。
+CPHO36-Q01-F06,CPHO36-Q01,最低质心条件,solution p.9,在 h=h_max 处令 dy_CM/dh = 0，源页标作式(2)。,答案第9页式(2)视觉核对,待最终复核,导数下标 h=h_max 和等号位置需终核。
+CPHO36-Q01-F07,CPHO36-Q01,hmax含正负根,solution p.9,由式(1)(2)得 h_max = (m/lambda)[-1 ± sqrt(1+4Hlambda/(5m))]，源页标作式(3)。,答案第9页式(3)视觉核对,待最终复核,±、根号范围、lambda分母和4Hlambda/(5m)需终核。
+CPHO36-Q01-F08,CPHO36-Q01,最佳高度lambda式,solution p.9,舍弃负值后 h_max = (m/lambda)[sqrt(1+4Hlambda/(5m))-1]。,答案第9页式(3)后视觉核对,待最终复核,源页排版为根号减1，需终核括号。
+CPHO36-Q01-F09,CPHO36-Q01,最佳高度rho式,solution p.9,代入 lambda=rho pi r^2，h_max = m/(rho pi r^2)[sqrt(1+4pi rho r^2 H/(5m))-1]，源页标作式(4)。,答案第9页式(4)视觉核对,待最终复核,rho、pi、r^2、H、5m和根号范围需终核。
+CPHO36-Q01-F10,CPHO36-Q01,另一种解法改写,solution p.9,另一种解法将 y_CM 改写为含 m+lambda h 与 1/(m+lambda h) 的形式，并用代数不等式求最低点。,答案第9页另一种解法视觉核对,待最终复核,该部分公式抽取断裂严重，若引用需以页面图终核。
+CPHO36-Q01-F11,CPHO36-Q01,等号条件,solution p.9,另一种解法的等号条件同样得到 h=h_max=(m/lambda)[sqrt(1+4Hlambda/(5m))-1]，并代入得到式(4)。,答案第9页另一种解法结尾视觉核对,待最终复核,只作备选推导入口，不替代主解逐式核对。
+CPHO36-Q01-F12,CPHO36-Q01,第2问变量,solution pp.9-10,第(2)问记凳子质量为M；支持力为N_A、N_B、N_C；Q=mg+lambda h_max g，P=Mg。,答案第9-10页变量定义视觉核对,待最终复核,N_A/N_B/N_C下标、Q/P定义和h_max代入需终核。
+CPHO36-Q01-F13,CPHO36-Q01,几何关系O点到A/B,solution p.10,O'A = O'B = (a/2)/cos30° = a/sqrt(3)，源页标作式(5)。,答案第10页式(5)视觉核对,待最终复核,O'A、O'B、cos30°和a/sqrt(3)需终核。
+CPHO36-Q01-F14,CPHO36-Q01,几何关系O点偏移,solution p.10,O'O'' = (a/2)tan30° = a/(2sqrt(3))，源页标作式(6)。,答案第10页式(6)视觉核对,待最终复核,O'O''、tan30°和2sqrt(3)分母需终核。
+CPHO36-Q01-F15,CPHO36-Q01,竖直力平衡,solution p.10,N_A + N_B + N_C - Q - P = 0，源页标作式(7)。,答案第10页式(7)视觉核对,待最终复核,N下标与Q/P符号需终核。
+CPHO36-Q01-F16,CPHO36-Q01,对称关系,solution p.10,N_A = N_C，源页标作式(8)。,答案第10页式(8)视觉核对,待最终复核,该式来自几何对称，需与解题图b对应。
+CPHO36-Q01-F17,CPHO36-Q01,x轴力矩平衡,solution p.10,以x轴为转动轴，Q(R-r)+N_B O'B-(N_A+N_C)O'O''=0，源页标作式(9)。,答案第10页式(9)视觉核对,待最终复核,R-r、O'B、O'O''和括号需终核。
+CPHO36-Q01-F18,CPHO36-Q01,R撇号与化简式,solution p.10,记R'=R-r，由式(5)(6)(9)得 Q R' + N_B a/sqrt(3) - 2N_A a/(2sqrt(3)) = 0。,答案第10页式(9)后视觉核对,待最终复核,R'撇号、2N_A项和根号分母需终核。
+CPHO36-Q01-F19,CPHO36-Q01,AC轴力矩平衡备选,solution p.11,另一种解法以AC为转动轴，Q(R'-O'O'')+N_B(O'R-O'O'')-P O'O''=0，源页亦标作式(9)。,答案第11页备选式(9)视觉核对,待最终复核,源页有两个式(9)，正式引用需说明式号重用。
+CPHO36-Q01-F20,CPHO36-Q01,AC轴代入式,solution p.11,备选式展开为 Q(R'-a/(2sqrt(3))) + N_B(a/sqrt(3)+a/(2sqrt(3))) - P a/(2sqrt(3)) = 0。,答案第11页备选式代入视觉核对,待最终复核,O'R项、符号和分母需终核。
+CPHO36-Q01-F21,CPHO36-Q01,N_B一般式,solution p.11,联立得 N_B = [(a-2sqrt(3)R')Q + aP]/(3a)，源页标作式(10)。,答案第11页式(10)视觉核对,待最终复核,a-2sqrt(3)R'、Q、aP和3a分母需终核。
+CPHO36-Q01-F22,CPHO36-Q01,N_B展开式,solution p.11,式(10)展开为含 [1-2sqrt(3)(R-r)/a]、sqrt(1+4pi rho r^2 H/(5m))、m、M 与 g/3 的表达式。,答案第11页式(10)第二行视觉核对,待最终复核,源页根号和整体乘以g/3的排版需逐项终核。
+CPHO36-Q01-F23,CPHO36-Q01,N_A与N_C一般式,solution p.11,N_A = N_C = [(a+sqrt(3)R')Q + aP]/(3a)，源页标作式(11)。,答案第11页式(11)视觉核对,待最终复核,需重点终核源页一般式中R'前系数是sqrt(3)还是3的排版/抽取差异。
+CPHO36-Q01-F24,CPHO36-Q01,N_A与N_C展开式,solution p.11,式(11)展开为含 [1+sqrt(3)(R-r)/a]、sqrt(1+4pi rho r^2 H/(5m))、m、M 与 g/3 的表达式。,答案第11页式(11)第二行视觉核对,待最终复核,源页根号、sqrt(3)系数和整体乘以g/3需逐项终核。
+CPHO36-Q01-F25,CPHO36-Q01,N_B正值条件,solution p.11,解(10)满足 N_B>0，并给出 M > [(2sqrt(3)(R-r)-a)/a] sqrt(1+4pi rho r^2 H/(5m)) m 的条件，源页标作式(12)。,答案第11页式(12)视觉核对,待最终复核,OCR对根号易漏，正式引用必须以页面图终核。
+CPHO36-Q01-F26,CPHO36-Q01,Delta N_B差值式,solution p.11,Delta N_B = {[(a-2sqrt(3)R')Q+aP]/(3a)} - (P+Q)/3。,答案第11页式(13)前视觉核对,待最终复核,初始平均支持力(P+Q)/3和R'定义需终核。
+CPHO36-Q01-F27,CPHO36-Q01,Delta N_B最终式,solution p.11,Delta N_B = -(2sqrt(3)/3)((R-r)/a)sqrt(1+4pi rho r^2 H/(5m)) m g，源页标作式(13)。,答案第11页式(13)视觉核对,待最终复核,负号、2sqrt(3)/3、(R-r)/a、根号范围和mg需终核。
+CPHO36-Q01-F28,CPHO36-Q01,Delta N_A/Delta N_C差值式,solution p.11,Delta N_A = Delta N_C = {[(a+sqrt(3)R')Q+aP]/(3a)} - (P+Q)/3。,答案第11页式(14)前视觉核对,待最终复核,需与式(11)系数保持一致。
+CPHO36-Q01-F29,CPHO36-Q01,Delta N_A/Delta N_C最终式,solution p.11,Delta N_A = Delta N_C = (sqrt(3)/3)((R-r)/a)sqrt(1+4pi rho r^2 H/(5m)) m g，源页标作式(14)。,答案第11页式(14)视觉核对,待最终复核,正号、sqrt(3)/3和根号范围需终核。
+CPHO36-Q01-F30,CPHO36-Q01,评分标准与下一题边界,solution p.11-12,第11页给出本题40分评分标准：第(1)问13分，第(2)问27分；第11页下部进入第2题，第12页为第2题延续。,答案第11页评分标准与第12页边界视觉核对,待最终复核,评分标准用于答案边界，不代表小问分值已正式拆分。
+CPHO36-Q01-F31,CPHO36-Q01,未关闭问题,checklist row 141,同题CPHO36-Q01-FIG仍为待人工校对。,manual_review_priority_followup.csv,待后续处理,本轮只处理FORMULA，不关闭题图裁边与图注问题。
+CPHO36-Q01-F32,CPHO36-Q01,正式编码影响,item rows CPHO36-Q01-1/2,本题公式影响两个小问的答案证据摘录、质心/稳定性推理、几何投影和支承力变化案例证据；现阶段仅可作为待最终复核入口。,item_index.csv与人工校对清单联动,待最终复核,不得据此生成正式统计、正式案例结论或论文结果。

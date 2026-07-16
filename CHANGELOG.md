@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-B1-FORMULA-36Q01 第36届第1题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q01_formula_check_v1.csv`，依据第36届合并PDF第8-11页登记质心公式、最佳高度、几何关系、力平衡、力矩平衡、支持力一般式、正压力条件和支持力变化等33条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第095项 `CPHO36-Q01-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第096项 `CPHO36-Q02-FORMULA`；
+- 新增第36届第1题共6张页面证据图：题面第1页、答案第8-11页和第12页下一题边界确认图；视觉检查确认第11页仍为第1题，包含式(10)-(14)、`N_B>0` 条件和评分标准，第11页下部进入第2题；
+- 更新 `03_corpus/item_texts/CPHO36-Q01.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO36-Q01-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第36届第1题两个小问答案页入口由 `8-10` 纠偏为 `8-11`；
+- 标记 `y_CM`、`lambda=rho*pi*r^2`、`h_max` 根号、`O'A/O'B/O'O''` 几何关系、`Q/P`、式(9)两种力矩写法、`N_B/N_A/N_C` 展开式、`N_B>0` 条件、`Delta N_B` 与 `Delta N_A=Delta N_C` 最终式为待最终复核；同题 `CPHO36-Q01-FIG` 仍待人工校对；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第095项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-36Q02`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名；按用户要求完成后提交Git。
+
 ## 2026-07-16：G1-07-B1-FORMULA-35Q07 第35届第7题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q07_formula_check_v1.csv`，依据第35届合并PDF第31-35页登记题面光学说明、图a/图b尺寸标注、单缝暗纹条件、空间周期、`d1/d2/d'`、`p/R/p'/R'` 等29条公式核对入口；

@@ -4,9 +4,24 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf`
 - 试题页码：1
-- 解答页码：8-10
+- 解答页码：8-11
 - 题图：03_corpus/item_assets/CPHO36-Q01-figure1-page1-raw.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
+
+## G1-07-B1 公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO36-Q01_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-page-08.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-boundary-next-page-12.png`
+- 边界说明：题面位于试题PDF第1页上半部，同页下半部进入第2题；答案第8-9页覆盖第(1)问质心与最佳高度，第10页覆盖第(2)问几何与力矩起点，第11页仍包含式(10)-(14)、`N_B>0` 条件和评分标准，第11页下部进入第2题，第12页仅作下一题排除边界。
+- 页码纠偏：原清单记录答案页为 `8-10`，本轮按页面证据纠偏为 `8-11`。
+- 待最终复核重点：`y_CM`、`lambda=rho*pi*r^2`、`h_max` 根号、`O'A/O'B/O'O''` 几何关系、`Q/P`、式(9)两种力矩写法、`N_B/N_A/N_C` 展开式、`N_B>0` 条件、`Delta N_B` 与 `Delta N_A=Delta N_C` 最终式。
+- 状态：`CPHO36-Q01-FORMULA` 已建立答案公式核对入口，待最终复核；`CPHO36-Q01-FIG` 仍待人工校对。本记录不填写真实校对人或日期，不代表人工销项完成。
 
 ## 题干
 

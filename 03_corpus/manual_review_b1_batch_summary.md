@@ -26,6 +26,7 @@
 | 092 | CPHO39-Q01-FORMULA | 第39届第1题 | 3 | 已建立答案公式核对入口，待最终复核 |
 | 093 | CPHO35-Q01-FORMULA | 第35届第1题 | 2 | 已建立答案公式核对入口，待最终复核 |
 | 094 | CPHO35-Q07-FORMULA | 第35届第7题 | 2 | 已建立答案公式核对入口，待最终复核 |
+| 095 | CPHO36-Q01-FORMULA | 第36届第1题 | 2 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -260,6 +261,18 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-34.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-page-35.png`
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q07-solution-boundary-next-page-36.png`
+
+### CPHO36-Q01
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO36-Q01_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-paper-page-1.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-page-08.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q01-solution-boundary-next-page-12.png`
 
 ## 边界确认
 
@@ -511,6 +524,14 @@
 4. 第35页式⑮与式⑯中的 `p' = 3.9 nm` 和 `R' = 0.68 nm`、撇号、`cos(phi'/2)`、`sin(phi'/2)`、`2 pi` 和单位换算需按页面证据逐项终核。
 5. 图b中“中心零级亮纹不可见、1级亮纹刚好可见、2、3、5级较清晰、4级亮纹失踪”的说明影响案例证据，仍需在 `CPHO35-Q07-FIG` 中处理；`CPHO35-Q07-SCORE` 仍需在第35届分值边界复核任务中处理。
 
+### CPHO36-Q01
+
+1. 题面半径 `R/r`、等边三角形边长 `a`、茶杯质量 `m`、杯底质量 `m/5`、杯高 `H`、茶水密度 `rho` 和图a/图b几何关系需按源页终核。
+2. 第8至9页式(1)-(4)中的 `y_CM`、`lambda=rho*pi*r^2`、`dy_CM/dh`、`h_max` 正负根、根号范围和 `m/(rho*pi*r^2)` 分母需逐式复核；抽取文本对 `lambda` 定义有误读风险。
+3. 第10页式(5)-(9)中的 `O'A/O'B/O'O''`、`a/sqrt(3)`、`a/(2sqrt(3))`、`N_A+N_B+N_C-Q-P=0`、`N_A=N_C` 和x轴力矩平衡需按解题图逐项终核。
+4. 第11页另给以 `AC` 为转动轴的式(9)，与第10页式(9)存在式号重用；正式引用时需保留源页事实并说明处理。第11页式(10)-(12)中的 `N_B`、`N_A=N_C`、`N_B>0` 条件和根号展开式需重点终核。
+5. 第11页式(13)-(14)给出相对于滑移前的支持力变化，原答案页 `8-10` 范围会遗漏最终结果和评分标准；同题 `CPHO36-Q01-FIG` 仍需另行处理。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-36Q01`：继续B组中风险公式校对入口建设，处理队列第095项 `CPHO36-Q01-FORMULA`。
+`G1-07-B1-FORMULA-36Q02`：继续B组中风险公式校对入口建设，处理队列第096项 `CPHO36-Q02-FORMULA`。
