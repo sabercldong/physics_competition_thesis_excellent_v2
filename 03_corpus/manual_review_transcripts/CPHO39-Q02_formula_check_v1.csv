@@ -1,0 +1,30 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO39-Q02-F00,CPHO39-Q02,题面边界,paper p.2,第2题题面位于试题PDF第2页上半部；同页下半部进入第3题和第4题题面。,页面证据图：CPHO39-Q02-paper-page-2.png,边界已定位，待最终复核,只作为题面边界；第3题和第4题内容不得纳入第2题证据。
+CPHO39-Q02-F01,CPHO39-Q02,题面参数,paper p.2,题面给出长直弹簧可视为N匝、横截面半径r的长直螺线管，原长l0且l0 >> r，劲度系数k，真空磁导率mu0。,题面第2页视觉核对,待最终复核,N、r、l0、k、mu0和远大于号需终核。
+CPHO39-Q02-F02,CPHO39-Q02,第(1)问恒流条件,paper p.2,恒流源使螺线管通以不变电流I0，撤除外力后平衡长度记为l_p；要求代数方程、k_eff和I0取值范围。,题面第2页视觉核对,待最终复核,I0、l_p、k_eff下标和第(i)/(ii)小问边界需终核。
+CPHO39-Q02-F03,CPHO39-Q02,第(2)问零电阻闭合回路条件,paper p.2,两端以零电阻理想导线连接形成回路，螺线管电阻为零，初始加载电流I0_prime，平衡长度为l_p_prime，求l_p_prime与k_eff_prime。,题面第2页视觉核对,待最终复核,撇号、I0_prime、l_p_prime和k_eff_prime需终核。
+CPHO39-Q02-F04,CPHO39-Q02,答案边界,solution p.6-8,答案第6页上部为第1题尾部，第6页中下部开始第2题；第8页以式(23)和评分标准结束，第9页进入第3题。,页面证据图：solution-page-06至08及boundary-next-page-09,边界已定位，待最终复核,答案页范围保留6-8；第6页上半部第1题内容和第9页第3题内容不得纳入第2题证据。
+CPHO39-Q02-F05,CPHO39-Q02,磁感应强度,solution p.6,B = mu0 n I = mu0 N I / l，源页标作式(1)。,答案第6页式(1)视觉核对,待最终复核,mu0、n=N/l、N I / l的分式位置需终核。
+CPHO39-Q02-F06,CPHO39-Q02,磁通匝链数,solution p.6,Psi = N B pi r^2 = mu0 N^2 pi r^2 I / l，源页标作式(2)。,答案第6页式(2)视觉核对,待最终复核,Psi、N^2、pi r^2和I/l需终核。
+CPHO39-Q02-F07,CPHO39-Q02,电感,solution p.6,L = Psi / I = mu0 N^2 pi r^2 / l，源页标作式(3)。,答案第6页式(3)视觉核对,待最终复核,L、Psi/I和l分母需终核。
+CPHO39-Q02-F08,CPHO39-Q02,弹性势能,solution p.7,W_k = (1/2) k (l - l0)^2，源页标作式(4)。,答案第7页式(4)视觉核对,待最终复核,W_k下标、1/2和平方项需终核。
+CPHO39-Q02-F09,CPHO39-Q02,恒流磁场能,solution p.7,W_B = (1/2) L I0^2 = mu0 N^2 pi r^2 I0^2 / (2l)，源页标作式(5)。,答案第7页式(5)视觉核对,待最终复核,I0^2、2l分母和W_B下标需终核。
+CPHO39-Q02-F10,CPHO39-Q02,功能原理含恒流源功,solution p.7,F Delta l + Delta A_s = Delta W_k + Delta W_B，源页标作式(6)。,答案第7页式(6)视觉核对,待最终复核,Delta A_s、Delta l正负约定和下标需终核。
+CPHO39-Q02-F11,CPHO39-Q02,恒流源克服自感电动势做功,solution p.7,U = Delta Psi / Delta t = Delta(L I0)/Delta t；Delta A_s = U I0 Delta t = I0^2 Delta L = -Delta W_s，且W_s = -L I0^2，源页标作式(7)。,答案第7页式(7)视觉核对,待最终复核,Delta(LI0)、I0^2 Delta L、负号和W_s定义需终核。
+CPHO39-Q02-F12,CPHO39-Q02,等效势能功关系,solution p.7,F Delta l = Delta W，源页标作式(8)。,答案第7页式(8)视觉核对,待最终复核,F方向约定和Delta W需终核。
+CPHO39-Q02-F13,CPHO39-Q02,恒流条件等效势能,solution p.7,W = W_k + W_B + W_s = (1/2)k(l-l0)^2 - mu0 N^2 pi r^2 I0^2/(2l)，源页标作式(9)。,答案第7页式(9)视觉核对,待最终复核,磁能项负号、2l分母和W_s并入方式需终核。
+CPHO39-Q02-F14,CPHO39-Q02,恒流条件外力表达式,solution p.7,F = Delta W / Delta l = k(l-l0) + (1/2) mu0 pi N^2 r^2 I0^2 / l^2，源页标作式(10)。,答案第7页式(10)视觉核对,待最终复核,正号、1/2系数和l^2分母需终核。
+CPHO39-Q02-F15,CPHO39-Q02,恒流平衡方程,solution p.7,k(l_p-l0) + (1/2) mu0 pi N^2 r^2 I0^2 / l_p^2 = 0，源页标作式(11)。,答案第7页式(11)视觉核对,待最终复核,l_p下标、分母l_p^2和F=0条件需终核。
+CPHO39-Q02-F16,CPHO39-Q02,平衡附近小量展开,solution p.7,F = [k - mu0 pi N^2 r^2 I0^2/l_p^3] Delta l + ... = k_eff Delta l + ...，源页标作式(12)。,答案第7页式(12)视觉核对,待最终复核,括号范围、l_p^3分母、省略号和k_eff定义需终核。
+CPHO39-Q02-F17,CPHO39-Q02,恒流等效劲度,solution p.7,k_eff = k - mu0 pi N^2 r^2 I0^2/l_p^3 = [mu0 pi N^2 r^2(3l_p-2l0)/(2l_p^3(l0-l_p))] I0^2，源页标作式(13)。,答案第7页式(13)视觉核对,待最终复核,3l_p-2l0、l0-l_p分母和I0^2位置需终核。
+CPHO39-Q02-F18,CPHO39-Q02,由平衡方程反解电流平方,solution p.7,I0^2 = k/(mu0 pi N^2 r^2) (2l0 - 2l_p) l_p^2，源页标作式(14)。,答案第7页式(14)视觉核对,待最终复核,(2l0-2l_p)与l_p^2乘积需终核。
+CPHO39-Q02-F19,CPHO39-Q02,平均值不等式上界,solution p.8,由三项平均值不等式得 I0^2 <= [k/(mu0 pi N^2 r^2)](2l0/3)^3 = 8 k l0^3/(27 mu0 pi N^2 r^2)，源页标作式(15)。,答案第8页式(15)视觉核对,待最终复核,立方根不等式、等号条件和27分母需终核。
+CPHO39-Q02-F20,CPHO39-Q02,恒流电流范围,solution p.8,I0 <= sqrt[(8/27) k l0^3/(mu0 pi N^2 r^2)]，源页标作式(16)。,答案第8页式(16)视觉核对,待最终复核,根号覆盖范围、8/27位置和I0非负约定需终核。
+CPHO39-Q02-F21,CPHO39-Q02,零电阻回路磁通守恒,solution p.8,L I = L0 I0_prime = [mu0 pi N^2 r^2/l0] I0_prime，源页标作式(17)。,答案第8页式(17)视觉核对,待最终复核,L0、I0_prime撇号和l0分母需终核。
+CPHO39-Q02-F22,CPHO39-Q02,零电阻回路磁能,solution p.8,W_B = (1/2) L I^2 = (L0 I0_prime)^2/(2L) = mu0 N^2 pi r^2 I0_prime^2 l/(2l0^2)，源页标作式(18)。,答案第8页式(18)视觉核对,待最终复核,最后一项是否含l、l0^2分母和I0_prime^2需终核。
+CPHO39-Q02-F23,CPHO39-Q02,零电阻回路总能量,solution p.8,W = W_k + W_B = (1/2)k(l-l0)^2 + [mu0 N^2 pi r^2 I0_prime^2/(2l0^2)] l，源页标作式(19)。,答案第8页式(19)视觉核对,待最终复核,磁能项正号、乘以l和撇号需终核。
+CPHO39-Q02-F24,CPHO39-Q02,零电阻条件外力表达式,solution p.8,F = Delta W / Delta l = k(l-l0) + (1/2)mu0 pi N^2 r^2 I0_prime^2/l0^2，源页标作式(20)。,答案第8页式(20)视觉核对,待最终复核,l0^2分母和I0_prime^2需终核。
+CPHO39-Q02-F25,CPHO39-Q02,零电阻平衡方程,solution p.8,k(l_p_prime-l0) + (1/2)mu0 pi N^2 r^2 I0_prime^2/l0^2 = 0，源页标作式(21)。,答案第8页式(21)视觉核对,待最终复核,l_p_prime和I0_prime撇号需终核。
+CPHO39-Q02-F26,CPHO39-Q02,零电阻平衡长度,solution p.8,l_p_prime = l0 - (1/2) mu0 pi N^2 r^2 I0_prime^2/(k l0^2)，源页标作式(22)。,答案第8页式(22)视觉核对,待最终复核,1/2系数、k l0^2分母和撇号需终核。
+CPHO39-Q02-F27,CPHO39-Q02,零电阻等效劲度,solution p.8,若l = l_p_prime + Delta l，由式(18)得 F = k Delta l = k_eff_prime Delta l；故k_eff_prime = k，源页标作式(23)。,答案第8页式(23)视觉核对,待最终复核,k_eff_prime撇号、Delta l和式(18)引用需终核。
+CPHO39-Q02-F28,CPHO39-Q02,评分标准,solution p.8,本题40分：第(1)问26分，其中第(i)小问21分、第(ii)小问5分；第(2)问14分；源页列出式号赋分。,答案第8页评分标准视觉核对,待最终复核,评分标准只作边界和证据索引，不代表小问分值已正式拆分。

@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-B1-FORMULA-39Q02 第39届第2题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO39-Q02_formula_check_v1.csv`，依据第39届合并PDF第6-8页登记长直螺线管磁场、电感、弹性势能、恒流源做功、平衡方程、等效劲度、电流范围、零电阻闭合回路磁通守恒和评分标准等29条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第098项 `CPHO39-Q02-FORMULA` 的证据边界，并将下一最小任务调整为C组队列第101项 `CPHO40-Q03-FIG`；
+- 新增第39届第2题共5张页面证据图：题面第2页、答案第6-8页和第9页下一题边界确认图；视觉检查确认第2题题面位于试题PDF第2页上半部，答案第8页以式(23)和评分标准结束，第9页进入第3题；
+- 更新 `03_corpus/item_texts/CPHO39-Q02.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO39-Q02-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第39届第2题两个小问答案页入口统一为 `6-8`；
+- 标记 `mu0`、`Psi`、`l/l0/l_p/l_p_prime`、`I0/I0_prime`、恒流源做功负号、式(13)等效劲度、式(16)根号范围、式(18)磁能表达、式(22)(23)撇号和评分标准为待最终复核；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第098项已建立公式核对入口，并将下一最小任务调整为 `G1-07-C1-FIG-40Q03`；队列第099项和第100项仍需真实确认记录才能正式销项；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名。
+
 ## 2026-07-16：G1-07-B1-FORMULA-36Q06 第36届第6题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO36-Q06_formula_check_v1.csv`，依据第36届合并PDF第29-33页登记pi介子衰变、相对论动量能量、mu子静止系速度、速度变换、最大/最小速率、半衰期法和平均寿命法概率等31条公式核对入口；

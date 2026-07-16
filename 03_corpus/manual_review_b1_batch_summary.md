@@ -28,6 +28,8 @@
 | 094 | CPHO35-Q07-FORMULA | 第35届第7题 | 2 | 已建立答案公式核对入口，待最终复核 |
 | 095 | CPHO36-Q01-FORMULA | 第36届第1题 | 2 | 已建立答案公式核对入口，待最终复核 |
 | 096 | CPHO36-Q02-FORMULA | 第36届第2题 | 2 | 已建立答案公式核对入口，待最终复核 |
+| 097 | CPHO36-Q06-FORMULA | 第36届第6题 | 2 | 已建立答案公式核对入口，待最终复核 |
+| 098 | CPHO39-Q02-FORMULA | 第39届第2题 | 2 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -575,6 +577,23 @@
 4. 第31至32页速度变换长式、`u_min`、`u_max`、`theta_prime=0/pi` 极值条件需逐式复核，特别是根号、分母、`cos theta_prime` 和数值 `2.82 x 10^8` / `2.94 x 10^8`。
 5. 第32至33页半衰期法与平均寿命法两套概率表达、`T_1/2^(0)`、`tau_0`、`rho_max` 和评分标准需最终复核。第36届第6题无题图，但不得视为公式人工销项完成。
 
+### CPHO39-Q02
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q02_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q02-paper-page-2.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q02-solution-page-06.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q02-solution-page-07.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q02-solution-page-08.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q02-solution-boundary-next-page-09.png`
+
+1. 题面第2题位于试题PDF第2页上半部；同页下半部进入第3题和第4题，不能并入第2题证据。
+2. 答案第6页上部为第1题尾部，第6页中下部开始第2题答案式(1)-(3)；第7页覆盖式(4)-(14)，第8页覆盖式(15)-(23)和评分标准；第9页进入第3题。本轮保留答案页范围 `6-8`。
+3. 第6至7页式(1)-(13)中的 `mu0`、`Psi`、电感 `L`、弹性势能、恒流源克服自感电动势做功、`W_s=-LI0^2`、平衡方程和 `k_eff` 需逐式终核。
+4. 第7至8页式(14)-(16)中的平均值不等式、电流平方上界和 `I0` 根号范围需重点复核，特别是 `l_p^2`、`(2l0/3)^3`、`8/27` 和根号覆盖范围。
+5. 第8页式(17)-(23)中的零电阻闭合回路磁通守恒、`I0_prime`、`l_p_prime`、磁能表达、`k_eff_prime=k` 和评分标准需最终复核。本题无题图，但不得视为公式人工销项完成。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-39Q02`：继续B组中风险公式校对入口建设，处理队列第098项 `CPHO39-Q02-FORMULA`。
+`G1-07-C1-FIG-40Q03`：进入C组题图裁边与图注核对，处理队列第101项 `CPHO40-Q03-FIG`；队列第099项 `CPHO41-Q02-FIG` 和第100项 `CPHO41-Q07-FIG` 已为“内部视觉终检完成，待人工确认”，若需正式销项仍需真实确认记录。

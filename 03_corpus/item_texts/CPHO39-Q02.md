@@ -8,6 +8,13 @@
 - 题图：无
 - 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
 
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q02_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q02-paper-page-2.png`、`CPHO39-Q02-solution-page-06.png` 至 `CPHO39-Q02-solution-page-08.png`、`CPHO39-Q02-solution-boundary-next-page-09.png`
+- 边界说明：本轮确认第2题题面位于试题PDF第2页上半部，同页下半部进入第3题和第4题；答案第6页上部为第1题尾部，第6页中下部开始第2题，第8页以式(23)和评分标准结束，第9页进入第3题；答案页范围保留 `6-8`。
+- 当前状态：`CPHO39-Q02-FORMULA` 已建立答案公式核对入口，仍待最终逐式复核；本入口不代表人工校对销项完成。
+
 ## 题干抽取文本
 
 ```text
