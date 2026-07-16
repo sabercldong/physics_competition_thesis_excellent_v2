@@ -1,0 +1,7 @@
+﻿check_id,material_id,figure_label,evidence_file,check_item,visual_observation,risk_level,decision
+F00,CPHO42-Q06,图6a,03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-paper-page-4.png,来源页定位,图6a位于第42届第6题题面第4页右下角；第4页上部为第5题尾部，第5页延续第6题题干。,中,作为来源定位证据；周边正文不得纳入题图裁切范围。
+F01,CPHO42-Q06,图6a,03_corpus/item_assets/CPHO42-Q06-figure1-page4-raw.png,原始裁图完整性,原始裁图保留竖直转轴、水平轴、细杆、小球a/b、轴承A/B、上下h标注、z轴、x轴、theta角和图号，但顶部混入上一题参数残字。,高,原始裁图不建议直接作为论文定稿图；保留为来源对照。
+F02,CPHO42-Q06,图6a,03_corpus/item_assets/CPHO42-Q06-figure6a-page4-recrop-v1.png,重裁候选图完整性,顶部修剪候选图去除上一题残字，保留图6a主体、关键物理标注、坐标轴、角度和图号。,中,候选可进入后续论文/附录版式复核，但仍需最终人工确认。
+F03,CPHO42-Q06,图6a,03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q06-paper-page-4-figure6a-crop-box.png,整页裁框证据,整页裁框显示图6a来源区域，并标出顶部残字为本轮修剪排除对象；左侧题干与第5题尾部不属于定稿题图。,中,用于证明裁图来源和边界；不作为定稿图。
+F04,CPHO42-Q06,图6a,03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q06-figure6a-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和整页裁框，便于后续复核裁边是否牺牲图形信息。,低,用于后续人工确认；不代表正式销项。
+F05,CPHO42-Q06,图6a,03_corpus/item_assets/CPHO42-Q06-figure6a-page4-recrop-v1.png,不得声称范围,本轮只建立题图核对入口和候选图，未填写真实校对人/日期，未完成论文版式定稿。,高,不得声称第42届第6题题图、图注、裁边或附录用图已完成正式人工校对。

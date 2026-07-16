@@ -18,6 +18,7 @@
 | 108 | CPHO40-Q02-FIG | 第40届第2题 | 5 | 已建立题图核对入口和图2a重裁候选图，待最终复核 |
 | 109 | CPHO40-Q05-FIG | 第40届第5题 | 5 | 已建立题图核对入口和图5a重裁候选图，待最终复核 |
 | 110 | CPHO40-Q08-FIG | 第40届第8题 | 5 | 已建立题图核对入口和图8a/图8b重裁候选图，待最终复核 |
+| 111 | CPHO42-Q06-FIG | 第42届第6题 | 5 | 已建立题图核对入口和图6a顶部修剪候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -172,6 +173,21 @@
 4. 重裁候选图基于第5页整页渲染图生成，去除底部正文残字，保留两图主体、关键物理标注、坐标轴、谱峰和图号。
 5. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
 
+## CPHO42-Q06
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO42-Q06_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO42-Q06-figure1-page4-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO42-Q06-figure6a-page4-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q06-paper-page-4-figure6a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q06-figure6a-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图6a位于第42届第6题题面第4页右下方，属于转速仪刚体动力学模型题面证据；第4页上部为第5题尾部，左侧题干和第5题尾部不得纳入定稿题图。
+2. 原始裁图保留竖直转轴、水平轴、细杆、小球 `a/b`、轴承 `A/B`、上下 `h`、`z/x` 轴、角度 `theta`、`O` 和“图6a”，但顶部混入上一题参数残字。
+3. 重裁候选图基于原始裁图顶部修剪生成，去除顶部残字，保留图形主体、关键物理标注和图号；若需高清定稿图，仍建议基于源页高清重裁或重绘。
+4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-42Q06`：继续处理C组队列第111项 `CPHO42-Q06-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG`、第106项 `CPHO39-Q04-FIG`、第107项 `CPHO39-Q06-FIG`、第108项 `CPHO40-Q02-FIG`、第109项 `CPHO40-Q05-FIG` 和第110项 `CPHO40-Q08-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-35Q02`：继续处理C组队列第112项 `CPHO35-Q02-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG`、第102项 `CPHO42-Q02-FIG`、第103项 `CPHO42-Q05-FIG`、第104项 `CPHO36-Q03-FIG`、第105项 `CPHO36-Q07-FIG`、第106项 `CPHO39-Q04-FIG`、第107项 `CPHO39-Q06-FIG`、第108项 `CPHO40-Q02-FIG`、第109项 `CPHO40-Q05-FIG`、第110项 `CPHO40-Q08-FIG` 和第111项 `CPHO42-Q06-FIG` 均仍需真实确认记录才能正式销项。

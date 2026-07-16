@@ -9,6 +9,31 @@
 - 题图：03_corpus/item_assets/CPHO42-Q06-figure1-page4-raw.png
 - 抽取状态：题干使用扫描页OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。题干OCR、公式、特殊符号、图注和图件边缘需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-42Q06`
+- 题面V1转写稿：`03_corpus/manual_review_transcripts/CPHO42-Q06_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO42-Q06_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-paper-page-5.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-solution-page-16.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-solution-page-17.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-solution-page-18.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q06-solution-page-20.png`
+- 当前状态：原OCR文本仅保留为错误来源和追溯材料；正式编码前应以V1转写稿、公式核对表和页面证据作为复核入口。`CPHO42-Q06-FIG` 尚未销项；第（1.2）问轴承作用力长分式、第（2.1）问 `Omega_0` 根式、第（2.2）问小振动角频率和第（2.3）问一阶近似需重点最终复核。
+
+## G1-07-C1 题图核对入口
+
+- 任务：`G1-07-C1-FIG-42Q06`
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO42-Q06_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO42-Q06-figure1-page4-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO42-Q06-figure6a-page4-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q06-paper-page-4-figure6a-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q06-figure6a-check-contact-v1.png`
+- 当前状态：原始裁图保留图6a主体、`z/x` 轴、轴承 `A/B`、两个 `h` 标注、小球 `a/b`、角度 `theta`、`O` 和图号，但顶部混入上一题参数残字；重裁候选图已去除顶部残字并保留关键图形信息。本入口仍不代表真实人工销项完成，论文或附录使用前需最终复核。
+
 ## 题干OCR抽取文本
 
 ```text
