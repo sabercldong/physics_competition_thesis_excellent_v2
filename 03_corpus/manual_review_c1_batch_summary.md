@@ -43,6 +43,7 @@
 | 133 | CPHO38-Q04-FIG | 第38届第4题 | 3 | 已建立题图核对入口和图4a重裁候选图，待最终复核 |
 | 134 | CPHO38-Q07-FIG | 第38届第7题 | 3 | 已建立题图核对入口和图7a重裁候选图，待最终复核 |
 | 135 | CPHO38-Q08-FIG | 第38届第8题 | 3 | 已建立题图核对入口和图8a重裁候选图，待最终复核 |
+| 136 | CPHO39-Q01-FIG | 第39届第1题 | 3 | 已建立题图核对入口和图1a/图1b重裁候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -578,6 +579,22 @@
 3. 重裁候选图从第3页整页题面证据生成，保留完整电动汽车模型、前后轮、`L/2`、`M`、`m`、`r`、后轮力矩和图号；论文或附录使用前仍需最终版式复核。
 4. 本轮只建立第38届第8题图8a核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式终核仍需另行复核。
 
+## CPHO39-Q01
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO39-Q01_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO39-Q01-figure1-page1-raw.png`; `03_corpus/item_assets/CPHO39-Q01-figure2-page1-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO39-Q01-figure1a-page1-recrop-v1.png`; `03_corpus/item_assets/CPHO39-Q01-figure1b-page1-recrop-v1.png`
+- 来源页裁框：`03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q01-paper-page-1-figure1a1b-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO39-Q01-figure1a1b-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图1a和图1b均位于第39届第1题题面第1页中部；下方为第1题正文和小问，不能混入题图裁切范围。
+2. 图1a原始裁图保留迈克尔逊干涉仪光路、反射臂/透射臂、石英基板、石英补偿板、反射镜、半反半透金属膜、干涉条纹观测和图号，但底部混入下一段题干。
+3. 图1b原始裁图保留石英槽、量角器、`theta` 角和图号，但右侧反射镜文字被裁切，边界偏紧。
+4. 重裁候选图从第1页整页题面证据生成，图1a去除底部题干残字，图1b补足右侧反射镜标注，并保留 `t`、光线箭头、量角器刻度、`theta` 角和图号；论文或附录使用前仍需最终版式复核。
+5. 本轮只建立第39届第1题图1a/图1b核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题公式终核仍需另行复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-39Q01`：继续处理C组队列第136项 `CPHO39-Q01-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第135项 `CPHO38-Q08-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-40Q04`：继续处理C组队列第137项 `CPHO40-Q04-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第136项 `CPHO39-Q01-FIG` 均仍需真实确认记录才能正式销项。
