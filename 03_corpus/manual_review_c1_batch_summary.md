@@ -44,6 +44,7 @@
 | 134 | CPHO38-Q07-FIG | 第38届第7题 | 3 | 已建立题图核对入口和图7a重裁候选图，待最终复核 |
 | 135 | CPHO38-Q08-FIG | 第38届第8题 | 3 | 已建立题图核对入口和图8a重裁候选图，待最终复核 |
 | 136 | CPHO39-Q01-FIG | 第39届第1题 | 3 | 已建立题图核对入口和图1a/图1b重裁候选图，待最终复核 |
+| 137 | CPHO40-Q04-FIG | 第40届第4题 | 3 | 已建立题图核对入口和图4a/图4b/图4c/图4d4e重裁候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -595,6 +596,23 @@
 4. 重裁候选图从第1页整页题面证据生成，图1a去除底部题干残字，图1b补足右侧反射镜标注，并保留 `t`、光线箭头、量角器刻度、`theta` 角和图号；论文或附录使用前仍需最终版式复核。
 5. 本轮只建立第39届第1题图1a/图1b核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题公式终核仍需另行复核。
 
+## CPHO40-Q04
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO40-Q04_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO40-Q04-figure1-page2-raw.png`; `03_corpus/item_assets/CPHO40-Q04-figure2-page2-raw.png`; `03_corpus/item_assets/CPHO40-Q04-figure3-page3-raw.png`; `03_corpus/item_assets/CPHO40-Q04-figure4-page3-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO40-Q04-figure4a-page2-recrop-v1.png`; `03_corpus/item_assets/CPHO40-Q04-figure4b-page2-recrop-v1.png`; `03_corpus/item_assets/CPHO40-Q04-figure4c-page3-recrop-v1.png`; `03_corpus/item_assets/CPHO40-Q04-figure4d4e-page3-recrop-v1.png`
+- 来源页裁框：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q04-paper-page-2-figure4a4b-crop-box.png`; `03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q04-paper-page-3-figure4c4d4e-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO40-Q04-figure4a4b4c4d4e-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图4a/图4b位于第40届第4题题面第2页底部；第2页上方为第3题及图3a，仅作边界确认。
+2. 图4a、图4b原始裁图保留可见图像与图号，但底部混入第4题模型说明正文；重裁候选图去除下方正文残字。
+3. 图4c位于第3页上半部，原始裁图基本完整；候选图保留杆系结构、`A/A'/B/C/D/D'`、`a/b`、`theta` 和图注。
+4. 图4d/图4e位于第3页中部，原始裁图底部混入第(1)问正文；候选图保留 `N1/N2/N3/N4/f1/f2/mg` 和图注并去除下方文字。
+5. 第3页下半部进入第5题并出现图5a，不得纳入本题证据；图4a/图4b源图清晰度有限，论文或附录使用前仍需最终版式复核或重绘决策。
+6. 本轮只建立核对入口和候选图，不填写真实校对人和日期，不代表正式人工销项完成；同题OCR和公式终核仍需另行复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-40Q04`：继续处理C组队列第137项 `CPHO40-Q04-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第136项 `CPHO39-Q01-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-42Q03`：继续处理C组队列第138项 `CPHO42-Q03-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第137项 `CPHO40-Q04-FIG` 均仍需真实确认记录才能正式销项。
