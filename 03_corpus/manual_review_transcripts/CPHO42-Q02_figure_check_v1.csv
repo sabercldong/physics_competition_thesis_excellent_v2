@@ -1,0 +1,8 @@
+check_id,material_id,figure_id,source_page,evidence_file,check_item,observation,status,next_action
+F00,CPHO42-Q02,图2a/图2b,试题PDF第1页,03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q02-paper-page-1.png,页面位置,图2a位于第42届第2题题面右侧，图2b位于同页下部；两图均属于第2题能量分析器相关题面证据。,已定位，待最终复核,正式使用前复核第1页图件边界和第2页题面延续边界。
+F01,CPHO42-Q02,图2a,试题PDF第1页,03_corpus/item_assets/CPHO42-Q02-figure1-page1-raw.png,原始裁图,原始裁图保留一次离子束、二次离子束、测量位置、等离子体、磁场方向、能量分析器接收狭缝和图2a，但底部夹带图2b上边缘。,保留作来源对照,不建议直接作为论文插图定稿；优先使用修剪候选图或后续高清重裁/重绘。
+F02,CPHO42-Q02,图2a,试题PDF第1页,03_corpus/item_assets/CPHO42-Q02-figure2a-page1-recrop-v1.png,修剪候选图,候选图从原始裁图修剪底部邻近图2b横线，保留一次/二次离子束、测量位置、等离子体、B符号、接收狭缝和图号。,候选可用，待最终复核,论文或附录使用前进行最终版式确认；若需高清出版图，仍建议基于源页重裁或重绘。
+F03,CPHO42-Q02,图2b,试题PDF第1页,03_corpus/item_assets/CPHO42-Q02-figure2-page1-raw.png,原始裁图,原始裁图保留平行板结构、无场区域、入射/接收狭缝、YD1、YD2、theta_I、theta_a、theta_b、XD、l=0、s=0和图2b，但底部夹带页码残字。,保留作来源对照,不建议直接作为论文插图定稿；优先使用修剪候选图并复核顶部电压标注完整性。
+F04,CPHO42-Q02,图2b,试题PDF第1页,03_corpus/item_assets/CPHO42-Q02-figure2b-page1-recrop-v1.png,修剪候选图,候选图从原始裁图修剪底部页码残字，保留图2b主体结构、几何量和图号；顶部VA标注边界仍偏紧，正式论文用图前需最终复核。,候选可用，待最终复核,正式论文或附录使用前复核顶部电压标注；必要时基于源页重绘。
+F05,CPHO42-Q02,图2a/图2b,试题PDF第1页,03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q02-paper-page-1-figure2a2b-crop-box.png,裁框定位,整页裁框标出图2a和图2b来源区域；图2a与图2b上下相邻，直接从整页裁图容易混入邻近图件或正文。,已记录，待最终复核,如后续重新裁图或重绘，保留本定位证据用于追溯来源。
+F06,CPHO42-Q02,图2a/图2b,试题PDF第1页,03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q02-figure2a2b-check-contact-v1.png,新旧对照,接触图并列展示两张原始裁图、两张修剪候选图和整页裁框，便于后续人工确认。,已生成，待最终复核,正式销项需补真实校对人和日期。

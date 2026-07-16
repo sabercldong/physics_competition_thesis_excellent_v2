@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-C1-FIG-42Q02 第42届第2题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q02_figure_check_v1.csv`，登记图2a/图2b页面位置、原始裁图、修剪候选图、裁框定位和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO42-Q02-figure2a-page1-recrop-v1.png` 和 `CPHO42-Q02-figure2b-page1-recrop-v1.png`，分别修剪图2a底部图2b横线和图2b底部页码残字；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q02-paper-page-1-figure2a2b-crop-box.png` 和 `CPHO42-Q02-figure2a2b-check-contact-v1.png`，记录整页来源位置和原图/候选图对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第102项 `CPHO42-Q02-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO42-Q02-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-42Q05`；
+- 本轮不改写论文正文，不修改原始PDF，不重绘题图，不补造图注、正式论文插图、真实校对人或校对日期；图2b顶部 `VA` 标注仍需最终复核。
+
 ## 2026-07-16：G1-07-C1-FIG-40Q03 第40届第3题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO40-Q03_figure_check_v1.csv`，登记图3a页面位置、原始裁图、重裁候选图、裁框定位和新旧对照证据；
