@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-38Q08 第38届第8题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q08_figure_check_v1.csv`，登记第38届第8题图8a来源页、原始裁图、整页重裁候选图、来源页裁框和新旧对照证据；
+- 新增 `03_corpus/item_assets/CPHO38-Q08-figure8a-page3-recrop-v1.png`，基于第38届试题PDF第3页整页题面证据重裁图8a，去除原始裁图左侧与底部正文残字，并保留电动汽车简化模型、前后轮、`L/2`、`M`、`m`、`r`、后轮力矩和图号；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO38-Q08-paper-page-3.png`、`CPHO38-Q08-paper-page-3-figure8a-crop-box.png` 和 `CPHO38-Q08-figure8a-check-contact-v1.png`，记录图8a来源位置和原图/候选图对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第135项 `CPHO38-Q08-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO38-Q08-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-39Q01`；
+- 本轮明确记录：同页图7a和第4页正文不得混入第8题图件证据；本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-38Q07 第38届第7题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO38-Q07_figure_check_v1.csv`，登记第38届第7题图7a来源页、原始裁图、整页重裁候选图、来源页裁框和新旧对照证据；
