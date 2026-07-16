@@ -647,6 +647,23 @@
 3. 候选图保留原始裁图完整主体，用于与来源页裁框对照；论文或附录使用前仍需最终版式复核。
 4. 本轮只建立图7a核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式终核仍需另行复核。
 
+## CPHO35-Q07
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO35-Q07_figure_check_v1.csv`
+- 原始题面裁图：`03_corpus/item_assets/CPHO35-Q07-figure1-page4-raw.png`
+- 题面页重裁候选：`03_corpus/item_assets/CPHO35-Q07-figure7ab-page4-recrop-v1.png`
+- 答案页参考候选：`03_corpus/item_assets/CPHO35-Q07-figure7a-solution-page32-recrop-v1.png`; `03_corpus/item_assets/CPHO35-Q07-figure7b-solution-page33-recrop-v1.png`
+- 来源页裁框：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q07-paper-page-4-figure7ab-crop-box.png`; `03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q07-solution-page-32-CPHO35-Q07-figure7a-solution-page32-recrop-v1-crop-box.png`; `03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q07-solution-page-33-CPHO35-Q07-figure7b-solution-page33-recrop-v1-crop-box.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q07-figure7ab-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 第35届第7题题面图a/图b位于试题PDF第4页底部，题面页排版接近页底，图注与边界天然拥挤。
+2. 原始题面裁图主要保留图b和右侧图a局部尺寸条，图a主体、图a标签和底部图注不完整，不宜直接作为论文插图定稿。
+3. 题面页重裁候选补入可见图b图注和右侧图a尺寸条，但仍不能完全解决题面页图a主体缺失风险。
+4. 答案页第32页图a参考候选完整保留弹簧实物、衍射图、`7.8cm` 尺寸箭头和图号；第33页图b参考候选保留DNA衍射图、`9.4cm` 尺寸箭头、图号和说明文字。
+5. 本轮只建立题图核对入口和候选证据，不填写真实校对人和校对日期，不代表正式人工销项完成；同题公式终核和第35届分值边界仍需另行复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-35Q07`：继续处理C组队列第140项 `CPHO35-Q07-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第139项 `CPHO42-Q07-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-36Q01`：继续处理C组队列第141项 `CPHO36-Q01-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第140项 `CPHO35-Q07-FIG` 均仍需真实确认记录才能正式销项。

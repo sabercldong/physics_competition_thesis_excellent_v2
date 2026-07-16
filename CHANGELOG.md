@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-35Q07 第35届第7题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q07_figure_check_v1.csv`，登记第35届第7题题面页图a/图b、答案页图a和答案页图b的来源页、候选图、裁框和边界说明；
+- 新增 `03_corpus/item_assets/CPHO35-Q07-figure7ab-page4-recrop-v1.png`，作为题面页图a/图b保守重裁候选；
+- 新增 `03_corpus/item_assets/CPHO35-Q07-figure7a-solution-page32-recrop-v1.png` 和 `CPHO35-Q07-figure7b-solution-page33-recrop-v1.png`，作为答案页图a/图b参考候选，用于补充核对题面页裁图缺失风险；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q07-paper-page-4.png`、答案页第32/33页证据、三张裁框定位图和 `CPHO35-Q07-figure7ab-check-contact-v1.png`，记录原始题面裁图、题面候选和答案页参考候选对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第140项 `CPHO35-Q07-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO35-Q07-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-C1-FIG-36Q01`；
+- 本轮明确记录：原始题面裁图中图a主体、图a标签和底部图注不完整，题面页重裁候选仍受页底排版限制；答案页参考候选只用于后续核对，不等同于正式论文插图定稿；本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-42Q07 第42届第7题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO42-Q07_figure_check_v1.csv`，登记第42届第7题图7a来源页、原始裁图、保留候选图、来源页裁框和新旧对照证据；
