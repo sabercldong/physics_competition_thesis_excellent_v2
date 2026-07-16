@@ -1,4 +1,4 @@
-batch_id,material_id,evidence_type,source_pdf,page_no,file_path,observation,use_boundary
+﻿batch_id,material_id,evidence_type,source_pdf,page_no,file_path,observation,use_boundary
 G1-07-C1-BATCH-01,CPHO40-Q03,paper_page,03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf,2,03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-paper-page-2.png,第3题题图图3a位于第2页右侧；同页下半部进入第4题。,只用于第3题图3a来源定位；第4题图件不得纳入。
 G1-07-C1-BATCH-01,CPHO40-Q03,original_crop,03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf,2,03_corpus/item_assets/CPHO40-Q03-figure1-page2-raw.png,原始裁图保留关键图形与图号，但左侧有邻近题干残字。,作为来源对照，不建议直接用于论文定稿图。
 G1-07-C1-BATCH-01,CPHO40-Q03,recrop_candidate,03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf,2,03_corpus/item_assets/CPHO40-Q03-figure3a-page2-recrop-v1.png,重裁候选图保留球、楔块、地面线、theta和图3a，去除左侧残字。,候选可用于后续论文/附录版式复核，未正式销项。
@@ -18,3 +18,8 @@ G1-07-C1-BATCH-03,CPHO42-Q05,original_crop,03_corpus/raw_papers/cpho_42_2025_fus
 G1-07-C1-BATCH-03,CPHO42-Q05,recrop_candidate,03_corpus/raw_papers/cpho_42_2025_fusai_paper_candidate.pdf,4,03_corpus/item_assets/CPHO42-Q05-figure5b-page4-recrop-v1.png,图5b重裁候选图去除左侧正文残字和底部正文，保留R、I、J、C、并联结构、左右电流箭头和图号。,候选可用于后续论文/附录版式复核，未正式销项。
 G1-07-C1-BATCH-03,CPHO42-Q05,crop_box,03_corpus/raw_papers/cpho_42_2025_fusai_paper_candidate.pdf,3-4,03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q05-paper-pages-3-4-figure5a5b-crop-box.png,两页裁框显示图5a、图5b位置，并标出第6题图6a边界。,用于证明裁图来源和边界；不作为定稿图。
 G1-07-C1-BATCH-03,CPHO42-Q05,contact_sheet,03_corpus/raw_papers/cpho_42_2025_fusai_paper_candidate.pdf,3-4,03_corpus/manual_review_renders/G1-07-C1/CPHO42-Q05-figure5a5b-check-contact-v1.png,图5a原始裁图、图5b原始裁图、图5b重裁候选图和裁框定位并列展示。,用于后续人工确认；不代表正式销项。
+G1-07-C1-BATCH-04,CPHO36-Q03,paper_page,03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf,3,03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-paper-page-3.png,图a位于第36届第3题题面第3页上半部，第3页下方为第3题小问列表并继续进入第4题。,只用于第3题图a来源定位；第4题内容不得纳入。
+G1-07-C1-BATCH-04,CPHO36-Q03,original_crop,03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf,3,03_corpus/item_assets/CPHO36-Q03-figure1-page3-raw.png,原始裁图保留关键图形与图注，但底部混入第(1)问文字。,作为来源对照，不建议直接用于论文定稿图。
+G1-07-C1-BATCH-04,CPHO36-Q03,recrop_candidate,03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf,3,03_corpus/item_assets/CPHO36-Q03-figure-a-page3-recrop-v1.png,重裁候选图保留导轨、恒流源、I、L、d、b、theta、弹丸、导轨文字和图注，去除原裁图底部小问文字。,候选可用于后续论文/附录版式复核，未正式销项。
+G1-07-C1-BATCH-04,CPHO36-Q03,crop_box,03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf,3,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q03-paper-page-3-figure-a-crop-box.png,整页裁框显示图a区域，并标出第3题小问和第4题下方边界。,用于证明裁图来源和边界；不作为定稿图。
+G1-07-C1-BATCH-04,CPHO36-Q03,contact_sheet,03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf,3,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q03-figure-a-check-contact-v1.png,原始裁图、重裁候选图和整页裁框并列展示，便于后续人工确认。,用于后续人工确认；不代表正式销项。

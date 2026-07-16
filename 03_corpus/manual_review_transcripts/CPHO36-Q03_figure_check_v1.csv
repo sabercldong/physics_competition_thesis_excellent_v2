@@ -1,0 +1,6 @@
+﻿check_id,material_id,figure_id,source_page,evidence_file,check_item,observation,status,next_action
+F00,CPHO36-Q03,图a,试题PDF第3页,03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-paper-page-3.png,页面位置,图a位于第36届第3题题面第3页上半部；第3页下半部进入第4题，后续第4题正文和图件不得纳入第3题证据。,已定位，待最终复核,正式使用前复核第3题图a与第4题边界。
+F01,CPHO36-Q03,图a,试题PDF第3页,03_corpus/item_assets/CPHO36-Q03-figure1-page3-raw.png,原始裁图,原始裁图保留导轨、恒流源、电流方向I、长度L、距离d、半径b、角度theta、弹丸、导轨文字和图注，但底部混入第(1)问文字。,保留作来源对照,不建议直接作为论文插图定稿；优先使用重裁候选图或基于源页重绘。
+F02,CPHO36-Q03,图a,试题PDF第3页,03_corpus/item_assets/CPHO36-Q03-figure-a-page3-recrop-v1.png,重裁候选图,重裁候选图基于第3页整页渲染图生成，保留图形主体、I、L、d、b、theta、弹丸、导轨、恒流源和图注，去除原裁图底部小问文字；图注与下方题干距离很近，正式排版前仍需复核。,候选可用，待最终复核,论文或附录使用前进行最终版式确认；若需高清定稿图，可基于源页重绘。
+F03,CPHO36-Q03,图a,试题PDF第3页,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q03-paper-page-3-figure-a-crop-box.png,裁框定位,裁框标出第3题图a区域，并标记第3题小问开始位置和第4题位于同页下半部的边界。,已记录，待最终复核,如后续重新裁图或重绘，保留本定位证据用于追溯来源。
+F04,CPHO36-Q03,图a,试题PDF第3页,03_corpus/manual_review_renders/G1-07-C1/CPHO36-Q03-figure-a-check-contact-v1.png,新旧对照,接触图并列展示原始裁图、重裁候选图和源页裁框，便于后续人工确认。,已生成，待最终复核,正式销项需补真实校对人和日期。
