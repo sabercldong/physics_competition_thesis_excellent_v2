@@ -4,9 +4,16 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf`
 - 试题页码：1-2
-- 解答页码：11-17
+- 解答页码：11-18
 - 题图：03_corpus/item_assets/CPHO36-Q02-figure1-page2-raw.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
+
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO36-Q02_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-paper-page-1.png`、`CPHO36-Q02-paper-page-2.png`、`CPHO36-Q02-solution-page-11.png` 至 `CPHO36-Q02-solution-page-18.png`、`CPHO36-Q02-solution-boundary-next-page-19.png`
+- 边界说明：本轮确认第18页上半部仍为第2题答案与评分标准，第18页下半部进入第3题；原答案页范围 `11-17` 纠偏为 `11-18`。
+- 状态说明：已建立答案公式核对入口，待最终复核；未填写真实校对人/日期，不关闭同题题图校对项。
 
 ## 题干
 

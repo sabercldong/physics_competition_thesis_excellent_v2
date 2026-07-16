@@ -27,6 +27,7 @@
 | 093 | CPHO35-Q01-FORMULA | 第35届第1题 | 2 | 已建立答案公式核对入口，待最终复核 |
 | 094 | CPHO35-Q07-FORMULA | 第35届第7题 | 2 | 已建立答案公式核对入口，待最终复核 |
 | 095 | CPHO36-Q01-FORMULA | 第36届第1题 | 2 | 已建立答案公式核对入口，待最终复核 |
+| 096 | CPHO36-Q02-FORMULA | 第36届第2题 | 2 | 已建立答案公式核对入口，待最终复核 |
 
 ## 新增证据
 
@@ -532,6 +533,29 @@
 4. 第11页另给以 `AC` 为转动轴的式(9)，与第10页式(9)存在式号重用；正式引用时需保留源页事实并说明处理。第11页式(10)-(12)中的 `N_B`、`N_A=N_C`、`N_B>0` 条件和根号展开式需重点终核。
 5. 第11页式(13)-(14)给出相对于滑移前的支持力变化，原答案页 `8-10` 范围会遗漏最终结果和评分标准；同题 `CPHO36-Q01-FIG` 仍需另行处理。
 
+### CPHO36-Q02
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO36-Q02_formula_check_v1.csv`
+- 题面页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-paper-page-2.png`
+- 答案页证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-page-14.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-page-15.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-page-16.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-page-17.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-page-18.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q02-solution-boundary-next-page-19.png`
+
+1. 题面第2题从试题PDF第1页下半部开始并延续至第2页上半部；第2页下半部进入第3题，不能并入第2题证据。
+2. 答案第11页下半部开始重印第2题题面，第12页进入参考解答，第18页上半部仍为第2题式(24)(25)、总位移和评分标准；本轮将答案页范围由 `11-17` 纠偏为 `11-18`。
+3. 第12至13页式(1)-(4)中的转动惯量、质心位置、能量方程、几何关系和 `omega=sqrt(gr/l)` 根号需按源页终核。
+4. 第13至15页式(5)-(17)中的速度分量、碰撞冲量、静止阈值、阶段I摩擦力、约束反力、车轮转动方程和纯滚动条件需逐式复核，特别是负号、下标和根号。
+5. 第16至18页式(18)-(25)中的 `v1`、`s1`、阶段II受力方程、`a_C2`、`s2` 和总位移长式需最终排版复核。同题 `CPHO36-Q02-FIG` 仍需另行处理。
+
 ## 下一最小任务
 
-`G1-07-B1-FORMULA-36Q02`：继续B组中风险公式校对入口建设，处理队列第096项 `CPHO36-Q02-FORMULA`。
+`G1-07-B1-FORMULA-36Q06`：继续B组中风险公式校对入口建设，处理队列第097项 `CPHO36-Q06-FORMULA`。

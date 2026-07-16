@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-16：G1-07-B1-FORMULA-36Q02 第36届第2题公式核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO36-Q02_formula_check_v1.csv`，依据第36届合并PDF第11-18页登记碰前角速度、质心速度、碰撞冲量、滑滚阶段、纯滚阶段、总位移和评分标准等43条公式核对入口；
+- 更新 `03_corpus/manual_review_b1_batch_log.csv`、`manual_review_b1_render_index.csv` 和 `manual_review_b1_batch_summary.md`，记录队列第096项 `CPHO36-Q02-FORMULA` 的证据边界，并将B组下一最小任务调整为队列第097项 `CPHO36-Q06-FORMULA`；
+- 新增第36届第2题共11张页面证据图：题面第1-2页、答案第11-18页和第19页下一题边界确认图；视觉检查确认第18页上半部仍为第2题式(24)(25)、总位移和评分标准，第18页下半部进入第3题；
+- 更新 `03_corpus/item_texts/CPHO36-Q02.md`、`03_corpus/item_materials.csv`、`03_corpus/item_index.csv`、`03_corpus/manual_review_checklist.csv` 和 `03_corpus/manual_review_priority_followup.csv`，将 `CPHO36-Q02-FORMULA` 推进为“答案公式核对入口完成，待最终复核”，并将第36届第2题两个小问答案页入口由 `11-17` 纠偏为 `11-18`；
+- 标记 `omega=sqrt(gr/l)` 根号、`v_C1` 分量、碰撞冲量负号、阶段I/II下标、式(19)(24)(25)长式和评分标准为待最终复核；同题 `CPHO36-Q02-FIG` 仍待人工校对；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，记录B组第096项已建立公式核对入口，并将下一最小任务调整为 `G1-07-B1-FORMULA-36Q06`；
+- 本轮不改写论文正文，不修改原始PDF，不生成正式编码结果、正式统计、正式案例结论、真实评分者记录或人工校对签名。
+
 ## 2026-07-16：G1-07-B1-FORMULA-36Q01 第36届第1题公式核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO36-Q01_formula_check_v1.csv`，依据第36届合并PDF第8-11页登记质心公式、最佳高度、几何关系、力平衡、力矩平衡、支持力一般式、正压力条件和支持力变化等33条公式核对入口；
