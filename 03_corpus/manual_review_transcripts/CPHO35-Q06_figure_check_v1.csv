@@ -1,0 +1,7 @@
+﻿check_id,material_id,source_scope,source_file,check_item,evidence_file,check_status,boundary_note
+F01,CPHO35-Q06,题图来源页,03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q06-paper-page-3.png,题图位于第35届第6题题面第3页右中部，属于同心内球和球壳实验装置的题面表征。,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q06-paper-page-3.png,来源页已登记，待最终复核,第3页上半部为第5题尾部，下半部为第6题；本轮只处理第6题题面同心球壳示意图。
+F02,CPHO35-Q06,原始裁图,03_corpus/item_assets/CPHO35-Q06-figure1-page3-raw.png,原始裁图保留同心球壳主体、内球、R1、R2和r标注。,03_corpus/item_assets/CPHO35-Q06-figure1-page3-raw.png,主体可见，待最终复核,原始裁图左侧混入题干残字，不宜直接作为论文插图定稿。
+F03,CPHO35-Q06,重裁候选图,03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q06-paper-page-3.png,重裁候选图去除左侧正文残字，保留完整同心球壳、R1、R2和r标注。,03_corpus/item_assets/CPHO35-Q06-figure1-page3-recrop-v1.png,候选图已生成，待最终复核,原页未印出单独图号或图注；候选图仅用于后续复核，论文或附录使用前仍需检查清晰度和版式。
+F04,CPHO35-Q06,裁框定位,03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q06-paper-page-3.png,红框定位图记录重裁候选图在第3页原始渲染图中的位置。,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q06-paper-page-3-figure1-crop-box.png,定位证据已生成，待最终复核,裁框仅用于证据追溯，不代表正式出版图件。
+F05,CPHO35-Q06,对照接触图,03_corpus/item_assets/CPHO35-Q06-figure1-page3-raw.png;03_corpus/item_assets/CPHO35-Q06-figure1-page3-recrop-v1.png,接触图并列展示原始裁图和重裁候选图，突出原始裁图左侧残字与候选图去残字效果。,03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q06-figure1-check-contact-v1.png,对照证据已生成，待最终复核,接触图仅供人工复核，不作为论文图件。
+F06,CPHO35-Q06,使用边界,03_corpus/item_texts/CPHO35-Q06.md,本轮只处理题面同心球壳示意图裁边和相邻内容边界，不处理答案公式终核或第35届分值边界。,03_corpus/manual_review_transcripts/CPHO35-Q06_figure_check_v1.csv,边界已记录，待最终复核,不得据此声称第35届第6题题干、公式、答案、分值或正式论文插图已经完成真实人工校对。
