@@ -1,0 +1,11 @@
+﻿check_id,material_id,evidence_file,observation,decision_boundary
+F00,CPHO37-Q08,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q08-paper-page-4.png,图8a位于第37届第8题题面第4页右下方；第4页上部为第6题尾部和第7题，第8题从本页底部开始并延续至第5页。,仅作为整页来源定位，不作为论文定稿图。
+F01,CPHO37-Q08,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q08-paper-page-5.png,图8b位于第37届第8题题面第5页右侧，属于第(3)(4)问等效电路和并联谐振补偿题面证据。,仅作为整页来源定位，不作为论文定稿图。
+F02,CPHO37-Q08,03_corpus/item_assets/CPHO37-Q08-figure1-page4-raw.png,图8a原始裁图保留起偏器P1、入射光束、电光晶体、坐标轴、外加电压、1/4波片、检偏器P2、出射光束和图号，但左侧与底部混入邻近题干文字。,作为来源对照；不建议直接用于论文定稿图。
+F03,CPHO37-Q08,03_corpus/item_assets/CPHO37-Q08-figure8a-page4-recrop-v1.png,图8a候选图基于原始裁图内部保守修剪，去除左侧正文残字和底部正文残行，保留光路主体、偏振器、晶体、1/4波片、入射/出射光束、外加电压和图号。,可进入后续版式复核；若需高清定稿图，可基于源页重裁或重绘。
+F04,CPHO37-Q08,03_corpus/item_assets/CPHO37-Q08-figure2-page5-raw.png,图8b原始裁图保留外加电压、电光晶体、Rm、L、RL、开关和图号，但左侧混入邻近题干文字，底部靠近后续正文。,作为来源对照；不建议直接用于论文定稿图。
+F05,CPHO37-Q08,03_corpus/item_assets/CPHO37-Q08-figure8b-page5-recrop-v1.png,图8b候选图基于原始裁图内部保守修剪，去除左侧正文残字和底部正文，保留电路主体、外加电压、Rm、电光晶体、L、RL、开关和图号。,可进入后续版式复核；仍需最终人工确认电路元件符号和开关状态无误。
+F06,CPHO37-Q08,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q08-paper-pages-4-5-figure8a8b-crop-box.png,裁框定位图标出图8a和图8b在试题PDF第4至5页的来源区域。,用于证明来源页和图件边界；不代表正式人工销项。
+F07,CPHO37-Q08,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q08-figure8a8b-raw-internal-trim-boxes.png,原始裁图内部修剪框显示图8a/图8b候选图去除的邻近正文范围。,用于说明候选图修剪边界；不代表正式人工销项。
+F08,CPHO37-Q08,03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q08-figure8a8b-check-contact-v1.png,接触图并列展示图8a/图8b原始裁图和重裁候选图，便于后续人工确认关键标注是否保留。,用于后续人工确认，不作为正式论文插图定稿。
+F09,CPHO37-Q08,03_corpus/manual_review_checklist.csv;03_corpus/manual_review_priority_followup.csv,本轮只建立CPHO37-Q08-FIG题图核对入口，不填写真实校对人和校对日期；同题OCR和公式仍为待最终复核。,不能声称第37届第8题题图、图注、裁边、公式或正式编码证据已经完成正式人工校对。

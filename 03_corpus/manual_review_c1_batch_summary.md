@@ -23,6 +23,7 @@
 | 113 | CPHO35-Q03-FIG | 第35届第3题 | 4 | 已建立题图核对入口和重裁候选图，待最终复核 |
 | 114 | CPHO35-Q04-FIG | 第35届第4题 | 4 | 已建立题图核对入口和重裁候选图，待最终复核 |
 | 115 | CPHO37-Q03-FIG | 第37届第3题 | 4 | 已建立题图核对入口和重裁候选图，待最终复核 |
+| 116 | CPHO37-Q08-FIG | 第37届第8题 | 4 | 已建立题图核对入口和图8a/图8b保守修剪候选图，待最终复核 |
 
 ## CPHO40-Q03
 
@@ -252,6 +253,23 @@
 3. 重裁候选图基于原始裁图内部保守修剪，去除左侧正文残字和底部题干残行，保留电路主体、元件标注、箭头、接地符号和图号；因原图来自扫描页，论文高清定稿仍可考虑重绘。
 4. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式仍需最终复核。
 
+## CPHO37-Q08
+
+- 题图核对表：`03_corpus/manual_review_transcripts/CPHO37-Q08_figure_check_v1.csv`
+- 原始裁图：`03_corpus/item_assets/CPHO37-Q08-figure1-page4-raw.png`; `03_corpus/item_assets/CPHO37-Q08-figure2-page5-raw.png`
+- 重裁候选图：`03_corpus/item_assets/CPHO37-Q08-figure8a-page4-recrop-v1.png`; `03_corpus/item_assets/CPHO37-Q08-figure8b-page5-recrop-v1.png`
+- 裁框定位图：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q08-paper-pages-4-5-figure8a8b-crop-box.png`
+- 原图内部修剪框：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q08-figure8a8b-raw-internal-trim-boxes.png`
+- 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO37-Q08-figure8a8b-check-contact-v1.png`
+
+视觉检查结论：
+
+1. 图8a位于第37届第8题题面第4页右下方，图8b位于第5页右侧，均属于电光调制器题面证据；第4页上部第6题尾部和第7题不得纳入第8题题图证据。
+2. 图8a原始裁图保留起偏器 `P1`、入射光束、电光晶体、坐标轴、外加电压、`1/4` 波片、检偏器 `P2`、出射光束和图号，但左侧与底部混入邻近题干文字。
+3. 图8b原始裁图保留外加电压、电光晶体、`Rm`、`L`、`RL`、开关和图号，但左侧混入邻近题干文字，底部靠近后续正文。
+4. 重裁候选图基于原始裁图内部保守修剪，去除主要正文残字并保留两图主体、关键标注和图号；若作为论文或附录图使用，仍需真实人工确认与版式复核。
+5. 本轮只建立题图核对入口和候选图，不填写真实校对人和校对日期，不代表正式人工销项完成；同题OCR和公式仍需最终复核。
+
 ## 下一最小任务
 
-`G1-07-C1-FIG-37Q08`：继续处理C组队列第116项 `CPHO37-Q08-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第115项 `CPHO37-Q03-FIG` 均仍需真实确认记录才能正式销项。
+`G1-07-C1-FIG-38Q05`：继续处理C组队列第117项 `CPHO38-Q05-FIG`。队列第099项 `CPHO41-Q02-FIG`、第100项 `CPHO41-Q07-FIG`、第101项 `CPHO40-Q03-FIG` 至第116项 `CPHO37-Q08-FIG` 均仍需真实确认记录才能正式销项。
