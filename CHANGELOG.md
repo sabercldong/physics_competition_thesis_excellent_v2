@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-C1-FIG-38Q02 第38届第2题题图核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO38-Q02_figure_check_v1.csv`，登记第38届第2题图2a的来源页、原始裁图、重裁候选、裁框和边界说明；
+- 新增 `03_corpus/item_assets/CPHO38-Q02-figure2a-page1-recrop-v1.png`，作为题面图2a重裁候选图；
+- 新增 `03_corpus/manual_review_renders/G1-07-C1/CPHO38-Q02-paper-page-1.png`、`CPHO38-Q02-paper-page-1-figure2a-crop-box.png` 和 `CPHO38-Q02-figure2a-check-contact-v1.png`，记录来源页、裁框和原图/候选图对照；
+- 更新 `03_corpus/manual_review_c1_batch_log.csv`、`manual_review_c1_render_index.csv` 和 `manual_review_c1_batch_summary.md`，记录C组队列第145项 `CPHO38-Q02-FIG` 的题图核对入口；
+- 更新 `03_corpus/manual_review_checklist.csv`、`manual_review_priority_followup.csv`、`item_materials.csv` 和 `item_index.csv`，将 `CPHO38-Q02-FIG` 推进为“题图核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-D1-SCORE-35Q02`；
+- 本轮明确记录：原始裁图只保留图2a右侧竖直玻璃管局部和图号，左侧混入第2题题干正文残字；重裁候选从题面第1页生成，去除正文残字并保留竖直玻璃管示意和图2a图号，未纳入第1题图1a或第3题图3a。本轮不改写论文正文，不修改原始PDF，不补造正式论文插图、真实校对人或校对日期。
+
 ## 2026-07-17：G1-07-C1-FIG-37Q05 第37届第5题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO37-Q05_figure_check_v1.csv`，登记第37届第5题图5a的来源页、原始裁图、重裁候选、裁框和边界说明；
