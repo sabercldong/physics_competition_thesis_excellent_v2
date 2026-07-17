@@ -57,7 +57,7 @@
 2. `L_c`、`x_B`、`y_B`、`omega_0`、`omega'`、`beta'` 等上下标和撇号。
 3. 式⑨、式⑮、式⑲、式⑳中的根号、负一次方、分母括号和绝对值范围。
 4. 式⑬、式⑭中的轴力分量、三角函数、`cos^2 theta` 和正负号。
-5. 同题 `CPHO35-Q03-FIG` 已建立题图核对入口和重裁候选图，但仍未完成真实人工销项；`CPHO35-Q03-SCORE` 分值边界仍为待核实。
+5. 同题 `CPHO35-Q03-FIG` 已建立题图核对入口和重裁候选图，但仍未完成真实人工销项；`CPHO35-Q03-SCORE` 已在G1-07-D1建立核对入口，但仍待最终复核。
 
 ## G1-07-C1题图核对入口
 
@@ -68,6 +68,27 @@
 - 新旧对照接触图：`03_corpus/manual_review_renders/G1-07-C1/CPHO35-Q03-figure1-check-contact-v1.png`
 
 边界说明：第3题题图位于试题PDF第1页页底右侧。原始裁图保留 `y`、`O`、`x`、竖直细杆、`l/M`、`B`、弹丸 `m` 和 `v0` 箭头，但左侧混入邻近题干残字且 `B` 端贴近底部。重裁候选图去除左侧残字并保留关键坐标和杆图；因图位于页底，`B` 端下方留白有限，论文或附录使用前仍需最终版式复核。本入口不填写真实校对人和日期，不代表题图正式销项。
+
+## G1-07-D1分值边界核对入口
+
+- 分值边界核对表：`03_corpus/manual_review_transcripts/CPHO35-Q03_score_boundary_check_v1.csv`
+- 题面证据：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q03-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q03-paper-page-2.png`
+- 答案证据：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q03-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q03-solution-page-14.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q03-solution-page-15.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q03-solution-page-16.png`
+- 下一题排除边界：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q03-solution-boundary-next-page-17.png`
+
+核对结论：
+
+1. 第3题题面从试题PDF第1页页底开始，延续至第2页上半部，当前题面页可确认四个小问，但未见大题分值或小问分值标注。
+2. 答案第13页中部开始重印第3题题面并给出参考解答，第14至15页覆盖核心推导，第16页式⑳后进入第4题；当前答案证据页未见评分标准或小问分值拆分。
+3. 第17页进入第4题答案，仅作第3题答案范围排除边界，不提供第3题分值信息。
+4. 本入口不填写真实校对人和校对日期，不代表第35届第3题分值边界已经正式销项；正式分值统计或附录评分信息仍需评分细则或最终复核记录。
 
 ## 参考解答抽取文本
 
