@@ -56,7 +56,7 @@
 2. `B1`、`A1`、`Bn`、`An` 等上下标，以及 `An-1-Bn` 等跨字符排版。
 3. 式⑱至式⑳总路程分段与最终位置式⑬至式⑯的对应关系。
 4. 同题 `CPHO35-Q02-FIG` 题图问题仍未销项。
-5. 第35届大题分值在题面页未见清晰标注，`CPHO35-Q02-SCORE` 仍为待核实。
+5. 第35届大题分值在题面页未见清晰标注，`CPHO35-Q02-SCORE` 已在G1-07-D1建立核对入口，但仍待最终复核。
 
 ## G1-07-C1题图核对入口
 
@@ -72,6 +72,27 @@
 2. 原始裁图保留固定端、弹簧、小球、水平地面、坐标轴主体、`t=0` 和 `m`，但底部 `-A0`、`O`、`x` 坐标标注缺失或不完整。
 3. 重裁候选图基于题面整页渲染图生成，补足 `-A0`、`O`、`x` 并保留弹簧、小球、水平坐标轴和箭头。
 4. 本入口只建立题图核对路线，不填写真实校对人和校对日期，不代表题图、公式、分值边界或论文用图已经完成正式销项。
+
+## G1-07-D1分值边界核对入口
+
+- 分值边界核对表：`03_corpus/manual_review_transcripts/CPHO35-Q02_score_boundary_check_v1.csv`
+- 题面证据：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q02-paper-page-1.png`
+- 答案证据：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q02-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q02-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q02-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q02-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q02-solution-page-13.png`
+- 下一题排除边界：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q02-solution-boundary-next-page-14.png`
+
+核对结论：
+
+1. 第2题题面位于试题PDF第1页中部，当前题面页可确认四个小问，但未见大题分值或小问分值标注。
+2. 答案第9页下半部重印第2题题面，第10至13页为参考解答；当前答案证据页未见评分标准或小问分值拆分。
+3. 第14页进入第3题答案，仅作第2题答案范围排除边界，不提供第2题分值信息。
+4. 本入口不填写真实校对人和校对日期，不代表第35届第2题分值边界已经正式销项；正式分值统计或附录评分信息仍需评分细则或最终复核记录。
 
 ## 参考解答抽取文本
 

@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-D1-SCORE-35Q02 第35届第2题分值边界核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q02_score_boundary_check_v1.csv`，登记第35届第2题题面页、答案页、下一题排除边界和分值使用边界；
+- 新增 `03_corpus/manual_review_d1_batch_log.csv`、`manual_review_d1_render_index.csv` 和 `manual_review_d1_batch_summary.md`，建立D组分值边界复核记录结构；
+- 复制第35届第2题题面第1页、答案第9至13页和第14页下一题边界确认图至 `03_corpus/manual_review_renders/G1-07-D1/`，作为本轮分值复核证据页包；
+- 更新 `03_corpus/item_texts/CPHO35-Q02.md`、`item_materials.csv`、`item_index.csv`、`manual_review_checklist.csv` 和 `manual_review_priority_followup.csv`，将 `CPHO35-Q02-SCORE` 推进为“分值边界核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-D1-SCORE-35Q03`；
+- 本轮明确记录：当前题面第1页可确认第2题和四个小问，但未见大题分值或小问分值标注；答案第9至13页为参考解答，未见评分标准或小问分值拆分；第14页仅作下一题排除边界。不得据此生成第35届第2题正式分值统计、评分结论或论文附录分值。
+
 ## 2026-07-17：G1-07-C1-FIG-38Q02 第38届第2题题图核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO38-Q02_figure_check_v1.csv`，登记第38届第2题图2a的来源页、原始裁图、重裁候选、裁框和边界说明；
