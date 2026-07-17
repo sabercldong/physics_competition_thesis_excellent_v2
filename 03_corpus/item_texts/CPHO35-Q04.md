@@ -77,6 +77,20 @@
 
 边界说明：第4题题图位于试题PDF第2页第4题题面右侧。原始裁图保留 `y` 轴、`x` 轴、`O` 点、四角导线符号、导线编号1-4、虚线正方形和 `a` 标注，未见明显正文残字。重裁候选图基于整页题面生成，去除左侧邻近正文边缘并保留关键坐标、四导线符号、编号和距离标注；图中未单独给出题图编号或图注。本入口不填写真实校对人和日期，不代表题图正式销项。
 
+## G1-07-D1分值边界核对入口
+
+- 任务编号：`G1-07-D1-SCORE-35Q04`
+- 分值边界核对表：`03_corpus/manual_review_transcripts/CPHO35-Q04_score_boundary_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q04-paper-page-2.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q04-solution-page-16.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q04-solution-page-17.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q04-solution-page-18.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q04-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q04-solution-boundary-next-page-20.png`
+
+核对边界：第4题题面位于试题PDF第2页中部，四个小问可定位；答案第16页为第3题尾部、第4题题面重印和参考解答起点，第17至18页为核心推导，第19页上半部为第4题式⑳和答案结束，第20页进入第5题，仅作排除边界。当前题面页、答案页和PDF文本层辅助检索均未见大题分值、小问分值拆分或评分标准，因此 `item_index.csv` 暂记为“大题分值未见PDF明示；小问分值未明示，待最终复核”。本入口不填写真实校对人和日期，不代表分值正式销项，也不得用于正式分值统计或论文附录分值。
+
 ## 参考解答抽取文本
 
 ```text
