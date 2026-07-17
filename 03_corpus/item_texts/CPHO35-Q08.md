@@ -34,6 +34,25 @@
 - 第37页能量范围和频率范围均编号⑰的重复式号。
 - 第38页相对论多普勒根号、式⑲速度范围单位和式⑳正负号。
 
+## G1-07-D1分值边界核对入口
+
+- 分值边界核对表：`03_corpus/manual_review_transcripts/CPHO35-Q08_score_boundary_check_v1.csv`
+- 题面证据图：`03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q08-paper-page-5.png`
+- 答案证据图：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q08-solution-page-35.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q08-solution-page-36.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q08-solution-page-37.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q08-solution-page-38.png`
+
+边界说明：
+
+- 第8题题面完整位于试题PDF第5页，含四个小问；当前题面页未见大题分值或小问分值标注。
+- 答案PDF第35页上部为第7题尾部，第8题从题面重印和“参考解答”开始；第36至38页覆盖第8题推导至式⑳和结尾。
+- 第38页为第8题答案收尾且为PDF末页，无下一题边界页；本页未见评分标准或小问配分。
+- 文本层辅助检索“总分、每题、每大题、评分、评分标准、分值、得分、满分、若干分”等线索，当前未见第8题分值拆分或评分标准。
+- `item_index.csv` 只能登记“大题分值未见PDF明示；小问分值未明示，待最终复核”，不得填入任何具体分数。
+- 本入口不填写真实校对人和校对日期，不关闭正式分值销项；若后续获得正式评分细则、原卷说明或真实终核记录，应重新核定。
+
 ## 题干
 
 ```text

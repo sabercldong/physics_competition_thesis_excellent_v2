@@ -139,7 +139,8 @@
   - SCORE-35Q02：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q02_score_boundary_check_v1.csv`，并复制第35届第2题题面第1页、答案第9至13页和第14页下一题边界确认图至 `03_corpus/manual_review_renders/G1-07-D1/`；`CPHO35-Q02-SCORE` 已推进为“分值边界核对入口完成，待最终复核”。视觉检查和PDF文本层辅助检索均未在当前题面页或答案页发现大题分值、小问分值拆分或评分标准，`item_index.csv` 已改为“未见PDF明示，待最终复核”。该进度不代表真实人工校对完成，也不代表第35届第2题分值已经可用于正式统计或论文附录。
   - SCORE-35Q03：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q03_score_boundary_check_v1.csv`，并复制第35届第3题题面第1至2页、答案第13至16页和第17页下一题边界确认图至 `03_corpus/manual_review_renders/G1-07-D1/`；`CPHO35-Q03-SCORE` 已推进为“分值边界核对入口完成，待最终复核”。视觉检查和PDF文本层辅助检索均未在当前题面页或答案页发现大题分值、小问分值拆分或评分标准，`item_index.csv` 已改为“未见PDF明示，待最终复核”。该进度不代表真实人工校对完成，也不代表第35届第3题分值已经可用于正式统计或论文附录。
   - SCORE-35Q04：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q04_score_boundary_check_v1.csv`，并复制第35届第4题题面第2页、答案第16至19页和第20页下一题边界确认图至 `03_corpus/manual_review_renders/G1-07-D1/`；`CPHO35-Q04-SCORE` 已推进为“分值边界核对入口完成，待最终复核”。视觉检查和PDF文本层辅助检索均未在当前题面页或答案页发现大题分值、小问分值拆分或评分标准，`item_index.csv` 已改为“未见PDF明示，待最终复核”。该进度不代表真实人工校对完成，也不代表第35届第4题分值已经可用于正式统计或论文附录。
-  - 下一步：进入 `G1-07-D1-SCORE-35Q08`，处理队列第149项 `CPHO35-Q08-SCORE`，核对第35届第8题分值边界；队列第146项 `CPHO35-Q02-SCORE`、第147项 `CPHO35-Q03-SCORE` 和第148项 `CPHO35-Q04-SCORE` 已建立核对入口但仍需真实评分细则或最终复核记录才能正式销项。
+  - SCORE-35Q08：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q08_score_boundary_check_v1.csv`，并复制第35届第8题题面第5页、答案第35至38页证据图至 `03_corpus/manual_review_renders/G1-07-D1/`；`CPHO35-Q08-SCORE` 已推进为“分值边界核对入口完成，待最终复核”。视觉检查和PDF文本层辅助检索均未在当前题面页或答案页发现大题分值、小问分值拆分或评分标准，`item_index.csv` 已改为“未见PDF明示，待最终复核”。第38页为PDF末页，无下一题边界页。该进度不代表真实人工校对完成，也不代表第35届第8题分值已经可用于正式统计或论文附录。
+  - 下一步：进入 `G1-07-D1-SCORE-35Q05`，处理队列第150项 `CPHO35-Q05-SCORE`，核对第35届第5题分值边界；队列第146项 `CPHO35-Q02-SCORE`、第147项 `CPHO35-Q03-SCORE`、第148项 `CPHO35-Q04-SCORE` 和第149项 `CPHO35-Q08-SCORE` 已建立核对入口但仍需真实评分细则或最终复核记录才能正式销项。
 
 ## G2 文献与理论
 

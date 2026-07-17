@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-17：G1-07-D1-SCORE-35Q08 第35届第8题分值边界核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q08_score_boundary_check_v1.csv`，登记第35届第8题题面页、答案页、末页边界和分值使用边界；
+- 追加更新 `03_corpus/manual_review_d1_batch_log.csv`、`manual_review_d1_render_index.csv` 和 `manual_review_d1_batch_summary.md`，记录D组队列第149项 `CPHO35-Q08-SCORE`；
+- 复制第35届第8题题面第5页和答案第35至38页证据图至 `03_corpus/manual_review_renders/G1-07-D1/`，作为本轮分值复核证据页包；
+- 更新 `03_corpus/item_texts/CPHO35-Q08.md`、`item_materials.csv`、`item_index.csv`、`manual_review_checklist.csv` 和 `manual_review_priority_followup.csv`，将 `CPHO35-Q08-SCORE` 推进为“分值边界核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-D1-SCORE-35Q05`；
+- 本轮明确记录：当前题面第5页可确认第8题和四个小问，但未见大题分值或小问分值标注；答案第35至38页为参考解答，未见评分标准或小问分值拆分；第38页为PDF末页，不存在下一题边界页。不得据此生成第35届第8题正式分值统计、评分结论或论文附录分值。
+
 ## 2026-07-17：G1-07-D1-SCORE-35Q04 第35届第4题分值边界核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q04_score_boundary_check_v1.csv`，登记第35届第4题题面页、答案页、下一题排除边界和分值使用边界；
