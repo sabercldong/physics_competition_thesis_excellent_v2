@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-COVERAGE-AUDIT 人工校对入口覆盖审计
+
+- 新增 `03_corpus/manual_review_coverage_audit.md` 和 `03_corpus/manual_review_coverage_audit_v1.csv`，逐条审计154项人工校对问题的入口覆盖、证据字段、校对人/日期和正式使用边界；
+- 核对 `03_corpus/manual_review_checklist.csv` 与 `manual_review_priority_followup.csv`，确认两表均为154条且 `issue_id` 完全一致；
+- 记录当前入口覆盖率为100%：A组76项、B组22项、C组47项、D组9项均已建立入口或内部记录；
+- 记录真实人工销项数仍为0：154项均未填写真实校对人和真实校对日期，因此不得写成正式人工校对完成；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一步边界调整为：若回收真实A/B评分者模板则进入 `G4-01`，否则只能继续完善内部复核材料和论文证据边界说明。
+
 ## 2026-07-19：G1-07-D1-SCORE-35Q01 第35届第1题分值边界核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q01_score_boundary_check_v1.csv`，登记第35届第1题题面页、答案页、下一题排除边界和分值使用边界；
