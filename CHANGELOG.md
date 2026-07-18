@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-EVIDENCE-PACKET-INDEX P1文献缺口材料包索引
+
+- 新增 `09_quality/no_return_reference_p1_evidence_packet_index.md`，记录P1文献缺口材料包索引的性质声明、总体结论、材料包类型分布、11项索引入口、回填使用规则、当前不能声称内容和下一最小任务；
+- 新增 `09_quality/no_return_reference_p1_evidence_packet_index_v1.csv`，覆盖11项P1路线，逐项登记索引ID、路线ID、上游RCQ、材料包家族、来源、关联主张、既有材料入口、核心缺失材料、回填字段、最小动作、解锁前输出、解锁条件、可用边界、禁写边界和下一任务；
+- 确认索引挂接24个既有材料入口文件，路径缺失0项，11项全部保持“不放行”；
+- 明确本任务不获取新全文，不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改 `02_literature/references.bib`，不补造页码、阅读结论、专家意见、教师/课堂材料或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-EVIDENCE-PACKET-INDEX-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-GAP-QUEUE-QA P1文献缺口路线QA
 
 - 新增 `09_quality/no_return_reference_p1_gap_queue_qa.md`，记录P1文献缺口路线QA的性质声明、84项检查结论、分类复核、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
