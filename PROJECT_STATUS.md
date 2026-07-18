@@ -249,6 +249,7 @@
 - 完成 `G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE`：新增 `09_quality/no_return_reference_claim_queue.md` 和 `09_quality/no_return_reference_claim_queue_v1.csv`，按照无真实回填队列 `NQ-06` 将参考文献与主张支撑关系压缩为21项待补队列；其中P0可引用来源定稿复核6项、P1全文获取/主张补证11项、P2排除来源与正式结果防误用4项。清单覆盖19条文献核验记录、10条引文动作队列、23条引文入口、6条正式候选参考映射、5条排除登记、11条参考文献准备记录和19条主张矩阵记录；所有队列项均保持“不放行”，本任务不改写正文、不修改 `09_quality/claim_evidence_matrix.csv`、不新增正式参考文献、不补造文献阅读结论。
 - 完成 `G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE-QA`：新增 `09_quality/no_return_reference_claim_queue_qa.md` 和 `09_quality/no_return_reference_claim_queue_qa_v1.csv`，完成97项QA检查且全部通过；确认参考文献与主张核验待补清单21项、`RCQ-01` 至 `RCQ-21` 连续唯一，P0/P1/P2计数为6/11/4，10类队列类型计数与报告一致；21项均继承 `NQ-06` 来源依据并保持“不放行”，本轮主张矩阵更新和正文改写均为“否”；P0六项、SOLO、物理竞赛、方法文献、科学思维测评、工作版参考文献表、主张矩阵侧车、排除来源和内部预演防误用均有入口，所有关联 `claim_id` 均能在 `09_quality/claim_evidence_matrix.csv` 中定位，已有证据路径缺失0项。
 - 完成 `G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE-QA-FOLLOWUP`：新增 `09_quality/no_return_reference_p0_finalcheck_sheet.md` 和 `09_quality/no_return_reference_p0_finalcheck_sheet_v1.csv`，为P0六项 `CS-001`、`ST-002`、`ST-003`、`ST-005`、`ST-006`、`METH-004` 建立定稿前版本、页码/图表、学校格式和主张边界复核单；对应正文来源占位46处，全部保持“不放行：定稿前复核”。本任务不改写正文、不修改 `09_quality/claim_evidence_matrix.csv`、不新增或修改 `references.bib`，不补造页码、图表编号、学校格式、阅读结论、专家意见或教学效果证据。
+- 完成 `G1-07-NO-RETURN-REFERENCE-P0-FINALCHECK-QA`：新增 `09_quality/no_return_reference_p0_finalcheck_qa.md` 和 `09_quality/no_return_reference_p0_finalcheck_qa_v1.csv`，完成139项QA检查且全部通过；确认P0复核单6项来源、`P0REF-01` 至 `P0REF-06`、`RCQ-01` 至 `RCQ-06`、`G8-02-VERIFY-001` 至 `G8-02-VERIFY-006`、6个引文入口、6个bib key、46处正文来源占位、证据路径和禁写边界均与上游一致；全部保持“不放行：定稿前复核”，本任务未改写正文、未修改主张矩阵、未新增或修改参考文献表。
 
 ## 关键阻塞项
 
@@ -263,4 +264,4 @@
 
 ## 下一任务
 
-`G1-07-NO-RETURN-REFERENCE-P0-FINALCHECK-QA`：检查P0定稿前复核单的6项来源覆盖、字段完整性、编码换行、证据路径、占位数、禁写边界和台账一致性；不得改写正文，不得新增正式参考文献，不得修改主张证据矩阵。
+`G1-07-NO-RETURN-REFERENCE-P1-GAP-QUEUE`：把11项P1文献全文获取、理论边界和主张补证缺口压缩成可执行路线；不得改写正文，不得新增正式参考文献，不得修改主张证据矩阵。

@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P0-FINALCHECK-QA P0可引用来源复核单QA
+
+- 新增 `09_quality/no_return_reference_p0_finalcheck_qa.md`，记录P0定稿前复核单的QA性质、139项检查结论、检查分布、结构一致性、仍不能声称内容、保留风险和下一最小任务；
+- 新增 `09_quality/no_return_reference_p0_finalcheck_qa_v1.csv`，逐项检查输入文件存在性、CSV编码换行、字段、行数、ID连续性、P0来源覆盖、上游RCQ队列、G8-02动作、引文入口、bib key、候选参考条目、主张ID、占位位置、占位数量、允许用途、禁止用途、证据路径、禁写边界和台账一致性；
+- 确认 `P0REF-01` 至 `P0REF-06` 连续唯一，6项来源与 `RCQ-01` 至 `RCQ-06`、`G8-02-VERIFY-001` 至 `G8-02-VERIFY-006` 和6条参考文献准备记录均能对齐；
+- 确认6项P0来源对应正文来源占位46处，证据路径缺失0项，全部保持“不放行：定稿前复核”；
+- 明确本QA不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改正式参考文献，不补造页码、图表编号、学校格式、文献结论、专家意见或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-GAP-QUEUE`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE-QA-FOLLOWUP P0可引用来源定稿前复核单
 
 - 新增 `09_quality/no_return_reference_p0_finalcheck_sheet.md`，记录P0六项可引用来源的复核性质、总体结论、逐项复核焦点、当前不能继承或升级的内容、后续使用规则和下一最小任务；
