@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-C-CLOSURE-PACKET-QA C组回填包完整性检查
+
+- 新增 `03_corpus/manual_review_c_closure_packet_qa.md` 和 `03_corpus/manual_review_c_closure_packet_qa_v1.csv`，逐项检查C组47项真实人工终核回填包；
+- 核对C组47项与优先队列C组、真实销项计划C组、C1批次入口和第41届第2/7题特殊终检证据相互一致；
+- 47项图件复核入口、来源页、原裁图、候选图和对照图均可定位，64个候选资产和279条引用路径均复核通过；
+- 真实校对人、真实校对日期、真实校对决定、是否可用于论文、是否需重绘、是否需修订、修订说明和最终图件位置均保持空白；QA结论为可进入真实人工终核但未销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-D-CLOSURE-PACKET`。
+
 ## 2026-07-19：G1-07-C-CLOSURE-PACKET C组真实人工终核回填包
 
 - 新增 `03_corpus/manual_review_c_closure_packet.md` 和 `03_corpus/manual_review_c_closure_packet_v1.csv`，为C组47项题图裁边、图注、图像表征和附录图件问题生成真实人工终核回填入口；
