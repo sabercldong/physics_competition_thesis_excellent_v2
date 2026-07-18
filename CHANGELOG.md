@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN-QA 无真实回填推进路线QA
+
+- 新增 `03_corpus/manual_review_no_return_route_plan_qa.md`，记录路线计划QA范围、38项检查结论、仍不能说明的内容和下一最小任务；
+- 新增 `03_corpus/manual_review_no_return_route_plan_qa_v1.csv`，逐项检查路线登记表的CSV编码、LF换行、字段、行数、ID连续唯一性、状态值、上游接收检查、接收QA、正式阻断表、正文隔离和主张矩阵隔离；
+- 确认路线登记表共12行，`NR-01` 至 `NR-12` 连续唯一，正式状态只包含“仅内部准备”“可继续推进”“正式冻结”，未出现正式放行状态；
+- 确认接收登记8行仍均为未收到真实回填，接收QA 63项均通过，正式阻断表6项均保持“阻断”；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-MATERIAL-QUEUE`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN 无真实回填推进路线
 
 - 新增 `03_corpus/manual_review_no_return_route_plan.md`，说明当前无真实人工终核回填副本时的总体判断、可继续推进事项、只能作为内部准备事项、必须冻结的正式产出和下一最小任务；
