@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-PATCH-QA P0正文门禁补丁QA
+
+- 新增 `09_quality/g1_07_manuscript_boundary_patch_qa.md`，检查P0人工终核门禁句是否落入第3章和第4章正确位置；
+- 新增 `09_quality/g1_07_manuscript_boundary_patch_qa.csv`，形成10项QA记录，覆盖5条P0落位、P1隔离、主张矩阵隔离、越界词语境和应用记录一致性；
+- 确认5条P0门禁句均已落位，第5章P1案例句未混入，`09_quality/claim_evidence_matrix.csv` 未出现本轮补丁来源；
+- 关键词扫描命中“显著提升”“课堂效果”等高风险词，但均处于“不能写成/不证明”的禁止语境，不构成正式结果声称；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUSCRIPT-BOUNDARY-P1-PLAN`。
+
 ## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-PATCH-APPLY-SAFE 安全应用P0正文门禁句
 
 - 在 `08_manuscript/03_methods.md` 工作区补入2条P0门禁句，分别说明154项真实人工销项数为0，以及A/B/C/D四组回填包尚未发生真实人工终核、真实评分者独立编码和分歧裁决；

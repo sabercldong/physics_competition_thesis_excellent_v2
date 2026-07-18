@@ -1,0 +1,11 @@
+﻿qa_id,check_type,target_file,expected_section,expected_text,line_ref,result,evidence,risk_or_note
+QA-001,P0落位,08_manuscript/03_methods.md,3.2,截至人工终核准备报告形成时，154项均已有回填入口,15,通过,第3章3.2中已出现154项有入口但真实人工销项数为0的语料门禁句。,位置位于语料来源与分析单位段后，符合PATCH-001。
+QA-002,P0落位,08_manuscript/03_methods.md,3.6,A/B/C/D四组回填包虽可交给真实校对人,43,通过,第3章3.6中已出现A/B/C/D四组未发生真实人工终核、真实评分者独立编码和分歧裁决的说明。,位置位于正式流程未进入说明后，符合PATCH-002。
+QA-003,P0落位,08_manuscript/04_results.md,章首说明,本章边界以 `03_corpus/manual_review_closure_ready_report.md`,4,通过,第四章章首引用人工终核准备报告和正文边界映射，并说明154项真实人工销项数为0。,位置位于结果章最高优先级边界说明内，符合PATCH-004。
+QA-004,P0落位,08_manuscript/04_results.md,4.1,219个分析单元和各届数量只可作为语料规模说明,12,通过,第四章4.1已说明219个分析单元与各届数量仅可作为语料规模说明。,没有把219个分析单元写成正式统计结果，符合PATCH-005。
+QA-005,P0落位,08_manuscript/04_results.md,4.6,当前均只有回填入口和QA记录，没有真实销项记录,51,通过,第四章4.6门槛列表中已细化A/B/C/D四组均无真实销项记录。,没有把QA记录写成真实销项，符合PATCH-006。
+QA-006,P1隔离,08_manuscript/05_cases_and_diagnosis.md,章首说明,候选案例涉及的题干、公式、图件或分值边界仍需按A/B/C/D人工终核回填包逐项确认,未命中或非逐字检查,通过,第5章未出现PATCH-007建议句。,P1案例章补丁未被本轮混入。
+QA-007,主张矩阵隔离,09_quality/claim_evidence_matrix.csv,全表,g1_07_manuscript_boundary_patch_apply,未命中或非逐字检查,通过,主张矩阵未出现本轮应用记录或新增补丁来源字段。,矩阵已有历史未提交改动，但本轮未直接编辑。
+QA-008,越界词语境,08_manuscript/03_methods.md,3.7,显著提升,47,通过,命中词处于“不能写成教学策略已经被验证或教学效果显著提升”的禁止语境。,不是结果声称。
+QA-009,越界词语境,08_manuscript/05_cases_and_diagnosis.md,5.1/5.8,课堂效果,87,通过,命中词处于不能写成课堂效果或教学效果的边界语境。,不是本轮新增，也不是结果声称。
+QA-010,应用记录一致性,09_quality/g1_07_manuscript_boundary_patch_apply_log.csv,APPLY-001至APPLY-005,5条P0应用记录,不适用,通过,应用记录共5条，均标记为已应用；目标文件和章节与正文检查一致。,可作为后续P1或真实回填检查的追踪入口。
