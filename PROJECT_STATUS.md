@@ -57,6 +57,7 @@
 - 完成 `G1-07-MANUSCRIPT-BOUNDARY-PATCH-QA`：新增 `09_quality/g1_07_manuscript_boundary_patch_qa.md` 和 `g1_07_manuscript_boundary_patch_qa.csv`，逐项核对5条P0门禁句均已落入第3章和第4章预期位置；确认第5章P1案例句未混入，`claim_evidence_matrix.csv` 未出现本轮补丁来源，命中的“显著提升”“课堂效果”等高风险词均处于禁止语境，不构成正式结果声称；
 - 完成 `G1-07-MANUSCRIPT-BOUNDARY-P1-PLAN`：新增 `09_quality/g1_07_manuscript_boundary_p1_plan.md` 和 `g1_07_manuscript_boundary_p1_plan.csv`，评估P1正文门禁补丁应用路线；结论为PATCH-003、PATCH-007、PATCH-008和PATCH-009四条正文P1句可在下一轮安全应用，PATCH-010主张矩阵覆盖建议因 `claim_evidence_matrix.csv` 存在历史未提交改动而暂缓并建议单独任务处理；本轮不直接改写第3章、第5章正文，不修改主张矩阵，不补造正式结果或教学证据；
 - 完成 `G1-07-MANUSCRIPT-BOUNDARY-P1-APPLY-SAFE`：新增 `09_quality/g1_07_manuscript_boundary_p1_apply_log.md` 和 `g1_07_manuscript_boundary_p1_apply_log.csv`，并在第3章小结、第5章章首、第5章5.1和第5章5.8工作区应用4条P1正文门禁句；本轮只强化第4章占位版、候选案例需人工终核、候选小问不得进入摘要/结论/教学建议、无真实教师学生或课堂材料时只能写设计建议四项边界，不直接修改 `claim_evidence_matrix.csv`，不补造正式编码、统计、专家、教师、课堂或教学效果证据；
+- 完成 `G1-07-MANUSCRIPT-BOUNDARY-P1-QA`：新增 `09_quality/g1_07_manuscript_boundary_p1_qa.md` 和 `g1_07_manuscript_boundary_p1_qa.csv`，逐项核对4条P1门禁句均已落入第3章和第5章预期位置；确认 `claim_evidence_matrix.csv` 未出现本轮P1应用标记或应用日志来源，最新提交不包含主张矩阵，高风险词均处于禁止、未完成、占位或不证明语境；
 - 启动 `G1-07-A1`：新增 `03_corpus/manual_review_a1_batch_log.csv`、`03_corpus/manual_review_a1_render_index.csv` 和 `03_corpus/manual_review_a1_batch_summary.md`，并生成 `03_corpus/manual_review_renders/G1-07-A1/` 下13张第41届第2题和第7题题面/答案页面证据图；已将 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA`、`CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA` 在人工校对清单和优先队列中回填为“证据包已建，未销项”；本任务不代表题干、公式、图件、答案证据或小问边界已经完成正式校对；
 - 继续 `G1-07-A1-TRANSCRIBE-41Q02`：新增 `03_corpus/manual_review_transcripts/CPHO41-Q02_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q02_formula_check_v1.csv`，将第41届第2题题面由OCR乱码推进为V1视觉转写稿，并依据答案PDF第3-7页登记关键公式与结果；更新 `03_corpus/item_texts/CPHO41-Q02.md` 挂接转写入口，并将 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA` 状态细化为“待最终复核”；本任务仍不代表第2题题图、公式排版或人工校对全部销项；
 - 继续 `G1-07-A1-TRANSCRIBE-41Q07`：新增 `03_corpus/manual_review_transcripts/CPHO41-Q07_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q07_formula_check_v1.csv`，将第41届第7题题面由OCR乱码推进为V1视觉转写稿，并依据答案PDF第16-19页登记单值条件、动量量子化、磁通周期、平均能量分段和双环极限比值等关键公式与结果；更新 `03_corpus/item_texts/CPHO41-Q07.md` 挂接转写入口，并将 `CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA` 状态细化为“待最终复核”；本任务仍不代表第7题题图、公式排版或人工校对全部销项；
@@ -236,4 +237,4 @@
 
 ## 下一任务
 
-`G1-07-MANUSCRIPT-BOUNDARY-P1-QA`：检查4条P1门禁句是否均已落入正确章节，确认 `09_quality/claim_evidence_matrix.csv` 未被本轮修改，且“教学效果”“课堂可行性”“显著提升”等高风险词均处于禁止语境。
+`G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN`：在不直接改动 `09_quality/claim_evidence_matrix.csv` 的前提下，评估7条主张矩阵覆盖建议应如何安全落地；若矩阵历史改动仍无法隔离，则先生成独立覆盖审计说明，不升级任何主张状态。

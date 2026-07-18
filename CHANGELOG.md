@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-P1-QA P1正文门禁应用范围检查
+
+- 新增 `09_quality/g1_07_manuscript_boundary_p1_qa.md`，检查4条P1正文门禁句是否落入第3章和第5章正确位置；
+- 新增 `09_quality/g1_07_manuscript_boundary_p1_qa.csv`，形成10项QA记录，覆盖4条P1落位、应用日志一致性、主张矩阵隔离、提交范围和高风险词语境；
+- 确认 `09_quality/claim_evidence_matrix.csv` 未出现本轮P1应用标记或应用日志来源，最新提交不包含主张矩阵；
+- 关键词扫描命中“显著提升”“课堂效果”“教学诊断”“课堂可行性”“专家审查”等高风险词，但均处于禁止、未完成、占位或不证明语境；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN`。
+
 ## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-P1-APPLY-SAFE 安全应用P1正文门禁句
 
 - 在 `08_manuscript/03_methods.md` 工作区补入1条P1门禁句，说明在人工终核真实回填、正式A/B评分者记录和裁决后唯一分析表形成前，第4章应保持占位版；

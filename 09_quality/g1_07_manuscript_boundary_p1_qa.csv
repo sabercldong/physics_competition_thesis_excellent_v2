@@ -1,0 +1,11 @@
+﻿qa_id,file,location,check_item,result,evidence,prohibited_claims
+QA-001,08_manuscript/03_methods.md,第61行，3.9本章小结,检查PATCH-003落位,通过,第4章在真实回填、A/B评分者记录和裁决表形成前保持占位版,不得提前承诺第四章已有正式结果
+QA-002,08_manuscript/05_cases_and_diagnosis.md,第7行，章首说明,检查PATCH-007落位,通过,候选案例需按A/B/C/D人工终核回填包确认,不得把候选案例写成正式代表性案例或正式质疑创新案例
+QA-003,08_manuscript/05_cases_and_diagnosis.md,第21行，5.1候选池前,检查PATCH-008落位,通过,候选小问不得在裁决表形成前进入摘要、结论或教学建议,不得增加未由正式编码裁决支持的新候选结论
+QA-004,08_manuscript/05_cases_and_diagnosis.md,第105行，5.8本章小结,检查PATCH-009落位,通过,无真实教师、学生或课堂材料时只能写设计建议,不得补造教师访谈、学生困难、课堂实施或前后测效果
+QA-005,09_quality/g1_07_manuscript_boundary_p1_apply_log.csv,全表,检查应用日志记录,通过,5条记录中4条已应用、1条PATCH-010未应用,不得把PATCH-010写成已应用
+QA-006,09_quality/claim_evidence_matrix.csv,全表,检查主张矩阵本轮标记,通过,未发现g1_07_manuscript_boundary_p1_apply、P1-APPLY或PATCH-003/007/008/009应用标记,不得修改或升级主张矩阵状态
+QA-007,git show --name-only HEAD,最新提交5d507db,检查提交范围,通过,最新提交不包含claim_evidence_matrix.csv,不得把历史矩阵改动纳入P1应用任务
+QA-008,08_manuscript/03_methods.md;08_manuscript/05_cases_and_diagnosis.md,高风险词扫描,检查教学效果/显著提升语境,通过,命中词均处于不证明、不能写成、不得声称或证据不足语境,不得写作教学策略显著有效或课堂效果成立
+QA-009,08_manuscript/03_methods.md;08_manuscript/05_cases_and_diagnosis.md,专家/正式结果词扫描,检查专家审查/正式结果语境,通过,命中词均处于准备、未完成、占位或需真实证据语境,不得写作专家审查完成或正式结果已经产生
+QA-010,当前工作区,历史改动隔离,检查剩余未提交改动,通过,第3章、第5章和主张矩阵仍有历史未提交改动，本轮QA不改写这些内容,不得全量暂存历史正文或矩阵改动
