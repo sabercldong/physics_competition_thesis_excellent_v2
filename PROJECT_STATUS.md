@@ -223,7 +223,8 @@
 - 形成稳健型与进阶型两条研究路线；
 - 建立试题语料、编码框架、专家审查、问卷访谈、课堂验证和可复现分析模板；
 - 建立优秀论文质量门槛和Codex工作规范；
-- 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_plan.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_plan.csv`，核查7条P1主张矩阵覆盖建议均能匹配当前矩阵行；确认 `09_quality/claim_evidence_matrix.csv` 已有历史未提交改动，因此本轮不直接编辑矩阵本体，建议先生成独立侧车文件，再在可隔离时精确合并；本轮不升级任何主张状态，不补造正式编码、统计、专家、教师、学生、课堂或教学效果证据。
+- 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_plan.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_plan.csv`，核查7条P1主张矩阵覆盖建议均能匹配当前矩阵行；确认 `09_quality/claim_evidence_matrix.csv` 已有历史未提交改动，因此本轮不直接编辑矩阵本体，建议先生成独立侧车文件，再在可隔离时精确合并；本轮不升级任何主张状态，不补造正式编码、统计、专家、教师、学生、课堂或教学效果证据；
+- 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_application.csv` 和 `09_quality/g1_07_claim_matrix_p1_overlay_application.md`，将 `C3-01`、`C3-02`、`C4-01`、`C4-02`、`C5-01`、`C5-02` 和 `C2-06` 的当前矩阵状态、P1边界覆盖、拟更新字段、禁止升级边界和后续合并条件写入独立侧车；本轮继续不直接修改 `09_quality/claim_evidence_matrix.csv`，不升级任何主张状态或证据等级。
 
 ## 关键阻塞项
 
@@ -238,4 +239,4 @@
 
 ## 下一任务
 
-`G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR`：在不直接改动 `09_quality/claim_evidence_matrix.csv` 的前提下，生成7条P1覆盖建议的独立侧车文件，记录每条 `claim_id` 的当前矩阵状态、拟落地字段、禁止升级边界和后续合并条件。
+`G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR-QA`：检查主张矩阵P1覆盖侧车文件的编码、行数、7个 `claim_id` 覆盖、矩阵隔离状态、禁止升级边界和后续合并条件；继续不直接修改 `09_quality/claim_evidence_matrix.csv`。

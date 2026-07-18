@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR 主张矩阵P1覆盖侧车文件
+
+- 新增 `09_quality/g1_07_claim_matrix_p1_overlay_application.csv`，将7条P1覆盖建议与当前 `claim_evidence_matrix.csv` 行逐项对齐，记录当前主张、证据等级、状态、风险、动作、覆盖边界、拟更新字段、禁止升级要求和后续合并条件；
+- 新增 `09_quality/g1_07_claim_matrix_p1_overlay_application.md`，说明侧车文件的覆盖范围、使用规则、禁止声称内容和安全合并条件；
+- 确认 `C3-01`、`C3-02`、`C4-01`、`C4-02`、`C5-01`、`C5-02` 和 `C2-06` 均能匹配当前矩阵行；
+- 本轮不直接修改或暂存 `09_quality/claim_evidence_matrix.csv`，不升级主张状态或证据等级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR-QA`。
+
 ## 2026-07-19：G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN 主张矩阵P1覆盖落地路线评估
 
 - 新增 `09_quality/g1_07_claim_matrix_p1_overlay_plan.md`，说明7条P1主张矩阵覆盖建议的落地边界和侧车优先路线；
