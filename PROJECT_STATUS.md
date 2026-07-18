@@ -230,6 +230,7 @@
 - 完成 `G1-07-MANUAL-CLOSURE-ACTION-PLAN`：新增 `03_corpus/manual_review_closure_action_plan.md` 和 `03_corpus/manual_review_closure_action_plan_v1.csv`，将154项人工终核问题压缩为PHASE-0至PHASE-5的真实执行顺序；确认A组76项、B组22项、C组47项、D组9项，销项路线为文字/公式终核98项、图件终核或重绘47项、分值细则8项、解答放大图边界1项。真实校对人、日期、决定和复核后证据位置仍保持空白，本轮不关闭任何条目，不进入正式编码或正式结果分析。
 - 完成 `G1-07-MANUAL-CLOSURE-ACTION-PLAN-QA`：新增 `03_corpus/manual_review_closure_action_plan_qa.md` 和 `03_corpus/manual_review_closure_action_plan_qa_v1.csv`，完成15项QA检查；确认动作计划CSV为UTF-8 BOM和LF换行，154项、154个唯一 `issue_id` 与总索引、真实销项计划和优先队列完全一致，A/B/C/D计数、批次计数和销项路线计数均匹配，真实回填栏全部为空，154项正式编码放行状态仍为“否”。本QA不关闭任何人工校对项，不代表可进入正式编码或正式结果分析。
 - 完成 `G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL`：新增 `03_corpus/manual_review_return_integration_protocol.md` 和 `03_corpus/manual_review_return_integration_protocol_v1.csv`，建立真实人工终核回填文件收回后的22条整合规则，覆盖回收登记、结构检查、不可变字段核查、A/B/C/D必填字段、修订说明、待核实保留、关闭条件、冲突分级、账本同步顺序、正式编码解锁、正文使用、主张矩阵隔离和Git提交规则。本任务只规定整合流程，不填写真实回填，不关闭154项，也不进入正式编码或正文结果写作。
+- 完成 `G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL-QA`：新增 `03_corpus/manual_review_return_integration_protocol_qa.md` 和 `03_corpus/manual_review_return_integration_protocol_qa_v1.csv`，完成32项QA检查；确认回填整合协议CSV为UTF-8 BOM和LF换行，22条规则、22个唯一且连续的 `RIP-01` 至 `RIP-22` 规则ID，覆盖回收登记、结构检查、不可变字段、A/B/C/D字段完整性、冲突分级、关闭条件、账本同步、正文隔离、主张矩阵隔离、原始文件保护和Git提交隔离。本QA不填写真实回填、不关闭154项，不代表进入正式编码或正式结果分析。
 
 ## 关键阻塞项
 
@@ -244,4 +245,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL-QA`：检查回填整合协议是否覆盖回收登记、结构检查、A/B/C/D字段完整性、冲突分级、关闭条件、账本同步顺序、正文和主张矩阵隔离，以及CSV是否符合UTF-8 BOM和LF换行。
+`G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN`：在不填写真实回填、不关闭任何条目的前提下，建立一份空白回填整合演练模板，验证协议中的检查字段、冲突清单和同步日志能否落表执行。

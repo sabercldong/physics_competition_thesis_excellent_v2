@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL-QA 人工终核回填整合协议QA
+
+- 新增 `03_corpus/manual_review_return_integration_protocol_qa.md`，记录协议QA范围、32项检查结论、禁止声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_return_integration_protocol_qa_v1.csv`，逐项检查CSV编码换行、规则数量、规则ID连续唯一性、阶段覆盖、A/B/C/D字段、冲突分级、关闭条件、同步顺序、正文隔离、主张矩阵隔离、原始文件保护和Git边界；
+- 确认 `03_corpus/manual_review_return_integration_protocol_v1.csv` 为UTF-8 BOM和LF换行，包含22条规则，`rule_id` 从 `RIP-01` 连续至 `RIP-22`；
+- 明确本QA不填写真实校对人、日期、决定、分值、图号边界或复核后证据位置，不关闭154项人工校对问题，不代表进入正式编码或正式结果分析；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL 人工终核回填整合协议
 
 - 新增 `03_corpus/manual_review_return_integration_protocol.md`，规定真实人工终核回填文件收回后的回收登记、结构检查、不可变字段核查、字段完整性、证据位置、冲突分级、关闭候选判定、整合QA、账本同步和Git提交流程；
