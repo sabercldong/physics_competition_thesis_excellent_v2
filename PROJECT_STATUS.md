@@ -269,6 +269,7 @@
 - 完成 `G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER`：新增 `03_corpus/manual_review_remaining_return_handoff_register.md`、`03_corpus/manual_review_remaining_return_handoff_register_v1.csv` 和 `03_corpus/manual_review_remaining_return_handoff_rules_v1.csv`，为B组22项、C组47项和D组9项建立剩余78项真实回填接收登记和14条交接规则；登记表逐行继承B/C/D销项包、总行动计划和总索引，列明推荐接收目录、命名规则、允许扩展名、接收字段、组别必填回填字段、固定字段检查、触发整合QA条件和关联 `RIP` 规则。真实文件名、另存路径、校验值、文件大小、接收日期、接收人、回填人代码、回填日期、观察到的审查决定、修订说明、图件可用性、重绘决定、分值或附属图边界说明均保持空白；本任务不创建真实回填目录，不登记真实回填副本，不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
 - 完成 `G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER-QA`：新增 `03_corpus/manual_review_remaining_return_handoff_register_qa.md` 和 `03_corpus/manual_review_remaining_return_handoff_register_qa_v1.csv`，完成278项QA检查且全部通过；确认剩余登记表78行、B组22项、C组47项、D组9项、`RPH-REM-001` 至 `RPH-REM-078` 连续唯一，规则表14条、`RPHR-REM-01` 至 `RPHR-REM-14` 连续唯一；登记表与行动计划、总索引和B/C/D销项包的issue集合一致，复合证据路径已按分号拆分检查且均可定位。真实接收字段和观察到的回填结果字段均为空，全部保持“未真实销项”“不放行”，正式编码、正式统计、正文使用和主张矩阵更新均为“否”；本QA不创建真实回填目录，不关闭任何条目，不放行论文正文写作。
 - 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT`：新增 `03_corpus/manual_review_waiting_room_closeout.md` 和 `03_corpus/manual_review_waiting_room_closeout_v1.csv`，对人工校对真实销项准备链进行阶段收束；确认总行动计划与总索引均覆盖154项人工终核问题，A组76项已压缩为38个题目级首批材料包并完成接收登记与QA，B组22项、C组47项和D组9项已完成剩余接收登记与QA。收束表10行列明总盘点、总索引、A组首批、A组接收、B/C/D等待、RIP协议、可继续动作和冻结动作；所有真实回填字段仍为空，全部保持“不放行”。本任务不创建真实回填目录，不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
+- 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT-QA`：新增 `03_corpus/manual_review_waiting_room_closeout_qa.md` 和 `03_corpus/manual_review_waiting_room_closeout_qa_v1.csv`，完成121项QA检查且全部通过；确认收束表10行、`MRWC-01` 至 `MRWC-10` 连续，层级顺序完整；总行动计划和总索引均覆盖154项，组别计数为A组76项、B组22项、C组47项、D组9项。A组首批38个题目级材料包覆盖76项，首批包QA 52项通过、A组接收登记QA 89项通过；B/C/D剩余登记78行，剩余登记QA 278项通过。真实回填字段均为空，全部保持“不放行”，未创建真实回填目录；本QA不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
 
 ## 关键阻塞项
 
@@ -283,4 +284,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT-QA`：检查人工校对真实销项准备链阶段收束报告和收束表，核对154项总覆盖、A组76项、B/C/D组78项、QA通过数、真实回填空白保护、不放行状态、未创建真实回填目录和提交边界。
+`G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION`：在等待真实回填的前提下，决定下一步走“继续真实材料补证入口”还是“转向不依赖真实回填的文献/方法/正文边界准备入口”，并为两条路线建立可执行任务分界。

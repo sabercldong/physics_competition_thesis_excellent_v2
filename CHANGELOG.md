@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT-QA 人工校对真实销项准备链阶段收束QA
+
+- 新增 `03_corpus/manual_review_waiting_room_closeout_qa.md`，记录人工校对真实销项准备链阶段收束QA的性质声明、121项检查结论、检查分布、已确认一致性、仍不能声称内容、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_waiting_room_closeout_qa_v1.csv`，逐项检查输入存在性、CSV编码换行、字段结构、行数编号、覆盖计数、收束表内容、QA继承、空白保护、放行门禁、路径可定位、目录边界、报告边界、动作边界和台账基础；
+- 确认收束表10行，`MRWC-01` 至 `MRWC-10` 连续，层级顺序完整；
+- 确认总行动计划和总索引均覆盖154项，组别计数为A组76项、B组22项、C组47项、D组9项；
+- 确认A组首批38个题目级材料包覆盖76项，首批包QA 52项通过，A组接收登记QA 89项通过；
+- 确认B/C/D剩余登记78行，其中B组22项、C组47项、D组9项，剩余登记QA 278项通过；
+- 确认A组首批、A组接收和B/C/D接收中的真实回填字段均为空，全部保持“不放行”，当前未创建 `03_corpus/manual_review_returns/`；
+- 明确本QA不关闭任何人工终核条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION`。
+
 ## 2026-07-19：G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT 人工校对真实销项准备链阶段收束
 
 - 新增 `03_corpus/manual_review_waiting_room_closeout.md`，记录人工校对真实销项准备链的性质声明、总体结论、已完成等待室成果、可继续推进的准备工作、必须等待真实材料的动作、当前不能写入论文正文的结论、下一最小任务和输出边界；
