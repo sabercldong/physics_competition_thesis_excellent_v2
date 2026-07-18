@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-B-CLOSURE-PACKET-QA B组回填包完整性检查
+
+- 新增 `03_corpus/manual_review_b_closure_packet_qa.md` 和 `03_corpus/manual_review_b_closure_packet_qa_v1.csv`，逐项检查B组真实人工终核回填包；
+- 核对B组22项与优先队列B组、真实销项计划B组和B1批次日志的 `issue_id` 完全一致；
+- 22个公式核对表均存在且记录数可复算，合计846条公式核对记录；153张页面证据图与回填包文件列表及B1页面索引一致且文件存在；
+- 真实校对人、真实校对日期、校对决定、是否需修订、修订说明和复核后证据位置均保持空白；QA结论为可进入真实人工终核但未销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-C-CLOSURE-PACKET`。
+
 ## 2026-07-19：G1-07-B-CLOSURE-PACKET B组真实人工终核回填包
 
 - 新增 `03_corpus/manual_review_b_closure_packet.md` 和 `03_corpus/manual_review_b_closure_packet_v1.csv`，为B组22项中风险公式与特殊符号问题生成真实人工终核回填入口；
