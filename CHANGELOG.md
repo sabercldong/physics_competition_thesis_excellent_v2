@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-A-CLOSURE-PACKET-QA A组题目级校对单质检
+
+- 新增 `03_corpus/manual_review_a_material_closure_sheet_v1.csv`，将A组76项高风险OCR、公式与特殊符号问题合并为38行题目级校对单；
+- 新增 `03_corpus/manual_review_a_closure_packet_qa.md`，记录A组题目级视图的覆盖范围、使用方式、不能声称事项和下一步最小任务；
+- 核对38个材料ID均同时包含1项题干OCR校对和1项公式与特殊符号校对，V1题面转写入口和公式核对入口均标记存在；
+- 真实校对人、真实校对日期、材料级校对决定、OCR决定、公式决定、修订说明和复核后证据位置均保持空白；本轮不关闭任何A组条目；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-B-CLOSURE-PACKET`。
+
 ## 2026-07-19：G1-07-A-CLOSURE-PACKET A组真实人工终核回填包
 
 - 新增 `03_corpus/manual_review_a_closure_packet.md` 和 `03_corpus/manual_review_a_closure_packet_v1.csv`，为A组76项高风险OCR、公式与特殊符号问题生成真实人工终核回填入口；

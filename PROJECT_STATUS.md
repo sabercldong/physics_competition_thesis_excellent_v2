@@ -42,6 +42,7 @@
 - 完成 `G1-07-FOLLOWUP-COVERAGE-AUDIT`：新增 `03_corpus/manual_review_coverage_audit.md` 和 `manual_review_coverage_audit_v1.csv`，逐条审计154项人工校对问题的入口覆盖、证据字段、校对人/日期和正式使用边界；确认154项均已建立入口或内部记录，`evidence`、`resolution_note`、`closure_condition` 和 `cannot_claim_before_closure` 均已填写，但真实校对人/日期填写数为0，真实人工销项数仍为0；
 - 完成 `G1-07-COVERAGE-TO-CLOSURE-PLAN`：新增 `03_corpus/manual_review_closure_plan.md` 和 `manual_review_closure_plan_v1.csv`，将154项人工校对问题分为4条真实销项路线：题面/答案页证据入口加真实人工终核98项、图件终核或必要时重绘47项、补正式评分细则/原卷分值说明8项、真实人工终核和附录图号边界确认1项；本任务只建立真实销项计划，不关闭任何条目，当前154项仍均缺真实校对人或真实校对日期；
 - 完成 `G1-07-A-CLOSURE-PACKET`：新增 `03_corpus/manual_review_a_closure_packet.md` 和 `manual_review_a_closure_packet_v1.csv`，为A组76项高风险OCR、公式与特殊符号问题生成真实人工终核回填包；76项均列出题面页、答案页、V1转写或公式核对入口、页面证据图、核对重点和真实回填栏位，且真实校对人、校对日期、校对决定和修订说明均保持空白；本任务不关闭任何A组条目；
+- 完成 `G1-07-A-CLOSURE-PACKET-QA`：新增 `03_corpus/manual_review_a_material_closure_sheet_v1.csv` 和 `03_corpus/manual_review_a_closure_packet_qa.md`，将A组76项高风险OCR、公式与特殊符号问题合并为38行题目级校对单；38个材料ID均同时包含题干OCR项和公式项，V1题面转写入口与公式核对入口均标记存在；真实校对人、校对日期、材料级决定、OCR决定、公式决定和修订说明均保持空白，本任务不关闭任何A组条目；
 - 启动 `G1-07-A1`：新增 `03_corpus/manual_review_a1_batch_log.csv`、`03_corpus/manual_review_a1_render_index.csv` 和 `03_corpus/manual_review_a1_batch_summary.md`，并生成 `03_corpus/manual_review_renders/G1-07-A1/` 下13张第41届第2题和第7题题面/答案页面证据图；已将 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA`、`CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA` 在人工校对清单和优先队列中回填为“证据包已建，未销项”；本任务不代表题干、公式、图件、答案证据或小问边界已经完成正式校对；
 - 继续 `G1-07-A1-TRANSCRIBE-41Q02`：新增 `03_corpus/manual_review_transcripts/CPHO41-Q02_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q02_formula_check_v1.csv`，将第41届第2题题面由OCR乱码推进为V1视觉转写稿，并依据答案PDF第3-7页登记关键公式与结果；更新 `03_corpus/item_texts/CPHO41-Q02.md` 挂接转写入口，并将 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA` 状态细化为“待最终复核”；本任务仍不代表第2题题图、公式排版或人工校对全部销项；
 - 继续 `G1-07-A1-TRANSCRIBE-41Q07`：新增 `03_corpus/manual_review_transcripts/CPHO41-Q07_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q07_formula_check_v1.csv`，将第41届第7题题面由OCR乱码推进为V1视觉转写稿，并依据答案PDF第16-19页登记单值条件、动量量子化、磁通周期、平均能量分段和双环极限比值等关键公式与结果；更新 `03_corpus/item_texts/CPHO41-Q07.md` 挂接转写入口，并将 `CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA` 状态细化为“待最终复核”；本任务仍不代表第7题题图、公式排版或人工校对全部销项；
@@ -221,4 +222,4 @@
 
 ## 下一任务
 
-`G1-07-A-CLOSURE-PACKET-QA`：若暂时没有真实A/B评分者回收文件，检查A组回填包是否能按材料ID合并成38份题目级校对单，并准备真实校对人可直接使用的题目级回填视图；不得代填真实校对人或日期。若能回收真实A/B评分者模板，则立即切回 `G4-01`，先做回收文件完整性与独立性检查，再进入一致性计算和分歧裁决。
+`G1-07-B-CLOSURE-PACKET`：若暂时没有真实A/B评分者回收文件，为B组22项中风险公式问题生成真实人工终核回填包；不得代填真实校对人、日期或最终确认。若能回收真实A/B评分者模板，则立即切回 `G4-01`，先做回收文件完整性与独立性检查，再进入一致性计算和分歧裁决。
