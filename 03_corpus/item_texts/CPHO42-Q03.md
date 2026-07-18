@@ -209,3 +209,19 @@ C,D 端口电压差也可以通过D → 7b → 6b → 5b → 3b → C得
 
 参考解答PDF第26-27页另列“题解图放大”。本整理文件仅记录此事实；正式引用图3相关图件前需人工核对原题图与放大图的一致性。
 
+## G1-07-D1 解答放大图一致性核对入口
+
+- 任务：`G1-07-D1-SOLFIG-42Q03`
+- 核对表：`03_corpus/manual_review_transcripts/CPHO42-Q03_solution_figure_large_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO42-Q03-paper-page-2.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO42-Q03-paper-page-3.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO42-Q03-solution-page-07.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO42-Q03-solution-page-08.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO42-Q03-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO42-Q03-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO42-Q03-solution-figlarge-page-26.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO42-Q03-solution-figlarge-page-27.png`
+- 当前核对结论：解答第7页明示“本题解图中的字号较小，放大图见P26和P27”；第26页呈现题解图3a和题解图3b，第27页呈现题解图3c。当前视觉核对支持其作为参考解答等效电路放大证据。
+- 使用边界：题解图3a-3c是参考解答推导用等效电路图，不是题面图3a-3d的一一原样放大。论文或附录引用时必须区分“题面图”和“题解图”；本入口不关闭 `CPHO42-Q03-FIG`，也不代表附录用图已正式定稿。
+- 状态：解答放大图一致性核对入口完成，待最终复核；未填写真实校对人/日期，未正式销项。

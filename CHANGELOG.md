@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-D1-SOLFIG-42Q03 第42届第3题解答放大图一致性核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO42-Q03_solution_figure_large_check_v1.csv`，登记第42届第3题题解图3a/3b/3c的小图、放大图、端口标注、连接关系和使用边界；
+- 追加更新 `03_corpus/manual_review_d1_batch_log.csv`、`manual_review_d1_render_index.csv` 和 `manual_review_d1_batch_summary.md`，记录D组队列第152项 `CPHO42-Q03-SOLFIG`；
+- 复制第42届第3题题面第2至3页、解答第7至10页和题解图放大页第26至27页证据图至 `03_corpus/manual_review_renders/G1-07-D1/`，作为本轮放大图核对证据页包；
+- 更新 `03_corpus/item_texts/CPHO42-Q03.md`、`item_materials.csv`、`item_index.csv`、`manual_review_checklist.csv` 和 `manual_review_priority_followup.csv`，将 `CPHO42-Q03-SOLFIG` 推进为“解答放大图一致性核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为队列第153项 `CPHO35-Q01-SCORE`；
+- 本轮明确记录：第26页对应题解图3a/3b，第27页对应题解图3c；题解图3a-3c是参考解答等效电路图，不是题面图3a-3d的一一原样放大。不得据此声称第42届第3题题面图、题解图、附录用图或图号命名边界已完成正式人工校对。
+
 ## 2026-07-19：G1-07-D1-SCORE-35Q07 第35届第7题分值边界核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q07_score_boundary_check_v1.csv`，登记第35届第7题题面页、答案页、下一题排除边界和分值使用边界；
