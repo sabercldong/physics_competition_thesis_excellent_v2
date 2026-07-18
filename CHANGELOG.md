@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-CLAIM-MATRIX-P1-OVERLAY-MERGE-READINESS 主张矩阵P1覆盖合并准备度判断
+
+- 新增 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.md`，判断7条P1侧车覆盖当前不宜直接合并进 `09_quality/claim_evidence_matrix.csv`；
+- 新增 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.csv`，逐项记录全局矩阵差异、7个 `claim_id` 的合并必要性、合并风险、暂缓理由、合并前条件和下一路线；
+- 判断侧车文件已通过QA且可引用，当前矩阵本体仍存在整块历史未提交差异，直接合并会扩大本轮提交范围；
+- 本轮继续不直接修改或暂存 `09_quality/claim_evidence_matrix.csv`，不升级任何主张状态或证据等级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-ACTION-PLAN`。
+
 ## 2026-07-19：G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR-QA 主张矩阵P1覆盖侧车QA
 
 - 新增 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.md`，说明侧车文件检查结论、通过项、保留风险、禁止声称内容和下一最小任务；

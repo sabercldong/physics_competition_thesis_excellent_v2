@@ -225,7 +225,8 @@
 - 建立优秀论文质量门槛和Codex工作规范；
 - 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_plan.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_plan.csv`，核查7条P1主张矩阵覆盖建议均能匹配当前矩阵行；确认 `09_quality/claim_evidence_matrix.csv` 已有历史未提交改动，因此本轮不直接编辑矩阵本体，建议先生成独立侧车文件，再在可隔离时精确合并；本轮不升级任何主张状态，不补造正式编码、统计、专家、教师、学生、课堂或教学效果证据；
 - 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_application.csv` 和 `09_quality/g1_07_claim_matrix_p1_overlay_application.md`，将 `C3-01`、`C3-02`、`C4-01`、`C4-02`、`C5-01`、`C5-02` 和 `C2-06` 的当前矩阵状态、P1边界覆盖、拟更新字段、禁止升级边界和后续合并条件写入独立侧车；本轮继续不直接修改 `09_quality/claim_evidence_matrix.csv`，不升级任何主张状态或证据等级；
-- 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR-QA`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.csv`，完成14项QA检查，确认侧车CSV为UTF-8 BOM和LF换行、7条目标主张完整、来源覆盖表与当前矩阵行匹配、状态和证据等级均未升级、直接改矩阵字段均为“否”；`09_quality/claim_evidence_matrix.csv` 仍保持历史未提交差异隔离，侧车通过QA不等同于矩阵本体已合并。
+- 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR-QA`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.csv`，完成14项QA检查，确认侧车CSV为UTF-8 BOM和LF换行、7条目标主张完整、来源覆盖表与当前矩阵行匹配、状态和证据等级均未升级、直接改矩阵字段均为“否”；`09_quality/claim_evidence_matrix.csv` 仍保持历史未提交差异隔离，侧车通过QA不等同于矩阵本体已合并；
+- 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-MERGE-READINESS`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.csv`，判断7条P1侧车覆盖当前不宜直接合并进 `09_quality/claim_evidence_matrix.csv`；理由是侧车已可引用且通过QA，而矩阵本体仍存在整块历史未提交差异，直接合并会扩大提交范围。本轮决定保持侧车引用，下一步转回正式编码前人工终核销项动作计划。
 
 ## 关键阻塞项
 
@@ -240,4 +241,4 @@
 
 ## 下一任务
 
-`G1-07-CLAIM-MATRIX-P1-OVERLAY-MERGE-READINESS`：在不直接修改 `09_quality/claim_evidence_matrix.csv` 的前提下，判断7条P1侧车覆盖是否需要进入字段级安全合并；若矩阵历史差异仍不可隔离，则保持侧车引用并转回人工终核销项或正式编码输入准备。
+`G1-07-MANUAL-CLOSURE-ACTION-PLAN`：把154项人工终核回填包压缩为真实执行顺序、最小校对动作、回填字段和进入正式编码的判定门槛；继续不填写真实校对人、校对日期或校对决定。
