@@ -244,6 +244,7 @@
 - 完成 `G1-07-NO-RETURN-CORPUS-PATH-QA`：新增 `03_corpus/no_return_corpus_path_qa.md`、`03_corpus/no_return_corpus_path_qa_v1.csv` 和 `03_corpus/no_return_corpus_path_audit_v1.csv`；复算4375条路径引用、898个唯一文件路径，断链0；A/B/C/D回填包、批次日志、渲染索引、转写稿、公式核对表、候选图和特殊重裁manifest均可定位。C组47项中45项由C1批次日志覆盖，`CPHO41-Q02-FIG` 和 `CPHO41-Q07-FIG` 由第41届特殊图件终检与重裁manifest覆盖；另登记5个CSV编码或换行格式待修复项。本任务不关闭154项人工校对问题，不释放正式编码，不改写论文正文。
 - 完成 `G1-07-C-NO-RETURN-FIGURE-QUEUE`：新增 `03_corpus/no_return_c_figure_queue.md` 和 `03_corpus/no_return_c_figure_queue_v1.csv`，按照无真实回填队列 `NQ-03` 汇总C组47项候选图件待核入口；记录64个候选资产、64条候选图路径、63条原裁图路径和54条来源页路径，引用路径缺失0条；分层登记第41届第2/7题特殊终检链、第42届第3题题面图与解答放大图边界、第35届第7题题面图与答案页参考边界、10项高优先边界/重绘疑点、5项多图逐图复核项和28项单图常规复核项。本任务不关闭C组47项，不确认论文最终图，不填写真实校对人或日期。
 - 完成 `G1-07-C-NO-RETURN-FIGURE-QUEUE-QA`：新增 `03_corpus/no_return_c_figure_queue_qa.md` 和 `03_corpus/no_return_c_figure_queue_qa_v1.csv`，完成48项QA检查且全部通过；确认C组图件清单47项与C组回填包、C组回填包QA的 `issue_id` 集合完全一致，候选资产64个、候选图路径64条、原裁图路径63条、来源页路径54条均可复算，路径直接扫描缺失0条；第41届第2/7题特殊终检链、第42届第3题附属图边界和第35届第7题答案页参考边界均已单独标注，清单仍明确不得用于论文最终图。
+- 完成 `G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE`：新增 `03_corpus/no_return_d_score_solfig_queue.md` 和 `03_corpus/no_return_d_score_solfig_queue_v1.csv`，按照无真实回填队列 `NQ-04` 汇总D组9项分值与附属图待核请求；其中8项为第35届分值边界，1项为第42届第3题解答放大图边界。清单挂接45条核对记录、62张页面证据图和71条页面索引记录，引用路径缺失0条；当前八个第35届条目仍未见PDF明示大题分值、分问分值或正式评分细则，第42届第3题题解图3a-3c仍标注为参考解答等效电路图而非题面图3a-3d一一原样放大。本任务不关闭D组9项，不生成第35届分值统计，不确认第42届第3题附录定稿图。
 
 ## 关键阻塞项
 
@@ -258,4 +259,4 @@
 
 ## 下一任务
 
-`G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE`：按照无真实回填队列 `NQ-04`，整理D组第35届分值边界和第42届第3题解答放大图待核请求清单；不得生成第35届分值统计或附录定稿图结论。
+`G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE-QA`：检查D组分值与附属图待核请求清单的覆盖范围、路径、字段、禁用结论和台账一致性；不得关闭D组9项，不得生成第35届分值统计或附录定稿图结论。

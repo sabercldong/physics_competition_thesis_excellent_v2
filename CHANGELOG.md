@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE D组分值与附属图待核请求清单
+
+- 新增 `03_corpus/no_return_d_score_solfig_queue.md`，记录D组9项分值与附属图待核请求的范围、证据状态、阻塞边界和下一最小任务；
+- 新增 `03_corpus/no_return_d_score_solfig_queue_v1.csv`，逐项登记8个第35届分值边界请求和1个第42届第3题解答放大图边界请求，保留核对入口、页面证据图、已有核对记录、当前阻塞、所需真实材料、禁写事项和解锁条件；
+- 确认清单挂接45条核对记录、62张页面证据图和71条页面索引记录，引用路径缺失0条；
+- 明确第35届8个分值条目目前均未见PDF明示大题分值、分问分值或正式评分细则，不能生成正式分值统计、分值权重结论或论文附录分值表；
+- 明确第42届第3题题解图3a-3c属于参考解答等效电路图，不是题面图3a-3d的一一原样放大；本任务不确认附录定稿图；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE-QA`。
+
 ## 2026-07-19：G1-07-C-NO-RETURN-FIGURE-QUEUE-QA C组候选图件清单QA
 
 - 新增 `03_corpus/no_return_c_figure_queue_qa.md`，记录C组候选图件待核分层清单的QA范围、48项检查结论、关键通过点、禁写边界和下一最小任务；
