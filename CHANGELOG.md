@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-TEMPLATE-QA P1材料包空白回填模板QA
+
+- 新增 `09_quality/no_return_reference_p1_backfill_template_qa.md`，记录P1空白回填模板QA的性质声明、90项检查结论、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
+- 新增 `09_quality/no_return_reference_p1_backfill_template_qa_v1.csv`，逐项检查输入文件、CSV编码换行、字段结构、行数、ID连续性、固定字段完整性、真实回填字段留空、上游索引继承、证据路径、放行边界、模板状态、报告一致性、台账一致性和禁写语境；
+- 确认11项模板、`P1BF-01` 至 `P1BF-11`、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K`、`RCQ-07` 至 `RCQ-17` 连续一致；
+- 确认20个真实回填字段在11行中均保持空白，24个既有材料入口文件路径缺失0项，11项全部保持“不放行”；
+- 明确本QA不获取新全文，不填写模板，不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改 `02_literature/references.bib`，不补造页码、阅读结论、专家意见、教师/课堂材料或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-INTAKE-RULES`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-TEMPLATE P1材料包空白回填模板
 
 - 新增 `09_quality/no_return_reference_p1_backfill_template.md`，记录P1材料包空白回填模板的性质声明、总体结论、模板覆盖分布、预留回填字段、11项回填入口、回填规则、当前不能声称内容和下一最小任务；
