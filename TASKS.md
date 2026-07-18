@@ -144,7 +144,8 @@
   - SCORE-35Q06：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q06_score_boundary_check_v1.csv`，并复制第35届第6题题面第3页、答案第28至31页证据图至 `03_corpus/manual_review_renders/G1-07-D1/`；`CPHO35-Q06-SCORE` 已推进为“分值边界核对入口完成，待最终复核”。视觉检查和PDF文本层辅助检索均未在当前题面页或答案页发现大题分值、小问分值拆分或评分标准，`item_index.csv` 已改为“未见PDF明示，待最终复核”。第31页下半部进入第7题，仅作下一题排除边界。该进度不代表真实人工校对完成，也不代表第35届第6题分值已经可用于正式统计或论文附录。
   - SCORE-35Q07：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q07_score_boundary_check_v1.csv`，并复制第35届第7题题面第4页、答案第31至35页和第36页下一题边界证据图至 `03_corpus/manual_review_renders/G1-07-D1/`；`CPHO35-Q07-SCORE` 已推进为“分值边界核对入口完成，待最终复核”。视觉检查和PDF文本层辅助检索均未在当前题面页或答案页发现大题分值、小问分值拆分或评分标准，`item_index.csv` 已改为“未见PDF明示，待最终复核”。第35页下半部进入第8题，第36页仅作下一题排除边界。该进度不代表真实人工校对完成，也不代表第35届第7题分值已经可用于正式统计或论文附录。
   - SOLFIG-42Q03：已新增 `03_corpus/manual_review_transcripts/CPHO42-Q03_solution_figure_large_check_v1.csv`，并复制第42届第3题题面第2至3页、解答第7至10页和题解图放大页第26至27页证据图至 `03_corpus/manual_review_renders/G1-07-D1/`；`CPHO42-Q03-SOLFIG` 已推进为“解答放大图一致性核对入口完成，待最终复核”。当前视觉检查确认第26页对应题解图3a/3b，第27页对应题解图3c；题解图3a-3c是参考解答等效电路图，不是题面图3a-3d的一一原样放大。该进度不代表真实人工校对完成，也不代表第42届第3题附录用图已经定稿。
-  - 下一步：继续人工校对优先队列最小未处理项 `G1-07-D1-SCORE-35Q01`，处理队列第153项 `CPHO35-Q01-SCORE`。队列第146项 `CPHO35-Q02-SCORE`、第147项 `CPHO35-Q03-SCORE`、第148项 `CPHO35-Q04-SCORE`、第149项 `CPHO35-Q08-SCORE`、第150项 `CPHO35-Q05-SCORE`、第151项 `CPHO35-Q06-SCORE`、第152项 `CPHO42-Q03-SOLFIG` 和第154项 `CPHO35-Q07-SCORE` 已建立核对入口但仍需真实评分细则、最终复核记录或附录图号边界确认才能正式销项。
+  - SCORE-35Q01：已新增 `03_corpus/manual_review_transcripts/CPHO35-Q01_score_boundary_check_v1.csv`，并复制第35届第1题题面第1页和答案第6至9页证据图至 `03_corpus/manual_review_renders/G1-07-D1/`；`CPHO35-Q01-SCORE` 已推进为“分值边界核对入口完成，待最终复核”。视觉检查和PDF文本层辅助检索均未在当前题面页或答案页发现大题分值、小问分值拆分或评分标准，`item_index.csv` 已改为“未见PDF明示，待最终复核”。第9页下半部进入第2题，仅作下一题排除边界。该进度不代表真实人工校对完成，也不代表第35届第1题分值已经可用于正式统计或论文附录。
+  - 下一步：转入 `G1-07-FOLLOWUP-COVERAGE-AUDIT`，汇总154项人工校对入口覆盖情况、仍未真实销项的缺口和正式编码前门禁。D组9项入口均已建立，但第35届8道题分值边界仍需真实评分细则或最终复核记录才能正式销项，第42届第3题解答放大图仍需真实人工终核和附录图号边界确认。
 
 ## G2 文献与理论
 

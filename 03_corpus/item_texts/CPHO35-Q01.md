@@ -19,7 +19,20 @@
   - `03_corpus/manual_review_renders/G1-07-B1/CPHO35-Q01-solution-page-09.png`
 - 边界说明：经视觉检查，第35届第1题答案从PDF第6页开始，第9页上半部仍为第1题时间积分、参数 `a/b/c`、`Delta`、最终时间表达式和临界时间结果；第9页下半部进入第2题。本轮将原答案页范围 `6-8` 纠偏为 `6-9`。
 - 待终核重点：`v0min`、周期运动上下界、落地速度根号、`alpha` 展开式、极坐标能量式、径向速度式、式⑭时间积分、`a/b/c` 与 `Delta` 定义、式⑮最终时间表达式和临界时间。
-- 状态：答案公式核对入口完成，待最终复核；第35届分值边界 `CPHO35-Q01-SCORE` 仍待人工复核。
+- 状态：答案公式核对入口完成，待最终复核；第35届分值边界 `CPHO35-Q01-SCORE` 已建立核对入口，待最终复核。
+
+## G1-07-D1 分值边界核对入口
+
+- 分值边界核对表：`03_corpus/manual_review_transcripts/CPHO35-Q01_score_boundary_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q01-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q01-solution-page-06.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q01-solution-page-07.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q01-solution-page-08.png`
+  - `03_corpus/manual_review_renders/G1-07-D1/CPHO35-Q01-solution-page-09.png`
+- 核对结论：第1题题面位于试题PDF第1页上半部，可确认两个小问；答案第6页开始第1题参考解答，第7至8页继续推导，第9页上半部为第1题时间积分、最终时间表达式和临界时间结果，第9页下半部进入第2题。
+- 当前分值边界：题面页、答案页和PDF文本层辅助检索均未见第1题大题分值、小问分值拆分或评分标准；`item_index.csv` 中第1题两个小问分值字段已标为“未见PDF明示，待最终复核”。
+- 不可声称：不得据此生成第35届第1题正式分值统计、评分结论或论文附录分值；若后续取得正式评分细则、原卷说明或真实最终复核记录，再回填具体分值。
 
 ## 题干
 
