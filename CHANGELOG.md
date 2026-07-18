@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-D-CLOSURE-PACKET-QA D组回填包完整性检查
+
+- 新增 `03_corpus/manual_review_d_closure_packet_qa.md` 和 `03_corpus/manual_review_d_closure_packet_qa_v1.csv`，逐项检查D组9项真实人工终核回填包；
+- 核对D组9项与优先队列D组、真实销项计划D组和D1批次日志的 `issue_id` 完全一致；
+- 9项核对入口均存在，45条核对记录、62张页面证据图、71条页面索引记录和142条引用路径均复核通过；
+- 真实校对人、真实校对日期、真实校对决定、正式评分来源或图号边界确认、修订说明和最终证据位置均保持空白；QA结论为可进入真实人工终核但未销项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-CLOSURE-PACKET-MASTER-INDEX`。
+
 ## 2026-07-19：G1-07-D-CLOSURE-PACKET D组真实人工终核回填包
 
 - 新增 `03_corpus/manual_review_d_closure_packet.md` 和 `03_corpus/manual_review_d_closure_packet_v1.csv`，为D组9项分值边界与附属证据问题生成真实人工终核回填入口；
