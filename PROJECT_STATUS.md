@@ -261,6 +261,7 @@
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE`：新增 `09_quality/no_return_reference_p1_backfill_ready_gate.md` 和 `09_quality/no_return_reference_p1_backfill_ready_gate_v1.csv`，建立11项P1真实回填前就绪门禁，连续覆盖 `P1BF-01` 至 `P1BF-11`、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K` 和 `RCQ-07` 至 `RCQ-17`；逐项说明未回填时可继续的准备工作、必须冻结的正文/矩阵/参考文献动作、打开回填所需的最小真实输入、收到材料后的接收QA路线和放行条件。11项全部保持“不放行”，本任务未获取新全文、未填写回填模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE-QA`：新增 `09_quality/no_return_reference_p1_backfill_ready_gate_qa.md` 和 `09_quality/no_return_reference_p1_backfill_ready_gate_qa_v1.csv`，完成283项QA检查且全部通过；确认11项门禁连续覆盖 `P1BF-01` 至 `P1BF-11`、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K` 和 `RCQ-07` 至 `RCQ-17`，全部保持“不放行”。上游P1回填模板11行的20个真实回填字段仍全部留空，正文、主张矩阵、参考文献表和模板填写边界均保持冻结。本任务未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT`：新增 `09_quality/no_return_reference_p1_backfill_closeout.md` 和 `09_quality/no_return_reference_p1_backfill_closeout_v1.csv`，对P1文献回填准备链进行阶段性收束；确认11项P1入口从 `RCQ-07` 至 `RCQ-17`、`P1-A` 至 `P1-K`、`P1PKT-01` 至 `P1PKT-11`、`P1BF-01` 至 `P1BF-11` 和 `P1GATE-01` 至 `P1GATE-11` 连续贯通，缺口路线、材料包索引、空白回填模板、接收规则、就绪门禁和五轮QA均已形成；五轮QA合计727项检查、未通过0项。上游P1回填模板11行的20个真实回填字段仍全部留空，11项全部保持“不放行”。本任务未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表；收束判断显示，若没有真实P1材料，后续实际入口应优先回到语料人工校对真实销项，而真实评分者编码需排在语料人工校对之后。
+- 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT-QA`：新增 `09_quality/no_return_reference_p1_backfill_closeout_qa.md` 和 `09_quality/no_return_reference_p1_backfill_closeout_qa_v1.csv`，完成656项QA检查且全部通过；确认P1收束表11项连续，`RCQ-07` 至 `RCQ-17`、`P1-A` 至 `P1-K`、`P1PKT-01` 至 `P1PKT-11`、`P1BF-01` 至 `P1BF-11` 和 `P1GATE-01` 至 `P1GATE-11` 均与上游一致；五轮上游QA合计727项检查、未通过0项；上游P1回填模板11行的20个真实回填字段仍全部留空，11项全部保持“不放行”。本QA未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。QA通过后，若仍没有真实P1材料，下一实际推进应回到语料人工校对真实销项入口。
 
 ## 关键阻塞项
 
@@ -275,4 +276,4 @@
 
 ## 下一任务
 
-`G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT-QA`：检查P1文献回填准备链收束报告和收束表是否准确继承11项P1入口、727项QA结论、20个空白回填字段、11项“不放行”状态和四个下一入口判断；不得获取新全文，不得填写模板，不得改写正文，不得新增正式参考文献，不得修改主张证据矩阵。
+`G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET`：在没有新增真实P1材料的前提下，回到语料人工校对真实销项入口，把154项人工校对问题压缩为首批真实校对优先包；只能生成可交付给校对人的优先材料包和回填顺序，不得填写真实校对人、日期、决定，不得关闭条目，不得进入正式编码或正式结果分析。
