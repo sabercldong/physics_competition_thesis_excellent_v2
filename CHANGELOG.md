@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-TRUE-REVIEW-MANUSCRIPT-BOUNDARY-MAP 无真实回填正文边界映射
+
+- 新增 `09_quality/g1_07_no_true_review_manuscript_boundary_map.md` 和 `09_quality/g1_07_no_true_review_manuscript_boundary_map.csv`，将人工终核准备报告中的无真实回填门禁映射到第3、4、5章和主张证据矩阵；
+- 新增 `09_quality/g1_07_claim_matrix_boundary_overlay.csv`，为 `C3-01`、`C3-02`、`C4-01`、`C4-02`、`C5-01`、`C5-02` 和 `C2-06` 提供人工终核门禁覆盖建议；
+- 形成24条正文/主张边界映射，确认第3章可保留为方法准备，第4章可保留为结果占位，第5章可保留为候选案例、采证提纲和教学转化证据需求；
+- 明确当前不得把154项未真实销项、内部试编码、内部共现表、候选案例或教学文献参照升级为正式编码结果、正式统计、正式案例结论、教学诊断或教学效果；
+- 本轮不直接修改第3、4、5章正文或 `09_quality/claim_evidence_matrix.csv` 的历史未提交内容；更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUSCRIPT-BOUNDARY-PATCH-PLAN`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-READY-REPORT 正式编码前人工终核准备报告
 
 - 新增 `03_corpus/manual_review_closure_ready_report.md`，说明当前A/B/C/D四组材料包可交给真实校对人的范围、仍不能进入正式结果分析的原因，以及无真实回填时论文只能采用的证据边界；

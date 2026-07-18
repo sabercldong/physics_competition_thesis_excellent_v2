@@ -1,0 +1,8 @@
+﻿claim_id,chapter,section,overlay_type,additional_evidence_file,additional_evidence_location,boundary_overlay,matrix_update_recommendation,direct_matrix_edited_this_task
+C3-01,第三章,3.2,语料与质量边界,03_corpus/manual_review_closure_ready_report.md;03_corpus/manual_review_closure_ready_gate_matrix_v1.csv,人工终核准备报告：154项均已有入口但未真实销项,补充证据边界：可说明材料准备和人工终核入口齐备；不能说明正式编码输入已完全无风险。,等待真实人工终核回填后再升级状态,否
+C3-02,第三章,3.4/3.5,方法边界,03_corpus/manual_review_closure_ready_report.md;03_corpus/manual_review_closure_ready_gate_matrix_v1.csv,人工终核准备报告：可交付真实校对但未完成真实专家/评分者流程,补充证据边界：Codex内部预审和空白模板不能替代真实专家审查或真实评分者编码。,若回收真实A/B模板则进入G4-01,否
+C4-01,第四章,4.2/4.3/4.4,结果边界,03_corpus/manual_review_closure_ready_report.md;03_corpus/manual_review_closure_ready_gate_matrix_v1.csv,人工终核准备报告：正式编码、正式统计和显著性结论均不可进入,补充证据边界：第四章只能作为占位；不得使用内部维度、等级、共现和分组数字作为正式结果。,等待final_coding.csv和正式脚本输出,否
+C4-02,第四章,4.6,质量控制边界,03_corpus/manual_review_closure_ready_report.md;03_corpus/manual_review_closure_ready_gate_matrix_v1.csv,人工终核准备报告：154项未销项阻塞正式结果章,补充证据边界：内部复核队列不能替代真实一致性检验、分歧裁决或结果稳健性说明。,先完成人工终核、L4复核和真实评分者编码,否
+C5-01,第五章,5.1-5.5,案例边界,03_corpus/manual_review_closure_ready_report.md;03_corpus/manual_review_closure_ready_gate_matrix_v1.csv,人工终核准备报告：题干、公式、图件、分值边界未真实销项,补充证据边界：候选案例只能作为案例池和复核提纲；不能写成正式代表性案例或质疑创新结论。,正式编码裁决后选择案例并补证据表,否
+C5-02,第五章,5.6/5.7,教学转化边界,03_corpus/manual_review_closure_ready_report.md;03_corpus/manual_review_closure_ready_gate_matrix_v1.csv,人工终核准备报告：教师验证和课堂效果结论不可进入,补充证据边界：没有真实教师、学生或课堂证据，不能写教学困难、教学错位或教学效果。,进入G5/G6收集证据或收缩为设计建议,否
+C2-06,第二章/第五章,2.3/5.1,教学转化边界,03_corpus/manual_review_closure_ready_report.md;03_corpus/manual_review_closure_ready_gate_matrix_v1.csv,人工终核准备报告：教学转化只能保留为设计参照,补充证据边界：引用文献只能支持任务-支架-评价设计参照，不能证明本项目教学效果。,补充真实反馈链条或保持建议语气,否
