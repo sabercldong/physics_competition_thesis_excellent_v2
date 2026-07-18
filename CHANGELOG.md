@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-19：G4-01-NO-RATER-BOUNDARY-APPLY 第3至5章无评分者边界应用审计
+
+- 新增 `09_quality/g4_01_no_rater_boundary_apply_report.md` 和 `09_quality/g4_01_no_rater_boundary_apply_audit.csv`，逐项审查第3章方法准备说明、第4章正式结果占位、第5章候选案例与教学转化证据需求、主张证据矩阵和无评分者边界路线包；
+- 关键词扫描命中“显著”“证明”“充分”等高风险词，但逐段核对后均处于禁止外推、不能证明或证据不足语境，未发现需要立即改写的越界结果句；
+- 本轮不修改第3至5章正文，也不修改 `09_quality/claim_evidence_matrix.csv`，避免把历史未提交正文和质量矩阵改动一并纳入本次提交；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-COVERAGE-TO-CLOSURE-PLAN`：从154项人工校对入口覆盖转向真实销项计划。
+
 ## 2026-07-19：G4-01-NO-RATER-BOUNDARY-PACKET 无真实评分者时的边界路线
 
 - 新增 `07_analysis/results/reviewed/g4_01_no_rater_boundary_packet.md`，汇总当前 `G4-01` 所处位置、已准备材料、致命阻塞、可继续做的内部工作和不能提前生成的正式结论；

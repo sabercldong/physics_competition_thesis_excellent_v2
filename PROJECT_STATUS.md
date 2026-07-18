@@ -97,6 +97,7 @@
 - 完成 `G4-01-PREP`：新增 `07_analysis/scripts/build_g4_01_prep_handoff.py`、`g4_01_prep_rater_package_index.csv`、`g4_01_prep_handoff_audit.csv` 和 `g4_01_prep_handoff_report.md`，确认可进入评分者交接准备，但不能进入正式结果分析；
 - 完成 `G4-01-PREP-LOCK`：新增 `04_framework/rater_handoff_lock_v1.md`、`rater_handoff_lock_manifest.csv`、`rater_independent_coding_instructions_v1.md`、`rater_handoff_file_rules.csv` 和 `rater_handoff_unresolved_risks.csv`，冻结评分者交接包清单、A/B独立填写说明、文件命名与回收规则以及未销项风险提示；该冻结只针对交接流程，不代表真实双评分者编码、正式手册外部审查、一致性检验、分歧裁决或正式结果分析已经完成；
 - 完成 `G4-01-NO-RATER-BOUNDARY-PACKET`：新增 `07_analysis/results/reviewed/g4_01_no_rater_boundary_packet.md` 和 `g4_01_no_rater_next_routes.csv`，在未回收真实A/B评分者模板的条件下，明确正式 `G4-01` 仍处于阻塞状态；当前只能继续内部证据边界、材料索引、人工校对准备、文献核验和学校规范准备，不能进入正式一致性、裁决或结果分析；
+- 完成 `G4-01-NO-RATER-BOUNDARY-APPLY`：新增 `09_quality/g4_01_no_rater_boundary_apply_report.md` 和 `g4_01_no_rater_boundary_apply_audit.csv`，审查第3至5章、主张证据矩阵和无评分者边界路线包；确认当前第3章仍为方法准备说明、第4章仍为正式结果占位、第5章仍为候选案例和教学转化证据需求，未发现需立即改写的越界结果句；
 - 启动 `G7-01/G7-02` 内部草稿：更新 `08_manuscript/03_methods.md` 和 `08_manuscript/04_results.md`，将研究设计、语料、编码手册、正式编码准备、内部预演结果和结果边界写入正文草稿；第三、四章尚非最终稿；
 - 启动 `G7-03-PREP` 第五章内部预备稿：更新 `08_manuscript/05_cases_and_diagnosis.md`，写入案例选择原则、内部候选案例池、模型建构/科学推理/科学论证/质疑创新案例分析路径，以及教师/学生困难证据缺口和教学错位诊断边界；第五章尚需正式编码、案例裁决和真实教师或课堂证据后才能定稿；
 - 启动 `G7-04-PREP` 第二章核验式理论草稿：更新 `08_manuscript/02_theory.md`，写入科学思维四维度、SOLO适用边界、小问级两层编码逻辑、指标结构和理论框架图；新增 `02_literature/literature_review_workplan.md`，明确第二章文献核验主题块、流程、主张编号和禁止事项；第二章尚需 `G2-01` 至 `G2-06` 形成可追溯记录后才能定稿；
@@ -218,4 +219,4 @@
 
 ## 下一任务
 
-`G4-01-NO-RATER-BOUNDARY-APPLY`：若暂时没有真实A/B评分者回收文件，继续检查第3至5章、主张证据矩阵和结果占位材料中是否仍有把内部预演写成正式结果的风险表述，并统一降格为“内部预演”“候选”“待核验”或“证据需求”。若能回收真实A/B评分者模板，则立即切回 `G4-01`，先做回收文件完整性与独立性检查，再进入一致性计算和分歧裁决。
+`G1-07-COVERAGE-TO-CLOSURE-PLAN`：若暂时没有真实A/B评分者回收文件，回到154项人工校对入口，建立从“入口覆盖100%”走向“真实销项”的计划表，区分可由题面/答案页终核关闭的项目、必须补正式评分细则的项目、必须图件终核或重绘的项目，以及当前材料无法关闭的项目。若能回收真实A/B评分者模板，则立即切回 `G4-01`，先做回收文件完整性与独立性检查，再进入一致性计算和分歧裁决。
