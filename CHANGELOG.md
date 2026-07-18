@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-ROUTE-B-TASK-BOUNDARY 路线B不依赖真实回填的任务分界
+
+- 新增 `03_corpus/route_b_task_boundary.md`，记录路线B任务分界的性质声明、总体结论、分界统计、可继续准备项、仅内部准备项、条件冻结项、直接禁止项、下一最小任务和输出边界；
+- 新增 `03_corpus/route_b_task_boundary_v1.csv`，建立14项路线B任务分界，逐项记录来源队列、任务区域、分界类别、依赖状态、允许工作、允许产物、禁止工作、释放状态、正文状态、主张矩阵状态、解锁条件、下一任务候选和证据依据；
+- 确认“可继续准备”6项：路线B总入口、正文禁写边界维护、文献核验路线、复现包结构与数据字典准备、真实回填接收准备和路线切换处理；
+- 确认“仅内部准备”4项：正式编码前门禁草案、主张矩阵侧车隔离、C组候选图件索引维护、D组分值与附属图缺口维护；
+- 确认“条件冻结”3项：正式A/B评分者独立编码、正式统计/分布图/趋势判断、教师/问卷/课堂与教学效果证据；
+- 确认“禁止”1项：初稿不可继承结果不得继续使用，必须由真实来源和可复现分析重新建立；
+- 明确本任务不写论文结果正文，不改正式编码数据，不补造专家、教师、问卷、课堂、统计或文献结论，不修改 `08_manuscript/`、`09_quality/claim_evidence_matrix.csv`、`02_literature/references.bib` 或 `00_originals/`，不创建 `03_corpus/manual_review_returns/`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-TASK-BOUNDARY-QA`。
+
 ## 2026-07-19：G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION-QA 人工校对等待室后续路线决策QA
 
 - 新增 `03_corpus/manual_review_waiting_room_route_decision_qa.md`，记录路线决策QA的性质声明、161项检查结论、检查分布、已确认事项、仍不能声称内容、下一最小任务和输出边界；

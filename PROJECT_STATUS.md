@@ -272,6 +272,7 @@
 - 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT-QA`：新增 `03_corpus/manual_review_waiting_room_closeout_qa.md` 和 `03_corpus/manual_review_waiting_room_closeout_qa_v1.csv`，完成121项QA检查且全部通过；确认收束表10行、`MRWC-01` 至 `MRWC-10` 连续，层级顺序完整；总行动计划和总索引均覆盖154项，组别计数为A组76项、B组22项、C组47项、D组9项。A组首批38个题目级材料包覆盖76项，首批包QA 52项通过、A组接收登记QA 89项通过；B/C/D剩余登记78行，剩余登记QA 278项通过。真实回填字段均为空，全部保持“不放行”，未创建真实回填目录；本QA不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
 - 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION`：新增 `03_corpus/manual_review_waiting_room_route_decision.md` 和 `03_corpus/manual_review_waiting_room_route_decision_v1.csv`，建立5行等待室后续路线决策；确认路线A（真实材料补证入口）在未收到真实回填前保持条件冻结，路线B（不依赖真实回填的文献/方法/正文边界准备入口）为当前推荐执行路线，同时建立路线切换门禁、正文与主张矩阵保护门禁和当前执行决议。当前真实回填字段非空数0，未创建 `03_corpus/manual_review_returns/`，全部保持“不放行”；本任务不关闭任何人工终核条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
 - 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION-QA`：新增 `03_corpus/manual_review_waiting_room_route_decision_qa.md` 和 `03_corpus/manual_review_waiting_room_route_decision_qa_v1.csv`，完成161项QA检查且全部通过；确认路线决策表5行、`MRWRD-01` 至 `MRWRD-05` 连续唯一，路线A保持“条件冻结：等待真实回填”，路线B保持“当前推荐执行”，路线切换门禁和正文与主张矩阵保护门禁均已启用，当前执行决议为“执行路线B，路线A保留待触发”。A组和B/C/D接收登记中的真实回填字段非空数0，当前未创建 `03_corpus/manual_review_returns/`；所有路线均保持“不放行”，正文结果写作、正式编码、正式统计和主张矩阵升级仍被禁止。
+- 完成 `G1-07-ROUTE-B-TASK-BOUNDARY`：新增 `03_corpus/route_b_task_boundary.md` 和 `03_corpus/route_b_task_boundary_v1.csv`，建立14项路线B不依赖真实回填的任务分界；其中“可继续准备”6项、“仅内部准备”4项、“条件冻结”3项、“禁止”1项。分界覆盖路线B总入口、正文禁写边界维护、文献核验路线、复现包结构与数据字典准备、正式编码前门禁草案、主张矩阵侧车隔离、C组候选图件索引、D组分值与附属图缺口、真实回填接收准备、正式A/B评分者独立编码、正式统计、教师/问卷/课堂证据、初稿不可继承结果和路线切换处理；全部保持不放行正式结果或冻结/禁止状态，不修改正文、主张矩阵、参考文献表或原始文件，不创建真实回填目录。
 
 ## 关键阻塞项
 
@@ -286,4 +287,4 @@
 
 ## 下一任务
 
-`G1-07-ROUTE-B-TASK-BOUNDARY`：在路线B下建立不依赖真实回填的任务分界表，明确哪些方法章素材、正文禁写边界、文献核验路线和正式编码前门禁可以继续准备，哪些仍必须等待真实回填或真实数据。
+`G1-07-ROUTE-B-TASK-BOUNDARY-QA`：检查路线B任务分界表和报告，确认分界分类、允许产物、禁止产物、解锁条件、正文边界、主张矩阵边界和真实回填保护均准确。
