@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET-QA 首批真实校对优先包QA
+
+- 新增 `03_corpus/manual_review_real_return_priority_packet_qa.md`，记录首批真实校对优先包QA的性质声明、52项检查结论、检查分布、已确认一致性、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_real_return_priority_packet_qa_v1.csv`，逐项检查输入存在性、CSV编码换行、字段结构、行数、编号连续性、组别、阶段、批次、问题类型、上游集合一致性、逐行继承、路径存在、真实回填栏空白、未销项门禁、未放行门禁、报告文本和提交边界；
+- 确认首批包CSV为UTF-8 BOM和LF换行，`REAL-P1-001` 至 `REAL-P1-038` 连续唯一；
+- 确认38个题目级材料包与A组题目级校对单完全一致，覆盖的76个 `issue_id` 与动作计划A组、总索引A组和A组题目级校对单完全一致；
+- 确认文本入口、公式入口、题目文本入口、页面证据图和回填整合协议路径在当前工作区均可定位；
+- 确认真实校对人、真实校对日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均保持空白，正式编码和正文使用均为“否”；
+- 明确本QA不关闭任何人工校对项，不放行正式统计、正文结果写作或主张矩阵升级；B组22项、C组47项和D组9项仍为未销项材料；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET 人工校对真实销项首批优先包
 
 - 新增 `03_corpus/manual_review_real_return_priority_packet.md`，记录首批真实校对优先包的性质声明、当前位置、首批范围、选择理由、真实回填字段、未纳入首批的B/C/D材料、禁写边界、回填后处理路线和下一QA任务；
