@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-CLOSURE-PACKET-MASTER-INDEX 人工终核回填包总索引
+
+- 新增 `03_corpus/manual_review_closure_packet_master_index.md` 和 `03_corpus/manual_review_closure_packet_master_index_v1.csv`，汇总A/B/C/D四组人工终核回填包及QA结果；
+- 核对154项人工校对问题全部覆盖，其中A组76项、B组22项、C组47项、D组9项；
+- 154项均可定位对应组回填包，154项均可定位QA结果或A组题目级校对单，154项入口路径均可定位；
+- 154项真实回填栏均保持空白，真实人工销项数仍为0；本轮不填写真实校对人、日期、分值、图号边界或最终决定；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-READY-REPORT`。
+
 ## 2026-07-19：G1-07-D-CLOSURE-PACKET-QA D组回填包完整性检查
 
 - 新增 `03_corpus/manual_review_d_closure_packet_qa.md` 和 `03_corpus/manual_review_d_closure_packet_qa_v1.csv`，逐项检查D组9项真实人工终核回填包；
