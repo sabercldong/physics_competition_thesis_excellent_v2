@@ -1,0 +1,23 @@
+﻿rule_id,stage,scope,trigger,required_check,pass_condition,fail_condition,allowed_action_after_pass,blocked_action,evidence_output,next_action
+RIP-01,回收登记,全部回填文件,收到A/B/C/D任一回填包,登记来源文件名、回收时间、回收人、对应组别、是否为原始回填副本,回填副本已另存，未覆盖原始空白包,直接覆盖原始空白包或无法说明来源,生成回收登记行；进入结构检查,不得修改00_originals；不得直接关闭条目,回收登记表或后续整合日志,先登记再检查
+RIP-02,文件结构检查,A/B/C/D回填包,准备导入回填文件,检查UTF-8 BOM、LF换行、表头、行数、issue_id集合,结构与对应原始包完全一致,缺行、多行、重复issue_id、表头缺失或换行异常,进入字段完整性检查,不得合并到正式账本,结构检查结果,结构失败时退回补正
+RIP-03,不可变字段检查,全部回填行,结构检查通过,比对issue_id、material_id、competition_no、year、question_no、issue_type、source_file、paper_pages、solution_pages、affected_item_ids,不可变字段与原始包一致，或差异有独立修订说明,不可变字段被无说明改动,允许记录差异说明，不能自动关闭,不得接受无证据的题号、年份、页码或题干边界改动,字段差异表,差异需单独裁决
+RIP-04,A组必填字段,A组76项,A组回填文件通过结构检查,检查actual_reviewer_or_code、actual_review_date、actual_review_decision、correction_required、post_review_evidence_location、post_review_status,全部必填且证据位置可追溯,任一必填为空，或证据位置不可定位,可进入A组关闭判断,不得声称A组已完成正式校对,A组完整性检查记录,缺项退回补填
+RIP-05,B组必填字段,B组22项,B组回填文件通过结构检查,检查actual_reviewer_or_code、actual_review_date、actual_review_decision、correction_required、post_review_evidence_location、post_review_status,全部必填且证据位置可追溯,任一必填为空，或证据位置不可定位,可进入B组关闭判断,不得声称B组公式终核完成,B组完整性检查记录,缺项退回补填
+RIP-06,C组必填字段,C组47项,C组回填文件通过结构检查,检查actual_reviewer_or_code、actual_review_date、actual_review_decision、figure_usable_for_manuscript、redraw_required、correction_required、final_figure_file_or_evidence_location、post_review_status,全部必填且最终图件或证据位置可定位,图件可用性、重绘决定或最终位置为空,可进入C组关闭判断,不得把候选图写成论文定稿图,C组完整性检查记录,缺项退回补填
+RIP-07,D组必填字段,D组9项,D组回填文件通过结构检查,检查actual_reviewer_or_code、actual_review_date、actual_review_decision、official_score_source_or_fig_boundary_confirmed、score_value_or_fig_boundary_statement、correction_required、final_evidence_location、post_review_status,全部必填且正式来源或边界证据可定位,来源确认、分值/边界说明或最终证据为空,可进入D组关闭判断,不得补造第35届分值或第42届第3题附录图号边界,D组完整性检查记录,缺项退回补填
+RIP-08,修订说明检查,全部回填行,correction_required为是,检查correction_summary和复核后证据位置,修订摘要具体，且新证据位置可定位,只写“已改”“同意”等无法追溯文本，或缺证据位置,允许进入人工裁决队列,不得直接覆盖题干、公式或图件文件,修订说明检查记录,需补充修订摘要
+RIP-09,无需修订检查,全部回填行,correction_required为否,检查post_review_evidence_location或final_evidence_location,有可追溯证据位置,证据位置为空或不可定位,可进入关闭判断,不得仅凭口头确认关闭,证据位置检查记录,缺证据则退回
+RIP-10,待核实保留,全部回填行,校对决定或post_review_status显示待核实/不能关闭,保留true_closure_status为未真实销项或待核实，不进入正式编码,待核实项不被关闭,待核实项被标为可关闭,同步阻塞理由和下一步补证动作,不得生成正式结果或统计,待核实保留清单,继续补证
+RIP-11,A/B关闭条件,A/B组文字公式项,A/B完整性检查通过,确认题干、答案公式、特殊符号、小问边界和证据摘录均通过或修订后通过,post_review_status显示可关闭，证据位置存在,仍有未解决OCR/公式/特殊符号问题,允许把相关issue标为真实销项候选,不得跳过正式评分者独立编码,A/B关闭候选表,进入整合QA
+RIP-12,C组关闭条件,C组图件项,C组完整性检查通过,确认图号、图注、关键标注、裁边、是否可用或是否重绘均有决定,final_figure_file_or_evidence_location存在且决定一致,图件不可用但无重绘方案，或候选图仍待核,允许把相关issue标为真实销项候选,不得把不可用图写入论文或附录,C组关闭候选表,进入整合QA
+RIP-13,D组关闭条件,D组分值/附属证据项,D组完整性检查通过,确认第35届分值来源或第42届第3题图号边界有正式证据,official_score_source_or_fig_boundary_confirmed为是且最终证据存在,未见正式来源却填写分值，或题解图边界仍不清,允许把相关issue标为真实销项候选,不得自行补分值、配分或图号边界,D组关闭候选表,进入整合QA
+RIP-14,冲突分级,全部回填行,发现字段、证据或决定不一致,按致命、重大、一般三级记录冲突,冲突等级、影响范围、责任字段和下一动作明确,冲突未分级或无处理动作,生成冲突清单,不得在冲突未解时关闭条目,冲突登记表,致命冲突优先处理
+RIP-15,致命冲突定义,全部回填行,出现无法追溯或直接影响正式编码的问题,issue_id错位、题号/年份无证据变化、证据文件缺失、真实校对人/日期缺失、分值无来源、图件误用,致命冲突均阻止关闭,致命冲突仍被标为关闭,保留待核实并退回补证,不得进入正式编码,致命冲突清单,退回或单独裁决
+RIP-16,重大冲突定义,全部回填行,出现影响解释但可补充的信息缺口,修订摘要过粗、图件可用性与重绘决定矛盾、证据位置不够具体、相关联问题未同步,重大冲突进入补充说明或人工裁决,重大冲突无说明直接通过,暂缓关闭或要求补充,不得写入论文定稿图表,重大冲突清单,补充后复查
+RIP-17,一般冲突定义,全部回填行,出现格式或轻微记录问题,日期格式、 reviewer code格式、标点、路径书写但可定位,一般冲突可修正后复查,格式问题导致不可追溯,修正记录并保留日志,不得静默修改,一般冲突清单,修正后复查
+RIP-18,同步更新顺序,通过整合QA的关闭候选,准备写回项目账本,先更新回填包副本/整合日志，再更新manual_review_checklist，再更新priority/closure/action/master，再更新PROJECT_STATUS/TASKS/CHANGELOG,每一步有diff和日志可追溯,跳过日志直接改账本,允许分批同步,不得一次混入正文或主张矩阵,同步步骤日志,一批一提交
+RIP-19,正式编码解锁规则,A/B组全部通过且C/D按用途处理,准备进入正式编码,A/B全部真实销项；C/D若未完成则相关图件、分值和案例用途冻结,正式编码输入只含已销项证据或明确排除项,A/B未完成却进入正式编码,允许启动正式评分者独立编码准备,不得生成正式统计结果,正式编码门禁表,进入G4正式编码准备QA
+RIP-20,正文使用规则,任何关闭候选,准备写入论文正文,正文只引用已关闭且证据位置明确的事实；内部预演仍需标注为内部准备,主张有证据等级和来源路径,把回填流程写成专家审查或教学效果,允许更新方法章材料质量说明,不得写显著性、问卷或课堂结论,正文边界检查表,正文修改需另设任务
+RIP-21,主张矩阵规则,涉及核心主张时,准备更新claim_evidence_matrix,仅在矩阵历史差异可隔离且证据等级有明确依据时单独任务处理,侧车或矩阵更新有独立QA,在本整合任务中直接改矩阵本体,保持矩阵隔离或另建侧车,不得升级E等级或状态,主张矩阵同步计划,单独任务处理
+RIP-22,Git提交规则,每批整合完成后,准备提交,只暂存本批整合日志、被同步账本和状态文件,提交范围可审查且不含无关历史改动,混入08_manuscript、00_originals或历史矩阵差异,中文提交信息说明批次和动作,不得使用破坏性命令,git status和diff --cached,一批一提交

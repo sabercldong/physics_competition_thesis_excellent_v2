@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL 人工终核回填整合协议
+
+- 新增 `03_corpus/manual_review_return_integration_protocol.md`，规定真实人工终核回填文件收回后的回收登记、结构检查、不可变字段核查、字段完整性、证据位置、冲突分级、关闭候选判定、整合QA、账本同步和Git提交流程；
+- 新增 `03_corpus/manual_review_return_integration_protocol_v1.csv`，形成22条可检查规则，覆盖A/B/C/D四组必填字段、关闭条件、待核实保留、正式编码解锁、正文使用、主张矩阵隔离和提交范围；
+- 明确A/B组未真实销项前不得进入正式编码，C组未完成前不得使用论文定稿图件，D组未完成前不得生成第35届分值统计或第42届第3题附属图件定稿；
+- 本任务只建立整合规则，不填写真实校对人、日期、决定、分值、图号边界或复核后证据位置，不关闭154项人工校对问题；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL-QA`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-ACTION-PLAN-QA 人工终核动作计划QA
 
 - 新增 `03_corpus/manual_review_closure_action_plan_qa.md`，说明人工终核动作计划的QA范围、15项检查结论、仍不能声称的内容和下一最小任务；
