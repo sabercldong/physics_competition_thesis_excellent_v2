@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-B-CLOSURE-PACKET B组真实人工终核回填包
+
+- 新增 `03_corpus/manual_review_b_closure_packet.md` 和 `03_corpus/manual_review_b_closure_packet_v1.csv`，为B组22项中风险公式与特殊符号问题生成真实人工终核回填入口；
+- 核对B组22项均为公式与特殊符号校对项，覆盖第35届8道题、第36届7道题和第39届7道题；
+- 22个公式核对表均已定位且存在，共挂接846条公式核对记录，页面证据图均继承自B1批次日志；
+- 回填表保留真实校对人、真实校对日期、校对决定、是否需修订、修订说明和复核后证据位置等空白栏位；本轮不代填、不关闭任何条目；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-B-CLOSURE-PACKET-QA`。
+
 ## 2026-07-19：G1-07-A-CLOSURE-PACKET-QA A组题目级校对单质检
 
 - 新增 `03_corpus/manual_review_a_material_closure_sheet_v1.csv`，将A组76项高风险OCR、公式与特殊符号问题合并为38行题目级校对单；
