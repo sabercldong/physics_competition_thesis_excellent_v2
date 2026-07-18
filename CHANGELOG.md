@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-GAP-QUEUE P1文献缺口可执行路线
+
+- 新增 `09_quality/no_return_reference_p1_gap_queue.md`，记录P1文献全文、理论边界、综述缺口、方法支撑、参考文献表闭环和主张补证路线的性质声明、总体结论、缺口类型分布、11项执行路线、可继续工作、当前不能继承或升级内容和下一最小任务；
+- 新增 `09_quality/no_return_reference_p1_gap_queue_v1.csv`，覆盖 `RCQ-07` 至 `RCQ-17` 11项P1队列，逐项登记路线ID、缺口家族、来源/材料、关联主张、当前状态、现有证据、允许用途、禁止用途、最小动作、解锁前输出、解锁条件、正文边界和禁写内容；
+- 将11项P1路线分为全文获取5项、主张补证4项、工作表闭环1项和矩阵侧车1项；
+- 明确SOLO、物理竞赛研究、内容分析/一致性方法、科学推理测评、工作版参考文献表、主张矩阵侧车和第五章教学转化材料均仍有未关闭缺口；
+- 明确本任务不获取新全文，不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改正式参考文献，不补造阅读结论、页码、专家意见、教师意见、学生数据或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-GAP-QUEUE-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P0-FINALCHECK-QA P0可引用来源复核单QA
 
 - 新增 `09_quality/no_return_reference_p0_finalcheck_qa.md`，记录P0定稿前复核单的QA性质、139项检查结论、检查分布、结构一致性、仍不能声称内容、保留风险和下一最小任务；
