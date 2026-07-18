@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-P1-PLAN P1正文门禁路线评估
+
+- 新增 `09_quality/g1_07_manuscript_boundary_p1_plan.md`，评估P1正文门禁补丁的应用路线和风险；
+- 新增 `09_quality/g1_07_manuscript_boundary_p1_plan.csv`，形成6项P1路线判断，覆盖PATCH-003、PATCH-007、PATCH-008、PATCH-009、PATCH-010和跨文件历史改动隔离；
+- 判断PATCH-003、PATCH-007、PATCH-008和PATCH-009四条正文P1句可进入下一轮安全应用，作用仅为强化占位、候选、待核实和不能形成正式结论的边界；
+- 判断PATCH-010主张矩阵覆盖建议暂缓，需另设独立任务处理 `09_quality/claim_evidence_matrix.csv`，避免混入历史未提交矩阵改动；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUSCRIPT-BOUNDARY-P1-APPLY-SAFE`。
+
 ## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-PATCH-QA P0正文门禁补丁QA
 
 - 新增 `09_quality/g1_07_manuscript_boundary_patch_qa.md`，检查P0人工终核门禁句是否落入第3章和第4章正确位置；
