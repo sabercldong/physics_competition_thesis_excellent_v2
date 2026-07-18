@@ -227,6 +227,7 @@
 - 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_application.csv` 和 `09_quality/g1_07_claim_matrix_p1_overlay_application.md`，将 `C3-01`、`C3-02`、`C4-01`、`C4-02`、`C5-01`、`C5-02` 和 `C2-06` 的当前矩阵状态、P1边界覆盖、拟更新字段、禁止升级边界和后续合并条件写入独立侧车；本轮继续不直接修改 `09_quality/claim_evidence_matrix.csv`，不升级任何主张状态或证据等级；
 - 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR-QA`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.csv`，完成14项QA检查，确认侧车CSV为UTF-8 BOM和LF换行、7条目标主张完整、来源覆盖表与当前矩阵行匹配、状态和证据等级均未升级、直接改矩阵字段均为“否”；`09_quality/claim_evidence_matrix.csv` 仍保持历史未提交差异隔离，侧车通过QA不等同于矩阵本体已合并；
 - 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-MERGE-READINESS`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.csv`，判断7条P1侧车覆盖当前不宜直接合并进 `09_quality/claim_evidence_matrix.csv`；理由是侧车已可引用且通过QA，而矩阵本体仍存在整块历史未提交差异，直接合并会扩大提交范围。本轮决定保持侧车引用，下一步转回正式编码前人工终核销项动作计划。
+- 完成 `G1-07-MANUAL-CLOSURE-ACTION-PLAN`：新增 `03_corpus/manual_review_closure_action_plan.md` 和 `03_corpus/manual_review_closure_action_plan_v1.csv`，将154项人工终核问题压缩为PHASE-0至PHASE-5的真实执行顺序；确认A组76项、B组22项、C组47项、D组9项，销项路线为文字/公式终核98项、图件终核或重绘47项、分值细则8项、解答放大图边界1项。真实校对人、日期、决定和复核后证据位置仍保持空白，本轮不关闭任何条目，不进入正式编码或正式结果分析。
 
 ## 关键阻塞项
 
@@ -241,4 +242,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-CLOSURE-ACTION-PLAN`：把154项人工终核回填包压缩为真实执行顺序、最小校对动作、回填字段和进入正式编码的判定门槛；继续不填写真实校对人、校对日期或校对决定。
+`G1-07-MANUAL-CLOSURE-ACTION-PLAN-QA`：检查动作计划是否覆盖154项、A/B/C/D计数是否与总索引一致、CSV是否为UTF-8 BOM和LF换行、真实回填栏是否全部空白，以及本轮是否未混入正文、原始文件或主张矩阵改动。

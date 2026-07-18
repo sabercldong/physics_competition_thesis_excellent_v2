@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-ACTION-PLAN 人工终核真实销项动作计划
+
+- 新增 `03_corpus/manual_review_closure_action_plan.md`，说明154项人工终核问题的执行阶段、分组计数、销项路线、必填回填字段和正式编码门槛；
+- 新增 `03_corpus/manual_review_closure_action_plan_v1.csv`，逐项列出154条待核问题的动作序号、PHASE阶段、A/B/C/D分组、回填包入口、QA文件、最小校对动作、必填字段和禁止声称边界；
+- 确认A组76项、B组22项、C组47项、D组9项，销项路线为文字/公式终核98项、图件终核或重绘47项、分值细则8项、解答放大图边界1项；
+- 真实校对人、真实校对日期、真实校对决定和复核后证据位置仍全部保持空白，本轮不关闭任何人工校对项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-ACTION-PLAN-QA`。
+
 ## 2026-07-19：G1-07-CLAIM-MATRIX-P1-OVERLAY-MERGE-READINESS 主张矩阵P1覆盖合并准备度判断
 
 - 新增 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.md`，判断7条P1侧车覆盖当前不宜直接合并进 `09_quality/claim_evidence_matrix.csv`；
