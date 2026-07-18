@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-PATCH-PLAN 无真实回填正文最小修订计划
+
+- 新增 `09_quality/g1_07_manuscript_boundary_patch_plan.md`，说明第3、4、5章和主张证据矩阵后续只需补入人工终核门禁来源句，不直接生成正式结果；
+- 新增 `09_quality/g1_07_manuscript_boundary_patch_plan.csv`，形成11条补丁计划，覆盖第三章3条、第四章3条、第五章3条、主张证据矩阵1条和跨文件历史改动隔离1条；
+- 将P0补丁聚焦为第三章语料门禁、第三章正式编码阻塞来源、第四章章首边界、第四章样本结构事实边界和第四章正式结果门槛；
+- 明确当前不直接修改 `08_manuscript/03_methods.md`、`04_results.md`、`05_cases_and_diagnosis.md` 或 `09_quality/claim_evidence_matrix.csv`，避免混入历史未提交正文和矩阵改动；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUSCRIPT-BOUNDARY-PATCH-APPLY-SAFE`。
+
 ## 2026-07-19：G1-07-NO-TRUE-REVIEW-MANUSCRIPT-BOUNDARY-MAP 无真实回填正文边界映射
 
 - 新增 `09_quality/g1_07_no_true_review_manuscript_boundary_map.md` 和 `09_quality/g1_07_no_true_review_manuscript_boundary_map.csv`，将人工终核准备报告中的无真实回填门禁映射到第3、4、5章和主张证据矩阵；
