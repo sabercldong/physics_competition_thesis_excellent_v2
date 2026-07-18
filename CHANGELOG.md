@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN 无真实回填推进路线
+
+- 新增 `03_corpus/manual_review_no_return_route_plan.md`，说明当前无真实人工终核回填副本时的总体判断、可继续推进事项、只能作为内部准备事项、必须冻结的正式产出和下一最小任务；
+- 新增 `03_corpus/manual_review_no_return_route_plan_v1.csv`，登记12条推进路线，覆盖真实回填接收准备、语料转写复核、文献理论核验、编码手册材料、正式编码、正式统计、案例图件、分值边界、主张矩阵、正文占位、复现结构和教学效果证据；
+- 明确文献与理论核验、数据包与复现结构、回填接收准备可继续推进，语料转写复核、编码手册材料和正文占位只能作为内部准备；
+- 明确正式A/B评分者编码、正式统计、典型案例图件定稿、第35届分值统计、第42届第3题附属图边界、主张矩阵升级和教学效果结论必须冻结；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN-QA`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK-QA 真实回填接收状态QA
 
 - 新增 `03_corpus/manual_review_return_intake_check_qa.md`，记录接收状态QA范围、63项检查结论、禁止声称内容和下一最小任务；

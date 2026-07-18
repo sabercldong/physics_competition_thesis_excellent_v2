@@ -235,6 +235,7 @@
 - 完成 `G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN-QA`：新增 `03_corpus/manual_review_return_integration_dry_run_qa.md` 和 `03_corpus/manual_review_return_integration_dry_run_qa_v1.csv`，完成61项QA检查；确认演练主表覆盖154项、154个唯一 `issue_id` 且与动作计划集合一致，A组76项、B组22项、C组47项、D组9项计数一致；协议步骤表覆盖22条连续唯一 `RIP-01` 至 `RIP-22` 规则；两张CSV均为UTF-8 BOM和LF换行，真实回填路径、冲突字段保持空白，关闭候选、正式编码放行、正文使用和主张矩阵更新均保持“否”，账本同步动作为“不执行：演练模板”。
 - 完成 `G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK`：新增 `03_corpus/manual_review_return_intake_check.md`、`03_corpus/manual_review_return_intake_status_v1.csv` 和 `03_corpus/manual_review_formal_coding_blocker_v1.csv`，检查当前项目是否存在真实人工终核回填副本；确认候选回填目录不存在，文件名检索仅发现空白回填包、协议、QA、动作计划、演练模板和评分者训练回填清单，未发现独立真实回填副本。A/B/C/D四组回填包的真实校对人、日期和决定字段均为0项填写，动作计划154项真实回填字段均为空；正式编码、正式统计、案例图件、分值统计、正文结果写作和主张矩阵升级继续阻断。
 - 完成 `G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK-QA`：新增 `03_corpus/manual_review_return_intake_check_qa.md` 和 `03_corpus/manual_review_return_intake_check_qa_v1.csv`，完成63项QA检查；确认接收状态登记8行、阻断说明6行均为UTF-8 BOM和LF换行，`INTAKE-01` 至 `INTAKE-08` 与 `BLOCK-01` 至 `BLOCK-06` 连续唯一；复算A/B/C/D回填包、动作计划和演练模板后，真实校对人、日期、决定、回填路径、冲突字段仍未填写，正式编码、正式统计、案例图件、分值统计、主张矩阵升级和正文结果章写作均保持“阻断”。
+- 完成 `G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN`：新增 `03_corpus/manual_review_no_return_route_plan.md` 和 `03_corpus/manual_review_no_return_route_plan_v1.csv`，在确认当前没有真实人工终核回填副本的前提下，形成12条无回填推进路线；明确文献与理论核验、数据包与复现结构、回填接收准备可继续推进，语料转写复核、编码手册材料和正文占位只能作为内部准备，正式A/B评分者编码、正式统计、典型案例图件定稿、第35届分值统计、第42届第3题附属图边界、主张矩阵升级和教学效果结论必须冻结。本任务不关闭154项人工校对问题，不释放正式编码或正文结果。
 
 ## 关键阻塞项
 
@@ -249,4 +250,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN`：在确认当前没有真实人工终核回填副本的前提下，制定不依赖真实回填的下一步推进路线，明确哪些材料只能作为内部准备、哪些任务可以继续做、哪些正式产出必须冻结。
+`G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN-QA`：检查无真实回填推进路线登记表和报告，确认CSV编码、行数、状态值、正式产出冻结边界、正文隔离和主张矩阵隔离均与当前阻断证据一致。
