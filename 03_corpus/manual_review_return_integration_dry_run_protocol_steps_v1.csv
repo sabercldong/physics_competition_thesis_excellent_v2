@@ -1,0 +1,23 @@
+﻿dry_run_step_id,rule_id,stage,scope,required_check,expected_dry_run_input,expected_dry_run_output,dry_run_status,blocking_if_failed,related_template_columns,note
+DRS-01,RIP-01,回收登记,全部回填文件,登记来源文件名、回收时间、回收人、对应组别、是否为原始回填副本,空白回填整合演练模板；不使用真实回填副本。,回收登记表或后续整合日志,待演练,直接覆盖原始空白包或无法说明来源,expected_return_copy_path; expected_return_file_name; return_copy_preserved_check,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-02,RIP-02,文件结构检查,A/B/C/D回填包,检查UTF-8 BOM、LF换行、表头、行数、issue_id集合,空白回填整合演练模板；不使用真实回填副本。,结构检查结果,待演练,缺行、多行、重复issue_id、表头缺失或换行异常,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-03,RIP-03,不可变字段检查,全部回填行,比对issue_id、material_id、competition_no、year、question_no、issue_type、source_file、paper_pages、solution_pages、affected_item_ids,空白回填整合演练模板；不使用真实回填副本。,字段差异表,待演练,不可变字段被无说明改动,immutable_fields_check_status,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-04,RIP-04,A组必填字段,A组76项,检查actual_reviewer_or_code、actual_review_date、actual_review_decision、correction_required、post_review_evidence_location、post_review_status,空白回填整合演练模板；不使用真实回填副本。,A组完整性检查记录,待演练,任一必填为空，或证据位置不可定位,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-05,RIP-05,B组必填字段,B组22项,检查actual_reviewer_or_code、actual_review_date、actual_review_decision、correction_required、post_review_evidence_location、post_review_status,空白回填整合演练模板；不使用真实回填副本。,B组完整性检查记录,待演练,任一必填为空，或证据位置不可定位,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-06,RIP-06,C组必填字段,C组47项,检查actual_reviewer_or_code、actual_review_date、actual_review_decision、figure_usable_for_manuscript、redraw_required、correction_required、final_figure_file_or_evidence_location、post_review_status,空白回填整合演练模板；不使用真实回填副本。,C组完整性检查记录,待演练,图件可用性、重绘决定或最终位置为空,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-07,RIP-07,D组必填字段,D组9项,检查actual_reviewer_or_code、actual_review_date、actual_review_decision、official_score_source_or_fig_boundary_confirmed、score_value_or_fig_boundary_statement、correction_required、final_evidence_location、post_review_status,空白回填整合演练模板；不使用真实回填副本。,D组完整性检查记录,待演练,来源确认、分值/边界说明或最终证据为空,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-08,RIP-08,修订说明检查,全部回填行,检查correction_summary和复核后证据位置,空白回填整合演练模板；不使用真实回填副本。,修订说明检查记录,待演练,只写“已改”“同意”等无法追溯文本，或缺证据位置,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-09,RIP-09,无需修订检查,全部回填行,检查post_review_evidence_location或final_evidence_location,空白回填整合演练模板；不使用真实回填副本。,证据位置检查记录,待演练,证据位置为空或不可定位,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-10,RIP-10,待核实保留,全部回填行,保留true_closure_status为未真实销项或待核实，不进入正式编码,空白回填整合演练模板；不使用真实回填副本。,待核实保留清单,待演练,待核实项被标为可关闭,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-11,RIP-11,A/B关闭条件,A/B组文字公式项,确认题干、答案公式、特殊符号、小问边界和证据摘录均通过或修订后通过,空白回填整合演练模板；不使用真实回填副本。,A/B关闭候选表,待演练,仍有未解决OCR/公式/特殊符号问题,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-12,RIP-12,C组关闭条件,C组图件项,确认图号、图注、关键标注、裁边、是否可用或是否重绘均有决定,空白回填整合演练模板；不使用真实回填副本。,C组关闭候选表,待演练,图件不可用但无重绘方案，或候选图仍待核,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-13,RIP-13,D组关闭条件,D组分值/附属证据项,确认第35届分值来源或第42届第3题图号边界有正式证据,空白回填整合演练模板；不使用真实回填副本。,D组关闭候选表,待演练,未见正式来源却填写分值，或题解图边界仍不清,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-14,RIP-14,冲突分级,全部回填行,按致命、重大、一般三级记录冲突,空白回填整合演练模板；不使用真实回填副本。,冲突登记表,待演练,冲突未分级或无处理动作,conflict_level; conflict_type; conflict_description; conflict_resolution_required,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-15,RIP-15,致命冲突定义,全部回填行,issue_id错位、题号/年份无证据变化、证据文件缺失、真实校对人/日期缺失、分值无来源、图件误用,空白回填整合演练模板；不使用真实回填副本。,致命冲突清单,待演练,致命冲突仍被标为关闭,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-16,RIP-16,重大冲突定义,全部回填行,修订摘要过粗、图件可用性与重绘决定矛盾、证据位置不够具体、相关联问题未同步,空白回填整合演练模板；不使用真实回填副本。,重大冲突清单,待演练,重大冲突无说明直接通过,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-17,RIP-17,一般冲突定义,全部回填行,日期格式、 reviewer code格式、标点、路径书写但可定位,空白回填整合演练模板；不使用真实回填副本。,一般冲突清单,待演练,格式问题导致不可追溯,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-18,RIP-18,同步更新顺序,通过整合QA的关闭候选,先更新回填包副本/整合日志，再更新manual_review_checklist，再更新priority/closure/action/master，再更新PROJECT_STATUS/TASKS/CHANGELOG,空白回填整合演练模板；不使用真实回填副本。,同步步骤日志,待演练,跳过日志直接改账本,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-19,RIP-19,正式编码解锁规则,A/B组全部通过且C/D按用途处理,A/B全部真实销项；C/D若未完成则相关图件、分值和案例用途冻结,空白回填整合演练模板；不使用真实回填副本。,正式编码门禁表,待演练,A/B未完成却进入正式编码,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-20,RIP-20,正文使用规则,任何关闭候选,正文只引用已关闭且证据位置明确的事实；内部预演仍需标注为内部准备,空白回填整合演练模板；不使用真实回填副本。,正文边界检查表,待演练,把回填流程写成专家审查或教学效果,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-21,RIP-21,主张矩阵规则,涉及核心主张时,仅在矩阵历史差异可隔离且证据等级有明确依据时单独任务处理,空白回填整合演练模板；不使用真实回填副本。,主张矩阵同步计划,待演练,在本整合任务中直接改矩阵本体,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
+DRS-22,RIP-22,Git提交规则,每批整合完成后,只暂存本批整合日志、被同步账本和状态文件,空白回填整合演练模板；不使用真实回填副本。,git status和diff --cached,待演练,混入08_manuscript、00_originals或历史矩阵差异,dry_run_note,本步骤只验证协议能否落表执行，不执行真实关闭或账本同步。
