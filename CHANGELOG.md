@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT 人工校对真实销项准备链阶段收束
+
+- 新增 `03_corpus/manual_review_waiting_room_closeout.md`，记录人工校对真实销项准备链的性质声明、总体结论、已完成等待室成果、可继续推进的准备工作、必须等待真实材料的动作、当前不能写入论文正文的结论、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_waiting_room_closeout_v1.csv`，以10行收束总盘点、总索引、A组首批材料包、A组接收登记、B组等待、C组等待、D组等待、RIP协议、可继续动作和冻结动作；
+- 确认总行动计划与总索引均覆盖154项人工终核问题，组别计数为A组76项、B组22项、C组47项、D组9项；
+- 确认A组首批优先包38个题目级材料包覆盖76项A组OCR/公式问题，首批包QA 52项通过，A组接收登记QA 89项通过；
+- 确认剩余B/C/D接收登记78行，其中B组22项、C组47项、D组9项，剩余登记QA 278项通过；
+- 确认所有真实回填字段仍为空，当前未创建 `03_corpus/manual_review_returns/`，全部保持“不放行”；
+- 明确没有真实回填副本时只能继续等待室QA、接收模板、冲突登记模板、正式编码前门禁草案、正文禁写边界和不依赖真实回填的文献/方法边界维护；
+- 明确不得填写真实校对人、日期、决定和证据位置，不得关闭A/B/C/D任一人工终核问题，不得放行正式编码、正式统计、正文结果写作或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT-QA`。
+
 ## 2026-07-19：G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER-QA 剩余B/C/D真实回填接收登记QA
 
 - 新增 `03_corpus/manual_review_remaining_return_handoff_register_qa.md`，记录剩余B/C/D真实回填接收登记QA的性质声明、278项检查结论、检查分布、已确认一致性、仍不能声称内容、保留风险、下一最小任务和输出边界；
