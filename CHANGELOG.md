@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-TEMPLATE P1材料包空白回填模板
+
+- 新增 `09_quality/no_return_reference_p1_backfill_template.md`，记录P1材料包空白回填模板的性质声明、总体结论、模板覆盖分布、预留回填字段、11项回填入口、回填规则、当前不能声称内容和下一最小任务；
+- 新增 `09_quality/no_return_reference_p1_backfill_template_v1.csv`，覆盖11项P1材料包，逐项继承材料包ID、路线ID、上游RCQ、来源、关联主张、既有材料入口、核心缺失材料、最小动作、解锁条件、允许工作、禁止事项和禁写边界；
+- 为每行预留20个真实回填字段，包括全文获取渠道、版本或副本定位、页码或章节、阅读笔记、主张支持、引用决定、矩阵合并决定、参考文献决定、正文使用决定、第五章材料类型、同意与匿名化状态、附件路径、放行决定和剩余风险；
+- 确认11项模板均为“空白模板：待真实回填”，真实回填字段当前全部留空，24个既有材料入口文件路径缺失0项，11项全部保持“不放行”；
+- 明确本任务不获取新全文，不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改 `02_literature/references.bib`，不补造页码、阅读结论、专家意见、教师/课堂材料或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-TEMPLATE-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-EVIDENCE-PACKET-INDEX-QA P1材料包索引QA
 
 - 新增 `09_quality/no_return_reference_p1_evidence_packet_index_qa.md`，记录P1材料包索引QA的性质声明、110项检查结论、分类复核、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
