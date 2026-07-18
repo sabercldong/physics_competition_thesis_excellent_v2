@@ -1,0 +1,76 @@
+﻿check_id,check_item,expected,observed,result,evidence,risk_after_check,next_action
+QA-01,输入文件存在：03_corpus/return_intake_folder_protocol.md,文件存在,True,通过,03_corpus/return_intake_folder_protocol.md,缺文件会使QA依据不足。,无需处理
+QA-02,输入文件存在：03_corpus/manual_review_return_intake_register_template_v1.csv,文件存在,True,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-03,输入文件存在：03_corpus/manual_review_return_intake_folder_rules_v1.csv,文件存在,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-04,输入文件存在：03_corpus/no_return_material_queue_v1.csv,文件存在,True,通过,03_corpus/no_return_material_queue_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-05,输入文件存在：03_corpus/manual_review_return_intake_status_v1.csv,文件存在,True,通过,03_corpus/manual_review_return_intake_status_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-06,输入文件存在：03_corpus/manual_review_formal_coding_blocker_v1.csv,文件存在,True,通过,03_corpus/manual_review_formal_coding_blocker_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-07,输入文件存在：03_corpus/manual_review_return_integration_protocol_v1.csv,文件存在,True,通过,03_corpus/manual_review_return_integration_protocol_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-08,输入文件存在：03_corpus/no_return_material_queue_qa_v1.csv,文件存在,True,通过,03_corpus/no_return_material_queue_qa_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-09,输入文件存在：03_corpus/manual_review_return_intake_check_qa_v1.csv,文件存在,True,通过,03_corpus/manual_review_return_intake_check_qa_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-10,输入文件存在：03_corpus/manual_review_return_integration_protocol_qa_v1.csv,文件存在,True,通过,03_corpus/manual_review_return_integration_protocol_qa_v1.csv,缺文件会使QA依据不足。,无需处理
+QA-11,CSV编码换行：03_corpus/manual_review_return_intake_register_template_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; CRLF=False; CR_ONLY=False; LF=True,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,编码或换行异常会影响跨平台读取。,无需处理
+QA-12,CSV编码换行：03_corpus/manual_review_return_intake_folder_rules_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; CRLF=False; CR_ONLY=False; LF=True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,编码或换行异常会影响跨平台读取。,无需处理
+QA-13,CSV编码换行：03_corpus/return_intake_folder_prep_qa_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; CRLF=False; CR_ONLY=False; LF=True,通过,03_corpus/return_intake_folder_prep_qa_v1.csv,编码或换行异常会影响跨平台读取。,无需处理
+QA-14,登记模板字段,17个指定字段,"['receipt_id', 'intake_date', 'received_by', 'source_group', 'source_packet', 'source_filename', 'stored_copy_path', 'sha256', 'file_size_bytes', 'reviewer_code_claimed', 'review_date_claimed', 'decision_fields_present', 'conflict_status', 'intake_status', 'linked_protocol_rule', 'next_action', 'notes']",通过,03_corpus/manual_review_return_intake_register_template_v1.csv,字段缺失会导致真实接收时无法登记校验。,无需处理
+QA-15,登记模板行数,5行模板：A/B/C/D/MIXED,5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,行数异常可能混入真实或缺少组别模板。,无需处理
+QA-16,登记模板receipt_id集合,TEMPLATE-A/B/C/D/MIXED,"['TEMPLATE-A', 'TEMPLATE-B', 'TEMPLATE-C', 'TEMPLATE-D', 'TEMPLATE-MIXED']",通过,03_corpus/manual_review_return_intake_register_template_v1.csv,模板ID异常会影响后续引用。,无需处理
+QA-17,登记模板source_group集合,A/B/C/D/MIXED,"['A', 'B', 'C', 'D', 'MIXED']",通过,03_corpus/manual_review_return_intake_register_template_v1.csv,组别缺失会影响A/B/C/D接收路径。,无需处理
+QA-18,登记模板真实字段空白：intake_date,5/5为空,5/5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,真实字段不空可能被误认为已收到回填。,无需处理
+QA-19,登记模板真实字段空白：received_by,5/5为空,5/5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,真实字段不空可能被误认为已收到回填。,无需处理
+QA-20,登记模板真实字段空白：source_filename,5/5为空,5/5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,真实字段不空可能被误认为已收到回填。,无需处理
+QA-21,登记模板真实字段空白：stored_copy_path,5/5为空,5/5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,真实字段不空可能被误认为已收到回填。,无需处理
+QA-22,登记模板真实字段空白：sha256,5/5为空,5/5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,真实字段不空可能被误认为已收到回填。,无需处理
+QA-23,登记模板真实字段空白：file_size_bytes,5/5为空,5/5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,真实字段不空可能被误认为已收到回填。,无需处理
+QA-24,登记模板真实字段空白：reviewer_code_claimed,5/5为空,5/5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,真实字段不空可能被误认为已收到回填。,无需处理
+QA-25,登记模板真实字段空白：review_date_claimed,5/5为空,5/5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,真实字段不空可能被误认为已收到回填。,无需处理
+QA-26,登记模板接收状态,全部为模板：未收到,['模板：未收到'],通过,03_corpus/manual_review_return_intake_register_template_v1.csv,状态越界会误放行真实接收。,无需处理
+QA-27,登记模板决定字段状态,全部未检查：未收到真实回填,['未检查：未收到真实回填'],通过,03_corpus/manual_review_return_intake_register_template_v1.csv,决定字段不应伪造为已检查。,无需处理
+QA-28,登记模板冲突状态,全部未检查：未收到真实回填,['未检查：未收到真实回填'],通过,03_corpus/manual_review_return_intake_register_template_v1.csv,冲突状态不应伪造为无冲突。,无需处理
+QA-29,登记模板备注边界,每行声明模板不代表已收到,5,通过,03_corpus/manual_review_return_intake_register_template_v1.csv,模板边界不足会造成误读。,无需处理
+QA-30,登记模板关联RIP规则可定位,所有linked_protocol_rule均存在于RIP表,[],通过,03_corpus/manual_review_return_intake_register_template_v1.csv; 03_corpus/manual_review_return_integration_protocol_v1.csv,规则引用断链会影响后续整合。,无需处理
+QA-31,目录规则表字段,8个指定字段,"['rule_id', 'rule_area', 'rule_description', 'required_action', 'forbidden_action', 'evidence_required', 'applies_to', 'release_effect']",通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,字段缺失会导致规则不可检查。,无需处理
+QA-32,目录规则表行数,12条规则,12,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,规则数量异常会遗漏接收环节。,无需处理
+QA-33,目录规则ID连续,RIF-01至RIF-12,"['RIF-01', 'RIF-12']",通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,规则ID不连续会影响引用。,无需处理
+QA-34,目录规则ID唯一,12个唯一rule_id,12,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,重复ID会影响追踪。,无需处理
+QA-35,目录规则释放状态,全部不放行,['不放行'],通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,规则表不得释放正式产出。,无需处理
+QA-36,目录规则覆盖：目录创建,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-37,目录规则覆盖：副本保护,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-38,目录规则覆盖：文件命名,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-39,目录规则覆盖：登记字段,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-40,目录规则覆盖：结构检查,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-41,目录规则覆盖：不可变字段,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-42,目录规则覆盖：隔离处理,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-43,目录规则覆盖：组别字段,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-44,目录规则覆盖：正式产出门禁,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-45,目录规则覆盖：提交边界,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-46,目录规则覆盖：敏感信息,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-47,目录规则覆盖：整合触发,规则表包含该环节,True,通过,03_corpus/manual_review_return_intake_folder_rules_v1.csv,缺少该环节会使真实接收流程不完整。,无需处理
+QA-48,规范报告包含：性质声明,包含“性质声明”,True,通过,03_corpus/return_intake_folder_protocol.md,规范报告缺少关键章节。,无需处理
+QA-49,规范报告包含：推荐目录结构,包含“推荐目录结构”,True,通过,03_corpus/return_intake_folder_protocol.md,规范报告缺少关键章节。,无需处理
+QA-50,规范报告包含：文件命名规则,包含“文件命名规则”,True,通过,03_corpus/return_intake_folder_protocol.md,规范报告缺少关键章节。,无需处理
+QA-51,规范报告包含：回收登记字段,包含“回收登记字段”,True,通过,03_corpus/return_intake_folder_protocol.md,规范报告缺少关键章节。,无需处理
+QA-52,规范报告包含：接收流程,包含“接收流程”,True,通过,03_corpus/return_intake_folder_protocol.md,规范报告缺少关键章节。,无需处理
+QA-53,规范报告包含：冻结边界,包含“当前冻结边界”,True,通过,03_corpus/return_intake_folder_protocol.md,规范报告缺少关键章节。,无需处理
+QA-54,规范报告包含：下一任务,包含“G1-07-RETURN-INTAKE-FOLDER-PREP-QA”,True,通过,03_corpus/return_intake_folder_protocol.md,规范报告缺少关键章节。,无需处理
+QA-55,规范报告边界：不创建目录边界,包含“不创建真实回填目录”,True,通过,03_corpus/return_intake_folder_protocol.md,边界缺失会导致后续误用。,无需处理
+QA-56,规范报告边界：不登记虚构回填,包含“不登记虚构回填”,True,通过,03_corpus/return_intake_folder_protocol.md,边界缺失会导致后续误用。,无需处理
+QA-57,规范报告边界：不关闭154项,包含“不关闭154项”,True,通过,03_corpus/return_intake_folder_protocol.md,边界缺失会导致后续误用。,无需处理
+QA-58,规范报告边界：不释放正式编码,包含“不释放正式编码”,True,通过,03_corpus/return_intake_folder_protocol.md,边界缺失会导致后续误用。,无需处理
+QA-59,规范报告边界：保护空白包,包含“不得覆盖A/B/C/D空白回填包”,True,通过,03_corpus/return_intake_folder_protocol.md,边界缺失会导致后续误用。,无需处理
+QA-60,规范报告边界：主张矩阵隔离,包含“09_quality/claim_evidence_matrix.csv”,True,通过,03_corpus/return_intake_folder_protocol.md,边界缺失会导致后续误用。,无需处理
+QA-61,规范报告边界：正文隔离,包含“08_manuscript/”,True,通过,03_corpus/return_intake_folder_protocol.md,边界缺失会导致后续误用。,无需处理
+QA-62,NQ-01存在,队列表包含NQ-01,True,通过,03_corpus/no_return_material_queue_v1.csv,缺少NQ-01会使本任务来源不足。,无需处理
+QA-63,NQ-01下一任务一致,recommended_next_task为G1-07-RETURN-INTAKE-FOLDER-PREP,G1-07-RETURN-INTAKE-FOLDER-PREP,通过,03_corpus/no_return_material_queue_v1.csv,上游任务指向不一致。,无需处理
+QA-64,NQ-01产物匹配,artifact_to_create_next指向接收目录规范和回收登记模板,真实回填接收目录规范和回收登记模板,通过,03_corpus/no_return_material_queue_v1.csv,产物与上游队列不匹配。,无需处理
+QA-65,NQ-01不放行,formal_release_status=不放行,不放行,通过,03_corpus/no_return_material_queue_v1.csv,上游队列不得误放行。,无需处理
+QA-66,接收状态行数,8行,8,通过,03_corpus/manual_review_return_intake_status_v1.csv,接收状态依据异常。,无需处理
+QA-67,接收状态仍未收到,true_return_copy_found全部为否,['否'],通过,03_corpus/manual_review_return_intake_status_v1.csv,若发现真实回填，本QA边界需重做。,无需处理
+QA-68,接收状态未解锁正式产出,8项均为阻断、未通过或不得使用语境,8,通过,03_corpus/manual_review_return_intake_status_v1.csv,接收状态不得误解锁正式编码。,无需处理
+QA-69,正式阻断行数,6行,6,通过,03_corpus/manual_review_formal_coding_blocker_v1.csv,阻断依据异常。,无需处理
+QA-70,正式阻断状态,6项均为阻断,['阻断'],通过,03_corpus/manual_review_formal_coding_blocker_v1.csv,正式产出不得误放行。,无需处理
+QA-71,候选真实回填目录未创建：03_corpus/manual_review_returns,目录不存在,False,通过,03_corpus/manual_review_returns,本任务不得创建真实回填目录。,无需处理
+QA-72,候选真实回填目录未创建：03_corpus/returns,目录不存在,False,通过,03_corpus/returns,本任务不得创建真实回填目录。,无需处理
+QA-73,候选真实回填目录未创建：03_corpus/returned,目录不存在,False,通过,03_corpus/returned,本任务不得创建真实回填目录。,无需处理
+QA-74,候选真实回填目录未创建：03_corpus/manual_review_return_copies,目录不存在,False,通过,03_corpus/manual_review_return_copies,本任务不得创建真实回填目录。,无需处理
+QA-75,越界肯定表述扫描,不得出现正向放行或完成表述,[],通过,三份接收准备文件,越界表述会污染项目证据边界。,无需处理

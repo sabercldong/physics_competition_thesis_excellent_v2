@@ -84,6 +84,7 @@
 5. 按 `manual_review_return_integration_protocol_v1.csv` 的 `RIP-01` 至 `RIP-22` 执行结构检查、不可变字段检查、字段完整性检查、冲突分级和关闭候选判定。
 6. 只有通过整合QA的条目，才可另设任务同步 `manual_review_checklist.csv`、优先队列、销项计划、动作计划、总索引、`PROJECT_STATUS.md`、`TASKS.md` 和 `CHANGELOG.md`。
 7. 正式编码、正式统计、论文正文结果和主张矩阵更新必须另设任务，不得混入回填接收提交。
+8. `08_manuscript/` 正文文件和 `09_quality/claim_evidence_matrix.csv` 必须继续隔离；接收登记或接收QA不能直接修改正文主张、证据等级或结论状态。
 
 ## 当前冻结边界
 

@@ -240,6 +240,7 @@
 - 完成 `G1-07-NO-RETURN-MATERIAL-QUEUE`：新增 `03_corpus/no_return_material_queue.md` 和 `03_corpus/no_return_material_queue_v1.csv`，在无真实回填条件下建立14项待核材料分层队列；其中L1内部可启动5项、L2文献/复现可启动3项、L3边界维护2项、L4等待真实回填4项；10项为“不放行”，4项为“冻结”。队列明确接收目录准备、语料路径QA、C组候选图件索引、D组分值/附属图缺口、G2全文阅读、参考文献主张核验、评分者交接包QA、复现包缺口、正文占位、主张矩阵侧车和正式产出等待项的下一动作；本任务不关闭154项人工校对问题，不写正文结果，不修改主张矩阵。
 - 完成 `G1-07-NO-RETURN-MATERIAL-QUEUE-QA`：新增 `03_corpus/no_return_material_queue_qa.md` 和 `03_corpus/no_return_material_queue_qa_v1.csv`，完成43项QA检查；确认队列表为UTF-8 BOM和LF换行，14条 `NQ-01` 至 `NQ-14` 连续唯一，L1内部可启动5项、L2文献/复现可启动3项、L3边界维护2项、L4等待真实回填4项；10项为“不放行”，4项为“冻结”，未出现正式放行状态；14项均填写禁止事项、解锁条件、下一任务和正文边界，上游路线QA、接收登记和正式阻断表均保持一致。
 - 完成 `G1-07-RETURN-INTAKE-FOLDER-PREP`：新增 `03_corpus/return_intake_folder_protocol.md`、`03_corpus/manual_review_return_intake_register_template_v1.csv` 和 `03_corpus/manual_review_return_intake_folder_rules_v1.csv`，按照 `NQ-01` 建立真实回填接收目录规范、未来文件命名规则、回收登记字段和12条目录/接收规则；当前不创建真实回填目录，不登记真实回填副本，不填写真实校对人、日期或决定，不关闭154项，也不释放正式编码、正式统计、论文结果章或主张矩阵升级。
+- 完成 `G1-07-RETURN-INTAKE-FOLDER-PREP-QA`：新增 `03_corpus/return_intake_folder_prep_qa.md` 和 `03_corpus/return_intake_folder_prep_qa_v1.csv`，完成75项QA检查；确认接收登记模板和目录规则表均为UTF-8 BOM和LF换行，登记模板5行均为“模板：未收到”，真实文件名、副本路径、校验值、接收日期、接收人、校对人和校对日期均为空；12条 `RIF-01` 至 `RIF-12` 规则连续唯一且全部“不放行”；候选真实回填目录仍未创建，上游接收状态仍未收到真实回填，正式阻断表6项均保持“阻断”。
 
 ## 关键阻塞项
 
@@ -254,4 +255,4 @@
 
 ## 下一任务
 
-`G1-07-RETURN-INTAKE-FOLDER-PREP-QA`：检查真实回填接收目录规范、接收登记模板和目录规则表是否与 `NQ-01`、接收检查、正式阻断表和回填整合协议一致，确认没有登记真实回填、没有创建真实回填目录、没有关闭154项、没有释放正式编码。
+`G1-07-NO-RETURN-CORPUS-PATH-QA`：按照无真实回填队列 `NQ-02`，检查转写稿、公式核对表、页面证据图、候选图和索引路径是否可定位，整理断链和边界疑点；该任务仍不得写成正式人工终核。

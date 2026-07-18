@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-RETURN-INTAKE-FOLDER-PREP-QA 真实回填接收目录准备QA
+
+- 新增 `03_corpus/return_intake_folder_prep_qa.md`，记录真实回填接收目录规范、登记模板和目录规则表的QA范围、75项检查结论、仍不能说明的内容和下一最小任务；
+- 新增 `03_corpus/return_intake_folder_prep_qa_v1.csv`，逐项检查输入文件存在性、CSV编码换行、登记模板字段、模板行数、真实字段空白状态、RIP规则引用、目录规则ID、释放状态、关键环节覆盖、候选目录未创建、上游队列、接收状态、正式阻断和越界表述；
+- 确认接收登记模板5行均为“模板：未收到”，真实文件名、副本路径、校验值、文件大小、接收日期、接收人、校对人和校对日期均为空；
+- 确认目录规则表12条 `RIF-01` 至 `RIF-12` 连续唯一，释放状态全部为“不放行”；候选真实回填目录仍未创建；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-CORPUS-PATH-QA`。
+
 ## 2026-07-19：G1-07-RETURN-INTAKE-FOLDER-PREP 真实回填接收目录准备
 
 - 新增 `03_corpus/return_intake_folder_protocol.md`，规定未来真实人工终核回填副本的推荐接收目录、文件命名规则、登记字段、接收流程、整合触发条件和当前冻结边界；
