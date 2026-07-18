@@ -270,6 +270,7 @@
 - 完成 `G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER-QA`：新增 `03_corpus/manual_review_remaining_return_handoff_register_qa.md` 和 `03_corpus/manual_review_remaining_return_handoff_register_qa_v1.csv`，完成278项QA检查且全部通过；确认剩余登记表78行、B组22项、C组47项、D组9项、`RPH-REM-001` 至 `RPH-REM-078` 连续唯一，规则表14条、`RPHR-REM-01` 至 `RPHR-REM-14` 连续唯一；登记表与行动计划、总索引和B/C/D销项包的issue集合一致，复合证据路径已按分号拆分检查且均可定位。真实接收字段和观察到的回填结果字段均为空，全部保持“未真实销项”“不放行”，正式编码、正式统计、正文使用和主张矩阵更新均为“否”；本QA不创建真实回填目录，不关闭任何条目，不放行论文正文写作。
 - 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT`：新增 `03_corpus/manual_review_waiting_room_closeout.md` 和 `03_corpus/manual_review_waiting_room_closeout_v1.csv`，对人工校对真实销项准备链进行阶段收束；确认总行动计划与总索引均覆盖154项人工终核问题，A组76项已压缩为38个题目级首批材料包并完成接收登记与QA，B组22项、C组47项和D组9项已完成剩余接收登记与QA。收束表10行列明总盘点、总索引、A组首批、A组接收、B/C/D等待、RIP协议、可继续动作和冻结动作；所有真实回填字段仍为空，全部保持“不放行”。本任务不创建真实回填目录，不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
 - 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT-QA`：新增 `03_corpus/manual_review_waiting_room_closeout_qa.md` 和 `03_corpus/manual_review_waiting_room_closeout_qa_v1.csv`，完成121项QA检查且全部通过；确认收束表10行、`MRWC-01` 至 `MRWC-10` 连续，层级顺序完整；总行动计划和总索引均覆盖154项，组别计数为A组76项、B组22项、C组47项、D组9项。A组首批38个题目级材料包覆盖76项，首批包QA 52项通过、A组接收登记QA 89项通过；B/C/D剩余登记78行，剩余登记QA 278项通过。真实回填字段均为空，全部保持“不放行”，未创建真实回填目录；本QA不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
+- 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION`：新增 `03_corpus/manual_review_waiting_room_route_decision.md` 和 `03_corpus/manual_review_waiting_room_route_decision_v1.csv`，建立5行等待室后续路线决策；确认路线A（真实材料补证入口）在未收到真实回填前保持条件冻结，路线B（不依赖真实回填的文献/方法/正文边界准备入口）为当前推荐执行路线，同时建立路线切换门禁、正文与主张矩阵保护门禁和当前执行决议。当前真实回填字段非空数0，未创建 `03_corpus/manual_review_returns/`，全部保持“不放行”；本任务不关闭任何人工终核条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
 
 ## 关键阻塞项
 
@@ -284,4 +285,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION`：在等待真实回填的前提下，决定下一步走“继续真实材料补证入口”还是“转向不依赖真实回填的文献/方法/正文边界准备入口”，并为两条路线建立可执行任务分界。
+`G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION-QA`：检查本路线决策表和报告，确认路线状态、触发条件、禁止事项、放行门禁、真实回填空白保护和下一任务均准确。

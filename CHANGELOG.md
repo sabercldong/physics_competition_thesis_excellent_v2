@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION 人工校对等待室后续路线决策
+
+- 新增 `03_corpus/manual_review_waiting_room_route_decision.md`，记录人工校对等待室后续路线决策的性质声明、当前证据状态、路线决策、路线A真实材料补证入口、路线B不依赖真实回填的准备入口、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_waiting_room_route_decision_v1.csv`，建立5行路线决策表，覆盖路线A、路线B、路线切换门禁、正文与主张矩阵保护门禁和当前执行决议；
+- 确认当前执行决议为“执行路线B，路线A保留待触发”；
+- 确认路线A在未收到真实回填副本、真实校对人或代号、真实校对日期、审查决定和可定位证据位置前保持条件冻结；
+- 确认路线B当前只允许推进文献/方法/正文边界准备、门禁、索引、模板和待核清单，不允许产出正式编码、正式统计或论文结果结论；
+- 确认A组首批接收登记和B/C/D剩余接收登记中的真实回填字段非空数为0，当前未创建 `03_corpus/manual_review_returns/`；
+- 明确本任务不关闭任何人工终核条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION-QA`。
+
 ## 2026-07-19：G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT-QA 人工校对真实销项准备链阶段收束QA
 
 - 新增 `03_corpus/manual_review_waiting_room_closeout_qa.md`，记录人工校对真实销项准备链阶段收束QA的性质声明、121项检查结论、检查分布、已确认一致性、仍不能声称内容、下一最小任务和输出边界；
