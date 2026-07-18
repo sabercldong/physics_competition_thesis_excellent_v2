@@ -274,6 +274,7 @@
 - 完成 `G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION-QA`：新增 `03_corpus/manual_review_waiting_room_route_decision_qa.md` 和 `03_corpus/manual_review_waiting_room_route_decision_qa_v1.csv`，完成161项QA检查且全部通过；确认路线决策表5行、`MRWRD-01` 至 `MRWRD-05` 连续唯一，路线A保持“条件冻结：等待真实回填”，路线B保持“当前推荐执行”，路线切换门禁和正文与主张矩阵保护门禁均已启用，当前执行决议为“执行路线B，路线A保留待触发”。A组和B/C/D接收登记中的真实回填字段非空数0，当前未创建 `03_corpus/manual_review_returns/`；所有路线均保持“不放行”，正文结果写作、正式编码、正式统计和主张矩阵升级仍被禁止。
 - 完成 `G1-07-ROUTE-B-TASK-BOUNDARY`：新增 `03_corpus/route_b_task_boundary.md` 和 `03_corpus/route_b_task_boundary_v1.csv`，建立14项路线B不依赖真实回填的任务分界；其中“可继续准备”6项、“仅内部准备”4项、“条件冻结”3项、“禁止”1项。分界覆盖路线B总入口、正文禁写边界维护、文献核验路线、复现包结构与数据字典准备、正式编码前门禁草案、主张矩阵侧车隔离、C组候选图件索引、D组分值与附属图缺口、真实回填接收准备、正式A/B评分者独立编码、正式统计、教师/问卷/课堂证据、初稿不可继承结果和路线切换处理；全部保持不放行正式结果或冻结/禁止状态，不修改正文、主张矩阵、参考文献表或原始文件，不创建真实回填目录。
 - 完成 `G1-07-ROUTE-B-TASK-BOUNDARY-QA`：新增 `03_corpus/route_b_task_boundary_qa.md` 和 `03_corpus/route_b_task_boundary_qa_v1.csv`，完成334项QA检查且全部通过；确认路线B分界表14行、`RBTB-01` 至 `RBTB-14` 连续唯一，四类分界计数为“可继续准备”6项、“仅内部准备”4项、“条件冻结”3项、“禁止”1项。所有分界项的释放状态均为“不放行”、冻结或禁止，正文状态均保持禁写，主张矩阵状态均不得升级；证据依据路径缺失0项，当前未创建 `03_corpus/manual_review_returns/`。本QA不修改正文、主张矩阵、参考文献表或原始文件，不放行正式编码、正式统计、论文结果章或教学效果结论。
+- 完成 `G1-07-MISSING-MATERIALS-AGENT-HANDOFF`：新增 `09_quality/missing_materials_agent_handoff.md` 和 `09_quality/missing_materials_agent_handoff_v1.csv`，为其他智能体建立12项缺失材料交接任务；其中P0 5项、P1 6项、P2 1项。交接范围覆盖学校格式与提交规则、154项人工校对真实回填、正式评分者编码、正式统计与结果复现、文献全文与引用核验、真实专家/导师/竞赛教师审查、教师访谈、问卷资料、课堂/教学实验/学生作品、C组论文图件定稿、D组分值与附属图、最终题目与研究路线确认。每项均明确缺失材料、必要输入、预期交付、验收标准、禁止事项和交付后状态；本任务只说明缺口和委派边界，不把任何缺失材料视为已补齐。
 
 ## 关键阻塞项
 
@@ -288,4 +289,4 @@
 
 ## 下一任务
 
-`G1-07-ROUTE-B-METHOD-MATERIAL-INDEX`：在路线B允许范围内，整理方法章可写素材索引，区分“可以写入方法章的项目流程与证据管理说明”和“必须继续占位/禁写的结果性内容”。
+`G1-07-MISSING-MATERIALS-AGENT-HANDOFF-QA`：检查缺失材料智能体交接清单是否覆盖关键阻塞项、字段完整、禁止事项清楚、路径可定位，并确认没有把缺失材料写成已完成证据。
