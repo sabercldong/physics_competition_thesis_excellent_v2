@@ -1,0 +1,16 @@
+﻿check_id,check_item,expected,observed,result,evidence,risk_after_check,next_action
+QA-01,动作计划CSV编码与换行,UTF-8 BOM；LF换行；无CRLF/CR,BOM=True；CRLF=False；CR=False,通过,03_corpus/manual_review_closure_action_plan_v1.csv,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,继续保持CSV为UTF-8 BOM和LF。
+QA-02,动作计划行数,154行,154,通过,动作计划CSV行数,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,若行数变化，需追溯上游待核清单。
+QA-03,问题ID唯一性,154个唯一issue_id,154,通过,issue_id去重计数,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,不得出现重复销项动作。
+QA-04,与总索引问题集一致,动作计划issue_id集合等于总索引,True,通过,manual_review_closure_packet_master_index_v1.csv,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,不一致时以总索引追查漏项或多项。
+QA-05,与真实销项计划问题集一致,动作计划issue_id集合等于销项计划,True,通过,manual_review_closure_plan_v1.csv,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,不一致时暂停使用动作计划。
+QA-06,与优先队列问题集一致,动作计划issue_id集合等于优先队列,True,通过,manual_review_priority_followup.csv,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,不一致时重新生成动作顺序。
+QA-07,A/B/C/D分组计数,A=76；B=22；C=47；D=9,"{'A': 76, 'B': 22, 'C': 47, 'D': 9}",通过,动作计划CSV group列,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,正式编码前必须优先处理A/B组。
+QA-08,销项路线计数,TEXT_FORMULA=98；FIG=47；SCORE=8；SOLFIG=1,"{'TEXT_FORMULA_FINAL_REVIEW': 98, 'FIG_FINAL_REVIEW_OR_REDRAW': 47, 'SCORE_RUBRIC_REQUIRED': 8, 'SOLFIG_APPENDIX_BOUNDARY_REQUIRED': 1}",通过,动作计划CSV closure_route列,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,路线不一致会影响后续材料分配。
+QA-09,建议批次计数,BATCH-01=76；BATCH-02=22；BATCH-03=47；BATCH-04=9,"{'BATCH-01': 76, 'BATCH-02': 22, 'BATCH-03': 47, 'BATCH-04': 9}",通过,动作计划CSV recommended_batch列,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,批次用于真实执行顺序。
+QA-10,入口与路线字段逐项匹配,group/packet/entry/qa/route/batch/status全部与上游一致,mismatch_count=0,通过,逐issue_id字段比对,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,若出现错位，动作计划不可交接。
+QA-11,真实销项状态保持未关闭,154项均为未真实销项,{'未真实销项': 154},通过,current_true_closure_status列,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,QA不关闭任何问题。
+QA-12,真实回填栏保持空白,校对人/日期/决定/证据位置均为空,nonblank_count=0,通过,真实回填栏逐项扫描,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,不得代填真实人工记录。
+QA-13,正式编码放行状态,154项均为否,{'否': 154},通过,ready_for_formal_coding_after_action列,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,不得提前进入正式编码。
+QA-14,禁止声称边界完整性,154项cannot_claim_before_closure均非空,0,通过,cannot_claim_before_closure列,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,每项都必须保留禁止声称边界。
+QA-15,原始材料隔离,本QA任务不需要修改00_originals,需提交前用git状态确认,通过,AGENTS.md与本任务边界,动作计划通过结构性QA，但不代表154项真实人工终核已完成。,提交时只暂存QA报告和账本文件。

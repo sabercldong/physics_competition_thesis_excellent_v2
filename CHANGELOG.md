@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-ACTION-PLAN-QA 人工终核动作计划QA
+
+- 新增 `03_corpus/manual_review_closure_action_plan_qa.md`，说明人工终核动作计划的QA范围、15项检查结论、仍不能声称的内容和下一最小任务；
+- 新增 `03_corpus/manual_review_closure_action_plan_qa_v1.csv`，记录CSV编码换行、154项覆盖、问题ID唯一性、与总索引/真实销项计划/优先队列一致性、A/B/C/D分组计数、销项路线、批次、入口字段、真实回填栏和正式编码放行状态检查；
+- 确认动作计划CSV为UTF-8 BOM和LF换行，154项与上游三张表的问题集合完全一致，字段逐项匹配错位数为0；
+- 确认真实校对人、真实校对日期、真实校对决定和复核后证据位置仍全部为空，154项正式编码放行状态仍为“否”；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-ACTION-PLAN 人工终核真实销项动作计划
 
 - 新增 `03_corpus/manual_review_closure_action_plan.md`，说明154项人工终核问题的执行阶段、分组计数、销项路线、必填回填字段和正式编码门槛；

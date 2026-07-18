@@ -228,6 +228,7 @@
 - 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR-QA`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_sidecar_qa.csv`，完成14项QA检查，确认侧车CSV为UTF-8 BOM和LF换行、7条目标主张完整、来源覆盖表与当前矩阵行匹配、状态和证据等级均未升级、直接改矩阵字段均为“否”；`09_quality/claim_evidence_matrix.csv` 仍保持历史未提交差异隔离，侧车通过QA不等同于矩阵本体已合并；
 - 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-MERGE-READINESS`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_merge_readiness.csv`，判断7条P1侧车覆盖当前不宜直接合并进 `09_quality/claim_evidence_matrix.csv`；理由是侧车已可引用且通过QA，而矩阵本体仍存在整块历史未提交差异，直接合并会扩大提交范围。本轮决定保持侧车引用，下一步转回正式编码前人工终核销项动作计划。
 - 完成 `G1-07-MANUAL-CLOSURE-ACTION-PLAN`：新增 `03_corpus/manual_review_closure_action_plan.md` 和 `03_corpus/manual_review_closure_action_plan_v1.csv`，将154项人工终核问题压缩为PHASE-0至PHASE-5的真实执行顺序；确认A组76项、B组22项、C组47项、D组9项，销项路线为文字/公式终核98项、图件终核或重绘47项、分值细则8项、解答放大图边界1项。真实校对人、日期、决定和复核后证据位置仍保持空白，本轮不关闭任何条目，不进入正式编码或正式结果分析。
+- 完成 `G1-07-MANUAL-CLOSURE-ACTION-PLAN-QA`：新增 `03_corpus/manual_review_closure_action_plan_qa.md` 和 `03_corpus/manual_review_closure_action_plan_qa_v1.csv`，完成15项QA检查；确认动作计划CSV为UTF-8 BOM和LF换行，154项、154个唯一 `issue_id` 与总索引、真实销项计划和优先队列完全一致，A/B/C/D计数、批次计数和销项路线计数均匹配，真实回填栏全部为空，154项正式编码放行状态仍为“否”。本QA不关闭任何人工校对项，不代表可进入正式编码或正式结果分析。
 
 ## 关键阻塞项
 
@@ -242,4 +243,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-CLOSURE-ACTION-PLAN-QA`：检查动作计划是否覆盖154项、A/B/C/D计数是否与总索引一致、CSV是否为UTF-8 BOM和LF换行、真实回填栏是否全部空白，以及本轮是否未混入正文、原始文件或主张矩阵改动。
+`G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL`：建立真实回填文件回收后的完整性检查、冲突处理、关闭条件和同步更新规则；若后续没有真实回填，则继续保持正式编码和正文结果门禁。
