@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK 真实人工终核回填副本接收检查
+
+- 新增 `03_corpus/manual_review_return_intake_check.md`，说明当前是否存在真实人工终核回填副本、关键证据、正式编码阻断状态和后续接收规则；
+- 新增 `03_corpus/manual_review_return_intake_status_v1.csv`，登记8项接收检查结果，覆盖文件名检索、回填副本目录、A/B/C/D回填包、动作计划和演练模板状态；
+- 新增 `03_corpus/manual_review_formal_coding_blocker_v1.csv`，登记6项正式产出阻断，覆盖正式评分者编码、正式统计、案例图件、分值统计、主张证据矩阵升级和正文结果章写作；
+- 确认当前未发现可接收的真实人工终核回填副本，A/B/C/D四组真实校对人、日期和决定字段均为0项填写，动作计划154项真实回填字段均为空；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK-QA`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN-QA 人工终核回填整合演练模板QA
 
 - 新增 `03_corpus/manual_review_return_integration_dry_run_qa.md`，记录演练模板QA范围、61项检查结论、禁止声称内容和下一最小任务；
