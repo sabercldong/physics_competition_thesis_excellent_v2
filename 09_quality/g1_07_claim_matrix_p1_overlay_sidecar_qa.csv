@@ -1,0 +1,15 @@
+﻿qa_id,check_item,method,expected,observed,result,risk_after_check
+P1-SIDECAR-QA-001,CSV编码,读取字节头和换行符,UTF-8 BOM且仅LF换行,BOM=True；CRLF=0；CR=0；LF=8,通过,无
+P1-SIDECAR-QA-002,行数,csv.DictReader读取记录数,7条主张覆盖记录,7条,通过,无
+P1-SIDECAR-QA-003,claim_id顺序,比对预期列表,"C3-01,C3-02,C4-01,C4-02,C5-01,C5-02,C2-06",完全一致,通过,无
+P1-SIDECAR-QA-004,来源覆盖表匹配,逐条比对g1_07_claim_matrix_boundary_overlay.csv,7条均能匹配来源覆盖建议,7条均匹配,通过,无
+P1-SIDECAR-QA-005,主张矩阵行匹配,逐条比对claim_evidence_matrix.csv当前工作区,7条均能匹配当前矩阵行,7条均匹配；matrix_row_found均为是,通过,矩阵本体仍有历史未提交差异，不能直接视为本轮已合并
+P1-SIDECAR-QA-006,当前状态字段一致性,比对current_status与矩阵status,7条一致,7条一致,通过,无
+P1-SIDECAR-QA-007,当前证据等级一致性,比对current_evidence_level与矩阵evidence_level,7条一致,7条一致,通过,无
+P1-SIDECAR-QA-008,边界覆盖语句一致性,比对boundary_overlay与来源覆盖表,7条一致,7条一致,通过,无
+P1-SIDECAR-QA-009,后续动作建议一致性,比对proposed_action_overlay与来源覆盖表matrix_update_recommendation,7条一致,7条一致,通过,无
+P1-SIDECAR-QA-010,状态升级门禁,检查status_upgrade_allowed字段,全部为否,全部为否,通过,无
+P1-SIDECAR-QA-011,证据等级升级门禁,检查evidence_level_upgrade_allowed字段,全部为否,全部为否,通过,无
+P1-SIDECAR-QA-012,直接改矩阵门禁,检查direct_matrix_edit_this_task字段与git状态,全部为否，且矩阵不进入本轮提交,全部为否；claim_evidence_matrix.csv仍为未暂存历史改动,通过,后续若要合并，必须另设安全合并任务并精确暂存
+P1-SIDECAR-QA-013,高风险结论门禁,检查侧车说明中的禁止声称列表,不得支持正式编码、正式统计、专家审查、双评分者一致性、候选案例定论或教学效果,禁止声称列表已覆盖上述项目,通过,无
+P1-SIDECAR-QA-014,矩阵隔离风险,git diff --stat检查claim_evidence_matrix.csv,本任务不暂存、不提交矩阵本体,矩阵仍有21行历史差异；本轮保持隔离,通过,矩阵本体仍需历史差异处理或继续侧车化
