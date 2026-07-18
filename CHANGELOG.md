@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER-QA 剩余B/C/D真实回填接收登记QA
+
+- 新增 `03_corpus/manual_review_remaining_return_handoff_register_qa.md`，记录剩余B/C/D真实回填接收登记QA的性质声明、278项检查结论、检查分布、已确认一致性、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_remaining_return_handoff_register_qa_v1.csv`，逐项检查输入存在性、CSV编码换行、字段结构、行数、编号连续性、上游集合一致性、逐行继承、空白保护、未收到状态、未销项状态、放行门禁、RIP协议、路径可定位、目录边界、规则覆盖、报告边界、A组隔离和台账同步；
+- 确认剩余登记表78行，B组22项、C组47项、D组9项，`RPH-REM-001` 至 `RPH-REM-078` 连续唯一；
+- 确认规则表14条，`RPHR-REM-01` 至 `RPHR-REM-14` 连续唯一，覆盖范围锁定、来源锁定、目录规范、命名规范、B/C/D组必填字段、空白保护、冲突处理、放行门禁、原件保护、整合顺序、A组边界和下一QA；
+- 确认登记表与行动计划、总索引和B/C/D销项包的issue集合一致，复合证据路径已按分号拆分检查且均可定位；
+- 确认真实接收字段和观察到的回填结果字段均为空，全部保持“未真实销项”“不放行”，正式编码、正式统计、正文使用和主张矩阵更新均为“否”；
+- 明确本QA不创建真实回填目录，不登记真实回填副本，不关闭任何人工校对项，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT`。
+
 ## 2026-07-19：G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER 剩余B/C/D真实回填接收登记
 
 - 新增 `03_corpus/manual_review_remaining_return_handoff_register.md`，记录剩余B/C/D真实回填接收登记的性质声明、上游依据、登记范围、推荐接收目录、必填回填字段、当前不能声称内容、下一最小任务和输出边界；

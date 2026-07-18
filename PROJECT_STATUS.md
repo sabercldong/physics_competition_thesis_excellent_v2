@@ -267,6 +267,7 @@
 - 完成 `G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER`：新增 `03_corpus/manual_review_real_return_handoff_register.md`、`03_corpus/manual_review_real_return_handoff_register_v1.csv` 和 `03_corpus/manual_review_real_return_handoff_rules_v1.csv`，为首批A组38个题目级材料包建立真实回填接收登记和交接规则；登记表与首批优先包 `REAL-P1-001` 至 `REAL-P1-038` 一一对应，列明推荐接收目录、文件命名规则、允许扩展名、校验值字段、接收字段、必填回填字段、固定字段检查、触发整合QA条件和关联 `RIP` 规则。真实文件名、另存路径、校验值、文件大小、接收日期、接收人、校对人、校对日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均保持空白；本任务不创建真实回填目录，不登记真实回填副本，不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
 - 完成 `G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER-QA`：新增 `03_corpus/manual_review_real_return_handoff_register_qa.md` 和 `03_corpus/manual_review_real_return_handoff_register_qa_v1.csv`，完成89项QA检查且全部通过；确认首批接收登记表和规则表均为UTF-8 BOM和LF换行，登记表38行、`RPH-001` 至 `RPH-038` 连续唯一，规则表12条、`RPHR-01` 至 `RPHR-12` 连续唯一；登记表的 `priority_packet_id`、`material_id`、届次、年份、题号、`covered_issue_ids` 和 `covered_issue_count` 与首批优先包逐行一致，推荐目录均指向 `manual_review_returns/` 下的REAL-P1子目录但当前目录未创建。真实文件名、另存路径、校验值、文件大小、接收日期、接收人、校对人、校对日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均为空，结构检查、字段完整性和冲突状态均为“未检查：未收到真实回填”；登记表和规则表均保持“不放行”，正式编码和正文使用均为“否”。
 - 完成 `G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER`：新增 `03_corpus/manual_review_remaining_return_handoff_register.md`、`03_corpus/manual_review_remaining_return_handoff_register_v1.csv` 和 `03_corpus/manual_review_remaining_return_handoff_rules_v1.csv`，为B组22项、C组47项和D组9项建立剩余78项真实回填接收登记和14条交接规则；登记表逐行继承B/C/D销项包、总行动计划和总索引，列明推荐接收目录、命名规则、允许扩展名、接收字段、组别必填回填字段、固定字段检查、触发整合QA条件和关联 `RIP` 规则。真实文件名、另存路径、校验值、文件大小、接收日期、接收人、回填人代码、回填日期、观察到的审查决定、修订说明、图件可用性、重绘决定、分值或附属图边界说明均保持空白；本任务不创建真实回填目录，不登记真实回填副本，不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
+- 完成 `G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER-QA`：新增 `03_corpus/manual_review_remaining_return_handoff_register_qa.md` 和 `03_corpus/manual_review_remaining_return_handoff_register_qa_v1.csv`，完成278项QA检查且全部通过；确认剩余登记表78行、B组22项、C组47项、D组9项、`RPH-REM-001` 至 `RPH-REM-078` 连续唯一，规则表14条、`RPHR-REM-01` 至 `RPHR-REM-14` 连续唯一；登记表与行动计划、总索引和B/C/D销项包的issue集合一致，复合证据路径已按分号拆分检查且均可定位。真实接收字段和观察到的回填结果字段均为空，全部保持“未真实销项”“不放行”，正式编码、正式统计、正文使用和主张矩阵更新均为“否”；本QA不创建真实回填目录，不关闭任何条目，不放行论文正文写作。
 
 ## 关键阻塞项
 
@@ -281,4 +282,4 @@
 
 ## 下一任务
 
-`G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER-QA`：检查剩余B/C/D真实回填接收登记，核对78项行数、B/C/D组别计数、编号连续性、上游集合一致性、真实接收字段空白、未收到状态、未放行门禁、推荐目录未创建状态和提交边界。
+`G1-07-MANUAL-RETURN-WAITING-ROOM-CLOSEOUT`：在没有真实回填副本的条件下，对人工校对真实销项准备链进行阶段收束，明确A组首批登记、剩余B/C/D登记和两轮QA的边界，并给出后续可继续推进与必须等待真实材料的分界。
