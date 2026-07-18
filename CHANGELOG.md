@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-19：G4-01-NO-RATER-BOUNDARY-PACKET 无真实评分者时的边界路线
+
+- 新增 `07_analysis/results/reviewed/g4_01_no_rater_boundary_packet.md`，汇总当前 `G4-01` 所处位置、已准备材料、致命阻塞、可继续做的内部工作和不能提前生成的正式结论；
+- 新增 `07_analysis/results/reviewed/g4_01_no_rater_next_routes.csv`，将真实评分者路线、内部边界路线、人工销项路线、教学证据路线、文献与学校规范路线、正式论文定稿路线逐一标明可执行状态、所需输入、允许输出和禁止声称；
+- 明确正式 `G4-01` 在没有真实A/B评分者填写表时仍处于阻塞状态，不能计算一致性、不能裁决、不能生成正式结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G4-01-NO-RATER-BOUNDARY-APPLY`；若后续回收真实A/B评分者模板，则立即切回正式 `G4-01`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-COVERAGE-AUDIT 人工校对入口覆盖审计
 
 - 新增 `03_corpus/manual_review_coverage_audit.md` 和 `03_corpus/manual_review_coverage_audit_v1.csv`，逐条审计154项人工校对问题的入口覆盖、证据字段、校对人/日期和正式使用边界；

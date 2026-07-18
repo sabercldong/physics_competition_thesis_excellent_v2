@@ -267,7 +267,10 @@
   - 进度：新增 `07_analysis/scripts/build_g4_01_prep_handoff.py`、`g4_01_prep_rater_package_index.csv`、`g4_01_prep_handoff_audit.csv` 和 `g4_01_prep_handoff_report.md`；模板与交接包检查通过，但正式分析门槛仍未满足。
 - [x] G4-01-PREP-LOCK 冻结评分者交接包清单
   - 进度：新增 `04_framework/rater_handoff_lock_v1.md`、`rater_handoff_lock_manifest.csv`、`rater_independent_coding_instructions_v1.md`、`rater_handoff_file_rules.csv` 和 `rater_handoff_unresolved_risks.csv`，明确A/B独立填写、命名回收、字段入口和未销项风险处理；该冻结只锁定交接流程，不代表真实评分者编码、正式分歧裁决或一致性检验完成。
-- [ ] G4-01 双人独立编码
+- [x] G4-01-NO-RATER-BOUNDARY-PACKET 明确无真实评分者时的G4-01边界路线
+  - 进度：新增 `07_analysis/results/reviewed/g4_01_no_rater_boundary_packet.md` 和 `g4_01_no_rater_next_routes.csv`，确认在未回收真实A/B评分者填写表前，正式 `G4-01` 仍被阻塞；可继续推进内部证据边界、材料索引、人工校对准备、文献核验和学校规范准备，但不得进入正式一致性、裁决或结果分析。
+- [!] G4-01 双人独立编码
+  - 阻塞：当前没有两名真实评分者独立填写后的A/B模板，也没有真实评分者日期、独立性记录、一致性统计或裁决记录。收到真实A/B模板后，先检查字段完整性与独立填写边界，再进入一致性计算。
 - [ ] G4-02 分歧裁决与日志
 - [ ] G4-03 数据清洗与唯一分析表
 - [ ] G4-04 生成总体分布
