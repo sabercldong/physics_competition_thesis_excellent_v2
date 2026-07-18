@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER-QA 首批真实回填接收登记QA
+
+- 新增 `03_corpus/manual_review_real_return_handoff_register_qa.md`，记录首批真实回填接收登记QA的性质声明、89项检查结论、检查分布、已确认一致性、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_real_return_handoff_register_qa_v1.csv`，逐项检查输入存在性、CSV编码换行、字段结构、行数、编号连续性、首批包继承、目录规范、空白保护、未收到状态、未放行门禁、协议一致性、触发条件、报告文本、规则覆盖、上游QA和提交边界；
+- 确认首批接收登记表38行、`RPH-001` 至 `RPH-038` 连续唯一，规则表12条、`RPHR-01` 至 `RPHR-12` 连续唯一；
+- 确认登记表的 `priority_packet_id`、`material_id`、届次、年份、题号、`covered_issue_ids` 和 `covered_issue_count` 与首批优先包逐行一致；
+- 确认推荐目录均指向 `03_corpus/manual_review_returns/` 下的REAL-P1子目录，但当前未创建真实回填目录；
+- 确认真实文件名、另存路径、校验值、文件大小、接收日期、接收人、校对人、校对日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均为空；
+- 确认结构检查、字段完整性和冲突状态均为“未检查：未收到真实回填”，登记表和规则表均保持“不放行”，正式编码和正文使用均为“否”；
+- 明确本QA不创建真实回填目录，不登记真实回填副本，不关闭任何人工校对项，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER`。
+
 ## 2026-07-19：G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER 首批真实回填接收登记
 
 - 新增 `03_corpus/manual_review_real_return_handoff_register.md`，记录首批A组真实回填接收登记的性质声明、上游依据、登记范围、推荐接收目录、文件命名规则、接收登记字段、触发整合QA条件、当前不能声称内容、下一最小任务和输出边界；
