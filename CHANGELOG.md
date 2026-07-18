@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE P1真实回填前就绪门禁
+
+- 新增 `09_quality/no_return_reference_p1_backfill_ready_gate.md`，记录P1真实回填前就绪门禁的性质声明、总体结论、一页式门禁、三类动作边界、仍不能声称内容和下一最小任务；
+- 新增 `09_quality/no_return_reference_p1_backfill_ready_gate_v1.csv`，逐项登记11个门禁，连续覆盖 `P1BF-01` 至 `P1BF-11`、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K` 和 `RCQ-07` 至 `RCQ-17`；
+- 逐项说明材料未回填时可继续推进的准备工作、必须冻结的正文/矩阵/参考文献动作、打开回填所需的最小真实输入、收到材料后的接收QA路线和放行条件；
+- 确认11项门禁全部保持“不放行”，上游P1空白回填模板的20个真实回填字段仍为空；本任务不获取新全文、不填写模板、不改写论文正文、不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改 `02_literature/references.bib`；
+- 明确接收、登记、阅读笔记或材料存在本身不释放正文、矩阵或参考文献动作，必须先通过独立P1回填QA；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-INTAKE-RULES-QA P1真实回填接收规则QA
 
 - 新增 `09_quality/no_return_reference_p1_backfill_intake_rules_qa.md`，记录P1真实回填接收规则QA的性质声明、160项检查结论、检查分布、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
