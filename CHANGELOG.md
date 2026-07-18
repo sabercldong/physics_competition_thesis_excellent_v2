@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET 人工校对真实销项首批优先包
+
+- 新增 `03_corpus/manual_review_real_return_priority_packet.md`，记录首批真实校对优先包的性质声明、当前位置、首批范围、选择理由、真实回填字段、未纳入首批的B/C/D材料、禁写边界、回填后处理路线和下一QA任务；
+- 新增 `03_corpus/manual_review_real_return_priority_packet_v1.csv`，将A组高风险OCR/公式问题压缩为38个题目级首批材料包，覆盖76项A组人工终核问题；
+- 确认首批包继承 `03_corpus/manual_review_a_material_closure_sheet_v1.csv`、`03_corpus/manual_review_closure_action_plan_v1.csv` 和 `03_corpus/manual_review_closure_packet_master_index_v1.csv` 的既有入口，列出题面页、答案页、V1转写入口、公式核对入口和页面证据图；
+- 确认真实校对人、真实校对日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均保持空白；
+- 明确本任务不关闭任何人工校对项，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；B组22项、C组47项和D组9项仍为未销项材料；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT-QA P1文献回填准备链收束QA
 
 - 新增 `09_quality/no_return_reference_p1_backfill_closeout_qa.md`，记录P1文献回填准备链收束QA的性质声明、656项检查结论、检查分布、已确认一致性、仍不能声称内容、下一最小任务和提交边界；

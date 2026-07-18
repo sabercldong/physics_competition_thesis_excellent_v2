@@ -262,6 +262,7 @@
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE-QA`：新增 `09_quality/no_return_reference_p1_backfill_ready_gate_qa.md` 和 `09_quality/no_return_reference_p1_backfill_ready_gate_qa_v1.csv`，完成283项QA检查且全部通过；确认11项门禁连续覆盖 `P1BF-01` 至 `P1BF-11`、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K` 和 `RCQ-07` 至 `RCQ-17`，全部保持“不放行”。上游P1回填模板11行的20个真实回填字段仍全部留空，正文、主张矩阵、参考文献表和模板填写边界均保持冻结。本任务未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT`：新增 `09_quality/no_return_reference_p1_backfill_closeout.md` 和 `09_quality/no_return_reference_p1_backfill_closeout_v1.csv`，对P1文献回填准备链进行阶段性收束；确认11项P1入口从 `RCQ-07` 至 `RCQ-17`、`P1-A` 至 `P1-K`、`P1PKT-01` 至 `P1PKT-11`、`P1BF-01` 至 `P1BF-11` 和 `P1GATE-01` 至 `P1GATE-11` 连续贯通，缺口路线、材料包索引、空白回填模板、接收规则、就绪门禁和五轮QA均已形成；五轮QA合计727项检查、未通过0项。上游P1回填模板11行的20个真实回填字段仍全部留空，11项全部保持“不放行”。本任务未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表；收束判断显示，若没有真实P1材料，后续实际入口应优先回到语料人工校对真实销项，而真实评分者编码需排在语料人工校对之后。
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT-QA`：新增 `09_quality/no_return_reference_p1_backfill_closeout_qa.md` 和 `09_quality/no_return_reference_p1_backfill_closeout_qa_v1.csv`，完成656项QA检查且全部通过；确认P1收束表11项连续，`RCQ-07` 至 `RCQ-17`、`P1-A` 至 `P1-K`、`P1PKT-01` 至 `P1PKT-11`、`P1BF-01` 至 `P1BF-11` 和 `P1GATE-01` 至 `P1GATE-11` 均与上游一致；五轮上游QA合计727项检查、未通过0项；上游P1回填模板11行的20个真实回填字段仍全部留空，11项全部保持“不放行”。本QA未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。QA通过后，若仍没有真实P1材料，下一实际推进应回到语料人工校对真实销项入口。
+- 完成 `G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET`：新增 `03_corpus/manual_review_real_return_priority_packet.md` 和 `03_corpus/manual_review_real_return_priority_packet_v1.csv`，在未发现真实人工终核回填副本的条件下，把154项人工终核问题中的A组高风险OCR/公式问题压缩为38个题目级首批真实校对材料包，覆盖76项A组问题；首批包继承A组题目级校对单、动作计划和总索引，列出题面页、答案页、V1转写入口、公式核对入口、页面证据图、核对重点和回填后整合协议。真实校对人、日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均保持空白，本任务不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；B组22项、C组47项和D组9项仍保留为后续未销项材料。
 
 ## 关键阻塞项
 
@@ -276,4 +277,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET`：在没有新增真实P1材料的前提下，回到语料人工校对真实销项入口，把154项人工校对问题压缩为首批真实校对优先包；只能生成可交付给校对人的优先材料包和回填顺序，不得填写真实校对人、日期、决定，不得关闭条目，不得进入正式编码或正式结果分析。
+`G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET-QA`：检查首批真实校对优先包是否严格继承A组38个题目级材料、覆盖76项A组问题、CSV是否为UTF-8 BOM和LF换行、真实回填栏是否全部空白、是否未释放正式编码、正式统计、正文结果写作或主张矩阵升级。
