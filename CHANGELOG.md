@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE-QA D组分值与附属图待核清单QA
+
+- 新增 `03_corpus/no_return_d_score_solfig_queue_qa.md`，记录D组分值与附属图待核清单的QA性质、48项检查结论、结构一致性、禁写边界、保留风险和下一最小任务；
+- 新增 `03_corpus/no_return_d_score_solfig_queue_qa_v1.csv`，逐项检查输入文件存在性、CSV编码换行、字段、行数、ID连续性、与D组回填包/回填包QA/D1批次日志集合一致性、证据类别计数、层级计数、核对记录、页面证据图、页面索引、路径可达、真实回填空白、NQ-04依据和越界表述；
+- 确认D组待核请求清单9项与D组回填包、D组回填包QA和D1批次日志的 `issue_id` 集合完全一致，`DREQ-01` 至 `DREQ-09` 连续唯一；
+- 确认第35届分值边界8项、第42届第3题解答放大图边界1项，45条核对记录、62张页面证据图和71条页面索引均可复算，引用路径缺失0条；
+- 明确本QA仍不关闭D组9项，不生成第35届分值统计，不确认第42届第3题附录定稿图；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE`。
+
 ## 2026-07-19：G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE D组分值与附属图待核请求清单
 
 - 新增 `03_corpus/no_return_d_score_solfig_queue.md`，记录D组9项分值与附属图待核请求的范围、证据状态、阻塞边界和下一最小任务；

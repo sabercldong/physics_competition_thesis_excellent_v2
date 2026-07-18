@@ -1,0 +1,49 @@
+﻿check_id,check_area,check_item,expected,observed,status,evidence,followup
+DQA-01,输入文件,输入文件存在,queue_csv,True,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-02,输入文件,输入文件存在,queue_md,True,通过,03_corpus/no_return_d_score_solfig_queue.md,无
+DQA-03,输入文件,输入文件存在,packet_csv,True,通过,03_corpus/manual_review_d_closure_packet_v1.csv,无
+DQA-04,输入文件,输入文件存在,packet_qa_csv,True,通过,03_corpus/manual_review_d_closure_packet_qa_v1.csv,无
+DQA-05,输入文件,输入文件存在,material_queue_csv,True,通过,03_corpus/no_return_material_queue_v1.csv,无
+DQA-06,输入文件,输入文件存在,d1_batch_csv,True,通过,03_corpus/manual_review_d1_batch_log.csv,无
+DQA-07,输入文件,输入文件存在,d1_render_csv,True,通过,03_corpus/manual_review_d1_render_index.csv,无
+DQA-08,CSV格式,D组待核清单CSV编码换行,UTF-8 BOM + LF,True,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-09,字段,D组待核清单字段完整,27,27,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-10,覆盖,D组待核清单行数,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-11,覆盖,请求ID连续唯一,DREQ-01 至 DREQ-09,"DREQ-01,DREQ-02,DREQ-03,DREQ-04,DREQ-05,DREQ-06,DREQ-07,DREQ-08,DREQ-09",通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-12,覆盖,与D组回填包issue_id集合一致,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv; 03_corpus/manual_review_d_closure_packet_v1.csv,无
+DQA-13,覆盖,与D组回填包QA issue_id集合一致,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv; 03_corpus/manual_review_d_closure_packet_qa_v1.csv,无
+DQA-14,覆盖,与D1批次日志issue_id集合一致,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv; 03_corpus/manual_review_d1_batch_log.csv,无
+DQA-15,覆盖,第35届分值边界请求计数,8,8,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-16,覆盖,第42届第3题解答放大图边界请求计数,1,1,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-17,覆盖,分值证据类别计数,8,8,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-18,覆盖,解答放大图证据类别计数,1,1,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-19,层级,分值缺正式来源层级计数,8,8,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-20,层级,解答图边界层级计数,1,1,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-21,计数,核对记录合计,45,45,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-22,计数,页面证据图合计,62,62,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-23,计数,页面索引记录合计,71,71,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-24,计数,与D1页面索引总行数一致,71,71,通过,03_corpus/manual_review_d1_render_index.csv,无
+DQA-25,路径,核对入口路径可达,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-26,路径,页面证据图路径可达,62,62,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-27,路径,来源回填包路径可达,0,0,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-28,路径,清单路径状态字段均为是,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-29,内容,已有证据摘要字段均已填写,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-30,内容,当前阻塞字段均已填写,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-31,内容,所需材料字段均已填写,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-32,边界,允许动作均限制为整理请求和证据入口,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-33,边界,第35届分值请求禁写分值统计,8,8,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-34,边界,第35届分值状态保持未明示,8,8,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-35,边界,第42届第3题图件禁写附录定稿,1,1,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-36,边界,第42届第3题图件状态保持非一一原样放大,1,1,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-37,边界,正文使用状态均不放行,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-38,边界,解锁条件均需真实复核或真实材料,9,9,通过,03_corpus/no_return_d_score_solfig_queue_v1.csv,无
+DQA-39,真实回填,上游D回填包真实字段保持空白,全部空白,True,通过,03_corpus/manual_review_d_closure_packet_v1.csv,无
+DQA-40,真实回填,上游D回填包QA仍为未销项,9,9,通过,03_corpus/manual_review_d_closure_packet_qa_v1.csv,无
+DQA-41,无回填队列,NQ-04存在并指向D组缺口,1,1,通过,03_corpus/no_return_material_queue_v1.csv,无
+DQA-42,报告,Markdown报告登记9项,True,True,通过,03_corpus/no_return_d_score_solfig_queue.md,无
+DQA-43,报告,Markdown报告登记禁止第35届分值统计,True,True,通过,03_corpus/no_return_d_score_solfig_queue.md,无
+DQA-44,报告,Markdown报告登记第42届附录图未定稿,True,True,通过,03_corpus/no_return_d_score_solfig_queue.md,无
+DQA-45,台账,PROJECT_STATUS下一任务已指向本QA,True,True,通过,PROJECT_STATUS.md,无
+DQA-46,台账,TASKS已登记本QA待执行,True,True,通过,TASKS.md,无
+DQA-47,台账,CHANGELOG已登记上游D清单,True,True,通过,CHANGELOG.md,无
+DQA-48,越界表述,未出现越界确认或伪造表述,0,0,通过,03_corpus/no_return_d_score_solfig_queue.md; 03_corpus/no_return_d_score_solfig_queue_v1.csv,无
