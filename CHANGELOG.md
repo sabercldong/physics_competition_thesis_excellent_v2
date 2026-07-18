@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION-QA 人工校对等待室后续路线决策QA
+
+- 新增 `03_corpus/manual_review_waiting_room_route_decision_qa.md`，记录路线决策QA的性质声明、161项检查结论、检查分布、已确认事项、仍不能声称内容、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_waiting_room_route_decision_qa_v1.csv`，逐项检查输入存在性、CSV编码换行、路线字段结构、行数编号、字段完整性、路线内容、放行状态、正文边界、报告文本、空白保护、目录边界、台账一致性、红线继承和输出边界；
+- 确认路线决策表5行，`MRWRD-01` 至 `MRWRD-05` 连续唯一，字段结构完整；
+- 确认路线A保持“条件冻结：等待真实回填”，路线B保持“当前推荐执行”，路线切换门禁和正文与主张矩阵保护门禁均已启用；
+- 确认当前执行决议为“执行路线B，路线A保留待触发”，任何真实回填材料到位时应先切回对应组别接收QA；
+- 确认A组和B/C/D接收登记中的真实回填字段非空数为0，当前未创建 `03_corpus/manual_review_returns/`；
+- 确认所有路线的 `formal_release_status` 均为“不放行”，正文结果写作、正式编码、正式统计和主张矩阵升级仍被禁止；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-TASK-BOUNDARY`。
+
 ## 2026-07-19：G1-07-MANUAL-RETURN-WAITING-ROOM-ROUTE-DECISION 人工校对等待室后续路线决策
 
 - 新增 `03_corpus/manual_review_waiting_room_route_decision.md`，记录人工校对等待室后续路线决策的性质声明、当前证据状态、路线决策、路线A真实材料补证入口、路线B不依赖真实回填的准备入口、下一最小任务和输出边界；
