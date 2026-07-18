@@ -50,6 +50,7 @@
 - 完成 `G1-07-D-CLOSURE-PACKET`：新增 `03_corpus/manual_review_d_closure_packet.md` 和 `manual_review_d_closure_packet_v1.csv`，为D组9项分值边界与附属证据问题生成真实人工终核回填包；8项为第35届分值边界复核，1项为第42届第3题解答放大图与附录图号边界确认；9项均已定位D1核对入口，合计45条核对记录、62张页面证据图和71条页面索引记录，真实校对人、校对日期、校对决定、正式评分来源或图号边界确认、修订说明和最终证据位置均保持空白，本任务不关闭任何D组条目；
 - 完成 `G1-07-D-CLOSURE-PACKET-QA`：新增 `03_corpus/manual_review_d_closure_packet_qa.md` 和 `manual_review_d_closure_packet_qa_v1.csv`，核对D组9项回填包与优先队列D组、真实销项计划D组和D1批次日志的 `issue_id` 完全一致；9项核对入口均存在，45条核对记录、62张页面证据图、71条页面索引记录和142条引用路径均复核通过，真实回填栏均保持空白；QA结论为可进入真实人工终核但未销项；
 - 完成 `G1-07-CLOSURE-PACKET-MASTER-INDEX`：新增 `03_corpus/manual_review_closure_packet_master_index.md` 和 `manual_review_closure_packet_master_index_v1.csv`，将A/B/C/D四组回填包及QA结果汇总为154项人工终核总索引；确认A组76项、B组22项、C组47项、D组9项均可定位对应回填包和QA/视图，154项入口均可定位，真实回填栏均保持空白，真实人工销项数仍为0；本任务不关闭任何人工校对项；
+- 完成 `G1-07-MANUAL-CLOSURE-READY-REPORT`：新增 `03_corpus/manual_review_closure_ready_report.md` 和 `manual_review_closure_ready_gate_matrix_v1.csv`，基于154项人工终核总索引说明当前四组材料包均已具备交给真实校对人的入口条件，但A组76项、B组22项、C组47项、D组9项均仍未真实销项，真实回填栏均为空；明确无真实回填时只能写作材料准备、风险定位和证据边界，不能进入正式编码、正式统计、正式案例图件、显著性结论、专家审查结论、教师验证或课堂效果结论；
 - 启动 `G1-07-A1`：新增 `03_corpus/manual_review_a1_batch_log.csv`、`03_corpus/manual_review_a1_render_index.csv` 和 `03_corpus/manual_review_a1_batch_summary.md`，并生成 `03_corpus/manual_review_renders/G1-07-A1/` 下13张第41届第2题和第7题题面/答案页面证据图；已将 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA`、`CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA` 在人工校对清单和优先队列中回填为“证据包已建，未销项”；本任务不代表题干、公式、图件、答案证据或小问边界已经完成正式校对；
 - 继续 `G1-07-A1-TRANSCRIBE-41Q02`：新增 `03_corpus/manual_review_transcripts/CPHO41-Q02_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q02_formula_check_v1.csv`，将第41届第2题题面由OCR乱码推进为V1视觉转写稿，并依据答案PDF第3-7页登记关键公式与结果；更新 `03_corpus/item_texts/CPHO41-Q02.md` 挂接转写入口，并将 `CPHO41-Q02-OCR`、`CPHO41-Q02-FORMULA` 状态细化为“待最终复核”；本任务仍不代表第2题题图、公式排版或人工校对全部销项；
 - 继续 `G1-07-A1-TRANSCRIBE-41Q07`：新增 `03_corpus/manual_review_transcripts/CPHO41-Q07_transcription_v1.md` 和 `03_corpus/manual_review_transcripts/CPHO41-Q07_formula_check_v1.csv`，将第41届第7题题面由OCR乱码推进为V1视觉转写稿，并依据答案PDF第16-19页登记单值条件、动量量子化、磁通周期、平均能量分段和双环极限比值等关键公式与结果；更新 `03_corpus/item_texts/CPHO41-Q07.md` 挂接转写入口，并将 `CPHO41-Q07-OCR`、`CPHO41-Q07-FORMULA` 状态细化为“待最终复核”；本任务仍不代表第7题题图、公式排版或人工校对全部销项；
@@ -229,4 +230,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-CLOSURE-READY-REPORT`：若暂时没有真实A/B评分者回收文件，基于四组回填包总索引生成正式编码前人工终核准备报告，说明当前可交给真实校对人的材料包、仍不能进入正式结果分析的原因，以及若无真实校对回填时论文只能采用的证据边界。若能回收真实A/B评分者模板，则立即切回 `G4-01`，先做回收文件完整性与独立性检查，再进入一致性计算和分歧裁决。
+`G1-07-NO-TRUE-REVIEW-MANUSCRIPT-BOUNDARY-MAP`：在没有真实人工终核回填的条件下，把人工终核准备报告中的边界映射到第3、4、5章和主张证据矩阵，明确哪些句子只能保留为“准备情况”，哪些必须继续禁止写成正式结果。若收到真实回填文件，则优先切回回收完整性检查，再进入正式编码、一致性计算和分歧裁决。

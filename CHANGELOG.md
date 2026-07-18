@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-READY-REPORT 正式编码前人工终核准备报告
+
+- 新增 `03_corpus/manual_review_closure_ready_report.md`，说明当前A/B/C/D四组材料包可交给真实校对人的范围、仍不能进入正式结果分析的原因，以及无真实回填时论文只能采用的证据边界；
+- 新增 `03_corpus/manual_review_closure_ready_gate_matrix_v1.csv`，将A组76项、B组22项、C组47项、D组9项和154项总门禁转为可复查矩阵；
+- 确认154项均已有真实校对入口，但真实校对人、真实校对日期、真实决定和复核后证据位置仍全部为空，真实人工销项数仍为0；
+- 明确当前不得声称正式编码、正式统计、正式案例图件、显著性结论、专家审查结论、教师验证或课堂效果结论已经成立；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-TRUE-REVIEW-MANUSCRIPT-BOUNDARY-MAP`。
+
 ## 2026-07-19：G1-07-CLOSURE-PACKET-MASTER-INDEX 人工终核回填包总索引
 
 - 新增 `03_corpus/manual_review_closure_packet_master_index.md` 和 `03_corpus/manual_review_closure_packet_master_index_v1.csv`，汇总A/B/C/D四组人工终核回填包及QA结果；
