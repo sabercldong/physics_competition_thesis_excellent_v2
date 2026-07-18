@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-INTAKE-RULES-QA P1真实回填接收规则QA
+
+- 新增 `09_quality/no_return_reference_p1_backfill_intake_rules_qa.md`，记录P1真实回填接收规则QA的性质声明、160项检查结论、检查分布、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
+- 新增 `09_quality/no_return_reference_p1_backfill_intake_rules_qa_v1.csv`，逐项检查输入文件、规则CSV编码换行、字段结构、行数、编号连续性、18类规则环节、必填字段、放行状态、下一任务、禁写边界、P1回填字段覆盖、上游模板空白保护、文本边界、台账一致性和提交边界；
+- 确认18条 `P1INTAKE-01` 至 `P1INTAKE-18` 规则连续唯一，接收登记、文件命名、来源合法性、版本定位、校验值、页码章节、阅读笔记、摘录边界、主张支持、引用决定、矩阵合并、正文使用、隐私材料、冲突处理、放行判定、台账同步、Git隔离和待核处理均已覆盖；
+- 确认18条规则全部保持“不放行”，正文、主张矩阵和 `02_literature/references.bib` 禁写边界齐全；上游P1回填模板仍为11行，20个真实回填字段均为空，11项全部不放行；
+- 明确本QA不获取新全文，不填写模板，不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改 `02_literature/references.bib`，不补造材料来源、页码、阅读结论、专家意见、教师/课堂材料或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-INTAKE-RULES P1真实回填接收规则
 
 - 新增 `09_quality/no_return_reference_p1_backfill_intake_rules.md`，记录P1真实回填接收规则的性质声明、总体结论、接收总原则、18条规则概要、冲突分级、字段填写门槛、当前仍不能声称内容和下一最小任务；
