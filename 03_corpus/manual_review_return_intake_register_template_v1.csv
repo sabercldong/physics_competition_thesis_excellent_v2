@@ -1,0 +1,6 @@
+﻿receipt_id,intake_date,received_by,source_group,source_packet,source_filename,stored_copy_path,sha256,file_size_bytes,reviewer_code_claimed,review_date_claimed,decision_fields_present,conflict_status,intake_status,linked_protocol_rule,next_action,notes
+TEMPLATE-A,,,A,manual_review_a_closure_packet_v1.csv,,,,,,,未检查：未收到真实回填,未检查：未收到真实回填,模板：未收到,RIP-01; RIP-02; RIP-03; RIP-04,等待真实A组回填副本；收到后先另存、计算校验值并做结构检查,模板行，不代表已收到真实回填；不得填写虚构校对人、日期或决定。
+TEMPLATE-B,,,B,manual_review_b_closure_packet_v1.csv,,,,,,,未检查：未收到真实回填,未检查：未收到真实回填,模板：未收到,RIP-01; RIP-02; RIP-03; RIP-05,等待真实B组回填副本；收到后先另存、计算校验值并做结构检查,模板行，不代表已收到真实回填；不得填写虚构校对人、日期或决定。
+TEMPLATE-C,,,C,manual_review_c_closure_packet_v1.csv,,,,,,,未检查：未收到真实回填,未检查：未收到真实回填,模板：未收到,RIP-01; RIP-02; RIP-03; RIP-06,等待真实C组回填副本；收到后先另存、计算校验值并检查图件可用性字段,模板行，不代表已收到真实回填；不得把候选图写成论文最终图。
+TEMPLATE-D,,,D,manual_review_d_closure_packet_v1.csv,,,,,,,未检查：未收到真实回填,未检查：未收到真实回填,模板：未收到,RIP-01; RIP-02; RIP-03; RIP-07,等待真实D组回填副本；收到后先另存、计算校验值并检查分值或附属图边界字段,模板行，不代表已收到真实回填；不得补造第35届分值或第42届第3题附属图边界。
+TEMPLATE-MIXED,,,MIXED,待判断,,,,,,,未检查：未收到真实回填,未检查：未收到真实回填,模板：未收到,RIP-01; RIP-02; RIP-03; RIP-08; RIP-09,若收到混合文件，先登记为MIXED并隔离检查，再拆分到A/B/C/D整合流程,模板行，不代表已收到真实回填；混合文件不得直接进入账本同步。

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-RETURN-INTAKE-FOLDER-PREP 真实回填接收目录准备
+
+- 新增 `03_corpus/return_intake_folder_protocol.md`，规定未来真实人工终核回填副本的推荐接收目录、文件命名规则、登记字段、接收流程、整合触发条件和当前冻结边界；
+- 新增 `03_corpus/manual_review_return_intake_register_template_v1.csv`，提供A/B/C/D/MIXED五类模板行，所有真实文件名、副本路径、校验值、校对人、日期和决定字段均保持空白或“未收到真实回填”状态；
+- 新增 `03_corpus/manual_review_return_intake_folder_rules_v1.csv`，形成12条目录与接收规则，覆盖目录创建、副本保护、文件命名、登记字段、结构检查、不可变字段、隔离处理、组别字段、正式产出门禁、提交边界、敏感信息和整合触发；
+- 明确本任务不创建真实回填目录，不登记虚构回填副本，不填写真实校对人、日期或决定，不关闭154项人工校对问题，不释放正式编码、正式统计、正文结果章或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-RETURN-INTAKE-FOLDER-PREP-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-MATERIAL-QUEUE-QA 无真实回填待核材料队列QA
 
 - 新增 `03_corpus/no_return_material_queue_qa.md`，记录材料队列QA范围、43项检查结论、仍不能说明的内容和下一最小任务；
