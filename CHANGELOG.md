@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER 剩余B/C/D真实回填接收登记
+
+- 新增 `03_corpus/manual_review_remaining_return_handoff_register.md`，记录剩余B/C/D真实回填接收登记的性质声明、上游依据、登记范围、推荐接收目录、必填回填字段、当前不能声称内容、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_remaining_return_handoff_register_v1.csv`，为B组22项、C组47项和D组9项建立剩余78项真实回填接收登记，连续覆盖 `RPH-REM-001` 至 `RPH-REM-078`；
+- 新增 `03_corpus/manual_review_remaining_return_handoff_rules_v1.csv`，建立14条剩余材料回填交接规则，覆盖范围锁定、来源锁定、目录规范、命名规范、B/C/D组必填字段、空白保护、冲突处理、放行门禁、原件保护、整合顺序、A组边界和下一QA；
+- 确认登记表逐行继承B/C/D销项包、总行动计划和总索引，列明推荐接收目录、命名规则、允许扩展名、接收字段、组别必填回填字段、固定字段检查、触发整合QA条件和关联 `RIP` 规则；
+- 确认真实文件名、另存路径、校验值、文件大小、接收日期、接收人、回填人代码、回填日期、观察到的审查决定、修订说明、图件可用性、重绘决定、分值或附属图边界说明均保持空白；
+- 明确本任务不创建真实回填目录，不登记真实回填副本，不关闭任何人工校对项，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-REMAINING-RETURN-PACKET-HANDOFF-REGISTER-QA`。
+
 ## 2026-07-19：G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER-QA 首批真实回填接收登记QA
 
 - 新增 `03_corpus/manual_review_real_return_handoff_register_qa.md`，记录首批真实回填接收登记QA的性质声明、89项检查结论、检查分布、已确认一致性、仍不能声称内容、保留风险、下一最小任务和输出边界；
