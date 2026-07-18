@@ -238,6 +238,7 @@
 - 完成 `G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN`：新增 `03_corpus/manual_review_no_return_route_plan.md` 和 `03_corpus/manual_review_no_return_route_plan_v1.csv`，在确认当前没有真实人工终核回填副本的前提下，形成12条无回填推进路线；明确文献与理论核验、数据包与复现结构、回填接收准备可继续推进，语料转写复核、编码手册材料和正文占位只能作为内部准备，正式A/B评分者编码、正式统计、典型案例图件定稿、第35届分值统计、第42届第3题附属图边界、主张矩阵升级和教学效果结论必须冻结。本任务不关闭154项人工校对问题，不释放正式编码或正文结果。
 - 完成 `G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN-QA`：新增 `03_corpus/manual_review_no_return_route_plan_qa.md` 和 `03_corpus/manual_review_no_return_route_plan_qa_v1.csv`，完成38项QA检查；确认路线登记表为UTF-8 BOM和LF换行，12条 `NR-01` 至 `NR-12` 连续唯一，状态只包含“仅内部准备”“可继续推进”“正式冻结”，且未出现正式放行状态；接收登记8行仍均为未收到真实回填，接收QA 63项均通过，正式阻断表6项均保持“阻断”；正文和主张矩阵继续隔离。
 - 完成 `G1-07-NO-RETURN-MATERIAL-QUEUE`：新增 `03_corpus/no_return_material_queue.md` 和 `03_corpus/no_return_material_queue_v1.csv`，在无真实回填条件下建立14项待核材料分层队列；其中L1内部可启动5项、L2文献/复现可启动3项、L3边界维护2项、L4等待真实回填4项；10项为“不放行”，4项为“冻结”。队列明确接收目录准备、语料路径QA、C组候选图件索引、D组分值/附属图缺口、G2全文阅读、参考文献主张核验、评分者交接包QA、复现包缺口、正文占位、主张矩阵侧车和正式产出等待项的下一动作；本任务不关闭154项人工校对问题，不写正文结果，不修改主张矩阵。
+- 完成 `G1-07-NO-RETURN-MATERIAL-QUEUE-QA`：新增 `03_corpus/no_return_material_queue_qa.md` 和 `03_corpus/no_return_material_queue_qa_v1.csv`，完成43项QA检查；确认队列表为UTF-8 BOM和LF换行，14条 `NQ-01` 至 `NQ-14` 连续唯一，L1内部可启动5项、L2文献/复现可启动3项、L3边界维护2项、L4等待真实回填4项；10项为“不放行”，4项为“冻结”，未出现正式放行状态；14项均填写禁止事项、解锁条件、下一任务和正文边界，上游路线QA、接收登记和正式阻断表均保持一致。
 
 ## 关键阻塞项
 
@@ -252,4 +253,4 @@
 
 ## 下一任务
 
-`G1-07-NO-RETURN-MATERIAL-QUEUE-QA`：检查无真实回填待核材料分层队列，确认14项队列、层级、冻结状态、禁写边界、下一任务和CSV格式均未误放行正式结果。
+`G1-07-RETURN-INTAKE-FOLDER-PREP`：按照无真实回填队列 `NQ-01`，建立真实回填接收目录规范和回收登记模板，为后续真正收到回填副本时的接收、校验和整合做准备。

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-MATERIAL-QUEUE-QA 无真实回填待核材料队列QA
+
+- 新增 `03_corpus/no_return_material_queue_qa.md`，记录材料队列QA范围、43项检查结论、仍不能说明的内容和下一最小任务；
+- 新增 `03_corpus/no_return_material_queue_qa_v1.csv`，逐项检查队列表的CSV编码、LF换行、字段、行数、ID连续唯一性、层级计数、释放状态、上游路线QA、接收登记、正式阻断表、正文隔离和主张矩阵隔离；
+- 确认队列表共14行，`NQ-01` 至 `NQ-14` 连续唯一，L1内部可启动5项、L2文献/复现可启动3项、L3边界维护2项、L4等待真实回填4项；
+- 确认10项为“不放行”、4项为“冻结”，未出现正式放行状态，14项均填写禁止事项、解锁条件、下一任务和正文边界；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-RETURN-INTAKE-FOLDER-PREP`。
+
 ## 2026-07-19：G1-07-NO-RETURN-MATERIAL-QUEUE 无真实回填待核材料分层队列
 
 - 新增 `03_corpus/no_return_material_queue.md`，说明无真实回填条件下的队列性质、四层分类、可立即做的内部准备、可继续做的文献/复现准备、边界维护项和必须等待真实回填的正式产出；
