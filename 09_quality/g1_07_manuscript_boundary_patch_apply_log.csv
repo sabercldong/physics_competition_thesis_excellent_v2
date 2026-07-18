@@ -1,0 +1,6 @@
+﻿apply_id,source_patch_id,target_file,section,applied,applied_text,evidence_file,boundary
+APPLY-001,PATCH-001,08_manuscript/03_methods.md,3.2,是,截至人工终核准备报告形成时，154项均已有回填入口，但真实校对人、真实校对日期和真实决定仍为空，真实人工销项数为0。因此，该语料只能作为正式编码输入候选，不能直接写作已完成正式校对。,03_corpus/manual_review_closure_ready_report.md;03_corpus/manual_review_closure_ready_gate_matrix_v1.csv,不声称人工校对完成
+APPLY-002,PATCH-002,08_manuscript/03_methods.md,3.6,是,`03_corpus/manual_review_closure_ready_report.md` 进一步确认，A/B/C/D四组回填包虽可交给真实校对人，但真实人工终核、真实评分者独立编码和分歧裁决均尚未发生。,03_corpus/manual_review_closure_ready_report.md,不声称正式编码流程已经发生
+APPLY-003,PATCH-004,08_manuscript/04_results.md,章首说明,是,本章边界以 `03_corpus/manual_review_closure_ready_report.md` 和 `09_quality/g1_07_no_true_review_manuscript_boundary_map.md` 为准；当前154项真实人工销项数为0。,03_corpus/manual_review_closure_ready_report.md;09_quality/g1_07_no_true_review_manuscript_boundary_map.md,不报告正式结果
+APPLY-004,PATCH-005,08_manuscript/04_results.md,4.1,是,因此，219个分析单元和各届数量只可作为语料规模说明；题干、公式、图件和分值边界的正式使用仍以真实人工终核回填后的版本为准。,03_corpus/manual_review_closure_ready_gate_matrix_v1.csv;09_quality/g1_07_no_true_review_manuscript_boundary_map.csv,不把样本数解释为正式统计结果
+APPLY-005,PATCH-006,08_manuscript/04_results.md,4.6,是,其中人工校对门槛包括A组OCR/公式、B组公式、C组题图图注、D组分值边界与附属证据四类，当前均只有回填入口和QA记录，没有真实销项记录。,03_corpus/manual_review_closure_packet_master_index.md;03_corpus/manual_review_closure_ready_report.md,不把回填入口和QA记录写成真实销项

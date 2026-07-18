@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-PATCH-APPLY-SAFE 安全应用P0正文门禁句
+
+- 在 `08_manuscript/03_methods.md` 工作区补入2条P0门禁句，分别说明154项真实人工销项数为0，以及A/B/C/D四组回填包尚未发生真实人工终核、真实评分者独立编码和分歧裁决；
+- 在 `08_manuscript/04_results.md` 工作区补入3条P0门禁句，分别说明第四章边界来源、219个分析单元的语料规模边界，以及A/B/C/D四组人工校对门槛均未真实销项；
+- 新增 `09_quality/g1_07_manuscript_boundary_patch_apply_log.md` 和 `09_quality/g1_07_manuscript_boundary_patch_apply_log.csv`，记录5条P0补丁的来源、位置、证据文件和禁止声称边界；
+- 本轮不应用第五章P1案例句，不直接修改 `09_quality/claim_evidence_matrix.csv`，不补造真实校对人、真实评分者、统计结果、专家意见、教师证据、课堂材料或教学效果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUSCRIPT-BOUNDARY-PATCH-QA`。
+
 ## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-PATCH-PLAN 无真实回填正文最小修订计划
 
 - 新增 `09_quality/g1_07_manuscript_boundary_patch_plan.md`，说明第3、4、5章和主张证据矩阵后续只需补入人工终核门禁来源句，不直接生成正式结果；
