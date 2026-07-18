@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-P1-APPLY-SAFE 安全应用P1正文门禁句
+
+- 在 `08_manuscript/03_methods.md` 工作区补入1条P1门禁句，说明在人工终核真实回填、正式A/B评分者记录和裁决后唯一分析表形成前，第4章应保持占位版；
+- 在 `08_manuscript/05_cases_and_diagnosis.md` 工作区补入3条P1门禁句，分别说明候选案例需按A/B/C/D回填包确认、候选小问不得进入摘要/结论/教学建议、无真实教师学生或课堂材料时只能写设计建议；
+- 新增 `09_quality/g1_07_manuscript_boundary_p1_apply_log.md` 和 `09_quality/g1_07_manuscript_boundary_p1_apply_log.csv`，记录4条P1补丁的来源、位置、证据文件和禁止声称边界；
+- 本轮继续不修改 `09_quality/claim_evidence_matrix.csv`，不补造正式编码、统计、专家、教师、课堂或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUSCRIPT-BOUNDARY-P1-QA`。
+
 ## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-P1-PLAN P1正文门禁路线评估
 
 - 新增 `09_quality/g1_07_manuscript_boundary_p1_plan.md`，评估P1正文门禁补丁的应用路线和风险；

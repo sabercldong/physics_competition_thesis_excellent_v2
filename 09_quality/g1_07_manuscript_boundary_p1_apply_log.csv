@@ -1,0 +1,6 @@
+﻿apply_id,source_patch_id,target_file,location,applied_sentence_or_action,evidence_source,prohibited_claims,status
+P1-APPLY-001,PATCH-003,08_manuscript/03_methods.md,3.9 本章小结,在人工终核真实回填、正式A/B评分者记录和裁决后唯一分析表形成前，第4章应保持占位版，不应提前生成结论性段落。,09_quality/g1_07_manuscript_boundary_p1_plan.md;09_quality/g1_07_manuscript_boundary_patch_qa.md,不得提前承诺第四章已有正式结果,已应用
+P1-APPLY-002,PATCH-007,08_manuscript/05_cases_and_diagnosis.md,章首说明,候选案例涉及的题干、公式、图件或分值边界仍需按A/B/C/D人工终核回填包逐项确认，确认前只能作为案例复核对象。,03_corpus/manual_review_closure_packet_master_index.md;09_quality/g1_07_no_true_review_manuscript_boundary_map.md,不得把候选案例写成正式代表性案例或正式质疑创新案例,已应用
+P1-APPLY-003,PATCH-008,08_manuscript/05_cases_and_diagnosis.md,5.1 候选池说明,下表的候选小问仅用于后续证据表准备，不能在未形成裁决后唯一分析表前进入摘要、结论或教学建议。,09_quality/g1_07_no_true_review_manuscript_boundary_map.csv,不得增加未由正式编码裁决支持的新候选结论,已应用
+P1-APPLY-004,PATCH-009,08_manuscript/05_cases_and_diagnosis.md,5.8 本章小结,在缺少真实教师、学生或课堂材料时，本章后续最多改写为设计建议；不能写成教学诊断、课堂可行性或教学效果评价。,03_corpus/manual_review_closure_ready_report.md;09_quality/g1_07_claim_matrix_boundary_overlay.csv,不得补造教师访谈、学生困难、课堂实施或前后测效果,已应用
+P1-APPLY-005,PATCH-010,09_quality/claim_evidence_matrix.csv,主张证据矩阵,本轮不应用；等待单独矩阵覆盖任务。,09_quality/g1_07_claim_matrix_boundary_overlay.csv,不得把主张状态升级为已核验、已完成正式分析或已完成教学验证,未应用
