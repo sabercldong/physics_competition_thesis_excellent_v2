@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-A-CLOSURE-PACKET A组真实人工终核回填包
+
+- 新增 `03_corpus/manual_review_a_closure_packet.md` 和 `03_corpus/manual_review_a_closure_packet_v1.csv`，为A组76项高风险OCR、公式与特殊符号问题生成真实人工终核回填入口；
+- 核对A组38个材料ID，对应V1视觉转写稿和公式核对表均已定位，入口文件存在率为100%；
+- 回填表保留真实校对人、真实校对日期、校对决定、是否需修订、修订说明和复核后证据位置等空白栏位；本轮不代填、不关闭任何条目；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-A-CLOSURE-PACKET-QA`，准备按38个材料ID生成题目级校对单视图。
+
 ## 2026-07-19：G1-07-COVERAGE-TO-CLOSURE-PLAN 人工校对真实销项计划
 
 - 新增 `03_corpus/manual_review_closure_plan.md` 和 `03_corpus/manual_review_closure_plan_v1.csv`，在154项人工校对入口覆盖审计基础上，建立逐项真实销项路线；
