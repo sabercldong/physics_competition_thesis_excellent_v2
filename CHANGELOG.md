@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-INTAKE-RULES P1真实回填接收规则
+
+- 新增 `09_quality/no_return_reference_p1_backfill_intake_rules.md`，记录P1真实回填接收规则的性质声明、总体结论、接收总原则、18条规则概要、冲突分级、字段填写门槛、当前仍不能声称内容和下一最小任务；
+- 新增 `09_quality/no_return_reference_p1_backfill_intake_rules_v1.csv`，结构化登记18条规则，覆盖接收登记、文件命名、来源合法性、版本定位、校验值、页码章节、阅读笔记、摘录边界、主张支持、引用决定、矩阵合并、正文使用、隐私材料、冲突处理、放行判定、台账同步、Git隔离和待核处理；
+- 明确未来P1真实材料必须先匹配 `P1BF-01` 至 `P1BF-11` 的既有回填入口，固定继承字段不得改动，登记完成不等于可引用，获取全文不等于已阅读全文，阅读笔记不等于主张已被支持；
+- 建立 `C0` 至 `C3` 冲突分级，规定来源内容实质不一致、非法来源、版权风险、个人敏感信息、未匿名学生材料或未取得同意的教师/课堂材料均不得进入正文、主张矩阵或公开复现包；
+- 确认18条规则全部保持“不放行”，未来回填后仍需独立QA，不得由接收任务直接释放正文、主张矩阵或 `02_literature/references.bib` 修改；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-INTAKE-RULES-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-TEMPLATE-QA P1材料包空白回填模板QA
 
 - 新增 `09_quality/no_return_reference_p1_backfill_template_qa.md`，记录P1空白回填模板QA的性质声明、90项检查结论、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
