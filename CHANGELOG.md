@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-D-CLOSURE-PACKET D组真实人工终核回填包
+
+- 新增 `03_corpus/manual_review_d_closure_packet.md` 和 `03_corpus/manual_review_d_closure_packet_v1.csv`，为D组9项分值边界与附属证据问题生成真实人工终核回填入口；
+- 核对D组9项中8项为第35届分值边界复核，1项为第42届第3题解答放大图与附录图号边界确认；
+- 9项均已定位D1核对入口，合计45条核对记录、62张页面证据图和71条页面索引记录，当前未发现核对表或页面证据路径缺失；
+- 回填表保留真实校对人、真实校对日期、校对决定、正式评分来源或图号边界确认、修订说明和最终证据位置等空白栏位；本轮不补造分值、配分、图号边界或最终确认；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-D-CLOSURE-PACKET-QA`。
+
 ## 2026-07-19：G1-07-C-CLOSURE-PACKET-QA C组回填包完整性检查
 
 - 新增 `03_corpus/manual_review_c_closure_packet_qa.md` 和 `03_corpus/manual_review_c_closure_packet_qa_v1.csv`，逐项检查C组47项真实人工终核回填包；
