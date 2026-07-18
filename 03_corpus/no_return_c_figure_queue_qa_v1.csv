@@ -1,0 +1,49 @@
+﻿check_id,check_item,expected,observed,result,evidence,risk_if_failed,next_action
+CFIG-QA-001,输入文件存在：03_corpus/no_return_c_figure_queue_v1.csv,文件存在,exists=True,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-002,输入文件存在：03_corpus/manual_review_c_closure_packet_v1.csv,文件存在,exists=True,通过,03_corpus/manual_review_c_closure_packet_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-003,输入文件存在：03_corpus/manual_review_c_closure_packet_qa_v1.csv,文件存在,exists=True,通过,03_corpus/manual_review_c_closure_packet_qa_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-004,输入文件存在：03_corpus/no_return_material_queue_v1.csv,文件存在,exists=True,通过,03_corpus/no_return_material_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-005,输入文件存在：03_corpus/no_return_c_figure_queue.md,文件存在,exists=True,通过,03_corpus/no_return_c_figure_queue.md,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-006,C组图件清单CSV编码换行,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-007,C组图件清单字段完整,包含32个预期字段,32字段,通过,figure_queue_id;priority_layer;priority_reason;queue_rank;issue_id;material_id;competition_no;year;question_no;severity;affected_item_count;affected_item_ids;candidate_asset_count;original_figure_count;candidate_figure_count;source_page_count;contact_sheet_file;evidence_chain_type;source_page_files;original_figure_files;candidate_figure_files;all_referenced_paths_exist;current_review_status;candidate_status_summary;redraw_need_level;figure_number_caption_boundary_focus;related_open_issue_ids;related_open_issue_types;allowed_next_action_now;manuscript_use_status;unblock_condition;source_packet_file,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-008,C组图件清单行数,47行,47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-009,C组回填包行数,47行,47,通过,03_corpus/manual_review_c_closure_packet_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-010,C组回填包QA行数,47行,47,通过,03_corpus/manual_review_c_closure_packet_qa_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-011,figure_queue_id连续唯一,FQ-001至FQ-047连续唯一,unique=47; first=['FQ-001']; last=['FQ-047'],通过,"FQ-001,FQ-002,FQ-003,FQ-045,FQ-046,FQ-047",若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-012,issue_id与C组回填包一致,清单与回填包issue_id集合完全一致,missing=[]; extra=[],通过,03_corpus/no_return_c_figure_queue_v1.csv;03_corpus/manual_review_c_closure_packet_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-013,issue_id与C组回填包QA一致,清单与回填包QA issue_id集合完全一致,missing=[]; extra=[],通过,03_corpus/no_return_c_figure_queue_v1.csv;03_corpus/manual_review_c_closure_packet_qa_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-014,affected_item_count逐项匹配回填包,47项均匹配,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-015,candidate_asset_count逐项匹配回填包,47项均匹配,47/47,通过,03_corpus/manual_review_c_closure_packet_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-016,original_figure_count按原裁图路径可复算,47项均匹配,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-017,candidate_figure_count按候选图路径可复算,47项均匹配,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-018,source_page_count按来源页路径可复算,47项均匹配,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-019,逐项路径状态均为可达,47项all_referenced_paths_exist均为是,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-020,逐项source_packet_file指向C组回填包,47项均指向manual_review_c_closure_packet_v1.csv,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-021,逐项当前状态仍为内部/待核性质,47项未写成最终通过,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-022,逐项关联未销项问题提示完整,47项均填写related_open_issue字段,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-023,清单内路径直接扫描,来源页、原裁图、候选图、对照图均存在,missing=0,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-024,候选资产总数复算,64,64,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-025,候选图路径总数复算,64,64,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-026,原裁图路径总数复算,63,63,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-027,来源页路径总数复算,54,54,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-028,届次覆盖计数,第35至42届计数匹配,"{'35': 5, '36': 6, '37': 6, '38': 8, '39': 4, '40': 8, '41': 5, '42': 5}",通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-029,严重等级计数,高39；中8,"{'高': 39, '中': 8}",通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-030,证据链类型计数,特殊41终检2；C1普通43；42Q03附属图边界1；35Q07答案参考1,"{'SPECIAL_41_FINALCHECK_MANIFEST': 2, 'C1_BATCH_LOG_AND_RENDER_INDEX': 43, 'C1_BATCH_PLUS_D1_SOLFIG_BOUNDARY': 1, 'C1_BATCH_PLUS_ANSWER_PAGE_REFERENCE': 1}",通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-031,优先层级计数,6类层级计数匹配,"{'P0_SPECIAL_41_FINALCHECK': 2, 'P1_BOUNDARY_OR_REDRAW_HIGH': 10, 'P3_SINGLE_FIGURE_REVIEW': 28, 'P2_MULTI_FIGURE_REVIEW': 5, 'P0_SPECIAL_SOLFIG_BOUNDARY': 1, 'P0_SPECIAL_ANSWER_REFERENCE': 1}",通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-032,重绘需求初分层计数,高4；中43,"{'高': 4, '中': 43}",通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-033,第41届特殊终检链issue集合,CPHO41-Q02-FIG与CPHO41-Q07-FIG,"['CPHO41-Q02-FIG', 'CPHO41-Q07-FIG']",通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-034,第41届特殊证据链文件存在,两项均含终检CSV、重裁说明和manifest,2/2,通过,CPHO41_Q02_Q07_figure_finalcheck_v1.csv;CPHO41_Q02_Q07_figure_recrop_review_v1.md;CPHO41_Q02_Q07_recrop_manifest.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-035,第42届第3题附属图边界标注,仅CPHO42-Q03-FIG,['CPHO42-Q03-FIG'],通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-036,第35届第7题答案页参考边界标注,仅CPHO35-Q07-FIG,['CPHO35-Q07-FIG'],通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-037,上游NQ-03队列边界,NQ-03存在且不放行，禁止候选图写成论文最终图,rows=1; status=不放行,通过,03_corpus/no_return_material_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-038,逐项论文使用边界,47项均写明不得用于论文最终图，只作内部候选入口,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-039,逐项当前允许动作边界,47项均限制为候选图件对照与待核登记,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-040,逐项解锁条件,47项均要求真实终核与关闭QA,47/47,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-041,清单未设置真实回填字段,本清单不承载真实校对人/日期/决定字段,forbidden_fields_present=False,通过,03_corpus/no_return_c_figure_queue_v1.csv,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-042,报告包含关键表述：C组待核图件问题：47项,报告应包含该表述,present=True,通过,03_corpus/no_return_c_figure_queue.md,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-043,报告包含关键表述：候选资产记录数：64个,报告应包含该表述,present=True,通过,03_corpus/no_return_c_figure_queue.md,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-044,报告包含关键表述：路径状态：本清单引用路径缺失 0 条,报告应包含该表述,present=True,通过,03_corpus/no_return_c_figure_queue.md,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-045,报告包含关键表述：不能说明C组47项已经完成真实人工校对,报告应包含该表述,present=True,通过,03_corpus/no_return_c_figure_queue.md,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-046,报告包含关键表述：不能说明64个候选资产已经成为论文最终插图或附录定稿图,报告应包含该表述,present=True,通过,03_corpus/no_return_c_figure_queue.md,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-047,报告包含关键表述：G1-07-C-NO-RETURN-FIGURE-QUEUE-QA,报告应包含该表述,present=True,通过,03_corpus/no_return_c_figure_queue.md,若不通过，将导致C组图件清单无法作为后续复核入口。,保持当前清单并进入下一步；若不通过，先修复清单再复查。
+CFIG-QA-048,报告越界表述扫描,敏感结果性表述只允许出现在否定边界中,positive_hits=[],通过,03_corpus/no_return_c_figure_queue.md,若不通过，报告可能误导为C组已完成正式校对或图件定稿。,保持当前清单并进入下一步；若不通过，先修复清单再复查。

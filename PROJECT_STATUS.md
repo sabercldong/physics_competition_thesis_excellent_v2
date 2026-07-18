@@ -243,6 +243,7 @@
 - 完成 `G1-07-RETURN-INTAKE-FOLDER-PREP-QA`：新增 `03_corpus/return_intake_folder_prep_qa.md` 和 `03_corpus/return_intake_folder_prep_qa_v1.csv`，完成75项QA检查；确认接收登记模板和目录规则表均为UTF-8 BOM和LF换行，登记模板5行均为“模板：未收到”，真实文件名、副本路径、校验值、接收日期、接收人、校对人和校对日期均为空；12条 `RIF-01` 至 `RIF-12` 规则连续唯一且全部“不放行”；候选真实回填目录仍未创建，上游接收状态仍未收到真实回填，正式阻断表6项均保持“阻断”。
 - 完成 `G1-07-NO-RETURN-CORPUS-PATH-QA`：新增 `03_corpus/no_return_corpus_path_qa.md`、`03_corpus/no_return_corpus_path_qa_v1.csv` 和 `03_corpus/no_return_corpus_path_audit_v1.csv`；复算4375条路径引用、898个唯一文件路径，断链0；A/B/C/D回填包、批次日志、渲染索引、转写稿、公式核对表、候选图和特殊重裁manifest均可定位。C组47项中45项由C1批次日志覆盖，`CPHO41-Q02-FIG` 和 `CPHO41-Q07-FIG` 由第41届特殊图件终检与重裁manifest覆盖；另登记5个CSV编码或换行格式待修复项。本任务不关闭154项人工校对问题，不释放正式编码，不改写论文正文。
 - 完成 `G1-07-C-NO-RETURN-FIGURE-QUEUE`：新增 `03_corpus/no_return_c_figure_queue.md` 和 `03_corpus/no_return_c_figure_queue_v1.csv`，按照无真实回填队列 `NQ-03` 汇总C组47项候选图件待核入口；记录64个候选资产、64条候选图路径、63条原裁图路径和54条来源页路径，引用路径缺失0条；分层登记第41届第2/7题特殊终检链、第42届第3题题面图与解答放大图边界、第35届第7题题面图与答案页参考边界、10项高优先边界/重绘疑点、5项多图逐图复核项和28项单图常规复核项。本任务不关闭C组47项，不确认论文最终图，不填写真实校对人或日期。
+- 完成 `G1-07-C-NO-RETURN-FIGURE-QUEUE-QA`：新增 `03_corpus/no_return_c_figure_queue_qa.md` 和 `03_corpus/no_return_c_figure_queue_qa_v1.csv`，完成48项QA检查且全部通过；确认C组图件清单47项与C组回填包、C组回填包QA的 `issue_id` 集合完全一致，候选资产64个、候选图路径64条、原裁图路径63条、来源页路径54条均可复算，路径直接扫描缺失0条；第41届第2/7题特殊终检链、第42届第3题附属图边界和第35届第7题答案页参考边界均已单独标注，清单仍明确不得用于论文最终图。
 
 ## 关键阻塞项
 
@@ -257,4 +258,4 @@
 
 ## 下一任务
 
-`G1-07-C-NO-RETURN-FIGURE-QUEUE-QA`：检查C组候选图件待核分层清单是否完整覆盖C组47项、候选资产64个和第41届特殊证据链，确认路径、CSV格式、层级计数和禁写边界未误放行。
+`G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE`：按照无真实回填队列 `NQ-04`，整理D组第35届分值边界和第42届第3题解答放大图待核请求清单；不得生成第35届分值统计或附录定稿图结论。

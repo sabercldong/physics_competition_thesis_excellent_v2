@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-C-NO-RETURN-FIGURE-QUEUE-QA C组候选图件清单QA
+
+- 新增 `03_corpus/no_return_c_figure_queue_qa.md`，记录C组候选图件待核分层清单的QA范围、48项检查结论、关键通过点、禁写边界和下一最小任务；
+- 新增 `03_corpus/no_return_c_figure_queue_qa_v1.csv`，逐项检查输入文件存在性、CSV编码换行、字段、行数、ID连续性、与C组回填包及回填包QA的集合一致性、候选资产计数、路径可达、层级计数、证据链计数、特殊边界标注、NQ-03上游边界和越界表述；
+- 确认C组图件清单47项与C组回填包、C组回填包QA的 `issue_id` 集合完全一致，`FQ-001` 至 `FQ-047` 连续唯一；
+- 确认候选资产64个、候选图路径64条、原裁图路径63条、来源页路径54条均可复算，路径直接扫描缺失0条；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE`。
+
 ## 2026-07-19：G1-07-C-NO-RETURN-FIGURE-QUEUE C组候选图件待核分层清单
 
 - 新增 `03_corpus/no_return_c_figure_queue.md`，记录C组候选图件待核清单的性质、总体数量、分层口径、重点疑点、禁写边界和下一最小任务；
