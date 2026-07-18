@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE 参考文献与主张核验待补清单
+
+- 新增 `09_quality/no_return_reference_claim_queue.md`，记录无真实回填条件下参考文献与主张支撑关系核验的性质声明、总体统计、分层结果、P0定稿复核项、P1关键缺口、P2排除边界和下一最小任务；
+- 新增 `09_quality/no_return_reference_claim_queue_v1.csv`，形成21项待补队列，逐项登记来源ID、关联主张、当前证据状态、已有证据文件、允许用途、禁止用途、下一动作、解锁条件、正文边界、NQ-06依据和本轮不放行状态；
+- 队列覆盖19条文献核验记录、10条引文动作队列、23条引文入口、6条正式候选参考映射、5条排除登记、11条参考文献准备记录和19条主张证据矩阵记录；
+- 分层结果为P0可引用来源定稿复核6项、P1全文获取/主张补证11项、P2排除来源与正式结果防误用4项；所有队列项均保持“不放行”；
+- 明确本任务不改写论文正文，不新增正式参考文献，不修改 `09_quality/claim_evidence_matrix.csv`，不补造阅读笔记、页码、文献结论或学校格式；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE-QA`。
+
 ## 2026-07-19：G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE-QA D组分值与附属图待核清单QA
 
 - 新增 `03_corpus/no_return_d_score_solfig_queue_qa.md`，记录D组分值与附属图待核清单的QA性质、48项检查结论、结构一致性、禁写边界、保留风险和下一最小任务；

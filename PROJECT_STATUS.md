@@ -246,6 +246,7 @@
 - 完成 `G1-07-C-NO-RETURN-FIGURE-QUEUE-QA`：新增 `03_corpus/no_return_c_figure_queue_qa.md` 和 `03_corpus/no_return_c_figure_queue_qa_v1.csv`，完成48项QA检查且全部通过；确认C组图件清单47项与C组回填包、C组回填包QA的 `issue_id` 集合完全一致，候选资产64个、候选图路径64条、原裁图路径63条、来源页路径54条均可复算，路径直接扫描缺失0条；第41届第2/7题特殊终检链、第42届第3题附属图边界和第35届第7题答案页参考边界均已单独标注，清单仍明确不得用于论文最终图。
 - 完成 `G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE`：新增 `03_corpus/no_return_d_score_solfig_queue.md` 和 `03_corpus/no_return_d_score_solfig_queue_v1.csv`，按照无真实回填队列 `NQ-04` 汇总D组9项分值与附属图待核请求；其中8项为第35届分值边界，1项为第42届第3题解答放大图边界。清单挂接45条核对记录、62张页面证据图和71条页面索引记录，引用路径缺失0条；当前八个第35届条目仍未见PDF明示大题分值、分问分值或正式评分细则，第42届第3题题解图3a-3c仍标注为参考解答等效电路图而非题面图3a-3d一一原样放大。本任务不关闭D组9项，不生成第35届分值统计，不确认第42届第3题附录定稿图。
 - 完成 `G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE-QA`：新增 `03_corpus/no_return_d_score_solfig_queue_qa.md` 和 `03_corpus/no_return_d_score_solfig_queue_qa_v1.csv`，完成48项QA检查且全部通过；确认D组待核请求清单9项与D组回填包、D组回填包QA和D1批次日志的 `issue_id` 集合完全一致，`DREQ-01` 至 `DREQ-09` 连续唯一，8项第35届分值边界与1项第42届第3题解答放大图边界计数正确；45条核对记录、62张页面证据图和71条页面索引均可复算，引用路径缺失0条；上游D组真实回填栏仍为空，清单未放行第35届分值统计或第42届第3题附录定稿图。
+- 完成 `G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE`：新增 `09_quality/no_return_reference_claim_queue.md` 和 `09_quality/no_return_reference_claim_queue_v1.csv`，按照无真实回填队列 `NQ-06` 将参考文献与主张支撑关系压缩为21项待补队列；其中P0可引用来源定稿复核6项、P1全文获取/主张补证11项、P2排除来源与正式结果防误用4项。清单覆盖19条文献核验记录、10条引文动作队列、23条引文入口、6条正式候选参考映射、5条排除登记、11条参考文献准备记录和19条主张矩阵记录；所有队列项均保持“不放行”，本任务不改写正文、不修改 `09_quality/claim_evidence_matrix.csv`、不新增正式参考文献、不补造文献阅读结论。
 
 ## 关键阻塞项
 
@@ -260,4 +261,4 @@
 
 ## 下一任务
 
-`G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE`：按照无真实回填队列 `NQ-06`，整理参考文献与主张核验待补清单；不得改写论文结果章，不得升级主张证据矩阵，不得补造文献阅读结论。
+`G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE-QA`：检查参考文献与主张核验待补清单的覆盖范围、分类计数、禁写边界、NQ-06来源和台账一致性；不得改写正文，不得修改主张证据矩阵，不得补造文献阅读结论。
