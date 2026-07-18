@@ -1,0 +1,83 @@
+﻿check_id,check_item,expected,observed,result,evidence,risk_after_check,next_action
+QA-01,输入文件存在：03_corpus/no_return_material_queue_v1.csv,文件存在,True,通过,03_corpus/no_return_material_queue_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-02,输入文件存在：03_corpus/no_return_material_queue_qa_v1.csv,文件存在,True,通过,03_corpus/no_return_material_queue_qa_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-03,输入文件存在：03_corpus/manual_review_closure_action_plan_v1.csv,文件存在,True,通过,03_corpus/manual_review_closure_action_plan_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-04,输入文件存在：03_corpus/manual_review_closure_packet_master_index_v1.csv,文件存在,True,通过,03_corpus/manual_review_closure_packet_master_index_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-05,输入文件存在：03_corpus/manual_review_a_closure_packet_v1.csv,文件存在,True,通过,03_corpus/manual_review_a_closure_packet_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-06,输入文件存在：03_corpus/manual_review_b_closure_packet_v1.csv,文件存在,True,通过,03_corpus/manual_review_b_closure_packet_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-07,输入文件存在：03_corpus/manual_review_c_closure_packet_v1.csv,文件存在,True,通过,03_corpus/manual_review_c_closure_packet_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-08,输入文件存在：03_corpus/manual_review_d_closure_packet_v1.csv,文件存在,True,通过,03_corpus/manual_review_d_closure_packet_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-09,输入文件存在：03_corpus/manual_review_a1_batch_log.csv,文件存在,True,通过,03_corpus/manual_review_a1_batch_log.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-10,输入文件存在：03_corpus/manual_review_b1_batch_log.csv,文件存在,True,通过,03_corpus/manual_review_b1_batch_log.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-11,输入文件存在：03_corpus/manual_review_c1_batch_log.csv,文件存在,True,通过,03_corpus/manual_review_c1_batch_log.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-12,输入文件存在：03_corpus/manual_review_d1_batch_log.csv,文件存在,True,通过,03_corpus/manual_review_d1_batch_log.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-13,输入文件存在：03_corpus/manual_review_a1_render_index.csv,文件存在,True,通过,03_corpus/manual_review_a1_render_index.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-14,输入文件存在：03_corpus/manual_review_b1_render_index.csv,文件存在,True,通过,03_corpus/manual_review_b1_render_index.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-15,输入文件存在：03_corpus/manual_review_c1_render_index.csv,文件存在,True,通过,03_corpus/manual_review_c1_render_index.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-16,输入文件存在：03_corpus/manual_review_d1_render_index.csv,文件存在,True,通过,03_corpus/manual_review_d1_render_index.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-17,输入文件存在：03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv,文件存在,True,通过,03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-18,输入文件存在：03_corpus/manual_review_return_intake_status_v1.csv,文件存在,True,通过,03_corpus/manual_review_return_intake_status_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-19,输入文件存在：03_corpus/manual_review_formal_coding_blocker_v1.csv,文件存在,True,通过,03_corpus/manual_review_formal_coding_blocker_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-20,CSV编码换行：03_corpus/no_return_material_queue_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/no_return_material_queue_v1.csv,编码异常会影响复现读取。,无需处理
+QA-21,CSV编码换行：03_corpus/no_return_material_queue_qa_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/no_return_material_queue_qa_v1.csv,编码异常会影响复现读取。,无需处理
+QA-22,CSV编码换行：03_corpus/manual_review_closure_action_plan_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_closure_action_plan_v1.csv,编码异常会影响复现读取。,无需处理
+QA-23,CSV编码换行：03_corpus/manual_review_closure_packet_master_index_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_closure_packet_master_index_v1.csv,编码异常会影响复现读取。,无需处理
+QA-24,CSV编码换行：03_corpus/manual_review_a_closure_packet_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_a_closure_packet_v1.csv,编码异常会影响复现读取。,无需处理
+QA-25,CSV编码换行：03_corpus/manual_review_b_closure_packet_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_b_closure_packet_v1.csv,编码异常会影响复现读取。,无需处理
+QA-26,CSV编码换行：03_corpus/manual_review_c_closure_packet_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_c_closure_packet_v1.csv,编码异常会影响复现读取。,无需处理
+QA-27,CSV编码换行：03_corpus/manual_review_d_closure_packet_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_d_closure_packet_v1.csv,编码异常会影响复现读取。,无需处理
+QA-28,CSV编码换行：03_corpus/manual_review_a1_batch_log.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=False; LF=True; CRLF=False; CR_ONLY=False,不通过,03_corpus/manual_review_a1_batch_log.csv,编码异常会影响复现读取。,登记断链并修复后复查
+QA-29,CSV编码换行：03_corpus/manual_review_b1_batch_log.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=False; LF=True; CRLF=False; CR_ONLY=False,不通过,03_corpus/manual_review_b1_batch_log.csv,编码异常会影响复现读取。,登记断链并修复后复查
+QA-30,CSV编码换行：03_corpus/manual_review_c1_batch_log.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_c1_batch_log.csv,编码异常会影响复现读取。,无需处理
+QA-31,CSV编码换行：03_corpus/manual_review_d1_batch_log.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_d1_batch_log.csv,编码异常会影响复现读取。,无需处理
+QA-32,CSV编码换行：03_corpus/manual_review_a1_render_index.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=False; LF=True; CRLF=False; CR_ONLY=False,不通过,03_corpus/manual_review_a1_render_index.csv,编码异常会影响复现读取。,登记断链并修复后复查
+QA-33,CSV编码换行：03_corpus/manual_review_b1_render_index.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=False; LF=True; CRLF=False; CR_ONLY=False,不通过,03_corpus/manual_review_b1_render_index.csv,编码异常会影响复现读取。,登记断链并修复后复查
+QA-34,CSV编码换行：03_corpus/manual_review_c1_render_index.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_c1_render_index.csv,编码异常会影响复现读取。,无需处理
+QA-35,CSV编码换行：03_corpus/manual_review_d1_render_index.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_d1_render_index.csv,编码异常会影响复现读取。,无需处理
+QA-36,CSV编码换行：03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=True; CR_ONLY=False,不通过,03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv,编码异常会影响复现读取。,登记断链并修复后复查
+QA-37,CSV编码换行：03_corpus/manual_review_return_intake_status_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_return_intake_status_v1.csv,编码异常会影响复现读取。,无需处理
+QA-38,CSV编码换行：03_corpus/manual_review_formal_coding_blocker_v1.csv,UTF-8 BOM；LF；无CRLF/CR,BOM=True; LF=True; CRLF=False; CR_ONLY=False,通过,03_corpus/manual_review_formal_coding_blocker_v1.csv,编码异常会影响复现读取。,无需处理
+QA-39,NQ-02存在,队列表包含NQ-02,True,通过,03_corpus/no_return_material_queue_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-40,NQ-02层级,L1_INTERNAL_CAN_START,L1_INTERNAL_CAN_START,通过,03_corpus/no_return_material_queue_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-41,NQ-02状态,formal_release_status=不放行,不放行,通过,03_corpus/no_return_material_queue_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-42,NQ-02禁写边界,must_not_do包含不得写成正式人工终核,不得把路径可达或视觉检查写成正式人工终核。,通过,03_corpus/no_return_material_queue_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-43,源表行数：03_corpus/manual_review_closure_action_plan_v1.csv,154行,154,通过,03_corpus/manual_review_closure_action_plan_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-44,源表行数：03_corpus/manual_review_closure_packet_master_index_v1.csv,154行,154,通过,03_corpus/manual_review_closure_packet_master_index_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-45,源表行数：03_corpus/manual_review_a_closure_packet_v1.csv,76行,76,通过,03_corpus/manual_review_a_closure_packet_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-46,源表行数：03_corpus/manual_review_b_closure_packet_v1.csv,22行,22,通过,03_corpus/manual_review_b_closure_packet_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-47,源表行数：03_corpus/manual_review_c_closure_packet_v1.csv,47行,47,通过,03_corpus/manual_review_c_closure_packet_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-48,源表行数：03_corpus/manual_review_d_closure_packet_v1.csv,9行,9,通过,03_corpus/manual_review_d_closure_packet_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-49,源表行数：03_corpus/manual_review_a1_batch_log.csv,76行,76,通过,03_corpus/manual_review_a1_batch_log.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-50,源表行数：03_corpus/manual_review_b1_batch_log.csv,22行,22,通过,03_corpus/manual_review_b1_batch_log.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-51,源表行数：03_corpus/manual_review_c1_batch_log.csv,45行,45,通过,03_corpus/manual_review_c1_batch_log.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-52,源表行数：03_corpus/manual_review_d1_batch_log.csv,9行,9,通过,03_corpus/manual_review_d1_batch_log.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-53,源表行数：03_corpus/manual_review_a1_render_index.csv,188行,188,通过,03_corpus/manual_review_a1_render_index.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-54,源表行数：03_corpus/manual_review_b1_render_index.csv,153行,153,通过,03_corpus/manual_review_b1_render_index.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-55,源表行数：03_corpus/manual_review_c1_render_index.csv,264行,264,通过,03_corpus/manual_review_c1_render_index.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-56,源表行数：03_corpus/manual_review_d1_render_index.csv,71行,71,通过,03_corpus/manual_review_d1_render_index.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-57,源表行数：03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv,6行,6,通过,03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-58,路径明细总量,至少覆盖结构化路径和转写稿引用,4375,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-59,唯一文件路径数量,至少覆盖主要语料路径,898,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-60,断链数量,0条缺失路径,0,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若大于0，需列入断链修复队列。,无需处理
+QA-61,路径角色覆盖：source_file,该类路径至少1条,306,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-62,路径角色覆盖：review_entry_path,该类路径至少1条,76,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-63,路径角色覆盖：formula_entry_path,该类路径至少1条,22,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-64,路径角色覆盖：figure_review_entry_path,该类路径至少1条,51,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-65,路径角色覆盖：check_entry_path,该类路径至少1条,9,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-66,路径角色覆盖：rendered_page_files,该类路径至少1条,1182,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-67,路径角色覆盖：render_file,该类路径至少1条,341,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-68,路径角色覆盖：file_path,该类路径至少1条,335,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-69,路径角色覆盖：source_page_files,该类路径至少1条,54,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-70,路径角色覆盖：original_figure_files,该类路径至少1条,63,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-71,路径角色覆盖：candidate_figure_files,该类路径至少1条,64,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-72,路径角色覆盖：contact_sheet_file,该类路径至少1条,92,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-73,路径角色覆盖：markdown_path_ref,该类路径至少1条,301,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-74,路径角色覆盖：source_pdf,该类路径至少1条,676,通过,03_corpus/no_return_corpus_path_audit_v1.csv,若不通过，说明路径QA依据或证据链存在缺口。,无需处理
+QA-75,C组特殊图件边界,C组47项=45项C1批次+2项第41届特殊图件流程,C包=47; C1=45; special=2,通过,03_corpus/manual_review_c_closure_packet_v1.csv; 03_corpus/manual_review_c1_batch_log.csv,若不一致，C组图件入口可能缺失。,无需处理
+QA-76,第41届特殊图件路径可达,2项特殊图件均挂接终检、重裁说明和manifest,2,通过,03_corpus/manual_review_c_closure_packet_v1.csv,特殊图件流程不可误判为C1断链。,无需处理
+QA-77,动作计划真实回填字段仍为空：actual_reviewer_or_code,154/154为空,154/154,通过,03_corpus/manual_review_closure_action_plan_v1.csv,路径QA不得填写真实回填。,无需处理
+QA-78,动作计划真实回填字段仍为空：actual_review_date,154/154为空,154/154,通过,03_corpus/manual_review_closure_action_plan_v1.csv,路径QA不得填写真实回填。,无需处理
+QA-79,动作计划真实回填字段仍为空：actual_review_decision,154/154为空,154/154,通过,03_corpus/manual_review_closure_action_plan_v1.csv,路径QA不得填写真实回填。,无需处理
+QA-80,动作计划真实回填字段仍为空：post_review_evidence_or_final_location,154/154为空,154/154,通过,03_corpus/manual_review_closure_action_plan_v1.csv,路径QA不得填写真实回填。,无需处理
+QA-81,正式阻断状态,6项均为阻断,['阻断'],通过,03_corpus/manual_review_formal_coding_blocker_v1.csv,路径可达不得释放正式产出。,无需处理
+QA-82,路径明细边界声明,每条路径明细均声明不代表真实人工校对完成,4375,通过,03_corpus/no_return_corpus_path_audit_v1.csv,边界缺失会造成路径QA越界。,无需处理

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-CORPUS-PATH-QA 无真实回填语料证据路径QA
+
+- 新增 `03_corpus/no_return_corpus_path_qa.md`，记录转写稿、公式核对表、页面证据图、候选图、图件索引和A/B/C/D回填包路径QA范围、结论、边界疑点和下一最小任务；
+- 新增 `03_corpus/no_return_corpus_path_qa_v1.csv`，形成82项QA检查，其中77项通过、5项不通过；不通过项均为CSV编码或换行格式问题，不是路径断链；
+- 新增 `03_corpus/no_return_corpus_path_audit_v1.csv`，复算4375条路径引用、898个唯一文件路径，断链0；
+- 确认C组47项中45项由C1批次日志覆盖，`CPHO41-Q02-FIG` 和 `CPHO41-Q07-FIG` 由第41届特殊图件终检、重裁说明和manifest覆盖；该组织边界不等于真实人工校对完成；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-C-NO-RETURN-FIGURE-QUEUE`。
+
 ## 2026-07-19：G1-07-RETURN-INTAKE-FOLDER-PREP-QA 真实回填接收目录准备QA
 
 - 新增 `03_corpus/return_intake_folder_prep_qa.md`，记录真实回填接收目录规范、登记模板和目录规则表的QA范围、75项检查结论、仍不能说明的内容和下一最小任务；
