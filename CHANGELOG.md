@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE-QA P1真实回填前就绪门禁QA
+
+- 新增 `09_quality/no_return_reference_p1_backfill_ready_gate_qa.md`，记录P1真实回填前就绪门禁QA的性质声明、检查结论、检查分布、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
+- 新增 `09_quality/no_return_reference_p1_backfill_ready_gate_qa_v1.csv`，完成283项QA检查且全部通过，覆盖输入文件、门禁CSV编码换行、字段结构、行数、编号连续性、入口对齐、模板继承、接收规则继承、放行状态、模板空白保护、报告文本、台账一致性和提交边界；
+- 确认11项门禁、`P1GATE-01` 至 `P1GATE-11`、`P1BF-01` 至 `P1BF-11`、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K` 和 `RCQ-07` 至 `RCQ-17` 连续一致，11项全部保持“不放行”；
+- 确认上游P1回填模板11行的20个真实回填字段仍全部留空，正文、主张矩阵、参考文献表和模板填写边界均保持冻结；
+- 明确本QA不获取新全文，不填写模板，不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改 `02_literature/references.bib`，不补造来源、页码、阅读结论、专家意见、教师/课堂材料或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE P1真实回填前就绪门禁
 
 - 新增 `09_quality/no_return_reference_p1_backfill_ready_gate.md`，记录P1真实回填前就绪门禁的性质声明、总体结论、一页式门禁、三类动作边界、仍不能声称内容和下一最小任务；

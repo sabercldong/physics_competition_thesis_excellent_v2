@@ -259,6 +259,7 @@
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-INTAKE-RULES`：新增 `09_quality/no_return_reference_p1_backfill_intake_rules.md` 和 `09_quality/no_return_reference_p1_backfill_intake_rules_v1.csv`，建立18条P1真实回填接收规则，覆盖接收登记、文件命名、来源合法性、版本定位、校验值、页码章节、阅读笔记、摘录边界、主张支持、引用决定、矩阵合并、正文使用、隐私材料、冲突处理、放行判定、台账同步、Git隔离和待核处理。18条规则全部保持“不放行”，本任务未获取新全文、未填写回填模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-INTAKE-RULES-QA`：新增 `09_quality/no_return_reference_p1_backfill_intake_rules_qa.md` 和 `09_quality/no_return_reference_p1_backfill_intake_rules_qa_v1.csv`，完成160项QA检查且全部通过；确认18条规则编号连续、字段完整、18类环节均覆盖，正式释放状态全部为“不放行”，正文、主张矩阵和参考文献表边界均保持禁止修改。上游P1回填模板仍为11行，20个真实回填字段全部留空，11项均不放行。本任务未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE`：新增 `09_quality/no_return_reference_p1_backfill_ready_gate.md` 和 `09_quality/no_return_reference_p1_backfill_ready_gate_v1.csv`，建立11项P1真实回填前就绪门禁，连续覆盖 `P1BF-01` 至 `P1BF-11`、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K` 和 `RCQ-07` 至 `RCQ-17`；逐项说明未回填时可继续的准备工作、必须冻结的正文/矩阵/参考文献动作、打开回填所需的最小真实输入、收到材料后的接收QA路线和放行条件。11项全部保持“不放行”，本任务未获取新全文、未填写回填模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。
+- 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE-QA`：新增 `09_quality/no_return_reference_p1_backfill_ready_gate_qa.md` 和 `09_quality/no_return_reference_p1_backfill_ready_gate_qa_v1.csv`，完成283项QA检查且全部通过；确认11项门禁连续覆盖 `P1BF-01` 至 `P1BF-11`、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K` 和 `RCQ-07` 至 `RCQ-17`，全部保持“不放行”。上游P1回填模板11行的20个真实回填字段仍全部留空，正文、主张矩阵、参考文献表和模板填写边界均保持冻结。本任务未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。
 
 ## 关键阻塞项
 
@@ -273,4 +274,4 @@
 
 ## 下一任务
 
-`G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-READY-GATE-QA`：检查P1真实回填前就绪门禁是否连续覆盖11项P1入口，是否保持“不放行”，是否没有填写回填模板，是否完整冻结正文、主张矩阵和参考文献表；不得获取新全文，不得填写模板，不得改写正文，不得新增正式参考文献，不得修改主张证据矩阵。
+`G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT`：收束P1文献回填准备链，汇总P1缺口路线、材料包索引、空白模板、接收规则、就绪门禁和各轮QA的共同结论，明确下一步最小入口是在真实材料回填、语料人工校对、真实评分者编码或正文边界维护之间择一；不得获取新全文，不得填写模板，不得改写正文，不得新增正式参考文献，不得修改主张证据矩阵。
