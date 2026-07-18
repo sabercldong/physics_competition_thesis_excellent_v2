@@ -1,0 +1,98 @@
+﻿check_id,check_area,check_item,expected,observed,status,evidence,followup
+RCQ-QA-01,输入文件,输入文件存在,queue_csv,True,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-02,输入文件,输入文件存在,queue_md,True,通过,09_quality/no_return_reference_claim_queue.md,无
+RCQ-QA-03,输入文件,输入文件存在,material_queue,True,通过,03_corpus/no_return_material_queue_v1.csv,无
+RCQ-QA-04,输入文件,输入文件存在,reference_verification,True,通过,02_literature/reference_verification.csv,无
+RCQ-QA-05,输入文件,输入文件存在,literature_matrix,True,通过,02_literature/literature_matrix.csv,无
+RCQ-QA-06,输入文件,输入文件存在,claim_matrix,True,通过,09_quality/claim_evidence_matrix.csv,无
+RCQ-QA-07,输入文件,输入文件存在,citation_action_queue,True,通过,09_quality/g8_02_citation_action_queue.csv,无
+RCQ-QA-08,输入文件,输入文件存在,citation_entry,True,通过,09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-09,输入文件,输入文件存在,bib_lite_mapping,True,通过,09_quality/g8_02_bib_lite_mapping.csv,无
+RCQ-QA-10,输入文件,输入文件存在,bib_lite_exclusion,True,通过,09_quality/g8_02_bib_lite_exclusion_register.csv,无
+RCQ-QA-11,输入文件,输入文件存在,reference_readiness,True,通过,08_manuscript/reference_readiness_register.csv,无
+RCQ-QA-12,CSV格式,RCQ清单CSV编码换行,UTF-8 BOM + LF,True,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-13,字段,RCQ清单字段完整,17,17,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-14,覆盖,RCQ清单行数,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-15,覆盖,RCQ编号连续唯一,RCQ-01至RCQ-21,"RCQ-01,RCQ-02,RCQ-03,RCQ-04,RCQ-05,RCQ-06,RCQ-07,RCQ-08,RCQ-09,RCQ-10,RCQ-11,RCQ-12,RCQ-13,RCQ-14,RCQ-15,RCQ-16,RCQ-17,RCQ-18,RCQ-19,RCQ-20,RCQ-21",通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-16,覆盖,优先级计数,P0=6;P1=11;P2=4,"{'P0': 6, 'P1': 11, 'P2': 4}",通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-17,覆盖,队列类型计数,"{'可引用来源定稿复核': 6, '全文获取与理论边界': 1, '全文获取与综述缺口': 2, '全文获取与方法支撑': 1, '全文获取与测评边界': 1, '工作版参考文献表闭环': 1, '主张矩阵侧车合并准备': 1, '主张补证': 4, '排除来源登记': 3, '正式结果防误用': 1}","{'可引用来源定稿复核': 6, '全文获取与理论边界': 1, '全文获取与综述缺口': 2, '全文获取与方法支撑': 1, '全文获取与测评边界': 1, '工作版参考文献表闭环': 1, '主张矩阵侧车合并准备': 1, '主张补证': 4, '排除来源登记': 3, '正式结果防误用': 1}",通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-18,NQ-06,NQ-06存在,1,1,通过,03_corpus/no_return_material_queue_v1.csv,无
+RCQ-QA-19,NQ-06,NQ-06正式状态不放行,不放行,不放行,通过,03_corpus/no_return_material_queue_v1.csv,无
+RCQ-QA-20,NQ-06,RCQ均继承NQ-06依据,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-21,NQ-06,NQ-06推荐任务与当前任务同向,参考文献-主张支撑核验队列,参考文献-主张支撑核验队列,通过,03_corpus/no_return_material_queue_v1.csv,无
+RCQ-QA-22,上游计数,文献核验表行数,19,19,通过,02_literature/reference_verification.csv,无
+RCQ-QA-23,上游计数,文献矩阵行数,19,19,通过,02_literature/literature_matrix.csv,无
+RCQ-QA-24,上游计数,主张矩阵行数,19,19,通过,09_quality/claim_evidence_matrix.csv,无
+RCQ-QA-25,上游计数,引文动作队列行数,10,10,通过,09_quality/g8_02_citation_action_queue.csv,无
+RCQ-QA-26,上游计数,引文入口行数,23,23,通过,09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-27,上游计数,正式候选参考映射行数,6,6,通过,09_quality/g8_02_bib_lite_mapping.csv,无
+RCQ-QA-28,上游计数,排除登记行数,5,5,通过,09_quality/g8_02_bib_lite_exclusion_register.csv,无
+RCQ-QA-29,上游计数,参考文献准备登记行数,11,11,通过,08_manuscript/reference_readiness_register.csv,无
+RCQ-QA-30,来源覆盖,P0来源覆盖 CS-001,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-31,来源覆盖,P0来源覆盖 ST-002,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-32,来源覆盖,P0来源覆盖 ST-003,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-33,来源覆盖,P0来源覆盖 ST-005,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-34,来源覆盖,P0来源覆盖 ST-006,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-35,来源覆盖,P0来源覆盖 METH-004,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-36,来源覆盖,关键来源组覆盖 SOLO-001;SOLO-002,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-37,来源覆盖,关键来源组覆盖 PCOMP-002;PCOMP-003,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-38,来源覆盖,关键来源组覆盖 PCOMP-001;PCOMP-004;PCOMP-005,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-39,来源覆盖,关键来源组覆盖 METH-001;METH-002;METH-003;METH-005,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-40,来源覆盖,关键来源组覆盖 ST-001;ST-004,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-41,来源覆盖,关键来源组覆盖 02_literature/references.bib,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-42,来源覆盖,关键来源组覆盖 00_originals原初稿参考文献与引文,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-43,来源覆盖,关键来源组覆盖 题录/目录/预览/搜索摘要,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-44,来源覆盖,关键来源组覆盖 非授权全文/来源不明题解/培训机构或公众号题解,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-45,来源覆盖,关键来源组覆盖 内部预演结果与文献包装风险,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-46,来源覆盖,P0来源均在正式候选映射或核验表中,6,6,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_mapping.csv; 02_literature/reference_verification.csv,无
+RCQ-QA-47,排除覆盖,待读/排除候选覆盖 SOLO-001,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-48,排除覆盖,待读/排除候选覆盖 SOLO-002,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-49,排除覆盖,待读/排除候选覆盖 PCOMP-001,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-50,排除覆盖,待读/排除候选覆盖 PCOMP-002,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-51,排除覆盖,待读/排除候选覆盖 PCOMP-003,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-52,排除覆盖,待读/排除候选覆盖 PCOMP-004,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-53,排除覆盖,待读/排除候选覆盖 PCOMP-005,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-54,排除覆盖,待读/排除候选覆盖 METH-001,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-55,排除覆盖,待读/排除候选覆盖 METH-002,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-56,排除覆盖,待读/排除候选覆盖 METH-003,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-57,排除覆盖,待读/排除候选覆盖 METH-005,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-58,排除覆盖,待读/排除候选覆盖 ST-001,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-59,排除覆盖,待读/排除候选覆盖 ST-004,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/g8_02_bib_lite_exclusion_register.csv; 09_quality/g8_02_citation_verification_entry.csv,无
+RCQ-QA-60,主张覆盖,所有关联claim_id均在主张矩阵中,0,0,通过,09_quality/no_return_reference_claim_queue_v1.csv; 09_quality/claim_evidence_matrix.csv,无
+RCQ-QA-61,主张覆盖,关键主张覆盖 C2-01,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-62,主张覆盖,关键主张覆盖 C1-01,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-63,主张覆盖,关键主张覆盖 C2-02,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-64,主张覆盖,关键主张覆盖 C2-06,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-65,主张覆盖,关键主张覆盖 C1-03,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-66,主张覆盖,关键主张覆盖 C2-04,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-67,主张覆盖,关键主张覆盖 C3-02,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-68,主张覆盖,关键主张覆盖 C2-03A,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-69,主张覆盖,关键主张覆盖 C1-04,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-70,主张覆盖,关键主张覆盖 C2-05,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-71,主张覆盖,关键主张覆盖 C1-05,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-72,主张覆盖,关键主张覆盖 C3-01,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-73,主张覆盖,关键主张覆盖 C4-01,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-74,主张覆盖,关键主张覆盖 C4-02,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-75,主张覆盖,关键主张覆盖 C5-01,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-76,主张覆盖,关键主张覆盖 C5-02,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-77,主张覆盖,关键主张覆盖 CX-01,1,1,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-78,放行边界,所有队列项均不放行,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-79,放行边界,本轮不允许修改主张矩阵,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-80,放行边界,本轮不允许改写正文,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-81,字段完整,禁止用途均已填写,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-82,字段完整,下一动作均已填写,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-83,字段完整,解锁条件均已填写,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-84,字段完整,正文边界均已填写,21,21,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-85,边界语义,未读/候选来源包含不得或不能边界,15,15,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-86,边界语义,P0来源仍声明禁用边界且需后续动作,6,6,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-87,路径,已有证据文件路径或通配符可达,63,63,通过,09_quality/no_return_reference_claim_queue_v1.csv,无
+RCQ-QA-88,报告,报告登记21项,True,True,通过,09_quality/no_return_reference_claim_queue.md,无
+RCQ-QA-89,报告,报告登记优先级计数,True,True,通过,09_quality/no_return_reference_claim_queue.md,无
+RCQ-QA-90,报告,报告登记不改正文,True,True,通过,09_quality/no_return_reference_claim_queue.md,无
+RCQ-QA-91,报告,报告登记不改主张矩阵,True,True,通过,09_quality/no_return_reference_claim_queue.md,无
+RCQ-QA-92,报告,报告登记研究空白边界,True,True,通过,09_quality/no_return_reference_claim_queue.md,无
+RCQ-QA-93,报告,报告登记方法文献边界,True,True,通过,09_quality/no_return_reference_claim_queue.md,无
+RCQ-QA-94,台账,PROJECT_STATUS下一任务指向本QA,True,True,通过,PROJECT_STATUS.md,无
+RCQ-QA-95,台账,TASKS登记本QA待执行,True,True,通过,TASKS.md,无
+RCQ-QA-96,台账,CHANGELOG登记上游RCQ清单,True,True,通过,CHANGELOG.md,无
+RCQ-QA-97,越界表述,未出现越界确认或伪造表述,0,0,通过,09_quality/no_return_reference_claim_queue.md; 09_quality/no_return_reference_claim_queue_v1.csv,无

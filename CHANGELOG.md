@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE-QA 参考文献与主张核验待补清单QA
+
+- 新增 `09_quality/no_return_reference_claim_queue_qa.md`，记录参考文献与主张核验待补清单的QA性质、97项检查结论、结构一致性、仍不能声称内容、保留风险和下一最小任务；
+- 新增 `09_quality/no_return_reference_claim_queue_qa_v1.csv`，逐项检查输入文件存在性、CSV编码换行、字段、行数、ID连续性、优先级计数、队列类型计数、NQ-06来源、上游文献/引文/参考文献/主张矩阵计数、关键来源组覆盖、排除来源覆盖、关联主张定位、证据文件路径、禁写边界、报告表述和台账一致性；
+- 确认21项 `RCQ-01` 至 `RCQ-21` 连续唯一，P0/P1/P2计数为6/11/4，10类队列类型计数与报告一致；
+- 确认所有队列项均继承 `NQ-06` 来源依据并保持“不放行”，本轮主张矩阵更新和正文改写均为“否”；
+- 确认P0六项、SOLO、物理竞赛、方法文献、科学思维测评、工作版参考文献表、主张矩阵侧车、排除来源和内部预演防误用均有入口，关联主张缺失0项、已有证据路径缺失0项；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE-QA-FOLLOWUP`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-CLAIM-QUEUE 参考文献与主张核验待补清单
 
 - 新增 `09_quality/no_return_reference_claim_queue.md`，记录无真实回填条件下参考文献与主张支撑关系核验的性质声明、总体统计、分层结果、P0定稿复核项、P1关键缺口、P2排除边界和下一最小任务；
