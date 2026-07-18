@@ -264,6 +264,7 @@
 - 完成 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-CLOSEOUT-QA`：新增 `09_quality/no_return_reference_p1_backfill_closeout_qa.md` 和 `09_quality/no_return_reference_p1_backfill_closeout_qa_v1.csv`，完成656项QA检查且全部通过；确认P1收束表11项连续，`RCQ-07` 至 `RCQ-17`、`P1-A` 至 `P1-K`、`P1PKT-01` 至 `P1PKT-11`、`P1BF-01` 至 `P1BF-11` 和 `P1GATE-01` 至 `P1GATE-11` 均与上游一致；五轮上游QA合计727项检查、未通过0项；上游P1回填模板11行的20个真实回填字段仍全部留空，11项全部保持“不放行”。本QA未获取新全文、未填写模板、未改写正文、未修改主张矩阵、未新增或修改参考文献表。QA通过后，若仍没有真实P1材料，下一实际推进应回到语料人工校对真实销项入口。
 - 完成 `G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET`：新增 `03_corpus/manual_review_real_return_priority_packet.md` 和 `03_corpus/manual_review_real_return_priority_packet_v1.csv`，在未发现真实人工终核回填副本的条件下，把154项人工终核问题中的A组高风险OCR/公式问题压缩为38个题目级首批真实校对材料包，覆盖76项A组问题；首批包继承A组题目级校对单、动作计划和总索引，列出题面页、答案页、V1转写入口、公式核对入口、页面证据图、核对重点和回填后整合协议。真实校对人、日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均保持空白，本任务不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；B组22项、C组47项和D组9项仍保留为后续未销项材料。
 - 完成 `G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET-QA`：新增 `03_corpus/manual_review_real_return_priority_packet_qa.md` 和 `03_corpus/manual_review_real_return_priority_packet_qa_v1.csv`，完成52项QA检查且全部通过；确认首批包CSV为UTF-8 BOM和LF换行，`REAL-P1-001` 至 `REAL-P1-038` 连续唯一，38个题目级材料包与A组题目级校对单完全一致，覆盖的76个 `issue_id` 与动作计划A组、总索引A组和A组题目级校对单完全一致；文本入口、公式入口、题目文本入口、页面证据图和回填整合协议路径在当前工作区均可定位。真实回填栏全部空白，`true_closure_status` 均为“未真实销项”，正式编码和正文使用均为“否”；本QA不关闭任何人工校对项，不放行正式统计、正文结果写作或主张矩阵升级。
+- 完成 `G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER`：新增 `03_corpus/manual_review_real_return_handoff_register.md`、`03_corpus/manual_review_real_return_handoff_register_v1.csv` 和 `03_corpus/manual_review_real_return_handoff_rules_v1.csv`，为首批A组38个题目级材料包建立真实回填接收登记和交接规则；登记表与首批优先包 `REAL-P1-001` 至 `REAL-P1-038` 一一对应，列明推荐接收目录、文件命名规则、允许扩展名、校验值字段、接收字段、必填回填字段、固定字段检查、触发整合QA条件和关联 `RIP` 规则。真实文件名、另存路径、校验值、文件大小、接收日期、接收人、校对人、校对日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均保持空白；本任务不创建真实回填目录，不登记真实回填副本，不关闭任何条目，不放行正式编码、正式统计、正文结果写作或主张矩阵升级。
 
 ## 关键阻塞项
 
@@ -278,4 +279,4 @@
 
 ## 下一任务
 
-`G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER`：建立首批真实回填副本的接收目录、文件命名、校验值、接收字段和触发整合QA的条件；只能准备回填接收机制，不得代填真实校对人、日期或决定，不得关闭条目或放行正式编码。
+`G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER-QA`：检查首批接收登记是否严格覆盖38个首批材料包、CSV是否为UTF-8 BOM和LF换行、真实文件名/路径/校验值/接收日期/校对人/决定是否全部空白、触发整合QA条件是否与回填整合协议一致，并确认本轮未创建真实回填目录、未关闭条目、未放行正式编码。

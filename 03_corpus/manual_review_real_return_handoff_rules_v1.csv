@@ -1,0 +1,13 @@
+﻿rule_id,rule_area,rule_description,required_action,forbidden_action,release_effect
+RPHR-01,接收目录,首批REAL-P1真实回填统一登记为A组首批材料，不创建目录冒充已收到。,收到真实副本后再创建 incoming/REAL-P1、registered/REAL-P1、quarantine/REAL-P1 和 integration_logs/REAL-P1。,不得在未收到真实副本时创建回填文件或登记虚构路径。,不放行
+RPHR-02,文件命名,首批回填副本另存文件名必须包含日期、A组、real-p1、material_id、匿名校对者编码和流水号。,使用 return_{YYYYMMDD}_A_real-p1_{material_id}_{reviewer_code}_{seq}.{ext}。,不得使用真实姓名、推测日期或覆盖原始空白包。,不放行
+RPHR-03,副本保护,收到文件先保存原样副本。,先写 incoming 路径，再计算SHA-256和文件大小。,不得直接编辑收到文件后再登记。,不放行
+RPHR-04,校验值,每份回填副本必须有SHA-256和文件大小。,登记 sha256 与 file_size_bytes。,无校验值不得进入结构检查。,不放行
+RPHR-05,固定字段,material_id、covered_issue_ids、competition_no、year、question_no不得被回填文件改写。,与首批优先包逐行比对。,固定字段不一致不得整合。,不放行
+RPHR-06,必填字段,真实回填至少包含校对人/日期/材料决定/OCR决定/公式决定/修订说明/复核后证据位置。,逐项检查 required_return_fields。,缺字段不得关闭条目。,不放行
+RPHR-07,冲突处理,若回填决定、修订说明或证据位置互相矛盾，进入冲突分级。,按RIP-13至RIP-15记录冲突。,不得用接收登记直接裁决冲突。,不放行
+RPHR-08,整合QA触发,只有接收字段、校验值、结构检查和必填字段均可检查后，才触发整合QA。,另设REAL-P1整合QA任务。,不得在本任务同步主清单或放行正式编码。,不放行
+RPHR-09,账本同步,接收登记通过不等于销项。,通过整合QA后另设任务同步人工校对主清单、动作计划、总索引和状态。,不得直接修改正式编码数据或结果表。,不放行
+RPHR-10,正文隔离,接收登记不得修改论文正文和主张矩阵。,正文、主张矩阵、参考文献表继续隔离。,不得把回填接收写成正式结果。,不放行
+RPHR-11,原始文件保护,任何回填副本不得覆盖或修改00_originals。,只在manual_review_returns下保存回填副本。,不得移动、改名、删改原始试题和答案。,不放行
+RPHR-12,剩余材料边界,首批登记只覆盖A组76项。,B/C/D剩余78项仍按原有回填包等待。,不得把首批登记扩展为154项全部已处理。,不放行

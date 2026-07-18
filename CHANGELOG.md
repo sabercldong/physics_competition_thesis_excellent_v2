@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER 首批真实回填接收登记
+
+- 新增 `03_corpus/manual_review_real_return_handoff_register.md`，记录首批A组真实回填接收登记的性质声明、上游依据、登记范围、推荐接收目录、文件命名规则、接收登记字段、触发整合QA条件、当前不能声称内容、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_real_return_handoff_register_v1.csv`，为首批38个题目级材料包逐行建立接收登记，连续覆盖 `REAL-P1-001` 至 `REAL-P1-038`，对应A组76项高风险OCR/公式问题；
+- 新增 `03_corpus/manual_review_real_return_handoff_rules_v1.csv`，建立12条首批回填接收规则，覆盖接收目录、文件命名、副本保护、校验值、固定字段、必填字段、冲突处理、整合QA触发、账本同步、正文隔离、原始文件保护和剩余材料边界；
+- 确认登记表列明推荐接收目录、文件命名规则、允许扩展名、校验值字段、接收字段、必填回填字段、固定字段检查、触发整合QA条件和关联 `RIP` 规则；
+- 确认真实文件名、另存路径、校验值、文件大小、接收日期、接收人、校对人、校对日期、材料决定、OCR决定、公式决定、修订说明和复核后证据位置均保持空白；
+- 明确本任务不创建真实回填目录，不登记真实回填副本，不关闭任何人工校对项，不放行正式编码、正式统计、正文结果写作或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-REAL-RETURN-PACKET-HANDOFF-REGISTER-QA`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-REAL-RETURN-PRIORITY-PACKET-QA 首批真实校对优先包QA
 
 - 新增 `03_corpus/manual_review_real_return_priority_packet_qa.md`，记录首批真实校对优先包QA的性质声明、52项检查结论、检查分布、已确认一致性、仍不能声称内容、保留风险、下一最小任务和输出边界；
