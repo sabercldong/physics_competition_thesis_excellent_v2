@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-D1-SCORE-35Q06 第35届第6题分值边界核对入口
+
+- 新增 `03_corpus/manual_review_transcripts/CPHO35-Q06_score_boundary_check_v1.csv`，登记第35届第6题题面页、答案页、下一题排除边界和分值使用边界；
+- 追加更新 `03_corpus/manual_review_d1_batch_log.csv`、`manual_review_d1_render_index.csv` 和 `manual_review_d1_batch_summary.md`，记录D组队列第151项 `CPHO35-Q06-SCORE`；
+- 复制第35届第6题题面第3页和答案第28至31页证据图至 `03_corpus/manual_review_renders/G1-07-D1/`，作为本轮分值复核证据页包；
+- 更新 `03_corpus/item_texts/CPHO35-Q06.md`、`item_materials.csv`、`item_index.csv`、`manual_review_checklist.csv` 和 `manual_review_priority_followup.csv`，将 `CPHO35-Q06-SCORE` 推进为“分值边界核对入口完成，待最终复核”；
+- 更新 `PROJECT_STATUS.md`、`TASKS.md` 和 `03_corpus/manual_review_priority_followup_summary.md`，将下一最小任务调整为 `G1-07-D1-SCORE-35Q07`；
+- 本轮明确记录：当前题面第3页下半部可确认第6题和三个小问，但未见大题分值或小问分值标注；答案第28至31页为题面重印和参考解答，未见评分标准或小问分值拆分；第31页下半部进入第7题，仅作下一题排除边界。不得据此生成第35届第6题正式分值统计、评分结论或论文附录分值。
+
 ## 2026-07-18：G1-07-D1-SCORE-35Q05 第35届第5题分值边界核对入口
 
 - 新增 `03_corpus/manual_review_transcripts/CPHO35-Q05_score_boundary_check_v1.csv`，登记第35届第5题题面页、答案页、下一题排除边界和分值使用边界；
