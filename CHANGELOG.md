@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-COVERAGE-TO-CLOSURE-PLAN 人工校对真实销项计划
+
+- 新增 `03_corpus/manual_review_closure_plan.md` 和 `03_corpus/manual_review_closure_plan_v1.csv`，在154项人工校对入口覆盖审计基础上，建立逐项真实销项路线；
+- 将154项分为4类：题面/答案页证据入口加真实人工终核98项、图件终核或必要时重绘47项、补正式评分细则/原卷分值说明8项、真实人工终核和附录图号边界确认1项；
+- 记录当前154项均缺真实校对人或真实校对日期，因此真实销项数仍为0；本轮不关闭任何人工校对问题；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-A-CLOSURE-PACKET`，优先为A组76项高风险OCR、公式与特殊符号问题生成真实人工终核回填包。
+
 ## 2026-07-19：G4-01-NO-RATER-BOUNDARY-APPLY 第3至5章无评分者边界应用审计
 
 - 新增 `09_quality/g4_01_no_rater_boundary_apply_report.md` 和 `09_quality/g4_01_no_rater_boundary_apply_audit.csv`，逐项审查第3章方法准备说明、第4章正式结果占位、第5章候选案例与教学转化证据需求、主张证据矩阵和无评分者边界路线包；
