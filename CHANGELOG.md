@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK-QA 真实回填接收状态QA
+
+- 新增 `03_corpus/manual_review_return_intake_check_qa.md`，记录接收状态QA范围、63项检查结论、禁止声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_return_intake_check_qa_v1.csv`，逐项检查接收状态登记、正式编码阻断说明、候选回填目录、A/B/C/D回填包、动作计划、演练模板和报告关键表述；
+- 确认接收状态登记8行、正式编码阻断说明6行均为UTF-8 BOM和LF换行，ID连续唯一；
+- 确认A/B/C/D回填包、动作计划和演练模板中的真实校对人、日期、决定、回填路径、冲突字段仍未填写，正式产出均保持“阻断”；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-NO-RETURN-ROUTE-PLAN`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK 真实人工终核回填副本接收检查
 
 - 新增 `03_corpus/manual_review_return_intake_check.md`，说明当前是否存在真实人工终核回填副本、关键证据、正式编码阻断状态和后续接收规则；

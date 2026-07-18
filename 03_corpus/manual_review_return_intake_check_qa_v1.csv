@@ -1,0 +1,64 @@
+﻿check_id,check_name,result,evidence,risk_if_failed,followup_action
+QA-01,接收状态登记 UTF-8 BOM,通过,03_corpus/manual_review_return_intake_status_v1.csv BOM=True,CSV可能出现编码错读,无需处理
+QA-02,接收状态登记 LF换行,通过,03_corpus/manual_review_return_intake_status_v1.csv LF-only=True,CSV可能出现跨平台换行差异,无需处理
+QA-03,接收状态登记行数,通过,实际8行，预期8行,登记范围可能缺失或重复,无需处理
+QA-04,正式编码阻断说明 UTF-8 BOM,通过,03_corpus/manual_review_formal_coding_blocker_v1.csv BOM=True,CSV可能出现编码错读,无需处理
+QA-05,正式编码阻断说明 LF换行,通过,03_corpus/manual_review_formal_coding_blocker_v1.csv LF-only=True,CSV可能出现跨平台换行差异,无需处理
+QA-06,正式编码阻断说明行数,通过,实际6行，预期6行,登记范围可能缺失或重复,无需处理
+QA-07,接收状态登记字段完整,通过,缺失字段[],无法复核接收状态,无需处理
+QA-08,接收状态ID连续,通过,INTAKE-01至INTAKE-08连续,接收检查项顺序或引用不稳定,无需处理
+QA-09,接收状态ID唯一,通过,唯一ID数8,接收检查项可能重复,无需处理
+QA-10,真实回填副本发现状态均为否,通过,取值{'否'},可能误记录已收到真实回填,无需处理
+QA-11,接收状态均未放行正式编码,通过,8项均为阻断或不得据此放行,接收检查可能误放行正式编码,无需处理
+QA-12,正式编码阻断说明字段完整,通过,缺失字段[],无法复核阻断说明,无需处理
+QA-13,阻断项ID连续,通过,BLOCK-01至BLOCK-06连续,阻断项顺序或引用不稳定,无需处理
+QA-14,阻断项ID唯一,通过,唯一ID数6,阻断项可能重复,无需处理
+QA-15,所有正式产出状态为阻断,通过,取值{'阻断'},可能误放行正式产出,无需处理
+QA-16,阻断产出覆盖完整,通过,"覆盖['主张证据矩阵升级', '典型案例图件和论文定稿图', '正式A/B评分者独立编码', '正式描述统计和分布图表', '正文结果章正式写作', '第35届分值统计和第42届第3题附属图边界']",关键正式产出阻断可能缺失,无需处理
+QA-17,候选真实回填目录均不存在,通过,存在目录[],可能存在未登记真实回填副本,无需处理
+QA-18,A组回填包行数,通过,03_corpus/manual_review_a_closure_packet_v1.csv 实际76行,A组回填范围可能错位,无需处理
+QA-19,A组actual_reviewer_or_code为0项填写,通过,0/76非空,A组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-20,A组actual_review_date为0项填写,通过,0/76非空,A组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-21,A组actual_review_decision为0项填写,通过,0/76非空,A组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-22,B组回填包行数,通过,03_corpus/manual_review_b_closure_packet_v1.csv 实际22行,B组回填范围可能错位,无需处理
+QA-23,B组actual_reviewer_or_code为0项填写,通过,0/22非空,B组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-24,B组actual_review_date为0项填写,通过,0/22非空,B组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-25,B组actual_review_decision为0项填写,通过,0/22非空,B组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-26,C组回填包行数,通过,03_corpus/manual_review_c_closure_packet_v1.csv 实际47行,C组回填范围可能错位,无需处理
+QA-27,C组actual_reviewer_or_code为0项填写,通过,0/47非空,C组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-28,C组actual_review_date为0项填写,通过,0/47非空,C组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-29,C组actual_review_decision为0项填写,通过,0/47非空,C组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-30,D组回填包行数,通过,03_corpus/manual_review_d_closure_packet_v1.csv 实际9行,D组回填范围可能错位,无需处理
+QA-31,D组actual_reviewer_or_code为0项填写,通过,0/9非空,D组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-32,D组actual_review_date为0项填写,通过,0/9非空,D组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-33,D组actual_review_decision为0项填写,通过,0/9非空,D组可能已有真实回填但未在接收状态中正确处理,无需处理
+QA-34,C组figure_usable_for_manuscript为0项填写,通过,0/47非空,C组图件可能被误放行,无需处理
+QA-35,C组redraw_required为0项填写,通过,0/47非空,C组图件可能被误放行,无需处理
+QA-36,C组final_figure_file_or_evidence_location为0项填写,通过,0/47非空,C组图件可能被误放行,无需处理
+QA-37,D组official_score_source_or_fig_boundary_confirmed为0项填写,通过,0/9非空,D组分值或附属图边界可能被误放行,无需处理
+QA-38,D组score_value_or_fig_boundary_statement为0项填写,通过,0/9非空,D组分值或附属图边界可能被误放行,无需处理
+QA-39,D组final_evidence_location为0项填写,通过,0/9非空,D组分值或附属图边界可能被误放行,无需处理
+QA-40,动作计划154项存在,通过,动作计划154行,总门槛范围可能错误,无需处理
+QA-41,动作计划actual_reviewer_or_code为0项填写,通过,0/154非空,动作计划可能已同步真实回填但阻断说明未更新,无需处理
+QA-42,动作计划actual_review_date为0项填写,通过,0/154非空,动作计划可能已同步真实回填但阻断说明未更新,无需处理
+QA-43,动作计划actual_review_decision为0项填写,通过,0/154非空,动作计划可能已同步真实回填但阻断说明未更新,无需处理
+QA-44,演练模板154项存在,通过,演练模板154行,演练门槛范围可能错误,无需处理
+QA-45,演练模板expected_return_copy_path为空,通过,0/154非空,演练模板可能被误当作真实回填整合,无需处理
+QA-46,演练模板expected_return_file_name为空,通过,0/154非空,演练模板可能被误当作真实回填整合,无需处理
+QA-47,演练模板conflict_level为空,通过,0/154非空,演练模板可能被误当作真实回填整合,无需处理
+QA-48,演练模板conflict_description为空,通过,0/154非空,演练模板可能被误当作真实回填整合,无需处理
+QA-49,演练模板closure_candidate_after_dry_run全部为否,通过,取值{'否'},演练模板可能误放行正式使用,无需处理
+QA-50,演练模板formal_coding_unlock_after_dry_run全部为否,通过,取值{'否'},演练模板可能误放行正式使用,无需处理
+QA-51,演练模板manuscript_use_allowed_after_dry_run全部为否,通过,取值{'否'},演练模板可能误放行正式使用,无需处理
+QA-52,演练模板claim_matrix_update_allowed_after_dry_run全部为否,通过,取值{'否'},演练模板可能误放行正式使用,无需处理
+QA-53,INTAKE-03登记非空统计匹配,通过,登记 reviewer/date/decision=0/76;0/76;0/76,接收状态统计与源表不一致,无需处理
+QA-54,INTAKE-04登记非空统计匹配,通过,登记 reviewer/date/decision=0/22;0/22;0/22,接收状态统计与源表不一致,无需处理
+QA-55,INTAKE-05登记非空统计匹配,通过,登记 reviewer/date/decision=0/47;0/47;0/47,接收状态统计与源表不一致,无需处理
+QA-56,INTAKE-06登记非空统计匹配,通过,登记 reviewer/date/decision=0/9;0/9;0/9,接收状态统计与源表不一致,无需处理
+QA-57,INTAKE-07登记非空统计匹配,通过,登记 reviewer/date/decision=0/154;0/154;0/154,接收状态统计与源表不一致,无需处理
+QA-58,报告包含关键表述：当前未发现可接收的真实人工终核回填副,通过,当前未发现可接收的真实人工终核回填副本,报告可能未清楚写出证据边界,无需处理
+QA-59,报告包含关键表述：A/B/C/D四组回填包中的 `ac,通过,A/B/C/D四组回填包中的 `actual_reviewer_or_code`、`actual_review_date` 和 `actual_review_decision` 均为0项填写,报告可能未清楚写出证据边界,无需处理
+QA-60,报告包含关键表述：正式编码继续阻断,通过,正式编码继续阻断,报告可能未清楚写出证据边界,无需处理
+QA-61,报告包含关键表述：不能因本检查升级主张证据等级,通过,不能因本检查升级主张证据等级,报告可能未清楚写出证据边界,无需处理
+QA-62,报告包含关键表述：正文不得据此写入正式结果,通过,正文不得据此写入正式结果,报告可能未清楚写出证据边界,无需处理
+QA-63,报告未声称人工终核完成,通过,未出现完成性误称,报告可能越界声称真实校对完成,无需处理
