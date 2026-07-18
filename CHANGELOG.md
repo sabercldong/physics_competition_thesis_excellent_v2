@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-C-CLOSURE-PACKET C组真实人工终核回填包
+
+- 新增 `03_corpus/manual_review_c_closure_packet.md` 和 `03_corpus/manual_review_c_closure_packet_v1.csv`，为C组47项题图裁边、图注、图像表征和附录图件问题生成真实人工终核回填入口；
+- 核对C组47项覆盖第35届5道题、第36届6道题、第37届6道题、第38届8道题、第39届4道题、第40届8道题、第41届5道题和第42届5道题；
+- 47项均已定位图件复核入口、来源页、原裁图、候选图和新旧对照或终检接触图，共挂接64个候选图或候选表资产；
+- 回填表保留真实校对人、真实校对日期、校对决定、是否可用于论文、是否需重绘、修订说明和最终图件位置等空白栏位；本轮不代填、不关闭任何条目；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-C-CLOSURE-PACKET-QA`。
+
 ## 2026-07-19：G1-07-B-CLOSURE-PACKET-QA B组回填包完整性检查
 
 - 新增 `03_corpus/manual_review_b_closure_packet_qa.md` 和 `03_corpus/manual_review_b_closure_packet_qa_v1.csv`，逐项检查B组真实人工终核回填包；
