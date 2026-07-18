@@ -1,0 +1,62 @@
+﻿check_id,check_name,result,evidence,risk_if_failed,followup_action
+QA-01,逐项演练主表 UTF-8 BOM,通过,03_corpus/manual_review_return_integration_dry_run_template_v1.csv BOM=True,CSV可能在Excel或脚本中出现编码错读,无需处理
+QA-02,逐项演练主表 LF换行,通过,03_corpus/manual_review_return_integration_dry_run_template_v1.csv LF-only=True,CSV可能出现跨平台换行差异,无需处理
+QA-03,协议步骤表 UTF-8 BOM,通过,03_corpus/manual_review_return_integration_dry_run_protocol_steps_v1.csv BOM=True,CSV可能在Excel或脚本中出现编码错读,无需处理
+QA-04,协议步骤表 LF换行,通过,03_corpus/manual_review_return_integration_dry_run_protocol_steps_v1.csv LF-only=True,CSV可能出现跨平台换行差异,无需处理
+QA-05,逐项演练主表行数,通过,实际154行，预期154行,待核问题覆盖不完整或重复,无需处理
+QA-06,协议步骤表行数,通过,实际22行，预期22行,协议规则无法完整落表,无需处理
+QA-07,主表dry_run_row_id唯一,通过,唯一ID数154,演练记录无法稳定引用,无需处理
+QA-08,主表dry_run_row_id连续,通过,DR-001至DR-154连续,演练记录顺序可能错位,无需处理
+QA-09,主表issue_id唯一,通过,唯一issue_id数154,同一待核项可能重复或遗漏,无需处理
+QA-10,主表issue_id集合匹配动作计划,通过,主表与动作计划issue_id集合一致,演练模板无法代表全部动作计划,无需处理
+QA-11,主表字段继承一致：material_id,通过,错位数0,material_id从动作计划继承时发生错位,无需处理
+QA-12,主表字段继承一致：competition_no,通过,错位数0,competition_no从动作计划继承时发生错位,无需处理
+QA-13,主表字段继承一致：year,通过,错位数0,year从动作计划继承时发生错位,无需处理
+QA-14,主表字段继承一致：question_no,通过,错位数0,question_no从动作计划继承时发生错位,无需处理
+QA-15,主表字段继承一致：group,通过,错位数0,group从动作计划继承时发生错位,无需处理
+QA-16,主表字段继承一致：issue_type,通过,错位数0,issue_type从动作计划继承时发生错位,无需处理
+QA-17,主表字段继承一致：severity,通过,错位数0,severity从动作计划继承时发生错位,无需处理
+QA-18,主表字段继承一致：action_phase,通过,错位数0,action_phase从动作计划继承时发生错位,无需处理
+QA-19,主表字段继承一致：recommended_batch,通过,错位数0,recommended_batch从动作计划继承时发生错位,无需处理
+QA-20,主表字段继承一致：closure_route,通过,错位数0,closure_route从动作计划继承时发生错位,无需处理
+QA-21,主表字段继承一致：packet_file,通过,错位数0,packet_file从动作计划继承时发生错位,无需处理
+QA-22,主表字段继承一致：packet_entry_path,通过,错位数0,packet_entry_path从动作计划继承时发生错位,无需处理
+QA-23,主表字段继承一致：qa_file,通过,错位数0,qa_file从动作计划继承时发生错位,无需处理
+QA-24,主表字段继承一致：required_return_fields,通过,错位数0,required_return_fields从动作计划继承时发生错位,无需处理
+QA-25,主表字段继承一致：current_true_closure_status,通过,错位数0,current_true_closure_status从动作计划继承时发生错位,无需处理
+QA-26,主表A/B/C/D计数,通过,"计数{'A': 76, 'B': 22, 'C': 47, 'D': 9}",组别门槛检查可能失真,无需处理
+QA-27,回填副本路径保持空白,通过,154项回填路径与文件名均为空,可能误写入非真实回填来源,无需处理
+QA-28,return_copy_preserved_check保持待演练,通过,取值{'待演练'},return_copy_preserved_check可能被误判为已检查,无需处理
+QA-29,structure_check_status保持待演练,通过,取值{'待演练'},structure_check_status可能被误判为已检查,无需处理
+QA-30,immutable_fields_check_status保持待演练,通过,取值{'待演练'},immutable_fields_check_status可能被误判为已检查,无需处理
+QA-31,required_fields_check_status保持待演练,通过,取值{'待演练'},required_fields_check_status可能被误判为已检查,无需处理
+QA-32,evidence_location_check_status保持待演练,通过,取值{'待演练'},evidence_location_check_status可能被误判为已检查,无需处理
+QA-33,correction_summary_check_status保持待演练,通过,取值{'待演练'},correction_summary_check_status可能被误判为已检查,无需处理
+QA-34,post_review_status_check保持待演练,通过,取值{'待演练'},post_review_status_check可能被误判为已检查,无需处理
+QA-35,conflict_level保持空白,通过,154项均为空,conflict_level可能误登记非真实冲突,无需处理
+QA-36,conflict_type保持空白,通过,154项均为空,conflict_type可能误登记非真实冲突,无需处理
+QA-37,conflict_description保持空白,通过,154项均为空,conflict_description可能误登记非真实冲突,无需处理
+QA-38,conflict_resolution_required保持空白,通过,154项均为空,conflict_resolution_required可能误登记非真实冲突,无需处理
+QA-39,closure_candidate_after_dry_run全部为否,通过,取值{'否'},closure_candidate_after_dry_run可能误放行,无需处理
+QA-40,formal_coding_unlock_after_dry_run全部为否,通过,取值{'否'},formal_coding_unlock_after_dry_run可能误放行,无需处理
+QA-41,manuscript_use_allowed_after_dry_run全部为否,通过,取值{'否'},manuscript_use_allowed_after_dry_run可能误放行,无需处理
+QA-42,claim_matrix_update_allowed_after_dry_run全部为否,通过,取值{'否'},claim_matrix_update_allowed_after_dry_run可能误放行,无需处理
+QA-43,checklist_sync_action不执行,通过,取值{'不执行：演练模板'},checklist_sync_action可能误触发账本同步,无需处理
+QA-44,priority_followup_sync_action不执行,通过,取值{'不执行：演练模板'},priority_followup_sync_action可能误触发账本同步,无需处理
+QA-45,closure_plan_sync_action不执行,通过,取值{'不执行：演练模板'},closure_plan_sync_action可能误触发账本同步,无需处理
+QA-46,action_plan_sync_action不执行,通过,取值{'不执行：演练模板'},action_plan_sync_action可能误触发账本同步,无需处理
+QA-47,master_index_sync_action不执行,通过,取值{'不执行：演练模板'},master_index_sync_action可能误触发账本同步,无需处理
+QA-48,project_status_sync_action不执行,通过,取值{'不执行：演练模板'},project_status_sync_action可能误触发账本同步,无需处理
+QA-49,tasks_sync_action不执行,通过,取值{'不执行：演练模板'},tasks_sync_action可能误触发账本同步,无需处理
+QA-50,changelog_sync_action不执行,通过,取值{'不执行：演练模板'},changelog_sync_action可能误触发账本同步,无需处理
+QA-51,主表关键字段完整,通过,缺失字段[],无法执行回填演练核心检查,无需处理
+QA-52,步骤表关键字段完整,通过,缺失字段[],协议步骤无法逐项检查,无需处理
+QA-53,步骤表rule_id唯一,通过,唯一rule_id数22,协议步骤重复或遗漏,无需处理
+QA-54,步骤表rule_id连续,通过,RIP-01至RIP-22连续,协议规则顺序错位,无需处理
+QA-55,步骤表规则集合匹配协议表,通过,步骤表与协议表rule_id集合一致,协议规则落表不完整,无需处理
+QA-56,步骤表继承一致：stage,通过,错位数0,stage继承协议时发生错位,无需处理
+QA-57,步骤表继承一致：scope,通过,错位数0,scope继承协议时发生错位,无需处理
+QA-58,步骤表继承一致：required_check,通过,错位数0,required_check继承协议时发生错位,无需处理
+QA-59,步骤表状态保持待演练,通过,取值{'待演练'},协议步骤可能被误判为已执行,无需处理
+QA-60,步骤表说明保持不执行真实关闭,通过,22条note均包含不执行真实关闭,演练可能被误读为真实整合,无需处理
+QA-61,主表说明等待真实回填副本,通过,154条dry_run_note均注明等待真实回填副本,模板可能被误读为已有真实回填,无需处理

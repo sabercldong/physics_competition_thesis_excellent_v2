@@ -232,6 +232,7 @@
 - 完成 `G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL`：新增 `03_corpus/manual_review_return_integration_protocol.md` 和 `03_corpus/manual_review_return_integration_protocol_v1.csv`，建立真实人工终核回填文件收回后的22条整合规则，覆盖回收登记、结构检查、不可变字段核查、A/B/C/D必填字段、修订说明、待核实保留、关闭条件、冲突分级、账本同步顺序、正式编码解锁、正文使用、主张矩阵隔离和Git提交规则。本任务只规定整合流程，不填写真实回填，不关闭154项，也不进入正式编码或正文结果写作。
 - 完成 `G1-07-MANUAL-CLOSURE-RETURN-INTEGRATION-PROTOCOL-QA`：新增 `03_corpus/manual_review_return_integration_protocol_qa.md` 和 `03_corpus/manual_review_return_integration_protocol_qa_v1.csv`，完成32项QA检查；确认回填整合协议CSV为UTF-8 BOM和LF换行，22条规则、22个唯一且连续的 `RIP-01` 至 `RIP-22` 规则ID，覆盖回收登记、结构检查、不可变字段、A/B/C/D字段完整性、冲突分级、关闭条件、账本同步、正文隔离、主张矩阵隔离、原始文件保护和Git提交隔离。本QA不填写真实回填、不关闭154项，不代表进入正式编码或正式结果分析。
 - 完成 `G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN`：新增 `03_corpus/manual_review_return_integration_dry_run.md`、`03_corpus/manual_review_return_integration_dry_run_template_v1.csv` 和 `03_corpus/manual_review_return_integration_dry_run_protocol_steps_v1.csv`，建立真实回填前的空白整合演练模板；逐项模板覆盖154项待核问题，A组76项、B组22项、C组47项、D组9项，协议步骤表覆盖22条 `RIP-01` 至 `RIP-22` 规则。所有真实回填路径、冲突描述均为空，关闭候选、正式编码放行、正文使用和主张矩阵更新均保持“否”或“不执行：演练模板”；本任务不关闭任何条目。
+- 完成 `G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN-QA`：新增 `03_corpus/manual_review_return_integration_dry_run_qa.md` 和 `03_corpus/manual_review_return_integration_dry_run_qa_v1.csv`，完成61项QA检查；确认演练主表覆盖154项、154个唯一 `issue_id` 且与动作计划集合一致，A组76项、B组22项、C组47项、D组9项计数一致；协议步骤表覆盖22条连续唯一 `RIP-01` 至 `RIP-22` 规则；两张CSV均为UTF-8 BOM和LF换行，真实回填路径、冲突字段保持空白，关闭候选、正式编码放行、正文使用和主张矩阵更新均保持“否”，账本同步动作为“不执行：演练模板”。
 
 ## 关键阻塞项
 
@@ -246,4 +247,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN-QA`：检查两张演练模板是否覆盖154项和22条协议规则，字段是否完整，CSV是否为UTF-8 BOM和LF换行，并确认所有真实回填、关闭、正式编码、正文使用和主张矩阵更新栏位仍处于未执行状态。
+`G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK`：检查当前项目中是否已经存在真实人工终核回填副本；若不存在，则生成回填接收状态登记和正式编码阻断说明，继续保持154项未销项。

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN-QA 人工终核回填整合演练模板QA
+
+- 新增 `03_corpus/manual_review_return_integration_dry_run_qa.md`，记录演练模板QA范围、61项检查结论、禁止声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_return_integration_dry_run_qa_v1.csv`，逐项检查两张演练模板的CSV编码换行、行数、ID唯一性、字段完整性、与动作计划和协议规则的集合一致性、A/B/C/D计数、空白回填状态、冲突空白状态、未放行状态和账本同步隔离；
+- 确认逐项演练主表覆盖154项待核问题，协议步骤表覆盖22条 `RIP-01` 至 `RIP-22` 规则，且两张CSV均为UTF-8 BOM和LF换行；
+- 明确本QA不填写真实回填、不关闭154项，不代表进入正式编码、正式统计、正文写作或主张矩阵更新；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-CLOSURE-RETURN-INTAKE-CHECK`。
+
 ## 2026-07-19：G1-07-MANUAL-CLOSURE-INTEGRATION-DRY-RUN 人工终核回填整合演练模板
 
 - 新增 `03_corpus/manual_review_return_integration_dry_run.md`，说明空白整合演练模板的性质、上游依据、表格执行方式、禁止声称内容和下一最小任务；
