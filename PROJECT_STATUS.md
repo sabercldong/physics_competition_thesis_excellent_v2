@@ -222,7 +222,8 @@
 - 继续 `G1-07-D1-SCORE-35Q04`：新增 `03_corpus/manual_review_transcripts/CPHO35-Q04_score_boundary_check_v1.csv`，追加更新 `03_corpus/manual_review_d1_batch_log.csv`、`manual_review_d1_render_index.csv` 和 `manual_review_d1_batch_summary.md`，并复制第35届第4题题面第2页、答案第16至19页和第20页下一题边界确认图至 `03_corpus/manual_review_renders/G1-07-D1/`；视觉检查确认第4题题面和四个小问可定位，但当前题面页、答案页和文本层辅助检索均未见大题分值、小问分值拆分或评分标准；已将 `CPHO35-Q04-SCORE` 推进为“分值边界核对入口完成，待最终复核”；本任务不填写真实校对人/日期，不生成正式分值统计或论文附录分值，不改写论文正文；
 - 形成稳健型与进阶型两条研究路线；
 - 建立试题语料、编码框架、专家审查、问卷访谈、课堂验证和可复现分析模板；
-- 建立优秀论文质量门槛和Codex工作规范。
+- 建立优秀论文质量门槛和Codex工作规范；
+- 完成 `G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN`：新增 `09_quality/g1_07_claim_matrix_p1_overlay_plan.md` 和 `09_quality/g1_07_claim_matrix_p1_overlay_plan.csv`，核查7条P1主张矩阵覆盖建议均能匹配当前矩阵行；确认 `09_quality/claim_evidence_matrix.csv` 已有历史未提交改动，因此本轮不直接编辑矩阵本体，建议先生成独立侧车文件，再在可隔离时精确合并；本轮不升级任何主张状态，不补造正式编码、统计、专家、教师、学生、课堂或教学效果证据。
 
 ## 关键阻塞项
 
@@ -237,4 +238,4 @@
 
 ## 下一任务
 
-`G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN`：在不直接改动 `09_quality/claim_evidence_matrix.csv` 的前提下，评估7条主张矩阵覆盖建议应如何安全落地；若矩阵历史改动仍无法隔离，则先生成独立覆盖审计说明，不升级任何主张状态。
+`G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR`：在不直接改动 `09_quality/claim_evidence_matrix.csv` 的前提下，生成7条P1覆盖建议的独立侧车文件，记录每条 `claim_id` 的当前矩阵状态、拟落地字段、禁止升级边界和后续合并条件。

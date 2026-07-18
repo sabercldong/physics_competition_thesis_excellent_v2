@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-CLAIM-MATRIX-P1-OVERLAY-PLAN 主张矩阵P1覆盖落地路线评估
+
+- 新增 `09_quality/g1_07_claim_matrix_p1_overlay_plan.md`，说明7条P1主张矩阵覆盖建议的落地边界和侧车优先路线；
+- 新增 `09_quality/g1_07_claim_matrix_p1_overlay_plan.csv`，逐条登记 `C3-01`、`C3-02`、`C4-01`、`C4-02`、`C5-01`、`C5-02` 和 `C2-06` 的落地判断、拟落地面、禁止升级内容、阻塞原因和下一任务；
+- 核查上述7个 `claim_id` 在当前 `09_quality/claim_evidence_matrix.csv` 中均存在，但矩阵本体已有历史未提交改动，因此本轮不直接编辑矩阵；
+- 明确7条覆盖建议均为边界强化，不能升级为正式编码结果、正式统计、专家审查、教师反馈、课堂证据或教学效果结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-CLAIM-MATRIX-P1-OVERLAY-SIDECAR`。
+
 ## 2026-07-19：G1-07-MANUSCRIPT-BOUNDARY-P1-QA P1正文门禁应用范围检查
 
 - 新增 `09_quality/g1_07_manuscript_boundary_p1_qa.md`，检查4条P1正文门禁句是否落入第3章和第5章正确位置；
