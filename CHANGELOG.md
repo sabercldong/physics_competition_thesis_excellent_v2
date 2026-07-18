@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-EVIDENCE-PACKET-INDEX-QA P1材料包索引QA
+
+- 新增 `09_quality/no_return_reference_p1_evidence_packet_index_qa.md`，记录P1材料包索引QA的性质声明、110项检查结论、分类复核、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
+- 新增 `09_quality/no_return_reference_p1_evidence_packet_index_qa_v1.csv`，逐项检查输入文件、CSV编码换行、字段结构、行数、ID连续性、上游P1路线继承、证据路径、放行边界、回填闭环、报告一致性、台账一致性和禁写语境；
+- 确认11项索引、`P1PKT-01` 至 `P1PKT-11`、`P1-A` 至 `P1-K`、`RCQ-07` 至 `RCQ-17` 连续一致，24个既有材料入口文件路径缺失0项；
+- 确认核心缺失材料、必要回填字段、解锁前输出、禁写边界和下一任务均已填写，11项全部保持“不放行”；
+- 明确本QA不获取新全文，不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改 `02_literature/references.bib`，不补造页码、阅读结论、专家意见、教师/课堂材料或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-BACKFILL-TEMPLATE`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-EVIDENCE-PACKET-INDEX P1文献缺口材料包索引
 
 - 新增 `09_quality/no_return_reference_p1_evidence_packet_index.md`，记录P1文献缺口材料包索引的性质声明、总体结论、材料包类型分布、11项索引入口、回填使用规则、当前不能声称内容和下一最小任务；
