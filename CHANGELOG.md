@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-GAP-QUEUE-QA P1文献缺口路线QA
+
+- 新增 `09_quality/no_return_reference_p1_gap_queue_qa.md`，记录P1文献缺口路线QA的性质声明、84项检查结论、分类复核、已确认一致性、仍不能声称内容、下一最小任务和提交边界；
+- 新增 `09_quality/no_return_reference_p1_gap_queue_qa_v1.csv`，逐项检查P1路线CSV编码换行、字段结构、行数、ID连续性、上游RCQ继承、放行边界、证据路径、报告一致性、台账一致性、禁写语境和主张定位；
+- 确认11项P1路线、`P1GAP-01` 至 `P1GAP-11`、`P1-A` 至 `P1-K`、`RCQ-07` 至 `RCQ-17` 连续一致，全文获取5项、主张补证4项、工作表闭环1项、矩阵侧车1项计数正确；
+- 确认证据路径缺失0项，关联主张均可在当前主张矩阵中定位，11项全部保持“不放行”；
+- 明确本QA不获取新全文，不改写论文正文，不修改 `09_quality/claim_evidence_matrix.csv`，不新增或修改 `02_literature/references.bib`，不补造阅读结论、页码、专家意见、教师意见、学生数据或教学效果证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REFERENCE-P1-EVIDENCE-PACKET-INDEX`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REFERENCE-P1-GAP-QUEUE P1文献缺口可执行路线
 
 - 新增 `09_quality/no_return_reference_p1_gap_queue.md`，记录P1文献全文、理论边界、综述缺口、方法支撑、参考文献表闭环和主张补证路线的性质声明、总体结论、缺口类型分布、11项执行路线、可继续工作、当前不能继承或升级内容和下一最小任务；
