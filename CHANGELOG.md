@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT-QA 路线B第三章补丁准备链等待室收束QA
+
+- 新增 `04_framework/route_b_method_patch_waiting_room_closeout_qa.md`，记录等待室收束QA的性质声明、检查结论、检查范围、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `04_framework/route_b_method_patch_waiting_room_closeout_qa_v1.csv`，完成64项检查，覆盖输入存在性、CSV结构、逐行编号、覆盖范围、路径追溯和边界检查；
+- 确认收束CSV为UTF-8 BOM和LF换行，10项 `WR-01` 至 `WR-10` 连续唯一；
+- 确认10项入口覆盖补丁计划、计划QA、应用门禁、门禁QA、当前可做、当前冻结和4类回流入口；
+- 确认所有 `manuscript_release` 均为“否”，当前可直接应用到论文正文0项；
+- 确认所有引用路径均可定位，下一路由已指回人工校对真实回填、真实评分者编码、正式统计复现和缺失材料任务卡；
+- 本任务不修改第三章正文，不补真实材料，不创建真实回填目录，不放行正式编码、正式统计、结果章或教学效果结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-GAP-QUEUE`。
+
 ## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT 路线B第三章补丁准备链收束
 
 - 新增 `04_framework/route_b_method_patch_waiting_room_closeout.md`，汇总第三章补丁计划、计划QA、应用门禁和门禁QA，说明收束结论、当前可做、当前不可做、下一最小任务和输出边界；
