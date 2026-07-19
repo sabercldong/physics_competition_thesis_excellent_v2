@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT P0第一批真实核对交接链收束
+
+- 新增 `03_corpus/manual_review_p0_batch1_handoff_closeout.md`，将P0第一批真实核对链条收束为一页式交接说明，明确领取入口、当前覆盖、必读顺序、每题最低交付、收到真实回填后的最短流程、禁止事项和当前结论；
+- 新增 `03_corpus/manual_review_p0_batch1_handoff_closeout_v1.csv`，建立9项结构化收束索引，覆盖小批次入口、回填模板、填写说明、交接索引、等待室路线、任务卡、任务卡QA、未来真实回填接收位置和未来正式编码出口；
+- 明确其他智能体应从 `03_corpus/manual_review_p0_batch1_agent_task_cards_v1.csv` 领取单题任务，并将真实校对结果写入 `03_corpus/manual_review_p0_batch1_return_template_v1.csv` 的对应 `return_id` 行或真实回填副本；
+- 确认当前覆盖38个小批次、38张任务卡、38行回填模板和76条高风险OCR/公式/特殊符号问题，支持文件路径已由任务卡QA确认缺失0项；
+- 本任务不创建 `03_corpus/manual_review_returns/`，不填写真实校对字段，不关闭38个小批次，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS-QA P0第一批逐题核对任务卡QA
 
 - 新增 `03_corpus/manual_review_p0_batch1_agent_task_cards_qa.md`，记录P0第一批逐题核对任务卡QA的性质声明、结论、仍不能声称内容和下一最小任务；

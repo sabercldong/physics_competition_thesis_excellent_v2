@@ -1,0 +1,10 @@
+﻿closeout_id,link_name,file_path,file_role,row_count_or_scope,required_action_for_next_agent,current_status,release_status,must_not_do
+P0B1HC-01,小批次入口,03_corpus/manual_review_p0_batch1_item_batches_v1.csv,38个题目级小批次总入口,38,先按batch_id确认自己领取的题目和待核问题。,已准备：未真实销项,不放行：交接收束，未真实回填,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
+P0B1HC-02,回填模板,03_corpus/manual_review_p0_batch1_return_template_v1.csv,真实校对结果填写位置,38,真实核对完成后只填写对应return_id行或其真实副本。,空白模板：未真实回填,不放行：交接收束，未真实回填,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
+P0B1HC-03,填写说明,03_corpus/manual_review_p0_batch1_return_instructions.md,字段填写规则,Markdown,填写前阅读字段允许写法、继承字段禁改和阻断规则。,说明已准备,不放行：交接收束，未真实回填,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
+P0B1HC-04,交接索引,03_corpus/manual_review_p0_batch1_return_packet_index_v1.csv,链条文件清单,11,用于确认上游材料包完整性和阅读顺序。,索引已准备,不放行：交接收束，未真实回填,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
+P0B1HC-05,等待室路线,03_corpus/manual_review_p0_batch1_return_waiting_room_update_v1.csv,无真实回填时的路线边界,12,确认哪些动作必须等待、哪些可准备、哪些禁止推进。,等待室已更新,不放行：交接收束，未真实回填,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
+P0B1HC-06,任务卡,03_corpus/manual_review_p0_batch1_agent_task_cards_v1.csv,38张逐题领取卡,38,其他智能体从task_card_id领取单题核对任务。,待领取：未真实回填,不放行：交接收束，未真实回填,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
+P0B1HC-07,任务卡QA,03_corpus/manual_review_p0_batch1_agent_task_cards_qa_v1.csv,任务卡可交接性检查,46,证明任务卡结构、路径和边界已通过QA。,QA通过：仍未真实销项,不放行：交接收束，未真实回填,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
+P0B1HC-08,真实回填接收,03_corpus/manual_review_returns/,未来真实副本接收位置,见文件,仅收到真实副本后再按接收协议创建/登记；当前不得创建虚假目录。,当前不存在,冻结：等待真实回填,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
+P0B1HC-09,正式编码出口,07_analysis/data/final_coding.csv,未来正式编码唯一输入,见文件,仅在真实校对、正式A/B编码、一致性、裁决和复现QA后生成。,当前不存在,冻结：等待正式流程,不得代填真实校对人、日期、OCR决定、公式决定或证据摘记；不得关闭小批次；不得放行正式编码、正式统计、论文结果章或final_coding.csv。
