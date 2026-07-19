@@ -282,6 +282,7 @@
 - 完成 `G1-07-ROUTE-B-METHOD-MATERIAL-INDEX-QA`：新增 `04_framework/route_b_method_material_index_qa.md` 和 `04_framework/route_b_method_material_index_qa_v1.csv`，完成487项QA检查且全部通过；确认索引CSV为22行、`RBMI-01` 至 `RBMI-22` 连续唯一，分类计数为“可写入方法章”10项、“边界可写”9项、“占位/禁写”3项，22项来源路径缺失0项，并通过明确映射覆盖路线B允许继续准备、仅内部准备、条件冻结和直接禁止的关键边界。高风险词仅处于禁止或边界语境中，未写成正式结果、专家审查、评分者一致性或教学效果结论；本QA不修改论文正文，不放行结果章或主张矩阵升级。
 - 完成 `G1-07-ROUTE-B-METHOD-PATCH-PLAN`：新增 `04_framework/route_b_method_patch_plan.md` 和 `04_framework/route_b_method_patch_plan_v1.csv`，把已通过QA的路线B方法章素材索引转化为13项第三章安全改写计划；计划覆盖3.1至3.9及跨文件暂存隔离，其中P0 9项、P1 4项，所有条目的 `apply_now` 均为“否”。本任务只写清未来正文补丁位置、建议最小句、证据来源、禁写边界和应用条件，不修改 `08_manuscript/03_methods.md`，不补齐真实人工终核、评分者编码、专家审查、正式统计、教师/问卷/课堂或学生作品材料；
 - 完成 `G1-07-ROUTE-B-METHOD-PATCH-PLAN-QA`：新增 `04_framework/route_b_method_patch_plan_qa.md` 和 `04_framework/route_b_method_patch_plan_qa_v1.csv`，完成路线B第三章安全改写计划QA；确认计划CSV为UTF-8 BOM和LF换行，13项 `RBMP-01` 至 `RBMP-13` 连续唯一，P0/P1计数为9/4，高/中风险计数为7/6，`RBMI-01` 至 `RBMI-22` 均可追溯，来源路径缺失0项，所有条目均保持 `apply_now=否`。本QA不修改第三章正文，不放行正式编码、正式统计、结果章或教学效果结论；
+- 完成 `G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE`：新增 `04_framework/route_b_method_patch_application_gate.md` 和 `04_framework/route_b_method_patch_application_gate_v1.csv`，为13项第三章安全改写补丁建立应用门禁；确认当前可直接应用到论文正文0项，13项均保持 `apply_to_manuscript_now=否`，其中 `RBMP-13` 仅可作为后续任务操作规则执行而不写入正文。门禁逐项列出缺失材料、解锁条件、解锁后允许正文范围、禁写边界和其他智能体下一动作；本任务不修改第三章正文，不放行正式编码、正式统计、结果章或教学效果结论；
 
 ## 关键阻塞项
 
@@ -296,4 +297,4 @@
 
 ## 下一任务
 
-`G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE`：基于已通过QA的第三章安全改写计划建立补丁应用门禁，判断哪些句子仍只能保留为计划，哪些必须等待真实材料或明确删减决定；该任务仍不得直接改写正文。
+`G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE-QA`：检查第三章补丁应用门禁是否13项连续、全部正文应用为“否”、缺失材料与解锁条件完整、来源路径可定位，并确认第三章正文没有被修改或暂存。

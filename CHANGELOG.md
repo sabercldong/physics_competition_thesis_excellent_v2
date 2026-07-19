@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE 路线B第三章补丁应用门禁
+
+- 新增 `04_framework/route_b_method_patch_application_gate.md`，记录路线B第三章补丁应用门禁的性质声明、总判断、门禁统计、13项门禁总表、对其他智能体的执行说明、当前不得放行正文内容、下一最小任务和输出边界；
+- 新增 `04_framework/route_b_method_patch_application_gate_v1.csv`，逐项映射 `RBMP-01` 至 `RBMP-13`，字段包括门禁类别、当前门禁决定、使用类别、是否当前应用到正文、缺失材料、解锁条件、解锁后允许正文范围、禁写边界和其他智能体下一动作；
+- 确认当前可直接应用到论文正文0项，13项均保持 `apply_to_manuscript_now=否`；
+- 确认 `RBMP-13` 只作为后续任务的Git隔离与精确暂存操作规则执行，不作为论文正文句子应用；
+- 明确人工校对、真实评分者编码、正式统计、专家/导师/竞赛教师反馈、教师访谈、问卷、课堂/学生作品、C组图件定稿、D组分值/附属图和学校/路线确认等缺口仍需真实材料或明确删减决定；
+- 本任务不修改 `08_manuscript/03_methods.md`，不修改 `00_originals/`、`09_quality/claim_evidence_matrix.csv` 或 `02_literature/references.bib`，不创建真实回填目录，不放行正式编码、正式统计、结果章或教学效果结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE-QA`。
+
 ## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-PLAN-QA 路线B第三章安全改写计划QA
 
 - 新增 `04_framework/route_b_method_patch_plan_qa.md`，记录路线B第三章安全改写计划QA的性质声明、检查结论、检查分布、已确认事项、对其他智能体的交接提醒、仍不能声称内容、保留风险、下一最小任务和输出边界；
