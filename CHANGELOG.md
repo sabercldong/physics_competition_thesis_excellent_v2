@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK-QA P0第一批回填接收准备表QA
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check_qa.md`，记录P0第一批真实回填接收准备表QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check_qa_v1.csv`，完成42项QA检查，覆盖输入存在性、CSV编码换行、字段结构、行数、编号连续性、上游材料、通用接收协议、登记模板、目录规则、命名规则、目录状态、未收到状态、结构门槛、不可变字段、必填字段、校验值、隔离处理、整合门槛、正式编码边界和正文边界；
+- 确认接收准备表18项编号连续、路径缺失0项，全部保持“不放行：接收准备，未真实回填”；
+- 确认当前未创建 `03_corpus/manual_review_returns/`，接收登记模板仍为模板未收到状态，未登记真实文件名、副本路径、校验值、接收日期或接收人；
+- 本任务不填写真实回填字段，不关闭38个小批次，不放行正式评分者模板、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK P0第一批回填接收准备检查
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check.md`，说明P0第一批真实回填副本未来接收的挂接方式、推荐另存命名、收到副本后的最短流程和当前冻结边界；
