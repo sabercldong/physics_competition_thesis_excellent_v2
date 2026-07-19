@@ -172,6 +172,10 @@
   - 进度：新增 `09_quality/missing_materials_agent_handoff.md` 和 `09_quality/missing_materials_agent_handoff_v1.csv`，为其他智能体建立12项缺失材料交接任务；其中P0 5项、P1 6项、P2 1项。交接范围覆盖学校格式、人工校对真实回填、正式评分者编码、正式统计、文献全文核验、真实外部审查、教师访谈、问卷、课堂与学生作品、图件定稿、分值/附属图和最终题目路线确认；逐项明确必要输入、交付物、验收标准和禁止事项。
 - [x] G1-07-MISSING-MATERIALS-AGENT-HANDOFF-QA 检查缺失材料智能体交接清单
   - 进度：新增 `09_quality/missing_materials_agent_handoff_qa.md` 和 `09_quality/missing_materials_agent_handoff_qa_v1.csv`，完成306项QA检查且全部通过；确认12项交接任务编号连续、P0/P1/P2计数为5/6/1、字段完整、关键缺口覆盖完整、禁止事项清楚、证据依据路径缺失0项，且没有把缺失材料写成已完成证据。本QA不补齐任何缺失材料，不放行正式编码、正式统计或论文结果章。
+- [x] G1-07-MISSING-MATERIALS-AGENT-HANDOFF-EXPANDED-BRIEF 扩展缺失材料智能体任务卡
+  - 进度：新增 `09_quality/missing_materials_agent_task_briefs.md` 和 `09_quality/missing_materials_agent_task_briefs_v1.csv`，将12项缺失材料交接任务扩展为 `AGTB-01` 至 `AGTB-12` 可派单任务卡；逐项明确对应缺口、建议领取者、先读文件、执行动作、交付物、验收门槛、禁止边界、交付后QA和当前放行状态。本任务只写清楚给其他智能体执行的任务包，不补齐任何材料，不放行正式编码、正式统计、结果章或教学效果结论。
+- [ ] G1-07-MISSING-MATERIALS-AGENT-TASK-BRIEFS-QA 检查缺失材料智能体任务卡
+  - 目标：检查任务卡CSV和报告是否编号连续、字段完整、输入路径可定位、禁止边界充分，并确认没有把任何缺失材料写成已完成证据。
 - [x] G1-07-ROUTE-B-METHOD-MATERIAL-INDEX 建立路线B方法章可写素材索引
   - 进度：新增 `04_framework/route_b_method_material_index.md` 和 `04_framework/route_b_method_material_index_v1.csv`，建立22项方法章素材索引；其中“可写入方法章”10项、“边界可写”9项、“占位/禁写”3项。索引逐项列出来源路径、可写方式、禁写内容、解锁条件和下一动作，明确第三章只能写流程、规则、门槛和边界，第四章正式结果与第五章教学验证结论继续占位/禁写。
 - [x] G1-07-ROUTE-B-METHOD-MATERIAL-INDEX-QA 检查路线B方法章可写素材索引

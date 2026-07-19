@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MISSING-MATERIALS-AGENT-HANDOFF-EXPANDED-BRIEF 缺失材料智能体任务卡
+
+- 新增 `09_quality/missing_materials_agent_task_briefs.md`，把已通过QA的缺失材料交接清单扩展为其他智能体可直接领取的任务卡，说明领取总规则、派单顺序、任务卡总表、逐项执行要求、交付回报模板、当前不能写入论文的结论、下一最小任务和输出边界；
+- 新增 `09_quality/missing_materials_agent_task_briefs_v1.csv`，建立12项 `AGTB-01` 至 `AGTB-12` 任务卡，逐项映射 `AGH-01` 至 `AGH-12`，字段包括优先级、任务标题、建议领取者、先读文件、执行动作、交付物、验收门槛、禁止边界、交付后QA和当前放行状态；
+- 明确P0任务包括学校格式与提交规则、154项人工校对真实回填、真实评分者独立编码、正式统计与结果复现、文献全文与引用核验；
+- 明确P1任务包括真实专家/导师/竞赛教师反馈、教师访谈、问卷、课堂/教学实验/学生作品、C组图件定稿、D组分值与附属图；
+- 明确P2任务为最终题目与研究路线确认，并要求区分用户决定、导师决定和项目内部建议；
+- 统一写明其他智能体不得冒充真实专家、导师、竞赛教师、评分者、教师、学生、校对人，不得补造数据、文献、问卷、课堂、显著性、图件定稿或分值统计；
+- 本任务不补齐任何缺失材料，不创建 `03_corpus/manual_review_returns/`，不修改 `08_manuscript/` 正文，不放行正式编码、正式统计、论文结果章、教学效果结论或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MISSING-MATERIALS-AGENT-TASK-BRIEFS-QA`。
+
 ## 2026-07-19：G1-07-ROUTE-B-METHOD-MATERIAL-INDEX-QA 路线B方法章素材索引QA
 
 - 新增 `04_framework/route_b_method_material_index_qa.md`，记录路线B方法章素材索引QA的性质声明、487项检查结论、检查分布、已确认事项、仍不能声称内容、下一最小任务和输出边界；
