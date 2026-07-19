@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP P0第二批公式与特殊符号回填入口
+
+- 新增 `03_corpus/manual_review_p0_batch2_return_prep.md`，说明P0第二批公式与特殊符号回填入口的性质、覆盖范围、使用方法、回填字段、禁止事项和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch2_return_prep_v1.csv`，从 `03_corpus/manual_review_priority_queue_v1.csv` 中筛选 `recommended_batch=第二批` 的22条P0公式与特殊符号校对项，建立 `P0B2RET-01` 至 `P0B2RET-22` 的真实回填入口；
+- 确认22项均为“公式与特殊符号校对”，覆盖第35届8题、第36届7题、第39届7题，题目文本路径和公式核对表路径缺失0项；
+- 预留真实校对人、日期、核对页码、公式决定、修订位置、证据摘记、剩余疑点、正式评分者模板放行判断、回填副本路径、校验值和整合状态等字段；当前全部为空白或“未回填”；
+- 22项全部保持“不放行：P0第二批空白回填入口”；
+- 本任务不填写真实校对字段，不关闭任何人工校对项，不修改题文，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-QA P0第一批真实回填等待状态登记QA
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_waiting_qa.md`，记录P0第一批真实回填等待状态登记QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
