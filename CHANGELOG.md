@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP-QA P0第二批公式与特殊符号回填入口QA
+
+- 新增 `03_corpus/manual_review_p0_batch2_return_prep_qa.md`，记录P0第二批公式与特殊符号回填入口QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch2_return_prep_qa_v1.csv`，完成38项QA检查，覆盖输入存在性、上游存在性、CSV格式、字段结构、行数编号、来源筛选、来源映射、路径检查、回填字段、未回填状态、冻结状态、禁止事项、Markdown边界、原始文件保护、正文保护、主张矩阵保护和下一任务；
+- 确认入口表共22项，`P0B2RET-01` 至 `P0B2RET-22` 连续唯一，22项均来自人工校对优先队列第二批，均为P0公式与特殊符号校对；
+- 确认覆盖第35届8题、第36届7题、第39届7题，题目文本路径、公式核对表路径和最低核对输入路径缺失0项；
+- 确认真实回填字段全部为空白或“未回填”，22项全部保持“不放行：P0第二批空白回填入口”；
+- 本QA不填写真实校对字段，不关闭任何人工校对项，不修改题文，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP P0第二批公式与特殊符号回填入口
 
 - 新增 `03_corpus/manual_review_p0_batch2_return_prep.md`，说明P0第二批公式与特殊符号回填入口的性质、覆盖范围、使用方法、回填字段、禁止事项和下一最小任务；

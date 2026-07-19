@@ -599,4 +599,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_waiting_qa.md` 和 `manual_review_p0_batch1_return_waiting_qa_v1.csv`，完成30项QA检查；确认等待登记CSV为UTF-8 BOM和LF换行，12项等待登记编号连续，真实回填副本仍未收到，`03_corpus/manual_review_returns/` 和 `07_analysis/data/final_coding.csv` 当前均不存在。QA通过只表示等待登记可用，不代表人工校对完成或正式编码放行。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP 准备P0第二批公式与特殊符号回填入口
   - 进度：新增 `03_corpus/manual_review_p0_batch2_return_prep.md` 和 `manual_review_p0_batch2_return_prep_v1.csv`，从人工校对优先队列第二批筛选22条P0公式与特殊符号校对项，建立 `P0B2RET-01` 至 `P0B2RET-22` 的真实回填入口；覆盖第35届8题、第36届7题、第39届7题，题目文本和公式核对表路径缺失0项。当前真实回填字段均为空白或“未回填”，全部不放行。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP-QA 检查P0第二批公式与特殊符号回填入口
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP-QA 检查P0第二批公式与特殊符号回填入口
+  - 进度：新增 `03_corpus/manual_review_p0_batch2_return_prep_qa.md` 和 `manual_review_p0_batch2_return_prep_qa_v1.csv`，完成38项QA检查；确认22项均来自人工校对优先队列第二批，均为P0公式与特殊符号校对，覆盖第35届8题、第36届7题、第39届7题；题目文本、公式核对表和最低核对输入路径缺失0项，真实回填字段全部为空白或“未回填”，全部保持不放行。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS 整理P0第二批逐项领取任务卡
