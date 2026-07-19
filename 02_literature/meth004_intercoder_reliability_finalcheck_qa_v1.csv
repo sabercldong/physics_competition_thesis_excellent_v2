@@ -1,0 +1,41 @@
+﻿qa_id,check_group,check_item,evidence,source_path,result,risk_if_failed,followup_action
+METH004QA-01,输入文件,复核说明存在,meth004_intercoder_reliability_finalcheck.md可读取,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,无法证明QA对象存在,保留文件
+METH004QA-02,输入文件,结构表存在,meth004_intercoder_reliability_finalcheck_v1.csv可读取,02_literature/meth004_intercoder_reliability_finalcheck_v1.csv,通过,无法检查结构化复核记录,保留文件
+METH004QA-03,CSV格式,UTF-8 BOM,结构表检测到BOM,02_literature/meth004_intercoder_reliability_finalcheck_v1.csv,通过,后续表格工具可能乱码,继续使用UTF-8 BOM
+METH004QA-04,CSV格式,LF换行,结构表未检测到CRLF或孤立CR,02_literature/meth004_intercoder_reliability_finalcheck_v1.csv,通过,不符合项目CSV换行规则,保持LF
+METH004QA-05,CSV结构,字段完整,字段含check_id/source_id/check_area/check_item/current_evidence/source_path/finalcheck_status/allowed_use/cannot_claim/next_action/release_status,02_literature/meth004_intercoder_reliability_finalcheck_v1.csv,通过,后续无法机器读取复核状态,保持字段
+METH004QA-06,CSV结构,行数正确,结构表为20行,02_literature/meth004_intercoder_reliability_finalcheck_v1.csv,通过,复核覆盖不完整或重复,保留20行
+METH004QA-07,编号,编号连续唯一,METH004FC-01至METH004FC-20连续且唯一,02_literature/meth004_intercoder_reliability_finalcheck_v1.csv,通过,后续引用混乱,保留编号
+METH004QA-08,来源路径,路径均可定位,source_path缺失0项,02_literature/meth004_intercoder_reliability_finalcheck_v1.csv,通过,证据链断裂,后续修改时同步检查路径
+METH004QA-09,上游映射,METH-004可定位,reference_verification.csv存在METH-004行,02_literature/reference_verification.csv,通过,来源身份无法回查,保留METH-004映射
+METH004QA-10,上游映射,P0REF-06可定位,P0复核单存在P0REF-06行,09_quality/no_return_reference_p0_finalcheck_sheet_v1.csv,通过,P0复核链断裂,保留P0REF-06映射
+METH004QA-11,上游映射,G2VE-02可定位,文献理论入口存在G2VE-02行,02_literature/literature_theory_verification_entry_v1.csv,通过,本任务入口无法回查,保留G2VE-02映射
+METH004QA-12,已读证据,阅读笔记存在,METH-004全文方法摘录文件存在并列出阅读状态,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,方法语句无已读来源支撑,保留阅读笔记
+METH004QA-13,版本风险,withdrawn风险保留,复核说明和结构表均保留CSU仓储withdrawn风险,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,正式引用版本风险被遮蔽,正式引用前对照出版社/数据库版本
+METH004QA-14,题录信息,期刊题录完整,作者、题名、期刊、年份、卷期页码、DOI均列出,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,参考文献候选无法核验,后续按学校格式统一
+METH004QA-15,页码定位,页码映射明确,PDF第2-19页对应期刊正文587-604页,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,正文引用页码不稳,后续优先使用期刊页码
+METH004QA-16,页码定位,关键页码覆盖一致性必要性,589-590用于一致性证据必要性,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,方法依据无法定位,保留页码
+METH004QA-17,页码定位,关键页码覆盖训练/正式区分,590用于一致性样本、独立编码、训练和正式可靠性报告区分,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,训练与正式检验混淆,保留页码
+METH004QA-18,页码定位,关键页码覆盖指标风险,590-593覆盖percent agreement风险、总体指标遮蔽和指标适用条件,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,可能机械套用指标,保留页码和边界
+METH004QA-19,页码定位,关键页码覆盖报告字段,601-603覆盖报告字段和分歧处理,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,第三章字段清单无来源,保留页码
+METH004QA-20,可支持语句,独立编码语句克制,复核说明支持内容分析研究应报告编码者一致性，不能只依赖单一编码者或内部试编码,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,误把内部编码当正式证据,正文另起任务使用安全句式
+METH004QA-21,可支持语句,逐变量报告语句克制,复核说明支持按变量分别报告一致性，避免总体指标遮蔽风险,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,正式方法报告过度简化,后续方法章门禁引用
+METH004QA-22,可支持语句,指标选择语句克制,复核说明支持说明指标理由和适用边界，不能机械套用单一指标,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,阈值或指标误迁移,等待METH-002/METH-003补强
+METH004QA-23,可支持语句,分歧处理语句克制,复核说明支持方法章记录分歧处理或裁决方式，但真实裁决结果必须来自正式评分者数据,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,伪造裁决完成,等待真实评分者数据
+METH004QA-24,禁写边界,框架有效性禁写,说明文件明确不能证明本项目编码框架有效,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,误写框架有效,继续保持边界
+METH004QA-25,禁写边界,真实评分者数据禁写,说明文件明确不能证明真实A/B评分者独立编码已经完成,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,误写正式编码完成,等待真实回填
+METH004QA-26,禁写边界,一致性通过禁写,说明文件明确不能证明本项目一致性已经通过,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,误放行方法质量结论,继续冻结一致性结论
+METH004QA-27,禁写边界,阈值设定禁写,说明文件明确不能直接设定kappa、alpha或percent agreement通过阈值,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,机械迁移阈值,等待其他方法文献和项目变量结构
+METH004QA-28,禁写边界,结果与教学效果禁写,说明文件明确不能支持正式分布、共现、趋势、案例结论或教学效果,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,误入结果章或教学章,保持正式结果冻结
+METH004QA-29,学校格式,待核状态保留,METH004FC-18为待核实，说明文件列出学校英文期刊格式待核点,02_literature/meth004_intercoder_reliability_finalcheck_v1.csv,通过,可能伪定稿参考文献格式,等待学校规范或bib闭环任务
+METH004QA-30,正文边界,未改写正文,复核说明声明不改写论文正文,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,越过正文门禁,正文另起任务
+METH004QA-31,参考文献边界,未定稿references.bib,复核说明声明不新增或定稿references.bib,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,未核版本进入正式参考文献,bib闭环另起任务
+METH004QA-32,主张矩阵边界,未升级主张矩阵,复核说明声明不升级主张证据矩阵,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,主张状态被误升级,矩阵合并另起任务
+METH004QA-33,主张支持,C2-04状态克制,复核说明将C2-04列为部分方法依据，不证明两层编码更有效,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,主张过度升级,继续等待多源补强
+METH004QA-34,主张支持,C3-02状态克制,复核说明将C3-02列为边界性方法依据，不证明正式一致性通过,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,方法章质量主张过界,等待真实一致性输出
+METH004QA-35,QA报告,QA结论有边界,QA报告写明通过不等于第三章定稿或一致性检验完成,02_literature/meth004_intercoder_reliability_finalcheck_qa.md,通过,QA被误读为正式放行,保留边界说明
+METH004QA-36,下一任务,下一最小任务明确,QA报告建议进入G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY,02_literature/meth004_intercoder_reliability_finalcheck_qa.md,通过,后续路线不清,更新台账
+METH004QA-37,红线检查,未出现补造评分者/一致性结果,QA对象未声称真实评分者、正式一致性、专家、问卷、课堂或显著性材料已存在,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,违反真实性红线,继续待核处理
+METH004QA-38,释放状态,没有正式放行,QA仅放行下一文献核验任务，不放行正文定稿、参考文献表或正式方法结论,02_literature/meth004_intercoder_reliability_finalcheck_qa.md,通过,误入正文/结果写作,保持正式门禁
+METH004QA-39,台账准备,台账更新目标明确,本轮应将TASKS和PROJECT_STATUS下一任务转为G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY,PROJECT_STATUS.md;TASKS.md,通过,任务路线断裂,本轮完成后更新台账
+METH004QA-40,总体结论,QA通过,40项检查均通过,02_literature/meth004_intercoder_reliability_finalcheck_qa_v1.csv,通过,不能作为后续门禁材料,进入下一文献理论核验入口

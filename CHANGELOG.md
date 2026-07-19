@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G2VE-02-METH004-FINALCHECK-QA 内容分析一致性方法来源定稿前复核QA
+
+- 新增 `02_literature/meth004_intercoder_reliability_finalcheck_qa.md`，记录METH-004复核材料QA的性质声明、QA结论、已确认事项、仍不能声称内容、后续边界和下一最小任务；
+- 新增 `02_literature/meth004_intercoder_reliability_finalcheck_qa_v1.csv`，完成40项QA检查，覆盖输入文件、CSV编码换行、字段结构、行数、编号、来源路径、上游映射、已读证据、CSU仓储 `withdrawn` 风险、题录信息、页码定位、可支持方法语句、禁写边界、学校格式待核点、正文/参考文献/主张矩阵边界、主张支持状态、QA报告边界、红线检查和后续任务；
+- 确认结构表为UTF-8 BOM和LF换行，20项 `METH004FC-01` 至 `METH004FC-20` 连续唯一，来源路径缺失0项；
+- 确认上游 `METH-004`、`P0REF-06` 和 `G2VE-02` 均可定位；
+- 确认QA通过只表示METH-004方法来源复核材料可作为后续方法章写作门禁材料，不等于第三章定稿、参考文献表定稿、主张矩阵升级、本项目一致性检验完成或正式方法结论放行；
+- 本QA不改写论文正文，不修改 `references.bib`，不升级 `09_quality/claim_evidence_matrix.csv`，不补造真实评分者数据、一致性结果、专家审查、问卷、课堂或教学实验材料；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY`。
+
 ## 2026-07-19：G2VE-02-METH004-FINALCHECK 内容分析一致性方法来源定稿前复核
 
 - 新增 `02_literature/meth004_intercoder_reliability_finalcheck.md`，记录 `METH-004` 的性质声明、输入依据、复核结论、来源与版本信息、页码定位、可支持的第三章方法表述、不能声称内容、学校格式候选写法、主张支持状态和下一最小任务；
