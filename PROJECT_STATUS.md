@@ -287,6 +287,7 @@
 - 完成 `G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT`：新增 `04_framework/route_b_method_patch_waiting_room_closeout.md` 和 `04_framework/route_b_method_patch_waiting_room_closeout_v1.csv`，收束路线B第三章补丁准备链；确认补丁计划、计划QA、应用门禁和门禁QA四类材料已形成，当前可直接应用到论文正文0项，继续叠加方法章门禁的收益降低，下一步应回流到人工校对真实回填、真实评分者编码、正式统计复现或缺失材料任务卡。本任务不修改第三章正文，不放行正式编码、正式统计、结果章或教学效果结论；
 - 完成 `G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT-QA`：新增 `04_framework/route_b_method_patch_waiting_room_closeout_qa.md` 和 `04_framework/route_b_method_patch_waiting_room_closeout_qa_v1.csv`，完成64项QA检查；确认收束CSV为UTF-8 BOM和LF换行，10项 `WR-01` 至 `WR-10` 连续唯一，覆盖补丁计划、计划QA、应用门禁、门禁QA、当前可做、当前冻结和4类回流入口；所有 `manuscript_release` 均为“否”，引用路径均可定位，下一路由已指回真实材料入口。本任务不修改第三章正文，不放行正式编码、正式统计、结果章或教学效果结论；
 - 完成 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-GAP-QUEUE`：新增 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue.md` 和 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue_v1.csv`，在无真实人工回填条件下整理正式统计前复现包18项缺口；覆盖输入数据、正式A/B模板、裁决模板、`final_coding.csv`、数据字典、门禁、脚本、正式输出表、图表计划、归档、环境、正式结果QA和第四章正文边界。确认当前仅可准备结构和接口，所有正式结果均不放行，不运行正式分析，不生成论文结果结论；
+- 完成 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-GAP-QUEUE-QA`：新增 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue_qa.md` 和 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue_qa_v1.csv`，完成94项QA检查；确认缺口CSV为UTF-8 BOM和LF换行，18项 `RPG-01` 至 `RPG-18` 连续唯一，覆盖输入数据、数据字典、门禁、脚本、输出表、图表计划、归档、环境、QA和正文边界；已有路径均可定位，`final_coding.csv` 与正式结果输出表均未被创建，放行状态未出现正式放行。本QA不运行统计，不生成正式表图，不修改正文或主张矩阵；
 
 ## 关键阻塞项
 
@@ -301,4 +302,4 @@
 
 ## 下一任务
 
-`G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-GAP-QUEUE-QA`：检查复现包缺口队列是否覆盖输入、脚本、输出、图表、归档、环境和QA门槛，确认所有正式结果仍不放行，且已有路径可定位。
+`G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST`：在不运行正式统计、不使用内部结果冒充正式结果的前提下，整理正式脚本未来接入 `final_coding.csv` 所需的字段、输入路径、输出路径、运行日志和QA检查项。
