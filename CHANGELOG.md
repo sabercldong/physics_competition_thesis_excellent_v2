@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-SAFE-PREP-NEXT-ROUTE-DECISION 无真实回填条件下的下一安全路线决策
+
+- 新增 `09_quality/safe_prep_next_route_decision.md`，记录下一安全路线决策的性质声明、输入依据、路线判断、选中路线允许产物、禁写边界、暂缓路线、下一最小任务和输出边界；
+- 新增 `09_quality/safe_prep_next_route_decision_v1.csv`，比较真实回填接收协议维护、文献理论核验、学校格式登记、正式脚本接口准备和正文禁写边界维护5条候选路线；
+- 选中“文献理论核验与引用边界补强”为下一安全推进路线，因为该路线不依赖真实回填，且能直接支撑第一章问题提出、第二章理论框架、第三章方法边界和后续参考文献定稿；
+- 将真实回填接收协议维护、学校格式登记、正式脚本接口准备和正文禁写边界维护暂缓或保留为后续门禁调用；
+- 本任务不改写论文正文，不修改主张证据矩阵，不创建真实回填目录，不填写真实校对人、评分者、专家、教师、问卷、课堂或学生作品信息，不放行正式编码、正式统计或结果章写作；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY`。
+
 ## 2026-07-19：G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE-QA 真实回填等待室更新QA
 
 - 新增 `03_corpus/return_intake_waiting_room_update_qa.md`，记录等待室更新QA的性质声明、QA结论、已确认事项、仍不能声称内容、下一最小任务和输出边界；
