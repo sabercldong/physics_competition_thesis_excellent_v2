@@ -293,6 +293,7 @@
 - 完成 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT`：新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout.md` 和 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_v1.csv`，收束无真实回填条件下的复现包与正式脚本接口准备链；确认复现包缺口队列、缺口QA、正式脚本接口清单和接口清单QA可以作为未来正式统计复现需求和脚本修订需求，但不能替代真实人工终核、真实A/B评分者编码、分歧裁决、`final_coding.csv` 或正式统计输出。当前 `present` 字段口径、正式输出路径、共现和分组比较接口仍需后续真实输入或脚本任务处理，所有正式结果、正文结论、显著性结论和主张矩阵升级继续不放行；
 - 完成 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT-QA`：新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_qa.md` 和 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_qa_v1.csv`，完成38项QA检查；确认收束材料覆盖复现包缺口队列、缺口QA、正式脚本接口清单和接口清单QA四类上游文件，收束CSV为UTF-8 BOM和LF换行，10项 `FSIC-01` 至 `FSIC-10` 连续唯一，所有引用路径可定位，放行状态仅包含“不放行”“冻结”“等待真实材料”；`final_coding.csv` 和四个正式结果输出表仍未生成，本QA不修改脚本、正文或主张证据矩阵；
 - 完成 `G1-07-MANUAL-RETURN-INTAKE-RECHECK`：新增 `03_corpus/manual_review_return_intake_recheck.md` 和 `03_corpus/manual_review_return_intake_recheck_v1.csv`，复查真实人工终核回填接收入口；确认 `03_corpus/returns`、`03_corpus/manual_review_returns`、`03_corpus/returned` 和 `03_corpus/manual_review_return_copies` 四个候选目录均不存在，首批A组38行接收登记和剩余B/C/D 78行接收登记均未填写真实文件名、保存路径、校验值、接收日期或接收人，A/B/C/D四组回填包及154项动作计划中的真实校对人、日期、决定仍为0项填写。当前未发现可接收的真实回填副本，正式编码、正式统计、结果章、案例图件定稿、分值统计和主张矩阵升级继续冻结；
+- 完成 `G1-07-MANUAL-RETURN-INTAKE-RECHECK-QA`：新增 `03_corpus/manual_review_return_intake_recheck_qa.md` 和 `03_corpus/manual_review_return_intake_recheck_qa_v1.csv`，完成30项QA检查；确认复查CSV为UTF-8 BOM和LF换行，14项 `MRIR-01` 至 `MRIR-14` 连续唯一，全部 `release_status` 为“冻结”、`received_count` 为0；四个候选回填目录仍不存在，首批A组38行、剩余B/C/D 78行接收登记和A/B/C/D四组回填包的真实字段仍为空，`final_coding.csv` 和四个正式结果输出表仍未生成。本QA不创建回填目录，不填写真实校对字段，不修改脚本、正文或主张证据矩阵；
 
 ## 关键阻塞项
 
@@ -307,4 +308,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-RETURN-INTAKE-RECHECK-QA`：检查真实人工终核回填接收入口复查报告和CSV是否与当前项目文件一致，确认真实回填仍未收到、正式结果仍冻结，且未创建回填目录或正式结果文件。
+`G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE`：在确认仍无真实回填的前提下，更新真实回填等待室说明，明确接下来只能等待真实回填或处理不依赖回填的文献、格式、接收协议和脚本准备任务；正式结果链继续冻结。

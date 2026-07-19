@@ -1,0 +1,31 @@
+﻿qa_id,check_area,check_item,source_path,qa_result,evidence_note,release_status
+MRIRQA-01,输入存在性,复查报告存在,03_corpus/manual_review_return_intake_recheck.md,通过,报告文件可定位,冻结
+MRIRQA-02,输入存在性,复查CSV存在,03_corpus/manual_review_return_intake_recheck_v1.csv,通过,复查CSV可定位,冻结
+MRIRQA-03,CSV格式,复查CSV为UTF-8 BOM,03_corpus/manual_review_return_intake_recheck_v1.csv,通过,文件头为BOM,冻结
+MRIRQA-04,CSV格式,复查CSV为LF换行,03_corpus/manual_review_return_intake_recheck_v1.csv,通过,未发现CRLF或孤立CR,冻结
+MRIRQA-05,字段结构,复查CSV字段完整,03_corpus/manual_review_return_intake_recheck_v1.csv,通过,字段覆盖recheck_id至next_action,冻结
+MRIRQA-06,编号行数,复查CSV共14项,03_corpus/manual_review_return_intake_recheck_v1.csv,通过,MRIR-01至MRIR-14连续唯一,冻结
+MRIRQA-07,放行状态,所有复查项均为冻结,03_corpus/manual_review_return_intake_recheck_v1.csv,通过,release_status仅含冻结,冻结
+MRIRQA-08,收到数量,所有复查项收到数为0,03_corpus/manual_review_return_intake_recheck_v1.csv,通过,received_count仅含0,冻结
+MRIRQA-09,目录检查,returns目录不存在,03_corpus/returns,通过,目录不存在,冻结
+MRIRQA-10,目录检查,manual_review_returns目录不存在,03_corpus/manual_review_returns,通过,目录不存在,冻结
+MRIRQA-11,目录检查,returned目录不存在,03_corpus/returned,通过,目录不存在,冻结
+MRIRQA-12,目录检查,manual_review_return_copies目录不存在,03_corpus/manual_review_return_copies,通过,目录不存在,冻结
+MRIRQA-13,首批接收登记,A组38行接收字段均为空,03_corpus/manual_review_real_return_handoff_register_v1.csv,通过,真实文件名、路径、校验值、接收日期、接收人均0项填写,冻结
+MRIRQA-14,剩余接收登记,B/C/D 78行接收字段均为空,03_corpus/manual_review_remaining_return_handoff_register_v1.csv,通过,真实文件名、路径、校验值、接收日期、接收人均0项填写,冻结
+MRIRQA-15,A组回填包,A组76项未真实回填,03_corpus/manual_review_a_closure_packet_v1.csv,通过,真实校对人、日期、决定均0项填写,冻结
+MRIRQA-16,B组回填包,B组22项未真实回填,03_corpus/manual_review_b_closure_packet_v1.csv,通过,真实校对人、日期、决定均0项填写,冻结
+MRIRQA-17,C组回填包,C组47项未真实回填,03_corpus/manual_review_c_closure_packet_v1.csv,通过,真实校对人、日期、决定均0项填写,冻结
+MRIRQA-18,D组回填包,D组9项未真实回填,03_corpus/manual_review_d_closure_packet_v1.csv,通过,真实校对人、日期、决定均0项填写,冻结
+MRIRQA-19,动作计划,154项动作计划未放行,03_corpus/manual_review_closure_action_plan_v1.csv,通过,真实校对人、日期、决定和正式编码放行均0项有效填写,冻结
+MRIRQA-20,演练模板,整合演练仍为空白,03_corpus/manual_review_return_integration_dry_run_template_v1.csv,通过,回填路径、文件名和冲突字段仍为空,冻结
+MRIRQA-21,正式输入保护,final_coding.csv未生成,07_analysis/data/final_coding.csv,通过,路径不存在,冻结
+MRIRQA-22,正式输出保护,正式维度分布表未生成,07_analysis/results/reviewed/final_dimension_presence.csv,通过,路径不存在,冻结
+MRIRQA-23,正式输出保护,正式共现表未生成,07_analysis/results/reviewed/final_dimension_cooccurrence.csv,通过,路径不存在,冻结
+MRIRQA-24,正式输出保护,正式等级分布表未生成,07_analysis/results/reviewed/final_level_distribution.csv,通过,路径不存在,冻结
+MRIRQA-25,正式输出保护,正式分组比较表未生成,07_analysis/results/reviewed/final_group_comparisons.csv,通过,路径不存在,冻结
+MRIRQA-26,报告边界,报告声明不填真实校对字段,03_corpus/manual_review_return_intake_recheck.md,通过,性质声明与输出边界均写明,冻结
+MRIRQA-27,报告边界,报告声明不创建回填目录或正式结果,03_corpus/manual_review_return_intake_recheck.md,通过,输出边界已写明,冻结
+MRIRQA-28,阻断边界,报告列出正式编码统计和正文冻结,03_corpus/manual_review_return_intake_recheck.md,通过,当前阻断8项已列明,冻结
+MRIRQA-29,台账同步,TASKS已列出本QA,TASKS.md,通过,G1-07-MANUAL-RETURN-INTAKE-RECHECK-QA为待办,冻结
+MRIRQA-30,台账同步,PROJECT_STATUS下一任务指向本QA,PROJECT_STATUS.md,通过,下一任务已指向本QA,冻结

@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-RETURN-INTAKE-RECHECK-QA 真实人工终核回填接收入口复查QA
+
+- 新增 `03_corpus/manual_review_return_intake_recheck_qa.md`，记录真实回填接收入口复查QA的性质声明、QA结论、已确认事项、仍不能声称内容、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_return_intake_recheck_qa_v1.csv`，完成30项检查，覆盖输入存在性、CSV格式、字段结构、编号行数、放行状态、收到数量、目录检查、首批接收登记、剩余接收登记、A/B/C/D回填包、动作计划、演练模板、正式输入输出保护、报告边界和台账同步；
+- 确认复查CSV为UTF-8 BOM和LF换行，14项 `MRIR-01` 至 `MRIR-14` 连续唯一；
+- 确认四个候选真实回填目录仍不存在，首批A组38行与剩余B/C/D 78行接收登记均未填写真实接收字段；
+- 确认A/B/C/D四组回填包和154项动作计划中的真实校对人、日期、决定均为0项填写；
+- 确认 `final_coding.csv` 和四个正式结果输出表仍未生成；
+- 本任务不创建真实回填目录，不填写真实校对字段，不关闭人工校对项，不生成正式结果，不修改论文正文、主张证据矩阵或参考文献表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE`。
+
 ## 2026-07-19：G1-07-MANUAL-RETURN-INTAKE-RECHECK 真实人工终核回填接收入口复查
 
 - 新增 `03_corpus/manual_review_return_intake_recheck.md`，记录真实人工终核回填接收入口复查的性质声明、复查结论、复查范围、关键证据、当前阻断、收到真实回填后的最小动作、下一最小任务和输出边界；
