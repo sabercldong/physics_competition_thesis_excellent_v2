@@ -565,4 +565,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch1_item_batches.md` 和 `manual_review_p0_batch1_item_batches_v1.csv`，将第一批76条高风险OCR/公式/特殊符号项合并为38个题目级小批次，覆盖第37、38、40、41、42届；每个小批次均保留原始队列ID、问题ID、题面页、答案页、受影响分析单元和禁写边界，全部不放行。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA 检查P0第一批小批次入口
   - 进度：新增 `03_corpus/manual_review_p0_batch1_item_batches_qa.md` 和 `manual_review_p0_batch1_item_batches_qa_v1.csv`，完成29项QA检查；确认38个小批次、76条来源覆盖、编号连续、来源文件路径缺失0项和不放行边界均通过。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE 生成P0第一批真实人工回填模板
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE 生成P0第一批真实人工回填模板
+  - 进度：新增 `03_corpus/manual_review_p0_batch1_return_template.md` 和 `manual_review_p0_batch1_return_template_v1.csv`，为38个题目级小批次预留真实校对人、日期、OCR决定、公式决定、修订位置、证据摘记、正式评分者模板放行判断和阻断原因等字段；当前真实回填字段均为空白或“未回填”，全部不放行。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE-QA 检查P0第一批真实人工回填模板

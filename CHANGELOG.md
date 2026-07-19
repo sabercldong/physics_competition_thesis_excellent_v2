@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE P0第一批真实人工回填模板
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_template.md`，说明P0第一批真实人工回填模板的用途、范围、预留字段、当前填写状态、后续使用规则和禁写边界；
+- 新增 `03_corpus/manual_review_p0_batch1_return_template_v1.csv`，为38个题目级小批次建立真实人工回填模板，继承小批次编号、题目材料编号、届次、年份、题号、来源队列ID、问题ID、受影响分析单元、来源文件、题面页、答案页和最低核对输入；
+- 预留 `reviewer_name`、`review_date`、`source_pages_checked`、`ocr_decision`、`formula_decision`、`text_revision_needed`、`formula_revision_needed`、`revision_locations`、`evidence_note`、`remaining_uncertainty`、`allow_formal_rater_template`、`blocking_reason_if_not_allowed`、`files_to_update_after_return`、`return_file_path`、`return_checksum` 和 `integration_status` 字段；
+- 当前所有真实回填字段均保持空白或“未回填”，38项 `release_status` 均为“不放行：空白回填模板”；
+- 本任务不执行真实人工校对，不关闭人工校对项，不填写真实校对人或日期，不修改题文，不生成正式编码、正式统计、论文正文、`final_coding.csv`、评分者数据、专家意见、问卷或课堂证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA P0第一批小批次入口QA
 
 - 新增 `03_corpus/manual_review_p0_batch1_item_batches_qa.md`，记录P0第一批小批次入口QA的性质声明、QA结论、已确认事项、届次覆盖复核、仍不能声称内容和下一最小任务；
