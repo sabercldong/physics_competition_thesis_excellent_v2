@@ -304,6 +304,7 @@
 - 完成 `G2VE-02-METH004-FINALCHECK`：新增 `02_literature/meth004_intercoder_reliability_finalcheck.md` 和 `02_literature/meth004_intercoder_reliability_finalcheck_v1.csv`，对 `METH-004` 内容分析中编码者一致性评估与报告来源完成定稿前复核整理；确认该文可支持第三章中独立编码、代表性一致性样本、训练/正式可靠性区分、逐变量报告、指标选择说明和分歧处理记录等边界性方法表述。该文访问版本存在CSU仓储 `withdrawn` 风险，正式引用前仍需对照Oxford/Wiley/DOI或学校数据库版本；本任务不改写正文、不修改 `references.bib`、不升级主张证据矩阵、不放行本项目一致性通过、阈值设定或真实评分者数据存在等结论；
 - 完成 `G2VE-02-METH004-FINALCHECK-QA`：新增 `02_literature/meth004_intercoder_reliability_finalcheck_qa.md` 和 `02_literature/meth004_intercoder_reliability_finalcheck_qa_v1.csv`，完成40项QA检查；确认METH-004复核说明与结构表存在，结构表为UTF-8 BOM和LF换行，20项 `METH004FC-01` 至 `METH004FC-20` 连续唯一，来源路径缺失0项，上游 `METH-004`、`P0REF-06` 和 `G2VE-02` 均可定位。QA通过仅表示METH-004方法来源复核材料可作为后续方法章写作门禁材料，不等于第三章定稿、参考文献表定稿、主张矩阵升级、本项目一致性检验完成或正式方法结论放行；
 - 完成 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY`：新增 `02_literature/solo_fulltext_boundary_entry.md` 和 `02_literature/solo_fulltext_boundary_entry_v1.csv`，整理SOLO理论全文与迁移边界入口；确认 `SOLO-001` 与 `SOLO-002` 已完成书目信息、题录或摘要层面定位，但合法全文、关键页码、层级定义、课程/评价应用语境、前结构层级取舍和试题认知要求迁移边界仍待真实回填。当前只能保留“SOLO启发的任务认知结构要求等级”边界句，不得把试题直接写成学生SOLO学习结果，不得补造等级定义页码、适用性证明或正式理论结论；本任务不改写正文、不修改 `references.bib`、不升级主张证据矩阵；
+- 完成 `G1-07-FOLLOWUP-MANUAL-ITEM-PROCESSING-GUIDE`：新增 `03_corpus/manual_item_processing_guide.md`，把“人工处理试题”的具体含义整理为项目内操作说明；明确人工处理不是单纯做答案，而是核对题面、参考解答、图件、分值、小问边界、元数据和编码证据，并说明219个分析单元来自当前题面/小问结构整理，不等于219道题或正式结果。该说明继续保留禁写边界：未完成真实终核、双评分者独立编码、一致性检验、分歧裁决和 `final_coding.csv` 前，不放行正式统计或结果章结论。
 
 ## 关键阻塞项
 
@@ -318,4 +319,4 @@
 
 ## 下一任务
 
-`G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`：检查SOLO理论全文与迁移边界入口材料，确认结构表编号、CSV编码换行、来源路径、全文缺口、真实回填字段、安全句式和禁写边界；QA仍不改写正文、不定稿参考文献表、不升级主张矩阵。
+`G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`：检查SOLO理论全文与迁移边界入口材料，确认结构表编号、CSV编码换行、来源路径、全文缺口、真实回填字段、安全句式和禁写边界；QA仍不改写正文、不定稿参考文献表、不升级主张矩阵。若切回语料侧，则执行 `G1-07-FOLLOWUP-MANUAL-QUEUE`，按正式编码影响程度筛选高优先级人工校对项。
