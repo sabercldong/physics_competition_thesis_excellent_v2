@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY 文献理论核验入口
+
+- 新增 `02_literature/literature_theory_verification_entry.md`，记录文献理论核验入口的性质声明、输入依据、总体判断、优先执行项、第二批执行项、第三批与暂缓项、禁写边界、下一最小任务和输出边界；
+- 新增 `02_literature/literature_theory_verification_entry_v1.csv`，建立12项下一批文献理论核验入口，覆盖P0定稿前复核6项和P1全文或主张补证入口6项；
+- 将课程标准概念依据定稿前复核、内容分析一致性方法已读来源复核、SOLO理论全文与迁移边界入口、内容分析与编码一致性方法全文补强入口列为优先执行；
+- 将科学思维测评边界、教学转化边界、物理竞赛研究全文、工作版参考文献表闭环和主张矩阵侧车合并准备按第二批、第三批和暂缓项分层；
+- 本任务不获取新全文，不改写论文正文，不修改主张证据矩阵，不新增或修改正式参考文献，不补造页码、图表编号或文献结论，不放行正式结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY-QA`。
+
 ## 2026-07-19：G1-07-SAFE-PREP-NEXT-ROUTE-DECISION 无真实回填条件下的下一安全路线决策
 
 - 新增 `09_quality/safe_prep_next_route_decision.md`，记录下一安全路线决策的性质声明、输入依据、路线判断、选中路线允许产物、禁写边界、暂缓路线、下一最小任务和输出边界；
