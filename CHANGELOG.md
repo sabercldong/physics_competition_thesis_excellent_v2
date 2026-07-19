@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G2VE-01-CS-STANDARD-FINALCHECK 课程标准概念依据定稿前复核
+
+- 新增 `02_literature/cs001_curriculum_standard_finalcheck.md`，记录 `CS-001` 课程标准概念依据的性质声明、输入依据、复核结论、官方版本信息、页码表达、可支持语句、不能声称内容、学校格式候选写法和下一最小任务；
+- 新增 `02_literature/cs001_curriculum_standard_finalcheck_v1.csv`，建立12项结构化复核记录，覆盖来源身份、官方版本、文件校验、页码定位、文献核验表、文献矩阵、P0复核链、理论入口、可支持主张、禁写边界、学校格式待核点和下一动作；
+- 确认 `CS-001` 可作为科学思维四维度的课程标准依据，有限支持 `C2-01/C1-01` 的课程依据或研究背景表达；
+- 明确学校最终著录格式、URL/访问日期和正文页/PDF页表达仍待学校规范确认；
+- 本任务不改写论文正文，不修改 `references.bib`，不升级主张证据矩阵，不补造专家意见、正式编码结果、问卷结果、教学实验、显著性结论或参考文献定稿；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G2VE-01-CS-STANDARD-FINALCHECK-QA`。
+
 ## 2026-07-19：G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY-QA 文献理论核验入口QA
 
 - 新增 `02_literature/literature_theory_verification_entry_qa.md`，记录文献理论核验入口QA的性质声明、QA结论、已确认事项、仍不能声称内容、下一最小任务和输出边界；

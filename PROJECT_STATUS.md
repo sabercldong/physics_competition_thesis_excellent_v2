@@ -299,6 +299,7 @@
 - 完成 `G1-07-SAFE-PREP-NEXT-ROUTE-DECISION`：新增 `09_quality/safe_prep_next_route_decision.md` 和 `09_quality/safe_prep_next_route_decision_v1.csv`，在无真实回填条件下比较5条安全准备路线，并选中“文献理论核验与引用边界补强”作为下一步；理由是该路线不依赖真实人工终核回填，同时能直接支撑第一章问题提出、第二章理论框架、第三章方法边界和后续参考文献定稿。真实回填接收协议维护、学校格式登记、正式脚本接口准备和正文禁写边界维护暂缓或作为后续门禁调用；本任务不改写正文、不修改主张证据矩阵、不放行正式编码、正式统计或论文结果章；
 - 完成 `G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY`：新增 `02_literature/literature_theory_verification_entry.md` 和 `02_literature/literature_theory_verification_entry_v1.csv`，将现有P0定稿前复核单、P1全文缺口队列、参考文献核验表、文献矩阵和主张队列整理为12项下一批核验入口；优先执行课程标准概念依据定稿前复核、内容分析一致性方法已读来源复核、SOLO理论全文与迁移边界入口、内容分析与编码一致性方法全文补强入口。该任务只建立核验入口，不获取新全文、不改写正文、不修改主张证据矩阵、不新增正式参考文献、不放行正式结果；
 - 完成 `G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY-QA`：新增 `02_literature/literature_theory_verification_entry_qa.md` 和 `02_literature/literature_theory_verification_entry_qa_v1.csv`，完成34项QA检查；确认文献理论入口表12项编号连续，P0六项、P1六项，优先执行4项、第二批执行5项、第三批执行2项、暂缓执行1项，P0/P1来源和上游队列映射完整，所有证据入口路径可定位。QA通过仅放行下一步核验任务，不放行正文定稿、正式参考文献表、主张矩阵升级或正式结果；
+- 完成 `G2VE-01-CS-STANDARD-FINALCHECK`：新增 `02_literature/cs001_curriculum_standard_finalcheck.md` 和 `02_literature/cs001_curriculum_standard_finalcheck_v1.csv`，对 `CS-001` 课程标准概念依据完成定稿前复核整理；确认教育部官方版本、通知页、发文字号、发布日期、附件包、PDF校验值和科学思维定义/四要素页码已有项目证据，可支持科学思维四维度的课程标准依据及 `C2-01/C1-01` 的有限背景支撑。学校最终著录格式、URL/访问日期和正文页/PDF页表达仍待学校规范确认；本任务不改写正文、不修改 `references.bib`、不升级主张证据矩阵、不放行正式结果；
 
 ## 关键阻塞项
 
@@ -313,4 +314,4 @@
 
 ## 下一任务
 
-`G2VE-01-CS-STANDARD-FINALCHECK`：对课程标准概念依据做定稿前复核，确认官方版本、章节或页码表达、学校格式候选写法和可支持语句清单；本任务仍不改写正文、不定稿参考文献表、不升级主张矩阵。
+`G2VE-01-CS-STANDARD-FINALCHECK-QA`：检查课程标准概念依据定稿前复核材料，确认结构表编号、CSV编码换行、来源路径、可支持语句、学校格式待核点和禁写边界；QA仍不改写正文、不定稿参考文献表、不升级主张矩阵。
