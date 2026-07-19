@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST-QA 无真实回填条件下的正式脚本接口清单QA
+
+- 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_qa.md`，记录正式脚本接口清单QA的性质声明、检查结论、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_qa_v1.csv`，完成82项检查，覆盖输入存在性、CSV格式、字段结构、行数编号、接口区域覆盖、逐项完整性、关键风险覆盖、正式结果保护和修改边界；
+- 确认接口清单CSV为UTF-8 BOM和LF换行，22项 `FSI-01` 至 `FSI-22` 连续唯一；
+- 确认接口区域覆盖前置门禁、输入文件、必需字段、输入字段补充、脚本接口、一致性输入、一致性输出、输出表、运行日志、QA门槛、正文门禁和版本归档；
+- 确认 `present` 字段口径风险、`generated/` 与 `reviewed/final_*.csv` 输出路径风险、共现与分组比较接口缺口均已被记录；
+- 确认 `final_coding.csv` 和正式结果输出表仍未生成；
+- 本任务不修改脚本，不运行正式统计，不创建或伪造正式结果文件，不修改论文正文、主张证据矩阵或参考文献表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT`。
+
 ## 2026-07-19：G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST 无真实回填条件下的正式脚本接口检查清单
 
 - 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist.md`，记录正式脚本接口检查清单的性质声明、当前判断、检查清单概况、已识别接口风险、当前可做/不可做、下一最小任务和输出边界；
