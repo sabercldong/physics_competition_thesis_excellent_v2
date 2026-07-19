@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-GAP-QUEUE 无真实回填条件下的复现包缺口队列
+
+- 新增 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue.md`，记录正式统计前复现包缺口的性质声明、当前判断、缺口分布、关键缺口、当前可做/不可做、解锁顺序、下一最小任务和输出边界；
+- 新增 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue_v1.csv`，建立18项复现包缺口，字段包括缺口编号、组件类型、组件名称、路径或预期路径、当前状态、缺口摘要、放行状态、解锁条件和禁止事项；
+- 缺口覆盖输入数据、正式A/B评分者模板、分歧裁决模板、`final_coding.csv`、数据字典、正式分析门禁、脚本、正式输出表、图表计划、归档清单、环境记录、正式结果QA和第四章正文边界；
+- 确认当前只能准备复现包结构、数据字典、脚本接口和输出占位，不能运行正式分析或生成正式结果表图；
+- 明确不得把内部候选编码表、`batch10_*`、`p0_*`、`p1_*` 或 `prep30_*` 内部预演输出写成第四章正式发现；
+- 本任务不修改论文正文，不修改主张证据矩阵或参考文献表，不创建或伪造 `final_coding.csv`，不放行正式编码、正式统计或结果章结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-GAP-QUEUE-QA`。
+
 ## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT-QA 路线B第三章补丁准备链等待室收束QA
 
 - 新增 `04_framework/route_b_method_patch_waiting_room_closeout_qa.md`，记录等待室收束QA的性质声明、检查结论、检查范围、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；
