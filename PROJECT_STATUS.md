@@ -305,6 +305,7 @@
 - 完成 `G2VE-02-METH004-FINALCHECK-QA`：新增 `02_literature/meth004_intercoder_reliability_finalcheck_qa.md` 和 `02_literature/meth004_intercoder_reliability_finalcheck_qa_v1.csv`，完成40项QA检查；确认METH-004复核说明与结构表存在，结构表为UTF-8 BOM和LF换行，20项 `METH004FC-01` 至 `METH004FC-20` 连续唯一，来源路径缺失0项，上游 `METH-004`、`P0REF-06` 和 `G2VE-02` 均可定位。QA通过仅表示METH-004方法来源复核材料可作为后续方法章写作门禁材料，不等于第三章定稿、参考文献表定稿、主张矩阵升级、本项目一致性检验完成或正式方法结论放行；
 - 完成 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY`：新增 `02_literature/solo_fulltext_boundary_entry.md` 和 `02_literature/solo_fulltext_boundary_entry_v1.csv`，整理SOLO理论全文与迁移边界入口；确认 `SOLO-001` 与 `SOLO-002` 已完成书目信息、题录或摘要层面定位，但合法全文、关键页码、层级定义、课程/评价应用语境、前结构层级取舍和试题认知要求迁移边界仍待真实回填。当前只能保留“SOLO启发的任务认知结构要求等级”边界句，不得把试题直接写成学生SOLO学习结果，不得补造等级定义页码、适用性证明或正式理论结论；本任务不改写正文、不修改 `references.bib`、不升级主张证据矩阵；
 - 完成 `G1-07-FOLLOWUP-MANUAL-ITEM-PROCESSING-GUIDE`：新增 `03_corpus/manual_item_processing_guide.md`，把“人工处理试题”的具体含义整理为项目内操作说明；明确人工处理不是单纯做答案，而是核对题面、参考解答、图件、分值、小问边界、元数据和编码证据，并说明219个分析单元来自当前题面/小问结构整理，不等于219道题或正式结果。该说明继续保留禁写边界：未完成真实终核、双评分者独立编码、一致性检验、分歧裁决和 `final_coding.csv` 前，不放行正式统计或结果章结论。
+- 完成 `G1-07-FOLLOWUP-MANUAL-QUEUE`：新增 `03_corpus/manual_review_priority_queue.md` 和 `03_corpus/manual_review_priority_queue_v1.csv`，将154条人工校对项按正式编码影响程度重新排序；其中P0直接影响正式编码98条，P1影响图件理解与案例/附录使用48条，P2影响分值统计8条。推荐批次为第一批高风险OCR/公式/特殊符号76条、第二批中风险公式/特殊符号22条、第三批高风险图件与第42届第3题解答放大图边界39条、第四批中风险图件9条、第五批第35届分值边界8条；全部保持“不放行：仅排序，未真实销项”。
 
 ## 关键阻塞项
 
@@ -319,4 +320,4 @@
 
 ## 下一任务
 
-`G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`：检查SOLO理论全文与迁移边界入口材料，确认结构表编号、CSV编码换行、来源路径、全文缺口、真实回填字段、安全句式和禁写边界；QA仍不改写正文、不定稿参考文献表、不升级主张矩阵。若切回语料侧，则执行 `G1-07-FOLLOWUP-MANUAL-QUEUE`，按正式编码影响程度筛选高优先级人工校对项。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH1`：从第一批76条高风险OCR、公式与特殊符号项中，按届次和题号拆成可逐题处理的小批次，并为每个小批次准备核对入口；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
