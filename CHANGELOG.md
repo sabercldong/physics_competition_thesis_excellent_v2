@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING P0第一批真实回填等待状态登记
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_waiting.md`，登记P0第一批38个题目级小批次在交接入口已封口、真实回填副本未收到时的当前状态、可领取入口、收到真实回填后的触发流程、禁止事项和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_return_waiting_v1.csv`，建立12项等待与触发清单，覆盖真实回填副本、38行回填模板、任务卡领取、接收目录、校验值、不可变字段、必填字段、冲突处理、整合QA、正式评分者模板候选、`final_coding.csv` 和项目状态更新路线；
+- 确认当前仍未创建 `03_corpus/manual_review_returns/`，未生成 `07_analysis/data/final_coding.csv`；
+- 明确若真实回填副本仍未收到，下一步执行 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-QA`；若真实副本已经收到，则优先执行 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-REAL-CHECK`；
+- 本任务不填写真实校对字段，不关闭38个小批次，不放行正式评分者模板、正式编码、正式统计、论文结果章或主张证据矩阵升级。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT-QA P0第一批交接链收束QA
 
 - 新增 `03_corpus/manual_review_p0_batch1_handoff_closeout_qa.md`，记录P0第一批真实核对交接链收束QA的性质声明、结论、仍不能声称内容和下一最小任务；
