@@ -280,6 +280,7 @@
 - 完成 `G1-07-MISSING-MATERIALS-AGENT-TASK-BRIEFS-QA`：新增 `09_quality/missing_materials_agent_task_briefs_qa.md` 和 `09_quality/missing_materials_agent_task_briefs_qa_v1.csv`，完成413项QA检查且全部通过；确认任务卡CSV为12行、`AGTB-01` 至 `AGTB-12` 连续唯一，并逐行映射 `AGH-01` 至 `AGH-12`，优先级计数与原交接清单一致，所有先读文件路径均可定位。检查确认P0/P1/P2缺口覆盖完整，禁止边界覆盖不得冒充真实人员、不得编造评分者/专家/导师/教师/学生/问卷/课堂/分值/文献结论、不得伪造p值或显著性；当前未创建 `03_corpus/manual_review_returns/`，本QA不补齐任何材料，不修改正文、主张矩阵、参考文献或原始文件，不放行正式编码、正式统计、论文结果章、教学效果结论或主张矩阵升级。
 - 完成 `G1-07-ROUTE-B-METHOD-MATERIAL-INDEX`：新增 `04_framework/route_b_method_material_index.md` 和 `04_framework/route_b_method_material_index_v1.csv`，建立22项路线B方法章可写素材索引；其中“可写入方法章”10项、“边界可写”9项、“占位/禁写”3项。索引覆盖总体研究设计、语料来源、分析单位、元数据、人工终核门槛、内部编码手册、专家审查占位、内部试编码、评分者模板、正式编码门禁、数据处理与复现、主张证据管理、文献核验、伦理与数据管理、教学转化设计、图件质量控制、分值/附属图边界、路线切换、初稿剔除规则、第三章小结边界，以及第四章正式结果和第五章教学验证结论的反向禁写边界。本任务不修改论文正文，不放行正式编码、正式统计、论文结果章、教学效果结论或主张矩阵升级。
 - 完成 `G1-07-ROUTE-B-METHOD-MATERIAL-INDEX-QA`：新增 `04_framework/route_b_method_material_index_qa.md` 和 `04_framework/route_b_method_material_index_qa_v1.csv`，完成487项QA检查且全部通过；确认索引CSV为22行、`RBMI-01` 至 `RBMI-22` 连续唯一，分类计数为“可写入方法章”10项、“边界可写”9项、“占位/禁写”3项，22项来源路径缺失0项，并通过明确映射覆盖路线B允许继续准备、仅内部准备、条件冻结和直接禁止的关键边界。高风险词仅处于禁止或边界语境中，未写成正式结果、专家审查、评分者一致性或教学效果结论；本QA不修改论文正文，不放行结果章或主张矩阵升级。
+- 完成 `G1-07-ROUTE-B-METHOD-PATCH-PLAN`：新增 `04_framework/route_b_method_patch_plan.md` 和 `04_framework/route_b_method_patch_plan_v1.csv`，把已通过QA的路线B方法章素材索引转化为13项第三章安全改写计划；计划覆盖3.1至3.9及跨文件暂存隔离，其中P0 7项、P1 6项，所有条目的 `apply_now` 均为“否”。本任务只写清未来正文补丁位置、建议最小句、证据来源、禁写边界和应用条件，不修改 `08_manuscript/03_methods.md`，不补齐真实人工终核、评分者编码、专家审查、正式统计、教师/问卷/课堂或学生作品材料；
 
 ## 关键阻塞项
 
@@ -294,4 +295,4 @@
 
 ## 下一任务
 
-`G1-07-ROUTE-B-METHOD-PATCH-PLAN`：基于已通过QA的路线B方法章素材索引，为第三章生成安全改写计划，只列出拟改位置、建议表述、证据来源和禁写边界，不直接改写正文。
+`G1-07-ROUTE-B-METHOD-PATCH-PLAN-QA`：检查第三章安全改写计划CSV和报告是否编号连续、索引ID可追溯、来源路径可定位、所有条目均保持 `apply_now=否`，并确认没有直接改写第三章正文。

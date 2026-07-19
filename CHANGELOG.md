@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-PLAN 路线B第三章安全改写计划
+
+- 新增 `04_framework/route_b_method_patch_plan.md`，记录路线B第三章安全改写计划的性质声明、当前判断、计划统计、优先应用顺序、13项补丁计划、逐项建议最小句、禁写边界、当前不得改写为正文结论的内容和下一最小任务；
+- 新增 `04_framework/route_b_method_patch_plan_v1.csv`，建立 `RBMP-01` 至 `RBMP-13` 共13项未来正文补丁计划，字段包括目标文件、章节位置、补丁类型、优先级、素材索引ID、建议动作、建议最小句、来源路径、禁写边界、风险等级、当前是否应用和应用条件；
+- 确认计划覆盖第三章3.1至3.9及跨文件暂存隔离，P0 7项、P1 6项，所有条目的 `apply_now` 均为“否”；
+- 明确其他智能体或后续任务需要补齐真实人工终核、真实评分者独立编码、正式统计复现、真实专家/导师/竞赛教师反馈、教师访谈、问卷、课堂/学生作品、C组图件定稿和D组分值/附属图材料后，才能将相关内容升级为正文结论；
+- 明确本任务不修改 `08_manuscript/03_methods.md`，不修改 `00_originals/`、`09_quality/claim_evidence_matrix.csv` 或 `02_literature/references.bib`，不创建真实回填目录，不放行正式编码、正式统计、结果章或教学效果结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-METHOD-PATCH-PLAN-QA`。
+
 ## 2026-07-19：G1-07-MISSING-MATERIALS-AGENT-TASK-BRIEFS-QA 缺失材料智能体任务卡QA
 
 - 新增 `09_quality/missing_materials_agent_task_briefs_qa.md`，记录缺失材料智能体任务卡QA的性质声明、413项检查结论、检查分布、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；
