@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G2VE-02-METH004-FINALCHECK 内容分析一致性方法来源定稿前复核
+
+- 新增 `02_literature/meth004_intercoder_reliability_finalcheck.md`，记录 `METH-004` 的性质声明、输入依据、复核结论、来源与版本信息、页码定位、可支持的第三章方法表述、不能声称内容、学校格式候选写法、主张支持状态和下一最小任务；
+- 新增 `02_literature/meth004_intercoder_reliability_finalcheck_v1.csv`，建立20项结构化复核记录，覆盖来源身份、已读状态、CSU仓储 `withdrawn` 风险、页码映射、关键页码、报告字段、P0复核链、理论入口、可支持语句、不能声称内容、主张支持、学校格式、正文边界和下一动作；
+- 确认 `METH-004` 可支持第三章中独立编码、代表性一致性样本、训练/正式可靠性区分、逐变量报告、指标选择说明和分歧处理记录等边界性方法表述；
+- 明确 `METH-004` 不能证明本项目编码框架有效、真实A/B评分者独立编码已经完成、本项目一致性已经通过，也不能直接设定本项目kappa、alpha或percent agreement通过阈值；
+- 明确正式引用前仍需对照Oxford/Wiley/DOI或学校数据库版本，并按学校格式确认英文期刊著录；
+- 本任务不改写论文正文，不修改 `references.bib`，不升级 `09_quality/claim_evidence_matrix.csv`，不补造真实评分者数据、一致性结果、专家审查、问卷、课堂或教学实验材料；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G2VE-02-METH004-FINALCHECK-QA`。
+
 ## 2026-07-19：G2VE-01-CS-STANDARD-FINALCHECK-QA 课程标准概念依据定稿前复核QA
 
 - 新增 `02_literature/cs001_curriculum_standard_finalcheck_qa.md`，记录课程标准复核材料QA的性质声明、QA结论、已确认事项、仍不能声称内容、后续边界和下一最小任务；

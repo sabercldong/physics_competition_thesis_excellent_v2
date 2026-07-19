@@ -1,0 +1,21 @@
+﻿check_id,source_id,check_area,check_item,current_evidence,source_path,finalcheck_status,allowed_use,cannot_claim,next_action,release_status
+METH004FC-01,METH-004,来源身份,题录信息已登记,作者、题名、期刊、年份、卷期页码和DOI已在reference_verification中登记,02_literature/reference_verification.csv,通过,可作为已读方法来源的题录依据,不得忽略版本风险直接定稿参考文献,正式引用前对照出版社或学校数据库版本,定稿前复核通过，格式仍待核
+METH004FC-02,METH-004,已读状态,全文方法摘录存在,reading_notes记录阅读日期、访问版本、页码映射、研究对象和可迁移边界,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,可支撑方法边界和报告字段整理,不得把阅读笔记写成正式一致性结果,保留阅读笔记为上游证据,已读来源可用
+METH004FC-03,METH-004,版本风险,CSU仓储withdrawn风险已登记,访问审计与阅读笔记均记录CSU开放仓储PDF及withdrawn风险,02_literature/content_analysis_reliability_access_audit.md,通过,可作为内部阅读依据并提示正式引用需复核,不得把CSU withdrawn页面当作最终正式版本,对照Oxford/Wiley/DOI或学校数据库,正式版本待核
+METH004FC-04,METH-004,页码映射,PDF页与期刊页关系已登记,PDF第2-19页对应期刊正文587-604页,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,后续可优先使用期刊页码定位,不得补造未登记页码或段落号,QA检查页码区间一致性,页码可用但需QA
+METH004FC-05,METH-004,关键页码,一致性证据页码已登记,589-590支持一致性证据必要性，590支持训练/正式检验区分,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,可支持独立编码和正式可靠性报告的边界表述,不得声称本项目真实评分者已完成编码,正文另起任务使用安全句式,方法边界可用
+METH004FC-06,METH-004,关键页码,指标风险页码已登记,590-591讨论percent agreement风险，591-592讨论总体指标遮蔽风险，592-593讨论指标适用条件,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,可支持逐变量报告和指标选择说明,不得直接设定本项目kappa/alpha/percent agreement阈值,后续与METH-002/METH-003共同复核指标解释,阈值不放行
+METH004FC-07,METH-004,报告字段,可靠性报告字段页码已登记,601-603支持样本规模、样本与总体关系、编码者数量、训练、指标、逐变量结果和分歧处理,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,可支持第三章一致性报告字段清单,不得生成真实一致性表或裁决结果,等待真实A/B评分者数据,字段清单可用
+METH004FC-08,METH-004,P0复核链,P0REF-06存在,P0REF-06列出版本、页码、学校格式和主张边界复核需求,09_quality/no_return_reference_p0_finalcheck_sheet_v1.csv,通过,可关闭METH-004定稿前复核的证据整理部分,不得宣布正式方法结论放行,本任务完成后进入QA,仍需QA
+METH004FC-09,METH-004,理论入口,G2VE-02存在,G2VE-02要求复核期刊版本、页码定位、withdrawn/postprint边界和可支持方法语句,02_literature/literature_theory_verification_entry_v1.csv,通过,说明本任务范围与入口一致,不得扩展到METH-001/002/003/005全文补强,另设G2VE-04处理其他方法文献,任务范围匹配
+METH004FC-10,METH-004,可支持语句,逐变量报告一致性,reading_notes支持按变量/维度分别报告一致性而非只给总体指标,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,可用于第三章方法报告计划,不得证明项目具体变量已经达标,正文写作前过方法章门禁,方法句式可用
+METH004FC-11,METH-004,可支持语句,说明指标选择,reading_notes支持说明Cohen kappa、Scott pi、Krippendorff alpha等指标适用边界,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,可用于第三章解释为什么不只报percent agreement,不得机械套用单一指标或阈值,等待指标来源全文补强,指标选择边界可用
+METH004FC-12,METH-004,可支持语句,记录分歧处理,reading_notes支持报告分歧处理和可靠性报告字段,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,可用于第三章分歧裁决记录要求,不得伪造分歧裁决已经发生,等待正式评分者回填与裁决数据,裁决流程句式可用
+METH004FC-13,METH-004,不能声称,本项目一致性未通过,当前无真实A/B评分者独立编码和一致性计算输出,PROJECT_STATUS.md,通过,用于防止方法文献误替代真实数据,不得写本项目一致性已通过,真实评分者数据后另起一致性任务,正式结果不放行
+METH004FC-14,METH-004,不能声称,阈值未给定,METH-004自身.70/.90规则只能作为该文研究规则，不能直接迁移为本项目通过线,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,用于防止机械设阈值,不得写本项目采用该阈值作为正式标准,结合METH-002/METH-003和项目变量结构再定,阈值待核
+METH004FC-15,METH-004,不能声称,不能替代内容分析系统方法文献,reading_notes明确不能替代METH-001/METH-005，也不能替代METH-002/METH-003,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,用于限定METH-004贡献范围,不得用一篇文献封闭方法章依据,继续G2VE-04方法全文补强,需后续补强
+METH004FC-16,METH-004,主张支持,C2-04部分支持,支持逐变量一致性、指标选择说明和避免只报总体一致性，但不证明两层编码更有效,02_literature/content_analysis_reliability_meth004_reading_notes.md,通过,可作为C2-04部分方法依据,不得升级为完整支持或E4结论,主张矩阵另起任务处理,不升级矩阵
+METH004FC-17,METH-004,主张支持,C3-02边界支持,支持第三章一致性报告字段、训练/正式区分和分歧处理记录,09_quality/no_return_reference_p0_finalcheck_sheet_v1.csv,通过,可作为第三章方法边界准备,不得证明正式一致性已达标,正文和矩阵另起任务,不放行正文
+METH004FC-18,METH-004,学校格式,英文期刊格式待核,候选格式已列出，但作者名、题名大小写、DOI/URL/访问日期需按学校规范确认,02_literature/meth004_intercoder_reliability_finalcheck.md,待核实,仅可作为候选著录,不得定稿references.bib或最终参考文献表,等待学校格式或bib闭环任务,不放行定稿格式
+METH004FC-19,METH-004,正文边界,不改写正文,本复核只产出方法依据清单和结构表,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,可作为后续正文门禁输入,不得直接修改08_manuscript,QA后另起正文应用任务,正文待门禁
+METH004FC-20,METH-004,下一动作,下一最小任务明确,建议进入G2VE-02-METH004-FINALCHECK-QA,02_literature/meth004_intercoder_reliability_finalcheck.md,通过,可进入QA，不进入正式方法结论,不得跳过QA直接改正文或主张矩阵,执行QA后再进入下一文献入口,QA待执行
