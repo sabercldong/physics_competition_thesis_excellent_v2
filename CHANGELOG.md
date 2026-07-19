@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS P0第二批逐项领取任务卡
+
+- 新增 `03_corpus/manual_review_p0_batch2_task_cards.md`，说明P0第二批逐项领取任务卡的性质、覆盖范围、领取方法、禁止事项和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch2_task_cards_v1.csv`，将P0第二批22条公式与特殊符号回填入口整理为 `P0B2CARD-01` 至 `P0B2CARD-22` 的逐项任务卡；
+- 确认22张任务卡逐行对应 `P0B2RET-01` 至 `P0B2RET-22`，覆盖第35届8题、第36届7题、第39届7题；
+- 每张任务卡均继承来源队列ID、来源问题ID、题目材料ID、届次、年份、题号、题面页、答案页、受影响分析单元、题目文本路径、公式核对表路径和最低核对输入；
+- 每张任务卡均列明必核内容、必填回填字段、验收标准、阻断条件、回填目标和禁止事项；
+- 22张任务卡全部保持“待领取：未真实回填”和“不放行：P0第二批任务卡，未真实销项”；
+- 本任务不填写真实校对字段，不关闭任何人工校对项，不修改题文，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP-QA P0第二批公式与特殊符号回填入口QA
 
 - 新增 `03_corpus/manual_review_p0_batch2_return_prep_qa.md`，记录P0第二批公式与特殊符号回填入口QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
