@@ -1,0 +1,36 @@
+﻿qa_id,check_area,check_item,evidence,result,release_status
+P0B1PKTQA-01,输入存在性,Markdown索引文件存在,03_corpus/manual_review_p0_batch1_return_packet_index.md,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-02,输入存在性,CSV索引文件存在,03_corpus/manual_review_p0_batch1_return_packet_index_v1.csv,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-03,CSV格式,CSV包含UTF-8 BOM,脚本读取确认文件以BOM开头,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-04,CSV格式,CSV使用LF换行且无CRLF,脚本读取确认不存在CRLF并以LF结尾,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-05,CSV字段,CSV字段包含packet_id packet_group file_path file_type role current_status depends_on allowed_use not_allowed_use next_action release_status,表头逐项匹配,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-06,行数,CSV索引共11行,读取结构化索引得到11条记录,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-07,编号连续,packet_id从P0B1PKT-01连续至P0B1PKT-11,脚本逐行比对编号,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-08,编号唯一,packet_id无重复,11个编号去重后仍为11个,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-09,类别覆盖,覆盖小批次入口类别,packet_group包含小批次入口且2行,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-10,类别覆盖,覆盖入口QA类别,packet_group包含入口QA且2行,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-11,类别覆盖,覆盖回填模板类别,packet_group包含回填模板且2行,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-12,类别覆盖,覆盖模板QA类别,packet_group包含模板QA且2行,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-13,类别覆盖,覆盖填写说明类别,packet_group包含填写说明且1行,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-14,类别覆盖,覆盖说明QA类别,packet_group包含说明QA且2行,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-15,路径可定位,11个file_path均存在,逐项检查相对项目根目录路径,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-16,上游入口,包含manual_review_p0_batch1_item_batches.md,CSV索引P0B1PKT-01,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-17,上游入口,包含manual_review_p0_batch1_item_batches_v1.csv,CSV索引P0B1PKT-02,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-18,上游入口QA,包含manual_review_p0_batch1_item_batches_qa.md,CSV索引P0B1PKT-03,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-19,上游入口QA,包含manual_review_p0_batch1_item_batches_qa_v1.csv,CSV索引P0B1PKT-04,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-20,上游模板,包含manual_review_p0_batch1_return_template.md,CSV索引P0B1PKT-05,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-21,上游模板,包含manual_review_p0_batch1_return_template_v1.csv,CSV索引P0B1PKT-06,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-22,上游模板QA,包含manual_review_p0_batch1_return_template_qa.md,CSV索引P0B1PKT-07,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-23,上游模板QA,包含manual_review_p0_batch1_return_template_qa_v1.csv,CSV索引P0B1PKT-08,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-24,上游说明,包含manual_review_p0_batch1_return_instructions.md,CSV索引P0B1PKT-09,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-25,上游说明QA,包含manual_review_p0_batch1_return_instructions_qa.md,CSV索引P0B1PKT-10,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-26,上游说明QA,包含manual_review_p0_batch1_return_instructions_qa_v1.csv,CSV索引P0B1PKT-11,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-27,放行边界,11项release_status均为不放行,全部为不放行：交接索引，未真实回填,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-28,允许使用,11项allowed_use均填写,逐行检查allowed_use非空,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-29,禁止使用,11项not_allowed_use均填写,逐行检查not_allowed_use非空,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-30,下一动作,11项next_action均填写,逐行检查next_action非空,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-31,Markdown结构,Markdown索引包含性质声明,检索到性质声明标题和不代表真实人工校对已经发生,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-32,Markdown结构,Markdown索引包含推荐交接顺序,检索到推荐交接顺序并列出6步,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-33,Markdown结构,Markdown索引包含文件清单,文件清单列出11个上游文件,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-34,Markdown边界,Markdown索引包含当前仍不能声称,禁写边界覆盖校对完成销项正式编码final_coding和论文结果,通过,不放行：索引QA，未真实回填
+P0B1PKTQA-35,越界检查,索引与QA均未释放正式编码或结果写作,当前仅为交接索引及其QA,通过,不放行：索引QA，未真实回填

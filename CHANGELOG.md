@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX-QA P0第一批回填交接包索引QA
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_packet_index_qa.md`，记录P0第一批真实回填交接包索引QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_return_packet_index_qa_v1.csv`，完成35项QA检查，覆盖输入存在性、CSV编码换行、字段结构、行数、编号连续性、6类材料覆盖、11个上游文件路径、放行状态、允许使用、禁止使用、下一动作和Markdown边界；
+- 确认交接包索引覆盖小批次入口、入口QA、回填模板、模板QA、填写说明和说明QA共6类材料、11个文件，路径缺失0项；
+- 确认11项 `release_status` 均为“不放行：交接索引，未真实回填”，QA通过不等于真实人工校对完成、正式编码放行、正式统计成立或 `final_coding.csv` 生成；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX P0第一批回填交接包索引
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_packet_index.md`，汇总P0第一批小批次入口、入口QA、回填模板、模板QA、填写说明和说明QA的交接顺序、文件清单、后续流程和禁写边界；

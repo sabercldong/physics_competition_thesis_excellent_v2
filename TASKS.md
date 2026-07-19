@@ -575,4 +575,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_instructions_qa.md` 和 `manual_review_p0_batch1_return_instructions_qa_v1.csv`，完成67项QA检查；确认全部回填字段、继承字段禁改、允许选项、证据摘记、放行/阻断逻辑、整合边界和禁写边界均覆盖。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX 汇总P0第一批真实回填交接材料包索引
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_packet_index.md` 和 `manual_review_p0_batch1_return_packet_index_v1.csv`，将P0第一批小批次入口、入口QA、回填模板、模板QA、填写说明和说明QA汇总为6类、11个文件的交接包索引；全部保持“不放行：交接索引，未真实回填”。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX-QA 检查P0第一批真实回填交接包索引
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX-QA 检查P0第一批真实回填交接包索引
+  - 进度：新增 `03_corpus/manual_review_p0_batch1_return_packet_index_qa.md` 和 `manual_review_p0_batch1_return_packet_index_qa_v1.csv`，完成35项QA检查；确认交接包索引覆盖6类材料、11个文件，编号连续，路径缺失0项，CSV为UTF-8 BOM和LF换行，放行状态均为不放行。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK 检查P0第一批真实回填接收准备条件

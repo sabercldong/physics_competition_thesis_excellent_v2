@@ -313,6 +313,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS`：新增 `03_corpus/manual_review_p0_batch1_return_instructions.md`，为P0第一批真实校对者建立回填填写说明；明确填写前必须核对的题面页、答案页、转写稿、公式核对表和受影响分析单元，列出不可修改的继承字段、全部回填字段的必填性和允许写法，并规定OCR决定、公式决定、正式评分者模板放行判断、证据摘记、整合与提交边界。该说明不填写真实校对结果，不关闭人工校对项，不放行正式编码。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS-QA`：新增 `03_corpus/manual_review_p0_batch1_return_instructions_qa.md` 和 `03_corpus/manual_review_p0_batch1_return_instructions_qa_v1.csv`，完成67项QA检查；确认填写说明覆盖17个真实回填字段、15个不得修改的继承字段、OCR/公式决定允许选项、是否修订选项、正式评分者模板放行判断、整合状态、证据摘记要求、整合提交边界和禁写边界。QA通过仅表示说明可作为真实回填操作说明，不等于人工校对完成或正式编码放行。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX`：新增 `03_corpus/manual_review_p0_batch1_return_packet_index.md` 和 `03_corpus/manual_review_p0_batch1_return_packet_index_v1.csv`，将P0第一批小批次入口、入口QA、回填模板、模板QA、填写说明和说明QA汇总为6类、11个文件的交接包索引；索引说明推荐交接顺序、真实回填后的最短流程和禁写边界。当前所有真实回填字段仍为空白或“未回填”，全部保持“不放行：交接索引，未真实回填”。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX-QA`：新增 `03_corpus/manual_review_p0_batch1_return_packet_index_qa.md` 和 `03_corpus/manual_review_p0_batch1_return_packet_index_qa_v1.csv`，完成35项QA检查；确认交接包索引Markdown与CSV存在，CSV为UTF-8 BOM和LF换行，`P0B1PKT-01` 至 `P0B1PKT-11` 连续唯一，覆盖6类材料和11个文件，路径缺失0项，11项放行状态均为“不放行：交接索引，未真实回填”。QA通过不等于真实人工校对完成或正式编码放行。
 
 ## 关键阻塞项
 
@@ -327,4 +328,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX-QA`：检查P0第一批真实回填交接包索引是否覆盖6类材料、11个文件，路径是否可定位，CSV编码换行、编号连续和禁写边界是否通过；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK`：检查P0第一批真实回填材料是否具备接收真实回填副本的最小条件，包括接收目录规则、回填副本命名、校验值记录和整合前冻结边界；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
