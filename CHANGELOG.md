@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS-QA P0第一批逐题核对任务卡QA
+
+- 新增 `03_corpus/manual_review_p0_batch1_agent_task_cards_qa.md`，记录P0第一批逐题核对任务卡QA的性质声明、结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_agent_task_cards_qa_v1.csv`，完成46项QA检查，覆盖输入文件、CSV编码换行、字段结构、行数编号、届次覆盖、上游字段继承、回填模板挂接、支持文件路径、交付要求、禁止边界、状态边界、Markdown边界、越界检查、原始文件保护、正文保护和主张矩阵保护；
+- 确认38张任务卡编号连续，逐行挂接 `P0B1-01` 至 `P0B1-38` 与 `P0B1RET-01` 至 `P0B1RET-38`；
+- 确认任务卡覆盖第37届8题、第38届8题、第40届8题、第41届7题和第42届7题，题目文本、V1转写稿和公式核对表路径缺失0项；
+- 确认全部任务卡仍保持“待领取：未真实回填”和“不放行：任务卡，未真实销项”；
+- 本任务不填写真实校对字段，不关闭38个小批次，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS P0第一批逐题核对任务卡
 
 - 新增 `03_corpus/manual_review_p0_batch1_agent_task_cards.md`，说明P0第一批逐题核对任务卡的性质、覆盖范围、使用方法、单题任务索引、最低交付和禁止事项；

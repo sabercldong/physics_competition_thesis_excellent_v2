@@ -1,0 +1,47 @@
+﻿qa_id,check_area,check_item,evidence,result,release_status
+P0B1CARDQA-01,输入文件,任务卡Markdown存在,03_corpus/manual_review_p0_batch1_agent_task_cards.md 可定位,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-02,输入文件,任务卡CSV存在,03_corpus/manual_review_p0_batch1_agent_task_cards_v1.csv 可定位,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-03,输入文件,上游小批次CSV存在,03_corpus/manual_review_p0_batch1_item_batches_v1.csv 可定位,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-04,输入文件,上游回填模板CSV存在,03_corpus/manual_review_p0_batch1_return_template_v1.csv 可定位,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-05,编码格式,任务卡CSV为UTF-8 BOM,文件开头包含UTF-8 BOM,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-06,编码格式,任务卡CSV为LF换行,未发现CRLF或孤立CR,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-07,字段结构,任务卡字段完整,"包含task_card_id,batch_id,return_id,material_id,competition_no,year,question_no,source_issue_ids,issue_types,affected_item_ids,source_files,paper_pages,solution_pages,supporting_files,assigned_work,required_output,acceptance_criteria,must_not_do,handoff_status,release_status",通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-08,行数编号,任务卡共38行,覆盖P0第一批38个题目级小批次,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-09,行数编号,任务卡编号连续,P0B1CARD-01至P0B1CARD-38连续唯一,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-10,行数编号,小批次编号连续,P0B1-01至P0B1-38连续唯一,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-11,行数编号,回填编号连续,P0B1RET-01至P0B1RET-38连续唯一,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-12,覆盖范围,届次计数正确,第37届8题、第38届8题、第40届8题、第41届7题、第42届7题,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-13,上游一致,material_id逐行继承小批次,38行material_id与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-14,上游一致,competition_no逐行继承小批次,38行competition_no与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-15,上游一致,year逐行继承小批次,38行year与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-16,上游一致,question_no逐行继承小批次,38行question_no与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-17,上游一致,source_issue_ids逐行继承小批次,38行待核问题ID与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-18,上游一致,issue_types逐行继承小批次,38行问题类型与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-19,上游一致,affected_item_ids逐行继承小批次,38行受影响分析单元与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-20,上游一致,source_files逐行继承小批次,38行题目文本路径与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-21,上游一致,paper_pages逐行继承小批次,38行题面页与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-22,上游一致,solution_pages逐行继承小批次,38行答案页与小批次入口一致,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-23,回填挂接,每张任务卡挂接一个回填模板行,38个batch_id均能在回填模板中定位,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-24,支持文件,题目文本路径可定位,38条source_files均可定位,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-25,支持文件,转写稿路径可定位,38条V1转写稿路径均可定位,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-26,支持文件,公式核对表路径可定位,38条公式核对表路径均可定位,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-27,交付要求,assigned_work非空,38张任务卡均说明核对动作,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-28,交付要求,required_output非空,38张任务卡均说明真实回填字段,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-29,交付要求,acceptance_criteria非空,38张任务卡均说明验收标准,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-30,禁止边界,must_not_do非空,38张任务卡均说明禁止事项,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-31,状态边界,handoff_status保持待领取,38行均为待领取：未真实回填,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-32,状态边界,release_status保持不放行,38行均为不放行：任务卡，未真实销项,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-33,Markdown边界,Markdown包含性质声明,说明任务卡不等于真实校对完成,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-34,Markdown边界,Markdown包含使用方法,说明必须写回真实回填模板或副本,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-35,Markdown边界,Markdown包含单题索引,38张任务卡均进入索引,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-36,Markdown边界,Markdown包含最低交付,列出校对页、决定、证据摘记和放行判断,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-37,Markdown边界,Markdown包含禁止事项,禁止写成正式编码、统计或论文结果,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-38,越界检查,未创建真实回填目录,03_corpus/manual_review_returns/ 当前不存在,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-39,越界检查,未生成final_coding.csv,07_analysis/data/final_coding.csv 当前不存在,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-40,越界检查,未声称人工校对完成,任务卡与QA均保持未真实销项边界,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-41,越界检查,未声称专家导师教师评分者意见,未把任务卡、Codex或QA包装成真实外部意见,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-42,原始文件保护,未修改00_originals,本任务不触碰原始材料目录,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-43,正文保护,未修改论文正文,本任务不修改08_manuscript正文,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-44,主张矩阵保护,未修改主张证据矩阵,本任务不修改09_quality/claim_evidence_matrix.csv,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-45,下一步,下一最小任务指向任务卡交接收束,建议执行P0第一批任务卡交接包收束或等待真实回填接收,通过,不放行：任务卡QA，未真实销项
+P0B1CARDQA-46,总体结论,任务卡通过QA,QA通过只表示可作为交接材料，不释放正式结果,通过,不放行：任务卡QA，未真实销项
