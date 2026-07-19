@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MISSING-MATERIALS-AGENT-TASK-BRIEFS-QA 缺失材料智能体任务卡QA
+
+- 新增 `09_quality/missing_materials_agent_task_briefs_qa.md`，记录缺失材料智能体任务卡QA的性质声明、413项检查结论、检查分布、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `09_quality/missing_materials_agent_task_briefs_qa_v1.csv`，逐项检查输入存在性、CSV格式、字段结构、行数编号、优先级计数、AGH映射、字段完整性、先读文件、关键缺口覆盖、可执行性、交付物、验收标准、禁止事项、交付后QA、放行状态、红线覆盖、报告文本、台账一致性、目录边界和输出边界；
+- 确认任务卡CSV为12行，`AGTB-01` 至 `AGTB-12` 连续唯一，并逐行映射 `AGH-01` 至 `AGH-12`；
+- 确认优先级计数与原交接清单一致：P0 5项、P1 6项、P2 1项；
+- 确认每张任务卡均包含任务标题、建议领取者、先读文件、执行动作、交付物、验收门槛、禁止边界、交付后QA和当前放行状态；
+- 确认所有先读文件路径均可在当前项目根目录定位；
+- 确认禁止边界覆盖不得冒充真实人员、不得编造评分者/专家/导师/教师/学生/问卷/课堂/分值/文献结论、不得伪造p值或显著性；
+- 明确本QA不补齐任何缺失材料，不创建 `03_corpus/manual_review_returns/`，不修改 `08_manuscript/` 正文，不放行正式编码、正式统计、论文结果章、教学效果结论或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务恢复为 `G1-07-ROUTE-B-METHOD-PATCH-PLAN`。
+
 ## 2026-07-19：G1-07-MISSING-MATERIALS-AGENT-HANDOFF-EXPANDED-BRIEF 缺失材料智能体任务卡
 
 - 新增 `09_quality/missing_materials_agent_task_briefs.md`，把已通过QA的缺失材料交接清单扩展为其他智能体可直接领取的任务卡，说明领取总规则、派单顺序、任务卡总表、逐项执行要求、交付回报模板、当前不能写入论文的结论、下一最小任务和输出边界；

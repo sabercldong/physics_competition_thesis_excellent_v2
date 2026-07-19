@@ -277,6 +277,7 @@
 - 完成 `G1-07-MISSING-MATERIALS-AGENT-HANDOFF`：新增 `09_quality/missing_materials_agent_handoff.md` 和 `09_quality/missing_materials_agent_handoff_v1.csv`，为其他智能体建立12项缺失材料交接任务；其中P0 5项、P1 6项、P2 1项。交接范围覆盖学校格式与提交规则、154项人工校对真实回填、正式评分者编码、正式统计与结果复现、文献全文与引用核验、真实专家/导师/竞赛教师审查、教师访谈、问卷资料、课堂/教学实验/学生作品、C组论文图件定稿、D组分值与附属图、最终题目与研究路线确认。每项均明确缺失材料、必要输入、预期交付、验收标准、禁止事项和交付后状态；本任务只说明缺口和委派边界，不把任何缺失材料视为已补齐。
 - 完成 `G1-07-MISSING-MATERIALS-AGENT-HANDOFF-QA`：新增 `09_quality/missing_materials_agent_handoff_qa.md` 和 `09_quality/missing_materials_agent_handoff_qa_v1.csv`，完成306项QA检查且全部通过；确认交接清单CSV为12行、`AGH-01` 至 `AGH-12` 连续唯一，P0/P1/P2计数为5/6/1，覆盖学校格式、人工校对真实回填、正式评分者编码、正式统计、文献全文核验、真实外部审查、教师访谈、问卷、课堂与学生作品、C组图件定稿、D组分值/附属图和最终题目路线确认；字段完整、禁止事项明确、证据依据路径缺失0项，`导师已确认` 仅作为禁止表述出现，当前未创建 `03_corpus/manual_review_returns/`。本QA不补齐任何缺失材料，不放行正式编码、正式统计、论文结果章、教学效果结论或主张矩阵升级。
 - 完成 `G1-07-MISSING-MATERIALS-AGENT-HANDOFF-EXPANDED-BRIEF`：新增 `09_quality/missing_materials_agent_task_briefs.md` 和 `09_quality/missing_materials_agent_task_briefs_v1.csv`，将12项缺失材料交接任务扩展为可派单任务卡 `AGTB-01` 至 `AGTB-12`；每张任务卡均明确对应 `AGH` 缺口、优先级、建议领取者、先读文件、执行动作、交付物、验收门槛、禁止边界、交付后QA和当前放行状态。该文件用于其他智能体领取学校规范、人工校对真实回填、正式评分者编码、正式统计、文献核验、真实外部反馈、教师访谈、问卷、课堂/学生作品、图件、分值和路线确认等工作；本任务不补齐任何缺失材料，不创建真实回填目录，不修改论文正文，不放行正式编码、正式统计、结果章、教学效果结论或主张矩阵升级。
+- 完成 `G1-07-MISSING-MATERIALS-AGENT-TASK-BRIEFS-QA`：新增 `09_quality/missing_materials_agent_task_briefs_qa.md` 和 `09_quality/missing_materials_agent_task_briefs_qa_v1.csv`，完成413项QA检查且全部通过；确认任务卡CSV为12行、`AGTB-01` 至 `AGTB-12` 连续唯一，并逐行映射 `AGH-01` 至 `AGH-12`，优先级计数与原交接清单一致，所有先读文件路径均可定位。检查确认P0/P1/P2缺口覆盖完整，禁止边界覆盖不得冒充真实人员、不得编造评分者/专家/导师/教师/学生/问卷/课堂/分值/文献结论、不得伪造p值或显著性；当前未创建 `03_corpus/manual_review_returns/`，本QA不补齐任何材料，不修改正文、主张矩阵、参考文献或原始文件，不放行正式编码、正式统计、论文结果章、教学效果结论或主张矩阵升级。
 - 完成 `G1-07-ROUTE-B-METHOD-MATERIAL-INDEX`：新增 `04_framework/route_b_method_material_index.md` 和 `04_framework/route_b_method_material_index_v1.csv`，建立22项路线B方法章可写素材索引；其中“可写入方法章”10项、“边界可写”9项、“占位/禁写”3项。索引覆盖总体研究设计、语料来源、分析单位、元数据、人工终核门槛、内部编码手册、专家审查占位、内部试编码、评分者模板、正式编码门禁、数据处理与复现、主张证据管理、文献核验、伦理与数据管理、教学转化设计、图件质量控制、分值/附属图边界、路线切换、初稿剔除规则、第三章小结边界，以及第四章正式结果和第五章教学验证结论的反向禁写边界。本任务不修改论文正文，不放行正式编码、正式统计、论文结果章、教学效果结论或主张矩阵升级。
 - 完成 `G1-07-ROUTE-B-METHOD-MATERIAL-INDEX-QA`：新增 `04_framework/route_b_method_material_index_qa.md` 和 `04_framework/route_b_method_material_index_qa_v1.csv`，完成487项QA检查且全部通过；确认索引CSV为22行、`RBMI-01` 至 `RBMI-22` 连续唯一，分类计数为“可写入方法章”10项、“边界可写”9项、“占位/禁写”3项，22项来源路径缺失0项，并通过明确映射覆盖路线B允许继续准备、仅内部准备、条件冻结和直接禁止的关键边界。高风险词仅处于禁止或边界语境中，未写成正式结果、专家审查、评分者一致性或教学效果结论；本QA不修改论文正文，不放行结果章或主张矩阵升级。
 
@@ -293,4 +294,4 @@
 
 ## 下一任务
 
-`G1-07-MISSING-MATERIALS-AGENT-TASK-BRIEFS-QA`：检查缺失材料智能体任务卡是否编号连续、字段完整、输入路径可定位、禁止边界充分，并确认没有把任何缺失材料写成已完成证据。
+`G1-07-ROUTE-B-METHOD-PATCH-PLAN`：基于已通过QA的路线B方法章素材索引，为第三章生成安全改写计划，只列出拟改位置、建议表述、证据来源和禁写边界，不直接改写正文。
