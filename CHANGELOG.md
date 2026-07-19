@@ -1,10 +1,20 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-PLAN-QA 路线B第三章安全改写计划QA
+
+- 新增 `04_framework/route_b_method_patch_plan_qa.md`，记录路线B第三章安全改写计划QA的性质声明、检查结论、检查分布、已确认事项、对其他智能体的交接提醒、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `04_framework/route_b_method_patch_plan_qa_v1.csv`，完成332项检查，覆盖输入存在性、CSV编码换行、字段结构、行数编号、字段完整性、统计一致性、正文保护、章节覆盖、索引追溯、来源路径、报告文本、红线覆盖和提交边界；
+- 确认计划CSV为UTF-8 BOM和LF换行，13项 `RBMP-01` 至 `RBMP-13` 连续唯一，P0/P1计数为9/4，高/中风险计数为7/6；
+- 确认 `RBMI-01` 至 `RBMI-22` 均被直接或反向覆盖，所有索引ID均可在素材索引中定位，来源路径缺失0项；
+- 确认所有条目的 `apply_now` 均为“否”，上一计划提交未包含 `08_manuscript/03_methods.md`、`09_quality/claim_evidence_matrix.csv` 或 `02_literature/references.bib`；
+- 明确本QA不修改第三章正文，不补齐真实材料，不创建真实回填目录，不放行正式编码、正式统计、结果章或教学效果结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE`。
+
 ## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-PLAN 路线B第三章安全改写计划
 
 - 新增 `04_framework/route_b_method_patch_plan.md`，记录路线B第三章安全改写计划的性质声明、当前判断、计划统计、优先应用顺序、13项补丁计划、逐项建议最小句、禁写边界、当前不得改写为正文结论的内容和下一最小任务；
 - 新增 `04_framework/route_b_method_patch_plan_v1.csv`，建立 `RBMP-01` 至 `RBMP-13` 共13项未来正文补丁计划，字段包括目标文件、章节位置、补丁类型、优先级、素材索引ID、建议动作、建议最小句、来源路径、禁写边界、风险等级、当前是否应用和应用条件；
-- 确认计划覆盖第三章3.1至3.9及跨文件暂存隔离，P0 7项、P1 6项，所有条目的 `apply_now` 均为“否”；
+- 确认计划覆盖第三章3.1至3.9及跨文件暂存隔离，P0 9项、P1 4项，所有条目的 `apply_now` 均为“否”；
 - 明确其他智能体或后续任务需要补齐真实人工终核、真实评分者独立编码、正式统计复现、真实专家/导师/竞赛教师反馈、教师访谈、问卷、课堂/学生作品、C组图件定稿和D组分值/附属图材料后，才能将相关内容升级为正文结论；
 - 明确本任务不修改 `08_manuscript/03_methods.md`，不修改 `00_originals/`、`09_quality/claim_evidence_matrix.csv` 或 `02_literature/references.bib`，不创建真实回填目录，不放行正式编码、正式统计、结果章或教学效果结论；
 - 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-METHOD-PATCH-PLAN-QA`。
