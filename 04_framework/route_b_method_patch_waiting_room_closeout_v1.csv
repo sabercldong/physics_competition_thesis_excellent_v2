@@ -1,0 +1,11 @@
+﻿closeout_id,section,primary_path,secondary_path,status_summary,current_allowed_use,manuscript_release,next_route,must_not_claim
+WR-01,补丁计划,04_framework/route_b_method_patch_plan.md,04_framework/route_b_method_patch_plan_v1.csv,已完成：13项计划，全部apply_now=否,保留为未来正文候选，不直接应用,否,继续等待真实材料,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-02,补丁计划QA,04_framework/route_b_method_patch_plan_qa.md,04_framework/route_b_method_patch_plan_qa_v1.csv,已完成：332项QA通过,确认计划可作为门禁输入，但不放行正文,否,继续等待真实材料,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-03,应用门禁,04_framework/route_b_method_patch_application_gate.md,04_framework/route_b_method_patch_application_gate_v1.csv,已完成：13项门禁，正文可应用0项,作为其他智能体分流表,否,继续等待真实材料,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-04,应用门禁QA,04_framework/route_b_method_patch_application_gate_qa.md,04_framework/route_b_method_patch_application_gate_qa_v1.csv,已完成：355项QA通过,确认门禁可靠，但不放行正文,否,继续等待真实材料,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-05,当前可做,04_framework/route_b_method_patch_application_gate.md,04_framework/route_b_method_patch_application_gate_v1.csv,可做：执行RBMP-13精确暂存规则；补真实材料；准备后续接收QA,不写正文结果,否,按该入口分流执行,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-06,当前冻结,PROJECT_STATUS.md,TASKS.md,冻结：第三章正文补丁、第四章结果、第五章教学验证、主张矩阵升级,等待真实材料或删减决定,否,继续等待真实材料,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-07,回流入口A,03_corpus/manual_review_real_return_handoff_register.md,03_corpus/manual_review_remaining_return_handoff_register.md,回流到154项人工校对真实回填,优先级最高,否,G1-07人工校对真实回填/接收QA,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-08,回流入口B,07_analysis/data/formal_coding_rater_A_template.csv,07_analysis/data/formal_coding_rater_B_template.csv,人工终核后回流到真实A/B评分者独立编码,不得用内部编码替代,否,正式A/B评分者独立编码,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-09,回流入口C,07_analysis/results/reviewed/prep30_gate_register.csv,07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,评分者裁决后回流到正式统计复现,不得用占位表生成结果,否,正式统计与结果复现QA,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论
+WR-10,回流入口D,09_quality/missing_materials_agent_task_briefs.md,09_quality/missing_materials_agent_task_briefs_v1.csv,其他缺失材料交给任务卡智能体,不得冒充真实人员或材料,否,缺失材料智能体任务卡,不得声称真实材料已补齐；不得放行第三章正文、第四章结果或第五章教学效果结论

@@ -284,6 +284,7 @@
 - 完成 `G1-07-ROUTE-B-METHOD-PATCH-PLAN-QA`：新增 `04_framework/route_b_method_patch_plan_qa.md` 和 `04_framework/route_b_method_patch_plan_qa_v1.csv`，完成路线B第三章安全改写计划QA；确认计划CSV为UTF-8 BOM和LF换行，13项 `RBMP-01` 至 `RBMP-13` 连续唯一，P0/P1计数为9/4，高/中风险计数为7/6，`RBMI-01` 至 `RBMI-22` 均可追溯，来源路径缺失0项，所有条目均保持 `apply_now=否`。本QA不修改第三章正文，不放行正式编码、正式统计、结果章或教学效果结论；
 - 完成 `G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE`：新增 `04_framework/route_b_method_patch_application_gate.md` 和 `04_framework/route_b_method_patch_application_gate_v1.csv`，为13项第三章安全改写补丁建立应用门禁；确认当前可直接应用到论文正文0项，13项均保持 `apply_to_manuscript_now=否`，其中 `RBMP-13` 仅可作为后续任务操作规则执行而不写入正文。门禁逐项列出缺失材料、解锁条件、解锁后允许正文范围、禁写边界和其他智能体下一动作；本任务不修改第三章正文，不放行正式编码、正式统计、结果章或教学效果结论；
 - 完成 `G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE-QA`：新增 `04_framework/route_b_method_patch_application_gate_qa.md` 和 `04_framework/route_b_method_patch_application_gate_qa_v1.csv`，完成第三章补丁应用门禁QA；确认门禁CSV为UTF-8 BOM和LF换行，`RBMAG-01` 至 `RBMAG-13` 连续唯一并逐行映射 `RBMP-01` 至 `RBMP-13`，13项全部保持 `apply_to_manuscript_now=否`，`RBMP-13/RBMAG-13` 仅作为操作规则执行而不写入正文，关键缺口和来源路径均可定位。本QA不修改第三章正文，不放行正式编码、正式统计、结果章或教学效果结论；
+- 完成 `G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT`：新增 `04_framework/route_b_method_patch_waiting_room_closeout.md` 和 `04_framework/route_b_method_patch_waiting_room_closeout_v1.csv`，收束路线B第三章补丁准备链；确认补丁计划、计划QA、应用门禁和门禁QA四类材料已形成，当前可直接应用到论文正文0项，继续叠加方法章门禁的收益降低，下一步应回流到人工校对真实回填、真实评分者编码、正式统计复现或缺失材料任务卡。本任务不修改第三章正文，不放行正式编码、正式统计、结果章或教学效果结论；
 
 ## 关键阻塞项
 
@@ -298,4 +299,4 @@
 
 ## 下一任务
 
-`G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT`：收束路线B第三章补丁准备链，汇总计划、QA、应用门禁和门禁QA，形成“等待真实材料前可做/不可做”的总入口，并指回人工校对真实销项或评分者编码任务。
+`G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT-QA`：检查第三章补丁准备链收束文件是否覆盖补丁链4类材料、10项收束入口、所有路径可定位、全部正文放行为“否”，并确认下一路由已指回真实材料入口。
