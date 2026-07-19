@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK P0第一批回填接收准备检查
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check.md`，说明P0第一批真实回填副本未来接收的挂接方式、推荐另存命名、收到副本后的最短流程和当前冻结边界；
+- 新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check_v1.csv`，完成18项接收准备检查，覆盖上游模板、填写说明、交接索引、索引QA、通用接收协议、登记模板、目录规则、命名规则、真实副本状态、结构检查、不可变字段、必填字段、校验值、隔离处理、整合门槛、正式编码边界和正文边界；
+- 确认P0第一批未来真实回填副本可按A组文字/公式终核回填挂接，来源包应标为 `manual_review_p0_batch1_return_template_v1.csv`；
+- 确认推荐另存命名为 `return_{YYYYMMDD}_A_p0_batch1_RXX_001.csv`，该命名只用于未来真实副本，不代表当前已经收到文件；
+- 本任务不创建 `03_corpus/manual_review_returns/`，不填写校对人、日期、决定、文件名、副本路径或校验值，不关闭38个小批次，不放行正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX-QA P0第一批回填交接包索引QA
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_packet_index_qa.md`，记录P0第一批真实回填交接包索引QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
