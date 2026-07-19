@@ -295,6 +295,7 @@
 - 完成 `G1-07-MANUAL-RETURN-INTAKE-RECHECK`：新增 `03_corpus/manual_review_return_intake_recheck.md` 和 `03_corpus/manual_review_return_intake_recheck_v1.csv`，复查真实人工终核回填接收入口；确认 `03_corpus/returns`、`03_corpus/manual_review_returns`、`03_corpus/returned` 和 `03_corpus/manual_review_return_copies` 四个候选目录均不存在，首批A组38行接收登记和剩余B/C/D 78行接收登记均未填写真实文件名、保存路径、校验值、接收日期或接收人，A/B/C/D四组回填包及154项动作计划中的真实校对人、日期、决定仍为0项填写。当前未发现可接收的真实回填副本，正式编码、正式统计、结果章、案例图件定稿、分值统计和主张矩阵升级继续冻结；
 - 完成 `G1-07-MANUAL-RETURN-INTAKE-RECHECK-QA`：新增 `03_corpus/manual_review_return_intake_recheck_qa.md` 和 `03_corpus/manual_review_return_intake_recheck_qa_v1.csv`，完成30项QA检查；确认复查CSV为UTF-8 BOM和LF换行，14项 `MRIR-01` 至 `MRIR-14` 连续唯一，全部 `release_status` 为“冻结”、`received_count` 为0；四个候选回填目录仍不存在，首批A组38行、剩余B/C/D 78行接收登记和A/B/C/D四组回填包的真实字段仍为空，`final_coding.csv` 和四个正式结果输出表仍未生成。本QA不创建回填目录，不填写真实校对字段，不修改脚本、正文或主张证据矩阵；
 - 完成 `G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE`：新增 `03_corpus/return_intake_waiting_room_update.md` 和 `03_corpus/return_intake_waiting_room_update_v1.csv`，更新真实回填等待室说明；在确认仍无真实人工终核回填的前提下，将后续路线分为必须等待真实回填、可安全推进和禁止推进三类，共14项。`RIWR-01` 至 `RIWR-07` 继续等待真实回填或正式结果，`RIWR-08` 至 `RIWR-12` 仅允许推进接收协议、文献理论、学校格式、脚本接口和正文边界维护，`RIWR-13` 至 `RIWR-14` 禁止主张矩阵升级和结果章正式写作。本任务不创建回填目录，不填写真实校对字段，不生成正式结果；
+- 完成 `G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE-QA`：新增 `03_corpus/return_intake_waiting_room_update_qa.md` 和 `03_corpus/return_intake_waiting_room_update_qa_v1.csv`，完成34项QA检查；确认等待室更新说明和路线表覆盖真实回填等待、正式结果等待、可安全推进和禁止推进四类边界，14项 `RIWR-01` 至 `RIWR-14` 连续唯一，放行状态仅包含“冻结”和“不放行正式结果”，14项证据路径均可定位。当前四个候选真实回填目录仍不存在，`final_coding.csv` 和四个正式结果表仍未生成，本QA不关闭人工校对项、不放行正式编码、正式统计、结果章写作或主张矩阵升级；
 
 ## 关键阻塞项
 
@@ -309,4 +310,4 @@
 
 ## 下一任务
 
-`G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE-QA`：检查真实回填等待室更新说明和路线表是否覆盖等待、可推进和禁止三类任务，确认CSV格式、14项编号、引用路径、放行状态和正式结果冻结状态均符合预期。
+`G1-07-SAFE-PREP-NEXT-ROUTE-DECISION`：在没有真实回填的条件下，从接收协议维护、文献理论核验、学校格式登记、正式脚本接口准备和正文禁写边界维护中选择一条低风险路线继续推进；正式结果链继续冻结。
