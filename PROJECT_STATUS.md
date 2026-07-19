@@ -290,6 +290,7 @@
 - 完成 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-GAP-QUEUE-QA`：新增 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue_qa.md` 和 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue_qa_v1.csv`，完成94项QA检查；确认缺口CSV为UTF-8 BOM和LF换行，18项 `RPG-01` 至 `RPG-18` 连续唯一，覆盖输入数据、数据字典、门禁、脚本、输出表、图表计划、归档、环境、QA和正文边界；已有路径均可定位，`final_coding.csv` 与正式结果输出表均未被创建，放行状态未出现正式放行。本QA不运行统计，不生成正式表图，不修改正文或主张矩阵；
 - 完成 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST`：新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist.md` 和 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_v1.csv`，在无真实人工回填和无 `final_coding.csv` 条件下整理22项正式脚本接口检查项；覆盖前置门禁、字段接口、脚本输入输出、一致性输入输出、正式输出表、运行日志、正式输出QA、正文门禁和版本归档。识别出 `present` 字段“是/否”与脚本 `present==1` 的口径风险、`generated/` 与 `reviewed/final_*.csv` 输出路径口径风险，以及共现/分组比较脚本接口尚待补齐。本任务不修改脚本，不运行正式统计，不生成正式表图；
 - 完成 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST-QA`：新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_qa.md` 和 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_qa_v1.csv`，完成82项QA检查；确认接口清单CSV为UTF-8 BOM和LF换行，22项 `FSI-01` 至 `FSI-22` 连续唯一，覆盖前置门禁、输入文件、必需字段、输入字段补充、脚本接口、一致性输入输出、输出表、运行日志、QA门槛、正文门禁和版本归档；`final_coding.csv` 和正式结果输出表仍未生成。本QA不修改脚本，不运行正式统计，不生成正式表图；
+- 完成 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT`：新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout.md` 和 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_v1.csv`，收束无真实回填条件下的复现包与正式脚本接口准备链；确认复现包缺口队列、缺口QA、正式脚本接口清单和接口清单QA可以作为未来正式统计复现需求和脚本修订需求，但不能替代真实人工终核、真实A/B评分者编码、分歧裁决、`final_coding.csv` 或正式统计输出。当前 `present` 字段口径、正式输出路径、共现和分组比较接口仍需后续真实输入或脚本任务处理，所有正式结果、正文结论、显著性结论和主张矩阵升级继续不放行；
 
 ## 关键阻塞项
 
@@ -304,4 +305,4 @@
 
 ## 下一任务
 
-`G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT`：收束无真实回填条件下的复现包与正式脚本接口准备链，明确哪些内容已经可作为未来复现需求，哪些必须等待真实材料。
+`G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT-QA`：检查无真实回填条件下的复现包与正式脚本接口准备链收束文件，确认上游四类材料均被覆盖、所有正式结果仍不放行，且未创建 `final_coding.csv` 或正式结果表。

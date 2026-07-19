@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT 无真实回填条件下的复现包与正式脚本接口准备链收束
+
+- 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout.md`，汇总复现包缺口队列、缺口QA、正式脚本接口清单和接口清单QA，说明收束结论、可继承为未来需求的材料、必须等待真实材料的事项、当前接口风险、正文禁写边界、下一路线和输出边界；
+- 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_v1.csv`，建立10项收束入口，覆盖复现包缺口、缺口QA、脚本接口清单、接口清单QA、未来复现需求、关键接口风险、冻结门禁、正文结果边界、下一路线A和下一路线B；
+- 确认当前材料只可作为未来正式复现需求和脚本修订需求，不能替代真实人工终核、真实A/B评分者编码、分歧裁决、`final_coding.csv` 或正式统计输出；
+- 确认 `present` 字段口径、正式输出路径、共现接口和分组比较接口仍是后续风险；
+- 本任务不修改脚本，不运行正式统计，不创建或伪造正式结果文件，不修改论文正文、主张证据矩阵或参考文献表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST-QA 无真实回填条件下的正式脚本接口清单QA
 
 - 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_qa.md`，记录正式脚本接口清单QA的性质声明、检查结论、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；
