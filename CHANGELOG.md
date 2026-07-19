@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS-QA P0第二批逐项领取任务卡QA
+
+- 新增 `03_corpus/manual_review_p0_batch2_task_cards_qa.md`，记录P0第二批逐项领取任务卡QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch2_task_cards_qa_v1.csv`，完成45项QA检查，覆盖输入文件、CSV编码换行、行数编号、上游映射、继承字段、覆盖范围、路径检查、字段完整性、状态边界、上游QA、论文边界、正式编码边界和总体结论；
+- 确认22张任务卡编号为 `P0B2CARD-01` 至 `P0B2CARD-22`，逐行挂接 `P0B2RET-01` 至 `P0B2RET-22`；
+- 确认任务卡覆盖第35届8题、第36届7题、第39届7题，题目文本、公式核对表和最低核对输入路径缺失0项；
+- 确认全部任务卡仍保持“待领取：未真实回填”和“不放行：P0第二批任务卡，未真实销项”；
+- 本QA不填写真实校对字段，不关闭任何人工校对项，不修改题文，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS P0第二批逐项领取任务卡
 
 - 新增 `03_corpus/manual_review_p0_batch2_task_cards.md`，说明P0第二批逐项领取任务卡的性质、覆盖范围、领取方法、禁止事项和下一最小任务；
