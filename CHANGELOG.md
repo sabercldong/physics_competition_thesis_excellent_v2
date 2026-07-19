@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-ROUTE-B-METHOD-MATERIAL-INDEX 路线B方法章可写素材索引
+
+- 新增 `04_framework/route_b_method_material_index.md`，记录路线B方法章素材索引的性质声明、总体结论、索引统计、可写入方法章材料、边界可写材料、只能占位/禁写材料、方法章写作边界、下一最小任务和输出边界；
+- 新增 `04_framework/route_b_method_material_index_v1.csv`，建立22项方法章素材索引，字段包括 `id`、方法章位置、材料主题、可写状态、证据等级、来源路径、可写方式、禁写内容、解锁条件和下一动作；
+- 确认“可写入方法章”10项，覆盖总体研究设计、语料来源、语料质量控制、正式编码门禁、主张证据管理、文献核验规则、伦理与数据管理、路线切换与版本控制、初稿剔除规则和第三章小结边界；
+- 确认“边界可写”9项，覆盖分析单位、元数据记录、内部编码手册、内部试编码、评分者模板、数据处理与复现、教学转化研究设计、图件质量控制和分值/附属图边界；
+- 确认“占位/禁写”3项，覆盖专家/导师/竞赛教师审查、第四章正式结果和第五章教学验证结论；
+- 明确第三章当前只能写流程、规则、门槛和边界，不得写正式维度分布、等级分布、共现关系、分组差异、趋势判断、显著性、p值、效应量、专家验证结论、真实评分者一致性、问卷结果、课堂效果、学生作品发现或教学策略有效性；
+- 本任务不修改 `08_manuscript/` 正文，不修改 `00_originals/`、`09_quality/claim_evidence_matrix.csv` 或 `02_literature/references.bib`，不创建 `03_corpus/manual_review_returns/`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-METHOD-MATERIAL-INDEX-QA`。
+
 ## 2026-07-19：G1-07-MISSING-MATERIALS-AGENT-HANDOFF-QA 缺失材料智能体交接清单QA
 
 - 更新 `09_quality/missing_materials_agent_handoff.md`，在当前总判断中明确“本交接清单不代表任何缺失材料已经补齐”，避免其他智能体误把领取清单当作完成证据；
