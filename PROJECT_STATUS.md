@@ -309,6 +309,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1`：新增 `03_corpus/manual_review_p0_batch1_item_batches.md` 和 `03_corpus/manual_review_p0_batch1_item_batches_v1.csv`，将第一批76条高风险OCR、公式与特殊符号待核项合并为38个题目级小批次；每个小批次均包含1条题干OCR项和1条公式/特殊符号项，覆盖第37届8题、第38届8题、第40届8题、第41届7题和第42届7题。该入口只用于后续逐题核对准备，全部保持“不放行：小批次入口，未真实销项”。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA`：新增 `03_corpus/manual_review_p0_batch1_item_batches_qa.md` 和 `03_corpus/manual_review_p0_batch1_item_batches_qa_v1.csv`，完成29项QA检查；确认P0第一批入口CSV为UTF-8 BOM和LF换行，38个小批次、76条来源待核项、`P0B1-01` 至 `P0B1-38` 连续编号、每批1条OCR加1条公式/特殊符号、来源映射和来源文件路径均通过检查。38项仍全部保持“不放行：小批次入口，未真实销项”。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE`：新增 `03_corpus/manual_review_p0_batch1_return_template.md` 和 `03_corpus/manual_review_p0_batch1_return_template_v1.csv`，为P0第一批38个题目级小批次建立真实人工回填模板；模板继承小批次编号、题目材料编号、来源队列、问题ID、受影响分析单元、来源文件、题面页和答案页，并预留校对人、校对日期、OCR决定、公式决定、修订位置、证据摘记、正式评分者模板放行判断、阻断原因、回填副本路径和整合状态。当前所有真实回填字段均为空白或“未回填”，38项均保持“不放行：空白回填模板”。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE-QA`：新增 `03_corpus/manual_review_p0_batch1_return_template_qa.md` 和 `03_corpus/manual_review_p0_batch1_return_template_qa_v1.csv`，完成48项QA检查；确认P0第一批回填模板CSV为UTF-8 BOM和LF换行，38行、`P0B1RET-01` 至 `P0B1RET-38` 连续编号、上游38个小批次映射、继承字段、空白回填字段、未回填状态、来源文件路径和禁写边界均通过检查。38项仍全部保持“不放行：空白回填模板”。
 
 ## 关键阻塞项
 
@@ -323,4 +324,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE-QA`：检查P0第一批回填模板的CSV编码、编号连续性、38个小批次覆盖、真实回填字段空白状态、来源映射和禁写边界；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS`：为真实校对者生成P0第一批回填填写说明，明确字段填写规则、允许选项、证据摘记要求、放行/阻断判定和提交边界；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。

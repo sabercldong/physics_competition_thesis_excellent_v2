@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE-QA P0第一批回填模板QA
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_template_qa.md`，记录P0第一批真实人工回填模板QA的性质声明、QA结论、已确认事项、届次覆盖复核、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_return_template_qa_v1.csv`，完成48项QA检查，覆盖输入文件、CSV编码换行、字段结构、行数、编号连续性、上游小批次映射、继承字段、空白回填字段、未回填状态、放行边界、来源文件路径和文本禁写边界；
+- 确认模板CSV为UTF-8 BOM和LF换行，38行、`P0B1RET-01` 至 `P0B1RET-38` 连续编号均通过检查；
+- 确认校对人、日期、实际核对页、修订位置、证据摘记、回填路径和校验值等字段均保持空白，OCR决定、公式决定、正式评分者模板放行判断和整合状态均为“未回填”；
+- 确认38项 `release_status` 均为“不放行：空白回填模板”，QA通过不等于人工校对完成、正式编码放行、正式统计成立或 `final_coding.csv` 生成；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE P0第一批真实人工回填模板
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_template.md`，说明P0第一批真实人工回填模板的用途、范围、预留字段、当前填写状态、后续使用规则和禁写边界；
