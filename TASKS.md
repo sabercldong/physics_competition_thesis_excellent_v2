@@ -561,4 +561,6 @@
   - 进度：新增 `03_corpus/manual_item_processing_guide.md`，说明人工处理试题不是整理答案，而是核对题面、答案页、图件、公式、分值、小问边界、元数据和编码证据；明确219个分析单元的含义、进入正式编码前的最低门槛、当前重点待核类型和给其他智能体的交付要求。该任务不关闭人工校对项，不放行正式编码、正式统计或论文结果章。
 - [x] G1-07-FOLLOWUP-MANUAL-QUEUE 按正式编码影响程度筛选高优先级人工校对项
   - 进度：新增 `03_corpus/manual_review_priority_queue.md` 和 `manual_review_priority_queue_v1.csv`，将154条人工校对项排序为P0直接影响正式编码98条、P1影响图件理解与案例/附录使用48条、P2影响分值统计8条；推荐五个批次处理，全部保持“不放行：仅排序，未真实销项”。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1 准备第一批高风险OCR、公式与特殊符号小批次核对入口
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1 准备第一批高风险OCR、公式与特殊符号小批次核对入口
+  - 进度：新增 `03_corpus/manual_review_p0_batch1_item_batches.md` 和 `manual_review_p0_batch1_item_batches_v1.csv`，将第一批76条高风险OCR/公式/特殊符号项合并为38个题目级小批次，覆盖第37、38、40、41、42届；每个小批次均保留原始队列ID、问题ID、题面页、答案页、受影响分析单元和禁写边界，全部不放行。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA 检查P0第一批小批次入口

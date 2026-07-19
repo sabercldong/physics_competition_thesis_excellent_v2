@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1 P0第一批小批次入口
+
+- 新增 `03_corpus/manual_review_p0_batch1_item_batches.md`，说明P0第一批高风险OCR、公式与特殊符号项的小批次拆分性质、总体结果、届次覆盖、处理目标、回填要求和禁写边界；
+- 新增 `03_corpus/manual_review_p0_batch1_item_batches_v1.csv`，将第一批76条P0高风险待核项合并为38个题目级小批次，编号为 `P0B1-01` 至 `P0B1-38`；
+- 确认每个小批次均包含1条题干OCR校对项和1条公式与特殊符号校对项，并保留原始 `source_queue_ids`、`source_issue_ids`、受影响分析单元、题面页、答案页和来源文件；
+- 届次覆盖为第37届8个小批次、第38届8个小批次、第40届8个小批次、第41届7个小批次、第42届7个小批次；
+- 本任务只建立逐题核对入口，不关闭人工校对项，不填写真实校对人或日期，不修改题文，不生成正式编码、正式统计、论文正文、评分者数据、专家意见、问卷或课堂证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-QUEUE 人工校对优先队列
 
 - 新增 `03_corpus/manual_review_priority_queue.md`，说明154条人工校对项的优先级划分、推荐批次、P0优先原因、P1/P2边界、后续执行者回填格式和禁写边界；
