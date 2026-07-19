@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MANUAL-RETURN-INTAKE-RECHECK 真实人工终核回填接收入口复查
+
+- 新增 `03_corpus/manual_review_return_intake_recheck.md`，记录真实人工终核回填接收入口复查的性质声明、复查结论、复查范围、关键证据、当前阻断、收到真实回填后的最小动作、下一最小任务和输出边界；
+- 新增 `03_corpus/manual_review_return_intake_recheck_v1.csv`，建立14项复查登记，覆盖候选回填目录、首批A组接收登记、剩余B/C/D接收登记、A/B/C/D四组回填包、动作计划、整合演练模板、正式编码输入和正式统计输出；
+- 确认 `03_corpus/returns`、`03_corpus/manual_review_returns`、`03_corpus/returned` 和 `03_corpus/manual_review_return_copies` 四个候选目录均不存在；
+- 确认首批A组38行接收登记和剩余B/C/D 78行接收登记均未填写真实文件名、保存路径、校验值、接收日期或接收人；
+- 确认A/B/C/D四组回填包和154项动作计划中的真实校对人、日期、决定仍为0项填写；
+- 本任务不创建真实回填目录，不填写真实校对字段，不关闭人工校对项，不生成 `final_coding.csv` 或正式结果文件，不修改论文正文、主张证据矩阵或参考文献表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-RETURN-INTAKE-RECHECK-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT-QA 无真实回填条件下的复现包与正式脚本接口准备链收束QA
 
 - 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_qa.md`，记录收束QA的性质声明、检查结论、检查范围、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；

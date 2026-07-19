@@ -1,0 +1,15 @@
+﻿recheck_id,check_area,path,current_state,evidence_note,received_count,release_status,next_action
+MRIR-01,候选目录,03_corpus/returns,不存在,未发现真实回填目录,0,冻结,收到真实回填副本后另建incoming目录并登记
+MRIR-02,候选目录,03_corpus/manual_review_returns,不存在,未发现真实回填目录,0,冻结,收到真实回填副本后按协议创建
+MRIR-03,候选目录,03_corpus/returned,不存在,未发现真实回填目录,0,冻结,若用户提供旧目录需先登记来源
+MRIR-04,候选目录,03_corpus/manual_review_return_copies,不存在,未发现真实回填目录,0,冻结,若收到副本需先保留原样文件
+MRIR-05,首批A组接收登记,03_corpus/manual_review_real_return_handoff_register_v1.csv,38行均未收到真实文件,received_original_filename、stored路径、sha256、intake_date、received_by均0项填写,0,冻结,等待REAL-P1真实回填副本
+MRIR-06,剩余B/C/D接收登记,03_corpus/manual_review_remaining_return_handoff_register_v1.csv,78行均未收到真实文件,received_original_filename、stored路径、sha256、intake_date、received_by均0项填写,0,冻结,等待REMAINING-B/C/D真实回填副本
+MRIR-07,A组回填包,03_corpus/manual_review_a_closure_packet_v1.csv,76项未真实回填,actual_reviewer_or_code、actual_review_date、actual_review_decision均0项填写,0,冻结,不能关闭A组OCR/公式问题
+MRIR-08,B组回填包,03_corpus/manual_review_b_closure_packet_v1.csv,22项未真实回填,actual_reviewer_or_code、actual_review_date、actual_review_decision均0项填写,0,冻结,不能关闭B组公式问题
+MRIR-09,C组回填包,03_corpus/manual_review_c_closure_packet_v1.csv,47项未真实回填,actual_reviewer_or_code、actual_review_date、actual_review_decision和figure_usable_for_manuscript均0项填写,0,冻结,不能把候选图定稿为论文图件
+MRIR-10,D组回填包,03_corpus/manual_review_d_closure_packet_v1.csv,9项未真实回填,actual_reviewer_or_code、actual_review_date、actual_review_decision均0项填写,0,冻结,不能确认第35届分值或第42届附属图边界
+MRIR-11,动作计划,03_corpus/manual_review_closure_action_plan_v1.csv,154项未真实回填,actual_reviewer_or_code、actual_review_date、actual_review_decision和ready_for_formal_coding_after_action均0项有效填写,0,冻结,不能解锁正式编码
+MRIR-12,整合演练模板,03_corpus/manual_review_return_integration_dry_run_template_v1.csv,154项仍为空白演练,expected_return_copy_path、expected_return_file_name、conflict字段均为空，正式使用字段未放行,0,冻结,不能同步账本或主张矩阵
+MRIR-13,正式编码输入,07_analysis/data/final_coding.csv,不存在,未生成裁决后的唯一正式分析表,0,冻结,不得运行正式统计
+MRIR-14,正式统计输出,07_analysis/results/reviewed/final_dimension_presence.csv,不存在,正式维度总体分布表未生成,0,冻结,不得写第四章正式百分比

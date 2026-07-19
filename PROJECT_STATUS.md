@@ -292,6 +292,7 @@
 - 完成 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST-QA`：新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_qa.md` 和 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_qa_v1.csv`，完成82项QA检查；确认接口清单CSV为UTF-8 BOM和LF换行，22项 `FSI-01` 至 `FSI-22` 连续唯一，覆盖前置门禁、输入文件、必需字段、输入字段补充、脚本接口、一致性输入输出、输出表、运行日志、QA门槛、正文门禁和版本归档；`final_coding.csv` 和正式结果输出表仍未生成。本QA不修改脚本，不运行正式统计，不生成正式表图；
 - 完成 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT`：新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout.md` 和 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_v1.csv`，收束无真实回填条件下的复现包与正式脚本接口准备链；确认复现包缺口队列、缺口QA、正式脚本接口清单和接口清单QA可以作为未来正式统计复现需求和脚本修订需求，但不能替代真实人工终核、真实A/B评分者编码、分歧裁决、`final_coding.csv` 或正式统计输出。当前 `present` 字段口径、正式输出路径、共现和分组比较接口仍需后续真实输入或脚本任务处理，所有正式结果、正文结论、显著性结论和主张矩阵升级继续不放行；
 - 完成 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT-QA`：新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_qa.md` 和 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_qa_v1.csv`，完成38项QA检查；确认收束材料覆盖复现包缺口队列、缺口QA、正式脚本接口清单和接口清单QA四类上游文件，收束CSV为UTF-8 BOM和LF换行，10项 `FSIC-01` 至 `FSIC-10` 连续唯一，所有引用路径可定位，放行状态仅包含“不放行”“冻结”“等待真实材料”；`final_coding.csv` 和四个正式结果输出表仍未生成，本QA不修改脚本、正文或主张证据矩阵；
+- 完成 `G1-07-MANUAL-RETURN-INTAKE-RECHECK`：新增 `03_corpus/manual_review_return_intake_recheck.md` 和 `03_corpus/manual_review_return_intake_recheck_v1.csv`，复查真实人工终核回填接收入口；确认 `03_corpus/returns`、`03_corpus/manual_review_returns`、`03_corpus/returned` 和 `03_corpus/manual_review_return_copies` 四个候选目录均不存在，首批A组38行接收登记和剩余B/C/D 78行接收登记均未填写真实文件名、保存路径、校验值、接收日期或接收人，A/B/C/D四组回填包及154项动作计划中的真实校对人、日期、决定仍为0项填写。当前未发现可接收的真实回填副本，正式编码、正式统计、结果章、案例图件定稿、分值统计和主张矩阵升级继续冻结；
 
 ## 关键阻塞项
 
@@ -306,4 +307,4 @@
 
 ## 下一任务
 
-`G1-07-MANUAL-RETURN-INTAKE-RECHECK`：回到真实人工终核回填入口，重新检查是否已有可接收的真实回填文件；若仍无真实回填，则保持正式编码、正式统计、结果章和主张矩阵冻结。
+`G1-07-MANUAL-RETURN-INTAKE-RECHECK-QA`：检查真实人工终核回填接收入口复查报告和CSV是否与当前项目文件一致，确认真实回填仍未收到、正式结果仍冻结，且未创建回填目录或正式结果文件。
