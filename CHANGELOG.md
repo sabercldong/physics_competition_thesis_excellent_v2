@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-MISSING-MATERIALS-AGENT-HANDOFF-QA 缺失材料智能体交接清单QA
+
+- 更新 `09_quality/missing_materials_agent_handoff.md`，在当前总判断中明确“本交接清单不代表任何缺失材料已经补齐”，避免其他智能体误把领取清单当作完成证据；
+- 新增 `09_quality/missing_materials_agent_handoff_qa.md`，记录缺失材料智能体交接清单QA的性质声明、306项检查结论、检查分布、已确认事项、仍不能声称内容、下一最小任务和输出边界；
+- 新增 `09_quality/missing_materials_agent_handoff_qa_v1.csv`，逐项检查输入存在性、CSV编码换行、字段结构、行数编号、优先级计数、字段完整性、关键缺口覆盖、内容边界、可执行性、验收标准、禁止事项、交付后状态、证据路径、报告文本、防误放行、台账一致性、目录边界和输出边界；
+- 确认交接清单CSV为12行，`AGH-01` 至 `AGH-12` 连续唯一，P0/P1/P2计数为5/6/1；
+- 确认P0覆盖学校格式与提交规则、人工校对真实回填、正式评分者编码、正式统计与结果复现、文献全文与引用核验；
+- 确认P1覆盖真实外部审查、教师访谈、问卷资料、课堂/教学实验/学生作品、C组图件定稿、D组分值与附属图，P2覆盖最终题目与研究路线确认；
+- 确认各项字段完整、禁止事项明确、证据依据路径缺失0项，`导师已确认` 只作为“没有导师确认时不得写”的禁止表述出现，当前未创建 `03_corpus/manual_review_returns/`；
+- 明确本QA不补齐任何缺失材料，不放行正式编码、正式统计、论文结果章、教学效果结论或主张矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-METHOD-MATERIAL-INDEX`。
+
 ## 2026-07-19：G1-07-MISSING-MATERIALS-AGENT-HANDOFF 缺失材料智能体交接清单
 
 - 新增 `09_quality/missing_materials_agent_handoff.md`，为后续接手项目的其他智能体、人类助理或资料整理者说明缺失材料、总规则、任务优先级、逐项领取要求和下一步QA；

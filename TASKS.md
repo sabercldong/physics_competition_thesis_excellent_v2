@@ -170,8 +170,8 @@
   - 进度：新增 `03_corpus/route_b_task_boundary_qa.md` 和 `03_corpus/route_b_task_boundary_qa_v1.csv`，完成334项QA检查且全部通过；确认路线B分界表14行、编号连续、四类分界计数正确、逐项字段完整、禁止事项清楚、释放状态均为“不放行”/冻结/禁止、正文状态均保持禁写、主张矩阵状态均不得升级，证据依据路径缺失0项，未创建真实回填目录。本QA不修改正文、主张矩阵、参考文献表或原始文件。
 - [x] G1-07-MISSING-MATERIALS-AGENT-HANDOFF 建立缺失材料智能体交接清单
   - 进度：新增 `09_quality/missing_materials_agent_handoff.md` 和 `09_quality/missing_materials_agent_handoff_v1.csv`，为其他智能体建立12项缺失材料交接任务；其中P0 5项、P1 6项、P2 1项。交接范围覆盖学校格式、人工校对真实回填、正式评分者编码、正式统计、文献全文核验、真实外部审查、教师访谈、问卷、课堂与学生作品、图件定稿、分值/附属图和最终题目路线确认；逐项明确必要输入、交付物、验收标准和禁止事项。
-- [ ] G1-07-MISSING-MATERIALS-AGENT-HANDOFF-QA 检查缺失材料智能体交接清单
-  - 目标：检查缺失材料智能体交接清单是否覆盖关键阻塞项、字段完整、禁止事项清楚、路径可定位，并确认没有把缺失材料写成已完成证据。
+- [x] G1-07-MISSING-MATERIALS-AGENT-HANDOFF-QA 检查缺失材料智能体交接清单
+  - 进度：新增 `09_quality/missing_materials_agent_handoff_qa.md` 和 `09_quality/missing_materials_agent_handoff_qa_v1.csv`，完成306项QA检查且全部通过；确认12项交接任务编号连续、P0/P1/P2计数为5/6/1、字段完整、关键缺口覆盖完整、禁止事项清楚、证据依据路径缺失0项，且没有把缺失材料写成已完成证据。本QA不补齐任何缺失材料，不放行正式编码、正式统计或论文结果章。
 - [ ] G1-07-ROUTE-B-METHOD-MATERIAL-INDEX 建立路线B方法章可写素材索引
   - 目标：在路线B允许范围内，整理方法章可写素材索引，区分“可以写入方法章的项目流程与证据管理说明”和“必须继续占位/禁写的结果性内容”。
 - [-] G1-07-A1 处理A组高风险OCR、公式与特殊符号校对项
