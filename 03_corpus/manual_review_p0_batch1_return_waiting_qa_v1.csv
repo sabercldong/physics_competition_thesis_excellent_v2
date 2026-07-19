@@ -1,0 +1,31 @@
+﻿qa_id,check_area,check_item,evidence,result,risk_if_failed,release_boundary
+P0B1WAITQA-01,输入存在性,等待登记Markdown存在,03_corpus/manual_review_p0_batch1_return_waiting.md,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-02,输入存在性,等待登记CSV存在,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-03,CSV格式,等待登记CSV为UTF-8 BOM,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-04,CSV格式,等待登记CSV为LF换行且无CR,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-05,字段结构,CSV字段覆盖等待ID、区域、证据、状态、触发条件、触发后动作、禁止事项、放行状态和后续路线,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-06,行数编号,CSV共12项等待登记,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-07,行数编号,wait_id从P0B1WAIT-01至P0B1WAIT-12连续唯一,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-08,真实回填状态,明确真实回填副本未收到,03_corpus/manual_review_p0_batch1_return_waiting.md；03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-09,真实回填状态,确认03_corpus/manual_review_returns/当前不存在,路径不存在：03_corpus/manual_review_returns/,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-10,正式数据状态,确认07_analysis/data/final_coding.csv当前不存在,路径不存在：07_analysis/data/final_coding.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-11,触发条件,每项均记录触发条件,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-12,触发后动作,每项均记录触发后动作且先接收/检查/整合QA,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-13,禁止事项,每项均记录不得提前做的事项,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-14,冻结边界,release_status未出现允许放行类表述,03_corpus/manual_review_p0_batch1_return_waiting_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-15,接收目录边界,等待登记未创建真实回填目录,路径不存在：03_corpus/manual_review_returns/,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-16,正式编码边界,等待登记未生成final_coding.csv,路径不存在：07_analysis/data/final_coding.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-17,上游链条,空白回填模板38行可定位,03_corpus/manual_review_p0_batch1_return_template_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-18,上游链条,逐题任务卡38行可定位,03_corpus/manual_review_p0_batch1_agent_task_cards_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-19,上游链条,交接链收束索引9行可定位,03_corpus/manual_review_p0_batch1_handoff_closeout_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-20,上游链条,交接链收束QA 43行可定位,03_corpus/manual_review_p0_batch1_handoff_closeout_qa_v1.csv,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-21,Markdown边界,性质声明明确等待登记不是人工校对结果,03_corpus/manual_review_p0_batch1_return_waiting.md,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-22,Markdown边界,当前结论明确入口可领取但等待真实回填副本,03_corpus/manual_review_p0_batch1_return_waiting.md,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-23,Markdown边界,收到真实回填后流程未跳过接收登记和整合QA,03_corpus/manual_review_p0_batch1_return_waiting.md,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-24,Markdown边界,禁止事项覆盖不得写成人工校对完成、不得写成真实专家/评分者意见、不得生成正式统计,03_corpus/manual_review_p0_batch1_return_waiting.md,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-25,原始文件保护,未修改或要求修改00_originals/,03_corpus/manual_review_p0_batch1_return_waiting.md,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-26,论文正文保护,本轮不改写08_manuscript正文,git status限定本任务文件,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-27,主张矩阵保护,本轮不修改09_quality/claim_evidence_matrix.csv,git status限定本任务文件,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-28,下一任务,未收到真实回填时下一步为RETURN-WAITING-QA,03_corpus/manual_review_p0_batch1_return_waiting.md；TASKS.md,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-29,替代路线,若收到真实回填则转入RETURN-INTAKE-REAL-CHECK,03_corpus/manual_review_p0_batch1_return_waiting.md；PROJECT_STATUS.md,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立
+P0B1WAITQA-30,总体结论,等待登记可作为等待状态和触发条件索引,本QA表全部检查项,通过,等待登记失效或被误用,QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立

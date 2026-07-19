@@ -595,4 +595,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch1_handoff_closeout_qa.md` 和 `manual_review_p0_batch1_handoff_closeout_qa_v1.csv`，完成43项QA检查；确认9项收束索引连续覆盖小批次入口、回填模板、填写说明、交接索引、等待室路线、任务卡、任务卡QA、真实回填接收位置和正式编码出口；既有7项链条文件路径均可定位，真实回填目录和 `final_coding.csv` 当前不存在，全部状态保持不放行或冻结。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING 等待P0第一批真实回填副本
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_waiting.md` 和 `manual_review_p0_batch1_return_waiting_v1.csv`，建立12项等待与触发清单，明确P0第一批真实回填副本当前未收到、`03_corpus/manual_review_returns/` 当前不存在、`07_analysis/data/final_coding.csv` 当前不存在；收到真实回填后只能先做接收登记、结构检查、不可变字段检查、必填字段检查和整合QA，不能直接关闭38个小批次或放行正式编码。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-QA 检查P0第一批真实回填等待状态登记
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-QA 检查P0第一批真实回填等待状态登记
+  - 进度：新增 `03_corpus/manual_review_p0_batch1_return_waiting_qa.md` 和 `manual_review_p0_batch1_return_waiting_qa_v1.csv`，完成30项QA检查；确认等待登记CSV为UTF-8 BOM和LF换行，12项等待登记编号连续，真实回填副本仍未收到，`03_corpus/manual_review_returns/` 和 `07_analysis/data/final_coding.csv` 当前均不存在。QA通过只表示等待登记可用，不代表人工校对完成或正式编码放行。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP 准备P0第二批公式与特殊符号回填入口
