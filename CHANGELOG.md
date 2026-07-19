@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT-QA P0第一批交接链收束QA
+
+- 新增 `03_corpus/manual_review_p0_batch1_handoff_closeout_qa.md`，记录P0第一批真实核对交接链收束QA的性质声明、结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_handoff_closeout_qa_v1.csv`，完成43项QA检查，覆盖输入文件、CSV编码换行、字段结构、行数编号、链条覆盖、冻结出口、路径检查、状态边界、链条行数、Markdown边界、越界检查和总体结论；
+- 确认9项收束索引连续覆盖小批次入口、回填模板、填写说明、交接索引、等待室路线、任务卡、任务卡QA、真实回填接收位置和正式编码出口；
+- 确认既有7项链条文件路径均可定位，小批次入口38行、回填模板38行、交接索引11行、等待室路线12行、任务卡38行、任务卡QA46行均可复算；
+- 确认当前未创建 `03_corpus/manual_review_returns/`，未生成 `07_analysis/data/final_coding.csv`；
+- 本任务不填写真实校对字段，不关闭38个小批次，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT P0第一批真实核对交接链收束
 
 - 新增 `03_corpus/manual_review_p0_batch1_handoff_closeout.md`，将P0第一批真实核对链条收束为一页式交接说明，明确领取入口、当前覆盖、必读顺序、每题最低交付、收到真实回填后的最短流程、禁止事项和当前结论；

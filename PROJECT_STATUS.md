@@ -321,6 +321,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS`：新增 `03_corpus/manual_review_p0_batch1_agent_task_cards.md` 和 `03_corpus/manual_review_p0_batch1_agent_task_cards_v1.csv`，将P0第一批38个题目级小批次整理为38张逐题核对任务卡；覆盖第37届8题、第38届8题、第40届8题、第41届7题和第42届7题，逐卡继承小批次编号、回填编号、题面页、答案页、待核问题、受影响分析单元、支持文件、交付字段、验收标准和禁止事项。全部仍为“待领取：未真实回填”和“不放行：任务卡，未真实销项”；本任务不代填真实校对结果，不关闭小批次，不放行正式编码。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS-QA`：新增 `03_corpus/manual_review_p0_batch1_agent_task_cards_qa.md` 和 `03_corpus/manual_review_p0_batch1_agent_task_cards_qa_v1.csv`，完成46项QA检查；确认38张任务卡编号连续，逐行挂接 `P0B1-01` 至 `P0B1-38` 与 `P0B1RET-01` 至 `P0B1RET-38`，覆盖第37届8题、第38届8题、第40届8题、第41届7题和第42届7题；字段继承与上游小批次一致，题目文本、V1转写稿和公式核对表路径缺失0项，全部仍不放行。本QA不代表真实校对完成，不释放正式评分者模板、正式编码、正式统计或论文结果章。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT`：新增 `03_corpus/manual_review_p0_batch1_handoff_closeout.md` 和 `03_corpus/manual_review_p0_batch1_handoff_closeout_v1.csv`，将P0第一批小批次入口、回填模板、填写说明、交接索引、等待室、任务卡和任务卡QA收束为一页式交接说明与9项结构化索引；明确其他智能体从任务卡领取，按回填模板写入真实校对结果，收到真实副本后再进行接收登记、结构检查、不可变字段检查和整合QA。当前仍不创建真实回填目录，不关闭38个小批次，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT-QA`：新增 `03_corpus/manual_review_p0_batch1_handoff_closeout_qa.md` 和 `03_corpus/manual_review_p0_batch1_handoff_closeout_qa_v1.csv`，完成43项QA检查；确认9项收束索引连续覆盖小批次入口、回填模板、填写说明、交接索引、等待室路线、任务卡、任务卡QA、真实回填接收位置和正式编码出口；既有7项链条文件路径均可定位，真实回填目录和 `07_analysis/data/final_coding.csv` 当前不存在，全部状态保持不放行或冻结。本QA通过只表示P0第一批交接入口可用，不代表真实校对完成。
 
 ## 关键阻塞项
 
@@ -335,4 +336,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-HANDOFF-CLOSEOUT-QA`：检查P0第一批交接链收束说明和结构化索引是否覆盖全部链条文件、CSV编码换行、路径、冻结状态和禁写边界；仍不代填真实校对结果，不关闭小批次，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING`：保持P0第一批交接入口可领取状态，等待真实回填副本；若收到真实回填副本，则优先执行接收登记、结构检查、不可变字段检查和整合QA。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。

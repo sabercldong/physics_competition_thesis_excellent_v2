@@ -1,0 +1,44 @@
+﻿qa_id,check_area,check_item,evidence,result,release_status
+P0B1HCQA-01,输入文件,收束说明存在,03_corpus/manual_review_p0_batch1_handoff_closeout.md 可定位,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-02,输入文件,收束索引CSV存在,03_corpus/manual_review_p0_batch1_handoff_closeout_v1.csv 可定位,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-03,输入文件,任务卡CSV存在,03_corpus/manual_review_p0_batch1_agent_task_cards_v1.csv 可定位,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-04,输入文件,任务卡QA存在,03_corpus/manual_review_p0_batch1_agent_task_cards_qa_v1.csv 可定位,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-05,编码格式,收束索引为UTF-8 BOM,文件开头包含UTF-8 BOM,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-06,编码格式,收束索引为LF换行,未发现CRLF或孤立CR,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-07,字段结构,收束索引字段完整,"closeout_id,link_name,file_path,file_role,row_count_or_scope,required_action_for_next_agent,current_status,release_status,must_not_do",通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-08,行数编号,收束索引共9行,P0B1HC-01至P0B1HC-09,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-09,行数编号,收束索引编号连续,9个closeout_id连续唯一,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-10,链条覆盖,覆盖小批次入口,P0B1HC-01指向38行小批次入口,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-11,链条覆盖,覆盖回填模板,P0B1HC-02指向38行回填模板,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-12,链条覆盖,覆盖填写说明,P0B1HC-03指向填写说明Markdown,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-13,链条覆盖,覆盖交接索引,P0B1HC-04指向11项交接索引,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-14,链条覆盖,覆盖等待室路线,P0B1HC-05指向12项等待室路线,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-15,链条覆盖,覆盖任务卡,P0B1HC-06指向38张任务卡,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-16,链条覆盖,覆盖任务卡QA,P0B1HC-07指向46项任务卡QA,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-17,冻结出口,真实回填接收目录标为当前不存在,P0B1HC-08为未来真实副本接收位置,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-18,冻结出口,正式编码出口标为当前不存在,P0B1HC-09为未来final_coding.csv出口,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-19,路径检查,已存在文件路径均可定位,7项既有文件路径缺失0项,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-20,路径检查,未来真实回填目录不存在,03_corpus/manual_review_returns/ 当前不存在,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-21,路径检查,未来final_coding.csv不存在,07_analysis/data/final_coding.csv 当前不存在,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-22,状态边界,收束项release_status不放行或冻结,9项只包含不放行或冻结状态,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-23,状态边界,must_not_do均非空,9项均写明不得代填或放行边界,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-24,链条行数,小批次入口38行,03_corpus/manual_review_p0_batch1_item_batches_v1.csv 为38行,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-25,链条行数,回填模板38行,03_corpus/manual_review_p0_batch1_return_template_v1.csv 为38行,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-26,链条行数,交接索引11行,03_corpus/manual_review_p0_batch1_return_packet_index_v1.csv 为11行,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-27,链条行数,等待室路线12行,03_corpus/manual_review_p0_batch1_return_waiting_room_update_v1.csv 为12行,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-28,链条行数,任务卡38行,03_corpus/manual_review_p0_batch1_agent_task_cards_v1.csv 为38行,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-29,链条行数,任务卡QA46行,03_corpus/manual_review_p0_batch1_agent_task_cards_qa_v1.csv 为46行,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-30,Markdown边界,收束说明包含性质声明,明确只收束交接链，不填写真实校对结果,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-31,Markdown边界,收束说明包含领取入口,说明从任务卡领取并写回模板或真实副本,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-32,Markdown边界,收束说明包含当前覆盖,列出38小批次、38任务卡、38回填模板、76待核项,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-33,Markdown边界,收束说明包含必读顺序,列出任务卡、填写说明、回填模板、等待室和整合协议,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-34,Markdown边界,收束说明包含每题最低交付,列出真实校对人、日期、决定、证据摘记等交付,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-35,Markdown边界,收束说明包含收到真实回填后的最短流程,列出接收登记、结构检查、整合QA,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-36,Markdown边界,收束说明包含禁止事项,禁止跳过真实回填、生成final_coding或写结果,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-37,越界检查,未声称人工校对完成,说明中保持等待真实回填,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-38,越界检查,未声称专家导师教师评分者意见,禁止将Codex/任务卡/QA包装成真实意见,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-39,越界检查,未修改原始材料,本任务不触碰00_originals,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-40,越界检查,未修改论文正文,本任务不修改08_manuscript,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-41,越界检查,未修改主张证据矩阵,本任务不修改09_quality/claim_evidence_matrix.csv,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-42,下一步,下一任务为收束后的等待或真实接收路线,建议转入P0第一批真实回填接收等待/领取监控或执行真实回填接收QA,通过,不放行：交接收束QA，未真实回填
+P0B1HCQA-43,总体结论,交接收束通过QA,QA通过只代表交接入口可用，不释放正式结果,通过,不放行：交接收束QA，未真实回填
