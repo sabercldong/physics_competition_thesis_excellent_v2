@@ -343,7 +343,9 @@
   - 进度：新增 `02_literature/literature_theory_verification_entry_qa.md` 和 `02_literature/literature_theory_verification_entry_qa_v1.csv`，完成34项QA检查；确认入口CSV编码换行、12项编号、P0/P1计数、执行顺序、P0/P1来源覆盖、RCQ/P0REF/P1GAP映射、证据入口路径和禁写边界均符合预期。QA通过只表示入口可用，不放行正文定稿、正式参考文献表、主张矩阵升级或正式结果。
 - [x] G2VE-01-CS-STANDARD-FINALCHECK 课程标准概念依据定稿前复核
   - 进度：新增 `02_literature/cs001_curriculum_standard_finalcheck.md` 和 `02_literature/cs001_curriculum_standard_finalcheck_v1.csv`，整理 `CS-001` 的官方版本、通知页、发文字号、发布日期、附件包、PDF校验值、科学思维定义/四要素页码、可支持语句、不能声称内容和学校格式待核点。当前只完成定稿前复核材料，不改写正文、不定稿参考文献表、不升级主张矩阵。
-- [ ] G2VE-01-CS-STANDARD-FINALCHECK-QA 检查课程标准概念依据定稿前复核材料
+- [x] G2VE-01-CS-STANDARD-FINALCHECK-QA 检查课程标准概念依据定稿前复核材料
+  - 进度：新增 `02_literature/cs001_curriculum_standard_finalcheck_qa.md` 和 `02_literature/cs001_curriculum_standard_finalcheck_qa_v1.csv`，完成30项QA检查；确认复核说明与结构表存在，CSV编码换行为UTF-8 BOM和LF，12项 `CSFC-01` 至 `CSFC-12` 连续唯一，来源路径缺失0项，上游 `CS-001`、`LM-CS-001`、`P0REF-01` 和 `G2VE-01` 均可定位。QA通过只放行后续文献理论核验任务，不放行正文定稿、参考文献表定稿、主张矩阵升级或正式结果。
+- [ ] G2VE-02-METH004-FINALCHECK 内容分析与编码一致性方法已读来源定稿前复核
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议

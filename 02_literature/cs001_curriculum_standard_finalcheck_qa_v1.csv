@@ -1,0 +1,31 @@
+﻿qa_id,check_group,check_item,evidence,source_path,result,risk_if_failed,followup_action
+CSFCQA-01,输入文件,复核说明文件存在,cs001_curriculum_standard_finalcheck.md可读取,02_literature/cs001_curriculum_standard_finalcheck.md,通过,无法证明QA对象存在,保留文件
+CSFCQA-02,输入文件,结构表存在,cs001_curriculum_standard_finalcheck_v1.csv可读取,02_literature/cs001_curriculum_standard_finalcheck_v1.csv,通过,无法检查结构化复核记录,保留文件
+CSFCQA-03,CSV格式,UTF-8 BOM,结构表检测到BOM,02_literature/cs001_curriculum_standard_finalcheck_v1.csv,通过,后续表格工具可能乱码,继续使用UTF-8 BOM
+CSFCQA-04,CSV格式,LF换行,结构表未检测到CRLF或孤立CR,02_literature/cs001_curriculum_standard_finalcheck_v1.csv,通过,不符合项目CSV换行规则,保持LF
+CSFCQA-05,CSV结构,字段完整,字段含check_id/source_id/check_area/check_item/current_evidence/source_path/finalcheck_status/allowed_use/cannot_claim/next_action/release_status,02_literature/cs001_curriculum_standard_finalcheck_v1.csv,通过,后续无法机器读取复核状态,保持字段
+CSFCQA-06,CSV结构,行数正确,结构表为12行,02_literature/cs001_curriculum_standard_finalcheck_v1.csv,通过,复核覆盖不完整或重复,保留12行
+CSFCQA-07,编号,编号连续唯一,CSFC-01至CSFC-12连续且唯一,02_literature/cs001_curriculum_standard_finalcheck_v1.csv,通过,后续引用混乱,保留编号
+CSFCQA-08,来源路径,路径均可定位,source_path缺失0项,02_literature/cs001_curriculum_standard_finalcheck_v1.csv,通过,证据链断裂,后续修改时同步检查路径
+CSFCQA-09,上游映射,CS-001可定位,reference_verification.csv存在CS-001行,02_literature/reference_verification.csv,通过,来源身份无法回查,保留CS-001映射
+CSFCQA-10,上游映射,LM-CS-001可定位,literature_matrix.csv存在LM-CS-001行,02_literature/literature_matrix.csv,通过,文献矩阵无法回查,保留LM-CS-001映射
+CSFCQA-11,上游映射,P0REF-01可定位,P0复核单存在P0REF-01行,09_quality/no_return_reference_p0_finalcheck_sheet_v1.csv,通过,P0定稿前复核链断裂,保留P0REF-01映射
+CSFCQA-12,上游映射,G2VE-01可定位,文献理论入口存在G2VE-01行,02_literature/literature_theory_verification_entry_v1.csv,通过,本任务入口无法回查,保留G2VE-01映射
+CSFCQA-13,来源信息,官方版本信息齐全,说明文件列出文件名、发布机构、通知标题、发文字号、发布页、日期和附件包,02_literature/cs001_curriculum_standard_finalcheck.md,通过,正文来源身份可能含混,后续正文引用前再核学校格式
+CSFCQA-14,文件校验,校验值保留,说明文件列出附件包SHA-256与PDF SHA-256,02_literature/cs001_curriculum_standard_finalcheck.md,通过,内部来源一致性证据不足,保留校验值
+CSFCQA-15,页码定位,科学思维页码明确,说明文件列出PDF页13-14/正文页4-5及四要素PDF页14/正文页5,02_literature/cs001_curriculum_standard_finalcheck.md,通过,后续正文页码引用不稳,正文写作前统一页码表达
+CSFCQA-16,可支持语句,支持范围克制,可支持语句限于课程标准依据、四维度来源、C2-01/C1-01背景,02_literature/cs001_curriculum_standard_finalcheck.md,通过,课程标准被误用为结果证据,后续写作沿用安全句式
+CSFCQA-17,禁写边界,编码框架有效性禁写,说明文件明确不能证明编码框架已经有效,02_literature/cs001_curriculum_standard_finalcheck.md,通过,误把课程标准当框架验证证据,继续保留边界
+CSFCQA-18,禁写边界,正式结果禁写,说明文件明确不能证明试题四维度正式比例或Codex试编码正式成立,02_literature/cs001_curriculum_standard_finalcheck.md,通过,误放行结果章,继续冻结正式结果
+CSFCQA-19,禁写边界,教学效果禁写,说明文件明确不能证明学生水平、教学策略有效或显著性提升,02_literature/cs001_curriculum_standard_finalcheck.md,通过,误写教学实验结论,继续等待真实教学证据
+CSFCQA-20,禁写边界,专家与评分者禁写,说明文件明确不能替代真实专家审查、双评分者编码、一致性计算或分歧裁决,02_literature/cs001_curriculum_standard_finalcheck.md,通过,误写方法质量证据,继续保持方法门禁
+CSFCQA-21,学校格式,待核状态保留,CSFC-11为待核实，说明文件列出学校格式待核点,02_literature/cs001_curriculum_standard_finalcheck_v1.csv,通过,可能伪定稿参考文献格式,等待学校规范
+CSFCQA-22,正文边界,未改写正文,本任务文件未要求修改08_manuscript,02_literature/cs001_curriculum_standard_finalcheck.md,通过,越过正文门禁,正文另起任务
+CSFCQA-23,参考文献边界,未定稿references.bib,说明文件声明不新增或定稿references.bib,02_literature/cs001_curriculum_standard_finalcheck.md,通过,未核格式进入正式参考文献,bib闭环另起任务
+CSFCQA-24,主张矩阵边界,未升级主张矩阵,说明文件声明不升级主张证据矩阵,02_literature/cs001_curriculum_standard_finalcheck.md,通过,主张等级被误升级,矩阵合并另起任务
+CSFCQA-25,QA报告,QA结论有边界,QA报告写明通过但不等于正文或参考文献定稿,02_literature/cs001_curriculum_standard_finalcheck_qa.md,通过,QA被误读为正式放行,保留边界说明
+CSFCQA-26,下一任务,下一最小任务明确,QA报告建议进入G2VE-02-METH004-FINALCHECK,02_literature/cs001_curriculum_standard_finalcheck_qa.md,通过,后续路线不清,更新台账
+CSFCQA-27,红线检查,未出现补造专家/问卷/课堂表述,QA对象均未声称真实专家、问卷、课堂或显著性材料已存在,02_literature/cs001_curriculum_standard_finalcheck.md,通过,违反真实性红线,继续待核处理
+CSFCQA-28,任务状态,完成项与下一项一致,TASKS.md将本任务列为待执行，PROJECT_STATUS.md下一任务一致,PROJECT_STATUS.md;TASKS.md,通过,台账路线断裂,本轮完成后更新台账
+CSFCQA-29,释放状态,没有正式放行,QA仅放行下一文献核验任务，不放行正文定稿或正式结果,02_literature/cs001_curriculum_standard_finalcheck_qa.md,通过,误入正文/结果写作,保持正式门禁
+CSFCQA-30,总体结论,QA通过,30项检查均通过,02_literature/cs001_curriculum_standard_finalcheck_qa_v1.csv,通过,不能作为后续门禁材料,进入下一文献理论复核任务

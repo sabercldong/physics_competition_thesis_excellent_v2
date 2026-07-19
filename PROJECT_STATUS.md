@@ -300,6 +300,7 @@
 - 完成 `G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY`：新增 `02_literature/literature_theory_verification_entry.md` 和 `02_literature/literature_theory_verification_entry_v1.csv`，将现有P0定稿前复核单、P1全文缺口队列、参考文献核验表、文献矩阵和主张队列整理为12项下一批核验入口；优先执行课程标准概念依据定稿前复核、内容分析一致性方法已读来源复核、SOLO理论全文与迁移边界入口、内容分析与编码一致性方法全文补强入口。该任务只建立核验入口，不获取新全文、不改写正文、不修改主张证据矩阵、不新增正式参考文献、不放行正式结果；
 - 完成 `G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY-QA`：新增 `02_literature/literature_theory_verification_entry_qa.md` 和 `02_literature/literature_theory_verification_entry_qa_v1.csv`，完成34项QA检查；确认文献理论入口表12项编号连续，P0六项、P1六项，优先执行4项、第二批执行5项、第三批执行2项、暂缓执行1项，P0/P1来源和上游队列映射完整，所有证据入口路径可定位。QA通过仅放行下一步核验任务，不放行正文定稿、正式参考文献表、主张矩阵升级或正式结果；
 - 完成 `G2VE-01-CS-STANDARD-FINALCHECK`：新增 `02_literature/cs001_curriculum_standard_finalcheck.md` 和 `02_literature/cs001_curriculum_standard_finalcheck_v1.csv`，对 `CS-001` 课程标准概念依据完成定稿前复核整理；确认教育部官方版本、通知页、发文字号、发布日期、附件包、PDF校验值和科学思维定义/四要素页码已有项目证据，可支持科学思维四维度的课程标准依据及 `C2-01/C1-01` 的有限背景支撑。学校最终著录格式、URL/访问日期和正文页/PDF页表达仍待学校规范确认；本任务不改写正文、不修改 `references.bib`、不升级主张证据矩阵、不放行正式结果；
+- 完成 `G2VE-01-CS-STANDARD-FINALCHECK-QA`：新增 `02_literature/cs001_curriculum_standard_finalcheck_qa.md` 和 `02_literature/cs001_curriculum_standard_finalcheck_qa_v1.csv`，完成30项QA检查；确认课程标准复核说明与结构表存在，结构表为UTF-8 BOM和LF换行，12项 `CSFC-01` 至 `CSFC-12` 连续唯一，来源路径缺失0项，上游 `CS-001`、`LM-CS-001`、`P0REF-01` 和 `G2VE-01` 均可定位。QA通过仅表示课程标准依据复核材料可作为后续写作门禁材料，不等于正文定稿、参考文献表定稿、主张矩阵升级或正式结果放行；
 
 ## 关键阻塞项
 
@@ -314,4 +315,4 @@
 
 ## 下一任务
 
-`G2VE-01-CS-STANDARD-FINALCHECK-QA`：检查课程标准概念依据定稿前复核材料，确认结构表编号、CSV编码换行、来源路径、可支持语句、学校格式待核点和禁写边界；QA仍不改写正文、不定稿参考文献表、不升级主张矩阵。
+`G2VE-02-METH004-FINALCHECK`：对内容分析与编码一致性方法已读来源做定稿前复核，确认方法术语、适用边界、可支持的第三章方法表述和不能声称内容；本任务仍不改写正文、不定稿参考文献表、不升级主张矩阵。

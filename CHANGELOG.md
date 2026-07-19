@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G2VE-01-CS-STANDARD-FINALCHECK-QA 课程标准概念依据定稿前复核QA
+
+- 新增 `02_literature/cs001_curriculum_standard_finalcheck_qa.md`，记录课程标准复核材料QA的性质声明、QA结论、已确认事项、仍不能声称内容、后续边界和下一最小任务；
+- 新增 `02_literature/cs001_curriculum_standard_finalcheck_qa_v1.csv`，完成30项QA检查，覆盖输入文件、CSV编码换行、字段结构、行数、编号、来源路径、上游映射、官方版本信息、校验值、页码定位、可支持语句、禁写边界、学校格式待核点、正文/参考文献/主张矩阵边界和后续任务；
+- 确认结构表为UTF-8 BOM和LF换行，12项 `CSFC-01` 至 `CSFC-12` 连续唯一，来源路径缺失0项；
+- 确认上游 `CS-001`、`LM-CS-001`、`P0REF-01` 和 `G2VE-01` 均可定位；
+- 确认QA通过只表示课程标准依据复核材料可作为后续写作门禁材料，不等于正文定稿、参考文献表定稿、主张矩阵升级或正式结果放行；
+- 本QA不改写论文正文，不修改 `references.bib`，不升级 `09_quality/claim_evidence_matrix.csv`，不补造外部文献结论、专家意见、正式编码结果、问卷结果、教学实验或显著性结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G2VE-02-METH004-FINALCHECK`。
+
 ## 2026-07-19：G2VE-01-CS-STANDARD-FINALCHECK 课程标准概念依据定稿前复核
 
 - 新增 `02_literature/cs001_curriculum_standard_finalcheck.md`，记录 `CS-001` 课程标准概念依据的性质声明、输入依据、复核结论、官方版本信息、页码表达、可支持语句、不能声称内容、学校格式候选写法和下一最小任务；
