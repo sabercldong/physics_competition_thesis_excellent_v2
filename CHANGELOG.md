@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT-QA 无真实回填条件下的复现包与正式脚本接口准备链收束QA
+
+- 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_qa.md`，记录收束QA的性质声明、检查结论、检查范围、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout_qa_v1.csv`，完成38项检查，覆盖输入存在性、CSV格式、字段结构、编号、上游覆盖、真实材料门禁、接口风险、正文边界、内部结果隔离、路径定位、正式结果保护、脚本隔离、正文隔离、矩阵隔离和台账同步；
+- 确认收束CSV为UTF-8 BOM和LF换行，10项 `FSIC-01` 至 `FSIC-10` 连续唯一，所有引用路径可定位；
+- 确认 `formal_release_status` 仅包含“不放行”“冻结”“等待真实材料”，未出现正式放行；
+- 确认 `final_coding.csv` 和四个正式结果输出表仍未生成；
+- 本任务不修改脚本，不运行正式统计，不创建或伪造正式结果文件，不修改论文正文、主张证据矩阵或参考文献表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-MANUAL-RETURN-INTAKE-RECHECK`。
+
 ## 2026-07-19：G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CLOSEOUT 无真实回填条件下的复现包与正式脚本接口准备链收束
 
 - 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_closeout.md`，汇总复现包缺口队列、缺口QA、正式脚本接口清单和接口清单QA，说明收束结论、可继承为未来需求的材料、必须等待真实材料的事项、当前接口风险、正文禁写边界、下一路线和输出边界；
