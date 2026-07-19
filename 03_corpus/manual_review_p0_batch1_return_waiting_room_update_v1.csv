@@ -1,0 +1,13 @@
+﻿route_id,route_group,workstream,current_status,evidence_path,allowed_action,must_not_do,release_status,unlock_condition,next_task_candidate
+P0B1WR-01,必须等待真实回填,真实回填副本接收,等待真实材料,03_corpus/manual_review_p0_batch1_return_intake_ready_check.md,等待P0第一批真实回填副本进入接收入口,不得创建空目录或登记虚构文件名副本路径校验值,冻结,收到真实回填副本并完成接收登记,G1-07-P0B1-REAL-RETURN-INTAKE
+P0B1WR-02,必须等待真实回填,38行校对字段填写,等待真实材料,03_corpus/manual_review_p0_batch1_return_template_v1.csv,等待真实校对人逐行填写校对人日期OCR决定公式决定和证据摘记,不得由Codex填写校对人日期决定或证据,冻结,38行真实回填字段完整且来源可复核,G1-07-P0B1-RETURN-FIELD-CHECK
+P0B1WR-03,必须等待真实回填,结构与不可变字段检查,等待真实材料,03_corpus/manual_review_p0_batch1_return_intake_ready_check_v1.csv,收到副本后检查38行P0B1RET编号和继承字段,不得接受缺行多行重复编号或无说明修改继承字段的副本,冻结,真实副本结构检查通过,G1-07-P0B1-RETURN-STRUCTURE-QA
+P0B1WR-04,必须等待真实回填,整合QA与关闭候选,等待真实材料,03_corpus/return_intake_folder_protocol.md,按回填整合协议判断是否形成关闭候选,不得接收后直接关闭38个小批次,冻结,接收QA和整合QA均通过,G1-07-P0B1-RETURN-INTEGRATION-QA
+P0B1WR-05,必须等待真实回填,正式评分者模板放行判断,等待真实材料,03_corpus/manual_review_p0_batch1_return_instructions.md,只有OCR和公式均确认无误且无剩余疑点时才可判断允许,不得将需修订或继续待核条目放入正式评分者模板,冻结,真实回填与整合QA支持逐项允许,G4-RATER-TEMPLATE-P0B1-UNLOCK
+P0B1WR-06,可继续准备,接收规则维护,可继续推进,03_corpus/manual_review_return_intake_folder_rules_v1.csv,可维护命名规则校验值字段隔离规则和冲突分级,不得填写真实回填字段或登记虚构副本,不放行正式结果,不需要真实回填但不能改变真实状态,G1-07-P0B1-INTAKE-RULES-REFINE
+P0B1WR-07,可继续准备,接收后结构检查清单,可继续推进,03_corpus/manual_review_p0_batch1_return_intake_ready_check_qa.md,可准备未来接收后的结构检查脚本或人工清单,不得用空白模板生成真实检查结果,不放行正式结果,仅产出空白检查工具或规则,G1-07-P0B1-RETURN-STRUCTURE-CHECKLIST
+P0B1WR-08,可继续准备,其他智能体任务卡,可继续推进,03_corpus/manual_review_p0_batch1_return_packet_index.md,可整理逐题核对任务卡和交接说明,不得指定虚构专家或写成已核对,不放行正式结果,仅形成任务卡不形成结论,G1-07-P0B1-AGENT-TASK-CARDS
+P0B1WR-09,可继续准备,正文和主张边界维护,可继续推进,03_corpus/manual_review_p0_batch1_return_intake_ready_check_qa.md,可维护禁写边界状态说明和台账,不得改写第四章正式结果或升级主张证据等级,不放行正式结果,仅更新边界说明不生成正式结果,G8-P0B1-BOUNDARY-MAINTENANCE
+P0B1WR-10,禁止推进,38个小批次销项,禁止,03_corpus/manual_review_p0_batch1_return_template_v1.csv,当前不能关闭P0第一批38个小批次,不得写成P0第一批人工校对完成,冻结,真实回填接收和整合QA通过后另开销项任务,G1-07-P0B1-CLOSURE-AFTER-RETURN
+P0B1WR-11,禁止推进,正式编码与final_coding.csv,禁止,07_analysis/data/internal_coding_v1.csv,当前不能复制内部编码或空白模板为final_coding.csv,不得生成或命名正式编码结果,冻结,真实A/B编码一致性分歧裁决和唯一正式分析表完成,G4-FORMAL-CODING-AFTER-P0B1
+P0B1WR-12,禁止推进,第四章正式结果写作,禁止,08_manuscript/04_results.md,当前不能写正式分布共现趋势显著性p值效应量或置信区间,不得把内部预演或QA写成正式论文结果,冻结,final_coding.csv和正式结果表通过复现QA后另开写作任务,G7-RESULTS-WRITING-AFTER-FORMAL-QA

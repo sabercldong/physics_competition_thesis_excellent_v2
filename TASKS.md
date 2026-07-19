@@ -581,4 +581,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check.md` 和 `manual_review_p0_batch1_return_intake_ready_check_v1.csv`，完成18项接收准备检查；确认P0第一批38行空白回填模板、填写说明、交接包索引、索引QA、通用接收协议、接收登记模板和目录规则均可定位。当前只确认接收规则已具备，真实回填仍未收到，正式产出继续冻结。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK-QA 检查P0第一批真实回填接收准备表
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check_qa.md` 和 `manual_review_p0_batch1_return_intake_ready_check_qa_v1.csv`，完成42项QA检查；确认接收准备表18项编号连续、路径缺失0项、CSV为UTF-8 BOM和LF换行，覆盖上游材料、接收规则、命名规则、校验值字段、真实回填未收到状态和冻结边界。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE 更新P0第一批真实回填等待室
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE 更新P0第一批真实回填等待室
+  - 进度：新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update.md` 和 `manual_review_p0_batch1_return_waiting_room_update_v1.csv`，将P0第一批真实回填链条压缩为12条等待室路线；其中5项必须等待真实回填，4项可继续准备，3项禁止推进。当前仍不创建真实回填目录，不关闭38个小批次，不放行正式编码或论文结果。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE-QA 检查P0第一批真实回填等待室
