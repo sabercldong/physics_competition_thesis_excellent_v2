@@ -571,4 +571,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_template_qa.md` 和 `manual_review_p0_batch1_return_template_qa_v1.csv`，完成48项QA检查；确认38行模板、连续编号、上游映射、继承字段、空白回填字段、未回填状态、来源文件路径和不放行边界均通过。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS 生成P0第一批真实校对回填填写说明
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_instructions.md`，明确38个小批次回填前需核对的材料、不可改动的继承字段、每个回填字段的必填性和允许写法、OCR/公式决定标准、正式评分者模板放行判断、证据摘记格式、整合提交边界和禁写边界。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS-QA 检查P0第一批回填填写说明
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS-QA 检查P0第一批回填填写说明
+  - 进度：新增 `03_corpus/manual_review_p0_batch1_return_instructions_qa.md` 和 `manual_review_p0_batch1_return_instructions_qa_v1.csv`，完成67项QA检查；确认全部回填字段、继承字段禁改、允许选项、证据摘记、放行/阻断逻辑、整合边界和禁写边界均覆盖。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX 汇总P0第一批真实回填交接材料包索引

@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS-QA P0第一批回填填写说明QA
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_instructions_qa.md`，记录P0第一批回填填写说明QA的性质声明、QA结论、已确认事项、结构化QA表、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_return_instructions_qa_v1.csv`，完成67项QA检查，覆盖输入文件、17个真实回填字段、15个继承字段禁改、允许选项、章节覆盖、关键逻辑、禁写边界和模板对应关系；
+- 确认OCR决定、公式决定、是否修订、正式评分者模板放行判断、整合状态和 `release_status` 的允许写法均已明确；
+- 确认说明中包含关键逻辑：若OCR或公式为“需修订”或“继续待核”，不得填写“允许”进入正式评分者模板；
+- 确认QA通过只表示填写说明可作为真实回填操作说明，不等于人工校对完成、正式编码放行、正式统计成立或 `final_coding.csv` 生成；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS P0第一批回填填写说明
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_instructions.md`，为真实校对者填写 `manual_review_p0_batch1_return_template_v1.csv` 提供字段级说明；

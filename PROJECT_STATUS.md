@@ -311,6 +311,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE`：新增 `03_corpus/manual_review_p0_batch1_return_template.md` 和 `03_corpus/manual_review_p0_batch1_return_template_v1.csv`，为P0第一批38个题目级小批次建立真实人工回填模板；模板继承小批次编号、题目材料编号、来源队列、问题ID、受影响分析单元、来源文件、题面页和答案页，并预留校对人、校对日期、OCR决定、公式决定、修订位置、证据摘记、正式评分者模板放行判断、阻断原因、回填副本路径和整合状态。当前所有真实回填字段均为空白或“未回填”，38项均保持“不放行：空白回填模板”。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE-QA`：新增 `03_corpus/manual_review_p0_batch1_return_template_qa.md` 和 `03_corpus/manual_review_p0_batch1_return_template_qa_v1.csv`，完成48项QA检查；确认P0第一批回填模板CSV为UTF-8 BOM和LF换行，38行、`P0B1RET-01` 至 `P0B1RET-38` 连续编号、上游38个小批次映射、继承字段、空白回填字段、未回填状态、来源文件路径和禁写边界均通过检查。38项仍全部保持“不放行：空白回填模板”。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS`：新增 `03_corpus/manual_review_p0_batch1_return_instructions.md`，为P0第一批真实校对者建立回填填写说明；明确填写前必须核对的题面页、答案页、转写稿、公式核对表和受影响分析单元，列出不可修改的继承字段、全部回填字段的必填性和允许写法，并规定OCR决定、公式决定、正式评分者模板放行判断、证据摘记、整合与提交边界。该说明不填写真实校对结果，不关闭人工校对项，不放行正式编码。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS-QA`：新增 `03_corpus/manual_review_p0_batch1_return_instructions_qa.md` 和 `03_corpus/manual_review_p0_batch1_return_instructions_qa_v1.csv`，完成67项QA检查；确认填写说明覆盖17个真实回填字段、15个不得修改的继承字段、OCR/公式决定允许选项、是否修订选项、正式评分者模板放行判断、整合状态、证据摘记要求、整合提交边界和禁写边界。QA通过仅表示说明可作为真实回填操作说明，不等于人工校对完成或正式编码放行。
 
 ## 关键阻塞项
 
@@ -325,4 +326,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS-QA`：检查P0第一批回填填写说明是否覆盖全部回填字段、允许选项、证据摘记、放行/阻断规则、整合边界和禁写边界；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX`：将P0第一批入口、QA、回填模板、模板QA、填写说明和填写说明QA汇总为可交接材料包索引；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
