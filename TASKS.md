@@ -349,7 +349,9 @@
   - 进度：新增 `02_literature/meth004_intercoder_reliability_finalcheck.md` 和 `02_literature/meth004_intercoder_reliability_finalcheck_v1.csv`，整理 `METH-004` 的题录信息、已读状态、CSU仓储 `withdrawn` 版本风险、期刊页码定位、可支持的第三章方法语句、不能声称内容、学校格式待核点和 `C2-04/C3-02` 当前支持状态。当前只完成定稿前复核材料，不改写正文、不定稿参考文献表、不升级主张矩阵。
 - [x] G2VE-02-METH004-FINALCHECK-QA 检查METH-004方法来源定稿前复核材料
   - 进度：新增 `02_literature/meth004_intercoder_reliability_finalcheck_qa.md` 和 `02_literature/meth004_intercoder_reliability_finalcheck_qa_v1.csv`，完成40项QA检查；确认复核说明与结构表存在，CSV编码换行为UTF-8 BOM和LF，20项 `METH004FC-01` 至 `METH004FC-20` 连续唯一，来源路径缺失0项，上游 `METH-004`、`P0REF-06` 和 `G2VE-02` 均可定位。QA通过只放行后续文献理论核验任务，不放行第三章定稿、参考文献表定稿、主张矩阵升级、本项目一致性检验完成或正式方法结论。
-- [ ] G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY SOLO理论全文与迁移边界入口复核准备
+- [x] G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY SOLO理论全文与迁移边界入口复核准备
+  - 进度：新增 `02_literature/solo_fulltext_boundary_entry.md` 和 `02_literature/solo_fulltext_boundary_entry_v1.csv`，整理 `SOLO-001/SOLO-002` 的现有定位状态、全文缺口、P1缺口队列、材料包索引、回填门禁、当前安全句式、禁写边界、真实回填字段和下一QA任务。当前只完成入口准备；只能保留“SOLO启发的任务认知结构要求等级”边界句，不改写正文、不定稿参考文献表、不升级主张矩阵。
+- [ ] G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA 检查SOLO理论全文与迁移边界入口材料
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议

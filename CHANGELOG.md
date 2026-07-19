@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY SOLO理论全文与迁移边界入口
+
+- 新增 `02_literature/solo_fulltext_boundary_entry.md`，记录SOLO理论全文与迁移边界入口的性质声明、输入依据、当前结论、现有材料、全文缺口、安全句式、禁写边界、真实回填字段和下一最小任务；
+- 新增 `02_literature/solo_fulltext_boundary_entry_v1.csv`，建立20项结构化入口记录，覆盖 `SOLO-001/SOLO-002` 来源定位、访问状态、全文请求、`G2VE-03` 理论入口、`P1GAP-01/P1GAP-09` 缺口、`P1PKT-01/P1PKT-09` 材料包、`P1GATE-01/P1GATE-09` 回填门禁、当前安全句式、SOLO误用禁写边界、真实回填字段和下一动作；
+- 确认 `SOLO-001` 与 `SOLO-002` 已完成书目信息、题录或摘要层面定位，但合法全文、关键页码、层级定义、课程/评价应用语境、前结构层级取舍和试题认知要求迁移边界仍待真实回填；
+- 明确当前只能保留“SOLO启发的任务认知结构要求等级”边界句，不得把试题直接写成学生SOLO学习结果，不得补造等级定义页码、适用性证明或正式理论结论；
+- 本任务不改写论文正文，不修改 `references.bib`，不升级 `09_quality/claim_evidence_matrix.csv`，不补造SOLO页码、等级定义、专家意见、评分者结果或试题分析结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+
 ## 2026-07-19：G2VE-02-METH004-FINALCHECK-QA 内容分析一致性方法来源定稿前复核QA
 
 - 新增 `02_literature/meth004_intercoder_reliability_finalcheck_qa.md`，记录METH-004复核材料QA的性质声明、QA结论、已确认事项、仍不能声称内容、后续边界和下一最小任务；
