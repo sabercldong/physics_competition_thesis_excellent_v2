@@ -1,0 +1,41 @@
+﻿qa_id,check_area,check_item,evidence,result,release_status
+P0B1WRQA-01,输入文件,等待室说明存在,03_corpus/manual_review_p0_batch1_return_waiting_room_update.md 可定位,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-02,输入文件,等待室路线表存在,03_corpus/manual_review_p0_batch1_return_waiting_room_update_v1.csv 可定位,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-03,编码格式,路线表为UTF-8 BOM,文件开头包含 UTF-8 BOM,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-04,编码格式,路线表为LF换行,未发现 CRLF 或孤立 CR,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-05,字段结构,路线表字段完整,"route_id,route_group,workstream,current_status,evidence_path,allowed_action,must_not_do,release_status,unlock_condition,next_task_candidate",通过,不放行：等待室QA，未真实回填
+P0B1WRQA-06,行数编号,路线表共12行,P0B1WR-01 至 P0B1WR-12,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-07,行数编号,路线编号连续,12个编号连续且唯一,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-08,分类计数,必须等待真实回填5项,P0B1WR-01 至 P0B1WR-05,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-09,分类计数,可继续准备4项,P0B1WR-06 至 P0B1WR-09,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-10,分类计数,禁止推进3项,P0B1WR-10 至 P0B1WR-12,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-11,路径证据,证据路径可定位,12条 evidence_path 引用缺失0项,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-12,边界覆盖,真实回填副本接收必须等待,P0B1WR-01 标为必须等待真实回填,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-13,边界覆盖,38行校对字段填写必须等待,P0B1WR-02 标为必须等待真实回填,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-14,边界覆盖,结构与不可变字段检查必须等待,P0B1WR-03 标为必须等待真实回填,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-15,边界覆盖,整合QA和关闭候选必须等待,P0B1WR-04 标为必须等待真实回填,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-16,边界覆盖,正式评分者模板放行判断必须等待,P0B1WR-05 标为必须等待真实回填,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-17,可准备项,接收规则维护可继续准备,P0B1WR-06 标为可继续准备且不放行正式结果,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-18,可准备项,结构检查清单可继续准备,P0B1WR-07 标为可继续准备且不放行正式结果,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-19,可准备项,其他智能体任务卡可继续准备,P0B1WR-08 标为可继续准备且不放行正式结果,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-20,可准备项,正文和主张边界维护可继续准备,P0B1WR-09 标为可继续准备且不放行正式结果,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-21,禁止项,38个小批次销项禁止推进,P0B1WR-10 标为禁止推进且冻结,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-22,禁止项,正式编码与final_coding.csv禁止推进,P0B1WR-11 标为禁止推进且冻结,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-23,禁止项,第四章正式结果写作禁止推进,P0B1WR-12 标为禁止推进且冻结,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-24,放行状态,放行状态仅含冻结或不放行正式结果,未发现允许正式结果、已完成、已放行等状态,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-25,放行状态,必须等待项均冻结,5项必须等待真实回填 release_status 均为冻结,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-26,放行状态,禁止推进项均冻结,3项禁止推进 release_status 均为冻结,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-27,放行状态,可准备项不放行正式结果,4项可继续准备 release_status 均为不放行正式结果,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-28,目录状态,未创建真实回填目录,03_corpus/manual_review_returns/ 当前不存在,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-29,正式数据,未生成final_coding.csv,07_analysis/data/final_coding.csv 当前不存在,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-30,Markdown边界,说明包含性质声明,明确不创建真实回填目录、不填写校对字段、不关闭小批次,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-31,Markdown边界,说明包含三类任务边界,必须等待、可继续准备、禁止推进三类均存在,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-32,Markdown边界,说明包含路线看板,说明中指向结构化路线表和12项编号范围,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-33,Markdown边界,说明包含后续执行原则,说明真实回填收到后先接收登记和接收QA,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-34,越界检查,未声称真实回填已收到,未将等待室QA写成真实回填、人工校对或正式编码完成,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-35,越界检查,未声称专家/导师/教师/评分者意见,未把Codex或内部QA包装成真实外部意见,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-36,原始文件保护,未修改00_originals,本任务不触碰00_originals目录,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-37,正文保护,未修改论文正文,本任务不修改08_manuscript正文,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-38,主张矩阵保护,未修改主张证据矩阵,本任务不修改09_quality/claim_evidence_matrix.csv,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-39,下一步,下一最小任务指向任务卡准备,建议转入G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS,通过,不放行：等待室QA，未真实回填
+P0B1WRQA-40,总体结论,等待室更新通过QA,QA通过只证明等待室边界清楚，不释放正式结果,通过,不放行：等待室QA，未真实回填

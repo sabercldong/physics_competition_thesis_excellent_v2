@@ -583,4 +583,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check_qa.md` 和 `manual_review_p0_batch1_return_intake_ready_check_qa_v1.csv`，完成42项QA检查；确认接收准备表18项编号连续、路径缺失0项、CSV为UTF-8 BOM和LF换行，覆盖上游材料、接收规则、命名规则、校验值字段、真实回填未收到状态和冻结边界。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE 更新P0第一批真实回填等待室
   - 进度：新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update.md` 和 `manual_review_p0_batch1_return_waiting_room_update_v1.csv`，将P0第一批真实回填链条压缩为12条等待室路线；其中5项必须等待真实回填，4项可继续准备，3项禁止推进。当前仍不创建真实回填目录，不关闭38个小批次，不放行正式编码或论文结果。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE-QA 检查P0第一批真实回填等待室
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE-QA 检查P0第一批真实回填等待室
+  - 进度：新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update_qa.md` 和 `manual_review_p0_batch1_return_waiting_room_update_qa_v1.csv`，完成40项QA检查；确认等待室路线表12项编号连续、CSV为UTF-8 BOM和LF换行，5项必须等待真实回填、4项可继续准备、3项禁止推进，证据路径缺失0项，放行状态仅包含“冻结”和“不放行正式结果”。QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS 整理P0第一批逐题核对任务卡

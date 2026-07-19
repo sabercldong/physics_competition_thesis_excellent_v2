@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE-QA P0第一批回填等待室QA
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update_qa.md`，记录P0第一批真实回填等待室QA的性质声明、结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update_qa_v1.csv`，完成40项QA检查，覆盖输入文件、CSV编码换行、字段结构、行数编号、三类边界计数、证据路径、必须等待项、可准备项、禁止推进项、放行状态、目录状态、正式数据状态、Markdown边界和越界表述；
+- 确认等待室路线表12项编号连续，5项必须等待真实回填、4项可继续准备、3项禁止推进，证据路径缺失0项；
+- 确认当前未创建 `03_corpus/manual_review_returns/`，未生成 `07_analysis/data/final_coding.csv`；
+- 本任务不填写真实回填字段，不关闭38个小批次，不放行正式评分者模板、正式编码、正式统计、论文结果章或主张证据矩阵升级；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE P0第一批回填等待室更新
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update.md`，将P0第一批38个题目级小批次的真实回填链条整理为等待室说明；

@@ -317,6 +317,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK`：新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check.md` 和 `03_corpus/manual_review_p0_batch1_return_intake_ready_check_v1.csv`，完成18项接收准备检查；确认P0第一批空白回填模板、填写说明、交接包索引、索引QA、通用真实回填接收目录规范、接收登记模板和目录规则表均可定位。当前结论为“接收规则已具备，真实回填仍未收到，正式产出继续冻结”，不创建真实回填目录，不登记虚构回填副本，不关闭38个小批次。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INTAKE-READY-CHECK-QA`：新增 `03_corpus/manual_review_p0_batch1_return_intake_ready_check_qa.md` 和 `03_corpus/manual_review_p0_batch1_return_intake_ready_check_qa_v1.csv`，完成42项QA检查；确认接收准备表Markdown与CSV存在，CSV为UTF-8 BOM和LF换行，`P0B1INTAKE-01` 至 `P0B1INTAKE-18` 连续唯一，证据路径缺失0项，未创建 `03_corpus/manual_review_returns/`，接收登记模板仍为未收到状态。QA通过不等于真实回填收到、人工校对完成、正式编码放行或论文结果成立。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE`：新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update.md` 和 `03_corpus/manual_review_p0_batch1_return_waiting_room_update_v1.csv`，将P0第一批38个题目级小批次的真实回填链条更新为等待室看板；12条路线中，5项必须等待真实回填，4项可继续准备，3项禁止推进。当前仍未收到真实回填副本，不创建真实回填目录，不填写校对字段，不关闭小批次，不放行正式评分者模板、正式编码、`final_coding.csv` 或论文结果写作。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE-QA`：新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update_qa.md` 和 `03_corpus/manual_review_p0_batch1_return_waiting_room_update_qa_v1.csv`，完成40项QA检查；确认等待室路线表12项编号连续、CSV为UTF-8 BOM和LF换行，5项必须等待真实回填、4项可继续准备、3项禁止推进，证据路径缺失0项，放行状态仅包含“冻结”和“不放行正式结果”。当前未创建 `03_corpus/manual_review_returns/`，未生成 `07_analysis/data/final_coding.csv`；本QA不关闭人工校对项，不放行正式编码、正式统计或论文结果章。
 
 ## 关键阻塞项
 
@@ -331,4 +332,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE-QA`：检查P0第一批真实回填等待室是否覆盖三类任务边界、CSV编码换行、编号连续、引用路径和冻结状态；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS`：把P0第一批38个题目级小批次整理成其他智能体可直接执行的逐题核对任务卡；仍不代填真实校对结果，不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
