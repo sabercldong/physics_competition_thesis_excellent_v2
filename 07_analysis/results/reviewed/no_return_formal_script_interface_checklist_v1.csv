@@ -1,0 +1,23 @@
+﻿check_id,interface_area,check_item,source_or_target_path,required_interface,current_state,release_status,must_not_do
+FSI-01,前置门禁,人工校对销项,07_analysis/results/reviewed/prep30_gate_register.csv,GATE-01必须满足或形成保留风险裁定,154项人工校对未销项,阻塞,不得在GATE-01未处理前运行正式结果脚本
+FSI-02,前置门禁,P0/P1复核处理,07_analysis/results/reviewed/prep30_gate_register.csv,GATE-02/GATE-03必须满足或明确排除/保留,P0=3、P1 L4=49仍未满足,阻塞,不得把待核项带入正式统计且不说明
+FSI-03,输入文件,正式唯一分析表,07_analysis/data/final_coding.csv,必须由真实A/B编码和分歧裁决生成；每行为item_id x dimension裁决后记录,文件当前不存在,阻塞,不得手工创建空壳或用internal_coding_v1.csv替代
+FSI-04,必需字段,item_id,prep30_formal_data_dictionary.csv;build_descriptive_tables.py,非空；可回到item_index；用于计算total_items,字段规则已有准备版,不放行,不得出现无法回溯的item_id
+FSI-05,必需字段,dimension,prep30_formal_data_dictionary.csv;build_descriptive_tables.py,取值限定为模型建构/科学推理/科学论证/质疑创新,字段规则已有准备版,不放行,不得出现其他维度或空值
+FSI-06,必需字段,present,prep30_formal_data_dictionary.csv;build_descriptive_tables.py,正式描述脚本当前按present==1筛选；字段口径需与是/否规则统一,存在数值/中文口径不一致风险,需接口确认,不得在口径不一致时直接运行正式统计
+FSI-07,必需字段,level,prep30_formal_data_dictionary.csv;build_descriptive_tables.py,present为出现时应为L1-L4；未出现为未出现,字段规则已有准备版,不放行,不得把未出现记录计入等级分布
+FSI-08,必需字段,evidence,prep30_formal_data_dictionary.csv,非空且可定位到题干或参考解答；正式结果QA需抽查证据,字段规则已有准备版,不放行,不得缺证据生成正式结论
+FSI-09,输入字段补充,届次/年份/题号/模块/情境/表征/数学工具,03_corpus/item_index.csv,若做分届次、知识模块、情境、表征和数学工具比较，需要final_coding或联结表包含这些元数据,当前描述脚本只用item_id/dimension/present/level,需接口确认,不得在缺元数据时做分组比较
+FSI-10,脚本接口,描述统计脚本输入,07_analysis/scripts/build_descriptive_tables.py,固定读取07_analysis/data/final_coding.csv,脚本存在；正式输入不存在,阻塞,不得改指向internal_coding_v1.csv生成正式结果
+FSI-11,脚本接口,描述统计脚本输出目录,07_analysis/scripts/build_descriptive_tables.py,当前输出到07_analysis/results/generated/dimension_presence.csv和dimension_levels.csv,与prep30占位的reviewed/final_*.csv路径不完全一致,需接口确认,不得在输出路径未定时写入论文图表
+FSI-12,脚本接口,共现与分组比较输出,prep30_formal_output_placeholders.csv;prep30_final_figure_table_placeholders.csv,需要final_dimension_cooccurrence、final_group_comparisons等正式输出,现有build_descriptive_tables.py未生成共现和分组比较,阻塞,不得声称共现或分组比较已可复现
+FSI-13,一致性输入,真实A/B编码合并表,07_analysis/scripts/compute_reliability.py,需要item_id、coder、dimension、present、level；可支持rater_id/present_yes_no/level_if_present别名,脚本存在但无真实A/B输入,阻塞,不得用Codex模拟数据作为正式一致性
+FSI-14,一致性输出,一致性统计与分歧明细,07_analysis/scripts/compute_reliability.py,默认输出reliability_by_dimension.csv和reliability_disagreements.csv，可指定路径,正式输出尚未生成,阻塞,不得引用不存在的一致性统计
+FSI-15,输出表,维度总体分布表,prep30_formal_output_placeholders.csv;build_descriptive_tables.py,应记录dimension、items_present、total_items、proportion及生成脚本版本,正式输出缺失,阻塞,不得手工造比例
+FSI-16,输出表,等级分布表,build_descriptive_tables.py;prep30_final_figure_table_placeholders.csv,应记录dimension、level、count，并说明分母口径,正式输出缺失,阻塞,不得把内部等级分布写成正式发现
+FSI-17,输出表,维度共现表,prep30_formal_output_placeholders.csv,应基于final_coding裁决后存在性生成,脚本接口尚待补齐或确认,阻塞,不得用内部共现表替代
+FSI-18,输出表,分组比较表,prep30_final_figure_table_placeholders.csv,若比较届次/模块/情境/工具，需联结元数据并保留样本量,脚本接口尚待补齐或确认,阻塞,不得夸大八届数据趋势
+FSI-19,运行日志,正式运行日志,拟建：07_analysis/results/generated/formal_run_log.md,记录命令、时间、Python/pandas版本、输入哈希、输出路径、警告和异常,当前不存在,不放行,不得省略运行环境和输入版本
+FSI-20,QA门槛,正式输出复算QA,拟建：09_quality/formal_results_reproducibility_qa.md,逐表复算行数、字段、分母、百分比、缺失值、路径和正文引用一致性,当前不存在,不放行,不得把脚本成功运行等同于结果可写
+FSI-21,正文门禁,第四章写作解锁,08_manuscript/04_results.md;09_quality/claim_evidence_matrix.csv,需final_coding、正式输出表、QA报告、主张矩阵闭环后另开正文任务,当前冻结,冻结,不得在本任务改写第四章结果
+FSI-22,版本归档,复现包归档清单,07_analysis/results/reviewed/prep30_archive_manifest.csv,正式运行后补输入/脚本/输出/日志/QA的校验值和版本,当前为准备版,不放行,不得把准备版manifest当成最终归档

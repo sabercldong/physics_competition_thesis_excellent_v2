@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST 无真实回填条件下的正式脚本接口检查清单
+
+- 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist.md`，记录正式脚本接口检查清单的性质声明、当前判断、检查清单概况、已识别接口风险、当前可做/不可做、下一最小任务和输出边界；
+- 新增 `07_analysis/results/reviewed/no_return_formal_script_interface_checklist_v1.csv`，建立22项接口检查项，字段包括检查编号、接口区域、检查事项、来源或目标路径、接口要求、当前状态、放行状态和禁止事项；
+- 清单覆盖前置门禁、正式唯一分析表、`item_id`、`dimension`、`present`、`level`、`evidence`、分组元数据、描述统计输入输出、一致性输入输出、正式输出表、运行日志、正式输出QA、正文门禁和版本归档；
+- 识别 `present` 字段准备规则“是/否”与 `build_descriptive_tables.py` 当前 `present==1` 筛选之间的接口口径风险；
+- 识别 `build_descriptive_tables.py` 当前输出目录 `07_analysis/results/generated/` 与占位表中 `07_analysis/results/reviewed/final_*.csv` 的正式路径口径风险；
+- 识别当前描述统计脚本尚未生成正式共现表和分组比较表，后续需单独脚本接口QA；
+- 本任务不修改脚本，不运行正式统计，不创建 `final_coding.csv`，不生成正式表图，不修改论文正文、主张证据矩阵或参考文献表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-NO-RETURN-FORMAL-SCRIPT-INTERFACE-CHECKLIST-QA`。
+
 ## 2026-07-19：G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-GAP-QUEUE-QA 无真实回填条件下的复现包缺口队列QA
 
 - 新增 `07_analysis/results/reviewed/no_return_reproducibility_package_gap_queue_qa.md`，记录复现包缺口队列QA的性质声明、检查结论、检查范围、已确认事项、仍不能声称内容、保留风险、下一最小任务和输出边界；
