@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS P0第一批回填填写说明
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_instructions.md`，为真实校对者填写 `manual_review_p0_batch1_return_template_v1.csv` 提供字段级说明；
+- 明确填写前必须核对 `source_files`、`paper_pages`、`solution_pages`、已有V1转写稿或公式核对表，以及 `affected_item_ids` 对应的分析单元记录；
+- 明确继承字段不得修改，若发现继承字段错误，应在 `remaining_uncertainty` 与 `files_to_update_after_return` 中记录，不能直接覆盖来源字段；
+- 为 `reviewer_name`、`review_date`、`source_pages_checked`、`ocr_decision`、`formula_decision`、`text_revision_needed`、`formula_revision_needed`、`revision_locations`、`evidence_note`、`remaining_uncertainty`、`allow_formal_rater_template`、`blocking_reason_if_not_allowed`、`files_to_update_after_return`、`return_file_path`、`return_checksum`、`integration_status` 和 `release_status` 给出必填性和允许写法；
+- 明确OCR决定、公式决定和正式评分者模板放行判断的标准；只要OCR或公式为“需修订”或“继续待核”，不得填写“允许”进入正式评分者模板；
+- 本任务不填写真实校对结果，不关闭人工校对项，不修改题文，不生成正式编码、正式统计、论文正文、`final_coding.csv`、评分者数据、专家意见、问卷或课堂证据；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE-QA P0第一批回填模板QA
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_template_qa.md`，记录P0第一批真实人工回填模板QA的性质声明、QA结论、已确认事项、届次覆盖复核、仍不能声称内容和下一最小任务；
