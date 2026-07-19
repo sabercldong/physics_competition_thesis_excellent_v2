@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY-QA 文献理论核验入口QA
+
+- 新增 `02_literature/literature_theory_verification_entry_qa.md`，记录文献理论核验入口QA的性质声明、QA结论、已确认事项、仍不能声称内容、下一最小任务和输出边界；
+- 新增 `02_literature/literature_theory_verification_entry_qa_v1.csv`，完成34项检查，覆盖输入文件、CSV格式、字段结构、编号、P0/P1计数、执行顺序、P0/P1来源覆盖、RCQ/P0REF/P1GAP映射、证据路径、报告边界、禁写边界、放行状态、修改边界和后续任务；
+- 确认入口CSV为UTF-8 BOM和LF换行，`G2VE-01` 至 `G2VE-12` 连续唯一；
+- 确认P0六项、P1六项，执行顺序为优先执行4项、第二批执行5项、第三批执行2项、暂缓执行1项；
+- 确认所有 `evidence_entry_files` 均可定位，入口报告明确不获取新全文、不改写正文、不修改主张矩阵、不新增正式参考文献；
+- 本QA不获取新全文，不补造页码、图表编号或文献结论，不修改论文正文、主张证据矩阵、参考文献表或脚本，不放行正式结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G2VE-01-CS-STANDARD-FINALCHECK`。
+
 ## 2026-07-19：G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY 文献理论核验入口
 
 - 新增 `02_literature/literature_theory_verification_entry.md`，记录文献理论核验入口的性质声明、输入依据、总体判断、优先执行项、第二批执行项、第三批与暂缓项、禁写边界、下一最小任务和输出边界；

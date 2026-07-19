@@ -298,6 +298,7 @@
 - 完成 `G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE-QA`：新增 `03_corpus/return_intake_waiting_room_update_qa.md` 和 `03_corpus/return_intake_waiting_room_update_qa_v1.csv`，完成34项QA检查；确认等待室更新说明和路线表覆盖真实回填等待、正式结果等待、可安全推进和禁止推进四类边界，14项 `RIWR-01` 至 `RIWR-14` 连续唯一，放行状态仅包含“冻结”和“不放行正式结果”，14项证据路径均可定位。当前四个候选真实回填目录仍不存在，`final_coding.csv` 和四个正式结果表仍未生成，本QA不关闭人工校对项、不放行正式编码、正式统计、结果章写作或主张矩阵升级；
 - 完成 `G1-07-SAFE-PREP-NEXT-ROUTE-DECISION`：新增 `09_quality/safe_prep_next_route_decision.md` 和 `09_quality/safe_prep_next_route_decision_v1.csv`，在无真实回填条件下比较5条安全准备路线，并选中“文献理论核验与引用边界补强”作为下一步；理由是该路线不依赖真实人工终核回填，同时能直接支撑第一章问题提出、第二章理论框架、第三章方法边界和后续参考文献定稿。真实回填接收协议维护、学校格式登记、正式脚本接口准备和正文禁写边界维护暂缓或作为后续门禁调用；本任务不改写正文、不修改主张证据矩阵、不放行正式编码、正式统计或论文结果章；
 - 完成 `G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY`：新增 `02_literature/literature_theory_verification_entry.md` 和 `02_literature/literature_theory_verification_entry_v1.csv`，将现有P0定稿前复核单、P1全文缺口队列、参考文献核验表、文献矩阵和主张队列整理为12项下一批核验入口；优先执行课程标准概念依据定稿前复核、内容分析一致性方法已读来源复核、SOLO理论全文与迁移边界入口、内容分析与编码一致性方法全文补强入口。该任务只建立核验入口，不获取新全文、不改写正文、不修改主张证据矩阵、不新增正式参考文献、不放行正式结果；
+- 完成 `G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY-QA`：新增 `02_literature/literature_theory_verification_entry_qa.md` 和 `02_literature/literature_theory_verification_entry_qa_v1.csv`，完成34项QA检查；确认文献理论入口表12项编号连续，P0六项、P1六项，优先执行4项、第二批执行5项、第三批执行2项、暂缓执行1项，P0/P1来源和上游队列映射完整，所有证据入口路径可定位。QA通过仅放行下一步核验任务，不放行正文定稿、正式参考文献表、主张矩阵升级或正式结果；
 
 ## 关键阻塞项
 
@@ -312,4 +313,4 @@
 
 ## 下一任务
 
-`G2-01-LITERATURE-THEORY-VERIFICATION-ENTRY-QA`：检查文献理论核验入口表是否覆盖P0/P1来源、编号连续、优先级合理、证据路径可定位、禁写边界完整，并确认未改写正文、未修改主张矩阵、未新增正式参考文献。
+`G2VE-01-CS-STANDARD-FINALCHECK`：对课程标准概念依据做定稿前复核，确认官方版本、章节或页码表达、学校格式候选写法和可支持语句清单；本任务仍不改写正文、不定稿参考文献表、不升级主张矩阵。
