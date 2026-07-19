@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS P0第一批逐题核对任务卡
+
+- 新增 `03_corpus/manual_review_p0_batch1_agent_task_cards.md`，说明P0第一批逐题核对任务卡的性质、覆盖范围、使用方法、单题任务索引、最低交付和禁止事项；
+- 新增 `03_corpus/manual_review_p0_batch1_agent_task_cards_v1.csv`，建立38张结构化任务卡，覆盖 `P0B1CARD-01` 至 `P0B1CARD-38`，逐卡挂接 `P0B1-01` 至 `P0B1-38` 与 `P0B1RET-01` 至 `P0B1RET-38`；
+- 任务卡覆盖第37届8题、第38届8题、第40届8题、第41届7题和第42届7题，继承题面页、答案页、待核问题、受影响分析单元、题目文本、V1转写稿和公式核对表路径；
+- 每张任务卡均明确需核对题面OCR、公式与特殊符号、单位、上下标、图表引用、答案页关键公式和小问边界，并要求真实回填校对人、日期、决定、修订位置、证据摘记、剩余疑点和正式评分者模板放行判断；
+- 全部任务卡保持“待领取：未真实回填”和“不放行：任务卡，未真实销项”；
+- 本任务不填写真实校对字段，不关闭38个小批次，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-AGENT-TASK-CARDS-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-WAITING-ROOM-UPDATE-QA P0第一批回填等待室QA
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_waiting_room_update_qa.md`，记录P0第一批真实回填等待室QA的性质声明、结论、仍不能声称内容和下一最小任务；
