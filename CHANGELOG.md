@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA P0第一批小批次入口QA
+
+- 新增 `03_corpus/manual_review_p0_batch1_item_batches_qa.md`，记录P0第一批小批次入口QA的性质声明、QA结论、已确认事项、届次覆盖复核、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch1_item_batches_qa_v1.csv`，完成29项QA检查，覆盖输入文件、CSV编码换行、字段结构、小批次数、来源问题数、编号连续性、每批2条问题、OCR/公式合并规则、来源ID映射、届次覆盖、来源文件路径、放行状态和禁写边界；
+- 确认入口CSV为UTF-8 BOM和LF换行，38个小批次、76条来源待核项、`P0B1-01` 至 `P0B1-38` 连续编号均通过检查；
+- 确认每个小批次均包含1条题干OCR校对项和1条公式与特殊符号校对项，来源文件路径缺失0项；
+- 确认38项均保持“不放行：小批次入口，未真实销项”，QA通过不等于人工校对完成、正式编码放行、正式统计成立或 `final_coding.csv` 生成；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1 P0第一批小批次入口
 
 - 新增 `03_corpus/manual_review_p0_batch1_item_batches.md`，说明P0第一批高风险OCR、公式与特殊符号项的小批次拆分性质、总体结果、届次覆盖、处理目标、回填要求和禁写边界；

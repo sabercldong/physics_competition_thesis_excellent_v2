@@ -563,4 +563,6 @@
   - 进度：新增 `03_corpus/manual_review_priority_queue.md` 和 `manual_review_priority_queue_v1.csv`，将154条人工校对项排序为P0直接影响正式编码98条、P1影响图件理解与案例/附录使用48条、P2影响分值统计8条；推荐五个批次处理，全部保持“不放行：仅排序，未真实销项”。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1 准备第一批高风险OCR、公式与特殊符号小批次核对入口
   - 进度：新增 `03_corpus/manual_review_p0_batch1_item_batches.md` 和 `manual_review_p0_batch1_item_batches_v1.csv`，将第一批76条高风险OCR/公式/特殊符号项合并为38个题目级小批次，覆盖第37、38、40、41、42届；每个小批次均保留原始队列ID、问题ID、题面页、答案页、受影响分析单元和禁写边界，全部不放行。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA 检查P0第一批小批次入口
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA 检查P0第一批小批次入口
+  - 进度：新增 `03_corpus/manual_review_p0_batch1_item_batches_qa.md` 和 `manual_review_p0_batch1_item_batches_qa_v1.csv`，完成29项QA检查；确认38个小批次、76条来源覆盖、编号连续、来源文件路径缺失0项和不放行边界均通过。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE 生成P0第一批真实人工回填模板

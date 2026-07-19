@@ -307,6 +307,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-ITEM-PROCESSING-GUIDE`：新增 `03_corpus/manual_item_processing_guide.md`，把“人工处理试题”的具体含义整理为项目内操作说明；明确人工处理不是单纯做答案，而是核对题面、参考解答、图件、分值、小问边界、元数据和编码证据，并说明219个分析单元来自当前题面/小问结构整理，不等于219道题或正式结果。该说明继续保留禁写边界：未完成真实终核、双评分者独立编码、一致性检验、分歧裁决和 `final_coding.csv` 前，不放行正式统计或结果章结论。
 - 完成 `G1-07-FOLLOWUP-MANUAL-QUEUE`：新增 `03_corpus/manual_review_priority_queue.md` 和 `03_corpus/manual_review_priority_queue_v1.csv`，将154条人工校对项按正式编码影响程度重新排序；其中P0直接影响正式编码98条，P1影响图件理解与案例/附录使用48条，P2影响分值统计8条。推荐批次为第一批高风险OCR/公式/特殊符号76条、第二批中风险公式/特殊符号22条、第三批高风险图件与第42届第3题解答放大图边界39条、第四批中风险图件9条、第五批第35届分值边界8条；全部保持“不放行：仅排序，未真实销项”。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1`：新增 `03_corpus/manual_review_p0_batch1_item_batches.md` 和 `03_corpus/manual_review_p0_batch1_item_batches_v1.csv`，将第一批76条高风险OCR、公式与特殊符号待核项合并为38个题目级小批次；每个小批次均包含1条题干OCR项和1条公式/特殊符号项，覆盖第37届8题、第38届8题、第40届8题、第41届7题和第42届7题。该入口只用于后续逐题核对准备，全部保持“不放行：小批次入口，未真实销项”。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA`：新增 `03_corpus/manual_review_p0_batch1_item_batches_qa.md` 和 `03_corpus/manual_review_p0_batch1_item_batches_qa_v1.csv`，完成29项QA检查；确认P0第一批入口CSV为UTF-8 BOM和LF换行，38个小批次、76条来源待核项、`P0B1-01` 至 `P0B1-38` 连续编号、每批1条OCR加1条公式/特殊符号、来源映射和来源文件路径均通过检查。38项仍全部保持“不放行：小批次入口，未真实销项”。
 
 ## 关键阻塞项
 
@@ -321,4 +322,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-QA`：检查P0第一批小批次入口表的CSV编码、编号连续性、76条来源覆盖、38个题目级小批次合并规则、来源文件路径和禁写边界；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-TEMPLATE`：为38个题目级小批次生成真实人工回填模板，预留校对人、校对日期、OCR决定、公式决定、修订位置、证据摘记、正式评分者模板放行判断和阻断原因字段；仍不关闭人工校对项，不放行正式编码。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
