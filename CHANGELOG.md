@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-ROUTE-B-METHOD-MATERIAL-INDEX-QA 路线B方法章素材索引QA
+
+- 新增 `04_framework/route_b_method_material_index_qa.md`，记录路线B方法章素材索引QA的性质声明、487项检查结论、检查分布、已确认事项、仍不能声称内容、下一最小任务和输出边界；
+- 新增 `04_framework/route_b_method_material_index_qa_v1.csv`，逐项检查输入存在性、CSV编码换行、字段结构、行数编号、分类计数、字段完整性、来源路径、覆盖范围、逐项边界、分类边界、路线B继承、报告文本、防误放行、台账一致性、目录边界和输出边界；
+- 确认索引CSV为22行，`RBMI-01` 至 `RBMI-22` 连续唯一，分类计数为“可写入方法章”10项、“边界可写”9项、“占位/禁写”3项；
+- 确认22项来源路径均可定位，路径缺失0项；
+- 确认索引通过明确映射覆盖路线B允许继续准备、仅内部准备、条件冻结和直接禁止的关键边界；
+- 确认高风险词只出现在禁止或边界语境中，未写成正式结果、专家审查、评分者一致性或教学效果结论；
+- 本QA不修改 `08_manuscript/` 正文，不修改 `00_originals/`、`09_quality/claim_evidence_matrix.csv` 或 `02_literature/references.bib`，不创建 `03_corpus/manual_review_returns/`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-METHOD-PATCH-PLAN`。
+
 ## 2026-07-19：G1-07-ROUTE-B-METHOD-MATERIAL-INDEX 路线B方法章可写素材索引
 
 - 新增 `04_framework/route_b_method_material_index.md`，记录路线B方法章素材索引的性质声明、总体结论、索引统计、可写入方法章材料、边界可写材料、只能占位/禁写材料、方法章写作边界、下一最小任务和输出边界；
