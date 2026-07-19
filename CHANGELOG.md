@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX P0第一批回填交接包索引
+
+- 新增 `03_corpus/manual_review_p0_batch1_return_packet_index.md`，汇总P0第一批小批次入口、入口QA、回填模板、模板QA、填写说明和说明QA的交接顺序、文件清单、后续流程和禁写边界；
+- 新增 `03_corpus/manual_review_p0_batch1_return_packet_index_v1.csv`，结构化登记6类材料、11个文件、用途、依赖、允许使用方式、禁止使用方式、下一动作和放行状态；
+- 确认该交接包只用于后续真实校对回填，不代表P0第一批真实人工校对已经发生；
+- 确认当前所有材料仍不得用于正式编码、正式统计、论文结果章、典型案例结论、评分者一致性检验或 `final_coding.csv`；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-PACKET-INDEX-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH1-RETURN-INSTRUCTIONS-QA P0第一批回填填写说明QA
 
 - 新增 `03_corpus/manual_review_p0_batch1_return_instructions_qa.md`，记录P0第一批回填填写说明QA的性质声明、QA结论、已确认事项、结构化QA表、仍不能声称内容和下一最小任务；
