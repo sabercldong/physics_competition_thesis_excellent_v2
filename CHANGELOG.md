@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE-QA 路线B第三章补丁应用门禁QA
+
+- 新增 `04_framework/route_b_method_patch_application_gate_qa.md`，记录第三章补丁应用门禁QA的性质声明、检查结论、检查分布、已确认事项、后续智能体可执行结论、仍不能声称内容、保留风险、下一最小任务和输出边界；
+- 新增 `04_framework/route_b_method_patch_application_gate_qa_v1.csv`，完成355项检查，覆盖输入存在性、CSV编码换行、字段结构、行数编号、字段完整性、正文保护、缺口覆盖、门禁边界、来源路径、报告文本和提交边界；
+- 确认门禁CSV为UTF-8 BOM和LF换行，`RBMAG-01` 至 `RBMAG-13` 连续唯一，并逐行映射 `RBMP-01` 至 `RBMP-13`；
+- 确认13项全部保持 `apply_to_manuscript_now=否`，当前可直接应用到论文正文0项；
+- 确认 `RBMP-13/RBMAG-13` 只作为Git隔离和精确暂存操作规则执行，不作为论文正文句子应用；
+- 明确本QA不修改第三章正文，不补齐真实材料，不创建真实回填目录，不放行正式编码、正式统计、结果章或教学效果结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-ROUTE-B-METHOD-PATCH-WAITING-ROOM-CLOSEOUT`。
+
 ## 2026-07-19：G1-07-ROUTE-B-METHOD-PATCH-APPLICATION-GATE 路线B第三章补丁应用门禁
 
 - 新增 `04_framework/route_b_method_patch_application_gate.md`，记录路线B第三章补丁应用门禁的性质声明、总判断、门禁统计、13项门禁总表、对其他智能体的执行说明、当前不得放行正文内容、下一最小任务和输出边界；
