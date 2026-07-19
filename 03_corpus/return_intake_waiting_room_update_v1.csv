@@ -1,0 +1,15 @@
+﻿route_id,route_group,workstream,current_status,evidence_path,allowed_action,must_not_do,release_status,unlock_condition,next_task_candidate
+RIWR-01,真实回填等待,人工终核回填副本,等待真实材料,03_corpus/manual_review_return_intake_recheck.md,等待A/B/C/D真实回填文件进入接收入口,不得由Codex填写真实校对人、日期或决定,冻结,收到真实回填副本并完成接收QA,G1-07-REAL-RETURN-INTEGRATION-QA
+RIWR-02,真实回填等待,A组76项OCR/公式终核,等待真实材料,03_corpus/manual_review_a_closure_packet_v1.csv,等待首批38个材料包真实回填,不得关闭A组问题或放行正式编码,冻结,A组真实回填字段完整并通过整合QA,G1-07-REAL-P1-INTEGRATION-QA
+RIWR-03,真实回填等待,B组22项公式终核,等待真实材料,03_corpus/manual_review_b_closure_packet_v1.csv,等待B组真实公式终核回填,不得写B组公式已终核,冻结,B组真实回填字段完整并通过整合QA,G1-07-REMAINING-B-INTEGRATION-QA
+RIWR-04,真实回填等待,C组47项图件终核,等待真实材料,03_corpus/manual_review_c_closure_packet_v1.csv,等待图件可用性、重绘决定和最终证据位置,不得把候选图写成论文定稿图,冻结,C组真实回填字段完整并通过整合QA,G1-07-REMAINING-C-INTEGRATION-QA
+RIWR-05,真实回填等待,D组9项分值/附属图边界,等待真实材料,03_corpus/manual_review_d_closure_packet_v1.csv,等待正式分值来源或附属图边界确认,不得写第35届分值统计或第42届附属图边界已确认,冻结,D组真实回填字段完整并通过整合QA,G1-07-REMAINING-D-INTEGRATION-QA
+RIWR-06,正式结果等待,正式编码与final_coding.csv,等待真实材料,03_corpus/manual_review_return_intake_recheck.md,等待人工终核、真实A/B编码、一致性和裁决；当前final_coding.csv不存在,不得复制内部编码为final_coding.csv,冻结,裁决后的唯一正式分析表生成并通过QA,G4-FORMAL-CODING-INTAKE
+RIWR-07,正式结果等待,第四章正式结果表,等待真实材料,07_analysis/results/reviewed/no_return_formal_script_interface_closeout.md,等待final_coding.csv和正式脚本运行；当前正式结果表不存在,不得写百分比、趋势、共现、显著性或效应量,冻结,正式结果表图生成并通过复现QA,G5-FORMAL-RESULTS-RUN
+RIWR-08,可安全推进,接收协议维护,可继续推进,03_corpus/manual_review_return_integration_protocol.md,可维护接收、隔离、冲突分级和整合QA流程,不得填真实回填字段,不放行正式结果,不需要真实回填，但不能改变真实状态,G1-07-RETURN-INTAKE-PROTOCOL-REFINE
+RIWR-09,可安全推进,文献与理论核验,可继续推进,02_literature/,可继续合法全文获取、阅读摘记、主张边界核验,不得把未读文献写成已读或正式综述结论,不放行正式结果,仅产出文献证据或缺口登记,G2-LITERATURE-NEXT
+RIWR-10,可安全推进,学校格式与提交规范,可继续推进,01_positioning/school_requirements_register.csv,可继续登记学校模板、格式、查重、AI披露和伦理要求,不得冒充已获学校正式文件,不放行正式结果,收到或核验学校规范,G0-03-SCHOOL-REQUIREMENTS-UPDATE
+RIWR-11,可安全推进,正式脚本接口准备,可继续推进,07_analysis/results/reviewed/no_return_formal_script_interface_closeout.md,可维护脚本需求、字段口径和QA清单,不得运行内部数据冒充正式结果,不放行正式结果,另开脚本修订任务且不生成正式结果,G5-SCRIPT-INTERFACE-PREP
+RIWR-12,可安全推进,正文边界维护,可继续推进,09_quality/g1_07_no_true_review_manuscript_boundary_map.md,可维护禁写句、占位和证据边界,不得写正式结果、专家结论、教师验证或课堂效果,不放行正式结果,仅做边界说明或占位修订,G8-BOUNDARY-MAINTENANCE
+RIWR-13,禁止推进,主张矩阵升级,禁止,09_quality/claim_evidence_matrix.csv,当前不能基于无回填状态升级证据等级,不得把内部QA升级为E3/E4或真实审查,冻结,真实材料和正式输出通过QA后另开任务,G6-CLAIM-MATRIX-AFTER-RESULTS
+RIWR-14,禁止推进,论文结果章正式写作,禁止,08_manuscript/04_results.md,当前只能保留边界和占位,不得写正式分布、共现、趋势、显著性、p值、效应量,冻结,正式结果表图通过复现QA后另开任务,G8-RESULTS-WRITING-AFTER-QA

@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-19：G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE 真实回填等待室更新
+
+- 新增 `03_corpus/return_intake_waiting_room_update.md`，记录真实回填等待室更新的性质声明、当前判断、三类任务边界、路线看板、后续执行原则、下一最小任务和输出边界；
+- 新增 `03_corpus/return_intake_waiting_room_update_v1.csv`，建立14项等待室路线，字段覆盖路线编号、路线组、工作流、当前状态、证据路径、允许动作、禁止事项、放行状态、解锁条件和下一候选任务；
+- 将 `RIWR-01` 至 `RIWR-07` 标记为必须等待真实回填或正式结果，继续冻结人工终核、正式编码、`final_coding.csv` 和第四章正式结果；
+- 将 `RIWR-08` 至 `RIWR-12` 标记为可安全推进的低风险准备，范围限于接收协议、文献理论、学校格式、脚本接口和正文边界维护；
+- 将 `RIWR-13` 至 `RIWR-14` 标记为禁止推进，继续冻结主张矩阵升级和结果章正式写作；
+- 本任务不创建真实回填目录，不填写真实校对字段，不关闭人工校对项，不生成正式结果，不修改论文正文、主张证据矩阵或参考文献表；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务调整为 `G1-07-RETURN-INTAKE-WAITING-ROOM-UPDATE-QA`。
+
 ## 2026-07-19：G1-07-MANUAL-RETURN-INTAKE-RECHECK-QA 真实人工终核回填接收入口复查QA
 
 - 新增 `03_corpus/manual_review_return_intake_recheck_qa.md`，记录真实回填接收入口复查QA的性质声明、QA结论、已确认事项、仍不能声称内容、下一最小任务和输出边界；
