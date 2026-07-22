@@ -366,4 +366,6 @@
 
 - 完成 `G1-07-NO-RETURN-CORPUS-PATH-QA`：新增 `03_corpus/manual_review_no_return_corpus_path_qa.md` 和 `manual_review_no_return_corpus_path_qa_v1.csv`，逐条审计154项人工校对入口。154项题目整理文本、题面页和答案页字段均可定位；A/B/C/D回填包共154行与清单一一对应且登记路径均存在。清单直接证据路径为67项，另87项通过回填包反向定位；154项真实校对人和日期仍均为空，故路径可达不放行真实人工终核、正式编码、统计或论文结果。
 
-`G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX`：为87项清单未直连文件路径的条目建立只读侧车索引，逐项指向A/B/C/D回填包和已存在证据入口，减少人工领取时的跳转成本。不得修改原清单、题文或原始PDF，不填写真实终核字段，不放行正式编码。若合法SOLO全文先出现，则优先转入对应真实全文接收检查。
+- 完成 `G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX`：新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index.md` 和 `manual_review_no_return_corpus_path_linkage_index_v1.csv`，为87项清单未直连路径建立只读映射。索引覆盖A组76项、B组11项，OCR38项、公式/特殊符号49项；每项均能指向题目整理文本、页码、对应回填包、主核对入口和页面证据路径。原清单未修改，87项继续待真实人工终核且不放行。
+
+`G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX-QA`：检查87项编号、A/B组覆盖、题目文本/主入口/页面路径可达、原清单未被修改和不放行边界。若任一批真实人工回填副本出现，则优先转入对应批次真实回填接收检查。
