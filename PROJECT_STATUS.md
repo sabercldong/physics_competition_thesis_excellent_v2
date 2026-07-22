@@ -356,4 +356,6 @@
 
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION`：新增 `03_corpus/manual_review_p0_batch4_route_decision.md` 和 `manual_review_p0_batch4_route_decision_v1.csv`，在P0第一至第三批已交接且等待登记、真实回填仍未收到的条件下完成12条安全路线判断。真实接收、正式评分者编码、正式统计和论文图件定稿继续冻结；可安全推进语料路径QA、候选图件与分值缺口索引、评分者交接包QA、复现结构、正文门禁和SOLO全文边界核验。当前 `03_corpus/manual_review_returns/` 与 `07_analysis/data/final_coding.csv` 均不存在。
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA`：检查第四批路线判断的输入、12条编号、允许输出、禁止输出、触发切换、冻结边界和台账一致性。QA通过后，若真实回填仍未出现，优先进入 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`；若收到任一批真实回填副本，则优先转入对应批次真实回填接收检查。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA`：新增 `03_corpus/manual_review_p0_batch4_route_decision_qa.md` 和 `manual_review_p0_batch4_route_decision_qa_v1.csv`，完成31项QA检查；确认12条路线编号连续、CSV为UTF-8 BOM和LF、前三批等待QA（30、42、39项）、第三批交接链QA（43项）、无回填队列（14项）与SOLO入口材料均可定位，真实回填目录与 `final_coding.csv` 仍不存在。QA通过只表示安全路线判断可靠，不放行人工校对、正式评分者编码、统计、论文图件或论文结果。
+
+`G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`：在真实回填仍未出现的条件下，优先检查SOLO理论全文与迁移边界入口材料的结构、20项登记、回填字段、可支持与禁写边界，以及与项目台账的一致性；不得以题录、摘要或内部推断替代合法全文阅读与关键页码核验。若收到任一批真实回填副本，则优先转入对应批次真实回填接收检查。

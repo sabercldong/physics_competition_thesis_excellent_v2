@@ -1,0 +1,32 @@
+﻿qa_id,check_area,check_item,evidence,result,risk_if_failed,release_boundary
+P0B4ROUTEQA-01,输入存在性,路线判断Markdown存在,03_corpus/manual_review_p0_batch4_route_decision.md可定位,通过,无法审查路线判断依据,不放行：QA不代表真实回填或正式结果
+P0B4ROUTEQA-02,输入存在性,路线判断CSV存在,03_corpus/manual_review_p0_batch4_route_decision_v1.csv可定位,通过,无法结构化检查路线边界,不放行：QA不代表真实回填或正式结果
+P0B4ROUTEQA-03,CSV格式,CSV为UTF-8 BOM,文件字节以EF BB BF开头,通过,中文字段可能出现兼容性问题,不放行：仅确认文件格式
+P0B4ROUTEQA-04,CSV格式,CSV仅使用LF换行,文件未发现CR字节,通过,跨工具读取可能产生行数歧义,不放行：仅确认文件格式
+P0B4ROUTEQA-05,字段结构,11个字段完整,route_id至next_task共11字段,通过,路线信息可能缺失,不放行：字段齐全不等于证据完成
+P0B4ROUTEQA-06,路线规模,路线总数为12,CSV数据行数为12,通过,路线覆盖范围不透明,不放行：路线数量不等于问题关闭
+P0B4ROUTEQA-07,编号连续性,路线ID连续唯一,P0B4ROUTE-01至P0B4ROUTE-12连续唯一,通过,引用或调度可能错位,不放行：编号正确不等于人工完成
+P0B4ROUTEQA-08,上游等待QA,第一批等待QA可定位,manual_review_p0_batch1_return_waiting_qa_v1.csv共30项,通过,路线总览缺少第一批依据,不放行：上游QA不等于真实回填
+P0B4ROUTEQA-09,上游等待QA,第二批等待QA可定位,manual_review_p0_batch2_return_waiting_qa_v1.csv共42项,通过,路线总览缺少第二批依据,不放行：上游QA不等于真实回填
+P0B4ROUTEQA-10,上游等待QA,第三批等待QA可定位,manual_review_p0_batch3_return_waiting_qa_v1.csv共39项,通过,路线总览缺少第三批依据,不放行：上游QA不等于真实回填
+P0B4ROUTEQA-11,上游交接链,第三批交接链QA可定位,manual_review_p0_batch3_handoff_closeout_qa_v1.csv共43项,通过,图件路线缺少交接链依据,不放行：交接链存在不等于图件销项
+P0B4ROUTEQA-12,上游队列,无回填工作队列可定位,no_return_material_queue_v1.csv共14项,通过,安全路线无法追溯,不放行：队列不放行正式工作
+P0B4ROUTEQA-13,真实回填状态,真实回填目录不存在,03_corpus/manual_review_returns不存在,通过,可能错误启动真实接收流程,冻结：不得创建伪回填或填写真实字段
+P0B4ROUTEQA-14,正式数据状态,final_coding.csv不存在,07_analysis/data/final_coding.csv不存在,通过,可能错误启动正式统计,冻结：不得生成或声称正式编码数据
+P0B4ROUTEQA-15,冻结路线,真实回填接收路线保持冻结,P0B4ROUTE-02 release_status为冻结,通过,可能伪造接收记录,冻结：仅等待真实副本
+P0B4ROUTEQA-16,冻结路线,正式评分者编码路线保持冻结,P0B4ROUTE-06 release_status为冻结,通过,可能误写真实独立编码,冻结：不得生成A/B正式编码
+P0B4ROUTEQA-17,冻结路线,统计与图件定稿路线保持冻结,P0B4ROUTE-07 release_status为冻结,通过,可能产出结果章或定稿图件,冻结：不得进入正式统计或结果写作
+P0B4ROUTEQA-18,可开展路线,语料路径QA有明确边界,P0B4ROUTE-03允许断链清单且禁止人工终核表述,通过,路径检查可能被误作终核,不放行：仅内部准备
+P0B4ROUTEQA-19,可开展路线,C组图件索引有明确边界,P0B4ROUTE-04禁止候选图作为最终图,通过,候选图可能误入论文,不放行：等待真实图件回填
+P0B4ROUTEQA-20,可开展路线,D组缺口请求有明确边界,P0B4ROUTE-05禁止第35届分值统计与SOLFIG定稿,通过,缺失信息可能被补造,不放行：等待原卷说明或终核
+P0B4ROUTEQA-21,可开展路线,评分者交接QA有明确边界,P0B4ROUTE-09禁止称手册冻结或一致性完成,通过,内部包可能误作正式验证,不放行：仅交接包检查
+P0B4ROUTEQA-22,可开展路线,复现结构有明确边界,P0B4ROUTE-10禁止发布内部候选数据,通过,内部数据可能被误用,不放行：等待正式裁决数据
+P0B4ROUTEQA-23,可开展路线,正文门禁有明确边界,P0B4ROUTE-11禁止升级主张或写研究发现,通过,正文可能超出证据,不放行：仅维护占位与缺口
+P0B4ROUTEQA-24,文献路线,SOLO入口Markdown存在,02_literature/solo_fulltext_boundary_entry.md可定位,通过,理论路线无可读入口,不放行：入口不等于全文阅读
+P0B4ROUTEQA-25,文献路线,SOLO入口CSV存在且有20项,solo_fulltext_boundary_entry_v1.csv共20项,通过,理论回填状态不可追踪,不放行：不得用题录替代阅读全文
+P0B4ROUTEQA-26,文献路线,SOLO路线下一任务一致,P0B4ROUTE-08与台账均指向G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA,通过,并行路线可能错位,不放行：不升级理论主张
+P0B4ROUTEQA-27,切换条件,真实回填触发条件存在,12条路线均含trigger_to_switch字段且内容非空,通过,收到材料后可能继续错误等待,不放行：接收后仍需整合前QA
+P0B4ROUTEQA-28,释放边界,12条路线均不放行或冻结,12条release_status均含不放行或冻结,通过,路线可能越界放行,不放行：不得进入正式结果
+P0B4ROUTEQA-29,禁止输出,12条路线均注明阻断输出,12条blocked_output均非空,通过,准备工作可能被误作成果,不放行：禁止事项持续有效
+P0B4ROUTEQA-30,台账一致性,PROJECT_STATUS下一任务正确,包含G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA,通过,项目调度可能失真,不放行：台账同步不等于完成
+P0B4ROUTEQA-31,台账一致性,TASKS下一任务正确,包含G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA,通过,项目调度可能失真,不放行：台账同步不等于完成
