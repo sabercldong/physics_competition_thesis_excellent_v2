@@ -611,4 +611,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch2_handoff_closeout_qa.md` 和 `manual_review_p0_batch2_handoff_closeout_qa_v1.csv`，完成42项QA检查；确认10项收束索引编号连续，覆盖入口、入口QA、任务卡、任务卡QA、领取、写回、接收、整合、正式出口和状态同步；现有路径缺失0项，`final_coding.csv` 和真实回填目录当前均不存在。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING 等待P0第二批真实回填副本
   - 进度：新增 `03_corpus/manual_review_p0_batch2_return_waiting.md` 和 `manual_review_p0_batch2_return_waiting_v1.csv`，建立12项等待与触发清单，明确P0第二批真实回填副本当前未收到、`03_corpus/manual_review_returns/` 当前不存在、`07_analysis/data/final_coding.csv` 当前不存在；收到真实回填后只能先做接收登记、结构检查、不可变字段检查、必填字段检查和整合QA，不能直接关闭22项或放行正式编码。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING-QA 检查P0第二批真实回填等待状态登记
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING-QA 检查P0第二批真实回填等待状态登记
+  - 进度：新增 `03_corpus/manual_review_p0_batch2_return_waiting_qa.md` 和 `manual_review_p0_batch2_return_waiting_qa_v1.csv`，完成42项QA检查；确认12项等待登记编号连续，真实回填副本仍未收到，`03_corpus/manual_review_returns/` 和 `07_analysis/data/final_coding.csv` 当前均不存在。QA通过只表示等待登记可用，不代表人工校对完成或正式编码放行。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE 准备P0第三批高风险图件与解答图边界入口

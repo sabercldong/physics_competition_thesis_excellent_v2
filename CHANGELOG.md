@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING-QA P0第二批真实回填等待状态登记QA
+
+- 新增 `03_corpus/manual_review_p0_batch2_return_waiting_qa.md`，记录P0第二批真实回填等待状态登记QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch2_return_waiting_qa_v1.csv`，完成42项QA检查，覆盖输入存在性、CSV编码换行、等待登记行数编号、覆盖范围、字段完整性、上游规模、状态边界、Markdown禁写边界、触发流程、下一任务和总体结论；
+- 确认等待登记CSV共12项，`P0B2WAIT-01` 至 `P0B2WAIT-12` 连续唯一，覆盖真实回填副本、22行回填入口、22张任务卡、接收目录、校验值、不可变字段、必填字段、冲突处理、整合QA、正式评分者模板候选、`final_coding.csv` 和项目状态同步；
+- 确认上游回填入口22行、任务卡22张、交接链收束QA 42项均可定位；
+- 确认 `03_corpus/manual_review_returns/` 和 `07_analysis/data/final_coding.csv` 当前均不存在；
+- 本QA不填写真实校对字段，不关闭22项P0第二批问题，不放行正式评分者模板、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING P0第二批真实回填等待状态登记
 
 - 新增 `03_corpus/manual_review_p0_batch2_return_waiting.md`，登记P0第二批22条公式与特殊符号校对项在交接入口已封口、真实回填副本未收到时的等待状态、触发流程和禁止事项；
