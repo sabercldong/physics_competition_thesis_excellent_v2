@@ -393,6 +393,8 @@
   - 进度：C组47行通过接收检查：33项不可变字段差异0、9个必填字段完整、47项决定合法、141条证据路径存在；已保留原件并生成LF登记副本，待C组整合QA。D组9行原件已隔离保存：全部使用不在允许选项中的“通过无需修订”，8项分值行仅列答案页范围而未提供正式评分细则或原卷分值说明，故D组未通过接收检查、未销项、待R01更正后重交。
 - [x] G1-07-R01-D-CORRECTED-RETURN-INTAKE 接收R01 D组更正回填
   - 进度：更正版9行固定字段差异0、D组必填字段完整；8项分值行改为“待核实：当前PDF仍未明示分值”且继续阻塞，SOLFIG改为允许的边界可用决定。已保存原件与LF登记副本，待D组整合QA；不放行分值统计或正式论文结果。
+- [x] G1-07-R01-ALL-GROUPS-INTEGRATION-QA 整合R01四组人工回填
+  - 进度：154项逐项整合判定已写入`manual_review_r01_all_groups_integration_qa_v1.csv`并同步五份台账。A/B共98项进入正式编码输入候选；C组47项仅为图件候选；SOLFIG为题解图边界候选；第35届8项分值问题继续未关闭。未生成正式编码数据、统计或论文结果。
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议
