@@ -362,4 +362,6 @@
 
 - 完成 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP`：新增 `02_literature/solo_fulltext_return_intake_prep.md` 和 `solo_fulltext_return_intake_prep_v1.csv`，为 `SOLO-001` 和 `SOLO-002` 建立合法全文回填后的来源匹配、版本固定、页码阅读、边界判断、主张候选和独立QA流程。工作表两行已固定来源与门禁映射，17个实际回填字段均为空；当前不得因题录、摘要或请求包改写正文、主张矩阵或 `references.bib`。
 
-`G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP-QA`：检查两篇来源覆盖、工作表字段、实际回填字段空白保护、P1门禁映射、接收顺序和冻结边界。若合法全文出现，优先执行 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-REAL-CHECK`。
+- 完成 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP-QA`：新增 `02_literature/solo_fulltext_return_intake_prep_qa.md` 和 `solo_fulltext_return_intake_prep_qa_v1.csv`，完成30项QA检查；确认两篇来源均覆盖、CSV为25列、17个实际字段均为空、`P1BF-01`、`P1GATE-01/P1GATE-09` 与所需P1接收规则均已映射，项目内未发现新增SOLO全文回填。QA通过不放行正文、主张矩阵、`references.bib` 或理论定稿。
+
+`G1-07-NO-RETURN-CORPUS-PATH-QA`：在真实人工回填仍未出现的条件下，检查154项语料校对入口的转写稿、公式核对表、页面证据图和候选图是否路径可达，并登记断链与页码边界疑点；不得将路径可达、OCR转写或内部视觉检查写成真实人工终核，不得进入正式编码或论文结果写作。若合法SOLO全文先出现，则优先转入对应真实全文接收检查。

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-22：G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP-QA SOLO全文回填接收准备QA
+
+- 新增 `02_literature/solo_fulltext_return_intake_prep_qa.md`，记录接收准备QA的性质、结论、门禁边界、不可声称事项和下一最小任务；
+- 新增 `02_literature/solo_fulltext_return_intake_prep_qa_v1.csv`，完成30项QA检查，覆盖两篇来源、CSV格式、25列表头、17个实际字段空白保护、P1回填/门禁/规则映射、上游规模、全文缺失状态、阅读顺序、冲突处理、真实到达路线和台账一致性；
+- 确认项目内未发现新增SOLO全文回填，`SOLO-001` 与 `SOLO-002` 的实际字段均保持空白；
+- 本QA不获取全文、不填写真实字段、不补造页码或理论结论，不放行论文正文、主张矩阵、`references.bib` 或理论定稿；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-NO-RETURN-CORPUS-PATH-QA`。
+
 ## 2026-07-22：G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP SOLO合法全文回填接收准备
 
 - 新增 `02_literature/solo_fulltext_return_intake_prep.md`，规定SOLO全文取得后的来源匹配、版本固定、页码阅读、阅读笔记、迁移边界、主张候选、冲突暂停和独立QA顺序；
