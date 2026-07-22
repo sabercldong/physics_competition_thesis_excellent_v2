@@ -399,6 +399,8 @@
   - 进度：新增219行分析单元门禁清单，将98项A/B候选、C组图件候选、SOLFIG边界候选和8项分值缺口映射至评分者输入；可发放876行A/B模板，但26个涉及分值缺口的分析单元不得进入分值统计或分值结论。
 - [x] G4-02-R01-RATER-ASSIGNMENT 生成双评分者独立编码领取包
   - 进度：新增RATER-A/RATER-B领取指令与回收登记模板；两份876行模板仍为空白，等待两名不同真实人员独立回填。
+- [x] G8-R01-MATERIAL-READINESS-AUDIT 汇总R01后材料包就绪度
+  - 进度：明确当前可归档语料、人工回填、编码交接和边界版草稿，以及正式结果依赖的双评分、裁决、唯一分析表、结果表图与教学路线决定。
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议
