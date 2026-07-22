@@ -619,4 +619,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch3_figure_queue_qa.md` 和 `manual_review_p0_batch3_figure_queue_qa_v1.csv`，完成36项QA检查；确认第三批入口48项编号连续，C组47项与上游回填包一致，`CPHO42-Q03-SOLFIG` 边界单独保留，引用路径缺失0项，所有任务仍未真实回填且不放行。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS 生成P0第三批逐项领取任务卡
   - 进度：新增 `03_corpus/manual_review_p0_batch3_task_cards.md` 和 `manual_review_p0_batch3_task_cards_v1.csv`，将48项图件与SOLFIG边界入口拆成48张任务卡，逐卡挂接 `P0B3FIG-01` 至 `P0B3FIG-48`；最低核对输入路径缺失0项，所有任务仍为“待领取：未真实回填”和“不放行”。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS-QA 检查P0第三批逐项领取任务卡
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS-QA 检查P0第三批逐项领取任务卡
+  - 进度：新增 `03_corpus/manual_review_p0_batch3_task_cards_qa.md` 和 `manual_review_p0_batch3_task_cards_qa_v1.csv`，完成37项QA检查；确认48张任务卡编号连续，逐卡挂接第三批入口，最低核对输入路径缺失0项，所有任务仍未真实回填且不放行。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT 收束P0第三批图件交接链

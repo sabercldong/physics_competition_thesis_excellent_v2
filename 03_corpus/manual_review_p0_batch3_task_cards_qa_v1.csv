@@ -1,0 +1,38 @@
+﻿qa_id,check_area,check_item,evidence,result,risk_if_failed,release_boundary
+P0B3CARDQA-01,输入存在性,任务卡Markdown存在,03_corpus/manual_review_p0_batch3_task_cards.md 存在,通过,任务卡Markdown缺失导致交接不可追溯,不放行真实校对
+P0B3CARDQA-02,输入存在性,任务卡CSV存在,03_corpus/manual_review_p0_batch3_task_cards_v1.csv 存在,通过,任务卡CSV缺失导致交接不可追溯,不放行真实校对
+P0B3CARDQA-03,输入存在性,第三批入口CSV存在,03_corpus/manual_review_p0_batch3_figure_queue_v1.csv 存在,通过,第三批入口CSV缺失导致交接不可追溯,不放行真实校对
+P0B3CARDQA-04,输入存在性,第三批入口QA存在,03_corpus/manual_review_p0_batch3_figure_queue_qa_v1.csv 存在,通过,第三批入口QA缺失导致交接不可追溯,不放行真实校对
+P0B3CARDQA-05,输入存在性,C组回填包存在,03_corpus/manual_review_c_closure_packet_v1.csv 存在,通过,C组回填包缺失导致交接不可追溯,不放行真实校对
+P0B3CARDQA-06,输入存在性,D组回填包存在,03_corpus/manual_review_d_closure_packet_v1.csv 存在,通过,D组回填包缺失导致交接不可追溯,不放行真实校对
+P0B3CARDQA-07,CSV格式,任务卡CSV为UTF-8 BOM,bom=True,通过,中文CSV跨软件打开可能乱码,不放行真实回填整合
+P0B3CARDQA-08,CSV格式,任务卡CSV为LF换行,contains_cr=False,通过,换行污染校验,不放行真实回填整合
+P0B3CARDQA-09,行数编号,任务卡共48张,rows=48,通过,任务卡覆盖不完整,不关闭第三批问题
+P0B3CARDQA-10,行数编号,任务卡编号连续唯一,first=P0B3CARD-01; last=P0B3CARD-48; unique=48,通过,领取顺序不可控,不放行真实校对
+P0B3CARDQA-11,入口挂接,逐卡挂接P0B3FIG-01至P0B3FIG-48,first=P0B3FIG-01; last=P0B3FIG-48,通过,任务卡与入口错位,不放行真实校对
+P0B3CARDQA-12,入口挂接,source_issue_id与入口逐行一致,cards=48; queue=48,通过,任务卡可能指向错误问题,不关闭第三批问题
+P0B3CARDQA-13,入口挂接,material_id与入口逐行一致,cards=48; queue=48,通过,任务材料挂接错误,不放行真实校对
+P0B3CARDQA-14,来源覆盖,C组47张D组SOLFIG1张,"Counter({'C组题图裁边与图注': 47, 'D组相关解答放大图边界': 1})",通过,来源覆盖不完整,不关闭图件或SOLFIG
+P0B3CARDQA-15,来源覆盖,C组source_issue_id集合与C组回填包一致,cards_c=47; packet_c=47,通过,C组任务卡与回填包不一致,不关闭C组图件
+P0B3CARDQA-16,来源覆盖,D组SOLFIG任务存在且唯一,['CPHO42-Q03-SOLFIG'],通过,SOLFIG任务缺失或重复,不关闭SOLFIG
+P0B3CARDQA-17,范围统计,严重程度高39中9,"Counter({'高': 39, '中': 9})",通过,优先级统计错误,不影响正式结果但需修订
+P0B3CARDQA-18,范围统计,届次覆盖与入口一致,"Counter({'40': 8, '38': 8, '42': 6, '36': 6, '37': 6, '41': 5, '35': 5, '39': 4})",通过,届次覆盖描述错误,不关闭第三批问题
+P0B3CARDQA-19,字段完整性,关键任务卡字段均存在,"task_card_id,queue_id,source_group,source_queue_rank,source_issue_id,material_id,competition_no,year,question_no,task_title,task_scope,severity,affected_item_ids,primary_check_entry,minimum_inputs_to_check,current_internal_observation,check_focus,required_checks,required_return_fields,minimum_deliverable,acceptance_criteria,blocking_conditions,handoff_target,current_status,release_status,must_not_do",通过,任务卡字段结构错误,不放行真实校对
+P0B3CARDQA-20,字段完整性,关键任务卡字段均非空,rows=48,通过,任务卡信息不完整,不放行真实校对
+P0B3CARDQA-21,字段完整性,required_checks均非空且包含核对动作,rows=48,通过,领取者不知道核对动作,不放行真实校对
+P0B3CARDQA-22,字段完整性,minimum_deliverable均非空且指向回填,rows=48,通过,交付物不可验收,不放行真实回填整合
+P0B3CARDQA-23,路径检查,最低核对输入路径缺失0项,missing_inputs=0,通过,领取者无法打开证据,不放行真实校对
+P0B3CARDQA-24,状态边界,48张均待领取未真实回填,Counter({'待领取：未真实回填': 48}),通过,误导为已领取或已核对,不关闭第三批问题
+P0B3CARDQA-25,状态边界,48张release_status均不放行,Counter({'不放行：P0第三批任务卡，未真实销项': 48}),通过,误释放正式使用,不放行正式编码
+P0B3CARDQA-26,状态边界,must_not_do均禁止任务卡冒充真实意见,rows=48,通过,内部材料可能被误写成真实专家/校对意见,不写论文结果
+P0B3CARDQA-27,SOLFIG边界,SOLFIG卡声明不替代CPHO42-Q03-FIG,核对题面图3a-3d、题解图3a-3c、解答放大页P26-P27和解答正文引用关系；确认论文或附录引用时是否必须区分“题面图”和“题解图”；确认本项不替代CPHO42-Q03-FIG。,通过,题面图与题解图混淆,不关闭CPHO42-Q03-FIG
+P0B3CARDQA-28,SOLFIG边界,SOLFIG卡must_not_do禁止关闭CPHO42-Q03-FIG,不得把题解图3a-3c误称为题面图3a-3d的一一原样放大；不得关闭CPHO42-Q03-FIG；不得生成正式附录图件或论文结果。；不得把任务卡、入口QA或内部观察写成真实校对者意见。,通过,误关题面图问题,不生成正式附录图
+P0B3CARDQA-29,上游QA,第三批入口QA 36项全通过,rows=36; results=Counter({'通过': 36}),通过,上游入口未通过QA,不放行任务卡
+P0B3CARDQA-30,Markdown边界,Markdown声明任务卡不代表真实校对发生,md contains boundary,通过,任务卡被误读为完成,不关闭第三批问题
+P0B3CARDQA-31,Markdown边界,Markdown声明不生成正式论文插图定稿,md contains no final fig,通过,候选图被误用为定稿,不写论文图件结论
+P0B3CARDQA-32,Markdown边界,Markdown声明下一步为TASK-CARDS-QA,md contains next task,通过,任务链断裂,不放行后续整合
+P0B3CARDQA-33,项目同步,PROJECT_STATUS已指向TASK-CARDS-QA,status contains next,通过,项目状态不同步,不放行后续任务
+P0B3CARDQA-34,项目同步,TASKS已列出TASK-CARDS-QA,tasks contains next,通过,任务表不同步,不放行后续任务
+P0B3CARDQA-35,真实回填边界,manual_review_returns目录当前不存在,exists=False,通过,误接收真实回填,不关闭任何问题
+P0B3CARDQA-36,正式数据边界,final_coding.csv当前不存在,exists=False,通过,误进入正式编码,不放行正式编码
+P0B3CARDQA-37,总体结论,第三批任务卡QA通过,checks_before=36,通过,若任一前项失败则需修订任务卡,QA通过只表示任务卡可领取，不表示真实人工校对完成

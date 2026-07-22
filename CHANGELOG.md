@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS-QA P0第三批逐项领取任务卡QA
+
+- 新增 `03_corpus/manual_review_p0_batch3_task_cards_qa.md`，记录P0第三批逐项领取任务卡QA的性质声明、QA结论、已确认事项、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch3_task_cards_qa_v1.csv`，完成37项QA检查，覆盖输入存在性、CSV编码换行、行数编号、入口挂接、来源覆盖、范围统计、字段完整性、路径检查、状态边界、SOLFIG边界、上游QA、Markdown边界、项目同步、真实回填边界和正式数据边界；
+- 确认任务卡CSV共48张，`P0B3CARD-01` 至 `P0B3CARD-48` 连续唯一，逐卡挂接 `P0B3FIG-01` 至 `P0B3FIG-48`；
+- 确认48张任务卡与第三批入口的 `source_issue_id` 和 `material_id` 逐行一致，覆盖C组47项题图裁边与图注问题和第42届第3题 `CPHO42-Q03-SOLFIG` 解答放大图边界问题；
+- 确认最低核对输入路径缺失0项，任务卡字段完整，48张任务卡均保持“待领取：未真实回填”和“不放行：P0第三批任务卡，未真实销项”；
+- 明确 `CPHO42-Q03-SOLFIG` 任务卡不替代 `CPHO42-Q03-FIG` 题面图终核；
+- 本QA不填写真实校对字段，不关闭C组图件或SOLFIG问题，不生成正式论文插图定稿、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS P0第三批逐项领取任务卡
 
 - 新增 `03_corpus/manual_review_p0_batch3_task_cards.md`，说明P0第三批逐项领取任务卡的性质、覆盖范围、使用方法、仍不能声称内容和下一最小任务；

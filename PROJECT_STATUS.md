@@ -335,6 +335,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE`：新增 `03_corpus/manual_review_p0_batch3_figure_queue.md` 和 `03_corpus/manual_review_p0_batch3_figure_queue_v1.csv`，建立P0第三批图件类真实核对领取入口；入口共48项，`P0B3FIG-01` 至 `P0B3FIG-48` 连续唯一，覆盖C组47项题图裁边与图注问题和第42届第3题 `CPHO42-Q03-SOLFIG` 解答放大图边界问题；严重程度为高39项、中9项。所有任务仍为“待领取：未真实回填”和“不放行”，不关闭C组图件或SOLFIG问题，不生成正式论文插图、正式编码或论文结果。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE-QA`：新增 `03_corpus/manual_review_p0_batch3_figure_queue_qa.md` 和 `03_corpus/manual_review_p0_batch3_figure_queue_qa_v1.csv`，完成36项QA检查；确认第三批入口CSV为UTF-8 BOM和LF换行，48项 `P0B3FIG-01` 至 `P0B3FIG-48` 连续唯一，C组47项与 `manual_review_c_closure_packet_v1.csv` 的 `issue_id` 集合一致，`CPHO42-Q03-SOLFIG` 作为解答放大图和题面/题解图命名边界任务单独保留；引用路径缺失0项，所有任务仍未真实回填且不放行。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS`：新增 `03_corpus/manual_review_p0_batch3_task_cards.md` 和 `03_corpus/manual_review_p0_batch3_task_cards_v1.csv`，将P0第三批48项图件与SOLFIG边界入口拆成48张逐项领取任务卡；任务卡 `P0B3CARD-01` 至 `P0B3CARD-48` 连续唯一，逐卡挂接 `P0B3FIG-01` 至 `P0B3FIG-48`，覆盖C组47项题图裁边与图注问题和D组1项解答放大图边界问题；最低核对输入路径缺失0项，所有任务仍为“待领取：未真实回填”和“不放行”。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS-QA`：新增 `03_corpus/manual_review_p0_batch3_task_cards_qa.md` 和 `03_corpus/manual_review_p0_batch3_task_cards_qa_v1.csv`，完成37项QA检查；确认任务卡CSV为UTF-8 BOM和LF换行，48张任务卡编号连续且逐卡挂接第三批入口，`source_issue_id` 和 `material_id` 与入口逐行一致，最低核对输入路径缺失0项，`CPHO42-Q03-SOLFIG` 任务卡明确不替代 `CPHO42-Q03-FIG` 题面图终核；所有任务仍未真实回填且不放行。
 
 ## 关键阻塞项
 
@@ -349,4 +350,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS-QA`：检查P0第三批48张逐项领取任务卡的编号、入口挂接、来源覆盖、最低核对输入路径、字段完整性、状态边界和不放行边界；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT`：将P0第三批入口、入口QA、逐项任务卡和任务卡QA收束为一页式交接链，明确领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
