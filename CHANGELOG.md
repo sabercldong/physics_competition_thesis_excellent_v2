@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE-QA P0第三批图件任务入口QA
+
+- 新增 `03_corpus/manual_review_p0_batch3_figure_queue_qa.md`，记录P0第三批图件任务入口QA的性质声明、QA结论、已确认事项、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch3_figure_queue_qa_v1.csv`，完成36项QA检查，覆盖输入存在性、CSV编码换行、行数编号、来源覆盖、上游QA、范围统计、路径检查、字段完整性、状态边界、SOLFIG边界、Markdown边界、项目同步、正式数据边界和真实回填边界；
+- 确认第三批入口CSV共48项，`P0B3FIG-01` 至 `P0B3FIG-48` 连续唯一，覆盖C组47项题图裁边与图注问题和第42届第3题 `CPHO42-Q03-SOLFIG` 解答放大图边界问题；
+- 确认C组47项与 `manual_review_c_closure_packet_v1.csv` 的 `issue_id` 集合一致，SOLFIG核对表5条记录可定位；
+- 确认入口引用路径缺失0项，48项均保持“待领取：未真实回填”和“不放行”；
+- 明确 `CPHO42-Q03-SOLFIG` 只作为解答放大图和题面/题解图命名边界任务，不替代 `CPHO42-Q03-FIG` 的题面图终核；
+- 本QA不填写真实校对字段，不关闭C组图件或SOLFIG问题，不生成正式论文插图定稿、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE P0第三批图件任务入口
 
 - 新增 `03_corpus/manual_review_p0_batch3_figure_queue.md`，说明P0第三批图件类真实核对领取入口的性质、覆盖范围、领取与回填规则、必核内容、禁写边界和下一最小任务；

@@ -1,0 +1,37 @@
+﻿qa_id,check_area,check_item,evidence,result,risk_if_failed,release_boundary
+P0B3FIGQA-01,输入存在性,第三批入口Markdown存在,03_corpus/manual_review_p0_batch3_figure_queue.md 存在,通过,入口说明不可追溯,不放行正式校对
+P0B3FIGQA-02,输入存在性,第三批入口CSV存在,03_corpus/manual_review_p0_batch3_figure_queue_v1.csv 存在,通过,结构化任务不可领取,不放行正式校对
+P0B3FIGQA-03,输入存在性,C组回填包存在,03_corpus/manual_review_c_closure_packet_v1.csv 存在,通过,C组来源不可核对,不关闭C组图件
+P0B3FIGQA-04,输入存在性,C组回填包QA存在,03_corpus/manual_review_c_closure_packet_qa_v1.csv 存在,通过,上游QA不可定位,不关闭C组图件
+P0B3FIGQA-05,输入存在性,D组回填包存在,03_corpus/manual_review_d_closure_packet_v1.csv 存在,通过,SOLFIG来源不可核对,不关闭SOLFIG
+P0B3FIGQA-06,输入存在性,SOLFIG核对表存在,03_corpus/manual_review_transcripts/CPHO42-Q03_solution_figure_large_check_v1.csv 存在,通过,解答放大图边界不可核对,不关闭SOLFIG
+P0B3FIGQA-07,CSV格式,第三批入口CSV为UTF-8 BOM,bom=True,通过,中文CSV跨软件打开可能乱码,不放行真实回填整合
+P0B3FIGQA-08,CSV格式,第三批入口CSV为LF换行,contains_cr=False,通过,跨平台差异可能污染校验,不放行真实回填整合
+P0B3FIGQA-09,行数编号,任务入口共48行,rows=48,通过,第三批覆盖不完整,不关闭C组或SOLFIG
+P0B3FIGQA-10,行数编号,编号P0B3FIG-01至P0B3FIG-48连续唯一,first=P0B3FIG-01; last=P0B3FIG-48; unique=48,通过,领取顺序不可控,不放行真实回填整合
+P0B3FIGQA-11,来源覆盖,C组题图任务47项,"Counter({'C组题图裁边与图注': 47, 'D组相关解答放大图边界': 1})",通过,C组覆盖不完整,不关闭C组图件
+P0B3FIGQA-12,来源覆盖,D组SOLFIG边界任务1项,"Counter({'C组题图裁边与图注': 47, 'D组相关解答放大图边界': 1})",通过,第42届第3题解答放大图边界遗漏,不关闭SOLFIG
+P0B3FIGQA-13,来源覆盖,47项C组source_issue_id与C组回填包一致,queue_c=47; packet_c=47,通过,任务入口与回填包不一致,不关闭C组图件
+P0B3FIGQA-14,来源覆盖,SOLFIG来源为CPHO42-Q03-SOLFIG,CPHO42-Q03-SOLFIG,通过,SOLFIG边界挂接错误,不关闭SOLFIG
+P0B3FIGQA-15,上游QA,C组回填包QA覆盖47项,c_qa_rows=47; qa_status=Counter({'通过：可进入真实人工终核，未销项': 47}),通过,C组上游QA未通过,不关闭C组图件
+P0B3FIGQA-16,上游QA,SOLFIG核对表5条记录可定位,solfig_rows=5,通过,题解图边界证据不足,不关闭SOLFIG
+P0B3FIGQA-17,范围统计,严重程度为高39项中9项,"Counter({'高': 39, '中': 9})",通过,优先级描述错误,不影响正式结果但需修订入口
+P0B3FIGQA-18,范围统计,届次覆盖35至42届,"Counter({'40': 8, '38': 8, '42': 6, '36': 6, '37': 6, '41': 5, '35': 5, '39': 4})",通过,届次覆盖描述错误,不关闭图件
+P0B3FIGQA-19,范围统计,各届任务数与入口说明一致,"Counter({'40': 8, '38': 8, '42': 6, '36': 6, '37': 6, '41': 5, '35': 5, '39': 4})",通过,入口说明和CSV不一致,不影响正式结果但需修订入口
+P0B3FIGQA-20,路径检查,入口中引用路径缺失0项,missing_paths=0,通过,领取者无法打开证据,不放行真实校对
+P0B3FIGQA-21,路径检查,referenced_paths_exist字段均为是,Counter({'是': 48}),通过,入口自述路径状态不可靠,不放行真实校对
+P0B3FIGQA-22,字段完整性,关键领取字段均非空,"queue_id,source_group,source_queue_rank,source_issue_id,material_id,competition_no,year,question_no,issue_type,severity,affected_item_ids,primary_check_entry,check_focus,required_return_fields,acceptance_criteria,blocking_conditions,return_target,current_status,release_status,must_not_do",通过,领取信息不完整,不放行真实校对
+P0B3FIGQA-23,字段完整性,必填回填字段已列明,blank_required_return_fields=0,通过,真实回填无法验收,不放行真实回填整合
+P0B3FIGQA-24,状态边界,48项均为待领取未真实回填,Counter({'待领取：未真实回填': 48}),通过,误导为已校对,不关闭任何问题
+P0B3FIGQA-25,状态边界,48项release_status均不放行,Counter({True: 48}),通过,误释放正式编码或论文结果,不放行正式编码
+P0B3FIGQA-26,状态边界,must_not_do覆盖禁止填写虚拟校对或正式结果,rows=48,通过,边界不足可能诱发补造,不写论文结果
+P0B3FIGQA-27,SOLFIG边界,SOLFIG任务不替代CPHO42-Q03-FIG,不得把题解图3a-3c误称为题面图3a-3d的一一原样放大；不得关闭CPHO42-Q03-FIG；不得生成正式附录图件或论文结果。,通过,题面图与题解图混淆,不关闭CPHO42-Q03-FIG
+P0B3FIGQA-28,SOLFIG边界,Markdown声明题解图不等同题面图放大,md contains boundary,通过,图号系统混淆,不生成正式附录图
+P0B3FIGQA-29,Markdown边界,Markdown声明不填写真实校对字段,md contains no true return,通过,误当真实校对完成,不关闭任何问题
+P0B3FIGQA-30,Markdown边界,Markdown声明不生成正式论文插图定稿,md contains final figure boundary,通过,候选图被误用为定稿,不写论文图件结论
+P0B3FIGQA-31,Markdown边界,Markdown声明下一步为QUEUE-QA,md contains next task,通过,任务链断裂,不放行后续整合
+P0B3FIGQA-32,项目同步,PROJECT_STATUS已指向QUEUE-QA,status contains next task,通过,项目状态不同步,不放行后续任务
+P0B3FIGQA-33,项目同步,TASKS已列出QUEUE-QA,tasks contains next task,通过,任务表不同步,不放行后续任务
+P0B3FIGQA-34,正式数据边界,final_coding.csv当前不存在,exists=False,通过,误进入正式编码,不放行正式编码
+P0B3FIGQA-35,真实回填边界,manual_review_returns目录当前不存在,exists=False,通过,误接收真实回填,不关闭任何问题
+P0B3FIGQA-36,总体结论,第三批入口QA通过,checks_before=35,通过,若任一前项失败则需修订入口,QA通过只表示入口可领取，不表示真实人工校对完成
