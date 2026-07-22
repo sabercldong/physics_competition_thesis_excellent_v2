@@ -1,0 +1,3 @@
+﻿return_id,rater_code,expected_template,expected_rows,actual_filename,actual_path,received_date,sha256,field_check_status,independence_declaration,review_status,next_action
+R01RATER-A,RATER-A,07_analysis/data/formal_coding_rater_A_template.csv,876,,,,,待回收,待提交,待回收,接收后执行字段检查
+R01RATER-B,RATER-B,07_analysis/data/formal_coding_rater_B_template.csv,876,,,,,待回收,待提交,待回收,接收后执行字段检查
