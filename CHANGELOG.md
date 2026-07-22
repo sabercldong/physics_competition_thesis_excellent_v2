@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-NO-RETURN-RATER-HANDOFF-BOUNDARY-QA 评分者交接包无真实回填边界QA
+
+- 新增 `04_framework/rater_handoff_no_return_boundary_qa.md` 和 `rater_handoff_no_return_boundary_qa_v1.csv`，完成29项交接包、风险、模板、回收规则、冻结出口、表述边界和格式QA；
+- 确认12项锁定交接文件路径均可达，10项风险均未解决，A/B/裁决模板各876行且真实编码、裁决字段均为空，三份模板均仍标记“待正式冻结”；
+- 确认154项人工校对真实字段仍未回填，真实回填目录与 `final_coding.csv` 均不存在；交接包只能用于方法准备与回收准备；
+- 将 `formal_coding_rater_A_template.csv`、`formal_coding_rater_B_template.csv` 和 `formal_adjudication_template.csv` 机械转换为UTF-8 BOM与LF换行，未改变任一单元格内容或编码结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，下一最小任务为 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA`。
+
 ## 2026-07-22：G1-07-C-NO-RETURN-FIGURE-QUEUE 重复登记核对
 
 - 核对当前未完成任务与既有提交，确认C组候选图件待核清单已由 `5504b43` 建立、`62a5372` 完成QA，无需重复生成同一批47项数据；

@@ -1,0 +1,30 @@
+﻿check_id,category,check_item,expected,observed,result,evidence,risk_if_failed,next_action
+RHNR-QA-001,输入存在,输入文件存在：04_framework/rater_handoff_lock_v1.md,文件存在,exists=True,通过,04_framework/rater_handoff_lock_v1.md,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-002,输入存在,输入文件存在：04_framework/rater_handoff_lock_manifest.csv,文件存在,exists=True,通过,04_framework/rater_handoff_lock_manifest.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-003,输入存在,输入文件存在：04_framework/rater_handoff_unresolved_risks.csv,文件存在,exists=True,通过,04_framework/rater_handoff_unresolved_risks.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-004,输入存在,输入文件存在：04_framework/rater_handoff_file_rules.csv,文件存在,exists=True,通过,04_framework/rater_handoff_file_rules.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-005,输入存在,输入文件存在：04_framework/rater_independent_coding_instructions_v1.md,文件存在,exists=True,通过,04_framework/rater_independent_coding_instructions_v1.md,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-006,输入存在,输入文件存在：04_framework/rater_training_return_checklist.csv,文件存在,exists=True,通过,04_framework/rater_training_return_checklist.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-007,输入存在,输入文件存在：07_analysis/data/formal_coding_rater_A_template.csv,文件存在,exists=True,通过,07_analysis/data/formal_coding_rater_A_template.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-008,输入存在,输入文件存在：07_analysis/data/formal_coding_rater_B_template.csv,文件存在,exists=True,通过,07_analysis/data/formal_coding_rater_B_template.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-009,输入存在,输入文件存在：07_analysis/data/formal_adjudication_template.csv,文件存在,exists=True,通过,07_analysis/data/formal_adjudication_template.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-010,输入存在,输入文件存在：03_corpus/manual_review_checklist.csv,文件存在,exists=True,通过,03_corpus/manual_review_checklist.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-011,输入存在,输入文件存在：03_corpus/manual_review_formal_coding_blocker_v1.csv,文件存在,exists=True,通过,03_corpus/manual_review_formal_coding_blocker_v1.csv,无法追溯交接边界或模板状态。,先恢复或定位该输入文件，再重做边界QA。
+RHNR-QA-012,交接清单,锁定清单条目数,12项,12,通过,04_framework/rater_handoff_lock_manifest.csv,交接包组成不完整或混入未受控文件。,保持12项清单；新增文件须先更新锁定清单。
+RHNR-QA-013,交接清单,锁定清单路径可达,12/12路径可达,12/12; missing=[],通过,04_framework/rater_handoff_lock_manifest.csv,评分者可能收到缺失或错误版本。,先修复缺失路径，再发放交接包。
+RHNR-QA-014,风险边界,未解风险数与状态,10项，均非已解决,"rows=10; statuses=['持续风险', '未完全解决', '未解决']",通过,04_framework/rater_handoff_unresolved_risks.csv,未解问题可能被误视为已经关闭。,持续作为待核实提示，不得在正文写成已解决。
+RHNR-QA-015,风险边界,154项人工校对仍未真实关闭,154项reviewer/review_date均空,154/154空白,通过,03_corpus/manual_review_checklist.csv,可疑语料可能被错误升级为已核验输入。,收到真实回填后按接收协议登记与关闭QA。
+RHNR-QA-016,模板,A评分者模板行数,876,876,通过,07_analysis/data/formal_coding_rater_A_template.csv,分析单元覆盖不完整。,保持模板结构，真实填写后再回收。
+RHNR-QA-017,模板,B评分者模板行数,876,876,通过,07_analysis/data/formal_coding_rater_B_template.csv,分析单元覆盖不完整。,保持模板结构，真实填写后再回收。
+RHNR-QA-018,模板,裁决模板行数,876,876,通过,07_analysis/data/formal_adjudication_template.csv,分析单元覆盖不完整。,保持模板结构，真实填写后再回收。
+RHNR-QA-019,模板,A模板真实编码/裁决字段仍为空,876行均为空,nonempty_rows=0,通过,07_analysis/data/formal_coding_rater_A_template.csv,可能把模板误作已完成编码或裁决。,保持空白；不得计算一致性或生成正式结果。
+RHNR-QA-020,模板,B模板真实编码/裁决字段仍为空,876行均为空,nonempty_rows=0,通过,07_analysis/data/formal_coding_rater_B_template.csv,可能把模板误作已完成编码或裁决。,保持空白；不得计算一致性或生成正式结果。
+RHNR-QA-021,模板,裁决模板真实编码/裁决字段仍为空,876行均为空,nonempty_rows=0,通过,07_analysis/data/formal_adjudication_template.csv,可能把模板误作已完成编码或裁决。,保持空白；不得计算一致性或生成正式结果。
+RHNR-QA-022,模板,三份模板版本均标待正式冻结,每行均为待正式冻结,{'待正式冻结'},通过,07_analysis/data/formal_coding_rater_A_template.csv;07_analysis/data/formal_coding_rater_B_template.csv;07_analysis/data/formal_adjudication_template.csv,模板版本可能被误称为正式V2。,真实试用、审查和版本确定前保持冻结标记。
+RHNR-QA-023,回收规则,文件流转规则数,10项,10,通过,04_framework/rater_handoff_file_rules.csv,发放、回收、字段检查、分歧和裁决顺序可能断裂。,按现有10项规则执行，回收前不生成统计。
+RHNR-QA-024,回收规则,回收核对表状态,仅准备/待回收性质,"{'已准备': 9, '待A/B回收': 1, '待回收': 12, '待裁决': 2}",通过,04_framework/rater_training_return_checklist.csv,准备材料可能被误写成回收完成。,只有收到真实A/B副本后才更新对应状态。
+RHNR-QA-025,冻结出口,真实回填目录当前不存在,目录不存在,exists=False,通过,03_corpus/manual_review_returns/,可能伪造已收到回填的前提。,真实副本出现后先执行接收登记与结构检查。
+RHNR-QA-026,冻结出口,唯一正式分析表当前不存在,final_coding.csv不存在,exists=False,通过,07_analysis/data/final_coding.csv,可能将准备模板误当正式分析数据。,待真实A/B、字段检查、一致性与裁决完成后生成。
+RHNR-QA-027,表述边界,冻结说明明确非正式V2、非独立编码、非一致性,三类边界均出现,True,通过,04_framework/rater_handoff_lock_v1.md,冻结文件可能被误读为正式研究结果。,在所有交接与论文材料中沿用该边界。
+RHNR-QA-028,表述边界,独立评分说明禁止复制内部预演,明确禁止,True,通过,04_framework/rater_independent_coding_instructions_v1.md,内部候选结论可能污染独立评分。,评分者回收时检查notes与证据，必要时退回重填。
+RHNR-QA-029,格式,A/B/裁决模板编码与换行,UTF-8 BOM和LF,"{'07_analysis/data/formal_coding_rater_A_template.csv': True, '07_analysis/data/formal_coding_rater_B_template.csv': True, '07_analysis/data/formal_adjudication_template.csv': True}",通过,07_analysis/data/formal_coding_rater_A_template.csv;07_analysis/data/formal_coding_rater_B_template.csv;07_analysis/data/formal_adjudication_template.csv,跨工具读取可能损坏模板。,保持UTF-8 BOM和LF；修改后重新检查。

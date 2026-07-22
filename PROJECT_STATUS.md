@@ -373,3 +373,7 @@
 - 完成 `G1-07-C-NO-RETURN-FIGURE-QUEUE` 的重复登记核对：确认该任务已由提交 `5504b43` 建立、`62a5372` QA，现有 `03_corpus/no_return_c_figure_queue.md`、`no_return_c_figure_queue_v1.csv`、`no_return_c_figure_queue_qa.md` 和 `no_return_c_figure_queue_qa_v1.csv` 与最新版C组47项闭环包集合一致。复核47项连续编号、48项QA、228条图件相关路径，缺失0条；候选图仍不得升级为论文最终图或正式案例图，真实回填出现时仍优先转入接收检查。
 
 `G1-07-NO-RETURN-RATER-HANDOFF-BOUNDARY-QA`：在真实回填仍未出现时，核对评分者交接包、锁定清单和未解风险是否仅具备准备性质，且未被误写成正式V2编码手册、真实独立编码或一致性结果；不得改写正式编码或论文结果。
+
+- 完成 `G1-07-NO-RETURN-RATER-HANDOFF-BOUNDARY-QA`：新增 `04_framework/rater_handoff_no_return_boundary_qa.md` 和 `rater_handoff_no_return_boundary_qa_v1.csv`，29项QA均通过；12项锁定交接文件路径缺失0项，10项未解风险均未解决，A/B/裁决模板各876行且真实编码、裁决字段均为空，三份模板均标记“待正式冻结”。154项人工校对的真实校对人和日期仍为空，`03_corpus/manual_review_returns/` 与 `07_analysis/data/final_coding.csv` 均不存在。同步把三份模板的换行从CRLF机械统一为UTF-8 BOM与LF，不改动任何字段内容。本QA不放行正式V2、真实双评分者编码、一致性、裁决、正式统计或论文结果。
+
+`G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA`：在真实回填仍未出现时，核对复现包脚本、数据字典、正式输出占位与内部候选数据的边界；不得把内部候选数据、占位表或脚本可运行性写成正式数据分析已经完成。
