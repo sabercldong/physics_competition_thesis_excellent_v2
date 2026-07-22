@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT P0第三批图件交接链收束
+
+- 新增 `03_corpus/manual_review_p0_batch3_handoff_closeout.md`，将P0第三批图件/SOLFIG边界入口、入口QA、逐项任务卡和任务卡QA收束为一页式交接说明；
+- 新增 `03_corpus/manual_review_p0_batch3_handoff_closeout_v1.csv`，建立10项结构化收束索引，编号 `P0B3CLOSE-01` 至 `P0B3CLOSE-10` 连续唯一；
+- 收束索引覆盖任务入口、入口QA、逐项任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步；
+- 明确领取者按 `P0B3CARD-01` 至 `P0B3CARD-48` 逐项领取，每张卡只处理一个 `source_issue_id`，并将真实核对发现写回任务卡指定的 `handoff_target`；
+- 明确C组47项写回 `03_corpus/manual_review_c_closure_packet_v1.csv` 或未来真实回填副本，`CPHO42-Q03-SOLFIG` 写回 `03_corpus/manual_review_d_closure_packet_v1.csv` 对应行或未来真实回填副本；
+- 确认收到真实回填副本后，必须先执行回收登记、结构检查、不可变字段检查、必填字段检查、冲突处理、整合QA和账本同步；
+- 本任务不填写真实校对字段，不关闭C组图件或SOLFIG问题，不创建真实回填副本，不生成正式论文插图定稿、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT-QA`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS-QA P0第三批逐项领取任务卡QA
 
 - 新增 `03_corpus/manual_review_p0_batch3_task_cards_qa.md`，记录P0第三批逐项领取任务卡QA的性质声明、QA结论、已确认事项、仍不能声称内容和下一最小任务；

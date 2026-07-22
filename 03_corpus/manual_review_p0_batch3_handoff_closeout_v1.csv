@@ -1,0 +1,11 @@
+﻿closeout_id,handoff_area,handoff_item,file_or_target,expected_count_or_scope,how_to_use,dependency,current_status,release_boundary,must_not_do
+P0B3CLOSE-01,任务入口,第三批图件/SOLFIG任务入口,03_corpus/manual_review_p0_batch3_figure_queue_v1.csv,48项；P0B3FIG-01至P0B3FIG-48,作为第三批任务全集索引，定位每项来源、证据路径、回填字段和不放行边界。,C组回填包；D组SOLFIG记录,已建立入口，未真实回填,不放行：入口不是人工校对结果,不得把入口视为真实校对完成。
+P0B3CLOSE-02,入口QA,第三批图件/SOLFIG入口QA,03_corpus/manual_review_p0_batch3_figure_queue_qa_v1.csv,36项QA；P0B3FIGQA-01至P0B3FIGQA-36,领取前确认入口行数、编号、路径、来源覆盖和禁写边界已通过QA。,第三批入口CSV,QA通过，未真实回填,不放行：QA只证明入口结构可靠,不得把入口QA写成图件已终核。
+P0B3CLOSE-03,逐项任务卡,第三批逐项领取任务卡,03_corpus/manual_review_p0_batch3_task_cards_v1.csv,48张；P0B3CARD-01至P0B3CARD-48,其他智能体或人工校对者按task_card_id逐项领取，每张卡只处理一个source_issue_id。,第三批入口CSV,已生成任务卡，未真实领取,不放行：任务卡不是回填结果,不得填写虚拟校对人、日期或决定。
+P0B3CLOSE-04,任务卡QA,第三批任务卡QA,03_corpus/manual_review_p0_batch3_task_cards_qa_v1.csv,37项QA；P0B3CARDQA-01至P0B3CARDQA-37,确认任务卡编号、入口挂接、最低输入路径、字段完整性、状态边界和SOLFIG边界。,第三批任务卡CSV；第三批入口QA,QA通过，未真实回填,不放行：QA只证明任务卡可领取,不得把任务卡QA写成真实校对者意见。
+P0B3CLOSE-05,领取顺序,领取与执行顺序,P0B3CARD-01至P0B3CARD-48,先C组47项，最后CPHO42-Q03-SOLFIG边界1项,按task_card_id顺序逐项领取；每项打开minimum_inputs_to_check中的全部证据。,第三批任务卡CSV,等待领取,不放行：未收到真实回填,不得跳过证据路径，不得只看内部观察。
+P0B3CLOSE-06,写回位置,真实核对发现写回目标,03_corpus/manual_review_c_closure_packet_v1.csv；03_corpus/manual_review_d_closure_packet_v1.csv；未来真实回填副本,C组47项写回C组；CPHO42-Q03-SOLFIG写回D组对应行,真实校对完成后按handoff_target写回，保留校对人/代号、日期、决定、修订说明和最终证据位置。,C/D回填包字段规则,写回目标已明确，真实字段仍空,不放行：未写回真实字段,不得覆盖原始空白包作为真实副本；不得直接修改00_originals。
+P0B3CLOSE-07,真实副本接收,未来真实回填副本接收位置,03_corpus/manual_review_returns/,当前目录不存在；仅未来收到真实副本时创建或登记,收到真实副本后先保存副本、登记文件名、来源、回收人和校验值，再进入结构检查。,回填整合协议RIP-01至RIP-04,未收到真实副本,不放行：无真实副本,不得伪造回填副本或校验值。
+P0B3CLOSE-08,整合协议,人工终核回填整合协议,03_corpus/manual_review_return_integration_protocol_v1.csv,22条；RIP-01至RIP-22,真实副本收到后按协议进行接收登记、结构检查、不可变字段检查、必填字段检查、冲突处理、整合QA和账本同步。,真实回填副本,协议已存在，未触发整合,不放行：未进入真实整合,不得绕过整合QA直接关闭问题。
+P0B3CLOSE-09,正式编码出口,正式编码与论文图件出口,07_analysis/data/final_coding.csv；正式论文图件目录待定,当前均未生成或未放行,只有真实回填、整合QA和账本同步均通过后，才可另设任务考虑正式图件或正式编码输入。,真实销项；整合QA；账本同步,继续冻结,不放行：第三批未真实销项,不得生成final_coding.csv，不得定稿论文图件。
+P0B3CLOSE-10,项目状态同步,PROJECT_STATUS/TASKS/CHANGELOG同步,PROJECT_STATUS.md；TASKS.md；CHANGELOG.md,本任务同步；下一步为P0第三批交接链QA,记录交接链收束已经建立，并把下一最小任务指向HANDOFF-CLOSEOUT-QA。,本交接链文件,待本任务提交,不放行：项目同步不是人工销项,不得在状态文件中声称真实校对完成。
