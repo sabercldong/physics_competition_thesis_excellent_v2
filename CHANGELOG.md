@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION 正文占位与复现门禁一致性核对
+
+- 新增 `09_quality/no_return_manuscript_gate_reconciliation_qa.md` 和 `no_return_manuscript_gate_reconciliation_qa_v1.csv`，完成23项正文、主张、禁用结论、结果门禁、章节门禁、复现QA和冻结出口检查；
+- 确认第四章只保留正式结果结构占位、第五章只保留候选案例与采证准备，主张矩阵19项无正式结果完成状态，不可继承清单全部E0；
+- 确认结果G8门禁7项均未正式放行，章节门禁3项未满足，正式分析5项门槛未满足，`final_coding.csv`和真实人工回填目录均不存在；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，下一最小任务为 `G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA`；本核对不改写正文、不升级主张、不放行正式结果。
+
 ## 2026-07-22：G1-07-NO-RETURN-REPRODUCIBILITY-CSV-FORMAT-FIX 复现CSV格式修复
 
 - 仅机械转换7份复现CSV的CRLF换行为UTF-8 BOM与LF，覆盖5份 `prep30` 复现表和2份内部候选/内部编码数据表；

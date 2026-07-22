@@ -385,3 +385,7 @@
 - 完成 `G1-07-NO-RETURN-REPRODUCIBILITY-CSV-FORMAT-FIX`：仅将7份复现CSV从CRLF机械统一为UTF-8 BOM与LF。修复前后逐文件比较表头、行数、列数与逻辑内容SHA-256，全部一致；无单元格、内部状态或脚本变动。复现包边界QA重跑35项全部通过；这只证明复现准备文件格式和冻结边界可复核，不生成正式分析数据、统计、图表或论文结果。
 
 `G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION`：在真实回填仍缺失时，核对结果章占位、主张矩阵侧车、复现门禁和正式输出占位的冻结表述是否一致；不得把复现准备或QA通过写成正式分析完成。
+
+- 完成 `G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION`：新增 `09_quality/no_return_manuscript_gate_reconciliation_qa.md` 和 `no_return_manuscript_gate_reconciliation_qa_v1.csv`，23项QA均通过。第四章仍为等待 `final_coding.csv` 与脚本输出的结果占位，第五章仍为候选案例与采证准备；主张矩阵19项无正式结果完成状态，不可继承清单均为E0，结果相关G8门禁7项未正式放行，章节门禁3项未满足，正式分析5项门槛未满足。`final_coding.csv`与真实人工回填目录仍不存在；QA通过不改写正文、不升级主张、不放行正式分析或论文结果。
+
+`G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA`：复核正文占位与复现门禁一致性QA的输入、门禁计数、正文边界词、禁用结论与冻结出口；不得因QA通过改写正文或放行正式结果。

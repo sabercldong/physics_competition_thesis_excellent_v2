@@ -1,0 +1,24 @@
+﻿check_id,check_item,expected,observed,result,evidence,risk_if_failed,next_action
+MGREC-QA-001,输入存在：08_manuscript/04_results.md,存在,True,通过,08_manuscript/04_results.md,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-002,输入存在：08_manuscript/05_cases_and_diagnosis.md,存在,True,通过,08_manuscript/05_cases_and_diagnosis.md,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-003,输入存在：09_quality/claim_evidence_matrix.csv,存在,True,通过,09_quality/claim_evidence_matrix.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-004,输入存在：09_quality/unverified_claims.csv,存在,True,通过,09_quality/unverified_claims.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-005,输入存在：09_quality/g8_03_result_reproducibility_gate.csv,存在,True,通过,09_quality/g8_03_result_reproducibility_gate.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-006,输入存在：07_analysis/results/reviewed/prep30_manuscript_gate_table.csv,存在,True,通过,07_analysis/results/reviewed/prep30_manuscript_gate_table.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-007,输入存在：07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,存在,True,通过,07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-008,输入存在：07_analysis/results/reviewed/prep30_gate_register.csv,存在,True,通过,07_analysis/results/reviewed/prep30_gate_register.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-009,输入存在：07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa_v1.csv,存在,True,通过,07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa_v1.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-010,输入存在：07_analysis/results/reviewed/prep30_results_chapter_placeholder.md,存在,True,通过,07_analysis/results/reviewed/prep30_results_chapter_placeholder.md,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-011,第四章为占位并要求唯一表与脚本,三项文本出现,"[True, True, True]",通过,08_manuscript/04_results.md,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-012,第四章没有初稿禁用比例,85/80/60/30不存在,"[True, True, True, True]",通过,08_manuscript/04_results.md,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-013,第五章限制候选案例与教学效果,两项禁写文本出现,"[True, True]",通过,08_manuscript/05_cases_and_diagnosis.md,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-014,结果占位要求正式输出,final_coding和脚本出现,"[True, True]",通过,07_analysis/results/reviewed/prep30_results_chapter_placeholder.md,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-015,主张矩阵未声明正式结果完成,19项且无正式结果状态,"(19, Counter({'部分核验': 4, '部分准备': 4, '待核验': 3, '已核验': 2, '阶段性核验': 2, '内部预演': 2, '缺失': 1, '禁止继承': 1}))",通过,09_quality/claim_evidence_matrix.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-016,不可继承清单全部E0,全部E0,Counter({'E0': 25}),通过,09_quality/unverified_claims.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-017,结果G8门禁均未正式放行,7项内部/占位/缺失,"['内部预演', '内部预演派生数', '内部预演', '内部预演', '内部预演', '正式输出占位', '正式结果缺失']",通过,09_quality/g8_03_result_reproducibility_gate.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-018,章节门禁未满足,3项未满足,"Counter({'未满足': 3, '部分准备': 1})",通过,07_analysis/results/reviewed/prep30_manuscript_gate_table.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-019,正式输出占位未放行,3阻塞1待更新,"Counter({'阻塞': 3, '待后续更新': 1})",通过,07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-020,正式分析门槛未满足,5项未满足,Counter({'未满足': 5}),通过,07_analysis/results/reviewed/prep30_gate_register.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-021,复现边界QA全通过,35/35,"(35, 35)",通过,07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa_v1.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-022,final_coding不存在,不存在,False,通过,07_analysis/data/final_coding.csv,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
+MGREC-QA-023,真实回填目录不存在,不存在,False,通过,03_corpus/manual_review_returns/,门禁或正文可能越界。,保持冻结边界；满足真实前置后再正式重写。
