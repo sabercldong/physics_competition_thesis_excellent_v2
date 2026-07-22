@@ -613,4 +613,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch2_return_waiting.md` 和 `manual_review_p0_batch2_return_waiting_v1.csv`，建立12项等待与触发清单，明确P0第二批真实回填副本当前未收到、`03_corpus/manual_review_returns/` 当前不存在、`07_analysis/data/final_coding.csv` 当前不存在；收到真实回填后只能先做接收登记、结构检查、不可变字段检查、必填字段检查和整合QA，不能直接关闭22项或放行正式编码。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING-QA 检查P0第二批真实回填等待状态登记
   - 进度：新增 `03_corpus/manual_review_p0_batch2_return_waiting_qa.md` 和 `manual_review_p0_batch2_return_waiting_qa_v1.csv`，完成42项QA检查；确认12项等待登记编号连续，真实回填副本仍未收到，`03_corpus/manual_review_returns/` 和 `07_analysis/data/final_coding.csv` 当前均不存在。QA通过只表示等待登记可用，不代表人工校对完成或正式编码放行。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE 准备P0第三批高风险图件与解答图边界入口
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE 准备P0第三批高风险图件与解答图边界入口
+  - 进度：新增 `03_corpus/manual_review_p0_batch3_figure_queue.md` 和 `manual_review_p0_batch3_figure_queue_v1.csv`，建立48项图件类领取入口，覆盖C组47项题图裁边与图注问题和第42届第3题 `CPHO42-Q03-SOLFIG` 解答放大图边界问题；所有任务均保持“待领取：未真实回填”和“不放行”，不关闭任何图件或SOLFIG问题。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE-QA 检查P0第三批图件任务入口

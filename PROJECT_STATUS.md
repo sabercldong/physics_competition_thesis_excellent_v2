@@ -332,6 +332,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT-QA`：新增 `03_corpus/manual_review_p0_batch2_handoff_closeout_qa.md` 和 `03_corpus/manual_review_p0_batch2_handoff_closeout_qa_v1.csv`，完成42项QA检查；确认10项收束索引 `P0B2CLOSE-01` 至 `P0B2CLOSE-10` 连续覆盖入口、入口QA、任务卡、任务卡QA、领取、写回、接收、整合、正式出口和状态同步；上游22行回填入口、38项入口QA、22张任务卡和45项任务卡QA均可定位，现有路径缺失0项。当前仍未创建真实回填目录或 `final_coding.csv`，不放行正式编码或论文结果。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING`：新增 `03_corpus/manual_review_p0_batch2_return_waiting.md` 和 `03_corpus/manual_review_p0_batch2_return_waiting_v1.csv`，建立P0第二批真实回填等待状态登记；12项等待与触发清单覆盖真实回填副本、22行回填入口、22张任务卡、接收目录、校验值、不可变字段、必填字段、冲突处理、整合QA、正式评分者模板候选、`final_coding.csv` 和项目状态同步。当前仍未收到真实回填副本，未创建 `03_corpus/manual_review_returns/`，未生成 `07_analysis/data/final_coding.csv`，正式编码与论文结果继续冻结。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING-QA`：新增 `03_corpus/manual_review_p0_batch2_return_waiting_qa.md` 和 `03_corpus/manual_review_p0_batch2_return_waiting_qa_v1.csv`，完成42项QA检查；确认P0第二批等待登记12项 `P0B2WAIT-01` 至 `P0B2WAIT-12` 连续唯一，覆盖真实回填副本、22行回填入口、22张任务卡、接收目录、校验值、不可变字段、必填字段、冲突处理、整合QA、正式评分者模板候选、`final_coding.csv` 和项目状态同步；上游回填入口22行、任务卡22张、交接链收束QA 42项均可定位。当前仍未创建真实回填目录或 `final_coding.csv`，不放行正式编码或论文结果。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE`：新增 `03_corpus/manual_review_p0_batch3_figure_queue.md` 和 `03_corpus/manual_review_p0_batch3_figure_queue_v1.csv`，建立P0第三批图件类真实核对领取入口；入口共48项，`P0B3FIG-01` 至 `P0B3FIG-48` 连续唯一，覆盖C组47项题图裁边与图注问题和第42届第3题 `CPHO42-Q03-SOLFIG` 解答放大图边界问题；严重程度为高39项、中9项。所有任务仍为“待领取：未真实回填”和“不放行”，不关闭C组图件或SOLFIG问题，不生成正式论文插图、正式编码或论文结果。
 
 ## 关键阻塞项
 
@@ -346,4 +347,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE`：准备P0第三批高风险图件与第42届第3题解答放大图边界任务入口，明确C组/相关SOLFIG图件核对范围、支持文件、候选图路径、回填字段和不放行边界；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE-QA`：检查P0第三批图件任务入口的行数、编号、来源覆盖、路径可定位、真实回填字段空白状态和不放行边界；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。

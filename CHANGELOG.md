@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE P0第三批图件任务入口
+
+- 新增 `03_corpus/manual_review_p0_batch3_figure_queue.md`，说明P0第三批图件类真实核对领取入口的性质、覆盖范围、领取与回填规则、必核内容、禁写边界和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch3_figure_queue_v1.csv`，建立48项结构化任务入口，编号 `P0B3FIG-01` 至 `P0B3FIG-48` 连续唯一；
+- 入口覆盖C组47项题图裁边与图注问题，以及第42届第3题 `CPHO42-Q03-SOLFIG` 解答放大图边界问题；
+- 记录每项任务的来源问题、材料ID、届次、题号、主要核对入口、来源页、原裁图、候选图、接触图、当前内部观察、核对重点、必填回填字段、验收标准、阻断条件、回填目标和禁止事项；
+- 确认严重程度分布为高39项、中9项，届次覆盖第35届5项、第36届6项、第37届6项、第38届8项、第39届4项、第40届8项、第41届5项、第42届6项；
+- 明确 `CPHO42-Q03-SOLFIG` 只核对题面图3a-3d、题解图3a-3c和解答放大页P26-P27的命名边界，不替代 `CPHO42-Q03-FIG` 的题面图终核；
+- 本任务不填写真实校对字段，不关闭C组图件或SOLFIG问题，不生成正式论文插图定稿、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE-QA`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING-QA P0第二批真实回填等待状态登记QA
 
 - 新增 `03_corpus/manual_review_p0_batch2_return_waiting_qa.md`，记录P0第二批真实回填等待状态登记QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
