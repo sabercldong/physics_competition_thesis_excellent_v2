@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-R01-B-RETURN-INTAKE 接收R01 B组人工复核回填
+
+- 接收并原样保存R01 B组22行回填，记录原件哈希；生成仅换行规范化的LF登记副本；
+- 新增 `03_corpus/manual_review_r01_b_return_intake_check.md` 与 `manual_review_r01_b_return_intake_check_v1.csv`，20项接收检查全部通过；
+- 登记R01声明、22个材料和22个问题；保留“仅CPHO36-Q03答案第19至20页明确视觉模型抽查”的范围限制；
+- 更新22项剩余回填接收登记、`PROJECT_STATUS.md`和`TASKS.md`；不关闭B组问题，不放行正式编码、统计或论文结果。
+
 ## 2026-07-22：G1-07-R01-A-RETURN-INTAKE 接收R01 A组人工复核回填
 
 - 接收并原样保存R01 A组76行回填，记录原件哈希；生成仅换行规范化的LF登记副本；

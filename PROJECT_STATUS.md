@@ -1,6 +1,6 @@
 # 项目状态
 
-更新时间：2026-07-19
+更新时间：2026-07-22
 
 ## 当前阶段
 
@@ -358,6 +358,8 @@
 
 ## 下一任务
 
+- 先完成 `G1-07-R01-A-RETURN-INTEGRATION-QA` 与 `G1-07-R01-B-RETURN-INTEGRATION-QA`：对已接收的R01回填逐项做整合一致性检查，处理证据范围限制；在两项QA前，不关闭A/B问题，不放行正式编码、统计或论文正文。
+
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION`：新增 `03_corpus/manual_review_p0_batch4_route_decision.md` 和 `manual_review_p0_batch4_route_decision_v1.csv`，在P0第一至第三批已交接且等待登记、真实回填仍未收到的条件下完成12条安全路线判断。真实接收、正式评分者编码、正式统计和论文图件定稿继续冻结；可安全推进语料路径QA、候选图件与分值缺口索引、评分者交接包QA、复现结构、正文门禁和SOLO全文边界核验。当前 `03_corpus/manual_review_returns/` 与 `07_analysis/data/final_coding.csv` 均不存在。
 
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA`：新增 `03_corpus/manual_review_p0_batch4_route_decision_qa.md` 和 `manual_review_p0_batch4_route_decision_qa_v1.csv`，完成31项QA检查；确认12条路线编号连续、CSV为UTF-8 BOM和LF、前三批等待QA（30、42、39项）、第三批交接链QA（43项）、无回填队列（14项）与SOLO入口材料均可定位，真实回填目录与 `final_coding.csv` 仍不存在。QA通过只表示安全路线判断可靠，不放行人工校对、正式评分者编码、统计、论文图件或论文结果。
@@ -415,3 +417,5 @@
 - 完成 `G1-07-HUMAN-REVIEWER-FILL-GUIDE`：新增 `03_corpus/human_reviewer_fill_guide.md`，将人工复核的实际操作明确为可复制填写的A/B/C/D闭环包、字段级填写规则、匿名声明、交付命名、证据位置与接收/放行字段隔离。指南也区分人工终核与后续双评分者编码；当前仍未收到任何填写副本，所有结果门禁继续冻结。
 
 - 完成 `G1-07-R01-A-RETURN-INTAKE`：收到R01自声明独立人工复核的A组汇总回填，原始副本保存在`03_corpus/manual_review_returns/incoming/REAL-P1/`，并生成LF登记副本和接收检查报告。76行/38材料、不可变字段、A组必填字段、决定选项和336条项目内证据路径均通过接收检查。R01摘要仅明确`CPHO41-Q02/Q07`做视觉API交叉验证，其余基于项目内文本层、转写、公式核对表和渲染页；这一限制已登记。当前仅接收并完成结构检查，仍未关闭A组问题、未放行正式编码或结果；下一步为R01整合QA。
+
+- 完成 `G1-07-R01-B-RETURN-INTAKE`：收到R01自声明独立人工复核的B组汇总回填，原始副本保存在`03_corpus/manual_review_returns/incoming/REMAINING-B/`，并生成LF登记副本和接收检查报告。22行/22材料、26项不可变字段、B组必填字段、决定选项和88条项目内证据路径均通过接收检查。R01摘要仅明确`CPHO36-Q03`答案第19至20页做视觉模型抽查，其余基于项目内文本层与公式核对表；这一限制已登记。当前仅接收并完成结构检查，仍未关闭B组问题、未放行正式编码或结果；下一步为R01整合QA。

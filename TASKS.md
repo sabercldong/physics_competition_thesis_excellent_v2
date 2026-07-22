@@ -387,6 +387,8 @@
   - 进度：新增 `03_corpus/human_reviewer_fill_guide.md`，按A/B/C/D四组逐一列出应复制填写的闭环包、可填写字段、证据位置写法、匿名声明、提交命名和不得填写的接收/放行字段；另明确正式双评分者A/B模板须在语料冻结后由不同真实人员独立填写。本任务只提供填写说明，不填写任何复核结果、不创建回填目录、不关闭问题或放行正式分析。
 - [x] G1-07-R01-A-RETURN-INTAKE 接收R01 A组人工复核回填
   - 进度：收到R01自声明独立人工复核的A组76行回填，新增原始副本、LF登记副本、`03_corpus/manual_review_r01_a_return_intake_check.md`和`manual_review_r01_a_return_intake_check_v1.csv`；76行/38材料、20项不可变字段、A组必填字段、76项决定选项和336条项目内证据路径均通过接收检查。原件CRLF已保留、登记副本规范化为LF。R01只明确`CPHO41-Q02/Q07`做视觉API交叉验证，其余依据项目内文本层、转写、公式核对表和渲染页；该范围限制已登记。当前只完成接收与结构检查，未关闭A组问题，下一步为`G1-07-R01-A-RETURN-INTEGRATION-QA`。
+- [x] G1-07-R01-B-RETURN-INTAKE 接收R01 B组人工复核回填
+  - 进度：收到R01自声明独立人工复核的B组22行回填，新增原始副本、LF登记副本、`03_corpus/manual_review_r01_b_return_intake_check.md`和`manual_review_r01_b_return_intake_check_v1.csv`；22行/22材料、26项不可变字段、B组必填字段、22项决定选项和88条项目内证据路径均通过接收检查。原件CRLF已保留、登记副本规范化为LF。R01只明确`CPHO36-Q03`答案第19至20页做视觉模型抽查，其余依据项目内文本层与公式核对表；该范围限制已登记。当前只完成接收与结构检查，未关闭B组问题，下一步为`G1-07-R01-B-RETURN-INTEGRATION-QA`。
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议
