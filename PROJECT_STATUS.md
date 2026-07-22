@@ -330,6 +330,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS-QA`：新增 `03_corpus/manual_review_p0_batch2_task_cards_qa.md` 和 `03_corpus/manual_review_p0_batch2_task_cards_qa_v1.csv`，完成45项QA检查；确认22张任务卡编号连续，逐行挂接 `P0B2RET-01` 至 `P0B2RET-22`，覆盖第35届8题、第36届7题、第39届7题；题目文本、公式核对表和最低核对输入路径缺失0项，全部仍保持“待领取：未真实回填”和“不放行：P0第二批任务卡，未真实销项”。本QA不代表真实校对完成，不释放正式评分者模板、正式编码、正式统计或论文结果章。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT`：新增 `03_corpus/manual_review_p0_batch2_handoff_closeout.md` 和 `03_corpus/manual_review_p0_batch2_handoff_closeout_v1.csv`，将P0第二批回填入口、入口QA、任务卡和任务卡QA收束为一页式交接说明与10项结构化索引；明确其他智能体从任务卡领取、按对应 `P0B2RET` 行写入真实核对发现，收到真实副本后再进行接收登记、结构检查、不可变字段检查、必填字段检查和整合QA。当前仍不填写真实校对字段，不关闭22项P0第二批问题，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT-QA`：新增 `03_corpus/manual_review_p0_batch2_handoff_closeout_qa.md` 和 `03_corpus/manual_review_p0_batch2_handoff_closeout_qa_v1.csv`，完成42项QA检查；确认10项收束索引 `P0B2CLOSE-01` 至 `P0B2CLOSE-10` 连续覆盖入口、入口QA、任务卡、任务卡QA、领取、写回、接收、整合、正式出口和状态同步；上游22行回填入口、38项入口QA、22张任务卡和45项任务卡QA均可定位，现有路径缺失0项。当前仍未创建真实回填目录或 `final_coding.csv`，不放行正式编码或论文结果。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING`：新增 `03_corpus/manual_review_p0_batch2_return_waiting.md` 和 `03_corpus/manual_review_p0_batch2_return_waiting_v1.csv`，建立P0第二批真实回填等待状态登记；12项等待与触发清单覆盖真实回填副本、22行回填入口、22张任务卡、接收目录、校验值、不可变字段、必填字段、冲突处理、整合QA、正式评分者模板候选、`final_coding.csv` 和项目状态同步。当前仍未收到真实回填副本，未创建 `03_corpus/manual_review_returns/`，未生成 `07_analysis/data/final_coding.csv`，正式编码与论文结果继续冻结。
 
 ## 关键阻塞项
 
@@ -344,4 +345,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING`：登记P0第二批真实回填等待状态，明确当前22项仍未真实回填、收到真实副本后的触发流程、禁止直接关闭和正式编码冻结边界；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING-QA`：检查P0第二批真实回填等待状态登记是否正确记录未收到状态、触发条件、冻结边界、CSV格式和禁止推进项；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。

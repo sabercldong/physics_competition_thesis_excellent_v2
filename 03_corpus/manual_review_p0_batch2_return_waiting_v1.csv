@@ -1,0 +1,13 @@
+﻿wait_id,wait_area,current_evidence,current_status,trigger_condition,action_when_triggered,must_not_do,release_status,next_owner_or_route
+P0B2WAIT-01,真实回填副本状态,路径不存在：03_corpus/manual_review_returns/；上游交接链QA已完成：03_corpus/manual_review_p0_batch2_handoff_closeout_qa_v1.csv,未收到真实回填副本,用户、其他智能体或真实校对者提供按22张任务卡完成的真实回填副本,按接收协议登记文件名、路径、大小、校验值、接收日期和接收人,不得创建虚假接收目录；不得登记不存在的副本；不得填写校对人或日期,不放行：等待真实回填,若收到则转入G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-INTAKE-REAL-CHECK
+P0B2WAIT-02,22行回填入口状态,03_corpus/manual_review_p0_batch2_return_prep_v1.csv 共22行，真实回填字段为空白或未回填,入口可用但未回填,任一P0B2RET行出现真实校对人、校对日期、公式决定和证据摘记,检查结构、不可变字段、必填字段和回填来源,不得只凭任务卡或QA关闭return_id；不得代填真实字段,不放行：空白回填入口,继续等待；收到后做结构检查
+P0B2WAIT-03,22张任务卡领取状态,03_corpus/manual_review_p0_batch2_task_cards_v1.csv 共22张，状态为待领取：未真实回填,任务卡可领取但未销项,执行者领取P0B2CARD-01至P0B2CARD-22任一任务并提交真实核对记录,核对领取任务与对应P0B2RET行是否一致,不得把领取等同完成；不得跳过回填入口,不放行：任务卡未真实销项,继续等待领取或回填
+P0B2WAIT-04,接收目录状态,03_corpus/manual_review_returns/ 当前不存在,未创建真实回填目录,出现真实回填副本且需要按协议归档,创建或使用接收目录前先登记来源、命名、校验值和接收人,不得提前创建目录伪装已有回填；不得放入模板冒充真实副本,冻结：未收到真实材料,收到后按接收目录规范处理
+P0B2WAIT-05,校验值状态,回填副本不存在，因此无文件大小、校验值或接收日志,未计算校验值,真实副本出现并完成本地保存,计算校验值并登记到接收表或回填入口,不得为不存在文件编造checksum或文件大小,不放行：无真实副本,收到后转入接收登记
+P0B2WAIT-06,不可变字段检查,当前只能复用上游22行入口与22张任务卡的一一映射,未触发检查,真实回填副本出现,检查return_id、source_queue_id、source_issue_id、material_id、届次、年份、题号和路径是否被改动,不得接受改动继承字段的回填副本进入整合,冻结：待真实回填触发,收到后做不可变字段检查
+P0B2WAIT-07,必填回填字段检查,reviewer_name、review_date、source_pages_checked、formula_decision、evidence_note等仍未真实填写,未触发检查,任一回填行声称完成,逐字段检查必填项，缺字段则退回或保持待核,不得以字段不全的记录关闭问题,冻结：待真实回填触发,收到后做必填字段检查
+P0B2WAIT-08,冲突处理状态,当前没有真实回填，因此没有冲突、修订位置或剩余疑点可处理,未触发冲突处理,真实回填出现“需修订”“待核实”“不一致”或证据不足,按回填整合协议登记冲突、修订建议和后续责任文件,不得自行补造修订结论；不得把待核实改成通过,不放行：冲突未触发,收到后按RIP协议处理
+P0B2WAIT-09,整合QA状态,03_corpus/manual_review_return_integration_protocol_v1.csv 可作为后续协议；本批次未进入整合,未触发整合QA,接收登记、结构检查和必填字段检查完成,对22项逐项判断是否可关闭、是否允许进入正式评分者模板候选,不得绕过整合QA直接更新总清单或正式模板,冻结：等待真实回填与接收检查,接收检查后转入整合QA
+P0B2WAIT-10,正式评分者模板候选状态,当前没有22项真实销项证据，不能更新正式评分者模板候选,不得放行,22项或部分项通过接收检查和整合QA,仅将通过整合QA的条目标记为候选，不自动进入正式编码,不得把内部任务卡或等待登记当作评分者输入,不放行：正式评分者模板冻结,整合QA后再评估
+P0B2WAIT-11,final_coding出口状态,07_analysis/data/final_coding.csv 当前不存在,正式编码冻结,人工校对真实销项、双评分者独立编码、一致性检验和分歧裁决均完成,按正式编码流程生成或更新final_coding.csv,不得复制内部编码或回填模板生成正式编码,冻结：不得生成final_coding.csv,等待正式编码前置条件
+P0B2WAIT-12,项目状态同步,PROJECT_STATUS.md 和 TASKS.md 当前指向P0第二批等待登记,待登记本任务完成,本等待登记生成并通过QA，或真实副本先出现,更新项目状态；若仍未收到真实回填，下一步做等待登记QA,不得把状态更新写成真实回填完成,不放行：仅状态登记,下一步G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING-QA
