@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS P0第三批逐项领取任务卡
+
+- 新增 `03_corpus/manual_review_p0_batch3_task_cards.md`，说明P0第三批逐项领取任务卡的性质、覆盖范围、使用方法、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch3_task_cards_v1.csv`，将P0第三批48项图件与SOLFIG边界入口拆成48张结构化任务卡，编号 `P0B3CARD-01` 至 `P0B3CARD-48` 连续唯一；
+- 48张任务卡逐卡挂接 `P0B3FIG-01` 至 `P0B3FIG-48`，覆盖C组47项题图裁边与图注问题和第42届第3题 `CPHO42-Q03-SOLFIG` 解答放大图边界问题；
+- 每张任务卡均继承来源组、来源队列、来源问题、材料ID、届次、题号、严重程度、受影响分析单元、主要核对入口、最低核对输入、当前内部观察、核对重点、必填回填字段、最低交付、验收标准、阻断条件和写回目标；
+- 确认最低核对输入路径缺失0项，48张任务卡均保持“待领取：未真实回填”和“不放行：P0第三批任务卡，未真实销项”；
+- 本任务不填写真实校对字段，不关闭C组图件或SOLFIG问题，不生成正式论文插图定稿、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS-QA`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-FIGURE-QUEUE-QA P0第三批图件任务入口QA
 
 - 新增 `03_corpus/manual_review_p0_batch3_figure_queue_qa.md`，记录P0第三批图件任务入口QA的性质声明、QA结论、已确认事项、仍不能声称内容和下一最小任务；
