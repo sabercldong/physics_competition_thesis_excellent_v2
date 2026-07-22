@@ -1,2 +1,3 @@
 # Preserve externally received originals byte-for-byte; normalized copies live separately.
 03_corpus/manual_review_returns/incoming/** -text
+03_corpus/manual_review_returns/quarantine/** -text
