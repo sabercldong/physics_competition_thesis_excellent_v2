@@ -337,6 +337,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS`：新增 `03_corpus/manual_review_p0_batch3_task_cards.md` 和 `03_corpus/manual_review_p0_batch3_task_cards_v1.csv`，将P0第三批48项图件与SOLFIG边界入口拆成48张逐项领取任务卡；任务卡 `P0B3CARD-01` 至 `P0B3CARD-48` 连续唯一，逐卡挂接 `P0B3FIG-01` 至 `P0B3FIG-48`，覆盖C组47项题图裁边与图注问题和D组1项解答放大图边界问题；最低核对输入路径缺失0项，所有任务仍为“待领取：未真实回填”和“不放行”。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-TASK-CARDS-QA`：新增 `03_corpus/manual_review_p0_batch3_task_cards_qa.md` 和 `03_corpus/manual_review_p0_batch3_task_cards_qa_v1.csv`，完成37项QA检查；确认任务卡CSV为UTF-8 BOM和LF换行，48张任务卡编号连续且逐卡挂接第三批入口，`source_issue_id` 和 `material_id` 与入口逐行一致，最低核对输入路径缺失0项，`CPHO42-Q03-SOLFIG` 任务卡明确不替代 `CPHO42-Q03-FIG` 题面图终核；所有任务仍未真实回填且不放行。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT`：新增 `03_corpus/manual_review_p0_batch3_handoff_closeout.md` 和 `03_corpus/manual_review_p0_batch3_handoff_closeout_v1.csv`，将P0第三批入口、入口QA、逐项任务卡和任务卡QA收束为一页式交接链；收束索引共10项，`P0B3CLOSE-01` 至 `P0B3CLOSE-10` 连续覆盖任务入口、入口QA、逐项任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步。当前仍未收到真实回填副本，不创建 `03_corpus/manual_review_returns/`，不生成 `07_analysis/data/final_coding.csv`。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT-QA`：新增 `03_corpus/manual_review_p0_batch3_handoff_closeout_qa.md` 和 `03_corpus/manual_review_p0_batch3_handoff_closeout_qa_v1.csv`，完成43项QA检查；确认收束索引10项 `P0B3CLOSE-01` 至 `P0B3CLOSE-10` 连续唯一，覆盖任务入口、入口QA、逐项任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步；上游入口48项、入口QA36项、任务卡48张、任务卡QA37项、C组回填包47项、D组回填包9项和回填整合协议22条均可定位。当前仍未创建真实回填目录或 `final_coding.csv`，不关闭图件或SOLFIG问题，不放行正式论文图件、正式编码或论文结果。
 
 ## 关键阻塞项
 
@@ -351,4 +352,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT-QA`：检查P0第三批交接链收束索引的输入存在性、行数编号、链条覆盖、路径可定位、状态边界和不放行边界；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING`：登记P0第三批48项图件与SOLFIG边界任务在交接链收束后、真实回填副本未收到时的等待状态、触发流程、禁止事项和后续路线；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。

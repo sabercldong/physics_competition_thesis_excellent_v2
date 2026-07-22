@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT-QA P0第三批图件交接链收束QA
+
+- 新增 `03_corpus/manual_review_p0_batch3_handoff_closeout_qa.md`，记录P0第三批图件交接链收束QA的性质声明、QA结论、已确认事项、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch3_handoff_closeout_qa_v1.csv`，完成43项QA检查，覆盖输入存在性、CSV编码换行、收束索引行数编号、链条覆盖、上游规模、写回边界、SOLFIG边界、真实回填状态、正式数据状态、Markdown边界和正文隔离；
+- 确认收束索引共10项，`P0B3CLOSE-01` 至 `P0B3CLOSE-10` 连续唯一，覆盖任务入口、入口QA、逐项任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步；
+- 确认上游入口48项、入口QA36项、任务卡48张、任务卡QA37项、C组回填包47项、D组回填包9项和回填整合协议22条均可定位；
+- 确认 `03_corpus/manual_review_returns/` 和 `07_analysis/data/final_coding.csv` 当前均不存在；
+- 明确 `CPHO42-Q03-SOLFIG` 不替代 `CPHO42-Q03-FIG` 题面图终核；
+- 本QA不填写真实校对字段，不关闭C组图件或SOLFIG问题，不生成正式论文插图定稿、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT P0第三批图件交接链收束
 
 - 新增 `03_corpus/manual_review_p0_batch3_handoff_closeout.md`，将P0第三批图件/SOLFIG边界入口、入口QA、逐项任务卡和任务卡QA收束为一页式交接说明；

@@ -1,0 +1,44 @@
+﻿qa_id,check_area,check_item,evidence,result,risk_if_failed,release_boundary
+P0B3CLOSEQA-01,输入存在性,收束说明Markdown存在,03_corpus/manual_review_p0_batch3_handoff_closeout.md 可定位,通过,无法给其他智能体提供一页式交接说明,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-02,输入存在性,收束索引CSV存在,03_corpus/manual_review_p0_batch3_handoff_closeout_v1.csv 可定位,通过,无法结构化检查交接链,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-03,输入存在性,第三批任务入口存在,03_corpus/manual_review_p0_batch3_figure_queue_v1.csv 可定位，48行,通过,无法确认P0第三批入口覆盖范围,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-04,输入存在性,第三批任务入口QA存在,03_corpus/manual_review_p0_batch3_figure_queue_qa_v1.csv 可定位，36行,通过,无法确认入口已通过前置QA,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-05,输入存在性,第三批逐项任务卡存在,03_corpus/manual_review_p0_batch3_task_cards_v1.csv 可定位，48行,通过,无法确认逐项领取材料已准备,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-06,输入存在性,第三批任务卡QA存在,03_corpus/manual_review_p0_batch3_task_cards_qa_v1.csv 可定位，37行,通过,无法确认任务卡可交接,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-07,输入存在性,C组回填包存在,03_corpus/manual_review_c_closure_packet_v1.csv 可定位，47行,通过,无法确认C组图件写回位置,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-08,输入存在性,D组回填包存在,03_corpus/manual_review_d_closure_packet_v1.csv 可定位，9行,通过,无法确认SOLFIG写回位置,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-09,输入存在性,回填整合协议存在,03_corpus/manual_review_return_integration_protocol_v1.csv 可定位，22行,通过,无法确认真实副本收到后的整合规则,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-10,CSV格式,收束索引为UTF-8 BOM,manual_review_p0_batch3_handoff_closeout_v1.csv 字节头为BOM,通过,跨平台打开可能乱码,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-11,CSV格式,收束索引为LF换行,manual_review_p0_batch3_handoff_closeout_v1.csv 未检测到CR字符,通过,CSV格式不符合项目规范,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-12,CSV结构,收束索引字段完整,"字段含 closeout_id,handoff_area,handoff_item,file_or_target,expected_count_or_scope,how_to_use,dependency,current_status,release_boundary,must_not_do",通过,交接信息可能不可复核,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-13,编号连续,收束索引编号连续唯一,closeout_id 为 P0B3CLOSE-01 至 P0B3CLOSE-10,通过,交接链可能漏项或重号,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-14,行数,收束索引行数正确,共10行,通过,收束范围可能扩大或缺失,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-15,链条覆盖,覆盖任务入口,收束索引 handoff_area 包含“任务入口”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-16,链条覆盖,覆盖入口QA,收束索引 handoff_area 包含“入口QA”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-17,链条覆盖,覆盖逐项任务卡,收束索引 handoff_area 包含“逐项任务卡”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-18,链条覆盖,覆盖任务卡QA,收束索引 handoff_area 包含“任务卡QA”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-19,链条覆盖,覆盖领取顺序,收束索引 handoff_area 包含“领取顺序”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-20,链条覆盖,覆盖写回位置,收束索引 handoff_area 包含“写回位置”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-21,链条覆盖,覆盖真实副本接收,收束索引 handoff_area 包含“真实副本接收”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-22,链条覆盖,覆盖整合协议,收束索引 handoff_area 包含“整合协议”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-23,链条覆盖,覆盖正式编码出口,收束索引 handoff_area 包含“正式编码出口”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-24,链条覆盖,覆盖项目状态同步,收束索引 handoff_area 包含“项目状态同步”,通过,其他智能体可能无法定位该环节,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-25,上游规模,第三批任务入口规模一致,manual_review_p0_batch3_figure_queue_v1.csv 共48行，P0B3FIG-01 至 P0B3FIG-48,通过,任务入口数量可能与任务卡错位,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-26,上游规模,入口QA规模一致,manual_review_p0_batch3_figure_queue_qa_v1.csv 共36行，P0B3FIGQA-01 至 P0B3FIGQA-36,通过,入口QA证据可能不完整,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-27,上游规模,逐项任务卡规模一致,manual_review_p0_batch3_task_cards_v1.csv 共48行，P0B3CARD-01 至 P0B3CARD-48,通过,领取任务数量可能不完整,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-28,上游规模,任务卡QA规模一致,manual_review_p0_batch3_task_cards_qa_v1.csv 共37行，P0B3CARDQA-01 至 P0B3CARDQA-37,通过,任务卡QA证据可能不完整,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-29,上游规模,C组回填包规模一致,manual_review_c_closure_packet_v1.csv 共47行,通过,C组图件待核范围可能错位,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-30,上游规模,D组回填包规模一致,manual_review_d_closure_packet_v1.csv 共9行,通过,D组分值与SOLFIG边界可能错位,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-31,上游规模,整合协议规模一致,manual_review_return_integration_protocol_v1.csv 共22行，RIP-01 至 RIP-22,通过,真实回填后的整合流程可能缺规则,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-32,写回边界,C组写回位置明确,收束索引写回位置指向 manual_review_c_closure_packet_v1.csv 或未来真实回填副本,通过,真实回填可能写到错误表格,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-33,写回边界,SOLFIG写回位置明确,收束索引写回位置指向 manual_review_d_closure_packet_v1.csv 对应行或未来真实回填副本,通过,第42届第3题附属图边界可能混入C组题面图终核,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-34,SOLFIG边界,CPHO42-Q03-SOLFIG不替代题面图终核,收束说明保留 CPHO42-Q03-SOLFIG 与 CPHO42-Q03-FIG 的边界提示,通过,可能误把答案放大图作为题面图定稿依据,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-35,状态边界,收束索引全部不放行,10行 release_boundary 均含“不放行”,通过,可能误放行正式编码或论文图件,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-36,状态边界,收束索引不关闭真实问题,10行 must_not_do 均保留禁止关闭、禁止生成正式产出的约束,通过,可能把交接完成误写成校对完成,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-37,真实回填状态,未创建真实回填目录,03_corpus/manual_review_returns/ 当前不存在,通过,可能误登记不存在的真实副本,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-38,正式数据状态,未生成final_coding.csv,07_analysis/data/final_coding.csv 当前不存在,通过,可能越过人工终核进入正式统计,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-39,Markdown边界,收束说明含禁止事项,Markdown包含不填写真实校对人、不关闭C组47项、不创建真实回填副本、不生成正式论文插图和不创建final_coding.csv等边界,通过,读者可能误解交接链状态,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-40,Markdown边界,下一任务指向QA,收束说明和项目台账指向 G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT-QA,通过,任务链可能断开,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-41,正文隔离,未改写论文正文,本任务输出限定在03_corpus交接QA与项目台账,通过,可能将准备性材料误写为论文结果,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-42,原始材料保护,未改动00_originals,本任务未将00_originals列入输出文件,通过,可能破坏原始证据,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
+P0B3CLOSEQA-43,总体结论,交接链QA通过,10项收束索引、48项入口、48张任务卡、C/D回填包和22条整合协议均可定位；真实回填与正式编码仍不存在,通过,无法给下一步等待登记提供可靠依据,不放行：仅为交接链收束QA，不代表真实校对完成或正式数据生成
