@@ -364,4 +364,6 @@
 
 - 完成 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP-QA`：新增 `02_literature/solo_fulltext_return_intake_prep_qa.md` 和 `solo_fulltext_return_intake_prep_qa_v1.csv`，完成30项QA检查；确认两篇来源均覆盖、CSV为25列、17个实际字段均为空、`P1BF-01`、`P1GATE-01/P1GATE-09` 与所需P1接收规则均已映射，项目内未发现新增SOLO全文回填。QA通过不放行正文、主张矩阵、`references.bib` 或理论定稿。
 
-`G1-07-NO-RETURN-CORPUS-PATH-QA`：在真实人工回填仍未出现的条件下，检查154项语料校对入口的转写稿、公式核对表、页面证据图和候选图是否路径可达，并登记断链与页码边界疑点；不得将路径可达、OCR转写或内部视觉检查写成真实人工终核，不得进入正式编码或论文结果写作。若合法SOLO全文先出现，则优先转入对应真实全文接收检查。
+- 完成 `G1-07-NO-RETURN-CORPUS-PATH-QA`：新增 `03_corpus/manual_review_no_return_corpus_path_qa.md` 和 `manual_review_no_return_corpus_path_qa_v1.csv`，逐条审计154项人工校对入口。154项题目整理文本、题面页和答案页字段均可定位；A/B/C/D回填包共154行与清单一一对应且登记路径均存在。清单直接证据路径为67项，另87项通过回填包反向定位；154项真实校对人和日期仍均为空，故路径可达不放行真实人工终核、正式编码、统计或论文结果。
+
+`G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX`：为87项清单未直连文件路径的条目建立只读侧车索引，逐项指向A/B/C/D回填包和已存在证据入口，减少人工领取时的跳转成本。不得修改原清单、题文或原始PDF，不填写真实终核字段，不放行正式编码。若合法SOLO全文先出现，则优先转入对应真实全文接收检查。

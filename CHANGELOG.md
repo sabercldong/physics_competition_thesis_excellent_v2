@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-NO-RETURN-CORPUS-PATH-QA 无真实回填语料证据路径与页码边界QA
+
+- 新增 `03_corpus/manual_review_no_return_corpus_path_qa.md`，记录154项人工校对入口的路径审计范围、结论、冻结边界、可改进点和下一最小任务；
+- 新增 `03_corpus/manual_review_no_return_corpus_path_qa_v1.csv`，为154项逐条登记题目整理文本、题面/答案页、清单直连路径、A/B/C/D回填包路径、真实终核字段状态、允许用途和禁写边界；
+- 确认154项题目整理文本、题面页和答案页字段均可定位，A/B/C/D回填包154行与清单一一对应，登记证据路径当前均存在；
+- 发现清单 `evidence` 中67项直接含可解析路径，87项仅含文字说明但可通过回填包反向定位；154项真实校对人和日期仍均为空；
+- 本审计不改写题文、原始PDF、原清单、真实终核字段、正式编码数据或论文正文；更新 `PROJECT_STATUS.md` 与 `TASKS.md`，下一最小任务为 `G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX`。
+
 ## 2026-07-22：G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP-QA SOLO全文回填接收准备QA
 
 - 新增 `02_literature/solo_fulltext_return_intake_prep_qa.md`，记录接收准备QA的性质、结论、门禁边界、不可声称事项和下一最小任务；
