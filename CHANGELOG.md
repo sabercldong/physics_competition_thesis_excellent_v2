@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-07-22：G2-04-LOCAL-FULLTEXT-AUDIT 本机竞赛试题研究全文检查
+
+- 新增 `02_literature/physics_competition_local_fulltext_audit.md`；
+- 检查项目、下载与文档目录，未发现`PCOMP-001`至`PCOMP-005`的独立可读全文副本；
+- 明确初稿、题录、请求包和无关竞赛资料不构成全文阅读证据；后续仍需通过合法渠道获取全文。
+
 ## 2026-07-22：G2-04-PCOMP004-METADATA-RECOVERY 竞赛试题候选元数据复核
 
 - 新增 `02_literature/physics_competition_pcomp004_metadata_recovery.md`；
