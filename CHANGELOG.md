@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA P0第三批真实回填等待状态登记QA
+
+- 新增 `03_corpus/manual_review_p0_batch3_return_waiting_qa.md`，记录P0第三批真实回填等待状态登记QA的性质声明、QA结论、已确认事项、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch3_return_waiting_qa_v1.csv`，完成39项QA检查，覆盖输入存在性、CSV编码换行、字段结构、行数编号、覆盖范围、上游规模、状态边界、真实回填状态、正式数据状态、正式图件边界、SOLFIG边界、Markdown边界、下一任务和正文隔离；
+- 确认等待登记共12项，`P0B3WAIT-01` 至 `P0B3WAIT-12` 连续唯一，覆盖真实回填副本、48项任务入口、48张任务卡、C组47项图件写回、D组SOLFIG写回、接收目录、校验值、结构检查、冲突处理、整合QA、正式图件与编码出口和项目状态同步；
+- 确认第三批交接链收束QA43项、任务卡48张、C组回填包47项、D组回填包9项均可定位；
+- 确认 `03_corpus/manual_review_returns/` 和 `07_analysis/data/final_coding.csv` 当前均不存在；
+- 本QA不接收真实回填，不关闭C组图件或SOLFIG问题，不放行正式论文图件、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING P0第三批真实回填等待状态登记
 
 - 新增 `03_corpus/manual_review_p0_batch3_return_waiting.md`，登记P0第三批48项图件与 `CPHO42-Q03-SOLFIG` 边界任务在交接链已收束、真实回填副本未收到时的等待状态、触发流程、可领取入口和禁止事项；

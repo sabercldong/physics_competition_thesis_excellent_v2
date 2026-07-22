@@ -339,6 +339,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT`：新增 `03_corpus/manual_review_p0_batch3_handoff_closeout.md` 和 `03_corpus/manual_review_p0_batch3_handoff_closeout_v1.csv`，将P0第三批入口、入口QA、逐项任务卡和任务卡QA收束为一页式交接链；收束索引共10项，`P0B3CLOSE-01` 至 `P0B3CLOSE-10` 连续覆盖任务入口、入口QA、逐项任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步。当前仍未收到真实回填副本，不创建 `03_corpus/manual_review_returns/`，不生成 `07_analysis/data/final_coding.csv`。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT-QA`：新增 `03_corpus/manual_review_p0_batch3_handoff_closeout_qa.md` 和 `03_corpus/manual_review_p0_batch3_handoff_closeout_qa_v1.csv`，完成43项QA检查；确认收束索引10项 `P0B3CLOSE-01` 至 `P0B3CLOSE-10` 连续唯一，覆盖任务入口、入口QA、逐项任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步；上游入口48项、入口QA36项、任务卡48张、任务卡QA37项、C组回填包47项、D组回填包9项和回填整合协议22条均可定位。当前仍未创建真实回填目录或 `final_coding.csv`，不关闭图件或SOLFIG问题，不放行正式论文图件、正式编码或论文结果。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING`：新增 `03_corpus/manual_review_p0_batch3_return_waiting.md` 和 `03_corpus/manual_review_p0_batch3_return_waiting_v1.csv`，登记P0第三批48项图件与SOLFIG边界任务在交接链收束后、真实回填副本未收到时的等待状态；12项等待与触发清单覆盖真实回填副本、48项任务入口、48张任务卡、C组47项图件写回、D组SOLFIG写回、接收目录、校验值、结构检查、冲突处理、整合QA、正式图件与编码出口和项目状态同步。当前仍未创建 `03_corpus/manual_review_returns/`，未生成 `07_analysis/data/final_coding.csv`，不关闭C组图件或SOLFIG问题，不放行正式论文图件、正式编码或论文结果。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA`：新增 `03_corpus/manual_review_p0_batch3_return_waiting_qa.md` 和 `03_corpus/manual_review_p0_batch3_return_waiting_qa_v1.csv`，完成39项QA检查；确认等待登记12项 `P0B3WAIT-01` 至 `P0B3WAIT-12` 连续唯一，覆盖真实回填副本、48项任务入口、48张任务卡、C组47项图件写回、D组SOLFIG写回、接收目录、校验值、结构检查、冲突处理、整合QA、正式图件与编码出口和项目状态同步；12项释放状态均为“不放行”或“冻结”。当前仍未创建真实回填目录或 `final_coding.csv`，不放行正式论文图件、正式编码或论文结果。
 
 ## 关键阻塞项
 
@@ -353,4 +354,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA`：检查P0第三批真实回填等待登记的输入存在性、CSV编码换行、行数编号、触发流程、冻结边界、正式图件/编码出口和不放行状态；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION`：在P0前三批均已完成交接链和等待登记、但真实回填副本仍未收到的条件下，判断下一批应继续准备哪类P0/P1材料，或转入文献理论核验/复现结构补强；不得进入正式编码、正式论文图件定稿或结果章写作。若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。

@@ -1,0 +1,40 @@
+﻿qa_id,check_area,check_item,evidence,result,risk_if_failed,release_boundary
+P0B3WAITQA-01,输入存在性,等待登记Markdown存在,03_corpus/manual_review_p0_batch3_return_waiting.md 可定位,通过,无法让其他智能体读取等待边界,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-02,输入存在性,等待登记CSV存在,03_corpus/manual_review_p0_batch3_return_waiting_v1.csv 可定位,通过,无法结构化检查等待状态,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-03,输入存在性,交接链收束QA存在,03_corpus/manual_review_p0_batch3_handoff_closeout_qa_v1.csv 可定位，43项,通过,无法确认等待登记建立在已QA交接链之后,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-04,输入存在性,第三批任务卡存在,03_corpus/manual_review_p0_batch3_task_cards_v1.csv 可定位，48张,通过,无法确认等待对象,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-05,输入存在性,C组回填包存在,03_corpus/manual_review_c_closure_packet_v1.csv 可定位，47项,通过,无法确认图件写回对象,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-06,输入存在性,D组回填包存在,03_corpus/manual_review_d_closure_packet_v1.csv 可定位，9项,通过,无法确认SOLFIG写回对象,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-07,输入存在性,整合协议存在,03_corpus/manual_review_return_integration_protocol_v1.csv 可定位，22条,通过,无法确认收到副本后的整合规则,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-08,输入存在性,接收目录规则存在,03_corpus/manual_review_return_intake_folder_rules_v1.csv 可定位，12条,通过,无法确认未来真实副本接收边界,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-09,CSV格式,等待登记CSV为UTF-8 BOM,manual_review_p0_batch3_return_waiting_v1.csv 字节头为BOM,通过,跨平台打开可能乱码,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-10,CSV格式,等待登记CSV为LF换行,manual_review_p0_batch3_return_waiting_v1.csv 未检测到CR字符,通过,CSV不符合项目规范,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-11,CSV结构,字段完整,"字段含 wait_id,wait_area,current_evidence,current_status,trigger_condition,action_when_triggered,must_not_do,release_status,next_owner_or_route",通过,等待登记不可复核,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-12,编号连续,等待编号连续唯一,wait_id 为 P0B3WAIT-01 至 P0B3WAIT-12,通过,等待触发项可能漏项或重号,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-13,行数,等待登记行数正确,共12行,通过,等待范围可能不完整,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-14,覆盖范围,覆盖真实回填副本状态,wait_area 包含“真实回填副本状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-15,覆盖范围,覆盖48项任务入口状态,wait_area 包含“48项任务入口状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-16,覆盖范围,覆盖48张任务卡领取状态,wait_area 包含“48张任务卡领取状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-17,覆盖范围,覆盖C组47项图件写回状态,wait_area 包含“C组47项图件写回状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-18,覆盖范围,覆盖D组SOLFIG写回状态,wait_area 包含“D组SOLFIG写回状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-19,覆盖范围,覆盖接收目录准备状态,wait_area 包含“接收目录准备状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-20,覆盖范围,覆盖校验值状态,wait_area 包含“校验值状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-21,覆盖范围,覆盖结构检查状态,wait_area 包含“结构检查状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-22,覆盖范围,覆盖冲突处理状态,wait_area 包含“冲突处理状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-23,覆盖范围,覆盖整合QA状态,wait_area 包含“整合QA状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-24,覆盖范围,覆盖正式图件与编码出口状态,wait_area 包含“正式图件与编码出口状态”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-25,覆盖范围,覆盖项目状态同步,wait_area 包含“项目状态同步”,通过,等待登记可能无法指导后续流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-26,上游规模,交接链QA规模一致,manual_review_p0_batch3_handoff_closeout_qa_v1.csv 共43项，P0B3CLOSEQA-01至P0B3CLOSEQA-43,通过,等待登记可能建立在未QA交接链上,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-27,上游规模,任务卡规模一致,manual_review_p0_batch3_task_cards_v1.csv 共48张，P0B3CARD-01至P0B3CARD-48,通过,等待登记可能遗漏第三批任务,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-28,上游规模,C组图件规模一致,manual_review_c_closure_packet_v1.csv 共47行,通过,C组图件写回范围可能错误,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-29,上游规模,D组回填包规模一致,manual_review_d_closure_packet_v1.csv 共9行,通过,D组SOLFIG边界可能无写回位置,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-30,状态边界,所有释放状态均冻结或不放行,12行 release_status 均含“不放行”或“冻结”,通过,可能误放行正式图件或正式编码,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-31,真实回填状态,等待登记未声称已收到真实副本,P0B3WAIT-01 当前状态为“未收到真实回填副本”,通过,可能误触发真实接收流程,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-32,真实回填状态,未创建真实回填目录,03_corpus/manual_review_returns/ 当前不存在,通过,可能伪造接收状态,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-33,正式数据状态,未生成final_coding.csv,07_analysis/data/final_coding.csv 当前不存在,通过,可能绕过正式编码前门槛,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-34,正式图件边界,未放行正式论文图件,P0B3WAIT-11 标记正式图件、正式编码和正式统计冻结,通过,候选图可能被误用为论文定稿图,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-35,SOLFIG边界,保留SOLFIG与题面图边界,Markdown和等待登记均说明CPHO42-Q03-SOLFIG不替代CPHO42-Q03-FIG题面图终核,通过,可能混淆答案放大图与题面图,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-36,Markdown边界,禁止事项完整,Markdown含不填写真实校对字段、不关闭C组/SOLFIG、不生成正式图件、不创建final_coding.csv、不改00_originals,通过,读者可能误解等待登记性质,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-37,下一任务,下一步指向等待登记QA后的路线,PROJECT_STATUS和TASKS均包含G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA,通过,任务链可能断开,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-38,正文隔离,未改写论文正文,本任务限定在03_corpus等待QA和项目台账,通过,准备材料可能误入论文结果,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
+P0B3WAITQA-39,总体结论,等待登记QA通过,12项等待登记连续唯一，触发流程和冻结边界完整；真实副本与正式编码仍不存在,通过,无法确认第三批等待状态是否可靠,不放行：仅为等待登记QA，不代表真实回填收到或人工校对完成
