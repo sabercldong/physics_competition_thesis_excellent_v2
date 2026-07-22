@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP 真实回填触发路线图
+
+- 新增 `03_corpus/no_return_real_return_trigger_map.md` 和 `no_return_real_return_trigger_map_v1.csv`，将真实回填后的接收、结构检查、整合关闭、正式输入冻结、A/B评分、一致性、裁决、唯一分析表、正式输出、案例和教学结论串为11个单向触发节点；
+- 确认当前仍在TRM-01：真实回填目录与 `final_coding.csv` 均不存在；路线图不创建虚构回填、不关闭154项、不放行正式编码、统计或论文结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，下一最小任务为 `G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP-QA`。
+
 ## 2026-07-22：G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA 正文门禁一致性复核
 
 - 新增 `09_quality/no_return_manuscript_gate_reconciliation_qa_check.md` 和 `no_return_manuscript_gate_reconciliation_qa_check_v1.csv`，完成22项独立复核；

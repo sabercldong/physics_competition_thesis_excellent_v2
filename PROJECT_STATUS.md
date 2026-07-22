@@ -393,3 +393,7 @@
 - 完成 `G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA`：新增 `09_quality/no_return_manuscript_gate_reconciliation_qa_check.md` 和 `no_return_manuscript_gate_reconciliation_qa_check_v1.csv`，22项独立复核均通过。上一轮23项QA、主张矩阵19项、不可继承清单25项E0、结果G8门禁7项未放行、章节门禁3项未满足、正式分析门槛5项未满足、复现QA35项通过、第四/五章边界词和 `final_coding.csv`/真实回填目录缺失状态均与源文件一致。QA通过不改写正文、不升级主张、不放行正式分析或论文结果。
 
 `G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP`：在真实回填仍缺失时，将真实回填出现后的接收、结构检查、问题关闭、评分者回收、裁决、正式分析与正文出口压缩为一张触发路线图；不得创建虚构回填或提前放行。
+
+- 完成 `G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP`：新增 `03_corpus/no_return_real_return_trigger_map.md` 和 `no_return_real_return_trigger_map_v1.csv`，建立11个单向触发节点，依次覆盖无回填等待、真实文件接收、结构检查、整合关闭、正式输入冻结、A/B评分回收、一致性、裁决、唯一分析表、正式输出、案例与教学结论。当前仍停在TRM-01，`03_corpus/manual_review_returns/`与`07_analysis/data/final_coding.csv`均不存在。路线图不创建虚构回填、不关闭154项、不放行正式编码、统计或论文结果。
+
+`G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP-QA`：核对11个触发节点的顺序、证据、产物、禁止事项和上游路径；不得因路线图存在而创建真实回填或放行正式结果。
