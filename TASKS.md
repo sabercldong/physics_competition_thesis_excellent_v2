@@ -373,7 +373,9 @@
   - 进度：仅机械修复7份复现CSV的CRLF换行，全部保留UTF-8 BOM。修复前后逐文件复核表头、行数、列数与逻辑内容SHA-256一致，未变动任何单元格、内部状态或脚本；复现包边界QA重跑为35/35通过。本任务不产生正式分析数据、统计或论文结果。
 - [x] G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION 核对正文占位与复现门禁的冻结边界
   - 进度：新增 `09_quality/no_return_manuscript_gate_reconciliation_qa.md` 和 `no_return_manuscript_gate_reconciliation_qa_v1.csv`，完成23项QA且全部通过；确认第四章是等待 `final_coding.csv` 与脚本的结果占位、第五章是候选案例与采证准备，主张矩阵19项无正式结果完成状态、不可继承清单均为E0、结果G8门禁7项未正式放行、章节门禁3项未满足、正式分析5项门槛未满足。QA通过不改写正文或放行正式结果。
-- [ ] G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA 复核正文占位与复现门禁一致性QA
+- [x] G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA 复核正文占位与复现门禁一致性QA
+  - 进度：新增 `09_quality/no_return_manuscript_gate_reconciliation_qa_check.md` 和 `no_return_manuscript_gate_reconciliation_qa_check_v1.csv`，完成22项独立复核且全部通过；确认上一轮23项QA、主张矩阵19项、不可继承清单25项E0、结果G8门禁7项未放行、章节门禁3项未满足、正式分析门槛5项未满足、复现QA35项通过及两个冻结出口状态均一致。QA通过不放行正式结果。
+- [ ] G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP 建立真实回填触发路线图
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议

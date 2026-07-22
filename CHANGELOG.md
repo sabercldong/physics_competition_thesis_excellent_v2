@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA 正文门禁一致性复核
+
+- 新增 `09_quality/no_return_manuscript_gate_reconciliation_qa_check.md` 和 `no_return_manuscript_gate_reconciliation_qa_check_v1.csv`，完成22项独立复核；
+- 复算确认上一轮23项QA、主张矩阵19项、不可继承清单25项E0、结果G8门禁7项未放行、章节门禁3项未满足、正式分析门槛5项未满足、复现QA35项通过及冻结出口状态均与源文件一致；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，下一最小任务为 `G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP`；本复核不改写正文、不升级主张、不放行正式结果。
+
 ## 2026-07-22：G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION 正文占位与复现门禁一致性核对
 
 - 新增 `09_quality/no_return_manuscript_gate_reconciliation_qa.md` 和 `no_return_manuscript_gate_reconciliation_qa_v1.csv`，完成23项正文、主张、禁用结论、结果门禁、章节门禁、复现QA和冻结出口检查；

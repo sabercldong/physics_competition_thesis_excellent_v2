@@ -389,3 +389,7 @@
 - 完成 `G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION`：新增 `09_quality/no_return_manuscript_gate_reconciliation_qa.md` 和 `no_return_manuscript_gate_reconciliation_qa_v1.csv`，23项QA均通过。第四章仍为等待 `final_coding.csv` 与脚本输出的结果占位，第五章仍为候选案例与采证准备；主张矩阵19项无正式结果完成状态，不可继承清单均为E0，结果相关G8门禁7项未正式放行，章节门禁3项未满足，正式分析5项门槛未满足。`final_coding.csv`与真实人工回填目录仍不存在；QA通过不改写正文、不升级主张、不放行正式分析或论文结果。
 
 `G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA`：复核正文占位与复现门禁一致性QA的输入、门禁计数、正文边界词、禁用结论与冻结出口；不得因QA通过改写正文或放行正式结果。
+
+- 完成 `G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION-QA`：新增 `09_quality/no_return_manuscript_gate_reconciliation_qa_check.md` 和 `no_return_manuscript_gate_reconciliation_qa_check_v1.csv`，22项独立复核均通过。上一轮23项QA、主张矩阵19项、不可继承清单25项E0、结果G8门禁7项未放行、章节门禁3项未满足、正式分析门槛5项未满足、复现QA35项通过、第四/五章边界词和 `final_coding.csv`/真实回填目录缺失状态均与源文件一致。QA通过不改写正文、不升级主张、不放行正式分析或论文结果。
+
+`G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP`：在真实回填仍缺失时，将真实回填出现后的接收、结构检查、问题关闭、评分者回收、裁决、正式分析与正文出口压缩为一张触发路线图；不得创建虚构回填或提前放行。

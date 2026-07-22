@@ -1,0 +1,23 @@
+﻿check_id,check_item,expected,observed,result,evidence,risk_if_failed,next_action
+MGREC2-QA-001,上一轮QA格式,UTF-8 BOM与LF,BOM=True; LF=True,通过,09_quality/no_return_manuscript_gate_reconciliation_qa_v1.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-002,上一轮QA结果,23项全部通过,"(23, Counter({'通过': 23}))",通过,09_quality/no_return_manuscript_gate_reconciliation_qa_v1.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-003,上一轮QA编号,001至023连续,"('MGREC-QA-001', 'MGREC-QA-023')",通过,09_quality/no_return_manuscript_gate_reconciliation_qa_v1.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-004,源文件存在：08_manuscript/04_results.md,存在,True,通过,08_manuscript/04_results.md,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-005,源文件存在：08_manuscript/05_cases_and_diagnosis.md,存在,True,通过,08_manuscript/05_cases_and_diagnosis.md,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-006,源文件存在：09_quality/claim_evidence_matrix.csv,存在,True,通过,09_quality/claim_evidence_matrix.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-007,源文件存在：09_quality/unverified_claims.csv,存在,True,通过,09_quality/unverified_claims.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-008,源文件存在：09_quality/g8_03_result_reproducibility_gate.csv,存在,True,通过,09_quality/g8_03_result_reproducibility_gate.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-009,源文件存在：07_analysis/results/reviewed/prep30_manuscript_gate_table.csv,存在,True,通过,07_analysis/results/reviewed/prep30_manuscript_gate_table.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-010,源文件存在：07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,存在,True,通过,07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-011,源文件存在：07_analysis/results/reviewed/prep30_gate_register.csv,存在,True,通过,07_analysis/results/reviewed/prep30_gate_register.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-012,源文件存在：07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa_v1.csv,存在,True,通过,07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa_v1.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-013,源文件存在：07_analysis/results/reviewed/prep30_results_chapter_placeholder.md,存在,True,通过,07_analysis/results/reviewed/prep30_results_chapter_placeholder.md,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-014,主张矩阵,19项无正式结果状态,"(19, Counter({'部分核验': 4, '部分准备': 4, '待核验': 3, '已核验': 2, '阶段性核验': 2, '内部预演': 2, '缺失': 1, '禁止继承': 1}))",通过,09_quality/claim_evidence_matrix.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-015,不可继承清单,25项均E0,Counter({'E0': 25}),通过,09_quality/unverified_claims.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-016,结果G8门禁,7项内部/占位/缺失,"['内部预演', '内部预演派生数', '内部预演', '内部预演', '内部预演', '正式输出占位', '正式结果缺失']",通过,09_quality/g8_03_result_reproducibility_gate.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-017,章节门禁,3项未满足,"Counter({'未满足': 3, '部分准备': 1})",通过,07_analysis/results/reviewed/prep30_manuscript_gate_table.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-018,输出占位,3阻塞1待更新,"Counter({'阻塞': 3, '待后续更新': 1})",通过,07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-019,正式分析门槛,5项未满足,Counter({'未满足': 5}),通过,07_analysis/results/reviewed/prep30_gate_register.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-020,复现边界QA,35项全部通过,"(35, 35)",通过,07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa_v1.csv,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-021,正文边界词,第四/五章边界词存在,"(True, True)",通过,08_manuscript/04_results.md;08_manuscript/05_cases_and_diagnosis.md,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
+MGREC2-QA-022,冻结出口,final与真实回填目录均不存在,"(False, False)",通过,07_analysis/data/final_coding.csv;03_corpus/manual_review_returns/,门禁QA可能无法支持冻结结论。,修复不一致后重新执行门禁QA。
