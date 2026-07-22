@@ -405,3 +405,5 @@
 - 完成 `G1-07-EXTERNAL-AGENT-HANDOFF-PACKET`：新增 `01_positioning/external_agent_handoff_packet.md` 和 `external_agent_handoff_packet_v1.csv`，形成8项可领取任务，覆盖A/B/C/D真实人工校对、SOLO合法全文、两名真实评分者独立编码、教师/课堂真实证据、学校规范与导师范围确认。每项明确起始材料、最小真实交付、接收位置、验收规则与禁止事项。当前8项均待真实材料或待真实回填，不创建虚构材料、不关闭问题、不放行正式分析或论文结果。
 
 `G1-07-EXTERNAL-AGENT-HANDOFF-PACKET-QA`：检查8项外部协作者任务的编号、起始材料路径、交付字段、接收位置、验收规则和冻结边界；不得因交接包存在而虚构回填或放行结果。
+
+- 完成 `G1-07-EXTERNAL-AGENT-HANDOFF-PACKET-QA`：新增 `01_positioning/external_agent_handoff_packet_qa.md` 和 `external_agent_handoff_packet_qa_v1.csv`，23项QA全部通过。8项任务编号、格式、起始材料、交付、接收入口、验收规则和禁止边界均可追溯；当前所有真实回填目录及`final_coding.csv`仍不存在。该通过仅表明外部协作者可按包交付真实材料，不能替代人工校对、合法全文、独立评分、教学证据或学校/导师确认，正式分析与结果继续冻结。

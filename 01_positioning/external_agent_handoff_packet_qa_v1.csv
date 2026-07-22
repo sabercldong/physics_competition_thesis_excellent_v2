@@ -1,0 +1,24 @@
+﻿check_id,check_scope,expected,evidence,result,notes
+EHPQA-01,文件格式,UTF-8 BOM与LF换行,external_agent_handoff_packet_v1.csv,PASS,已检查字节头与换行
+EHPQA-02,字段结构,9个字段且8条任务行,external_agent_handoff_packet_v1.csv,PASS,字段完整
+EHPQA-03,编号,EXT-01至EXT-08连续且唯一,external_agent_handoff_packet_v1.csv,PASS,无缺号或重复
+EHPQA-04,EXT-01起始材料,2个路径均存在,manual_review_p0_batch1_agent_task_cards.md；manual_review_real_return_handoff_register.md,PASS,接收规则可追溯
+EHPQA-05,EXT-01真实边界,要求真实副本/日期/决定且不得内部冒充,external_agent_handoff_packet_v1.csv,PASS,当前待真实回填
+EHPQA-06,EXT-02起始材料,2个路径均存在,manual_review_p0_batch2_task_cards.md；manual_review_p0_batch2_return_prep_v1.csv,PASS,任务边界明确
+EHPQA-07,EXT-02关闭边界,不得替其他组销项或生成统计,external_agent_handoff_packet_v1.csv,PASS,当前待真实回填
+EHPQA-08,EXT-03起始材料,2个路径均存在,manual_review_p0_batch3_task_cards.md；manual_review_c_closure_packet_v1.csv,PASS,候选图清单可追溯
+EHPQA-09,EXT-03图件边界,候选图不得作为论文最终图,external_agent_handoff_packet_v1.csv,PASS,当前待真实回填
+EHPQA-10,EXT-04起始材料,2个路径均存在,no_return_d_score_solfig_queue_v1.csv；manual_review_p0_batch3_task_cards.md,PASS,D组范围明确
+EHPQA-11,EXT-04事实边界,不得补造分值或图件关系,external_agent_handoff_packet_v1.csv,PASS,当前待真实回填
+EHPQA-12,EXT-05起始材料,2个路径均存在,solo_fulltext_return_intake_prep.md；solo_fulltext_return_intake_prep_v1.csv,PASS,全文回填表存在
+EHPQA-13,EXT-05文献边界,合法全文/版本/页码不可由摘要代替,external_agent_handoff_packet_v1.csv,PASS,当前待合法全文
+EHPQA-14,EXT-06起始材料,4个路径均存在,rater_handoff_lock_v1.md；rater_independent_coding_instructions_v1.md；formal_coding_rater_A_template.csv；formal_coding_rater_B_template.csv,PASS,评分交接材料完整
+EHPQA-15,EXT-06独立性,A/B独立且字段检查通过前不算一致性,rater_handoff_file_rules.csv,PASS,等待正式输入冻结
+EHPQA-16,EXT-07起始材料,2个路径均存在,ethics_and_data_management_plan.md；classroom_data_manifest.csv,PASS,伦理门槛可追溯
+EHPQA-17,EXT-07真实边界,不得补造人类参与者或效果数据,external_agent_handoff_packet_v1.csv,PASS,当前待真实材料
+EHPQA-18,EXT-08起始材料,2个路径均存在,school_requirements_request_packet.md；school_requirements_register.csv,PASS,登记机制存在
+EHPQA-19,EXT-08确认边界,来源/日期/确认人必须真实,external_agent_handoff_packet_v1.csv,PASS,当前待真实材料
+EHPQA-20,接收目录状态,条件性目录当前未创建,03_corpus/manual_review_returns/；03_corpus/manual_review_returns/incoming/,PASS,与TRM-01一致
+EHPQA-21,正式分析门禁,final_coding.csv当前不存在,07_analysis/data/final_coding.csv,PASS,不得放行正式统计
+EHPQA-22,触发顺序,真实材料到达后从TRM-02开始,no_return_real_return_trigger_map.md,PASS,不得跳步
+EHPQA-23,总体冻结,交接包不放行结果/主张升级/正文结果,external_agent_handoff_packet.md,PASS,8项均未完成

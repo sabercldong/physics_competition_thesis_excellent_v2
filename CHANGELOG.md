@@ -3282,3 +3282,9 @@
 - 新增优秀论文评分标准、质量关卡和答辩准备模块；
 - 新增可复现数据检查与一致性分析脚本；
 - 保存三份原始材料并标记为只读参考。
+## 2026-07-22：G1-07-EXTERNAL-AGENT-HANDOFF-PACKET-QA 外部协作者交接包检查
+
+- 新增 `01_positioning/external_agent_handoff_packet_qa.md` 和 `external_agent_handoff_packet_qa_v1.csv`，完成23项交接机制检查；
+- 确认8项任务、18个起始材料、最小真实交付、条件性接收入口、验收规则与禁写边界可追溯；
+- 确认当前仍无真实人工回填目录、`final_coding.csv`、SOLO合法全文、真实评分者回填、课堂证据或学校/导师确认；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`；本QA不创建回填、不关闭问题、不放行正式分析或论文结果。
