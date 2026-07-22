@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G2-04-PCOMP004-METADATA-RECOVERY 竞赛试题候选元数据复核
+
+- 新增 `02_literature/physics_competition_pcomp004_metadata_recovery.md`；
+- 按《物理教学探讨》官网2020年第4期目录，将`PCOMP-004`更正为凌国亮、黄致新、祝文秀的期刊文章候选，起页39；
+- 停止采用未经核验的“2019年华中师大学位论文”线索，更新访问审计、筛选矩阵和全文请求包；
+- 当前仍无文章全文，不转述研究对象、方法、数据或结论，也不放行竞赛试题研究综述。
+
 ## 2026-07-22：G1-07-EXTERNAL-AGENT-HANDOFF-PACKET 外部协作者真实材料交接包
 
 - 新增 `01_positioning/external_agent_handoff_packet.md` 和 `external_agent_handoff_packet_v1.csv`，形成8项可领取的真实材料任务；

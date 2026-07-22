@@ -1,1 +1,48 @@
 ﻿date,database,query,filters,results,screened,included,operator,notes
+2026-07-14,教育部官网/官方课程标准发布渠道,普通高中物理课程标准 科学思维 模型建构 科学推理 科学论证 质疑创新,官方文件；课程标准；记录章节与页码,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于G2-02官方来源核验
+2026-07-14,中国知网/万方/维普,物理教育 科学思维 测评 模型建构 科学推理 科学论证,中文期刊与学位论文；优先近10年；核心文献需全文,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于科学思维测评与操作化
+2026-07-14,ERIC/Web of Science/Scopus,physics education scientific reasoning model construction scientific argumentation assessment,peer reviewed；education；physics education；prefer last 10 years,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于英文科学思维测评研究
+2026-07-14,中国知网/万方/维普,SOLO 分类理论 物理 教育 试题 分析,中文期刊与学位论文；经典理论不限年份；应用研究优先近10年,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于SOLO中文应用
+2026-07-14,ERIC/Web of Science/Scopus/Google Scholar,SOLO taxonomy structure of observed learning outcomes physics education assessment task analysis,classic theory不限年份；application studies；task analysis,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于SOLO原始理论与教育应用
+2026-07-14,中国知网/万方/维普,SOLO 试题分析 认知要求 学习结果 边界,中文期刊与学位论文；关注方法边界与争议,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于SOLO任务分析边界
+2026-07-14,ERIC/Web of Science/Scopus/Google Scholar,SOLO taxonomy item analysis cognitive demand limitation assessment,peer reviewed优先；方法讨论优先,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于SOLO用于试题分析的限制
+2026-07-14,中国知网/万方/维普,全国中学生物理竞赛 复赛试题 分析 科学思维 核心素养,中文期刊与学位论文；竞赛研究可放宽时间范围,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于物理竞赛试题研究综述
+2026-07-14,中国知网/万方/维普,物理竞赛试题 内容分析 认知要求 教学策略,中文期刊与学位论文；需可识别分析单位与方法,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于竞赛试题内容分析与教学转化
+2026-07-14,ERIC/Web of Science/Scopus/Google Scholar,physics olympiad problems analysis cognitive demand scientific reasoning,peer reviewed优先；competition problem analysis,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于英文竞赛试题研究补充
+2026-07-14,中国知网/万方/维普,内容分析 编码手册 评分者一致性 Cohen kappa 教育研究,方法文献；教育测量；内容分析；不限学科但需方法可迁移,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于编码与一致性方法
+2026-07-14,ERIC/Web of Science/Scopus,content analysis coding manual interrater reliability Cohen kappa education research,methodology；education research；interrater reliability,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于英文方法文献
+2026-07-14,中国知网/万方/维普,物理教学 设计型研究 教学转化 评价量规 学生作品,中文期刊与学位论文；教学设计；评价量规；真实课堂证据优先,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于教学转化与设计型研究
+2026-07-14,ERIC/Web of Science/Scopus,design based research physics education teaching intervention rubric student work,peer reviewed；design based research；physics education,待检索,0,0,Codex,G2-01计划检索式；未执行检索；用于英文教学转化与课堂证据研究
+2026-07-14,教育部官网/官方课程标准发布渠道,普通高中物理课程标准 科学思维 模型建构 科学推理 科学论证 质疑创新,官方通知页与附件包；核验物理课程标准PDF；记录正文页码和SHA256,1,1,1,Codex,G2-02实际核验；纳入官方课程标准CS-001；用于C2-01
+2026-07-14,ScienceDirect/UNESCO/Google Books,Biggs Collis 1982 Evaluating the Quality of Learning SOLO taxonomy,SOLO原始理论来源；核验出版信息；全文待获取,3,3,1,Codex,G2-03A实际定位；新增SOLO-001；只完成元数据与来源定位，未完成全文阅读
+2026-07-14,SAGE Journals/ERIC,"Towards a Model of School-Based Curriculum Development and Assessment Using the SOLO Taxonomy",SOLO用于课程开发与评价；核验DOI与摘要；全文待获取,2,2,1,Codex,G2-03A实际定位；新增SOLO-002；只完成元数据与摘要核验，未完成全文阅读
+2026-07-14,ScienceDirect/UNESCO/Google Books,Biggs Collis 1982 SOLO taxonomy full text access audit,检查公开全文可得性；不使用非授权全文；记录访问边界,3,3,0,Codex,G2-03B-ACCESS；未发现稳定公开全文；需图书馆或合法电子书渠道；不能写作全文已读
+2026-07-14,SAGE Journals/ERIC,Biggs Collis 1989 SOLO taxonomy full text access audit,检查SAGE DOI页与ERIC记录；核验摘要和全文访问状态,2,2,0,Codex,G2-03B-ACCESS；SAGE全文需访问权限；ERIC未提供开放全文；不能写作全文已读
+2026-07-14,CNKI/物理教学期刊目录,"近5年中学生物理竞赛预赛卷的量化分析与启示",物理竞赛试题研究；期刊题录；全文待获取,2,2,1,Codex,G2-04-PREP；定位PCOMP-001；仅题录和目录线索，未阅读全文
+2026-07-14,CNKI/学位论文线索,"基于SOLO分类理论的全国中学生物理竞赛复赛理论试题研究",物理竞赛复赛；SOLO；学位论文；全文待获取,2,2,1,Codex,G2-04-PREP；定位PCOMP-002；需学校数据库获取全文
+2026-07-14,CNKI/学位论文线索,"全国中学生物理竞赛试题研究",物理竞赛试题研究；学位论文；全文待获取,2,2,1,Codex,G2-04-PREP；定位PCOMP-003；需学校数据库获取全文
+2026-07-22,物理教学探讨官网目录,"基于数理核心素养的全国中学生物理竞赛预赛典型试题分析",核心素养；物理竞赛预赛；期刊目录；全文待获取,1,1,1,Codex,G2-04-PCOMP004-METADATA-RECOVERY；官网目录核验作者为凌国亮/黄致新/祝文秀，2020年第4期第39页起；原2019年华中师大学位论文线索不采用；目录不等于全文
+2026-07-14,CNKI/物理教学题录,"层层递进求解多阶段力学问题 以第38届全国中学生物理竞赛复赛试题第3题为例",复赛单题赏析；教研文章；全文待获取,1,1,0,Codex,G2-04-PREP；列为PCOMP-005候选但不纳入正式综述核心证据
+2026-07-14,Wiley/ERIC/检索引擎,"The development and validation of a classroom test of formal reasoning Lawson",科学推理测评；Lawson测试；全文待获取,3,3,1,Codex,G2-05-PREP；定位ST-001；只登记题录和DOI线索，未阅读全文
+2026-07-14,PubMed/PER-Central/Science DOI,"Learning and Scientific Reasoning Bao Cai Koenig Fang Han",科学学习；科学推理；物理教育；全文待获取,3,3,1,Codex,G2-05-PREP；定位ST-002；不能转述统计结果
+2026-07-14,APS/ERIC,"Theoretical model and quantitative assessment of scientific thinking and reasoning",科学思维模型；量化测评；全文待阅读,2,2,1,Codex,G2-05-PREP；定位ST-003；不能替代中国课程标准四维度
+2026-07-14,APS/ResearchGate/REAL,"Bao Koenig Xiao Fritchman Zhou Chen 2022 iSTAR scientific thinking reasoning full text",开放全文内容阅读；APS官方页核验；正式引用前需APS PDF页码复核,3,3,1,Codex,G2-05-READ-ST003；已形成scientific_thinking_st003_reading_notes.md；用于C2-02部分核验，不能证明本项目编码框架有效
+2026-07-14,ScienceDirect/DOI,"Assessment of scientific reasoning task context data design control of variables Zhou Bao",控制变量；任务情境；科学推理测评；全文待获取,2,2,1,Codex,G2-05-PREP；定位ST-004；只登记候选，不写结果
+2026-07-14,Wiley/UCL开放仓储,"Enhancing the quality of argumentation in school science Osborne Erduran Simon",科学论证；课堂教学；全文待阅读,2,2,1,Codex,G2-05-PREP；定位ST-005；不能作为竞赛教学效果证据
+2026-07-14,UCL Discovery/Wiley DOI,"Osborne Erduran Simon 2004 Enhancing the quality of argumentation in school science full text",科学论证教学；课堂支架；Toulmin模型；论证质量评价；UCL开放仓储PDF,3,3,1,Codex,G2-05-READ-ST005；已读UCL开放仓储PDF并形成scientific_thinking_st005_reading_notes.md；用于C2-06部分核验，不能作为物理竞赛教学效果证据
+2026-07-14,National Academies/NGSS,"Next Generation Science Standards Appendix F Science and Engineering Practices",科学实践；模型；证据论证；课程框架,2,2,1,Codex,G2-05-PREP；定位ST-006；仅作国际课程框架参照
+2026-07-14,National Academies,"Next Generation Science Standards Appendix F official online chapter",官方在线章节；科学与工程实践；K-12；任务表现与评价边界,1,1,1,Codex,G2-05-READ-ST006；已读官方在线章节并形成scientific_thinking_st006_reading_notes.md；用于C2-06部分核验，不能替代中国课程标准或教学效果证据
+2026-07-14,SAGE Research Methods/Google Books,"Krippendorff Content Analysis An Introduction to Its Methodology 4th edition",内容分析方法；单位化；编码；可靠性；全文待获取,3,3,1,Codex,G2-06-CLAIMS；定位METH-001；方法候选，未阅读全文
+2026-07-14,SAGE Journals/Semantic Scholar,"Cohen 1960 A Coefficient of Agreement for Nominal Scales",Cohen kappa；名义尺度一致性；全文权限待确认,3,3,1,Codex,G2-06-CLAIMS；定位METH-002；不能直接规定本项目阈值
+2026-07-14,JSTOR/Europe PMC,"Landis Koch 1977 The Measurement of Observer Agreement for Categorical Data",分类数据；观察者一致性；kappa解释；全文待获取,3,3,1,Codex,G2-06-CLAIMS；定位METH-003；阈值迁移需谨慎
+2026-07-14,Oxford Academic/Wiley/开放仓储,"Lombard Snyder-Duch Bracken Content Analysis in Mass Communication Assessment and Reporting of Intercoder Reliability",内容分析；编码者一致性；报告规范；全文待阅读,4,4,1,Codex,G2-06-CLAIMS；定位METH-004；用于一致性报告候选
+2026-07-14,SAGE Research Methods/Google Books,"Neuendorf The Content Analysis Guidebook second edition",内容分析指南；codebook；编码者训练；全文待获取,3,3,1,Codex,G2-06-CLAIMS；定位METH-005；方法候选，未阅读全文
+2026-07-14,SAGE/JSTOR/PubMed/OpenAIRE/Oxford/Wiley/CSU开放仓储,METH-001 to METH-005 legal access audit,合法全文渠道；开放仓储；机构权限；排除非官方PDF,12,12,5,Codex,G2-METHOD-ACCESS-AUDIT；完成方法文献访问状态审计；METH-004有开放仓储线索，其余仍需机构权限或馆际互借
+2026-07-14,CSU EngagedScholarship/Oxford/Wiley,METH-004 full text reading and version check,开放仓储PDF；出版社题录；intercoder reliability；报告规范,3,3,1,Codex,G2-METHOD-READ-METH004；已读CSU PDF并摘录方法要点；仓储页显示withdrawn需正式引用前复核
+2026-07-14,PubMed/Lei Bao personal site/Science DOI,"Learning and Scientific Reasoning Bao et al 2009 full text and metadata",作者个人站点PDF；PubMed题录；Science DOI正式页待人工复核,3,3,1,Codex,G2-05-READ-ST002；已读作者站PDF并形成scientific_thinking_st002_reading_notes.md；用于C2-02部分核验，不能迁移为本项目学生数据
+2026-07-14,Wiley/PER-Central/PubMed,"Lawson 1978 classroom test formal reasoning access audit",Wiley DOI；PDF自动访问403；PubMed未检出；全文待读,3,3,0,Codex,G2-05-ACCESS-REST；ST-001仍需学校数据库、图书馆或合法全文；不得写测验结构或信效度
+2026-07-14,PubMed/ScienceDirect/PMC/NCBI OA,"Zhou Han Koenig Bao 2016 control of variables task context access audit",PubMed摘要；ScienceDirect访问403；PMC受reCAPTCHA；NCBI OA显示非开放获取,4,4,0,Codex,G2-05-ACCESS-REST；ST-004摘要已核验但全文未读；不得用摘要替代具体结果
+2026-07-14,PER-Central/PhysPort/Wiley,"Lawson 1978 classroom test formal reasoning second access audit",PER-Central订阅/购买访问；PhysPort CTSR资源页；Wiley DOI,3,3,0,Codex,G2-05-ACCESS-ST001-ST004；确认ST-001仍未获得原文全文；PhysPort只能作为测评资源辅助线索，不能替代Lawson 1978全文
+2026-07-14,ScienceDirect/PubMed/PMC,"Zhou Han Koenig Bao 2016 ScienceDirect preview second access audit",ScienceDirect article preview；PubMed摘要；PMC记录；全文仍受限,3,3,0,Codex,G2-05-ACCESS-ST001-ST004；ST-004预览可核验题录/摘要/片段，但仍不能作为已读全文或正式结果依据
+2026-07-14,SAGE/Google Books/OpenAIRE/JSTOR/Semantic Scholar,"METH-001 METH-002 METH-003 METH-005 second legal access audit",SAGE受限；Google Books目录/预览；JSTOR/PubMed/OpenAIRE题录；排除非授权PDF,12,12,0,Codex,G2-METHOD-ACCESS-REST；未新增可读全文；METH-001/METH-005可用Google Books增强书目和目录线索，METH-002仍为SAGE restricted access，METH-003仍需JSTOR/数据库或馆际互借
+2026-07-14,CNKI/物理教学期刊目录/学位论文引用链,"PCOMP-001 to PCOMP-005 legal access audit",物理竞赛试题研究；期刊题录；学位论文题录；全文待获取,10,10,0,Codex,G2-04-FULLTEXT-ACCESS；完成物理竞赛候选文献访问审计；PCOMP-001/PCOMP-005有CNKI题录和《物理教学》目录线索，PCOMP-002/003/004有CNKI引用/题录线索；均未获合法全文
