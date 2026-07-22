@@ -397,3 +397,7 @@
 - 完成 `G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP`：新增 `03_corpus/no_return_real_return_trigger_map.md` 和 `no_return_real_return_trigger_map_v1.csv`，建立11个单向触发节点，依次覆盖无回填等待、真实文件接收、结构检查、整合关闭、正式输入冻结、A/B评分回收、一致性、裁决、唯一分析表、正式输出、案例与教学结论。当前仍停在TRM-01，`03_corpus/manual_review_returns/`与`07_analysis/data/final_coding.csv`均不存在。路线图不创建虚构回填、不关闭154项、不放行正式编码、统计或论文结果。
 
 `G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP-QA`：核对11个触发节点的顺序、证据、产物、禁止事项和上游路径；不得因路线图存在而创建真实回填或放行正式结果。
+
+- 完成 `G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP-QA`：新增 `03_corpus/no_return_real_return_trigger_map_qa.md` 和 `no_return_real_return_trigger_map_qa_v1.csv`，18项QA均通过。11节点连续且每节点均登记最低真实证据与禁止事项；接收、人工校对关闭、评分回收、一致性、裁决、唯一分析表和结果输出均未跳步。当前仍为TRM-01，真实回填目录与 `final_coding.csv` 均不存在；QA通过只证明未来路线可用，不代表真实回填或正式结果。
+
+`G1-07-EXTERNAL-AGENT-HANDOFF-PACKET`：整理当前最需要外部协作者处理的真实回填、全文获取、评分和教学证据任务，提供可领取材料、最小交付、接收位置、验收规则与禁止事项；不得虚构外部回填或升级论文结论。

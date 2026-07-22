@@ -1,0 +1,19 @@
+﻿check_id,check_item,expected,observed,result,evidence,risk_if_failed,next_action
+TRM-QA-001,路线表格式,UTF-8 BOM与LF,BOM=True; LF=True,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-002,节点数,11,11,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-003,节点编号,TRM-01至TRM-11连续,"['TRM-01', 'TRM-11']",通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-004,每节点真实证据,11项均非空,11,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-005,每节点禁止事项,11项均非空,11,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-006,当前节点冻结,TRM-01且目录/唯一表不存在,"(False, False)",通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-007,接收后不直接关闭,TRM-02/03均禁止关闭,"['不得覆盖空白回填包或关闭问题', '不得因文件到达直接同步账本']",通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-008,人工校对与评分分离,TRM-05禁止内部预演替代,不得用内部预演代替评分者编码,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-009,一致性前置,TRM-06禁止回收前计算,不得在回收前计算一致性,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-010,裁决前置,TRM-08生成唯一表,生成唯一正式分析表,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-011,结果前置,TRM-09要求唯一表与脚本,final_coding.csv真实存在；脚本可复现并通过输出QA,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-012,案例图件前置,TRM-10要求C组终核,正式结果、案例证据表和图件C组终核齐备,通过,03_corpus/no_return_real_return_trigger_map_v1.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-013,上游文件存在：03_corpus/return_intake_folder_protocol.md,存在,True,通过,03_corpus/return_intake_folder_protocol.md,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-014,上游文件存在：03_corpus/manual_review_real_return_handoff_register.md,存在,True,通过,03_corpus/manual_review_real_return_handoff_register.md,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-015,上游文件存在：04_framework/rater_handoff_lock_v1.md,存在,True,通过,04_framework/rater_handoff_lock_v1.md,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-016,上游文件存在：04_framework/rater_handoff_file_rules.csv,存在,True,通过,04_framework/rater_handoff_file_rules.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-017,上游文件存在：07_analysis/results/reviewed/prep30_gate_register.csv,存在,True,通过,07_analysis/results/reviewed/prep30_gate_register.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。
+TRM-QA-018,上游文件存在：07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,存在,True,通过,07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,触发链可能跳步或误放行。,修正路线后再复核；保持冻结。

@@ -377,7 +377,9 @@
   - 进度：新增 `09_quality/no_return_manuscript_gate_reconciliation_qa_check.md` 和 `no_return_manuscript_gate_reconciliation_qa_check_v1.csv`，完成22项独立复核且全部通过；确认上一轮23项QA、主张矩阵19项、不可继承清单25项E0、结果G8门禁7项未放行、章节门禁3项未满足、正式分析门槛5项未满足、复现QA35项通过及两个冻结出口状态均一致。QA通过不放行正式结果。
 - [x] G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP 建立真实回填触发路线图
   - 进度：新增 `03_corpus/no_return_real_return_trigger_map.md` 和 `no_return_real_return_trigger_map_v1.csv`，将接收、结构检查、整合关闭、正式输入冻结、A/B回收、一致性、裁决、唯一分析表、正式输出、案例与教学结论拆为11个单向触发节点。当前仍停在TRM-01，真实回填目录和 `final_coding.csv` 均不存在；路线图不关闭154项、不放行正式结果。
-- [ ] G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP-QA 复核真实回填触发路线图
+- [x] G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP-QA 复核真实回填触发路线图
+  - 进度：新增 `03_corpus/no_return_real_return_trigger_map_qa.md` 和 `no_return_real_return_trigger_map_qa_v1.csv`，完成18项QA且全部通过；确认11节点连续、均有真实证据与禁止事项，接收、关闭、评分、一致性、裁决、唯一分析表和结果输出均不跳步，当前仍为TRM-01。QA不创建真实回填、不关闭问题、不放行结果。
+- [ ] G1-07-EXTERNAL-AGENT-HANDOFF-PACKET 整理外部协作者可领取的真实材料任务包
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议
