@@ -368,4 +368,6 @@
 
 - 完成 `G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX`：新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index.md` 和 `manual_review_no_return_corpus_path_linkage_index_v1.csv`，为87项清单未直连路径建立只读映射。索引覆盖A组76项、B组11项，OCR38项、公式/特殊符号49项；每项均能指向题目整理文本、页码、对应回填包、主核对入口和页面证据路径。原清单未修改，87项继续待真实人工终核且不放行。
 
-`G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX-QA`：检查87项编号、A/B组覆盖、题目文本/主入口/页面路径可达、原清单未被修改和不放行边界。若任一批真实人工回填副本出现，则优先转入对应批次真实回填接收检查。
+- 完成 `G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX-QA`：新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index_qa.md` 和 `manual_review_no_return_corpus_path_linkage_index_qa_v1.csv`，完成28项QA检查；确认87项 `PATHLINK-001` 至 `PATHLINK-087` 连续且与路径审计未直连集合一致，A/B组76/11项、OCR/公式38/49项正确，题目文本、主入口和页面证据路径均可达，原清单未修改。QA通过不放行真实人工终核、正式编码、统计、图件定稿或论文结果。
+
+`G1-07-C-NO-RETURN-FIGURE-QUEUE`：在真实回填仍未出现时，整理C组47项候选图件的原裁图、候选图、重绘需求、图号图注疑点与实际写回门槛；不得把候选图升级为论文最终图或正式案例图。若任一批真实回填副本出现，则优先转入对应批次真实回填接收检查。

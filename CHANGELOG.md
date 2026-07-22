@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX-QA 无回填语料路径侧车索引QA
+
+- 新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index_qa.md`，记录87项路径侧车索引QA的性质、结论、边界和下一最小任务；
+- 新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index_qa_v1.csv`，完成28项QA检查，覆盖索引格式、87项编号、路径审计集合、A/B组及类型数量、原清单保护、文本/页码/主入口/页面路径、终核状态、冻结边界与台账一致性；
+- 确认A/B组76/11项、OCR/公式38/49项，87项题目文本、主核对入口和页面证据均可达，`manual_review_checklist.csv` 未被本任务修改；
+- 本QA不填写真实校对人、日期或决定，不放行真实人工终核、正式编码、统计、论文图件定稿、案例结论或论文结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，下一最小任务为 `G1-07-C-NO-RETURN-FIGURE-QUEUE`。
+
 ## 2026-07-22：G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX 无回填语料路径侧车索引
 
 - 新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index.md`，说明87项清单未直连路径的侧车索引用途、领取方式、边界与下一最小任务；

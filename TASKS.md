@@ -361,7 +361,9 @@
   - 进度：新增 `03_corpus/manual_review_no_return_corpus_path_qa.md` 和 `manual_review_no_return_corpus_path_qa_v1.csv`，逐条审计154项人工校对入口；确认154项题目整理文本、题面页和答案页字段均可定位，A/B/C/D回填包共154行与清单一一对应且登记的证据路径均存在。清单 `evidence` 中67项直接含路径、87项须通过回填包反向定位；154项真实校对人/日期仍全为空，路径可达不放行真实终核或正式编码。
 - [x] G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX 建立87项清单未直连路径的侧车索引
   - 进度：新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index.md` 和 `manual_review_no_return_corpus_path_linkage_index_v1.csv`，为87项清单未直连路径建立只读映射；覆盖A组76项与B组11项，其中OCR38项、公式/特殊符号49项。每项均指向题目整理文本、题面/答案页、对应回填包、主核对入口和页面证据路径；不修改原清单，所有项仍待真实人工终核且不放行。
-- [ ] G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX-QA 检查87项语料路径侧车索引
+- [x] G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX-QA 检查87项语料路径侧车索引
+  - 进度：新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index_qa.md` 和 `manual_review_no_return_corpus_path_linkage_index_qa_v1.csv`，完成28项QA检查；确认87项编号连续且与路径审计中的未直连路径集合一致，A/B组76/11项、OCR/公式38/49项正确，题目文本、主核对入口和页面路径均可达，原清单未修改。QA不放行真实人工终核、正式编码、统计、图件定稿或论文结果。
+- [ ] G1-07-C-NO-RETURN-FIGURE-QUEUE 整理C组候选图件待核队列
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议
