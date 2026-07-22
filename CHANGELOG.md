@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-22：G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA SOLO全文与迁移边界入口QA
+
+- 新增 `02_literature/solo_fulltext_boundary_entry_qa.md`，记录SOLO理论入口QA的性质、结论、已确认边界、不可声称事项和下一最小任务；
+- 新增 `02_literature/solo_fulltext_boundary_entry_qa_v1.csv`，完成32项QA检查，覆盖入口结构、20项编号、11个输入路径、两项核心来源的全文状态、安全句式、禁写边界、真实回填字段、主张与正文边界及台账一致性；
+- 确认 `SOLO-001` 仅完成书目信息定位且未获稳定公开全文，`SOLO-002` 仅完成题录和摘要定位且SAGE全文仍需权限；
+- 明确本QA不获取非授权全文，不补造页码、层级定义、前结构取舍或适用性结论，不改写正文、`references.bib` 或主张矩阵；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA P0第四批安全推进路线判断QA
 
 - 新增 `03_corpus/manual_review_p0_batch4_route_decision_qa.md`，记录第四批路线判断QA的性质、检查结论、冻结边界、不可声称事项和下一最小任务；

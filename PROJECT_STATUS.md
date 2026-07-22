@@ -358,4 +358,6 @@
 
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA`：新增 `03_corpus/manual_review_p0_batch4_route_decision_qa.md` 和 `manual_review_p0_batch4_route_decision_qa_v1.csv`，完成31项QA检查；确认12条路线编号连续、CSV为UTF-8 BOM和LF、前三批等待QA（30、42、39项）、第三批交接链QA（43项）、无回填队列（14项）与SOLO入口材料均可定位，真实回填目录与 `final_coding.csv` 仍不存在。QA通过只表示安全路线判断可靠，不放行人工校对、正式评分者编码、统计、论文图件或论文结果。
 
-`G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`：在真实回填仍未出现的条件下，优先检查SOLO理论全文与迁移边界入口材料的结构、20项登记、回填字段、可支持与禁写边界，以及与项目台账的一致性；不得以题录、摘要或内部推断替代合法全文阅读与关键页码核验。若收到任一批真实回填副本，则优先转入对应批次真实回填接收检查。
+- 完成 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`：新增 `02_literature/solo_fulltext_boundary_entry_qa.md` 和 `solo_fulltext_boundary_entry_qa_v1.csv`，完成32项QA检查；确认入口20项 `SOLOBE-01` 至 `SOLOBE-20` 连续、CSV为UTF-8 BOM和LF、11个输入文件可定位，`SOLO-001` 仅有书目信息定位、`SOLO-002` 仅有题录摘要定位且全文仍需权限。当前只能保留“SOLO启发的任务认知结构要求等级”这一分析对象边界，不得写等级定义页码、适用性证明或学生学习结果结论。
+
+`G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP`：在不获取或模拟全文的前提下，检查现有合法获取请求包、接收字段、阅读记录与接收后QA顺序能否支撑作者或有权限协作者获得材料后的可复核回填。若合法全文已出现，优先执行 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-REAL-CHECK`，不先做准备任务。
