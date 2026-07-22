@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-HUMAN-REVIEWER-FILL-GUIDE 人工复核者填写指南
+
+- 新增 `03_corpus/human_reviewer_fill_guide.md`，明确A/B/C/D四组可复制填写的闭环包及字段级规则；
+- 明确匿名复核声明、提交命名、证据位置写法和不得由复核者填写的接收/放行字段；
+- 区分人工终核与后续A/B独立评分者编码；本任务不填入任何复核结果、不创建回填目录、不关闭问题或放行正式分析。
+
 ## 2026-07-22：G2-04-LOCAL-FULLTEXT-AUDIT 本机竞赛试题研究全文检查
 
 - 新增 `02_literature/physics_competition_local_fulltext_audit.md`；

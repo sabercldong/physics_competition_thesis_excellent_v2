@@ -383,6 +383,8 @@
   - 进度：新增 `01_positioning/external_agent_handoff_packet.md` 和 `external_agent_handoff_packet_v1.csv`，形成8项可领取任务，覆盖A/B/C/D真实校对、SOLO合法全文、两名真实评分者编码、教师/课堂证据和学校规范/导师确认；每项明确起始材料、最小真实交付、接收位置、验收规则与禁止事项。全部仍待真实材料，不放行正式结果。
 - [x] G1-07-EXTERNAL-AGENT-HANDOFF-PACKET-QA 检查外部协作者真实材料交接包
   - 进度：新增 `01_positioning/external_agent_handoff_packet_qa.md` 和 `external_agent_handoff_packet_qa_v1.csv`，完成23项QA且全部通过；确认8项任务编号连续、CSV格式正确、18个起始材料路径均可定位，真实最小交付、条件性接收入口、验收规则、独立性及禁止事项完整。`03_corpus/manual_review_returns/`、其`incoming/`子目录和`07_analysis/data/final_coding.csv`仍不存在；QA只证明交接机制可用，不代表任何真实回填、全文、评分、课堂证据或学校/导师确认已经获得，也不放行正式结果。
+- [x] G1-07-HUMAN-REVIEWER-FILL-GUIDE 明确人工复核者填写入口
+  - 进度：新增 `03_corpus/human_reviewer_fill_guide.md`，按A/B/C/D四组逐一列出应复制填写的闭环包、可填写字段、证据位置写法、匿名声明、提交命名和不得填写的接收/放行字段；另明确正式双评分者A/B模板须在语料冻结后由不同真实人员独立填写。本任务只提供填写说明，不填写任何复核结果、不创建回填目录、不关闭问题或放行正式分析。
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议

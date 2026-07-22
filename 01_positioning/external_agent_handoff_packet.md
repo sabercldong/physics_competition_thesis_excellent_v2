@@ -18,6 +18,8 @@
 
 见 `01_positioning/external_agent_handoff_packet_v1.csv`。当前8项均为待真实材料或待真实回填，均不放行论文正式结果。
 
+人工复核者如何填写副本、哪些字段必须由本人填写、哪些接收/放行字段不要填写，见 `03_corpus/human_reviewer_fill_guide.md`。
+
 ## 优先顺序
 
 1. A/B/C/D人工校对回填：解决正式语料输入门槛。
