@@ -401,3 +401,7 @@
 - 完成 `G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP-QA`：新增 `03_corpus/no_return_real_return_trigger_map_qa.md` 和 `no_return_real_return_trigger_map_qa_v1.csv`，18项QA均通过。11节点连续且每节点均登记最低真实证据与禁止事项；接收、人工校对关闭、评分回收、一致性、裁决、唯一分析表和结果输出均未跳步。当前仍为TRM-01，真实回填目录与 `final_coding.csv` 均不存在；QA通过只证明未来路线可用，不代表真实回填或正式结果。
 
 `G1-07-EXTERNAL-AGENT-HANDOFF-PACKET`：整理当前最需要外部协作者处理的真实回填、全文获取、评分和教学证据任务，提供可领取材料、最小交付、接收位置、验收规则与禁止事项；不得虚构外部回填或升级论文结论。
+
+- 完成 `G1-07-EXTERNAL-AGENT-HANDOFF-PACKET`：新增 `01_positioning/external_agent_handoff_packet.md` 和 `external_agent_handoff_packet_v1.csv`，形成8项可领取任务，覆盖A/B/C/D真实人工校对、SOLO合法全文、两名真实评分者独立编码、教师/课堂真实证据、学校规范与导师范围确认。每项明确起始材料、最小真实交付、接收位置、验收规则与禁止事项。当前8项均待真实材料或待真实回填，不创建虚构材料、不关闭问题、不放行正式分析或论文结果。
+
+`G1-07-EXTERNAL-AGENT-HANDOFF-PACKET-QA`：检查8项外部协作者任务的编号、起始材料路径、交付字段、接收位置、验收规则和冻结边界；不得因交接包存在而虚构回填或放行结果。

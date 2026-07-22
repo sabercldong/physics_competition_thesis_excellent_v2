@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-EXTERNAL-AGENT-HANDOFF-PACKET 外部协作者真实材料交接包
+
+- 新增 `01_positioning/external_agent_handoff_packet.md` 和 `external_agent_handoff_packet_v1.csv`，形成8项可领取的真实材料任务；
+- 覆盖A/B/C/D真实校对、SOLO合法全文、真实A/B评分、教师/课堂材料和学校规范/导师确认，每项均列出起始材料、最小真实交付、接收位置、验收规则与禁止事项；
+- 当前8项均保持待真实材料或待真实回填，不创建虚构材料、不关闭问题、不放行正式分析或论文结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，下一最小任务为 `G1-07-EXTERNAL-AGENT-HANDOFF-PACKET-QA`。
+
 ## 2026-07-22：G1-07-NO-RETURN-REAL-RETURN-TRIGGER-MAP-QA 真实回填触发路线图QA
 
 - 新增 `03_corpus/no_return_real_return_trigger_map_qa.md` 和 `no_return_real_return_trigger_map_qa_v1.csv`，完成18项路线顺序、真实证据、禁止事项、关键前置与上游文件QA；
