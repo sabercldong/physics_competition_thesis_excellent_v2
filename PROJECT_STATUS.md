@@ -370,4 +370,6 @@
 
 - 完成 `G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX-QA`：新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index_qa.md` 和 `manual_review_no_return_corpus_path_linkage_index_qa_v1.csv`，完成28项QA检查；确认87项 `PATHLINK-001` 至 `PATHLINK-087` 连续且与路径审计未直连集合一致，A/B组76/11项、OCR/公式38/49项正确，题目文本、主入口和页面证据路径均可达，原清单未修改。QA通过不放行真实人工终核、正式编码、统计、图件定稿或论文结果。
 
-`G1-07-C-NO-RETURN-FIGURE-QUEUE`：在真实回填仍未出现时，整理C组47项候选图件的原裁图、候选图、重绘需求、图号图注疑点与实际写回门槛；不得把候选图升级为论文最终图或正式案例图。若任一批真实回填副本出现，则优先转入对应批次真实回填接收检查。
+- 完成 `G1-07-C-NO-RETURN-FIGURE-QUEUE` 的重复登记核对：确认该任务已由提交 `5504b43` 建立、`62a5372` QA，现有 `03_corpus/no_return_c_figure_queue.md`、`no_return_c_figure_queue_v1.csv`、`no_return_c_figure_queue_qa.md` 和 `no_return_c_figure_queue_qa_v1.csv` 与最新版C组47项闭环包集合一致。复核47项连续编号、48项QA、228条图件相关路径，缺失0条；候选图仍不得升级为论文最终图或正式案例图，真实回填出现时仍优先转入接收检查。
+
+`G1-07-NO-RETURN-RATER-HANDOFF-BOUNDARY-QA`：在真实回填仍未出现时，核对评分者交接包、锁定清单和未解风险是否仅具备准备性质，且未被误写成正式V2编码手册、真实独立编码或一致性结果；不得改写正式编码或论文结果。

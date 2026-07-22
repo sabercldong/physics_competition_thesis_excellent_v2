@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-C-NO-RETURN-FIGURE-QUEUE 重复登记核对
+
+- 核对当前未完成任务与既有提交，确认C组候选图件待核清单已由 `5504b43` 建立、`62a5372` 完成QA，无需重复生成同一批47项数据；
+- 复核 `03_corpus/no_return_c_figure_queue_v1.csv` 与最新版C组闭环包的47个 `issue_id` 完全一致，`FQ-001` 至 `FQ-047` 连续，48项既有QA均通过；
+- 复扫清单所列228条图件相关路径，缺失0条；所有条目仍限制为内部候选图件和真实终核入口，未确认最终图、未填写真实人工结论、未关闭C组问题；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，移除重复未完成标记；下一最小任务为 `G1-07-NO-RETURN-RATER-HANDOFF-BOUNDARY-QA`。
+
 ## 2026-07-22：G1-07-NO-RETURN-CORPUS-PATH-QA-LINKAGE-INDEX-QA 无回填语料路径侧车索引QA
 
 - 新增 `03_corpus/manual_review_no_return_corpus_path_linkage_index_qa.md`，记录87项路径侧车索引QA的性质、结论、边界和下一最小任务；
