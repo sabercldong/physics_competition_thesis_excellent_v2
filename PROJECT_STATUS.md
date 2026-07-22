@@ -381,3 +381,7 @@
 - 完成 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA`：新增 `07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa.md` 和 `reproducibility_package_no_return_boundary_qa_v1.csv`，35项QA中28项通过、7项不通过。确认内部候选/内部编码数据各876行且全体保留内部非正式标记；A/B/裁决模板各876行且A/B编码字段为空；正式输出4项均未放行、5个门槛均未满足，`final_coding.csv`和真实回填目录均不存在。7项不通过均为既有复现CSV的CRLF格式，未发现内部候选数据、输出占位或脚本被写成正式结果。本QA不放行正式编码、统计、论文结果或教学结论。
 
 `G1-07-NO-RETURN-REPRODUCIBILITY-CSV-FORMAT-FIX`：仅机械统一7份既有复现CSV的UTF-8 BOM与LF换行，然后重跑复现包边界QA；不得改动任何单元格、状态字段、脚本、统计或论文正文。
+
+- 完成 `G1-07-NO-RETURN-REPRODUCIBILITY-CSV-FORMAT-FIX`：仅将7份复现CSV从CRLF机械统一为UTF-8 BOM与LF。修复前后逐文件比较表头、行数、列数与逻辑内容SHA-256，全部一致；无单元格、内部状态或脚本变动。复现包边界QA重跑35项全部通过；这只证明复现准备文件格式和冻结边界可复核，不生成正式分析数据、统计、图表或论文结果。
+
+`G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION`：在真实回填仍缺失时，核对结果章占位、主张矩阵侧车、复现门禁和正式输出占位的冻结表述是否一致；不得把复现准备或QA通过写成正式分析完成。

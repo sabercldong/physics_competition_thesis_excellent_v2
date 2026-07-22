@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-NO-RETURN-REPRODUCIBILITY-CSV-FORMAT-FIX 复现CSV格式修复
+
+- 仅机械转换7份复现CSV的CRLF换行为UTF-8 BOM与LF，覆盖5份 `prep30` 复现表和2份内部候选/内部编码数据表；
+- 修复前后逐文件复核表头、行数、列数和逻辑内容SHA-256，全部一致；未变动任一单元格、内部状态、脚本、统计或论文文本；
+- 重跑 `reproducibility_package_no_return_boundary_qa_v1.csv` 的35项检查，现为35/35通过；该通过仅代表格式和冻结边界可复核，不代表正式分析完成；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，下一最小任务为 `G1-07-NO-RETURN-MANUSCRIPT-GATE-RECONCILIATION`。
+
 ## 2026-07-22：G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA 复现包无真实数据边界QA
 
 - 新增 `07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa.md` 和 `reproducibility_package_no_return_boundary_qa_v1.csv`，检查复现准备材料、内部候选数据、数据字典、门禁、输出占位、模板和脚本边界；

@@ -1,0 +1,6 @@
+﻿version_node,status,allowed_use,next_condition
+coding_manual_v2_internal,已内部冻结,内部预演与模板准备,正式专家/导师/评分者反馈后生成正式版
+formal_coding_rater_A_template,已生成空白模板,真实评分者A独立填写,评分者身份与编码日期确认
+formal_coding_rater_B_template,已生成空白模板,真实评分者B独立填写,评分者身份与编码日期确认
+formal_adjudication_template,已生成空白模板,真实双评分者编码后分歧裁决,A/B编码均完成
+final_coding.csv,未生成,正式分析输入,裁决完成

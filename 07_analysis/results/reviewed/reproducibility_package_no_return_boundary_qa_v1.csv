@@ -27,10 +27,10 @@ RPNR-QA-025,正式模板,A模板编码字段为空,0行已填,0,通过,07_analys
 RPNR-QA-026,正式模板,B模板编码字段为空,0行已填,0,通过,07_analysis/data/formal_coding_rater_B_template.csv,空白模板被误当作真实编码。,继续保持空白，等待真实评分者填写。
 RPNR-QA-027,脚本边界,prep30脚本读取内部候选数据而非final_coding,内部输入路径明确,INTERNAL指向internal_analysis_candidate_v0.csv，且final_coding仅出现在输出占位逻辑中,通过,07_analysis/scripts/build_formal_coding_prep30_outputs.py,脚本用途被误读为正式分析脚本。,仅作为正式编码前准备输出脚本；可记录正式输出为阻塞占位，但不得读取或生成正式结果。
 RPNR-QA-028,脚本边界,prep30脚本含非正式结果边界常量,BOUNDARY明确,True,通过,07_analysis/scripts/build_formal_coding_prep30_outputs.py,生成物可能失去用途限制。,保留边界常量并在输出中继承。
-RPNR-QA-029,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_archive_manifest.csv,UTF-8 BOM和LF,BOM=True; LF=False,不通过,07_analysis/results/reviewed/prep30_archive_manifest.csv,跨工具读取和项目格式检查可能失败。,只做机械编码/换行规范化，随后重跑本QA。
-RPNR-QA-030,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_formal_data_dictionary.csv,UTF-8 BOM和LF,BOM=True; LF=False,不通过,07_analysis/results/reviewed/prep30_formal_data_dictionary.csv,跨工具读取和项目格式检查可能失败。,只做机械编码/换行规范化，随后重跑本QA。
-RPNR-QA-031,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,UTF-8 BOM和LF,BOM=True; LF=False,不通过,07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,跨工具读取和项目格式检查可能失败。,只做机械编码/换行规范化，随后重跑本QA。
-RPNR-QA-032,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_gate_register.csv,UTF-8 BOM和LF,BOM=True; LF=False,不通过,07_analysis/results/reviewed/prep30_gate_register.csv,跨工具读取和项目格式检查可能失败。,只做机械编码/换行规范化，随后重跑本QA。
-RPNR-QA-033,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_version_route.csv,UTF-8 BOM和LF,BOM=True; LF=False,不通过,07_analysis/results/reviewed/prep30_version_route.csv,跨工具读取和项目格式检查可能失败。,只做机械编码/换行规范化，随后重跑本QA。
-RPNR-QA-034,格式,CSV编码与换行：07_analysis/data/internal_analysis_candidate_v0.csv,UTF-8 BOM和LF,BOM=True; LF=False,不通过,07_analysis/data/internal_analysis_candidate_v0.csv,跨工具读取和项目格式检查可能失败。,只做机械编码/换行规范化，随后重跑本QA。
-RPNR-QA-035,格式,CSV编码与换行：07_analysis/data/internal_coding_v1.csv,UTF-8 BOM和LF,BOM=True; LF=False,不通过,07_analysis/data/internal_coding_v1.csv,跨工具读取和项目格式检查可能失败。,只做机械编码/换行规范化，随后重跑本QA。
+RPNR-QA-029,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_archive_manifest.csv,UTF-8 BOM和LF,BOM=True; LF=True,通过,07_analysis/results/reviewed/prep30_archive_manifest.csv,跨工具读取和项目格式检查可能失败。,保持UTF-8 BOM与LF；内容变更时重新执行边界QA。
+RPNR-QA-030,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_formal_data_dictionary.csv,UTF-8 BOM和LF,BOM=True; LF=True,通过,07_analysis/results/reviewed/prep30_formal_data_dictionary.csv,跨工具读取和项目格式检查可能失败。,保持UTF-8 BOM与LF；内容变更时重新执行边界QA。
+RPNR-QA-031,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,UTF-8 BOM和LF,BOM=True; LF=True,通过,07_analysis/results/reviewed/prep30_formal_output_placeholders.csv,跨工具读取和项目格式检查可能失败。,保持UTF-8 BOM与LF；内容变更时重新执行边界QA。
+RPNR-QA-032,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_gate_register.csv,UTF-8 BOM和LF,BOM=True; LF=True,通过,07_analysis/results/reviewed/prep30_gate_register.csv,跨工具读取和项目格式检查可能失败。,保持UTF-8 BOM与LF；内容变更时重新执行边界QA。
+RPNR-QA-033,格式,CSV编码与换行：07_analysis/results/reviewed/prep30_version_route.csv,UTF-8 BOM和LF,BOM=True; LF=True,通过,07_analysis/results/reviewed/prep30_version_route.csv,跨工具读取和项目格式检查可能失败。,保持UTF-8 BOM与LF；内容变更时重新执行边界QA。
+RPNR-QA-034,格式,CSV编码与换行：07_analysis/data/internal_analysis_candidate_v0.csv,UTF-8 BOM和LF,BOM=True; LF=True,通过,07_analysis/data/internal_analysis_candidate_v0.csv,跨工具读取和项目格式检查可能失败。,保持UTF-8 BOM与LF；内容变更时重新执行边界QA。
+RPNR-QA-035,格式,CSV编码与换行：07_analysis/data/internal_coding_v1.csv,UTF-8 BOM和LF,BOM=True; LF=True,通过,07_analysis/data/internal_coding_v1.csv,跨工具读取和项目格式检查可能失败。,保持UTF-8 BOM与LF；内容变更时重新执行边界QA。

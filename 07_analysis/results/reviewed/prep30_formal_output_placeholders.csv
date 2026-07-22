@@ -1,0 +1,5 @@
+﻿artifact,path,status,reason
+正式唯一分析表,07_analysis/data/final_coding.csv,阻塞,尚无真实双评分者编码和裁决结果
+正式总体分布表,07_analysis/results/reviewed/final_dimension_presence.csv,阻塞,尚无正式唯一分析表
+正式共现表,07_analysis/results/reviewed/final_dimension_cooccurrence.csv,阻塞,尚无正式唯一分析表
+正式图表,08_manuscript/figure_table_plan.md,待后续更新,正式结果未生成

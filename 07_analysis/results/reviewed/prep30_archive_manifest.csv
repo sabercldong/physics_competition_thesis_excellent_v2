@@ -1,0 +1,5 @@
+﻿folder,archive_status,next_action
+03_corpus,保留原始语料与校对清单,继续校对销项
+04_framework,保留内部手册与正式模板,冻结正式手册前不得覆盖
+07_analysis/data,保留内部候选表与正式空白模板,正式编码后再生成final_coding.csv
+07_analysis/results/reviewed,保留内部预演与准备报告,正式结果生成后分区归档
