@@ -360,4 +360,6 @@
 
 - 完成 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`：新增 `02_literature/solo_fulltext_boundary_entry_qa.md` 和 `solo_fulltext_boundary_entry_qa_v1.csv`，完成32项QA检查；确认入口20项 `SOLOBE-01` 至 `SOLOBE-20` 连续、CSV为UTF-8 BOM和LF、11个输入文件可定位，`SOLO-001` 仅有书目信息定位、`SOLO-002` 仅有题录摘要定位且全文仍需权限。当前只能保留“SOLO启发的任务认知结构要求等级”这一分析对象边界，不得写等级定义页码、适用性证明或学生学习结果结论。
 
-`G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP`：在不获取或模拟全文的前提下，检查现有合法获取请求包、接收字段、阅读记录与接收后QA顺序能否支撑作者或有权限协作者获得材料后的可复核回填。若合法全文已出现，优先执行 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-REAL-CHECK`，不先做准备任务。
+- 完成 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP`：新增 `02_literature/solo_fulltext_return_intake_prep.md` 和 `solo_fulltext_return_intake_prep_v1.csv`，为 `SOLO-001` 和 `SOLO-002` 建立合法全文回填后的来源匹配、版本固定、页码阅读、边界判断、主张候选和独立QA流程。工作表两行已固定来源与门禁映射，17个实际回填字段均为空；当前不得因题录、摘要或请求包改写正文、主张矩阵或 `references.bib`。
+
+`G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP-QA`：检查两篇来源覆盖、工作表字段、实际回填字段空白保护、P1门禁映射、接收顺序和冻结边界。若合法全文出现，优先执行 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-REAL-CHECK`。

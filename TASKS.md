@@ -353,7 +353,9 @@
   - 进度：新增 `02_literature/solo_fulltext_boundary_entry.md` 和 `02_literature/solo_fulltext_boundary_entry_v1.csv`，整理 `SOLO-001/SOLO-002` 的现有定位状态、全文缺口、P1缺口队列、材料包索引、回填门禁、当前安全句式、禁写边界、真实回填字段和下一QA任务。当前只完成入口准备；只能保留“SOLO启发的任务认知结构要求等级”边界句，不改写正文、不定稿参考文献表、不升级主张矩阵。
 - [x] G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA 检查SOLO理论全文与迁移边界入口材料
   - 进度：新增 `02_literature/solo_fulltext_boundary_entry_qa.md` 和 `solo_fulltext_boundary_entry_qa_v1.csv`，完成32项QA检查；确认20项入口编号连续、CSV为UTF-8 BOM和LF、来源核验/访问审计/请求包/P1缺口与门禁均可定位。`SOLO-001` 仍只有书目信息定位，`SOLO-002` 仍只有题录摘要定位，均不得作为阅读全文、页码级定义或完整迁移论证。QA通过只放行合法全文获取后的接收准备，不放行正文、参考文献表、主张矩阵或理论定稿。
-- [ ] G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP 准备SOLO合法全文回填后的接收与阅读记录流程
+- [x] G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP 准备SOLO合法全文回填后的接收与阅读记录流程
+  - 进度：新增 `02_literature/solo_fulltext_return_intake_prep.md` 和 `solo_fulltext_return_intake_prep_v1.csv`，为 `SOLO-001` 与 `SOLO-002` 建立两行空白接收与阅读工作表，明确来源匹配、版本固定、页码阅读、边界判定、主张候选和独立QA七步顺序。17个实际回填字段保持为空；不得因请求包、题录或摘要而改正文、参考文献表或主张矩阵。
+- [ ] G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP-QA 检查SOLO合法全文回填接收准备流程
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议

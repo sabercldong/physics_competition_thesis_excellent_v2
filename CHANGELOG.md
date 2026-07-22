@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP SOLO合法全文回填接收准备
+
+- 新增 `02_literature/solo_fulltext_return_intake_prep.md`，规定SOLO全文取得后的来源匹配、版本固定、页码阅读、阅读笔记、迁移边界、主张候选、冲突暂停和独立QA顺序；
+- 新增 `02_literature/solo_fulltext_return_intake_prep_v1.csv`，为 `SOLO-001` 与 `SOLO-002` 建立两行回填工作表，固定P1回填与门禁映射，17个实际回填字段均保持空白；
+- 确认当前未取得合法全文，不填日期、来源、渠道、版本、页码、阅读观察、理论定义、迁移结论或主张支持状态；
+- 不改写论文正文、`references.bib` 或主张证据矩阵；更新 `PROJECT_STATUS.md` 与 `TASKS.md`，下一最小任务为 `G2VE-04-SOLO-FULLTEXT-RETURN-INTAKE-PREP-QA`。
+
 ## 2026-07-22：G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA SOLO全文与迁移边界入口QA
 
 - 新增 `02_literature/solo_fulltext_boundary_entry_qa.md`，记录SOLO理论入口QA的性质、结论、已确认边界、不可声称事项和下一最小任务；
