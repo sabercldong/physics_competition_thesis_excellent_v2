@@ -607,4 +607,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch2_task_cards_qa.md` 和 `manual_review_p0_batch2_task_cards_qa_v1.csv`，完成45项QA检查；确认22张任务卡与 `P0B2RET-01` 至 `P0B2RET-22` 一一对应，覆盖第35届8题、第36届7题、第39届7题，题目文本、公式核对表和最低核对输入路径缺失0项。全部仍保持“待领取：未真实回填”和“不放行：P0第二批任务卡，未真实销项”。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT 收束P0第二批真实核对交接链
   - 进度：新增 `03_corpus/manual_review_p0_batch2_handoff_closeout.md` 和 `manual_review_p0_batch2_handoff_closeout_v1.csv`，将P0第二批回填入口、入口QA、逐项任务卡和任务卡QA收束为10项结构化索引；明确领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步。当前仍不填写真实校对字段，不关闭22项P0第二批问题，不放行正式编码或论文结果。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT-QA 检查P0第二批交接链收束说明
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT-QA 检查P0第二批交接链收束说明
+  - 进度：新增 `03_corpus/manual_review_p0_batch2_handoff_closeout_qa.md` 和 `manual_review_p0_batch2_handoff_closeout_qa_v1.csv`，完成42项QA检查；确认10项收束索引编号连续，覆盖入口、入口QA、任务卡、任务卡QA、领取、写回、接收、整合、正式出口和状态同步；现有路径缺失0项，`final_coding.csv` 和真实回填目录当前均不存在。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING 等待P0第二批真实回填副本

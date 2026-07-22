@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT-QA P0第二批交接链收束QA
+
+- 新增 `03_corpus/manual_review_p0_batch2_handoff_closeout_qa.md`，记录P0第二批交接链收束QA的性质声明、QA结论、仍不能声称内容和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch2_handoff_closeout_qa_v1.csv`，完成42项QA检查，覆盖输入存在性、CSV编码换行、收束索引行数编号、链条覆盖、路径检查、字段完整性、上游规模、冻结边界、下一任务和总体结论；
+- 确认收束索引共10项，`P0B2CLOSE-01` 至 `P0B2CLOSE-10` 连续唯一，覆盖回填入口、入口QA、逐项任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步；
+- 确认上游回填入口22行、入口QA 38项、任务卡22张、任务卡QA 45项均可定位，现有路径缺失0项；
+- 确认 `07_analysis/data/final_coding.csv` 和 `03_corpus/manual_review_returns/` 当前均不存在，本QA未创建真实回填目录或正式编码文件；
+- 本QA不填写真实校对字段，不关闭22项P0第二批问题，不放行正式评分者模板、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-WAITING`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT P0第二批真实核对交接链收束
 
 - 新增 `03_corpus/manual_review_p0_batch2_handoff_closeout.md`，将P0第二批回填入口、入口QA、逐项任务卡和任务卡QA收束为一页式交接说明；
