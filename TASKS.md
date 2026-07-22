@@ -367,7 +367,9 @@
   - 进度：经本轮复核确认，该任务已由提交 `5504b43` 完成并由 `62a5372` QA；`03_corpus/no_return_c_figure_queue_v1.csv` 与最新版C组闭环包47项 `issue_id` 完全一致，48项QA均通过，228条图件相关路径可达且无缺失。清单仍仅为候选图件待核入口，不确认最终图、不关闭C组问题、不填写真实人工结论。
 - [x] G1-07-NO-RETURN-RATER-HANDOFF-BOUNDARY-QA 检查评分者交接包的无真实回填边界
   - 进度：新增 `04_framework/rater_handoff_no_return_boundary_qa.md` 和 `rater_handoff_no_return_boundary_qa_v1.csv`，完成29项QA检查；确认12项锁定交接文件路径可达、10项风险均未解决、A/B/裁决模板各876行且真实编码/裁决字段均为空、154项人工校对真实字段仍未回填、真实回填目录与 `final_coding.csv` 均不存在。同步将三份正式模板机械改为UTF-8 BOM与LF换行，未改变任何字段或内容；本任务不放行正式V2、双评分者编码、一致性或论文结果。
-- [ ] G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA 检查复现包与数据字典的无真实数据边界
+- [x] G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA 检查复现包与数据字典的无真实数据边界
+  - 进度：新增 `07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa.md` 和 `reproducibility_package_no_return_boundary_qa_v1.csv`，完成35项QA；28项通过，确认内部候选/内部编码数据各876行且保留非正式标记，A/B/裁决模板各876行且A/B编码字段为空，正式输出4项未放行、5个门槛均未满足，`final_coding.csv`与真实回填目录均不存在。7项不通过均为既有复现CSV使用CRLF换行；不属于数据或结果结论问题，不放行正式分析。
+- [ ] G1-07-NO-RETURN-REPRODUCIBILITY-CSV-FORMAT-FIX 统一复现CSV的UTF-8 BOM与LF格式
 - [x] G2-02 核验课程标准中的科学思维定义
   - 进度：已核验教育部《普通高中物理课程标准（2017年版2020年修订）》官方通知页、附件包和物理课程标准PDF，定位科学思维定义与模型建构、科学推理、科学论证、质疑创新四要素；新增 `02_literature/curriculum_standard_verification.md`，并更新 `reference_verification.csv`、`literature_matrix.csv`、`search_log.csv`、`references.bib`、`09_quality/claim_evidence_matrix.csv` 和 `08_manuscript/02_theory.md`。该任务只支持课程标准依据，不能替代SOLO理论、科学思维测评、内容分析方法或专家审查证据。
 - [-] G2-03 阅读SOLO原始理论及任务分析争议

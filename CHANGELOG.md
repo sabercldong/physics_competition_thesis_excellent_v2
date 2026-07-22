@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA 复现包无真实数据边界QA
+
+- 新增 `07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa.md` 和 `reproducibility_package_no_return_boundary_qa_v1.csv`，检查复现准备材料、内部候选数据、数据字典、门禁、输出占位、模板和脚本边界；
+- 确认内部候选/内部编码数据各876行且保留内部非正式标记，A/B/裁决模板各876行、A/B编码字段为空，正式输出占位4项未放行、门禁5项均未满足，`final_coding.csv`与真实回填目录均不存在；
+- 35项检查中28项通过；7项不通过均为既有复现CSV仍使用CRLF换行，未发现内部候选数据、占位表或脚本被误称为正式结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，下一最小任务为 `G1-07-NO-RETURN-REPRODUCIBILITY-CSV-FORMAT-FIX`；本QA不放行正式编码、统计、论文结果或教学结论。
+
 ## 2026-07-22：G1-07-NO-RETURN-RATER-HANDOFF-BOUNDARY-QA 评分者交接包无真实回填边界QA
 
 - 新增 `04_framework/rater_handoff_no_return_boundary_qa.md` 和 `rater_handoff_no_return_boundary_qa_v1.csv`，完成29项交接包、风险、模板、回收规则、冻结出口、表述边界和格式QA；

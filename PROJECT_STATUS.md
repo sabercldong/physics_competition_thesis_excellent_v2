@@ -377,3 +377,7 @@
 - 完成 `G1-07-NO-RETURN-RATER-HANDOFF-BOUNDARY-QA`：新增 `04_framework/rater_handoff_no_return_boundary_qa.md` 和 `rater_handoff_no_return_boundary_qa_v1.csv`，29项QA均通过；12项锁定交接文件路径缺失0项，10项未解风险均未解决，A/B/裁决模板各876行且真实编码、裁决字段均为空，三份模板均标记“待正式冻结”。154项人工校对的真实校对人和日期仍为空，`03_corpus/manual_review_returns/` 与 `07_analysis/data/final_coding.csv` 均不存在。同步把三份模板的换行从CRLF机械统一为UTF-8 BOM与LF，不改动任何字段内容。本QA不放行正式V2、真实双评分者编码、一致性、裁决、正式统计或论文结果。
 
 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA`：在真实回填仍未出现时，核对复现包脚本、数据字典、正式输出占位与内部候选数据的边界；不得把内部候选数据、占位表或脚本可运行性写成正式数据分析已经完成。
+
+- 完成 `G1-07-NO-RETURN-REPRODUCIBILITY-PACKAGE-BOUNDARY-QA`：新增 `07_analysis/results/reviewed/reproducibility_package_no_return_boundary_qa.md` 和 `reproducibility_package_no_return_boundary_qa_v1.csv`，35项QA中28项通过、7项不通过。确认内部候选/内部编码数据各876行且全体保留内部非正式标记；A/B/裁决模板各876行且A/B编码字段为空；正式输出4项均未放行、5个门槛均未满足，`final_coding.csv`和真实回填目录均不存在。7项不通过均为既有复现CSV的CRLF格式，未发现内部候选数据、输出占位或脚本被写成正式结果。本QA不放行正式编码、统计、论文结果或教学结论。
+
+`G1-07-NO-RETURN-REPRODUCIBILITY-CSV-FORMAT-FIX`：仅机械统一7份既有复现CSV的UTF-8 BOM与LF换行，然后重跑复现包边界QA；不得改动任何单元格、状态字段、脚本、统计或论文正文。
