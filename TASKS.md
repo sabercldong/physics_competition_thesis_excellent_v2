@@ -625,4 +625,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch3_handoff_closeout.md` 和 `manual_review_p0_batch3_handoff_closeout_v1.csv`，形成10项交接链收束索引，覆盖入口、入口QA、任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步；当前不关闭任何图件或SOLFIG问题。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT-QA 检查P0第三批图件交接链收束说明
   - 进度：新增 `03_corpus/manual_review_p0_batch3_handoff_closeout_qa.md` 和 `manual_review_p0_batch3_handoff_closeout_qa_v1.csv`，完成43项QA检查；确认10项收束索引编号连续，覆盖入口、入口QA、任务卡、任务卡QA、领取、写回、接收、整合、正式出口和状态同步；上游入口、QA、任务卡、C/D回填包和整合协议均可定位，真实回填目录和 `final_coding.csv` 当前均不存在。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING 等待P0第三批真实回填副本
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING 等待P0第三批真实回填副本
+  - 进度：新增 `03_corpus/manual_review_p0_batch3_return_waiting.md` 和 `manual_review_p0_batch3_return_waiting_v1.csv`，形成12项等待与触发清单；覆盖真实回填副本、48项入口、48张任务卡、C组47项图件写回、D组SOLFIG写回、接收目录、校验值、结构检查、冲突处理、整合QA、正式图件与编码出口和项目状态同步；当前不创建真实回填目录，不生成 `final_coding.csv`。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA 检查P0第三批真实回填等待状态登记

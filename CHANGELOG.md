@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING P0第三批真实回填等待状态登记
+
+- 新增 `03_corpus/manual_review_p0_batch3_return_waiting.md`，登记P0第三批48项图件与 `CPHO42-Q03-SOLFIG` 边界任务在交接链已收束、真实回填副本未收到时的等待状态、触发流程、可领取入口和禁止事项；
+- 新增 `03_corpus/manual_review_p0_batch3_return_waiting_v1.csv`，建立12项等待与触发清单，覆盖真实回填副本、48项任务入口、48张任务卡、C组47项图件写回、D组SOLFIG写回、接收目录、校验值、结构检查、冲突处理、整合QA、正式图件与编码出口和项目状态同步；
+- 确认当前仍未创建 `03_corpus/manual_review_returns/`，未生成 `07_analysis/data/final_coding.csv`；
+- 明确若真实回填副本仍未收到，下一步执行 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA`；若真实副本已经收到，则优先执行 `G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-INTAKE-REAL-CHECK`；
+- 本任务不填写真实校对字段，不关闭C组47项图件问题或 `CPHO42-Q03-SOLFIG` 边界问题，不放行正式论文图件、正式编码、正式统计、论文结果章或任何专家/教师/问卷/教学实验结论。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-HANDOFF-CLOSEOUT-QA P0第三批图件交接链收束QA
 
 - 新增 `03_corpus/manual_review_p0_batch3_handoff_closeout_qa.md`，记录P0第三批图件交接链收束QA的性质声明、QA结论、已确认事项、仍不能声称内容和下一最小任务；

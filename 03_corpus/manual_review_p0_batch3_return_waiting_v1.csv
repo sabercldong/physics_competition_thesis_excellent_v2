@@ -1,0 +1,13 @@
+﻿wait_id,wait_area,current_evidence,current_status,trigger_condition,action_when_triggered,must_not_do,release_status,next_owner_or_route
+P0B3WAIT-01,真实回填副本状态,路径不存在：03_corpus/manual_review_returns/；上游交接链QA已完成：03_corpus/manual_review_p0_batch3_handoff_closeout_qa_v1.csv,未收到真实回填副本,用户、其他智能体或真实校对者提供按48张任务卡完成的真实回填副本,按接收协议登记文件名、路径、大小、校验值、接收日期和接收人,不得创建虚假接收目录；不得登记不存在的副本；不得填写真实校对人或日期,不放行：等待真实回填,若收到则转入G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-INTAKE-REAL-CHECK
+P0B3WAIT-02,48项任务入口状态,03_corpus/manual_review_p0_batch3_figure_queue_v1.csv 共48项，P0B3FIG-01至P0B3FIG-48,入口可领取但未真实回填,任一P0B3FIG项出现可追溯真实核对记录,核对来源任务、材料ID、问题ID和写回目标是否一致,不得把入口存在写成校对完成；不得跳过任务卡,不放行：入口未真实销项,继续等待领取或真实回填
+P0B3WAIT-03,48张任务卡领取状态,03_corpus/manual_review_p0_batch3_task_cards_v1.csv 共48张，P0B3CARD-01至P0B3CARD-48,任务卡可领取但未销项,执行者领取P0B3CARD-01至P0B3CARD-48任一任务并提交真实核对记录,核对任务卡、source_issue_id、minimum_inputs_to_check和handoff_target,不得把领取等同完成；不得只写主观判断而无页码/图件证据,不放行：任务卡未真实销项,继续等待领取或回填
+P0B3WAIT-04,C组47项图件写回状态,03_corpus/manual_review_c_closure_packet_v1.csv 共47行；真实校对人、日期、决定字段仍为空,C组图件问题未关闭,C组任一图件任务收到真实回填并包含是否可用于论文、是否需重绘、修订说明和最终证据位置,先做C组字段完整性与图件路径检查，再进入整合QA,不得批量关闭47项；不得把候选图直接升格为论文定稿图,不放行：C组图件未真实销项,收到后转入C组真实回填接收检查
+P0B3WAIT-05,D组SOLFIG写回状态,03_corpus/manual_review_d_closure_packet_v1.csv 含第42届第3题SOLFIG边界项；真实回填字段仍为空,SOLFIG边界未关闭,第42届第3题解答放大图边界收到真实核对结论,检查题面图3a-3d、题解图3a-3c、解答放大页P26-P27的命名边界与附录使用边界,不得声称CPHO42-Q03-SOLFIG替代CPHO42-Q03-FIG题面图终核,不放行：SOLFIG边界未真实销项,收到后转入D组真实回填接收检查
+P0B3WAIT-06,接收目录准备状态,03_corpus/manual_review_return_intake_folder_rules_v1.csv 共12条规则；当前不创建真实回填目录,接收规则存在但目录未启用,真实副本实际出现且需要登记时,按RIF规则创建或使用接收位置，并登记副本路径与校验值,不得为占位而创建空目录；不得伪造文件名或校验值,不放行：接收准备不等于收到副本,继续等待真实副本
+P0B3WAIT-07,校验值状态,接收登记模板存在：03_corpus/manual_review_return_intake_register_template_v1.csv；真实文件名和校验值为空,未登记真实校验值,真实副本进入接收流程,计算并登记文件大小、SHA256、接收日期和接收人,不得用模板校验值代替真实副本校验值,不放行：缺真实校验值,收到后先做接收登记
+P0B3WAIT-08,结构检查状态,回填整合协议 22条：03_corpus/manual_review_return_integration_protocol_v1.csv,结构检查待触发,真实回填副本出现,检查行数、编号、不可变继承字段、必填回填字段和冲突字段,不得跳过结构检查直接合并台账,不放行：整合前结构未检,收到后执行RIP-01至RIP-08
+P0B3WAIT-09,冲突处理状态,回填整合协议含冲突分级和隔离规则,冲突处理未触发,真实回填与既有入口、候选图、题面页或题解图边界冲突,登记冲突字段、冲突等级、待核说明和隔离动作,不得用内部判断覆盖真实回填冲突；不得静默改写候选图结论,不放行：冲突未处理,收到后执行冲突分级与整合QA
+P0B3WAIT-10,整合QA状态,上游协议QA已完成，第三批交接链QA已完成,整合QA待触发,真实回填副本通过接收登记和结构检查,生成第三批真实回填整合QA，确认哪些项可关闭、哪些继续待核,不得未经整合QA更新正式编码或正文,不放行：整合QA未完成,真实副本通过后生成整合QA
+P0B3WAIT-11,正式图件与编码出口状态,07_analysis/data/final_coding.csv 当前不存在；正式论文图件目录未放行,正式图件、正式编码和正式统计冻结,全部相关真实回填通过整合QA且项目台账同步,再讨论是否生成正式论文图件清单、评分者模板或正式编码入口,不得生成正式论文插图定稿；不得创建final_coding.csv；不得写第四章正式结果,冻结：正式出口未解锁,等待真实回填和整合QA
+P0B3WAIT-12,项目状态同步,PROJECT_STATUS.md、TASKS.md、CHANGELOG.md 记录本等待任务,等待状态需同步台账,等待登记或真实接收状态发生变化,同步PROJECT_STATUS、TASKS、CHANGELOG，并保持单任务提交,不得只改材料表不改台账；不得把等待写成完成校对,不放行：仅同步等待状态,下一步为G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA
