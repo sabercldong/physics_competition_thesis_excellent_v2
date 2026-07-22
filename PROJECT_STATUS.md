@@ -413,3 +413,5 @@
 - 完成 `G1-07-EXTERNAL-AGENT-HANDOFF-PACKET-QA`：新增 `01_positioning/external_agent_handoff_packet_qa.md` 和 `external_agent_handoff_packet_qa_v1.csv`，23项QA全部通过。8项任务编号、格式、起始材料、交付、接收入口、验收规则和禁止边界均可追溯；当前所有真实回填目录及`final_coding.csv`仍不存在。该通过仅表明外部协作者可按包交付真实材料，不能替代人工校对、合法全文、独立评分、教学证据或学校/导师确认，正式分析与结果继续冻结。
 
 - 完成 `G1-07-HUMAN-REVIEWER-FILL-GUIDE`：新增 `03_corpus/human_reviewer_fill_guide.md`，将人工复核的实际操作明确为可复制填写的A/B/C/D闭环包、字段级填写规则、匿名声明、交付命名、证据位置与接收/放行字段隔离。指南也区分人工终核与后续双评分者编码；当前仍未收到任何填写副本，所有结果门禁继续冻结。
+
+- 完成 `G1-07-R01-A-RETURN-INTAKE`：收到R01自声明独立人工复核的A组汇总回填，原始副本保存在`03_corpus/manual_review_returns/incoming/REAL-P1/`，并生成LF登记副本和接收检查报告。76行/38材料、不可变字段、A组必填字段、决定选项和336条项目内证据路径均通过接收检查。R01摘要仅明确`CPHO41-Q02/Q07`做视觉API交叉验证，其余基于项目内文本层、转写、公式核对表和渲染页；这一限制已登记。当前仅接收并完成结构检查，仍未关闭A组问题、未放行正式编码或结果；下一步为R01整合QA。

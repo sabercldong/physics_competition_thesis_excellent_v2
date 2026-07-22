@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-R01-A-RETURN-INTAKE 接收R01 A组人工复核回填
+
+- 接收并原样保存R01 A组76行回填，记录原件哈希；生成仅换行规范化的LF登记副本；
+- 新增 `03_corpus/manual_review_r01_a_return_intake_check.md` 与 `manual_review_r01_a_return_intake_check_v1.csv`，20项接收检查全部通过；
+- 登记R01声明、38个材料和76个问题；保留“仅Q41Q02/Q41Q07明确视觉API交叉验证”的范围限制；
+- 更新38题接收登记、`PROJECT_STATUS.md`和`TASKS.md`；不关闭A组问题，不放行正式编码、统计或论文结果。
+
 ## 2026-07-22：G1-07-HUMAN-REVIEWER-FILL-GUIDE 人工复核者填写指南
 
 - 新增 `03_corpus/human_reviewer_fill_guide.md`，明确A/B/C/D四组可复制填写的闭环包及字段级规则；

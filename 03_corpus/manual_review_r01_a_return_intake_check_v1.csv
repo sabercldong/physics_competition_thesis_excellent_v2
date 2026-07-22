@@ -1,0 +1,21 @@
+﻿check_id,check_scope,expected,observed,result,action
+R01INT-01,收到副本,实际文件存在,return_20260722_A_R01_filled.csv存在,PASS,原样保存
+R01INT-02,原件格式,UTF-8 BOM可识别,UTF-8 BOM,PASS,保留原件
+R01INT-03,原件换行,记录实际换行,CRLF,PASS,生成LF登记副本
+R01INT-04,行数,76,76,PASS,进入结构检查
+R01INT-05,问题集合,76个唯一issue_id,76,PASS,与A组空白包对齐
+R01INT-06,材料集合,38个唯一material_id,38,PASS,与首批材料数一致
+R01INT-07,表头,与A组空白包一致,28列一致,PASS,通过
+R01INT-08,不可变字段,20项字段逐行无差异,差异0,PASS,通过
+R01INT-09,复核者字段,76行均为R01,76/76,PASS,登记R01声明
+R01INT-10,日期字段,76行均为2026-07-22,76/76,PASS,登记实际日期
+R01INT-11,决定字段,非空且属于建议选项,76/76,PASS,通过
+R01INT-12,修订字段,76行均明确是否修订,76/76为否,PASS,通过
+R01INT-13,修订说明,76行非空,76/76,PASS,通过
+R01INT-14,证据位置,76行非空,76/76,PASS,检查路径
+R01INT-15,证据路径,项目内路径均存在,336/336,PASS,进入整合QA
+R01INT-16,复核状态,76行非空,76/76待接收QA,PASS,不得视为放行
+R01INT-17,原件保留,接收副本有哈希,04d163df839c0fe3c9e9f6a86af44dfad6d2d0c38f10262dede37c70ec66defb,PASS,不可覆盖
+R01INT-18,登记副本,UTF-8 BOM与LF,已生成,PASS,仅规范化换行
+R01INT-19,范围限制,不夸大视觉交叉验证范围,仅Q41Q02/Q41Q07明确视觉API,PASS,整合QA保留限制
+R01INT-20,结果门禁,不关闭或放行正式结果,未更新销项/编码/统计,PASS,待整合QA
