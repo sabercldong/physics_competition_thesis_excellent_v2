@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT P0第二批真实核对交接链收束
+
+- 新增 `03_corpus/manual_review_p0_batch2_handoff_closeout.md`，将P0第二批回填入口、入口QA、逐项任务卡和任务卡QA收束为一页式交接说明；
+- 新增 `03_corpus/manual_review_p0_batch2_handoff_closeout_v1.csv`，建立10项结构化索引，覆盖回填入口、入口QA、任务卡、任务卡QA、领取顺序、写回位置、真实副本接收、整合协议、正式编码出口和项目状态同步；
+- 明确其他智能体或人工校对者应从 `P0B2CARD-01` 至 `P0B2CARD-22` 领取任务，并将真实核对发现写回对应 `P0B2RET-01` 至 `P0B2RET-22`；
+- 明确收到真实回填副本后，必须先执行接收登记、结构检查、不可变字段检查、必填字段检查和整合QA；
+- 确认当前仍不填写真实校对字段，不关闭22项P0第二批问题，不创建或更新 `07_analysis/data/final_coding.csv`；
+- 本任务不改写论文正文，不放行正式评分者模板、正式编码、正式统计、论文结果章、专家意见、教师意见、问卷结果或教学实验结果；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT-QA`。
+
 ## 2026-07-19：G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS-QA P0第二批逐项领取任务卡QA
 
 - 新增 `03_corpus/manual_review_p0_batch2_task_cards_qa.md`，记录P0第二批逐项领取任务卡QA的性质声明、QA结论、仍不能声称内容和下一最小任务；

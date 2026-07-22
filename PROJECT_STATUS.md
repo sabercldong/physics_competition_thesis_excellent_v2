@@ -328,6 +328,7 @@
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-RETURN-PREP-QA`：新增 `03_corpus/manual_review_p0_batch2_return_prep_qa.md` 和 `03_corpus/manual_review_p0_batch2_return_prep_qa_v1.csv`，完成38项QA检查；确认P0第二批入口CSV为UTF-8 BOM和LF换行，22项 `P0B2RET-01` 至 `P0B2RET-22` 连续唯一，来源筛选、字段结构、路径、空白回填字段、冻结状态和Markdown边界均通过检查。当前本QA不关闭任何人工校对项，不放行正式编码、正式统计或论文结果。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS`：新增 `03_corpus/manual_review_p0_batch2_task_cards.md` 和 `03_corpus/manual_review_p0_batch2_task_cards_v1.csv`，将P0第二批22条公式与特殊符号回填入口整理为22张逐项领取任务卡；任务卡逐行对应 `P0B2RET-01` 至 `P0B2RET-22`，覆盖第35届8题、第36届7题、第39届7题，题目文本和公式核对表路径缺失0项。22张任务卡全部保持“待领取：未真实回填”和“不放行：P0第二批任务卡，未真实销项”。
 - 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-TASK-CARDS-QA`：新增 `03_corpus/manual_review_p0_batch2_task_cards_qa.md` 和 `03_corpus/manual_review_p0_batch2_task_cards_qa_v1.csv`，完成45项QA检查；确认22张任务卡编号连续，逐行挂接 `P0B2RET-01` 至 `P0B2RET-22`，覆盖第35届8题、第36届7题、第39届7题；题目文本、公式核对表和最低核对输入路径缺失0项，全部仍保持“待领取：未真实回填”和“不放行：P0第二批任务卡，未真实销项”。本QA不代表真实校对完成，不释放正式评分者模板、正式编码、正式统计或论文结果章。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT`：新增 `03_corpus/manual_review_p0_batch2_handoff_closeout.md` 和 `03_corpus/manual_review_p0_batch2_handoff_closeout_v1.csv`，将P0第二批回填入口、入口QA、任务卡和任务卡QA收束为一页式交接说明与10项结构化索引；明确其他智能体从任务卡领取、按对应 `P0B2RET` 行写入真实核对发现，收到真实副本后再进行接收登记、结构检查、不可变字段检查、必填字段检查和整合QA。当前仍不填写真实校对字段，不关闭22项P0第二批问题，不放行正式评分者模板、正式编码、正式统计、论文结果章或 `final_coding.csv`。
 
 ## 关键阻塞项
 
@@ -342,4 +343,4 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT`：将P0第二批回填入口、入口QA、逐项任务卡和任务卡QA收束成一页式交接说明，明确其他智能体领取、回填、接收登记和整合QA的最短路线；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH2-HANDOFF-CLOSEOUT-QA`：检查P0第二批交接链收束说明和10项结构化索引是否覆盖完整、路径是否可定位、状态是否继续冻结；若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。

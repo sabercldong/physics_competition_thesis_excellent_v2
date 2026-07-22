@@ -1,0 +1,11 @@
+﻿closeout_id,section,artifact,primary_markdown,primary_csv,purpose,handoff_action,current_status,release_boundary
+P0B2CLOSE-01,材料链条,P0第二批回填入口,03_corpus/manual_review_p0_batch2_return_prep.md,03_corpus/manual_review_p0_batch2_return_prep_v1.csv,22条P0第二批公式与特殊符号真实回填入口,真实执行者按return_id定位题目、支持文件和必填字段；不得修改继承字段。,已准备：未真实回填,不放行：空白回填入口，未真实销项
+P0B2CLOSE-02,材料链条,P0第二批入口QA,03_corpus/manual_review_p0_batch2_return_prep_qa.md,03_corpus/manual_review_p0_batch2_return_prep_qa_v1.csv,38项入口QA，确认路径、空白回填字段和冻结边界,接手前先读QA，确认入口结构和路径可靠；若后续改入口，必须重做QA。,已通过：仅验证入口,不放行：QA不等于真实校对
+P0B2CLOSE-03,材料链条,P0第二批逐项任务卡,03_corpus/manual_review_p0_batch2_task_cards.md,03_corpus/manual_review_p0_batch2_task_cards_v1.csv,22张逐项领取任务卡，对应P0B2RET-01至P0B2RET-22,其他智能体或人工校对者从任务卡领取单项核对，并回填到对应P0B2RET行。,已准备：待领取,不放行：任务卡未真实销项
+P0B2CLOSE-04,材料链条,P0第二批任务卡QA,03_corpus/manual_review_p0_batch2_task_cards_qa.md,03_corpus/manual_review_p0_batch2_task_cards_qa_v1.csv,45项任务卡QA，确认一一映射和路径缺失0项,接手前确认22张任务卡与回填入口一一对应，路径缺失0项。,已通过：仅验证任务卡,不放行：QA不等于真实校对
+P0B2CLOSE-05,执行入口,领取顺序,03_corpus/manual_review_p0_batch2_task_cards.md,03_corpus/manual_review_p0_batch2_task_cards_v1.csv,推荐从任务卡领取，再打开题目文本、公式核对表和最低核对输入。,按task_card_id逐项领取，领取后只填写真实核对发现和证据摘记。,待领取：未真实回填,不得代填校对人、日期、公式决定或证据结论
+P0B2CLOSE-06,回填入口,写回位置,03_corpus/manual_review_p0_batch2_return_prep.md,03_corpus/manual_review_p0_batch2_return_prep_v1.csv,真实结果写回对应return_id行，或另存真实回填副本后进入接收登记。,填写reviewer_name、review_date、source_pages_checked、formula_decision、revision_locations、evidence_note等字段。,未回填,未完成接收QA前不得关闭问题
+P0B2CLOSE-07,接收路线,真实副本接收,03_corpus/return_intake_folder_protocol.md,03_corpus/manual_review_return_intake_register_template_v1.csv,若收到真实副本，先登记文件名、路径、校验值、接收日期和接收人。,执行真实回填接收登记、结构检查、不可变字段检查、必填字段检查和整合QA。,待触发：未收到真实副本,不得直接把回填副本并入正式编码
+P0B2CLOSE-08,整合路线,整合协议,03_corpus/manual_review_return_integration_protocol.md,03_corpus/manual_review_return_integration_protocol_v1.csv,收到真实回填后按RIP协议处理冲突、关闭条件、账本同步和正式编码解锁。,逐项检查关闭条件，只有证据充分且字段完整时才允许进入后续正式编码准备。,待触发：等待真实回填,不得绕过整合QA
+P0B2CLOSE-09,正式出口,正式编码出口,,,未来正式编码出口为 07_analysis/data/final_coding.csv；当前该文件不得创建或更新。,当前不创建、不更新、不声明存在final_coding.csv。,冻结,不放行正式编码、正式统计、论文结果章
+P0B2CLOSE-10,状态边界,项目总状态同步,PROJECT_STATUS.md,TASKS.md,本收束文件完成后，项目状态应转入第二批等待或下一批人工校对准备。,更新项目状态、任务表和变更记录。,本任务完成后更新,状态更新不代表真实回填完成
