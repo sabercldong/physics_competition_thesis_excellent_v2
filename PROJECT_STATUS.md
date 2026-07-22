@@ -354,4 +354,6 @@
 
 ## 下一任务
 
-`G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION`：在P0前三批均已完成交接链和等待登记、但真实回填副本仍未收到的条件下，判断下一批应继续准备哪类P0/P1材料，或转入文献理论核验/复现结构补强；不得进入正式编码、正式论文图件定稿或结果章写作。若收到任一批次真实回填副本，则优先转入对应批次的真实回填接收检查。文献侧并行下一任务仍为 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`。
+- 完成 `G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION`：新增 `03_corpus/manual_review_p0_batch4_route_decision.md` 和 `manual_review_p0_batch4_route_decision_v1.csv`，在P0第一至第三批已交接且等待登记、真实回填仍未收到的条件下完成12条安全路线判断。真实接收、正式评分者编码、正式统计和论文图件定稿继续冻结；可安全推进语料路径QA、候选图件与分值缺口索引、评分者交接包QA、复现结构、正文门禁和SOLO全文边界核验。当前 `03_corpus/manual_review_returns/` 与 `07_analysis/data/final_coding.csv` 均不存在。
+
+`G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA`：检查第四批路线判断的输入、12条编号、允许输出、禁止输出、触发切换、冻结边界和台账一致性。QA通过后，若真实回填仍未出现，优先进入 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`；若收到任一批真实回填副本，则优先转入对应批次真实回填接收检查。

@@ -629,4 +629,6 @@
   - 进度：新增 `03_corpus/manual_review_p0_batch3_return_waiting.md` 和 `manual_review_p0_batch3_return_waiting_v1.csv`，形成12项等待与触发清单；覆盖真实回填副本、48项入口、48张任务卡、C组47项图件写回、D组SOLFIG写回、接收目录、校验值、结构检查、冲突处理、整合QA、正式图件与编码出口和项目状态同步；当前不创建真实回填目录，不生成 `final_coding.csv`。
 - [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA 检查P0第三批真实回填等待状态登记
   - 进度：新增 `03_corpus/manual_review_p0_batch3_return_waiting_qa.md` 和 `manual_review_p0_batch3_return_waiting_qa_v1.csv`，完成39项QA检查；确认12项等待登记编号连续，覆盖真实副本、入口、任务卡、C/D写回、接收目录、校验值、结构检查、冲突处理、整合QA、正式出口和状态同步；12项均保持“不放行”或“冻结”，真实回填目录和 `final_coding.csv` 当前均不存在。
-- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION 判断无真实回填条件下下一批安全推进路线
+- [x] G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION 判断无真实回填条件下下一批安全推进路线
+  - 进度：新增 `03_corpus/manual_review_p0_batch4_route_decision.md` 和 `manual_review_p0_batch4_route_decision_v1.csv`，基于P0第一至第三批等待QA、无回填工作队列和文献侧回填规则，形成12条安全路线判断；明确真实接收、正式A/B编码、正式统计与论文图件定稿继续冻结，可安全推进语料路径QA、图件/分值缺口索引、交接包QA、复现结构、正文门禁及SOLO全文边界QA。当前真实回填目录与 `final_coding.csv` 均不存在。
+- [ ] G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA 检查P0第四批安全推进路线判断

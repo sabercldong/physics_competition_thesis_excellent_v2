@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION P0第四批安全推进路线判断
+
+- 新增 `03_corpus/manual_review_p0_batch4_route_decision.md`，说明P0前三批等待状态下的安全推进原则、优先次序、冻结边界、切换条件和下一最小任务；
+- 新增 `03_corpus/manual_review_p0_batch4_route_decision_v1.csv`，建立12条路线判断，覆盖真实回填接收、语料路径、C/D组缺口、正式评分者编码、统计与图件定稿、SOLO理论、交接包、复现结构、正文门禁和下一路线选择；
+- 确认真实回填目录与 `07_analysis/data/final_coding.csv` 当前均不存在，正式编码、正式统计、论文图件定稿和结果章继续冻结；
+- 明确可先完成路线判断QA，随后在无真实回填时优先推进 `G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA`；任何真实回填副本出现时立即优先转入对应接收检查；
+- 更新 `PROJECT_STATUS.md` 和 `TASKS.md`，将下一最小任务标为 `G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA`。
+
 ## 2026-07-22：G1-07-FOLLOWUP-MANUAL-P0-BATCH3-RETURN-WAITING-QA P0第三批真实回填等待状态登记QA
 
 - 新增 `03_corpus/manual_review_p0_batch3_return_waiting_qa.md`，记录P0第三批真实回填等待状态登记QA的性质声明、QA结论、已确认事项、仍不能声称内容和下一最小任务；

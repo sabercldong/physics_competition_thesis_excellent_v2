@@ -1,0 +1,13 @@
+﻿route_id,route_area,upstream_evidence,current_state,can_start_without_real_return,recommended_priority,allowed_output,blocked_output,trigger_to_switch,release_status,next_task
+P0B4ROUTE-01,P0前三批状态总览,"第一至三批等待QA：30、42、39项；第三批交接链QA：43项",真实回填副本未收到,是,P0,路线判断与边界登记,不得将等待QA视为真实销项,"任一批真实回填副本出现后，转对应接收检查",不放行,G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA
+P0B4ROUTE-02,真实回填接收检查,"03_corpus/manual_review_returns/当前不存在",不能启动真实接收,否,P0,保持接收规则和空白模板,不得创建伪回填或填写真实字段,"真实副本可定位并具备来源信息",冻结,对应批次-RETURN-INTAKE-REAL-CHECK
+P0B4ROUTE-03,语料证据路径与页码边界QA,"无回填队列NQ-02；154项入口已建成",可安全开展内部路径检查,是,P0,断链与边界疑点清单,不得把路径可达写为人工终核,"对应条目真实终核决定和复核后证据位置出现",不放行,G1-07-NO-RETURN-CORPUS-PATH-QA
+P0B4ROUTE-04,C组候选图件待核索引,"无回填队列NQ-03；C组47项图件写回待回填",可安全整理候选与缺口,是,P0,候选图和图注疑点索引,不得将候选图作为论文最终图,"C组真实回填确认图号、图注、裁边和可用性",不放行,G1-07-C-NO-RETURN-FIGURE-QUEUE
+P0B4ROUTE-05,D组分值与附属图缺口请求,"无回填队列NQ-04；第35届分值与42届第3题SOLFIG未确认",可安全整理请求与缺口,是,P0,评分细则与附属图请求清单,不得生成第35届分值统计或定稿SOLFIG,"获得正式评分细则、原卷说明或真实终核记录",不放行,G1-07-D-NO-RETURN-SCORE-SOLFIG-QUEUE
+P0B4ROUTE-06,正式评分者编码与裁决,"无回填队列NQ-11；A/B组真实填写为0项",尚不具备启动条件,否,P0,仅维护空白模板和门槛,不得生成或声称正式A/B编码或裁决表,"A/B真实回填完成并通过关闭QA",冻结,等待真实A/B组回填
+P0B4ROUTE-07,正式统计与论文图件定稿,"无回填队列NQ-12与NQ-13；final_coding.csv当前不存在",尚不具备启动条件,否,P0,仅维护空白输出模板和候选索引,不得写统计、趋势、正式图件或结果章,"人工终核、双评分者编码、一致性和裁决唯一表完成",冻结,等待正式编码裁决表
+P0B4ROUTE-08,SOLO理论全文与迁移边界,"G2VE-03入口已完成；全文、页码和迁移边界仍待核",可独立于真实回填推进,是,P1,SOLO全文入口QA与边界材料,不得用摘要替代全文或升级理论主张,"合法全文和关键页码获得并完成主张核验",不放行,G2VE-03-SOLO-FULLTEXT-BOUNDARY-ENTRY-QA
+P0B4ROUTE-09,编码手册与评分者交接包QA,"无回填队列NQ-07；内部V2和训练包已存在",可检查字段与交接一致性,是,P1,无回填交接包QA,不得称编码手册正式冻结或真实一致性完成,"真实专家或导师确认、独立试编码、一致性和裁决完成",不放行,G3-RATER-HANDOFF-NO-RETURN-QA
+P0B4ROUTE-10,复现结构与数据字典,"无回填队列NQ-08；正式数据尚未释放",可整理结构与冻结状态,是,P1,复现包缺口和数据字典准备清单,不得发布内部候选数据为正式研究数据,"正式编码裁决表与正式结果脚本产出",不放行,G5-REPRO-PACKAGE-GAP-QUEUE
+P0B4ROUTE-11,正文门禁与主张矩阵侧车,"无回填队列NQ-09与NQ-10；结果章仍阻断",可维护占位与证据缺口,是,P1,章节门禁和侧车缺口清单,不得升级主张等级或写研究发现,"相应真实证据链完成且矩阵差异可隔离",不放行,G8-NO-RETURN-MANUSCRIPT-PLACEHOLDER-QUEUE
+P0B4ROUTE-12,下一步路线选择,"前三批等待QA均通过；无真实回填；G2VE-03-QA待办",先QA路线判断再转文献侧,是,P0,路线QA与后续任务排序,不得将优先级判断误写为研究结果,"真实回填到达时优先级立即切换至接收检查",不放行,G1-07-FOLLOWUP-MANUAL-P0-BATCH4-ROUTE-DECISION-QA
