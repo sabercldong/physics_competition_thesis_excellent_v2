@@ -1,0 +1,14 @@
+﻿check_id,check,observed,status
+ADMISSQA-01,审计输出共17条检查,17,通过
+ADMISSQA-RATER-A-01,RATER-A检查条数正确,4,通过
+ADMISSQA-RATER-A-02,RATER-A定位符门禁存在且不通过,"[{'check_id': 'ADMISS-RATER-A-03', 'source': 'RATER-A', 'metric': '含页码/问号/式号定位符的证据数', 'observed': '0/876', 'requirement': '进入正式结果至少应为876/876；每条记录须能回到题干或解答位置', 'status': '不通过'}]",通过
+ADMISSQA-RATER-B-01,RATER-B检查条数正确,4,通过
+ADMISSQA-RATER-B-02,RATER-B定位符门禁存在且不通过,"[{'check_id': 'ADMISS-RATER-B-03', 'source': 'RATER-B', 'metric': '含页码/问号/式号定位符的证据数', 'observed': '0/876', 'requirement': '进入正式结果至少应为876/876；每条记录须能回到题干或解答位置', 'status': '不通过'}]",通过
+ADMISSQA-ADJUDICATION-01,ADJUDICATION检查条数正确,4,通过
+ADMISSQA-ADJUDICATION-02,ADJUDICATION定位符门禁存在且不通过,"[{'check_id': 'ADMISS-ADJUDICATION-03', 'source': 'ADJUDICATION', 'metric': '含页码/问号/式号定位符的证据数', 'observed': '38/876', 'requirement': '进入正式结果至少应为876/876；每条记录须能回到题干或解答位置', 'status': '不通过'}]",通过
+ADMISSQA-FINAL-01,FINAL检查条数正确,5,通过
+ADMISSQA-FINAL-02,FINAL定位符门禁存在且不通过,"[{'check_id': 'ADMISS-FINAL-03', 'source': 'FINAL', 'metric': '含页码/问号/式号定位符的证据数', 'observed': '38/876', 'requirement': '进入正式结果至少应为876/876；每条记录须能回到题干或解答位置', 'status': '不通过'}]",通过
+ADMISSQA-RATER-A-03,RATER-A定位符计数可复核,0/876,通过
+ADMISSQA-RATER-B-03,RATER-B定位符计数可复核,0/876,通过
+ADMISSQA-ADJUDICATION-03,ADJUDICATION定位符计数可复核,38/876,通过
+ADMISSQA-FINAL-03,FINAL定位符计数可复核,38/876,通过
