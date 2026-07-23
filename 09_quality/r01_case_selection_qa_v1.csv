@@ -1,0 +1,6 @@
+﻿check_id,check_item,expected,actual,status,source
+CASEQA-01,候选池记录数,95,95,通过,r01_formal_case_candidates.csv
+CASEQA-02,候选题目文本可定位,95,95,通过,r01_formal_case_candidates.csv
+CASEQA-03,优先案例唯一且在候选池中,4个,4,通过,r01_formal_case_selection_register.csv
+CASEQA-04,优先案例覆盖四维度,模型建构、科学推理、科学论证、质疑创新,模型建构与质疑创新科学推理科学论证模型建构、科学推理与科学论证,通过,r01_formal_case_selection_register.csv
+CASEQA-05,选择边界,学生、教师、课堂效果、教学因果均禁止,已检查全部4行,通过,r01_formal_case_selection_register.csv
