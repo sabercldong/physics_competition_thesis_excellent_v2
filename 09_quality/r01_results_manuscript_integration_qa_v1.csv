@@ -1,0 +1,15 @@
+﻿check_id,check_item,expected,actual,status,source
+MRQA-P1,模型建构出现表行,| 模型建构 | 203 | 219 | 92.69% |,存在,通过,final_dimension_presence.csv
+MRQA-P2,科学推理出现表行,| 科学推理 | 219 | 219 | 100.00% |,存在,通过,final_dimension_presence.csv
+MRQA-P3,科学论证出现表行,| 科学论证 | 106 | 219 | 48.40% |,存在,通过,final_dimension_presence.csv
+MRQA-P4,质疑创新出现表行,| 质疑创新 | 87 | 219 | 39.73% |,存在,通过,final_dimension_presence.csv
+MRQA-L1,模型建构等级表行,| 模型建构 | 203 | 108 (53.20%) | 22 (10.84%) | 73 (35.96%) | 0 (0.00%) |,存在,通过,final_level_distribution.csv
+MRQA-L2,科学推理等级表行,| 科学推理 | 219 | 121 (55.25%) | 81 (36.99%) | 17 (7.76%) | 0 (0.00%) |,存在,通过,final_level_distribution.csv
+MRQA-L3,科学论证等级表行,| 科学论证 | 106 | 79 (74.53%) | 16 (15.09%) | 11 (10.38%) | 0 (0.00%) |,存在,通过,final_level_distribution.csv
+MRQA-L4,质疑创新等级表行,| 质疑创新 | 87 | 21 (24.14%) | 51 (58.62%) | 5 (5.75%) | 10 (11.49%) |,存在,通过,final_level_distribution.csv
+MRQA-C1,科学论证与质疑创新共现叙述,科学论证与质疑创新共同出现40次，两者并集为153个单元，Jaccard系数为0.2614,存在,通过,final_dimension_cooccurrence.csv
+MRQA-S1,final_year_dimension_presence.csv来源链接,final_year_dimension_presence.csv,存在,通过,08_manuscript/04_results.md
+MRQA-S2,final_knowledge_dimension_presence.csv来源链接,final_knowledge_dimension_presence.csv,存在,通过,08_manuscript/04_results.md
+MRQA-B1,学生实际能力边界,学生实际能力,存在,通过,08_manuscript/04_results.md
+MRQA-B2,教学效果边界,教学效果,存在,通过,08_manuscript/04_results.md
+MRQA-B3,不进行显著性检验边界,不进行显著性检验,存在,通过,08_manuscript/04_results.md
