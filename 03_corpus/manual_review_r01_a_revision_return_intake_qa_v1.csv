@@ -1,0 +1,11 @@
+﻿check_id,check_scope,expected,observed,result
+A2INT-01,行数,76,76,PASS
+A2INT-02,问题集合,与旧版76个issue_id一致,76/76,PASS
+A2INT-03,不可变字段,逐行无差异,差异0,PASS
+A2INT-04,必填回填字段,76/76完整,76/76,PASS
+A2INT-05,复核者与日期,R01；2026-07-23,R01 76/76；日期 76/76,PASS
+A2INT-06,决定选项,76/76属于允许选项,76/76,PASS
+A2INT-07,复核后证据路径,全部项目内路径存在,452/452,PASS
+A2INT-08,相对旧版的摘要更新,76行均改变,76/76,PASS
+A2INT-09,摘要材料特异性,76行均非通用句式,特异 32/76；通用 44/76,FAIL
+A2INT-10,原件与登记副本,字段和值一致，仅换行规范化,原件 2d5fb6c87b3adbbc12826bd78cfef9007f2ea220c3b35b61d2ae6287c64bcf3b；登记 0828e27cbb446886a11a09c2d9f7f85d089a6daeed5870066332dc808598388f,PASS
