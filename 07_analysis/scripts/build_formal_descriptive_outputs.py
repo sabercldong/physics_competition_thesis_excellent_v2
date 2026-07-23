@@ -30,10 +30,10 @@ def _write_csv(path: Path, fields: list[str], rows: list[dict[str, object]]) -> 
         writer.writerows(rows)
 
 
-def _write_report(path: Path, *, final_sha: str, items: int, outputs: list[Path]) -> None:
+def _write_report(path: Path, *, input_path: Path, final_sha: str, items: int, outputs: list[Path]) -> None:
     path.write_text(
         "# R01 正式描述统计输出说明\n\n"
-        f"输入：`07_analysis/data/final_coding.csv`（SHA-256：`{final_sha}`）\n\n"
+        f"输入：`{input_path.relative_to(ROOT).as_posix()}`（SHA-256：`{final_sha}`）\n\n"
         f"分析单位：{items} 个独立小问；四个维度各一条记录，共 {items * len(DIMENSIONS)} 条裁决后编码记录。\n\n"
         "本批输出仅为描述性统计。它描述题目任务要求的编码结果，不能推断学生能力、教学效果、长期趋势、因果关系或统计显著性。"
         "第35届八道题的分值边界仍缺正式来源，因此本批不包含分值加权或分值比较。\n\n"
@@ -157,7 +157,7 @@ def main() -> None:
         _write_csv(path, fields, rows)
         written.append(path)
     report_path = output_dir / "final_descriptive_output_report.md"
-    _write_report(report_path, final_sha=final_sha, items=total_items, outputs=written)
+    _write_report(report_path, input_path=input_path, final_sha=final_sha, items=total_items, outputs=written)
     print("已生成正式描述统计输出：")
     for path in written:
         print(path)
