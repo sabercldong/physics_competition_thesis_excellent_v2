@@ -1,0 +1,45 @@
+﻿check_id,check_item,expected,actual,status,source
+RE-QA-01,当前编码表记录和唯一键,876/876,876/876,通过,07_analysis/data/final_coding_r01_correction_v1.csv
+RE-QA-02,当前证据链记录和唯一键,876/876,876/876,通过,07_analysis/data/final_coding_evidence_r01_v1.csv
+RE-QA-03,编码表与证据链键集合,一致,一致,通过,07_analysis/data/final_coding_evidence_r01_v1.csv
+RE-QA-04,当前编码值与证据链,876条逐键一致,一致,通过,07_analysis/data/final_coding_evidence_r01_v1.csv
+RE-QA-05,证据链来源构成,"{'R01-V6': 840, 'R01-EVIDENCE-REPAIR-V2': 32, 'ADJ-02-CORRECTION': 4}","{'R01-V6': 840, 'ADJ-02-CORRECTION': 4, 'R01-EVIDENCE-REPAIR-V2': 32}",通过,07_analysis/data/final_coding_evidence_r01_v1.csv
+RE-QA-06,描述统计输出版本哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,一致,通过,07_analysis/results/formal_rater_r01/correction_v1/
+RE-QA-P1,模型建构出现统计,203/219,203/219,通过,final_dimension_presence.csv
+RE-QA-L1-L1,模型建构 L1等级统计,109,109,通过,final_level_distribution.csv
+RE-QA-L1-L2,模型建构 L2等级统计,22,22,通过,final_level_distribution.csv
+RE-QA-L1-L3,模型建构 L3等级统计,72,72,通过,final_level_distribution.csv
+RE-QA-L1-L4,模型建构 L4等级统计,0,0,通过,final_level_distribution.csv
+RE-QA-P2,科学推理出现统计,219/219,219/219,通过,final_dimension_presence.csv
+RE-QA-L2-L1,科学推理 L1等级统计,121,121,通过,final_level_distribution.csv
+RE-QA-L2-L2,科学推理 L2等级统计,81,81,通过,final_level_distribution.csv
+RE-QA-L2-L3,科学推理 L3等级统计,17,17,通过,final_level_distribution.csv
+RE-QA-L2-L4,科学推理 L4等级统计,0,0,通过,final_level_distribution.csv
+RE-QA-P3,科学论证出现统计,106/219,106/219,通过,final_dimension_presence.csv
+RE-QA-L3-L1,科学论证 L1等级统计,79,79,通过,final_level_distribution.csv
+RE-QA-L3-L2,科学论证 L2等级统计,16,16,通过,final_level_distribution.csv
+RE-QA-L3-L3,科学论证 L3等级统计,11,11,通过,final_level_distribution.csv
+RE-QA-L3-L4,科学论证 L4等级统计,0,0,通过,final_level_distribution.csv
+RE-QA-P4,质疑创新出现统计,84/219,84/219,通过,final_dimension_presence.csv
+RE-QA-L4-L1,质疑创新 L1等级统计,20,20,通过,final_level_distribution.csv
+RE-QA-L4-L2,质疑创新 L2等级统计,51,51,通过,final_level_distribution.csv
+RE-QA-L4-L3,质疑创新 L3等级统计,5,5,通过,final_level_distribution.csv
+RE-QA-L4-L4,质疑创新 L4等级统计,8,8,通过,final_level_distribution.csv
+RE-QA-C1,科学论证与质疑创新共现,40/150/0.266667,40/150/0.266667,通过,final_dimension_cooccurrence.csv
+RE-QA-M1,第四章结果值,| 模型建构 | 203 | 219 | 92.69% |,存在,通过,08_manuscript/04_results.md
+RE-QA-M2,第四章结果值,| 科学推理 | 219 | 219 | 100.00% |,存在,通过,08_manuscript/04_results.md
+RE-QA-M3,第四章结果值,| 科学论证 | 106 | 219 | 48.40% |,存在,通过,08_manuscript/04_results.md
+RE-QA-M4,第四章结果值,| 质疑创新 | 84 | 219 | 38.36% |,存在,通过,08_manuscript/04_results.md
+RE-QA-M5,第四章结果值,| 模型建构 | 203 | 109 (53.69%) | 22 (10.84%) | 72 (35.47%) | 0 (0.00%) |,存在,通过,08_manuscript/04_results.md
+RE-QA-M6,第四章结果值,| 科学推理 | 219 | 121 (55.25%) | 81 (36.99%) | 17 (7.76%) | 0 (0.00%) |,存在,通过,08_manuscript/04_results.md
+RE-QA-M7,第四章结果值,| 科学论证 | 106 | 79 (74.53%) | 16 (15.09%) | 11 (10.38%) | 0 (0.00%) |,存在,通过,08_manuscript/04_results.md
+RE-QA-M8,第四章结果值,| 质疑创新 | 84 | 20 (23.81%) | 51 (60.71%) | 5 (5.95%) | 8 (9.52%) |,存在,通过,08_manuscript/04_results.md
+RE-QA-M9,第四章结果值,科学论证与质疑创新共同出现40次，两者并集为150个单元，Jaccard系数为0.2667,存在,通过,08_manuscript/04_results.md
+RE-QA-B1,第四章边界语句,不代表学生实际能力,存在,通过,08_manuscript/04_results.md
+RE-QA-B2,第四章边界语句,不代表教学效果,存在,通过,08_manuscript/04_results.md
+RE-QA-B3,第四章边界语句,不进行显著性检验,存在,通过,08_manuscript/04_results.md
+RE-QA-B4,第四章边界语句,不进行分值加权,存在,通过,08_manuscript/04_results.md
+RE-QA-B5,第四章边界语句,项目无法独立验证,存在,通过,08_manuscript/04_results.md
+RE-QA-ME1,第三章编码过程表述,RATER-A/B,存在,通过,08_manuscript/03_methods.md
+RE-QA-ME2,第三章编码过程表述,项目无法独立验证,存在,通过,08_manuscript/03_methods.md
+RE-QA-ME3,第三章编码过程表述,可追溯描述性结果,存在,通过,08_manuscript/03_methods.md
