@@ -1,0 +1,32 @@
+﻿check_id,check_item,expected,actual,status,source
+FQA-01,final_coding记录数,876,876,通过,07_analysis/data/final_coding.csv
+FQA-02,分析单位数,219,219,通过,07_analysis/data/final_coding.csv
+FQA-03,每个分析单位四维度,219×4,876,通过,07_analysis/data/final_coding.csv
+FQA-04,最终表SHA可追溯,23f76e0c63fad60fa02e54a4b51aeef3e83752da7fb20b46346027aa5a11e045,23f76e0c63fad60fa02e54a4b51aeef3e83752da7fb20b46346027aa5a11e045,通过,07_analysis/data/final_coding.csv
+FQA-05,final_dimension_presence.csv格式,UTF-8 BOM + LF,BOM=True; CR=False,通过,07_analysis/results/reviewed/final_dimension_presence.csv
+FQA-06,final_level_distribution.csv格式,UTF-8 BOM + LF,BOM=True; CR=False,通过,07_analysis/results/reviewed/final_level_distribution.csv
+FQA-07,final_dimension_cooccurrence.csv格式,UTF-8 BOM + LF,BOM=True; CR=False,通过,07_analysis/results/reviewed/final_dimension_cooccurrence.csv
+FQA-08,final_year_dimension_presence.csv格式,UTF-8 BOM + LF,BOM=True; CR=False,通过,07_analysis/results/reviewed/final_year_dimension_presence.csv
+FQA-09,final_knowledge_dimension_presence.csv格式,UTF-8 BOM + LF,BOM=True; CR=False,通过,07_analysis/results/reviewed/final_knowledge_dimension_presence.csv
+FQA-P-1,模型建构出现数复算,203,203,通过,final_dimension_presence.csv
+FQA-L-1,模型建构等级分布分母复算,203,203,通过,final_level_distribution.csv
+FQA-P-2,科学推理出现数复算,219,219,通过,final_dimension_presence.csv
+FQA-L-2,科学推理等级分布分母复算,219,219,通过,final_level_distribution.csv
+FQA-P-3,科学论证出现数复算,106,106,通过,final_dimension_presence.csv
+FQA-L-3,科学论证等级分布分母复算,106,106,通过,final_level_distribution.csv
+FQA-P-4,质疑创新出现数复算,87,87,通过,final_dimension_presence.csv
+FQA-L-4,质疑创新等级分布分母复算,87,87,通过,final_level_distribution.csv
+FQA-C-1,模型建构与科学推理共现复算,203,203,通过,final_dimension_cooccurrence.csv
+FQA-C-2,模型建构与科学论证共现复算,106,106,通过,final_dimension_cooccurrence.csv
+FQA-C-3,模型建构与质疑创新共现复算,87,87,通过,final_dimension_cooccurrence.csv
+FQA-C-4,科学推理与科学论证共现复算,106,106,通过,final_dimension_cooccurrence.csv
+FQA-C-5,科学推理与质疑创新共现复算,87,87,通过,final_dimension_cooccurrence.csv
+FQA-C-6,科学论证与质疑创新共现复算,40,40,通过,final_dimension_cooccurrence.csv
+FQA-G-1,模型建构届次分组汇总复算,203,203,通过,final_year_dimension_presence.csv
+FQA-G-2,模型建构知识模块分组汇总复算,203,203,通过,final_knowledge_dimension_presence.csv
+FQA-G-3,科学推理届次分组汇总复算,219,219,通过,final_year_dimension_presence.csv
+FQA-G-4,科学推理知识模块分组汇总复算,219,219,通过,final_knowledge_dimension_presence.csv
+FQA-G-5,科学论证届次分组汇总复算,106,106,通过,final_year_dimension_presence.csv
+FQA-G-6,科学论证知识模块分组汇总复算,106,106,通过,final_knowledge_dimension_presence.csv
+FQA-G-7,质疑创新届次分组汇总复算,87,87,通过,final_year_dimension_presence.csv
+FQA-G-8,质疑创新知识模块分组汇总复算,87,87,通过,final_knowledge_dimension_presence.csv

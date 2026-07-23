@@ -1,0 +1,16 @@
+﻿check_id,check_item,status,evidence_or_boundary
+ADJ-INTAKE-01,裁决主表原件已接收,通过,876行原件保存且只读
+ADJ-INTAKE-02,分歧工作清单原件已接收,通过,142行原件保存且只读
+ADJ-INTAKE-03,主表与冻结模板表头一致,通过,24列一致
+ADJ-INTAKE-04,主表与冻结模板键及行序一致,通过,876个唯一键
+ADJ-INTAKE-05,工作清单与预填清单表头一致,通过,26列一致
+ADJ-INTAKE-06,工作清单与预填清单键及行序一致,通过,142个唯一键
+ADJ-INTAKE-07,主表裁决字段完整,通过,六字段均0空值
+ADJ-INTAKE-08,工作清单裁决字段完整,通过,六字段均0空值
+ADJ-INTAKE-09,裁决值、等级与逻辑,通过,非法值0；逻辑不一致0
+ADJ-INTAKE-10,裁决代号与日期,通过,均为ADJ-01与2026-07-23
+ADJ-INTAKE-11,142条跨表裁决交叉一致,通过,差异0条
+ADJ-INTAKE-12,A/B原始判断未改动,通过,与已登记A/B文件差异0条
+ADJ-INTAKE-13,裁决独立性,自声明已接收,项目无法独立验证实际裁决过程
+ADJ-INTAKE-14,证据充分性,字段非空已通过,未替代逐条学术质量评议；可由item_id追溯语料
+ADJ-INTAKE-15,唯一分析表门禁,通过,build_final_coding.py八项检查通过，已生成final_coding.csv
