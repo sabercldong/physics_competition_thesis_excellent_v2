@@ -1,0 +1,9 @@
+﻿check_id,scope,metric,observed,expected_or_boundary,status
+CASE-EVID-RATER-A-01,RATER-A,编码证据文本去重计数,42,876条记录应能提供可定位的逐条证据；去重计数只用于识别模板化风险，不单独判定真实性,风险提示
+CASE-EVID-RATER-A-02,RATER-A,以通用句式开头的证据条数,567/876,若案例进入机制正文，需补题干/解答位置与具体触发语，不能仅保留通用模板句,风险提示
+CASE-EVID-RATER-B-01,RATER-B,编码证据文本去重计数,76,876条记录应能提供可定位的逐条证据；去重计数只用于识别模板化风险，不单独判定真实性,风险提示
+CASE-EVID-RATER-B-02,RATER-B,以通用句式开头的证据条数,563/876,若案例进入机制正文，需补题干/解答位置与具体触发语，不能仅保留通用模板句,风险提示
+CASE-EVID-CASE-R01-01,CASE-R01-01,最终编码四维度记录完整性,4,4,通过
+CASE-EVID-CASE-R01-02,CASE-R01-02,最终编码四维度记录完整性,4,4,通过
+CASE-EVID-CASE-R01-03,CASE-R01-03,最终编码四维度记录完整性,4,4,通过
+CASE-EVID-CASE-R01-04,CASE-R01-04,最终编码四维度记录完整性,4,4,通过
