@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2026-07-23：G4-04-R01-FINAL-CODING-GATE 门禁加固
+
+- 生成器新增冻结模板876个键及行序比对，并默认拒绝覆盖已有`final_coding.csv`；
+- 回归验证空裁决表、错位样本键与无`--force`覆盖均被拒绝，未生成项目内最终数据。
+
 ## 2026-07-23：G4-04-R01-FINAL-CODING-GATE 实现唯一分析表生成门禁
 
 - 新增`build_final_coding.py`与生成协议，要求876行裁决记录的字段完整、键唯一、取值与逻辑一致后才可生成`final_coding.csv`；
