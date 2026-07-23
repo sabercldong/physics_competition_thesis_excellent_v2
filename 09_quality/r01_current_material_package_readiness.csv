@@ -1,0 +1,11 @@
+﻿readiness_id,component,current_state,can_archive_now,can_support_formal_thesis_claim_now,cannot_claim,next_real_closure,authoritative_evidence
+R01-READY-01,第35至42届小问级语料与索引,219个分析单位及题目/答案入口已建立,是,部分：仅支持研究对象和语料范围,不能声称全部文本无误或全部元数据已获官方分值确认,保持校对记录与第35届分值边界限制,03_corpus/item_index.csv；03_corpus/manual_review_r01_all_groups_integration_qa_v1.csv
+R01-READY-02,R01人工校对回填,154项回填已接收并整合；第35届8项分值仍待核实,是,部分：支持已记录的人工复核范围和分值排除边界,不能进行分值加权或分值比较,取得正式评分细则或原卷分值说明,03_corpus/manual_review_r01_all_groups_integration_qa_v1.csv
+R01-READY-03,RATER-A/B与ADJ-01原始回填,文件、哈希、结构检查与自声明已归档,是,否：结构完整不等于逐条证据充分,不能将独立性自声明视为可独立验证过程,回收876行逐条定位证据补正表,07_analysis/results/formal_rater_r01/r01_adjudication_return_intake_check.md
+R01-READY-04,R01唯一分析表与描述统计,可由脚本确定性重算；证据定位门禁未通过,是,否：只能作暂定复算对照,不能在摘要结论第五章或正式结果章作为研究发现,逐条补证据并在必要时重裁和全链重建,09_quality/r01_coding_evidence_admissibility_audit.md
+R01-READY-05,第四章结果文本,已降为R01暂定可复算描述结果,是,否：仅可保存结果结构和复算对照数字,不能写维度分布等级共现或分组的正式结论,解除R01证据可采纳性门禁并重跑正文对照QA,08_manuscript/04_results.md
+R01-READY-06,第五章案例与教学转化,候选案例及教学设计边界存在；四个优先案例已暂停,是,部分：可写案例分析协议和设计建议,不能写高阶机制结论学生困难教师意见课堂可行性或教学效果,完成案例逐题重裁；教学路线补真实材料或正式收缩,09_quality/r01_case_evidence_sufficiency_audit.md；08_manuscript/05_cases_and_diagnosis.md
+R01-READY-07,理论与文献材料,课程标准及少数开放全文可限边界使用；SOLO竞赛与部分方法全文仍缺,是,部分：限已核验来源支持概念或边界主张,不能形成完整SOLO论证竞赛研究综述或已证明研究空白,取得合法全文并完成阅读摘录和主张核验,08_manuscript/reference_readiness_register.csv
+R01-READY-08,教师学生课堂材料,模板与伦理预案存在但未采集真实材料,是,否,不能写问卷访谈课堂实践学生表现或教学效果,选择教师验证课堂研究或收缩为教学设计建议,05_fieldwork/data_collection_log.csv；06_teaching_validation/classroom_data_manifest.csv
+R01-READY-09,第1至5章Markdown草稿,边界稿存在且可审阅,是,部分：可作为结构与证据缺口审阅材料,不能声称论文正文已定稿,随证据补正文献阅读路线决定逐章定稿,08_manuscript/01_introduction.md；08_manuscript/02_theory.md；08_manuscript/03_methods.md；08_manuscript/04_results.md；08_manuscript/05_cases_and_diagnosis.md
+R01-READY-10,正式提交与学校格式材料,学校规范Word PDF匿名AI和伦理要求尚未取得,否,否,不能声称符合学校格式可匿名评审或可正式提交,取得学校规范后执行最终格式与提交审计,09_quality/g8_08_prep_final_submission_readiness.csv
