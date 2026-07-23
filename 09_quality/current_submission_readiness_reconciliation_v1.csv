@@ -1,0 +1,10 @@
+item_id,component,legacy_snapshot,current_status,current_evidence,remaining_boundary
+R01,当前编码表,早期快照称final_coding.csv不存在,版本化当前表已存在,07_analysis/data/final_coding_r01_correction_v1.csv；07_analysis/data/final_coding_evidence_r01_v1.csv,基线final_coding.csv保留不改；过程独立性仅按自声明登记
+R02,第四章,早期快照称正式结果占位,可追溯描述性结果已形成,08_manuscript/04_results.md；09_quality/r01_results_eligibility_qa_v1.csv,不构成外部效度或学生能力证据
+R03,第五章,早期快照称教学验证路线未定,已收缩为案例材料与设计建议,08_manuscript/05_cases_and_diagnosis.md；09_quality/r01_case_reselection_qa_v1.csv,无教师学生课堂证据；不报告效果
+R04,第二章,早期快照称理论与方法均待补,部分已读来源已纳入边界论证,08_manuscript/02_theory.md；02_literature/*reading_notes.md,SOLO竞赛研究及部分方法文献全文仍缺
+R05,学校格式,待学校文件,仍阻塞,01_positioning/school_requirements_register.csv,不能生成合规Word/PDF或匿名版
+R06,摘要结论,未开始,仍阻塞,08_manuscript/目录；09_quality/g8_08_prep_final_submission_readiness.csv,需路线、学校格式与文献闭环后撰写
+R07,参考文献终稿,未定稿,仍阻塞,08_manuscript/reference_readiness_register.csv,全文核验和学校格式未完成
+R08,真实教学证据,缺失,仍缺失,05_fieldwork/；06_teaching_validation/,只能保留设计建议
+R09,最终提交包,未生成,仍阻塞,09_quality/g8_08_prep_final_submission_readiness.csv,学校规则、摘要结论、附录和披露均未完成
