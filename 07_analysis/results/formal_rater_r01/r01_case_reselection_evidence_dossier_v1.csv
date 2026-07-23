@@ -1,0 +1,21 @@
+﻿case_rank,item_id,dimension,current_present,current_level,question_quote,question_location,solution_quote,solution_location,evidence_source,evidence_source_sha256,item_text_path
+1,CPHO41-Q06-3,模型建构,是,L1,"种情况，求其
+飞出方向相对于原飞入方向的偏转角Ap:",题面第3-4页,出射方向相对于入射方向的偏角满足,答案第13-16页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO41-Q06.md
+1,CPHO41-Q06-3,科学推理,是,L3,"种情况，求其
+飞出方向相对于原飞入方向的偏转角Ap:",题面第3-4页,出射方向相对于入射方向的偏角满足,答案第13-16页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO41-Q06.md
+1,CPHO41-Q06-3,科学论证,是,L1,"种情况，求其
+飞出方向相对于原飞入方向的偏转角Ap:",题面第3-4页,出射方向相对于入射方向的偏角满足,答案第13-16页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO41-Q06.md
+1,CPHO41-Q06-3,质疑创新,否,未出现,"种情况，求其
+飞出方向相对于原飞入方向的偏转角Ap:",题面第3-4页,出射方向相对于入射方向的偏角满足,答案第13-16页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO41-Q06.md
+2,CPHO41-Q07-4,模型建构,是,L3,(4) t-tsost 的范围内， 试给出系统单粒子平均能量巨= Lo 的变化关系,题面第4-5页,（4）由⑦式知，                            相当于在第（3）问的答案中取 l  0 。当 N 为奇数时，取 N  2M  1，其中,答案第16-19页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO41-Q07.md
+2,CPHO41-Q07-4,科学推理,是,L1,(4) t-tsost 的范围内， 试给出系统单粒子平均能量巨= Lo 的变化关系,题面第4-5页,（4）由⑦式知，                            相当于在第（3）问的答案中取 l  0 。当 N 为奇数时，取 N  2M  1，其中,答案第16-19页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO41-Q07.md
+2,CPHO41-Q07-4,科学论证,是,L1,(4) t-tsost 的范围内， 试给出系统单粒子平均能量巨= Lo 的变化关系,题面第4-5页,（4）由⑦式知，                            相当于在第（3）问的答案中取 l  0 。当 N 为奇数时，取 N  2M  1，其中,答案第16-19页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO41-Q07.md
+2,CPHO41-Q07-4,质疑创新,否,未出现,(4) t-tsost 的范围内， 试给出系统单粒子平均能量巨= Lo 的变化关系,题面第4-5页,（4）由⑦式知，                            相当于在第（3）问的答案中取 l  0 。当 N 为奇数时，取 N  2M  1，其中,答案第16-19页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO41-Q07.md
+3,CPHO42-Q04-2,模型建构,是,L3,"不
+大于Z，忽略辐射阻，求电子加速达到的最大能量snax及相应的入射角60，这里60是电子入射方向与z",题面第3页,（2）电子沿 x-𝑧平面入射，故𝑝           =𝑝       = 0。由③⑤式可知,答案第10-14页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO42-Q04.md
+3,CPHO42-Q04-2,科学推理,是,L3,"不
+大于Z，忽略辐射阻，求电子加速达到的最大能量snax及相应的入射角60，这里60是电子入射方向与z",题面第3页,（2）电子沿 x-𝑧平面入射，故𝑝           =𝑝       = 0。由③⑤式可知,答案第10-14页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO42-Q04.md
+3,CPHO42-Q04-2,科学论证,是,L1,"不
+大于Z，忽略辐射阻，求电子加速达到的最大能量snax及相应的入射角60，这里60是电子入射方向与z",题面第3页,（2）电子沿 x-𝑧平面入射，故𝑝           =𝑝       = 0。由③⑤式可知,答案第10-14页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO42-Q04.md
+3,CPHO42-Q04-2,质疑创新,是,L2,"不
+大于Z，忽略辐射阻，求电子加速达到的最大能量snax及相应的入射角60，这里60是电子入射方向与z",题面第3页,（2）电子沿 x-𝑧平面入射，故𝑝           =𝑝       = 0。由③⑤式可知,答案第10-14页,R01-EVIDENCE-REPAIR-V2,42c185b94a65d23b0e37b380cb973ae270519e21719d77a06a88b0db71171c9e,03_corpus/item_texts/CPHO42-Q04.md
