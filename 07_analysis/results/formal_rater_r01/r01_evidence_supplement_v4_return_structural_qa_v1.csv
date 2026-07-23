@@ -1,0 +1,9 @@
+﻿check_item,status,observed
+字段齐全,通过,工作字段完整
+记录数,通过,876
+不可变键与模板同序,通过,输入876；模板876
+工作字段非空,通过,全部非空
+存在性和等级枚举,通过,present:0；level:0
+来源核对和充分性枚举,通过,source_checked:0；evidence_sufficiency:0
+存在性和等级逻辑,通过,0
+保持或更正决定逻辑,通过,0
