@@ -12,6 +12,7 @@
 - 每行原文入口：`item_text_path`
 - 已有问题说明：`evidence_gap_reason` 与 `existing_support_explanation`
 - 当前受控值：`current_present` 与 `current_level`
+- 按题目工作单：`07_analysis/results/formal_rater_r01/r01_evidence_repair_item_worklist_v1.csv`
 
 复制模板后填写，保留32行顺序和所有预填字段。建议回填文件名：
 

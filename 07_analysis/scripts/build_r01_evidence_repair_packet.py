@@ -45,6 +45,7 @@ def main() -> None:
     parser.add_argument("--final-coding", default="07_analysis/data/final_coding_r01_correction_v1.csv")
     parser.add_argument("--template-output", required=True)
     parser.add_argument("--manifest-output", required=True)
+    parser.add_argument("--item-worklist-output", required=True)
     parser.add_argument("--qa-output", required=True)
     args = parser.parse_args()
 
@@ -101,10 +102,28 @@ def main() -> None:
 
     write_rows(resolve(args.template_output), TEMPLATE_FIELDS, template_rows)
     write_rows(resolve(args.manifest_output), ["item_id", "dimension", "source_review_packets", "current_present", "current_level", "source_final_coding_sha256"], manifest_rows)
+    by_item: dict[str, list[dict[str, str]]] = {}
+    for order, row in enumerate(template_rows, start=1):
+        by_item.setdefault(row["item_id"], []).append({**row, "return_row_order": str(order)})
+    item_rows = []
+    for item_id, rows in sorted(by_item.items()):
+        item_rows.append({
+            "item_id": item_id,
+            "item_text_path": rows[0]["item_text_path"],
+            "pending_dimensions": "；".join(row["dimension"] for row in rows),
+            "pending_record_count": str(len(rows)),
+            "source_review_packets": "；".join(sorted({row["source_review_packets"] for row in rows})),
+            "current_values": "；".join(f"{row['dimension']}={row['current_present']}/{row['current_level']}" for row in rows),
+            "return_row_order": "；".join(row["return_row_order"] for row in rows),
+        })
+    write_rows(resolve(args.item_worklist_output), [
+        "item_id", "item_text_path", "pending_dimensions", "pending_record_count", "source_review_packets", "current_values", "return_row_order",
+    ], item_rows)
     checks = [
         ("58条审查需补引文数", str(source_counts["58条实质审查"]), "24", source_counts["58条实质审查"] == 24),
         ("16条审查需补引文数", str(source_counts["16条高风险审查"]), "8", source_counts["16条高风险审查"] == 8),
         ("合并后唯一键数", str(len(template_rows)), "32", len(template_rows) == 32),
+        ("按题目工作单数", str(len(item_rows)), "8", len(item_rows) == 8),
         ("模板与当前分析表映射", "32/32", "32/32", len(template_rows) == 32),
         ("工作字段为空", "是" if all(not row["repairer_id"] for row in template_rows) else "否", "是", all(not row["repairer_id"] for row in template_rows)),
     ]
