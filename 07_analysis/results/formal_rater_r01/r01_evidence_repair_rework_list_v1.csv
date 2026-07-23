@@ -1,0 +1,13 @@
+﻿csv_line,item_id,dimension,field,issue_type,observed,required_action
+14,CPHO41-Q05-4,模型建构,repaired_solution_quote,少于8个非空字符,以 O 为势能零点,从解答引文所在原文复制至少8个非空字符的连续原句。
+15,CPHO41-Q05-4,科学推理,repaired_solution_quote,少于8个非空字符,以 O 为势能零点,从解答引文所在原文复制至少8个非空字符的连续原句。
+16,CPHO41-Q05-4,科学论证,repaired_solution_quote,少于8个非空字符,以 O 为势能零点,从解答引文所在原文复制至少8个非空字符的连续原句。
+17,CPHO41-Q05-4,质疑创新,repaired_solution_quote,少于8个非空字符,以 O 为势能零点,从解答引文所在原文复制至少8个非空字符的连续原句。
+26,CPHO41-Q07-4,模型建构,repaired_solution_quote,少于8个非空字符,由⑨式有,从解答引文所在原文复制至少8个非空字符的连续原句。
+27,CPHO41-Q07-4,科学推理,repaired_solution_quote,少于8个非空字符,由⑨式有,从解答引文所在原文复制至少8个非空字符的连续原句。
+28,CPHO41-Q07-4,科学论证,repaired_solution_quote,少于8个非空字符,由⑨式有,从解答引文所在原文复制至少8个非空字符的连续原句。
+29,CPHO41-Q07-4,质疑创新,repaired_solution_quote,少于8个非空字符,由⑨式有,从解答引文所在原文复制至少8个非空字符的连续原句。
+30,CPHO42-Q04-2,模型建构,repaired_solution_quote,少于8个非空字符,eE0,从解答引文所在原文复制至少8个非空字符的连续原句。
+31,CPHO42-Q04-2,科学推理,repaired_solution_quote,少于8个非空字符,eE0,从解答引文所在原文复制至少8个非空字符的连续原句。
+32,CPHO42-Q04-2,科学论证,repaired_solution_quote,少于8个非空字符,eE0,从解答引文所在原文复制至少8个非空字符的连续原句。
+33,CPHO42-Q04-2,质疑创新,repaired_solution_quote,少于8个非空字符,eE0,从解答引文所在原文复制至少8个非空字符的连续原句。
