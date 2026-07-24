@@ -666,6 +666,7 @@
   - PREP：已完成 `G8-08-PREP`，新增 `09_quality/g8_08_prep_final_submission_readiness.csv`、`09_quality/g8_08_prep_archive_package_manifest.csv` 和 `09_quality/g8_08_prep_finalization_roadmap.md`，建立最终提交准备度门禁、研究准备包归档清单和从当前状态走向真实提交版的最短路线；该任务不生成最终Word/PDF、匿名版、查重版、AI披露定稿或最终提交包。
   - 下一步：执行 `G8-09-PREP`，将所有最终提交阻塞项压缩为一张可销项总表；若收到真实A/B评分者模板，则优先回到 `G4-01`。
   - MANIFEST：已完成 `G8-08-AUTHORITATIVE-MANUSCRIPT-ASSEMBLY-MANIFEST`，新增 `09_quality/current_six_chapter_assembly_manifest_v1.md` 与同名 CSV，冻结当前六章工作组装的权威源文件，明确旧第四章整合稿与七章占位文件排除，并保留前置页、摘要、图表、参考文献和附录的真实放行条件；不生成最终 Word/PDF。
+  - FORMAT-RECONCILIATION：已完成 `G8-08-CURRENT-READINESS-FORMAT-RECONCILIATION`，同步六章组装清单、当前准备度对账表和 G8-08 历史准备表：专硕封皮/归档签名页、匿名准备规则与部分提交流程已有官方依据；实际答辩期安排、AI披露、个人信息、参考文献与终稿仍为阻塞，未生成 Word/PDF 或匿名件。
 - [-] G8-09 最终提交阻塞项总表
   - PREP：已完成 `G8-09-PREP`，新增 `09_quality/g8_09_final_pre_submission_blockers.csv` 和 `g8_09_blocker_closure_protocol.md`，登记20项最终提交前阻塞项，覆盖人工校对、真实双评分者编码、一致性、分歧裁决、`final_coding.csv`、正式结果、第五章教学证据、文献全文、学校规范、参考文献、摘要结论、附录数据说明、匿名版、AI/伦理声明、最终输出和Git版本审计；该任务只建立销项总表，不代表任何阻塞项已经关闭。
   - 下一步：若没有真实A/B评分者回收文件，执行 `G1-07-FOLLOWUP`，将154条人工校对项按正式编码影响程度分组并优先处理高风险OCR、公式与特殊符号问题；若收到真实A/B评分者模板，则优先回到 `G4-01`。
