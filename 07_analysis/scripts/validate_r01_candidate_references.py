@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the bounded six-item candidate reference list."""
+"""Validate the bounded candidate reference work list."""
 
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ BIB_PATH = ROOT / "02_literature/references.bib"
 SCHOOL_PATH = ROOT / "01_positioning/school_requirements_register.csv"
 OUTPUT_CSV = ROOT / "09_quality/r01_candidate_references_qa_v1.csv"
 OUTPUT_MD = ROOT / "09_quality/r01_candidate_references_qa_v1.md"
-EXPECTED_IDS = ["CS-001", "ST-002", "ST-003", "ST-005", "ST-006", "METH-004"]
+
 
 
 def main() -> None:
@@ -27,10 +27,13 @@ def main() -> None:
     with SCHOOL_PATH.open(encoding="utf-8-sig", newline="") as handle:
         requirements = {row["requirement_id"]: row for row in csv.DictReader(handle)}
     mapped_ids = [row["source_id"] for row in mapped]
+    expected_numbers = list(range(1, len(mapped) + 1))
+    expected_ids = [row["source_id"] for row in mapped]
+    all_mapped_eligible = all(row["source_id"] and row["bib_key"] for row in mapped)
     rows = [
-        ("REF-QA-01", "候选条目数与连续编号", "1至6", str(numbers), numbers == list(range(1, 7))),
-        ("REF-QA-02", "来源ID集合", ";".join(EXPECTED_IDS), ";".join(mapped_ids), mapped_ids == EXPECTED_IDS),
-        ("REF-QA-03", "候选来源均有BibTeX键", "6/6", f"{sum('@' in bib and row['bib_key'] in bib for row in mapped)}/6", all(row["bib_key"] in bib for row in mapped)),
+        ("REF-QA-01", "候选条目数与连续编号", f"1至{len(mapped)}", str(numbers), numbers == expected_numbers),
+        ("REF-QA-02", "来源ID集合与顺序", ";".join(expected_ids), ";".join(mapped_ids), mapped_ids == expected_ids and all_mapped_eligible),
+        ("REF-QA-03", "候选来源均有BibTeX键", f"{len(mapped)}/{len(mapped)}", f"{sum(row['bib_key'] in bib for row in mapped)}/{len(mapped)}", all(row["bib_key"] in bib for row in mapped)),
         ("REF-QA-04", "待读全文来源未混入", "Biggs/PCOMP/METH-001至003均不出现", "通过" if all(item not in text for item in ["Biggs", "PCOMP", "METH-001", "METH-002", "METH-003"]) else "不通过", all(item not in text for item in ["Biggs", "PCOMP", "METH-001", "METH-002", "METH-003"])),
         ("REF-QA-05", "学校公开格式基线", "GB/T 7714-2015", requirements["REQ-04"]["summary"], "GB/T7714-2015" in requirements["REQ-04"]["summary"]),
         ("REF-QA-06", "不足30篇的缺口已明示", "必须明示", "通过" if "不少于30篇" in text else "不通过", "不少于30篇" in text),
@@ -43,8 +46,8 @@ def main() -> None:
     failures = [row[0] for row in rows if not row[4]]
     OUTPUT_MD.write_text(
         "# G8-02-R01-CANDIDATE-REFERENCES：候选参考文献 QA（V1）\n\n"
-        f"共检查 {len(rows)} 项，{'全部通过' if not failures else '不通过：' + ', '.join(failures)}。"
-        "该清单仅含六项限边界候选来源，不是最终参考文献表；在补齐合法全文阅读、版本页码和至少30篇合格文献前，不得作为最终提交版。\n",
+        f"共完成 {len(rows)} 项质量检查，{'全部通过' if not failures else '不通过：' + ', '.join(failures)}。"
+        f"该清单仅含{len(mapped)}项限边界候选来源，不是最终参考文献表；在补齐合法全文阅读、版本页码和至少30篇合格文献前，不得作为最终提交版。\n",
         encoding="utf-8",
     )
     if failures:

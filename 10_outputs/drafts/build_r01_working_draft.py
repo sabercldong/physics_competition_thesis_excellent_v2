@@ -20,8 +20,8 @@ from docx.shared import Cm, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[2]
 MANUSCRIPT_DIR = ROOT / "08_manuscript"
-OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v4.docx"
-MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v4_inputs.json"
+OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v5.docx"
+MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v5_inputs.json"
 CHAPTERS = [
     MANUSCRIPT_DIR / "01_introduction.md",
     MANUSCRIPT_DIR / "02_theory.md",
@@ -161,9 +161,9 @@ def add_cover(document: Document) -> None:
         document.add_paragraph()
     metadata = [
         "学位类别：非全日制硕士专业学位",
-        "版本：R01可追溯描述性结果工作稿 V4",
+        "版本：R01可追溯描述性结果工作稿 V5",
         "状态：非提交工作稿；不含个人信息、签名页或匿名送审处理",
-        "生成日期：2026-07-24",
+        "生成日期：2026-07-25",
     ]
     for item in metadata:
         paragraph = document.add_paragraph()
@@ -326,7 +326,7 @@ def main() -> None:
     manifest = {
         "artifact": str(OUTPUT_PATH.relative_to(ROOT)),
         "artifact_scope": "non-submission working draft",
-        "generated_on": "2026-07-24",
+        "generated_on": "2026-07-25",
         "source_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
             for path in [*CHAPTERS, MANUSCRIPT_DIR / "00_abstract_content_draft.md", REFERENCE_CANDIDATE_PATH]
