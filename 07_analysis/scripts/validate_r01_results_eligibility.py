@@ -14,6 +14,9 @@ LEVELS = ["L1", "L2", "L3", "L4"]
 CURRENT = ROOT / "07_analysis/data/final_coding_r01_correction_v1.csv"
 CHAIN = ROOT / "07_analysis/data/final_coding_evidence_r01_v1.csv"
 OUTPUT_DIR = ROOT / "07_analysis/results/formal_rater_r01/correction_v1"
+RELIABILITY = ROOT / "07_analysis/results/formal_rater_r01/r01_reliability_by_dimension.csv"
+DISAGREEMENTS = ROOT / "07_analysis/results/formal_rater_r01/r01_reliability_disagreements.csv"
+CORRECTIONS = ROOT / "07_analysis/results/formal_rater_r01/r01_correction_adjudication_change_manifest_v1.csv"
 CHAPTER = ROOT / "08_manuscript/04_results.md"
 METHODS = ROOT / "08_manuscript/03_methods.md"
 
@@ -86,6 +89,45 @@ def main() -> int:
     add_check(checks, "RE-QA-C1", "科学论证与质疑创新共现", f"{both}/{either}/0.266667", f"{pair_row['items_both_present']}/{pair_row['items_either_present']}/{pair_row['jaccard']}", pair_row["items_both_present"] == str(both) and pair_row["items_either_present"] == str(either) and pair_row["jaccard"] == "0.266667", "final_dimension_cooccurrence.csv")
     chapter_text = CHAPTER.read_text(encoding="utf-8")
     methods_text = METHODS.read_text(encoding="utf-8")
+    reliability = {row["dimension"]: row for row in read_rows(RELIABILITY)}
+    overall = reliability.get("全部", {})
+    reliability_expected = [
+        ("RE-QA-R1", "全体维度存在性一致率", "96.12%", f"{float(overall.get('presence_agreement', 'nan')):.2%}", "96.12%"),
+        ("RE-QA-R2", "全体维度存在性Cohen kappa", "0.9053", f"{float(overall.get('presence_kappa', 'nan')):.4f}", "0.9053"),
+        ("RE-QA-R3", "双方均判出现的等级比较数", "607", overall.get("n_level_pairs_both_present", ""), "607"),
+        ("RE-QA-R4", "全体等级一致率", "82.21%", f"{float(overall.get('level_agreement', 'nan')):.2%}", "82.21%"),
+        ("RE-QA-R5", "全体等级二次加权kappa", "0.8638", f"{float(overall.get('weighted_kappa_level', 'nan')):.4f}", "0.8638"),
+    ]
+    for check_id, item, expected, actual, phrase in reliability_expected:
+        add_check(
+            checks,
+            check_id,
+            item,
+            expected,
+            actual,
+            actual == expected and phrase in chapter_text,
+            "r01_reliability_by_dimension.csv;08_manuscript/04_results.md",
+        )
+    disagreements = read_rows(DISAGREEMENTS)
+    add_check(
+        checks,
+        "RE-QA-R6",
+        "A/B分歧记录数",
+        "142",
+        str(len(disagreements)),
+        len(disagreements) == 142 and "142条分歧" in chapter_text,
+        "r01_reliability_disagreements.csv;08_manuscript/04_results.md",
+    )
+    corrections = read_rows(CORRECTIONS)
+    add_check(
+        checks,
+        "RE-QA-R7",
+        "ADJ-02采纳更正数",
+        "4",
+        str(len(corrections)),
+        len(corrections) == 4 and "ADJ-02采纳4条" in chapter_text,
+        "r01_correction_adjudication_change_manifest_v1.csv;08_manuscript/04_results.md",
+    )
     expected_chapter_rows = [
         "| 模型建构 | 203 | 219 | 92.69% |",
         "| 科学推理 | 219 | 219 | 100.00% |",

@@ -26,6 +26,13 @@ RE-QA-L4-L2,质疑创新 L2等级统计,51,51,通过,final_level_distribution.cs
 RE-QA-L4-L3,质疑创新 L3等级统计,5,5,通过,final_level_distribution.csv
 RE-QA-L4-L4,质疑创新 L4等级统计,8,8,通过,final_level_distribution.csv
 RE-QA-C1,科学论证与质疑创新共现,40/150/0.266667,40/150/0.266667,通过,final_dimension_cooccurrence.csv
+RE-QA-R1,全体维度存在性一致率,96.12%,96.12%,通过,r01_reliability_by_dimension.csv;08_manuscript/04_results.md
+RE-QA-R2,全体维度存在性Cohen kappa,0.9053,0.9053,通过,r01_reliability_by_dimension.csv;08_manuscript/04_results.md
+RE-QA-R3,双方均判出现的等级比较数,607,607,通过,r01_reliability_by_dimension.csv;08_manuscript/04_results.md
+RE-QA-R4,全体等级一致率,82.21%,82.21%,通过,r01_reliability_by_dimension.csv;08_manuscript/04_results.md
+RE-QA-R5,全体等级二次加权kappa,0.8638,0.8638,通过,r01_reliability_by_dimension.csv;08_manuscript/04_results.md
+RE-QA-R6,A/B分歧记录数,142,142,通过,r01_reliability_disagreements.csv;08_manuscript/04_results.md
+RE-QA-R7,ADJ-02采纳更正数,4,4,通过,r01_correction_adjudication_change_manifest_v1.csv;08_manuscript/04_results.md
 RE-QA-M1,第四章结果值,| 模型建构 | 203 | 219 | 92.69% |,存在,通过,08_manuscript/04_results.md
 RE-QA-M2,第四章结果值,| 科学推理 | 219 | 219 | 100.00% |,存在,通过,08_manuscript/04_results.md
 RE-QA-M3,第四章结果值,| 科学论证 | 106 | 219 | 48.40% |,存在,通过,08_manuscript/04_results.md
