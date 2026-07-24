@@ -4,7 +4,7 @@
 
 本文件只建立从当前 Markdown/CSV 研究材料包转向学校提交版的准备路径，不代表已经获得学校模板、完成匿名评审版、通过查重、完成AI披露、完成伦理审批或生成最终Word/PDF。
 
-已核验研究生院公开的专业学位基本格式、非全日制专业学位历史流程通知、物理学院专业学位历史样张和历史校级优秀论文标准，见 `01_positioning/ecnu_official_thesis_format_sources.md` 与 `09_quality/ecnu_professional_template_mapping_v1.md`。但学院 2026 年 Word 模板、匿名评审规则、查重规则、AI披露要求、当年度优秀论文标准和提交流程仍为“待提供”，因此不能定稿格式。
+已核验研究生院公开的专业学位基本格式、当前答辩与学位申请附件包、非全日制专业学位历史流程通知、物理学院 2025/2026 年教育硕士通知、物理学院专业学位历史样张和历史校级优秀论文标准，见 `01_positioning/ecnu_official_thesis_format_sources.md`、`09_quality/ecnu_professional_template_mapping_v1.md` 与 `09_quality/ecnu_nonfull_anonymous_submission_rules_v1.md`。当前官网附件包已含专硕封皮模板（2025 更新）和专硕归档签名页（2026 更新），匿名盲审的去识别范围、文件命名参考及 2026 上半年检测/定稿流程亦已核验；实际答辩期的时间、收件方式、AI披露、学院补充模板与当年度优秀论文细则仍待确认，因此不能定稿格式。
 
 ## 当前材料状态
 
@@ -20,7 +20,7 @@
 
 ## 转换顺序
 
-1. 取得学校Word模板、写作规范、引用格式、匿名评审规则、AI披露要求和提交流程。
+1. 从当前官网附件包提取专硕封皮与归档签名页工作副本，并向学院核对实际答辩期的补充模板、AI披露要求和提交安排。
 2. 更新 `01_positioning/school_requirements_register.csv`，记录文件名、来源、版本、适用范围和影响文件。
 3. 完成正式编码、裁决和 `final_coding.csv`，生成第四章正式结果表图。
 4. 决定第五章是否纳入真实教师/课堂证据；若没有真实证据，按设计建议和局限处理。
