@@ -29,6 +29,7 @@ FORMATTED = {
     "ST-007": "Etkina E, Van Heuvelen A, White-Brahmia S, et al. Scientific abilities and their assessment[J]. Physical Review Special Topics - Physics Education Research, 2006, 2(2): 020103. DOI:10.1103/PhysRevSTPER.2.020103.",
     "ST-008": "Russ R S, Odden T O B. Intertwining evidence- and model-based reasoning in physics sensemaking: An example from electrostatics[J]. Physical Review Physics Education Research, 2017, 13(2): 020105. DOI:10.1103/PhysRevPhysEducRes.13.020105.",
     "ST-009": "Zwickl B M, Hu D, Finkelstein N, et al. Model-based reasoning in the physics laboratory: Framework and initial results[J]. Physical Review Special Topics - Physics Education Research, 2015, 11(2): 020113. DOI:10.1103/PhysRevSTPER.11.020113.",
+    "ST-010": "Pols C F J, Dekkers P J J M, de Vries M J. Integrating argumentation in physics inquiry: A design and evaluation study[J]. Physical Review Physics Education Research, 2023, 19(2): 020170. DOI:10.1103/PhysRevPhysEducRes.19.020170.",
     "METH-004": "Lombard M, Snyder-Duch J, Bracken C C. Content analysis in mass communication: Assessment and reporting of intercoder reliability[J]. Human Communication Research, 2002, 28(4): 587-604. DOI:10.1111/j.1468-2958.2002.tb00826.x.",
     "METH-006": "Wei B, Wang C, Tan L. Visual representation of optical content in China’s and Singapore’s junior secondary physics textbooks[J]. Physical Review Physics Education Research, 2022, 18(2): 020138. DOI:10.1103/PhysRevPhysEducRes.18.020138.",
 }
@@ -77,7 +78,7 @@ def main() -> None:
     lines = [
         "# 参考文献（候选工作稿）",
         "",
-        "> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前十项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。",
+        f"> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前{len(rows)}项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。",
         "",
     ]
     lines.extend(f"[{row['reference_number']}] {row['gbt_7714_candidate_entry']}" for row in rows)
