@@ -17,14 +17,15 @@ COMMANDS = [
     ("HP-QA-01", "SOLO应用接入包", ["07_analysis/scripts/validate_solo_application_integration_packet.py"]),
     ("HP-QA-02", "结果资格", ["07_analysis/scripts/validate_r01_results_eligibility.py"]),
     ("HP-QA-03", "第四章当前结果整合", ["07_analysis/scripts/validate_r01_results_manuscript_integration_v2.py"]),
-    ("HP-QA-04", "案例重选", ["07_analysis/scripts/validate_r01_case_reselection.py"]),
-    ("HP-QA-05", "候选参考文献", ["07_analysis/scripts/validate_r01_candidate_references.py"]),
-    ("HP-QA-06", "正文引用追溯", ["07_analysis/scripts/audit_r01_citation_trace.py"]),
-    ("HP-QA-07", "V17输入新鲜度", ["07_analysis/scripts/validate_working_draft_freshness.py", "--require-current"]),
-    ("HP-QA-08", "材料包快照", ["07_analysis/scripts/build_r01_material_package_snapshot.py", "--validate"]),
-    ("HP-QA-09", "内部交接包", ["07_analysis/scripts/build_r01_internal_material_package.py", "--validate"]),
-    ("HP-QA-10", "材料包总审计", ["07_analysis/scripts/validate_current_material_package_audit.py"]),
-    ("HP-QA-11", "复现运行手册", ["07_analysis/scripts/validate_r01_reproducibility_runbook.py"]),
+    ("HP-QA-04", "结论章研究问题对齐", ["07_analysis/scripts/validate_r01_conclusion_rq_alignment.py"]),
+    ("HP-QA-05", "案例重选", ["07_analysis/scripts/validate_r01_case_reselection.py"]),
+    ("HP-QA-06", "候选参考文献", ["07_analysis/scripts/validate_r01_candidate_references.py"]),
+    ("HP-QA-07", "正文引用追溯", ["07_analysis/scripts/audit_r01_citation_trace.py"]),
+    ("HP-QA-08", "V17输入新鲜度", ["07_analysis/scripts/validate_working_draft_freshness.py", "--require-current"]),
+    ("HP-QA-09", "材料包快照", ["07_analysis/scripts/build_r01_material_package_snapshot.py", "--validate"]),
+    ("HP-QA-10", "内部交接包", ["07_analysis/scripts/build_r01_internal_material_package.py", "--validate"]),
+    ("HP-QA-11", "材料包总审计", ["07_analysis/scripts/validate_current_material_package_audit.py"]),
+    ("HP-QA-12", "复现运行手册", ["07_analysis/scripts/validate_r01_reproducibility_runbook.py"]),
 ]
 
 
