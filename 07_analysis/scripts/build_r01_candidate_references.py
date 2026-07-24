@@ -36,6 +36,7 @@ FORMATTED = {
     "METH-007": "McHugh M L. Interrater reliability: The kappa statistic[J]. Biochemia Medica, 2012, 22(3): 276-282. DOI:10.11613/BM.2012.031.",
     "ST-014": "Wang C, Wei B. Analysis of visual-based physics questions of the senior high school entrance examination in China[J]. Physical Review Physics Education Research, 2024, 20(1): 010112. DOI:10.1103/PhysRevPhysEducRes.20.010112.",
     "ST-015": "Al-Salmani F, Thacker B. Rubric for assessing thinking skills in free-response exam problems[J]. Physical Review Physics Education Research, 2021, 17(1): 010135. DOI:10.1103/PhysRevPhysEducRes.17.010135.",
+    "ST-016": "Lin S-Y, Singh C. Effect of scaffolding on helping introductory physics students solve quantitative problems involving strong alternative conceptions[J]. Physical Review Special Topics - Physics Education Research, 2015, 11(2): 020105. DOI:10.1103/PhysRevSTPER.11.020105.",
 }
 
 
