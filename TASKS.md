@@ -641,6 +641,7 @@
   - VERIFY-FIRST：已完成 `G8-02-VERIFY-FIRST`，新增 `09_quality/g8_02_verify_first_report.md` 和 `09_quality/g8_02_verify_first_sources.csv`，核验 `CS-001`、`ST-002`、`ST-003`、`ST-005`、`ST-006` 和 `METH-004` 的版本、定位、可支持语句和禁止外推边界；更新 `08_manuscript/reference_readiness_register.csv`，将5项候选来源升级为限边界性引用。
   - APPLY-LITE：已完成 `G8-02-APPLY-LITE`，更新第1至5章正文，为6个已核验来源补充保守来源ID占位；新增 `09_quality/g8_02_apply_lite_revision_log.csv` 记录9处修订。该进度不等同于最终参考文献格式完成。
   - BIB-LITE：已完成 `G8-02-BIB-LITE`，新增 `09_quality/g8_02_bib_lite_mapping.csv`、`09_quality/g8_02_bib_lite_exclusion_register.csv` 和 `09_quality/g8_02_bib_lite_report.md`，将6个已核验来源ID与 `references.bib` 条目、正文占位位置、可支持主张、禁止外推边界和学校格式缺口对齐；更新 `02_literature/references.bib` 文件说明，标出 `biggs1982solo` 与 `biggs1989solo` 仍为全文待读工作候选。
+  - R01-CITATION-TRACE：已完成。新增 `07_analysis/scripts/audit_r01_citation_trace.py`、`09_quality/r01_citation_trace_v1.csv` 与同名说明，复核六章31处显式引文占位及其候选文献映射：CS-001、ST-002、ST-003、ST-005、ST-006、METH-004均有 BibTeX 键；METH-001至METH-003保持待补全文，未升格为正式候选。该检查不替代全文阅读或学校最终格式。
   - 下一步：跟随 `G8-04` 子任务继续做第1至5章残留格式、术语和证据边界检查。
 - [-] G8-03 统计与图表可复现检查
   - PREP：已完成 `G8-03-PREP`，新增 `09_quality/g8_03_result_reproducibility_gate.csv` 和 `09_quality/g8_03_result_reproducibility_report.md`，对第1至5章涉及的20类数字、图表占位和结果性表述建立门禁判断。当前可作为语料或准备事实的是第35至42届、219个分析单元、154条待核项、876条内部试编码记录和A/B空白模板规模；必须降格为内部预演的是维度分布、等级分布、共现、分组比较、P0/P1复核、典型案例候选和教学转化种子；正式图表均需等待 `final_coding.csv`。
