@@ -14,7 +14,7 @@
 | 第四章与图件 | 结果章数值、边界句与冻结输出可逐项断言 | `08_manuscript/04_results.md`；`08_manuscript/figures/`；结果资格QA的`RE-QA-M*`与`RE-QA-B*` | 描述性结果；不作显著性、因果、学生能力或教学效果推断 |
 | 案例与教学转化材料 | 案例保持题干—解答定位；教学部分已建立任务、支架与过程性产出设计参照 | `08_manuscript/05_cases_and_diagnosis.md`；`07_analysis/results/formal_rater_r01/r01_case_reselection_evidence_dossier_v1.csv` | 从任务结构提出待实施的教学任务、支架与评价设计建议 |
 | 候选引用链 | 20项已读且限边界来源已连接正文ID、BibTeX、映射和候选参考文献 | `08_manuscript/07_candidate_references.md`；`09_quality/g8_02_bib_lite_mapping.csv`；`09_quality/r01_candidate_references_qa_v1.md`；`09_quality/r01_citation_trace_v1.md` | 仅按每条来源登记的允许范围支撑理论、方法或任务设计边界 |
-| Word工作稿 | V16无个人信息的工作稿、输入哈希清单与QA已生成；DOCX容器、A4分页和新增英文参考文献可定位 | `10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v16.docx`；`10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v16_inputs.json`；`09_quality/r01_working_draft_v16_qa.md` | 材料组织、文本、英文条目与结构性版式检查 |
+| Word工作稿 | V16无个人信息的工作稿、输入哈希清单与QA已生成；DOCX容器、A4分页和新增英文参考文献可定位，当前8项输入哈希均与清单一致 | `10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v16.docx`；`10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v16_inputs.json`；`09_quality/r01_working_draft_v16_qa.md`；`09_quality/r01_working_draft_v16_freshness_qa.csv` | 材料组织、文本、英文条目与结构性版式检查 |
 | 学校公开规则基线 | 专业学位封皮/签名页附件、GB/T 7714-2015、30篇基线、匿名评审与当期查重处理规则均已登记 | `01_positioning/school_requirements_register.csv`；`01_positioning/ecnu_official_thesis_format_sources.md` | 最终格式与提交准备的公开基线，不替代答辩期学院细则 |
 
 ## 二、当前量化核对
@@ -28,7 +28,7 @@
 | 共同出现等级比较 / 一致率 / 加权kappa | 607 / 82.21% / 0.8638 | 结果资格QA `RE-QA-R3`至`RE-QA-R5` | 不构成框架外部效度或独立过程验证 |
 | 文献台账 / 全文已读 / 工作稿候选 | 35 / 22 / 20 | `final_reference_closure_matrix_v1.md` | 20项仍是候选工作稿来源，不是最终参考文献表 |
 | 当前与30篇基线的最小全文阅读差额 | 8 | `final_reference_closure_matrix_v1.md` | 数量达标仍不自动满足相关性、著录和格式要求 |
-| V16工作稿 | 25页A4 | `r01_working_draft_v16_qa.md` | 当前LibreOffice环境不能验证中文逐页排版 |
+| V16工作稿 | 25页A4；输入新鲜度8/8当前 | `r01_working_draft_v16_qa.md`；`r01_working_draft_v16_freshness_qa.csv` | 当前LibreOffice环境不能验证中文逐页排版 |
 
 ## 三、尚未闭合的关键缺口
 
@@ -62,4 +62,5 @@
 python3 07_analysis/scripts/validate_r01_results_eligibility.py
 python3 07_analysis/scripts/validate_r01_candidate_references.py
 python3 07_analysis/scripts/audit_r01_citation_trace.py
+python3 07_analysis/scripts/validate_working_draft_freshness.py --require-current
 ```

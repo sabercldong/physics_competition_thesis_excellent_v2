@@ -24,6 +24,10 @@
 
 `ST-018`只支持未来真实学生书面作答的条件性评价设计，并要求其与当前试题任务要求编码分开。V16不采用MAPS量规，不迁移大学样本、学生作答、访谈、评分、效度、信度、统计量或教学结论；也不将该段写作当前学生能力、困难或教学有效性的证据。
 
+## 输入新鲜度复核
+
+`validate_working_draft_freshness.py` 将V16输入清单中的8项SHA-256与当前摘要、六章源文件和候选参考文献逐项比较，结果为8/8当前。该结论只表示V16仍对应当前输入文件，不评价这些输入的学术质量，也不替代中文逐页排版终验。
+
 ## 复跑命令
 
 ```bash
@@ -31,5 +35,6 @@ python3 07_analysis/scripts/build_r01_candidate_references.py
 python3 07_analysis/scripts/validate_r01_candidate_references.py
 python3 07_analysis/scripts/audit_r01_citation_trace.py
 python3 10_outputs/drafts/build_r01_working_draft.py
+python3 07_analysis/scripts/validate_working_draft_freshness.py --require-current
 unzip -t 10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v16.docx
 ```

@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import csv
+import hashlib
+import json
 from pathlib import Path
 
 
@@ -27,6 +29,10 @@ def rows(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 def main() -> None:
     audit = AUDIT.read_text(encoding="utf-8")
     item_count = len(rows(ITEMS))
@@ -42,6 +48,11 @@ def main() -> None:
     trace = rows(CITATION_TRACE)
     trace_total = len(trace)
     trace_placeholders = sum(row["is_citation_placeholder"] == "是" for row in trace)
+    manifest = json.loads(V16_MANIFEST.read_text(encoding="utf-8"))
+    draft_inputs_current = all(
+        (ROOT / path).is_file() and sha256(ROOT / path) == manifest_hash
+        for path, manifest_hash in manifest["source_sha256"].items()
+    )
     expected = [
         ("MPA-QA-01", "分析单元数", str(item_count), "219", item_count == 219),
         ("MPA-QA-02", "当前编码记录数", str(coding_count), "876", coding_count == 876),
@@ -53,8 +64,9 @@ def main() -> None:
         ("MPA-QA-08", "V16工作稿文件", "存在" if V16.is_file() else "缺失", "存在", V16.is_file()),
         ("MPA-QA-09", "V16输入清单", "存在" if V16_MANIFEST.is_file() else "缺失", "存在", V16_MANIFEST.is_file()),
         ("MPA-QA-10", "V16工作稿QA", "存在" if V16_QA.is_file() else "缺失", "存在", V16_QA.is_file()),
-        ("MPA-QA-11", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "35 / 22 / 20", "至少8条", "51/51", "V16"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "35 / 22 / 20", "至少8条", "51/51", "V16"])),
-        ("MPA-QA-12", "审计中的独立验证边界", "存在" if "自声明" in audit and "项目独立验证" in audit else "缺失", "存在", "自声明" in audit and "项目独立验证" in audit),
+        ("MPA-QA-11", "V16输入新鲜度", "当前" if draft_inputs_current else "已过期或缺失", "当前", draft_inputs_current),
+        ("MPA-QA-12", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "35 / 22 / 20", "至少8条", "51/51", "V16"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "35 / 22 / 20", "至少8条", "51/51", "V16"])),
+        ("MPA-QA-13", "审计中的独立验证边界", "存在" if "自声明" in audit and "项目独立验证" in audit else "缺失", "存在", "自声明" in audit and "项目独立验证" in audit),
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
