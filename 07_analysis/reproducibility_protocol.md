@@ -27,6 +27,7 @@ python3 07_analysis/scripts/build_r01_current_evidence_chain.py \
 python3 07_analysis/scripts/validate_r01_results_eligibility.py
 python3 07_analysis/scripts/validate_r01_results_manuscript_integration_v2.py
 python3 07_analysis/scripts/validate_r01_conclusion_rq_alignment.py
+python3 07_analysis/scripts/validate_r01_abstract_alignment.py
 python3 07_analysis/scripts/build_r01_case_reselection.py
 python3 07_analysis/scripts/validate_r01_case_reselection.py
 python3 07_analysis/scripts/build_r01_candidate_references.py
@@ -49,11 +50,12 @@ python3 07_analysis/scripts/validate_r01_full_package_healthcheck.py
 ## 当前预期状态
 
 - 当前编码与证据链：876条记录；证据链由840条V6来源、32条V2补证和4条ADJ-02更正来源组成。
-- 结果资格QA：51/51通过；第四章当前结果整合QA：30/30通过；案例重选QA：7/7通过。
+- 结果资格QA：51/51通过；第四章当前结果整合QA：30/30通过；结论章对齐QA：16/16通过；案例重选QA：7/7通过。
+- 中文摘要对齐QA：18/18通过；它只核验摘要底稿与冻结结果和边界的一致性，英文摘要与学校格式仍待定稿。
 - 候选参考文献QA：6/6通过；当前候选来源26项；引用追溯为57条来源出现、51处显式占位。
-- V17工作稿输入新鲜度：8/8当前；材料包快照：22/22当前；材料包审计：16/16通过。
-- 内部非提交交接包：默认21项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
-- 全链路健康检查：12项已有门禁必须同时通过；其结果写入 `09_quality/r01_full_package_healthcheck_v1.csv`。
+- V17工作稿输入新鲜度：8/8当前；材料包快照：24/24当前；材料包审计：16/16通过。
+- 内部非提交交接包：默认23项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
+- 全链路健康检查：13项已有门禁必须同时通过；其结果写入 `09_quality/r01_full_package_healthcheck_v1.csv`。
 
 ## 不能由本协议证明的事项
 

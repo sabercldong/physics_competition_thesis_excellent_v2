@@ -36,6 +36,8 @@ ARTIFACTS = [
     ("PKG-20", "复现入口", "07_analysis/reproducibility_protocol.md", "推荐复跑顺序", "可随材料包提供"),
     ("PKG-21", "工作稿", "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx", "当前Word工作稿", "仅本地工作稿；不得作为最终提交或公开分发件"),
     ("PKG-22", "质量保证", "09_quality/r01_results_manuscript_integration_qa_v2.csv", "第四章当前结果与图件整合QA", "可随材料包提供；V1仅为更正前历史基线"),
+    ("PKG-23", "正文", "08_manuscript/00_abstract_content_draft.md", "中文摘要内容工作底稿", "可随材料包提供；非最终学校格式摘要"),
+    ("PKG-24", "质量保证", "09_quality/r01_abstract_alignment_qa_v1.csv", "中文摘要与冻结结果对齐QA", "可随材料包提供；不验证英文摘要或学校格式"),
 ]
 
 
