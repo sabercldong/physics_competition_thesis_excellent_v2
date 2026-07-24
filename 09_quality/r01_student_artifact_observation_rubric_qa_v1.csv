@@ -1,0 +1,13 @@
+﻿check_id,check_item,status,source
+OBS-QA-01,量规明确为未验证设计工具,通过,student_artifact_rubric.md
+OBS-QA-02,量规明确不把记录换算为学生能力或教学效果,通过,student_artifact_rubric.md
+OBS-QA-03,量规提供四种非推断性观察状态,通过,student_artifact_rubric.md
+OBS-QA-04,量规规定匿名、版本、工具与证据位置记录,通过,student_artifact_rubric.md
+OBS-QA-05,量规设定实施、同意、锚定与分歧处理门槛,通过,student_artifact_rubric.md
+OBS-QA-06,量规连接三个R01案例,通过,student_artifact_rubric.md
+OBS-QA-07,模板字段完整,通过,r01_student_artifact_observation_record_template.csv
+OBS-QA-08,模板行数与指标数一致,通过,r01_student_artifact_observation_record_template.csv
+OBS-QA-09,模板覆盖三个案例的全部观察指标,通过,r01_student_artifact_observation_record_template.csv
+OBS-QA-10,模板不含伪造的学生、作品或观察数据,通过,r01_student_artifact_observation_record_template.csv
+OBS-QA-11,模板状态选项保持可观察边界,通过,r01_student_artifact_observation_record_template.csv
+OBS-QA-12,量规未作未限定的效果或普遍性结论,通过,student_artifact_rubric.md

@@ -48,6 +48,9 @@ ARTIFACTS = [
     ("PKG-32", "教学设计", "06_teaching_validation/r01_design_case_01_condition_relation_chain.md", "条件—关系链教学设计案例", "可随材料包提供；未实施，不证明教学效果"),
     ("PKG-33", "教学设计", "06_teaching_validation/r01_design_case_02_state_energy_classification.md", "状态分类—平均能量关系教学设计案例", "可随材料包提供；未实施，不证明教学效果"),
     ("PKG-34", "质量保证", "09_quality/r01_teaching_design_materials_qa_v1.csv", "教学设计材料QA", "可随材料包提供；只验证项目内可追溯性与边界"),
+    ("PKG-35", "教学设计", "06_teaching_validation/student_artifact_rubric.md", "R01学生作品过程性观察记录量规", "可随材料包提供；未验证设计工具，不含学生数据"),
+    ("PKG-36", "教学设计", "06_teaching_validation/r01_student_artifact_observation_record_template.csv", "学生作品观察记录空白模板", "可随材料包提供；空白模板，不含个人或课堂数据"),
+    ("PKG-37", "质量保证", "09_quality/r01_student_artifact_observation_rubric_qa_v1.csv", "学生作品观察记录量规QA", "可随材料包提供；只验证工具边界与模板为空"),
 ]
 
 
