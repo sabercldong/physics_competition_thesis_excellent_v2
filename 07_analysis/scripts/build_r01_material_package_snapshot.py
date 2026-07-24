@@ -38,6 +38,8 @@ ARTIFACTS = [
     ("PKG-22", "质量保证", "09_quality/r01_results_manuscript_integration_qa_v2.csv", "第四章当前结果与图件整合QA", "可随材料包提供；V1仅为更正前历史基线"),
     ("PKG-23", "正文", "08_manuscript/00_abstract_content_draft.md", "中文摘要内容工作底稿", "可随材料包提供；非最终学校格式摘要"),
     ("PKG-24", "质量保证", "09_quality/r01_abstract_alignment_qa_v1.csv", "中文摘要与冻结结果对齐QA", "可随材料包提供；不验证英文摘要或学校格式"),
+    ("PKG-25", "正文", "08_manuscript/00_abstract_en_content_draft.md", "英文摘要内容工作底稿", "可随材料包提供；非最终学校格式或官方术语版本"),
+    ("PKG-26", "质量保证", "09_quality/r01_abstract_alignment_qa_v1.md", "中英文摘要与冻结结果对齐QA说明", "可随材料包提供；不验证学校格式或官方英文赛事名"),
 ]
 
 

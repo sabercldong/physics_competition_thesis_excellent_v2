@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 ABSTRACT = ROOT / "08_manuscript/00_abstract_content_draft.md"
+ENGLISH_ABSTRACT = ROOT / "08_manuscript/00_abstract_en_content_draft.md"
 CODING = ROOT / "07_analysis/data/final_coding_r01_correction_v1.csv"
 OUTPUT_CSV = ROOT / "09_quality/r01_abstract_alignment_qa_v1.csv"
 OUTPUT_MD = ROOT / "09_quality/r01_abstract_alignment_qa_v1.md"
@@ -22,6 +23,7 @@ def read_rows(path: Path) -> list[dict[str, str]]:
 
 def main() -> None:
     text = ABSTRACT.read_text(encoding="utf-8")
+    english_text = ENGLISH_ABSTRACT.read_text(encoding="utf-8")
     rows = read_rows(CODING)
     dimensions = ["模型建构", "科学推理", "科学论证", "质疑创新"]
     expected_presence = {"模型建构": 203, "科学推理": 219, "科学论证": 106, "质疑创新": 84}
@@ -68,6 +70,20 @@ def main() -> None:
     ]
     for index, term in enumerate(required_text, start=10):
         checks.append((f"AA-QA-{index:02d}", "摘要必要表述", term, "存在" if term in text else "缺失", term in text))
+    english_required = [
+        "219 analysis units",
+        "876 records",
+        "203, 219, 106, and 84 analysis units",
+        "L1 was the most frequent level",
+        "L2 was the most frequent level for questioning and innovation",
+        "co-occurred in 203 analysis units",
+        "co-occurred in 40 analysis units, with a union of 150 units",
+        "do not indicate students' actual capabilities, instructional effectiveness, causal effects, long-term trends, or score differences for the 35th edition",
+        "recorded only through self-declarations",
+        "No teacher, student, or classroom data were collected",
+    ]
+    for index, term in enumerate(english_required, start=19):
+        checks.append((f"AA-QA-{index:02d}", "英文摘要必要表述", term, "存在" if term in english_text else "缺失", term in english_text))
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(["check_id", "check_item", "expected", "actual", "status"])
@@ -75,15 +91,15 @@ def main() -> None:
             writer.writerow([*check[:4], "通过" if check[4] else "不通过"])
     failures = [check[0] for check in checks if not check[4]]
     OUTPUT_MD.write_text(
-        "# R01 中文摘要与冻结结果对齐 QA（V1）\n\n"
+        "# R01 中英文摘要与冻结结果对齐 QA（V1）\n\n"
         f"共完成{len(checks)}项检查，{'全部通过' if not failures else '不通过：' + '、'.join(failures)}。"
-        "本QA只核验摘要工作底稿与当前冻结编码的数值、等级判断、共现关系及禁止外推边界；"
-        "不验证评分者身份或过程、理论外部效度、学生能力、教学效果、学校格式、英文摘要或人类参与者事实。\n",
+        "本QA只核验中英文摘要工作底稿与当前冻结编码的数值、等级判断、共现关系及禁止外推边界；"
+        "不验证评分者身份或过程、理论外部效度、学生能力、教学效果、学校格式、官方英文赛事名或人类参与者事实。\n",
         encoding="utf-8",
     )
     if failures:
         raise SystemExit("摘要对齐QA失败：" + ", ".join(failures))
-    print(f"R01中文摘要对齐QA：{len(checks)}/{len(checks)}通过")
+    print(f"R01中英文摘要对齐QA：{len(checks)}/{len(checks)}通过")
 
 
 if __name__ == "__main__":

@@ -7,8 +7,8 @@ HP-QA-05,案例重选,/Library/Developer/CommandLineTools/usr/bin/python3 07_ana
 HP-QA-06,候选参考文献,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_candidate_references.py,0,通过,候选参考文献QA：6/6通过。
 HP-QA-07,正文引用追溯,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/audit_r01_citation_trace.py,0,通过,引用追溯通过：57 条来源出现，51 条显式引文占位。
 HP-QA-08,V17输入新鲜度,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_working_draft_freshness.py --require-current,0,通过,V17输入新鲜度QA：8/8当前；状态：当前
-HP-QA-09,材料包快照,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/build_r01_material_package_snapshot.py --validate,0,通过,材料包快照校验：24/24通过
-HP-QA-10,内部交接包,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/build_r01_internal_material_package.py --validate,0,通过,R01内部交接包校验：23/23通过
+HP-QA-09,材料包快照,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/build_r01_material_package_snapshot.py --validate,0,通过,材料包快照校验：26/26通过
+HP-QA-10,内部交接包,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/build_r01_internal_material_package.py --validate,0,通过,R01内部交接包校验：25/25通过
 HP-QA-11,材料包总审计,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_current_material_package_audit.py,0,通过,材料包审计V2 QA：16/16通过
 HP-QA-12,复现运行手册,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py,0,通过,R01复现运行手册QA：17/17通过
-HP-QA-13,中文摘要对齐,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_abstract_alignment.py,0,通过,R01中文摘要对齐QA：18/18通过
+HP-QA-13,中文摘要对齐,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_abstract_alignment.py,0,通过,R01中英文摘要对齐QA：28/28通过
