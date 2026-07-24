@@ -1,6 +1,6 @@
 # 参考文献（候选工作稿）
 
-> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前八项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。
+> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前九项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。
 
 [1] 中华人民共和国教育部. 普通高中物理课程标准（2017年版2020年修订）[S/OL]. 2020-06-03 [2026-07-24]. http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html.
 [2] Bao L, Cai T, Koenig K, et al. Learning and scientific reasoning[J]. Science, 2009, 323(5914): 586-587. DOI:10.1126/science.1167740.
@@ -10,6 +10,7 @@
 [6] Lombard M, Snyder-Duch J, Bracken C C. Content analysis in mass communication: Assessment and reporting of intercoder reliability[J]. Human Communication Research, 2002, 28(4): 587-604. DOI:10.1111/j.1468-2958.2002.tb00826.x.
 [7] Wei B, Wang C, Tan L. Visual representation of optical content in China’s and Singapore’s junior secondary physics textbooks[J]. Physical Review Physics Education Research, 2022, 18(2): 020138. DOI:10.1103/PhysRevPhysEducRes.18.020138.
 [8] Etkina E, Van Heuvelen A, White-Brahmia S, et al. Scientific abilities and their assessment[J]. Physical Review Special Topics - Physics Education Research, 2006, 2(2): 020103. DOI:10.1103/PhysRevSTPER.2.020103.
+[9] Russ R S, Odden T O B. Intertwining evidence- and model-based reasoning in physics sensemaking: An example from electrostatics[J]. Physical Review Physics Education Research, 2017, 13(2): 020105. DOI:10.1103/PhysRevPhysEducRes.13.020105.
 
 ## 使用边界
 
