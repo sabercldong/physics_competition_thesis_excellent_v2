@@ -14,7 +14,7 @@ MAPPING_PATH = ROOT / "09_quality/g8_02_bib_lite_mapping.csv"
 BIB_PATH = ROOT / "02_literature/references.bib"
 OUTPUT_MD = MANUSCRIPT_DIR / "07_candidate_references.md"
 OUTPUT_CSV = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
-SOURCE_ID = re.compile(r"\b(?:CS|ST|METH)-\d{3}\b")
+SOURCE_ID = re.compile(r"\b(?:CS|ST|METH|PCOMP)-\d{3}\b")
 BIB_KEY = re.compile(r"^@\w+\{([^,]+),", re.MULTILINE)
 CHAPTERS = [MANUSCRIPT_DIR / f"{index:02d}_{name}.md" for index, name in [
     (1, "introduction"), (2, "theory"), (3, "methods"),
@@ -43,6 +43,7 @@ FORMATTED = {
     "ST-013": "Kocakaya S, Gonen S. Analysis of Turkish high-school physics-examination questions according to Bloom's taxonomy[J]. Asia-Pacific Forum on Science Learning and Teaching, 2010, 11(1): Article 9, 1-14.",
     "ST-017": "Burkholder E W, Miles J K, Layden T J, et al. Template for teaching and assessment of problem solving in introductory physics[J]. Physical Review Physics Education Research, 2020, 16(1): 010123. DOI:10.1103/PhysRevPhysEducRes.16.010123.",
     "ST-018": "Docktor J L, Dornfeld J, Frodermann E, et al. Assessing student written problem solutions: A problem-solving rubric with application to introductory physics[J]. Physical Review Physics Education Research, 2016, 12(1): 010130. DOI:10.1103/PhysRevPhysEducRes.12.010130.",
+    "PCOMP-006": "陈奕帆, 杨欢. 四球探秘——隐藏在一道高中物理竞赛题背后的秘密[J]. 大学物理, 2025, 44(5): 58-64. DOI:10.16854/j.cnki.1000-0712.240228.",
 }
 
 
