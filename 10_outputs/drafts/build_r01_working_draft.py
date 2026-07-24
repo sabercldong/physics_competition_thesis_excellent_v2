@@ -20,8 +20,8 @@ from docx.shared import Cm, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[2]
 MANUSCRIPT_DIR = ROOT / "08_manuscript"
-OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v1.docx"
-MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v1_inputs.json"
+OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v2.docx"
+MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v2_inputs.json"
 CHAPTERS = [
     MANUSCRIPT_DIR / "01_introduction.md",
     MANUSCRIPT_DIR / "02_theory.md",
@@ -160,7 +160,7 @@ def add_cover(document: Document) -> None:
         document.add_paragraph()
     metadata = [
         "学位类别：非全日制硕士专业学位",
-        "版本：R01可追溯描述性结果工作稿 V1",
+        "版本：R01可追溯描述性结果工作稿 V2",
         "状态：非提交工作稿；不含个人信息、签名页或匿名送审处理",
         "生成日期：2026-07-24",
     ]
@@ -255,6 +255,8 @@ def add_chapter(document: Document, path: Path) -> None:
         elif line.startswith("!["):
             if not add_image(document, line):
                 add_text_paragraph(document, "[图件路径待确认]", style="Figure Caption", indent=False)
+        elif re.match(r"^图\d+-\d+", line):
+            add_text_paragraph(document, line, style="Figure Caption", indent=False)
         elif line.startswith(">"):
             add_text_paragraph(document, line.lstrip("> "), style="Table Note", indent=False)
         elif re.match(r"^-\s+", line):
@@ -314,6 +316,8 @@ def main() -> None:
             for path in [*CHAPTERS, MANUSCRIPT_DIR / "00_abstract_content_draft.md"]
         },
         "figure_inputs": [
+            "08_manuscript/figures/figure_1_1_r01_technical_route_v1.png",
+            "08_manuscript/figures/figure_2_1_r01_theoretical_framework_v1.png",
             "08_manuscript/figures/figure_4_1_dimension_presence_r01_v1.png",
             "08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png",
         ],
