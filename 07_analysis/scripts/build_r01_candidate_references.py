@@ -14,7 +14,7 @@ MAPPING_PATH = ROOT / "09_quality/g8_02_bib_lite_mapping.csv"
 BIB_PATH = ROOT / "02_literature/references.bib"
 OUTPUT_MD = MANUSCRIPT_DIR / "07_candidate_references.md"
 OUTPUT_CSV = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
-SOURCE_ID = re.compile(r"\b(?:CS|ST|METH|PCOMP)-\d{3}\b")
+SOURCE_ID = re.compile(r"\b(?:(?:CS|ST|METH|PCOMP)-\d{3}|SOLO-(?:APP|PHY)-\d{3})\b")
 BIB_KEY = re.compile(r"^@\w+\{([^,]+),", re.MULTILINE)
 CHAPTERS = [MANUSCRIPT_DIR / f"{index:02d}_{name}.md" for index, name in [
     (1, "introduction"), (2, "theory"), (3, "methods"),
@@ -47,6 +47,10 @@ FORMATTED = {
     "ST-019": "Tschisgale P, Kubsch M, Wulff P, et al. Exploring the sequential structure of students’ physics problem-solving approaches using process mining and sequence analysis[J]. Physical Review Physics Education Research, 2025, 21(1): 010111. DOI:10.1103/PhysRevPhysEducRes.21.010111.",
     "ST-020": "Tschisgale P, Maus H, Kieser F, et al. Evaluating GPT- and reasoning-based large language models on Physics Olympiad problems: Surpassing human performance and implications for educational assessment[J]. Physical Review Physics Education Research, 2025, 21(2): 020115. DOI:10.1103/PhysRevPhysEducRes.21.020115.",
     "ST-021": "Meyer A, Fischer S, Friege G. Analyzing problem solving in secondary physics education: A rubric-guided approach to explore individual learning needs[J]. Physical Review Physics Education Research, 2026, 22(1): 010111. DOI:10.1103/3bs7-fnrd.",
+    "SOLO-APP-001": "Mol S M, Matos D A S. Uma analise da complexidade de itens de matematica por meio da taxonomia SOLO[J]. Estudos em Avaliacao Educacional, 2025, 36: e11415. DOI:10.18222/eae.v36.11415.",
+    "SOLO-PHY-001": "肖雅洁. 基于SOLO分类法的试题评价分析——以一道高考物理题为例[J]. 社会科学前沿, 2020, 9(7): 949-955. DOI:10.12677/ASS.2020.97133.",
+    "SOLO-PHY-002": "于海波, 冯薇橦, 杨振东. 2024年高考新课标卷的科学思维考查难度与教学启示——基于SOLO分类理论与LPs理论结合的视角[J]. 物理教师, 2025, 46(2): 67-71.",
+    "SOLO-PHY-003": "王贤勇, 喻斌. 基于布鲁姆学习目标和SOLO分类理论的试题对比评析[J]. 物理教师, 2023, 44(1): 84-92.",
 }
 
 
