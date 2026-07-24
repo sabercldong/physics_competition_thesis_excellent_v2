@@ -33,6 +33,8 @@ FORMATTED = {
     "ST-011": "Pols C F J, Dekkers P J J M, de Vries M J. Defining and assessing understandings of evidence with the assessment rubric for physics inquiry: Towards integration of argumentation and inquiry[J]. Physical Review Physics Education Research, 2022, 18(1): 010111. DOI:10.1103/PhysRevPhysEducRes.18.010111.",
     "METH-004": "Lombard M, Snyder-Duch J, Bracken C C. Content analysis in mass communication: Assessment and reporting of intercoder reliability[J]. Human Communication Research, 2002, 28(4): 587-604. DOI:10.1111/j.1468-2958.2002.tb00826.x.",
     "METH-006": "Wei B, Wang C, Tan L. Visual representation of optical content in China’s and Singapore’s junior secondary physics textbooks[J]. Physical Review Physics Education Research, 2022, 18(2): 020138. DOI:10.1103/PhysRevPhysEducRes.18.020138.",
+    "METH-007": "McHugh M L. Interrater reliability: The kappa statistic[J]. Biochemia Medica, 2012, 22(3): 276-282. DOI:10.11613/BM.2012.031.",
+    "ST-014": "Wang C, Wei B. Analysis of visual-based physics questions of the senior high school entrance examination in China[J]. Physical Review Physics Education Research, 2024, 20(1): 010112. DOI:10.1103/PhysRevPhysEducRes.20.010112.",
 }
 
 
