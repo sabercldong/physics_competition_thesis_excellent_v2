@@ -1,0 +1,11 @@
+﻿check_id,file,expectation,phrase,match_count,status,note
+STATE-QA-01,08_manuscript/01_introduction.md,不得出现,正式统计结果尚未形成,0,通过,旧的结果未形成表述已移除
+STATE-QA-02,08_manuscript/01_introduction.md,不得出现,第2至第4个问题必须等待真实评分者编码,0,通过,研究问题已允许R01描述性回答
+STATE-QA-03,08_manuscript/01_introduction.md,必须保留,876条当前编码—证据链,1,通过,当前R01结果范围已明确
+STATE-QA-04,08_manuscript/02_theory.md,不得出现,仍需真实评分者一致性和分歧裁决结果支持,0,通过,旧的编码未完成表述已移除
+STATE-QA-05,08_manuscript/02_theory.md,必须保留,当前R01版本化编码、裁决与证据链已支持项目内描述性报告,1,通过,理论章已保留项目内结果边界
+STATE-QA-06,08_manuscript/03_methods.md,不得出现,154条正式编码前需人工校对的问题,0,通过,历史队列不再误写为编码前阻塞
+STATE-QA-07,08_manuscript/03_methods.md,不得出现,尚未完成真实双评分者编码和正式分歧裁决,0,通过,方法章已更新为R01归档状态
+STATE-QA-08,08_manuscript/03_methods.md,必须保留,第35届八道题的分值边界仍无正式来源,2,通过,分值限制仍保留
+STATE-QA-09,08_manuscript/01_introduction.md,必须保留,尚未完成原书全文阅读和关键页码摘录,1,通过,SOLO全文缺口仍保留
+STATE-QA-10,08_manuscript/01_introduction.md,必须保留,没有真实教师或课堂证据,1,通过,教学效果限制仍保留
