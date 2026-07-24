@@ -31,6 +31,13 @@
 4. 第二章只能继续使用“SOLO启发的任务认知结构要求等级”这一保守表述；
 5. 正式定稿前必须补齐全文阅读记录、关键页码和任务/试题分析迁移边界文献。
 
+## 2026-07-25 机构访问操作路径复核
+
+- 出版社 ScienceDirect 图书页可直接核验 `SOLO-001` 的1982年、作者、ISBN `978-0-12-097552-5` 与 DOI `10.1016/C2013-0-10375-3`，并标示可通过访问权限进入内容；该页链接为 <https://www.sciencedirect.com/book/9780120975525/evaluating-the-quality-of-learning>。
+- Elsevier当前官方帮助页说明，校外或未识别机构网络时，应在 ScienceDirect 选择“Check access”或“Sign in via your organization”，以学校名称或机构邮箱检索所属机构，再按其配置转入统一身份认证、VPN/IP或其他远程访问方式；见 <https://service.elsevier.com/app/answers/detail/a_id/29223/supporthub/sciencedirect/> 与 <https://www.elsevier.support/elsevieraccess/answer/how-do-i-sign-in-via-my-institution>。
+- 对本项目的最小动作是：使用华东师范大学机构身份完成一次授权访问尝试；若未获得章节正文，向图书馆提交书名、ISBN、DOI、所需章节和研究用途，申请馆际互借、文献传递或采购建议。只有获得可实际阅读的授权正文后，才可创建阅读记录、核对版本/页码，并评估是否能支持本项目的层级定义和迁移边界。
+- 本复核只提供合法访问流程，不证明华东师范大学当前订购了该电子书，也不证明项目成员已登录、已访问或已阅读全文。
+
 ## 对正文的约束
 
 - 可以写：SOLO来源已定位，当前用于启发任务结构复杂性分类；
