@@ -9,7 +9,7 @@
 - [-] G0-02 与导师确定题目A/B/C及研究范围
   - 进度：已完成内部路线收敛备忘，新增 `01_positioning/route_convergence_memo.md`，并更新 `scope_decision_memo.md` 与 `title_decision.md`。当前内部建议以路线A稳健收缩版为默认工作路线；路线B仅在获得真实课堂材料后升级；路线C准实验路线冻结。该进度不等同于导师正式确认，最终题目与范围仍待作者或导师确认。
 - [-] G0-03 获取学校模板、字数、引用和优秀论文标准
-  - 进度：已完成 `G0-03-PREP`，并于 2026-07-24 核验研究生院官网公开的全校基本格式要求及2021年官方模板包。作者已确认本项目为非全日制硕士专业学位，故已将专业学位公开规范设为当前格式基线，学术型历史模板包仅作样式参考；详见 `01_positioning/ecnu_official_thesis_format_sources.md` 与 `school_requirements_register.csv`。仍待学院补充模板及2026年提交/匿名/查重/AI/优秀论文规则，故不能标记为完成或定稿格式。
+  - 进度：已完成 `G0-03-PREP`，并于 2026-07-24 核验研究生院官网的专业学位基本格式、面向非全日制专业学位的历史流程通知、物理学院专业学位格式样张与历史校级优秀论文标准。作者已确认本项目为非全日制硕士专业学位，故专业学位公开规范现为当前格式基线，已知物理学院样张仅作历史参考；详见 `01_positioning/ecnu_official_thesis_format_sources.md` 与 `school_requirements_register.csv`。仍待学院2026年模板及提交/匿名/查重/AI/优秀论文规则，故不能标记为完成或定稿格式。
 - [x] G0-04 建立不可使用的初稿数字与表述清单
   - 进度：已新增 `01_positioning/non_inheritable_claims_inventory.md`，并补充 `09_quality/unverified_claims.csv`；初稿中的届次年份、知识点比例、科学思维百分比、SOLO趋势、专家验证、问卷结果、教学实验、SPSS显著性、前后测均值和参考文献均按E0处理，不能直接进入新版正文。
 - [x] G0-05 制定伦理与数据管理方案
