@@ -5,7 +5,7 @@
 ## 输入与输出边界
 
 - 冻结编码、登记回填、补证与更正裁决保留在 `07_analysis/data/` 与 `07_analysis/results/formal_rater_r01/`；脚本输出只能回写其指定路径。
-- 正文组装输入为 `08_manuscript/01_introduction.md` 至 `06_conclusion.md`，以及候选参考文献 `08_manuscript/07_candidate_references.md`。
+- 正文组装输入为中英文摘要内容底稿、`08_manuscript/01_introduction.md` 至 `06_conclusion.md`，以及候选参考文献 `08_manuscript/07_candidate_references.md`。
 - V17 Word 文件只是非提交工作稿。它不包含真实个人信息、封皮、签名、匿名送审处理或当期学院格式终验。
 - 所有复现输出只描述试题与参考解答呈现的任务认知要求，不得外推为学生能力、教学效果、因果、显著性、长期趋势或第35届分值差异。
 
@@ -53,7 +53,7 @@ python3 07_analysis/scripts/validate_r01_full_package_healthcheck.py
 - 结果资格QA：51/51通过；第四章当前结果整合QA：30/30通过；结论章对齐QA：16/16通过；案例重选QA：7/7通过。
 - 中英文摘要对齐QA：28/28通过；它只核验两份摘要内容底稿与冻结结果和边界的一致性，学校格式与官方英文赛事名仍待定稿。
 - 候选参考文献QA：6/6通过；当前候选来源26项；引用追溯为57条来源出现、51处显式占位。
-- V17工作稿输入新鲜度：8/8当前；材料包快照：27/27当前；材料包审计：16/16通过。
+- V17工作稿输入新鲜度：9/9当前；材料包快照：27/27当前；材料包审计：16/16通过。
 - 内部非提交交接包：默认26项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
 - 全链路健康检查：13项已有门禁必须同时通过；其结果写入 `09_quality/r01_full_package_healthcheck_v1.csv`。
 

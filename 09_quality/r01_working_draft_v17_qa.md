@@ -2,13 +2,13 @@
 
 ## 范围
 
-本检查覆盖 `G2-04-READ-EXAM001 + G8-02-EXAM001-WORKING-DRAFT-INTEGRATION` 生成的 `10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx`。V17为材料整合工作稿，不是提交版、匿名送审版或学校格式终验版。
+本检查覆盖 `G2-04-READ-EXAM001 + G8-02-EXAM001-WORKING-DRAFT-INTEGRATION + G8-09-R01-ENGLISH-ABSTRACT-WORKING-DRAFT-INTEGRATION` 生成的 `10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx`。V17为材料整合工作稿，不是提交版、匿名送审版或学校格式终验版。
 
 ## 输入与追溯
 
-- 输入清单：`10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json`。
-- 候选来源为21项；`build_r01_candidate_references.py`与`validate_r01_candidate_references.py`均通过，后者为6/6。
-- `audit_r01_citation_trace.py`检出52条来源ID出现、46处显式引文占位；`METH-008`有候选映射和BibTeX键`yu2024physicsconsistency`。
+- 输入清单：`10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json`，包括六章正文、中英文摘要内容底稿与候选参考文献，共9项哈希输入。
+- 候选来源为26项；`build_r01_candidate_references.py`与`validate_r01_candidate_references.py`均通过，后者为6/6。
+- `audit_r01_citation_trace.py`检出57条来源ID出现、51处显式引文占位；`METH-008`有候选映射和BibTeX键`yu2024physicsconsistency`。
 
 ## 文本与容器检查
 
@@ -17,7 +17,8 @@
 | DOCX容器 | `unzip -t`检查全部文件OK | 通过 |
 | 第三章受限段落 | DOCX XML检出`METH-008`，并保留SEC模型、高考数据和命题结论不迁移的限制 | 通过 |
 | 参考文献条目 | DOCX XML检出于海波等（2024）条目 | 通过 |
-| 页面规格 | LibreOffice结构性转换PDF为25页、595.304 x 841.89 pt（A4） | 通过 |
+| 英文摘要页 | DOCX XML检出`ABSTRACT (Content Working Draft)`及英文摘要的219个分析单元边界表述 | 通过 |
+| 页面规格 | 渲染为30页、595.304 x 841.89 pt（A4）；英文摘要占第3至4页 | 通过 |
 | 中文渲染 | 当前LibreOffice环境缺少可用CJK字体，中文仍不作为逐页排版终验 | 不放行中文排版 |
 
 ## 受限使用核对
@@ -26,7 +27,7 @@
 
 ## 输入新鲜度复核
 
-`validate_working_draft_freshness.py`将V17输入清单中的8项SHA-256与当前摘要、六章源文件和候选参考文献逐项比较，结果为8/8当前。该结论只表示V17仍对应当前输入文件，不评价这些输入的学术质量，也不替代中文逐页排版终验。
+`validate_working_draft_freshness.py`将V17输入清单中的9项SHA-256与当前中英文摘要、六章源文件和候选参考文献逐项比较，结果为9/9当前。该结论只表示V17仍对应当前输入文件，不评价这些输入的学术质量，也不替代中文逐页排版终验。
 
 ## 复跑命令
 

@@ -20,8 +20,8 @@ from docx.shared import Cm, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[2]
 MANUSCRIPT_DIR = ROOT / "08_manuscript"
-OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v16.docx"
-MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v16_inputs.json"
+OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx"
+MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json"
 CHAPTERS = [
     MANUSCRIPT_DIR / "01_introduction.md",
     MANUSCRIPT_DIR / "02_theory.md",
@@ -34,6 +34,8 @@ FONT_CN = "Arial Unicode MS"
 FONT_HEADING = "Arial Unicode MS"
 FONT_EN = "Times New Roman"
 REFERENCE_CANDIDATE_PATH = MANUSCRIPT_DIR / "07_candidate_references.md"
+CHINESE_ABSTRACT_PATH = MANUSCRIPT_DIR / "00_abstract_content_draft.md"
+ENGLISH_ABSTRACT_PATH = MANUSCRIPT_DIR / "00_abstract_en_content_draft.md"
 
 
 def set_run_font(run, name: str, size: float, bold: bool = False, color: RGBColor | None = None) -> None:
@@ -161,7 +163,7 @@ def add_cover(document: Document) -> None:
         document.add_paragraph()
     metadata = [
         "学位类别：非全日制硕士专业学位",
-        "版本：R01可追溯描述性结果工作稿 V16",
+        "版本：R01可追溯描述性结果工作稿 V17",
         "状态：非提交工作稿；不含个人信息、签名页或匿名送审处理",
         "生成日期：2026-07-25",
     ]
@@ -185,6 +187,14 @@ def add_text_paragraph(document: Document, text: str, style: str | None = None, 
         paragraph.paragraph_format.first_line_indent = Cm(0)
     run = paragraph.add_run(strip_markdown(text))
     set_run_font(run, FONT_CN, 12)
+
+
+def add_english_text_paragraph(document: Document, text: str, indent: bool = True) -> None:
+    paragraph = document.add_paragraph()
+    if not indent:
+        paragraph.paragraph_format.first_line_indent = Cm(0)
+    run = paragraph.add_run(strip_markdown(text))
+    set_run_font(run, FONT_EN, 12)
 
 
 def add_source_numbered_paragraph(document: Document, text: str) -> None:
@@ -291,9 +301,18 @@ def main() -> None:
 
     abstract_heading = document.add_heading("摘 要（内容工作稿）", level=1)
     abstract_heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    for line in (MANUSCRIPT_DIR / "00_abstract_content_draft.md").read_text(encoding="utf-8").splitlines()[2:]:
+    for line in CHINESE_ABSTRACT_PATH.read_text(encoding="utf-8").splitlines()[2:]:
         if line.strip():
             add_text_paragraph(document, line, indent=False)
+    document.add_page_break()
+
+    english_abstract_heading = document.add_heading("ABSTRACT (Content Working Draft)", level=1)
+    english_abstract_heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    for run in english_abstract_heading.runs:
+        set_run_font(run, FONT_EN, 16, bold=True)
+    for line in ENGLISH_ABSTRACT_PATH.read_text(encoding="utf-8").splitlines()[2:]:
+        if line.strip():
+            add_english_text_paragraph(document, line, indent=False)
     document.add_page_break()
 
     contents = document.add_heading("目 录（工作稿）", level=1)
@@ -314,7 +333,8 @@ def main() -> None:
     document.add_page_break()
     document.add_heading("工作稿使用说明", level=1)
     notes = [
-        "本文件由当前六章Markdown、摘要内容底稿和R01图件自动生成，供写作、版式检查和后续修订使用。",
+        "本文件由当前六章Markdown、中英文摘要内容底稿和R01图件自动生成，供写作、版式检查和后续修订使用。",
+        "英文摘要为内容工作稿，其中赛事与阶段英文表述尚待按学校当期要求和官方术语定稿。",
         "本文件不包含作者、导师、学号、签名、答辩委员会、原创性声明或匿名送审处理，不得作为提交、盲审或归档版本。",
         "正式版须以实际答辩期学院要求、学校专硕封皮和归档签名页、参考文献终核、AI披露及个人信息为准。",
     ]
@@ -329,7 +349,7 @@ def main() -> None:
         "generated_on": "2026-07-25",
         "source_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
-            for path in [*CHAPTERS, MANUSCRIPT_DIR / "00_abstract_content_draft.md", REFERENCE_CANDIDATE_PATH]
+            for path in [*CHAPTERS, CHINESE_ABSTRACT_PATH, ENGLISH_ABSTRACT_PATH, REFERENCE_CANDIDATE_PATH]
         },
         "figure_inputs": [
             "08_manuscript/figures/figure_1_1_r01_technical_route_v1.png",
