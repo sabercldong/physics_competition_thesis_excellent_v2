@@ -393,6 +393,9 @@
 - [x] G2-03-SOLO-APPLICATION-PACKET-STATUS-RECONCILIATION 收束SOLO应用接入包状态
   - 进度：修复 `solo_application_integration_packet_v1.md` 中“正文未改写、候选链未开始”的过时状态，改为已执行记录并保留原接入边界、复跑顺序和不放行规则。接入包QA继续20/20通过；不新增正文主张、外部数据或理论效度，不将相邻应用升级为SOLO原典。
 
+- [x] G2-03-ACCESS-RECHECK 复核SOLO核心来源合法访问入口
+  - 进度：Perlego可定位SOLO原书的登录订阅阅读入口，SAGE PDF链接仍回到受限摘要页；两者均未提供本项目实际可读的全文。已将订阅、机构访问、购买或馆际互借明确为后续获取路径；不以入口、摘要或目录替代全文阅读、关键页码或理论迁移论证。
+
 - [x] G2-03/G2-04/G1-07-ONLINE-SOURCE-RECHECK 复查核心全文与第35届分值网络入口
   - 进度：复查结果分别登记于 `02_literature/core_source_access_recheck_20260725.md` 和 `09_quality/cpho35_score_source_retrieval_audit_20260725.md`。ScienceDirect仅提供SOLO原书目录与受限购买入口，CNKI仅提供龚枭（2020）题录/摘要，均未升级为全文阅读。第35届官方竞赛网入口可定位试题解答，赛区通知正文可确认复赛理论满分320分及全国命题组制定评分标准；非官方镜像虽可见8题各40分和分问细则，却未核验授权或版本链，故不下载、不入库、不关闭逐题分值缺口。
 
