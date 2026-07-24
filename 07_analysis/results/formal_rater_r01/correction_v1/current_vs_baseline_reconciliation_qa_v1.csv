@@ -1,0 +1,9 @@
+﻿check_id,check_item,expected,actual,status,source
+COR-QA-01,基线输入哈希,23f76e0c63fad60fa02e54a4b51aeef3e83752da7fb20b46346027aa5a11e045,23f76e0c63fad60fa02e54a4b51aeef3e83752da7fb20b46346027aa5a11e045,通过,07_analysis/results/reviewed/final_descriptive_output_report.md
+COR-QA-02,当前输入哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,07_analysis/results/formal_rater_r01/correction_v1/final_descriptive_output_report.md
+COR-QA-03,受控变更键数,4,4,通过,07_analysis/results/formal_rater_r01/r01_correction_adjudication_change_manifest_v1.csv
+COR-QA-04,基线质疑创新出现数,87,87,通过,07_analysis/results/reviewed/final_dimension_presence.csv
+COR-QA-05,当前质疑创新出现数,84,84,通过,07_analysis/results/formal_rater_r01/correction_v1/final_dimension_presence.csv
+COR-QA-06,当前统计输出源哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,07_analysis/results/formal_rater_r01/correction_v1/final_dimension_presence.csv
+COR-QA-07,第四章当前质疑创新数字,84/219/38.36%,84/219/38.36%,通过,08_manuscript/04_results.md
+COR-QA-08,R01结果资格复跑,44/44通过,44/44通过,通过,09_quality/r01_results_eligibility_qa_v1.csv
