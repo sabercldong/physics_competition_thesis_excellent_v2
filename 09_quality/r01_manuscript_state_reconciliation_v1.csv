@@ -1,0 +1,11 @@
+﻿audit_id,file,line_numbers,current_phrase,decision,authoritative_evidence,rewrite_or_retention_direction,check_status
+STATE-01,08_manuscript/01_introduction.md,13,正式统计结果尚未形成,修订,09_quality/r01_results_eligibility_qa_v1.csv（44/44通过）；08_manuscript/04_results.md,改为已形成R01版本化描述性结果；保留过程自声明、外部效度和教学证据边界。,通过
+STATE-02,08_manuscript/01_introduction.md,45,第2至第4个问题必须等待真实评分者编码,修订,07_analysis/data/final_coding_r01_correction_v1.csv；09_quality/r01_results_eligibility_qa_v1.csv,改为第2至第4问可在R01当前编码口径下作描述性回答；不得扩展为外部效度、学生能力或趋势结论。,通过
+STATE-03,08_manuscript/01_introduction.md,51,在正式阶段组织评分者培训、独立编码、一致性计算和分歧裁决,修订,07_analysis/results/formal_rater_r01/correction_v1/；09_quality/r01_results_eligibility_qa_v1.csv,改为已归档的RATER-A/B、ADJ-01、ADJ-02和R01流程，并明确独立性仅按自声明登记。,通过
+STATE-04,08_manuscript/02_theory.md,56,仍需真实评分者一致性和分歧裁决结果支持,修订,09_quality/r01_results_eligibility_qa_v1.csv；07_analysis/data/final_coding_evidence_r01_v1.csv,改为当前结果支持项目内描述性报告，但不构成框架外部效度或评分过程独立验证。,通过
+STATE-05,08_manuscript/02_theory.md,71,分歧裁决和正式手册冻结,修订,04_framework/；07_analysis/results/formal_rater_r01/correction_v1/,表内改为已归档的裁决与版本化编码表，并另列文献理论依据与外部效度仍待补足。,通过
+STATE-06,08_manuscript/03_methods.md,13,154条正式编码前需人工校对的问题,修订,R01 A/B/C/D组回填、ADJ-01/ADJ-02与09_quality/r01_results_eligibility_qa_v1.csv,从“正式编码前待处理”改为历史校对队列及其已接收的R01核对/补证状态；第35届分值边界仍单列未闭合。,通过
+STATE-07,08_manuscript/03_methods.md,57,尚未完成真实双评分者编码和正式分歧裁决,修订,07_analysis/data/final_coding_r01_correction_v1.csv；09_quality/r01_results_eligibility_qa_v1.csv,改为已形成R01当前版本化编码和描述性结果；身份、独立性与实际过程不可由项目独立验证。,通过
+STATE-08,08_manuscript/01_introduction.md,23,尚未完成原书全文阅读和关键页码摘录,保留,08_manuscript/reference_readiness_register.csv；02_literature/solo_fulltext_access_audit.md,保留SOLO全文缺口和“SOLO启发”保守表述。,通过
+STATE-09,08_manuscript/01_introduction.md,45,没有真实教师或课堂证据,保留,05_fieldwork/；06_teaching_validation/；08_manuscript/05_cases_and_diagnosis.md,保留教学转化只能回答设计建议、不能回答是否有效的限制。,通过
+STATE-10,08_manuscript/06_conclusion.md,21,第35届分值边界仍无正式来源,保留,09_quality/r01_results_eligibility_qa_v1.csv（RE-QA-B4）；D组更正说明,保留不进行第35届分值加权或分值比较的限制。,通过
