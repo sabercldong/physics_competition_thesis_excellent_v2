@@ -38,6 +38,8 @@ python3 07_analysis/scripts/validate_working_draft_freshness.py --require-curren
 
 # 4. 核验材料包快照、总状态与运行手册入口
 python3 07_analysis/scripts/build_r01_material_package_snapshot.py --validate
+python3 07_analysis/scripts/build_r01_internal_material_package.py --force
+python3 07_analysis/scripts/build_r01_internal_material_package.py --validate
 python3 07_analysis/scripts/validate_current_material_package_audit.py
 python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py
 ```
@@ -48,6 +50,7 @@ python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py
 - 结果资格QA：51/51通过；第四章当前结果整合QA：30/30通过；案例重选QA：7/7通过。
 - 候选参考文献QA：6/6通过；当前候选来源26项；引用追溯为57条来源出现、51处显式占位。
 - V17工作稿输入新鲜度：8/8当前；材料包快照：22/22当前；材料包审计：16/16通过。
+- 内部非提交交接包：默认21项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
 
 ## 不能由本协议证明的事项
 

@@ -15,7 +15,7 @@
 | 案例与教学转化材料 | 案例保持题干—解答定位；教学部分已建立任务、支架与过程性产出设计参照 | `08_manuscript/05_cases_and_diagnosis.md`；`07_analysis/results/formal_rater_r01/r01_case_reselection_evidence_dossier_v1.csv` | 从任务结构提出待实施的教学任务、支架与评价设计建议 |
 | 候选引用链 | 26项已读且限边界来源已连接正文ID、BibTeX、映射和候选参考文献 | `08_manuscript/07_candidate_references.md`；`09_quality/g8_02_bib_lite_mapping.csv`；`09_quality/r01_candidate_references_qa_v1.md`；`09_quality/r01_citation_trace_v1.md` | 仅按每条来源登记的允许范围支撑理论、方法或任务设计边界 |
 | Word工作稿 | V17无个人信息的工作稿、输入哈希清单与QA已生成；DOCX容器、A4分页和新增中英文参考文献可定位，当前8项输入哈希均与清单一致 | `10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx`；`10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json`；`09_quality/r01_working_draft_v17_qa.md`；`09_quality/r01_working_draft_v17_freshness_qa.csv` | 材料组织、文本、英文条目与结构性版式检查 |
-| 材料包快照 | 22项关键输入/输出已登记相对路径、存在状态与SHA-256；当前逐项哈希为22/22一致 | `10_outputs/material_package/R01_current_material_package_manifest_v1.csv`；`07_analysis/scripts/build_r01_material_package_snapshot.py` | 复现前确认快照未因后续文件改动而失效；V17仍仅是本地非提交工作稿 |
+| 材料包快照与内部交接 | 22项关键输入/输出已登记相对路径、存在状态与SHA-256；当前逐项哈希为22/22一致；可重建默认21项的内部交接目录 | `10_outputs/material_package/R01_current_material_package_manifest_v1.csv`；`07_analysis/scripts/build_r01_material_package_snapshot.py`；`07_analysis/scripts/build_r01_internal_material_package.py` | 复现前确认快照未因后续文件改动而失效；内部交接包不含原始试卷/解答或V17，V17仍仅是本地非提交工作稿 |
 | 学校公开规则基线 | 专业学位封皮/签名页附件、GB/T 7714-2015、30篇基线、匿名评审与当期查重处理规则均已登记 | `01_positioning/school_requirements_register.csv`；`01_positioning/ecnu_official_thesis_format_sources.md` | 最终格式与提交准备的公开基线，不替代答辩期学院细则 |
 
 ## 二、当前量化核对
