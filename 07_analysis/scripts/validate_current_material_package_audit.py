@@ -56,16 +56,16 @@ def main() -> None:
     expected = [
         ("MPA-QA-01", "分析单元数", str(item_count), "219", item_count == 219),
         ("MPA-QA-02", "当前编码记录数", str(coding_count), "876", coding_count == 876),
-        ("MPA-QA-03", "全文已读来源数", str(read_count), "29", read_count == 29),
+        ("MPA-QA-03", "全文已读来源数", str(read_count), "30", read_count == 30),
         ("MPA-QA-04", "候选工作稿来源数", str(candidate_count), "21", candidate_count == 21),
-        ("MPA-QA-05", "距离30篇最小差额", str(max(0, 30 - read_count)), "1", max(0, 30 - read_count) == 1),
+        ("MPA-QA-05", "距离30篇最小差额", str(max(0, 30 - read_count)), "0", max(0, 30 - read_count) == 0),
         ("MPA-QA-06", "结果资格QA", f"{sum(row['status'] == '通过' for row in result_qa)}/{len(result_qa)}", "51/51", result_passed and len(result_qa) == 51),
         ("MPA-QA-07", "引用追溯", f"{trace_total}/{trace_placeholders}", "52/46", trace_total == 52 and trace_placeholders == 46),
         ("MPA-QA-08", "V17工作稿文件", "存在" if V17.is_file() else "缺失", "存在", V17.is_file()),
         ("MPA-QA-09", "V17输入清单", "存在" if V17_MANIFEST.is_file() else "缺失", "存在", V17_MANIFEST.is_file()),
         ("MPA-QA-10", "V17工作稿QA", "存在" if V17_QA.is_file() else "缺失", "存在", V17_QA.is_file()),
         ("MPA-QA-11", "V17输入新鲜度", "当前" if draft_inputs_current else "已过期或缺失", "当前", draft_inputs_current),
-        ("MPA-QA-12", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "42 / 29 / 21", "至少1条", "51/51", "V17"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "42 / 29 / 21", "至少1条", "51/51", "V17"])),
+        ("MPA-QA-12", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "43 / 30 / 21", "数量基线", "51/51", "V17"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "43 / 30 / 21", "数量基线", "51/51", "V17"])),
         ("MPA-QA-13", "审计中的独立验证边界", "存在" if "自声明" in audit and "项目独立验证" in audit else "缺失", "存在", "自声明" in audit and "项目独立验证" in audit),
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
