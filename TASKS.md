@@ -661,6 +661,7 @@
 - [-] G8-07 学校规范与匿名评审版检查
   - PREP：已完成 `G8-07-PREP`，新增 `09_quality/g8_07_prep_school_format_checklist.csv`、`09_quality/g8_07_prep_anonymous_review_risk_register.csv` 和 `09_quality/g8_07_prep_markdown_to_submission_plan.md`，建立学校格式、匿名评审、AI披露、查重、伦理、附录、数据可用性和Markdown转提交版的准备清单；该任务不代表学校正式规范已取得，也不代表最终Word/PDF或匿名版已经生成。
   - 下一步：执行 `G8-08-PREP`，建立最终提交与归档包准备清单；若收到真实A/B评分者模板，则优先回到 `G4-01`。
+  - MAPPING：已完成 `G8-07-ECNU-PROFESSIONAL-TEMPLATE-MAPPING`，新增 `09_quality/ecnu_professional_template_mapping_v1.md`，以物理学院专业学位历史样张和研究生院专业学位公开规范为依据，建立当前六章稿、前置页、参考文献、附录与 Word 样式的转换映射；旧结果草稿和七章占位文件明确不进入当前提交路线。学院 2026 年模板与提交规则仍未取得。
 - [-] G8-08 最终提交与归档
   - PREP：已完成 `G8-08-PREP`，新增 `09_quality/g8_08_prep_final_submission_readiness.csv`、`09_quality/g8_08_prep_archive_package_manifest.csv` 和 `09_quality/g8_08_prep_finalization_roadmap.md`，建立最终提交准备度门禁、研究准备包归档清单和从当前状态走向真实提交版的最短路线；该任务不生成最终Word/PDF、匿名版、查重版、AI披露定稿或最终提交包。
   - 下一步：执行 `G8-09-PREP`，将所有最终提交阻塞项压缩为一张可销项总表；若收到真实A/B评分者模板，则优先回到 `G4-01`。
