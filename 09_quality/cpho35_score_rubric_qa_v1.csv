@@ -1,0 +1,18 @@
+﻿check_id,check_item,status,source
+SCORE35-QA-01,台账恰有26行,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-02,台账与第35届分析单元一一对应,通过,cpho35_score_rubric_v1.csv; item_index.csv
+SCORE35-QA-03,来源哈希一致,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-04,来源页码、位置与E1边界完整,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-05,未误称官方版本已独立核验,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-06,限制跨届与学生推断,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-07,第1题分问分值与台账规则一致且合计40分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-08,第2题分问分值与台账规则一致且合计40分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-09,第3题分问分值与台账规则一致且合计40分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-10,第4题分问分值与台账规则一致且合计40分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-11,第5题分问分值与台账规则一致且合计40分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-12,第6题分问分值与台账规则一致且合计40分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-13,第7题分问分值与台账规则一致且合计40分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-14,第8题分问分值与台账规则一致且合计40分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-15,八题合计320分,通过,cpho35_score_rubric_v1.csv
+SCORE35-QA-16,item_index分值与台账一致,通过,item_index.csv
+SCORE35-QA-17,第5题替代解法不重复计分,通过,cpho35_score_rubric_v1.csv
