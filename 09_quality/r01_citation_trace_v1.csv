@@ -31,6 +31,7 @@
 08_manuscript/02_theory.md,91,METH-004,是,是,lombard2002intercoder,true,支持编码者一致性报告、逐变量报告、指标选择说明、样本/训练/分歧处理记录,不得直接采用其阈值作为本项目通过线；不得替代真实评分者数据或证明编码框架有效,通过
 08_manuscript/03_methods.md,5,ST-002,是,是,bao2009scientificreasoning,true,支持区分物理内容知识、科学推理测评表现和试题任务要求,不得迁移为本项目学生数据或教学效果；不得未经核验引用SOM具体表格,通过
 08_manuscript/03_methods.md,5,ST-003,是,是,bao2022istar,true,支持区分任务要求、学生表现和量化测评模型,不得证明本项目编码框架有效；不得推出复赛试题分布或学生能力水平,通过
+08_manuscript/03_methods.md,5,ST-015,是,是,alsalmani2021rubric,true,支持学生自由作答中可见证据与题目任务要求应明确区分，并说明按题目部分记录时须公开规则版本和分歧处理,不得迁移Bloom五级量规、大学样本、教学比较、显著性、一致性数值或效度结论；不得证明本项目编码有效或学生能力,通过
 08_manuscript/03_methods.md,13,METH-006,是,是,wei2022visualrepresentation,true,支持分析单位应随研究问题与材料性质明确界定并报告纳入排除边界,不得迁移教材图件分类规则；不得验证本项目小问拆分正确性、四维框架有效性或竞赛结论,通过
 08_manuscript/03_methods.md,15,ST-014,是,是,wang2024visualphysics,true,支持中国物理考试题任务级分析中分析单位和图件纳入排除边界的报告原则,不得迁移VBT/Bloom类别、364任务、四地中考比例、一致性数值或命题建议；不得验证本项目编码效度,通过
 08_manuscript/03_methods.md,39,METH-004,是,是,lombard2002intercoder,true,支持编码者一致性报告、逐变量报告、指标选择说明、样本/训练/分歧处理记录,不得直接采用其阈值作为本项目通过线；不得替代真实评分者数据或证明编码框架有效,通过

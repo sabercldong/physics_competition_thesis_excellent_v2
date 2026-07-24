@@ -35,6 +35,7 @@ FORMATTED = {
     "METH-006": "Wei B, Wang C, Tan L. Visual representation of optical content in China’s and Singapore’s junior secondary physics textbooks[J]. Physical Review Physics Education Research, 2022, 18(2): 020138. DOI:10.1103/PhysRevPhysEducRes.18.020138.",
     "METH-007": "McHugh M L. Interrater reliability: The kappa statistic[J]. Biochemia Medica, 2012, 22(3): 276-282. DOI:10.11613/BM.2012.031.",
     "ST-014": "Wang C, Wei B. Analysis of visual-based physics questions of the senior high school entrance examination in China[J]. Physical Review Physics Education Research, 2024, 20(1): 010112. DOI:10.1103/PhysRevPhysEducRes.20.010112.",
+    "ST-015": "Al-Salmani F, Thacker B. Rubric for assessing thinking skills in free-response exam problems[J]. Physical Review Physics Education Research, 2021, 17(1): 010135. DOI:10.1103/PhysRevPhysEducRes.17.010135.",
 }
 
 
