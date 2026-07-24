@@ -647,6 +647,7 @@
   - FOLLOWUP：已完成 `G8-03-FOLLOWUP`，新增 `09_quality/g8_03_followup_manuscript_number_actions.csv` 和 `09_quality/g8_03_followup_manuscript_number_report.md`，形成40条逐章处理建议；第1至3章多数数字可作为准备事实保留，第4章内部预演数字需改为占位或移入质量说明，第5章候选案例与教师/学生困难表需降为候选池、案例提纲或采证工具。
   - APPLY-LITE：已完成 `G8-03-APPLY-LITE`，更新 `08_manuscript/04_results.md` 和 `08_manuscript/05_cases_and_diagnosis.md`，新增 `09_quality/g8_03_apply_lite_revision_log.csv`；第四章已改为正式结果占位，第五章已改为候选材料、待核实提纲和采证工具。
   - 下一步：跟随 `G8-04` 子任务继续做第1至5章残留格式、术语和证据边界检查。
+  - R01-MANUSCRIPT-FIGURES：已完成 `G7-04-R01-MANUSCRIPT-FIGURES`，新增 `07_analysis/scripts/build_r01_manuscript_figures.py`，从当前更正编码表、维度出现表和等级分布表生成图4-1、图4-2及图件哈希清单；第四章已引用两张图。脚本先核验编码表SHA-256与统计源哈希，图件仅用于R01可追溯描述性结果。
 - [-] G8-04 术语、编号、交叉引用和格式统一
   - PREP：已完成 `G8-04-PREP`，新增 `09_quality/g8_04_prep_term_crossref_audit.csv` 和 `09_quality/g8_04_prep_report.md`，登记12项术语、章节状态和交叉引用检查；已轻量修订第1章、第2章和第3章中4处与第4章、第5章新状态不一致或过时的句子。
   - FORMAT-LITE：已完成 `G8-04-FORMAT-LITE`，新增 `09_quality/g8_04_format_lite_audit.csv` 和 `09_quality/g8_04_format_lite_report.md`，检查第1至5章标题层级、表格格式、引文占位格式、Mermaid图、文件路径和术语首次出现形式；已轻量修订第1章、第3章和第4章中的术语、路径和标题不一致问题。
