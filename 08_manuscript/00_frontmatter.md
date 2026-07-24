@@ -22,4 +22,4 @@
 
 ## 英文摘要
 
-已建立 `00_abstract_en_content_draft.md` 作为英文内容底稿，仍须在中文摘要、学校格式和术语统一后定稿。特别核对“复赛”对应的官方英文表达，不能直接沿用原初稿中的 `preliminary round`；当前底稿中的阶段表述仅为工作译法，不主张为官方赛事名称。
+已建立 `00_abstract_en_content_draft.md` 作为英文内容底稿，仍须在中文摘要、学校格式和术语统一后定稿。术语核验见 `01_positioning/competition_english_terminology_verification.md`：当前可采用与同行评议期刊英文页一致的描述性赛事名称，但“复赛”阶段的官方英文表达仍待竞赛委员会或学院模板确认，不能直接沿用原初稿中的 `preliminary round`；当前底稿中的阶段表述仅为工作译法，不主张为官方赛事名称。

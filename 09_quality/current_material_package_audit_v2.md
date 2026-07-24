@@ -14,10 +14,11 @@
 | 第四章与图件 | 结果章数值、边界句、两张图件哈希与冻结输出可逐项断言；当前整合QA为30/30通过，旧V1更正前基线被隔离 | `08_manuscript/04_results.md`；`08_manuscript/figures/`；`09_quality/r01_results_manuscript_integration_qa_v2.csv`；结果资格QA的`RE-QA-M*`与`RE-QA-B*` | 描述性结果；不作显著性、因果、学生能力或教学效果推断 |
 | 中文摘要工作底稿 | 摘要中的样本量、四维出现、等级判断、共现和限制语均回到冻结编码；摘要对齐QA为18/18通过 | `08_manuscript/00_abstract_content_draft.md`；`07_analysis/scripts/validate_r01_abstract_alignment.py`；`09_quality/r01_abstract_alignment_qa_v1.csv` | 仅为中文内容底稿；英文摘要、关键词数量和学校格式仍待当期规则确认 |
 | 英文摘要工作底稿 | 英文摘要仅作内容翻译底稿，统计、共现和限制语与中文摘要及冻结编码一致；中英文摘要对齐QA为28/28通过 | `08_manuscript/00_abstract_en_content_draft.md`；`07_analysis/scripts/validate_r01_abstract_alignment.py`；`09_quality/r01_abstract_alignment_qa_v1.csv` | 不是学校格式终稿；“复赛”仅用描述性工作译法，不主张为官方英文赛事名；当前V17生成器未纳入该底稿 |
+| 赛事英文术语 | 已核验可用于描述性赛事名称的同行评议期刊英文表达，但中国物理学会阶段官方英文对照未在本次访问范围内找到 | `01_positioning/competition_english_terminology_verification.md` | 赛事名和 `second-round` 继续只是工作译法；不得写成官方英文名称或学校格式定稿 |
 | 案例与教学转化材料 | 案例保持题干—解答定位；教学部分已建立任务、支架与过程性产出设计参照 | `08_manuscript/05_cases_and_diagnosis.md`；`07_analysis/results/formal_rater_r01/r01_case_reselection_evidence_dossier_v1.csv` | 从任务结构提出待实施的教学任务、支架与评价设计建议 |
 | 候选引用链 | 26项已读且限边界来源已连接正文ID、BibTeX、映射和候选参考文献 | `08_manuscript/07_candidate_references.md`；`09_quality/g8_02_bib_lite_mapping.csv`；`09_quality/r01_candidate_references_qa_v1.md`；`09_quality/r01_citation_trace_v1.md` | 仅按每条来源登记的允许范围支撑理论、方法或任务设计边界 |
 | Word工作稿 | V17无个人信息的工作稿、输入哈希清单与QA已生成；DOCX容器、A4分页和新增中英文参考文献可定位，当前8项输入哈希均与清单一致 | `10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx`；`10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json`；`09_quality/r01_working_draft_v17_qa.md`；`09_quality/r01_working_draft_v17_freshness_qa.csv` | 材料组织、文本、英文条目与结构性版式检查 |
-| 材料包快照与内部交接 | 26项关键输入/输出已登记相对路径、存在状态与SHA-256；当前逐项哈希为26/26一致；可重建默认25项的内部交接目录 | `10_outputs/material_package/R01_current_material_package_manifest_v1.csv`；`07_analysis/scripts/build_r01_material_package_snapshot.py`；`07_analysis/scripts/build_r01_internal_material_package.py` | 复现前确认快照未因后续文件改动而失效；内部交接包不含原始试卷/解答或V17，V17仍仅是本地非提交工作稿 |
+| 材料包快照与内部交接 | 27项关键输入/输出已登记相对路径、存在状态与SHA-256；当前逐项哈希为27/27一致；可重建默认26项的内部交接目录 | `10_outputs/material_package/R01_current_material_package_manifest_v1.csv`；`07_analysis/scripts/build_r01_material_package_snapshot.py`；`07_analysis/scripts/build_r01_internal_material_package.py` | 复现前确认快照未因后续文件改动而失效；内部交接包不含原始试卷/解答或V17，V17仍仅是本地非提交工作稿 |
 | 学校公开规则基线 | 专业学位封皮/签名页附件、GB/T 7714-2015、30篇基线、匿名评审与当期查重处理规则均已登记 | `01_positioning/school_requirements_register.csv`；`01_positioning/ecnu_official_thesis_format_sources.md` | 最终格式与提交准备的公开基线，不替代答辩期学院细则 |
 
 ## 二、当前量化核对
@@ -34,7 +35,7 @@
 | 文献台账 / 全文已读 / 工作稿候选 | 43 / 30 / 26 | `final_reference_closure_matrix_v1.md` | 26项已进入V17候选工作稿；另有4项SOLO应用待第二章稳定后受控接入 |
 | 当前与30篇基线的最小全文阅读差额 | 0 | `final_reference_closure_matrix_v1.md` | 已达到数量基线；仍不自动满足相关性、著录、正文闭环和当期格式要求 |
 | V17工作稿 | 25页A4；输入新鲜度8/8当前 | `r01_working_draft_v17_qa.md`；`r01_working_draft_v17_freshness_qa.csv` | 当前LibreOffice环境不能验证中文逐页排版 |
-| 材料包快照 | 26/26当前 | `R01_current_material_package_manifest_v1.csv` | 路径、存在状态与SHA-256均与当前文件一致；变动后必须重建快照 |
+| 材料包快照 | 27/27当前 | `R01_current_material_package_manifest_v1.csv` | 路径、存在状态与SHA-256均与当前文件一致；变动后必须重建快照 |
 
 ## 三、尚未闭合的关键缺口
 
