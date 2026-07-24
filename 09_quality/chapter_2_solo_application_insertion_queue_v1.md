@@ -11,6 +11,7 @@
 | C2-SOLO-APP-01 | 2.2节第一段之后 | `SOLO-APP-001` | 项目任务要求可作为SOLO启发的认知复杂性对象；复杂性不等于经验难度 | 本项目L1-L4效度、巴西数学结果、难度参数或学生表现 |
 | C2-SOLO-PHY-01 | 2.2节第二段之后 | `SOLO-PHY-001` | 国内高中物理存在可全文核验的单题SOLO应用；需区分学生作答与题目任务要求 | 竞赛研究空白、单题总体化、教学效果或学生能力 |
 | C2-SOLO-PHY-02 | 紧接前项之后 | `SOLO-PHY-002` | 国内高中物理考试中可见SOLO相关的小题分析、规则示例与汇总操作；本项目须说明自身不同的单位和汇总边界 | SOLO-LPs乘积、LPs层级、分值加权、学生能力、高考分布或教学建议 |
+| C2-SOLO-PHY-03 | 紧接前项之后 | `SOLO-PHY-003` | 题干、情境与参考答案可并读为任务材料；任务分析必须与学生作答、成绩和区分度证据分开 | Bloom/SOLO标签、两题判定、得分点、文字量、学生能力或教学结论 |
 
 ## 建议插入文本
 
@@ -32,13 +33,19 @@
 
 > 另有高中物理考试研究按小题建立SOLO相关分类并公开判定示例，但其将SOLO与学习进阶赋分相乘，并按试题分值进行汇总。该操作化可提示本研究交代分析单位、规则、例证与汇总方式，却不能被视为本项目L1至L4的定义或统计依据；本研究不采用其乘积、分值加权和学生科学思维难度解释。[引文占位：SOLO-PHY-002；仅支持透明报告与操作化区分]
 
+### C2-SOLO-PHY-03
+
+可紧接前段加入，作为材料与表现证据的边界提醒：
+
+> 高中物理综合题评析可同时定位题干、情境及参考答案中的任务材料；但由此得到的是任务要求或预设解答路径，而非学生已经表现出的能力、实际得分或题目区分度。本研究因此分别保存题干和参考解答定位，不将当前试题编码解释为参赛学生的学习结果。[引文占位：SOLO-PHY-003；仅支持材料—表现区分]
+
 ## 合并后的必要同步动作
 
-1. 在 `02_literature/references.bib` 增加三个已核验条目，键分别为 `molmatos2025solo`、`xiao2020solo` 与 `yu2025sololps`；
-2. 在 `09_quality/r01_candidate_references_mapping_v1.csv`、`08_manuscript/07_candidate_references.md` 与生成器中，将三条来源从“阅读台账候选”升级为“实际正文候选”；
+1. 在 `02_literature/references.bib` 增加四个已核验条目，键分别为 `molmatos2025solo`、`xiao2020solo`、`yu2025sololps` 与 `wangyu2023bloomsolo`；
+2. 在 `09_quality/r01_candidate_references_mapping_v1.csv`、`08_manuscript/07_candidate_references.md` 与生成器中，将四条来源从“阅读台账候选”升级为“实际正文候选”；
 3. 重跑 `python3 07_analysis/scripts/validate_r01_candidate_references.py` 与 `python3 07_analysis/scripts/audit_r01_citation_trace.py`；
 4. 仅在第二章正文、引用映射和参考文献同步通过后，才生成新的非提交Word工作稿；
-5. 不因新增三条来源删除第二章原有的SOLO原典待核验、前结构取舍、竞赛研究全文或外部效度限制。
+5. 不因新增四条来源删除第二章原有的SOLO原典待核验、前结构取舍、竞赛研究全文或外部效度限制。
 
 ## 合并前检查
 
