@@ -477,6 +477,8 @@
   - 进度补充：完成 `G2-03-SOLO-APPLICATION-INSERTION-PREP`。新增第二章文献插入队列，将 `SOLO-APP-001` 与 `SOLO-PHY-001` 转为两个可直接合并的受限段落，并列出引用映射、BibTeX、追溯检查与工作稿再生成的联动动作。因 `08_manuscript/02_theory.md` 正在并行编辑，本轮未直接改正文，也未把两条阅读台账来源提前写入候选参考文献。
 - [x] G1-06-CPHO35-SCORE-SOURCE-RETRIEVAL-AUDIT 审计第35届分值来源可得性
   - 进度：新增 `09_quality/cpho35_score_source_retrieval_audit_20260725.md`，对账8份项目内题目级分值边界表与中国物理学会第35届试题/解答官方页面。官方页可见但仅列出下载入口，附件当前自动访问失败；地方通知“理论320分”只停留在未能直读正文的检索线索。结论维持“待核实”：当前PDF未见分值不等于官方无评分细则，禁止逐题推算、分值加权、比较和趋势结论。
+- [x] G8-02-FINAL-REFERENCE-CLOSURE-MATRIX 形成最终参考文献关闭矩阵
+  - 进度：新增 `09_quality/final_reference_closure_matrix_v1.md`，从当前文献台账复算：25条登记来源中12条已读全文/相关段落、10条进入V8候选工作稿、2条已读待第二章受控合并、13条仍不可引用。以学校公开“至少30篇且含外文”基线拆分出18条新增全文阅读的类别配额、逐篇登记字段和最终放行门槛；未把题录/摘要凑入参考文献，未生成最终参考文献表。
 - [-] G2-04 完成物理竞赛试题研究综述
   - 进度：已启动 `G2-04-PREP`，新增 `02_literature/physics_competition_review_prep.md`，定位预赛量化分析、复赛SOLO研究、竞赛试题整体研究和核心素养视角等候选来源；已更新 `search_log.csv`、`reference_verification.csv` 和 `literature_matrix.csv`。已完成 `G2-04-FULLTEXT-PACKET`，新增 `02_literature/physics_competition_fulltext_request_packet.md` 和 `02_literature/physics_competition_screening_matrix.csv`。已完成 `G2-04-FULLTEXT-ACCESS`，确认 `PCOMP-001` 与 `PCOMP-005`仅有CNKI题录和期刊目录线索，`PCOMP-002`、`PCOMP-003`仅有题录/引用线索。已完成 `G2-04-PCOMP004-METADATA-RECOVERY`，以《物理教学探讨》官网目录纠正`PCOMP-004`为2020年第4期第39页起的期刊文章候选，原“2019年华中师大学位论文”线索不再采用；并完成 `G2-04-LOCAL-FULLTEXT-AUDIT`，确认本机项目、下载与文档目录未存五篇候选的独立可读全文。已完成 `G2-04-PCOMP002-ABSTRACT-METADATA-VERIFICATION`：CNKI节点页直接核验龚枭、华中师范大学、学科教学（物理）、2020年硕士论文身份及摘要可见状态；本次未下载或阅读全文，摘要不得替代全文，不得进入研究空白、方法比较、统计或教学建议。当前只完成候选来源定位、书目信息纠错、全文获取准备、访问审计和筛选模板，尚未获取全文或形成正式综述。
 - [-] G2-05 完成科学思维测评与教学研究综述
