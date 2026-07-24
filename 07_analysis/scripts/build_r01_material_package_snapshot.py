@@ -44,6 +44,10 @@ ARTIFACTS = [
     ("PKG-28", "定位与格式", "09_quality/ecnu_professional_format_reconciliation_20260725.md", "非全日制专业学位公开格式基线对账", "可随材料包提供；不构成当期学院提交确认"),
     ("PKG-29", "质量保证", "09_quality/r01_current_chapter_evidence_audit_v1.csv", "当前章节证据审计记录", "可随材料包提供；不验证人工过程或外部事实"),
     ("PKG-30", "质量保证", "09_quality/r01_current_chapter_evidence_audit_v1.md", "当前章节证据审计说明", "可随材料包提供；第二章文献与旧主张矩阵仍待处理"),
+    ("PKG-31", "教学设计", "06_teaching_validation/teaching_design_matrix.md", "R01结果到待实施教学设计的转化矩阵", "可随材料包提供；未收集学生或教师问题证据"),
+    ("PKG-32", "教学设计", "06_teaching_validation/r01_design_case_01_condition_relation_chain.md", "条件—关系链教学设计案例", "可随材料包提供；未实施，不证明教学效果"),
+    ("PKG-33", "教学设计", "06_teaching_validation/r01_design_case_02_state_energy_classification.md", "状态分类—平均能量关系教学设计案例", "可随材料包提供；未实施，不证明教学效果"),
+    ("PKG-34", "质量保证", "09_quality/r01_teaching_design_materials_qa_v1.csv", "教学设计材料QA", "可随材料包提供；只验证项目内可追溯性与边界"),
 ]
 
 
@@ -80,7 +84,7 @@ def build() -> None:
         "CSV逐项记录文件用途、分发边界与SHA-256。复跑方法见 `07_analysis/reproducibility_protocol.md`；"
         "未闭合条件见 `09_quality/current_material_package_audit_v2.md`。\n\n"
         "运行 `07_analysis/scripts/build_r01_internal_material_package.py --force` 可生成 `R01_internal_handoff_v1/`："
-        "默认复制21项允许内部交接的材料，并保留来源路径和SHA-256；不含原始试卷/解答、受限文献全文、私人数据或V17。"
+        f"默认复制{len([row for row in manifest_rows if row['distribution_boundary'].startswith('可随材料包提供')])}项允许内部交接的材料，并保留来源路径和SHA-256；不含原始试卷/解答、受限文献全文、私人数据或V17。"
         "该目录只用于项目内部交接和复现，不是公开发布包、匿名送审包、答辩包或正式提交包。\n\n"
         "原始试卷与解答的权利状态、学校格式、真实参与者材料和V17工作稿的提交资格均不因本清单而改变。\n",
         encoding="utf-8",

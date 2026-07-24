@@ -77,9 +77,9 @@ def main() -> None:
         ("MPA-QA-10", "V17输入清单", "存在" if V17_MANIFEST.is_file() else "缺失", "存在", V17_MANIFEST.is_file()),
         ("MPA-QA-11", "V17工作稿QA", "存在" if V17_QA.is_file() else "缺失", "存在", V17_QA.is_file()),
         ("MPA-QA-12", "V17输入新鲜度", "当前" if draft_inputs_current else "已过期或缺失", "当前", draft_inputs_current),
-        ("MPA-QA-13", "材料包快照条目数", f"{len(snapshot_rows)}项", "30项", len(snapshot_rows) == 30),
+        ("MPA-QA-13", "材料包快照条目数", f"{len(snapshot_rows)}项", "34项", len(snapshot_rows) == 34),
         ("MPA-QA-14", "材料包快照哈希", "当前" if snapshot_current else "已过期或缺失", "当前", snapshot_current),
-        ("MPA-QA-15", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "43 / 30 / 30", "数量基线", "51/51", "30/30", "28/28", "V17", "30/30当前"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "43 / 30 / 30", "数量基线", "51/51", "30/30", "28/28", "V17", "30/30当前"])),
+        ("MPA-QA-15", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "43 / 30 / 30", "数量基线", "51/51", "30/30", "28/28", "V17", "34/34当前"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "43 / 30 / 30", "数量基线", "51/51", "30/30", "28/28", "V17", "34/34当前"])),
         ("MPA-QA-16", "审计中的独立验证边界", "存在" if "自声明" in audit and "项目独立验证" in audit else "缺失", "存在", "自声明" in audit and "项目独立验证" in audit),
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:

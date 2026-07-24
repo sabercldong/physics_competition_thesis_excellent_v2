@@ -29,6 +29,7 @@ python3 07_analysis/scripts/validate_r01_results_manuscript_integration_v2.py
 python3 07_analysis/scripts/validate_r01_conclusion_rq_alignment.py
 python3 07_analysis/scripts/validate_r01_abstract_alignment.py
 python3 07_analysis/scripts/audit_r01_current_chapter_evidence.py
+python3 07_analysis/scripts/validate_r01_teaching_design_materials.py
 python3 07_analysis/scripts/build_r01_case_reselection.py
 python3 07_analysis/scripts/validate_r01_case_reselection.py
 python3 07_analysis/scripts/build_r01_candidate_references.py
@@ -55,9 +56,10 @@ python3 07_analysis/scripts/validate_r01_full_package_healthcheck.py
 - 中英文摘要对齐QA：28/28通过；它只核验两份摘要内容底稿与冻结结果和边界的一致性，学校格式与官方英文赛事名仍待定稿。
 - 候选参考文献QA：6/6通过；当前候选来源30项；引用追溯为61条来源出现、55处显式占位。新增的4项SOLO相邻应用只用于已登记的任务—学生表现、经验难度和透明报告边界，不替代SOLO原典或验证本项目框架。
 - 当前章节证据审计：12/12通过；第二章文献闭合与旧主张矩阵版本差异作为侧车事项登记。
-- V17工作稿输入新鲜度：9/9当前；材料包快照：30/30当前；材料包审计：16/16通过。
-- 内部非提交交接包：默认29项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
-- 全链路健康检查：14项已有门禁必须同时通过；其结果写入 `09_quality/r01_full_package_healthcheck_v1.csv`。
+- 教学设计材料QA：21/21通过；它只核验矩阵、两套未实施设计材料与R01案例的项目内对应关系，不验证学生/教师参与、课堂实施、量规信效度或教学效果。
+- V17工作稿输入新鲜度：9/9当前；材料包快照：34/34当前；材料包审计：16/16通过。
+- 内部非提交交接包：默认33项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
+- 全链路健康检查：15项已有门禁必须同时通过；其结果写入 `09_quality/r01_full_package_healthcheck_v1.csv`。
 
 ## 不能由本协议证明的事项
 
