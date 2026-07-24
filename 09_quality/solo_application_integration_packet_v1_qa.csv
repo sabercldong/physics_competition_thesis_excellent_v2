@@ -1,0 +1,21 @@
+﻿check_id,check_item,expected,actual,status
+SAIP-QA-01,接入包来源覆盖,4,4,通过
+SAIP-QA-02,SOLO-APP-001 全文与相关段落,是/是,是；出版社CC BY公开PDF 26页已读/是,通过
+SAIP-QA-03,SOLO-APP-001 阅读札记,存在,存在,通过
+SAIP-QA-04,SOLO-APP-001 拟用BibTeX键,molmatos2025solo,molmatos2025solo,通过
+SAIP-QA-05,SOLO-APP-001 禁止迁移,已登记,已登记,通过
+SAIP-QA-06,SOLO-PHY-001 全文与相关段落,是/是,是；出版社CC BY 4.0公开PDF 7页已读/是,通过
+SAIP-QA-07,SOLO-PHY-001 阅读札记,存在,存在,通过
+SAIP-QA-08,SOLO-PHY-001 拟用BibTeX键,xiao2020solo,xiao2020solo,通过
+SAIP-QA-09,SOLO-PHY-001 禁止迁移,已登记,已登记,通过
+SAIP-QA-10,SOLO-PHY-002 全文与相关段落,是/是,是；期刊官网PDF 6页已读/是,通过
+SAIP-QA-11,SOLO-PHY-002 阅读札记,存在,存在,通过
+SAIP-QA-12,SOLO-PHY-002 拟用BibTeX键,yu2025sololps,yu2025sololps,通过
+SAIP-QA-13,SOLO-PHY-002 禁止迁移,已登记,已登记,通过
+SAIP-QA-14,SOLO-PHY-003 全文与相关段落,是/是,是；期刊官网PDF 6页已读/是,通过
+SAIP-QA-15,SOLO-PHY-003 阅读札记,存在,存在,通过
+SAIP-QA-16,SOLO-PHY-003 拟用BibTeX键,wangyu2023bloomsolo,wangyu2023bloomsolo,通过
+SAIP-QA-17,SOLO-PHY-003 禁止迁移,已登记,已登记,通过
+SAIP-QA-18,原典全文缺口仍保留,存在,存在,通过
+SAIP-QA-19,建议段落与禁止外推边界,存在,存在,通过
+SAIP-QA-20,一次性接入复跑链,存在,存在,通过
