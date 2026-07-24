@@ -8,7 +8,7 @@
 
 | 编号 | 文献 | 检查来源 | 当前可访问内容 | 全文状态 | 处理决定 |
 |---|---|---|---|---|---|
-| SOLO-001 | Biggs & Collis, 1982, *Evaluating the Quality of Learning: The SOLO Taxonomy* | ScienceDirect图书页；UNESCO/Google Books等书目信息 | 题名、作者、出版机构、年份、ISBN/馆藏层面信息 | 未发现稳定公开全文；需图书馆或合法电子书渠道 | 保留为核心理论来源候选，不能写具体页码或详细层级定义 |
+| SOLO-001 | Biggs & Collis, 1982, *Evaluating the Quality of Learning: The SOLO Taxonomy* | ScienceDirect书目信息；用户声明为华东师范大学图书馆提供副本 | 第2章印刷页22至31已读；HCS/SOLO区分、反应层级与任务预分析 | 项目不保存原件；本次只读关键章节 | 可受限使用页码级边界；不能由此验证任务L1至L4或学生能力 |
 | SOLO-002 | Biggs & Collis, 1989, “Towards a Model of School-Based Curriculum Development and Assessment Using the SOLO Taxonomy” | SAGE DOI页；ERIC记录 | 题名、作者、期刊、卷期页码、DOI、摘要 | SAGE全文需访问权限；ERIC记录未提供开放全文 | 可谨慎引用摘要层面“课程开发与评价”用途，正式论述前需阅读全文 |
 
 ## 2026-07-25 复核补记

@@ -14,7 +14,7 @@ MAPPING_PATH = ROOT / "09_quality/g8_02_bib_lite_mapping.csv"
 BIB_PATH = ROOT / "02_literature/references.bib"
 OUTPUT_MD = MANUSCRIPT_DIR / "07_candidate_references.md"
 OUTPUT_CSV = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
-SOURCE_ID = re.compile(r"\b(?:(?:CS|ST|METH|PCOMP)-\d{3}|SOLO-(?:APP|PHY)-\d{3})\b")
+SOURCE_ID = re.compile(r"\b(?:(?:CS|ST|METH|PCOMP)-\d{3}|SOLO-(?:(?:APP|PHY)-\d{3}|\d{3}))\b")
 BIB_KEY = re.compile(r"^@\w+\{([^,]+),", re.MULTILINE)
 CHAPTERS = [MANUSCRIPT_DIR / f"{index:02d}_{name}.md" for index, name in [
     (1, "introduction"), (2, "theory"), (3, "methods"),
@@ -22,6 +22,7 @@ CHAPTERS = [MANUSCRIPT_DIR / f"{index:02d}_{name}.md" for index, name in [
 ]]
 FORMATTED = {
     "CS-001": "中华人民共和国教育部. 普通高中物理课程标准（2017年版2020年修订）[S/OL]. 2020-06-03 [2026-07-24]. http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html.",
+    "SOLO-001": "Biggs J B, Collis K F. Evaluating the quality of learning: The SOLO taxonomy (structure of the observed learning outcome)[M]. New York: Academic Press, 1982. DOI:10.1016/C2013-0-10375-3.",
     "ST-002": "Bao L, Cai T, Koenig K, et al. Learning and scientific reasoning[J]. Science, 2009, 323(5914): 586-587. DOI:10.1126/science.1167740.",
     "ST-003": "Bao L, Koenig K, Xiao Y, et al. Theoretical model and quantitative assessment of scientific thinking and reasoning[J]. Physical Review Physics Education Research, 2022, 18(1): 010115. DOI:10.1103/PhysRevPhysEducRes.18.010115.",
     "ST-005": "Osborne J, Erduran S, Simon S. Enhancing the quality of argumentation in school science[J]. Journal of Research in Science Teaching, 2004, 41(10): 994-1020. DOI:10.1002/tea.20035.",
@@ -97,7 +98,7 @@ def main() -> None:
     lines = [
         "# 参考文献（候选工作稿）",
         "",
-        f"> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前{len(rows)}项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。",
+        f"> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前{len(rows)}项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO-002、部分国内物理竞赛研究和其余方法文献仍待完整阅读、页码或格式核验，暂不得加入。",
         "",
     ]
     lines.extend(f"[{row['reference_number']}] {row['gbt_7714_candidate_entry']}" for row in rows)

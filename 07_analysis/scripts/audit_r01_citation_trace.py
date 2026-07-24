@@ -23,7 +23,7 @@ CHAPTERS = [MANUSCRIPT_DIR / f"{index:02d}_{name}.md" for index, name in [
     (5, "cases_and_diagnosis"),
     (6, "conclusion"),
 ]]
-SOURCE_ID = re.compile(r"\b(?:(?:CS|ST|METH|PCOMP)-\d{3}|SOLO-(?:APP|PHY)-\d{3})\b")
+SOURCE_ID = re.compile(r"\b(?:(?:CS|ST|METH|PCOMP)-\d{3}|SOLO-(?:(?:APP|PHY)-\d{3}|\d{3}))\b")
 BIB_KEY = re.compile(r"^@\w+\{([^,]+),", re.MULTILINE)
 
 

@@ -1,0 +1,11 @@
+﻿check_id,check_item,status,source
+SOLO-READ-QA-01,阅读记录存在,通过,solo_original_fulltext_reading_notes_20260725.md
+SOLO-READ-QA-02,记录身份哈希、PDF页与印刷页范围,通过,solo_original_fulltext_reading_notes_20260725.md
+SOLO-READ-QA-03,记录HCS与特定反应结构的区分,通过,solo_original_fulltext_reading_notes_20260725.md
+SOLO-READ-QA-04,记录五类反应且区分任务要求,通过,solo_original_fulltext_reading_notes_20260725.md
+SOLO-READ-QA-05,明确前结构不进入任务等级,通过,solo_original_fulltext_reading_notes_20260725.md
+SOLO-READ-QA-06,保留学生表现和外部效度边界,通过,solo_original_fulltext_reading_notes_20260725.md
+SOLO-READ-QA-07,文献台账登记可读全文与相关页,通过,reference_verification.csv
+SOLO-READ-QA-08,文献矩阵登记页码级边界,通过,literature_matrix.csv
+SOLO-READ-QA-09,主张矩阵升级为原书页码级证据,通过,claim_evidence_matrix.csv
+SOLO-READ-QA-10,不将1989论文误记为已读,通过,solo_original_fulltext_reading_notes_20260725.md
