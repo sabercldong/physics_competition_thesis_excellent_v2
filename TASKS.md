@@ -390,6 +390,9 @@
 - [x] G2-03-SOLO-APPLICATION-CONTROLLED-INTEGRATION 受限接入已读SOLO相邻应用文献
   - 进度：在不覆盖第二章既有边界文字的前提下，接入 `SOLO-APP-001`、`SOLO-PHY-001`、`SOLO-PHY-002`、`SOLO-PHY-003`。新增文字只说明任务要求不等于学生实际表现或经验难度，以及分析单位、材料范围、判定规则与汇总方式应透明报告；明确不迁移巴西数学样本、高考试题分布、SOLO-LPs乘积、分值加权、学生能力或教学结论。同步新增4条BibTeX与许可映射，候选工作稿来源更新至30项，引用追溯为61条来源出现/55条显式占位；V17输入9/9当前、快照30/30、内部交接包29/29和材料包审计16/16通过。SOLO原典、1989年论文、关键页码及L1-L4理论取舍仍待合法全文。
 
+- [x] G2-03-SOLO-APPLICATION-PACKET-STATUS-RECONCILIATION 收束SOLO应用接入包状态
+  - 进度：修复 `solo_application_integration_packet_v1.md` 中“正文未改写、候选链未开始”的过时状态，改为已执行记录并保留原接入边界、复跑顺序和不放行规则。接入包QA继续20/20通过；不新增正文主张、外部数据或理论效度，不将相邻应用升级为SOLO原典。
+
 - [x] G2-03/G2-04/G1-07-ONLINE-SOURCE-RECHECK 复查核心全文与第35届分值网络入口
   - 进度：复查结果分别登记于 `02_literature/core_source_access_recheck_20260725.md` 和 `09_quality/cpho35_score_source_retrieval_audit_20260725.md`。ScienceDirect仅提供SOLO原书目录与受限购买入口，CNKI仅提供龚枭（2020）题录/摘要，均未升级为全文阅读。第35届官方竞赛网入口可定位试题解答，赛区通知正文可确认复赛理论满分320分及全国命题组制定评分标准；非官方镜像虽可见8题各40分和分问细则，却未核验授权或版本链，故不下载、不入库、不关闭逐题分值缺口。
 
