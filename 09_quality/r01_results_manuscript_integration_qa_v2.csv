@@ -1,0 +1,31 @@
+﻿check_id,check_item,expected,actual,status,source
+MRQA2-01,当前编码行数和分析单元,876/219,876/219,通过,final_coding_r01_correction_v1.csv
+MRQA2-02,模型建构出现数、统计输出与正文表,| 模型建构 | 203 | 219 | 92.69% |,存在,通过,final_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-03,模型建构L1等级数与统计输出,109,109,通过,final_level_distribution.csv
+MRQA2-04,模型建构L2等级数与统计输出,22,22,通过,final_level_distribution.csv
+MRQA2-05,模型建构L3等级数与统计输出,72,72,通过,final_level_distribution.csv
+MRQA2-06,模型建构L4等级数与统计输出,0,0,通过,final_level_distribution.csv
+MRQA2-07,科学推理出现数、统计输出与正文表,| 科学推理 | 219 | 219 | 100.00% |,存在,通过,final_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-08,科学推理L1等级数与统计输出,121,121,通过,final_level_distribution.csv
+MRQA2-09,科学推理L2等级数与统计输出,81,81,通过,final_level_distribution.csv
+MRQA2-10,科学推理L3等级数与统计输出,17,17,通过,final_level_distribution.csv
+MRQA2-11,科学推理L4等级数与统计输出,0,0,通过,final_level_distribution.csv
+MRQA2-12,科学论证出现数、统计输出与正文表,| 科学论证 | 106 | 219 | 48.40% |,存在,通过,final_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-13,科学论证L1等级数与统计输出,79,79,通过,final_level_distribution.csv
+MRQA2-14,科学论证L2等级数与统计输出,16,16,通过,final_level_distribution.csv
+MRQA2-15,科学论证L3等级数与统计输出,11,11,通过,final_level_distribution.csv
+MRQA2-16,科学论证L4等级数与统计输出,0,0,通过,final_level_distribution.csv
+MRQA2-17,质疑创新出现数、统计输出与正文表,| 质疑创新 | 84 | 219 | 38.36% |,存在,通过,final_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-18,质疑创新L1等级数与统计输出,20,20,通过,final_level_distribution.csv
+MRQA2-19,质疑创新L2等级数与统计输出,51,51,通过,final_level_distribution.csv
+MRQA2-20,质疑创新L3等级数与统计输出,5,5,通过,final_level_distribution.csv
+MRQA2-21,质疑创新L4等级数与统计输出,8,8,通过,final_level_distribution.csv
+MRQA2-22,科学论证与质疑创新共现、统计输出与正文,科学论证与质疑创新共同出现40次，两者并集为150个单元，Jaccard系数为0.2667,存在,通过,final_dimension_cooccurrence.csv;08_manuscript/04_results.md
+MRQA2-23,图4-1图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-24,图4-2图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-25,第四章边界语句,不代表学生实际能力,存在,通过,08_manuscript/04_results.md
+MRQA2-26,第四章边界语句,不代表教学效果,存在,通过,08_manuscript/04_results.md
+MRQA2-27,第四章边界语句,不进行显著性检验,存在,通过,08_manuscript/04_results.md
+MRQA2-28,第四章边界语句,不进行分值加权,存在,通过,08_manuscript/04_results.md
+MRQA2-29,第四章边界语句,项目无法独立验证,存在,通过,08_manuscript/04_results.md
+MRQA2-30,历史V1更正前基线识别,含87项与153项基线值,存在,通过,09_quality/r01_results_manuscript_integration_qa_v1.csv

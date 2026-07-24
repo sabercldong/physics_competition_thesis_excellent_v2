@@ -12,7 +12,7 @@ V17不是匿名送审版、答辩版、归档版或正式提交版：它不含�
 - 描述统计、图件与资格QA：`07_analysis/results/formal_rater_r01/correction_v1/`、`09_quality/r01_results_eligibility_qa_v1.csv`；
 - 六章Markdown与候选参考文献：`08_manuscript/`；
 - 可复跑命令：`07_analysis/reproducibility_protocol.md`；
-- 21项关键文件的SHA-256快照：`material_package/R01_current_material_package_manifest_v1.csv`（复跑前先执行快照校验）；
+- 22项关键文件的SHA-256快照：`material_package/R01_current_material_package_manifest_v1.csv`（复跑前先执行快照校验）；
 - 当前材料包边界与缺口：`09_quality/current_material_package_audit_v2.md`。
 
 ## 最终输出前仍需闭合

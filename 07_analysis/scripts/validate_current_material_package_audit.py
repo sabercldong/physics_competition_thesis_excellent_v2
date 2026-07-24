@@ -16,6 +16,7 @@ CODING = ROOT / "07_analysis/data/final_coding_r01_correction_v1.csv"
 REFERENCE_LEDGER = ROOT / "02_literature/reference_verification.csv"
 CANDIDATES = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
 RESULT_QA = ROOT / "09_quality/r01_results_eligibility_qa_v1.csv"
+RESULTS_INTEGRATION_QA = ROOT / "09_quality/r01_results_manuscript_integration_qa_v2.csv"
 CITATION_TRACE = ROOT / "09_quality/r01_citation_trace_v1.csv"
 V17 = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx"
 V17_MANIFEST = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json"
@@ -46,6 +47,8 @@ def main() -> None:
     candidate_count = len(rows(CANDIDATES))
     result_qa = rows(RESULT_QA)
     result_passed = all(row["status"] == "通过" for row in result_qa)
+    integration_qa = rows(RESULTS_INTEGRATION_QA) if RESULTS_INTEGRATION_QA.is_file() else []
+    integration_passed = bool(integration_qa) and all(row["status"] == "通过" for row in integration_qa)
     trace = rows(CITATION_TRACE)
     trace_total = len(trace)
     trace_placeholders = sum(row["is_citation_placeholder"] == "是" for row in trace)
@@ -68,15 +71,16 @@ def main() -> None:
         ("MPA-QA-04", "候选工作稿来源数", str(candidate_count), "26", candidate_count == 26),
         ("MPA-QA-05", "距离30篇最小差额", str(max(0, 30 - read_count)), "0", max(0, 30 - read_count) == 0),
         ("MPA-QA-06", "结果资格QA", f"{sum(row['status'] == '通过' for row in result_qa)}/{len(result_qa)}", "51/51", result_passed and len(result_qa) == 51),
-        ("MPA-QA-07", "引用追溯", f"{trace_total}/{trace_placeholders}", "57/51", trace_total == 57 and trace_placeholders == 51),
-        ("MPA-QA-08", "V17工作稿文件", "存在" if V17.is_file() else "缺失", "存在", V17.is_file()),
-        ("MPA-QA-09", "V17输入清单", "存在" if V17_MANIFEST.is_file() else "缺失", "存在", V17_MANIFEST.is_file()),
-        ("MPA-QA-10", "V17工作稿QA", "存在" if V17_QA.is_file() else "缺失", "存在", V17_QA.is_file()),
-        ("MPA-QA-11", "V17输入新鲜度", "当前" if draft_inputs_current else "已过期或缺失", "当前", draft_inputs_current),
-        ("MPA-QA-12", "材料包快照条目数", f"{len(snapshot_rows)}项", "21项", len(snapshot_rows) == 21),
-        ("MPA-QA-13", "材料包快照哈希", "当前" if snapshot_current else "已过期或缺失", "当前", snapshot_current),
-        ("MPA-QA-14", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "43 / 30 / 26", "数量基线", "51/51", "V17", "21/21"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "43 / 30 / 26", "数量基线", "51/51", "V17", "21/21"])),
-        ("MPA-QA-15", "审计中的独立验证边界", "存在" if "自声明" in audit and "项目独立验证" in audit else "缺失", "存在", "自声明" in audit and "项目独立验证" in audit),
+        ("MPA-QA-07", "第四章当前结果整合QA", f"{sum(row['status'] == '通过' for row in integration_qa)}/{len(integration_qa)}", "30/30", integration_passed and len(integration_qa) == 30),
+        ("MPA-QA-08", "引用追溯", f"{trace_total}/{trace_placeholders}", "57/51", trace_total == 57 and trace_placeholders == 51),
+        ("MPA-QA-09", "V17工作稿文件", "存在" if V17.is_file() else "缺失", "存在", V17.is_file()),
+        ("MPA-QA-10", "V17输入清单", "存在" if V17_MANIFEST.is_file() else "缺失", "存在", V17_MANIFEST.is_file()),
+        ("MPA-QA-11", "V17工作稿QA", "存在" if V17_QA.is_file() else "缺失", "存在", V17_QA.is_file()),
+        ("MPA-QA-12", "V17输入新鲜度", "当前" if draft_inputs_current else "已过期或缺失", "当前", draft_inputs_current),
+        ("MPA-QA-13", "材料包快照条目数", f"{len(snapshot_rows)}项", "22项", len(snapshot_rows) == 22),
+        ("MPA-QA-14", "材料包快照哈希", "当前" if snapshot_current else "已过期或缺失", "当前", snapshot_current),
+        ("MPA-QA-15", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "43 / 30 / 26", "数量基线", "51/51", "30/30", "V17", "22/22"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "43 / 30 / 26", "数量基线", "51/51", "30/30", "V17", "22/22"])),
+        ("MPA-QA-16", "审计中的独立验证边界", "存在" if "自声明" in audit and "项目独立验证" in audit else "缺失", "存在", "自声明" in audit and "项目独立验证" in audit),
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")

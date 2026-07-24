@@ -34,6 +34,7 @@ def main() -> None:
         ("RUNBOOK-QA-01", "冻结编码文件", "final_coding_r01_correction_v1.csv" in text),
         ("RUNBOOK-QA-02", "证据链文件", "final_coding_evidence_r01_v1.csv" in text),
         ("RUNBOOK-QA-03", "结果资格脚本", "validate_r01_results_eligibility.py" in text),
+        ("RUNBOOK-QA-13", "第四章当前结果整合脚本", "validate_r01_results_manuscript_integration_v2.py" in text),
         ("RUNBOOK-QA-04", "案例脚本", "validate_r01_case_reselection.py" in text),
         ("RUNBOOK-QA-05", "引用链脚本", "audit_r01_citation_trace.py" in text),
         ("RUNBOOK-QA-06", "工作稿新鲜度脚本", "validate_working_draft_freshness.py --require-current" in text),
