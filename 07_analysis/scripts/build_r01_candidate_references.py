@@ -44,6 +44,9 @@ FORMATTED = {
     "ST-017": "Burkholder E W, Miles J K, Layden T J, et al. Template for teaching and assessment of problem solving in introductory physics[J]. Physical Review Physics Education Research, 2020, 16(1): 010123. DOI:10.1103/PhysRevPhysEducRes.16.010123.",
     "ST-018": "Docktor J L, Dornfeld J, Frodermann E, et al. Assessing student written problem solutions: A problem-solving rubric with application to introductory physics[J]. Physical Review Physics Education Research, 2016, 12(1): 010130. DOI:10.1103/PhysRevPhysEducRes.12.010130.",
     "PCOMP-006": "陈奕帆, 杨欢. 四球探秘——隐藏在一道高中物理竞赛题背后的秘密[J]. 大学物理, 2025, 44(5): 58-64. DOI:10.16854/j.cnki.1000-0712.240228.",
+    "ST-019": "Tschisgale P, Kubsch M, Wulff P, et al. Exploring the sequential structure of students’ physics problem-solving approaches using process mining and sequence analysis[J]. Physical Review Physics Education Research, 2025, 21(1): 010111. DOI:10.1103/PhysRevPhysEducRes.21.010111.",
+    "ST-020": "Tschisgale P, Maus H, Kieser F, et al. Evaluating GPT- and reasoning-based large language models on Physics Olympiad problems: Surpassing human performance and implications for educational assessment[J]. Physical Review Physics Education Research, 2025, 21(2): 020115. DOI:10.1103/PhysRevPhysEducRes.21.020115.",
+    "ST-021": "Meyer A, Fischer S, Friege G. Analyzing problem solving in secondary physics education: A rubric-guided approach to explore individual learning needs[J]. Physical Review Physics Education Research, 2026, 22(1): 010111. DOI:10.1103/3bs7-fnrd.",
 }
 
 
