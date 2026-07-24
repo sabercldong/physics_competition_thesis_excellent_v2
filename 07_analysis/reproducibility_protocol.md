@@ -35,7 +35,8 @@ python3 07_analysis/scripts/audit_r01_citation_trace.py
 python3 10_outputs/drafts/build_r01_working_draft.py
 python3 07_analysis/scripts/validate_working_draft_freshness.py --require-current
 
-# 4. 复核材料包总状态与运行手册入口
+# 4. 核验材料包快照、总状态与运行手册入口
+python3 07_analysis/scripts/build_r01_material_package_snapshot.py --validate
 python3 07_analysis/scripts/validate_current_material_package_audit.py
 python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py
 ```
@@ -45,7 +46,7 @@ python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py
 - 当前编码与证据链：876条记录；证据链由840条V6来源、32条V2补证和4条ADJ-02更正来源组成。
 - 结果资格QA：51/51通过；案例重选QA：7/7通过。
 - 候选参考文献QA：6/6通过；当前候选来源26项；引用追溯为57条来源出现、51处显式占位。
-- V17工作稿输入新鲜度：8/8当前；材料包审计：13/13通过。
+- V17工作稿输入新鲜度：8/8当前；材料包快照：21/21当前；材料包审计：15/15通过。
 
 ## 不能由本协议证明的事项
 

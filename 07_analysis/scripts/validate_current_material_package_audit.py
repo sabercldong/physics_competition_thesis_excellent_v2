@@ -20,6 +20,7 @@ CITATION_TRACE = ROOT / "09_quality/r01_citation_trace_v1.csv"
 V17 = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx"
 V17_MANIFEST = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json"
 V17_QA = ROOT / "09_quality/r01_working_draft_v17_qa.md"
+SNAPSHOT_MANIFEST = ROOT / "10_outputs/material_package/R01_current_material_package_manifest_v1.csv"
 OUTPUT_CSV = ROOT / "09_quality/current_material_package_audit_v2_qa.csv"
 OUTPUT_MD = ROOT / "09_quality/current_material_package_audit_v2_qa.md"
 
@@ -53,6 +54,13 @@ def main() -> None:
         (ROOT / path).is_file() and sha256(ROOT / path) == manifest_hash
         for path, manifest_hash in manifest["source_sha256"].items()
     )
+    snapshot_rows = rows(SNAPSHOT_MANIFEST) if SNAPSHOT_MANIFEST.is_file() else []
+    snapshot_current = bool(snapshot_rows) and all(
+        row["exists"] == "是"
+        and (ROOT / row["relative_path"]).is_file()
+        and sha256(ROOT / row["relative_path"]) == row["sha256"]
+        for row in snapshot_rows
+    )
     expected = [
         ("MPA-QA-01", "分析单元数", str(item_count), "219", item_count == 219),
         ("MPA-QA-02", "当前编码记录数", str(coding_count), "876", coding_count == 876),
@@ -65,8 +73,10 @@ def main() -> None:
         ("MPA-QA-09", "V17输入清单", "存在" if V17_MANIFEST.is_file() else "缺失", "存在", V17_MANIFEST.is_file()),
         ("MPA-QA-10", "V17工作稿QA", "存在" if V17_QA.is_file() else "缺失", "存在", V17_QA.is_file()),
         ("MPA-QA-11", "V17输入新鲜度", "当前" if draft_inputs_current else "已过期或缺失", "当前", draft_inputs_current),
-        ("MPA-QA-12", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "43 / 30 / 26", "数量基线", "51/51", "V17"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "43 / 30 / 26", "数量基线", "51/51", "V17"])),
-        ("MPA-QA-13", "审计中的独立验证边界", "存在" if "自声明" in audit and "项目独立验证" in audit else "缺失", "存在", "自声明" in audit and "项目独立验证" in audit),
+        ("MPA-QA-12", "材料包快照条目数", f"{len(snapshot_rows)}项", "21项", len(snapshot_rows) == 21),
+        ("MPA-QA-13", "材料包快照哈希", "当前" if snapshot_current else "已过期或缺失", "当前", snapshot_current),
+        ("MPA-QA-14", "审计中的关键数量", "存在" if all(token in audit for token in ["219", "876", "43 / 30 / 26", "数量基线", "51/51", "V17", "21/21"]) else "缺失", "存在", all(token in audit for token in ["219", "876", "43 / 30 / 26", "数量基线", "51/51", "V17", "21/21"])),
+        ("MPA-QA-15", "审计中的独立验证边界", "存在" if "自声明" in audit and "项目独立验证" in audit else "缺失", "存在", "自声明" in audit and "项目独立验证" in audit),
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
