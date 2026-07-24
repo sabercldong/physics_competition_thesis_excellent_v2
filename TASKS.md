@@ -9,7 +9,7 @@
 - [-] G0-02 与导师确定题目A/B/C及研究范围
   - 进度：已完成内部路线收敛备忘，新增 `01_positioning/route_convergence_memo.md`，并更新 `scope_decision_memo.md` 与 `title_decision.md`。当前内部建议以路线A稳健收缩版为默认工作路线；路线B仅在获得真实课堂材料后升级；路线C准实验路线冻结。该进度不等同于导师正式确认，最终题目与范围仍待作者或导师确认。
 - [-] G0-03 获取学校模板、字数、引用和优秀论文标准
-  - 进度：已完成 `G0-03-PREP`，新增 `01_positioning/school_requirements_request_packet.md` 和 `01_positioning/school_requirements_register.csv`，建立学校论文模板、字数、引用格式、匿名评审、查重、AI披露、伦理要求、优秀论文标准和提交流程的索取与登记机制。当前尚未获得学校正式文件，因此不能标记为完成，也不能据此定稿格式。
+  - 进度：已完成 `G0-03-PREP`，并于 2026-07-24 核验研究生院官网公开的全校基本格式要求及2021年官方模板包。模板包实际包含统一封皮模板、格式样张、基本格式、盲审格式和硕士电子版提交说明；已登记至 `01_positioning/ecnu_official_thesis_format_sources.md` 与 `school_requirements_register.csv`。仍待确认作者学位类别、学院补充模板及2026年提交/匿名/查重/AI/优秀论文规则，故不能标记为完成或定稿格式。
 - [x] G0-04 建立不可使用的初稿数字与表述清单
   - 进度：已新增 `01_positioning/non_inheritable_claims_inventory.md`，并补充 `09_quality/unverified_claims.csv`；初稿中的届次年份、知识点比例、科学思维百分比、SOLO趋势、专家验证、问卷结果、教学实验、SPSS显著性、前后测均值和参考文献均按E0处理，不能直接进入新版正文。
 - [x] G0-05 制定伦理与数据管理方案
