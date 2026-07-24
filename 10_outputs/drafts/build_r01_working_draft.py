@@ -20,8 +20,8 @@ from docx.shared import Cm, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[2]
 MANUSCRIPT_DIR = ROOT / "08_manuscript"
-OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v3.docx"
-MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v3_inputs.json"
+OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v4.docx"
+MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v4_inputs.json"
 CHAPTERS = [
     MANUSCRIPT_DIR / "01_introduction.md",
     MANUSCRIPT_DIR / "02_theory.md",
@@ -33,6 +33,7 @@ CHAPTERS = [
 FONT_CN = "Arial Unicode MS"
 FONT_HEADING = "Arial Unicode MS"
 FONT_EN = "Times New Roman"
+REFERENCE_CANDIDATE_PATH = MANUSCRIPT_DIR / "07_candidate_references.md"
 
 
 def set_run_font(run, name: str, size: float, bold: bool = False, color: RGBColor | None = None) -> None:
@@ -160,7 +161,7 @@ def add_cover(document: Document) -> None:
         document.add_paragraph()
     metadata = [
         "学位类别：非全日制硕士专业学位",
-        "版本：R01可追溯描述性结果工作稿 V3",
+        "版本：R01可追溯描述性结果工作稿 V4",
         "状态：非提交工作稿；不含个人信息、签名页或匿名送审处理",
         "生成日期：2026-07-24",
     ]
@@ -193,6 +194,16 @@ def add_source_numbered_paragraph(document: Document, text: str) -> None:
     paragraph.paragraph_format.first_line_indent = Cm(-0.74)
     run = paragraph.add_run(strip_markdown(text))
     set_run_font(run, FONT_CN, 12)
+
+
+def add_reference_paragraph(document: Document, text: str) -> None:
+    paragraph = document.add_paragraph()
+    paragraph.paragraph_format.left_indent = Cm(0.74)
+    paragraph.paragraph_format.first_line_indent = Cm(-0.74)
+    paragraph.paragraph_format.line_spacing_rule = WD_LINE_SPACING.EXACTLY
+    paragraph.paragraph_format.line_spacing = Pt(20)
+    run = paragraph.add_run(strip_markdown(text))
+    set_run_font(run, FONT_CN, 10.5)
 
 
 def add_markdown_table(document: Document, rows: list[str]) -> None:
@@ -257,6 +268,8 @@ def add_chapter(document: Document, path: Path) -> None:
                 add_text_paragraph(document, "[图件路径待确认]", style="Figure Caption", indent=False)
         elif re.match(r"^图\d+-\d+", line):
             add_text_paragraph(document, line, style="Figure Caption", indent=False)
+        elif re.match(r"^\[\d+\]\s+", line):
+            add_reference_paragraph(document, line)
         elif line.startswith(">"):
             add_text_paragraph(document, line.lstrip("> "), style="Table Note", indent=False)
         elif re.match(r"^-\s+", line):
@@ -296,6 +309,9 @@ def main() -> None:
             document.add_page_break()
 
     document.add_page_break()
+    add_chapter(document, REFERENCE_CANDIDATE_PATH)
+
+    document.add_page_break()
     document.add_heading("工作稿使用说明", level=1)
     notes = [
         "本文件由当前六章Markdown、摘要内容底稿和R01图件自动生成，供写作、版式检查和后续修订使用。",
@@ -313,7 +329,7 @@ def main() -> None:
         "generated_on": "2026-07-24",
         "source_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
-            for path in [*CHAPTERS, MANUSCRIPT_DIR / "00_abstract_content_draft.md"]
+            for path in [*CHAPTERS, MANUSCRIPT_DIR / "00_abstract_content_draft.md", REFERENCE_CANDIDATE_PATH]
         },
         "figure_inputs": [
             "08_manuscript/figures/figure_1_1_r01_technical_route_v1.png",

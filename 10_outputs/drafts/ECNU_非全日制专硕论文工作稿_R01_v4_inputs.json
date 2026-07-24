@@ -1,0 +1,28 @@
+{
+  "artifact": "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v4.docx",
+  "artifact_scope": "non-submission working draft",
+  "generated_on": "2026-07-24",
+  "source_sha256": {
+    "08_manuscript/01_introduction.md": "c3bf9e94bbadfe3f3ba7693c5f3f0f9173ae9f5a14275d78240008f24a376059",
+    "08_manuscript/02_theory.md": "a385dee248ed3bc53e262b6662252b771ea899b7538b32176e5bc01e05eb92bd",
+    "08_manuscript/03_methods.md": "6032b532935240fe806e534a7d44a1c63863ee7aef9a4bbdb5cd14bde480188f",
+    "08_manuscript/04_results.md": "c4868f5408f54a085eff3708d6436c754e6a0ec804bf6a64f16765ab2dd5eb3a",
+    "08_manuscript/05_cases_and_diagnosis.md": "5a9e522de98f6a5218d1e59220e65c1457db294769b8f1262dd2ed217554063b",
+    "08_manuscript/06_conclusion.md": "a02756999995ea3e94aee4554b32e66b794d1ec5fcfb25a5035fb2c732982683",
+    "08_manuscript/00_abstract_content_draft.md": "50cdb9a7b855bbf342235e42dd0743da78ccb68916724ac3d93302fdef8c4966",
+    "08_manuscript/07_candidate_references.md": "143250ac1aa7584df159db7b355b6b6b7cb6559d16b1cd72dc27eebe383a40ae"
+  },
+  "figure_inputs": [
+    "08_manuscript/figures/figure_1_1_r01_technical_route_v1.png",
+    "08_manuscript/figures/figure_2_1_r01_theoretical_framework_v1.png",
+    "08_manuscript/figures/figure_4_1_dimension_presence_r01_v1.png",
+    "08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png"
+  ],
+  "exclusions": [
+    "personal information",
+    "advisor information",
+    "student number",
+    "signature pages",
+    "defense or anonymous-submission versioning"
+  ]
+}

@@ -656,6 +656,7 @@
   - R01-MANUSCRIPT-DIAGRAMS：已完成。新增可重跑的技术路线图、理论框架图及其 PNG/PDF 和 QA；V2 Word 工作稿嵌入图1-1、图2-1、图4-1、图4-2。图1-1更新为当前 R01 描述性结果流程，明确过程自声明和教学证据缺口；本任务不把图件写成外部效度或教学效果证据，六章历史状态措辞另行对账。
   - R01-STATE-RECONCILIATION-AUDIT：已完成。新增 `07_analysis/scripts/audit_r01_manuscript_state_reconciliation.py` 与同名 CSV/说明，逐条登记7处应修订的历史流程措辞和3处必须保留的真实缺口；下一步按队列逐条修订第一至三章并重跑结果资格、引文追溯和Word工作稿。
   - R01-STATE-RECONCILIATION-APPLY：已完成。已按队列修订第一至三章的R01状态措辞，新增 `validate_r01_manuscript_state_reconciliation.py` 及修订后QA；状态对账10/10、R01结果资格44/44、引文追溯通过，并生成V3工作稿。当前章节继续保留SOLO全文、教师/课堂真实证据和第35届分值来源缺口；第一、二章既有未提交编辑不在本任务提交中冻结。
+  - R01-CANDIDATE-REFERENCES：已完成。新增六项限边界来源的GB/T 7714-2015候选参考文献、映射、构建/QA脚本并嵌入V4工作稿；候选清单6/6通过，明确少于学校公开基线的30篇要求，SOLO、物理竞赛和其余方法文献仍不得混入最终参考文献表。
 - [-] G8-05 导师两轮内容反馈闭环
   - PREP：已完成 `G8-05-PREP`，新增 `09_quality/g8_05_prep_feedback_packet.md`、`09_quality/g8_05_prep_review_questions.csv`、`09_quality/g8_05_prep_review_index.csv` 和 `09_quality/g8_05_prep_gap_register.csv`，准备第1至5章当前状态说明、高风险缺口清单、需人工确认问题清单和可审阅文件索引；该任务只准备反馈材料，不代表导师已审阅或专家已认可。
   - LOG-TEMPLATE：已完成 `G8-05-LOG-TEMPLATE`，新增 `09_quality/g8_05_feedback_log_template.csv` 和 `09_quality/g8_05_feedback_decision_protocol.md`，建立真实反馈回收、处理决定、责任文件和关闭状态的记录规则；本模板不预填导师、专家、教师、同门或作者反馈。
