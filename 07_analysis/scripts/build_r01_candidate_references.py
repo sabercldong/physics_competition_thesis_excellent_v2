@@ -40,6 +40,7 @@ FORMATTED = {
     "ST-012": "Teodorescu R E, Bennhold C, Feldman G, et al. New approach to analyzing physics problems: A Taxonomy of Introductory Physics Problems[J]. Physical Review Special Topics - Physics Education Research, 2013, 9(1): 010103. DOI:10.1103/PhysRevSTPER.9.010103.",
     "ST-013": "Kocakaya S, Gonen S. Analysis of Turkish high-school physics-examination questions according to Bloom's taxonomy[J]. Asia-Pacific Forum on Science Learning and Teaching, 2010, 11(1): Article 9, 1-14.",
     "ST-017": "Burkholder E W, Miles J K, Layden T J, et al. Template for teaching and assessment of problem solving in introductory physics[J]. Physical Review Physics Education Research, 2020, 16(1): 010123. DOI:10.1103/PhysRevPhysEducRes.16.010123.",
+    "ST-018": "Docktor J L, Dornfeld J, Frodermann E, et al. Assessing student written problem solutions: A problem-solving rubric with application to introductory physics[J]. Physical Review Physics Education Research, 2016, 12(1): 010130. DOI:10.1103/PhysRevPhysEducRes.12.010130.",
 }
 
 

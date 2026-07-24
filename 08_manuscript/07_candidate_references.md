@@ -1,6 +1,6 @@
 # 参考文献（候选工作稿）
 
-> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前19项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。
+> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前20项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。
 
 [1] 中华人民共和国教育部. 普通高中物理课程标准（2017年版2020年修订）[S/OL]. 2020-06-03 [2026-07-24]. http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html.
 [2] Bao L, Cai T, Koenig K, et al. Learning and scientific reasoning[J]. Science, 2009, 323(5914): 586-587. DOI:10.1126/science.1167740.
@@ -21,6 +21,7 @@
 [17] Pols C F J, Dekkers P J J M, de Vries M J. Defining and assessing understandings of evidence with the assessment rubric for physics inquiry: Towards integration of argumentation and inquiry[J]. Physical Review Physics Education Research, 2022, 18(1): 010111. DOI:10.1103/PhysRevPhysEducRes.18.010111.
 [18] Lin S-Y, Singh C. Effect of scaffolding on helping introductory physics students solve quantitative problems involving strong alternative conceptions[J]. Physical Review Special Topics - Physics Education Research, 2015, 11(2): 020105. DOI:10.1103/PhysRevSTPER.11.020105.
 [19] Burkholder E W, Miles J K, Layden T J, et al. Template for teaching and assessment of problem solving in introductory physics[J]. Physical Review Physics Education Research, 2020, 16(1): 010123. DOI:10.1103/PhysRevPhysEducRes.16.010123.
+[20] Docktor J L, Dornfeld J, Frodermann E, et al. Assessing student written problem solutions: A problem-solving rubric with application to introductory physics[J]. Physical Review Physics Education Research, 2016, 12(1): 010130. DOI:10.1103/PhysRevPhysEducRes.12.010130.
 
 ## 使用边界
 
