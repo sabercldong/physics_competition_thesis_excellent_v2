@@ -27,6 +27,7 @@ COMMANDS = [
     ("HP-QA-11", "材料包总审计", ["07_analysis/scripts/validate_current_material_package_audit.py"]),
     ("HP-QA-12", "复现运行手册", ["07_analysis/scripts/validate_r01_reproducibility_runbook.py"]),
     ("HP-QA-13", "中文摘要对齐", ["07_analysis/scripts/validate_r01_abstract_alignment.py"]),
+    ("HP-QA-14", "当前章节证据审计", ["07_analysis/scripts/audit_r01_current_chapter_evidence.py"]),
 ]
 
 

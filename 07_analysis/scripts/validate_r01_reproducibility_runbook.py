@@ -39,6 +39,7 @@ def main() -> None:
         ("RUNBOOK-QA-15", "全链路健康检查脚本", "validate_r01_full_package_healthcheck.py" in text),
         ("RUNBOOK-QA-16", "结论章对齐脚本", "validate_r01_conclusion_rq_alignment.py" in text),
         ("RUNBOOK-QA-17", "中文摘要对齐脚本", "validate_r01_abstract_alignment.py" in text),
+        ("RUNBOOK-QA-18", "当前章节证据审计脚本", "audit_r01_current_chapter_evidence.py" in text),
         ("RUNBOOK-QA-04", "案例脚本", "validate_r01_case_reselection.py" in text),
         ("RUNBOOK-QA-05", "引用链脚本", "audit_r01_citation_trace.py" in text),
         ("RUNBOOK-QA-06", "工作稿新鲜度脚本", "validate_working_draft_freshness.py --require-current" in text),
