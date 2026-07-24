@@ -41,6 +41,7 @@ ARTIFACTS = [
     ("PKG-25", "正文", "08_manuscript/00_abstract_en_content_draft.md", "英文摘要内容工作底稿", "可随材料包提供；非最终学校格式或官方术语版本"),
     ("PKG-26", "质量保证", "09_quality/r01_abstract_alignment_qa_v1.md", "中英文摘要与冻结结果对齐QA说明", "可随材料包提供；不验证学校格式或官方英文赛事名"),
     ("PKG-27", "定位与格式", "01_positioning/competition_english_terminology_verification.md", "赛事英文术语核验记录", "可随材料包提供；描述性工作译法不等于官方赛事名称"),
+    ("PKG-28", "定位与格式", "09_quality/ecnu_professional_format_reconciliation_20260725.md", "非全日制专业学位公开格式基线对账", "可随材料包提供；不构成当期学院提交确认"),
 ]
 
 
