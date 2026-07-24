@@ -1,6 +1,6 @@
 # 参考文献（候选工作稿）
 
-> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前11项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。
+> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前12项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO、物理竞赛研究和其余方法文献仍待合法全文阅读与核验，暂不得加入。
 
 [1] 中华人民共和国教育部. 普通高中物理课程标准（2017年版2020年修订）[S/OL]. 2020-06-03 [2026-07-24]. http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html.
 [2] Bao L, Cai T, Koenig K, et al. Learning and scientific reasoning[J]. Science, 2009, 323(5914): 586-587. DOI:10.1126/science.1167740.
@@ -13,6 +13,7 @@
 [9] Russ R S, Odden T O B. Intertwining evidence- and model-based reasoning in physics sensemaking: An example from electrostatics[J]. Physical Review Physics Education Research, 2017, 13(2): 020105. DOI:10.1103/PhysRevPhysEducRes.13.020105.
 [10] Zwickl B M, Hu D, Finkelstein N, et al. Model-based reasoning in the physics laboratory: Framework and initial results[J]. Physical Review Special Topics - Physics Education Research, 2015, 11(2): 020113. DOI:10.1103/PhysRevSTPER.11.020113.
 [11] Pols C F J, Dekkers P J J M, de Vries M J. Integrating argumentation in physics inquiry: A design and evaluation study[J]. Physical Review Physics Education Research, 2023, 19(2): 020170. DOI:10.1103/PhysRevPhysEducRes.19.020170.
+[12] Pols C F J, Dekkers P J J M, de Vries M J. Defining and assessing understandings of evidence with the assessment rubric for physics inquiry: Towards integration of argumentation and inquiry[J]. Physical Review Physics Education Research, 2022, 18(1): 010111. DOI:10.1103/PhysRevPhysEducRes.18.010111.
 
 ## 使用边界
 
