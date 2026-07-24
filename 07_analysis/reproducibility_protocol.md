@@ -1,18 +1,52 @@
-# 可复现性协议
+# R01 当前冻结材料包复现协议
 
-每个结果必须具有：
+本协议对应当前冻结编码表 `07_analysis/data/final_coding_r01_correction_v1.csv`（219个分析单元、876条四维记录）。它规定如何复建或核验项目内的证据链、描述统计、案例、引用链和非提交工作稿；不验证评分者身份、独立性或实际人工过程。
 
-1. 输入数据文件；
-2. 数据字典；
-3. 清洗脚本；
-4. 分析脚本；
-5. 输出表/图；
-6. 生成日期；
-7. 软件版本；
-8. 正文引用位置。
+## 输入与输出边界
 
-结果目录分为：
+- 冻结编码、登记回填、补证与更正裁决保留在 `07_analysis/data/` 与 `07_analysis/results/formal_rater_r01/`；脚本输出只能回写其指定路径。
+- 正文组装输入为 `08_manuscript/01_introduction.md` 至 `06_conclusion.md`，以及候选参考文献 `08_manuscript/07_candidate_references.md`。
+- V17 Word 文件只是非提交工作稿。它不包含真实个人信息、封皮、签名、匿名送审处理或当期学院格式终验。
+- 所有复现输出只描述试题与参考解答呈现的任务认知要求，不得外推为学生能力、教学效果、因果、显著性、长期趋势或第35届分值差异。
 
-- `results/generated/`：脚本自动生成，禁止手工修改；
-- `results/reviewed/`：经人工核对后用于论文；
-- `results/archive/`：历史版本。
+## 推荐运行顺序
+
+在项目根目录运行：
+
+```bash
+# 1. 重建当前编码—证据链（仅在需从登记回填重新生成时运行）
+python3 07_analysis/scripts/build_r01_current_evidence_chain.py \
+  --repair-v1 07_analysis/data/rater_returns/incoming/R01/r01_evidence_repair_R01_FILLED_20260723.csv \
+  --repair-v2 07_analysis/data/rater_returns/incoming/R01/r01_evidence_repair_R01_FILLED_20260723_V2.csv \
+  --registered-repair-v2 07_analysis/data/rater_returns/registered/R01/r01_evidence_repair_R01_FILLED_20260723_V2_registered_lf.csv \
+  --output 07_analysis/data/final_coding_evidence_r01_v1.csv \
+  --qa-output 07_analysis/results/formal_rater_r01/r01_current_evidence_chain_qa_v1.csv \
+  --force
+
+# 2. 核验结果、案例与引用链
+python3 07_analysis/scripts/validate_r01_results_eligibility.py
+python3 07_analysis/scripts/build_r01_case_reselection.py
+python3 07_analysis/scripts/validate_r01_case_reselection.py
+python3 07_analysis/scripts/build_r01_candidate_references.py
+python3 07_analysis/scripts/validate_r01_candidate_references.py
+python3 07_analysis/scripts/audit_r01_citation_trace.py
+
+# 3. 重建非提交工作稿并检查输入新鲜度
+python3 10_outputs/drafts/build_r01_working_draft.py
+python3 07_analysis/scripts/validate_working_draft_freshness.py --require-current
+
+# 4. 复核材料包总状态与运行手册入口
+python3 07_analysis/scripts/validate_current_material_package_audit.py
+python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py
+```
+
+## 当前预期状态
+
+- 当前编码与证据链：876条记录；证据链由840条V6来源、32条V2补证和4条ADJ-02更正来源组成。
+- 结果资格QA：51/51通过；案例重选QA：7/7通过。
+- 候选参考文献QA：6/6通过；当前候选来源26项；引用追溯为57条来源出现、51处显式占位。
+- V17工作稿输入新鲜度：8/8当前；材料包审计：13/13通过。
+
+## 不能由本协议证明的事项
+
+该协议不证明RATER-A/B、ADJ-01/02或R01的身份、互盲、独立性、实际人工操作、框架外部效度、文献最终格式、中文逐页版式、学生作品真实性或人类参与者事实。上述事项只能依靠真实登记材料、学校当期规定与相应的外部审核闭合。

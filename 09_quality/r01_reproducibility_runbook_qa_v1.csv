@@ -1,0 +1,13 @@
+﻿check_id,check_item,status
+RUNBOOK-QA-01,冻结编码文件,通过
+RUNBOOK-QA-02,证据链文件,通过
+RUNBOOK-QA-03,结果资格脚本,通过
+RUNBOOK-QA-04,案例脚本,通过
+RUNBOOK-QA-05,引用链脚本,通过
+RUNBOOK-QA-06,工作稿新鲜度脚本,通过
+RUNBOOK-QA-07,材料包审计脚本,通过
+RUNBOOK-QA-08,手册自身QA,通过
+RUNBOOK-QA-09,结果资格计数,通过
+RUNBOOK-QA-10,候选来源计数,通过
+RUNBOOK-QA-11,引用追溯计数,通过
+RUNBOOK-QA-12,禁止外推边界,通过

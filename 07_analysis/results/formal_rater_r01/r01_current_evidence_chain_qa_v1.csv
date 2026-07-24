@@ -11,4 +11,4 @@ V2全部充分支持且匹配当前值,是,是,通过
 登记副本路径防覆盖,通过,通过,通过
 876条当前双侧证据可定位,通过,通过,通过
 32条补证记录长度与双侧不重复,通过,通过,通过
-证据来源分布,"{'ADJ-02-CORRECTION': 4, 'R01-EVIDENCE-REPAIR-V2': 32, 'R01-V6': 840}","{'R01-V6': 840, 'R01-EVIDENCE-REPAIR-V2': 32, 'ADJ-02-CORRECTION': 4}",通过
+证据来源分布,"{'ADJ-02-CORRECTION': 4, 'R01-V6': 840, 'R01-EVIDENCE-REPAIR-V2': 32}","{'R01-V6': 840, 'R01-EVIDENCE-REPAIR-V2': 32, 'ADJ-02-CORRECTION': 4}",通过
