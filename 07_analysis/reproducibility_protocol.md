@@ -42,6 +42,7 @@ python3 07_analysis/scripts/build_r01_internal_material_package.py --force
 python3 07_analysis/scripts/build_r01_internal_material_package.py --validate
 python3 07_analysis/scripts/validate_current_material_package_audit.py
 python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py
+python3 07_analysis/scripts/validate_r01_full_package_healthcheck.py
 ```
 
 ## 当前预期状态
@@ -51,6 +52,7 @@ python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py
 - 候选参考文献QA：6/6通过；当前候选来源26项；引用追溯为57条来源出现、51处显式占位。
 - V17工作稿输入新鲜度：8/8当前；材料包快照：22/22当前；材料包审计：16/16通过。
 - 内部非提交交接包：默认21项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
+- 全链路健康检查：11项已有门禁必须同时通过；其结果写入 `09_quality/r01_full_package_healthcheck_v1.csv`。
 
 ## 不能由本协议证明的事项
 
