@@ -28,7 +28,7 @@ ARTIFACTS = [
     ("PKG-12", "正文", "08_manuscript/04_results.md", "第四章工作稿", "可随材料包提供；非最终稿"),
     ("PKG-13", "正文", "08_manuscript/05_cases_and_diagnosis.md", "第五章工作稿", "可随材料包提供；非最终稿"),
     ("PKG-14", "正文", "08_manuscript/06_conclusion.md", "第六章工作稿", "可随材料包提供；非最终稿"),
-    ("PKG-15", "候选引文", "08_manuscript/07_candidate_references.md", "26项限边界候选参考文献", "可随材料包提供；非最终参考文献表"),
+    ("PKG-15", "候选引文", "08_manuscript/07_candidate_references.md", "36项限边界候选参考文献", "可随材料包提供；非最终参考文献表"),
     ("PKG-16", "质量保证", "09_quality/r01_results_eligibility_qa_v1.csv", "51项结果资格检查", "可随材料包提供"),
     ("PKG-17", "质量保证", "09_quality/r01_case_reselection_qa_v1.csv", "7项案例检查", "可随材料包提供"),
     ("PKG-18", "质量保证", "09_quality/r01_citation_trace_v1.csv", "正文来源追溯", "可随材料包提供"),
@@ -51,6 +51,9 @@ ARTIFACTS = [
     ("PKG-35", "教学设计", "06_teaching_validation/student_artifact_rubric.md", "R01学生作品过程性观察记录量规", "可随材料包提供；未验证设计工具，不含学生数据"),
     ("PKG-36", "教学设计", "06_teaching_validation/r01_student_artifact_observation_record_template.csv", "学生作品观察记录空白模板", "可随材料包提供；空白模板，不含个人或课堂数据"),
     ("PKG-37", "质量保证", "09_quality/r01_student_artifact_observation_rubric_qa_v1.csv", "学生作品观察记录量规QA", "可随材料包提供；只验证工具边界与模板为空"),
+    ("PKG-38", "文献核验", "02_literature/reference_verification.csv", "来源可读状态、限定用途和待核边界", "可随材料包提供；工作核验台账，不是最终参考文献表"),
+    ("PKG-39", "文献核验", "02_literature/physics_competition_page_level_claim_map_v1.csv", "五篇国内竞赛研究的14条页码级主张映射", "可随材料包提供；用户提供来源的E1页码映射，不验证外部发布链"),
+    ("PKG-40", "质量保证", "09_quality/pcomp_candidate_citation_integration_qa_v1.csv", "国内竞赛研究第二章与候选引文受控接入QA", "可随材料包提供；只验证项目内接入与边界"),
 ]
 
 

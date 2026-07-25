@@ -1,0 +1,7 @@
+﻿check_id,check_item,expected,actual,status
+PCOMP-PKG-QA-01,快照项目数,40,40,通过
+PKG-15-QA,PKG-15已纳入快照,36项限边界候选参考文献,36项限边界候选参考文献,通过
+PKG-38-QA,PKG-38已纳入快照,02_literature/reference_verification.csv,02_literature/reference_verification.csv,通过
+PKG-39-QA,PKG-39已纳入快照,02_literature/physics_competition_page_level_claim_map_v1.csv,02_literature/physics_competition_page_level_claim_map_v1.csv,通过
+PKG-40-QA,PKG-40已纳入快照,09_quality/pcomp_candidate_citation_integration_qa_v1.csv,09_quality/pcomp_candidate_citation_integration_qa_v1.csv,通过
+PCOMP-PKG-QA-06,新增页码映射保留E1边界,E1页码映射,可随材料包提供；用户提供来源的E1页码映射，不验证外部发布链,通过
