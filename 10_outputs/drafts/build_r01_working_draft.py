@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import csv
 from pathlib import Path
 
 from docx import Document
@@ -38,6 +39,21 @@ FONT_EN = "Times New Roman"
 REFERENCE_CANDIDATE_PATH = MANUSCRIPT_DIR / "07_candidate_references.md"
 CHINESE_ABSTRACT_PATH = MANUSCRIPT_DIR / "00_abstract_content_draft.md"
 ENGLISH_ABSTRACT_PATH = MANUSCRIPT_DIR / "00_abstract_en_content_draft.md"
+REFERENCE_MAPPING_PATH = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
+SOURCE_ID = re.compile(r"\b(?:(?:CS|ST|METH|PCOMP)-\d{3}|SOLO-(?:(?:APP|PHY)-\d{3}|\d{3}))\b")
+CITATION_PLACEHOLDER = re.compile(r"\[引文占位：([^\]]+)\]")
+
+
+def load_candidate_reference_numbers() -> dict[str, int]:
+    """Use the reproducible candidate-reference order without changing Markdown evidence IDs."""
+    with REFERENCE_MAPPING_PATH.open(encoding="utf-8-sig", newline="") as handle:
+        return {
+            row["source_id"]: int(row["reference_number"])
+            for row in csv.DictReader(handle)
+        }
+
+
+CANDIDATE_REFERENCE_NUMBERS = load_candidate_reference_numbers()
 
 
 def set_run_font(run, name: str, size: float, bold: bool = False, color: RGBColor | None = None) -> None:
@@ -178,6 +194,18 @@ def add_cover(document: Document) -> None:
 
 
 def strip_markdown(text: str) -> str:
+    def render_candidate_citation(match: re.Match[str]) -> str:
+        source_ids = SOURCE_ID.findall(match.group(1))
+        candidate_numbers = [CANDIDATE_REFERENCE_NUMBERS[source_id] for source_id in source_ids if source_id in CANDIDATE_REFERENCE_NUMBERS]
+        unresolved_ids = [source_id for source_id in source_ids if source_id not in CANDIDATE_REFERENCE_NUMBERS]
+        parts = []
+        if candidate_numbers:
+            parts.append("[" + ", ".join(str(number) for number in candidate_numbers) + "]")
+        if unresolved_ids:
+            parts.append("[待补核验文献：" + "、".join(unresolved_ids) + "]")
+        return "".join(parts) if parts else "[待补核验文献]"
+
+    text = CITATION_PLACEHOLDER.sub(render_candidate_citation, text)
     text = re.sub(r"!\[[^]]*\]\([^)]*\)", "", text)
     text = re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", text)
     return text.replace("**", "").replace("`", "")
@@ -336,6 +364,7 @@ def main() -> None:
     document.add_heading("工作稿使用说明", level=1)
     notes = [
         "本文件由当前六章Markdown、中英文摘要内容底稿和R01图件自动生成，供写作、版式检查和后续修订使用。",
+        "正文中的方括号编号仅对应当前36项候选参考文献；Markdown源文件仍保留来源ID、可支持范围与待核验边界。",
         "英文摘要为内容工作稿，其中赛事与阶段英文表述尚待按学校当期要求和官方术语定稿。",
         "本文件不包含作者、导师、学号、签名、答辩委员会、原创性声明或匿名送审处理，不得作为提交、盲审或归档版本。",
         "正式版须以实际答辩期学院要求、学校专硕封皮和归档签名页、参考文献终核、AI披露及个人信息为准。",
@@ -351,7 +380,13 @@ def main() -> None:
         "generated_on": "2026-07-25",
         "source_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
-            for path in [*CHAPTERS, CHINESE_ABSTRACT_PATH, ENGLISH_ABSTRACT_PATH, REFERENCE_CANDIDATE_PATH]
+            for path in [
+                *CHAPTERS,
+                CHINESE_ABSTRACT_PATH,
+                ENGLISH_ABSTRACT_PATH,
+                REFERENCE_CANDIDATE_PATH,
+                REFERENCE_MAPPING_PATH,
+            ]
         },
         "figure_inputs": [
             "08_manuscript/figures/figure_1_1_r01_technical_route_v1.png",
