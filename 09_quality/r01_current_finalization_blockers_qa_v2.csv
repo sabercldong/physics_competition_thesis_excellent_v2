@@ -1,0 +1,17 @@
+﻿check_id,check_item,status,detail
+RFIN-QA-01,07_analysis/data/final_coding.csv,通过,当前证据文件存在
+RFIN-QA-02,09_quality/r01_results_eligibility_qa_v1.csv,通过,当前证据文件存在
+RFIN-QA-03,09_quality/r01_results_manuscript_integration_qa_v2.csv,通过,当前证据文件存在
+RFIN-QA-04,09_quality/manuscript_chapter_readiness_matrix_20260725.md,通过,当前证据文件存在
+RFIN-QA-05,09_quality/r01_citation_closure_readiness_20260725.csv,通过,当前证据文件存在
+RFIN-QA-06,09_quality/r01_candidate_bibliographic_readiness_20260725.csv,通过,当前证据文件存在
+RFIN-QA-07,09_quality/r01_final_reference_action_queue_20260725.csv,通过,当前证据文件存在
+RFIN-QA-08,09_quality/r01_v18_working_draft_qa_20260725.csv,通过,当前证据文件存在
+RFIN-QA-09,09_quality/r01_v18_desktop_render_qa_20260725.csv,通过,当前证据文件存在
+RFIN-QA-10,09_quality/ecnu_professional_format_reconciliation_20260725.md,通过,当前证据文件存在
+RFIN-QA-11,当前基础记录数,通过,4/4
+RFIN-QA-12,当前阻塞记录数,通过,10/10
+RFIN-QA-13,实际待补正文引文,通过,0项（计划性待补4项不计入）
+RFIN-QA-14,最终参考文献行动队列,通过,39/39项；P1=20，P2=19
+RFIN-QA-15,历史未编码叙述未写入当前基础,通过,基础记录不把当前编码或结果误写为缺失
+RFIN-QA-16,禁写边界完整,通过,每项阻塞均含不可声称边界

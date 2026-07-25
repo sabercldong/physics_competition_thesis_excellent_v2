@@ -8,10 +8,10 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-OUTPUT_CSV = ROOT / "09_quality/r01_current_finalization_blockers_20260725.csv"
-OUTPUT_MD = ROOT / "09_quality/r01_current_finalization_blockers_20260725.md"
-OUTPUT_QA_CSV = ROOT / "09_quality/r01_current_finalization_blockers_qa_v1.csv"
-OUTPUT_QA_MD = ROOT / "09_quality/r01_current_finalization_blockers_qa_v1.md"
+OUTPUT_CSV = ROOT / "09_quality/r01_current_finalization_blockers_20260725_v2.csv"
+OUTPUT_MD = ROOT / "09_quality/r01_current_finalization_blockers_20260725_v2.md"
+OUTPUT_QA_CSV = ROOT / "09_quality/r01_current_finalization_blockers_qa_v2.csv"
+OUTPUT_QA_MD = ROOT / "09_quality/r01_current_finalization_blockers_qa_v2.md"
 
 
 def read_rows(path: Path) -> list[dict[str, str]]:
@@ -34,9 +34,12 @@ def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
 def main() -> None:
     closure_rows = read_rows(ROOT / "09_quality/r01_citation_closure_readiness_20260725.csv")
     bibliography_rows = read_rows(ROOT / "09_quality/r01_candidate_bibliographic_readiness_20260725.csv")
+    action_queue_rows = read_rows(ROOT / "09_quality/r01_final_reference_action_queue_20260725.csv")
     pending_citations = [row for row in closure_rows if row["closure_status"] == "待补全文/不得升级"]
     planning_sources = [row for row in closure_rows if row["closure_status"] == "计划性待补文献（不计正文引文）"]
     final_reference_ready = sum(row["final_reference_ready"] == "是" for row in bibliography_rows)
+    p1_reference_actions = sum(row["priority"] == "P1" for row in action_queue_rows)
+    p2_reference_actions = sum(row["priority"] == "P2" for row in action_queue_rows)
 
     bases = [
         {
@@ -61,8 +64,8 @@ def main() -> None:
             "record_id": "BASE-03",
             "type": "当前研究基础",
             "current_status": "项目内已形成",
-            "item": "可读的非提交Word工作稿",
-            "evidence": "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx；09_quality/r01_v17_desktop_render_qa_20260725.md",
+            "item": "可读的非提交Word工作稿（V18）",
+            "evidence": "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v18.docx；09_quality/r01_v18_working_draft_qa_20260725.md；09_quality/r01_v18_desktop_render_qa_20260725.md",
             "boundary": "桌面抽检不等于逐页终校或学院模板验收。",
             "next_action": "待取得当期规则后，用专硕模板重新排版。",
         },
@@ -70,8 +73,8 @@ def main() -> None:
             "record_id": "BASE-04",
             "type": "当前研究基础",
             "current_status": "正文实际引文已关闭",
-            "item": "现有正文的来源级候选引文",
-            "evidence": "09_quality/r01_citation_closure_readiness_20260725.csv；09_quality/r01_candidate_bibliographic_readiness_20260725.csv",
+            "item": "现有正文的来源级候选引文与最终核对队列",
+            "evidence": "09_quality/r01_citation_closure_readiness_20260725.csv；09_quality/r01_candidate_bibliographic_readiness_20260725.csv；09_quality/r01_final_reference_action_queue_20260725.csv",
             "boundary": f"实际待补正文引文{len(pending_citations)}项；{len(planning_sources)}项仅为后续综述扩展计划；候选条目不等于最终参考文献。",
             "next_action": "按正式文后表标准逐条核验全文、版本、页码与学院格式。",
         },
@@ -101,7 +104,7 @@ def main() -> None:
         },
         {
             "record_id": "RFIN-04", "priority": "P1-理论定稿", "current_status": "可选扩展材料待阅读",
-            "item": "五项计划性待补全文与页码", "why_it_matters": "它们可以扩展第二章的SOLO课程评价、竞赛预赛和方法论比较，但不支撑当前正文论断。",
+            "item": f"{len(planning_sources)}项计划性待补全文与页码", "why_it_matters": "它们可以扩展第二章的SOLO课程评价、竞赛预赛和方法论比较，但不支撑当前正文论断。",
             "evidence": "09_quality/r01_citation_closure_readiness_20260725.csv；02_literature/literature_matrix.csv",
             "minimum_close": "合法取得并阅读全文，登记页码、允许用途和局限后，再决定是否纳入正文。",
             "cannot_claim": "不能把题录、摘要或计划性待补提及写成已读理论证据。",
@@ -116,9 +119,9 @@ def main() -> None:
         {
             "record_id": "RFIN-06", "priority": "P1-参考文献", "current_status": f"最终放行{final_reference_ready}/{len(bibliography_rows)}",
             "item": "最终参考文献、版本与页码终核", "why_it_matters": "候选条目的结构字段完整，不等于正式引用许可、版本一致、页码可复核或学院格式正确。",
-            "evidence": "09_quality/r01_candidate_bibliographic_readiness_20260725.md；08_manuscript/reference_readiness_register.csv",
+            "evidence": "09_quality/r01_candidate_bibliographic_readiness_20260725.md；09_quality/r01_final_reference_action_queue_20260725.csv；08_manuscript/reference_readiness_register.csv",
             "minimum_close": "逐条完成全文/版本/页码和正文双向核对，依当期学校格式生成文后表。",
-            "cannot_claim": "不能把36项候选清单或V17编号文献当成最终参考文献表。",
+            "cannot_claim": "不能把当前候选清单、V18候选编号文献或队列完成前的BibTeX当成最终参考文献表。",
         },
         {
             "record_id": "RFIN-07", "priority": "P1-学校规则", "current_status": "公开基线已核，个人当期规则待确认",
@@ -129,10 +132,10 @@ def main() -> None:
         },
         {
             "record_id": "RFIN-08", "priority": "P1-终稿生产", "current_status": "未开始",
-            "item": "基于正式模板的Word/PDF、摘要、附录与逐页终校", "why_it_matters": "V17只验证内部工作稿可读性；正式封面、签名页、摘要字数、前后置材料和逐页版式仍需真实信息与学校模板。",
-            "evidence": "10_outputs/drafts/build_r01_working_draft.py；09_quality/ecnu_professional_format_reconciliation_20260725.md",
+            "item": "基于正式模板的Word/PDF、摘要、附录与逐页终校", "why_it_matters": "V18只验证内部工作稿可读性；正式封面、签名页、摘要字数、前后置材料和逐页版式仍需真实信息与学校模板。",
+            "evidence": "10_outputs/drafts/build_r01_working_draft.py；09_quality/r01_v18_desktop_render_qa_20260725.md；09_quality/ecnu_professional_format_reconciliation_20260725.md",
             "minimum_close": "在RFIN-06/07关闭后，生成正式版和匿名副本，逐页检查并保存排版QA。",
-            "cannot_claim": "不能把V17称为最终Word/PDF、匿名版或归档版。",
+            "cannot_claim": "不能把V18称为最终Word/PDF、匿名版或归档版。",
         },
         {
             "record_id": "RFIN-09", "priority": "P1-导师与答辩", "current_status": "未提供真实记录",
@@ -154,7 +157,7 @@ def main() -> None:
     write_csv(OUTPUT_CSV, rows)
 
     lines = [
-        "# R01 当前最终化阻塞总表（2026-07-25）", "",
+        "# R01 当前最终化阻塞总表（2026-07-25，V2）", "",
         "本表以当前R01材料为准，替代早期准备期文件中“尚无正式编码、结果或第四章”的过时叙述，但不删除历史档案。它将项目内已形成的基础与真正需要外部材料、真实流程或终稿生产才能关闭的条件分开登记。", "",
         "## 已形成的项目内基础", "",
         "| 编号 | 项目 | 状态 | 边界 |", "|---|---|---|---|",
@@ -167,7 +170,7 @@ def main() -> None:
     lines.extend([
         "", "## 建议顺序", "",
         "1. 先完成RFIN-01与RFIN-03：确认题目/路线，并明确第五章收缩还是补采真实材料。",
-        "2. 处理RFIN-02与RFIN-06：获得真实方法反馈，完成参考文献的全文、版本与页码终核。",
+        f"2. 处理RFIN-02与RFIN-06：获得真实方法反馈，并按{p1_reference_actions}项P1版本/页码/来源链、{p2_reference_actions}项P2学院格式队列完成最终参考文献终核。",
         "3. 处理RFIN-07、RFIN-08、RFIN-09与RFIN-10：按实际答辩期规则生产终稿、匿名版和提交审计。",
         "4. RFIN-04与RFIN-05用于理论和第35届敏感性分析的进一步升级；不应被误报为现有结果或正文实际引文的阻断。",
         "", "因此，当前可交付物仍是限边界的研究材料包与非提交工作稿，不能据此断言学校提交资格、导师确认、教学验证或优秀论文评定已经完成。",
@@ -181,20 +184,24 @@ def main() -> None:
         ROOT / "09_quality/manuscript_chapter_readiness_matrix_20260725.md",
         ROOT / "09_quality/r01_citation_closure_readiness_20260725.csv",
         ROOT / "09_quality/r01_candidate_bibliographic_readiness_20260725.csv",
+        ROOT / "09_quality/r01_final_reference_action_queue_20260725.csv",
+        ROOT / "09_quality/r01_v18_working_draft_qa_20260725.csv",
+        ROOT / "09_quality/r01_v18_desktop_render_qa_20260725.csv",
         ROOT / "09_quality/ecnu_professional_format_reconciliation_20260725.md",
     ]
     qa_rows = [{"check_id": f"RFIN-QA-{index:02d}", "check_item": str(path.relative_to(ROOT)), "status": "通过" if path.is_file() else "不通过", "detail": "当前证据文件存在" if path.is_file() else "当前证据文件缺失"} for index, path in enumerate(required, 1)]
     qa_rows.extend([
-        {"check_id": "RFIN-QA-08", "check_item": "当前基础记录数", "status": "通过" if len(bases) == 4 else "不通过", "detail": f"{len(bases)}/4"},
-        {"check_id": "RFIN-QA-09", "check_item": "当前阻塞记录数", "status": "通过" if len(blockers) == 10 else "不通过", "detail": f"{len(blockers)}/10"},
-        {"check_id": "RFIN-QA-10", "check_item": "实际待补正文引文", "status": "通过" if not pending_citations else "不通过", "detail": f"{len(pending_citations)}项（计划性待补{len(planning_sources)}项不计入）"},
-        {"check_id": "RFIN-QA-11", "check_item": "历史未编码叙述未写入当前基础", "status": "通过" if all("尚无正式编码" not in row["boundary"] for row in bases) else "不通过", "detail": "基础记录不把当前编码或结果误写为缺失"},
-        {"check_id": "RFIN-QA-12", "check_item": "禁写边界完整", "status": "通过" if all(row["cannot_claim"] for row in blockers) else "不通过", "detail": "每项阻塞均含不可声称边界"},
+        {"check_id": "RFIN-QA-11", "check_item": "当前基础记录数", "status": "通过" if len(bases) == 4 else "不通过", "detail": f"{len(bases)}/4"},
+        {"check_id": "RFIN-QA-12", "check_item": "当前阻塞记录数", "status": "通过" if len(blockers) == 10 else "不通过", "detail": f"{len(blockers)}/10"},
+        {"check_id": "RFIN-QA-13", "check_item": "实际待补正文引文", "status": "通过" if not pending_citations else "不通过", "detail": f"{len(pending_citations)}项（计划性待补{len(planning_sources)}项不计入）"},
+        {"check_id": "RFIN-QA-14", "check_item": "最终参考文献行动队列", "status": "通过" if len(action_queue_rows) == len(bibliography_rows) and p1_reference_actions + p2_reference_actions == len(action_queue_rows) else "不通过", "detail": f"{len(action_queue_rows)}/{len(bibliography_rows)}项；P1={p1_reference_actions}，P2={p2_reference_actions}"},
+        {"check_id": "RFIN-QA-15", "check_item": "历史未编码叙述未写入当前基础", "status": "通过" if all("尚无正式编码" not in row["boundary"] for row in bases) else "不通过", "detail": "基础记录不把当前编码或结果误写为缺失"},
+        {"check_id": "RFIN-QA-16", "check_item": "禁写边界完整", "status": "通过" if all(row["cannot_claim"] for row in blockers) else "不通过", "detail": "每项阻塞均含不可声称边界"},
     ])
     write_csv(OUTPUT_QA_CSV, qa_rows)
     failures = [row for row in qa_rows if row["status"] != "通过"]
     OUTPUT_QA_MD.write_text(
-        "# R01 当前最终化阻塞总表 QA（V1）\n\n"
+        "# R01 当前最终化阻塞总表 QA（V2）\n\n"
         f"{len(qa_rows) - len(failures)}/{len(qa_rows)}通过。"
         "本QA只检查当前证据入口、计数和边界声明；不认证人类过程、外部来源版本、学校资格或优秀论文评定。\n",
         encoding="utf-8",
