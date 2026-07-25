@@ -1,0 +1,8 @@
+﻿check_id,check_item,expected,actual,status
+PCOMP-CM-QA-01,C2-05存在,存在,存在,通过
+PCOMP-CM-QA-02,C2-05使用E1,E1,E1,通过
+PCOMP-CM-QA-03,C2-05连接页码映射,映射路径,02_literature/physics_competition_fulltext_reading_notes_20260725.md；02_literature/physics_competition_page_level_claim_map_v1.csv；02_literature/physics_competition_theory_insertion_packet_20260725.md,通过
+PCOMP-CM-QA-04,C2-05保留非空白证明边界,不得宣称证明空白,五篇国内竞赛研究已读并已定位到页码，显示预赛核心素养、复赛SOLO、综合难度及题目—成绩混合等不同路线；但其语料、单位、模型和成绩材料不同，不能据此宣称已证明研究空白或迁移其统计/结论,通过
+PCOMP-CM-QA-05,C1-05反映已读五篇与未读两篇,002/003/004/007/008已读；001/005未读,GAP-01至GAP-03；PCOMP-002/003/004/007/008已读并完成页码级受限映射；PCOMP-001/005未读,通过
+PCOMP-CM-QA-06,C1-05仍为研究空白候选,研究空白候选,研究空白候选,通过
+PCOMP-CM-QA-07,页码映射覆盖五份来源,5个来源、至少14条,5个来源、14条,通过
