@@ -54,6 +54,7 @@ ARTIFACTS = [
     ("PKG-38", "文献核验", "02_literature/reference_verification.csv", "来源可读状态、限定用途和待核边界", "可随材料包提供；工作核验台账，不是最终参考文献表"),
     ("PKG-39", "文献核验", "02_literature/physics_competition_page_level_claim_map_v1.csv", "五篇国内竞赛研究的14条页码级主张映射", "可随材料包提供；用户提供来源的E1页码映射，不验证外部发布链"),
     ("PKG-40", "质量保证", "09_quality/pcomp_candidate_citation_integration_qa_v1.csv", "国内竞赛研究第二章与候选引文受控接入QA", "可随材料包提供；只验证项目内接入与边界"),
+    ("PKG-41", "文献核验", "09_quality/core_literature_status_reconciliation_20260725.md", "SOLO与国内竞赛核心来源当前可读状态对账", "可随材料包提供；不验证副本授权、外部发布链或理论效度"),
 ]
 
 
