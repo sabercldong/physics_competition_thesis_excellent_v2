@@ -1,0 +1,11 @@
+﻿check_id,check_item,status,source
+PCOMP-PAGE-QA-01,五项用户提供来源均有页码级映射,通过,physics_competition_page_level_claim_map_v1.csv
+PCOMP-PAGE-QA-02,映射至少14条且每条均有PDF页,通过,physics_competition_page_level_claim_map_v1.csv
+PCOMP-PAGE-QA-03,所有映射均保持E1,通过,physics_competition_page_level_claim_map_v1.csv
+PCOMP-PAGE-QA-04,龚枭页码覆盖对象、内容与统计起点,通过,physics_competition_page_level_claim_map_v1.csv
+PCOMP-PAGE-QA-05,唐路映射明确题目与成绩资料分开,通过,physics_competition_page_level_claim_map_v1.csv
+PCOMP-PAGE-QA-06,张豇萌映射明确八因素和成绩资料边界,通过,physics_competition_page_level_claim_map_v1.csv
+PCOMP-PAGE-QA-07,阅读补充保留五来源与不可迁移边界,通过,physics_competition_page_level_reading_notes_20260725.md
+PCOMP-PAGE-QA-08,插入包未直接改写并行第二章,通过,physics_competition_theory_insertion_packet_20260725.md
+PCOMP-PAGE-QA-09,插入段包含五来源页码占位,通过,physics_competition_theory_insertion_packet_20260725.md
+PCOMP-PAGE-QA-10,插入段不迁移禁用结论,通过,physics_competition_theory_insertion_packet_20260725.md
