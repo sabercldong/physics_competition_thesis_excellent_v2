@@ -30,8 +30,10 @@ CHAPTERS = [
     MANUSCRIPT_DIR / "05_cases_and_diagnosis.md",
     MANUSCRIPT_DIR / "06_conclusion.md",
 ]
-FONT_CN = "Arial Unicode MS"
-FONT_HEADING = "Arial Unicode MS"
+# The local LibreOffice renderer does not resolve Arial Unicode MS or PingFang SC.
+# Hiragino Sans GB is the macOS CJK fallback used for this non-submission draft.
+FONT_CN = "Hiragino Sans GB"
+FONT_HEADING = "Hiragino Sans GB"
 FONT_EN = "Times New Roman"
 REFERENCE_CANDIDATE_PATH = MANUSCRIPT_DIR / "07_candidate_references.md"
 CHINESE_ABSTRACT_PATH = MANUSCRIPT_DIR / "00_abstract_content_draft.md"
