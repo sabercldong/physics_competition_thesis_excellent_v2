@@ -13,7 +13,9 @@ OUTPUT = ROOT / "03_corpus/cpho35_score_rubric_v1.csv"
 
 SOURCE_FILE = "/Users/dongxingxi/Downloads/2018年第35届全国中学生理复赛试题答案.pdf"
 SOURCE_SHA256 = "6d622000fafa9c736e136ffd96a0f984a92c551381bac8b29ca48038c2b896cf"
-SOURCE_LABEL = "用户提供的第35届评分标准副本"
+SOURCE_LABEL = "用户提供的第35届官网索引可定位评分标准材料"
+SOURCE_DECLARATION = "用户声明该第35届答案/评分标准材料来自官网；项目已核验官网索引页并定位附件地址，但该附件当前返回404，未能逐文件核验版本一致性"
+PROVENANCE_STATUS = "官网索引可定位；用户提供材料声明来自官网；附件当前404，文件版本链未逐文件核验"
 
 # PDF pages are counted from the first page of the supplied 28-page PDF.  The
 # Q05 alternate-solution pages are not used to duplicate its subquestion marks.
@@ -59,8 +61,8 @@ def main() -> None:
                     "source_file_external": SOURCE_FILE,
                     "source_sha256": SOURCE_SHA256,
                     "evidence_level": "E1",
-                    "user_source_declaration": "用户声明该第35届答案/评分标准为官方副本；项目未独立核验发布链",
-                    "provenance_status": "用户提供副本；发布/官方版本链未独立核验",
+                    "user_source_declaration": SOURCE_DECLARATION,
+                    "provenance_status": PROVENANCE_STATUS,
                     "usable_for": "第35届本项目题目级/小问级描述性分值元数据与受限敏感性分析",
                     "not_usable_for": "跨届分值比较或趋势、学生成绩/能力推断、发布者或官方版本真实性证明",
                     "notes": "第5题按主评分标准登记20/9/11；另列的替代解法评分不得重复计分。" if question_no == 5 else "按该题主评分标准登记。",
@@ -86,7 +88,7 @@ def main() -> None:
         note = (
             f"G1-06-SCORE-RUBRIC-20260725：{SOURCE_LABEL}，PDF第{score['score_source_pdf_page']}页，"
             f"第{score['question_no']}题第（{score['subquestion_no']}）问{score['subquestion_score']}分；"
-            "仅作第35届项目内分值元数据。来源发布/官方版本链未独立核验，不作跨届比较、趋势或学生推断。"
+            "仅作第35届项目内分值元数据。官网索引与来源声明已登记，但附件当前404、版本链未逐文件核验，不作跨届比较、趋势或学生推断。"
         )
         row["notes"] = f"{old_note}；{note}" if old_note else note
 

@@ -37,8 +37,8 @@ def main() -> None:
     check("SCORE35-QA-02", "台账与第35届分析单元一一对应", ledger_ids == expected_ids == set(index_scores), f"{LEDGER.name}; {INDEX.name}")
     check("SCORE35-QA-03", "来源哈希一致", all(row["source_sha256"] == SOURCE_SHA256 for row in ledger), LEDGER.name)
     check("SCORE35-QA-04", "来源页码、位置与E1边界完整", all(row["score_source_pdf_page"] and row["score_source_location"] and row["evidence_level"] == "E1" for row in ledger), LEDGER.name)
-    check("SCORE35-QA-05", "未误称官方版本已独立核验", all("未独立核验" in row["provenance_status"] for row in ledger), LEDGER.name)
-    check("SCORE35-QA-06", "记录用户官方副本声明但不替代独立核验", all("用户声明" in row["user_source_declaration"] and "未独立核验" in row["user_source_declaration"] for row in ledger), LEDGER.name)
+    check("SCORE35-QA-05", "未误称官网附件已逐文件核验", all("404" in row["provenance_status"] and "未逐文件核验" in row["provenance_status"] for row in ledger), LEDGER.name)
+    check("SCORE35-QA-06", "记录用户官网来源声明与附件不可复查边界", all("用户声明" in row["user_source_declaration"] and "官网" in row["user_source_declaration"] and "404" in row["user_source_declaration"] for row in ledger), LEDGER.name)
     check("SCORE35-QA-07", "限制跨届与学生推断", all("跨届" in row["not_usable_for"] and "学生" in row["not_usable_for"] for row in ledger), LEDGER.name)
 
     by_question: dict[int, list[int]] = defaultdict(list)
