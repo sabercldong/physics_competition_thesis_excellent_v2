@@ -666,11 +666,11 @@
 ## G3 分析框架开发
 
 - [-] G3-01 明确分析单位和排除规则
-  - 进度：已在 `04_framework/analysis_unit_and_coding_definitions_formal_draft.md` 中整理默认分析单位、拆分规则、合并规则、背景信息处理、纳入范围、暂不纳入范围和通用排除规则；当前为正式草案，仍待人工校对与评分者试用。
+  - 进度：已在 `04_framework/analysis_unit_and_coding_definitions_formal_draft.md` 中整理默认分析单位、拆分规则、合并规则、背景信息处理、纳入范围、暂不纳入范围和通用排除规则；后续R01当前分析表已按219个分析单元运行。该事实只证明项目内规则被使用，仍待外部方法审查与正式确认；详见 `09_quality/r01_g3_framework_lifecycle_reconciliation_20260725.md`。
 - [-] G3-02 完成科学思维四维度操作性定义
-  - 进度：已在 `analysis_unit_and_coding_definitions_formal_draft.md` 和 `04_framework/codebook_v2_formal_draft.csv` 中整理模型建构、科学推理、科学论证、质疑创新四维度的操作性定义、纳入信号和排除信号；当前仍待真实评分者试编码和导师确认。
+  - 进度：已在 `analysis_unit_and_coding_definitions_formal_draft.md` 和 `04_framework/codebook_v2_formal_draft.csv` 中整理模型建构、科学推理、科学论证、质疑创新四维度的操作性定义、纳入信号和排除信号；规则已进入R01回填、裁决与当前唯一分析表，但不证明构念效度或导师确认。
 - [-] G3-03 完成SOLO启发的认知结构等级定义
-  - 进度：已在 `analysis_unit_and_coding_definitions_formal_draft.md` 中明确 L1-L4 为“SOLO启发的任务认知结构要求等级”，并写入各维度等级定义；当前仍不得写成学生学习结果等级或正式编码手册冻结版。
+  - 进度：已在 `analysis_unit_and_coding_definitions_formal_draft.md` 中明确 L1-L4 为“SOLO启发的任务认知结构要求等级”，并写入各维度等级定义；规则已用于R01编码，但仍不得写成学生学习结果等级或正式编码手册冻结版。
 - [-] G3-04 编写编码手册V1及正反例
   - 进度：已新增 `04_framework/rater_training_manual_formal_draft.md`、`04_framework/boundary_case_bank_formal_draft.csv` 和 `04_framework/evidence_note_and_disagreement_protocol_formal_draft.md`，把正式草案扩展为评分者培训版候选稿、边界案例库和证据/分歧记录协议；当前仍为候选材料，不代表真实评分者试编码、正式分歧裁决或正式编码手册冻结。
   - QA：已新增 `04_framework/rater_training_package_index.md`、`rater_training_package_index.csv`、`rater_training_field_alignment_audit.csv` 和 `rater_training_return_checklist.csv`，完成培训包索引、字段对齐审计和回收核对表；仍需真实评分者试用后再修订手册。
@@ -679,14 +679,15 @@
   - 内部预审：已完成Codex内部预审，新增 `codex_internal_pre_review_report.md`、`codex_internal_pre_review_log.csv`、`coding_manual_v2_draft.md`、`codebook_v2_draft.csv`、`rater_training_packet.md` 和 `pilot_coding_round1_template.csv`；该预审不能替代真实专家审查。
   - 前置：按 `03_corpus/manual_review_checklist.csv` 优先处理高风险OCR和公式符号问题，避免专家审查被文本错误干扰。
 - [-] G3-06 完成两轮试编码
-  - 进度：已准备第一轮双人试编码模板 `04_framework/pilot_coding_round1_template.csv` 和评分者训练包 `04_framework/rater_training_packet.md`；尚未由两名真实评分者独立填写。
+  - 进度：已准备第一轮双人试编码模板 `04_framework/pilot_coding_round1_template.csv` 和评分者训练包 `04_framework/rater_training_packet.md`；后续已接收两份各876条RATER-A/B回填并完成登记、结构检查和一致性计算。项目仅登记其独立编码自声明，不能独立验证身份、互盲或实际人工过程。
 - [-] G3-07 计算并报告评分者一致性
   - 模拟测试：已完成Codex模拟双评分者试编码与一致性压力测试，新增 `codex_simulated_round1_coding.csv`、`codex_simulated_disagreement_log.csv`、`codex_simulated_reliability_stats.csv` 和 `codex_simulated_reliability_report.md`；该结果仅用于训练和发现手册边界，不代表真实评分者一致性。
   - 脚本：已升级 `07_analysis/scripts/compute_reliability.py`，可在真实评分者完成模板后生成一致性统计和分歧明细。
+  - R01归档：已对两份各876条登记回填复算一致性，并对142条分歧完成ADJ-01裁决及ADJ-02四条更正；数值与当前唯一分析表可复算，但不构成框架效度或独立过程验证。
 - [x] G3-08I 冻结内部版编码手册V2
   - 进度：新增 `04_framework/coding_manual_v2_internal.md` 和 `04_framework/codebook_v2_internal.csv`，作为 Codex 内部分析准备、脚本联调和表格结构预演的稳定版本；该任务不等同于 `G3-08` 正式编码手册冻结。
 - [ ] G3-08 冻结正式编码手册V2
-  - 边界：当前未完成真实专家审查、导师确认、真实双评分者试编码和分歧裁决，因此正式编码手册V2仍未冻结。
+  - 边界：当前已具备R01回填、裁决和更正链，但未完成可独立验证的真实专家审查、导师确认、完整理论取舍与正式版本确认，因此正式编码手册V2仍未冻结。
 
 ## G4 正式编码与分析
 
