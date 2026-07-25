@@ -1,0 +1,7 @@
+source_id,metadata_recheck_status,metadata_source,metadata_source_url,full_text_or_primary_version_status,location_status,allowed_use,final_reference_ready,remaining_requirement
+CS-001,已复核,教育部官方通知页与附件包,http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html,官方课程标准附件已读,科学思维定义与四要素已定位至正文页4-5/PDF页13-14,仅支持课程标准中的科学思维四要素概念依据,否,按当期学院规则确定标准类电子资源的最终著录与访问日期
+ST-002,已复核,DOI内容协商返回的Crossref登记元数据,https://doi.org/10.1126/science.1167740,作者站可读PDF已登记；期刊VOR元数据已对照,主文586-587页已核；不引用未复核的SOM具体表格,仅支持区分物理内容知识、科学推理测评表现和试题任务要求,否,若正文需用SOM内容须另核官方补充材料；按学院规则定稿
+ST-003,已复核,DOI内容协商返回的Crossref登记元数据,https://doi.org/10.1103/PhysRevPhysEducRes.18.010115,DOI登记显示VOR为CC BY 4.0；项目已读开放全文,卷18期1文章号010115已核；正文不引用未单独复核的图表号,仅支持区分任务要求、学生表现和量化测评模型,否,如加入具体图表或段落引文须补定位；按学院规则定稿
+ST-005,已复核,Wiley出版社页面与DOI内容协商登记元数据,https://doi.org/10.1002/tea.20035,UCL开放仓储PDF已读；Wiley期刊VOR元数据已核,卷41期10页994-1020已核；仓储版与VOR逐页一致性未单独认证,仅支持教学转化中的任务、支架、评价与反馈链条参照,否,具体引文补页码或小节；按学院规则定稿
+ST-006,已复核,National Academies Press页面与DOI内容协商登记元数据,https://doi.org/10.17226/18290,National Academies官方在线章节已读,2013年专著与Appendix F在线章节入口已核,仅支持国际科学实践和任务/评价对象参照,否,决定按全书或Appendix F章节著录并按学院规则定稿
+METH-004,已复核,DOI内容协商返回的Crossref登记元数据与OUP期刊资源入口,https://doi.org/10.1111/j.1468-2958.2002.tb00826.x,开放仓储postprint已读；OUP期刊VOR元数据已核,卷28期4页587-604已核；不将仓储版本等同于已逐页认证的VOR,仅支持逐变量一致性报告、指标选择和分歧处理记录,否,具体方法引文补页码；按学院规则定稿

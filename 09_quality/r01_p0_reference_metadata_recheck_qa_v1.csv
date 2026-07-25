@@ -1,0 +1,10 @@
+﻿check_id,check_item,status,detail
+P0META-QA-01,六项来源覆盖,通过,6/6
+P0META-QA-02,来源唯一,通过,6行/6个ID
+P0META-QA-03,元数据复核状态,通过,六项均已登记
+P0META-QA-04,最终参考文献边界,通过,六项均未提前放行
+P0META-QA-05,字段完整,通过,关键字段非空
+P0META-QA-06,ST-002补充材料边界,通过,需另核官方补充材料
+P0META-QA-07,ST-003图表边界,通过,具体图表另行定位
+P0META-QA-08,METH-004版本边界,通过,仓储版不等于VOR
+P0META-QA-09,课程框架禁推断,通过,允许用途未越界
