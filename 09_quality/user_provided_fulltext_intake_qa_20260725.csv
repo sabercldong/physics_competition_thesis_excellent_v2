@@ -1,0 +1,11 @@
+﻿check_id,check_item,status
+UPFT-QA-01,六份来源完整登记,通过
+UPFT-QA-02,所有副本不作为最终著录,通过
+UPFT-QA-03,SOLO-001仅去重,通过
+UPFT-QA-04,METH-001版本不匹配保留,通过
+UPFT-QA-05,四个版本匹配来源已读,通过
+UPFT-QA-06,矩阵状态与台账一致,通过
+UPFT-QA-07,METH-002不设阈值,通过
+UPFT-QA-08,METH-003不设阈值,通过
+UPFT-QA-09,SOLO-002不外推框架效度,通过
+UPFT-QA-10,PCOMP-001不迁移预赛结论,通过

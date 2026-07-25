@@ -29,14 +29,17 @@ def main() -> None:
         ("CORE-LIT-QA-01", "SOLO-001已读状态", ledger["SOLO-001"]["relevant_passage_checked"] == "是"),
         ("CORE-LIT-QA-02", "SOLO-001章节页码", "印刷页22至31" in ledger["SOLO-001"]["notes"]),
         ("CORE-LIT-QA-03", "SOLO-001进入候选链", "SOLO-001" in candidate_ids),
-        ("CORE-LIT-QA-04", "SOLO-002仍非全文", ledger["SOLO-002"]["relevant_passage_checked"] != "是"),
+        ("CORE-LIT-QA-04", "SOLO-002受限全文已读", ledger["SOLO-002"]["relevant_passage_checked"] == "是"),
         ("CORE-LIT-QA-05", "五篇PCOMP已读", all(ledger[source]["relevant_passage_checked"] == "是" for source in pcomp_read)),
         ("CORE-LIT-QA-06", "五篇PCOMP进入候选链", pcomp_read <= candidate_ids),
-        ("CORE-LIT-QA-07", "PCOMP-001仍待读", ledger["PCOMP-001"]["relevant_passage_checked"] == "否"),
+        ("CORE-LIT-QA-07", "PCOMP-001受限全文已读", ledger["PCOMP-001"]["relevant_passage_checked"] == "是"),
         ("CORE-LIT-QA-08", "PCOMP-005仍待读", ledger["PCOMP-005"]["relevant_passage_checked"] == "否"),
         ("CORE-LIT-QA-09", "对账保留E1边界", "E1页码级受限可用" in text),
         ("CORE-LIT-QA-10", "对账保留发布链边界", "独立发布链" in text),
         ("CORE-LIT-QA-11", "对账保留不外推边界", "学生能力、教学效果" in text),
+        ("CORE-LIT-QA-12", "METH-001版本不匹配仍未关闭", ledger["METH-001"]["relevant_passage_checked"] == "否" and "2018年第4版全文缺口" in ledger["METH-001"]["notes"]),
+        ("CORE-LIT-QA-13", "METH-002受限全文已读", ledger["METH-002"]["relevant_passage_checked"] == "是"),
+        ("CORE-LIT-QA-14", "METH-003受限全文已读", ledger["METH-003"]["relevant_passage_checked"] == "是"),
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
