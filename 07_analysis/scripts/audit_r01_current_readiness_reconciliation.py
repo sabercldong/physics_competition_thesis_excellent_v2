@@ -26,6 +26,10 @@ def main() -> None:
     item_rows = read_rows(ROOT / "03_corpus/item_index.csv")
     review_rows = read_rows(ROOT / "03_corpus/manual_review_checklist.csv")
     review_statuses = Counter(row["review_status"] for row in review_rows)
+    score_review_rows = [row for row in review_rows if row["issue_type"] == "第35届分值边界复核"]
+    score_rubric_rows = read_rows(ROOT / "03_corpus/cpho35_score_rubric_v1.csv")
+    score_rubric_qa = ROOT / "09_quality/cpho35_score_rubric_qa_v1.csv"
+    score_sensitivity_qa = ROOT / "09_quality/cpho35_score_weighted_sensitivity_qa_v1.csv"
     rater_a = read_rows(ROOT / "07_analysis/data/rater_returns/incoming/R01/formal_coding_rater_A_FILLED_20260722.csv")
     rater_b = read_rows(ROOT / "07_analysis/data/rater_returns/incoming/R01/formal_coding_rater_B_FILLED_20260722.csv")
     final_coding = read_rows(ROOT / "07_analysis/data/final_coding_r01_correction_v1.csv")
@@ -51,9 +55,9 @@ def main() -> None:
             f"{review_statuses['整合QA通过：正式编码输入候选']}项编码输入候选、"
             f"{review_statuses['整合QA通过：图件候选（非论文定稿）']}项图件候选、"
             f"{review_statuses['整合QA通过：题解图边界候选']}项题解图边界候选、"
-            f"{review_statuses['未关闭：待正式评分细则或原卷分值说明']}项分值未关闭。",
-            "still_missing": "校对过程仅按R01回填声明登记；8项第35届分值仍无正式来源依据。",
-            "cannot_claim": "不能把过程声明写成项目独立认证，也不能把8项待核分值用于正式分值比较。",
+            f"{review_statuses['未关闭：待正式评分细则或原卷分值说明']}项原始副本分值边界未关闭。",
+            "still_missing": f"校对过程仅按R01回填声明登记；{len(score_review_rows)}项原题面/答案副本分值边界仍未关闭。另有{len(score_rubric_rows)}行E1评分台账（台账QA={'通过' if all_pass(score_rubric_qa) else '待复核'}；敏感性QA={'通过' if all_pass(score_sensitivity_qa) else '待复核'}），其发布/官方版本链未独立核验。",
+            "cannot_claim": "不能把过程声明写成项目独立认证；不能把E1评分台账写成独立核验的官方细则，也不能做跨届正式分值比较。",
         },
         {
             "gate": "G2 理论与文献",
@@ -134,7 +138,7 @@ def main() -> None:
         "|---|---|---|",
     ]
     next_actions = [
-        "补8项第35届分值正式依据，并保留过程认证边界",
+        "保留8项原始副本页面边界；若需正式来源链，独立核验E1评分副本的发布/版本链",
         "补5项全文并做逐条受控引用决定",
         "取得真实专家/导师对框架的反馈，或保持内部框架表述",
         "保留自声明与项目内可复算的区分",
