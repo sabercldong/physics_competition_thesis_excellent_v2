@@ -32,6 +32,7 @@ python3 07_analysis/scripts/audit_r01_current_chapter_evidence.py
 python3 07_analysis/scripts/validate_r01_teaching_design_materials.py
 python3 07_analysis/scripts/validate_r01_student_artifact_observation_rubric.py
 python3 07_analysis/scripts/validate_r01_g3_framework_lifecycle_reconciliation.py
+python3 07_analysis/scripts/validate_manuscript_chapter_readiness_matrix.py
 python3 07_analysis/scripts/build_r01_case_reselection.py
 python3 07_analysis/scripts/validate_r01_case_reselection.py
 python3 07_analysis/scripts/build_r01_candidate_references.py
@@ -61,8 +62,9 @@ python3 07_analysis/scripts/validate_r01_full_package_healthcheck.py
 - 教学设计材料QA：21/21通过；它只核验矩阵、两套未实施设计材料与R01案例的项目内对应关系，不验证学生/教师参与、课堂实施、量规信效度或教学效果。
 - 学生作品过程性观察记录量规QA：12/12通过；它只核验三个案例的观察指标、空白模板和非推断边界，不产生学生数据，也不验证信度、效度或教学效果。
 - G3生命周期对账QA：18/18通过；它只区分项目内可复算规则与未闭合的专家/正式冻结边界。
-- V17工作稿输入新鲜度：9/9当前；材料包快照：43/43当前；材料包审计：16/16通过。
-- 内部非提交交接包：默认42项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
+- 六章工作稿就绪度矩阵QA：19/19通过；第二章核心终稿阻塞、第三章方法未定稿及第五章无课堂数据均已逐章登记。
+- V17工作稿输入新鲜度：9/9当前；材料包快照：44/44当前；材料包审计：16/16通过。
+- 内部非提交交接包：默认43项，不含原始试卷/解答或V17；若需本地携带V17，必须显式使用 `--include-local-draft` 后另行校验。
 - 全链路健康检查：16项已有门禁必须同时通过；其结果写入 `09_quality/r01_full_package_healthcheck_v1.csv`。
 
 ## 不能由本协议证明的事项

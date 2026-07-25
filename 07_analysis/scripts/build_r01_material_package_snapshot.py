@@ -57,6 +57,7 @@ ARTIFACTS = [
     ("PKG-41", "文献核验", "09_quality/core_literature_status_reconciliation_20260725.md", "SOLO与国内竞赛核心来源当前可读状态对账", "可随材料包提供；不验证副本授权、外部发布链或理论效度"),
     ("PKG-42", "文献核验", "02_literature/core_source_public_metadata_recheck_20260725.md", "SOLO与两篇竞赛文献公开元数据复核", "可随材料包提供；不以题录或摘要替代全文阅读"),
     ("PKG-43", "质量保证", "09_quality/r01_g3_framework_lifecycle_reconciliation_20260725.md", "R01分析框架生命周期状态对账", "可随材料包提供；不把人工声明或统计升级为专家确认或外部效度"),
+    ("PKG-44", "质量保证", "09_quality/manuscript_chapter_readiness_matrix_20260725.md", "六章工作稿就绪度矩阵", "可随材料包提供；只判定非提交工作稿范围，不代表终稿或提交资格"),
 ]
 
 
