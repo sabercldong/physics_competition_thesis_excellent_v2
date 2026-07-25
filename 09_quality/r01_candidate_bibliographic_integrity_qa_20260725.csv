@@ -1,0 +1,5 @@
+﻿check_id,check_item,status,detail
+REFI-QA-01,候选覆盖,通过,审计39；映射39
+REFI-QA-02,汇总检查存在,通过,3/3
+REFI-QA-03,身份状态取值,通过,状态仅为通过或待核实
+REFI-QA-04,边界声明完整,通过,39条均不声称外部认证或最终放行

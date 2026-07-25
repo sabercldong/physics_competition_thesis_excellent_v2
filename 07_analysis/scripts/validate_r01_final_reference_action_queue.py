@@ -29,6 +29,7 @@ def main() -> None:
         ("REFQ-03", "候选状态边界", all(row["current_final_status"] == "候选条目，未最终放行" for row in queue), "所有条目均未放行"),
         ("REFQ-04", "优先级完整", all(row["priority"] in {"P1", "P2"} for row in queue), "P1/P2分类完整"),
         ("REFQ-05", "禁止捷径声明", all(row["prohibited_shortcut"] for row in queue), "39条均有禁止捷径说明"),
+        ("REFQ-06", "内部身份不一致升级为P1", all(row["priority"] == "P1" for row in queue if "项目内候选著录DOI与BibTeX字段不一致" in row["remaining_verification"]), "内部身份不一致条目不得留在P2"),
     ]
     with OUTPUT.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")

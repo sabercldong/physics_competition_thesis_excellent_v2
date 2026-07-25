@@ -4,19 +4,39 @@
 from __future__ import annotations
 
 import csv
+import re
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
 MAPPING = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
+BIB = ROOT / "02_literature/references.bib"
 OUTPUT_CSV = ROOT / "09_quality/r01_final_reference_action_queue_20260725.csv"
 OUTPUT_MD = ROOT / "09_quality/r01_final_reference_action_queue_20260725.md"
 
 PROVENANCE_TERMS = ("用户提供", "外部PDF", "授权", "发布链", "独立发布")
 VERSION_TERMS = ("页码", "版本", "PDF", "出版社", "SOM", "postprint", "全书", "附录")
+ENTRY_RE = re.compile(r"@(\w+)\{([^,]+),(.*?)(?=^@|\Z)", re.MULTILINE | re.DOTALL)
+FIELD_RE = re.compile(r'^\s*(\w+)\s*=\s*[{"]([^}"]+)[}"]', re.MULTILINE)
+DOI_RE = re.compile(r"DOI:([^\s]+)", re.IGNORECASE)
 
 
-def priority(note: str) -> tuple[str, str]:
+def normalise_doi(value: str) -> str:
+    return value.strip().rstrip(".,;)").lower()
+
+
+def parse_bib_dois() -> dict[str, str]:
+    dois: dict[str, str] = {}
+    for _entry_type, key, body in ENTRY_RE.findall(BIB.read_text(encoding="utf-8")):
+        fields = {field.lower(): value.strip() for field, value in FIELD_RE.findall(body)}
+        if fields.get("doi"):
+            dois[key] = normalise_doi(fields["doi"])
+    return dois
+
+
+def priority(note: str, has_internal_identity_issue: bool) -> tuple[str, str]:
+    if has_internal_identity_issue:
+        return "P1", "先核对候选著录与BibTeX的内部身份字段，再核对实际使用版本、正文定位和学院格式；未核对前不得将任一字段视为最终值。"
     if any(term in note for term in PROVENANCE_TERMS):
         return "P1", "核对可引用版本、出版信息与项目可记录的来源链；不把副本来源声明写成独立认证。"
     if any(term in note for term in VERSION_TERMS):
@@ -27,10 +47,17 @@ def priority(note: str) -> tuple[str, str]:
 def main() -> None:
     with MAPPING.open(encoding="utf-8-sig", newline="") as handle:
         candidates = list(csv.DictReader(handle))
+    bib_dois = parse_bib_dois()
     rows: list[dict[str, str]] = []
     for candidate in candidates:
         note = candidate["remaining_verification"].strip()
-        level, action = priority(note)
+        candidate_doi_match = DOI_RE.search(candidate["gbt_7714_candidate_entry"])
+        candidate_doi = normalise_doi(candidate_doi_match.group(1)) if candidate_doi_match else ""
+        bib_doi = bib_dois.get(candidate["bib_key"], "")
+        has_internal_identity_issue = bool(candidate_doi and candidate_doi != bib_doi)
+        if has_internal_identity_issue:
+            note = f"{note}；项目内候选著录DOI与BibTeX字段不一致，需核对后统一"
+        level, action = priority(note, has_internal_identity_issue)
         rows.append({
             "reference_number": candidate["reference_number"],
             "source_id": candidate["source_id"],
