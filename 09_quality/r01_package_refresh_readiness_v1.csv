@@ -1,0 +1,6 @@
+﻿check_id,check_item,expected,actual,passed,refresh_status
+PKG-READY-01,材料包快照,40项且当前,40项；当前,通过,已同步
+PKG-READY-02,候选引文链,36项,36,通过,已同步
+PKG-READY-03,正文引用追溯,67条来源/61处占位,67条来源/61处占位,通过,已同步
+PKG-READY-04,V17输入新鲜度,9/9当前,6/9当前；过期：08_manuscript/02_theory.md；08_manuscript/04_results.md；08_manuscript/07_candidate_references.md,待刷新,需重建
+PKG-READY-05,全链路健康检查可刷新条件,V17当前且旧口径已更新,V17待重建；全局材料审计/运行手册仍含旧计数,待刷新,需重建并更新门禁
