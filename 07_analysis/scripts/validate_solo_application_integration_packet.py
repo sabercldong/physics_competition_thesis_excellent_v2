@@ -61,8 +61,8 @@ def main() -> None:
         ))
     checks.append((
         f"SAIP-QA-{len(checks) + 1:02d}", "原典全文缺口仍保留", "存在",
-        "存在" if "SOLO原始理论" in theory_text and "[待补核验文献]" in theory_text else "缺失",
-        "SOLO原始理论" in theory_text and "[待补核验文献]" in theory_text,
+        "存在" if "SOLO-002" in theory_text and "[待补核验文献]" in theory_text else "缺失",
+        "SOLO-002" in theory_text and "[待补核验文献]" in theory_text,
     ))
     required_terms = [
         "不替代 `SOLO-001`、`SOLO-002` 原典全文",

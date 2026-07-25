@@ -72,7 +72,7 @@ def main() -> None:
         ("MPA-QA-05", "距离30篇最小差额", str(max(0, 30 - read_count)), "0", max(0, 30 - read_count) == 0),
         ("MPA-QA-06", "结果资格QA", f"{sum(row['status'] == '通过' for row in result_qa)}/{len(result_qa)}", "51/51", result_passed and len(result_qa) == 51),
         ("MPA-QA-07", "第四章当前结果整合QA", f"{sum(row['status'] == '通过' for row in integration_qa)}/{len(integration_qa)}", "35/35", integration_passed and len(integration_qa) == 35),
-        ("MPA-QA-08", "引用追溯", f"{trace_total}/{trace_placeholders}", "67/61", trace_total == 67 and trace_placeholders == 61),
+        ("MPA-QA-08", "引用追溯", f"{trace_total}/{trace_placeholders}", "72/61", trace_total == 72 and trace_placeholders == 61),
         ("MPA-QA-09", "V17工作稿文件", "存在" if V17.is_file() else "缺失", "存在", V17.is_file()),
         ("MPA-QA-10", "V17输入清单", "存在" if V17_MANIFEST.is_file() else "缺失", "存在", V17_MANIFEST.is_file()),
         ("MPA-QA-11", "V17工作稿QA", "存在" if V17_QA.is_file() else "缺失", "存在", V17_QA.is_file()),
