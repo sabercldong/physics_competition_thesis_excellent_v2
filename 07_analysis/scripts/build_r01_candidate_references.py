@@ -23,6 +23,7 @@ CHAPTERS = [MANUSCRIPT_DIR / f"{index:02d}_{name}.md" for index, name in [
 FORMATTED = {
     "CS-001": "中华人民共和国教育部. 普通高中物理课程标准（2017年版2020年修订）[S/OL]. 2020-06-03 [2026-07-24]. http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html.",
     "SOLO-001": "Biggs J B, Collis K F. Evaluating the quality of learning: The SOLO taxonomy (structure of the observed learning outcome)[M]. New York: Academic Press, 1982. DOI:10.1016/C2013-0-10375-3.",
+    "SOLO-002": "Biggs J B, Collis K F. Towards a model of school-based curriculum development and assessment using the SOLO taxonomy[J]. Australian Journal of Education, 1989, 33(2): 151-163. DOI:10.1177/168781408903300205.",
     "ST-002": "Bao L, Cai T, Koenig K, et al. Learning and scientific reasoning[J]. Science, 2009, 323(5914): 586-587. DOI:10.1126/science.1167740.",
     "ST-003": "Bao L, Koenig K, Xiao Y, et al. Theoretical model and quantitative assessment of scientific thinking and reasoning[J]. Physical Review Physics Education Research, 2022, 18(1): 010115. DOI:10.1103/PhysRevPhysEducRes.18.010115.",
     "ST-005": "Osborne J, Erduran S, Simon S. Enhancing the quality of argumentation in school science[J]. Journal of Research in Science Teaching, 2004, 41(10): 994-1020. DOI:10.1002/tea.20035.",
@@ -33,6 +34,8 @@ FORMATTED = {
     "ST-010": "Pols C F J, Dekkers P J J M, de Vries M J. Integrating argumentation in physics inquiry: A design and evaluation study[J]. Physical Review Physics Education Research, 2023, 19(2): 020170. DOI:10.1103/PhysRevPhysEducRes.19.020170.",
     "ST-011": "Pols C F J, Dekkers P J J M, de Vries M J. Defining and assessing understandings of evidence with the assessment rubric for physics inquiry: Towards integration of argumentation and inquiry[J]. Physical Review Physics Education Research, 2022, 18(1): 010111. DOI:10.1103/PhysRevPhysEducRes.18.010111.",
     "METH-004": "Lombard M, Snyder-Duch J, Bracken C C. Content analysis in mass communication: Assessment and reporting of intercoder reliability[J]. Human Communication Research, 2002, 28(4): 587-604. DOI:10.1111/j.1468-2958.2002.tb00826.x.",
+    "METH-002": "Cohen J. A coefficient of agreement for nominal scales[J]. Educational and Psychological Measurement, 1960, 20(1): 37-46. DOI:10.1177/001316446002000104.",
+    "METH-003": "Landis J R, Koch G G. The measurement of observer agreement for categorical data[J]. Biometrics, 1977, 33(1): 159-174. DOI:10.2307/2529310.",
     "METH-006": "Wei B, Wang C, Tan L. Visual representation of optical content in China’s and Singapore’s junior secondary physics textbooks[J]. Physical Review Physics Education Research, 2022, 18(2): 020138. DOI:10.1103/PhysRevPhysEducRes.18.020138.",
     "METH-007": "McHugh M L. Interrater reliability: The kappa statistic[J]. Biochemia Medica, 2012, 22(3): 276-282. DOI:10.11613/BM.2012.031.",
     "METH-008": "于海波, 王宇琪, 伊西凡, 等. 近10年高考物理试卷与课程标准的一致性研究[J]. 物理教师, 2024, 45(5): 67-73.",
@@ -103,7 +106,7 @@ def main() -> None:
     lines = [
         "# 参考文献（候选工作稿）",
         "",
-        f"> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前{len(rows)}项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；SOLO-002、部分国内物理竞赛研究和其余方法文献仍待完整阅读、页码或格式核验，暂不得加入。",
+        f"> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前{len(rows)}项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；每项仍需逐条完成版本、页码和学校格式核验，未受控接入的来源继续留在文献台账而不进入本清单。",
         "",
     ]
     lines.extend(f"[{row['reference_number']}] {row['gbt_7714_candidate_entry']}" for row in rows)

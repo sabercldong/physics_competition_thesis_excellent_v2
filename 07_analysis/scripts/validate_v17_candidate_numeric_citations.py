@@ -28,6 +28,7 @@ PLACEHOLDER = re.compile(r"\[引文占位：([^\]]+)\]")
 def main() -> None:
     with MAPPING_PATH.open(encoding="utf-8-sig", newline="") as handle:
         mapping = {row["source_id"]: int(row["reference_number"]) for row in csv.DictReader(handle)}
+    candidate_count = len(mapping)
     markdown = "\n".join(path.read_text(encoding="utf-8") for path in CHAPTERS)
     raw_groups = PLACEHOLDER.findall(markdown)
     raw_source_ids = {source_id for group in raw_groups for source_id in SOURCE_ID.findall(group)}
@@ -38,7 +39,7 @@ def main() -> None:
         ("V17-CIT-01", "Markdown保留来源占位以供追溯", "至少1处", str(len(raw_groups)), bool(raw_groups)),
         ("V17-CIT-02", "占位来源均为候选映射来源", f"{len(raw_source_ids)}/{len(raw_source_ids)}", f"{len(raw_source_ids & set(mapping))}/{len(raw_source_ids)}", raw_source_ids <= set(mapping)),
         ("V17-CIT-03", "DOCX不显示来源占位标签", "不含引文占位", "不含" if "引文占位" not in xml else "仍含", "引文占位" not in xml),
-        ("V17-CIT-04", "DOCX使用说明声明候选编号边界", "存在", "存在" if "36项候选参考文献" in xml else "缺失", "36项候选参考文献" in xml),
+        ("V17-CIT-04", "DOCX使用说明声明当前候选编号数量", f"{candidate_count}项", "存在" if f"{candidate_count}项候选参考文献" in xml else "缺失", f"{candidate_count}项候选参考文献" in xml),
         ("V17-CIT-05", "待核文献标记不被删除", "存在", "存在" if "待补核验文献" in xml else "缺失", "待补核验文献" in xml),
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:

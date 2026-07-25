@@ -39,9 +39,7 @@ def main() -> None:
     for chapter in CHAPTERS:
         for line_number, line in enumerate(chapter.read_text(encoding="utf-8").splitlines(), start=1):
             is_placeholder = "[引文占位：" in line
-            is_planning_only = "[待补核验文献" in line or (
-                chapter.name == "02_theory.md" and line_number in {5, 107}
-            )
+            is_planning_only = not is_placeholder
             for source_id in SOURCE_ID.findall(line):
                 occurrences[source_id].append((chapter.name, line_number, is_placeholder, is_planning_only))
 
@@ -50,7 +48,7 @@ def main() -> None:
         found = occurrences[source_id]
         source = mapping.get(source_id, {})
         ref = reference.get(source_id, {})
-        citation_found = [entry for entry in found if not entry[3]]
+        citation_found = [entry for entry in found if entry[2]]
         planning_found = [entry for entry in found if entry[3]]
         candidate = source.get("can_enter_formal_candidate_list") == "yes"
         bib_key = source.get("bib_key", "")
