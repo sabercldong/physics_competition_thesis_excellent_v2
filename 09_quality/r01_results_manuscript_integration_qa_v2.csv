@@ -26,6 +26,11 @@ MRQA2-24,图4-2图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62
 MRQA2-25,第四章边界语句,不代表学生实际能力,存在,通过,08_manuscript/04_results.md
 MRQA2-26,第四章边界语句,不代表教学效果,存在,通过,08_manuscript/04_results.md
 MRQA2-27,第四章边界语句,不进行显著性检验,存在,通过,08_manuscript/04_results.md
-MRQA2-28,第四章边界语句,不进行分值加权,存在,通过,08_manuscript/04_results.md
+MRQA2-28,第四章边界语句,全样本主分析不进行分值加权,存在,通过,08_manuscript/04_results.md
 MRQA2-29,第四章边界语句,项目无法独立验证,存在,通过,08_manuscript/04_results.md
-MRQA2-30,历史V1更正前基线识别,含87项与153项基线值,存在,通过,09_quality/r01_results_manuscript_integration_qa_v1.csv
+MRQA2-30,第35届模型建构敏感性输出与正文,26小问/320分；等权与分值加权比例均为100.00%,存在,通过,cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md
+MRQA2-31,第35届科学推理敏感性输出与正文,26小问/320分；等权与分值加权比例均为100.00%,存在,通过,cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md
+MRQA2-32,第35届科学论证敏感性输出与正文,6小问/80分；科学论证的等权比例为23.08%（6/26），分值加权比例为25.00%（80/320）,存在,通过,cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md
+MRQA2-33,第35届质疑创新敏感性输出与正文,8小问/120分；质疑创新的等权比例为30.77%（8/26），分值加权比例为37.50%（120/320）,存在,通过,cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md
+MRQA2-34,第35届敏感性来源与使用边界,用户声明、E1、跨届比较限制,存在,通过,08_manuscript/04_results.md
+MRQA2-35,历史V1更正前基线识别,含87项与153项基线值,存在,通过,09_quality/r01_results_manuscript_integration_qa_v1.csv

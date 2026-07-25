@@ -45,7 +45,7 @@ RE-QA-M9,第四章结果值,科学论证与质疑创新共同出现40次，两�
 RE-QA-B1,第四章边界语句,不代表学生实际能力,存在,通过,08_manuscript/04_results.md
 RE-QA-B2,第四章边界语句,不代表教学效果,存在,通过,08_manuscript/04_results.md
 RE-QA-B3,第四章边界语句,不进行显著性检验,存在,通过,08_manuscript/04_results.md
-RE-QA-B4,第四章边界语句,不进行分值加权,存在,通过,08_manuscript/04_results.md
+RE-QA-B4,第四章边界语句,全样本主分析不进行分值加权,存在,通过,08_manuscript/04_results.md
 RE-QA-B5,第四章边界语句,项目无法独立验证,存在,通过,08_manuscript/04_results.md
 RE-QA-ME1,第三章编码过程表述,RATER-A/B,存在,通过,08_manuscript/03_methods.md
 RE-QA-ME2,第三章编码过程表述,项目无法独立验证,存在,通过,08_manuscript/03_methods.md

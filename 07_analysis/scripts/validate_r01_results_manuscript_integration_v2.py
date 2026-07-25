@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 CODING = ROOT / "07_analysis/data/final_coding_r01_correction_v1.csv"
 OUTPUT_DIR = ROOT / "07_analysis/results/formal_rater_r01/correction_v1"
+SENSITIVITY = ROOT / "07_analysis/results/reviewed/cpho35_score_weighted_presence_sensitivity_v1.csv"
 CHAPTER = ROOT / "08_manuscript/04_results.md"
 FIGURE_MANIFEST = ROOT / "08_manuscript/figures/r01_manuscript_figures_manifest_v1.csv"
 LEGACY_QA = ROOT / "09_quality/r01_results_manuscript_integration_qa_v1.csv"
@@ -109,8 +110,35 @@ def main() -> None:
             and figure_id in chapter,
             "r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md",
         )
-    for phrase in ["不代表学生实际能力", "不代表教学效果", "不进行显著性检验", "不进行分值加权", "项目无法独立验证"]:
+    for phrase in ["不代表学生实际能力", "不代表教学效果", "不进行显著性检验", "全样本主分析不进行分值加权", "项目无法独立验证"]:
         add(checks, "第四章边界语句", phrase, "存在" if phrase in chapter else "缺失", phrase in chapter, "08_manuscript/04_results.md")
+    sensitivity = {row["dimension"]: row for row in read_rows(SENSITIVITY)}
+    expected_sensitivity = {
+        "模型建构": ("26", "320", "等权与分值加权比例均为100.00%"),
+        "科学推理": ("26", "320", "等权与分值加权比例均为100.00%"),
+        "科学论证": ("6", "80", "科学论证的等权比例为23.08%（6/26），分值加权比例为25.00%（80/320）"),
+        "质疑创新": ("8", "120", "质疑创新的等权比例为30.77%（8/26），分值加权比例为37.50%（120/320）"),
+    }
+    for dimension, (items, points, phrase) in expected_sensitivity.items():
+        row = sensitivity.get(dimension, {})
+        add(
+            checks,
+            f"第35届{dimension}敏感性输出与正文",
+            f"{items}小问/{points}分；{phrase}",
+            "存在" if phrase in chapter else "缺失",
+            row.get("equal_weight_items_present") == items
+            and row.get("score_weighted_points_present") == points
+            and phrase in chapter,
+            "cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md",
+        )
+    add(
+        checks,
+        "第35届敏感性来源与使用边界",
+        "用户声明、E1、跨届比较限制",
+        "存在" if all(phrase in chapter for phrase in ("用户声明", "E1", "跨届加权比较")) else "缺失",
+        all(phrase in chapter for phrase in ("用户声明", "E1", "跨届加权比较")),
+        "08_manuscript/04_results.md",
+    )
     add(
         checks,
         "历史V1更正前基线识别",

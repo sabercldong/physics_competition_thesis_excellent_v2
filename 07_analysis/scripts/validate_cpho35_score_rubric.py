@@ -38,17 +38,18 @@ def main() -> None:
     check("SCORE35-QA-03", "来源哈希一致", all(row["source_sha256"] == SOURCE_SHA256 for row in ledger), LEDGER.name)
     check("SCORE35-QA-04", "来源页码、位置与E1边界完整", all(row["score_source_pdf_page"] and row["score_source_location"] and row["evidence_level"] == "E1" for row in ledger), LEDGER.name)
     check("SCORE35-QA-05", "未误称官方版本已独立核验", all("未独立核验" in row["provenance_status"] for row in ledger), LEDGER.name)
-    check("SCORE35-QA-06", "限制跨届与学生推断", all("跨届" in row["not_usable_for"] and "学生" in row["not_usable_for"] for row in ledger), LEDGER.name)
+    check("SCORE35-QA-06", "记录用户官方副本声明但不替代独立核验", all("用户声明" in row["user_source_declaration"] and "未独立核验" in row["user_source_declaration"] for row in ledger), LEDGER.name)
+    check("SCORE35-QA-07", "限制跨届与学生推断", all("跨届" in row["not_usable_for"] and "学生" in row["not_usable_for"] for row in ledger), LEDGER.name)
 
     by_question: dict[int, list[int]] = defaultdict(list)
     for row in ledger:
         by_question[int(row["question_no"])].append(int(row["subquestion_score"]))
     for question_no, expected_scores in EXPECTED.items():
         actual = tuple(by_question[question_no])
-        check(f"SCORE35-QA-{question_no + 6:02d}", f"第{question_no}题分问分值与台账规则一致且合计40分", actual == expected_scores and sum(actual) == 40, LEDGER.name)
-    check("SCORE35-QA-15", "八题合计320分", sum(int(row["subquestion_score"]) for row in ledger) == 320, LEDGER.name)
-    check("SCORE35-QA-16", "item_index分值与台账一致", all(index_scores.get(row["item_id"]) == row["subquestion_score"] for row in ledger), INDEX.name)
-    check("SCORE35-QA-17", "第5题替代解法不重复计分", tuple(by_question[5]) == (20, 9, 11), LEDGER.name)
+        check(f"SCORE35-QA-{question_no + 7:02d}", f"第{question_no}题分问分值与台账规则一致且合计40分", actual == expected_scores and sum(actual) == 40, LEDGER.name)
+    check("SCORE35-QA-16", "八题合计320分", sum(int(row["subquestion_score"]) for row in ledger) == 320, LEDGER.name)
+    check("SCORE35-QA-17", "item_index分值与台账一致", all(index_scores.get(row["item_id"]) == row["subquestion_score"] for row in ledger), INDEX.name)
+    check("SCORE35-QA-18", "第5题替代解法不重复计分", tuple(by_question[5]) == (20, 9, 11), LEDGER.name)
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT.open("w", encoding="utf-8-sig", newline="") as handle:

@@ -59,6 +59,7 @@ def main() -> None:
                     "source_file_external": SOURCE_FILE,
                     "source_sha256": SOURCE_SHA256,
                     "evidence_level": "E1",
+                    "user_source_declaration": "用户声明该第35届答案/评分标准为官方副本；项目未独立核验发布链",
                     "provenance_status": "用户提供副本；发布/官方版本链未独立核验",
                     "usable_for": "第35届本项目题目级/小问级描述性分值元数据与受限敏感性分析",
                     "not_usable_for": "跨届分值比较或趋势、学生成绩/能力推断、发布者或官方版本真实性证明",

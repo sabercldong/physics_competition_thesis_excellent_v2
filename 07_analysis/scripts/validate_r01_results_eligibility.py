@@ -141,7 +141,7 @@ def main() -> int:
     ]
     for index, expected in enumerate(expected_chapter_rows, start=1):
         add_check(checks, f"RE-QA-M{index}", "第四章结果值", expected, "存在" if expected in chapter_text else "缺失", expected in chapter_text, "08_manuscript/04_results.md")
-    for index, phrase in enumerate(["不代表学生实际能力", "不代表教学效果", "不进行显著性检验", "不进行分值加权", "项目无法独立验证"], start=1):
+    for index, phrase in enumerate(["不代表学生实际能力", "不代表教学效果", "不进行显著性检验", "全样本主分析不进行分值加权", "项目无法独立验证"], start=1):
         add_check(checks, f"RE-QA-B{index}", "第四章边界语句", phrase, "存在" if phrase in chapter_text else "缺失", phrase in chapter_text, "08_manuscript/04_results.md")
     for index, phrase in enumerate(["RATER-A/B", "项目无法独立验证", "可追溯描述性结果"], start=1):
         add_check(checks, f"RE-QA-ME{index}", "第三章编码过程表述", phrase, "存在" if phrase in methods_text else "缺失", phrase in methods_text, "08_manuscript/03_methods.md")

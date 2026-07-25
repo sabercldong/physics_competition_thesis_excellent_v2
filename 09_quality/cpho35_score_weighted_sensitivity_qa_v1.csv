@@ -1,0 +1,12 @@
+﻿check_id,check_item,status,source
+SCORE35-SENS-QA-01,项目记录为26小问乘4维度共104行,通过,cpho35_score_weighted_item_records_v1.csv
+SCORE35-SENS-QA-02,每个维度均为26个小问,通过,cpho35_score_weighted_item_records_v1.csv
+SCORE35-SENS-QA-03,每个小问在四维度均唯一出现,通过,cpho35_score_weighted_item_records_v1.csv
+SCORE35-SENS-QA-04,每个维度的小问分值总和为320,通过,cpho35_score_weighted_item_records_v1.csv
+SCORE35-SENS-QA-05,四维存在性表完整,通过,cpho35_score_weighted_presence_sensitivity_v1.csv
+SCORE35-SENS-QA-06,存在性表总权重均为320,通过,cpho35_score_weighted_presence_sensitivity_v1.csv
+SCORE35-SENS-QA-07,加权比例可由点数重算,通过,cpho35_score_weighted_presence_sensitivity_v1.csv
+SCORE35-SENS-QA-08,等权比例可由小问数重算,通过,cpho35_score_weighted_presence_sensitivity_v1.csv
+SCORE35-SENS-QA-09,等级表为4维乘4等级,通过,cpho35_score_weighted_level_sensitivity_v1.csv
+SCORE35-SENS-QA-10,报告明确用户声明、E1与非跨届边界,通过,cpho35_score_weighted_sensitivity_report_v1.md
+SCORE35-SENS-QA-11,报告明确等权为主分析、加权仅敏感性材料,通过,cpho35_score_weighted_sensitivity_report_v1.md

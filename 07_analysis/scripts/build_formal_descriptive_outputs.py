@@ -36,7 +36,7 @@ def _write_report(path: Path, *, input_path: Path, final_sha: str, items: int, o
         f"输入：`{input_path.relative_to(ROOT).as_posix()}`（SHA-256：`{final_sha}`）\n\n"
         f"分析单位：{items} 个独立小问；四个维度各一条记录，共 {items * len(DIMENSIONS)} 条裁决后编码记录。\n\n"
         "本批输出仅为描述性统计。它描述题目任务要求的编码结果，不能推断学生能力、教学效果、长期趋势、因果关系或统计显著性。"
-        "第35届八道题的分值边界仍缺正式来源，因此本批不包含分值加权或分值比较。\n\n"
+        "本批全样本输出不使用分值权重；第35届分值敏感性分析如需使用，须单列为仅本届、E1来源边界下的辅助材料。\n\n"
         "## 输出文件\n\n"
         + "\n".join(f"- `{output.relative_to(ROOT).as_posix()}`" for output in outputs)
         + "\n",
