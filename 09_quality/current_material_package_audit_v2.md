@@ -19,7 +19,7 @@
 | 候选引用链 | 36项已读且限边界来源已连接正文ID、BibTeX、映射和候选参考文献；其中4项SOLO相邻应用与5项国内竞赛研究只按各自登记的页码和允许范围补强任务—学生表现、经验难度、透明报告和题目—成绩材料分链边界 | `08_manuscript/07_candidate_references.md`；`09_quality/g8_02_bib_lite_mapping.csv`；`09_quality/r01_candidate_references_qa_v1.md`；`09_quality/r01_citation_trace_v1.md` | 仅按每条来源登记的允许范围支撑理论、方法或任务设计边界；不替代SOLO原典或证明本项目框架效度 |
 | Word工作稿 | V17无个人信息的工作稿、输入哈希清单与QA已生成；DOCX容器、A4分页和中英文摘要、英文参考文献可定位，当前9项输入哈希均与清单一致 | `10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx`；`10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json`；`09_quality/r01_working_draft_v17_qa.md`；`09_quality/r01_working_draft_v17_freshness_qa.csv` | 材料组织、文本、英文条目与结构性版式检查 |
 | 当前章节证据审计 | 六章、冻结编码、结果/案例/结论/摘要QA和格式对账入口已逐项对照；第二章文献闭合与旧主张矩阵版本差异已隔离登记 | `09_quality/r01_current_chapter_evidence_audit_v1.csv`；`07_analysis/scripts/audit_r01_current_chapter_evidence.py` | 只审计当前文件一致性，不改写并行正文或主张矩阵 |
-| 材料包快照与内部交接 | 41项关键输入/输出已登记相对路径、存在状态与SHA-256；当前逐项哈希为41/41当前；可重建默认40项的内部交接目录 | `10_outputs/material_package/R01_current_material_package_manifest_v1.csv`；`07_analysis/scripts/build_r01_material_package_snapshot.py`；`07_analysis/scripts/build_r01_internal_material_package.py` | 复现前确认快照未因后续文件改动而失效；内部交接包不含原始试卷/解答或V17，V17仍仅是本地非提交工作稿 |
+| 材料包快照与内部交接 | 42项关键输入/输出已登记相对路径、存在状态与SHA-256；当前逐项哈希为42/42当前；可重建默认41项的内部交接目录 | `10_outputs/material_package/R01_current_material_package_manifest_v1.csv`；`07_analysis/scripts/build_r01_material_package_snapshot.py`；`07_analysis/scripts/build_r01_internal_material_package.py` | 复现前确认快照未因后续文件改动而失效；内部交接包不含原始试卷/解答或V17，V17仍仅是本地非提交工作稿 |
 | 学校公开规则基线 | 专业学位封皮/签名页附件、GB/T 7714-2015、30篇基线、匿名评审与当期查重处理规则均已登记 | `01_positioning/school_requirements_register.csv`；`01_positioning/ecnu_official_thesis_format_sources.md` | 最终格式与提交准备的公开基线，不替代答辩期学院细则 |
 
 ## 二、当前量化核对
@@ -37,7 +37,7 @@
 | 当前与30篇基线的最小全文阅读差额 | 0 | `final_reference_closure_matrix_v1.md` | 已达到数量基线；仍不自动满足相关性、著录、正文闭环和当期格式要求 |
 | V17工作稿 | 30页A4；输入新鲜度9/9当前，英文摘要为第3至4页 | `r01_working_draft_v17_qa.md`；`r01_working_draft_v17_freshness_qa.csv` | 当前LibreOffice环境不能验证中文逐页排版 |
 | 学生作品观察量规QA | 12/12通过 | `r01_student_artifact_observation_rubric_qa_v1.csv` | 只检查空白工具与案例的对应关系，不证明学生参与、量规信效度或教学效果 |
-| 材料包快照 | 41/41当前 | `R01_current_material_package_manifest_v1.csv` | 路径、存在状态与SHA-256均与当前文件一致；变动后必须重建快照 |
+| 材料包快照 | 42/42当前 | `R01_current_material_package_manifest_v1.csv` | 路径、存在状态与SHA-256均与当前文件一致；变动后必须重建快照 |
 
 ## 三、尚未闭合的关键缺口
 

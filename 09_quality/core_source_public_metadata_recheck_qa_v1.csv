@@ -1,0 +1,10 @@
+﻿check_id,check_item,status
+META-QA-01,SOLO-002仍非全文,通过
+META-QA-02,PCOMP-001题录已核验,通过
+META-QA-03,PCOMP-001仍待读,通过
+META-QA-04,PCOMP-005作者更正,通过
+META-QA-05,PCOMP-005原始著录更正,通过
+META-QA-06,PCOMP-005矩阵作者一致,通过
+META-QA-07,PCOMP-005仍待读,通过
+META-QA-08,公开入口记录完整,通过
+META-QA-09,边界未升级,通过
