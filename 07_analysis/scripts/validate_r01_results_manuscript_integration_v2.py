@@ -139,6 +139,35 @@ def main() -> None:
         all(phrase in chapter for phrase in ("用户声明", "E1", "跨届加权比较")),
         "08_manuscript/04_results.md",
     )
+    metadata_specs = [
+        ("final_representation_component_dimension_presence.csv", "representation_component_count", "表征要素数"),
+        ("final_math_tools_component_dimension_presence.csv", "math_tools_component_count", "数学工具要素数"),
+    ]
+    for filename, count_column, label in metadata_specs:
+        metadata_rows = read_rows(OUTPUT_DIR / filename)
+        grouped: dict[str, dict[str, str]] = defaultdict(dict)
+        totals: dict[str, str] = {}
+        for row in metadata_rows:
+            grouped[row[count_column]][row["dimension"]] = row["proportion"]
+            totals[row[count_column]] = row["total_items"]
+        for count, dimension_values in grouped.items():
+            if int(totals[count]) < 30:
+                continue
+            line = (
+                f"| {count} | {totals[count]} | {float(dimension_values['模型建构']):.2%} | "
+                f"{float(dimension_values['科学推理']):.2%} | {float(dimension_values['科学论证']):.2%} | "
+                f"{float(dimension_values['质疑创新']):.2%} |"
+            )
+            add(
+                checks,
+                f"{label}{count}项分层输出与正文",
+                line,
+                "存在" if line in chapter else "缺失",
+                line in chapter,
+                f"{filename};08_manuscript/04_results.md",
+            )
+    for phrase in ["不等同于表征类型数或公式数", "不构成题目难度、认知负荷或学生能力的测量", "不能把此表升级为"]:
+        add(checks, "元数据分层边界语句", phrase, "存在" if phrase in chapter else "缺失", phrase in chapter, "08_manuscript/04_results.md")
     add(
         checks,
         "历史V1更正前基线识别",

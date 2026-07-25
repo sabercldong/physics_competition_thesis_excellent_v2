@@ -79,6 +79,7 @@ def main() -> None:
         raise ValueError("每个分析单位必须恰有四个维度")
 
     final_sha = hashlib.sha256(input_path.read_bytes()).hexdigest()
+    item_index_sha = hashlib.sha256(index_path.read_bytes()).hexdigest()
     total_items = len(item_meta)
     presence_rows = []
     level_rows = []
@@ -143,6 +144,31 @@ def main() -> None:
                 })
         return rows
 
+    def component_count_presence(metadata_field: str) -> list[dict[str, object]]:
+        """Count semicolon-delimited metadata elements without recoding their meaning."""
+        grouped_items: dict[int, list[str]] = defaultdict(list)
+        for item_id, meta in item_meta.items():
+            components = [value.strip() for value in meta[metadata_field].split("；") if value.strip()]
+            if not components:
+                raise ValueError(f"{metadata_field} 为空：{item_id}")
+            grouped_items[len(components)].append(item_id)
+        rows = []
+        for component_count in sorted(grouped_items):
+            item_ids = grouped_items[component_count]
+            for dimension in DIMENSIONS:
+                present_items = sum(by_item[item_id][dimension]["present"] == "1" for item_id in item_ids)
+                rows.append({
+                    f"{metadata_field}_component_count": component_count,
+                    "dimension": dimension,
+                    "items_present": present_items,
+                    "total_items": len(item_ids),
+                    "proportion": round(present_items / len(item_ids), 6),
+                    "source_final_coding_sha256": final_sha,
+                    "source_item_index_sha256": item_index_sha,
+                    "counting_rule": "以全角分号；分隔的非空元数据要素计数",
+                })
+        return rows
+
     output_dir.mkdir(parents=True, exist_ok=True)
     outputs = {
         "final_dimension_presence.csv": (["dimension", "items_present", "total_items", "proportion", "source_final_coding_sha256"], presence_rows),
@@ -150,6 +176,20 @@ def main() -> None:
         "final_dimension_cooccurrence.csv": (["dimension_a", "dimension_b", "items_both_present", "items_a_present", "items_b_present", "items_either_present", "jaccard", "source_final_coding_sha256"], cooccurrence_rows),
         "final_year_dimension_presence.csv": (["year", "dimension", "items_present", "total_items", "proportion", "source_final_coding_sha256"], grouped_presence("year")),
         "final_knowledge_dimension_presence.csv": (["knowledge_primary", "dimension", "items_present", "total_items", "proportion", "source_final_coding_sha256"], grouped_presence("knowledge_primary")),
+        "final_representation_component_dimension_presence.csv": (
+            [
+                "representation_component_count", "dimension", "items_present", "total_items", "proportion",
+                "source_final_coding_sha256", "source_item_index_sha256", "counting_rule",
+            ],
+            component_count_presence("representation"),
+        ),
+        "final_math_tools_component_dimension_presence.csv": (
+            [
+                "math_tools_component_count", "dimension", "items_present", "total_items", "proportion",
+                "source_final_coding_sha256", "source_item_index_sha256", "counting_rule",
+            ],
+            component_count_presence("math_tools"),
+        ),
     }
     written = []
     for name, (fields, rows) in outputs.items():

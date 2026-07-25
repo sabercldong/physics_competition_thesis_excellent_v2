@@ -61,7 +61,7 @@ def main() -> None:
 
     add("CE-AUD-01", "六章Markdown存在", f"{sum(path.is_file() for path in chapter_paths)}/6", "6/6", all(path.is_file() for path in chapter_paths), "文件存在不等于终稿。")
     add("CE-AUD-02", "冻结分析单位与编码记录", f"{len(coding_rows) // 4}/{len(coding_rows)}", "219/876", len(coding_rows) == 876 and len({row['item_id'] for row in coding_rows}) == 219, "只核对当前冻结表，不验证评分过程身份或独立性。")
-    add("CE-AUD-03", "第四章当前结果整合QA", "35/35" if all_pass(results_qa, 35) else "不完整", "35/35通过", all_pass(results_qa, 35), "第四章可报告描述性结果，不能外推学生能力、教学效果或因果。")
+    add("CE-AUD-03", "第四章当前结果整合QA", "44/44" if all_pass(results_qa, 44) else "不完整", "44/44通过", all_pass(results_qa, 44), "第四章可报告描述性结果，不能外推学生能力、教学效果或因果。")
     add("CE-AUD-04", "第五章案例重选QA", "7/7" if all_pass(cases_qa, 7) else "不完整", "7/7通过", all_pass(cases_qa, 7), "案例可追溯不等于课堂有效或教师认可。")
     add("CE-AUD-05", "第六章研究问题回应QA", "16/16" if all_pass(conclusion_qa, 16) else "不完整", "16/16通过", all_pass(conclusion_qa, 16), "结论仅限当前语料和编码口径。")
     add("CE-AUD-06", "中英文摘要对齐QA", "28/28" if all_pass(abstract_qa, 28) else "不完整", "28/28通过", all_pass(abstract_qa, 28), "摘要仍是非学校格式内容底稿。")
@@ -87,7 +87,7 @@ def main() -> None:
         "",
         "## 当前可进入非提交工作稿的部分",
         "",
-        "- 第四章的当前描述性结果已由35项整合QA核对；",
+        "- 第四章的当前描述性结果已由44项整合QA核对；",
         "- 第五章的三个案例由7项案例重选QA限定为可追溯任务结构材料；",
         "- 第六章对五个研究问题的回应已由16项QA核对；",
         "- 中英文摘要内容底稿已由28项QA核对。",
