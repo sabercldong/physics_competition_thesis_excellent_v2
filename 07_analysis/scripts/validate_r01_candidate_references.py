@@ -30,13 +30,16 @@ def main() -> None:
     expected_numbers = list(range(1, len(mapped) + 1))
     expected_ids = [row["source_id"] for row in mapped]
     all_mapped_eligible = all(row["source_id"] and row["bib_key"] for row in mapped)
+    excluded_ids = {"SOLO-002", "METH-001", "METH-002", "METH-003", "METH-005", "PCOMP-001", "PCOMP-005"}
+    pcomp_ids = {"PCOMP-002", "PCOMP-003", "PCOMP-004", "PCOMP-007", "PCOMP-008"}
     rows = [
         ("REF-QA-01", "候选条目数与连续编号", f"1至{len(mapped)}", str(numbers), numbers == expected_numbers),
         ("REF-QA-02", "来源ID集合与顺序", ";".join(expected_ids), ";".join(mapped_ids), mapped_ids == expected_ids and all_mapped_eligible),
         ("REF-QA-03", "候选来源均有BibTeX键", f"{len(mapped)}/{len(mapped)}", f"{sum(row['bib_key'] in bib for row in mapped)}/{len(mapped)}", all(row["bib_key"] in bib for row in mapped)),
-        ("REF-QA-04", "待读全文来源未混入", "Biggs/PCOMP/METH-001至003均不出现", "通过" if all(item not in text for item in ["Biggs", "PCOMP", "METH-001", "METH-002", "METH-003"]) else "不通过", all(item not in text for item in ["Biggs", "PCOMP", "METH-001", "METH-002", "METH-003"])),
+        ("REF-QA-04", "待读全文来源未混入", "SOLO-002、METH-001至003/005、PCOMP-001/005均未进入", "通过" if not (excluded_ids & set(mapped_ids)) else "不通过：" + ";".join(sorted(excluded_ids & set(mapped_ids))), not (excluded_ids & set(mapped_ids))),
         ("REF-QA-05", "学校公开格式基线", "GB/T 7714-2015", requirements["REQ-04"]["summary"], "GB/T7714-2015" in requirements["REQ-04"]["summary"]),
         ("REF-QA-06", "不足30篇的缺口已明示", "必须明示", "通过" if "不少于30篇" in text else "不通过", "不少于30篇" in text),
+        ("REF-QA-07", "五篇页码定位的国内竞赛研究已受控纳入", "5/5", f"{len(pcomp_ids & set(mapped_ids))}/5", pcomp_ids <= set(mapped_ids)),
     ]
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
