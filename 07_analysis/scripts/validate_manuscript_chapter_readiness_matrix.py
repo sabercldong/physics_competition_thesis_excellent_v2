@@ -18,7 +18,7 @@ EXPECTED = {
     "CH-03": ("08_manuscript/03_methods.md", 9),
     "CH-04": ("08_manuscript/04_results.md", 8),
     "CH-05": ("08_manuscript/05_cases_and_diagnosis.md", 6),
-    "CH-06": ("08_manuscript/06_conclusion.md", 3),
+    "CH-06": ("08_manuscript/06_conclusion.md", 4),
 }
 
 

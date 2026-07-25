@@ -63,7 +63,7 @@ def main() -> None:
     add("CE-AUD-02", "冻结分析单位与编码记录", f"{len(coding_rows) // 4}/{len(coding_rows)}", "219/876", len(coding_rows) == 876 and len({row['item_id'] for row in coding_rows}) == 219, "只核对当前冻结表，不验证评分过程身份或独立性。")
     add("CE-AUD-03", "第四章当前结果整合QA", "44/44" if all_pass(results_qa, 44) else "不完整", "44/44通过", all_pass(results_qa, 44), "第四章可报告描述性结果，不能外推学生能力、教学效果或因果。")
     add("CE-AUD-04", "第五章案例重选QA", "7/7" if all_pass(cases_qa, 7) else "不完整", "7/7通过", all_pass(cases_qa, 7), "案例可追溯不等于课堂有效或教师认可。")
-    add("CE-AUD-05", "第六章研究问题回应QA", "16/16" if all_pass(conclusion_qa, 16) else "不完整", "16/16通过", all_pass(conclusion_qa, 16), "结论仅限当前语料和编码口径。")
+    add("CE-AUD-05", "第六章研究问题回应QA", "20/20" if all_pass(conclusion_qa, 20) else "不完整", "20/20通过", all_pass(conclusion_qa, 20), "结论仅限当前语料和编码口径。")
     add("CE-AUD-06", "中英文摘要对齐QA", "28/28" if all_pass(abstract_qa, 28) else "不完整", "28/28通过", all_pass(abstract_qa, 28), "摘要仍是非学校格式内容底稿。")
     add("CE-AUD-07", "第四章关键当前结果", "存在" if all(token in chapters["04_results.md"] for token in ["203", "219", "106", "84", "150"]) else "缺失", "存在", all(token in chapters["04_results.md"] for token in ["203", "219", "106", "84", "150"]), "数值必须随冻结编码变动而重建。")
     add("CE-AUD-08", "第五章三个可追溯案例", "存在" if all(case_id in chapters["05_cases_and_diagnosis.md"] for case_id in ["CPHO41-Q06-3", "CPHO41-Q07-4", "CPHO42-Q04-2"]) else "缺失", "存在", all(case_id in chapters["05_cases_and_diagnosis.md"] for case_id in ["CPHO41-Q06-3", "CPHO41-Q07-4", "CPHO42-Q04-2"]), "仅为任务结构与教学设计材料。")
@@ -89,7 +89,7 @@ def main() -> None:
         "",
         "- 第四章的当前描述性结果已由44项整合QA核对；",
         "- 第五章的三个案例由7项案例重选QA限定为可追溯任务结构材料；",
-        "- 第六章对五个研究问题的回应已由16项QA核对；",
+        "- 第六章对五个研究问题、边界与升级路径已由20项QA核对；",
         "- 中英文摘要内容底稿已由28项QA核对。",
         "",
         "## 仍需处理的侧车事项",

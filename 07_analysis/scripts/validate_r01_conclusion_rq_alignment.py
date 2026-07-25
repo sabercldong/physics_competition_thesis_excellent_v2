@@ -41,6 +41,13 @@ def main() -> None:
         checks.append((f"CRQA-{index:02d}", "当前描述性结果", value, "存在" if value in conclusion else "缺失", value in conclusion))
     for index, value in enumerate(["不构成框架已获外部效度", "不进行显著性检验或分值加权", "不把它们写作跨届趋势", "不是学生困难诊断、教师共识、课堂可行性或教学效果证据"], start=13):
         checks.append((f"CRQA-{index:02d}", "结论边界", value, "存在" if value in conclusion else "缺失", value in conclusion))
+    for index, value in enumerate([
+        "它不意味着不同研究者必然得到完全相同的编码",
+        "不是学生真实的思维过程，也不是唯一可能的合理解题路径",
+        "并非经过独立验证的量表",
+        "论文才可以把相应表述从“设计建议”或“项目内描述性结果”升级为更强的研究结论",
+    ], start=17):
+        checks.append((f"CRQA-{index:02d}", "新增结论边界与升级路径", value, "存在" if value in conclusion else "缺失", value in conclusion))
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(["check_id", "check_item", "expected", "actual", "status"])
