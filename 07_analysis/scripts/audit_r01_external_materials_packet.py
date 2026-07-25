@@ -36,7 +36,8 @@ def main() -> None:
         "章节就绪度": ROOT / "09_quality/manuscript_chapter_readiness_matrix_qa_v1.csv",
     }
     qa_summary = "；".join(f"{name}={'通过' if all_pass(path) else '待复核'}" for name, path in qa_paths.items())
-    pending_ids = [row["source_id"] for row in citation_rows if row["closure_status"] == "待补全文/不得升级"]
+    citation_pending_ids = [row["source_id"] for row in citation_rows if row["closure_status"] == "待补全文/不得升级"]
+    planning_ids = [row["source_id"] for row in citation_rows if row["closure_status"] == "计划性待补文献（不计正文引文）"]
     final_reference_ready = sum(row["final_reference_ready"] == "是" for row in candidate_rows)
 
     rows = [
@@ -52,9 +53,9 @@ def main() -> None:
         {
             "packet_id": "EXT-02",
             "workstream": "核心理论与方法全文",
-            "current_status": "待补全文/不得升级",
-            "current_evidence": "来源级关闭清单待补：" + "、".join(pending_ids),
-            "external_material_needed": "通过学校数据库、馆际互借、出版社授权或合法馆藏获取5项全文/关键章节；逐项登记获取渠道、阅读页码、支持主张和不可迁移边界。",
+            "current_status": f"实际待补引文{len(citation_pending_ids)}项；计划性待补{len(planning_ids)}项",
+            "current_evidence": "计划性待补来源：" + "、".join(planning_ids),
+            "external_material_needed": "若拟扩展第二章综述，通过学校数据库、馆际互借、出版社授权或合法馆藏获取5项全文/关键章节；逐项登记获取渠道、阅读页码、支持主张和不可迁移边界。",
             "acceptance_condition": "全文或关键章节实际可读，且页码记录与论文具体主张对应；题录、摘要和搜索片段不接受。",
             "cannot_claim": "不能把候选题录或摘要写成已读综述或最终引文。",
         },

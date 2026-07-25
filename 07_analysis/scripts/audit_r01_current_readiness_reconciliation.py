@@ -36,6 +36,7 @@ def main() -> None:
     closure_rows = read_rows(ROOT / "09_quality/r01_citation_closure_readiness_20260725.csv")
     candidate_rows = read_rows(ROOT / "09_quality/r01_candidate_bibliographic_readiness_20260725.csv")
     pending_sources = [row for row in closure_rows if row["closure_status"] == "待补全文/不得升级"]
+    planning_sources = [row for row in closure_rows if row["closure_status"] == "计划性待补文献（不计正文引文）"]
     candidate_count = len(candidate_rows)
     final_reference_ready = sum(row["final_reference_ready"] == "是" for row in candidate_rows)
 
@@ -63,8 +64,8 @@ def main() -> None:
             "gate": "G2 理论与文献",
             "current_status": "未定稿",
             "current_evidence": f"正文来源41项、出现77次；{candidate_count}项候选著录结构性就绪。",
-            "still_missing": f"{len(pending_sources)}项来源仍待合法全文或受控引用决定：" + "、".join(row["source_id"] for row in pending_sources) + "。",
-            "cannot_claim": "不能把候选参考文献表、摘要或目录写成完整综述或最终参考文献。",
+            "still_missing": f"实际论证引文待补{len(pending_sources)}项；另有{len(planning_sources)}项计划性待补来源（" + "、".join(row["source_id"] for row in planning_sources) + "）可在获得全文后决定是否纳入综述。",
+            "cannot_claim": "不能把候选参考文献表、摘要、目录或计划性待补提及写成完整综述或最终参考文献。",
         },
         {
             "gate": "G3 框架开发",
@@ -139,7 +140,7 @@ def main() -> None:
     ]
     next_actions = [
         "保留8项原始副本页面边界；若需正式来源链，独立核验E1评分副本的发布/版本链",
-        "补5项全文并做逐条受控引用决定",
+        "维持已读来源闭环；获得5项计划性待补全文后再决定是否纳入综述",
         "取得真实专家/导师对框架的反馈，或保持内部框架表述",
         "保留自声明与项目内可复算的区分",
         "维持当前描述性解释边界",

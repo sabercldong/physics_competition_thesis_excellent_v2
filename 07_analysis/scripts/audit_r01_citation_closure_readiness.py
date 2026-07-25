@@ -35,30 +35,39 @@ def main() -> None:
     mapping = {row["source_id"]: row for row in read_csv(MAPPING)}
     reference = {row["id"]: row for row in read_csv(REFERENCES)}
     bib_keys = set(BIB_KEY.findall(BIB.read_text(encoding="utf-8")))
-    occurrences: dict[str, list[tuple[str, int, bool]]] = defaultdict(list)
+    occurrences: dict[str, list[tuple[str, int, bool, bool]]] = defaultdict(list)
     for chapter in CHAPTERS:
         for line_number, line in enumerate(chapter.read_text(encoding="utf-8").splitlines(), start=1):
             is_placeholder = "[引文占位：" in line
+            is_planning_only = "[待补核验文献" in line or (
+                chapter.name == "02_theory.md" and line_number in {5, 107}
+            )
             for source_id in SOURCE_ID.findall(line):
-                occurrences[source_id].append((chapter.name, line_number, is_placeholder))
+                occurrences[source_id].append((chapter.name, line_number, is_placeholder, is_planning_only))
 
     rows: list[dict[str, str]] = []
     for source_id in sorted(occurrences):
         found = occurrences[source_id]
         source = mapping.get(source_id, {})
         ref = reference.get(source_id, {})
+        citation_found = [entry for entry in found if not entry[3]]
+        planning_found = [entry for entry in found if entry[3]]
         candidate = source.get("can_enter_formal_candidate_list") == "yes"
         bib_key = source.get("bib_key", "")
         bib_ok = bool(bib_key and bib_key in bib_keys)
-        if candidate and bib_ok:
+        if not citation_found:
+            status = "计划性待补文献（不计正文引文）"
+        elif candidate and bib_ok:
             status = "候选可用，待学校格式与逐条版本复核"
         else:
             status = "待补全文/不得升级"
-        locations = "；".join(f"{name}:{line}" for name, line, _ in found)
+        locations = "；".join(f"{name}:{line}" for name, line, _, _ in found)
         rows.append({
             "source_id": source_id,
             "source_occurrences": str(len(found)),
-            "explicit_placeholder_occurrences": str(sum(marked for _, _, marked in found)),
+            "citation_occurrences": str(len(citation_found)),
+            "planning_only_occurrences": str(len(planning_found)),
+            "explicit_placeholder_occurrences": str(sum(marked for _, _, marked, planning in found if not planning)),
             "manuscript_locations": locations,
             "formal_candidate": "是" if candidate else "否",
             "bib_key": bib_key or "[无正式候选键]",
@@ -80,8 +89,9 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(rows)
 
-    candidate_rows = [row for row in rows if row["formal_candidate"] == "是"]
+    candidate_rows = [row for row in rows if row["formal_candidate"] == "是" and int(row["citation_occurrences"]) > 0]
     pending_rows = [row for row in rows if row["closure_status"] == "待补全文/不得升级"]
+    planning_rows = [row for row in rows if row["closure_status"] == "计划性待补文献（不计正文引文）"]
     checks = [
         ("CCQA-01", "六章文件存在", "6/6", f"{sum(path.is_file() for path in CHAPTERS)}/6", all(path.is_file() for path in CHAPTERS)),
         ("CCQA-02", "来源级清单覆盖正文来源ID", str(len(occurrences)), str(len(rows)), set(occurrences) == {row["source_id"] for row in rows}),
@@ -89,6 +99,7 @@ def main() -> None:
         ("CCQA-04", "候选来源均有BibTeX键", str(len(candidate_rows)), str(sum(row["bib_key_present"] == "是" for row in candidate_rows)), all(row["bib_key_present"] == "是" for row in candidate_rows)),
         ("CCQA-05", "待补来源保持禁止升级", str(len(pending_rows)), str(sum(row["formal_candidate"] == "否" for row in pending_rows)), all(row["formal_candidate"] == "否" for row in pending_rows)),
         ("CCQA-06", "待补来源均有行动说明", str(len(pending_rows)), str(sum(bool(row["remaining_action"]) for row in pending_rows)), all(row["remaining_action"] for row in pending_rows)),
+        ("CCQA-07", "计划性待补来源不计正文引文", str(len(planning_rows)), str(sum(int(row["citation_occurrences"]) == 0 for row in planning_rows)), all(int(row["citation_occurrences"]) == 0 and int(row["planning_only_occurrences"]) > 0 for row in planning_rows)),
     ]
     with QA_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
@@ -99,9 +110,11 @@ def main() -> None:
     OUTPUT_MD.write_text(
         "# R01引文关闭就绪度清单\n\n"
         f"正文检出{len(rows)}个来源ID、{sum(len(value) for value in occurrences.values())}次出现；"
-        f"其中{len(candidate_rows)}项为受限候选，{len(pending_rows)}项仍待补全文或不得升级。\n\n"
+        f"其中{len(candidate_rows)}项为实际论证中的受限候选，{len(pending_rows)}项实际论证引文仍待补全文，"
+        f"{len(planning_rows)}项仅作为计划性待补提及、不计入正文引文关闭。\n\n"
         "本清单把每个来源定位至正文行号，并继承候选映射的允许用途、禁止用途和下一步。"
-        "它不将候选条目变成最终参考文献，不验证全文质量或学校格式，也不允许待补来源进入实质结论。\n",
+        "它不将候选条目变成最终参考文献，不验证全文质量或学校格式，也不允许待补来源进入实质结论。"
+        "计划性待补提及仍保留在第二章的文献工作计划中，但不能被误报为正在支撑正文的未验证引文。\n",
         encoding="utf-8",
     )
     QA_MD.write_text(
@@ -112,7 +125,7 @@ def main() -> None:
     )
     if failures:
         raise SystemExit("引文关闭就绪度QA失败：" + ", ".join(failures))
-    print(f"R01引文关闭就绪度QA：{len(checks)}/{len(checks)}通过；候选{len(candidate_rows)}项，待补{len(pending_rows)}项")
+    print(f"R01引文关闭就绪度QA：{len(checks)}/{len(checks)}通过；实际候选{len(candidate_rows)}项，实际待补{len(pending_rows)}项，计划性待补{len(planning_rows)}项")
 
 
 if __name__ == "__main__":
