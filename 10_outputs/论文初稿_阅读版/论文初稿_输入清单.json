@@ -1,0 +1,32 @@
+{
+  "artifact": "10_outputs/论文初稿_阅读版/中学生物理竞赛复赛试题的科学思维要求与教学转化研究_论文初稿.docx",
+  "artifact_scope": "readable thesis draft; not a submission copy",
+  "generated_on": "2026-07-25",
+  "source_sha256": {
+    "08_manuscript/01_introduction.md": "2ad7adfbbf96c5f4866e442149ba9d2625c951ce92f477adad22530cb33e44b1",
+    "08_manuscript/02_theory.md": "b9dbd2b5c202442745ecc2b19abaf352862222474c5626d3dbd9c3c965f6199b",
+    "08_manuscript/03_methods.md": "5523dcd55891476da3b9dc64fc53b2f168f9172cd616eb35f58fb4e2c31ea500",
+    "08_manuscript/04_results.md": "f64980b603ccd44bef4967e5bb7a47d5a4e7ddd5d01480b4c29bbfc2cfc0a62d",
+    "08_manuscript/05_cases_and_diagnosis.md": "26560967c770a54bf2272cfab71a5d2707d648f0d5505321291e03c32ded4824",
+    "08_manuscript/06_conclusion.md": "1875a1ad578210dbae29ee636d8ab09a810fbb6310b20141e2a2046b61c629aa",
+    "08_manuscript/00_abstract_content_draft.md": "1a75ca5b80f5e12c6362f5ee19c324460f79273dd72872e224a748f0a85163ab",
+    "08_manuscript/00_abstract_en_content_draft.md": "698135875b68976f30825edd3aa9816f20e5cb01f834ca60486daa3fdbf135ca",
+    "08_manuscript/07_candidate_references.md": "cb95ee9bf3549fded8bda37e92b373ffac9a3a16c76cce3c67147fbd1f1605a4",
+    "09_quality/r01_candidate_references_mapping_v1.csv": "44b3175ad7baf499cf00656e65ad43b4aba0c67177a40dd08e8d4042973aeee4",
+    "08_manuscript/00_frontmatter.md": "304a3e6fd4f8a5a4cb001afb3ba24d7f2fef328ab093752e579c115611b1954c",
+    "10_outputs/drafts/build_r01_working_draft.py": "d8a748c2f560cd8e85cb29f5fa75d49b29fdc871723ccbb056db435a6910b780"
+  },
+  "figure_inputs": [
+    "08_manuscript/figures/figure_1_1_r01_technical_route_v1.png",
+    "08_manuscript/figures/figure_2_1_r01_theoretical_framework_v1.png",
+    "08_manuscript/figures/figure_4_1_dimension_presence_r01_v1.png",
+    "08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png"
+  ],
+  "exclusions": [
+    "personal information",
+    "advisor information",
+    "student number",
+    "signature pages",
+    "defense or anonymous-submission versioning"
+  ]
+}

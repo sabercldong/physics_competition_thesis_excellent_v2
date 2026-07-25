@@ -21,8 +21,8 @@ from docx.shared import Cm, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[2]
 MANUSCRIPT_DIR = ROOT / "08_manuscript"
-OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v18.docx"
-MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v18_inputs.json"
+OUTPUT_PATH = ROOT / "10_outputs/论文初稿_阅读版/中学生物理竞赛复赛试题的科学思维要求与教学转化研究_论文初稿.docx"
+MANIFEST_PATH = ROOT / "10_outputs/论文初稿_阅读版/论文初稿_输入清单.json"
 WORKING_TITLE = "中学生物理竞赛复赛试题的科学思维要求与教学转化研究"
 WORKING_TITLE_STATUS = "内部工作题目，待作者/导师确认"
 CHAPTERS = [
@@ -33,10 +33,9 @@ CHAPTERS = [
     MANUSCRIPT_DIR / "05_cases_and_diagnosis.md",
     MANUSCRIPT_DIR / "06_conclusion.md",
 ]
-# The local LibreOffice renderer does not resolve Arial Unicode MS or PingFang SC.
-# Hiragino Sans GB is the macOS CJK fallback used for this non-submission draft.
-FONT_CN = "Hiragino Sans GB"
-FONT_HEADING = "Hiragino Sans GB"
+# Songti SC is resolvable by the local Writer renderer and keeps CJK glyphs intact in PDF QA.
+FONT_CN = "Songti SC"
+FONT_HEADING = "Songti SC"
 FONT_EN = "Times New Roman"
 REFERENCE_CANDIDATE_PATH = MANUSCRIPT_DIR / "07_candidate_references.md"
 CHINESE_ABSTRACT_PATH = MANUSCRIPT_DIR / "00_abstract_content_draft.md"
@@ -44,6 +43,34 @@ ENGLISH_ABSTRACT_PATH = MANUSCRIPT_DIR / "00_abstract_en_content_draft.md"
 REFERENCE_MAPPING_PATH = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
 SOURCE_ID = re.compile(r"\b(?:(?:CS|ST|METH|PCOMP)-\d{3}|SOLO-(?:(?:APP|PHY)-\d{3}|\d{3}))\b")
 CITATION_PLACEHOLDER = re.compile(r"\[引文占位：([^\]]+)\]")
+DISPLAY_REPLACEMENTS = {
+    "03_corpus/item_index.csv": "复赛试题小问级索引表",
+    "03_corpus/manual_review_checklist.csv": "人工校对清单",
+    "07_analysis/data/final_coding_r01_correction_v1.csv": "当前更正编码表",
+    "07_analysis/data/final_coding_evidence_r01_v1.csv": "编码证据定位表",
+    "07_analysis/data/final_coding.csv": "历史基线编码表",
+    "07_analysis/data/internal_coding_v1.csv": "作者预审编码表",
+    "07_analysis/data/internal_analysis_candidate_v0.csv": "作者预审分析候选表",
+    "final_dimension_presence.csv": "四维度出现描述统计表",
+    "final_level_distribution.csv": "等级分布描述统计表",
+    "final_dimension_cooccurrence.csv": "维度共现描述统计表",
+    "final_year_dimension_presence.csv": "届次维度出现描述表",
+    "final_knowledge_dimension_presence.csv": "知识模块维度出现描述表",
+    "final_representation_component_dimension_presence.csv": "表征要素分层描述表",
+    "final_math_tools_component_dimension_presence.csv": "数学工具要素分层描述表",
+    "RATER-A/B": "两名独立编码者",
+    "ADJ-01": "首次裁决",
+    "ADJ-02": "更正裁决",
+    "R01": "研究者复核",
+    "参考文献（候选工作稿）": "参考文献",
+    "工作稿": "初稿",
+}
+DISPLAY_SKIP_PHRASES = (
+    "当前版本为核验式草稿",
+    "本章当前为证据边界版草稿",
+    "下一步需要继续完成",
+    "当前草稿后续章节将按",
+)
 
 
 def load_candidate_reference_numbers() -> dict[str, int]:
@@ -147,7 +174,7 @@ def configure_document(document: Document) -> None:
 
     header = section.header.paragraphs[0]
     header.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    header_run = header.add_run("华东师范大学硕士专业学位论文（工作稿）")
+    header_run = header.add_run("华东师范大学硕士专业学位论文")
     set_run_font(header_run, FONT_CN, 9)
     footer = section.footer.paragraphs[0]
     footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -167,7 +194,7 @@ def add_cover(document: Document) -> None:
     set_run_font(run, FONT_HEADING, 26, bold=True)
     degree = document.add_paragraph()
     degree.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = degree.add_run("硕士专业学位论文工作稿")
+    run = degree.add_run("硕士专业学位论文")
     set_run_font(run, FONT_HEADING, 22, bold=True)
     for _ in range(5):
         document.add_paragraph()
@@ -175,16 +202,12 @@ def add_cover(document: Document) -> None:
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
     run = title.add_run(WORKING_TITLE)
     set_run_font(run, FONT_HEADING, 18, bold=True)
-    subtitle = document.add_paragraph()
-    subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = subtitle.add_run(WORKING_TITLE_STATUS)
-    set_run_font(run, FONT_CN, 14)
     for _ in range(6):
         document.add_paragraph()
     metadata = [
         "学位类别：非全日制硕士专业学位",
-        "版本：R01可追溯描述性结果工作稿 V18",
-        "状态：非提交工作稿；不含个人信息、签名页或匿名送审处理",
+        "学位类型：教育硕士专业学位（非全日制）",
+        "论文初稿（阅读版）",
         "生成日期：2026-07-25",
     ]
     for item in metadata:
@@ -196,37 +219,49 @@ def add_cover(document: Document) -> None:
 
 
 def strip_markdown(text: str) -> str:
-    def render_candidate_citation(match: re.Match[str]) -> str:
-        source_ids = SOURCE_ID.findall(match.group(1))
-        candidate_numbers = [CANDIDATE_REFERENCE_NUMBERS[source_id] for source_id in source_ids if source_id in CANDIDATE_REFERENCE_NUMBERS]
-        unresolved_ids = [source_id for source_id in source_ids if source_id not in CANDIDATE_REFERENCE_NUMBERS]
-        parts = []
-        if candidate_numbers:
-            parts.append("[" + ", ".join(str(number) for number in candidate_numbers) + "]")
-        if unresolved_ids:
-            parts.append("[待补核验文献：" + "、".join(unresolved_ids) + "]")
-        return "".join(parts) if parts else "[待补核验文献]"
-
-    text = CITATION_PLACEHOLDER.sub(render_candidate_citation, text)
+    for raw_name, display_name in DISPLAY_REPLACEMENTS.items():
+        text = text.replace(raw_name, display_name)
+    text = text.replace("R01", "作者预审")
     text = re.sub(r"!\[[^]]*\]\([^)]*\)", "", text)
     text = re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", text)
     return text.replace("**", "").replace("`", "")
+
+
+def add_inline_text(paragraph, text: str, font_name: str, size: float, bold: bool = False) -> None:
+    """Render candidate citations as Word superscript runs, not ordinary body text."""
+    cursor = 0
+    for match in CITATION_PLACEHOLDER.finditer(text):
+        if match.start() > cursor:
+            run = paragraph.add_run(strip_markdown(text[cursor:match.start()]))
+            set_run_font(run, font_name, size, bold=bold)
+        source_ids = SOURCE_ID.findall(match.group(1))
+        numbers = [CANDIDATE_REFERENCE_NUMBERS[source_id] for source_id in source_ids if source_id in CANDIDATE_REFERENCE_NUMBERS]
+        unresolved = [source_id for source_id in source_ids if source_id not in CANDIDATE_REFERENCE_NUMBERS]
+        if numbers:
+            run = paragraph.add_run("[" + ", ".join(str(number) for number in numbers) + "]")
+            set_run_font(run, font_name, size, bold=bold)
+            run.font.superscript = True
+        if unresolved:
+            run = paragraph.add_run("[待补核验文献：" + "、".join(unresolved) + "]")
+            set_run_font(run, font_name, size, bold=bold)
+        cursor = match.end()
+    if cursor < len(text):
+        run = paragraph.add_run(strip_markdown(text[cursor:]))
+        set_run_font(run, font_name, size, bold=bold)
 
 
 def add_text_paragraph(document: Document, text: str, style: str | None = None, indent: bool = True) -> None:
     paragraph = document.add_paragraph(style=style)
     if not indent:
         paragraph.paragraph_format.first_line_indent = Cm(0)
-    run = paragraph.add_run(strip_markdown(text))
-    set_run_font(run, FONT_CN, 12)
+    add_inline_text(paragraph, text, FONT_CN, 12)
 
 
 def add_english_text_paragraph(document: Document, text: str, indent: bool = True) -> None:
     paragraph = document.add_paragraph()
     if not indent:
         paragraph.paragraph_format.first_line_indent = Cm(0)
-    run = paragraph.add_run(strip_markdown(text))
-    set_run_font(run, FONT_EN, 12)
+    add_inline_text(paragraph, text, FONT_EN, 12)
 
 
 def add_source_numbered_paragraph(document: Document, text: str) -> None:
@@ -236,6 +271,14 @@ def add_source_numbered_paragraph(document: Document, text: str) -> None:
     paragraph.paragraph_format.first_line_indent = Cm(-0.74)
     run = paragraph.add_run(strip_markdown(text))
     set_run_font(run, FONT_CN, 12)
+
+
+def add_contents_entry(document: Document, text: str, level: int) -> None:
+    paragraph = document.add_paragraph()
+    paragraph.paragraph_format.first_line_indent = Cm(0)
+    paragraph.paragraph_format.left_indent = Cm((level - 1) * 0.74)
+    run = paragraph.add_run(strip_markdown(text))
+    set_run_font(run, FONT_CN, 12 if level == 1 else 11)
 
 
 def add_reference_paragraph(document: Document, text: str) -> None:
@@ -267,8 +310,7 @@ def add_markdown_table(document: Document, rows: list[str]) -> None:
             paragraph.paragraph_format.first_line_indent = Cm(0)
             paragraph.paragraph_format.line_spacing_rule = WD_LINE_SPACING.EXACTLY
             paragraph.paragraph_format.line_spacing = Pt(18)
-            run = paragraph.add_run(strip_markdown(cell_text))
-            set_run_font(run, FONT_CN, 9.5, bold=row_index == 0)
+            add_inline_text(paragraph, cell_text, FONT_CN, 9.5, bold=row_index == 0)
             if row_index == 0:
                 shade_cell(cell, "D9E2F3")
     document.add_paragraph().paragraph_format.space_after = Pt(3)
@@ -292,6 +334,11 @@ def add_chapter(document: Document, path: Path) -> None:
     index = 0
     while index < len(lines):
         line = lines[index].strip()
+        if path == REFERENCE_CANDIDATE_PATH and line == "## 使用边界":
+            break
+        if any(phrase in line for phrase in DISPLAY_SKIP_PHRASES):
+            index += 1
+            continue
         if not line:
             index += 1
             continue
@@ -313,12 +360,12 @@ def add_chapter(document: Document, path: Path) -> None:
         elif re.match(r"^\[\d+\]\s+", line):
             add_reference_paragraph(document, line)
         elif line.startswith(">"):
-            add_text_paragraph(document, line.lstrip("> "), style="Table Note", indent=False)
+            index += 1
+            continue
         elif re.match(r"^-\s+", line):
             paragraph = document.add_paragraph(style="List Bullet")
             paragraph.paragraph_format.first_line_indent = Cm(0)
-            run = paragraph.add_run(strip_markdown(re.sub(r"^-\s+", "", line)))
-            set_run_font(run, FONT_CN, 12)
+            add_inline_text(paragraph, re.sub(r"^-\s+", "", line), FONT_CN, 12)
         elif re.match(r"^\d+\.\s+", line):
             add_source_numbered_paragraph(document, line)
         else:
@@ -331,14 +378,14 @@ def main() -> None:
     configure_document(document)
     add_cover(document)
 
-    abstract_heading = document.add_heading("摘 要（内容工作稿）", level=1)
+    abstract_heading = document.add_heading("摘 要", level=1)
     abstract_heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
     for line in CHINESE_ABSTRACT_PATH.read_text(encoding="utf-8").splitlines()[2:]:
         if line.strip():
             add_text_paragraph(document, line, indent=False)
     document.add_page_break()
 
-    english_abstract_heading = document.add_heading("ABSTRACT (Content Working Draft)", level=1)
+    english_abstract_heading = document.add_heading("ABSTRACT", level=1)
     english_abstract_heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
     for run in english_abstract_heading.runs:
         set_run_font(run, FONT_EN, 16, bold=True)
@@ -347,11 +394,18 @@ def main() -> None:
             add_english_text_paragraph(document, line, indent=False)
     document.add_page_break()
 
-    contents = document.add_heading("目 录（工作稿）", level=1)
+    contents = document.add_heading("目 录", level=1)
     contents.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    for index, chapter in enumerate(CHAPTERS, start=1):
-        chapter_title = next(line[2:].strip() for line in chapter.read_text(encoding="utf-8").splitlines() if line.startswith("# "))
-        add_text_paragraph(document, chapter_title, indent=False)
+    for chapter in CHAPTERS:
+        for line in chapter.read_text(encoding="utf-8").splitlines():
+            match = re.match(r"^(#{1,3})\s+(.+)$", line)
+            if not match:
+                continue
+            level = len(match.group(1))
+            title = match.group(2).strip()
+            if title == "数据来源":
+                continue
+            add_contents_entry(document, title, level)
     document.add_page_break()
 
     for index, chapter in enumerate(CHAPTERS):
@@ -362,23 +416,11 @@ def main() -> None:
     document.add_page_break()
     add_chapter(document, REFERENCE_CANDIDATE_PATH)
 
-    document.add_page_break()
-    document.add_heading("工作稿使用说明", level=1)
-    notes = [
-        "本文件由当前六章Markdown、中英文摘要内容底稿和R01图件自动生成，供写作、版式检查和后续修订使用。",
-        f"正文中的方括号编号仅对应当前{len(CANDIDATE_REFERENCE_NUMBERS)}项候选参考文献；Markdown源文件仍保留来源ID、可支持范围与待核验边界。",
-        "英文摘要为内容工作稿，其中赛事与阶段英文表述尚待按学校当期要求和官方术语定稿。",
-        "本文件不包含作者、导师、学号、签名、答辩委员会、原创性声明或匿名送审处理，不得作为提交、盲审或归档版本。",
-        "正式版须以实际答辩期学院要求、学校专硕封皮和归档签名页、参考文献终核、AI披露及个人信息为准。",
-    ]
-    for note in notes:
-        add_text_paragraph(document, note)
-
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     document.save(OUTPUT_PATH)
     manifest = {
         "artifact": str(OUTPUT_PATH.relative_to(ROOT)),
-        "artifact_scope": "non-submission working draft",
+        "artifact_scope": "readable thesis draft; not a submission copy",
         "generated_on": "2026-07-25",
         "source_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
