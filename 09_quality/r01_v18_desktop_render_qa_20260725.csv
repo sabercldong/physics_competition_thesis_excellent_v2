@@ -1,0 +1,6 @@
+check_id,check_item,evidence,status,boundary
+V18-DESKTOP-01,导出工具,/Applications/LibreOffice.app/Contents/MacOS/soffice 导出PDF,通过,仅验证本机桌面版输出
+V18-DESKTOP-02,页面规格,pdfinfo显示A4（595.304 x 841.89 pt）且共51页,通过,不等同学院模板验收
+V18-DESKTOP-03,封面中文与题目,第1页可读且显示内部题目和待作者/导师确认说明,通过,候选题目不是最终确认题目
+V18-DESKTOP-04,正文抽检,第10/20/35页中文正文、引用编号和表格可读，未见抽检范围内覆盖或裁切,通过,抽检不等于51页逐页终校
+V18-DESKTOP-05,隔离渲染器限制,文档插件隔离LibreOffice仍显示中文方框，已排除其作为中文放行依据,通过,该环境只可作DOCX容器和粗略分页检查

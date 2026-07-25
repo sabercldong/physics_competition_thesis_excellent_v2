@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a non-submission Word working draft from the six approved Markdown chapters."""
+"""Create a non-submission Word working draft from the current Markdown sources."""
 
 from __future__ import annotations
 
@@ -21,8 +21,10 @@ from docx.shared import Cm, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[2]
 MANUSCRIPT_DIR = ROOT / "08_manuscript"
-OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx"
-MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v17_inputs.json"
+OUTPUT_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v18.docx"
+MANIFEST_PATH = ROOT / "10_outputs/drafts/ECNU_非全日制专硕论文工作稿_R01_v18_inputs.json"
+WORKING_TITLE = "中学生物理竞赛复赛试题的科学思维要求与教学转化研究"
+WORKING_TITLE_STATUS = "内部工作题目，待作者/导师确认"
 CHAPTERS = [
     MANUSCRIPT_DIR / "01_introduction.md",
     MANUSCRIPT_DIR / "02_theory.md",
@@ -171,17 +173,17 @@ def add_cover(document: Document) -> None:
         document.add_paragraph()
     title = document.add_paragraph()
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = title.add_run("[待确认题目]")
+    run = title.add_run(WORKING_TITLE)
     set_run_font(run, FONT_HEADING, 18, bold=True)
     subtitle = document.add_paragraph()
     subtitle.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = subtitle.add_run("第35至42届物理竞赛复赛试题的任务认知要求分析")
+    run = subtitle.add_run(WORKING_TITLE_STATUS)
     set_run_font(run, FONT_CN, 14)
     for _ in range(6):
         document.add_paragraph()
     metadata = [
         "学位类别：非全日制硕士专业学位",
-        "版本：R01可追溯描述性结果工作稿 V17",
+        "版本：R01可追溯描述性结果工作稿 V18",
         "状态：非提交工作稿；不含个人信息、签名页或匿名送审处理",
         "生成日期：2026-07-25",
     ]
@@ -386,6 +388,8 @@ def main() -> None:
                 ENGLISH_ABSTRACT_PATH,
                 REFERENCE_CANDIDATE_PATH,
                 REFERENCE_MAPPING_PATH,
+                MANUSCRIPT_DIR / "00_frontmatter.md",
+                Path(__file__),
             ]
         },
         "figure_inputs": [
