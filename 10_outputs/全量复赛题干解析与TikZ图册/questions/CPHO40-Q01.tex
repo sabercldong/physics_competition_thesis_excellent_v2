@@ -1,0 +1,74 @@
+% 题干转写：完成
+% 解析转写：完成
+% 图形核对：完成
+\section{第40届复赛第1题：手机镜头的主点与等效焦距}
+
+\subsection{题干}
+
+智能手机镜头可视为结构固定的共轴理想透镜组。其物像关系等效于凸透镜的物像关系，但应以物方主点 $H$ 和像方主点 $H'$ 作为物距、像距和焦距的参考点，如图\ref{fig:cpho40q01}所示；本题所有光路均满足近轴条件。
+
+\begin{figure}[htbp]
+  \centering
+  \input{tikz/CPHO40-Q01-figure1.tex}
+  \caption{第40届复赛第1题图1a的TikZ重绘：透镜组与薄透镜的物像关系。}
+  \label{fig:cpho40q01}
+\end{figure}
+
+\begin{enumerate}
+  \item 长度为 $l$ 的刻度尺垂直于光轴，在物距为 $u_1$ 和 $u_2$ 的位置分别成像。测得刻度尺移动距离 $s=u_2-u_1$，对应像长为 $l_1$、$l_2$。求镜头的等效焦距 $F$ 和物距 $u_1$。
+  \item 透镜组由焦距为 $f_1$、$f_2$ 的两块共轴薄凸透镜组成，光心为 $O_1$、$O_2$，间距为 $d$。透镜组存在横向放大率为 $+1$ 的一对主平面，主点为 $H$、$H'$。求 $H$ 相对 $O_1$ 的物距、$H'$ 相对 $O_2$ 的像距，以及物方、像方焦距 $F$、$F'$。
+\end{enumerate}
+
+\subsection{参考解答整理}
+
+\paragraph{（1）利用两次成像测量等效焦距。}
+对物距 $u_1$、像距 $v_1$，薄透镜成像关系与横向放大关系为
+\[
+\frac1{u_1}+\frac1{v_1}=\frac1F,
+\qquad \frac{v_1}{u_1}=\frac{l_1}{l}.
+\]
+故
+\[
+u_1=F\left(1+\frac{l}{l_1}\right),
+\qquad
+u_2=F\left(1+\frac{l}{l_2}\right).
+\]
+由 $s=u_2-u_1$ 得
+\[
+F=\frac{s}{\frac{l}{l_2}-\frac{l}{l_1}}
+=\frac{sl_1l_2}{l(l_1-l_2)},
+\qquad
+u_1=\frac{sl_2(l_1+l)}{l(l_1-l_2)}.
+\]
+
+\paragraph{（2）两薄透镜组成的主点。}
+设透镜1、2的物距和像距分别为 $u_1,v_1$ 和 $u_2,v_2$。有
+\[
+\frac1{u_1}+\frac1{v_1}=\frac1{f_1},
+\qquad
+\frac1{u_2}+\frac1{v_2}=\frac1{f_2},
+\]
+\[
+m_1=-\frac{v_1}{u_1},\qquad m_2=-\frac{v_2}{u_2},
+\qquad u_2=d-v_1=d-\frac{u_1f_1}{u_1-f_1}.
+\]
+主平面定义要求 $m=m_1m_2=+1$。代入后得到物方主点 $H$ 相对 $O_1$ 的物距和像方主点 $H'$ 相对 $O_2$ 的像距：
+\[
+u_H=\frac{f_1d}{d-f_1-f_2},
+\qquad
+v_{H'}=\frac{f_2d}{d-f_1-f_2}.
+\]
+当物距趋于无穷大时，第一块透镜的像距为 $f_1$，从而
+\[
+v_{F'}=\frac{(d-f_1)f_2}{d-f_1-f_2}.
+\]
+于是像方焦距和物方焦距为
+\[
+F'=v_{F'}-v_{H'}=-\frac{f_1f_2}{d-f_1-f_2},
+\qquad
+F=F',
+\]
+等价地，
+\[
+\frac1F=\frac1{F'}=\frac1{f_1}+\frac1{f_2}-\frac{d}{f_1f_2}.
+\]

@@ -1,0 +1,19 @@
+\begin{tikzpicture}[>=Stealth,scale=0.9]
+  \draw[->] (-5.0,0) -- (-0.2,0);
+  \draw[dashed,thick] (-3.35,-0.85) rectangle (-1.35,0.85);
+  \node[below] at (-2.35,-0.85) {透镜组};
+  \fill (-4.55,0) circle (1.5pt) node[above] {物};
+  \fill (-2.85,0) circle (1.5pt) node[below] {$H$};
+  \fill (-1.83,0) circle (1.5pt) node[below] {$H'$};
+  \fill (-0.62,0) circle (1.5pt) node[above] {像};
+  \draw[<->] (-4.55,-0.34) -- (-2.85,-0.34) node[midway,below] {物距};
+  \draw[<->] (-1.83,-0.34) -- (-0.62,-0.34) node[midway,below] {像距};
+  \draw[->] (1.2,0) -- (5.8,0);
+  \draw[thick] (3.50,-1.0) -- (3.50,1.0);
+  \draw[<->] (3.26,0.77) -- (3.74,0.77);
+  \fill (1.60,0) circle (1.5pt) node[above] {物};
+  \fill (5.25,0) circle (1.5pt) node[above] {像};
+  \node[below] at (3.50,-1.0) {薄透镜};
+  \draw[<->] (1.60,-0.34) -- (3.50,-0.34) node[midway,below] {物距};
+  \draw[<->] (3.50,-0.34) -- (5.25,-0.34) node[midway,below] {像距};
+\end{tikzpicture}
