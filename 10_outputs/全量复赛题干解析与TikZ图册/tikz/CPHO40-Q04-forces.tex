@@ -1,22 +1,27 @@
 \begin{tikzpicture}[>=Stealth,scale=0.72]
   \begin{scope}
-    \draw[thick] (0,0) circle (1.25);
-    \draw[->,thick] (0,0) -- (0,-1.05) node[right] {$Mg$};
-    \draw[->,thick] (-0.15,0.2) -- (-0.95,0.85) node[left] {$N_1$};
-    \draw[->,thick] (0.25,-0.15) -- (1.08,-0.75) node[right] {$N_3$};
-    \draw[->,thick] (-0.4,0.55) -- (-0.05,1.15) node[above] {$f_1$};
-    \node[below] at (0,-1.5) {$C$ 杆受力示意};
+    \draw[very thick] (-1.65,0) -- (1.65,0);
+    \draw[thick] (-0.95,-0.36) circle (0.28);
+    \draw[thick] (0.95,-0.36) circle (0.28);
+    \draw[thick] (0,0.36) circle (0.28);
+    \draw[->,thick] (-0.95,0) -- (-0.95,0.92) node[above] {$N_1$};
+    \draw[->,thick] (0.95,0) -- (0.95,0.92) node[above] {$N_1$};
+    \draw[->,thick] (-1.25,0) -- (-1.83,0) node[left] {$f_1$};
+    \draw[->,thick] (1.25,0) -- (1.83,0) node[right] {$f_1$};
+    \draw[->,thick] (0,0) -- (0,-0.88) node[right] {$N_3,\ Mg$};
+    \node[below] at (0,-1.12) {$C$ 杆受力示意};
   \end{scope}
   \begin{scope}[xshift=4.3cm]
     \draw[thick] (-1.45,0) -- (1.45,0);
-    \draw[thick] (-0.78,0) -- (0.78,1.7);
-    \draw[->,thick] (-0.78,0) -- (-0.78,0.88) node[left] {$N_5$};
-    \draw[->,thick] (-0.68,0) -- (-0.05,0) node[below] {$f_5$};
-    \draw[->,thick] (0,0.85) -- (-0.6,1.42) node[left] {$N_2$};
-    \draw[->,thick] (0,0.85) -- (0.47,1.32) node[right] {$f_2$};
-    \draw[->,thick] (0.35,1.2) -- (1.02,1.2) node[right] {$N_4$};
-    \draw[->,thick] (0.22,1.2) -- (-0.12,0.82) node[left] {$f_2$};
-    \draw[->,thick] (0,0.85) -- (0,0.16) node[right] {$Mg$};
-    \node[below] at (0,-0.45) {$D$ 杆受力示意};
+    \draw[very thick] (-0.82,0.08) -- (1.06,1.96);
+    \draw[thick] (-0.35,0.56) circle (0.28);
+    \draw[thick] (0.62,1.53) circle (0.28);
+    \draw[->,thick] (-0.82,0.08) -- (-0.82,0.96) node[left] {$N_5$};
+    \draw[->,thick] (-0.82,0.08) -- (-0.06,0.08) node[below] {$f_5$};
+    \draw[->,thick] (-0.35,0.56) -- (0.10,0.11) node[right] {$N_2$};
+    \draw[->,thick] (-0.82,0.08) -- (-1.28,-0.38) node[left] {$f_2$};
+    \draw[->,thick] (0.62,1.53) -- (0.13,2.02) node[left] {$N_4$};
+    \draw[->,thick] (0.10,1.00) -- (0.10,0.27) node[right] {$Mg$};
+    \node[below] at (0,-0.62) {$D$ 杆受力示意};
   \end{scope}
 \end{tikzpicture}

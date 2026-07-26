@@ -1577,13 +1577,14 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
   \draw[thick] (-3.8,-1.45) -- (3.8,-1.45);
   \fill[gray!18] (-2.8,-1.45) -- (2.7,-1.45) -- (2.7,1.15) -- cycle;
   \draw[thick] (-2.8,-1.45) -- (2.7,-1.45) -- (2.7,1.15) -- cycle;
-  \draw[thick,blue!70!black] (0.78,0.15) circle (0.56);
-  \fill[blue!70!black] (0.78,0.15) circle (1.6pt) node[below left] {$C$};
-  \draw[->,thick,red!75!black] (0.78,0.15) -- (0.78,-0.95) node[right] {$mg$};
-  \draw[->,thick,purple!75!black] (1.15,-0.25) -- (0.38,0.49) node[above left] {$N_1$};
-  \draw[->,thick,orange!85!black] (0.39,-0.23) -- (0.91,0.28) node[midway,above left] {$f$};
+  % 圆心沿斜面法线方向偏移半径 r，保证圆球与斜面相切。
+  \draw[thick,blue!70!black] (0.03,0.66) circle (0.56);
+  \fill[blue!70!black] (0.03,0.66) circle (1.6pt) node[below left] {$C$};
+  \draw[->,thick,red!75!black] (0.03,0.66) -- (0.03,-0.44) node[right] {$mg$};
+  \draw[->,thick,purple!75!black] (0.48,0.23) -- (-0.28,0.97) node[above left] {$N_1$};
+  \draw[->,thick,orange!85!black] (-0.36,0.29) -- (0.16,0.80) node[midway,above left] {$f$};
   \draw[->,very thick] (-1.65,-1.77) -- (-0.1,-1.77) node[midway,below] {$a_0$};
-  \draw[->,thick] (0.78,0.15) -- (-0.02,-0.58) node[midway,above left] {$a_c$};
+  \draw[->,thick] (0.03,0.66) -- (-0.77,-0.07) node[midway,above left] {$a_c$};
   \draw (2.12,-1.45) arc[start angle=180,end angle=137,radius=0.58];
   \node at (1.73,-1.08) {$\theta$};
   \node at (-1.4,-0.78) {楔块 $M$};
