@@ -1,0 +1,16 @@
+\begin{tikzpicture}[>=Stealth,scale=0.92]
+  \draw[thick] (-3.2,0) -- (3.2,0);
+  \foreach \x in {-3.1,-2.8,...,3.1} {\draw[gray] (\x,0) -- +(0.22,-0.16);}
+  \draw[very thick] (-2.55,0) arc[start angle=180,end angle=0,radius=2.55];
+  \draw[very thick] (-2.18,0) arc[start angle=180,end angle=0,radius=2.18];
+  \coordinate (O) at (0,0);
+  \coordinate (P) at (-1.05,1.91);
+  \draw[thick] ($(P)+(-0.18,-0.12)$) -- ($(P)+(0.18,0.12)$);
+  \fill (O) circle (1.5pt) node[below right] {$O$};
+  \draw[densely dashed] (O) -- (0,2.55);
+  \draw[densely dashed] (O) -- (P);
+  \draw[<->] (0.18,0.1) -- (0.18,2.45) node[midway,right] {$r$};
+  \draw[->] (0,0.72) arc[start angle=90,end angle=119,radius=0.72];
+  \node at (-0.28,0.92) {$\theta$};
+  \node[below] at (0,-0.26) {水平地面};
+\end{tikzpicture}
