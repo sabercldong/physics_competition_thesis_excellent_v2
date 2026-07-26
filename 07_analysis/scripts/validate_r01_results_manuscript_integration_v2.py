@@ -79,6 +79,50 @@ def main() -> None:
                 stat.get("count") == str(count) and stat.get("source_final_coding_sha256") == coding_hash,
                 "final_level_distribution.csv",
             )
+    pair_levels = ["L1", "L2", "L3"]
+    pair_counts = {
+        (model_level, reasoning_level): sum(
+            item["模型建构"]["present"] == "1"
+            and item["模型建构"]["level"] == model_level
+            and item["科学推理"]["level"] == reasoning_level
+            for item in by_item.values()
+        )
+        for model_level in pair_levels
+        for reasoning_level in pair_levels
+    }
+    for model_level in pair_levels:
+        values = [pair_counts[(model_level, reasoning_level)] for reasoning_level in pair_levels]
+        line = f"| {model_level} | {values[0]} | {values[1]} | {values[2]} | {sum(values)} |"
+        add(
+            checks,
+            f"模型建构{model_level}与科学推理等级组配表",
+            line,
+            "存在" if line in chapter else "缺失",
+            line in chapter,
+            "final_coding_r01_correction_v1.csv;08_manuscript/04_results.md",
+        )
+    pattern_order = [
+        "模型建构、科学推理、科学论证",
+        "模型建构、科学推理",
+        "模型建构、科学推理、质疑创新",
+        "模型建构、科学推理、科学论证、质疑创新",
+        "科学推理",
+    ]
+    pattern_counts: dict[str, int] = defaultdict(int)
+    for item in by_item.values():
+        pattern = "、".join(dimension for dimension in DIMENSIONS if item[dimension]["present"] == "1")
+        pattern_counts[pattern] += 1
+    for pattern in pattern_order:
+        count = pattern_counts[pattern]
+        line = f"| {pattern} | {count} | {count / len(by_item):.2%} |"
+        add(
+            checks,
+            f"完整维度组合“{pattern}”",
+            line,
+            "存在" if line in chapter else "缺失",
+            line in chapter,
+            "final_coding_r01_correction_v1.csv;08_manuscript/04_results.md",
+        )
     pair = ("科学论证", "质疑创新")
     both = sum(row[pair[0]]["present"] == "1" and row[pair[1]]["present"] == "1" for row in by_item.values())
     either = sum(row[pair[0]]["present"] == "1" or row[pair[1]]["present"] == "1" for row in by_item.values())

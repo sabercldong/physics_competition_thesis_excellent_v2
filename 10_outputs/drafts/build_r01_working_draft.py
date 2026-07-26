@@ -17,6 +17,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_LINE_SPACING
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -171,6 +172,8 @@ def configure_document(document: Document) -> None:
         style.paragraph_format.line_spacing = Pt(18)
         style.paragraph_format.space_before = Pt(3)
         style.paragraph_format.space_after = Pt(6)
+        if name == "Figure Caption":
+            style.paragraph_format.keep_together = True
 
     header = section.header.paragraphs[0]
     header.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -208,7 +211,7 @@ def add_cover(document: Document) -> None:
         "学位类别：非全日制硕士专业学位",
         "学位类型：教育硕士专业学位（非全日制）",
         "论文初稿（阅读版）",
-        "生成日期：2026-07-25",
+        "生成日期：2026-07-26",
     ]
     for item in metadata:
         paragraph = document.add_paragraph()
@@ -323,9 +326,26 @@ def add_image(document: Document, line: str) -> bool:
     image_path = Path(match.group(1))
     if not image_path.exists():
         return False
+    word_image_path = image_path.with_suffix(".jpg") if image_path.suffix.lower() == ".png" and image_path.with_suffix(".jpg").exists() else image_path
+    # The two dense Chapter 4 charts need a full page so their labels and caption
+    # remain readable instead of being split after a long results discussion.
+    if any(stem in image_path.name for stem in ("figure_4_3_", "figure_4_4_")):
+        document.add_page_break()
     paragraph = document.add_paragraph()
     paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    paragraph.add_run().add_picture(str(image_path), width=Cm(15.2))
+    paragraph.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    paragraph.paragraph_format.keep_with_next = True
+    paragraph.paragraph_format.keep_together = True
+    # PNG metadata from different sources can give Word a wildly incorrect height.
+    # Set both dimensions from pixel aspect ratio so every chart remains whole.
+    with Image.open(word_image_path) as image:
+        aspect_ratio = image.height / image.width
+    width_cm = 15.2
+    height_cm = width_cm * aspect_ratio
+    if height_cm > 10.2:
+        height_cm = 10.2
+        width_cm = height_cm / aspect_ratio
+    paragraph.add_run().add_picture(str(word_image_path), width=Cm(width_cm), height=Cm(height_cm))
     return True
 
 
@@ -421,7 +441,7 @@ def main() -> None:
     manifest = {
         "artifact": str(OUTPUT_PATH.relative_to(ROOT)),
         "artifact_scope": "readable thesis draft; not a submission copy",
-        "generated_on": "2026-07-25",
+        "generated_on": "2026-07-26",
         "source_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
             for path in [
@@ -439,6 +459,11 @@ def main() -> None:
             "08_manuscript/figures/figure_2_1_r01_theoretical_framework_v1.png",
             "08_manuscript/figures/figure_4_1_dimension_presence_r01_v1.png",
             "08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png",
+            "08_manuscript/figures/figure_4_3_model_reasoning_level_pair_r01_v1.png",
+            "08_manuscript/figures/figure_4_4_dimension_patterns_r01_v1.png",
+            "08_manuscript/figures/figure_5_1_gravity_deflection_source_v1.jpg",
+            "08_manuscript/figures/figure_5_2_quantum_ring_source_v1.jpg",
+            "08_manuscript/figures/figure_5_3_laser_acceleration_guide_v1.png",
         ],
         "exclusions": [
             "personal information",

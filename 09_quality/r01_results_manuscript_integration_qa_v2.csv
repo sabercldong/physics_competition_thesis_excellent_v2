@@ -20,26 +20,32 @@ MRQA2-18,质疑创新L1等级数与统计输出,20,20,通过,final_level_distrib
 MRQA2-19,质疑创新L2等级数与统计输出,51,51,通过,final_level_distribution.csv
 MRQA2-20,质疑创新L3等级数与统计输出,5,5,通过,final_level_distribution.csv
 MRQA2-21,质疑创新L4等级数与统计输出,8,8,通过,final_level_distribution.csv
-MRQA2-22,科学论证与质疑创新共现、统计输出与正文,科学论证与质疑创新共同出现40次，两者并集为150个单元，Jaccard系数为0.2667,存在,通过,final_dimension_cooccurrence.csv;08_manuscript/04_results.md
-MRQA2-23,图4-1图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
-MRQA2-24,图4-2图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
-MRQA2-25,第四章边界语句,不代表学生实际能力,存在,通过,08_manuscript/04_results.md
-MRQA2-26,第四章边界语句,不代表教学效果,存在,通过,08_manuscript/04_results.md
-MRQA2-27,第四章边界语句,不进行显著性检验,存在,通过,08_manuscript/04_results.md
-MRQA2-28,第四章边界语句,全样本主分析不进行分值加权,存在,通过,08_manuscript/04_results.md
-MRQA2-29,第四章边界语句,项目无法独立验证,存在,通过,08_manuscript/04_results.md
-MRQA2-30,第35届模型建构敏感性输出与正文,26小问/320分；等权与分值加权比例均为100.00%,存在,通过,cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md
-MRQA2-31,第35届科学推理敏感性输出与正文,26小问/320分；等权与分值加权比例均为100.00%,存在,通过,cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md
-MRQA2-32,第35届科学论证敏感性输出与正文,6小问/80分；科学论证的等权比例为23.08%（6/26），分值加权比例为25.00%（80/320）,存在,通过,cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md
-MRQA2-33,第35届质疑创新敏感性输出与正文,8小问/120分；质疑创新的等权比例为30.77%（8/26），分值加权比例为37.50%（120/320）,存在,通过,cpho35_score_weighted_presence_sensitivity_v1.csv;08_manuscript/04_results.md
-MRQA2-34,第35届敏感性来源与使用边界,用户声明、E1、跨届比较限制,存在,通过,08_manuscript/04_results.md
-MRQA2-35,表征要素数3项分层输出与正文,| 3 | 175 | 93.71% | 100.00% | 50.29% | 43.43% |,存在,通过,final_representation_component_dimension_presence.csv;08_manuscript/04_results.md
-MRQA2-36,表征要素数4项分层输出与正文,| 4 | 42 | 88.10% | 100.00% | 42.86% | 14.29% |,存在,通过,final_representation_component_dimension_presence.csv;08_manuscript/04_results.md
-MRQA2-37,数学工具要素数3项分层输出与正文,| 3 | 31 | 100.00% | 100.00% | 58.06% | 64.52% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
-MRQA2-38,数学工具要素数4项分层输出与正文,| 4 | 71 | 95.77% | 100.00% | 59.15% | 39.44% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
-MRQA2-39,数学工具要素数5项分层输出与正文,| 5 | 74 | 94.59% | 100.00% | 37.84% | 36.49% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
-MRQA2-40,数学工具要素数6项分层输出与正文,| 6 | 34 | 73.53% | 100.00% | 26.47% | 26.47% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
-MRQA2-41,元数据分层边界语句,不等同于表征类型数或公式数,存在,通过,08_manuscript/04_results.md
-MRQA2-42,元数据分层边界语句,不构成题目难度、认知负荷或学生能力的测量,存在,通过,08_manuscript/04_results.md
-MRQA2-43,元数据分层边界语句,不能把此表升级为,存在,通过,08_manuscript/04_results.md
-MRQA2-44,历史V1更正前基线识别,含87项与153项基线值,存在,通过,09_quality/r01_results_manuscript_integration_qa_v1.csv
+MRQA2-22,模型建构L1与科学推理等级组配表,| L1 | 56 | 44 | 9 | 109 |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
+MRQA2-23,模型建构L2与科学推理等级组配表,| L2 | 11 | 11 | 0 | 22 |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
+MRQA2-24,模型建构L3与科学推理等级组配表,| L3 | 39 | 26 | 7 | 72 |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
+MRQA2-25,完整维度组合“模型建构、科学推理、科学论证”,| 模型建构、科学推理、科学论证 | 66 | 30.14% |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
+MRQA2-26,完整维度组合“模型建构、科学推理”,| 模型建构、科学推理 | 53 | 24.20% |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
+MRQA2-27,完整维度组合“模型建构、科学推理、质疑创新”,| 模型建构、科学推理、质疑创新 | 44 | 20.09% |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
+MRQA2-28,完整维度组合“模型建构、科学推理、科学论证、质疑创新”,| 模型建构、科学推理、科学论证、质疑创新 | 40 | 18.26% |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
+MRQA2-29,完整维度组合“科学推理”,| 科学推理 | 16 | 7.31% |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
+MRQA2-30,科学论证与质疑创新共现、统计输出与正文,科学论证与质疑创新共同出现40次，两者并集为150个单元，Jaccard系数为0.2667,存在,通过,final_dimension_cooccurrence.csv;08_manuscript/04_results.md
+MRQA2-31,图4-1图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-32,图4-2图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-33,图4-3图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-34,图4-4图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-35,第四章边界语句,不代表学生实际能力,存在,通过,08_manuscript/04_results.md
+MRQA2-36,第四章边界语句,教学效果,存在,通过,08_manuscript/04_results.md
+MRQA2-37,第四章边界语句,不进行显著性检验,存在,通过,08_manuscript/04_results.md
+MRQA2-38,第四章边界语句,全样本主分析不进行分值加权,存在,通过,08_manuscript/04_results.md
+MRQA2-39,第四章边界语句,描述性统计,存在,通过,08_manuscript/04_results.md
+MRQA2-40,第35届分值资料的主分析边界,不纳入主分析且不开展分值加权,存在,通过,08_manuscript/04_results.md
+MRQA2-41,表征要素数3项分层输出与正文,| 3 | 175 | 93.71% | 100.00% | 50.29% | 43.43% |,存在,通过,final_representation_component_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-42,表征要素数4项分层输出与正文,| 4 | 42 | 88.10% | 100.00% | 42.86% | 14.29% |,存在,通过,final_representation_component_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-43,数学工具要素数3项分层输出与正文,| 3 | 31 | 100.00% | 100.00% | 58.06% | 64.52% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-44,数学工具要素数4项分层输出与正文,| 4 | 71 | 95.77% | 100.00% | 59.15% | 39.44% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-45,数学工具要素数5项分层输出与正文,| 5 | 74 | 94.59% | 100.00% | 37.84% | 36.49% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-46,数学工具要素数6项分层输出与正文,| 6 | 34 | 73.53% | 100.00% | 26.47% | 26.47% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
+MRQA2-47,元数据分层边界语句,不等同于表征类型数或公式数,存在,通过,08_manuscript/04_results.md
+MRQA2-48,元数据分层边界语句,不构成题目难度、认知负荷或学生能力的测量,存在,通过,08_manuscript/04_results.md
+MRQA2-49,元数据分层边界语句,不能把此表升级为,存在,通过,08_manuscript/04_results.md
+MRQA2-50,历史V1更正前基线识别,含87项与153项基线值,存在,通过,09_quality/r01_results_manuscript_integration_qa_v1.csv

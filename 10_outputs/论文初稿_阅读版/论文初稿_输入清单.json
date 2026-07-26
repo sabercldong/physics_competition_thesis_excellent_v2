@@ -1,26 +1,31 @@
 {
   "artifact": "10_outputs/论文初稿_阅读版/中学生物理竞赛复赛试题的科学思维要求与教学转化研究_论文初稿.docx",
   "artifact_scope": "readable thesis draft; not a submission copy",
-  "generated_on": "2026-07-25",
+  "generated_on": "2026-07-26",
   "source_sha256": {
     "08_manuscript/01_introduction.md": "bf6789467a7b369f5bc7cb1421a354ceaa5d35d8763b45cc11ea64aab9f42a28",
-    "08_manuscript/02_theory.md": "459d36eec5f2d36b9c9fd1e1a0980402baf4bd07ed787017e05de0ccc8f00f22",
-    "08_manuscript/03_methods.md": "ca161229ed1ccc1957fd5526a827d97ae9d200f07ebbb93803184bb2dac8d5aa",
-    "08_manuscript/04_results.md": "651a30a11e799f5ebaff5d047d43631839019fad80a6135d1cefc23954a9552b",
-    "08_manuscript/05_cases_and_diagnosis.md": "a0e6d9b762b2814962cf14f04de8d81a1ac3a5ea16e6e2192c2bbccbf5eee85a",
+    "08_manuscript/02_theory.md": "0b28241b6ff09be1384b803f81da80c3df160bd39472a1af82fa61bcbe6b27f8",
+    "08_manuscript/03_methods.md": "91ee4971db713dc58c8b58649f778c417392dacd57d71b835edf57bd87898096",
+    "08_manuscript/04_results.md": "9143153ea984d51c9deb288eddde665833e2bf0fb2f1e1d1e92bad94821febc3",
+    "08_manuscript/05_cases_and_diagnosis.md": "a81364332eea0c12745c1f3679f0975dd40c0ae4845d25424b2e5b6a4d0b072f",
     "08_manuscript/06_conclusion.md": "2c34a6350b0d8804609fc52ef25b11b645643c644bf0413d3ddd1f7ed3250893",
     "08_manuscript/00_abstract_content_draft.md": "1a75ca5b80f5e12c6362f5ee19c324460f79273dd72872e224a748f0a85163ab",
     "08_manuscript/00_abstract_en_content_draft.md": "698135875b68976f30825edd3aa9816f20e5cb01f834ca60486daa3fdbf135ca",
     "08_manuscript/07_candidate_references.md": "cb95ee9bf3549fded8bda37e92b373ffac9a3a16c76cce3c67147fbd1f1605a4",
     "09_quality/r01_candidate_references_mapping_v1.csv": "44b3175ad7baf499cf00656e65ad43b4aba0c67177a40dd08e8d4042973aeee4",
     "08_manuscript/00_frontmatter.md": "304a3e6fd4f8a5a4cb001afb3ba24d7f2fef328ab093752e579c115611b1954c",
-    "10_outputs/drafts/build_r01_working_draft.py": "d8a748c2f560cd8e85cb29f5fa75d49b29fdc871723ccbb056db435a6910b780"
+    "10_outputs/drafts/build_r01_working_draft.py": "38e47a795059dda41f9ed10372b6a50f4d7933a9fdb1defbec45ffae9c029520"
   },
   "figure_inputs": [
     "08_manuscript/figures/figure_1_1_r01_technical_route_v1.png",
     "08_manuscript/figures/figure_2_1_r01_theoretical_framework_v1.png",
     "08_manuscript/figures/figure_4_1_dimension_presence_r01_v1.png",
-    "08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png"
+    "08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png",
+    "08_manuscript/figures/figure_4_3_model_reasoning_level_pair_r01_v1.png",
+    "08_manuscript/figures/figure_4_4_dimension_patterns_r01_v1.png",
+    "08_manuscript/figures/figure_5_1_gravity_deflection_source_v1.jpg",
+    "08_manuscript/figures/figure_5_2_quantum_ring_source_v1.jpg",
+    "08_manuscript/figures/figure_5_3_laser_acceleration_guide_v1.png"
   ],
   "exclusions": [
     "personal information",

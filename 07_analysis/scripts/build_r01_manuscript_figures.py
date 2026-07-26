@@ -6,12 +6,14 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+from collections import Counter
 from pathlib import Path
 
 import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from PIL import Image
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -49,10 +51,20 @@ def configure_fonts() -> None:
 def save_figure(fig: plt.Figure, output_dir: Path, stem: str) -> tuple[Path, Path]:
     png_path = output_dir / f"{stem}.png"
     pdf_path = output_dir / f"{stem}.pdf"
+    jpg_path = output_dir / f"{stem}.jpg"
     fig.savefig(png_path, dpi=300, bbox_inches="tight", facecolor="white")
     fig.savefig(pdf_path, bbox_inches="tight", facecolor="white")
+    fig.savefig(jpg_path, dpi=220, bbox_inches="tight", facecolor="white")
     plt.close(fig)
     return png_path, pdf_path
+
+
+def export_case_image(source_path: Path, output_dir: Path, stem: str) -> Path:
+    """Provide Word-compatible copies of the two source figures used in Chapter 5."""
+    target_path = output_dir / f"{stem}.jpg"
+    with Image.open(source_path) as image:
+        image.convert("RGB").save(target_path, quality=95, optimize=True)
+    return target_path
 
 
 def build_presence_figure(rows: list[dict[str, str]], output_dir: Path) -> tuple[Path, Path]:
@@ -98,6 +110,87 @@ def build_level_figure(rows: list[dict[str, str]], output_dir: Path) -> tuple[Pa
     return save_figure(fig, output_dir, "figure_4_2_level_distribution_r01_v1")
 
 
+def build_level_pair_figure(coding: list[dict[str, str]], output_dir: Path) -> tuple[Path, Path]:
+    """Show how model construction and scientific reasoning are paired per item."""
+    by_item: dict[str, dict[str, dict[str, str]]] = {}
+    for row in coding:
+        by_item.setdefault(row["item_id"], {})[row["dimension"]] = row
+
+    levels = ["L1", "L2", "L3"]
+    matrix = [[0 for _ in levels] for _ in levels]
+    for dimensions in by_item.values():
+        model = dimensions["模型建构"]
+        reasoning = dimensions["科学推理"]
+        if model["present"] == "1" and model["level"] in levels and reasoning["level"] in levels:
+            matrix[levels.index(model["level"])][levels.index(reasoning["level"])] += 1
+
+    fig, axis = plt.subplots(figsize=(6.8, 5.0))
+    image = axis.imshow(matrix, cmap="Blues", vmin=0, vmax=max(max(row) for row in matrix))
+    axis.set_xticks(range(len(levels)), [f"科学推理{level}" for level in levels])
+    axis.set_yticks(range(len(levels)), [f"模型建构{level}" for level in levels])
+    axis.set_title("图4-3 模型建构与科学推理的等级组配（n=203）", pad=12)
+    for row_index, row in enumerate(matrix):
+        for column_index, value in enumerate(row):
+            axis.text(column_index, row_index, str(value), ha="center", va="center", fontsize=12,
+                      color="white" if value >= 30 else "#173F5F")
+    colorbar = fig.colorbar(image, ax=axis, shrink=0.86)
+    colorbar.set_label("分析单元数")
+    return save_figure(fig, output_dir, "figure_4_3_model_reasoning_level_pair_r01_v1")
+
+
+def build_pattern_figure(coding: list[dict[str, str]], output_dir: Path) -> tuple[Path, Path]:
+    """Plot the five observed complete dimension combinations in Chinese."""
+    by_item: dict[str, dict[str, dict[str, str]]] = {}
+    for row in coding:
+        by_item.setdefault(row["item_id"], {})[row["dimension"]] = row
+    patterns = Counter(
+        "、".join(dimension for dimension in DIMENSIONS if dimensions[dimension]["present"] == "1")
+        for dimensions in by_item.values()
+    )
+    order = [
+        "模型建构、科学推理、科学论证",
+        "模型建构、科学推理",
+        "模型建构、科学推理、质疑创新",
+        "模型建构、科学推理、科学论证、质疑创新",
+        "科学推理",
+    ]
+    labels = [label.replace("、", "\n") for label in order]
+    values = [patterns[label] for label in order]
+    colors = ["#3B6B8E", "#5A8DB5", "#2D8C7C", "#B85C38", "#9AA5B1"]
+    fig, axis = plt.subplots(figsize=(8.2, 5.0))
+    bars = axis.bar(range(len(order)), values, color=colors, width=0.68)
+    axis.set_xticks(range(len(order)), labels)
+    axis.set_ylabel("分析单元数")
+    axis.set_ylim(0, 76)
+    axis.set_title("图4-4 五类完整任务组合的构成（n=219）", pad=12)
+    axis.yaxis.grid(True, color="#D9D9D9", linewidth=0.8)
+    axis.set_axisbelow(True)
+    axis.spines[["top", "right"]].set_visible(False)
+    for bar, value in zip(bars, values):
+        axis.text(bar.get_x() + bar.get_width() / 2, value + 2, f"{value}\n{value / 219:.2%}",
+                  ha="center", va="bottom", fontsize=9)
+    return save_figure(fig, output_dir, "figure_4_4_dimension_patterns_r01_v1")
+
+
+def build_laser_case_guide(output_dir: Path) -> Path:
+    """Create a reader-facing schematic for the laser-acceleration case."""
+    fig, axis = plt.subplots(figsize=(8.2, 3.5))
+    axis.set_xlim(0, 10)
+    axis.set_ylim(0, 4)
+    axis.axis("off")
+    axis.annotate("", xy=(9.1, 2), xytext=(0.9, 2), arrowprops={"arrowstyle": "->", "lw": 2.2, "color": "#B85C38"})
+    axis.text(9.25, 2.15, "z轴\n激光传播方向", fontsize=10, color="#B85C38")
+    for x in [1.6, 3.0, 4.4, 5.8, 7.2]:
+        axis.plot([x, x], [1.1, 2.9], color="#3B6B8E", linewidth=1.5)
+    axis.text(4.4, 3.2, "线偏振单色平面电磁波", ha="center", fontsize=12, weight="bold")
+    axis.annotate("电子注入", xy=(3.8, 1.7), xytext=(1.2, 0.55), arrowprops={"arrowstyle": "->", "lw": 2, "color": "#2D8C7C"}, color="#2D8C7C", fontsize=11)
+    axis.text(1.0, 3.55, "题设限定：在 x-z 平面内入射；入射角不大于 π/2；忽略辐射阻尼", fontsize=10.5,
+              bbox={"boxstyle": "round,pad=0.35", "facecolor": "#EEF4F8", "edgecolor": "#A9C3D5"})
+    axis.text(5.0, 0.35, "读图重点：哪些条件限制变量，哪些条件决定可用模型？", ha="center", fontsize=10.5, color="#4A5560")
+    png_path, _ = save_figure(fig, output_dir, "figure_5_3_laser_acceleration_guide_v1")
+    return png_path
+
+
 def write_manifest(output_dir: Path, figure_pairs: list[tuple[str, Path, Path]], coding_hash: str) -> Path:
     manifest = output_dir / "r01_manuscript_figures_manifest_v1.csv"
     with manifest.open("w", encoding="utf-8-sig", newline="") as handle:
@@ -136,6 +229,7 @@ def main() -> None:
 
     presence_rows = read_rows(RESULTS_DIR / "final_dimension_presence.csv")
     level_rows = read_rows(RESULTS_DIR / "final_level_distribution.csv")
+    coding_rows = read_rows(coding_path)
     for row in [*presence_rows, *level_rows]:
         if row["source_final_coding_sha256"] != coding_hash:
             raise SystemExit("descriptive CSV source hash does not match the current coding table")
@@ -143,7 +237,20 @@ def main() -> None:
     figure_pairs = [
         ("图4-1", *build_presence_figure(presence_rows, args.output_dir)),
         ("图4-2", *build_level_figure(level_rows, args.output_dir)),
+        ("图4-3", *build_level_pair_figure(coding_rows, args.output_dir)),
+        ("图4-4", *build_pattern_figure(coding_rows, args.output_dir)),
     ]
+    build_laser_case_guide(args.output_dir)
+    export_case_image(
+        PROJECT_ROOT / "03_corpus/item_assets/CPHO41-Q06-figure1-page4-raw.png",
+        args.output_dir,
+        "figure_5_1_gravity_deflection_source_v1",
+    )
+    export_case_image(
+        PROJECT_ROOT / "03_corpus/item_assets/CPHO41-Q07-figure7b-page4-recrop-v1.png",
+        args.output_dir,
+        "figure_5_2_quantum_ring_source_v1",
+    )
     manifest = write_manifest(args.output_dir, figure_pairs, coding_hash)
     print(f"generated {len(figure_pairs)} figures and {manifest.relative_to(PROJECT_ROOT)}")
 
