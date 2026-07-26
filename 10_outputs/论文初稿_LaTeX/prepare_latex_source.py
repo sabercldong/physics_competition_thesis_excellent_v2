@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import csv
 import re
 import subprocess
 from pathlib import Path
@@ -12,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = ROOT / "10_outputs/论文初稿_LaTeX"
 COMBINED_MD = OUTPUT_DIR / "论文初稿_合并源稿.md"
 TEX_FILE = OUTPUT_DIR / "中学生物理竞赛复赛试题的科学思维要求与教学转化研究.tex"
+REFERENCE_MAPPING = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
 SOURCES = [
     ROOT / "08_manuscript/00_abstract_content_draft.md",
     ROOT / "08_manuscript/00_abstract_en_content_draft.md",
@@ -23,6 +25,31 @@ SOURCES = [
     ROOT / "08_manuscript/06_conclusion.md",
     ROOT / "08_manuscript/07_candidate_references.md",
 ]
+
+
+def load_reference_numbers() -> dict[str, str]:
+    """Read the controlled source-to-number mapping used by the manuscript."""
+    with REFERENCE_MAPPING.open(encoding="utf-8-sig", newline="") as handle:
+        return {
+            row["source_id"]: row["reference_number"]
+            for row in csv.DictReader(handle)
+        }
+
+
+REFERENCE_NUMBERS = load_reference_numbers()
+
+
+def render_citation_markers(text: str) -> str:
+    """Convert internal source markers into reader-facing numbered citations."""
+    def replace(match: re.Match[str]) -> str:
+        source_ids = [part.strip() for part in match.group(1).split("；", 1)[0].split("、")]
+        missing = [source_id for source_id in source_ids if source_id not in REFERENCE_NUMBERS]
+        if missing:
+            raise ValueError(f"Missing reference number for: {', '.join(missing)}")
+        numbers = ", ".join(REFERENCE_NUMBERS[source_id] for source_id in source_ids)
+        return rf"\textsuperscript{{[{numbers}]}}"
+
+    return re.sub(r"\[引文占位：([^\]]+)\]", replace, text)
 
 
 def normalise_headings(text: str, source: Path) -> str:
@@ -37,7 +64,7 @@ def normalise_headings(text: str, source: Path) -> str:
     # The manuscript supplies complete Chinese captions in the paragraph after each image.
     # Empty alt text prevents Pandoc from emitting a second automatic figure caption.
     text = re.sub(r"!\[[^\]]*\]\(([^)]+)\)", r"![](\1)", text)
-    return text
+    return render_citation_markers(text)
 
 
 def main() -> None:
@@ -62,8 +89,12 @@ def main() -> None:
         )
     tex = tex.replace(
         r"\setlength{\emergencystretch}{3em} % prevent overfull lines",
-        r"\setlength{\emergencystretch}{3em} % prevent overfull lines\n\sloppy",
+        "\\setlength{\\emergencystretch}{3em} % prevent overfull lines\n"
+        "\\sloppy\n"
+        "\\setlength{\\parindent}{2em}\n"
+        "\\setlength{\\parskip}{0pt}",
     )
+    tex = tex.replace(r"\pandocbounded{", r"\noindent\pandocbounded{")
     TEX_FILE.write_text(tex, encoding="utf-8")
 
 
