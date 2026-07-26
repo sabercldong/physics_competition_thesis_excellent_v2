@@ -1,0 +1,25 @@
+\begin{tikzpicture}[>=Stealth,scale=0.82]
+  \begin{scope}
+    \draw[->,thick] (-2.3,0) -- (2.3,0) node[right] {$x$};
+    \draw[->,thick] (0,-2.9) -- (0,1.0) node[above] {$y$};
+    \fill (0,0) circle (1.5pt) node[above left] {$O$};
+    \draw[very thick] (0,0) -- (0,-2.35);
+    \node[left] at (-0.10,-1.2) {$M,l$};
+    \fill (0,-2.35) circle (1.3pt) node[right] {$B$};
+    \draw[->,very thick,red!75!black] (2.0,-1.58) -- (0.72,-1.58) node[midway,above] {$v_0$};
+    \fill[blue!65] (0.60,-1.58) circle (3pt) node[right] {$m$};
+    \draw[densely dashed] (0,-1.58) -- (0.55,-1.58);
+    \node[left] at (-0.1,-1.58) {$L=2l/3$};
+    \node[below] at (0,-3.12) {初始撞击状态};
+  \end{scope}
+  \begin{scope}[xshift=6.0cm]
+    \draw[->,thick] (0,0) -- (2.7,0) node[right] {$x'$};
+    \draw[->,thick] (0,0) -- (0,2.2) node[above] {$y'$};
+    \fill (0,0) circle (1.4pt) node[below left] {质心};
+    \draw[very thick] (0,0) -- (1.35,1.35);
+    \fill (1.35,1.35) circle (1.2pt) node[above right] {$B$};
+    \draw[->,thick,purple!75!black] (0.48,0.48) arc[start angle=45,end angle=-20,radius=0.68];
+    \node[purple!75!black] at (0.93,0.15) {$\omega't$};
+    \node[below] at (0,-0.55) {撤轴后相对质心转动};
+  \end{scope}
+\end{tikzpicture}

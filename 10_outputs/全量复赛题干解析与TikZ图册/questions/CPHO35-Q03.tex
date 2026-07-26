@@ -1,0 +1,58 @@
+% 题干转写：完成
+% 解析转写：完成
+% 图形核对：完成
+\section{第35届复赛第3题：细杆打击中心与撤轴后运动}
+\subsection{题干}
+质量为 $M$、长度为 $l$ 的匀质细杆 $AB$ 自由悬挂于通过原点 $O$ 的水平光滑转轴上，初始时杆竖直下垂。质量为 $m$ 的弹丸以速度 $v_0$ 水平撞击杆的打击中心并嵌入杆中；杆转过半圈恢复竖直状态时立即撤去转轴。忽略地面高度限制，重力加速度为 $g$。如图\ref{fig:cpho35q03}，求打击中心、撤轴前轴力、撤轴后杆端坐标，以及杆再转半圈时 $O,B$ 两点的高度差。
+\begin{figure}[htbp]\centering
+\input{tikz/CPHO35-Q03-figure1.tex}
+\caption{第35届复赛第3题题图与撤轴后相对质心坐标的TikZ重绘。}\label{fig:cpho35q03}
+\end{figure}
+
+\subsection{参考解答整理}
+\paragraph{（1）打击中心。} 设作用点到 $O$ 的距离为 $L$。由杆绕端点的转动方程与质心平动关系，
+\[FL=\frac13Ml^2\beta,\qquad F-F_x=Ma_x,\qquad a_x=\frac l2\beta.\]
+打击中心要求撞击瞬间 $F_x=0$，故
+\[\boxed{L=\frac23l.}\]
+
+\paragraph{（2）撤轴前的轴力。} 碰撞后杆--弹丸系统的质心到轴距离、初始角速度和转动惯量为
+\[
+L_c=\frac{4m+3M}{6(M+m)}l,\qquad
+\omega_0=\frac{6mv_0}{(4m+3M)l},\qquad
+I=\frac19(3M+4m)l^2.
+\]
+转过 $\theta$ 后，机械能守恒给出
+\[
+\omega^2=\frac{36m^2v_0^2}{(4m+3M)^2l^2}-\frac{3g}{l}(1-\cos\theta),
+\qquad \beta'=\frac{3g}{2l}\sin\theta.
+\]
+轴对系统作用力的分量为
+\[
+N_x=\frac{(4m+3M)g}{4}(3\sin\theta\cos\theta-2\sin\theta)
++\frac{6m^2v_0^2}{(4m+3M)l}\sin\theta,
+\]
+\[
+N_y=(M+m)g+\frac{6m^2v_0^2}{(4m+3M)l}\cos\theta
++\frac{(4m+3M)g}{4}(3\cos^2\theta-2\cos\theta-1).
+\]
+
+\paragraph{（3）撤轴后的杆端轨迹。} 在 $\theta=\pi$ 时撤轴，角速度记为
+\[
+\omega'=\sqrt{\frac{36m^2v_0^2}{(4m+3M)^2l^2}-\frac{6g}{l}}.
+\]
+此后质心作平抛、杆绕质心顺时针转动。以撤轴瞬间为 $t=0$，杆端 $B$ 的坐标为
+\[
+x_B(t)=L_c\omega't+(l-L_c)\sin(\omega't),
+\]
+\[
+y_B(t)=L_c-\frac12gt^2+(l-L_c)\cos(\omega't).
+\]
+
+\paragraph{（4）再转半圈时的高度差。} 令 $\omega't_1=\pi$，则
+\[
+h=\left|2L_c-l-\frac12g\left(\frac\pi{\omega'}\right)^2\right|
+=\left|\frac{\pi^2g}{2}\left[\frac{36m^2v_0^2}{(4m+3M)^2l^2}-\frac{6g}{l}\right]^{-1}-\frac{ml}{3(M+m)}\right|.
+\]
+
+\subsection{转写依据}
+题干、答案公式和题图分别依据 \texttt{CPHO35-Q03.md}、\texttt{CPHO35-Q03\_formula\_check\_v1.csv} 及图件核对入口；当前PDF未明示分值，未写入图册。
