@@ -1,0 +1,18 @@
+\begin{tikzpicture}[>=Stealth,scale=0.9]
+  \draw[thick] (-4.4,0) -- (4.6,0);
+  \foreach \x in {-4.2,-3.9,...,4.4} {\draw[gray] (\x,0) -- +(0.18,-0.13);}
+  \draw[->,thick] (-4.1,0.36) -- (4.25,0.36) node[right] {$x$};
+  \draw[thick] (-3.8,-0.55) -- (-3.8,1.25);
+  \foreach \y in {-0.45,-0.15,...,1.15} {\draw[thick] (-4.08,\y) -- (-3.8,\y+0.15);}
+  \draw[thick,decorate,decoration={coil,segment length=4pt,amplitude=3pt}]
+    (-3.8,0.65) -- (-1.15,0.65);
+  \fill[blue!25] (-0.82,0.33) rectangle (-0.17,0.98);
+  \draw[thick] (-0.82,0.33) rectangle (-0.17,0.98);
+  \node at (-0.50,0.66) {$m$};
+  \draw[densely dashed] (-0.50,0.1) -- (-0.50,1.1);
+  \draw[densely dashed] (1.15,0.1) -- (1.15,1.1);
+  \node[below] at (-0.50,0.1) {$-A_0$};
+  \node[below] at (1.15,0.1) {$O$};
+  \node[above] at (-0.50,1.08) {$t=0$};
+  \node[below] at (-2.45,-0.5) {劲度系数 $k$ 的轻弹簧};
+\end{tikzpicture}
