@@ -1,0 +1,90 @@
+% 题干转写：完成
+% 解析转写：完成
+% 图形核对：完成
+\section{第40届复赛第7题：大气分层、声速与声波传播}
+
+\subsection{题干}
+
+大气层最底部是对流层，厚度约为 $10\,\mathrm{km}$；在对流层中，空气温度随高度升高而降低。对流层顶部之上约 $10\,\mathrm{km}$ 的范围内温度近似不随高度变化，称为同温层；同温层上方一定高度范围内温度随高度升高而升高，称为逆温层，如图\ref{fig:cpho40q07}所示。
+
+\begin{figure}[htbp]
+  \centering
+  \input{tikz/CPHO40-Q07-figure1.tex}
+  \caption{第40届复赛第7题图7a的TikZ重绘。}
+  \label{fig:cpho40q07}
+\end{figure}
+
+\begin{enumerate}
+  \item 将对流层温度变化视为理想气体缓慢绝热上升的结果。设地表温度为 $T_0$，空气摩尔质量为 $\mu$，$\gamma=C_p/C_V$ 为常数，普适气体常量为 $R$，重力加速度为 $g$。求温度 $T$ 与高度 $z$ 的关系。
+  \item 已知气体声速满足 $v_s^2=(\mathrm dp/\mathrm d\rho)_{\mathrm{adiabatic}}$。求声速与温度的关系，并讨论三层大气中声速随高度的变化。
+  \item 将层间界面近似为平面；对流层和逆温层温度均取 $-10\,{}^\circ\mathrm C$，同温层温度取 $-55\,{}^\circ\mathrm C$。同温层内声源发出的声波入射到界面时，判断不同入射角下的折射、反射与全反射情形。
+  \item 将三层界面近似为同心球面，且对流层与逆温层温度相同并高于同温层温度。声源和探测气球均可处于对流层或同温层。忽略地面反射、可折射时的反射以及能量吸收，分别讨论四种位置组合下能否探测几千千米外的声音。已知地球半径 $R_e\simeq6371\,\mathrm{km}$。
+\end{enumerate}
+
+\subsection{参考解答整理}
+
+\paragraph{（1）对流层温度。}
+在高度 $z$ 处，理想气体密度为
+\[
+\rho(z)=\frac{p(z)\mu}{RT(z)}.
+\]
+对高度为 $\Delta z$、横截面积为 $A$ 的气体微元列静力平衡方程，取极限得到
+\[
+\frac{\mathrm dp}{\mathrm dz}=-\rho g,
+\qquad
+\frac{\mathrm d\ln p}{\mathrm dz}=-\frac{\mu g}{RT}.
+\]
+绝热关系 $pV^\gamma=\text{常量}$ 与理想气体状态方程给出
+\[
+0=-(\gamma-1)\frac{\mathrm d\ln p}{\mathrm dz}
++\gamma\frac{\mathrm d\ln T}{\mathrm dz}.
+\]
+因此
+\[
+\frac{\mathrm dT}{\mathrm dz}=-\frac{(\gamma-1)\mu g}{\gamma R},
+\qquad
+T(z)=T_0-\frac{(\gamma-1)\mu g}{\gamma R}z.
+\]
+
+\paragraph{（2）声速。}
+绝热过程可写为 $p=C\rho^\gamma$，于是
+\[
+v_s^2=\left(\frac{\mathrm dp}{\mathrm d\rho}\right)_{\mathrm{adiabatic}}
+=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu},
+\qquad
+v_s=\sqrt{\frac{\gamma RT}{\mu}}.
+\]
+故对流层中声速随高度升高而降低；同温层中声速近似不变；逆温层中声速随高度升高而增大。
+
+\paragraph{（3）平面分层下的折射与全反射。}
+外层温度为 $T_o=263.15\,\mathrm K$，同温层温度为 $T_i=218.15\,\mathrm K$，因此
+\[
+\frac{v_o}{v_i}=\sqrt{\frac{T_o}{T_i}}
+=\sqrt{\frac{263.15}{218.15}}\simeq1.098.
+\]
+以界面法线为基准，入射角为 $\theta_i$、折射角为 $\theta_o$，折射关系为
+\[
+\sin\theta_o=\frac{v_o}{v_i}\sin\theta_i.
+\]
+临界入射角为
+\[
+\theta_{im}=\arcsin\!\left(\frac{v_i}{v_o}\right)
+\simeq65.6^\circ.
+\]
+当 $\theta_i<\theta_{im}$ 时存在折射光线，并可同时有反射；当 $\theta_i>\theta_{im}$ 时不存在实数折射角，声波在同温层内发生全反射。
+
+\paragraph{（4）球面分层下的远距离传播。}
+设对流层顶部高度 $h_1=10\,\mathrm{km}$，同温层顶部高度 $h_2=20\,\mathrm{km}$。声源和气球同在对流层时，无遮挡的最远传播距离为
+\[
+l_1=2\sqrt{(R_e+h_1)^2-R_e^2}
+\simeq2\sqrt{2R_eh_1}\simeq714\,\mathrm{km},
+\]
+因此只能探测短距离声音。声源在对流层、气球在同温层时，传播距离不超过
+\[
+l_2=\sqrt{(R_e+h_2)^2-R_e^2}
++\sqrt{(R_e+h_1)^2-R_e^2}
+\simeq862\,\mathrm{km},
+\]
+也不能探测远距离声音。
+
+若声源和气球同在同温层，满足全反射条件的声波可在上下两个界面间多次反射并被限制在同温层中，因而可以传播到远距离。若声源在同温层、气球在对流层，声波必须折射进入对流层且不能被地球阻挡，距离同样受 $l_2$ 限制，故只能探测短距离声音。
