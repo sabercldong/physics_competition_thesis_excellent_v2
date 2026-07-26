@@ -98,7 +98,15 @@ def main() -> None:
         "\\setlength{\\parskip}{0pt}\n"
         "\\renewcommand{\\arraystretch}{1.18}\n"
         "\\usepackage{tikz}\n"
-        "\\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning}",
+        "\\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning}\n"
+        "\\ctexset{chapter={beforeskip=18pt,afterskip=20pt},"
+        "section={beforeskip=16pt,afterskip=10pt},"
+        "subsection={beforeskip=12pt,afterskip=7pt}}\n"
+        "\\let\\cleardoublepage\\clearpage",
+    )
+    tex = tex.replace(
+        r"\Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%",
+        r"\Gscale@div\@tempb{.86\linewidth}{\wd\pandoc@box}%",
     )
     tex = tex.replace(r"\pandocbounded{", r"\noindent\pandocbounded{")
     TEX_FILE.write_text(tex, encoding="utf-8")

@@ -67,7 +67,7 @@
 \newcommand*\pandocbounded[1]{% scales image to fit in text height/width
   \sbox\pandoc@box{#1}%
   \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
-  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \Gscale@div\@tempb{.86\linewidth}{\wd\pandoc@box}%
   \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
   \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
   \else\usebox{\pandoc@box}%
@@ -83,6 +83,8 @@
 \renewcommand{\arraystretch}{1.18}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning}
+\ctexset{chapter={beforeskip=18pt,afterskip=20pt},section={beforeskip=16pt,afterskip=10pt},subsection={beforeskip=12pt,afterskip=7pt}}
+\let\cleardoublepage\clearpage
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage{bookmark}
@@ -1157,6 +1159,8 @@ L3 & 39 & 26 & 7 & 72 \\
 等级结果与这一解释相互补充。模型建构中L3所占比例较高，说明在部分小问里，模型工作不是单一公式的选取，而是对象、过程、条件和边界的协同组织；科学推理以L1和L2为主，说明多数任务需要在明确的物理规律下完成直接或多条件的推演；质疑创新中L2较多，则提示相关任务常需要并列处理条件或方案。这里的``较高''\,``较多''只描述当前编码手册下的结构形态，并不把任何一个等级转换为题目总难度或学生表现等级。
 
 从三个层面综合理解，第四章的价值不只在于给出四列百分比。它还形成了一张任务结构地图：教师和研究者可以从总体分布中找到常见的基础结构，从等级表中识别需要较多关系组织的任务，再从共现和分层表中寻找适合比较、论证或条件调整的题目。第五章据此选择案例，旨在展示统计数字如何重新回到物理问题本身；案例不是统计表的装饰，而是解释``一个编码判断在题目中意味着什么''的必要环节。
+
+\enlargethispage{3\baselineskip}
 
 \section{本章小结}\label{ux672cux7ae0ux5c0fux7ed3-3}
 
