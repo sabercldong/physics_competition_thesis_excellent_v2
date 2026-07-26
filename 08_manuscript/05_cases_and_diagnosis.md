@@ -18,13 +18,29 @@
 
 ## 5.2 案例一：条件到偏转角的关系链
 
-**原题节选、图示与核心任务。**
+### 5.2.1 题目导读与题干整理
 
-**题目来源：第41届全国中学生物理竞赛复赛第6题第（3）问。**原题将一物体以速度 $v_0$ 从远处射入太阳引力场，瞄准距离记为 $b$，并限定 $v_0^2b/(GM_\odot)\gg1$。它要求分别讨论陨石和恰好掠过太阳表面的星光离开太阳系后，相对于原入射方向的偏转角。原题节选见图5-1。
+本题讨论一个从远处掠过太阳的物体。它的初速度为 $v_0$，初始运动直线到太阳中心的距离为瞄准距离 $b$，并给出弱偏转条件 $v_0^2b/(GM_\odot)\gg1$。题目要求：分别针对陨石和恰好擦过太阳表面的星光，求物体离开太阳系后相对原入射方向的偏转角。对于星光情形，可取 $b=R_\odot$。
 
-![](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_5_1_question_excerpt_source.png)
-
-图5-1 第41届复赛第6题第（3）问原题节选。图中给出入射速度、瞄准距离、弱偏转近似和两种比较情形。
+```{=latex}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Stealth,scale=0.9]
+  \fill[orange!65] (0,0) circle (0.62);
+  \draw[orange!80!black] (0,0) circle (0.62);
+  \node[below=8pt] at (0,0) {太阳中心 $O$};
+  \draw[->,thick,blue!70!black] (-5,1.45) -- (-1.1,1.45) node[midway,above] {$v_0$};
+  \draw[->,thick,blue!70!black] (1.1,-1.05) -- (5,-1.05) node[midway,below] {飞出方向};
+  \draw[densely dashed,gray] (-5,1.45) -- (5,1.45);
+  \draw[densely dashed,gray] (0,0) -- (0,1.45);
+  \draw[<->] (0.3,0) -- (0.3,1.45) node[midway,right] {$b$};
+  \draw[thick,blue!70!black] (-1.1,1.45) .. controls (0.5,1.35) and (0.75,0.25) .. (1.1,-1.05);
+  \draw[->,red!75!black] (3.2,1.45) arc[start angle=0,end angle=-20,radius=1.8];
+  \node[red!75!black] at (4.1,0.75) {$\Delta\varphi$};
+\end{tikzpicture}
+\caption{太阳引力场中弱偏转问题的条件示意图（依据题意自绘）。}
+\end{figure}
+```
 
 本问的核心任务不是直接记忆偏转角公式，而是把初始条件、轨道关系和出射方向的几何关系连成同一条推理链。参考解答在牛顿力学框架下得到
 
@@ -55,17 +71,26 @@ $$
 
 ## 5.3 案例二：状态分类与平均能量关系
 
-**原题节选、图示与核心任务。**
+### 5.3.1 题目导读与题干整理
 
-**题目来源：第41届全国中学生物理竞赛复赛第7题第（4）问。**题目讨论一维圆环中无相互作用电子的稳定状态。在给定磁通量区间内，要求写出系统单粒子平均能量随磁通量的变化关系，并比较电子数为奇数和偶数时，磁通量取不同值的平均能量。读题的关键不是立刻代入公式，而是先找出分类依据：磁通量区间、粒子数的奇偶性，以及前一问已经得到的总能量关系。
+本题研究一个含有 $N$ 个无相互作用电子的一维圆环。穿过圆环的磁通量为 $\Phi$，系统接近绝对零度，总能量取最小值。题目限定 $-h/(2e)\leq\Phi\leq h/(2e)$，要求给出单粒子平均能量随磁通量的变化关系，并比较 $N$ 为奇数和偶数时，$\Phi=0$ 与 $|\Phi|=h/(2e)$ 两处的平均能量。
 
-![](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_5_2_question_excerpt_source.png)
-
-图5-2 第41届复赛第7题第（4）问原题节选。题面明确给出磁通量区间、平均能量定义和奇偶粒子数的比较要求。
-
-![图5-2 通有磁通量的一维圆环](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_5_2_quantum_ring_source_v1.jpg){ width=45% }
-
-图5-3 通有磁通量的一维圆环（依据第41届复赛第7题题图）。圆环、磁通量和电子运动状态构成平均能量分类讨论的物理情境。
+```{=latex}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Stealth,scale=1.0]
+  \draw[very thick,blue!70!black] (0,0) circle (1.45);
+  \draw[->,very thick,purple!75!black] (0,-0.1) -- (0,2.0) node[above] {$\Phi$};
+  \fill[purple!75!black] (0,0) circle (1.8pt);
+  \draw[->,thick,orange!80!black] (0.1,1.45) arc[start angle=86,end angle=22,radius=1.45];
+  \node[orange!80!black,above right] at (1.1,1.0) {$\mathbf A$};
+  \fill[blue!70!black] (-1.0,-0.95) circle (2.6pt) node[below left] {$e^-$};
+  \node[align=left,anchor=west] at (2.0,0.65) {分类条件：\\$N$ 的奇偶性与 $\Phi$ 的取值};
+  \node[align=left,anchor=west] at (2.0,-0.45) {共同比较对象：\\$\overline E=E_{\mathrm{tot}}/N$};
+\end{tikzpicture}
+\caption{磁通穿过一维圆环的状态分类情境（依据题意自绘）。}
+\end{figure}
+```
 
 题面要求围绕同一个平均能量对象进行分支讨论：
 
@@ -96,13 +121,31 @@ $$
 
 ## 5.4 案例三：近似条件下的动力学建模
 
-**原题节选、图示与核心任务。**
+### 5.4.1 题目导读与题干整理
 
-**题目来源：第42届全国中学生物理竞赛复赛第4题第（2）问。**题目将强激光与电子的相互作用简化为单色平面电磁波模型：电子在初始时刻从原点沿 $x$-$z$ 平面注入，入射方向受角度范围限制，并忽略辐射阻尼。问题要求确定电子能够达到的最大能量及相应入射角。原题节选见图5-4。
+本题用沿 $z$ 轴传播的线偏振单色平面电磁波近似强激光。电子在 $t=0$ 从原点沿 $x$-$z$ 平面注入，入射角受给定范围限制；本问忽略辐射阻尼，要求求出电子可达到的最大能量以及对应的入射角。这里的阅读重点是：电场、磁场方向和几何限制共同决定了可以保留哪些变量与关系。
 
-![](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_5_3_question_excerpt_source.png)
-
-图5-4 第42届复赛第4题第（2）问原题节选。题面给出平面电磁波模型、入射平面、角度范围和忽略辐射阻尼的近似条件。
+```{=latex}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Stealth,scale=0.94]
+  \draw[->,thick] (0,0) -- (6.5,0) node[right] {$z$};
+  \draw[->,thick] (0,0) -- (0,3.6) node[above] {$x$};
+  \draw[->,thick] (0,0) -- (-1.35,-1.15) node[below left] {$y$};
+  \foreach \z in {0.9,2.1,3.3,4.5,5.7} {
+    \draw[blue!70!black,thick] (\z,0.2) -- (\z,2.1);
+    \draw[orange!85!black,thick] (\z-0.24,-0.2) -- (\z+0.24,-0.65);
+  }
+  \node[blue!70!black,above] at (3.3,2.15) {$\mathbf E\parallel x$};
+  \node[orange!85!black,below] at (3.3,-0.65) {$\mathbf B\parallel y$};
+  \draw[->,very thick,purple!75!black] (0,0) -- (2.5,1.5) node[midway,above left] {$\mathbf v_0$};
+  \draw[red!75!black,thick] (1.1,0) arc[start angle=0,end angle=31,radius=1.1];
+  \node[red!75!black] at (1.42,0.43) {$\theta_0$};
+  \node[align=left,anchor=south west] at (4.0,2.42) {电子初态：原点、$x$-$z$ 平面注入\\本问近似：忽略辐射阻尼};
+\end{tikzpicture}
+\caption{平面电磁波中电子注入的几何与场方向示意图（依据题意自绘）。}
+\end{figure}
+```
 
 原题先给出电磁场表述，再对电子初始条件施加约束：
 

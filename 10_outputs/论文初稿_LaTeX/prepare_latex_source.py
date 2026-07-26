@@ -54,6 +54,9 @@ def render_citation_markers(text: str) -> str:
 
 def normalise_headings(text: str, source: Path) -> str:
     """Let LaTeX control hierarchy numbering rather than duplicate Markdown labels."""
+    if source.name == "04_results.md":
+        # Keep this provenance list in the editable source, not in the reader-facing thesis.
+        text = text.split("## 数据来源", 1)[0]
     if source.name == "07_candidate_references.md":
         text = text.split("## 使用边界", 1)[0]
         text = text.replace("# 参考文献（候选工作稿）", "# 参考文献")
@@ -92,7 +95,10 @@ def main() -> None:
         "\\setlength{\\emergencystretch}{3em} % prevent overfull lines\n"
         "\\sloppy\n"
         "\\setlength{\\parindent}{2em}\n"
-        "\\setlength{\\parskip}{0pt}",
+        "\\setlength{\\parskip}{0pt}\n"
+        "\\renewcommand{\\arraystretch}{1.18}\n"
+        "\\usepackage{tikz}\n"
+        "\\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning}",
     )
     tex = tex.replace(r"\pandocbounded{", r"\noindent\pandocbounded{")
     TEX_FILE.write_text(tex, encoding="utf-8")

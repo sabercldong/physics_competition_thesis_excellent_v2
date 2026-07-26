@@ -59,6 +59,15 @@ def save_figure(fig: plt.Figure, output_dir: Path, stem: str) -> tuple[Path, Pat
     return png_path, pdf_path
 
 
+def polish_axis(axis: plt.Axes) -> None:
+    """Use a quiet, print-friendly visual language across result figures."""
+    axis.set_facecolor("#FFFFFF")
+    axis.set_axisbelow(True)
+    axis.tick_params(labelsize=10)
+    axis.spines["top"].set_visible(False)
+    axis.spines["right"].set_visible(False)
+
+
 def export_case_image(source_path: Path, output_dir: Path, stem: str) -> Path:
     """Provide Word-compatible copies of the two source figures used in Chapter 5."""
     target_path = output_dir / f"{stem}.jpg"
@@ -72,24 +81,23 @@ def build_presence_figure(rows: list[dict[str, str]], output_dir: Path) -> tuple
     values = [float(by_dimension[dimension]["proportion"]) * 100 for dimension in DIMENSIONS]
     counts = [int(by_dimension[dimension]["items_present"]) for dimension in DIMENSIONS]
 
-    fig, axis = plt.subplots(figsize=(7.1, 4.2))
+    fig, axis = plt.subplots(figsize=(7.4, 3.7))
     bars = axis.barh(DIMENSIONS, values, color=DIMENSION_COLORS, height=0.58)
-    axis.set_xlim(0, 100)
+    axis.set_xlim(0, 112)
     axis.set_xlabel("出现比例（%）")
-    axis.set_title("图4-1 四维度在分析单元中的出现比例（n=219）", pad=12)
-    axis.xaxis.grid(True, color="#D9D9D9", linewidth=0.8)
-    axis.set_axisbelow(True)
-    axis.spines[["top", "right", "left"]].set_visible(False)
+    axis.xaxis.grid(True, color="#E3E7EA", linewidth=0.8)
+    polish_axis(axis)
+    axis.spines["left"].set_visible(False)
     axis.tick_params(axis="y", length=0)
     axis.invert_yaxis()
     for bar, value, count in zip(bars, values, counts):
-        axis.text(value + 1.2, bar.get_y() + bar.get_height() / 2, f"{count}/219  {value:.2f}%", va="center", fontsize=9)
+        axis.text(value + 1.8, bar.get_y() + bar.get_height() / 2, f"{count}个（{value:.2f}%）", va="center", fontsize=10)
     return save_figure(fig, output_dir, "figure_4_1_dimension_presence_r01_v1")
 
 
 def build_level_figure(rows: list[dict[str, str]], output_dir: Path) -> tuple[Path, Path]:
     by_key = {(row["dimension"], row["level"]): row for row in rows}
-    fig, axis = plt.subplots(figsize=(8.1, 4.6))
+    fig, axis = plt.subplots(figsize=(8.1, 4.1))
     left = [0.0] * len(DIMENSIONS)
     for level, color in zip(LEVELS, LEVEL_COLORS):
         values = [float(by_key[(dimension, level)]["proportion_among_present"]) * 100 for dimension in DIMENSIONS]
@@ -100,11 +108,10 @@ def build_level_figure(rows: list[dict[str, str]], output_dir: Path) -> tuple[Pa
         left = [current + value for current, value in zip(left, values)]
     axis.set_xlim(0, 100)
     axis.set_xlabel("在本维度出现单元中的构成（%）")
-    axis.set_title("图4-2 四维度的等级构成（仅计入该维度出现的单元）", pad=12)
-    axis.legend(ncol=4, loc="upper center", bbox_to_anchor=(0.5, -0.15), frameon=False)
-    axis.xaxis.grid(True, color="#D9D9D9", linewidth=0.8)
-    axis.set_axisbelow(True)
-    axis.spines[["top", "right", "left"]].set_visible(False)
+    axis.legend(ncol=4, loc="upper center", bbox_to_anchor=(0.5, -0.18), frameon=False)
+    axis.xaxis.grid(True, color="#E3E7EA", linewidth=0.8)
+    polish_axis(axis)
+    axis.spines["left"].set_visible(False)
     axis.tick_params(axis="y", length=0)
     axis.invert_yaxis()
     return save_figure(fig, output_dir, "figure_4_2_level_distribution_r01_v1")
@@ -124,11 +131,12 @@ def build_level_pair_figure(coding: list[dict[str, str]], output_dir: Path) -> t
         if model["present"] == "1" and model["level"] in levels and reasoning["level"] in levels:
             matrix[levels.index(model["level"])][levels.index(reasoning["level"])] += 1
 
-    fig, axis = plt.subplots(figsize=(6.8, 5.0))
-    image = axis.imshow(matrix, cmap="Blues", vmin=0, vmax=max(max(row) for row in matrix))
-    axis.set_xticks(range(len(levels)), [f"科学推理{level}" for level in levels])
-    axis.set_yticks(range(len(levels)), [f"模型建构{level}" for level in levels])
-    axis.set_title("图4-3 模型建构与科学推理的等级组配（n=203）", pad=12)
+    fig, axis = plt.subplots(figsize=(6.4, 4.7))
+    image = axis.imshow(matrix, cmap="GnBu", vmin=0, vmax=max(max(row) for row in matrix))
+    axis.set_xticks(range(len(levels)), levels)
+    axis.set_yticks(range(len(levels)), levels)
+    axis.set_xlabel("科学推理等级")
+    axis.set_ylabel("模型建构等级")
     for row_index, row in enumerate(matrix):
         for column_index, value in enumerate(row):
             axis.text(column_index, row_index, str(value), ha="center", va="center", fontsize=12,
@@ -154,21 +162,21 @@ def build_pattern_figure(coding: list[dict[str, str]], output_dir: Path) -> tupl
         "模型建构、科学推理、科学论证、质疑创新",
         "科学推理",
     ]
-    labels = [label.replace("、", "\n") for label in order]
+    labels = [label.replace("、", " - ") for label in order]
     values = [patterns[label] for label in order]
     colors = ["#3B6B8E", "#5A8DB5", "#2D8C7C", "#B85C38", "#9AA5B1"]
-    fig, axis = plt.subplots(figsize=(8.2, 5.0))
-    bars = axis.bar(range(len(order)), values, color=colors, width=0.68)
-    axis.set_xticks(range(len(order)), labels)
-    axis.set_ylabel("分析单元数")
-    axis.set_ylim(0, 76)
-    axis.set_title("图4-4 五类完整任务组合的构成（n=219）", pad=12)
-    axis.yaxis.grid(True, color="#D9D9D9", linewidth=0.8)
-    axis.set_axisbelow(True)
-    axis.spines[["top", "right"]].set_visible(False)
+    fig, axis = plt.subplots(figsize=(8.5, 4.4))
+    bars = axis.barh(labels, values, color=colors, height=0.56)
+    axis.set_xlabel("分析单元数")
+    axis.set_xlim(0, 76)
+    axis.xaxis.grid(True, color="#E3E7EA", linewidth=0.8)
+    polish_axis(axis)
+    axis.spines["left"].set_visible(False)
+    axis.tick_params(axis="y", length=0)
+    axis.invert_yaxis()
     for bar, value in zip(bars, values):
-        axis.text(bar.get_x() + bar.get_width() / 2, value + 2, f"{value}\n{value / 219:.2%}",
-                  ha="center", va="bottom", fontsize=9)
+        axis.text(value + 1.4, bar.get_y() + bar.get_height() / 2, f"{value}个（{value / 219:.2%}）",
+                  ha="left", va="center", fontsize=10)
     return save_figure(fig, output_dir, "figure_4_4_dimension_patterns_r01_v1")
 
 

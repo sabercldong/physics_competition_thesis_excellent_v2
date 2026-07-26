@@ -37,7 +37,7 @@
 
 ![图4-1 四维度在分析单元中的出现比例](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_1_dimension_presence_r01_v1.png)
 
-图4-1 四维度在219个分析单元中的出现比例。图件由当前更正编码表及其已核验描述统计直接生成。
+图4-1 四维度在219个分析单元中的出现比例。每条右侧同时标示单元数与百分比，百分比均以219为分母。
 
 ### 4.2.2 四维度的任务功能
 
@@ -74,7 +74,7 @@
 
 ![图4-2 四维度的等级构成](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png)
 
-图4-2 四维度的等级构成。各横条以该维度被判为出现的单元数为分母，故不用于比较四个维度的绝对出现数量。
+图4-2 四维度的等级构成。每一横条以该维度已出现的单元为分母，横条内部标示比例。
 
 ### 4.3.2 模型建构与科学推理的等级组配
 
@@ -95,7 +95,7 @@
 
 ![图4-3 模型建构与科学推理的等级组配](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_3_model_reasoning_level_pair_r01_v1.png)
 
-图4-3 模型建构与科学推理的等级组配。图中每个数字代表同时具有相应两类等级要求的分析单元数，依据当前更正编码表生成。
+图4-3 模型建构与科学推理的等级组配。纵轴为模型建构等级，横轴为科学推理等级，方格中的数字为分析单元数。
 
 ## 4.4 维度组合与共现
 
