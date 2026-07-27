@@ -1,0 +1,39 @@
+\begin{tikzpicture}[>=Stealth,font=\small]
+  % 图a：弹簧与交叉衍射条纹
+  \begin{scope}
+    \node[font=\bfseries] at (1.9,3.65) {（a）弹簧与激光衍射图样};
+    \draw[thick] (0.5,0.4) -- (0.5,3.0);
+    \draw[thick,domain=0:720,samples=180,smooth,variable=\t]
+      plot ({1.05+0.30*sin(\t)}, {0.55+\t/300});
+    \draw[thick] (1.55,0.4) -- (1.55,3.0);
+    \node[below] at (1.03,0.35) {弹簧};
+    \draw[fill=black] (3.35,0.45) rectangle (5.75,3.0);
+    \foreach \yy in {0.72,0.98,1.24,1.50,1.76,2.02,2.28,2.54,2.80}{
+      \draw[red!75!yellow,line width=1.2pt] (4.55,\yy) -- (3.55,{0.53+0.47*(\yy-0.55)}) -- (3.72,{0.53+0.47*(\yy-0.55)});
+      \draw[red!75!yellow,line width=1.2pt] (4.55,\yy) -- (5.55,{0.53+0.47*(\yy-0.55)}) -- (5.38,{0.53+0.47*(\yy-0.55)});
+      \draw[red!75!yellow,line width=1.2pt] (4.55,\yy) -- (3.55,{2.92-0.47*(\yy-0.55)}) -- (3.72,{2.92-0.47*(\yy-0.55)});
+      \draw[red!75!yellow,line width=1.2pt] (4.55,\yy) -- (5.55,{2.92-0.47*(\yy-0.55)}) -- (5.38,{2.92-0.47*(\yy-0.55)});
+    }
+    \fill[red!80!yellow] (4.55,1.65) circle (0.12);
+    \draw[<->] (5.95,0.45) -- (5.95,3.0) node[midway,right] {实际尺寸 $7.8\,\mathrm{cm}$};
+    \node[below] at (4.55,0.25) {交叉衍射条纹};
+  \end{scope}
+  % 图b：DNA衍射图样
+  \begin{scope}[xshift=7.4cm]
+    \node[font=\bfseries] at (2.2,3.65) {（b）DNA 的 X 射线衍射图样};
+    \fill[gray!12] (2.1,1.68) circle (1.48);
+    \draw[thick] (2.1,1.68) circle (1.48);
+    \fill[white] (2.1,1.68) circle (0.18);
+    \draw (2.1,1.68) circle (0.18);
+    \foreach \i/\yy in {1/0.42,2/0.68,3/0.94,5/1.20}{
+      \fill[black] ({2.1-0.16*\i}, {1.68+\yy}) ellipse (0.14 and 0.055);
+      \fill[black] ({2.1+0.16*\i}, {1.68+\yy}) ellipse (0.14 and 0.055);
+      \fill[black] ({2.1-0.16*\i}, {1.68-\yy}) ellipse (0.14 and 0.055);
+      \fill[black] ({2.1+0.16*\i}, {1.68-\yy}) ellipse (0.14 and 0.055);
+    }
+    \draw[densely dashed] (1.35,0.95) -- (2.85,2.41);
+    \draw[densely dashed] (1.35,2.41) -- (2.85,0.95);
+    \node[align=center,scale=0.8] at (2.1,0.02) {第4级亮纹缺失\\（示意）};
+    \draw[<->] (3.9,0.2) -- (3.9,3.16) node[midway,right] {实际尺寸 $9.4\,\mathrm{cm}$};
+  \end{scope}
+\end{tikzpicture}
