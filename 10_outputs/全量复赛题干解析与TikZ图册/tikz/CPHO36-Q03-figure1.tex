@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.9,>=Stealth,font=\small]
+  % Coordinate u follows the rails; n is normal to the rail plane in the drawing.
+  \begin{scope}[rotate=24]
+    \draw[very thick,gray!70,line cap=round] (0,0.52) -- (7.3,0.52);
+    \draw[very thick,gray!70,line cap=round] (0,-0.52) -- (7.3,-0.52);
+    \foreach \x in {0,7.3} {
+      \draw[fill=white,thick] (\x,0.52) ellipse (0.12 and 0.26);
+      \draw[fill=white,thick] (\x,-0.52) ellipse (0.12 and 0.26);
+    }
+    \draw[fill=gray!45,thick] (3.55,-0.68) rectangle (3.86,0.68);
+    \node[above] at (3.70,0.72) {弹丸};
+    \draw[->,very thick] (3.70,0) -- (4.75,0) node[midway,above] {$F$};
+    \draw[densely dashed] (0,1.00) -- (7.3,1.00);
+    \draw[<->] (0,1.00) -- (7.3,1.00) node[midway,above] {$L$};
+    \draw[<->] (5.75,-0.24) -- (5.75,0.24) node[midway,right] {$d$};
+    \draw[<->] (6.95,0.52) -- (6.95,0.78) node[midway,right] {$b$};
+    \node[above left] at (1.55,0.52) {导轨};
+  \end{scope}
+  \draw[thick] (-0.25,-0.62) -- (0.67,-0.62);
+  \draw[thick] (-0.25,-0.62) -- (-0.25,0.15);
+  \draw[thick] (0.67,-0.62) -- (0.67,-0.15);
+  \draw[->,thick] (-0.25,-1.05) -- (0.67,-1.05);
+  \draw[->,thick] (0.67,-1.05) -- (-0.25,-1.05);
+  \node[below] at (0.21,-1.05) {恒流源 $I$};
+  \draw[densely dashed] (0.55,-0.20) -- (5.25,-0.20);
+  \draw (1.18,-0.20) arc[start angle=0,end angle=24,radius=0.63];
+  \node at (1.48,0.03) {$\theta$};
+\end{tikzpicture}
