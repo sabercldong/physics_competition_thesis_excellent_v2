@@ -1,0 +1,59 @@
+% 题干转写：完成
+% 解析转写：完成
+% 图形核对：完成
+\section{第35届复赛第6题：同心球壳辐射与导热}
+\subsection{题干}
+如图\ref{fig:cpho35q06}，太空中有一由同心内球和球壳构成的实验装置，二者之间为真空。内球半径 $r=0.200\,\mathrm m$、比辐射率 $e=0.800$、温度恒定；球壳导热系数 $\kappa=1.00\times10^{-2}\,\mathrm{J\,m^{-1}\,s^{-1}\,K^{-1}}$，内、外半径分别为 $R_1=0.900\,\mathrm m$、$R_2=1.00\,\mathrm m$。球壳内表面比辐射率为 $E=0.800$，外表面视为黑体。斯特藩常量 $\sigma=5.67\times10^{-8}\,\mathrm{W\,m^{-2}\,K^{-4}}$，宇宙微波背景温度 $T=2.73\,\mathrm K$。热稳定时，球壳内表面传给外表面的热量为 $Q=44.0\,\mathrm W$。
+
+求：（1）球壳外表面温度 $T_2$；（2）球壳内表面温度 $T_1$；（3）内球温度 $T_0$。
+\begin{figure}[htbp]\centering
+\input{tikz/CPHO35-Q06-figure1.tex}
+\caption{第35届复赛第6题同心内球与球壳的 TikZ 重绘。}\label{fig:cpho35q06}
+\end{figure}
+
+\subsection{参考解答整理}
+\paragraph{（1）球壳外表面温度。} 外表面为黑体，向背景辐射的净功率为
+\[
+Q'=4\pi R_2^2\sigma(T_2^4-T^4).
+\]
+热稳定时 $Q'=Q$，故
+\[
+T_2=\left(\frac{Q}{4\pi R_2^2\sigma}+T^4\right)^{1/4}
+=\boxed{88.6\,\mathrm K}.
+\]
+
+\paragraph{（2）球壳内表面温度。} 半径为 $R$ 的球面上通过的导热功率恒为 $Q$。由傅里叶热传导定律，
+\[
+Q=-4\pi R^2\kappa\frac{\mathrm dT}{\mathrm dR}.
+\]
+将 $R:R_1\to R_2$、$T:T_1\to T_2$ 积分，得
+\[
+Q=4\pi\kappa\frac{R_1R_2}{R_2-R_1}(T_1-T_2),
+\]
+\[
+T_1=T_2+\frac{(R_2-R_1)Q}{4\pi\kappa R_1R_2}
+=\boxed{128\,\mathrm K}.
+\]
+
+\paragraph{（3）内球温度。} 内球表面积为 $S_{\mathrm I}=4\pi r^2$，球壳内表面积为 $S_{\mathrm{II}}=4\pi R_1^2$。球壳内表面向内反射的辐射中，能重新到达内球的几何份额为
+\[
+k=\left(\frac{r}{R_1}\right)^2.
+\]
+将内球与球壳内表面之间的多次反射和吸收写为几何级数并求和，内球传给球壳的净辐射功率为
+\[
+Q''=\frac{4\pi Ee\sigma r^2(T_0^4-T_1^4)}
+{1-(1-e)k(1-E)}.
+\]
+热稳定给出 $Q''=Q$，于是
+\[
+T_0=
+\left\{
+\frac{\left[1-(1-e)(1-E)\dfrac{r^2}{R_1^2}\right]Q}
+{4\pi Ee\sigma r^2}
++T_1^4
+\right\}^{1/4}
+=\boxed{227\,\mathrm K}.
+\]
+
+\subsection{转写依据}
+题干、答案公式和题图分别依据 \texttt{CPHO35-Q06.md}、\texttt{CPHO35-Q06\_formula\_check\_v1.csv} 及题图核对入口；当前PDF未明示分值，未写入图册。
