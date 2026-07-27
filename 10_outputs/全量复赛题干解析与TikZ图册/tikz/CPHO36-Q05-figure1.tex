@@ -1,0 +1,25 @@
+\begin{tikzpicture}[scale=0.91,>=Stealth,font=\small]
+  \draw[densely dashed,gray] (-4.35,0) -- (4.75,0);
+  \draw[->,very thick] (-4.4,1.08) -- (-2.65,1.08);
+  \draw[->,very thick] (-4.4,-1.08) -- (-2.65,-1.08);
+  \node[left] at (-4.4,0) {平行激光束};
+  \draw[fill=cyan!10,thick] (-1.85,0) circle (1.72);
+  \node[above] at (-1.85,1.88) {微球透镜};
+  \node at (-1.85,-1.15) {$n=1.50$};
+  \coordinate (A) at (-2.95,1.08);
+  \coordinate (B) at (-2.95,-1.08);
+  \coordinate (F) at (1.02,0);
+  \draw[thick] (-4.4,1.08) -- (A) -- (F);
+  \draw[thick] (-4.4,-1.08) -- (B) -- (F);
+  \fill (F) circle (1.2pt) node[below] {$F$};
+  \fill (-0.13,0) circle (1.2pt) node[below left] {$O$};
+  \draw[thick] (1.55,-0.92) rectangle (4.55,0.92);
+  \draw[fill=gray!20,thick] (1.55,-0.30) rectangle (4.55,0.30);
+  \node at (3.05,0) {$n_1=1.46$};
+  \node at (3.05,0.61) {$n_2=1.45$};
+  \node at (3.05,-0.61) {$n_2=1.45$};
+  \node[above] at (3.82,1.05) {光纤};
+  \node[above] at (2.25,1.05) {芯径 $50\,\mu\mathrm{m}$};
+  \draw[<->] (4.92,-0.92) -- (4.92,0.92) node[midway,right] {$125\,\mu\mathrm{m}$};
+  \draw[<->] (-0.13,-1.92) -- (1.55,-1.92) node[midway,below] {$OF=0.75\,\mathrm{mm}$};
+\end{tikzpicture}
