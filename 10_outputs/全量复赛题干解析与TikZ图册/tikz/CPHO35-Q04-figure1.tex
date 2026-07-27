@@ -1,0 +1,16 @@
+\begin{tikzpicture}[scale=0.9,>=Stealth,font=\small]
+  \draw[->,thick] (-0.35,0) -- (4.5,0) node[below] {$x$};
+  \draw[->,thick] (2,-2.4) -- (2,2.65) node[left] {$y$};
+  \draw[dashed] (0,1.6) rectangle (4,-1.6);
+  \coordinate (O) at (2,0);
+  \foreach \x/\y/\lab/\sym in {0/1.6/1/$\otimes$,4/1.6/2/$\odot$,4/-1.6/3/$\otimes$,0/-1.6/4/$\odot$}{
+    \draw[fill=white] (\x,\y) circle (0.23);
+    \node at (\x,\y) {\sym};
+    \node[above left=1pt] at (\x,\y) {\lab};
+  }
+  \fill (O) circle (1.2pt) node[below left] {$O$};
+  \draw[<->] (0,0.36) -- (2,0.36) node[midway,above] {$a$};
+  \draw[<->] (2,0.36) -- (4,0.36) node[midway,above] {$a$};
+  \draw[<->] (1.42,0) -- (1.42,1.6) node[midway,left] {$a$};
+  \draw[<->] (1.42,-1.6) -- (1.42,0) node[midway,left] {$a$};
+\end{tikzpicture}
