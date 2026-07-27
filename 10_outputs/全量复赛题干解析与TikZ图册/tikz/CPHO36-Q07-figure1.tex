@@ -1,0 +1,15 @@
+\begin{tikzpicture}[scale=0.86,>=Stealth,font=\small]
+  \draw[thick] (-3.35,-2.15) -- (3.35,-2.15);
+  \foreach \x in {-3.1,-2.7,...,3.1} {\draw (\x,-2.15) -- +(0.20,-0.16);}
+  \node[below] at (0,-2.25) {地面};
+  \node[cloud,cloud puffs=13,cloud puff arc=105,aspect=2.2,draw,fill=gray!10,minimum width=5.2cm,minimum height=2.2cm] (cloud) at (0,0.72) {};
+  \foreach \x/\y in {-1.4/1.08,-0.8/1.32,-0.2/1.10,0.4/1.36,1.05/1.10} {\node at (\x,\y) {+};}
+  \foreach \x/\y in {-1.25/0.25,-0.65/0.05,0.05/0.24,0.72/0.02,1.32/0.28} {\node at (\x,\y) {$-$};}
+  \draw[very thick] (-0.75,0.70) -- (-0.48,0.36) -- (-0.72,0.36) -- (-0.42,-0.08);
+  \draw[very thick] (0.90,0.84) -- (1.17,0.48) -- (0.94,0.48) -- (1.22,0.07);
+  \draw[very thick] (0.10,0.10) -- (-0.08,-0.35) -- (0.14,-0.35) -- (-0.12,-1.42);
+  \node[right] at (0.18,-0.76) {云地闪电};
+  \draw[<->] (-3.0,-2.0) -- (-3.0,1.92) node[midway,left] {$12\,\mathrm{km}$};
+  \draw[<->] (-2.52,-2.0) -- (-2.52,-0.15) node[midway,left] {$6\,\mathrm{km}$};
+  \node[above] at (0,1.92) {雷电云电荷分布};
+\end{tikzpicture}

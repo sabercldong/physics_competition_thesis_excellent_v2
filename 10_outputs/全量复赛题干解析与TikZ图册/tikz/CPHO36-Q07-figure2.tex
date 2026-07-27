@@ -1,0 +1,26 @@
+\begin{tikzpicture}[scale=0.86,>=Stealth,font=\small]
+  \draw[thick] (-3.55,0) -- (3.55,0);
+  \foreach \x in {-3.3,-2.9,...,3.3} {\draw (\x,0) -- +(0.18,-0.13);}
+  \node[below] at (-2.9,-0.16) {地面};
+  \draw[very thick] (-3.55,2.10) -- (3.55,2.10);
+  \node[above right] at (-3.45,2.10) {电离层底面};
+  \coordinate (O) at (0,0);
+  \fill (O) circle (1.3pt) node[below left] {$O$};
+  \draw[thick] (2.10,0) arc[start angle=0,end angle=180,radius=2.10];
+  \draw[thick] (2.90,0) arc[start angle=0,end angle=180,radius=2.90];
+  \draw[densely dotted,thick] (3.45,0) arc[start angle=0,end angle=180,radius=3.45];
+  \coordinate (A) at (0,2.10);
+  \coordinate (B) at ({sqrt(2.90*2.90-2.10*2.10)},2.10);
+  \coordinate (D) at ({sqrt(3.45*3.45-2.10*2.10)},2.10);
+  \coordinate (C) at ({sqrt(3.45*3.45-2.10*2.10)+0.38},2.10);
+  \fill (A) circle (1.1pt) node[above right] {$A$};
+  \fill (B) circle (1.1pt) node[above] {$B$};
+  \fill (D) circle (1.1pt) node[above] {$D$};
+  \draw[thick] (O) -- (B);
+  \draw[thick] (B) -- (C);
+  \node[below] at (1.00,2.10) {$AB=r$};
+  \draw (B) ++(-0.26,0) arc[start angle=180,end angle=226,radius=0.26];
+  \node at (2.17,1.62) {$\theta$};
+  \node[below right] at (C) {$C$};
+  \node[left] at (-3.5,1.05) {$OA=80\,\mathrm{km}$};
+\end{tikzpicture}
