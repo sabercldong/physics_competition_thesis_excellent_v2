@@ -1,0 +1,32 @@
+\begin{tikzpicture}[scale=0.95,>=Stealth,font=\small]
+  % AC RLC loop with a negative differential-resistance tunnel diode.
+  \draw[thick] (0,0) -- (0,2.0);
+  \draw[thick] (0,2.0) -- (0.55,2.0);
+  \draw[thick,decorate,decoration={coil,aspect=0.55,segment length=4.5pt,amplitude=3.8pt}] (0.55,2.0) -- (1.85,2.0);
+  \node[above] at (1.18,2.18) {$L$};
+  \draw[thick] (1.85,2.0) -- (2.18,2.0);
+  \draw[thick] (2.25,1.66) -- (2.25,2.34);
+  \draw[thick] (2.48,1.66) -- (2.48,2.34);
+  \draw[thick] (2.18,2.0) -- (2.25,2.0) (2.48,2.0) -- (3.0,2.0);
+  \node[above] at (2.36,2.30) {$C$};
+  \draw[thick] (3.0,2.0) -- (3.0,1.20);
+  \draw[fill=gray!15,thick] (2.72,0.65) rectangle (3.28,1.20);
+  \node at (3.0,0.92) {$D$};
+  \draw[thick] (3.0,0.65) -- (3.0,0) -- (0,0);
+  \draw[thick] (0,1.54) -- (-0.20,1.54);
+  \draw[thick,decorate,decoration={zigzag,segment length=4pt,amplitude=1.8pt}] (-0.20,1.54) -- (-0.20,0.46);
+  \draw[thick] (-0.20,0.46) -- (0,0.46);
+  \node[left] at (-0.20,1.02) {$R$};
+  \draw[->,thick] (0.22,1.05) arc[start angle=155,end angle=28,radius=0.95] node[midway,above left] {$i(t)$};
+  \draw[<->] (3.48,0.02) -- (3.48,1.18) node[midway,right] {$V_D$};
+
+  % DC branch isolated from the AC loop by an RF choke.
+  \draw[thick] (3.0,2.0) -- (4.0,2.0);
+  \draw[thick,decorate,decoration={coil,aspect=0.55,segment length=3.8pt,amplitude=3.0pt}] (4.0,2.0) -- (5.10,2.0);
+  \node[above] at (4.55,2.18) {RFC};
+  \draw[thick] (5.10,2.0) -- (5.60,2.0) -- (5.60,0) -- (3.0,0);
+  \draw[thick] (5.42,0.95) -- (5.78,0.95);
+  \draw[thick] (5.49,0.63) -- (5.71,0.63);
+  \node[right] at (5.78,0.77) {$V_0$};
+  \draw[->] (4.30,1.70) -- (5.05,1.70) node[midway,below] {$I$};
+\end{tikzpicture}
