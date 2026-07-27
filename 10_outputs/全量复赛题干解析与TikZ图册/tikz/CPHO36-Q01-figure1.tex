@@ -1,0 +1,41 @@
+\begin{tikzpicture}[scale=0.88,>=Stealth,font=\small]
+  % 图a
+  \begin{scope}
+    \node[font=\bfseries] at (1.65,3.65) {（a）茶杯位于凳面中心};
+    \fill[gray!18] (1.65,2.85) ellipse (1.55 and 0.55);
+    \draw[thick] (1.65,2.85) ellipse (1.55 and 0.55);
+    \fill (1.65,2.85) circle (1.3pt) node[above] {$O$};
+    \draw[->] (1.65,2.85) -- (0.55,2.56) node[midway,above] {$R$};
+    \draw[thick] (1.65,2.3) -- (1.65,1.75);
+    \fill (1.65,1.75) circle (1.2pt) node[right] {$G$};
+    \coordinate (A) at (0,0.45);
+    \coordinate (B) at (3.3,0.45);
+    \coordinate (C) at (1.65,-0.6);
+    \coordinate (J) at (1.65,1.58);
+    \draw[very thick] (J)--(A) (J)--(B) (J)--(C);
+    \draw[dashed] (A)--(B)--(C)--cycle;
+    \node[left] at (A) {$A$}; \node[right] at (B) {$B$}; \node[below] at (C) {$C$};
+    \draw[<->] (2.1,0.16) -- (2.75,-0.25) node[midway,right] {$a$};
+  \end{scope}
+  % 图b
+  \begin{scope}[xshift=5.2cm]
+    \node[font=\bfseries] at (1.65,3.65) {（b）杯底与凳面边缘内切};
+    \fill[gray!18] (1.65,2.85) ellipse (1.55 and 0.55);
+    \draw[thick] (1.65,2.85) ellipse (1.55 and 0.55);
+    \fill (1.65,2.85) circle (1.3pt) node[above] {$O$};
+    \fill (0.58,2.58) circle (1.3pt) node[above] {$O'$};
+    \draw[->] (1.65,2.85) -- (0.58,2.58) node[midway,above] {$R-r$};
+    \fill (0.12,2.43) circle (1.2pt) node[left] {$D$};
+    \draw[densely dashed] (0.12,2.43) -- (0.12,0.45);
+    \draw[thick] (1.65,2.3) -- (1.65,1.75);
+    \fill (1.65,1.75) circle (1.2pt) node[right] {$G$};
+    \coordinate (A2) at (0,0.45);
+    \coordinate (B2) at (3.3,0.45);
+    \coordinate (C2) at (1.65,-0.6);
+    \coordinate (J2) at (1.65,1.58);
+    \draw[very thick] (J2)--(A2) (J2)--(B2) (J2)--(C2);
+    \draw[dashed] (A2)--(B2)--(C2)--cycle;
+    \node[left] at (A2) {$A$}; \node[right] at (B2) {$B$}; \node[below] at (C2) {$C$};
+    \draw[densely dashed] (0.58,2.58) -- (0.58,0.45);
+  \end{scope}
+\end{tikzpicture}
