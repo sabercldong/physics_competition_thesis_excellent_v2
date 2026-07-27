@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=0.86,>=Stealth,font=\small]
+  \draw[thick] (0,0) circle (2.05);
+  \fill (0,0) circle (1.5pt);
+  \draw[->,thick] (0,0) -- (2.05,0) node[midway,below] {$R$};
+  \node[above] at (0,2.05) {$A$};
+  \draw[thick] (0,2.05) -- (0,1.62);
+  \draw[->,thick] (-0.62,1.95) arc[start angle=108,end angle=145,radius=2.05];
+  \node[above left] at (-1.50,1.52) {$\mathrm{CCW}$};
+  \draw[->,thick] (0.62,1.95) arc[start angle=72,end angle=35,radius=2.05];
+  \node[above right] at (1.50,1.52) {$\mathrm{CW}$};
+  \draw[->,thick] (-0.38,-0.30) arc[start angle=230,end angle=112,radius=0.56];
+  \node[right] at (0.18,0.37) {$\Omega$};
+\end{tikzpicture}
