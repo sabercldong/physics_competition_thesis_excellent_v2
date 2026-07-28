@@ -1,0 +1,20 @@
+\begin{tikzpicture}[x=.8cm,y=.8cm,>=Stealth,font=\scriptsize]
+\draw[->,thick] (-4,0)--(-2.9,0) node[midway,above]{入射光束};
+\draw[thick] (-2.8,-.9)--(-2.8,.9); \node[below] at(-2.8,-.9){$P_1(\parallel x_1)$};
+\draw[thick,fill=gray!10] (-1.9,-.7) rectangle (.3,.7); \node at(-.8,0){电光晶体};
+\draw[->] (-1.7,.55)--(-.8,.1); \draw[->] (-1.7,-.55)--(-.8,-.1); \node[above] at(-1.55,.55){$x_1'$}; \node[below] at(-1.55,-.55){$x_2'$};
+\draw[thick] (.8,-.9)--(.8,.9); \node[below] at(.8,-.9){$\lambda/4$ 波片};
+\draw[thick] (1.6,-.9)--(1.6,.9); \node[below] at(1.6,-.9){$P_2(\parallel x_2)$};
+\draw[->,thick] (1.7,0)--(3.1,0) node[midway,above]{出射光束};
+\draw[<->] (-1.9,-1.3)--(.3,-1.3) node[midway,below]{$l$}; \node[below] at(-.8,-1.65){$V=Ed$};
+\end{tikzpicture}
+\qquad
+\begin{tikzpicture}[x=.7cm,y=.7cm,>=Stealth,font=\scriptsize]
+\draw (0,0)--(0,3); \draw (.18,.8)--(-.18,.8); \draw (.32,1.15)--(-.32,1.15); \node[left] at(0,1){$V$};
+\draw (0,3)--(.7,3)--(.9,3.22)--(1.1,2.78)--(1.3,3.22)--(1.5,2.78)--(1.7,3)--(3,3);
+\node[above] at(1.2,3.2){$R_m$}; \draw (0,0)--(3,0);
+\draw (1.2,3)--(1.2,2.1) rectangle +(0.0,-1.2)--(1.2,0); \node[right] at(1.2,1.5){电光晶体};
+\draw (3,3)--(3.7,3); \draw (3.7,3)--(4.0,2.85); \draw (4.1,3)--(4.3,3);
+\draw (4.3,3)--(4.3,2.3); \draw[domain=0:360,samples=60] plot ({4.3+.18*sin(\x)},{1.6+.7*cos(\x)}); \draw (4.3,.9)--(4.3,0); \node[right] at(4.3,1.6){$L$};
+\draw (4.3,3)--(5.4,3)--(5.6,3.22)--(5.8,2.78)--(6,3.22)--(6.2,2.78)--(6.4,3)--(6.4,0)--(4.3,0); \node[right] at(6.4,1.6){$R_L$};
+\end{tikzpicture}
