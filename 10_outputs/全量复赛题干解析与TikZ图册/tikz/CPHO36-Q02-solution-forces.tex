@@ -1,0 +1,61 @@
+\begin{tikzpicture}[x=.58cm,y=.58cm,>=Stealth,font=\scriptsize]
+  \begin{scope}
+    \draw[thick] (-2.3,-1.55)--(2.3,-1.55);
+    \draw[thick] (0,0) circle (1.25);
+    \fill (0,0) circle(1.3pt) node[above right]{$O$};
+    \draw[->,thick] (0,-1.25)--+(0,1.45) node[above]{$N_{01}$};
+    \draw[->,thick] (0,0)--+(-1.45,0) node[left]{$N_{Ox}$};
+    \draw[->,thick] (0,0)--+(0,-1.12) node[right]{$N_{Oy}$};
+    \draw[->,thick] (-.72,-1.55)--+(-1.15,0) node[left]{$f_1$};
+    \draw[->,thick] (0,0)--+(0,-1.9) node[below]{$2mg$};
+    \draw[->,thick] (1.35,0)--+(1.05,0) node[right]{$a_C$};
+    \draw[->] (.55,.95) arc(45:-55:.7) node[midway,right]{$\beta$};
+    \node at (0,-2.6) {(c) 阶段I：两车轮};
+  \end{scope}
+  \begin{scope}[xshift=8.4cm]
+    \draw[thick] (-3,-1.55)--(3,-1.55);
+    \draw[very thick] (-2.8,-1.48)--(2.25,.45);
+    \fill (.82,-.12) circle(1.4pt) node[above right]{$O$};
+    \draw[densely dashed] (.82,-.12) circle (1.28);
+    \fill (-.15,-.63) circle(1.3pt) node[above left]{$C$};
+    \draw[->,thick] (-2.45,-1.55)--+(0,1.45) node[above]{$N$};
+    \draw[->,thick] (-2.45,-1.55)--+(-1.05,0) node[left]{$\mu N$};
+    \draw[->,thick] (.82,-.12)--+(1.2,0) node[right]{$N_{Ox}$};
+    \draw[->,thick] (.82,-.12)--+(0,1.2) node[above]{$N_{Oy}$};
+    \draw[->,thick] (-.15,-.63)--+(0,-1.15) node[below]{$4mg$};
+    \draw (-1.6,-1.48) arc(0:20:.8) node[right]{$\theta$};
+    \node at (0,-2.6) {(d) 阶段I：把手和平板};
+  \end{scope}
+\end{tikzpicture}
+
+\vspace{.35cm}
+
+\begin{tikzpicture}[x=.58cm,y=.58cm,>=Stealth,font=\scriptsize]
+  \begin{scope}
+    \draw[thick] (-2.3,-1.55)--(2.3,-1.55);
+    \draw[thick] (0,0) circle (1.25);
+    \fill (0,0) circle(1.3pt) node[above right]{$O$};
+    \draw[->,thick] (0,-1.25)--+(0,1.45) node[above]{$N_{02}$};
+    \draw[->,thick] (0,0)--+(-1.45,0) node[left]{$N_{Ox2}$};
+    \draw[->,thick] (0,0)--+(0,-1.12) node[right]{$N_{Oy2}$};
+    \draw[->,thick] (.72,-1.55)--+(1.15,0) node[right]{$f_2$};
+    \draw[->,thick] (0,0)--+(0,-1.9) node[below]{$2mg$};
+    \draw[->,thick] (1.35,0)--+(1.05,0) node[right]{$a_{C2}$};
+    \draw[->] (.55,.95) arc(45:-55:.7) node[midway,right]{$\beta_2$};
+    \node at (0,-2.6) {(e) 阶段II：两车轮};
+  \end{scope}
+  \begin{scope}[xshift=8.4cm]
+    \draw[thick] (-3,-1.55)--(3,-1.55);
+    \draw[very thick] (-2.8,-1.48)--(2.25,.45);
+    \fill (.82,-.12) circle(1.4pt) node[above right]{$O$};
+    \draw[densely dashed] (.82,-.12) circle (1.28);
+    \fill (-.15,-.63) circle(1.3pt) node[above left]{$C$};
+    \draw[->,thick] (-2.45,-1.55)--+(0,1.45) node[above]{$N_2$};
+    \draw[->,thick] (-2.45,-1.55)--+(-1.05,0) node[left]{$\mu N_2$};
+    \draw[->,thick] (.82,-.12)--+(1.2,0) node[right]{$N_{Ox2}$};
+    \draw[->,thick] (.82,-.12)--+(0,1.2) node[above]{$N_{Oy2}$};
+    \draw[->,thick] (-.15,-.63)--+(0,-1.15) node[below]{$4mg$};
+    \draw (-1.6,-1.48) arc(0:20:.8) node[right]{$\theta$};
+    \node at (0,-2.6) {(f) 阶段II：把手和平板};
+  \end{scope}
+\end{tikzpicture}

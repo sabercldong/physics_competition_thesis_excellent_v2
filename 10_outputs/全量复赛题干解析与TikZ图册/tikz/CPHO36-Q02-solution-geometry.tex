@@ -1,0 +1,22 @@
+\begin{tikzpicture}[x=.72cm,y=.72cm,>=Stealth,font=\scriptsize]
+  \begin{scope}
+    \draw[densely dashed] (-3,0)--(2.4,0);
+    \draw[very thick] (-3,-1.46)--(2.2,.44);
+    \fill (1,0) circle(1.4pt) node[above]{$O$};
+    \fill (0,-.36) circle(1.4pt) node[below left]{$C$};
+    \draw[->] (1,0)--(0,-.36) node[midway,below right]{$r_C$};
+    \draw (1.55,0) arc(0:20:.55) node[midway,right]{$\theta$};
+    \node at (-.15,-2) {(a) 质心位置};
+  \end{scope}
+  \begin{scope}[xshift=8.2cm]
+    \draw[densely dashed] (-3,0)--(2.4,0);
+    \draw[very thick] (-3,-1.46)--(2.2,.44);
+    \fill (1,0) circle(1.4pt) node[above]{$O$};
+    \fill (0,-.36) circle(1.4pt) node[below left]{$C$};
+    \draw[->] (1,0)--(0,-.36) node[midway,below right]{$r_C$};
+    \draw[<->] (-3,-1.46)--(-3,0) node[midway,left]{$r$};
+    \draw[<->] (-3.12,-1.62)--(0,-.52) node[midway,below]{$3l/2$};
+    \draw[<->] (-.32,-.36)--(-.32,0) node[midway,left]{$h$};
+    \node at (-.15,-2) {(b) 质心下降};
+  \end{scope}
+\end{tikzpicture}
