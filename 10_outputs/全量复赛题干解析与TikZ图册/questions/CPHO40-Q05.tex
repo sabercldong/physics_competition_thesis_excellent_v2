@@ -1,0 +1,16 @@
+\section{第40届复赛第5题：电偶极子场中点电荷运动}
+\subsection{题干}
+质量为 $m$、电荷量为 $e$ 的正点电荷在原点固定电偶极子（偶极矩 $\boldsymbol p$ 沿 $z$ 轴正向）场中运动。初始 $r(0)=r_0$、$\theta(0)=\theta_0$。求圆周轨道条件；从静止释放后的角动量、径向速率、有界条件及无界运动 $r(t)$。
+\begin{figure}[htbp]\centering\input{tikz/CPHO40-Q05-structure.tex}\caption{第40届复赛第5题原题图5a的TikZ重绘。}\end{figure}
+\subsection{参考解答整理}
+\paragraph{（1）匀速圆周运动。} $z$ 向合力为零给出 $\cos\theta_0=\pm1/\sqrt3$；向心力方向要求取负根，故
+\[\boxed{\cos\theta_0=-\frac1{\sqrt3},\qquad v_0=\sqrt{\frac{3ep}{6\pi\varepsilon_0mr_0^2}}}.\]
+\paragraph{（2）从静止释放。} 角动量定理给出
+\[\boxed{L^2=\frac{mep}{2\pi\varepsilon_0}(\cos\theta_0-\cos\theta)}.\]
+能量守恒进而给出
+\[\boxed{v_r^2=\frac{ep\cos\theta_0}{2\pi m\varepsilon_0}\left(\frac1{r_0^2}-\frac1{r^2}\right)}.\]
+所以 $\theta_0\ge\pi/2$ 时运动有界；临界 $\theta_0=\pi/2$ 时 $r=r_0$，轨道为 $\pi/2\le\theta\le3\pi/2$ 的半圆。若 $\theta_0<\pi/2$，则
+\[\boxed{r(t)=\sqrt{r_0^2+\frac{ep\cos\theta_0}{2\pi\varepsilon_0mr_0^2}t^2}}.\]
+\begin{figure}[htbp]\centering\input{tikz/CPHO40-Q05-solution-orbits.tex}\caption{依据答案结果绘制的临界半圆与无界径向运动辅助图。}\end{figure}
+\subsection{转写依据}
+题干依据 \texttt{CPHO40-Q05\_transcription\_v1.md}，答案依据第13至16页及 \texttt{CPHO40-Q05\_formula\_check\_v1.csv}。图5a按原题图重绘；第二图为自绘解析辅助图。本题两问分值为10、30分。

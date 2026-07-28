@@ -1,0 +1,14 @@
+\begin{tikzpicture}[>=Stealth,scale=.9]
+  \begin{scope}
+    \draw[->] (-2.1,0) -- (2.3,0) node[right] {$x$}; \draw[->] (0,-.2) -- (0,2.2) node[above] {$z$};
+    \draw[very thick] (0,0) arc[start angle=0,end angle=180,radius=1.55];
+    \fill (0,0) circle(1.4pt) node[below right] {$O$};
+    \node[below] at (0,-.75) {$\theta_0=\pi/2$：临界有界半圆};
+  \end{scope}
+  \begin{scope}[xshift=5.8cm]
+    \draw[->] (-.2,0) -- (3.2,0) node[right] {$t$}; \draw[->] (0,-.2) -- (0,2.4) node[above] {$r$};
+    \draw[thick,blue!65!black,domain=0:3,samples=80] plot (\x,{sqrt(0.45+0.21*\x*\x)});
+    \draw[densely dashed] (0,.67) -- (3,.67) node[right] {$r_0$};
+    \node[below] at (1.5,-.5) {$\theta_0<\pi/2$：无界径向运动};
+  \end{scope}
+\end{tikzpicture}

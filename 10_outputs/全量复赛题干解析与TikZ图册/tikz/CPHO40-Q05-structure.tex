@@ -1,0 +1,11 @@
+\begin{tikzpicture}[>=Stealth,scale=1.0]
+  \fill (0,0) circle (2pt) node[below left] {$O$};
+  \draw[->,very thick] (0,0) -- (0,2.05) node[above] {$\boldsymbol p$};
+  \draw[->] (0,0) -- (2.2,0) node[right] {$x$};
+  \draw[->] (0,0) -- (0,2.2) node[above right] {$z$};
+  \draw[thick] (0,0) -- (42:2.15) coordinate (Q);
+  \fill (Q) circle (1.7pt) node[above right] {$e,m$};
+  \draw[<->,thin] (0.18,0.12) -- ($(Q)+(0.12,0.08)$) node[midway,above] {$r$};
+  \draw[->] (0,0.72) arc[start angle=90,end angle=42,radius=.72] node[midway,right] {$\theta$};
+  \node[below=0.65cm] at (0.8,-0.2) {原题图5a：电偶极子与点电荷};
+\end{tikzpicture}
