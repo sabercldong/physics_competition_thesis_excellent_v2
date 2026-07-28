@@ -1,0 +1,29 @@
+\begin{tikzpicture}[x=.68cm,y=.72cm,>=Stealth,font=\small]
+  \begin{scope}
+    \draw[thick] (-3.2,0) -- (-2.6,0);
+    \draw[thick,decorate,decoration={coil,aspect=.38,segment length=4.3pt,amplitude=3pt}] (-2.6,0)--(2.1,0);
+    \draw[thick] (2.1,0)--(2.9,0);
+    \draw[->,thick] (-2.5,.62)--(2.0,.62) node[midway,above] {$I_0$};
+    \draw[<->] (-2.58,-.55)--(2.08,-.55) node[midway,below] {$l$};
+    \draw[->,thick] (-3.15,0)--(-4.0,0) node[left] {$F$};
+    \draw[->,thick] (2.85,0)--(3.7,0) node[right] {$F$};
+    \draw[thick] (-2.55,1.25)--(-2.55,2.1)--(-1.35,2.1);
+    \draw[thick] (2.05,1.25)--(2.05,2.1)--(.85,2.1);
+    \draw[thick] (-1.35,2.1) arc[start angle=180,end angle=0,radius=1.1];
+    \draw[fill=white,thick] (-.75,1.72) rectangle (.25,2.48);
+    \node at (-.25,2.1) {恒流源};
+    \node[below] at (-.15,-1.35) {（a）恒流条件：$I=I_0$};
+  \end{scope}
+  \begin{scope}[xshift=10cm]
+    \draw[thick] (-3.2,0) -- (-2.6,0);
+    \draw[thick,decorate,decoration={coil,aspect=.38,segment length=4.3pt,amplitude=3pt}] (-2.6,0)--(2.1,0);
+    \draw[thick] (2.1,0)--(2.9,0);
+    \draw[<->] (-2.58,-.55)--(2.08,-.55) node[midway,below] {$l$};
+    \draw[->,thick] (-3.15,0)--(-4.0,0) node[left] {$F$};
+    \draw[->,thick] (2.85,0)--(3.7,0) node[right] {$F$};
+    \draw[thick] (-2.55,1.25)--(-2.55,2.1)--(2.05,2.1)--(2.05,1.25);
+    \draw[->,thick] (-1.8,2.1)--(.65,2.1) node[midway,above] {$I$};
+    \node[above] at (-.25,2.12) {零电阻闭合回路};
+    \node[below] at (-.15,-1.35) {（b）磁通守恒：$LI=L_0I'_0$};
+  \end{scope}
+\end{tikzpicture}
