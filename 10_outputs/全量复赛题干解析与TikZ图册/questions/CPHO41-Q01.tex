@@ -1,0 +1,12 @@
+\section{第41届复赛第1题：高楼调谐质量阻尼器的受迫振动}
+\subsection{题干}
+质量 $M$、劲度系数 $k$ 的建筑物简化为受迫振子，受风力 $H\cos\omega t$；其上悬挂质量 $m$、摆长 $l$ 的调谐摆锤。求稳定振幅、最优调谐条件、风频率为无阻尼共振频率 $\sqrt{0.99}$ 倍时的质量比，以及含油阻尼 $f=-\gamma v'$ 的运动方程和作用。
+\begin{figure}[htbp]\centering\input{tikz/CPHO41-Q01-structure.tex}\caption{第41届复赛第1题原题图1a的TikZ重绘。}\end{figure}
+\subsection{参考解答整理}
+小幅度下耦合方程为 $\ddot x+l\ddot\theta+g\theta=0$、$M\ddot x+kx-mg\theta=H\cos\omega t$。令 $\omega_0^2=g/l$，稳定位移振幅为
+\[A=\frac{(\omega_0^2-\omega^2)H}{(\omega_0^2-\omega^2)(k-M\omega^2)-m\omega_0^2\omega^2}.\]
+无阻尼建筑物在 $\omega=\sqrt{k/M}$ 共振；为最大抑制该频率，可取 \[\boxed{l=Mg/k}.\]
+当 $\omega=\sqrt{0.99k/M}$ 时，无阻尼振幅为 $100H/k$；按上述调谐条件将其降至1\%需 \[\boxed{m/M=101/9900\approx1/100}.\]
+含阻尼时摆锤相对油的速度分量为 $v'_x=l\dot\theta\cos\theta$、$v'_y=-l\dot\theta\sin\theta$；答案给出完整非线性方程组。阻尼既抑制共振，也使风停后机械能持续耗散，建筑逐渐停振。
+\subsection{转写依据}
+题干依据 \texttt{CPHO41-Q01\_transcription\_v1.md}，答案依据第1至3页与 \texttt{CPHO41-Q01\_formula\_check\_v1.csv}。图1a按原题图重绘。本题三部分分值为31、4、10分。

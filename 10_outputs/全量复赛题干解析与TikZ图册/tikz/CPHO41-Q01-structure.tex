@@ -1,0 +1,8 @@
+\begin{tikzpicture}[>=Stealth,scale=.9]
+\draw[thick] (-2.2,2.6)--(2.2,2.6);\foreach \x in {-2.1,-1.8,...,2.1}{\draw (\x,2.6)--++(.18,.12);}
+\draw[thick,decorate,decoration={zigzag,segment length=7pt,amplitude=2pt}] (-1.35,2.6)--(-1.35,.6);\node[left] at (-1.5,1.55){$k$};
+\draw[fill=gray!18,thick] (-.9,.35) rectangle (.9,1.15);\node at (0,.75){$M$};
+\draw[thick] (0,1.15)--(.78,-.35);\shade[ball color=gray!35] (.78,-.35) circle(.23);\node[right] at (1.0,-.35){$m$};
+\draw[->] (0,1.15) arc[start angle=-90,end angle=-62,radius=.65] node[midway,right] {$\theta$};\node[right] at (.35,.4){$l$};
+\draw[->,thick] (.9,.75)--(1.8,.75) node[right] {$H\cos\omega t$};\node[below] at (0,-.95){原题图1a：建筑物与调谐质量阻尼器};
+\end{tikzpicture}
