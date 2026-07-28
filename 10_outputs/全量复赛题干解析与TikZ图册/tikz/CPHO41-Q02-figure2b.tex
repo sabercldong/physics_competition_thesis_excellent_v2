@@ -1,0 +1,12 @@
+\begin{tikzpicture}[>=Stealth,scale=.88]
+  \draw[->,thick] (-.4,0)--(5.1,0) node[right] {$x$};
+  \draw[->,thick] (1.7,-.4)--(1.7,4.3) node[above] {$y$};
+  \draw[thick] (1.7,0) circle(.63); \node[below right] at (2.12,-.12) {$Q$球};
+  \draw[thick] (.62,1.15) circle(.63); \node[left] at (-.18,1.02) {$T$球};
+  \draw[->,very thick] (.62,1.15)--(-.55,2.65) node[above left] {$\boldsymbol v_T$};
+  \draw (1.7,1.95) arc[start angle=90,end angle=128,radius=1.95]; \node at (.98,2.52) {$\varphi$};
+  \draw[densely dashed] (3.75,.25)--(3.75,3.8);
+  \draw[->,very thick] (1.7,0)--(3.75,3.55) node[above right] {$\boldsymbol v_{Qf}$};
+  \draw (3.75,2.35) arc[start angle=90,end angle=60,radius=1.2]; \node[right] at (3.88,2.75) {$\theta_f$};
+  \node[below] at (1.9,-.82) {原题图2b：$Q$球达到纯滚后的最终方向};
+\end{tikzpicture}

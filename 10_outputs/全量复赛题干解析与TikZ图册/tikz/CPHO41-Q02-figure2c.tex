@@ -1,0 +1,12 @@
+\begin{tikzpicture}[>=Stealth,scale=.92]
+  \fill[gray!20] (-2.4,-1.25) rectangle (2.4,-.95);
+  \foreach \x in {-2.25,-2.0,...,2.25} \draw[gray] (\x,-1.25)--++(.18,.3);
+  \draw[thick] (0,-.32) circle(1.02);
+  \fill (0,-.32) circle(1.2pt); \node[right] at (.1,-.15) {$Q$球};
+  \draw[->,very thick] (1.02,-.32)--(2.2,-.32) node[right] {$\boldsymbol v_0$};
+  \draw[->,very thick] (-2.0,.5)--(-.85,.5) node[midway,above] {$\boldsymbol M$};
+  \draw[densely dashed] (-.85,.5)--(-.85,-1.02);
+  \draw[<->] (-1.45,.5)--(-1.45,-1.02) node[midway,left] {$h$};
+  \draw[->,very thick] (-.45,.92) arc[start angle=125,end angle=15,radius=.7] node[midway,above] {$\boldsymbol\omega_0$};
+  \node[below] at (0,-1.55) {原题图2c：球杆冲量与开球自旋};
+\end{tikzpicture}

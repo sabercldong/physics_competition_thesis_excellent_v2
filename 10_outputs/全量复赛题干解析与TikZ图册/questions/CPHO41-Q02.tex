@@ -1,0 +1,28 @@
+\section{第41届复赛第2题：台球弹性碰撞、滑动摩擦与30度经验规则}
+\subsection{题干}
+质量、半径相同的均匀实心台球 $Q$、$T$ 发生完全弹性碰撞，球间无摩擦。碰撞前 $Q$ 球质心速度 $\boldsymbol v_0$ 沿 $y$ 方向，角速度为 $\boldsymbol\omega_0$。碰撞后，$T$ 球以与 $y$ 轴夹角 $\varphi$ 飞出，$Q$ 球以夹角 $\theta$ 飞出；随后 $Q$ 球在桌面摩擦下过渡至纯滚。题目依次要求求碰撞后的速度和角速度、接触点速度、纯滚所需时间与轨迹、达到纯滚后的方向；又要求确定使开球立即纯滚的击球高度，并验证30度经验规则。
+\begin{figure}[htbp]\centering\input{tikz/CPHO41-Q02-figure2a.tex}\caption{第41届复赛第2题原题图2a的TikZ重绘。}\end{figure}
+\begin{figure}[htbp]\centering\input{tikz/CPHO41-Q02-figure2b.tex}\caption{第41届复赛第2题原题图2b的TikZ重绘。}\end{figure}
+\begin{figure}[htbp]\centering\input{tikz/CPHO41-Q02-figure2c.tex}\caption{第41届复赛第2题原题图2c的TikZ重绘。}\end{figure}
+\subsection{参考解答整理}
+取碰撞连心线为 $y'$ 方向。由动量守恒和完全弹性条件，碰撞后的两球飞行方向满足
+\[\boxed{\theta+\varphi=90^\circ},\qquad \boxed{\boldsymbol\omega=\boldsymbol\omega_0},\]
+且 $Q$ 球质心速度分量为 $v_{Qx}=v_0\sin\varphi\cos\varphi$、$v_{Qy}=v_0\sin^2\varphi$。答案中的质心系速度几何关系如图所示。
+\begin{figure}[htbp]\centering\input{tikz/CPHO41-Q02-solution-geometry.tex}\caption{第41届复赛第2题答案图2b的TikZ重绘。}\end{figure}
+碰撞后接触点的初速度为
+\[\boldsymbol v_{C0}=(v_0\sin\varphi\cos\varphi-R\omega_{0y})\boldsymbol i+(v_0\sin^2\varphi+R\omega_{0x})\boldsymbol j,\]
+故达到纯滚的时间为 $\Delta t=2|\boldsymbol v_{C0}|/(7\mu g)$。在滑动阶段，摩擦力方向与接触点速度相反，质心轨迹为抛物线；达到纯滚后摩擦力消失，质心作匀速直线运动。
+
+开球冲量满足 $M=mv_0$、$(h-R)M=I\omega_0$。对均匀实心球 $I=2mR^2/5$，使开球即纯滚的击球高度为
+\[\boxed{h=\frac{7R}{5}}.\]
+在此条件下，答案给出
+\[\tan\theta_f=\frac{\sin\varphi\cos\varphi}{\sin^2\varphi+\frac25}=\frac{5\sin2\varphi}{9-5\cos2\varphi}.\]
+极大值出现于 $\cos2\varphi_m=5/9$，即 $\varphi_m=28.1^\circ$；相应 $\theta_m=33.7^\circ$。题目表格的五个结果为：
+\begin{center}
+\begin{tabular}{c|cccccc}\hline
+$\varphi$ & $\varphi_m$ & $\varphi_m+5^\circ$ & $\varphi_m+10^\circ$ & $\varphi_m-5^\circ$ & $\varphi_m-10^\circ$\\\hline
+$\theta_f$ & $33.7^\circ$ & $33.3^\circ$ & $32.0^\circ$ & $33.1^\circ$ & $30.7^\circ$\\\hline
+\end{tabular}
+\end{center}
+\subsection{转写依据}
+题干依据 \texttt{CPHO41-Q02\_transcription\_v1.md}；公式和数值依据答案第3至7页及 \texttt{CPHO41-Q02\_formula\_check\_v1.csv}。图2a、图2b、图2c和答案图2b均由原页重绘；没有嵌入原始页面截图。

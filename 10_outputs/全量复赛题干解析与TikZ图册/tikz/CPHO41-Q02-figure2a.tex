@@ -1,0 +1,12 @@
+\begin{tikzpicture}[>=Stealth,scale=.88]
+  \draw[->,thick] (-.4,0)--(5.2,0) node[right] {$x$};
+  \draw[->,thick] (1.7,-.45)--(1.7,4.3) node[above] {$y$};
+  \draw[thick] (1.7,0) circle(.63); \node[below right] at (2.12,-.12) {$Q$球};
+  \draw[thick] (.62,1.15) circle(.63); \node[left] at (-.18,1.02) {$T$球};
+  \fill (1.7,0) circle(1.2pt); \fill (.62,1.15) circle(1.2pt);
+  \draw[->,very thick] (1.7,0)--(3.55,2.25) node[above right] {$\boldsymbol v_Q$};
+  \draw[->,very thick] (.62,1.15)--(-.55,2.65) node[above left] {$\boldsymbol v_T$};
+  \draw (1.7,1.1) arc[start angle=90,end angle=50,radius=1.1]; \node at (2.25,1.34) {$\theta$};
+  \draw (1.7,1.95) arc[start angle=90,end angle=128,radius=1.95]; \node at (.98,2.52) {$\varphi$};
+  \node[below] at (1.7,-.82) {原题图2a：两球碰撞后的飞行方向};
+\end{tikzpicture}
