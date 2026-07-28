@@ -1,0 +1,13 @@
+\begin{tikzpicture}[x=.72cm,y=.72cm,>=Stealth,font=\scriptsize]
+  \draw[thick] (0,0) circle (2.05);
+  \coordinate (A) at (0,-2.05);
+  \coordinate (At) at (.95,-1.82);
+  \fill (A) circle(1.5pt) node[below]{$A(t=0)$};
+  \fill (At) circle(1.5pt) node[right]{$A(t)$};
+  \draw[->,thick] (A) arc(-90:42:2.05) node[midway,right]{$\Omega Rt$};
+  \draw[->,very thick] (-1.45,-1.45) arc(-135:70:2.05) node[midway,left]{$\mathrm{CCW}$};
+  \draw[->,very thick] (1.45,-1.45) arc(-45:-250:2.05) node[midway,right]{$\mathrm{CW}$};
+  \draw[->] (2.6,.15) arc(0:75:.65) node[midway,right]{$\Omega$};
+  \node at (0,0) {半径 $R$};
+  \draw[densely dashed] (A)--(At);
+\end{tikzpicture}
