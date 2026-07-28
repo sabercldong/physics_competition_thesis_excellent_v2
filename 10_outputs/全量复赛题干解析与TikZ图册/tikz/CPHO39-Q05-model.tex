@@ -1,0 +1,17 @@
+\begin{tikzpicture}[>=Stealth,scale=0.98]
+  \draw[very thick] (-1.5,2.5) -- (1.5,2.5);
+  \foreach \x in {-1.35,-1.15,...,1.35} {\draw[thin] (\x,2.5) -- ++(0.15,0.11);}
+  \draw[thick] (0,2.5) -- (0,2.18);
+  \draw[thick,decorate,decoration={zigzag,segment length=5pt,amplitude=2.2pt}] (0,2.18) -- (0,0.76);
+  \node[left] at (-1.82,1.5) {弹簧1};
+  \shade[ball color=gray!35] (0,0.55) circle (0.21);
+  \node[right] at (0.24,0.55) {$m$};
+  \draw[thick,decorate,decoration={zigzag,segment length=5pt,amplitude=2.2pt}] (0,0.34) -- (0,-1.06);
+  \node[right] at (1.72,-0.35) {弹簧2};
+  \draw[thick] (0,-1.06) -- (0,-1.35);
+  \draw[->,very thick] (0,-1.35) -- (0,-2.1) node[right] {$F(t)=\alpha t\quad(t\geq0)$};
+  \draw[->,thick] (0,0.42) -- (0,-0.35) node[right] {$mg$};
+  \draw[<->,thin] (-1.1,2.48) -- (-1.1,0.75) node[midway,right] {$x_1(t)$};
+  \draw[<->,thin] (0.84,0.34) -- (0.84,-1.06) node[midway,right] {$x_2(t)$};
+  \node[below=0.3cm] at (0,-2.1) {解析辅助示意：零自然长度双弹簧的加载模型};
+\end{tikzpicture}
