@@ -1,0 +1,10 @@
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth,font=\small]
+  \coordinate (M) at (-2.35,0); \coordinate (O) at (0,0); \coordinate (m) at (2.35,0);
+  \draw[thick] (M) -- (m);
+  \fill (M) circle (2.2pt) node[above left] {$M$};
+  \fill (O) circle (1.5pt) node[above] {$O$};
+  \fill (m) circle (2.0pt) node[above right] {$m$};
+  \draw[<->] (-2.35,-0.36) -- (2.35,-0.36) node[midway,below] {$L$};
+  \draw[->,thick] (-1.62,-0.88) .. controls (-2.55,-0.65) and (-2.60,0.18) .. (-2.18,0.40);
+  \draw[->,thick] (1.62,0.88) .. controls (2.55,0.65) and (2.60,-0.18) .. (2.18,-0.40);
+\end{tikzpicture}
