@@ -1,0 +1,14 @@
+\begin{tikzpicture}[>=Stealth, node distance=1.1cm and 1.0cm,
+  box/.style={draw,rounded corners=2pt,minimum width=2.4cm,minimum height=0.8cm,align=center,fill=gray!8}]
+  \node[box] (temp) {温度梯度\\$\mathrm dT/\mathrm dx$};
+  \node[box,right=of temp] (diff) {扩散粒子流\\$j_x=-D\,\mathrm dn/\mathrm dx$};
+  \node[box,right=of diff] (field) {漂移电流与电场\\$-ej_x+E_x/\rho=0$};
+  \node[box,below=of diff] (charge) {空间电荷与边界面电荷\\$\varepsilon_0\,\mathrm dE_x/\mathrm dx=-e(n-n_0)$};
+  \node[box,right=of charge] (voltage) {两端电势差\\$U(L)-U(-L)$};
+  \draw[->,thick] (temp) -- (diff);
+  \draw[->,thick] (diff) -- (field);
+  \draw[->,thick] (field) -- (charge);
+  \draw[->,thick] (charge) -- (voltage);
+  \draw[->,thick] (temp.south) |- (charge.west);
+  \node[below=0.65cm of charge,align=center] {解析辅助示意：零净电流、局域平衡与热电势的关系链};
+\end{tikzpicture}
