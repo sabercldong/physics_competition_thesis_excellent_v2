@@ -1,0 +1,15 @@
+\begin{tikzpicture}[x=.62cm,y=.62cm,>=Stealth,font=\scriptsize]
+\coordinate (F) at (0,0); \coordinate (O) at (3,0);
+\draw[dashed] (-.5,0)--(5.1,0); \fill(F)circle(1.4pt)node[below]{$F$}; \fill(O)circle(1.4pt)node[below]{$O$};
+\draw[thick] (3,-1.7)..controls(3.9,-1.2)and(3.9,1.2)..(3,1.7);
+\draw[->] (3.05,1.25)--(F); \draw[->] (3.05,-1.25)--(F); \draw[->] (3.05,0)--(F);
+\draw[<->] (0,-.45)--(3,-.45)node[midway,below]{$r_0$}; \node[above]at(3.55,1.15){$M$};
+\end{tikzpicture}
+\qquad
+\begin{tikzpicture}[x=.62cm,y=.62cm,>=Stealth,font=\scriptsize]
+\coordinate (F) at (0,0); \coordinate (Op) at (2.0,0); \coordinate (O) at (3.8,0);
+\draw[dashed] (-.5,0)--(5.3,0); \fill(F)circle(1.4pt)node[below]{$F$}; \fill(Op)circle(1.4pt)node[below]{$O'$}; \fill(O)circle(1.4pt)node[below]{$O$};
+\draw[thick] (2,-1.55)..controls(1.25,-1.1)and(1.25,1.1)..(2,1.55); \draw[thick] (2,-1.55)--(2,1.55);
+\draw[->] (2.05,1.1)--(4.8,1.1); \draw[->] (2.05,-1.1)--(4.8,-1.1); \draw[->] (2.05,0)--(4.8,0);
+\draw[<->] (0,-.45)--(2,-.45)node[midway,below]{$r_0'$}; \node[above]at(1.45,1.1){$M'$};
+\end{tikzpicture}
