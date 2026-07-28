@@ -1,0 +1,27 @@
+\begin{tikzpicture}[x=.78cm,y=.78cm,>=Stealth,font=\small]
+  % 原题图3a
+  \begin{scope}
+    \draw[thick] (-3.2,-1.55)--(3.0,-3.8); \draw[dashed] (-3.2,-3.15)--(-.15,-3.15);
+    \draw[thick] (-.3,-1.2) circle (.8); \fill (-.3,-1.2) circle (1pt);
+    \draw[->,thick] (-.3,-1.2)--(.15,-.1) node[above] {$V$};
+    \draw[->,dashed] (1.25,-1.05)--(2.1,-1.65) node[right] {$x$}; \draw[->,dashed] (1.25,-1.05)--(1.75,-.1) node[above] {$y$};
+    \draw (1.15,-3.15) arc[start angle=180,end angle=160,radius=1.4]; \node at (.35,-2.93) {$\theta$};
+    \node at (-.15,-4.45) {（a）原题图3a：斜面坐标与初速度};
+  \end{scope}
+  % 解析辅助图：碰撞瞬间
+  \begin{scope}[xshift=8cm]
+    \draw[thick] (-3.2,-2.4)--(3.0,-2.4);
+    \draw[thick] (-1.35,-1.35) circle (.72); \fill (-1.35,-1.35) circle (1pt);
+    \draw[->,thick] (-1.35,-1.35)--(-.25,-1.35) node[above] {$v_i$};
+    \draw[->,thick] (-1.35,-1.35)--(-1.35,-.32) node[left] {$V$};
+    \draw[->,thick] (-.75,-1.35) arc[start angle=0,end angle=-260,radius=.58] node[midway,right] {$\omega_i$};
+    \draw[->,thick] (-1.35,-2.07)--(-2.25,-2.07) node[below] {$\bar F\Delta t$};
+    \draw[densely dashed] (0,-2.85)--(0,.2);
+    \draw[thick] (1.45,-1.35) circle (.72); \fill (1.45,-1.35) circle (1pt);
+    \draw[->,thick] (1.45,-1.35)--(2.55,-1.35) node[above] {$v_f$};
+    \draw[->,thick] (1.45,-1.35)--(1.45,-.32) node[left] {$V$};
+    \draw[->,thick] (2.05,-1.35) arc[start angle=0,end angle=-260,radius=.58] node[midway,right] {$\omega_f$};
+    \node[above] at (-1.35,.0) {碰撞前}; \node[above] at (1.45,.0) {碰撞后};
+    \node at (0,-3.55) {（b）解析辅助图：粗糙斜面上的弹性碰撞};
+  \end{scope}
+\end{tikzpicture}
