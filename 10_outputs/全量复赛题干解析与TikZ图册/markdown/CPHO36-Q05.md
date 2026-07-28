@@ -8,6 +8,8 @@
 
 ### 1. 最大入射角
 
+![端面临界光线与微球两次折射几何](assets/CPHO36-Q05-solution-figures.png)
+
 $$
 n_0\sin\theta=n_1\sin\alpha,
 \qquad

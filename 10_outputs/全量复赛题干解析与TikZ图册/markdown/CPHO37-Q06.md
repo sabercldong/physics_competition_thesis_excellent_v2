@@ -24,6 +24,8 @@ $$
 
 ### 2. Sagnac相位差
 
+![Sagnac效应中的分束器位移与反向传播光](assets/CPHO37-Q06-solution-sagnac.png)
+
 $$
 t_{\mathrm{CCW}}=
 \frac{N2\pi R(n_1c+\Omega R)}{c^2-(\Omega R)^2},

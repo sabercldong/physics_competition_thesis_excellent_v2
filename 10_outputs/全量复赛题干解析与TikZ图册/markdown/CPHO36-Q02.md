@@ -20,6 +20,8 @@ $$
 \omega=\sqrt{\frac{gr}{l}}.
 $$
 
+![把手和平板质心位置与下降高度](assets/CPHO36-Q02-solution-geometry.png)
+
 ### 2. 起动阈值
 
 $$
@@ -42,6 +44,8 @@ $$
 则系统不启动，$s=0$。
 
 ### 3. 又滑又滚阶段
+
+![平板车两个运动阶段的车轮与把手平板受力图](assets/CPHO36-Q02-solution-forces.png)
 
 $$
 a_C=-\mu g,\qquad

@@ -25,6 +25,8 @@ $$
 
 ### 2. 支持力改变
 
+![杯子偏移后的三脚圆凳受力辅助图](assets/CPHO36-Q01-solution-forces.png)
+
 令
 
 $$
