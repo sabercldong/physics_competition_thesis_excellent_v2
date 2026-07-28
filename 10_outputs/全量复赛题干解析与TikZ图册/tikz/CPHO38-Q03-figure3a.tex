@@ -1,0 +1,20 @@
+\begin{tikzpicture}[x=.82cm,y=.82cm,>=Stealth,font=\scriptsize]
+  \draw[very thick] (-4,1.55)--(4,1.55);
+  \draw[very thick] (-4,-1.55)--(4,-1.55);
+  \draw[densely dashed] (-3.55,.65)--(-.45,-1.12);
+  \draw[densely dashed] (-.45,-1.12)--(1.75,.88);
+  \draw[densely dashed] (1.75,.88)--(3.55,-.38);
+  \foreach \p/\lab in {(-3.55,.65)/0,(-.45,-1.12)/1,(1.75,.88)/2,(3.55,-.38)/3} {
+    \fill \p circle(1.6pt);
+    \node[above left] at \p {\lab};
+  }
+  \draw[->,thick] (-3.55,.65)--+(.9,0) node[midway,above] {$v_{0x}$};
+  \draw[->] (-3.75,.82) arc(145:35:.35) node[midway,above] {$\omega_{0z}$};
+  \draw[->,thick] (-3.1,-2.15)--(-1.8,-2.15) node[right] {$x$};
+  \draw[->,thick] (-3.1,-2.15)--(-3.1,-.85) node[above] {$y$};
+  \draw[->,thick] (-3.1,-2.15)--(-3.65,-1.62) node[below left] {$z$};
+  \node[below] at (-.45,-1.55) {第1次};
+  \node[above] at (1.75,1.55) {第2次};
+  \node[below] at (3.55,-1.55) {第3次};
+  \node[below right] at (3.55,-.38) {近回原处};
+\end{tikzpicture}

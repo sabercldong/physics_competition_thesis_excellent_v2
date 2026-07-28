@@ -1,0 +1,61 @@
+% 题干转写：完成
+% 解析转写：完成
+% 图形核对：完成
+\section{第38届复赛第3题：超球与平行硬板的连续弹性碰撞}
+
+\subsection{题干}
+如图\ref{fig:cpho38q03}，半径为 $r$、质量为 $m$ 的均质超球在上下两个固定的平行硬板之间运动，连续碰撞3次后几乎返回原处。取 $x$ 轴水平向右、$y$ 轴竖直向下，$z$ 轴正向按右手螺旋确定。初始球心水平速度为 $v_{0x}$，绕平行于 $z$ 轴的角速度为 $\omega_{0z}$，且 $\omega_{0z}<v_{0x}/r$；不计重力。求第1、2、3次碰撞后球心水平速度分量和角速度。已知
+\[
+J_z=\frac25mr^2.
+\]
+球与硬板的反弹视为完全弹性，接触点无滑动；切向和法向形变相互独立，所对应的弹力分别为保守力。
+\begin{figure}[htbp]\centering
+\input{tikz/CPHO38-Q03-figure3a.tex}
+\caption{第38届复赛第3题超球在平行硬板间的三次连续碰撞TikZ重绘。}\label{fig:cpho38q03}
+\end{figure}
+
+\subsection{参考解答整理}
+\paragraph{（1）第1次碰撞。}
+下板对球的摩擦力冲量和力矩给出
+\[
+m(v_{1x}-v_{0x})=-\int_{t_0}^{t_1}f_x\,\mathrm dt,\qquad
+J_z(\omega_{1z}-\omega_{0z})=
+r\int_{t_0}^{t_1}f_x\,\mathrm dt.
+\]
+法向弹性使竖直速度反向，切向弹性与无滑动条件使接触点水平速度反向：
+\[
+v_{1x}-r\omega_{1z}=-(v_{0x}-r\omega_{0z}).
+\]
+代入 $J_z=2mr^2/5$，得
+\[
+\boxed{v_{1x}=\frac37v_{0x}+\frac47r\omega_{0z},\qquad
+\omega_{1z}=\frac{10}{7}\frac{v_{0x}}r-\frac37\omega_{0z}.}
+\]
+
+\paragraph{（2）第2次碰撞。}
+球在上板反弹时，摩擦力矩方向相对第1次反号，递推式为
+\[
+v_{2x}=\frac37v_{1x}-\frac47r\omega_{1z},\qquad
+\omega_{2z}=-\frac{10}{7}\frac{v_{1x}}r-\frac37\omega_{1z}.
+\]
+代入第1次结果，
+\[
+\boxed{v_{2x}=-\frac{31}{49}v_{0x}+\frac{24}{49}r\omega_{0z},\qquad
+\omega_{2z}=-\frac{60}{49}\frac{v_{0x}}r-\frac{31}{49}\omega_{0z}.}
+\]
+
+\paragraph{（3）第3次碰撞。}
+第3次回到下板，递推关系恢复为
+\[
+v_{3x}=\frac37v_{2x}+\frac47r\omega_{2z},\qquad
+\omega_{3z}=\frac{10}{7}\frac{v_{2x}}r-\frac37\omega_{2z}.
+\]
+因此
+\[
+\boxed{v_{3x}=-\frac{333}{343}v_{0x}-\frac{52}{343}r\omega_{0z},\qquad
+\omega_{3z}=-\frac{130}{343}\frac{v_{0x}}r+\frac{333}{343}\omega_{0z}.}
+\]
+由于 $333/343$ 已接近1，且 $\omega_{0z}<v_{0x}/r$，三次碰撞后球的水平运动状态接近反向，符合“几乎返回原处”的题设描述。
+
+\subsection{转写依据}
+题干依据 \texttt{CPHO38-Q03\_transcription\_v1.md}；答案公式依据 \texttt{CPHO38-Q03\_formula\_check\_v1.csv} 及答案第8至10页；题图依据图3a核对入口。第（1）、（2）、（3）问的评分分别为20分、12分、8分。
