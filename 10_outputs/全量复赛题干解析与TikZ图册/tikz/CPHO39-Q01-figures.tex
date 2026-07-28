@@ -1,0 +1,24 @@
+\begin{tikzpicture}[x=.78cm,y=.78cm,>=Stealth,font=\small]
+  \begin{scope}
+    \draw[fill=gray!25] (-.18,-.18)--(.18,-.18)--(.18,.18)--(-.18,.18)--cycle;
+    \draw[very thick] (-.5,-.5)--(.5,.5);
+    \draw[thick] (-.25,3.1)--(.25,3.1); \draw[thick] (3.1,-.25)--(3.1,.25);
+    \draw[->,thick] (-3.1,0)--(-.3,0); \draw[->,thick] (.02,.3)--(.02,2.9); \draw[->,thick] (.3,-.02)--(2.9,-.02);
+    \draw[->,thick] (.02,2.9)--(.02,.32); \draw[->,thick] (2.9,-.02)--(.32,-.02); \draw[->,thick] (-.25,-.25)--(-1.65,-1.65);
+    \node[above] at (0,3.12) {反射镜}; \node[right] at (3.12,.25) {反射镜};
+    \node[below left] at (-.1,-.25) {半反半透金属膜}; \node[left] at (-3.1,.15) {照明光}; \node[below] at (-1.65,-1.65) {干涉条纹观测};
+    \node[rotate=90] at (.48,1.52) {反射臂}; \node[below] at (1.5,-.36) {透射臂};
+    \draw[fill=gray!15] (1.55,-.35)--(2.05,.15)--(1.84,.36)--(1.34,-.14)--cycle; \node[rotate=-45] at (1.74,.55) {石英补偿板};
+    \node[below] at (0,-3.0) {（a）迈克尔逊干涉仪光路};
+  \end{scope}
+  \begin{scope}[xshift=7.2cm]
+    \draw[thick] (-3.0,0)--(2.35,0); \draw[thick] (2.45,-.78)--(2.45,.78); \node[right] at (2.53,.38) {反射镜};
+    \draw[->] (-1.1,.1)--(-2.2,.1); \draw[->] (.35,.1)--(-.65,.1); \draw[->] (.25,-.1)--(1.35,-.1); \draw[->] (2.1,-.1)--(.78,-.1);
+    \begin{scope}[rotate=12]
+      \draw[fill=gray!12,thick] (-.45,-1.65) rectangle (.45,1.65); \draw[thick] (-.30,-1.43) rectangle (.30,1.43);
+      \draw[densely dotted] (-.18,-1.25)--(-.18,1.25); \draw[densely dotted] (.18,-1.25)--(.18,1.25); \draw[<->] (-.28,1.48)--(.28,1.48) node[midway,above] {$t$};
+    \end{scope}
+    \draw[dashed] (0,-2.05)--(0,1.7); \draw[->] (0,-1.55) arc[start angle=-90,end angle=-78,radius=.5]; \node at (.38,-1.55) {$\theta$};
+    \node[below] at (0,-3.0) {（b）倾斜石英槽与反射臂};
+  \end{scope}
+\end{tikzpicture}

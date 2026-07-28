@@ -1,0 +1,7 @@
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth,font=\small]
+  \draw[fill=gray!12] (-2.7,-.75) rectangle (2.7,.75); \draw[densely dotted] (-2.7,.75)--(2.7,.75); \draw[densely dotted] (-2.7,-.75)--(2.7,-.75); \draw[dashed] (0,-1.55)--(0,1.55);
+  \coordinate (O) at (0,.75); \coordinate (A) at (.55,-.75); \coordinate (B) at (2.28,-.05); \coordinate (C) at (1.38,-1.43);
+  \draw[->,thick] (-2.55,1.62)--(O); \draw[->,thick] (O)--(A); \draw[->,thick] (A)--(C); \draw[densely dashed] (O)--(B); \draw[densely dashed] (B)--(C);
+  \draw[<->] (-2.35,-.75)--(-2.35,.75) node[midway,left] {$t$}; \fill (O) circle(1.2pt) node[above left] {$O$}; \fill (A) circle(1.2pt) node[below left] {$A$}; \fill (B) circle(1.2pt) node[right] {$B$}; \node at (-1.25,0) {$n$};
+  \draw[->] (0,1.18) arc[start angle=90,end angle=122,radius=.42]; \node at (-.38,1.22) {$\theta$}; \draw[->] (0,.30) arc[start angle=-90,end angle=-70,radius=.42]; \node at (.30,.26) {$i$}; \draw[->] (.55,-1.10) arc[start angle=-90,end angle=-56,radius=.42]; \node at (.93,-1.16) {$\theta$};
+\end{tikzpicture}
