@@ -68,6 +68,7 @@ def main() -> None:
                 "\n".join(
                     [
                         r"\documentclass[tikz,border=4pt]{standalone}",
+                        r"\usepackage{amsmath}",
                         r"\usepackage{xeCJK}",
                         r"\setCJKmainfont{Songti SC}",
                         r"\usetikzlibrary{arrows.meta,calc,decorations.pathmorphing,positioning,shapes.symbols}",
