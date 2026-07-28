@@ -1,0 +1,36 @@
+\begin{tikzpicture}[x=.9cm,y=.9cm,>=Stealth,font=\small]
+  % Original three-dimensional coaxial-cylinder geometry.
+  \begin{scope}[xshift=-2.8cm]
+    \draw[thick] (0,1.55) ellipse (1.65 and .5);
+    \draw[thick] (-1.65,1.55)--(-1.65,-1.15);
+    \draw[thick] (1.65,1.55)--(1.65,-1.15);
+    \draw[thick,dashed] (-1.65,-1.15) arc (180:360:1.65 and .5);
+    \draw[thick] (1.65,-1.15) arc (0:-180:1.65 and .5);
+    \draw[thick] (0,1.55) ellipse (.82 and .25);
+    \draw[thick,dashed] (-.82,1.55)--(-.82,-1.15);
+    \draw[thick,dashed] (.82,1.55)--(.82,-1.15);
+    \draw[thick,dashed] (0,-1.15) ellipse (.82 and .25);
+    \draw[densely dashed] (0,1.55)--(0,-1.15);
+    \draw[->] (0,1.55)--(.82,1.55) node[midway,above] {$r_1$};
+    \draw[->] (0,1.92)--(1.65,1.92) node[midway,above] {$r_2$};
+    \node at (.46,.15) {$q$};
+    \node at (1.28,.15) {$-q$};
+    \node[left] at (-.82,.15) {$m$};
+    \node[left] at (-1.65,.15) {$m$};
+    \node[below] at (0,-1.8) {同轴薄壁圆筒};
+  \end{scope}
+
+  % Auxiliary cross-section for the field regions and particle motion.
+  \begin{scope}[xshift=3.0cm]
+    \draw[thick] (0,0) circle (1.65);
+    \draw[thick] (0,0) circle (.82);
+    \fill (0,0) circle (1.3pt) node[below left] {轴};
+    \draw[->] (0,0)--(.82,0) node[midway,below] {$r_1$};
+    \draw[->] (0,.25)--(1.65,.25) node[midway,above] {$r_2$};
+    \fill (.82,0) circle (2pt);
+    \node[below right,xshift=4pt,yshift=-3pt] at (.82,0) {$Q,\mu$};
+    \draw[->,very thick] (.9,0)--(1.48,0) node[midway,above] {$v_r$};
+    \draw[->,thick] (1.02,.75) arc (36:95:1.25) node[midway,above] {$Q\mathbf v\times\mathbf B$};
+    \node[align=center] at (0,-2.2) {横截面与粒子运动\\（辅助示意）};
+  \end{scope}
+\end{tikzpicture}
