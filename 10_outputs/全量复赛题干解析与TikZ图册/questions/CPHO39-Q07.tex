@@ -1,0 +1,16 @@
+\section{第39届复赛第7题：高能铅核碰撞夸克物质状态方程}
+\subsection{题干}
+高能铅核碰撞形成的高温球形“火球”近似由静止质量很小、速度接近光速的夸克组成。夸克为无相互作用的经典粒子，速度分布各向同性，能量分布比例为 $e^{-E/(k_BT)}4\pi p^2\mathrm dp$。求：（1）$P$ 与能量密度 $u$ 的状态方程；（2）$P,n,T$ 的状态方程；（3）$C_V$ 与热容比 $\gamma$；（4）半径 $3.0\times10^{-15}\,\mathrm m$、温度从 $400\,\mathrm{MeV}/k_B$ 降至 $150\,\mathrm{MeV}/k_B$ 时的火球半径。
+\subsection{参考解答整理}
+\paragraph{（1）器壁动量通量。} 对速度组 $i$，近光速近似给出 $\boldsymbol p_i\cdot\boldsymbol v_i\simeq E_i$。由各向同性，器壁压强
+\[P=\frac13\sum_i n_i\boldsymbol p_i\cdot\boldsymbol v_i=\boxed{\frac13u}.\]
+\begin{figure}[htbp]\centering\input{tikz/CPHO39-Q07-solution-collision.tex}\caption{依据答案解题图7a重绘的器壁面元与粒子束。}\end{figure}
+\begin{figure}[htbp]\centering\input{tikz/CPHO39-Q07-solution-angle.tex}\caption{依据答案解题图7b重绘的入射角积分几何。}\end{figure}
+\paragraph{（2）平均能量与状态方程。} 用 $E\simeq pc$ 代入题设分布，积分比值给出 $\bar E=3k_BT$。故
+\[\boxed{P=\frac13n\bar E=nk_BT}.\]
+\paragraph{（3）热容。} 一摩尔内能 $U_m=N_A\bar E=3RT$，所以
+\[\boxed{C_V=3R,\qquad C_P=4R,\qquad \gamma=\frac43}.\]
+\paragraph{（4）绝热膨胀。} 准静态绝热过程 $TV^{\gamma-1}=\mathrm{const}$，代入 $\gamma=4/3$ 和 $V=4\pi r^3/3$ 得 $Tr=\mathrm{const}$，故
+\[\boxed{r=\frac{400}{150}\times3.0\times10^{-15}\,\mathrm m=8.0\times10^{-15}\,\mathrm m}.\]
+\subsection{转写依据}
+题干依据 \texttt{CPHO39-Q07.md} 第4页，答案依据第27至29页与 \texttt{CPHO39-Q07\_formula\_check\_v1.csv}。两幅图分别依据答案解题图7a、7b重绘。本题四问分值依次为11、10、10、9分。
