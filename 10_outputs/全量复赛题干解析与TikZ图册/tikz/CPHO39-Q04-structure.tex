@@ -1,0 +1,18 @@
+\begin{tikzpicture}[>=Stealth,scale=0.9]
+  \draw[thick] (0,0) ellipse (2.25 and 0.58);
+  \draw[densely dashed,thick] (0,-0.9) -- (0,1.52);
+  \node[below] at (0,-0.12) {$O$};
+  \coordinate (P) at (2.15,0);
+  \fill (P) circle (1.5pt) node[below right] {$P$};
+  \draw[thick] (0,0) -- (P) node[midway,below] {$R$};
+  \draw[very thick,fill=gray!18] (P) -- ++(38:2.35) coordinate (B);
+  \draw[<->,thin] ($(P)+(38:0.18)$) -- ($(B)+(38:0.18)$) node[midway,above] {$2a$};
+  \draw[densely dashed] (P) -- ++(0,1.55);
+  \draw[->] ($(P)+(0,0.72)$) arc[start angle=90,end angle=52,radius=0.72]
+    node[midway,right] {$\theta$};
+  \coordinate (C) at ($(P)!0.5!(B)$);
+  \draw[->,thick] (C) -- ++(0,-1.18) node[right] {$mg$};
+  \draw[->,thick] (-0.15,0.9) arc[start angle=125,end angle=55,radius=1.18]
+    node[midway,above] {$\omega$};
+  \node[below=1.05cm of P] {原题图4a：水平圆环与铰接细杆};
+\end{tikzpicture}

@@ -1,0 +1,18 @@
+\begin{tikzpicture}[>=Stealth,scale=1.05]
+  \begin{scope}
+    \draw[densely dashed] (0,-0.98) -- (0,1.5);
+    \node[left] at (0,0) {$O$}; \draw[thick] (0,0) -- (1.45,0) node[midway,above] {$R$};
+    \coordinate (P) at (1.45,0); \node[above] at (P) {$P$}; \draw[very thick,fill=gray!16] (P) -- (0.12,-0.95);
+    \node[below] at (0.58,-0.72) {$2a$}; \node at (1.76,0.47) {$\theta$};
+    \draw[->,thick] (0.75,-0.5) -- (0.75,-1.48) node[right] {$mg$}; \draw[->,thick] (0.38,-0.7) -- (1.34,-0.7) node[right] {$F_c$};
+    \node[below,text width=5.0cm,align=center,font=\small] at (1.45,-1.72) {第III象限：\(\left(\frac{4a}{3}\right)^{2/3}-R^{2/3}<\left(\frac{g}{\omega^2}\right)^{2/3}\) 时无平衡};
+  \end{scope}
+  \begin{scope}[xshift=7.2cm]
+    \draw[densely dashed] (0,-0.98) -- (0,1.5);
+    \node[left] at (0,0) {$O$}; \draw[thick] (0,0) -- (1.45,0) node[midway,above] {$R$};
+    \coordinate (P) at (1.45,0); \node[below] at (P) {$P$}; \draw[very thick,fill=gray!16] (P) -- (0.12,0.95);
+    \node[above] at (0.62,0.68) {$2a$}; \node at (1.77,0.47) {$\theta$};
+    \draw[->,thick] (0.75,0.5) -- (0.75,-0.48) node[right] {$mg$}; \draw[->,thick] (0.38,0.7) -- (-0.58,0.7) node[left] {$F_c$};
+    \node[below,text width=5.0cm,align=center,font=\small] at (1.45,-1.25) {第III象限：\(\left(\frac{4a}{3}\right)^{2/3}-R^{2/3}\ge\left(\frac{g}{\omega^2}\right)^{2/3}\) 时可有平衡};
+  \end{scope}
+\end{tikzpicture}

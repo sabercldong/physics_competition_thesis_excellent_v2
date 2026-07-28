@@ -1,0 +1,24 @@
+\begin{tikzpicture}[>=Stealth,scale=1.15]
+  \begin{scope}
+    \draw[densely dashed] (0,-1.05) -- (0,1.55);
+    \node[left] at (0,0) {$O$};
+    \draw[thick] (0,0) -- (1.55,0) node[midway,above] {$R$};
+    \coordinate (P) at (1.55,0); \node[below] at (P) {$P$};
+    \draw[very thick,fill=gray!16] (P) -- (2.95,1.02);
+    \node[above] at (2.45,0.82) {$2a$}; \node at (1.9,0.48) {$\theta$};
+    \draw[->,thick] (2.28,0.54) -- (2.28,-0.62) node[right] {$mg$};
+    \draw[->,thick] (2.52,0.72) -- (3.55,0.72) node[right] {$F_c$};
+    \node[below,text width=4.4cm,align=center] at (1.65,-1.25) {第I象限：不可能有平衡位形};
+  \end{scope}
+  \begin{scope}[xshift=7.3cm]
+    \draw[densely dashed] (0,-1.05) -- (0,1.55);
+    \node[left] at (0,0) {$O$};
+    \draw[thick] (0,0) -- (1.55,0) node[midway,above] {$R$};
+    \coordinate (P) at (1.55,0); \node[above] at (P) {$P$};
+    \draw[very thick,fill=gray!16] (P) -- (2.95,-1.02);
+    \node[above] at (2.42,-0.55) {$2a$}; \node at (1.9,0.48) {$\theta$};
+    \draw[->,thick] (2.28,-0.54) -- (2.28,-1.7) node[left] {$mg$};
+    \draw[->,thick] (2.52,-0.72) -- (3.55,-0.72) node[right] {$F_c$};
+    \node[below,text width=4.4cm,align=center] at (1.65,-1.83) {第II象限：可有平衡位形};
+  \end{scope}
+\end{tikzpicture}

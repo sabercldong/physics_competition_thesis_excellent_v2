@@ -1,0 +1,20 @@
+\begin{tikzpicture}[>=Stealth,x=1.32cm,y=1.04cm]
+  \draw[->] (-0.28,0) -- (5.1,0) node[right] {$\theta$};
+  \draw[->] (0,-2.35) -- (0,2.45) node[above] {$y$};
+  \foreach \x/\lab in {1.57/{\pi/2},3.14/{\pi},4.71/{3\pi/2}} {
+    \draw[densely dashed,gray] (\x,-2.25) -- (\x,2.3);
+    \node[below] at (\x,0) {$\lab$};
+  }
+  \begin{scope}\clip (0,-2.25) rectangle (5.0,2.3);
+    \draw[thick,domain=0.07:1.51,samples=100] plot (\x,{-cot(\x r)});
+    \draw[thick,domain=1.58:3.06,samples=100] plot (\x,{-cot(\x r)});
+    \draw[thick,domain=3.22:4.66,samples=100] plot (\x,{-cot(\x r)});
+    \draw[thick,domain=4.73:5.0,samples=50] plot (\x,{-cot(\x r)});
+    \draw[thick,blue!65!black,domain=0:5.0,samples=150] plot (\x,{0.88*cos(\x r)+0.72});
+  \end{scope}
+  \draw[densely dotted] (0,1.60) -- (5.0,1.60) node[right] {$A'+B'$};
+  \draw[densely dotted] (0,-0.16) -- (5.0,-0.16) node[right] {$B'-A'$};
+  \node[blue!65!black,above] at (3.82,0.16) {$A'\cos\theta+B'$};
+  \node[above] at (4.04,1.82) {$-\cot\theta$};
+  \node[below=0.68cm] at (2.48,-2.32) {解题图4a$'$：$-\cot\theta=A'\cos\theta+B'$ 的图解};
+\end{tikzpicture}
