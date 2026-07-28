@@ -1,0 +1,11 @@
+\begin{tikzpicture}[>=Stealth,scale=.86]
+  \draw[->,thick] (0,0)--(6.2,0) node[right] {$T/\mathrm{K}$};
+  \draw[->,thick] (0,0)--(0,4.2) node[above] {$\sigma/(10^{-3}\,\mathrm{N\,m^{-1}})$};
+  \draw[very thick,blue!70!black,domain=.35:5.75,samples=80] plot (\x,{.22*(\x-3.5)*(\x-3.5)+.7});
+  \draw[densely dashed] (3.5,0)--(3.5,.7); \fill (3.5,.7) circle(1.5pt);
+  \node[below] at (3.5,0) {$T_f=329\,\mathrm K$};
+  \node[right,align=left] at (4.45,1.15) {$\sigma(T)$最小\\[-2pt]$t_f\approx56^\circ\mathrm C$};
+  \draw[->,thick] (1.05,3.15)--(3.25,1.15) node[midway,above,sloped] {油与水混合、恒容};
+  \node[align=center] at (1.05,3.65) {石油初温\\$t_i=100^\circ\mathrm C$};
+  \node[below,align=center] at (3.5,-.72) {解析辅助图：由表面张力二次关系确定混合终温};
+\end{tikzpicture}

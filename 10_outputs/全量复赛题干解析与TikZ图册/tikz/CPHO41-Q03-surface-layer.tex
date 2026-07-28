@@ -1,0 +1,11 @@
+\begin{tikzpicture}[>=Stealth,scale=.86]
+  \fill[blue!7] (-3,-1.8) rectangle (3,0);
+  \draw[thick] (-3,0)--(3,0); \node[right] at (3,0) {液面};
+  \foreach \x/\y in {-2.5/-.45,-1.7/-.8,-.85/-.4,0/-.85,.9/-.42,1.75/-.85,2.55/-.42,-2.2/-1.4,-1.25/-1.25,-.35/-1.5,.55/-1.25,1.45/-1.5,2.35/-1.25} \fill[blue!55] (\x,\y) circle(.16);
+  \foreach \x in {-2.4,-1.2,0,1.2,2.4} \fill[blue!55] (\x,.22) circle(.16);
+  \draw[<->] (-2.4,.55)--(-1.2,.55) node[midway,above] {$D$};
+  \draw[->] (2.05,.85)--(1.2,.27) node[above right,align=left] {表面层粒子\\邻近数为 $\zeta n$};
+  \draw[->] (2.15,-2.5)--(1.35,-1.35) node[below right,align=left] {液体内部粒子\\邻近数为 $n$};
+  \draw[<->] (-2.85,0)--(-2.85,-.58) node[midway,left] {$D$};
+  \node[below,align=center] at (0,-2.85) {解析辅助图：表面层粒子数减少与特征间距 $D$};
+\end{tikzpicture}
