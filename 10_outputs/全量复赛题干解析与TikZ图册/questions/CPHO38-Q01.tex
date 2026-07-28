@@ -1,0 +1,27 @@
+\section{第38届复赛第1题：平凸/平凹透镜曲面设计}
+\subsection{题干}
+宽束平行光正入射到折射率为 $n$ 的平凸透镜平面侧后汇聚于焦点 $F$；透镜顶点 $O$ 到 $F$ 的距离为 $r_0$，如图\ref{fig:cpho38q01}。求凸面形状。随后插入折射率为 $n'$、顶点到 $F$ 的距离为 $r_0'$ 的平凹透镜，使出射光重新平行，求凹面形状及入、出平行圆光束半径比。
+\begin{figure}[htbp]\centering\input{tikz/CPHO38-Q01-figure1a.tex}\caption{第38届复赛第1题平凸透镜会聚光路的TikZ重绘。}\label{fig:cpho38q01}\end{figure}
+\subsection{参考解答整理}
+以 $F$ 为极点，有等光程关系
+\[
+r=n(r\cos\theta-r_0)+r_0,
+\qquad r=\frac{(1-n)r_0}{1-n\cos\theta}.
+\]
+以从 $F$ 指向 $O$ 的方向为 $x$ 轴，凸面满足
+\[
+\boxed{\frac{\left(x-\frac{n}{n+1}r_0\right)^2}{\left(\frac{r_0}{n+1}\right)^2}-\frac{y^2}{\left(\frac{\sqrt{n^2-1}}{n+1}r_0\right)^2}=1.}
+\]
+因此凸面为旋转双曲面。对平凹透镜完全类似：
+\[
+r'=\frac{(1-n')r_0'}{1-n'\cos\theta},
+\]
+\[
+\boxed{\frac{\left(x-\frac{n'}{n'+1}r_0'\right)^2}{\left(\frac{r_0'}{n'+1}\right)^2}-\frac{y^2}{\left(\frac{\sqrt{n'^2-1}}{n'+1}r_0'\right)^2}=1.}
+\]
+凹面也是旋转双曲面。若汇聚光最大夹角为 $\theta_{\max}$，半径比为
+\[
+\boxed{k=\frac{(1-n)(1-n'\cos\theta_{\max})r_0}{(1-n')(1-n\cos\theta_{\max})r_0'}.}
+\]
+\subsection{转写依据}
+题干、图1a和公式依据本题题面转写稿、答案公式核对表和图件核对入口。图1a以TikZ重绘。本题第（1）问20分，第（2）问20分。
