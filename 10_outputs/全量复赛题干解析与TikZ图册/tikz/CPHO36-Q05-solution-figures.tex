@@ -1,0 +1,34 @@
+\begin{tikzpicture}[x=.7cm,y=.7cm,>=Stealth,font=\scriptsize]
+  \begin{scope}
+    \draw[densely dashed] (-4,0)--(3.7,0);
+    \draw[thick] (0,-1)--(3.1,-1)--(3.1,1)--(0,1)--cycle;
+    \draw[thick] (0,.25)--(3.1,.25);
+    \draw[thick] (0,-.25)--(3.1,-.25);
+    \node at (1.55,.62) {$n_2$}; \node at (1.55,0) {$n_1$}; \node at (1.55,-.62) {$n_2$};
+    \draw[->,thick] (-2.2,.75)--(0,.25);
+    \draw[->,thick] (0,.25)--(1.1,-.25);
+    \draw[->,thick] (1.1,-.25)--(2.65,.25);
+    \draw (0,.04) arc(0:22:.42) node[right]{$\theta$};
+    \draw (0.35,.24) arc(0:-24:.42) node[below right]{$\alpha$};
+    \node[below] at (1.55,-1.2) {(a) 端面折射与全反射临界光线};
+  \end{scope}
+  \begin{scope}[xshift=10cm]
+    \draw[densely dashed] (-4,0)--(5.2,0);
+    \draw[thick] (0,0) circle (1.65);
+    \coordinate (Oc) at (0,0);
+    \fill (Oc) circle(1.3pt) node[below]{$O'$};
+    \fill (1.65,0) circle(1.3pt) node[below]{$O$};
+    \coordinate (A) at (-1.05,.95); \coordinate (B) at (1.42,.82); \coordinate (F) at (3.0,0); \coordinate (C) at (4.25,0);
+    \fill (A) circle(1.3pt) node[above]{$A$}; \fill (B) circle(1.3pt) node[above]{$B$};
+    \draw[->,thick] (-3.8,.95)--(A);
+    \draw[thick] (A)--(B)--(F);
+    \draw[dashed] (A)--(C); \draw[dashed] (B)--(C);
+    \draw[dashed] (Oc)--(A) (Oc)--(B);
+    \fill (F) circle(1.3pt) node[below]{$F$}; \fill (C) circle(1.3pt) node[below]{$C$};
+    \node at (0,-1.05) {$n$};
+    \draw (A) ++(-.32,0) arc(0:-35:.38) node[right]{$\alpha$};
+    \draw (A) ++(.27,-.04) arc(-8:20:.44) node[above right]{$\gamma$};
+    \draw (B) ++(.33,-.02) arc(-15:16:.4) node[right]{$\alpha$};
+    \node[below] at (.55,-2) {(b) 微球折射的近轴几何};
+  \end{scope}
+\end{tikzpicture}
