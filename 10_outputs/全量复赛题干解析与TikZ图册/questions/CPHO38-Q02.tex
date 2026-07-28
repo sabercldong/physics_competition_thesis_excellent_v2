@@ -1,0 +1,27 @@
+\section{第38届复赛第2题：玻璃管水银封闭气体加热过程}
+\subsection{题干}
+竖直薄壁玻璃管上端开口，长度 $l=75.0\,\mathrm{cm}$、横截面积 $S=10.0\,\mathrm{cm^2}$。水银借绝热轻活塞封闭理想气体，初始气柱和水银柱高度均为 $h=25.0\,\mathrm{cm}$，如图\ref{fig:cpho38q02}。已知 $T_0=400\,\mathrm K$、$C_V=5R/2$。缓慢加热，先使水银上液面到达管口，再使水银完全流出。求做功、稳定性和吸热量。
+\begin{figure}[htbp]\centering\input{tikz/CPHO38-Q02-figure2a.tex}\caption{第38届复赛第2题水银封闭气体装置的TikZ重绘。}\label{fig:cpho38q02}\end{figure}
+\subsection{参考解答整理}
+\paragraph{过程A。} 初态 $V_1=Sh$、$p_1=p_0+\rho gh=4\rho gh$；水银上液面到达管口时 $V_2=2Sh$、$p_2=p_1$，故为等压过程，$T_2=2T_0$，
+\[
+\boxed{W_1=p_1(V_2-V_1)=4\rho ghSh=33.3\,\mathrm J.}
+\]
+\paragraph{过程B。} 设水银柱高度为 $x$，则
+\[
+p=3\rho gh+\rho gx,\qquad V=S(3h-x).
+\]
+由状态方程得
+\[
+9h^2-x^2=4h^2\frac{T}{T_0},\qquad x=h\sqrt{9-4T/T_0}.
+\]
+从 $T=2T_0$ 到 $T=9T_0/4$，$x$ 单调降至零，故过程B可缓慢稳定发生。其内能增加和做功为
+\[
+\Delta U=20.8\,\mathrm J,\qquad W_2=29.2\,\mathrm J,
+\]
+从而
+\[
+\boxed{Q=\Delta U+W_2=50.0\,\mathrm J.}
+\]
+\subsection{转写依据}
+题干、图2a和公式依据本题题面转写稿、答案公式核对表和图件核对入口。图2a以TikZ重绘。本题第（1）问18分，第（2）问22分。
