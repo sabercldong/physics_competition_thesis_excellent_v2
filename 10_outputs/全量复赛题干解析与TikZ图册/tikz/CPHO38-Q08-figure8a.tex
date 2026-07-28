@@ -1,0 +1,31 @@
+\begin{tikzpicture}[x=.85cm,y=.85cm,>=Stealth,font=\small]
+  % Left panel: original horizontal vehicle geometry.
+  \begin{scope}[xshift=-3.8cm]
+    \draw[thick] (-.7,0)--(5.6,0);
+    \draw[thick,fill=white] (0,.52) circle (.52);
+    \draw[thick,fill=white] (4.7,.52) circle (.52);
+    \fill (0,.52) circle (1.4pt) node[below right] {$m$};
+    \fill (4.7,.52) circle (1.4pt) node[below right] {$m$};
+    \draw[thick] (-.08,1.04)--(.18,1.43)--(4.52,1.43)--(4.78,1.04)--cycle;
+    \fill (2.35,1.05) circle (1.5pt) node[above] {$M$};
+    \draw[<->] (0,1.78)--(2.35,1.78) node[midway,above] {$L/2$};
+    \draw[<->] (2.35,1.78)--(4.7,1.78) node[midway,above] {$L/2$};
+    \draw[->] (2.35,.10)--(2.35,.94) node[midway,right] {$r$};
+    \draw[->,thick] (-.27,.70) arc (130:-170:.40) node[left,xshift=-3pt] {$\tau_{\mathrm w}$};
+    \node[align=center] at (2.35,-.62) {水平电动汽车模型};
+  \end{scope}
+
+  % Right panel: motor torque-speed characteristic used by the vehicle model.
+  \begin{scope}[xshift=3.35cm]
+    \draw[->,thick] (0,0)--(4.55,0) node[below] {$\omega$};
+    \draw[->,thick] (0,0)--(0,3.05) node[left] {$\tau$};
+    \draw[very thick] (0,2.45)--(4.0,0);
+    \fill (0,2.45) circle (1.3pt) node[left] {$\tau_{\max}$};
+    \fill (4.0,0) circle (1.3pt) node[below] {$\omega_{\max}$};
+    \draw[densely dashed] (2.0,0)--(2.0,1.225);
+    \draw[densely dashed] (0,1.225)--(2.0,1.225);
+    \fill (2.0,1.225) circle (1.2pt);
+    \node[above right,align=left] at (2.0,1.225) {$P=P_{\max}$\\$\omega=\omega_{\max}/2$};
+    \node[align=center] at (2.2,-.72) {永磁直流电机的\\力矩--转速特性};
+  \end{scope}
+\end{tikzpicture}
