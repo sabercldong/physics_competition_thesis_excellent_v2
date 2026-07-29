@@ -1,0 +1,10 @@
+\begin{tikzpicture}[>=Stealth,scale=.9]
+  \draw[thick] (-2.25,0) circle(1.45); \fill[blue!12] (-2.25,0) circle(1.45);
+  \draw[<->] (-3.7,-1.75)--(-.8,-1.75) node[midway,below] {$2R_1$};
+  \node[below] at (-2.25,-2.12) {初态：$N_1=n\pi R_1^2$};
+  \draw[->,very thick] (-.35,0)--(.8,0) node[midway,above] {蒸发冷却};
+  \draw[thick] (2.25,0) circle(.29); \fill[blue!12] (2.25,0) circle(.29);
+  \draw[<->] (1.96,-.6)--(2.54,-.6) node[midway,below] {$2R_1/5$};
+  \node[below,align=center] at (2.25,-1.0) {冷却后：$N_2=N_1/25$\\$E_2=E_1/125$，$\bar E_2=\bar E_1/5$};
+  \node[below] at (0,-2.72) {解析辅助图：半径收缩时的原子数与势能比例};
+\end{tikzpicture}

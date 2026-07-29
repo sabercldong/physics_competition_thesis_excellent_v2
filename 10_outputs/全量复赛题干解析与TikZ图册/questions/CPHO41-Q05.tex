@@ -1,0 +1,19 @@
+\section{第41届复赛第5题：Ioffe磁阱与蒸发冷却}
+\subsection{题干}
+四根无限长直导线穿过边长为 $a$、$b$ 的长方形四个顶点，电流大小均为 $I$，方向如图5a。以中心 $O$ 为原点，研究原点附近 $P(x,y,0)$ 的磁场；进而证明磁矩原子的势能，求磁矩与局域磁场反向时的约束力，并分析半径从 $R_1$ 缩至 $R_1/5$、密度保持不变的蒸发冷却过程。
+\begin{figure}[htbp]\centering\input{tikz/CPHO41-Q05-figure5a.tex}\caption{第41届复赛第5题原题图5a的TikZ重绘。}\end{figure}
+\subsection{参考解答整理}
+无限长直导线在距导线 $r$ 处产生 $B=\mu_0I/(2\pi r)$。由四根导线的对称性，$O$ 点磁场为零。对 $x\ll a$、$y\ll b$，答案给出原点附近的领头阶近似
+\[B_x=-\frac{16\mu_0abI}{\pi(a^2+b^2)^2}x,\qquad B_y=\frac{16\mu_0abI}{\pi(a^2+b^2)^2}y,\]
+\[B=\frac{16\mu_0abI}{\pi(a^2+b^2)^2}\sqrt{x^2+y^2}.\]
+原子磁矩在磁场中的势能为 $W_m=-\boldsymbol S\cdot\boldsymbol B$。本题通过实验使磁矩始终与磁场反向，故以 $O$ 为势能零点时
+\[W_m=\frac{16\mu_0abIS}{\pi(a^2+b^2)^2}\sqrt{x^2+y^2},\]
+且约束力指向原点：
+\[F_x=-\frac{16\mu_0abIS}{\pi(a^2+b^2)^2}\frac{x}{\sqrt{x^2+y^2}},\qquad F_y=-\frac{16\mu_0abIS}{\pi(a^2+b^2)^2}\frac{y}{\sqrt{x^2+y^2}}.\]
+
+半径为 $R_1$ 的均匀原子团有 $N_1=n\pi R_1^2$；其总势能和平均势能分别为
+\[E_1=\frac{32\mu_0abISn}{3(a^2+b^2)^2}R_1^3,\qquad \bar E_1=\frac{32\mu_0abIS}{3\pi(a^2+b^2)^2}R_1.\]
+冷却后 $R_2=R_1/5$，故 $N_2=N_1/25$、$E_2=E_1/125$、$\bar E_2=\bar E_1/5$。下图为解析辅助图，不是原题图。
+\begin{figure}[htbp]\centering\input{tikz/CPHO41-Q05-evaporation.tex}\caption{第41届复赛第5题解析辅助图：蒸发冷却后的半径收缩与量的比例。}\end{figure}
+\subsection{转写依据}
+题干依据 \texttt{CPHO41-Q05\_transcription\_v1.md}；公式与分值依据答案第11至13页和 \texttt{CPHO41-Q05\_formula\_check\_v1.csv}。图5a由原题图重绘；蒸发冷却图为明确标注的解析辅助图。

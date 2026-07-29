@@ -1,0 +1,14 @@
+\begin{tikzpicture}[>=Stealth,scale=.88]
+  \draw[densely dotted,thick] (-2,-1.45) rectangle (2,1.45);
+  \draw[->,very thick] (-2.65,0)--(2.75,0) node[right] {$x$};
+  \draw[->,very thick] (0,-2.05)--(0,2.15) node[above] {$y$};
+  \node[below left] at (0,0) {$O$};
+  \draw[fill=white,thick] (-2,1.45) circle(.22); \node at (-2,1.45) {$\odot$}; \node[above] at (-2,1.7) {$I$};
+  \draw[fill=white,thick] (2,1.45) circle(.22); \node at (2,1.45) {$\otimes$}; \node[above] at (2,1.7) {$I$};
+  \draw[fill=white,thick] (-2,-1.45) circle(.22); \node at (-2,-1.45) {$\otimes$}; \node[below] at (-2,-1.7) {$I$};
+  \draw[fill=white,thick] (2,-1.45) circle(.22); \node at (2,-1.45) {$\odot$}; \node[below] at (2,-1.7) {$I$};
+  \fill (0.7,.62) circle(1.5pt); \node[above right] at (.7,.62) {$P(x,y)$};
+  \draw[<->] (-2,-1.75)--(2,-1.75) node[midway,below] {$a$};
+  \draw[<->] (2.35,-1.45)--(2.35,1.45) node[midway,right] {$b$};
+  \node[below,align=center] at (0,-2.48) {原题图5a：四根无限长直导线构成的 Ioffe 势阱};
+\end{tikzpicture}
