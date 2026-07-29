@@ -18,6 +18,7 @@
 | 科学推理 | 根据物理规律、题设条件和数学关系建立条件到结论的链条 | 是否要求组织条件、规律与目标量之间的关系 |
 | 科学论证 | 通过理由、比较、检验、边界分析或假设辩护支持结论 | 是否要求说明结论的依据、比较或适用范围 |
 | 质疑创新 | 在题目要求下处理假设、比较替代解释、修正模型或提出方案 | 是否要求改变假设、比较方案或处理模型失效 |
+: 科学思维四维度的试题任务分析定义
 
 四个维度能够覆盖复赛试题中从物理对象抽象、规律推演到结论论证和方案拓展的主要任务要求。它们关注的是解题过程中需要完成的认知活动：知识点说明“考查什么”，难度反映任务完成的总体负荷，解法步骤呈现“如何作答”，而科学思维维度揭示“作答过程中需要运用何种思维方式”。因此，四个维度可与知识模块、题目难度和解答步骤并列分析，但不相互替代。
 
@@ -61,6 +62,7 @@ SOLO理论在本研究中只作为“认知结构复杂性”的启发来源，�
 | L2 | 多要素并列要求 | 需要并列处理多个对象、条件或关系 | 多个公式并列不必然形成整合 |
 | L3 | 多要素关联整合要求 | 需要把多个条件、规律或表征组织为完整链条 | 需要有明确关系整合证据 |
 | L4 | 抽象迁移或拓展要求 | 需要在陌生情境中迁移、修正、一般化或构造方案 | 不能因背景新颖或计算复杂而自动判为L4 |
+: SOLO启发的任务认知结构等级
 
 Biggs与Collis关于校本课程与评价的讨论同样把SOLO用于表述课程目标和学生在具体主题中的表现层级，而非把题目文本本身视作学生已经达到的学习结果。这一应用背景进一步提示本研究把“任务要求”和“学生表现”分开保存；它不直接给出当前四维编码或L1至L4的效度依据。[引文占位：SOLO-002；PDF页1、11至12；仅支持课程/评价语境中的任务—学生表现边界，不迁移课程目标、学生水平或教学结论]
 
@@ -127,6 +129,7 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
 | 结构等级 | 出现维度的认知结构要求深度 | L1至L4与相邻等级说明 | 呈现同一维度内部的组织要求 |
 | 组合关系 | 同一小问中多个维度是否共现 | 共现表和典型组合 | 呈现任务要求如何共同出现 |
 | 案例机制 | 典型小问的题设机制 | 题干证据、解答步骤和机制解释 | 将统计结果还原为具体物理任务 |
+: 两层编码框架的分析层次
 
 维度和等级的每一项定义均配套理论来源、操作定义以及正反例或边界例。理论来源说明为什么选择这一观察角度，操作定义说明在试题中观察什么，边界例则说明什么情形不应被纳入。三类材料共同构成编码规则的解释基础。
 
@@ -150,9 +153,36 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
 
 本研究的理论框架可以概括为“课程与文献概念到编码框架，再到试题结果与教学转化”的链条。
 
-![试题任务认知要求分析理论框架图](08_manuscript/figures/figure_2_1_r01_theoretical_framework_v1.png)
-
-图2-1 试题任务认知要求分析的理论框架。
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=7mm and 12mm,
+  every node/.style={font=\small},
+  source/.style={thesisbox,text width=5.1cm,minimum height=1.35cm},
+  core/.style={thesisbox,text width=6.2cm,minimum height=1.55cm,fill=ThesisGold!12},
+  output/.style={thesisbox,text width=3.75cm,minimum height=1.35cm}
+]
+  \node[source] (science) {\textbf{科学思维的课程与研究表述}\\[-1pt]\footnotesize 模型建构、科学推理、科学论证、质疑创新};
+  \node[source,right=of science] (solo) {\textbf{SOLO理论与内容分析方法}\\[-1pt]\footnotesize 任务结构层次、分析单位、判定证据与复核规则};
+  \coordinate (source-bottom-mid) at ($(science.south)!0.5!(solo.south)$);
+  \node[core,below=9mm of source-bottom-mid] (coding) {\textbf{两层任务编码框架}\\[-1pt]\footnotesize 第一层：维度是否出现\quad 第二层：出现维度的结构等级L1至L4};
+  \node[source,below=of coding] (evidence) {\textbf{小问级语料与证据链}\\[-1pt]\footnotesize 219个分析单元；题干、参考解答及相邻等级排除理由};
+  \node[output,below left=8mm and -2mm of evidence] (distribution) {\textbf{总体结构}\\[-1pt]\footnotesize 维度分布、等级构成、共现与分组};
+  \node[output,below right=8mm and -2mm of evidence] (mechanism) {\textbf{案例机制}\\[-1pt]\footnotesize 条件、模型、关系链、比较与边界};
+  \node[core,below=9mm of $(distribution)!0.5!(mechanism)$,fill=ThesisTeal!11] (teaching) {\textbf{教学转化设计}\\[-1pt]\footnotesize 将已识别的任务结构转化为学习任务、支架与可观察评价证据};
+  \draw[thesisarrow] (science) -- (coding);
+  \draw[thesisarrow] (solo) -- (coding);
+  \draw[thesisarrow] (coding) -- (evidence);
+  \draw[thesisarrow] (evidence) -- (distribution);
+  \draw[thesisarrow] (evidence) -- (mechanism);
+  \draw[thesisarrow] (distribution) -- (teaching);
+  \draw[thesisarrow] (mechanism) -- (teaching);
+\end{tikzpicture}
+\caption{试题任务认知要求分析的理论框架}
+\label{fig:theoretical-framework}
+\end{figure}
+```
 
 从图2-1可以看到，理论概念并不直接导出教学结论，而是需要经过操作化、语料编码和案例解释三个环节。课程标准和相关理论提供维度选择的依据，编码手册将抽象概念转化为可判定的规则，描述统计呈现全样本中的任务结构分布，案例分析再把分布中的典型结构还原为具体题设与解答。教学设计建议位于这一链条的末端，其作用是把已经识别的任务结构转化为可实施的学习活动，而不是把统计比例直接转换为教学成效。
 

@@ -24,6 +24,7 @@
 | 科学推理 | 219 | 219 | 100.00% |
 | 科学论证 | 106 | 219 | 48.40% |
 | 质疑创新 | 84 | 219 | 38.36% |
+: 四维度在分析单元中的出现情况
 
 在本语料和本编码口径下，科学推理被判为出现于全部219个分析单元，模型建构出现于203个单元；科学论证与质疑创新分别出现于106个和84个单元。这些比例用于描述试题及其参考解答要求何种认知活动，不能被解释为学生在四个维度上的真实优势、短板或学习结果。
 
@@ -35,9 +36,34 @@
 
 四维度的分母相同，因此表4-1可作同一语料内的出现频数比较；但它不能把不同维度相加为“总思维分”，也不能将同一小问中的多个维度视为相互排斥。后续的等级和共现结果正是分别处理这两个问题：前者只在维度已经出现时判断任务结构，后者则保留同一小问可以同时提出多类要求的事实。
 
-![图4-1 四维度在分析单元中的出现比例](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_1_dimension_presence_r01_v1.png)
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=0.092cm,y=1.0cm,font=\small]
+  \foreach \x in {0,20,...,100} {
+    \draw[ThesisGrid,line width=.45pt] (\x,-0.45) -- (\x,3.48);
+    \node[font=\footnotesize,text=ThesisInk] at (\x,-0.76) {\x\%};
+  }
+  \draw[ThesisNavy,line width=.65pt] (0,-0.45) -- (100,-0.45);
+  \node[anchor=east] at (-2.2,3) {模型建构};
+  \node[anchor=east] at (-2.2,2) {科学推理};
+  \node[anchor=east] at (-2.2,1) {科学论证};
+  \node[anchor=east] at (-2.2,0) {质疑创新};
+  \fill[ThesisBlue] (0,2.73) rectangle (92.69,3.27);
+  \fill[ThesisTeal] (0,1.73) rectangle (100,2.27);
+  \fill[ThesisRust] (0,0.73) rectangle (48.40,1.27);
+  \fill[ThesisGold] (0,-0.27) rectangle (38.36,0.27);
+  \node[anchor=west,font=\footnotesize] at (94.2,3) {203（92.69\%）};
+  \node[anchor=east,font=\footnotesize,text=white] at (98.3,2) {219（100.00\%）};
+  \node[anchor=west,font=\footnotesize] at (49.9,1) {106（48.40\%）};
+  \node[anchor=west,font=\footnotesize] at (39.9,0) {84（38.36\%）};
+\end{tikzpicture}
+\caption{四维度在219个分析单元中的出现比例}
+\label{fig:dimension-presence}
+\end{figure}
+```
 
-图4-1 四维度在219个分析单元中的出现比例。每条右侧同时标示单元数与百分比，百分比均以219为分母。
+图中每条右侧同时标示单元数与百分比，百分比均以219为分母。
 
 ### 4.2.2 四维度的任务功能
 
@@ -59,6 +85,7 @@
 | 科学推理 | 219 | 121 (55.25%) | 81 (36.99%) | 17 (7.76%) | 0 (0.00%) |
 | 科学论证 | 106 | 79 (74.53%) | 16 (15.09%) | 11 (10.38%) | 0 (0.00%) |
 | 质疑创新 | 84 | 20 (23.81%) | 51 (60.71%) | 5 (5.95%) | 8 (9.52%) |
+: 四维度的等级构成
 
 在各维度被判为出现的单元中，模型建构、科学推理和科学论证的L1占比均最高；质疑创新以L2占比最高。这里的L1至L4仅表示SOLO启发的任务认知结构要求，不能等同于题目难度、学生作答质量或学生实际学习结果。
 
@@ -72,9 +99,51 @@
 
 等级分布的教学意义在于帮助教师识别任务中需要额外显性化的环节。若一个小问的科学推理表现为L3，教学中可要求学生展示条件、规律和中间关系的连接；若模型建构表现为L3，则可要求学生说明对象、假设和变量如何共同构成模型；若质疑创新进入较高等级，则可设计替代方案、修正假设或比较限制条件的追问。通过把等级还原为具体任务结构，等级统计才能成为选题与改题的参考。
 
-![图4-2 四维度的等级构成](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png)
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=0.082cm,y=1.0cm,font=\small]
+  \foreach \x in {0,20,...,100} {
+    \draw[ThesisGrid,line width=.45pt] (\x,-0.46) -- (\x,3.48);
+    \node[font=\footnotesize] at (\x,-0.78) {\x\%};
+  }
+  \node[anchor=east] at (-2.2,3) {模型建构};
+  \node[anchor=east] at (-2.2,2) {科学推理};
+  \node[anchor=east] at (-2.2,1) {科学论证};
+  \node[anchor=east] at (-2.2,0) {质疑创新};
+  \fill[ThesisBlue] (0,2.72) rectangle (53.69,3.28);
+  \fill[ThesisTeal] (53.69,2.72) rectangle (64.53,3.28);
+  \fill[ThesisRust] (64.53,2.72) rectangle (100,3.28);
+  \fill[ThesisBlue] (0,1.72) rectangle (55.25,2.28);
+  \fill[ThesisTeal] (55.25,1.72) rectangle (92.24,2.28);
+  \fill[ThesisRust] (92.24,1.72) rectangle (100,2.28);
+  \fill[ThesisBlue] (0,0.72) rectangle (74.53,1.28);
+  \fill[ThesisTeal] (74.53,0.72) rectangle (89.62,1.28);
+  \fill[ThesisRust] (89.62,0.72) rectangle (100,1.28);
+  \fill[ThesisBlue] (0,-0.28) rectangle (23.81,0.28);
+  \fill[ThesisTeal] (23.81,-0.28) rectangle (84.52,0.28);
+  \fill[ThesisRust] (84.52,-0.28) rectangle (90.47,0.28);
+  \fill[ThesisGold] (90.47,-0.28) rectangle (100,0.28);
+  \node[text=white,font=\footnotesize] at (26.85,3) {53.69\%};
+  \node[text=white,font=\footnotesize] at (82.27,3) {35.47\%};
+  \node[text=white,font=\footnotesize] at (27.63,2) {55.25\%};
+  \node[text=white,font=\footnotesize] at (73.75,2) {36.99\%};
+  \node[text=white,font=\footnotesize] at (37.27,1) {74.53\%};
+  \node[text=white,font=\footnotesize] at (11.91,0) {23.81\%};
+  \node[text=white,font=\footnotesize] at (54.17,0) {60.71\%};
+  \begin{scope}[shift={(8,-1.34)},font=\footnotesize]
+    \fill[ThesisBlue] (0,0) rectangle (3.4,0.28); \node[anchor=west] at (4.2,0.14) {L1};
+    \fill[ThesisTeal] (15,0) rectangle (18.4,0.28); \node[anchor=west] at (19.2,0.14) {L2};
+    \fill[ThesisRust] (30,0) rectangle (33.4,0.28); \node[anchor=west] at (34.2,0.14) {L3};
+    \fill[ThesisGold] (45,0) rectangle (48.4,0.28); \node[anchor=west] at (49.2,0.14) {L4};
+  \end{scope}
+\end{tikzpicture}
+\caption{四维度的等级构成}
+\label{fig:level-distribution}
+\end{figure}
+```
 
-图4-2 四维度的等级构成。每一横条以该维度已出现的单元为分母，横条内部标示比例。
+每一横条以该维度已出现的单元为分母，色块宽度表示相应等级的比例；较窄色块的精确数值见表4-2。
 
 ### 4.3.2 模型建构与科学推理的等级组配
 
@@ -86,6 +155,7 @@
 | L2 | 11 | 11 | 0 | 22 |
 | L3 | 39 | 26 | 7 | 72 |
 | 合计 | 106 | 81 | 16 | 203 |
+: 模型建构与科学推理的等级组配
 
 表4-3显示，模型建构L1与科学推理L1或L2的组配分别为56个和44个单元，构成较为常见的任务形态：模型或研究对象相对明确，但仍需要在一个或多个条件下建立关系。模型建构L3与科学推理L1、L2、L3的组配分别为39个、26个和7个单元，表明较高的模型组织要求并不必然伴随同等级的长推演链。有些小问的主要难点在于确定对象、状态、边界或近似，一旦模型确定，后续推理可以相对直接；另一些小问则需要同时组织模型和多重关系。
 
@@ -93,9 +163,51 @@
 
 等级组配的教学意义在于使支架更有针对性。对于“模型建构L3—科学推理L1”的任务，教师可重点要求学生说明系统边界、状态条件或近似假设，而不必用冗长的关系图替代必要推导；对于“模型建构L1—科学推理L3”的任务，则更适合要求学生画出条件—规律—中间量的关系链。只有将两类等级放在同一任务中阅读，等级统计才可能转化为具体的选题和评讲依据。
 
-![图4-3 模型建构与科学推理的等级组配](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_3_model_reasoning_level_pair_r01_v1.png)
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small]
+  \node[font=\small\bfseries,text=ThesisInk] at (3.15,4.0) {科学推理等级};
+  \node[rotate=90,font=\small\bfseries,text=ThesisInk] at (-1.15,1.5) {模型建构等级};
+  \foreach \x/\lab in {1.05/L1,3.15/L2,5.25/L3} {
+    \node[font=\small\bfseries] at (\x,3.42) {\lab};
+  }
+  \foreach \y/\lab in {2.5/L1,1.5/L2,0.5/L3} {
+    \node[font=\small\bfseries] at (-0.42,\y) {\lab};
+  }
+  \filldraw[fill=ThesisTeal!100,draw=white,line width=1pt] (0,2) rectangle (2.1,3);
+  \filldraw[fill=ThesisTeal!82,draw=white,line width=1pt] (2.1,2) rectangle (4.2,3);
+  \filldraw[fill=ThesisTeal!25,draw=white,line width=1pt] (4.2,2) rectangle (6.3,3);
+  \filldraw[fill=ThesisTeal!28,draw=white,line width=1pt] (0,1) rectangle (2.1,2);
+  \filldraw[fill=ThesisTeal!28,draw=white,line width=1pt] (2.1,1) rectangle (4.2,2);
+  \filldraw[fill=ThesisTeal!10,draw=white,line width=1pt] (4.2,1) rectangle (6.3,2);
+  \filldraw[fill=ThesisTeal!72,draw=white,line width=1pt] (0,0) rectangle (2.1,1);
+  \filldraw[fill=ThesisTeal!50,draw=white,line width=1pt] (2.1,0) rectangle (4.2,1);
+  \filldraw[fill=ThesisTeal!22,draw=white,line width=1pt] (4.2,0) rectangle (6.3,1);
+  \node[text=white,font=\large\bfseries] at (1.05,2.5) {56};
+  \node[text=white,font=\large\bfseries] at (3.15,2.5) {44};
+  \node[text=ThesisInk,font=\large\bfseries] at (5.25,2.5) {9};
+  \node[text=ThesisInk,font=\large\bfseries] at (1.05,1.5) {11};
+  \node[text=ThesisInk,font=\large\bfseries] at (3.15,1.5) {11};
+  \node[text=ThesisInk,font=\large\bfseries] at (5.25,1.5) {0};
+  \node[text=white,font=\large\bfseries] at (1.05,0.5) {39};
+  \node[text=ThesisInk,font=\large\bfseries] at (3.15,0.5) {26};
+  \node[text=ThesisInk,font=\large\bfseries] at (5.25,0.5) {7};
+  \node[fill=ThesisPale,minimum width=1.2cm,minimum height=1cm,font=\bfseries] at (7.0,2.5) {109};
+  \node[fill=ThesisPale,minimum width=1.2cm,minimum height=1cm,font=\bfseries] at (7.0,1.5) {22};
+  \node[fill=ThesisPale,minimum width=1.2cm,minimum height=1cm,font=\bfseries] at (7.0,0.5) {72};
+  \node[font=\footnotesize,text=ThesisInk] at (7.0,3.42) {行合计};
+  \node[fill=ThesisPale,minimum width=2.1cm,minimum height=.72cm,font=\bfseries] at (1.05,-0.55) {106};
+  \node[fill=ThesisPale,minimum width=2.1cm,minimum height=.72cm,font=\bfseries] at (3.15,-0.55) {81};
+  \node[fill=ThesisPale,minimum width=2.1cm,minimum height=.72cm,font=\bfseries] at (5.25,-0.55) {16};
+  \node[font=\footnotesize,text=ThesisInk] at (-0.42,-0.55) {列合计};
+\end{tikzpicture}
+\caption{模型建构与科学推理的等级组配}
+\label{fig:model-reasoning-pair}
+\end{figure}
+```
 
-图4-3 模型建构与科学推理的等级组配。纵轴为模型建构等级，横轴为科学推理等级，方格中的数字为分析单元数。
+纵轴为模型建构等级，横轴为科学推理等级，方格中的数字为分析单元数；颜色越深表示该组配的频数越高。
 
 ## 4.4 维度组合与共现
 
@@ -113,6 +225,7 @@
 | 科学推理—科学论证 | 106 | 219 | 0.4840 |
 | 科学推理—质疑创新 | 84 | 219 | 0.3836 |
 | 科学论证—质疑创新 | 40 | 150 | 0.2667 |
+: 四维度两两共现关系
 
 表4-4中的Jaccard系数只是集合重叠程度的描述指标，不是相关系数、效应量或因果指标。科学论证与质疑创新的交集为40个单元，既说明两类要求可共同出现，也保留了各自单独出现的情况：科学论证出现而质疑创新未出现的单元为66个，质疑创新出现而科学论证未出现的单元为44个。
 
@@ -135,6 +248,7 @@
 | 模型建构、科学推理、质疑创新 | 44 | 20.09% |
 | 模型建构、科学推理、科学论证、质疑创新 | 40 | 18.26% |
 | 科学推理 | 16 | 7.31% |
+: 五类完整维度组合
 
 表4-5中的五类组合没有高低之分，而是对应不同的题目处理重点。66个“模型建构—科学推理—科学论证”单元表明，在相当一部分小问中，完成任务不仅要确定模型并推导结论，还要对比较、条件或结论边界作出说明。53个“模型建构—科学推理”单元则较集中地体现了在模型内建立关系的基本任务结构。44个包含质疑创新而不含科学论证的单元，提示有些任务直接要求改变条件、比较方案或重新处理假设，但并不必然要求以独立的论证形式说明既有结论。
 
@@ -142,9 +256,37 @@
 
 从教学组织看，表4-5为题目组合提供了一个较直接的选题依据。若目标是训练由模型到结论再到适用范围的完整表达，可优先选取“模型建构—科学推理—科学论证”或四维同时出现的题目；若目标是训练既定模型内的关系推演，可选择“模型建构—科学推理”或仅科学推理的题目；若目标是训练条件改变后的方案调整，则可从含有质疑创新的两类组合中选取材料。这样的分类不替代对具体题目的阅读，而是使教师能够先按任务结构筛选，再结合知识模块、情境与学生基础调整题目。
 
-![图4-4 五类完整任务组合的构成](/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_4_dimension_patterns_r01_v1.png)
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=0.096cm,y=1.0cm,font=\small]
+  \foreach \x in {0,20,40,60} {
+    \draw[ThesisGrid,line width=.45pt] (\x,-0.45) -- (\x,4.48);
+    \node[font=\footnotesize] at (\x,-0.76) {\x};
+  }
+  \node[anchor=east] at (-2,4) {模型建构、科学推理、科学论证};
+  \node[anchor=east] at (-2,3) {模型建构、科学推理};
+  \node[anchor=east] at (-2,2) {模型建构、科学推理、质疑创新};
+  \node[anchor=east] at (-2,1) {四维同时出现};
+  \node[anchor=east] at (-2,0) {仅科学推理};
+  \fill[ThesisTeal] (0,3.72) rectangle (66,4.28);
+  \fill[ThesisBlue] (0,2.72) rectangle (53,3.28);
+  \fill[ThesisGold] (0,1.72) rectangle (44,2.28);
+  \fill[ThesisRust] (0,0.72) rectangle (40,1.28);
+  \fill[ThesisLavender] (0,-0.28) rectangle (16,0.28);
+  \node[anchor=west,font=\footnotesize] at (67.5,4) {66（30.14\%）};
+  \node[anchor=west,font=\footnotesize] at (54.5,3) {53（24.20\%）};
+  \node[anchor=west,font=\footnotesize] at (45.5,2) {44（20.09\%）};
+  \node[anchor=west,font=\footnotesize] at (41.5,1) {40（18.26\%）};
+  \node[anchor=west,font=\footnotesize] at (17.5,0) {16（7.31\%）};
+  \node[font=\footnotesize,text=ThesisInk] at (33,-1.22) {分析单元数};
+\end{tikzpicture}
+\caption{五类完整任务组合的构成}
+\label{fig:dimension-patterns}
+\end{figure}
+```
 
-图4-4 五类完整任务组合的构成。五种组合覆盖全部219个分析单元，图中百分比均以219为分母。
+五种组合覆盖全部219个分析单元，图中百分比均以219为分母。
 
 ## 4.5 届次、知识模块与元数据结构复算输出
 
@@ -164,6 +306,7 @@
 | 第40届（2023） | 36 | 100.00% | 100.00% | 52.78% | 75.00% |
 | 第41届（2024） | 32 | 100.00% | 100.00% | 68.75% | 25.00% |
 | 第42届（2025） | 29 | 100.00% | 100.00% | 79.31% | 10.34% |
+: 各届次四维度出现比例
 
 从届次表可以看到，科学推理在八届语料中均处于稳定的基础位置；这与复赛小问通常要求建立物理关系、完成定量或定性推演的任务性质相一致。模型建构、科学论证和质疑创新则在不同届次呈现不同构成，提示具体试卷中的题材选择、问题组织和问法会改变任务结构的组合方式。因而，届次表更适合用于定位“哪一届、哪一类任务值得进一步阅读”，而不适合把某一个百分比直接解释为命题质量的升降。
 
@@ -178,6 +321,7 @@
 | 电磁学 | 18 | 100.00% | 100.00% | 0.00% | 50.00% |
 | 近代物理 | 22 | 100.00% | 100.00% | 63.64% | 45.45% |
 | 热学 | 5 | 100.00% | 100.00% | 40.00% | 0.00% |
+: 单一主模块四维度出现比例
 
 知识模块分布同样需要结合题目的具体任务理解。力学样本量最大，包含运动、引力、碰撞、振动等多种题材，因此其四维度比例是多种任务结构的汇总；光学、近代物理和电磁学中的比例则可能受相对集中的情境、图像条件和模型假设影响。表4-7的价值在于提供案例检索线索：若需要讨论论证要求较为突出的任务，可以从光学或近代物理的相应单元回到题干与解答查找；若需要讨论模型设定与变量关系，则可从模型建构出现较多的模块中选择材料。
 
@@ -191,6 +335,7 @@
 |---|---:|---:|---:|---:|---:|
 | 3 | 175 | 93.71% | 100.00% | 50.29% | 43.43% |
 | 4 | 42 | 88.10% | 100.00% | 42.86% | 14.29% |
+: 表征要素数分组的四维度出现比例
 
 表4-8中的两层均来自同一语料索引，科学推理均为100.00%。三个要素层与四个要素层的模型建构出现比例分别为93.71%和88.10%，科学论证分别为50.29%和42.86%，质疑创新分别为43.43%和14.29%。这些并列值只能帮助回到相应的题面材料查找案例：它们可能同时受题材、拆分方式、具体表述和原始元数据记录颗粒度影响，不能说明增加一种表征会降低或提高任何维度要求，也不构成组间差异检验。
 
@@ -200,6 +345,7 @@
 | 4 | 71 | 95.77% | 100.00% | 59.15% | 39.44% |
 | 5 | 74 | 94.59% | 100.00% | 37.84% | 36.49% |
 | 6 | 34 | 73.53% | 100.00% | 26.47% | 26.47% |
+: 数学工具要素数分组的四维度出现比例
 
 表4-9同样不把要素数理解为“使用公式越多，任务层次越高”。在3、4、5、6项工具的四个层中，科学论证出现比例依次为58.06%、59.15%、37.84%和26.47%，质疑创新依次为64.52%、39.44%、36.49%和26.47%，并未呈现可由本研究解释的单调关系。更合理的用途是作为案例抽取和后续课堂任务设计的检索入口：若需讨论特定工具组合，应回到该层的题干—解答证据逐题分析，而不能把此表升级为“数学工具数量导致某类科学思维要求”的结论。
 

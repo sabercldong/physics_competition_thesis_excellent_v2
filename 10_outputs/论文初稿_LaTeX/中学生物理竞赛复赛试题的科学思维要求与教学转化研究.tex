@@ -61,28 +61,35 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
-\makeatletter
-\newsavebox\pandoc@box
-\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
-  \sbox\pandoc@box{#1}%
-  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
-  \Gscale@div\@tempb{.86\linewidth}{\wd\pandoc@box}%
-  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
-  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
-  \else\usebox{\pandoc@box}%
-  \fi%
-}
-% Set default figure placement to htbp
-\def\fps@figure{htbp}
-\makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \sloppy
 \setlength{\parindent}{2em}
 \setlength{\parskip}{0pt}
-\renewcommand{\arraystretch}{1.18}
+\renewcommand{\arraystretch}{1.22}
+\setlength{\tabcolsep}{4.8pt}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning}
+\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning,fit,matrix}
+\usepackage{colortbl}
+\usepackage{caption}
+\usepackage{etoolbox}
+\usepackage{float}
+\usepackage{flafter}
+\definecolor{ThesisNavy}{HTML}{244A64}
+\definecolor{ThesisBlue}{HTML}{4E7896}
+\definecolor{ThesisTeal}{HTML}{4F8A83}
+\definecolor{ThesisRust}{HTML}{B7654A}
+\definecolor{ThesisGold}{HTML}{C49A45}
+\definecolor{ThesisLavender}{HTML}{80728F}
+\definecolor{ThesisInk}{HTML}{25333C}
+\definecolor{ThesisGrid}{HTML}{D8E0E5}
+\definecolor{ThesisPale}{HTML}{EDF3F6}
+\tikzset{every picture/.style={line cap=round,line join=round},thesisbox/.style={draw=ThesisNavy,line width=.65pt,rounded corners=2pt,fill=ThesisPale,text=ThesisInk,align=center,inner xsep=8pt,inner ysep=5pt},thesisarrow/.style={-{Stealth[length=2.2mm]},line width=.75pt,draw=ThesisNavy}}
+\captionsetup{font=small,labelfont=bf,labelsep=quad,skip=6pt}
+\renewcommand{\thefigure}{\thechapter-\arabic{figure}}
+\renewcommand{\thetable}{\thechapter-\arabic{table}}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{9pt}
+\AtBeginEnvironment{longtable}{\small\arrayrulecolor{ThesisNavy!55}}
 \ctexset{chapter={beforeskip=18pt,afterskip=20pt},section={beforeskip=16pt,afterskip=10pt},subsection={beforeskip=12pt,afterskip=7pt}}
 \let\cleardoublepage\clearpage
 \providecommand{\tightlist}{%
@@ -270,9 +277,46 @@ content analysis; task cognitive requirements
 
 技术路线如下：
 
-\noindent\pandocbounded{\includegraphics[keepaspectratio]{08_manuscript/figures/figure_1_1_r01_technical_route_v1.png}}
-
-图1-1 试题分析与教学转化技术路线。
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=6mm and 5mm,
+  every node/.style={font=\small},
+  stage/.style={thesisbox,text width=2.75cm,minimum height=1.45cm}
+]
+  \node[stage] (corpus) {\textbf{试题语料}\\[-1pt]\footnotesize 第35至42届复赛题与参考解答};
+  \node[stage,right=of corpus] (unit) {\textbf{分析单位}\\[-1pt]\footnotesize 按独立设问拆分为219个小问};
+  \node[stage,right=of unit] (framework) {\textbf{分析框架}\\[-1pt]\footnotesize 四维度与SOLO启发结构等级};
+  \node[stage,right=of framework] (coding) {\textbf{独立编码}\\[-1pt]\footnotesize 两名编码者形成876条记录};
+  \node[stage,below=of coding] (quality) {\textbf{质量控制}\\[-1pt]\footnotesize 一致性检验、分歧裁决与证据复核};
+  \node[stage,left=of quality] (statistics) {\textbf{描述分析}\\[-1pt]\footnotesize 出现比例、等级构成与共现关系};
+  \node[stage,left=of statistics] (cases) {\textbf{案例解释}\\[-1pt]\footnotesize 还原条件、模型、推理与边界机制};
+  \node[stage,left=of cases] (teaching) {\textbf{教学转化}\\[-1pt]\footnotesize 形成任务、支架与评价证据建议};
+  \draw[thesisarrow] (corpus) -- (unit);
+  \draw[thesisarrow] (unit) -- (framework);
+  \draw[thesisarrow] (framework) -- (coding);
+  \draw[thesisarrow] (coding) -- (quality);
+  \draw[thesisarrow] (quality) -- (statistics);
+  \draw[thesisarrow] (statistics) -- (cases);
+  \draw[thesisarrow] (cases) -- (teaching);
+  \coordinate (route-bottom-mid) at ($(teaching.south)!0.5!(quality.south)$);
+  \node[
+    draw=ThesisRust,
+    rounded corners=2pt,
+    fill=ThesisRust!7,
+    text=ThesisInk,
+    font=\footnotesize,
+    align=center,
+    inner xsep=8pt,
+    inner ysep=4pt,
+    below=7mm of route-bottom-mid
+  ] (boundary) {解释边界：统计结果描述试题任务要求，不直接推断学生能力或教学效果};
+  \draw[ThesisRust,dashed,line width=.65pt] (teaching.south) |- (boundary.west);
+  \draw[ThesisRust,dashed,line width=.65pt] (quality.south) |- (boundary.east);
+\end{tikzpicture}
+\caption{试题分析与教学转化技术路线}
+\label{fig:technical-route}
+\end{figure}
 
 研究按照``语料整理---框架建构---编码统计---案例解释---教学设计''的顺序展开。教学转化以试题任务结构为依据，形成可用于选题、评讲和评价的设计建议；其效果仍需由真实课堂研究进一步检验。
 
@@ -329,12 +373,24 @@ content analysis; task cognitive requirements
 
 四个维度的操作化方向如下：
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\caption{科学思维四维度的试题任务分析定义}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+维度
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+在试题任务分析中的含义
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+判定重点
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 维度
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -355,7 +411,6 @@ content analysis; task cognitive requirements
 质疑创新 & 在题目要求下处理假设、比较替代解释、修正模型或提出方案 &
 是否要求改变假设、比较方案或处理模型失效 \\
 \end{longtable}
-}
 
 四个维度能够覆盖复赛试题中从物理对象抽象、规律推演到结论论证和方案拓展的主要任务要求。它们关注的是解题过程中需要完成的认知活动：知识点说明``考查什么''，难度反映任务完成的总体负荷，解法步骤呈现``如何作答''，而科学思维维度揭示``作答过程中需要运用何种思维方式''。因此，四个维度可与知识模块、题目难度和解答步骤并列分析，但不相互替代。
 
@@ -401,13 +456,27 @@ SOLO理论在本研究中只作为``认知结构复杂性''的启发来源，用
 
 因此，本文采用``SOLO启发的任务认知结构要求等级''：
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\caption{SOLO启发的任务认知结构等级}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+等级
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+暂定名称
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+在试题分析中的含义
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+边界提醒
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 等级
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -430,7 +499,6 @@ L3 & 多要素关联整合要求 & 需要把多个条件、规律或表征组织
 L4 & 抽象迁移或拓展要求 & 需要在陌生情境中迁移、修正、一般化或构造方案 &
 不能因背景新颖或计算复杂而自动判为L4 \\
 \end{longtable}
-}
 
 Biggs与Collis关于校本课程与评价的讨论同样把SOLO用于表述课程目标和学生在具体主题中的表现层级，而非把题目文本本身视作学生已经达到的学习结果。这一应用背景进一步提示本研究把``任务要求''和``学生表现''分开保存；它不直接给出当前四维编码或L1至L4的效度依据。\textsuperscript{[10]}
 
@@ -500,13 +568,27 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
 
 本研究的指标结构如下：
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\caption{两层编码框架的分析层次}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+层次
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+编码对象
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+主要输出
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+分析作用
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 层次
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -529,7 +611,6 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
 案例机制 & 典型小问的题设机制 & 题干证据、解答步骤和机制解释 &
 将统计结果还原为具体物理任务 \\
 \end{longtable}
-}
 
 维度和等级的每一项定义均配套理论来源、操作定义以及正反例或边界例。理论来源说明为什么选择这一观察角度，操作定义说明在试题中观察什么，边界例则说明什么情形不应被纳入。三类材料共同构成编码规则的解释基础。
 
@@ -553,9 +634,34 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
 
 本研究的理论框架可以概括为``课程与文献概念到编码框架，再到试题结果与教学转化''的链条。
 
-\noindent\pandocbounded{\includegraphics[keepaspectratio]{08_manuscript/figures/figure_2_1_r01_theoretical_framework_v1.png}}
-
-图2-1 试题任务认知要求分析的理论框架。
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=7mm and 12mm,
+  every node/.style={font=\small},
+  source/.style={thesisbox,text width=5.1cm,minimum height=1.35cm},
+  core/.style={thesisbox,text width=6.2cm,minimum height=1.55cm,fill=ThesisGold!12},
+  output/.style={thesisbox,text width=3.75cm,minimum height=1.35cm}
+]
+  \node[source] (science) {\textbf{科学思维的课程与研究表述}\\[-1pt]\footnotesize 模型建构、科学推理、科学论证、质疑创新};
+  \node[source,right=of science] (solo) {\textbf{SOLO理论与内容分析方法}\\[-1pt]\footnotesize 任务结构层次、分析单位、判定证据与复核规则};
+  \coordinate (source-bottom-mid) at ($(science.south)!0.5!(solo.south)$);
+  \node[core,below=9mm of source-bottom-mid] (coding) {\textbf{两层任务编码框架}\\[-1pt]\footnotesize 第一层：维度是否出现\quad 第二层：出现维度的结构等级L1至L4};
+  \node[source,below=of coding] (evidence) {\textbf{小问级语料与证据链}\\[-1pt]\footnotesize 219个分析单元；题干、参考解答及相邻等级排除理由};
+  \node[output,below left=8mm and -2mm of evidence] (distribution) {\textbf{总体结构}\\[-1pt]\footnotesize 维度分布、等级构成、共现与分组};
+  \node[output,below right=8mm and -2mm of evidence] (mechanism) {\textbf{案例机制}\\[-1pt]\footnotesize 条件、模型、关系链、比较与边界};
+  \node[core,below=9mm of $(distribution)!0.5!(mechanism)$,fill=ThesisTeal!11] (teaching) {\textbf{教学转化设计}\\[-1pt]\footnotesize 将已识别的任务结构转化为学习任务、支架与可观察评价证据};
+  \draw[thesisarrow] (science) -- (coding);
+  \draw[thesisarrow] (solo) -- (coding);
+  \draw[thesisarrow] (coding) -- (evidence);
+  \draw[thesisarrow] (evidence) -- (distribution);
+  \draw[thesisarrow] (evidence) -- (mechanism);
+  \draw[thesisarrow] (distribution) -- (teaching);
+  \draw[thesisarrow] (mechanism) -- (teaching);
+\end{tikzpicture}
+\caption{试题任务认知要求分析的理论框架}
+\label{fig:theoretical-framework}
+\end{figure}
 
 从图2-1可以看到，理论概念并不直接导出教学结论，而是需要经过操作化、语料编码和案例解释三个环节。课程标准和相关理论提供维度选择的依据，编码手册将抽象概念转化为可判定的规则，描述统计呈现全样本中的任务结构分布，案例分析再把分布中的典型结构还原为具体题设与解答。教学设计建议位于这一链条的末端，其作用是把已经识别的任务结构转化为可实施的学习活动，而不是把统计比例直接转换为教学成效。
 
@@ -584,14 +690,30 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
 
 为使研究设计与证据范围相对应，表3-1将本研究的材料层、编码层、分析层和教学转化层分开呈现。各层之间并不是从题目文本直接推到学生能力或教学效果的线性关系，而是通过明确的输入、输出和限制逐层衔接。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\caption{研究材料、分析产出与解释边界}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+层面
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+研究材料
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+分析产出
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+本文用途
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+不作的推断
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 层面
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -617,7 +739,6 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
 转化层 & 六个典型案例与教学设计 & 任务、支架和评价产出建议 &
 教学设计建议 & 学生困难、教师共识或教学效果 \\
 \end{longtable}
-}
 
 表3-1的分层也决定了论文的论证顺序：第四章报告分析层结果，第五章将结果转化为教学设计材料。学生、教师或课堂资料属于另一类经验性证据，不能以题目或参考解答编码替代。
 
@@ -680,7 +801,6 @@ kappa、等级一致率和二次加权kappa。对142条分歧逐条讨论后形�
 
 表3-2列出双人编码的一致性结果。存在性统计的比较数为全部876对维度记录；等级统计只在双方均判断该维度出现时计算。因此，两个部分的分母不同，不应将等级kappa与存在性kappa直接作高低排序。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1111}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
@@ -689,7 +809,28 @@ kappa、等级一致率和二次加权kappa。对142条分歧逐条讨论后形�
   >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}@{}}
+\caption{双人编码一致性结果}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+范围
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+存在性比较数
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+存在性一致率
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Cohen's kappa
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+等级比较数
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+等级一致率
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+二次加权kappa
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 范围
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
@@ -715,7 +856,6 @@ Cohen's kappa
 科学论证 & 219 & 95.43\% & 0.9084 & 98 & 82.65\% & 0.4494 \\
 质疑创新 & 219 & 90.41\% & 0.8059 & 87 & 81.61\% & 0.8905 \\
 \end{longtable}
-}
 
 表3-2不以任何外部阈值将结果简单判为``优秀''或``合格''。尤其科学论证的等级比较仅有98对，其等级加权kappa应结合样本量、分歧类型和具体题目材料理解。研究保留分歧讨论记录，而不以一个总体指标替代边界案例的复核。
 
@@ -819,9 +959,15 @@ kappa为0.9053；在双方均判断维度出现的607对记录中，等级一致
 
 表4-1呈现四个维度在219个分析单元中的出现情况。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lrrr@{}}
+\caption{四维度在分析单元中的出现情况}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+维度 & 出现单元数 & 总单元数 & 出现比例 \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 维度 & 出现单元数 & 总单元数 & 出现比例 \\
 \midrule\noalign{}
 \endhead
@@ -832,7 +978,6 @@ kappa为0.9053；在双方均判断维度出现的607对记录中，等级一致
 科学论证 & 106 & 219 & 48.40\% \\
 质疑创新 & 84 & 219 & 38.36\% \\
 \end{longtable}
-}
 
 在本语料和本编码口径下，科学推理被判为出现于全部219个分析单元，模型建构出现于203个单元；科学论证与质疑创新分别出现于106个和84个单元。这些比例用于描述试题及其参考解答要求何种认知活动，不能被解释为学生在四个维度上的真实优势、短板或学习结果。
 
@@ -844,10 +989,32 @@ kappa为0.9053；在双方均判断维度出现的607对记录中，等级一致
 
 四维度的分母相同，因此表4-1可作同一语料内的出现频数比较；但它不能把不同维度相加为``总思维分''，也不能将同一小问中的多个维度视为相互排斥。后续的等级和共现结果正是分别处理这两个问题：前者只在维度已经出现时判断任务结构，后者则保留同一小问可以同时提出多类要求的事实。
 
-\noindent\pandocbounded{\includegraphics[keepaspectratio]{/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_1_dimension_presence_r01_v1.png}}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=0.092cm,y=1.0cm,font=\small]
+  \foreach \x in {0,20,...,100} {
+    \draw[ThesisGrid,line width=.45pt] (\x,-0.45) -- (\x,3.48);
+    \node[font=\footnotesize,text=ThesisInk] at (\x,-0.76) {\x\%};
+  }
+  \draw[ThesisNavy,line width=.65pt] (0,-0.45) -- (100,-0.45);
+  \node[anchor=east] at (-2.2,3) {模型建构};
+  \node[anchor=east] at (-2.2,2) {科学推理};
+  \node[anchor=east] at (-2.2,1) {科学论证};
+  \node[anchor=east] at (-2.2,0) {质疑创新};
+  \fill[ThesisBlue] (0,2.73) rectangle (92.69,3.27);
+  \fill[ThesisTeal] (0,1.73) rectangle (100,2.27);
+  \fill[ThesisRust] (0,0.73) rectangle (48.40,1.27);
+  \fill[ThesisGold] (0,-0.27) rectangle (38.36,0.27);
+  \node[anchor=west,font=\footnotesize] at (94.2,3) {203（92.69\%）};
+  \node[anchor=east,font=\footnotesize,text=white] at (98.3,2) {219（100.00\%）};
+  \node[anchor=west,font=\footnotesize] at (49.9,1) {106（48.40\%）};
+  \node[anchor=west,font=\footnotesize] at (39.9,0) {84（38.36\%）};
+\end{tikzpicture}
+\caption{四维度在219个分析单元中的出现比例}
+\label{fig:dimension-presence}
+\end{figure}
 
-图4-1
-四维度在219个分析单元中的出现比例。每条右侧同时标示单元数与百分比，百分比均以219为分母。
+图中每条右侧同时标示单元数与百分比，百分比均以219为分母。
 
 \subsection{四维度的任务功能}\label{ux56dbux7ef4ux5ea6ux7684ux4efbux52a1ux529fux80fd}
 
@@ -863,7 +1030,6 @@ kappa为0.9053；在双方均判断维度出现的607对记录中，等级一致
 
 表4-2的分母为每一维度被判定为``出现''的分析单元数，而不是219个全部分析单元。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
@@ -871,7 +1037,26 @@ kappa为0.9053；在双方均判断维度出现的607对记录中，等级一致
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}@{}}
+\caption{四维度的等级构成}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+维度
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+出现数
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+L1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+L2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+L3
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+L4
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 维度
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
@@ -897,7 +1082,6 @@ L4
 (0.00\%) \\
 质疑创新 & 84 & 20 (23.81\%) & 51 (60.71\%) & 5 (5.95\%) & 8 (9.52\%) \\
 \end{longtable}
-}
 
 在各维度被判为出现的单元中，模型建构、科学推理和科学论证的L1占比均最高；质疑创新以L2占比最高。这里的L1至L4仅表示SOLO启发的任务认知结构要求，不能等同于题目难度、学生作答质量或学生实际学习结果。
 
@@ -911,18 +1095,63 @@ L4
 
 等级分布的教学意义在于帮助教师识别任务中需要额外显性化的环节。若一个小问的科学推理表现为L3，教学中可要求学生展示条件、规律和中间关系的连接；若模型建构表现为L3，则可要求学生说明对象、假设和变量如何共同构成模型；若质疑创新进入较高等级，则可设计替代方案、修正假设或比较限制条件的追问。通过把等级还原为具体任务结构，等级统计才能成为选题与改题的参考。
 
-\noindent\pandocbounded{\includegraphics[keepaspectratio]{/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_2_level_distribution_r01_v1.png}}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=0.082cm,y=1.0cm,font=\small]
+  \foreach \x in {0,20,...,100} {
+    \draw[ThesisGrid,line width=.45pt] (\x,-0.46) -- (\x,3.48);
+    \node[font=\footnotesize] at (\x,-0.78) {\x\%};
+  }
+  \node[anchor=east] at (-2.2,3) {模型建构};
+  \node[anchor=east] at (-2.2,2) {科学推理};
+  \node[anchor=east] at (-2.2,1) {科学论证};
+  \node[anchor=east] at (-2.2,0) {质疑创新};
+  \fill[ThesisBlue] (0,2.72) rectangle (53.69,3.28);
+  \fill[ThesisTeal] (53.69,2.72) rectangle (64.53,3.28);
+  \fill[ThesisRust] (64.53,2.72) rectangle (100,3.28);
+  \fill[ThesisBlue] (0,1.72) rectangle (55.25,2.28);
+  \fill[ThesisTeal] (55.25,1.72) rectangle (92.24,2.28);
+  \fill[ThesisRust] (92.24,1.72) rectangle (100,2.28);
+  \fill[ThesisBlue] (0,0.72) rectangle (74.53,1.28);
+  \fill[ThesisTeal] (74.53,0.72) rectangle (89.62,1.28);
+  \fill[ThesisRust] (89.62,0.72) rectangle (100,1.28);
+  \fill[ThesisBlue] (0,-0.28) rectangle (23.81,0.28);
+  \fill[ThesisTeal] (23.81,-0.28) rectangle (84.52,0.28);
+  \fill[ThesisRust] (84.52,-0.28) rectangle (90.47,0.28);
+  \fill[ThesisGold] (90.47,-0.28) rectangle (100,0.28);
+  \node[text=white,font=\footnotesize] at (26.85,3) {53.69\%};
+  \node[text=white,font=\footnotesize] at (82.27,3) {35.47\%};
+  \node[text=white,font=\footnotesize] at (27.63,2) {55.25\%};
+  \node[text=white,font=\footnotesize] at (73.75,2) {36.99\%};
+  \node[text=white,font=\footnotesize] at (37.27,1) {74.53\%};
+  \node[text=white,font=\footnotesize] at (11.91,0) {23.81\%};
+  \node[text=white,font=\footnotesize] at (54.17,0) {60.71\%};
+  \begin{scope}[shift={(8,-1.34)},font=\footnotesize]
+    \fill[ThesisBlue] (0,0) rectangle (3.4,0.28); \node[anchor=west] at (4.2,0.14) {L1};
+    \fill[ThesisTeal] (15,0) rectangle (18.4,0.28); \node[anchor=west] at (19.2,0.14) {L2};
+    \fill[ThesisRust] (30,0) rectangle (33.4,0.28); \node[anchor=west] at (34.2,0.14) {L3};
+    \fill[ThesisGold] (45,0) rectangle (48.4,0.28); \node[anchor=west] at (49.2,0.14) {L4};
+  \end{scope}
+\end{tikzpicture}
+\caption{四维度的等级构成}
+\label{fig:level-distribution}
+\end{figure}
 
-图4-2
-四维度的等级构成。每一横条以该维度已出现的单元为分母，横条内部标示比例。
+每一横条以该维度已出现的单元为分母，色块宽度表示相应等级的比例；较窄色块的精确数值见表4-2。
 
 \subsection{模型建构与科学推理的等级组配}\label{ux6a21ux578bux5efaux6784ux4e0eux79d1ux5b66ux63a8ux7406ux7684ux7b49ux7ea7ux7ec4ux914d}
 
 模型建构与科学推理共同出现于203个单元。为进一步观察两类任务要求如何在同一小问中配合，表4-3列出模型建构等级与科学推理等级的组配频数。该表的每一格都是同一分析单元中的两条维度记录，不是相关系数，也不表示两个等级能够相互替代。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lrrrr@{}}
+\caption{模型建构与科学推理的等级组配}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+模型建构等级 & 科学推理L1 & 科学推理L2 & 科学推理L3 & 合计 \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 模型建构等级 & 科学推理L1 & 科学推理L2 & 科学推理L3 & 合计 \\
 \midrule\noalign{}
 \endhead
@@ -933,7 +1162,6 @@ L2 & 11 & 11 & 0 & 22 \\
 L3 & 39 & 26 & 7 & 72 \\
 合计 & 106 & 81 & 16 & 203 \\
 \end{longtable}
-}
 
 表4-3显示，模型建构L1与科学推理L1或L2的组配分别为56个和44个单元，构成较为常见的任务形态：模型或研究对象相对明确，但仍需要在一个或多个条件下建立关系。模型建构L3与科学推理L1、L2、L3的组配分别为39个、26个和7个单元，表明较高的模型组织要求并不必然伴随同等级的长推演链。有些小问的主要难点在于确定对象、状态、边界或近似，一旦模型确定，后续推理可以相对直接；另一些小问则需要同时组织模型和多重关系。
 
@@ -941,10 +1169,49 @@ L3 & 39 & 26 & 7 & 72 \\
 
 等级组配的教学意义在于使支架更有针对性。对于``模型建构L3---科学推理L1''的任务，教师可重点要求学生说明系统边界、状态条件或近似假设，而不必用冗长的关系图替代必要推导；对于``模型建构L1---科学推理L3''的任务，则更适合要求学生画出条件---规律---中间量的关系链。只有将两类等级放在同一任务中阅读，等级统计才可能转化为具体的选题和评讲依据。
 
-\noindent\pandocbounded{\includegraphics[keepaspectratio]{/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_3_model_reasoning_level_pair_r01_v1.png}}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small]
+  \node[font=\small\bfseries,text=ThesisInk] at (3.15,4.0) {科学推理等级};
+  \node[rotate=90,font=\small\bfseries,text=ThesisInk] at (-1.15,1.5) {模型建构等级};
+  \foreach \x/\lab in {1.05/L1,3.15/L2,5.25/L3} {
+    \node[font=\small\bfseries] at (\x,3.42) {\lab};
+  }
+  \foreach \y/\lab in {2.5/L1,1.5/L2,0.5/L3} {
+    \node[font=\small\bfseries] at (-0.42,\y) {\lab};
+  }
+  \filldraw[fill=ThesisTeal!100,draw=white,line width=1pt] (0,2) rectangle (2.1,3);
+  \filldraw[fill=ThesisTeal!82,draw=white,line width=1pt] (2.1,2) rectangle (4.2,3);
+  \filldraw[fill=ThesisTeal!25,draw=white,line width=1pt] (4.2,2) rectangle (6.3,3);
+  \filldraw[fill=ThesisTeal!28,draw=white,line width=1pt] (0,1) rectangle (2.1,2);
+  \filldraw[fill=ThesisTeal!28,draw=white,line width=1pt] (2.1,1) rectangle (4.2,2);
+  \filldraw[fill=ThesisTeal!10,draw=white,line width=1pt] (4.2,1) rectangle (6.3,2);
+  \filldraw[fill=ThesisTeal!72,draw=white,line width=1pt] (0,0) rectangle (2.1,1);
+  \filldraw[fill=ThesisTeal!50,draw=white,line width=1pt] (2.1,0) rectangle (4.2,1);
+  \filldraw[fill=ThesisTeal!22,draw=white,line width=1pt] (4.2,0) rectangle (6.3,1);
+  \node[text=white,font=\large\bfseries] at (1.05,2.5) {56};
+  \node[text=white,font=\large\bfseries] at (3.15,2.5) {44};
+  \node[text=ThesisInk,font=\large\bfseries] at (5.25,2.5) {9};
+  \node[text=ThesisInk,font=\large\bfseries] at (1.05,1.5) {11};
+  \node[text=ThesisInk,font=\large\bfseries] at (3.15,1.5) {11};
+  \node[text=ThesisInk,font=\large\bfseries] at (5.25,1.5) {0};
+  \node[text=white,font=\large\bfseries] at (1.05,0.5) {39};
+  \node[text=ThesisInk,font=\large\bfseries] at (3.15,0.5) {26};
+  \node[text=ThesisInk,font=\large\bfseries] at (5.25,0.5) {7};
+  \node[fill=ThesisPale,minimum width=1.2cm,minimum height=1cm,font=\bfseries] at (7.0,2.5) {109};
+  \node[fill=ThesisPale,minimum width=1.2cm,minimum height=1cm,font=\bfseries] at (7.0,1.5) {22};
+  \node[fill=ThesisPale,minimum width=1.2cm,minimum height=1cm,font=\bfseries] at (7.0,0.5) {72};
+  \node[font=\footnotesize,text=ThesisInk] at (7.0,3.42) {行合计};
+  \node[fill=ThesisPale,minimum width=2.1cm,minimum height=.72cm,font=\bfseries] at (1.05,-0.55) {106};
+  \node[fill=ThesisPale,minimum width=2.1cm,minimum height=.72cm,font=\bfseries] at (3.15,-0.55) {81};
+  \node[fill=ThesisPale,minimum width=2.1cm,minimum height=.72cm,font=\bfseries] at (5.25,-0.55) {16};
+  \node[font=\footnotesize,text=ThesisInk] at (-0.42,-0.55) {列合计};
+\end{tikzpicture}
+\caption{模型建构与科学推理的等级组配}
+\label{fig:model-reasoning-pair}
+\end{figure}
 
-图4-3
-模型建构与科学推理的等级组配。纵轴为模型建构等级，横轴为科学推理等级，方格中的数字为分析单元数。
+纵轴为模型建构等级，横轴为科学推理等级，方格中的数字为分析单元数；颜色越深表示该组配的频数越高。
 
 \section{维度组合与共现}\label{ux7ef4ux5ea6ux7ec4ux5408ux4e0eux5171ux73b0}
 
@@ -954,9 +1221,15 @@ L3 & 39 & 26 & 7 & 72 \\
 
 为便于在同一口径下观察各维度对的交集与并集，表4-4列出全部六组组合。模型建构与科学推理的共同出现数为203，等于模型建构的全部出现数；科学推理与科学论证、质疑创新的共同出现数分别为106和84，等于后两者的全部出现数。这些集合关系来自当前编码，不表示一个维度在理论上从属于另一个维度，而是提示在本语料的判定规则下，出现科学论证或质疑创新的单元同时也被判定包含科学推理。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lrrr@{}}
+\caption{四维度两两共现关系}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+维度组合 & 同时出现数 & 至少出现一个的单元数 & Jaccard系数 \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 维度组合 & 同时出现数 & 至少出现一个的单元数 & Jaccard系数 \\
 \midrule\noalign{}
 \endhead
@@ -969,7 +1242,6 @@ L3 & 39 & 26 & 7 & 72 \\
 科学推理---质疑创新 & 84 & 219 & 0.3836 \\
 科学论证---质疑创新 & 40 & 150 & 0.2667 \\
 \end{longtable}
-}
 
 表4-4中的Jaccard系数只是集合重叠程度的描述指标，不是相关系数、效应量或因果指标。科学论证与质疑创新的交集为40个单元，既说明两类要求可共同出现，也保留了各自单独出现的情况：科学论证出现而质疑创新未出现的单元为66个，质疑创新出现而科学论证未出现的单元为44个。
 
@@ -985,9 +1257,15 @@ L3 & 39 & 26 & 7 & 72 \\
 
 在四维度同时记录的前提下，219个分析单元呈现五种完整组合，见表4-5。模型建构、科学推理与科学论证共同出现而质疑创新未出现的组合为66个单元；模型建构与科学推理共同出现、其余两维未出现的组合为53个单元；模型建构、科学推理与质疑创新共同出现而科学论证未出现的组合为44个单元；四维同时出现的组合为40个单元；仅出现科学推理的组合为16个单元。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lrr@{}}
+\caption{五类完整维度组合}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+完整维度组合 & 单元数 & 占全部219个单元的比例 \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 完整维度组合 & 单元数 & 占全部219个单元的比例 \\
 \midrule\noalign{}
 \endhead
@@ -999,7 +1277,6 @@ L3 & 39 & 26 & 7 & 72 \\
 模型建构、科学推理、科学论证、质疑创新 & 40 & 18.26\% \\
 科学推理 & 16 & 7.31\% \\
 \end{longtable}
-}
 
 表4-5中的五类组合没有高低之分，而是对应不同的题目处理重点。66个``模型建构---科学推理---科学论证''单元表明，在相当一部分小问中，完成任务不仅要确定模型并推导结论，还要对比较、条件或结论边界作出说明。53个``模型建构---科学推理''单元则较集中地体现了在模型内建立关系的基本任务结构。44个包含质疑创新而不含科学论证的单元，提示有些任务直接要求改变条件、比较方案或重新处理假设，但并不必然要求以独立的论证形式说明既有结论。
 
@@ -1007,10 +1284,35 @@ L3 & 39 & 26 & 7 & 72 \\
 
 从教学组织看，表4-5为题目组合提供了一个较直接的选题依据。若目标是训练由模型到结论再到适用范围的完整表达，可优先选取``模型建构---科学推理---科学论证''或四维同时出现的题目；若目标是训练既定模型内的关系推演，可选择``模型建构---科学推理''或仅科学推理的题目；若目标是训练条件改变后的方案调整，则可从含有质疑创新的两类组合中选取材料。这样的分类不替代对具体题目的阅读，而是使教师能够先按任务结构筛选，再结合知识模块、情境与学生基础调整题目。
 
-\noindent\pandocbounded{\includegraphics[keepaspectratio]{/Users/dongxingxi/physics_competition_thesis_excellent_v2/08_manuscript/figures/figure_4_4_dimension_patterns_r01_v1.png}}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=0.096cm,y=1.0cm,font=\small]
+  \foreach \x in {0,20,40,60} {
+    \draw[ThesisGrid,line width=.45pt] (\x,-0.45) -- (\x,4.48);
+    \node[font=\footnotesize] at (\x,-0.76) {\x};
+  }
+  \node[anchor=east] at (-2,4) {模型建构、科学推理、科学论证};
+  \node[anchor=east] at (-2,3) {模型建构、科学推理};
+  \node[anchor=east] at (-2,2) {模型建构、科学推理、质疑创新};
+  \node[anchor=east] at (-2,1) {四维同时出现};
+  \node[anchor=east] at (-2,0) {仅科学推理};
+  \fill[ThesisTeal] (0,3.72) rectangle (66,4.28);
+  \fill[ThesisBlue] (0,2.72) rectangle (53,3.28);
+  \fill[ThesisGold] (0,1.72) rectangle (44,2.28);
+  \fill[ThesisRust] (0,0.72) rectangle (40,1.28);
+  \fill[ThesisLavender] (0,-0.28) rectangle (16,0.28);
+  \node[anchor=west,font=\footnotesize] at (67.5,4) {66（30.14\%）};
+  \node[anchor=west,font=\footnotesize] at (54.5,3) {53（24.20\%）};
+  \node[anchor=west,font=\footnotesize] at (45.5,2) {44（20.09\%）};
+  \node[anchor=west,font=\footnotesize] at (41.5,1) {40（18.26\%）};
+  \node[anchor=west,font=\footnotesize] at (17.5,0) {16（7.31\%）};
+  \node[font=\footnotesize,text=ThesisInk] at (33,-1.22) {分析单元数};
+\end{tikzpicture}
+\caption{五类完整任务组合的构成}
+\label{fig:dimension-patterns}
+\end{figure}
 
-图4-4
-五类完整任务组合的构成。五种组合覆盖全部219个分析单元，图中百分比均以219为分母。
+五种组合覆盖全部219个分析单元，图中百分比均以219为分母。
 
 \section{届次、知识模块与元数据结构复算输出}\label{ux5c4aux6b21ux77e5ux8bc6ux6a21ux5757ux4e0eux5143ux6570ux636eux7ed3ux6784ux590dux7b97ux8f93ux51fa}
 
@@ -1020,7 +1322,6 @@ L3 & 39 & 26 & 7 & 72 \\
 
 表4-6保留各届在当前分析单位数下的出现比例。每届分析单元数介于22和36之间，且不同届次的题目结构、拆分数量和物理主题并不相同，故表中只呈现当届语料的描述值。科学推理在八届均为100.00\%；模型建构在2019届为86.36\%、2022届为51.85\%，其余六届为100.00\%。科学论证和质疑创新在不同届次间的记录值存在差异，例如2022届质疑创新为0.00\%、2023届为75.00\%，但这不是趋势检验，也不能据此断言命题要求发生了稳定变化。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
@@ -1028,7 +1329,26 @@ L3 & 39 & 26 & 7 & 72 \\
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}@{}}
+\caption{各届次四维度出现比例}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+届次（年份）
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+分析单元数
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+模型建构
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+科学推理
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+科学论证
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+质疑创新
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 届次（年份）
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
@@ -1055,7 +1375,6 @@ L3 & 39 & 26 & 7 & 72 \\
 第41届（2024） & 32 & 100.00\% & 100.00\% & 68.75\% & 25.00\% \\
 第42届（2025） & 29 & 100.00\% & 100.00\% & 79.31\% & 10.34\% \\
 \end{longtable}
-}
 
 从届次表可以看到，科学推理在八届语料中均处于稳定的基础位置；这与复赛小问通常要求建立物理关系、完成定量或定性推演的任务性质相一致。模型建构、科学论证和质疑创新则在不同届次呈现不同构成，提示具体试卷中的题材选择、问题组织和问法会改变任务结构的组合方式。因而，届次表更适合用于定位``哪一届、哪一类任务值得进一步阅读''，而不适合把某一个百分比直接解释为命题质量的升降。
 
@@ -1063,9 +1382,15 @@ L3 & 39 & 26 & 7 & 72 \\
 
 知识模块表中同时包含单一模块和跨模块组合。为避免把小样本跨模块组合与单一模块混为一谈，表4-7只列出样本数不少于5的单一主模块。力学（62个单元）中模型建构、科学推理、科学论证和质疑创新的出现比例分别为79.03\%、100.00\%、25.81\%和38.71\%；光学（19个单元）的相应比例为84.21\%、100.00\%、84.21\%和10.53\%；电磁学（18个单元）为100.00\%、100.00\%、0.00\%和50.00\%；近代物理（22个单元）为100.00\%、100.00\%、63.64\%和45.45\%。这些值只帮助定位后续案例阅读与教学设计的材料范围，不用于判断不同知识模块的优劣、难度或学生学习结果。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lrrrrr@{}}
+\caption{单一主模块四维度出现比例}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+单一主模块 & 分析单元数 & 模型建构 & 科学推理 & 科学论证 & 质疑创新 \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 单一主模块 & 分析单元数 & 模型建构 & 科学推理 & 科学论证 & 质疑创新 \\
 \midrule\noalign{}
 \endhead
@@ -1077,7 +1402,6 @@ L3 & 39 & 26 & 7 & 72 \\
 近代物理 & 22 & 100.00\% & 100.00\% & 63.64\% & 45.45\% \\
 热学 & 5 & 100.00\% & 100.00\% & 40.00\% & 0.00\% \\
 \end{longtable}
-}
 
 知识模块分布同样需要结合题目的具体任务理解。力学样本量最大，包含运动、引力、碰撞、振动等多种题材，因此其四维度比例是多种任务结构的汇总；光学、近代物理和电磁学中的比例则可能受相对集中的情境、图像条件和模型假设影响。表4-7的价值在于提供案例检索线索：若需要讨论论证要求较为突出的任务，可以从光学或近代物理的相应单元回到题干与解答查找；若需要讨论模型设定与变量关系，则可从模型建构出现较多的模块中选择材料。
 
@@ -1087,9 +1411,15 @@ L3 & 39 & 26 & 7 & 72 \\
 
 表4-8和表4-9改用另一种更保守的元数据呈现方式。它们不对60种具体题材、图表或公式工具进行主观归并，而是将索引中以全角分号分隔的非空表征要素、数学工具要素逐项计数；例如``文字表述；装置示意图；向量符号''记为3项表征要素。这个数值只说明索引如何记录任务材料，既不等同于表征类型数或公式数，也不构成题目难度、认知负荷或学生能力的测量。为避免以极小分层制造差异，正文仅列出每层不少于30个分析单元的结果；其余表征2项（2个单元）、数学工具2项（4个单元）和7项（5个单元）仍保存于可复算输出中。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}lrrrrr@{}}
+\caption{表征要素数分组的四维度出现比例}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+表征要素数 & 分析单元数 & 模型建构 & 科学推理 & 科学论证 & 质疑创新 \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 表征要素数 & 分析单元数 & 模型建构 & 科学推理 & 科学论证 & 质疑创新 \\
 \midrule\noalign{}
 \endhead
@@ -1098,11 +1428,9 @@ L3 & 39 & 26 & 7 & 72 \\
 3 & 175 & 93.71\% & 100.00\% & 50.29\% & 43.43\% \\
 4 & 42 & 88.10\% & 100.00\% & 42.86\% & 14.29\% \\
 \end{longtable}
-}
 
 表4-8中的两层均来自同一语料索引，科学推理均为100.00\%。三个要素层与四个要素层的模型建构出现比例分别为93.71\%和88.10\%，科学论证分别为50.29\%和42.86\%，质疑创新分别为43.43\%和14.29\%。这些并列值只能帮助回到相应的题面材料查找案例：它们可能同时受题材、拆分方式、具体表述和原始元数据记录颗粒度影响，不能说明增加一种表征会降低或提高任何维度要求，也不构成组间差异检验。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
@@ -1110,7 +1438,26 @@ L3 & 39 & 26 & 7 & 72 \\
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}@{}}
+\caption{数学工具要素数分组的四维度出现比例}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+数学工具要素数
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+分析单元数
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+模型建构
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+科学推理
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+科学论证
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+质疑创新
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 数学工具要素数
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
@@ -1133,7 +1480,6 @@ L3 & 39 & 26 & 7 & 72 \\
 5 & 74 & 94.59\% & 100.00\% & 37.84\% & 36.49\% \\
 6 & 34 & 73.53\% & 100.00\% & 26.47\% & 26.47\% \\
 \end{longtable}
-}
 
 表4-9同样不把要素数理解为``使用公式越多，任务层次越高''。在3、4、5、6项工具的四个层中，科学论证出现比例依次为58.06\%、59.15\%、37.84\%和26.47\%，质疑创新依次为64.52\%、39.44\%、36.49\%和26.47\%，并未呈现可由本研究解释的单调关系。更合理的用途是作为案例抽取和后续课堂任务设计的检索入口：若需讨论特定工具组合，应回到该层的题干---解答证据逐题分析，而不能把此表升级为``数学工具数量导致某类科学思维要求''的结论。
 
@@ -1177,13 +1523,27 @@ L3 & 39 & 26 & 7 & 72 \\
 
 案例从已完成编码的复赛小问中选择。入选小问须具有清楚的题面、参考解答和四维度记录，且能够呈现不同的物理任务结构。案例的作用是把第四章的统计结论还原到真实题目中：读者先看到题目要求和关键图示，再理解它为什么被判定为相应的任务结构。案例用于解释试题任务要求和提出教学设计，不用来推断学生表现或教学效果。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\caption{典型案例及其任务结构}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+案例
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+任务主题
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+主要编码依据
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可用于说明的任务结构
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 案例
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1211,7 +1571,6 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 第40届复赛第7题第（3）问 & 分层大气中的声波折射与全反射 & 模型建构 L2 &
 由温度---声速关系确定折射条件和临界角 \\
 \end{longtable}
-}
 
 案例分析以题面和参考解答为依据。相关研究可作为案例阅读的补充参照，但不改变本文的题目版本、参数条件和全样本统计口径。\textsuperscript{[28]}
 
@@ -1224,20 +1583,20 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 \(\dfrac{v_0^2b}{GM_\odot}\gg1\)。题目要求：分别针对陨石和恰好擦过太阳表面的星光，求物体离开太阳系后相对原入射方向的偏转角。对于星光情形，可取
 \(b=R_\odot\)。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=0.9]
-  \fill[orange!65] (0,0) circle (0.62);
-  \draw[orange!80!black] (0,0) circle (0.62);
+  \fill[ThesisGold!70] (0,0) circle (0.62);
+  \draw[ThesisGold] (0,0) circle (0.62);
   \node[below=8pt] at (0,0) {太阳中心 $O$};
-  \draw[->,thick,blue!70!black] (-5,1.45) -- (-1.1,1.45) node[midway,above] {$v_0$};
-  \draw[->,thick,blue!70!black] (1.1,-1.05) -- (5,-1.05) node[midway,below] {飞出方向};
-  \draw[densely dashed,gray] (-5,1.45) -- (5,1.45);
-  \draw[densely dashed,gray] (0,0) -- (0,1.45);
+  \draw[->,thick,ThesisBlue] (-5,1.45) -- (-1.1,1.45) node[midway,above] {$v_0$};
+  \draw[->,thick,ThesisBlue] (1.1,-1.05) -- (5,-1.05) node[midway,below] {飞出方向};
+  \draw[densely dashed,ThesisNavy!55] (-5,1.45) -- (5,1.45);
+  \draw[densely dashed,ThesisNavy!55] (0,0) -- (0,1.45);
   \draw[<->] (0.3,0) -- (0.3,1.45) node[midway,right] {$b$};
-  \draw[thick,blue!70!black] (-1.1,1.45) .. controls (0.5,1.35) and (0.75,0.25) .. (1.1,-1.05);
-  \draw[->,red!75!black] (3.2,1.45) arc[start angle=0,end angle=-20,radius=1.8];
-  \node[red!75!black] at (4.1,0.75) {$\Delta\varphi$};
+  \draw[thick,ThesisBlue] (-1.1,1.45) .. controls (0.5,1.35) and (0.75,0.25) .. (1.1,-1.05);
+  \draw[->,ThesisRust] (3.2,1.45) arc[start angle=0,end angle=-20,radius=1.8];
+  \node[ThesisRust] at (4.1,0.75) {$\Delta\varphi$};
 \end{tikzpicture}
 \caption{太阳引力场中弱偏转问题的条件示意图（依据题意自绘）。}
 \end{figure}
@@ -1276,12 +1635,24 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 
 据此，案例教学不宜把``写出偏转角公式''作为唯一完成标志。可观察的产出包括：区分题设中的共同目标与分情形条件，在关系链图中标出能量/角动量、轨道参数和偏转角之间的连接，并说明替换入射条件后需要改变哪一环。它们构成后续作品分析的评价入口。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\caption{引力偏转案例的任务结构与学习产出}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+任务环节
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+题设或解答中的结构作用
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可收集的书面产出
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 任务环节
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1300,7 +1671,6 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 结果说明 & 用同一待求量比较两种情形 & 分情形结论与适用条件说明 \\
 边界核对 & 改变一个关键条件时检查关系链 & ``哪一步需重检''的文字说明 \\
 \end{longtable}
-}
 
 \section{案例二：状态分类与平均能量关系}\label{ux6848ux4f8bux4e8cux72b6ux6001ux5206ux7c7bux4e0eux5e73ux5747ux80fdux91cfux5173ux7cfb}
 
@@ -1312,15 +1682,15 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 \(N\) 为奇数和偶数时，\(\Phi=0\) 与 \(|\Phi|=\dfrac{h}{2e}\)
 两处的平均能量。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=1.0]
-  \draw[very thick,blue!70!black] (0,0) circle (1.45);
-  \draw[->,very thick,purple!75!black] (0,-0.1) -- (0,2.0) node[above] {$\Phi$};
-  \fill[purple!75!black] (0,0) circle (1.8pt);
-  \draw[->,thick,orange!80!black] (0.1,1.45) arc[start angle=86,end angle=22,radius=1.45];
-  \node[orange!80!black,above right] at (1.1,1.0) {$\mathbf A$};
-  \fill[blue!70!black] (-1.0,-0.95) circle (2.6pt) node[below left] {$e^-$};
+  \draw[very thick,ThesisBlue] (0,0) circle (1.45);
+  \draw[->,very thick,ThesisLavender] (0,-0.1) -- (0,2.0) node[above] {$\Phi$};
+  \fill[ThesisLavender] (0,0) circle (1.8pt);
+  \draw[->,thick,ThesisGold] (0.1,1.45) arc[start angle=86,end angle=22,radius=1.45];
+  \node[ThesisGold,above right] at (1.1,1.0) {$\mathbf A$};
+  \fill[ThesisBlue] (-1.0,-0.95) circle (2.6pt) node[below left] {$e^-$};
   \node[align=left,anchor=west] at (2.0,0.65) {分类条件：\\$N$ 的奇偶性与 $\Phi$ 的取值};
   \node[align=left,anchor=west] at (2.0,-0.45) {共同比较对象：\\$\overline E=E_{\mathrm{tot}}/N$};
 \end{tikzpicture}
@@ -1366,12 +1736,24 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 
 在教学设计中，可将``分类依据是否来自题设''\,``各分支是否比较同一物理量''\,``表达式是否与相应条件匹配''分别记录。这样的拆分可以避免把正确的最终比较结果误判为完整的模型组织过程，也能让教师在真实实施后定位作品中缺失的是条件提取、分支建立还是比较说明。这里并不预设学生会在哪一环出错，更不把当前编码等级投射为个体学习等级。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\caption{量子环案例的任务结构与学习产出}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+任务环节
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+题设或解答中的结构作用
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可收集的书面产出
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 任务环节
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1390,7 +1772,6 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 比较说明 & 以单粒子平均能量为共同对象比较分支 & 比较表与文字解释 \\
 反向检查 & 改变区间或粒子数时重审分支 & 需要改写的列及理由 \\
 \end{longtable}
-}
 
 \section{案例三：近似条件下的动力学建模}\label{ux6848ux4f8bux4e09ux8fd1ux4f3cux6761ux4ef6ux4e0bux7684ux52a8ux529bux5b66ux5efaux6a21}
 
@@ -1400,21 +1781,21 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 从原点沿 \(x\)--\(z\)
 平面注入，入射角受给定范围限制；本问忽略辐射阻尼，要求求出电子可达到的最大能量以及对应的入射角。这里的阅读重点是：电场、磁场方向和几何限制共同决定了可以保留哪些变量与关系。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=0.94]
   \draw[->,thick] (0,0) -- (6.5,0) node[right] {$z$};
   \draw[->,thick] (0,0) -- (0,3.6) node[above] {$x$};
   \draw[->,thick] (0,0) -- (-1.35,-1.15) node[below left] {$y$};
   \foreach \z in {0.9,2.1,3.3,4.5,5.7} {
-    \draw[blue!70!black,thick] (\z,0.2) -- (\z,2.1);
-    \draw[orange!85!black,thick] (\z-0.24,-0.2) -- (\z+0.24,-0.65);
+    \draw[ThesisBlue,thick] (\z,0.2) -- (\z,2.1);
+    \draw[ThesisGold,thick] (\z-0.24,-0.2) -- (\z+0.24,-0.65);
   }
-  \node[blue!70!black,above] at (3.3,2.15) {$\mathbf E\parallel x$};
-  \node[orange!85!black,below] at (3.3,-0.65) {$\mathbf B\parallel y$};
-  \draw[->,very thick,purple!75!black] (0,0) -- (2.5,1.5) node[midway,above left] {$\mathbf v_0$};
-  \draw[red!75!black,thick] (1.1,0) arc[start angle=0,end angle=31,radius=1.1];
-  \node[red!75!black] at (1.42,0.43) {$\theta_0$};
+  \node[ThesisBlue,above] at (3.3,2.15) {$\mathbf E\parallel x$};
+  \node[ThesisGold,below] at (3.3,-0.65) {$\mathbf B\parallel y$};
+  \draw[->,very thick,ThesisLavender] (0,0) -- (2.5,1.5) node[midway,above left] {$\mathbf v_0$};
+  \draw[ThesisRust,thick] (1.1,0) arc[start angle=0,end angle=31,radius=1.1];
+  \node[ThesisRust] at (1.42,0.43) {$\theta_0$};
   \node[align=left,anchor=south west] at (4.0,2.42) {电子初态：原点、$x$-$z$ 平面注入\\本问近似：忽略辐射阻尼};
 \end{tikzpicture}
 \caption{平面电磁波中电子注入的几何与场方向示意图（依据题意自绘）。}
@@ -1450,12 +1831,24 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 
 将此类任务转化为教学材料时，可把``条件的功能''而不是``条件的名称''作为评价焦点。比如，学习者需用文字说明平面限制去除了什么变量、忽略项改变了什么模型边界、入射角如何进入最大能量的条件。只有在真实课堂中收集了这些说明、题面版本和修订痕迹后，才能讨论学生是否能够使用近似条件；本案例仅提出可收集的证据格式。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\caption{强激光场电子加速案例的任务结构与学习产出}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+任务环节
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+题设或解答中的结构作用
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可收集的书面产出
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 任务环节
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1473,7 +1866,6 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 带有依据的求解路线图 \\
 结果核对 & 最大值及相应角度需回到限制条件 & 结果---条件一致性说明 \\
 \end{longtable}
-}
 
 \section{案例四：旋转谐振腔的频率分裂}\label{ux6848ux4f8bux56dbux65cbux8f6cux8c10ux632fux8154ux7684ux9891ux7387ux5206ux88c2}
 
@@ -1485,18 +1877,18 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 \(R\Omega\ll c\)。腔内同时存在顺时针与逆时针传播的共振模式；题目特别规定比较的是\textbf{同一级次}
 \(m\) 的两类模式，要求导出角速度与共振频率差 \(\Delta f\) 的关系。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=1.0]
-  \draw[very thick,blue!70!black] (0,0) circle (1.55);
-  \fill[gray!25] (0,0) circle (0.42);
+  \draw[very thick,ThesisBlue] (0,0) circle (1.55);
+  \fill[ThesisPale] (0,0) circle (0.42);
   \node at (0,0) {腔体};
-  \draw[->,very thick,red!75!black] (0,1.92) arc[start angle=90,end angle=-165,radius=1.92];
-  \node[red!75!black] at (-2.1,0.25) {$\Omega$};
-  \draw[->,thick,purple!75!black] (1.30,0.82) arc[start angle=33,end angle=132,radius=1.55];
-  \node[purple!75!black] at (0.15,1.92) {CCW};
-  \draw[->,thick,orange!85!black] (-1.30,-0.82) arc[start angle=213,end angle=312,radius=1.55];
-  \node[orange!85!black] at (-0.18,-1.95) {CW};
+  \draw[->,very thick,ThesisRust] (0,1.92) arc[start angle=90,end angle=-165,radius=1.92];
+  \node[ThesisRust] at (-2.1,0.25) {$\Omega$};
+  \draw[->,thick,ThesisLavender] (1.30,0.82) arc[start angle=33,end angle=132,radius=1.55];
+  \node[ThesisLavender] at (0.15,1.92) {CCW};
+  \draw[->,thick,ThesisGold] (-1.30,-0.82) arc[start angle=213,end angle=312,radius=1.55];
+  \node[ThesisGold] at (-0.18,-1.95) {CW};
   \draw[densely dashed] (0,0) -- (1.55,0) node[midway,below] {$R$};
   \fill (1.55,0) circle (1.5pt) node[right] {$A$};
 \end{tikzpicture}
@@ -1535,12 +1927,24 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 \(R\)，发生改变的是两束光相对旋转腔的传播方向，比较结果是两类模式的频率差。随后再追问：若不声明
 \(R\Omega\ll c\)，哪一步不能直接把精确表达式化为线性比例关系。这样可把近似条件从公式末尾的符号变成可解释的物理限制。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\caption{旋转谐振腔案例的任务结构与学习产出}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+任务环节
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+题设或解答中的结构作用
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可收集的书面产出
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 任务环节
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1560,7 +1964,6 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 精确式到近似式的条件说明 \\
 结论解释 & 频率差的正负依赖方向约定 & 写明 \(\Delta f\) 定义的结论句 \\
 \end{longtable}
-}
 
 \section{案例五：可动楔块上的纯滚动条件}\label{ux6848ux4f8bux4e94ux53efux52a8ux6954ux5757ux4e0aux7684ux7eafux6edaux52a8ux6761ux4ef6}
 
@@ -1570,17 +1973,17 @@ L2、科学推理 L2 & 联立非惯性系受力、转动约束与整体水平运
 \(r\) 的匀质圆球。楔块可在光滑水平面上运动，圆球在倾角为 \(\theta\)
 的斜面上向下滚动。题目要求在圆球相对楔块纯滚动的条件下，求楔块和圆球的加速度，并进一步确定维持纯滚动所需的最小静摩擦因数。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=0.92]
   \draw[thick] (-3.8,-1.45) -- (3.8,-1.45);
-  \fill[gray!18] (-2.8,-1.45) -- (2.7,-1.45) -- (2.7,1.15) -- cycle;
+  \fill[ThesisPale] (-2.8,-1.45) -- (2.7,-1.45) -- (2.7,1.15) -- cycle;
   \draw[thick] (-2.8,-1.45) -- (2.7,-1.45) -- (2.7,1.15) -- cycle;
-  \draw[thick,blue!70!black] (0.78,0.15) circle (0.56);
-  \fill[blue!70!black] (0.78,0.15) circle (1.6pt) node[below left] {$C$};
-  \draw[->,thick,red!75!black] (0.78,0.15) -- (0.78,-0.95) node[right] {$mg$};
-  \draw[->,thick,purple!75!black] (1.15,-0.25) -- (0.38,0.49) node[above left] {$N_1$};
-  \draw[->,thick,orange!85!black] (0.39,-0.23) -- (0.91,0.28) node[midway,above left] {$f$};
+  \draw[thick,ThesisBlue] (0.78,0.15) circle (0.56);
+  \fill[ThesisBlue] (0.78,0.15) circle (1.6pt) node[below left] {$C$};
+  \draw[->,thick,ThesisRust] (0.78,0.15) -- (0.78,-0.95) node[right] {$mg$};
+  \draw[->,thick,ThesisLavender] (1.15,-0.25) -- (0.38,0.49) node[above left] {$N_1$};
+  \draw[->,thick,ThesisGold] (0.39,-0.23) -- (0.91,0.28) node[midway,above left] {$f$};
   \draw[->,very thick] (-1.65,-1.77) -- (-0.1,-1.77) node[midway,below] {$a_0$};
   \draw[->,thick] (0.78,0.15) -- (-0.02,-0.58) node[midway,above left] {$a_c$};
   \draw (2.12,-1.45) arc[start angle=180,end angle=137,radius=0.58];
@@ -1622,12 +2025,24 @@ a_c=\frac{5(M+m)g\sin\theta}
 \(\mu=f/N_1\)
 核对所得摩擦系数是否是使纯滚动恰好成立的临界值。这样既不把复杂题化为套公式，也避免学生把固定斜面结论直接搬到可动楔块上。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\caption{可动楔块纯滚动案例的任务结构与学习产出}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+任务环节
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+题设或解答中的结构作用
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可收集的书面产出
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 任务环节
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1648,7 +2063,6 @@ a_c=\frac{5(M+m)g\sin\theta}
 边界检验 & \(\mu_0\) 对应纯滚动即将失效的临界条件 & 对 \(\mu_0=f/N_1\)
 的文字解释 \\
 \end{longtable}
-}
 
 \section{案例六：分层大气中的声波折射}\label{ux6848ux4f8bux516dux5206ux5c42ux5927ux6c14ux4e2dux7684ux58f0ux6ce2ux6298ux5c04}
 
@@ -1658,25 +2072,25 @@ a_c=\frac{5(M+m)g\sin\theta}
 \(-10\,^{\circ}\mathrm C\)，同温层温度为
 \(-55\,^{\circ}\mathrm C\)。声源位于同温层内，声波射向同温层与相邻大气层的界面。题目要求判断不同入射角下何时有折射，何时发生全反射，并作定性传播图。
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=0.88]
-  \fill[orange!13] (-4,1.1) rectangle (4,2.25);
-  \fill[blue!12] (-4,-1.1) rectangle (4,1.1);
-  \fill[orange!13] (-4,-2.25) rectangle (4,-1.1);
+  \fill[ThesisGold!12] (-4,1.1) rectangle (4,2.25);
+  \fill[ThesisBlue!11] (-4,-1.1) rectangle (4,1.1);
+  \fill[ThesisGold!12] (-4,-2.25) rectangle (4,-1.1);
   \draw[thick] (-4,1.1) -- (4,1.1);
   \draw[thick] (-4,-1.1) -- (4,-1.1);
   \node[left] at (-4,1.68) {外层：$T_o=-10\,^{\circ}\mathrm C$, $v_o$};
   \node[left] at (-4,0) {同温层：$T_i=-55\,^{\circ}\mathrm C$, $v_i$};
   \node[left] at (-4,-1.68) {外层：$T_o=-10\,^{\circ}\mathrm C$, $v_o$};
-  \fill[red!75!black] (-1.4,0) circle (2.2pt) node[below] {声源};
-  \draw[->,very thick,purple!75!black] (-1.4,0) -- (0.1,1.1);
-  \draw[->,very thick,purple!75!black] (0.1,1.1) -- (1.55,1.72);
+  \fill[ThesisRust] (-1.4,0) circle (2.2pt) node[below] {声源};
+  \draw[->,very thick,ThesisLavender] (-1.4,0) -- (0.1,1.1);
+  \draw[->,very thick,ThesisLavender] (0.1,1.1) -- (1.55,1.72);
   \draw[densely dashed] (0.1,0.5) -- (0.1,1.72);
-  \draw[->,thick,orange!85!black] (-1.4,0) -- (0.75,-1.1);
-  \draw[->,thick,orange!85!black] (0.75,-1.1) -- (2.4,-0.28);
-  \node[purple!75!black] at (1.5,1.25) {折射};
-  \node[orange!85!black] at (2.25,-0.72) {全反射示意};
+  \draw[->,thick,ThesisGold] (-1.4,0) -- (0.75,-1.1);
+  \draw[->,thick,ThesisGold] (0.75,-1.1) -- (2.4,-0.28);
+  \node[ThesisLavender] at (1.5,1.25) {折射};
+  \node[ThesisGold] at (2.25,-0.72) {全反射示意};
   \node at (-0.25,0.77) {$\theta_i$};
 \end{tikzpicture}
 \caption{同温层内声波射向界面时的折射与全反射示意图（依据题意自绘）。}
@@ -1712,12 +2126,24 @@ v_s^2=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu}.
 \(\sin\theta_o=(v_o/v_i)\sin\theta_i\)
 判断何时右端会超过1。图形应当是前两步判断的表达结果，而不是独立的作图技巧。这样也能避免把温度高低、声速大小和全反射条件混为三件互不相干的事。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\caption{分层大气声波折射案例的任务结构与学习产出}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+任务环节
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+题设或解答中的结构作用
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可收集的书面产出
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 任务环节
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1737,7 +2163,6 @@ v_s^2=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu}.
 图示解释 & 射线图要对应已写出的条件判断 &
 图中标注法线、入射角和传播情形 \\
 \end{longtable}
-}
 
 \section{跨案例任务结构比较}\label{ux8de8ux6848ux4f8bux4efbux52a1ux7ed3ux6784ux6bd4ux8f83}
 
@@ -1769,13 +2194,27 @@ v_s^2=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu}.
 
 六案共同指向的不是``学生普遍困难''，而是竞赛任务设计中可被显性化的多类环节。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\caption{六类任务结构的教学转化建议}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+任务结构
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可设计的学习产出
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可提供的支架
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+可收集的评价证据
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 任务结构
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1802,7 +2241,6 @@ v_s^2=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu}.
 阈值判断 & 量值比较、临界条件与传播图 &
 ``比例关系---是否超过1---图示''流程卡 & 临界角或边界是否由关系式推出 \\
 \end{longtable}
-}
 
 上述建议可用于后续教学方案、教师案例评审或学生作答分析的设计。本文的证据来自试题与参考解答，因而不将这些评价项目表述为已经观察到的学习结果或已经验证的教学效果。
 
@@ -1914,13 +2352,27 @@ v_s^2=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu}.
 
 表6-1进一步概括本研究在语料、编码和教学转化三个层面的贡献。
 
-{\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\caption{研究产出、主要价值与应用边界}\tabularnewline
 \toprule\noalign{}
+\rowcolor{ThesisPale}
+\begin{minipage}[b]{\linewidth}\raggedright
+贡献层级
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+研究产出
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+主要价值
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+应用边界
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\rowcolor{ThesisPale}
 \begin{minipage}[b]{\linewidth}\raggedright
 贡献层级
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1941,7 +2393,6 @@ v_s^2=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu}.
 教学转化 & 六个任务结构案例、支架和可观察产出建议 &
 为任务设计与评讲提供起点 & 不替代课堂实施和教学效果研究 \\
 \end{longtable}
-}
 
 表6-1也说明``可复现''在本研究中的具体含义：在相同语料、规则和统计口径下，可以重新得到相应表格，并能从表格回查到编码记录及其题干---解答定位。它不意味着不同研究者必然得到完全相同的编码，也不意味着已经消除了理论解释、分析单位划分或任务结构判断中的研究者取舍。因此，复核和讨论仍应回到具体题目、编码规则与物理关系本身。
 

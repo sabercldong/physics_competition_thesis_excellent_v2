@@ -16,6 +16,7 @@
 | 第37届复赛第6题第（3）问 | 旋转光学环形腔的共振频率分裂 | 科学论证 L3 | 保持同一模式级次，在旋转与静止情形间比较频率关系 |
 | 第40届复赛第3题第（1）问 | 可动楔块上圆球的纯滚动 | 模型建构 L2、科学推理 L2 | 联立非惯性系受力、转动约束与整体水平运动关系 |
 | 第40届复赛第7题第（3）问 | 分层大气中的声波折射与全反射 | 模型建构 L2 | 由温度—声速关系确定折射条件和临界角 |
+: 典型案例及其任务结构
 
 案例分析以题面和参考解答为依据。相关研究可作为案例阅读的补充参照，但不改变本文的题目版本、参数条件和全样本统计口径。[引文占位：PCOMP-006；仅支持解答边界与版本分层，不采用备用卷模型、参数、数值结论或学生/教学推断]
 
@@ -26,20 +27,20 @@
 本题讨论一个从远处掠过太阳的物体。它的初速度为 $v_0$，初始运动直线到太阳中心的距离为瞄准距离 $b$，并给出弱偏转条件 $\dfrac{v_0^2b}{GM_\odot}\gg1$。题目要求：分别针对陨石和恰好擦过太阳表面的星光，求物体离开太阳系后相对原入射方向的偏转角。对于星光情形，可取 $b=R_\odot$。
 
 ```{=latex}
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=0.9]
-  \fill[orange!65] (0,0) circle (0.62);
-  \draw[orange!80!black] (0,0) circle (0.62);
+  \fill[ThesisGold!70] (0,0) circle (0.62);
+  \draw[ThesisGold] (0,0) circle (0.62);
   \node[below=8pt] at (0,0) {太阳中心 $O$};
-  \draw[->,thick,blue!70!black] (-5,1.45) -- (-1.1,1.45) node[midway,above] {$v_0$};
-  \draw[->,thick,blue!70!black] (1.1,-1.05) -- (5,-1.05) node[midway,below] {飞出方向};
-  \draw[densely dashed,gray] (-5,1.45) -- (5,1.45);
-  \draw[densely dashed,gray] (0,0) -- (0,1.45);
+  \draw[->,thick,ThesisBlue] (-5,1.45) -- (-1.1,1.45) node[midway,above] {$v_0$};
+  \draw[->,thick,ThesisBlue] (1.1,-1.05) -- (5,-1.05) node[midway,below] {飞出方向};
+  \draw[densely dashed,ThesisNavy!55] (-5,1.45) -- (5,1.45);
+  \draw[densely dashed,ThesisNavy!55] (0,0) -- (0,1.45);
   \draw[<->] (0.3,0) -- (0.3,1.45) node[midway,right] {$b$};
-  \draw[thick,blue!70!black] (-1.1,1.45) .. controls (0.5,1.35) and (0.75,0.25) .. (1.1,-1.05);
-  \draw[->,red!75!black] (3.2,1.45) arc[start angle=0,end angle=-20,radius=1.8];
-  \node[red!75!black] at (4.1,0.75) {$\Delta\varphi$};
+  \draw[thick,ThesisBlue] (-1.1,1.45) .. controls (0.5,1.35) and (0.75,0.25) .. (1.1,-1.05);
+  \draw[->,ThesisRust] (3.2,1.45) arc[start angle=0,end angle=-20,radius=1.8];
+  \node[ThesisRust] at (4.1,0.75) {$\Delta\varphi$};
 \end{tikzpicture}
 \caption{太阳引力场中弱偏转问题的条件示意图（依据题意自绘）。}
 \end{figure}
@@ -91,6 +92,7 @@
 | 关系组织 | 将轨道参数、初始条件与偏转角关系串联 | 带有条件/原理标注的关系链图 |
 | 结果说明 | 用同一待求量比较两种情形 | 分情形结论与适用条件说明 |
 | 边界核对 | 改变一个关键条件时检查关系链 | “哪一步需重检”的文字说明 |
+: 引力偏转案例的任务结构与学习产出
 
 ## 5.3 案例二：状态分类与平均能量关系
 
@@ -99,15 +101,15 @@
 本题研究一个含有 $N$ 个无相互作用电子的一维圆环。穿过圆环的磁通量为 $\Phi$，系统接近绝对零度，总能量取最小值。题目限定 $-\dfrac{h}{2e}\leq\Phi\leq\dfrac{h}{2e}$，要求给出单粒子平均能量随磁通量的变化关系，并比较 $N$ 为奇数和偶数时，$\Phi=0$ 与 $|\Phi|=\dfrac{h}{2e}$ 两处的平均能量。
 
 ```{=latex}
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=1.0]
-  \draw[very thick,blue!70!black] (0,0) circle (1.45);
-  \draw[->,very thick,purple!75!black] (0,-0.1) -- (0,2.0) node[above] {$\Phi$};
-  \fill[purple!75!black] (0,0) circle (1.8pt);
-  \draw[->,thick,orange!80!black] (0.1,1.45) arc[start angle=86,end angle=22,radius=1.45];
-  \node[orange!80!black,above right] at (1.1,1.0) {$\mathbf A$};
-  \fill[blue!70!black] (-1.0,-0.95) circle (2.6pt) node[below left] {$e^-$};
+  \draw[very thick,ThesisBlue] (0,0) circle (1.45);
+  \draw[->,very thick,ThesisLavender] (0,-0.1) -- (0,2.0) node[above] {$\Phi$};
+  \fill[ThesisLavender] (0,0) circle (1.8pt);
+  \draw[->,thick,ThesisGold] (0.1,1.45) arc[start angle=86,end angle=22,radius=1.45];
+  \node[ThesisGold,above right] at (1.1,1.0) {$\mathbf A$};
+  \fill[ThesisBlue] (-1.0,-0.95) circle (2.6pt) node[below left] {$e^-$};
   \node[align=left,anchor=west] at (2.0,0.65) {分类条件：\\$N$ 的奇偶性与 $\Phi$ 的取值};
   \node[align=left,anchor=west] at (2.0,-0.45) {共同比较对象：\\$\overline E=E_{\mathrm{tot}}/N$};
 \end{tikzpicture}
@@ -162,6 +164,7 @@
 | 分支建模 | 不同条件对应不同状态条件与表达式 | 条件—表达式—推导三列表 |
 | 比较说明 | 以单粒子平均能量为共同对象比较分支 | 比较表与文字解释 |
 | 反向检查 | 改变区间或粒子数时重审分支 | 需要改写的列及理由 |
+: 量子环案例的任务结构与学习产出
 
 ## 5.4 案例三：近似条件下的动力学建模
 
@@ -170,21 +173,21 @@
 本题用沿 $z$ 轴传播的线偏振单色平面电磁波近似强激光。电子在 $t=0$ 从原点沿 $x$--$z$ 平面注入，入射角受给定范围限制；本问忽略辐射阻尼，要求求出电子可达到的最大能量以及对应的入射角。这里的阅读重点是：电场、磁场方向和几何限制共同决定了可以保留哪些变量与关系。
 
 ```{=latex}
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=0.94]
   \draw[->,thick] (0,0) -- (6.5,0) node[right] {$z$};
   \draw[->,thick] (0,0) -- (0,3.6) node[above] {$x$};
   \draw[->,thick] (0,0) -- (-1.35,-1.15) node[below left] {$y$};
   \foreach \z in {0.9,2.1,3.3,4.5,5.7} {
-    \draw[blue!70!black,thick] (\z,0.2) -- (\z,2.1);
-    \draw[orange!85!black,thick] (\z-0.24,-0.2) -- (\z+0.24,-0.65);
+    \draw[ThesisBlue,thick] (\z,0.2) -- (\z,2.1);
+    \draw[ThesisGold,thick] (\z-0.24,-0.2) -- (\z+0.24,-0.65);
   }
-  \node[blue!70!black,above] at (3.3,2.15) {$\mathbf E\parallel x$};
-  \node[orange!85!black,below] at (3.3,-0.65) {$\mathbf B\parallel y$};
-  \draw[->,very thick,purple!75!black] (0,0) -- (2.5,1.5) node[midway,above left] {$\mathbf v_0$};
-  \draw[red!75!black,thick] (1.1,0) arc[start angle=0,end angle=31,radius=1.1];
-  \node[red!75!black] at (1.42,0.43) {$\theta_0$};
+  \node[ThesisBlue,above] at (3.3,2.15) {$\mathbf E\parallel x$};
+  \node[ThesisGold,below] at (3.3,-0.65) {$\mathbf B\parallel y$};
+  \draw[->,very thick,ThesisLavender] (0,0) -- (2.5,1.5) node[midway,above left] {$\mathbf v_0$};
+  \draw[ThesisRust,thick] (1.1,0) arc[start angle=0,end angle=31,radius=1.1];
+  \node[ThesisRust] at (1.42,0.43) {$\theta_0$};
   \node[align=left,anchor=south west] at (4.0,2.42) {电子初态：原点、$x$-$z$ 平面注入\\本问近似：忽略辐射阻尼};
 \end{tikzpicture}
 \caption{平面电磁波中电子注入的几何与场方向示意图（依据题意自绘）。}
@@ -227,6 +230,7 @@
 | 模型简化 | 条件决定保留或排除的动力学因素 | 简化说明与适用边界句 |
 | 关系推演 | 能量—动量关系、参数化和极值条件共同出现 | 带有依据的求解路线图 |
 | 结果核对 | 最大值及相应角度需回到限制条件 | 结果—条件一致性说明 |
+: 强激光场电子加速案例的任务结构与学习产出
 
 ## 5.5 案例四：旋转谐振腔的频率分裂
 
@@ -235,18 +239,18 @@
 第37届复赛第6题第（3）问讨论谐振式光学陀螺仪。半径为 $R$ 的环形腔以角速度 $\Omega$ 沿逆时针方向旋转，腔中介质折射率为 $n_1$，并满足 $R\Omega\ll c$。腔内同时存在顺时针与逆时针传播的共振模式；题目特别规定比较的是**同一级次** $m$ 的两类模式，要求导出角速度与共振频率差 $\Delta f$ 的关系。
 
 ```{=latex}
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=1.0]
-  \draw[very thick,blue!70!black] (0,0) circle (1.55);
-  \fill[gray!25] (0,0) circle (0.42);
+  \draw[very thick,ThesisBlue] (0,0) circle (1.55);
+  \fill[ThesisPale] (0,0) circle (0.42);
   \node at (0,0) {腔体};
-  \draw[->,very thick,red!75!black] (0,1.92) arc[start angle=90,end angle=-165,radius=1.92];
-  \node[red!75!black] at (-2.1,0.25) {$\Omega$};
-  \draw[->,thick,purple!75!black] (1.30,0.82) arc[start angle=33,end angle=132,radius=1.55];
-  \node[purple!75!black] at (0.15,1.92) {CCW};
-  \draw[->,thick,orange!85!black] (-1.30,-0.82) arc[start angle=213,end angle=312,radius=1.55];
-  \node[orange!85!black] at (-0.18,-1.95) {CW};
+  \draw[->,very thick,ThesisRust] (0,1.92) arc[start angle=90,end angle=-165,radius=1.92];
+  \node[ThesisRust] at (-2.1,0.25) {$\Omega$};
+  \draw[->,thick,ThesisLavender] (1.30,0.82) arc[start angle=33,end angle=132,radius=1.55];
+  \node[ThesisLavender] at (0.15,1.92) {CCW};
+  \draw[->,thick,ThesisGold] (-1.30,-0.82) arc[start angle=213,end angle=312,radius=1.55];
+  \node[ThesisGold] at (-0.18,-1.95) {CW};
   \draw[densely dashed] (0,0) -- (1.55,0) node[midway,below] {$R$};
   \fill (1.55,0) circle (1.5pt) node[right] {$A$};
 \end{tikzpicture}
@@ -290,6 +294,7 @@
 | 周期条件调用 | 环形边界把模式级次与波长联系起来 | 标注 $2\pi R=m\lambda_{m0}$ 含义的关系图 |
 | 近似判断 | $R\Omega\ll c$ 决定是否可保留一阶关系 | 精确式到近似式的条件说明 |
 | 结论解释 | 频率差的正负依赖方向约定 | 写明 $\Delta f$ 定义的结论句 |
+: 旋转谐振腔案例的任务结构与学习产出
 
 ## 5.6 案例五：可动楔块上的纯滚动条件
 
@@ -298,17 +303,17 @@
 第40届复赛第3题第（1）问给出质量为 $M$ 的楔块和质量为 $m$、半径为 $r$ 的匀质圆球。楔块可在光滑水平面上运动，圆球在倾角为 $\theta$ 的斜面上向下滚动。题目要求在圆球相对楔块纯滚动的条件下，求楔块和圆球的加速度，并进一步确定维持纯滚动所需的最小静摩擦因数。
 
 ```{=latex}
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=0.92]
   \draw[thick] (-3.8,-1.45) -- (3.8,-1.45);
-  \fill[gray!18] (-2.8,-1.45) -- (2.7,-1.45) -- (2.7,1.15) -- cycle;
+  \fill[ThesisPale] (-2.8,-1.45) -- (2.7,-1.45) -- (2.7,1.15) -- cycle;
   \draw[thick] (-2.8,-1.45) -- (2.7,-1.45) -- (2.7,1.15) -- cycle;
-  \draw[thick,blue!70!black] (0.78,0.15) circle (0.56);
-  \fill[blue!70!black] (0.78,0.15) circle (1.6pt) node[below left] {$C$};
-  \draw[->,thick,red!75!black] (0.78,0.15) -- (0.78,-0.95) node[right] {$mg$};
-  \draw[->,thick,purple!75!black] (1.15,-0.25) -- (0.38,0.49) node[above left] {$N_1$};
-  \draw[->,thick,orange!85!black] (0.39,-0.23) -- (0.91,0.28) node[midway,above left] {$f$};
+  \draw[thick,ThesisBlue] (0.78,0.15) circle (0.56);
+  \fill[ThesisBlue] (0.78,0.15) circle (1.6pt) node[below left] {$C$};
+  \draw[->,thick,ThesisRust] (0.78,0.15) -- (0.78,-0.95) node[right] {$mg$};
+  \draw[->,thick,ThesisLavender] (1.15,-0.25) -- (0.38,0.49) node[above left] {$N_1$};
+  \draw[->,thick,ThesisGold] (0.39,-0.23) -- (0.91,0.28) node[midway,above left] {$f$};
   \draw[->,very thick] (-1.65,-1.77) -- (-0.1,-1.77) node[midway,below] {$a_0$};
   \draw[->,thick] (0.78,0.15) -- (-0.02,-0.58) node[midway,above left] {$a_c$};
   \draw (2.12,-1.45) arc[start angle=180,end angle=137,radius=0.58];
@@ -359,6 +364,7 @@ a_c=\frac{5(M+m)g\sin\theta}
 | 约束连接 | 纯滚动把线加速度与角加速度联系起来 | 标出 $a_c=r\ddot\varphi$ 的方程卡 |
 | 方程联立 | 平动、转动与整体水平关系必须同时满足 | 方程旁标明“作用对象—方向—物理依据” |
 | 边界检验 | $\mu_0$ 对应纯滚动即将失效的临界条件 | 对 $\mu_0=f/N_1$ 的文字解释 |
+: 可动楔块纯滚动案例的任务结构与学习产出
 
 ## 5.7 案例六：分层大气中的声波折射
 
@@ -367,25 +373,25 @@ a_c=\frac{5(M+m)g\sin\theta}
 第40届复赛第7题第（3）问把大气简化为平面分层介质：对流层和逆温层温度均为 $-10\,^{\circ}\mathrm C$，同温层温度为 $-55\,^{\circ}\mathrm C$。声源位于同温层内，声波射向同温层与相邻大气层的界面。题目要求判断不同入射角下何时有折射，何时发生全反射，并作定性传播图。
 
 ```{=latex}
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \begin{tikzpicture}[>=Stealth,scale=0.88]
-  \fill[orange!13] (-4,1.1) rectangle (4,2.25);
-  \fill[blue!12] (-4,-1.1) rectangle (4,1.1);
-  \fill[orange!13] (-4,-2.25) rectangle (4,-1.1);
+  \fill[ThesisGold!12] (-4,1.1) rectangle (4,2.25);
+  \fill[ThesisBlue!11] (-4,-1.1) rectangle (4,1.1);
+  \fill[ThesisGold!12] (-4,-2.25) rectangle (4,-1.1);
   \draw[thick] (-4,1.1) -- (4,1.1);
   \draw[thick] (-4,-1.1) -- (4,-1.1);
   \node[left] at (-4,1.68) {外层：$T_o=-10\,^{\circ}\mathrm C$, $v_o$};
   \node[left] at (-4,0) {同温层：$T_i=-55\,^{\circ}\mathrm C$, $v_i$};
   \node[left] at (-4,-1.68) {外层：$T_o=-10\,^{\circ}\mathrm C$, $v_o$};
-  \fill[red!75!black] (-1.4,0) circle (2.2pt) node[below] {声源};
-  \draw[->,very thick,purple!75!black] (-1.4,0) -- (0.1,1.1);
-  \draw[->,very thick,purple!75!black] (0.1,1.1) -- (1.55,1.72);
+  \fill[ThesisRust] (-1.4,0) circle (2.2pt) node[below] {声源};
+  \draw[->,very thick,ThesisLavender] (-1.4,0) -- (0.1,1.1);
+  \draw[->,very thick,ThesisLavender] (0.1,1.1) -- (1.55,1.72);
   \draw[densely dashed] (0.1,0.5) -- (0.1,1.72);
-  \draw[->,thick,orange!85!black] (-1.4,0) -- (0.75,-1.1);
-  \draw[->,thick,orange!85!black] (0.75,-1.1) -- (2.4,-0.28);
-  \node[purple!75!black] at (1.5,1.25) {折射};
-  \node[orange!85!black] at (2.25,-0.72) {全反射示意};
+  \draw[->,thick,ThesisGold] (-1.4,0) -- (0.75,-1.1);
+  \draw[->,thick,ThesisGold] (0.75,-1.1) -- (2.4,-0.28);
+  \node[ThesisLavender] at (1.5,1.25) {折射};
+  \node[ThesisGold] at (2.25,-0.72) {全反射示意};
   \node at (-0.25,0.77) {$\theta_i$};
 \end{tikzpicture}
 \caption{同温层内声波射向界面时的折射与全反射示意图（依据题意自绘）。}
@@ -425,6 +431,7 @@ v_s^2=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu}.
 | 量值比较 | 温度决定两侧声速比 | 从 $T$ 到 $v_s$ 的一行推理 |
 | 条件分支 | 折射角是否存在决定折射或全反射 | $\theta_i$ 与 $\theta_{im}$ 的判断表 |
 | 图示解释 | 射线图要对应已写出的条件判断 | 图中标注法线、入射角和传播情形 |
+: 分层大气声波折射案例的任务结构与学习产出
 
 ## 5.8 跨案例任务结构比较
 
@@ -464,6 +471,7 @@ v_s^2=\gamma\frac{p}{\rho}=\frac{\gamma RT}{\mu}.
 | 同对象比较 | 不变量、方向约定与近似前后表达式 | 比较对象卡与近似条件提示 | 是否固定同一模式或同一物理量 |
 | 多对象约束 | 对象图、约束式与联立方程 | 受力图和“对象—方向—方程”表 | 方程是否与对应对象、方向和约束一致 |
 | 阈值判断 | 量值比较、临界条件与传播图 | “比例关系—是否超过1—图示”流程卡 | 临界角或边界是否由关系式推出 |
+: 六类任务结构的教学转化建议
 
 上述建议可用于后续教学方案、教师案例评审或学生作答分析的设计。本文的证据来自试题与参考解答，因而不将这些评价项目表述为已经观察到的学习结果或已经验证的教学效果。
 

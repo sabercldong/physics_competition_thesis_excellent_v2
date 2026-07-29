@@ -96,9 +96,34 @@ def main() -> None:
         "\\sloppy\n"
         "\\setlength{\\parindent}{2em}\n"
         "\\setlength{\\parskip}{0pt}\n"
-        "\\renewcommand{\\arraystretch}{1.18}\n"
+        "\\renewcommand{\\arraystretch}{1.22}\n"
+        "\\setlength{\\tabcolsep}{4.8pt}\n"
         "\\usepackage{tikz}\n"
-        "\\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning}\n"
+        "\\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning,fit,matrix}\n"
+        "\\usepackage{colortbl}\n"
+        "\\usepackage{caption}\n"
+        "\\usepackage{etoolbox}\n"
+        "\\usepackage{float}\n"
+        "\\usepackage{flafter}\n"
+        "\\definecolor{ThesisNavy}{HTML}{244A64}\n"
+        "\\definecolor{ThesisBlue}{HTML}{4E7896}\n"
+        "\\definecolor{ThesisTeal}{HTML}{4F8A83}\n"
+        "\\definecolor{ThesisRust}{HTML}{B7654A}\n"
+        "\\definecolor{ThesisGold}{HTML}{C49A45}\n"
+        "\\definecolor{ThesisLavender}{HTML}{80728F}\n"
+        "\\definecolor{ThesisInk}{HTML}{25333C}\n"
+        "\\definecolor{ThesisGrid}{HTML}{D8E0E5}\n"
+        "\\definecolor{ThesisPale}{HTML}{EDF3F6}\n"
+        "\\tikzset{every picture/.style={line cap=round,line join=round},"
+        "thesisbox/.style={draw=ThesisNavy,line width=.65pt,rounded corners=2pt,"
+        "fill=ThesisPale,text=ThesisInk,align=center,inner xsep=8pt,inner ysep=5pt},"
+        "thesisarrow/.style={-{Stealth[length=2.2mm]},line width=.75pt,draw=ThesisNavy}}\n"
+        "\\captionsetup{font=small,labelfont=bf,labelsep=quad,skip=6pt}\n"
+        "\\renewcommand{\\thefigure}{\\thechapter-\\arabic{figure}}\n"
+        "\\renewcommand{\\thetable}{\\thechapter-\\arabic{table}}\n"
+        "\\setlength{\\LTpre}{6pt}\n"
+        "\\setlength{\\LTpost}{9pt}\n"
+        "\\AtBeginEnvironment{longtable}{\\small\\arrayrulecolor{ThesisNavy!55}}\n"
         "\\ctexset{chapter={beforeskip=18pt,afterskip=20pt},"
         "section={beforeskip=16pt,afterskip=10pt},"
         "subsection={beforeskip=12pt,afterskip=7pt}}\n"
@@ -109,6 +134,10 @@ def main() -> None:
         r"\Gscale@div\@tempb{.86\linewidth}{\wd\pandoc@box}%",
     )
     tex = tex.replace(r"\pandocbounded{", r"\noindent\pandocbounded{")
+    tex = tex.replace(
+        "\\toprule\\noalign{}\n",
+        "\\toprule\\noalign{}\n\\rowcolor{ThesisPale}\n",
+    )
     TEX_FILE.write_text(tex, encoding="utf-8")
 
 

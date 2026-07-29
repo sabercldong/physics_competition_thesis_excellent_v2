@@ -98,9 +98,48 @@
 
 技术路线如下：
 
-![试题分析与教学转化技术路线图](08_manuscript/figures/figure_1_1_r01_technical_route_v1.png)
-
-图1-1 试题分析与教学转化技术路线。
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=6mm and 5mm,
+  every node/.style={font=\small},
+  stage/.style={thesisbox,text width=2.75cm,minimum height=1.45cm}
+]
+  \node[stage] (corpus) {\textbf{试题语料}\\[-1pt]\footnotesize 第35至42届复赛题与参考解答};
+  \node[stage,right=of corpus] (unit) {\textbf{分析单位}\\[-1pt]\footnotesize 按独立设问拆分为219个小问};
+  \node[stage,right=of unit] (framework) {\textbf{分析框架}\\[-1pt]\footnotesize 四维度与SOLO启发结构等级};
+  \node[stage,right=of framework] (coding) {\textbf{独立编码}\\[-1pt]\footnotesize 两名编码者形成876条记录};
+  \node[stage,below=of coding] (quality) {\textbf{质量控制}\\[-1pt]\footnotesize 一致性检验、分歧裁决与证据复核};
+  \node[stage,left=of quality] (statistics) {\textbf{描述分析}\\[-1pt]\footnotesize 出现比例、等级构成与共现关系};
+  \node[stage,left=of statistics] (cases) {\textbf{案例解释}\\[-1pt]\footnotesize 还原条件、模型、推理与边界机制};
+  \node[stage,left=of cases] (teaching) {\textbf{教学转化}\\[-1pt]\footnotesize 形成任务、支架与评价证据建议};
+  \draw[thesisarrow] (corpus) -- (unit);
+  \draw[thesisarrow] (unit) -- (framework);
+  \draw[thesisarrow] (framework) -- (coding);
+  \draw[thesisarrow] (coding) -- (quality);
+  \draw[thesisarrow] (quality) -- (statistics);
+  \draw[thesisarrow] (statistics) -- (cases);
+  \draw[thesisarrow] (cases) -- (teaching);
+  \coordinate (route-bottom-mid) at ($(teaching.south)!0.5!(quality.south)$);
+  \node[
+    draw=ThesisRust,
+    rounded corners=2pt,
+    fill=ThesisRust!7,
+    text=ThesisInk,
+    font=\footnotesize,
+    align=center,
+    inner xsep=8pt,
+    inner ysep=4pt,
+    below=7mm of route-bottom-mid
+  ] (boundary) {解释边界：统计结果描述试题任务要求，不直接推断学生能力或教学效果};
+  \draw[ThesisRust,dashed,line width=.65pt] (teaching.south) |- (boundary.west);
+  \draw[ThesisRust,dashed,line width=.65pt] (quality.south) |- (boundary.east);
+\end{tikzpicture}
+\caption{试题分析与教学转化技术路线}
+\label{fig:technical-route}
+\end{figure}
+```
 
 研究按照“语料整理—框架建构—编码统计—案例解释—教学设计”的顺序展开。教学转化以试题任务结构为依据，形成可用于选题、评讲和评价的设计建议；其效果仍需由真实课堂研究进一步检验。
 
