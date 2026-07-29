@@ -1,0 +1,18 @@
+\begin{tikzpicture}[>=Stealth,scale=.9]
+  \fill[gray!30] (-.25,-1.35) rectangle (.25,1.35);
+  \draw[thick] (-2,-1.35) rectangle (-.25,1.35);
+  \draw[thick] (.25,-1.35) rectangle (2,1.35);
+  \draw[dashed] (-.7,-1.5)--(-.7,1.5) (.7,-1.5)--(.7,1.5);
+  \draw[->,thick] (-2.9,0)--(-2,0) node[midway,above] {$I$};
+  \draw[->,thick] (2,0)--(2.9,0) node[midway,above] {$I$};
+  \draw[->] (0,-1.8)--(0,1.85) node[above] {$y$};
+  \draw[->] (0,0)--(2.7,0) node[below right] {$x$};
+  \draw[<->] (-.25,-1.08)--(.25,-1.08) node[midway,below] {$d$};
+  \draw[<->] (-.7,-.82)--(-.25,-.82) node[midway,below] {$\lambda$};
+  \draw[<->] (.25,-.82)--(.7,-.82) node[midway,below] {$\lambda$};
+  \node[rotate=90,align=center] at (-1.12,.25) {超导体\\1};
+  \node[font=\small] at (0,-1.62) {薄绝缘层};
+  \node[rotate=90,align=center] at (1.12,.25) {超导体\\2};
+  \fill (0,0) circle (1.2pt) node[above left] {$O$};
+  \node[below] at (0,-2.25) {原题图5a：约瑟夫森结横截面};
+\end{tikzpicture}

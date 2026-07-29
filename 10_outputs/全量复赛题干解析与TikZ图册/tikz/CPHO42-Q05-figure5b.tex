@@ -1,0 +1,16 @@
+\begin{tikzpicture}[>=Stealth,scale=.9]
+  \coordinate (L) at (-2,0); \coordinate (R) at (2,0);
+  \draw[->,thick] (-3,0)--(L) node[midway,above] {$I$};
+  \draw[->,thick] (R)--(3,0);
+  \draw[thick] (L)--(R);
+  \draw[thick] (L)--(-2,1.35)--(-.55,1.35) rectangle (.55,1.75)--(2,1.35)--(R);
+  \draw[thick] (L)--(-2,-1.35)--(-.35,-1.35);
+  \draw[thick] (-.35,-1.75)--(-.35,-.95) (.35,-1.75)--(.35,-.95);
+  \draw[thick] (.35,-1.35)--(2,-1.35)--(R);
+  \node[above] at (0,1.75) {$R$};
+  \node[below] at (0,-1.75) {$C$};
+  \node[above] at (0,.05) {$J$};
+  \draw[thick] (-.18,-.2)--(.18,.2) (-.18,.2)--(.18,-.2);
+  \fill (L) circle (1.3pt) (R) circle (1.3pt);
+  \node[below] at (0,-2.35) {原题图5b：$J$、$R$、$C$ 并联等效电路};
+\end{tikzpicture}
