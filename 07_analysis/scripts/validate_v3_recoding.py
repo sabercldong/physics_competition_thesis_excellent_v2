@@ -35,7 +35,6 @@ FORBIDDEN_FRAGMENTS = (
     "待补",
     "见原文",
     "同上",
-    "略",
     "通用模板",
     "智能体判断",
     "程序判定",
@@ -46,6 +45,12 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("input", nargs="?", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--mode", choices=("template", "filled"), default="template")
+    parser.add_argument(
+        "--expected-items",
+        type=int,
+        default=219,
+        help="Expected number of analysis units; use 26 for the year-35 batch.",
+    )
     return parser.parse_args()
 
 
@@ -69,8 +74,9 @@ def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
 
-    if len(rows) != 876:
-        errors.append(f"总行数应为876，实际为{len(rows)}")
+    expected_rows = args.expected_items * len(DIMENSIONS)
+    if len(rows) != expected_rows:
+        errors.append(f"总行数应为{expected_rows}，实际为{len(rows)}")
 
     keys = [(row.get("item_id", ""), row.get("dimension", "")) for row in rows]
     if len(set(keys)) != len(keys):
@@ -78,9 +84,10 @@ def main() -> int:
 
     dimension_counts = Counter(row.get("dimension", "") for row in rows)
     for dimension in DIMENSIONS:
-        if dimension_counts[dimension] != 219:
+        if dimension_counts[dimension] != args.expected_items:
             errors.append(
-                f"{dimension}应为219行，实际为{dimension_counts[dimension]}行"
+                f"{dimension}应为{args.expected_items}行，"
+                f"实际为{dimension_counts[dimension]}行"
             )
 
     source_cache: dict[str, str] = {}
@@ -129,6 +136,8 @@ def main() -> int:
         for fragment in FORBIDDEN_FRAGMENTS:
             if fragment in combined:
                 errors.append(f"{prefix}: 含禁止占位文本“{fragment}”")
+        if any(row.get(field, "").strip() == "略" for field in DECISION_FIELDS):
+            errors.append(f"{prefix}: 含禁止占位文本“略”")
 
         source_text = normalized(source_cache[source_rel])
         for field in ("question_quote", "solution_quote"):
