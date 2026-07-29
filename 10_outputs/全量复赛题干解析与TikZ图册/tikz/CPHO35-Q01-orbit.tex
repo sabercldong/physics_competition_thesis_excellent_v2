@@ -1,0 +1,11 @@
+\begin{tikzpicture}[>=Stealth,scale=.8]
+  \shade[ball color=blue!45] (0,0) circle (1.05);
+  \node at (0,0) {地球};
+  \draw[dashed] (0,0) ellipse (3.4 and 1.8);
+  \fill (2.55,1.18) circle (2pt) node[above] {发射点};
+  \draw[->,thick] (2.55,1.18)--(1.85,2.45) node[above] {$v_0$};
+  \draw[->] (2.55,1.18)--(0,0) node[midway,right] {$R+h$};
+  \draw[->] (0,0)--(-2.2,-.95) node[midway,below] {$R$};
+  \fill (-2.2,-.95) circle (2pt) node[below] {落地点};
+  \node[below] at (0,-2.35) {解析辅助图：地球引力场中的椭圆轨道与落地交点};
+\end{tikzpicture}

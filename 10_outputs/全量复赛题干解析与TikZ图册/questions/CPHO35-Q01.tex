@@ -1,66 +1,14 @@
-% 题干转写：完成
-% 解析转写：完成
-% 图形核对：完成
 \section{第35届复赛第1题：地球引力场中的发射运动}
 \subsection{题干}
-假设地球为质量分布各向同性的球体。空间站位于地面上方高度 $h$ 处，从站内向与地心连线垂直的方向发射小物体。已知地球半径 $R$、质量 $M$、引力常量 $G$；忽略地球自转与大气影响。
-\begin{enumerate}
-\item 若物体能绕地球作周期运动，初速度大小应满足什么条件？
-\item 若初速度为 $v_0$ 且物体会落到地面，求落地速度大小、速度与水平分量的夹角，以及由发射至落地的时间。
-\end{enumerate}
-
+物体从离地高度 $h$ 的空间站以切向初速度 $v_0$ 发射，忽略地球自转和大气。题目讨论可持续的周期运动条件；若轨道与地球相交，求落地速度、方向和飞行时间。
+\begin{figure}[htbp]\centering\input{tikz/CPHO35-Q01-orbit.tex}\caption{第35届复赛第1题的解析辅助图：题面无独立题图。}\end{figure}
 \subsection{参考解答整理}
-\paragraph{（1）不落地的周期运动条件。} 初始能量和角动量为
-\[
-E=\frac12mv_0^2-\frac{GMm}{R+h},\qquad L=mv_0(R+h).
-\]
-有界运动要求 $E<0$。若椭圆轨道恰好与地面相切，切点速度记为 $v$，则
-\[
-mv_{0\min}(R+h)=mvR,
-\qquad
-\frac12mv_{0\min}^2-\frac{GMm}{R+h}
-=\frac12mv^2-\frac{GMm}{R}.
-\]
-解得临界初速度
-\[
-v_{0\min}=\sqrt{\frac{2GMR}{(R+h)(2R+h)}}.
-\]
-故物体能作不与地面相交的圆或椭圆轨道运动的条件为
-\[
-\boxed{\sqrt{\frac{2GMR}{(R+h)(2R+h)}}<v_0<\sqrt{\frac{2GM}{R+h}}.}
-\]
-
-\paragraph{（2）落地速度、方向与时间。} 当
-\[
-v_0<\sqrt{\frac{2GMR}{(R+h)(2R+h)}}
-\]
-时，轨道与地球表面相交。由机械能守恒，落地速度大小为
-\[
-v=\sqrt{v_0^2+\frac{2GMh}{R(R+h)}}.
-\]
-由角动量守恒，落地瞬间的水平分量为
-\[
-v_\theta=\frac{R+h}{R}v_0.
-\]
-若 $\alpha$ 为速度与水平分量的夹角，则
-\[
-\alpha=\arccos\!\left(
-\frac{(R+h)v_0}{R\sqrt{v_0^2+\frac{2GMh}{R(R+h)}}}
-\right).
-\]
-以极坐标 $(r,\theta)$ 描述运动，守恒关系为
-\[
-r^2\frac{d\theta}{dt}=(R+h)v_0,
-\]
-\[
-\frac{dr}{dt}=-\sqrt{-\frac{(R+h)^2v_0^2}{r^2}+\frac{2GM}{r}+v_0^2-\frac{2GM}{R+h}}.
-\]
-因此下落时间由下列定积分唯一确定：
-\[
-t=\int_R^{R+h}\frac{r\,dr}
-{\sqrt{\left(v_0^2-\frac{2GM}{R+h}\right)r^2+2GMr-(R+h)^2v_0^2}}.
-\]
-令 $a=-(R+h)^2v_0^2$、$b=2GM$、$c=v_0^2-2GM/(R+h)$，将题给积分公式代入端点即可得到官方解答中的闭式时间表达式；该式在临界速度处取相应极限。
-
+由能量和角动量守恒，物体作有界周期运动且不落地的速度范围为
+\[\sqrt{\frac{2GMR}{(R+h)(2R+h)}}<v_0<\sqrt{\frac{2GM}{R+h}}.\]
+低于下限时，轨道与地球表面相交。落地速度大小与水平分量为
+\[v=\sqrt{v_0^2+\frac{2GMh}{R(R+h)}},\qquad v_\theta=\frac{R+h}{R}v_0.\]
+速度与水平面的夹角为
+\[\alpha=\arccos\left(\frac{(R+h)v_0}{Rv}\right).\]
+飞行时间由极坐标下的能量、角动量关系化为径向积分，答案第9页给出以 $a,b,c,\Delta$ 表示的积分结果和临界时间；本整理不转抄未逐式排版复核的长积分式。
 \subsection{转写依据}
-题干依据 \texttt{CPHO35-Q01.md}，公式依据 \texttt{CPHO35-Q01\_formula\_check\_v1.csv} 与答案页第6至9页。原题无题图，故本题无TikZ图件。
+题干依据 \texttt{CPHO35-Q01.md}；公式依据答案第6至9页与 \texttt{CPHO35-Q01\_formula\_check\_v1.csv}。题面无独立图件，插图为解析辅助图。第35届本题分值边界仍为待核实状态。
