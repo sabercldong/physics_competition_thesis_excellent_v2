@@ -1,0 +1,26 @@
+\begin{tikzpicture}[>=Stealth,scale=.72]
+  \draw[very thick] (-4,2.1) -- (-2.55,2.1) (-1.85,2.1) -- (1.85,2.1) (2.55,2.1) -- (4,2.1);
+  \draw[very thick] (-4,-1.7) -- (4,-1.7);
+  \node[left] at (-4,2.1) {$V_A$}; \node[left] at (-4,-1.7) {$V=0$};
+  \draw[<->] (4.3,-1.7) -- (4.3,2.1) node[midway,right] {$d$};
+  \draw[->] (-2.95,2.65) -- (-2.95,2.1) node[midway,left] {$Y_{D1}$};
+  \draw[->] (2.95,2.65) -- (2.95,2.1) node[midway,right] {$Y_{D2}$};
+  \draw[very thick] (-2.42,.35) -- (-2.42,-1.7);
+  \draw[very thick] (2.42,.35) -- (2.42,-1.7);
+  \node[below left] at (-2.42,-1.7) {入射狭缝};
+  \node[below right] at (2.42,-1.7) {接收狭缝};
+  \draw[dashed,thick] (-2.42,-.2) .. controls (-1.0,2.5) and (1.0,2.5) .. (2.42,-.2);
+  \draw[dashed] (-2.42,-.2) -- (-.65,1.7);
+  \draw[dashed] (2.42,-.2) -- (.65,1.7);
+  \draw[->] (-2.15,-.2) -- (-1.55,.45);
+  \draw[->] (1.55,.45) -- (2.15,-.2);
+  \draw (-2.05,-.2) arc (0:47:.36) node[midway,right] {$\theta_I$};
+  \node[left] at (-2.56,-1.05) {$\theta_a$};
+  \node[right] at (2.56,-1.05) {$\theta_b$};
+  \draw[<->] (-2.42,-2.25) -- (2.42,-2.25) node[midway,below] {$X_D$};
+  \draw[<->] (-2.42,-.72) -- (-1.85,-.72) node[midway,below] {$l$};
+  \draw[<->] (1.85,-.72) -- (2.42,-.72) node[midway,below] {$s$};
+  \node[left] at (-2.5,.22) {$l=0$}; \node[right] at (2.5,.22) {$s=0$};
+  \node at (0,.15) {无场区域};
+  \node[below] at (0,-2.85) {原题图2b：普罗卡--格林平行板能量分析器};
+\end{tikzpicture}

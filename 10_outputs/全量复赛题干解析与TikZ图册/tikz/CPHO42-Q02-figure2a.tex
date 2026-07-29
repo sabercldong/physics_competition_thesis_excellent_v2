@@ -1,0 +1,17 @@
+\begin{tikzpicture}[>=Stealth,scale=.88]
+  \shade[ball color=gray!22] (0,0) ellipse (1.55 and 2.05);
+  \draw[thick] (0,0) ellipse (1.55 and 2.05);
+  \node at (0,-1.55) {等离子体};
+  \draw[->,very thick] (-1.55,2.65) -- (-.32,.32);
+  \node[above left] at (-1.2,2.12) {一次离子束};
+  \fill (-.32,.32) circle(1.6pt);
+  \node[left] at (-.4,.3) {测量位置};
+  \draw[->,dashed,thick] (-.32,.32) .. controls (.45,.7) and (1.35,.95) .. (2.45,1.12);
+  \draw[->,dashed,thick] (-.32,.32) .. controls (.45,.15) and (1.35,.3) .. (2.45,.55);
+  \node[above] at (1.55,1.15) {二次离子束};
+  \draw[thick] (2.5,.25) -- (2.72,1.45);
+  \draw[thick] (2.67,.25) -- (2.89,1.45);
+  \node[right,align=left] at (2.82,1.48) {能量分析器\\接收狭缝};
+  \node at (-.78,-.78) {$\otimes\,B$};
+  \node[below] at (.4,-2.55) {原题图2a：重离子束探针测量原理};
+\end{tikzpicture}
