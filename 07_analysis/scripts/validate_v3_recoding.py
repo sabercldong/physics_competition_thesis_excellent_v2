@@ -107,6 +107,19 @@ def main() -> int:
         if source_rel not in source_cache:
             source_cache[source_rel] = source.read_text(encoding="utf-8-sig")
 
+        solution_source_rel = row.get("solution_text_path", "").strip() or source_rel
+        solution_source = ROOT / solution_source_rel
+        if not solution_source.exists():
+            errors.append(f"{prefix}: 解答源文件不存在 {solution_source_rel}")
+            continue
+        solution_hash = row.get("solution_text_sha256", "").strip()
+        if solution_hash and solution_hash != file_sha256(solution_source):
+            errors.append(f"{prefix}: solution_text_sha256与当前解答源文件不一致")
+        if solution_source_rel not in source_cache:
+            source_cache[solution_source_rel] = solution_source.read_text(
+                encoding="utf-8-sig"
+            )
+
         if args.mode == "template":
             dirty = [field for field in DECISION_FIELDS if row.get(field, "").strip()]
             if dirty:
@@ -139,8 +152,11 @@ def main() -> int:
         if any(row.get(field, "").strip() == "略" for field in DECISION_FIELDS):
             errors.append(f"{prefix}: 含禁止占位文本“略”")
 
-        source_text = normalized(source_cache[source_rel])
-        for field in ("question_quote", "solution_quote"):
+        quote_sources = {
+            "question_quote": normalized(source_cache[source_rel]),
+            "solution_quote": normalized(source_cache[solution_source_rel]),
+        }
+        for field, source_text in quote_sources.items():
             quote = row.get(field, "").strip()
             if len(normalized(quote)) < 8:
                 errors.append(f"{prefix}: {field}少于8个非空白字符")
