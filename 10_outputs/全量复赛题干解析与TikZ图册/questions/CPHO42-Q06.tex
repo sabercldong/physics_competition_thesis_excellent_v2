@@ -1,0 +1,21 @@
+\section{第42届复赛第6题：带盘簧的双球转速仪}
+\subsection{题干}
+转速仪的竖直转轴由轴承 $A,B$ 约束；质量为 $m_1,m_2$ 的小球固定在长为 $2l$ 的细杆两端，细杆中心绕 $O$ 点水平轴转动，并受回复力矩 $k\theta$。题目要求讨论匀速转动条件、角动量与轴承受力，以及受冲击后的非线性振动和小振动近似。
+\begin{figure}[htbp]\centering\input{tikz/CPHO42-Q06-figure6a.tex}\caption{第42届复赛第6题原题图6a的TikZ重绘。}\end{figure}
+\subsection{参考解答整理}
+匀速转动的力矩平衡给出
+\[\omega_0=\sqrt{\frac{k\theta_0-(m_1-m_2)gl\sin\theta_0}{(m_1+m_2+M/3)l^2\sin\theta_0\cos\theta_0}}.\]
+相对 $O$ 点的总角动量为
+\[\boldsymbol L=(m_1+m_2+M/3)l^2\sin\theta_0\,\omega_0(\cos\theta_0\boldsymbol e_x+\sin\theta_0\boldsymbol e_z).\]
+轴承合力由质心加速度和角动量定理确定；$F_{Ax},F_{Bx}$ 的完整表达式见答案第18页，本整理不转抄未逐项复核的长式。
+
+当 $m_1=m_2=m$ 时，竖直轴角动量守恒给出
+\[\omega(\theta)=\frac{\sin^2\theta_0}{\sin^2\theta}\omega_0.\]
+冲击后的初始角速度变化率满足
+\[\Omega_0=\sqrt{\frac{k}{(2m+M/3)l^2}}\sqrt{\theta_0\tan\theta_0\left(\frac{\sin^2\theta_0}{\sin^2\theta_M}-1\right)+\theta_M^2-\theta_0^2}.\]
+小幅振动频率为
+\[\omega_\theta=\sqrt{\frac{k}{(2m+M/3)l^2}\left[1+\frac{\theta_0(2\cos^2\theta_0+1)}{\sin\theta_0\cos\theta_0}\right]}.\]
+若 $\theta(t)=\theta_0+\delta_0\sin(\omega_\theta t)$，则一阶近似为
+\[\omega(t)\approx\left[1-2\cot\theta_0\,\delta_0\sin(\omega_\theta t)\right]\omega_0.\]
+\subsection{转写依据}
+题干依据 \texttt{CPHO42-Q06\_transcription\_v1.md}；公式与分值依据答案第16至20页和 \texttt{CPHO42-Q06\_formula\_check\_v1.csv}。图6a由原题图重绘，不嵌入原始页面截图。
