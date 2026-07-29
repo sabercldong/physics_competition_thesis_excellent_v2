@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = ROOT / "10_outputs/论文初稿_LaTeX"
 COMBINED_MD = OUTPUT_DIR / "论文初稿_合并源稿.md"
-TEX_FILE = OUTPUT_DIR / "中学生物理竞赛复赛试题的科学思维要求与教学转化研究.tex"
+TEX_FILE = OUTPUT_DIR / "全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.tex"
 REFERENCE_MAPPING = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
 SOURCES = [
     ROOT / "08_manuscript/00_abstract_content_draft.md",
@@ -75,7 +75,7 @@ def main() -> None:
     COMBINED_MD.write_text(combined + "\n", encoding="utf-8")
     command = [
         "pandoc", "--from", "markdown", "--to", "latex", "--standalone", "--toc", "--number-sections",
-        "--top-level-division=chapter", "--metadata", "title=中学生物理竞赛复赛试题的科学思维要求与教学转化研究",
+        "--top-level-division=chapter", "--metadata", "title=全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示",
         "--metadata", "author=董兴习", "--metadata", "date=2026年7月", "-V", "documentclass=ctexbook",
         "-V", "classoption=a4paper", "-V", "CJKmainfont=Songti SC", "-V", "CJKsansfont=Hiragino Sans GB",
         "-V", "geometry:top=2.5cm", "-V", "geometry:bottom=2.5cm", "-V", "geometry:left=3cm",
@@ -84,6 +84,11 @@ def main() -> None:
     ]
     subprocess.run(command, check=True)
     tex = TEX_FILE.read_text(encoding="utf-8")
+    tex = tex.replace(
+        r"\title{全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示}",
+        "\\title{全国中学生物理竞赛复赛理论试题的\\\\[0.45em]科学思维要求及教学设计启示}",
+        1,
+    )
     for title in ("摘要", "ABSTRACT", "参考文献"):
         tex = tex.replace(
             f"\\chapter{{{title}}}",

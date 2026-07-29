@@ -137,30 +137,37 @@ def main() -> None:
         stat["items_both_present"] == str(both) and stat["items_either_present"] == str(either) and float(stat["jaccard"]) == round(jaccard, 6) and phrase in chapter,
         "final_dimension_cooccurrence.csv;08_manuscript/04_results.md",
     )
+    native_figure_markers = {
+        "图4-1": r"\label{fig:dimension-presence}",
+        "图4-2": r"\label{fig:level-distribution}",
+        "图4-3": r"\label{fig:model-reasoning-pair}",
+        "图4-4": r"\label{fig:dimension-patterns}",
+    }
     for figure in figures:
         png = ROOT / figure["png_path"]
         pdf = ROOT / figure["pdf_path"]
         figure_id = figure["figure_id"]
+        figure_marker = native_figure_markers[figure_id]
         add(
             checks,
-            f"{figure_id}图件与当前编码哈希",
+            f"{figure_id}原生TikZ入口与当前编码哈希",
             coding_hash,
             figure.get("input_coding_sha256", "缺失"),
             figure["input_coding_sha256"] == coding_hash
             and png.is_file() and pdf.is_file()
             and sha256(png) == figure["png_sha256"]
             and sha256(pdf) == figure["pdf_sha256"]
-            and figure_id in chapter,
+            and figure_marker in chapter,
             "r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md",
         )
-    for phrase in ["不代表学生实际能力", "教学效果", "不进行显著性检验", "全样本主分析不进行分值加权", "描述性统计"]:
+    for phrase in ["不代表学生实际能力", "教学效果", "不进行显著性检验", "不进入跨届加权", "描述性统计"]:
         add(checks, "第四章边界语句", phrase, "存在" if phrase in chapter else "缺失", phrase in chapter, "08_manuscript/04_results.md")
     add(
         checks,
         "第35届分值资料的主分析边界",
-        "不纳入主分析且不开展分值加权",
-        "存在" if all(phrase in chapter for phrase in ("不将其纳入主分析", "不开展分值加权")) else "缺失",
-        all(phrase in chapter for phrase in ("不将其纳入主分析", "不开展分值加权")) and "第35届分值加权敏感性分析" not in chapter,
+        "逐步骤评分标准不进入跨届加权",
+        "存在" if all(phrase in chapter for phrase in ("逐步骤评分标准", "不进入跨届加权")) else "缺失",
+        all(phrase in chapter for phrase in ("逐步骤评分标准", "不进入跨届加权")) and "第35届分值加权敏感性分析" not in chapter,
         "08_manuscript/04_results.md",
     )
     metadata_specs = [

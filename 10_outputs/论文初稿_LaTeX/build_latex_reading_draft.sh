@@ -4,7 +4,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 OUTPUT_DIR="$ROOT/10_outputs/论文初稿_LaTeX"
-TEX_FILE="$OUTPUT_DIR/中学生物理竞赛复赛试题的科学思维要求与教学转化研究.tex"
+TEX_FILE="$OUTPUT_DIR/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.tex"
 BUILD_DIR="$OUTPUT_DIR/build"
 
 mkdir -p "$BUILD_DIR"

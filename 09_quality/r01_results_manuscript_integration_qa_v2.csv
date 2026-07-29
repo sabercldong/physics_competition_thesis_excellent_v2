@@ -29,16 +29,16 @@ MRQA2-27,完整维度组合“模型建构、科学推理、质疑创新”,| �
 MRQA2-28,完整维度组合“模型建构、科学推理、科学论证、质疑创新”,| 模型建构、科学推理、科学论证、质疑创新 | 40 | 18.26% |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
 MRQA2-29,完整维度组合“科学推理”,| 科学推理 | 16 | 7.31% |,存在,通过,final_coding_r01_correction_v1.csv;08_manuscript/04_results.md
 MRQA2-30,科学论证与质疑创新共现、统计输出与正文,科学论证与质疑创新共同出现40次，两者并集为150个单元，Jaccard系数为0.2667,存在,通过,final_dimension_cooccurrence.csv;08_manuscript/04_results.md
-MRQA2-31,图4-1图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
-MRQA2-32,图4-2图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
-MRQA2-33,图4-3图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
-MRQA2-34,图4-4图件与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-31,图4-1原生TikZ入口与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-32,图4-2原生TikZ入口与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-33,图4-3原生TikZ入口与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
+MRQA2-34,图4-4原生TikZ入口与当前编码哈希,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,3da0ec26a25b7b78bd62088dabccbc948dc62c7435fb8672d6daaf97e59af852,通过,r01_manuscript_figures_manifest_v1.csv;08_manuscript/04_results.md
 MRQA2-35,第四章边界语句,不代表学生实际能力,存在,通过,08_manuscript/04_results.md
 MRQA2-36,第四章边界语句,教学效果,存在,通过,08_manuscript/04_results.md
 MRQA2-37,第四章边界语句,不进行显著性检验,存在,通过,08_manuscript/04_results.md
-MRQA2-38,第四章边界语句,全样本主分析不进行分值加权,存在,通过,08_manuscript/04_results.md
+MRQA2-38,第四章边界语句,不进入跨届加权,存在,通过,08_manuscript/04_results.md
 MRQA2-39,第四章边界语句,描述性统计,存在,通过,08_manuscript/04_results.md
-MRQA2-40,第35届分值资料的主分析边界,不纳入主分析且不开展分值加权,存在,通过,08_manuscript/04_results.md
+MRQA2-40,第35届分值资料的主分析边界,逐步骤评分标准不进入跨届加权,存在,通过,08_manuscript/04_results.md
 MRQA2-41,表征要素数3项分层输出与正文,| 3 | 175 | 93.71% | 100.00% | 50.29% | 43.43% |,存在,通过,final_representation_component_dimension_presence.csv;08_manuscript/04_results.md
 MRQA2-42,表征要素数4项分层输出与正文,| 4 | 42 | 88.10% | 100.00% | 42.86% | 14.29% |,存在,通过,final_representation_component_dimension_presence.csv;08_manuscript/04_results.md
 MRQA2-43,数学工具要素数3项分层输出与正文,| 3 | 31 | 100.00% | 100.00% | 58.06% | 64.52% |,存在,通过,final_math_tools_component_dimension_presence.csv;08_manuscript/04_results.md
