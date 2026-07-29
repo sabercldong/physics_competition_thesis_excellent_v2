@@ -59,6 +59,7 @@ def normalise_headings(text: str, source: Path) -> str:
         text = text.split("## 数据来源", 1)[0]
     if source.name == "07_candidate_references.md":
         text = text.split("## 使用边界", 1)[0]
+        text = re.sub(r"(?ms)^>\s.*?(?=\n\n)", "", text, count=1)
         text = text.replace("# 参考文献（候选工作稿）", "# 参考文献")
         text = re.sub(r"(?m)^(\[\d+\])", r"\n\1", text)
         text = re.sub(r"(https?://[^\s]+)", r"<\1>", text)
@@ -80,7 +81,7 @@ def main() -> None:
         "-V", "classoption=a4paper", "-V", "CJKmainfont=Songti SC", "-V", "CJKsansfont=Hiragino Sans GB",
         "-V", "geometry:top=2.5cm", "-V", "geometry:bottom=2.5cm", "-V", "geometry:left=3cm",
         "-V", "geometry:right=2.6cm", "-V", "fontsize=12pt", "-V", "linestretch=1.5", "-V", "colorlinks=true",
-        "-V", "linkcolor=black", "-V", "urlcolor=blue", "-o", str(TEX_FILE), str(COMBINED_MD),
+        "-V", "linkcolor=black", "-V", "urlcolor=black", "-o", str(TEX_FILE), str(COMBINED_MD),
     ]
     subprocess.run(command, check=True)
     tex = TEX_FILE.read_text(encoding="utf-8")
@@ -90,9 +91,18 @@ def main() -> None:
         1,
     )
     for title in ("摘要", "ABSTRACT", "参考文献"):
+        chapter_heading = f"\\chapter*{{{title}}}\\addcontentsline{{toc}}{{chapter}}{{{title}}}"
+        if title == "参考文献":
+            chapter_heading += (
+                "\\markboth{参考文献}{参考文献}"
+                "\\begingroup"
+                "\\setlength{\\leftskip}{2em}"
+                "\\setlength{\\parindent}{-2em}"
+                "\\setlength{\\parskip}{3pt}"
+            )
         tex = tex.replace(
             f"\\chapter{{{title}}}",
-            f"\\chapter*{{{title}}}\\addcontentsline{{toc}}{{chapter}}{{{title}}}",
+            chapter_heading,
             1,
         )
     tex = tex.replace(
@@ -143,6 +153,7 @@ def main() -> None:
         "\\toprule\\noalign{}\n",
         "\\toprule\\noalign{}\n\\rowcolor{ThesisPale}\n",
     )
+    tex = tex.replace(r"\end{document}", "\\endgroup\n\\end{document}", 1)
     TEX_FILE.write_text(tex, encoding="utf-8")
 
 
