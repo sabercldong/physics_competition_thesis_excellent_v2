@@ -1,0 +1,10 @@
+\begin{tikzpicture}[>=Stealth,scale=.88]
+  \shade[ball color=red!45] (0,0) circle(1.25); \node at (0,0) {质子};
+  \draw[<->] (-1.25,-1.55)--(1.25,-1.55) node[midway,below] {$2r=1.70\,\mathrm{fm}$};
+  \foreach \x in {-1.0,-.5,0,.5,1.0} {\draw[densely dashed] (\x,-1.1)--(\x,1.1);}
+  \draw[<->] (-1.0,1.58)--(-.5,1.58) node[midway,above] {$\Delta x=2r/200$};
+  \draw[->,very thick,blue!70!black] (-4.0,0)--(-1.55,0) node[midway,above] {电子束};
+  \draw[decorate,decoration={snake,amplitude=1.2pt,segment length=7pt},blue!65!black] (-3.8,.35)--(-1.55,.35);
+  \node[align=center] at (3.25,.45) {$p_{\min}\geq\frac{\hbar}{2\Delta x}$\\[-2pt]$E_k\approx11.6\,\mathrm{GeV}$};
+  \node[below,align=center] at (0,-2.2) {解析辅助图：200层断层扫描的空间分辨率与电子动量尺度};
+\end{tikzpicture}

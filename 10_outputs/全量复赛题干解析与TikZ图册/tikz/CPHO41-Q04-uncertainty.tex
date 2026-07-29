@@ -1,0 +1,10 @@
+\begin{tikzpicture}[>=Stealth,scale=.9]
+  \draw[->,thick] (0,0)--(6.3,0) node[right] {$r$};
+  \draw[->,thick] (0,0)--(0,3.9) node[above] {$E$};
+  \draw[very thick,blue!70!black,domain=.75:5.8,samples=80] plot (\x,{.38*\x+1.5/\x});
+  \draw[densely dashed] (2,0)--(2,1.51); \fill (2,1.51) circle(1.4pt);
+  \node[below] at (2,0) {$\Delta r/r\simeq1$};
+  \node[above right,align=left] at (2.1,1.55) {不确定性动能项与\\库仑势能项的平衡};
+  \node[right] at (4.4,3.25) {$E_t=\frac{p^2}{2m_0}+\frac{Z_1Z_2e^2}{4\pi\varepsilon_0r}$};
+  \node[below,align=center] at (2.8,-.72) {解析辅助图：位置不确定度约束下的能量平衡};
+\end{tikzpicture}
