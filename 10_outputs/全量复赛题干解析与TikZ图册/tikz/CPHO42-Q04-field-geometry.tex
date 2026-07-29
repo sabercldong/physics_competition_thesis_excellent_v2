@@ -1,0 +1,14 @@
+\begin{tikzpicture}[>=Stealth,scale=.9]
+  \draw[->,thick] (-3.8,0)--(4.2,0) node[right] {$z$};
+  \draw[->,thick] (-3.5,-1.5)--(-3.5,1.7) node[above] {$x$};
+  \foreach \z in {-2.8,-1.4,0,1.4,2.8} {
+    \draw[blue,thick,->] (\z,-.65)--(\z,.65);
+    \node[red] at (\z+.28,.38) {$\odot$};
+  }
+  \draw[very thick,->] (-3.4,0) .. controls (-2.4,.9) and (-.8,-.8) .. (1.2,.2)
+    .. controls (2.2,.7) and (3.1,.35) .. (3.8,.15);
+  \fill (-3.4,0) circle (1.5pt) node[below left] {电子};
+  \node[blue] at (-2.7,-1.05) {$\boldsymbol E\parallel\boldsymbol e_x$};
+  \node[red] at (2.1,1.05) {$\boldsymbol B\parallel\boldsymbol e_y$（出纸面）};
+  \node[below] at (.2,-1.5) {解析辅助图：平面波场方向与电子在 $x$--$z$ 平面的运动};
+\end{tikzpicture}
