@@ -1,0 +1,8 @@
+\begin{tikzpicture}[>=Stealth,scale=.68]
+  \foreach \x/\tag in {-2/a,2/b} {\draw[thick,rounded corners=2pt] (\x-1,-.75) rectangle (\x+1,.75); \draw[thick,rounded corners=2pt] (\x-.35,-.22) rectangle (\x+.35,.22); \node at (\x,-.48) {(\tag)}; \foreach \dx/\n in {-.5/1,.5/5} {\draw (\x+\dx,.75)--(\x+\dx,.98); \node[above] at (\x+\dx,.98) {\n\tag};} \foreach \dx/\n in {-.5/7,.5/3} {\draw (\x+\dx,-.75)--(\x+\dx,-.98); \node[below] at (\x+\dx,-.98) {\n\tag};}}
+  \draw[thick] (-3.3,.35)--(-4, .35)--(-4,1.55)--(4,1.55)--(4,.35)--(4.7,.35); \draw[thick] (-3.3,-.35)--(-4,-.35)--(-4,-1.55)--(4,-1.55)--(4,-.35)--(4.7,-.35);
+  \draw[thick] (-1.5,.75)--(-1.5,1.05)--(1.5,1.05)--(1.5,.75); \draw[thick] (-1.5,-.75)--(-1.5,-1.05)--(1.5,-1.05)--(1.5,-.75);
+  \draw[->,thick] (-5,.35)--(-4,.35) node[midway,above] {$I$}; \draw[->,thick] (4, .35)--(5,.35) node[midway,above] {$I$};
+  \node[above] at (0,1.05) {$C$}; \node[below] at (0,-1.05) {$D$}; \node[left] at (-4,.35) {$A$}; \node[right] at (4.7,.35) {$B$};
+  \node[below] at (0,-2.05) {原题图3d：双器件三重并联连接};
+\end{tikzpicture}

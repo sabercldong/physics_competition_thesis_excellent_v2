@@ -1,0 +1,13 @@
+\begin{tikzpicture}[>=Stealth,scale=.82]
+  \coordinate (L) at (-1.8,0); \coordinate (T) at (0,1.25); \coordinate (R) at (1.8,0); \coordinate (B) at (0,-1.25);
+  \draw[thick] (L)--(T)--(R)--(B)--cycle;
+  \foreach \p/\lab in {L/1,T/3,R/5,B/7} {\fill (\p) circle(1.5pt); \node[above right] at (\p) {\lab};}
+  \foreach \a/\b in {L/T,T/R,R/B,B/L} {\draw ($(\a)!0.5!(\b)$) ++(-.12,-.12) -- ++(.24,.24);}
+  \draw[thick] (-3,0)--(L); \draw[thick] (R)--(3,0); \draw[thick] (T)--(0,2.15); \draw[thick] (B)--(0,-2.15);
+  \draw[fill=white] (-2.68,-.1) rectangle (-2.32,.1); \node[above] at (-2.5,0) {$R_{c1}$};
+  \draw[fill=white] (2.32,-.1) rectangle (2.68,.1); \node[above] at (2.5,0) {$R_{c5}$};
+  \draw[fill=white] (-.1,1.62) rectangle (.1,1.82); \node[right] at (0,1.72) {$R_{c3}$};
+  \draw[fill=white] (-.1,-1.82) rectangle (.1,-1.62); \node[right] at (0,-1.72) {$R_{c7}$};
+  \node[left] at (-3,0) {$I$}; \node[right] at (3,0) {$I$}; \node[above] at (0,2.15) {$U_3$}; \node[below] at (0,-2.15) {$U_7$};
+  \node[below] at (0,-2.65) {原题图3b：单器件等效电路};
+\end{tikzpicture}

@@ -1,0 +1,8 @@
+\begin{tikzpicture}[>=Stealth,scale=.72]
+  \foreach \x/\tag in {-2/a,2/b} {\draw[thick,rounded corners=2pt] (\x-1,-.8) rectangle (\x+1,.8); \draw[thick,rounded corners=2pt] (\x-.35,-.25) rectangle (\x+.35,.25); \node at (\x,-.52) {(\tag)}; \foreach \dx/\n in {-.5/1,.5/5} {\draw (\x+\dx,.8)--(\x+\dx,1.02); \node[above] at (\x+\dx,1.02) {\n\tag};} \foreach \dx/\n in {-.5/7,.5/3} {\draw (\x+\dx,-.8)--(\x+\dx,-1.02); \node[below] at (\x+\dx,-1.02) {\n\tag};}}
+  \draw[thick] (-3,-.3)--(-3,1.45)--(3,1.45)--(3,-.3); \draw[thick] (-2.5,-.8)--(-2.5,-1.45)--(2.5,-1.45)--(2.5,-.8);
+  \draw[thick] (-1.5,-.8)--(-1.5,-1.9)--(1.5,-1.9)--(1.5,-.8); \draw[fill=white] (0,-1.9) circle(.08); \node[below] at (0,-1.9) {开关};
+  \draw[->,thick] (-4,0)--(-3,0) node[midway,above] {$I$}; \draw[->,thick] (3,0)--(4,0) node[midway,above] {$I$};
+  \node[above] at (0,1.45) {$U_3$}; \node[below] at (0,-1.45) {$U_7$};
+  \node[below] at (0,-2.35) {原题图3c：双器件连接与开关短接};
+\end{tikzpicture}
