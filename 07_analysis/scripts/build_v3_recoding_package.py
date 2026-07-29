@@ -128,9 +128,9 @@ def build_p0_rows(screening_rows: list[dict[str, str]]) -> list[dict[str, str]]:
 
 def main() -> None:
     index_rows = read_rows(INDEX)
-    if len(index_rows) != 219:
-        raise ValueError(f"item_index应为219行，实际为{len(index_rows)}行")
-    if len({row["item_id"] for row in index_rows}) != 219:
+    if len(index_rows) != 221:
+        raise ValueError(f"item_index应为221行，实际为{len(index_rows)}行")
+    if len({row["item_id"] for row in index_rows}) != 221:
         raise ValueError("item_index存在重复item_id")
 
     blank_rows = build_blank_rows(index_rows)

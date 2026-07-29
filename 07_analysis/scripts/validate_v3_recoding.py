@@ -48,7 +48,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--expected-items",
         type=int,
-        default=219,
+        default=221,
         help="Expected number of analysis units; use 26 for the year-35 batch.",
     )
     return parser.parse_args()
