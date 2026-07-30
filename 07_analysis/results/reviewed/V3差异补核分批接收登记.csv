@@ -1,5 +1,5 @@
 batch_id,competition_scope,expected_rows,expected_items,intake_status,accepted_archive_path,source_sha256,archive_sha256,reviewer_code,review_date,keep_count,correction_count,pending_count,qa_report,remaining_action
 Y35-36,第35至36届,111,48,已接收：结构与实质QA通过,07_analysis/data/v3_review_migration/incoming/R01/R01_第35至36届差异补核111行_20260730_V2.csv,a32d2679e9d2558f5ee12a8aebe178ace819018c815b5596559b76481fd02166,a32d2679e9d2558f5ee12a8aebe178ace819018c815b5596559b76481fd02166,R01,2026-07-30,103,8,0,09_quality/V3差异补核第35至36届接收QA_G8-80-BATCH1.md,无：该批已关闭
 Y37-38,第37至38届,122,46,已接收：结构与实质QA通过,07_analysis/data/v3_review_migration/incoming/R01/R01_第37至38届差异补核122行_20260730_V2.csv,21c9f0b5c6c838a0559f458993c1ac601edf5919f508a3adf862308ebdc08b4f,21c9f0b5c6c838a0559f458993c1ac601edf5919f508a3adf862308ebdc08b4f,R01,2026-07-30,119,3,0,09_quality/V3差异补核第37至38届接收QA_G8-80-BATCH2.md,无：该批已关闭
-Y39-40,第39至40届,160,63,待R01完成,,,,,,,,,,完成后先执行分批结构与实质QA
+Y39-40,第39至40届,160,63,已接收：结构与实质QA通过,07_analysis/data/v3_review_migration/incoming/R01/R01_第39至40届差异补核160行_20260730_V3.csv,acd4d0140851b2e0c50055232deb11f171ad37e6aad735ee1583d5bfb17eb4d8,acd4d0140851b2e0c50055232deb11f171ad37e6aad735ee1583d5bfb17eb4d8,R01,2026-07-30,157,3,0,09_quality/V3差异补核第39至40届接收QA_G8-80-BATCH3.md,无：该批已关闭
 Y41-42,第41至42届,154,61,待R01完成,,,,,,,,,,完成后先执行分批结构与实质QA
