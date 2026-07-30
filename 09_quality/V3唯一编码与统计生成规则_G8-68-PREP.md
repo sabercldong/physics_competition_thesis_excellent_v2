@@ -72,7 +72,37 @@ python3 07_analysis/scripts/build_v3_descriptive_outputs.py \
 
 所有结果表绑定唯一编码表SHA-256。比例保留六位小数，分母同时保存在表中，不使用分值加权。
 
-## 五、解释边界
+## 五、生成正式图件
+
+```bash
+python3 07_analysis/scripts/build_v3_formal_figures.py \
+  --input "07_analysis/data/第35至42届科学思维V3唯一编码表.csv" \
+  --output-dir "08_manuscript/figures/v3_final"
+```
+
+输出四幅中文PNG/PDF图件和一份图件来源登记：
+
+- `图4-1_四维度出现比例_V3`
+- `图4-2_四维度等级构成_V3`
+- `图4-3_各届次维度出现比例_V3`
+- `图4-4_维度组合分布_V3`
+- `V3结果图件来源登记.csv`
+
+每幅图同时登记唯一编码表SHA-256、PNG/PDF路径及文件SHA-256。图内不写推断性标题，论文中的图题和解释必须继续遵守结果边界。
+
+## 六、独立复算
+
+```bash
+python3 07_analysis/scripts/validate_v3_final_outputs.py \
+  --coding "07_analysis/data/第35至42届科学思维V3唯一编码表.csv" \
+  --results-dir "07_analysis/results/v3_final" \
+  --figures-dir "08_manuscript/figures/v3_final" \
+  --qa-output "09_quality/第35至42届科学思维V3正式结果复算QA_G8-68.csv"
+```
+
+独立复算覆盖唯一键、四维覆盖、存在性与等级逻辑、人工更正、总体分布、等级分布、分届次分布、组合、共现、来源哈希和图件非空检查。任何一项失败均不得进入G8-69。
+
+## 七、解释边界
 
 这些统计描述第35至42届复赛理论试题的任务要求，不是学生实际作答结果。不得据此声称学生能力、教学效果、因果关系、统计显著性或命题质量优劣。跨届分布可作描述性比较，不自动构成时间趋势。
 
