@@ -1,0 +1,2 @@
+intake_id,accepted_review_sha256,qa_reviewer_or_code,qa_date,qa_decision,immutable_fields_confirmed,high_risk_flags_resolved,pending_records_resolved,evidence_spotcheck_completed,qa_report_path,qa_statement
+V3INT-20260730-5656b5b43ed2,5656b5b43ed280f469ffd9e1fe9a316ac6970e5b0183956ae8123c0e8ffed07a,CODEX-QA,2026-07-30,接受进入唯一编码表,是,是,是,是,09_quality/V3作者实质复核总接收QA_G8-80.md,已完成全量结构与来源核对、P0全量和P1/P2分层检查、9项质量标记处置及15项候选更正复核；项目技术QA接受该884行版本。
