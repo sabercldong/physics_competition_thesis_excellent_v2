@@ -76,3 +76,21 @@ python3 07_analysis/scripts/merge_v3_author_review_batches.py \
 - 逐批与全量校验输出。
 
 结构校验通过只证明字段、顺序和逻辑符合规则，不证明身份真实性或学术判断正确。
+
+## 七、正式接收
+
+三批实际完成并合并为884行后，按以下规则执行G8-80接收：
+
+`09_quality/V3作者实质复核接收规则_G8-80-INTAKE-PREP.md`
+
+接收器入口：
+
+```bash
+python3 07_analysis/scripts/intake_v3_author_review.py \
+  "<884行完成副本路径>" \
+  --intake-date "<实际接收日期YYYY-MM-DD>" \
+  --received-by "<接收操作者代号>" \
+  --output-dir "07_analysis/data/v3_author_review_intake/<接收批次目录>"
+```
+
+接收器会核对全量结构和哈希，并筛查跨题重复理由、重复证据位置、未闭合记录等风险。接收成功后仍保持不放行，必须继续执行G8-80人工QA。
