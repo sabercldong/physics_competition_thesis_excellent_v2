@@ -94,3 +94,14 @@ python3 07_analysis/scripts/intake_v3_author_review.py \
 ```
 
 接收器会核对全量结构和哈希，并筛查跨题重复理由、重复证据位置、未闭合记录等风险。接收成功后仍保持不放行，必须继续执行G8-80人工QA。
+
+## 八、G8-80通过后的出口
+
+G8-80人工QA明确接受后，使用验收决定模板和G8-68生成管线：
+
+- 验收决定模板：`V3作者实质复核G8-80验收决定模板.csv`
+- 生成规则：`09_quality/V3唯一编码与统计生成规则_G8-68-PREP.md`
+- 唯一表生成器：`07_analysis/scripts/build_v3_final_coding.py`
+- 中文统计生成器：`07_analysis/scripts/build_v3_descriptive_outputs.py`
+
+生成器会再次检查复核文件SHA-256、未闭合记录、人工QA报告和四项放行确认。没有正式G8-80验收决定时，不得填写模板来绕过门禁。
