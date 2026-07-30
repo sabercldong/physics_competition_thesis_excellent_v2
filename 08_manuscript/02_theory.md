@@ -151,7 +151,7 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
 | 题目含图像、表格或复杂符号 | 任一维度自动出现 | 这些表征是否承担条件识别、关系连接或边界判断功能 |
 : 四维编码中的常见误判及核对规则
 
-科学推理的判定同样设置了最低边界：完成小问必须把题设条件或中间结果与至少一条物理关系连接起来，并朝待求结论推进。若任务仅要求辨认、抄录或读取一个已直接给出的量，则可判为未出现。模型建构则只有在研究对象、边界、变量、近似或模型选择构成必要工作时才出现；题目已经完整给定模型并只需在其中推演，不自动触发模型建构。第四章中科学推理覆盖全部219个单元，是依据这一规则得到的语料结果，而不是预先设定，也不意味着所有物理试题都必然具有同样分布。
+科学推理的判定同样设置了最低边界：完成小问必须把题设条件或中间结果与至少一条物理关系连接起来，并朝待求结论推进。若任务仅要求辨认、抄录或读取一个已直接给出的量，则可判为未出现。模型建构则只有在研究对象、边界、变量、近似或模型选择构成必要工作时才出现；题目已经完整给定模型并只需在其中推演，不自动触发模型建构。第四章中科学推理覆盖全部221个单元，是依据这一规则得到的语料结果，而不是预先设定，也不意味着所有物理试题都必然具有同样分布。
 
 ### 2.4.3 组合关系与案例解释
 
@@ -179,8 +179,8 @@ SOLO启发等级与四维度共同使用后，可以避免两种相反的简化�
   \node[source,right=of science] (solo) {\textbf{SOLO理论与内容分析方法}\\[-1pt]\footnotesize 任务结构层次、分析单位、判定证据与复核规则};
   \coordinate (source-bottom-mid) at ($(science.south)!0.5!(solo.south)$);
   \node[core,below=9mm of source-bottom-mid] (coding) {\textbf{两层任务编码框架}\\[-1pt]\footnotesize 第一层：维度是否出现\quad 第二层：出现维度的结构等级L1至L4};
-  \node[source,below=of coding] (evidence) {\textbf{小问级语料与证据链}\\[-1pt]\footnotesize 219个分析单元；题干、参考解答及相邻等级排除理由};
-  \node[output,below left=8mm and -2mm of evidence] (distribution) {\textbf{总体结构}\\[-1pt]\footnotesize 维度分布、等级构成、共现与分组};
+  \node[source,below=of coding] (evidence) {\textbf{小问级语料与证据链}\\[-1pt]\footnotesize 221个分析单元；题干、参考解答及相邻等级排除理由};
+  \node[output,below left=8mm and -2mm of evidence] (distribution) {\textbf{总体结构}\\[-1pt]\footnotesize 维度分布、等级构成、组合与届次};
   \node[output,below right=8mm and -2mm of evidence] (mechanism) {\textbf{案例机制}\\[-1pt]\footnotesize 条件、模型、关系链、比较与边界};
   \node[core,below=9mm of $(distribution)!0.5!(mechanism)$,fill=ThesisTeal!11] (teaching) {\textbf{教学设计启示}\\[-1pt]\footnotesize 由任务结构形成学习任务、支架、可观察产出与反馈要点};
   \draw[thesisarrow] (science) -- (coding);
