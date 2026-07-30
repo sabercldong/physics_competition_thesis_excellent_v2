@@ -1,0 +1,5 @@
+batch_id,competition_scope,expected_rows,expected_items,intake_status,accepted_archive_path,source_sha256,archive_sha256,reviewer_code,review_date,keep_count,correction_count,pending_count,qa_report,remaining_action
+Y35-36,第35至36届,111,48,已接收：结构与实质QA通过,07_analysis/data/v3_review_migration/incoming/R01/R01_第35至36届差异补核111行_20260730_V2.csv,a32d2679e9d2558f5ee12a8aebe178ace819018c815b5596559b76481fd02166,a32d2679e9d2558f5ee12a8aebe178ace819018c815b5596559b76481fd02166,R01,2026-07-30,103,8,0,09_quality/V3差异补核第35至36届接收QA_G8-80-BATCH1.md,进入第37至38届122行差异补核
+Y37-38,第37至38届,122,46,待R01完成,,,,,,,,,,完成后先执行分批结构与实质QA
+Y39-40,第39至40届,160,63,待R01完成,,,,,,,,,,完成后先执行分批结构与实质QA
+Y41-42,第41至42届,154,61,待R01完成,,,,,,,,,,完成后先执行分批结构与实质QA
