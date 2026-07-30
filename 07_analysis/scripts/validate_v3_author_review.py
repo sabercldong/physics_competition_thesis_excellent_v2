@@ -44,6 +44,11 @@ def parse_args() -> argparse.Namespace:
         choices=("P0", "P1", "P2"),
         help="只校验题目级最高优先级对应的分批文件",
     )
+    parser.add_argument(
+        "--review-row-ids-file",
+        type=Path,
+        help="按CSV中的review_row_id校验自定义子集，与--item-priority互斥",
+    )
     return parser.parse_args()
 
 
@@ -52,6 +57,8 @@ def main() -> None:
     input_path = args.input if args.input.is_absolute() else ROOT / args.input
     fields, rows = read_rows(input_path)
     expected_rows, item_rows = build_package_rows()
+    if args.item_priority and args.review_row_ids_file:
+        raise SystemExit("--item-priority与--review-row-ids-file不能同时使用")
     if args.item_priority:
         item_ids = {
             row["item_id"]
@@ -61,6 +68,32 @@ def main() -> None:
         expected_rows = [
             row for row in expected_rows if row["item_id"] in item_ids
         ]
+    scope_name = args.item_priority or "ALL"
+    if args.review_row_ids_file:
+        scope_path = (
+            args.review_row_ids_file
+            if args.review_row_ids_file.is_absolute()
+            else ROOT / args.review_row_ids_file
+        )
+        scope_fields, scope_rows = read_rows(scope_path)
+        if "review_row_id" not in scope_fields:
+            raise SystemExit("自定义范围CSV缺少review_row_id字段")
+        scope_ids = [row["review_row_id"].strip() for row in scope_rows]
+        if any(not row_id for row_id in scope_ids):
+            raise SystemExit("自定义范围CSV含空review_row_id")
+        if len(scope_ids) != len(set(scope_ids)):
+            raise SystemExit("自定义范围CSV含重复review_row_id")
+        known_ids = {row["review_row_id"] for row in expected_rows}
+        unknown_ids = sorted(set(scope_ids) - known_ids)
+        if unknown_ids:
+            raise SystemExit(
+                f"自定义范围CSV含未知review_row_id: {unknown_ids[:10]}"
+            )
+        scope_id_set = set(scope_ids)
+        expected_rows = [
+            row for row in expected_rows if row["review_row_id"] in scope_id_set
+        ]
+        scope_name = f"CUSTOM:{scope_path}"
     expected_fields = [*PACKAGE_FIELDS, *REVIEW_FIELDS]
     errors: list[str] = []
 
@@ -157,6 +190,7 @@ def main() -> None:
     print(f"file={input_path}")
     print(f"mode={args.mode}")
     print(f"item_priority={args.item_priority or 'ALL'}")
+    print(f"scope={scope_name}")
     print(f"rows={len(rows)}")
     print(f"errors={len(errors)}")
     for error in errors[:100]:

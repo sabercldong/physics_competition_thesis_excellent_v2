@@ -2,3 +2,4 @@
 03_corpus/manual_review_returns/incoming/** -text
 03_corpus/manual_review_returns/quarantine/** -text
 07_analysis/data/rater_returns/incoming/** -text
+07_analysis/data/v3_review_migration/incoming/** -text
