@@ -39,6 +39,11 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("input", nargs="?", type=Path, default=OUTPUT)
     parser.add_argument("--mode", choices=("template", "filled"), default="template")
+    parser.add_argument(
+        "--item-priority",
+        choices=("P0", "P1", "P2"),
+        help="只校验题目级最高优先级对应的分批文件",
+    )
     return parser.parse_args()
 
 
@@ -46,14 +51,23 @@ def main() -> None:
     args = parse_args()
     input_path = args.input if args.input.is_absolute() else ROOT / args.input
     fields, rows = read_rows(input_path)
-    expected_rows, _ = build_package_rows()
+    expected_rows, item_rows = build_package_rows()
+    if args.item_priority:
+        item_ids = {
+            row["item_id"]
+            for row in item_rows
+            if row["item_priority"] == args.item_priority
+        }
+        expected_rows = [
+            row for row in expected_rows if row["item_id"] in item_ids
+        ]
     expected_fields = [*PACKAGE_FIELDS, *REVIEW_FIELDS]
     errors: list[str] = []
 
     if fields != expected_fields:
         errors.append("表头与G8-79规范不一致")
-    if len(rows) != 884:
-        errors.append(f"应为884行，实际为{len(rows)}行")
+    if len(rows) != len(expected_rows):
+        errors.append(f"应为{len(expected_rows)}行，实际为{len(rows)}行")
 
     for position, (actual, expected) in enumerate(
         zip(rows, expected_rows),
@@ -142,6 +156,7 @@ def main() -> None:
 
     print(f"file={input_path}")
     print(f"mode={args.mode}")
+    print(f"item_priority={args.item_priority or 'ALL'}")
     print(f"rows={len(rows)}")
     print(f"errors={len(errors)}")
     for error in errors[:100]:
