@@ -1,6 +1,4 @@
-# 参考文献（候选工作稿）
-
-> 本清单按华东师范大学公开格式基线的GB/T 7714-2015组织，仅列入当前39项已阅读、可限边界引用来源。它不是最终参考文献表：学校基线要求硕士论文参考文献不少于30篇且含外文文献；每项仍需逐条完成版本、页码和学校格式核验，未受控接入的来源继续留在文献台账而不进入本清单。
+# 参考文献
 
 [1] 中华人民共和国教育部. 普通高中物理课程标准（2017年版2020年修订）[S/OL]. 2020-06-03 [2026-07-24]. http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html.
 [2] Bao L, Cai T, Koenig K, et al. Learning and scientific reasoning[J]. Science, 2009, 323(5914): 586-587. DOI:10.1126/science.1167740.
@@ -40,8 +38,3 @@
 [36] Docktor J L, Dornfeld J, Frodermann E, et al. Assessing student written problem solutions: A problem-solving rubric with application to introductory physics[J]. Physical Review Physics Education Research, 2016, 12(1): 010130. DOI:10.1103/PhysRevPhysEducRes.12.010130.
 [37] Tschisgale P, Kubsch M, Wulff P, et al. Exploring the sequential structure of students’ physics problem-solving approaches using process mining and sequence analysis[J]. Physical Review Physics Education Research, 2025, 21(1): 010111. DOI:10.1103/PhysRevPhysEducRes.21.010111.
 [38] Meyer A, Fischer S, Friege G. Analyzing problem solving in secondary physics education: A rubric-guided approach to explore individual learning needs[J]. Physical Review Physics Education Research, 2026, 22(1): 010111. DOI:10.1103/3bs7-fnrd.
-[39] Tschisgale P, Maus H, Kieser F, et al. Evaluating GPT- and reasoning-based large language models on Physics Olympiad problems: Surpassing human performance and implications for educational assessment[J]. Physical Review Physics Education Research, 2025, 21(2): 020115. DOI:10.1103/PhysRevPhysEducRes.21.020115.
-
-## 使用边界
-
-每条来源的可支持主张、禁止外推及版本/页码缺口见 `09_quality/r01_candidate_references_mapping_v1.csv`。正文中的来源ID占位须在最终定稿前按首次引用顺序转换为编号制引文，并与学校当期学院规范再次核对。

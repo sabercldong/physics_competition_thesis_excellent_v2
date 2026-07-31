@@ -1,0 +1,190 @@
+# 第40届复赛第3题：楔块上匀质圆球滚动与滑动
+
+## 来源
+
+- 试题文件：`03_corpus/raw_papers/cpho_40_2023_fusai_paper_solution_candidate.pdf`
+- 试题页码：2
+- 解答页码：9-12
+- 题图：03_corpus/item_assets/CPHO40-Q03-figure1-page2-raw.png
+- 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
+
+## G1-07-A1 视觉校对转写入口
+
+- 校对转写稿：`03_corpus/manual_review_transcripts/CPHO40-Q03_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO40-Q03_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-paper-page-2.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-solution-page-09.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-solution-page-10.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-solution-page-11.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-solution-page-12.png`
+- 当前状态：已完成题面V1视觉转写和答案公式核对入口登记；经视觉检查，第3题答案从PDF第9页下半部开始，至第11页结束，PDF第12页已进入第4题，仅用于边界确认。仍需最终排版复核、真实人工确认、题图校对和正式编码证据摘录。原始OCR文本保留在下方，仅作错误来源对照，不得用于正式编码证据。
+
+## 题干OCR抽取文本
+
+```text
+三、(40 分) 如图 3a，倾角为8、质量为M 的三角形槐块放在光滑的水平地面                      C)
+
+上，其斜面上有一个质量为由、半径为的匀质圆球，让该球从静止开始自由            zi
+向下运动，整个过程中模块无转动。重力加速度大小为8 ，假设圆球与模块之      Ya
+(ASAD RRA AI BR oo                              NE
+CD 若人/足够大，使得球无滑动地滚下，求;                            图3a
+
+Gi) 模块相对于地面的加速度的大小m;
+
+Gi) 匀质圆球质心相对于攀块的加速度的大小ws
+
+Git) 地面对枫块的支持力的大小N ，
+
+Civ) 槐块对圆球的支持力的大小Ni，
+
+(v) 为了使色质圆球保持无滑滚动，球与攀块之间摩擦因数乌的最小可能值如;
+
+《2) SudFR (1) (v) 问中的和如，且槐块斜面足够长，求圆球从静止开始运动一段时间 Ar 后，圆球上与攀
+块接触的点 P 相对于模块的速度。
+```
+
+## 参考解答抽取文本
+
+```text
+三、
+           （1）（ⅰ）由于球运动过程中楔块在光滑水平面上无转动，可知过球
+           质心和楔块质心的竖直面与楔块斜面垂直，只需考虑球和楔块在图
+                                                                                                                     ac
+           3a 所示平面（即上述竖直面）内的运动。                                                                          y            vc
+                 如题解图 3a，设楔块相对于水平面的速度和加速度分别为 v0 、                                                                             a0 v0
+                                                                                                                      
+           a0 ，圆球质心相对于楔块的速度加速度分别为 vc 、 ac 。
+             在相对于楔块静止的参考系中，球受到平动惯性力、重力和斜
+                                                                                                                     题解图 3a
+           面对圆球的（斜向上）摩擦力 f 的作用，球的质心运动方程为
+
+                                                                                        4
+
+
+
+
+{#{QQABYQCQggggQAIAAQhCUQGgCgOQkBAACAoGRBAAoAABARFABAA=}#}
+                       mac  ma0 cos  mg sin  f              ①
+           设圆球相对其质心的转角为  ，由绕质心轴的转动方程得
+                         Ic=fr                                ②
+           由纯滚动条件得
+                         vc  r                                ③
+                         ac  r                               ④
+           球的绕其中心的转动惯量为
+                                2
+                         Ic      mr 2                           ⑤
+                                5
+           联立②④⑤式得
+                                2
+                         f       mac                            ⑥
+                                5
+           在地面系，由体系水平方向的动量守恒得
+                        m(vc cos  v0 )  Mv0                   ⑦
+           ⑦式两边对时间求导得到
+                                  m(ac cos  a0 )  Ma0         ⑧
+           联立①⑥⑧式得
+                          5
+                            mg sin  cos 
+                     a0  7                   ⑨
+                                 5
+                         M  m  m cos2 
+                                 7
+           （ii）将⑨式代入⑧式解得
+                          5
+                            ( M +m) g sin 
+                     ac  7                 ⑩
+                                 5
+                         M  m  m cos2 
+                                 7
+            （iii）将楔块和圆球看作一个整体。体系质心速度在竖直方向的分量为（向上为正）
+                                            m vc sin 
+                                    vy                              ⑪
+                                             M m
+           对时间求导可知
+                                       mac sin 
+                                ay                                  ⑫
+                                        M m
+           设地面对楔块的的支持力大小为 N ，方向向上。竖直方向上体系质心的运动方程为
+                 ( M  m)a y  N  ( M  m) g ⑬
+           联立⑫⑬式并将⑩式代入得
+                                         2
+                                     M m
+                  N  ( M  m) g         7        ⑭
+                                        5
+                                 M  m  m cos2 
+                                        7
+           【解法 2：也可将楔块作为研究对象，考虑下一问中的圆球的支持力，以及圆球对楔块的摩擦力得
+                                 N  Mg  N1 cos  f sin
+           将第（4）问中⑯式代入，并联立⑥⑩式，可得
+                                         2
+                                     M m
+                  N  ( M  m) g         7                       ⑭       】
+                                        5
+                                 M  m  m cos2 
+                                        7
+
+                                                             5
+
+
+
+
+{#{QQABYQCQggggQAIAAQhCUQGgCgOQkBAACAoGRBAAoAABARFABAA=}#}
+                （iv）在相对于楔块静止的参考系中，设楔块对圆球的支持力大小为 N1 ，方向垂直于斜面向上。在与斜面垂直
+           的方向上球受力平衡有
+                                     N1  ma0 sin  mg cos                           ⑮
+           将⑨式代入得
+                                        2
+                                    M m
+                  N1  mg cos          7                                              ⑯
+                                       5
+                                M  m  m cos2 
+                                       7
+           （v）最小摩擦系数为
+                          f
+                     0                                                                   ⑰
+                          N1
+           联立⑥⑩⑯式得
+                                               2( M  m )
+                                      0                  tan                            ⑱
+                                              (7 M  2 m )
+           （2）当   0 时，圆球连滚带滑。相对于楔块静止的参考系，圆球质心动力学方程仍由①式给出
+                                 mac  ma0 cos  mg sin  f
+           其中摩擦力应满足
+                                          f   N1                             ⑲
+           联立①⑧⑮⑲式解出
+                                    ( M  m ) g (sin    cos  )
+                          ac                                                  ⑳
+                                 M  m  m cos 2    m sin  cos 
+                                                      Mmg
+                                f                                             ㉑
+                   M m
+                          m cos    m sin 
+                   cos 
+           由⑳式可知线加速度大小 ac 为常量。由㉑式并联立②⑤式知，球滚动的角加速度
+                                     5 f
+                                                                               ㉒
+                                     2 mr
+           为常量。故球与楔块接触点 P 相对于楔块的速度为
+                             vP  vc  r  ac t  rt                    ㉓
+           联立㉓⑳㉑㉒式得
+                                                        7
+                                     ( M  m ) g sin    ( m 
+                                                          M ) g cos 
+                             vP                        2             t           ㉔
+                                  M  m  m cos2    m sin  cos 
+           可以检验，当   0 时， vP  0 ，圆球相对楔块做纯滚动。   0 时， vP  0 ，可知 P 点相对于楔块的速度斜向
+           下。
+
+           评分标准：本题 40 分。
+             第（1）问 22 分
+           （i）12 分 其中①②式各 2 分, ③④⑤⑥式各 1 分，⑦⑨各式 2 分
+           （ii）2 分 其中 ⑩式 2 分
+           (iii) 4 分 其中⑪式 2 分,⑬⑭式各 1 分
+           (iv）4 分,其中⑮⑯式各 2 分
+           （v）2 分，其中⑰⑱式各 1 分
+             第(2)问 18 分
+           其中：⑲式 2 分，⑳㉑式各 4 分，㉒㉓式各 2 分，㉔式 4 分
+
+                                                                           6
+
+
+
+
+{#{QQABYQCQggggQAIAAQhCUQGgCgOQkBAACAoGRBAAoAABARFABAA=}#}
+```

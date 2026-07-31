@@ -1,0 +1,147 @@
+# 第37届复赛第8题：电光调制器与调制效率
+
+## 来源
+
+- 试题文件：`03_corpus/raw_papers/cpho_37_2020_fusai_paper_solution_candidate.pdf`
+- 试题页码：4-5
+- 解答页码：19-21
+- 题图：03_corpus/item_assets/CPHO37-Q08-figure1-page4-raw.png;03_corpus/item_assets/CPHO37-Q08-figure2-page5-raw.png
+- 抽取状态：扫描页OCR抽取，已按页面视觉定位大题边界；公式、特殊符号、图注和OCR错字需人工校对。
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-37Q08`
+- 题面V1转写稿：`03_corpus/manual_review_transcripts/CPHO37-Q08_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO37-Q08_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-paper-page-5.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-solution-page-20.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-solution-page-21.png`
+- 当前状态：原OCR文本仅保留为错误来源和追溯材料；正式编码前应以V1转写稿、公式核对表和页面证据作为复核入口。`CPHO37-Q08-FIG` 尚未销项；半波电压、1/4波片线性化、等效阻抗、并联谐振条件和调制效率表达式需重点最终复核。
+
+## 题干OCR抽取文本
+
+```text
+八、《〈40 分) 将电传输信号调制到光信号的过程称为电         可
+光调制。电光调制器的主要工作原理是电光效应: 以饭酸 sees | |  人AN  De (\ eave
+刍电光蝇体为例，其折射率在电场作用下发生变化，从而 Vy)   hj
+长变输入光束的光程，使电信号信息转移到光信号上。电 。 ta      $a — yar rasp
+区调制器光路图如图 8a Nia, Bas Pe 分别为起偏器和检                 Pal 8a
+偏器，丙者结构相同但偏振方向相互垂直《〈图中也(zx)、也(le) 表示 Pas Pa HYRRBRTT LS HS 2, 、避坐标
+AAT ，长度为人 厚度为上的电光晶体置于 Pi、P?之间，晶体两端面之间加有电压矿《〈以产生沿六方向
+的电场，强度大小为眉) ;真宝中波长为为的光波经过起偏器 P Cy ) 后沿六方向入射至电光晶体，折
+射后分为两束偏振方向(分别与快轴交 和慢轴总平行) 相互垂直的光波,xf 轴与轴、必轴与忆轴均成45。
+夹角，电光晶体内沿 xf 、忆方向的折射率分别为
+RAR HSK
+第4页/共21页
+
+有= -3
+
+( =n, hme
+其中由为@光的折射率，y WHEL, HUAI, 两束光从电光总体出射后经 14 波片，最终由检
+SH Ps Cry) 获取。
+C1) 一东贺频率为mw IAS AES, RE I
+
+te =E,cosot
+
+E..= E,cosot
+求光通过电交品体后的相位变化和光强变化，当出射光束之问的相位差为=时，电光晶体起到一个 “12 波
+片”的作用，此时所用的外加电压称为半波电压恋，求到。
+(2) 设外加电信号电压为
+V=V,sina,t (Vi, <<.)
+0, RMIT BR. HA a SUTTTELTEE AIRS Po, RUD CINEREA: CLADE SA
+射光强度之比) 与电信号电庄的关系。只有在电光调制器的透过率与调制电压具有良好的线性关系时，电
+信号转移到光信号后信号才不失真。求光线经过114 波片和检偏器 忆时，山射的光束光强透过率与电信号
+电压的关系，并指出174 波片所起的作用。
+(3) 电光调制器的等效电路如图 gb 左于部所示: 电光晶体置于两平行板电      E
+i A mn PA EL UBC 的电卫-电容并下 ae
+电路;F 为外加信号电压,R。为调制电源和导线的电阻，通党满足Rx>及。。 是
+试证明， 在图 8b 中开关断开的情形下，当as>> (R.C): ，实际加载至电光
+晶体上的电压炙满足民|<<|P| ，即调制效率极低。                      aad
+(4) 为了提高调制效率，添加《即将图 & 中开关合上》 如图 gb FEATURE CE, RN
+负载电阻，Z 为线图的电感》，试证明忆|=|r。
+第5页,共5页
+第5页/共21页
+```
+
+## 参考解答OCR抽取文本
+
+```text
+八、
+《1) 当一东线偏振光沿 呈轴进入晶体，且沿忆方向偏振时，进入晶体后可以分解为治闪和总方向的两个垂直偏振
+分芋。据题给的折射率与电场强度的关系，相应的相位变化量为
+4, Fal -反问                                            @
+4, -和0全                               四
+这两束光穿过晶体后的相位差为
+第14页,共16页
+第 19页/共21页
+
+大= ~¢, pe ae                               四
+ae ee
+式中六= 忌。入射光强为
+1,=KIEP =(|E,f +|Euf)= 248:                      四
+式中大是与电场强度无关的常量。当光通过长度为!的晶体后，在输出面的 与双方向上的电场为
+By (D) = E,C0(O1+ dy.)                                                  a
+Ex (I) = Eycos(et + by)                                                                      全
+出射光强为
+1, = KE(DL =k (EOP + |B (DP) =2kEs =,                          @
+可见，当光通过长度为!的晶体后，光强未变。
+由半波电讨反的定义有
+Nb Fo, =n                                                       @
+HO
+y =o                                                                   a
+=a                                                               ®
+(2) 不经过 1/4 BE A PAR GRRE DS xy Gxt EN x, SZ Al
+E,, =—E, (1) 00s45° + E,, (Neos 45°
+一 与Fewmerw J+ cost +d, 1                                   ®
+输出光强为
+0 2sin )  246 sin’                         加
+由GDG@@式得，当了 <<1，光昌的透过素为
+wd in ABS — gin Hy — ein? Un sin gt) _[2V, sino,t) |
+Tet ast ea Gps    W,   |   37   |          @
+T SV? =(V,sina,ty RIEL.
+加上 V4 BH of 5 x) He ZT Oe 2 AE, HAT
+Ag+=
+T =sin: —2-=sin? |于入wanao]
+2         4,
+ad con rasmanpj) 1 4 gin Hasina                    ®
+“Ss           4       2,        a)             及
+=了0 + 0,2)
+第15页,共16页
+第 20页/共21页
+
+了与上=瓜sinwuf 成线性关系。
+可见，未加 1/4 波片时，光强的透过率与调制电压信号玉=及sinaut 呈非线性关系; 添加 U4 波片的作用是保
+证系统的工作电压处于线性工作区域，使得光强的透过率和调制电压信号玉=态sinwut 呈现线性关系。
+《3) 实际加载至电光晶体上的电压及为
+[aa
+Ke  LRH  .                                加
+R,+
+"TT R+i0,C
+R             1
+—— | 一一一一                     四
+re  | | pene! |
+a, >> (RC) litt
+KIA
+电讨基本上落在 R 上，电光晶体调制效率极低。
+(4) 并联电感工和分流电阻尺 《即将图 Sb 中的开关都闭合) 后，调制器系统的有效阻抗满足
+|      i if fb
+7x ar Teak la)                =
+由的式得
+四-天-一                         四
+1        1
+由固式可知，当wu =1/VEC ，调制器阻抗为最大值
+Zon = 2                                      ®
+PAM, AGL RR A SS ARAL. ASAT. “SR, >> Rs时有
+四=网
+调制电压绝大部分加在在晶体上，从而保证了调制效率。
+评分标准:本题 40 分。
+HA) 问 12 分 DORK 3 分，@@@@@式各 1 分;
+第 (2) HIBS, O44, OMOHK 3 4-
+第 (3) Hos, OOK 3 4
+第 (4) 9, OORK 3 分，回式1 分，轿式2 分。
+第16页,共16页
+第21页/共21页
+```

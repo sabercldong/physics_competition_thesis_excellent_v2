@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import re
 import subprocess
 from pathlib import Path
@@ -14,6 +15,7 @@ OUTPUT_DIR = ROOT / "10_outputs/论文初稿_LaTeX"
 COMBINED_MD = OUTPUT_DIR / "论文初稿_合并源稿.md"
 TEX_FILE = OUTPUT_DIR / "全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.tex"
 REFERENCE_MAPPING = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
+METADATA_FILE = OUTPUT_DIR / "华东师范大学论文元数据.json"
 SOURCES = [
     ROOT / "08_manuscript/00_abstract_content_draft.md",
     ROOT / "08_manuscript/00_abstract_en_content_draft.md",
@@ -23,6 +25,7 @@ SOURCES = [
     ROOT / "08_manuscript/04_results.md",
     ROOT / "08_manuscript/05_cases_and_diagnosis.md",
     ROOT / "08_manuscript/06_conclusion.md",
+    ROOT / "08_manuscript/08_appendices.md",
     ROOT / "08_manuscript/07_candidate_references.md",
 ]
 
@@ -37,6 +40,108 @@ def load_reference_numbers() -> dict[str, str]:
 
 
 REFERENCE_NUMBERS = load_reference_numbers()
+
+
+def load_thesis_metadata() -> dict[str, str]:
+    """Load verified cover metadata while leaving unavailable fields empty."""
+    with METADATA_FILE.open(encoding="utf-8") as handle:
+        data = json.load(handle)
+    return {key: str(value).strip() for key, value in data.items() if value is not None}
+
+
+def nonempty_rows(metadata: dict[str, str], fields: list[tuple[str, str]]) -> str:
+    rows = []
+    for label, key in fields:
+        value = metadata.get(key, "")
+        if value:
+            rows.append(rf"{label} & {value} \\")
+    return "\n".join(rows)
+
+
+def build_school_frontmatter(metadata: dict[str, str]) -> str:
+    """Build Chinese and English inner covers from known metadata only."""
+    title_cn = metadata["论文题目"]
+    title_cn_tex = title_cn.replace("的科学思维", "的\\\\[0.45em]科学思维", 1)
+    title_en = metadata["英文题目"]
+    mode = metadata.get("培养方式", "")
+    school_code = metadata.get("学校代码", "10269")
+    chinese_rows = nonempty_rows(
+        metadata,
+        [
+            ("院系名称：", "培养单位"),
+            ("专业学位类别：", "专业学位类别"),
+            ("专业学位领域：", "专业学位领域"),
+            ("学位申请人：", "作者姓名"),
+            ("指导教师：", "校内导师"),
+        ],
+    )
+    english_rows = nonempty_rows(
+        metadata,
+        [
+            ("Department/School:", "培养单位英文"),
+            ("Category:", "专业学位类别英文"),
+            ("Field:", "专业学位领域英文"),
+            ("Candidate:", "作者姓名英文"),
+            ("Supervisor:", "校内导师英文"),
+        ],
+    )
+    completion_cn = metadata.get("完成时间", "")
+    completion_en = metadata.get("完成时间英文", "")
+    cohort = metadata.get("毕业届次", "")
+    cohort_line = f"{cohort}届硕士专业学位研究生学位论文" if cohort else "硕士专业学位研究生学位论文"
+    if mode:
+        cohort_line += f"（{mode}）"
+    return rf"""
+\frontmatter
+\begin{{titlepage}}
+\thispagestyle{{empty}}
+\begin{{flushleft}}
+\zihao{{-4}} {cohort_line}
+\hfill 学校代码：{school_code}
+\end{{flushleft}}
+\vspace*{{2.2cm}}
+\begin{{center}}
+{{\heiti\zihao{{1}}\bfseries 华东师范大学\par}}
+\vspace{{0.7cm}}
+{{\heiti\zihao{{2}}\bfseries 硕士专业学位论文\par}}
+\vspace{{2.8cm}}
+{{\songti\zihao{{1}}\bfseries {title_cn_tex}\par}}
+\vfill
+\renewcommand{{\arraystretch}}{{1.55}}
+\begin{{tabular}}{{r l}}
+{chinese_rows}
+\end{{tabular}}
+\vfill
+{{\zihao{{-3}} {completion_cn}\par}}
+\end{{center}}
+\clearpage
+\thispagestyle{{empty}}
+\begin{{flushright}}
+\zihao{{-4}} University code: {school_code}
+\end{{flushright}}
+\vspace*{{2.3cm}}
+\begin{{center}}
+{{\bfseries\fontsize{{21pt}}{{28pt}}\selectfont East China Normal University\par}}
+\vspace{{0.7cm}}
+{{\bfseries\fontsize{{18pt}}{{24pt}}\selectfont Master's Degree Thesis (Professional)\par}}
+\vspace{{2.7cm}}
+{{\bfseries\fontsize{{16pt}}{{23pt}}\selectfont {title_en}\par}}
+\vfill
+\renewcommand{{\arraystretch}}{{1.55}}
+\begin{{tabular}}{{r l}}
+{english_rows}
+\end{{tabular}}
+\vfill
+{{\fontsize{{12pt}}{{16pt}}\selectfont {completion_en}\par}}
+\end{{center}}
+\end{{titlepage}}
+
+\pagenumbering{{Roman}}
+\setcounter{{page}}{{1}}
+\pagestyle{{fancy}}
+\zihao{{-4}}
+\setstretch{{1.72}}
+"""
 
 
 def render_citation_markers(text: str) -> str:
@@ -72,24 +177,22 @@ def normalise_headings(text: str, source: Path) -> str:
 
 
 def main() -> None:
+    metadata = load_thesis_metadata()
     combined = "\n\n".join(normalise_headings(path.read_text(encoding="utf-8"), path) for path in SOURCES)
-    COMBINED_MD.write_text(combined + "\n", encoding="utf-8")
+    COMBINED_MD.write_text(combined.rstrip() + "\n", encoding="utf-8")
     command = [
         "pandoc", "--from", "markdown", "--to", "latex", "--standalone", "--toc", "--number-sections",
-        "--top-level-division=chapter", "--metadata", "title=全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示",
-        "--metadata", "author=董兴习", "--metadata", "date=2026年7月", "-V", "documentclass=ctexbook",
-        "-V", "classoption=a4paper", "-V", "CJKmainfont=Songti SC", "-V", "CJKsansfont=Hiragino Sans GB",
-        "-V", "geometry:top=2.5cm", "-V", "geometry:bottom=2.5cm", "-V", "geometry:left=3cm",
-        "-V", "geometry:right=2.6cm", "-V", "fontsize=12pt", "-V", "linestretch=1.5", "-V", "colorlinks=true",
+        "--top-level-division=chapter", "--metadata", f"title={metadata['论文题目']}",
+        "--metadata", f"author={metadata['作者姓名']}", "--metadata", "date=", "-V", "documentclass=ctexbook",
+        "-V", "classoption=a4paper,twoside,openany", "-V", "CJKmainfont=Songti SC",
+        "-V", "CJKsansfont=Hiragino Sans GB", "-V", "geometry:top=2.54cm",
+        "-V", "geometry:bottom=2.54cm", "-V", "geometry:inner=3.17cm",
+        "-V", "geometry:outer=2.54cm", "-V", "fontsize=12pt", "-V", "linestretch=1.72",
+        "-V", "colorlinks=true",
         "-V", "linkcolor=black", "-V", "urlcolor=black", "-o", str(TEX_FILE), str(COMBINED_MD),
     ]
     subprocess.run(command, check=True)
     tex = TEX_FILE.read_text(encoding="utf-8")
-    tex = tex.replace(
-        r"\title{全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示}",
-        "\\title{全国中学生物理竞赛复赛理论试题的\\\\[0.45em]科学思维要求及教学设计启示}",
-        1,
-    )
     for title in ("摘要", "ABSTRACT", "参考文献"):
         chapter_heading = f"\\chapter*{{{title}}}\\addcontentsline{{toc}}{{chapter}}{{{title}}}"
         if title == "参考文献":
@@ -100,11 +203,40 @@ def main() -> None:
                 "\\setlength{\\parindent}{-2em}"
                 "\\setlength{\\parskip}{3pt}"
             )
+        elif title == "ABSTRACT":
+            chapter_heading += "\\begingroup\\setstretch{1.56}"
         tex = tex.replace(
             f"\\chapter{{{title}}}",
             chapter_heading,
             1,
         )
+    tex, front_count = re.subn(
+        r"\\frontmatter.*?\\mainmatter\s*",
+        lambda _: build_school_frontmatter(metadata),
+        tex,
+        count=1,
+        flags=re.DOTALL,
+    )
+    if front_count != 1:
+        raise RuntimeError("Could not replace Pandoc front matter")
+    contents_block = r"""
+\endgroup
+\clearpage
+\setcounter{tocdepth}{2}
+\tableofcontents
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{插图清单}
+\listoffigures
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{附表清单}
+\listoftables
+\mainmatter
+\zihao{-4}
+\setstretch{1.72}
+"""
+    tex = tex.replace(r"\chapter{绪论}", contents_block + "\n\\chapter{绪论}", 1)
     tex = tex.replace(
         r"\setlength{\emergencystretch}{3em} % prevent overfull lines",
         "\\setlength{\\emergencystretch}{3em} % prevent overfull lines\n"
@@ -120,6 +252,16 @@ def main() -> None:
         "\\usepackage{etoolbox}\n"
         "\\usepackage{float}\n"
         "\\usepackage{flafter}\n"
+        "\\usepackage{fancyhdr}\n"
+        "\\setlength{\\headheight}{15pt}\n"
+        "\\pagestyle{fancy}\n"
+        "\\fancyhf{}\n"
+        "\\fancyhead[C]{\\zihao{-5} 华东师范大学硕士专业学位论文}\n"
+        "\\fancyfoot[LE,RO]{\\thepage}\n"
+        "\\renewcommand{\\headrulewidth}{0.4pt}\n"
+        "\\fancypagestyle{plain}{\\fancyhf{}"
+        "\\fancyhead[C]{\\zihao{-5} 华东师范大学硕士专业学位论文}"
+        "\\fancyfoot[LE,RO]{\\thepage}\\renewcommand{\\headrulewidth}{0.4pt}}\n"
         "\\definecolor{ThesisNavy}{HTML}{244A64}\n"
         "\\definecolor{ThesisBlue}{HTML}{4E7896}\n"
         "\\definecolor{ThesisTeal}{HTML}{4F8A83}\n"
@@ -139,10 +281,11 @@ def main() -> None:
         "\\setlength{\\LTpre}{6pt}\n"
         "\\setlength{\\LTpost}{9pt}\n"
         "\\AtBeginEnvironment{longtable}{\\small\\arrayrulecolor{ThesisNavy!55}}\n"
-        "\\ctexset{chapter={beforeskip=18pt,afterskip=20pt},"
-        "section={beforeskip=16pt,afterskip=10pt},"
-        "subsection={beforeskip=12pt,afterskip=7pt}}\n"
-        "\\let\\cleardoublepage\\clearpage",
+        "\\ctexset{chapter={format=\\centering\\heiti\\bfseries\\zihao{3},"
+        "beforeskip=18pt,afterskip=20pt},"
+        "section={format=\\heiti\\bfseries\\zihao{4},beforeskip=16pt,afterskip=10pt},"
+        "subsection={format=\\heiti\\bfseries\\zihao{-4},beforeskip=12pt,afterskip=7pt}}\n"
+        "\\let\\cleardoublepage\\clearpage\n",
     )
     tex = tex.replace(
         r"\Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%",

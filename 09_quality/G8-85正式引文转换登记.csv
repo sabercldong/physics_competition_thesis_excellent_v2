@@ -1,0 +1,38 @@
+﻿章节文件,文件内序号,原行号,来源ID,参考文献编号,正式上标
+08_manuscript/01_introduction.md,1,7,CS-001,1,\textsuperscript{[1]}
+08_manuscript/01_introduction.md,2,25,CS-001,1,\textsuperscript{[1]}
+08_manuscript/01_introduction.md,3,27,ST-002、ST-003,2、3,"\textsuperscript{[2, 3]}"
+08_manuscript/01_introduction.md,4,31,ST-005、ST-006,4、5,"\textsuperscript{[4, 5]}"
+08_manuscript/01_introduction.md,5,37,METH-004,6,\textsuperscript{[6]}
+08_manuscript/01_introduction.md,6,39,CS-001、ST-002、ST-003、ST-005、ST-006、METH-004,1、2、3、4、5、6,"\textsuperscript{[1, 2, 3, 4, 5, 6]}"
+08_manuscript/01_introduction.md,7,45,PCOMP-002、PCOMP-004、PCOMP-007、PCOMP-008,13、15、16、17,"\textsuperscript{[13, 15, 16, 17]}"
+08_manuscript/01_introduction.md,8,47,PCOMP-004、PCOMP-007,15、16,"\textsuperscript{[15, 16]}"
+08_manuscript/01_introduction.md,9,49,PCOMP-002、PCOMP-008,13、17,"\textsuperscript{[13, 17]}"
+08_manuscript/01_introduction.md,10,51,PCOMP-003,14,\textsuperscript{[14]}
+08_manuscript/01_introduction.md,11,53,ST-002、ST-003、SOLO-001、METH-004、ST-007、ST-018,2、3、7、6、29、36,"\textsuperscript{[2, 3, 7, 6, 29, 36]}"
+08_manuscript/01_introduction.md,12,122,ST-005、ST-006,4、5,"\textsuperscript{[4, 5]}"
+08_manuscript/02_theory.md,1,9,CS-001,1,\textsuperscript{[1]}
+08_manuscript/02_theory.md,2,11,ST-002、ST-003,2、3,"\textsuperscript{[2, 3]}"
+08_manuscript/02_theory.md,3,61,SOLO-001,7,\textsuperscript{[7]}
+08_manuscript/02_theory.md,4,69,SOLO-APP-001、SOLO-PHY-001,8、9,"\textsuperscript{[8, 9]}"
+08_manuscript/02_theory.md,5,81,SOLO-002,10,\textsuperscript{[10]}
+08_manuscript/02_theory.md,6,126,METH-004,6,\textsuperscript{[6]}
+08_manuscript/02_theory.md,7,128,SOLO-PHY-002、SOLO-PHY-003,11、12,"\textsuperscript{[11, 12]}"
+08_manuscript/02_theory.md,8,130,PCOMP-002、PCOMP-003、PCOMP-004、PCOMP-007、PCOMP-008,13、14、15、16、17,"\textsuperscript{[13, 14, 15, 16, 17]}"
+08_manuscript/02_theory.md,9,132,PCOMP-004、PCOMP-007,15、16,"\textsuperscript{[15, 16]}"
+08_manuscript/02_theory.md,10,134,PCOMP-002、PCOMP-008,13、17,"\textsuperscript{[13, 17]}"
+08_manuscript/02_theory.md,11,136,PCOMP-003,14,\textsuperscript{[14]}
+08_manuscript/02_theory.md,12,237,CS-001、ST-002、ST-003、METH-004,1、2、3、6,"\textsuperscript{[1, 2, 3, 6]}"
+08_manuscript/03_methods.md,1,7,ST-002、ST-003、ST-015,2、3、18,"\textsuperscript{[2, 3, 18]}"
+08_manuscript/03_methods.md,2,29,METH-006,19,\textsuperscript{[19]}
+08_manuscript/03_methods.md,3,31,ST-014,20,\textsuperscript{[20]}
+08_manuscript/03_methods.md,4,33,METH-009,21,\textsuperscript{[21]}
+08_manuscript/03_methods.md,5,35,ST-012、ST-013,22、23,"\textsuperscript{[22, 23]}"
+08_manuscript/03_methods.md,6,37,METH-008,24,\textsuperscript{[24]}
+08_manuscript/03_methods.md,7,87,METH-002、METH-003、METH-007,25、26、27,"\textsuperscript{[25, 26, 27]}"
+08_manuscript/03_methods.md,8,123,ST-005、ST-006,4、5,"\textsuperscript{[4, 5]}"
+08_manuscript/04_results.md,1,191,PCOMP-002、PCOMP-003、PCOMP-004、PCOMP-007、PCOMP-008,13、14、15、16、17,"\textsuperscript{[13, 14, 15, 16, 17]}"
+08_manuscript/05_cases_and_diagnosis.md,1,36,PCOMP-006,28,\textsuperscript{[28]}
+08_manuscript/05_cases_and_diagnosis.md,2,715,ST-007、ST-008、ST-009,29、30、31,"\textsuperscript{[29, 30, 31]}"
+08_manuscript/05_cases_and_diagnosis.md,3,717,ST-010、ST-011、ST-016、ST-017,32、33、34、35,"\textsuperscript{[32, 33, 34, 35]}"
+08_manuscript/05_cases_and_diagnosis.md,4,719,ST-018、ST-019、ST-021,36、37、38,"\textsuperscript{[36, 37, 38]}"

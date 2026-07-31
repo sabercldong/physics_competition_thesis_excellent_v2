@@ -1,0 +1,303 @@
+# 第41届复赛第2题：台球弹性碰撞后的滚动摩擦与30度经验规则
+
+## 来源
+
+- 试题文件：`03_corpus/raw_papers/cpho_41_2024_fusai_paper_candidate.pdf`
+- 解答文件：`03_corpus/raw_solutions/cpho_41_2024_fusai_solution_candidate.pdf`
+- 试题页码：1-2
+- 解答页码：3-7
+- 题图：03_corpus/item_assets/CPHO41-Q02-figure1-page1-raw.png;03_corpus/item_assets/CPHO41-Q02-figure2-page2-raw.png;03_corpus/item_assets/CPHO41-Q02-figure3-page2-raw.png;03_corpus/item_assets/CPHO41-Q02-table1-page2-raw.png
+- 题图重裁候选：03_corpus/item_assets/CPHO41-Q02-figure2a-page1-recrop-v1.png;03_corpus/item_assets/CPHO41-Q02-figure2b-page2-recrop-v1.png;03_corpus/item_assets/CPHO41-Q02-figure2c-page2-recrop-v1.png;03_corpus/item_assets/CPHO41-Q02-table-page2-recrop-v1.png
+- 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
+
+## G1-07-A1 视觉校对转写入口
+
+- 校对转写稿：`03_corpus/manual_review_transcripts/CPHO41-Q02_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO41-Q02_formula_check_v1.csv`
+- 终复核准备记录：`03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_final_review_summary.md`; `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_final_review_v1.csv`
+- 题图重裁候选记录：`03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_recrop_review_v1.md`; `03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv`
+- 题图内部终检记录：`03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_finalcheck_summary.md`; `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_finalcheck_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q02-paper-page-1.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q02-paper-page-2.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q02-solution-page-03.png` 至 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q02-solution-page-07.png`
+- 当前状态：已完成题面V1视觉转写、答案公式核对入口登记、题图重裁候选图生成和题图内部视觉终检；图2c因原页贴近正文，正式论文使用前建议重绘。仍需最终排版复核、真实人工确认和正式编码证据摘录。原始OCR文本保留在下方，仅作错误来源对照，不得用于正式编码证据。
+
+## 题干OCR抽取文本
+
+```text
+二、（50 分） TARR HA QRH ART RR, WB 2a 所示。Q 球与T球的质量必和半径尺均相同，且两
+球质量分布都是均匀的; Q球在磁擅前的瞬间具有质心速度 ww 和转动角速度            y
+om ，z Wy AA: AAR, AORMT RMA, Tm Wg
+撞是完全弹性的，球与桌面可视为点接触。                      6 %
+(1)在发生碰擅后的瞬间, T球和 Q 球的飞行方向与》轴之间的夹角分别为上和 T球      。
+6 (AUB 2a)。求碰撞后的瞬间，两球飞行方向之间的夹角的值以及Q球的质心        本
+速度mo 和转动角速度w 《用网,等表示)，                                                              于
+(2) 如图 2b，Q球磁撞后在摩擦力的作用下，需要经过Ar 时间才能达到无滑    FB 2a
+滚动(也称纯滚)。已知册mo,oo 和 Q PRG LZ LAURA ye» DAE BAER 14,,R,G, 2 , Oy, by
+以及重力加速度 g 等表示。
+出
+
+(2.1) 在碰撞后任意时刻，Q球上与桌面的接触点称为此时刻的C 点，在磁撞后的瞬间，求C 点相对
+于桌面的速度如co的六、) 分量的表达式;                                                               Uy
+(2.2) 求梯拉后Q球达到纯滚所需时间Al ;            if
+(2.3) REAR BEARHT, QM Liza x(1),¥(0):                Ig           fer
+(2.4) Q球达到纯深后，定性指出 Q球质心运动的轨迹形状，给出其质心    TR
+的速度Wor 与》方向之间的夹角 gr 的正切tang/ 的表达式。                  x
+
+(3) 如图 2c，台球手在开球时用球杆击打处于静止状态的Q球，在极短的时                   QE
+间内给球上某点赋予一个水平冲量 M ,该点在竖直大球面高度户处，AMk 的方           图2
+向在过该点的竖直大球面内，使得作用后小球获得质心速度加 GAA 2b Ky
+方向)，以及转动角速度 om 。当,取特定值时，可使得Q球无滑滚动飞向T球。求此            *
+特定值。                                                                  1
+
+(4) 现探讨台球手热悉的 30。角经验规则，自然伸开食指和中指〈两指间角度大致
+最终的飞行方向。在第 〈3) 问中的条件下，Q球与T球发生弹性磁扩后，已知T球        图2c
+沿角度4四飞出〈见图 2a)，求
+
+(4.1) 在磁抄后直至达到纯滚前的过程中，Q球质心运动的轨迹x(1);y(1);
+(4.2) Q球最终飞行方向与 y HZ MIA O, 的正切tan 0, 的表达式;
+(4.3) 当T球的飞出角度#取某角度包时，6r 具有一个极大值m ，求加和6m 的值，计算在
+P=Gy +5°HG,, + 10° HAY O, 并将求出的这 6 个值十入下表;
+| |    ll |
+```
+
+## 参考解答抽取文本
+
+```text
+二、（50 分）
+                   （1）
+                   由于碰撞时间极短，因此可忽略碰撞过程中摩擦力（其最大值为  mg ）的冲量
+                 和冲量矩； Q 球和 T 球之间没有摩擦，只有径向的弹性力。因此在 Q 球和 T 球碰
+                 撞前后的瞬间，可认为角动量守恒，碰撞后的瞬间，对于 Q 球有
+                          0                               ①
+                 弹性碰撞能量守恒，又由①式，转动能量不变，因此可列出质心的动量和能量守
+                 恒关系，分别取碰撞后 T 球运动方向和与它垂直的方向为坐标基矢量 ŷ  、x̂  方向，                                             题解图 2a
+                 如题解图 2a。由动量守恒得
+                    m v0 sin   0  m vQx '
+                                                                    ②
+                    vQx '  v0 sin 
+                        mv0 cos   mvT  mvQy '                          ③
+                 由能量守恒得
+                        v02  vT2  vQ2 y '  vQ2 x '                ④
+                 由②③④式得
+                        vT2  vT v0 cos 
+                 即
+                       vT  0 ， vT  v0 cos 
+                 其中 vT  0 对应没有发生碰撞；因此碰撞发生后有
+                        vT  v0 cos 
+                 因此
+                        vQx '  v0 sin  ； vQy '  0                 ⑤
+                                                                                                             题解图 2b
+                 即 Q 球碰撞后只有垂直 T 球运动的分量，
+                            90                                  ⑥
+                                                                                      3
+
+
+
+
+{#{QQABBYCAogioAJIAARhCQwlICAEQkAECASgORBAAMAIBgAFABAA=}#}
+                 【解法二：
+                 也可用质心系与实验室系的关系（见题解图 2b）得到同样结果。在质心系有
+                                                             v
+                        vQC  vTC  vCM  0
+                                                             2
+                            90
+                        vQ  v0 sin 
+                 】
+                       综上：
+                        （a）     90
+                           （b）    0
+                              vQx '  v0 sin  ; vQy '  0
+                 在 x -y 坐标系中:
+
+                              vQx0  v0 sin  cos  ， vQy0  v0 sin 
+                                                                              2
+                                                                                           ⑦
+                 这里，下标 0 是指碰撞后的瞬间 Q 球的速度。
+                 （2）碰撞后不一定满足纯滚条件，即 Q 球上与桌面接触点 C 的速度（相对于桌面）不一定为 0，但由于有
+                 摩擦力，经过足够的作用时间 Δt ，则 Q 球在 Δt 后可达到纯滚。在摩擦力的作用下, 我们将发现在 Δt 前，Q
+                 球质心的轨迹将为抛物线型；在达到纯滚后，摩擦力消失，Q 球质心将以直线运动，达到所谓的最终速度 v Q f 。
+                       （2.1） C 点的速度为
+                              vC  vQ   R                                                             ⑧
+                 其中，
+                                                             R  Rkˆ;   xiˆ  y ˆj  zkˆ
+                 即
+                                                             vC  (vQx  Ry )iˆ  (vQy  Rx ) ˆj
+                 在碰撞后的瞬间，将⑦式代入上式，得
+                                                             vC0  (v0 sin cos  R0 y )iˆ  (v0 sin2   R0x ) ˆj      ⑨
+                       （2.2）记接触点 C 的速度方向单位矢量为 v̂ C , 质心速度为 v ，角速度为  ，由质心运动定理和转动定
+                 理得：
+                                 mgvˆC
+                              mv                                                                                  ⑩
+                                                                                             2    2
+                              I   R  (   mg ) vˆ C    mg ( R  vˆ C )      其中 I  mR                          ⑪
+                                                                                                  5
+                 对⑧式求导得
+                              vC  v    R                                                                   ⑫
+                               是 Q 球质心的加速度，这里及以下都省略了 Q 下标。
+                 注意： R 矢量为常量； v
+                   由⑩⑪式代入⑫式得：
+                                                                            v C    g vˆ C  5  g ( Rˆ  vˆ C )  Rˆ
+                                                    2
+                                                ˆ
+                 其中， R̂ 代表质心到 C 点的单位向量，即 R̂   k ，用矢量叉乘关系可知：
+                                                                                      ( Rˆ  vˆ C )  Rˆ  vˆ C
+                       于是有
+
+                                                                                              4
+
+
+
+
+{#{QQABBYCAogioAJIAARhCQwlICAEQkAECASgORBAAMAIBgAFABAA=}#}
+                                                                             v C   7  g vˆ C                                ⑬
+                                                                                       2
+                 ⑬式表明，对于接触点 C 的运动，摩擦力的作用是对其减速，并且沿着该点速度的反方向，因此 C 点速度
+                 变化是匀减速的。
+                       由⑨式知 C 点的起始速度
+                                                      | vC0 | ( v0 sin  cos   R0 y )2  ( v0 sin 2   R0 x）2                           ⑭
+
+                 代入匀减速运动公式 v  v0  at 有
+                                                             2                  2
+                                                    t           | vC0 |             ( v0 sin  cos   R0 y )2  ( v0 sin 2   R0 x）2       ⑮
+                                                           7 g              7 g
+                             （2.3）由于 vC 接触点的速度为匀减速⑬式，它的方向不变即：
+                                                                    ( v0 sin  cos   R 0 y )        ( v sin 2   R 0 x）ˆ
+                                             vC ( t )  vC0                                       iˆ  0                   j                 ⑯
+                                                                                | v C0 |                      | v C0 |
+                   | vC0 | 由⑯式给出。
+                              质心的运动方程⑩式在 x-y 系下为简单的匀减速运动：
+                                                                       g vˆCy
+                                                x    g vˆ Cx ， y
+                       碰撞瞬间后质心初始位置设为原点；初始速度由⑦式给出：
+                                                     1    (v0 sin  cos   R0 y ) 2
+                         x(t )  (v0 cos  sin  )t   g                          t
+                                                     2              | vC0 |
+                                                                          (v0 sin  cos   R0 y )                                           ⑰
+                                                         1
+                                    (v0 cos  sin  )t   g                                               t2
+                                                         2    (v0 sin  cos  R0 y )  (v0 sin   R0 x）
+                                                                                       2           2      2
+
+
+                                                             1   ( v sin 2   R0 x）2
+                              y (t )  ( v0 sin 2  )t        g 0                  t
+                                                             2          | vC0 |
+                                                                                                                                                  ⑱
+                                                  1                    ( v0 sin 2   R0 x）
+                                     v0 t sin    g
+                                                2
+                                                                                                         t2
+                                                  2    ( v0 sin  cos   R0 y )  ( v0 sin   R0 x）
+                                                                                   2         2         2
+
+
+                       上述轨迹适用于无滑滚动前，即 t  t 。
+                         （2.4） 达到纯滚后，摩擦力必须消失，那么 Q 球质心将是匀速直线运动。（*）
+                       由⑦⑩⑮⑯式得最终速度为
+                                                     ( v0 sin  cos   R0 y )
+                         v fx  v0 sin  cos    g                            t
+                                                                | vC0 |
+                                                                                                                      ⑲
+                                   5                2
+                                   v0 sin  cos   R0 y
+                                   7                7
+                                       5             2
+                              v fy      v0 sin 2   R0 x                                                           ⑳
+                                       7             7
+                 上面两式可合并成
+                                v f  5 vQ0  2  0  R ，
+                                        7            7
+                 其中 v Q 0 为在碰撞后的瞬间 Q 球质心的速度⑦式。由⑲⑳式得
+                                                                         v fx       5v0 sin  cos   2 R0 y
+                                                             tan  f                                                   ㉑
+                                                                         v fy         5v0 sin 2   2 R0 x
+                 （3）由于打击时间极短，可忽略摩擦力在打击瞬间内的冲量和冲量矩。在右手系中，题目中给出小球 v0 沿
+
+
+                                                                                                   5
+
+
+
+
+{#{QQABBYCAogioAJIAARhCQwlICAEQkAECASgORBAAMAIBgAFABAA=}#}
+                  y 方向，角速度 0 沿着 x 方向，即无滑条件为
+                                  v0
+                        0                                                                 ㉒
+                                  R
+                 由冲量定理和冲量矩定理得（M 取正数，沿 y 方向），对于质心有
+                        M  P  mv0                                                     ㉓
+                        (h  R)M  L  I0                                             ㉔
+                 将㉒㉓式和
+                             2
+                       I      mR 2
+                             5
+                 代入㉔式得
+                                       I 0 2     7
+                        hR               R，h  R                                 ㉕
+                                       mv0 5      5
+                 （4）（4.1）在第（3）问中，无滑滚动的 Q 球，与 T 球碰撞前：
+                        v0  v0 ĵ
+                        0  0iˆ                                                       ㉖
+                 将上述初始条件㉖代入⑭式得
+                                              | vC0 | v0 cos 
+                 将上式代入⑰⑱式得
+                                                           1
+                        x ( t )  ( v0 cos  sin  ) t      (  g sin  ) t 2           ㉗
+                                                           2
+                                                      1
+                        y ( t )  ( v0 sin 2  )t      (  g cos  )t 2                 ㉘
+                                                      2
+                        【解法二：
+                        在
+                                              2
+                                t  t              v0 cos 
+                                            7 g
+                 上述关系也可从初始速度、角速度关系得到。即摩擦力的方向沿着 T 球飞出的  方向；又由⑬式， v̂C 方向
+                 恒定，易得㉗㉘式。
+                 】
+                            （4.2）将㉖式代入㉑式得：
+                                           sin  cos    sin 2
+                              tan  f                                                      ㉙
+                                                     2 9
+                                           sin 2        cos 2
+                                                     5 5
+                             （4.3） 对㉙式  求导，可计算极值  f ( m ) ：
+                              d f                     d   sin 2
+                                        cos 2  f                0
+                               d                     d  cos 2
+                                                         9
+                                                         5
+                 由此得
+                                             5
+                              cos 2m 
+                                             9
+                 于是
+                              m  28.1
+
+                                                                                 6
+
+
+
+
+{#{QQABBYCAogioAJIAARhCQwlICAEQkAECASgORBAAMAIBgAFABAA=}#}
+                 代入㉙式得：
+                               f  33.7
+                 将上述结果以及在   m  5 和 m  10 时的  f 算出，一起填入下表：
+                                                   m  28.1         m  5                m  10   m  5      m  10 
+
+                                    f                 33.7            33.3             32.0          33.1         30.7 
+                             （  f 的数值在上列的 0.5 范围都算对）
+                 可以看出在一定的范围内， Q 球最终行进方向集中在沿原方向偏离 30 角左右的范围。
+
+                 评分标准：本题 50 分。
+                 第（1）问 8 分，①②③④⑤⑥式各 1 分，⑦式 2 分；
+                 第（2）问 27 分
+                   （2.1）问 4 分，⑧⑨式各 2 分；
+                   （2.2）问 6 分，⑩⑪⑫⑬⑭⑮式各 1 分；
+                   （2.3）问 13 分，⑩式 1 分，⑪⑫式各 2 分，⑬⑭⑮⑯各 1 分，⑰⑱式各 2 分；
+                        （2.4）问 4 分，其中（*）1 分；⑲⑳㉑式各 1 分；
+                 第（3）问 4 分，㉒㉓㉔㉕式各 1 分；
+                 第（4）问 11 分
+                        （4.1）问 3 分，㉖㉗㉘式各 1 分；
+                        （4.2）问 2 分，㉙式 2 分；
+                        （4.3）问 6 分，表中有 6 个空，每空 1 分。
+```
