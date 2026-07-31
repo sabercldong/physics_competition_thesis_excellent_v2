@@ -1,0 +1,13 @@
+audit_id,file,location,check_type,finding,action,status,remaining_risk
+G8-04-VERIFY-001,08_manuscript/01_introduction.md,全章,过强结论词,"检索到“显著性结论、专家验证、教学效果”等词均出现在禁止继承或证据缺失语境中，未被写成已完成结果。",保留,通过,"后续摘要和结论生成时仍需重复检查。"
+G8-04-VERIFY-002,08_manuscript/02_theory.md,2.5 Mermaid图,术语残留,"理论框架图仍使用短横线版“结果-问题-策略-任务-评价”，与正文统一写法不一致。",改为“结果—问题—策略—任务—评价”,已修订,"导出正式图时仍需检查图中文字是否同步。"
+G8-04-VERIFY-003,08_manuscript/02_theory.md,2.4,路径残留,"内部版编码手册和codebook只写文件名，材料包阶段可追溯性不足。",补为`04_framework/coding_manual_v2_internal.md`和`04_framework/codebook_v2_internal.csv`,已修订,"正式稿可根据学校要求改用附录编号。"
+G8-04-VERIFY-004,08_manuscript/03_methods.md,全章,正式流程边界,"检索显示第三章明确区分内部试编码、正式模板、真实评分者和分歧裁决；未把空白模板写成真实数据。",保留,通过,"真实评分者缺失仍是正式结果阻塞。"
+G8-04-VERIFY-005,08_manuscript/04_results.md,4.2/4.5/4.7,正式分析文件称呼,"第四章多处使用`final_coding.csv`，语义正确但可进一步统一为“裁决后的唯一分析表”。",补入完整称呼,已修订,"`final_coding.csv`仍不存在，不能作为已完成数据。"
+G8-04-VERIFY-006,08_manuscript/04_results.md,全章,内部预演数字残留,"第四章仍保留219、各届分析单元数和154条待核项；这些均为语料结构事实或校对门槛，不是正式科学思维结果。",保留,通过,"正式结果章生成后需重新判断这些数字放正文还是方法章。"
+G8-04-VERIFY-007,08_manuscript/04_results.md,全章,统计结论边界,"未发现维度分布、等级分布、共现、分组差异或趋势结论被写成正式发现。",保留,通过,"正式数据生成前第四章仍只能是占位章。"
+G8-04-VERIFY-008,08_manuscript/05_cases_and_diagnosis.md,5.1-5.5,案例结论边界,"候选案例仍被表述为候选材料、复核方向和待核实提纲，未写成正式案例裁决。",保留,通过,"正式案例仍需题干证据、参考解答步骤和裁决记录。"
+G8-04-VERIFY-009,08_manuscript/05_cases_and_diagnosis.md,5.6-5.7,教学证据边界,"教师/学生困难仍被写作采证提纲和证据需求，未出现真实访谈、课堂或学生作品结果。",保留,通过,"若后续无真实材料，第五章必须继续收缩为设计建议。"
+G8-04-VERIFY-010,08_manuscript/05_cases_and_diagnosis.md,5.8,正式分析文件称呼,"第五章下一步只写`final_coding.csv`，可与第四章统一为裁决后的唯一分析表。",补入完整称呼,已修订,"正式评分者编码和分歧裁决仍未发生。"
+G8-04-VERIFY-011,08_manuscript/01_introduction.md;08_manuscript/02_theory.md;08_manuscript/03_methods.md;08_manuscript/04_results.md;08_manuscript/05_cases_and_diagnosis.md,引文占位,孤立占位,"正文引用占位均保留来源ID、支持范围或边界说明；未发现孤立的无说明引用占位。",保留,通过,"学校格式、页码/定位和bib双向核对尚未完成。"
+G8-04-VERIFY-012,08_manuscript/01_introduction.md;08_manuscript/02_theory.md;08_manuscript/03_methods.md;08_manuscript/04_results.md;08_manuscript/05_cases_and_diagnosis.md,初稿禁用数字,"未检出85%、80%、60%、30%、60名学生、t值、p值、效应量、实验组/对照组等初稿禁用数字被用于新版正文结果。",保留,通过,"后续摘要、结论和答辩材料仍需同样禁用。"

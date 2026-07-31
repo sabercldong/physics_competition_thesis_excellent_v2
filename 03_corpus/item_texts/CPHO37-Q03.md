@@ -8,6 +8,18 @@
 - 题图：03_corpus/item_assets/CPHO37-Q03-figure1-page2-raw.png
 - 抽取状态：扫描页OCR抽取，已按页面视觉定位大题边界；公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-37Q03`
+- 题面V1转写稿：`03_corpus/manual_review_transcripts/CPHO37-Q03_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO37-Q03_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q03-paper-page-2.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q03-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q03-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q03-solution-page-11.png`
+- 当前状态：原OCR文本仅保留为错误来源和追溯材料；正式编码前应以V1转写稿、公式核对表和页面证据作为复核入口。`CPHO37-Q03-FIG` 尚未销项；特征根长式、复指数到正弦式转换、阻尼振荡条件和最大平均功率表达式需重点最终复核。
+
 ## 题干OCR抽取文本
 
 ```text

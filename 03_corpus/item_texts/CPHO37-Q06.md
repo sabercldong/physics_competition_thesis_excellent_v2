@@ -113,3 +113,17 @@ a=" cat  = Am                          @
 第12页,共16页
 第17页/共21页
 ```
+
+## G1-07-A1 视觉校对转写入口（2026-07-15）
+
+- 任务编号：`G1-07-A1-TRANSCRIBE-37Q06`
+- V1题面转写稿：`03_corpus/manual_review_transcripts/CPHO37-Q06_transcription_v1.md`
+- 答案公式核对入口：`03_corpus/manual_review_transcripts/CPHO37-Q06_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q06-paper-page-3.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q06-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q06-solution-page-16.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q06-solution-page-17.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q06-solution-page-18.png`
+- 边界记录：第6题题面从PDF第3页下半部开始，至第4页顶部第(3)问结束；第3页上半部为第5题，第4页中部为第7题、下部进入第8题，仅作边界确认。第6题答案从PDF第16页页首开始，至第17页评分标准结束；PDF第18页为第7题答案，仅作后边界确认。
+- 状态说明：本入口将原OCR乱码推进为V1视觉转写和公式核对入口，但尚未完成真实人工确认、图件销项、逐式排版复核或正式编码证据摘录。

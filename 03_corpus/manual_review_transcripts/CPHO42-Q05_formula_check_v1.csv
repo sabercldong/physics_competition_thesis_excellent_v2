@@ -1,0 +1,16 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO42-Q05,第(1)问相位随时间变化,14,"delta = integral_0^t (2e/hbar) U0 dt + delta(0) = (2e/hbar) U0 t + delta(0)",答案式①,答案页支持，待最终排版复核,用于核对直流恒定电压下的相位线性演化；hbar和U0下标需保留。
+F02,CPHO42-Q05,第(1)问交流约瑟夫森电流与周期,14,"j(t) = j0 sin[(2e/hbar) U0 t + delta(0)]; T = pi hbar/(e U0)",答案式②至③,答案页支持，待最终排版复核,与题面第(1)问直接对应；周期分母中的eU0需重点核对。
+F03,CPHO42-Q05,第(2.1)问外磁场下相位分布,14,"delta(y) = delta(0) + [2e(d+2lambda)/hbar] B0 y",答案式④,答案页支持，待最终排版复核,题面要求delta_0 != k pi；本表只登记公式入口，正式说明需保留条件。
+F04,CPHO42-Q05,第(2.1)问局部电流密度与总电流,14,"j(y)=j0 sin{delta(0)+[2e(d+2lambda)/hbar]B0 y}; I_J = integral_{-Y/2}^{Y/2} j(y) Zdy = j0 Z hbar/[e(d+2lambda)B0] sin(delta(0)) sin{[e(d+2lambda)/hbar]B0Y}",答案式⑤至⑥,答案页支持，需重点排版复核,积分上下限、Z因子和正弦因子位置需逐项对照答案页14。
+F05,CPHO42-Q05,第(2.1)问总电流为零的外磁场条件,14,"[e(d+2lambda)/hbar]B0Y = n pi; B0 = n pi hbar/[e(d+2lambda)Y], n = +/-1, +/-2, ...; n != 0",答案式⑦及注意语句,答案页支持，待最终排版复核,与题面第(2.1)总电流为零直接对应；不包括n=0。
+F06,CPHO42-Q05,第(2.2)问安培环路定理与sine-Gordon型方程,15,"dB_z/dy = mu_0 j = mu_0 j0 sin(delta); d^2delta/dy^2 = [2e(d+2lambda)/hbar] mu_0 j0 sin(delta) = (1/lambda_J^2) sin(delta)",答案式⑧至⑨,答案页支持，待最终排版复核,用于核对约瑟夫森穿透深度推导；mu_0、j0和lambda下标需保留。
+F07,CPHO42-Q05,第(2.2)问约瑟夫森穿透深度,15,"lambda_J = sqrt{ hbar / [2e mu_0 j0 (d+2lambda)] }",答案式⑩,答案页支持，待最终排版复核,与题面第(2.2)直接对应；根号范围需重点核对。
+F08,CPHO42-Q05,第(3.1)问三支路电流,15,"I_J = YZ j0 sin(delta) = I0 sin(delta); I_R = U/R = (1/R)(hbar/2e)(d delta/dt); I_C = d(CU)/dt = C(hbar/2e)(d^2delta/dt^2); I = I_J + I_R + I_C",答案式⑪至⑭,答案页支持，待最终排版复核,用于核对理想结、电阻、电容三支路；I0定义来自题面。
+F09,CPHO42-Q05,第(3.1)问相位微分方程,15,"C(hbar/2e)d^2delta/dt^2 + (1/R)(hbar/2e)d delta/dt + I0 sin(delta) = I",答案式⑮,答案页支持，待最终排版复核,与题面第(3.1)直接对应；二阶导数和电阻项需保留。
+F10,CPHO42-Q05,第(3.2)问忽略电阻后的能量积分与等效势,15,"C(hbar/2e)d^2delta/dt^2 + I0 sin(delta) = I; (1/2)(d delta/dt)^2 - [2e/(hbar C)](I delta + I0 cos delta) = constant; V(delta) = -[2e/(hbar C)](I delta + I0 cos delta) + constant",答案式⑮'至⑰,答案页支持，待最终排版复核,用于核对等效粒子势能构造；常量项不影响势阱判断。
+F11,CPHO42-Q05,第(3.2)问平衡位置与势阱条件,15-16,"sin(delta_0)=I/I0; delta_0 = arcsin(I/I0) or pi - arcsin(I/I0) plus 2n pi; stable well bottom delta_0 = arcsin(I/I0)+2n pi; well exists when |I| < I0",答案式⑱至㉒,答案页支持，待最终排版复核,式⑳区分稳定/不稳定平衡；正式使用前需核对不等号和n取值。
+F12,CPHO42-Q05,第(3.2)问小振动角频率,16,"omega^2 = [2eI0/(hbar C)] sqrt[1-(I/I0)^2]; equivalently omega = sqrt{ [2eI0/(hbar C)] sqrt[1-(I/I0)^2] }",答案式㉓,答案页支持，需重点排版复核,答案页以嵌套根号形式给出；正式排版需对照原页确认根号范围。
+F13,CPHO42-Q05,第(3.3)问等离子体角频率与电容,16,"omega_J = sqrt(2eI0/(hbar C)); C = epsilon_r epsilon_0 YZ/d",答案式㉔至㉕,答案页支持，待最终排版复核,用于核对最大角频率和等效平行板电容。
+F14,CPHO42-Q05,第(3.3)问波速比值,16,"c_bar = sqrt{d/[mu_0 epsilon_0 epsilon_r(d+2lambda)]} = c sqrt{d/[epsilon_r(d+2lambda)]}; c_bar/c = sqrt{d/[epsilon_r(d+2lambda)]} = 0.055",答案式㉖至㉗,答案页支持，待最终排版复核,与题面第(3.3)直接对应；结果保留两位有效数字为0.055。
+F15,CPHO42-Q05,答案边界与评分标准,16,"第5题评分标准列出第(1)问4分、第(2)问15分、第(3)问26分；第16页下方开始第6题答案。",视觉检查和评分标准,边界已记录，待最终复核,第16页下方只作边界确认，不得纳入第5题公式证据。

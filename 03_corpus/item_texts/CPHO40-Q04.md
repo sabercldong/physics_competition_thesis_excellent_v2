@@ -53,6 +53,20 @@ Si
 件时，图 4c 所示的结构能保持平衡(数值结果保留三位有效数字) ?
 ```
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-40Q04`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO40-Q04_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO40-Q04_formula_check_v1.csv`
+- 题面页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q04-paper-page-2.png`（第4题从页面下半部开始）
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q04-paper-page-3.png`（第4题在页面上半部结束）
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q04-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q04-solution-page-13.png`（第4题评分参考后进入第5题）
+
+当前状态：原OCR文本仅保留为错误来源与处理痕迹；正式编码前复核应优先使用V1转写稿、公式核对表和页面证据。经视觉检查，第4题题面从试题PDF第2页下半部开始，延续至第3页上半部结束；第2页上半部为第2题尾部和第3题，第3页下半部进入第5题。第4题答案从PDF第12页页首开始，延续至PDF第13页评分参考结束；第13页下半部进入第5题。`CPHO40-Q04-FIG` 尚未关闭，图4a-4e仍需独立图件校对。编木拱桥结构、杆件符号、摩擦因数 `mu/mu'`、受力图、力矩平衡和长分式结果仍需最终逐式排版复核。
+
 ## 参考解答抽取文本
 
 ```text

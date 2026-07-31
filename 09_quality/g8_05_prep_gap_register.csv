@@ -1,0 +1,11 @@
+gap_id,severity,scope,gap,why_fatal_or_important,current_evidence,next_action,can_write_now
+G8-05-GAP001,fatal,G4正式结果,缺少真实评分者A/B独立编码,没有真实评分者记录就不能计算正式一致性或生成正式结果,formal_coding_rater_A/B_template为空白模板,回到G4-01组织真实评分者填写,不能写正式结果
+G8-05-GAP002,fatal,G4正式结果,缺少分歧裁决和final_coding.csv,没有唯一裁决表就不能生成维度分布/等级分布/共现/分组比较,04_results明确等待裁决后的唯一分析表,完成分歧裁决并生成final_coding.csv,只能写占位和门槛
+G8-05-GAP003,fatal,G1/G4语料质量,154条人工校对问题未销项,公式/OCR/图注问题会影响正式编码证据句,03_corpus/manual_review_checklist.csv登记154条待核项,人工销项或标记风险后再正式编码,可写语料结构事实
+G8-05-GAP004,fatal,G5/G6教学证据,缺少教师/学生/课堂真实材料,没有真实材料不能写教学诊断或教学效果,PROJECT_STATUS关键阻塞项显示缺失,采集真实教师或课堂证据或收缩第五章,只能写设计建议和证据需求
+G8-05-GAP005,major,G2理论综述,SOLO原始理论全文未读完,理论边界不能完整论证,solo_fulltext_access_audit和request_packet显示全文缺口,通过合法渠道获取并摘录关键页码,只能写SOLO启发和待核验
+G8-05-GAP006,major,G2竞赛文献,物理竞赛试题研究全文未获得,研究空白不能写成已被完整证明,physics_competition_access_audit显示候选来源未获全文,获取全文并更新文献矩阵,只能写研究空白候选
+G8-05-GAP007,major,G0学校规范,学校模板和引用格式未取得,最终排版/引用/匿名/AI披露不能定稿,school_requirements_register为索取登记表,取得并登记学校正式文件,不能定稿格式
+G8-05-GAP008,major,G3专家审查,真实专家审查尚未发生,编码框架不能写成专家效度已通过,expert_review_log仍为空且03_methods保留边界,邀请真实专家或改写为内部预审,不能写专家认可
+G8-05-GAP009,major,G7结论摘要,第六章/摘要尚未写,正式论文闭环未形成,TASKS中G7-06和G7-07未开始,等待正式结果或先准备结构占位,不能写结果性结论
+G8-05-GAP010,minor,G8格式,Mermaid图和表格未转学校格式,提交版可能不接受Markdown/Mermaid,format_lite_report已提示需要导出或重绘,取得学校模板后转换,材料包可保留Markdown

@@ -14,6 +14,6 @@ RUNBOOK-QA-06,工作稿新鲜度脚本,通过
 RUNBOOK-QA-07,材料包审计脚本,通过
 RUNBOOK-QA-08,手册自身QA,通过
 RUNBOOK-QA-09,结果资格计数,通过
-RUNBOOK-QA-10,候选来源计数,通过
-RUNBOOK-QA-11,引用追溯计数,通过
+RUNBOOK-QA-10,候选来源计数,不通过
+RUNBOOK-QA-11,引用追溯计数,不通过
 RUNBOOK-QA-12,禁止外推边界,通过

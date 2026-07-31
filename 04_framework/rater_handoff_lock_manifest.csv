@@ -1,0 +1,13 @@
+lock_id,artifact_id,path,artifact_role,recipient_or_stage,locked_status,use_boundary,next_action
+G4-01-PREP-LOCK-2026-07-14,LOCK-01,04_framework/analysis_unit_and_coding_definitions_formal_draft.md,分析单位与编码定义,评分者A/B,纳入交接包,正式草案不是最终冻结手册,评分者先读并按疑问记录待核实
+G4-01-PREP-LOCK-2026-07-14,LOCK-02,04_framework/codebook_v2_formal_draft.csv,维度-等级指标表,评分者A/B,纳入交接包,不得作为正式结果或标准答案,与手册配合使用
+G4-01-PREP-LOCK-2026-07-14,LOCK-03,04_framework/rater_training_manual_formal_draft.md,评分者培训手册候选稿,评分者A/B,纳入交接包,候选稿仍待真实试用后修订,按阅读顺序使用
+G4-01-PREP-LOCK-2026-07-14,LOCK-04,04_framework/evidence_note_and_disagreement_protocol_formal_draft.md,证据摘记与分歧协议,评分者A/B及后续裁决,纳入交接包,协议草案不等于已裁决,回收后检查证据可定位性
+G4-01-PREP-LOCK-2026-07-14,LOCK-05,04_framework/boundary_case_bank_formal_draft.csv,边界训练案例,评分者A/B,纳入交接包,训练案例不是标准答案库,仅用于理解边界风险
+G4-01-PREP-LOCK-2026-07-14,LOCK-06,07_analysis/data/formal_coding_rater_A_template.csv,评分者A空白模板,评分者A,纳入交接包,空白模板尚未填写,由A独立填写并按命名规则回收
+G4-01-PREP-LOCK-2026-07-14,LOCK-07,07_analysis/data/formal_coding_rater_B_template.csv,评分者B空白模板,评分者B,纳入交接包,空白模板尚未填写,由B独立填写并按命名规则回收
+G4-01-PREP-LOCK-2026-07-14,LOCK-08,07_analysis/data/formal_adjudication_template.csv,正式裁决模板,裁决阶段,暂不发放给A/B,需A/B回收且一致性计算后使用,后续裁决人填写
+G4-01-PREP-LOCK-2026-07-14,LOCK-09,04_framework/rater_independent_coding_instructions_v1.md,A/B独立填写说明,评分者A/B,新增并纳入交接包,只说明填写规则不产生结果,随A/B模板发放
+G4-01-PREP-LOCK-2026-07-14,LOCK-10,04_framework/rater_handoff_file_rules.csv,命名与回收规则,交接与回收,新增并纳入交接包,只管理文件流转不产生结果,发放前和回收后核对
+G4-01-PREP-LOCK-2026-07-14,LOCK-11,04_framework/rater_handoff_unresolved_risks.csv,未销项风险提示,交接与回收,新增并纳入交接包,风险提示不等于风险已解决,编码时按待核实处理
+G4-01-PREP-LOCK-2026-07-14,LOCK-12,04_framework/rater_training_return_checklist.csv,回收核对表,回收阶段,纳入交接包,不满足时不得进入一致性计算,回收后逐项勾稽

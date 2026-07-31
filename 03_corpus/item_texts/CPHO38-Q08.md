@@ -38,6 +38,21 @@ Wir =4.0x10? N.m ，电机转速与车轮转速之比〈变速比) 二= 10 ，�
 第4页,共4页
 ```
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q08`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q08_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q08_formula_check_v1.csv`
+- 题面页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q08-paper-page-3.png`（第8题从页面底部开始）
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q08-paper-page-4.png`
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q08-solution-page-18.png`（第7题尾部边界页，第8题从下半部开始）
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q08-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q08-solution-page-20.png`
+
+当前状态：原OCR文本仅保留为错误来源与处理痕迹；正式编码前复核应优先使用V1转写稿、公式核对表和页面证据。经视觉检查，第8题题面从试题PDF第3页底部开始，延续至第4页上半部结束；第3页上半部为第6题尾部和第7题。第8题答案从PDF第18页下半部开始，延续至PDF第20页评分参考结束；第18页上半部为第7题答案尾部和评分参考。`CPHO38-Q08-FIG` 尚未关闭，图8a仍需独立图件校对。永磁直流电机参数、线圈半径、电阻下标、变速比、车速时间关系、能量积分和效率数值仍需最终逐式排版复核。
+
 ## 参考解答抽取文本
 
 ```text

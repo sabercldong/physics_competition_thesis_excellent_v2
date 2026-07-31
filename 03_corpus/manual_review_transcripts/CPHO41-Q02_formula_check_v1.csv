@@ -1,0 +1,12 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO41-Q02,第(1)问碰撞瞬间,答案3页,"theta + phi = 90 deg; omega = omega0; vQx' = v0 sin(phi); vQy' = 0; vT = v0 cos(phi)",答案式①至⑥及综述行,答案页支持，待最终排版复核,用于核对第(1)问题干变量与答案证据；不能替代正式编码判定证据摘录。
+F02,CPHO41-Q02,第(1)问x-y坐标速度,答案4页,"vQx0 = v0 sin(phi) cos(phi); vQy0 = v0 sin^2(phi)",答案式⑦,答案页支持，待最终排版复核,下标0表示碰撞后瞬间；需在正式公式排版中核对平方位置。
+F03,CPHO41-Q02,第(2.1)问接触点速度,答案4页,"vC = vQ + omega x R; vC0 = (v0 sin(phi) cos(phi) - R omega0y)i + (v0 sin^2(phi) + R omega0x)j",答案式⑧至⑨,答案页支持，待最终排版复核,题面中的vC0及x/y分量可由答案页支持；上下标需保留。
+F04,CPHO41-Q02,第(2.2)问纯滚时间,答案4-5页,"Delta t = 2|vC0|/(7 mu g)",答案式⑬至⑮,答案页支持，待最终排版复核,根号内两项为vC0的x/y分量平方和；需在正式稿中按原式排版。
+F05,CPHO41-Q02,第(2.3)问纯滚前轨迹,答案5页,"x(t) and y(t) are uniformly accelerated/decelerated expressions using vC0 direction; see answer formulas 17-18",答案式⑯至⑱,答案页支持，需逐式排版复核,公式较长，本表只登记核对入口，不替代完整公式转写。
+F06,CPHO41-Q02,第(2.4)问纯滚后最终速度,答案5页,"vfx = (5/7)v0 sin(phi) cos(phi) + (2/7)R omega0y; vfy = (5/7)v0 sin^2(phi) - (2/7)R omega0x",答案式⑲至⑳,答案页支持，待最终排版复核,用于核对theta_f定义和最终速度分量；需保留x/y下标。
+F07,CPHO41-Q02,第(2.4)问tan theta_f,答案5页,"tan(theta_f) = vfx/vfy = [5v0 sin(phi) cos(phi) + 2R omega0y] / [5v0 sin^2(phi) - 2R omega0x]",答案式㉑,答案页支持，待最终排版复核,与题面第(2.4)直接对应。
+F08,CPHO41-Q02,第(3)问击球高度,答案5-6页,"omega0 = -v0/R; M = mv0; -(h-R)M = I omega0; h = 7R/5",答案式㉒至㉕,答案页支持，待最终排版复核,用于核对第(3)问题干中特定高度h。
+F09,CPHO41-Q02,第(4.1)问特定条件轨迹,答案6页,"x(t) = (v0 cos(phi) sin(phi))t - (1/2)(mu g sin(phi))t^2; y(t) = (v0 sin^2(phi))t + (1/2)(mu g cos(phi))t^2",答案式㉖至㉘,答案页支持，待最终排版复核,与第(4.1)对应；适用条件为第(3)问无滑滚动初始条件。
+F10,CPHO41-Q02,第(4.2)问30度规则公式,答案6页,"tan(theta_f) = sin(phi)cos(phi) / [sin^2(phi) + 2/5 - 9/5 cos^2(phi)] = sin(2phi) / [9/5 - cos(2phi)]",答案式㉙,答案页支持，需重点复核,答案文本层换行易混淆，正式排版前需对照答案页6图像逐式复核。
+F11,CPHO41-Q02,第(4.3)问极值与表格,答案6-7页,"phi_m = 28.1 deg; theta_m = 33.7 deg; theta_f(phi_m+5 deg)=33.3 deg; theta_f(phi_m+10 deg)=32.0 deg; theta_f(phi_m-5 deg)=33.1 deg; theta_f(phi_m-10 deg)=30.7 deg",答案页6-7极值计算与表格,答案页支持，待最终排版复核,题面空表不得由OCR补造；数值来自参考解答页7。

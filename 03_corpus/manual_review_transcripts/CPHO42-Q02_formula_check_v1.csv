@@ -1,0 +1,14 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO42-Q02,第(1.1)问平行板内运动基本式,4,"q2 VA/d = M a; L = V cos(theta_I) * [2V sin(theta_I)/a]; K2 = (1/2) M V^2; L = 2 K2 d sin(2 theta_I)/(q2 VA)",答案式①至④,答案页支持，待最终排版复核,用于核对平行板均匀电场内斜抛运动；M、V、a为答案中引入变量。
+F02,CPHO42-Q02,第(1.1)问XD表达式,4,"XD(theta_I) = 2 K2 d sin(2 theta_I)/(q2 VA) + (YD1 + YD2) cot(theta_I)",答案式⑤,答案页支持，待最终排版复核,与题面第(1.1)直接对应；XD、YD1、YD2下标需保留。
+F03,CPHO42-Q02,第(1.2)问二级聚焦展开与条件,5,"XD(theta_I + Delta theta_I) expansion to O[(Delta theta_I)^3]; first- and second-order coefficients set to zero",答案式⑥至⑨,答案页支持，需逐式排版复核,展开式较长，本表只登记核对入口；正式使用前需对照答案页5逐式复核。
+F04,CPHO42-Q02,第(1.2)问二级聚焦结果,5,"YD1 + YD2 = [4K2 d/(q2 VA)] cos(2 theta_I) sin^2(theta_I); (2 sin theta_I)^2 = 1; 0 < theta_I < pi/2; theta_I = pi/6; VA = K2 d/[2q2(YD1+YD2)]; XD(theta_I)=3 sqrt(3)(YD1+YD2)",答案式⑩至⑮,答案页支持，待最终排版复核,与题面第(1.2)直接对应；根号和分母中的2q2需重点核对。
+F05,CPHO42-Q02,第(1.3)问离轴入射的接收位置,5,"XM = l cos(theta_a) + [YD1 + l sin(theta_a)]/tan(theta_I) + 2K2 d sin(2theta_I)/(q2 VA); x = XD - s cos(theta_b); y = YD2 + s sin(theta_b); y/(x-XM)=tan(theta_I); s = -[sin(theta_I+theta_a)/sin(theta_I+theta_b)] l",答案式⑯至⑳,答案页支持，待最终排版复核,与题面第(1.3)直接对应；式⑳同时给出中间长式和二级聚焦条件下简式。
+F06,CPHO42-Q02,第(2.1)问一般条件下s与l关系,6,"s = [XD tan(theta_I) - (YD1+YD2) - (cos(theta_a)tan(theta_I)+sin(theta_a))l - 4K2 d sin^2(theta_I)/(q2 VA)]/[cos(theta_b)tan(theta_I)+sin(theta_b)]",答案式㉑,答案页支持，待最终排版复核,题面第(2.1)指定l=0；此处先登记一般关系。
+F07,CPHO42-Q02,第(2.1)问l=0对应s,6,"s|_{l=0} = [XD tan(theta_I) - (YD1+YD2) - 4K2 d sin^2(theta_I)/(q2 VA)]/[cos(theta_b)tan(theta_I)+sin(theta_b)]",答案式㉓,答案页支持，待最终排版复核,与题面第(2.1)直接对应；答案同时给出l|_{s=0}作为后续电流分割使用。
+F08,CPHO42-Q02,第(2.2)问上下半平面电流比例,6,"i_U/(i_L+i_U) = [w/2 - l|_{s=0}]/w; i_L/(i_U+i_L) = [w/2 + l|_{s=0}]/w",答案式㉔至㉕,答案页支持，待最终排版复核,用于核对从狭缝不同位置入射后被上/下半平面接收的区间分割。
+F09,CPHO42-Q02,第(2.2)问K2表达式,6,"K2 = [q2 VA/(4d sin^2 theta_I)] * { [w/2 * (i_U-i_L)/(i_U+i_L)](cos(theta_a)tan(theta_I)+sin(theta_a)) + XD tan(theta_I) - (YD1+YD2) }",答案式㉖,答案页支持，需重点排版复核,与题面第(2.2)直接对应；长式中电流差、总电流、sin平方和括号位置需逐项核对。
+F10,CPHO42-Q02,第(2.3)问电离过程能量守恒边界,6,"q1 + (-e) = q2 + 2(-e) = 0; K_Tl+ = K_Tl++; K_Tl+ = K1 - q1 Phi",答案式㉗至㉘及前文能量守恒说明,答案页支持，待最终排版复核,Tl+与Tl++静能/动能符号较密集，正式排版前需对照答案页6。
+F11,CPHO42-Q02,第(2.3)问电势Phi,7,"K_Tl++ = K2 - q2 Phi; K2 - q2 Phi approximately equals K1 - q1 Phi; Phi = (K2-K1)/(q2-q1)",答案式㉙至㉛,答案页支持，待最终排版复核,与题面第(2.3)电势求解直接对应；近似符号需保留。
+F12,CPHO42-Q02,第(2.3)问代入K2后的Phi表达式,7,"Phi = 1/(q2-q1) * { [q2 VA/(4d sin^2 theta_I)] * ( [w/2 * (i_U-i_L)/(i_U+i_L)](cos(theta_a)tan(theta_I)+sin(theta_a)) + XD tan(theta_I) - (YD1+YD2) ) - K1 }; with q2=2e and q1=e, answer also writes equivalent form ending with -K1/e",答案式㉜,答案页支持，需重点排版复核,最终式较长，本表只作为核对入口；正式稿需按答案页7排版并核对q2-q1到e的化简。
+F13,CPHO42-Q02,答案边界与评分标准,7,"第2题评分标准列出第(1)问28分、第(2)问17分；第7页下半部开始第3题答案。",视觉检查和评分标准,边界已记录，待最终复核,第7页下半部只作边界确认，不得纳入第2题公式证据。

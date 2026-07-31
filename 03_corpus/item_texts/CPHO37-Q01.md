@@ -8,6 +8,19 @@
 - 题图：03_corpus/item_assets/CPHO37-Q01-figure1-page1-raw.png
 - 抽取状态：扫描页OCR抽取，已按页面视觉定位大题边界；公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1人工校对入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-37Q01`
+- 题面V1视觉转写：`03_corpus/manual_review_transcripts/CPHO37-Q01_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO37-Q01_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q01-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q01-solution-page-06.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q01-solution-page-07.png`
+- 当前边界：题面位于试题PDF第1页中部，同页下部进入第2题；答案从PDF第6页页首开始，至第7页中部评分标准结束，第7页下半部进入第2题答案。
+- 状态说明：`CPHO37-Q01-OCR` 已建立V1视觉转写入口；`CPHO37-Q01-FORMULA` 已建立答案公式核对入口；`CPHO37-Q01-FIG` 未在本轮关闭，仍需题图裁边与图注校对。
+- 禁止外推：本入口不等同于真实人工校对完成，不填写校对人和日期，不得据此生成正式统计、正式案例结论或论文用图。
+
 ## 题干OCR抽取文本
 
 ```text

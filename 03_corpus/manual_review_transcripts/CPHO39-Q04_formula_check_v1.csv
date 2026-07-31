@@ -1,0 +1,57 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+CPHO39-Q04-F001,CPHO39-Q04,题面常量与边界,2-3,杆长 2a; 质量 m; 圆环半径 R; 固定点 P; 角速度 omega; 杆角度 theta; 重力加速度 g,题面第2页下部至第3页顶部给定物理模型和五个小问。,题面常量已定位，待最终复核,题面第2页上部为第2、3题内容；第3页第4题只到第(5)问收尾。
+CPHO39-Q04-F002,CPHO39-Q04,题面图件,2,图4a：水平圆环、O/P/R、杆长2a、theta、omega、mg,题面第2页图4a。,图件已定位，待另行图件销项,本轮不关闭CPHO39-Q04-FIG。
+CPHO39-Q04-F003,CPHO39-Q04,参考解答-答案边界,12-20,第4题答案从PDF第12页下部“四、”开始，第19页评分标准结束；第20页进入第5题,视觉检查第12页、第19页和第20页边界。,边界已定位，待最终复核,第20页只作排除下一题证据。
+CPHO39-Q04-F004,CPHO39-Q04,参考解答-第(1)问-L系,12,E_LCk = (1/2)m[omega^2(R+a sin theta)^2 + a^2 theta_dot^2],参考解答第12页式(1)。,待最终复核,
+CPHO39-Q04-F005,CPHO39-Q04,参考解答-第(1)问-L系,13,E_Lk_prime = (1/2) I_C (omega^2 sin^2 theta + theta_dot^2),参考解答第13页式(2)。,待最终复核,
+CPHO39-Q04-F006,CPHO39-Q04,参考解答-第(1)问-L系,13,E_Lk_prime = (1/2)(I_C1 omega^2 + I_C theta_dot^2),参考解答第13页式(2)prime。,待最终复核,
+CPHO39-Q04-F007,CPHO39-Q04,参考解答-第(1)问-L系,13,I_C1 = (1/12)m(2a sin theta)^2 = (1/3)ma^2 sin^2 theta,参考解答第13页式(3)prime。,待最终复核,
+CPHO39-Q04-F008,CPHO39-Q04,参考解答-第(1)问-L系,13,I_C = (1/12)m(2a)^2 = (1/3)ma^2,参考解答第13页式(3)。,待最终复核,
+CPHO39-Q04-F009,CPHO39-Q04,参考解答-第(1)问-L系,13,E_Lk = E_LCk + E_Lk_prime = (1/2)m[omega^2(R+a sin theta)^2 + a^2 theta_dot^2] + (1/6)ma^2(omega^2 sin^2 theta + theta_dot^2),参考解答第13页式(4)。,待最终复核,式(4)含两行等价展开，需按源页终核。
+CPHO39-Q04-F010,CPHO39-Q04,参考解答-第(1)问-L系,13,E_Lp = mga cos theta,参考解答第13页式(5)。,待最终复核,
+CPHO39-Q04-F011,CPHO39-Q04,参考解答-第(1)问-L系,13,E_L = E_Lk + E_Lp = mga cos theta + (2/3)ma^2 theta_dot^2 + (1/2)m[(R+a sin theta)^2 + (1/3)a^2 sin^2 theta]omega^2,参考解答第13页式(6)。,待最终复核,第二行等价式含(2/3)a sin theta项和R^2/2项，需终核。
+CPHO39-Q04-F012,CPHO39-Q04,参考解答-第(1)问-S系,13,E_Sk = (1/2) I_P theta_dot^2,参考解答第13页式(7)。,待最终复核,
+CPHO39-Q04-F013,CPHO39-Q04,参考解答-第(1)问-S系,13,I_P = I_C + ma^2 = (4/3)ma^2,参考解答第13页式(8)。,待最终复核,
+CPHO39-Q04-F014,CPHO39-Q04,参考解答-第(1)问-S系,13,E_Sk = (1/2)I_P theta_dot^2 = (2/3)ma^2 theta_dot^2,参考解答第13页式(9)。,待最终复核,
+CPHO39-Q04-F015,CPHO39-Q04,参考解答-第(1)问-S系,13,E_Sp = mga cos theta - (1/2) I_O omega^2,参考解答第13页式(10)。,待最终复核,
+CPHO39-Q04-F016,CPHO39-Q04,参考解答-第(1)问-S系,14,I_O = (1/3)m(a sin theta)^2 + m(R+a sin theta)^2,参考解答第14页式(11)。,待最终复核,
+CPHO39-Q04-F017,CPHO39-Q04,参考解答-第(1)问-S系,14,E_S = E_Sk + E_Sp = (2/3)ma^2 theta_dot^2 + mga cos theta - (1/2)[(1/3)m(a sin theta)^2 + m(R+a sin theta)^2]omega^2,参考解答第14页式(12)。,待最终复核,
+CPHO39-Q04-F018,CPHO39-Q04,参考解答-第(2)问,14,L_sum = mga sin theta + integral_0^(2a) omega^2(R+l sin theta) l cos theta [m/(2a)] dl,参考解答第14页式(13)。,待最终复核,力矩方向和积分变量l需终核。
+CPHO39-Q04-F019,CPHO39-Q04,参考解答-第(2)问,14,L_sum = mga sin theta + ma omega^2(R + (4/3)a sin theta) cos theta = 0,参考解答第14页式(13)化简行。,待最终复核,
+CPHO39-Q04-F020,CPHO39-Q04,参考解答-第(2)问,14,dE_Sp/dtheta = -mga sin theta - ma omega^2(R + (4/3)a sin theta) cos theta = 0,参考解答第14页式(13)prime。,待最终复核,
+CPHO39-Q04-F021,CPHO39-Q04,参考解答-第(2)问,14,tan theta + [4a omega^2/(3g)] sin theta + [R omega^2/g] = 0,参考解答第14页式(14)。,待最终复核,与抽取文本的符号差异需按源页终核。
+CPHO39-Q04-F022,CPHO39-Q04,参考解答-第(2)问,14,cot theta + [4a/(3R)] cos theta + [g/(R omega^2)] = 0,参考解答第14页式(14)prime。,待最终复核,
+CPHO39-Q04-F023,CPHO39-Q04,参考解答-第(3)问,14,"-tan theta = A sin theta + B; A = 4a omega^2/(3g), B = R omega^2/g",参考解答第14页式(15)及说明。,待最终复核,
+CPHO39-Q04-F024,CPHO39-Q04,参考解答-第(3)问,15,解题图4a：y=-tan theta 与 y=A sin theta+B 的图示,参考解答第15页式(16)图示。,图示已定位，待另行图件销项,本轮只登记图示入口，不关闭CPHO39-Q04-FIG。
+CPHO39-Q04-F025,CPHO39-Q04,参考解答-第(3)问,15,第I象限无平衡位形；第II、IV象限各1个平衡位形,参考解答第15页式(17)(18)文字结论。,待最终复核,
+CPHO39-Q04-F026,CPHO39-Q04,参考解答-第(3)问-相切条件,15,-1/cos^2(theta_0) = A cos theta_0,参考解答第15页式(19)。,待最终复核,
+CPHO39-Q04-F027,CPHO39-Q04,参考解答-第(3)问-相切条件,15,cos^3(theta_0) = -1/A = -3g/(4 omega^2 a),参考解答第15页式(20)。,待最终复核,
+CPHO39-Q04-F028,CPHO39-Q04,参考解答-第(3)问-相切条件,15,B = tan^3(theta_0) = -A sin^3(theta_0),参考解答第15页式(21)。,待最终复核,
+CPHO39-Q04-F029,CPHO39-Q04,参考解答-第(3)问-相切条件,15,A^(2/3) = B^(2/3) + 1,参考解答第15页式(22)。,待最终复核,
+CPHO39-Q04-F030,CPHO39-Q04,参考解答-第(3)问-参数条件,15,(4a/3)^(2/3) - R^(2/3) = (g/omega^2)^(2/3),参考解答第15页式(23)。,待最终复核,幂次和括号排版需按源页终核。
+CPHO39-Q04-F031,CPHO39-Q04,参考解答-第(3)问-另一写法,15-16,"-cot theta = A_prime cos theta + B_prime; A_prime = 4a/(3R), B_prime = g/(R omega^2)",参考解答第15-16页式(15)prime及说明。,待最终复核,
+CPHO39-Q04-F032,CPHO39-Q04,参考解答-第(3)问-另一写法,16,解题图4a_prime：y=-cot theta 与 y=A_prime cos theta+B_prime 的图示,参考解答第16页式(16)prime图示。,图示已定位，待另行图件销项,本轮只登记图示入口，不关闭CPHO39-Q04-FIG。
+CPHO39-Q04-F033,CPHO39-Q04,参考解答-第(3)问-另一写法,16,第I象限无平衡位形；第II、IV象限各1个平衡位形,参考解答第16页式(17)prime(18)prime文字结论。,待最终复核,
+CPHO39-Q04-F034,CPHO39-Q04,参考解答-第(3)问-另一写法,16,1/sin^2(theta_0) = -A_prime sin theta_0,参考解答第16页式(19)prime。,待最终复核,
+CPHO39-Q04-F035,CPHO39-Q04,参考解答-第(3)问-另一写法,16,sin^3(theta_0) = -1/A_prime = -3R/(4a),参考解答第16页式(20)prime。,待最终复核,
+CPHO39-Q04-F036,CPHO39-Q04,参考解答-第(3)问-另一写法,16,B_prime = -cot theta_0 + cos theta_0/sin^3(theta_0) = -cot^3(theta_0),参考解答第16页式(21)prime。,待最终复核,中间等式视觉上复杂，需按源页终核。
+CPHO39-Q04-F037,CPHO39-Q04,参考解答-第(3)问-另一写法,16,A_prime^(2/3) = B_prime^(2/3) + 1,参考解答第16页式(22)prime。,待最终复核,
+CPHO39-Q04-F038,CPHO39-Q04,参考解答-第(3)问-参数条件,17,(4a/3)^(2/3) - R^(2/3) < (g/omega^2)^(2/3)：第III象限没有平衡位形,参考解答第17页式(24)。,待最终复核,
+CPHO39-Q04-F039,CPHO39-Q04,参考解答-第(3)问-参数条件,17,(4a/3)^(2/3) - R^(2/3) > (g/omega^2)^(2/3)：第III象限有两个平衡位形,参考解答第17页式(25)。,待最终复核,
+CPHO39-Q04-F040,CPHO39-Q04,参考解答-第(4)问,17,解题图4b：第I无平衡、第II可平衡、第III无/可平衡、第IV可平衡的受力分析图,参考解答第17页式(26)-(30)和图4b。,图示已定位，待另行图件销项,图4b为正式案例/附录使用前的图件风险点。
+CPHO39-Q04-F041,CPHO39-Q04,参考解答-第(5)问-微扰法,17,L_sum(theta_E + Delta theta) = mga sin(theta_E+Delta theta) + ma omega^2[R cos(theta_E+Delta theta) + (2/3)a sin(2theta_E+2Delta theta)],参考解答第17页式(31)。,待最终复核,
+CPHO39-Q04-F042,CPHO39-Q04,参考解答-第(5)问-微扰法,17,L_sum(theta_E+Delta theta) approx mga[cos theta_E - (omega^2 R/g) sin theta_E + (4a omega^2/(3g)) cos(2theta_E)] Delta theta,参考解答第17页式(31)近似行。,待最终复核,
+CPHO39-Q04-F043,CPHO39-Q04,参考解答-第(5)问-微扰法,17,L_sum/Delta theta <0 稳定; =0 拐点不稳定; >0 不稳定,参考解答第17页式(31)下方判断。,待最终复核,
+CPHO39-Q04-F044,CPHO39-Q04,参考解答-第(5)问-势能法,18,d^2E_Sp/dtheta^2 = -mga cos theta + ma omega^2(R+(4/3)a sin theta)sin theta - (4/3)ma^2 omega^2 cos^2 theta,参考解答第18页式(31)prime。,待最终复核,
+CPHO39-Q04-F045,CPHO39-Q04,参考解答-第(5)问-势能法,18,d^2E_Sp/dtheta^2 |_(theta=theta_E) = -L_sum(theta_E+Delta theta)/Delta theta,参考解答第18页对比说明。,待最终复核,
+CPHO39-Q04-F046,CPHO39-Q04,参考解答-第(5)问-稳定性通式,18,d^2E_Sp/dtheta^2 = mga cos^2(theta_E)[-1/cos(theta_E) - tan^2(theta_E)/cos(theta_E) - A],参考解答第18页式(32)第一行。,待最终复核,
+CPHO39-Q04-F047,CPHO39-Q04,参考解答-第(5)问-稳定性通式,18,d^2E_Sp/dtheta^2 = [mga cos^2(theta_E)/sin(theta_E)] [B - tan^3(theta_E)] = [mga cos^2(theta_E)/sin(theta_E)] [R omega^2/g - tan^3(theta_E)],参考解答第18页式(32)后两行。,待最终复核,
+CPHO39-Q04-F048,CPHO39-Q04,参考解答-第(5)问-稳定性结论,18,"第II象限：L_sum/Delta theta < 0, d^2E_Sp/dtheta^2 > 0，稳定平衡",参考解答第18页式(33)。,待最终复核,
+CPHO39-Q04-F049,CPHO39-Q04,参考解答-第(5)问-稳定性结论,18,"第IV象限：L_sum/Delta theta > 0, d^2E_Sp/dtheta^2 < 0，不稳定平衡",参考解答第18页式(34)。,待最终复核,
+CPHO39-Q04-F050,CPHO39-Q04,参考解答-第(5)问-第III象限,18,d^2E_Sp/dtheta^2 = -mga cos theta_E - (4/3)ma^2 omega^2 cos^2 theta_E - mga tan theta_E sin theta_E = -mga/cos theta_E (1 + A cos^3 theta_E),参考解答第18页式(35)。,待最终复核,
+CPHO39-Q04-F051,CPHO39-Q04,参考解答-第(5)问-第III象限,18,"theta_E > theta_0 的平衡位形：L_sum/Delta theta < 0, d^2E_Sp/dtheta^2 > 0，稳定",参考解答第18页式(36)。,待最终复核,源页用cos theta_E 与 cos theta_0 比较，需终核方向。
+CPHO39-Q04-F052,CPHO39-Q04,参考解答-第(5)问-第III象限,19,"theta_E < theta_0 的平衡位形：L_sum/Delta theta > 0, d^2E_Sp/dtheta^2 < 0，不稳定",参考解答第19页式(37)。,待最终复核,
+CPHO39-Q04-F053,CPHO39-Q04,参考解答-第(5)问-第III象限,19,唯一平衡位形 theta_E = theta_0: d^2E_Sp/dtheta^2 = 0，为势能曲线拐点，不稳定,参考解答第19页式(38)。,待最终复核,
+CPHO39-Q04-F054,CPHO39-Q04,参考解答-第(5)问-拐点验证,19,d^3E_p/dtheta^3 = mga[sin theta + (B+A sin theta)cos theta + A sin theta cos theta + 2A sin theta cos theta] = mga(sin theta + B cos theta + 4A sin theta cos theta),参考解答第19页式(39)。,待最终复核,式号说明中“将(16)式代入(34)”需与前后编号终核。
+CPHO39-Q04-F055,CPHO39-Q04,参考解答-第(5)问-拐点验证,19,d^3E_p/dtheta^3 |_(theta=theta_0) = 3A mga sin theta_0 cos theta_0 != 0,参考解答第19页式(40)。,待最终复核,
+CPHO39-Q04-F056,CPHO39-Q04,参考解答-评分标准,19,本题60分：第(1)问18分，第(2)问3分，第(3)问12分，第(4)问13分，第(5)问14分,参考解答第19页评分标准。,待最终复核,评分标准用于边界和证据索引，不代表小问分值已正式拆分。

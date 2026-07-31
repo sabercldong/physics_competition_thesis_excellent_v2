@@ -1,17 +1,17 @@
 ﻿check_id,check_item,command,exit_code,status,summary
-HP-QA-01,SOLO应用接入包,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_solo_application_integration_packet.py,0,通过,SOLO应用文献受控接入包QA：20/20通过
-HP-QA-02,结果资格,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_results_eligibility.py,0,通过,R01结果资格QA：51/51通过
-HP-QA-03,第四章当前结果整合,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_results_manuscript_integration_v2.py,0,通过,R01第四章当前结果整合QA V2：35/35通过
-HP-QA-04,结论章研究问题对齐,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_conclusion_rq_alignment.py,0,通过,R01结论章研究问题对齐QA：16/16通过
-HP-QA-05,案例重选,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_case_reselection.py,0,通过,R01案例重选QA：7/7通过
+HP-QA-01,SOLO应用接入包,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_solo_application_integration_packet.py,1,不通过,SOLO应用接入包QA失败：SAIP-QA-18
+HP-QA-02,结果资格,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_results_eligibility.py,1,不通过,R01结果资格QA：44/51通过
+HP-QA-03,第四章当前结果整合,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_results_manuscript_integration_v2.py,1,不通过,"第四章当前结果整合QA失败：MRQA2-38, MRQA2-40"
+HP-QA-04,结论章研究问题对齐,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_conclusion_rq_alignment.py,1,不通过,"结论章研究问题对齐QA失败：CRQA-07, CRQA-13, CRQA-14, CRQA-15, CRQA-16, CRQA-20"
+HP-QA-05,案例重选,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_case_reselection.py,1,不通过,R01案例重选QA：5/7通过
 HP-QA-06,候选参考文献,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_candidate_references.py,0,通过,候选参考文献QA：7/7通过。
-HP-QA-07,正文引用追溯,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/audit_r01_citation_trace.py,0,通过,引用追溯通过：72 条来源出现，61 条显式引文占位。
-HP-QA-08,V17输入新鲜度,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_working_draft_freshness.py --require-current,0,通过,V17输入新鲜度QA：9/9当前；状态：当前
-HP-QA-09,材料包快照,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/build_r01_material_package_snapshot.py --validate,0,通过,材料包快照校验：44/44通过
-HP-QA-10,内部交接包,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/build_r01_internal_material_package.py --validate,0,通过,R01内部交接包校验：43/43通过
-HP-QA-11,材料包总审计,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_current_material_package_audit.py,0,通过,材料包审计V2 QA：16/16通过
-HP-QA-12,复现运行手册,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py,0,通过,R01复现运行手册QA：18/18通过
-HP-QA-13,中文摘要对齐,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_abstract_alignment.py,0,通过,R01中英文摘要对齐QA：28/28通过
-HP-QA-14,当前章节证据审计,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/audit_r01_current_chapter_evidence.py,0,通过,R01当前章节证据审计：12/12通过；2项侧车事项已登记
+HP-QA-07,正文引用追溯,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/audit_r01_citation_trace.py,0,通过,引用追溯通过：80 条来源出现，80 条显式引文占位。
+HP-QA-08,V17输入新鲜度,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_working_draft_freshness.py --require-current,1,不通过,"V17输入新鲜度QA：2/10当前；状态：已过期 | V17相对当前源文件已过期：08_manuscript/01_introduction.md, 08_manuscript/02_theory.md, 08_manuscript/03_methods.md, 08_manuscript/04_results.md, 08_manuscript/05_cases_and_diagnosis.md, 08_manuscript/06_conclusion.md, 08_manuscript/00_abstract_content_draft.md, 08_manuscript/00_abstract_en_content_draft.md"
+HP-QA-09,材料包快照,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/build_r01_material_package_snapshot.py --validate,1,不通过,"材料包快照校验失败：PKG-01, PKG-07, PKG-08, PKG-09, PKG-10, PKG-11, PKG-12, PKG-13, PKG-14, PKG-15, PKG-16, PKG-17, PKG-18, PKG-21, PKG-22, PKG-23, PKG-25, PKG-28, PKG-29, PKG-30, PKG-38, PKG-41"
+HP-QA-10,内部交接包,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/build_r01_internal_material_package.py --validate,1,不通过,"内部交接包校验失败：PKG-01, PKG-07, PKG-08, PKG-09, PKG-10, PKG-11, PKG-12, PKG-13, PKG-14, PKG-15, PKG-16, PKG-17, PKG-18, PKG-22, PKG-23, PKG-25, PKG-28, PKG-29, PKG-30, PKG-38, PKG-41"
+HP-QA-11,材料包总审计,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_current_material_package_audit.py,1,不通过,"材料包审计QA失败：MPA-QA-03, MPA-QA-04, MPA-QA-06, MPA-QA-07, MPA-QA-08, MPA-QA-12, MPA-QA-14"
+HP-QA-12,复现运行手册,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_reproducibility_runbook.py,1,不通过,"复现运行手册QA失败：RUNBOOK-QA-10, RUNBOOK-QA-11"
+HP-QA-13,中文摘要对齐,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_abstract_alignment.py,1,不通过,"摘要对齐QA失败：AA-QA-11, AA-QA-15, AA-QA-16, AA-QA-17, AA-QA-18, AA-QA-20, AA-QA-25, AA-QA-26, AA-QA-27, AA-QA-28"
+HP-QA-14,当前章节证据审计,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/audit_r01_current_chapter_evidence.py,0,通过,R01当前章节证据审计：5/12通过；2项侧车事项已登记
 HP-QA-15,教学设计材料,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_teaching_design_materials.py,0,通过,R01教学设计材料QA：21/21通过
 HP-QA-16,学生作品观察量规,/Library/Developer/CommandLineTools/usr/bin/python3 07_analysis/scripts/validate_r01_student_artifact_observation_rubric.py,0,通过,R01学生作品观察量规QA：12/12通过

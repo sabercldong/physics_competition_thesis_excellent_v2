@@ -1,0 +1,12 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO41-Q07,第(1)问单值条件,答案16-17页,"psi(x + 2piR) = psi(x); exp[(i/hbar)p(x+2piR)] = exp[(i/hbar)px]; p = n hbar/R; n = 0, +/-1, +/-2, ...",答案式①至③,答案页支持，待最终排版复核,用于核对题面波函数和动量量子化；正式公式排版需恢复希腊字母与上下标。
+F02,CPHO41-Q07,第(2)问磁通与矢势,答案17页,"Phi = 2pi R A; p' = p + eA = n hbar/R + e Phi/(2pi R)",答案式④至⑤,答案页支持，待最终排版复核,磁矢势环路积分与轴对称条件为答案页支持；需核对A方向与题面表述。
+F03,CPHO41-Q07,第(2)问单电子能量,答案17页,"E_n = p'^2/(2m) = hbar^2/(2mR^2) (n + e Phi/h)^2; n = 0, +/-1, +/-2, ...",答案式⑥,答案页支持，待最终排版复核,用于核对能量与磁通量关系；正式稿需统一E或E_n记法。
+F04,CPHO41-Q07,第(3)问磁通参数化,答案17页,"e Phi/h = l + alpha; alpha in [-1/2, 1/2); l is integer",答案式⑦,答案页支持，待最终排版复核,用于核对周期性证明起点；alpha取值区间需保留半开区间。
+F05,CPHO41-Q07,第(3)问总能量与占据范围,答案17页,"E_tot(Phi) = hbar^2/(2mR^2) sum (n+l+alpha)^2; odd N uses -floor(N/2) <= n+l <= floor(N/2); even N uses two alpha-dependent sums",答案式⑧至⑪,答案页支持，需逐式排版复核,求和上下限较长，本表登记核对入口，不替代完整公式转写。
+F06,CPHO41-Q07,第(3)问周期性结论,答案18页,"E_tot(Phi + h/e) = E_tot(Phi); period = h/e",答案式⑫及说明文字,答案页支持，待最终排版复核,注意这是无相互作用电子系统总能量的周期性结论；不得直接写成超导磁通量子最终实验结论。
+F07,CPHO41-Q07,第(4)问奇数N平均能量,答案18页,"For N = 2M + 1: E_bar(Phi) = (1/(4pi^2)) e^2 Phi^2/(2mR^2) + [hbar^2/(2mR^2)] M(M+1)/3",答案式⑬至⑭,答案页支持，待最终排版复核,用于核对N为奇数时Phi=0与边界磁通平均能量比较。
+F08,CPHO41-Q07,第(4)问偶数N平均能量分段,答案18页,"For N = 2M: when 0 <= Phi < h/(2e), E_bar(Phi) = [hbar^2/(2mR^2)](ePhi/h - 1/2)^2 + [hbar^2/(2mR^2)](M^2/3 - 1/12); when -h/(2e) <= Phi < 0, replace -1/2 by +1/2",答案式⑮至⑱,答案页支持，需逐式排版复核,分段公式较长，需对照答案18页最终排版；本表只登记关键核对式。
+F09,CPHO41-Q07,第(4)问奇偶比较结论,答案18-19页,"Odd N: Phi=0 average energy is less than |Phi|=h/(2e); even N: Phi=0 average energy is greater than |Phi|=h/(2e)",答案式⑭⑯⑱及星号说明,答案页支持，待最终排版复核,题面第(4)问要求的比较结论可由答案页支持。
+F10,CPHO41-Q07,第(5.1)问两环最低能量情形,答案19页,"Odd-odd rings with minimum electron-number difference minimize near Phi=0; even-even rings with minimum electron-number difference minimize near |Phi|=h/(2e); p' and -p' states coexist or both do not exist",答案式⑲至⑳及说明文字,答案页支持，需证据文本复核,该行登记结论入口；正式案例分析前需摘录具体证明链。
+F11,CPHO41-Q07,第(5.2)问双环极限比值,答案19页,"C1 = M(M+1)/3; C2 = M(M+1)/3 + 1/4; lim_{N->infty} E_bar(Phi=0) / E_bar(Phi=h/(2e)) = lim C1/C2 = 1",答案式㉑至㉓,答案页支持，待最终排版复核,题面b情形电子数为N1=2(M+1)与N2=2M；注意答案页一处文本层抽取可能混淆，已按渲染页视觉核对登记。

@@ -4,7 +4,7 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_38_2021_fusai_paper_solution_candidate.pdf`
 - 试题页码：3
-- 解答页码：14-15
+- 解答页码：14-16（本轮视觉检查确认第16页上半部仍为第6题答案和评分参考；第16页下半部进入第7题）
 - 题图：03_corpus/item_assets/CPHO38-Q06-figure1-page3-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取。公式、特殊符号、图注和OCR错字需人工校对。
 
@@ -156,3 +156,17 @@ v( z = 0)       v 2 ( z = 0) − 2az
 对上式两边积分，并利用初态时内、外筒均静止的条件，得
                                                      第 11 页 , 共 16 页
 ```
+
+## G1-07-A1 视觉校对转写入口
+
+任务：`G1-07-A1-TRANSCRIBE-38Q06`
+
+- V1题面转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q06_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q06_formula_check_v1.csv`
+- 题面页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q06-paper-page-3.png`
+- 答案页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q06-solution-page-14.png`、`CPHO38-Q06-solution-page-15.png`、`CPHO38-Q06-solution-page-16.png`
+- 后边界页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q06-solution-page-17.png`（第7题边界页，不纳入第6题答案公式证据）
+
+本题原OCR文本仅保留为错误来源对照，不得作为正式编码证据直接使用。经视觉检查，第6题题面从试题PDF第3页页首开始，至同页上半部结束；同页下半部进入第7题和第8题，仅用于边界确认。第6题答案从PDF第14页下半部“六、”开始，至第16页上半部评分参考结束；第14页上半部为第5题答案尾部和评分参考，第16页下半部进入第7题，均不得纳入第6题答案证据。
+
+当前 `CPHO38-Q06-OCR` 已具备V1视觉转写入口，`CPHO38-Q06-FORMULA` 已具备答案公式核对入口；但 `CPHO38-Q06-FIG` 尚未关闭，图6a仍需对照原PDF确认图形、箭头、标签、图号和裁边。后续正式排版和编码证据摘录需重点复核 `mu` 与 `mu_0`、`omega` 与 `Omega`、第(3)问到达条件、电场/磁场方向和符号、外力矩总冲量矩 `J` 以及总机械角动量 `L`。

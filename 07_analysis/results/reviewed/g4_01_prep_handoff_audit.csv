@@ -1,0 +1,6 @@
+﻿check_id,check_item,status,evidence,action
+HANDOFF-01,评分者A空白模板存在且记录数为876,通过,formal_coding_rater_A_template.csv rows=876,若未通过，重新生成模板。
+HANDOFF-02,评分者B空白模板存在且记录数为876,通过,formal_coding_rater_B_template.csv rows=876,若未通过，重新生成模板。
+HANDOFF-03,裁决模板存在且记录数为876,通过,formal_adjudication_template.csv rows=876,若未通过，重新生成模板。
+HANDOFF-04,正式分析门槛仍未满足,通过,未满足门槛=5,允许进入评分者交接准备，但不得生成正式结果。
+HANDOFF-05,人工校对优先队列存在,通过,prep30_manual_priority_queue.csv rows=154,评分者遇到未销项材料时标待核实。

@@ -7,7 +7,18 @@
 - 试题页码：1-2
 - 解答页码：3-7
 - 题图：03_corpus/item_assets/CPHO41-Q02-figure1-page1-raw.png;03_corpus/item_assets/CPHO41-Q02-figure2-page2-raw.png;03_corpus/item_assets/CPHO41-Q02-figure3-page2-raw.png;03_corpus/item_assets/CPHO41-Q02-table1-page2-raw.png
+- 题图重裁候选：03_corpus/item_assets/CPHO41-Q02-figure2a-page1-recrop-v1.png;03_corpus/item_assets/CPHO41-Q02-figure2b-page2-recrop-v1.png;03_corpus/item_assets/CPHO41-Q02-figure2c-page2-recrop-v1.png;03_corpus/item_assets/CPHO41-Q02-table-page2-recrop-v1.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
+
+## G1-07-A1 视觉校对转写入口
+
+- 校对转写稿：`03_corpus/manual_review_transcripts/CPHO41-Q02_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO41-Q02_formula_check_v1.csv`
+- 终复核准备记录：`03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_final_review_summary.md`; `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_final_review_v1.csv`
+- 题图重裁候选记录：`03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_recrop_review_v1.md`; `03_corpus/item_assets/CPHO41_Q02_Q07_recrop_manifest.csv`
+- 题图内部终检记录：`03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_finalcheck_summary.md`; `03_corpus/manual_review_transcripts/CPHO41_Q02_Q07_figure_finalcheck_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q02-paper-page-1.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q02-paper-page-2.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q02-solution-page-03.png` 至 `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q02-solution-page-07.png`
+- 当前状态：已完成题面V1视觉转写、答案公式核对入口登记、题图重裁候选图生成和题图内部视觉终检；图2c因原页贴近正文，正式论文使用前建议重绘。仍需最终排版复核、真实人工确认和正式编码证据摘录。原始OCR文本保留在下方，仅作错误来源对照，不得用于正式编码证据。
 
 ## 题干OCR抽取文本
 

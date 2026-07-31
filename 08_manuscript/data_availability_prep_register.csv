@@ -1,0 +1,13 @@
+data_item,location,current_status,public_or_private,can_support_thesis_claim_now,required_before_formal_use,boundary
+原始初稿材料,00_originals/,已保存并校验,项目内部只读,否,仅作为风险审计来源,不得作为事实或结果证据
+复赛试题与答案语料,03_corpus/raw_papers;03_corpus/raw_solutions,用户确认并入库,项目资料,部分,来源说明和校验值整理,只支持研究对象范围不支持正式统计
+小问级索引,03_corpus/item_index.csv,219个分析单元已建,项目数据,部分,人工校对风险处理,可说明语料结构不能证明正式编码完成
+人工校对清单,03_corpus/manual_review_checklist.csv,154条待核项,项目质量数据,是,持续销项记录,说明风险不能替代校对完成
+内部编码数据,07_analysis/data/internal_coding_v1.csv,内部试编码底稿,项目内部准备,否,不得进入正式结论,仅用于流程联调和风险发现
+正式评分者A/B模板,07_analysis/data/formal_coding_rater_A_template.csv;formal_coding_rater_B_template.csv,空白模板,项目准备数据,否,真实评分者独立填写并回收,空白模板不是结果
+正式裁决模板,07_analysis/data/formal_adjudication_template.csv,空白模板,项目准备数据,否,A/B回收后一致性计算和分歧裁决,空白模板不是裁决结果
+正式分析表,07_analysis/data/final_coding.csv,尚不存在,待生成,否,分歧裁决后生成,不存在时第四章不得写正式结果
+分析脚本,07_analysis/scripts/,已有内部和准备脚本,项目可复现材料,部分,正式输入表确定后锁定脚本版本,内部脚本输出不得冒充正式图表
+教师访谈问卷数据,05_fieldwork/,当前为空表和模板,待采集,否,同意记录匿名化元数据转写和分析完成,不得写教师普遍观点或问卷结果
+课堂与学生作品数据,06_teaching_validation/,当前为空表和模板,待采集,否,课堂许可匿名化作品评分和日志完成,不得写课堂可行性或效果
+主张证据矩阵,09_quality/claim_evidence_matrix.csv,已登记C1和C2部分主张,项目质量数据,是,继续覆盖全部章节,只证明证据边界不证明结论已成立

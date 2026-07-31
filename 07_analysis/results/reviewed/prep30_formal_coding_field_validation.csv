@@ -1,0 +1,6 @@
+﻿field,valid_values,required
+present,是;否,是
+level,L1;L2;L3;L4;未出现,是
+evidence,非空；可定位到题干或参考解答,是
+confidence,高;中;低,是
+coder_id,评分者匿名编号,是

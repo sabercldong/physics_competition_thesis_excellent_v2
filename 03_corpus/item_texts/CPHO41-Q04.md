@@ -9,6 +9,20 @@
 - 题图：无
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1人工校对入口
+
+- 任务编号：`G1-07-A1-TRANSCRIBE-41Q04`
+- V1视觉转写稿：`03_corpus/manual_review_transcripts/CPHO41-Q04_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO41-Q04_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q04-paper-page-3.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q04-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q04-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q04-solution-page-11.png`
+- 视觉边界：第4题题面完整位于试题PDF第3页上部；同页中下部进入第5题和第6题。第4题答案从答案PDF第9页下半部开始，延续至第11页评分标准结束；第9页上半部为第3题尾部，第11页下半部进入第5题，均仅作边界证据。
+- 当前处理状态：原OCR文本保留为错误来源对照；第4题已建立V1视觉转写稿和答案公式核对入口，仍需真实人工逐字、逐式、逐单位最终复核。
+- 使用限制：不得据此声称第41届第4题题干、公式、分值或解答证据已完成正式人工校对；不得据此生成正式统计、正式案例结论或论文正文结果。
+
 ## 题干OCR抽取文本
 
 ```text

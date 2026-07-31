@@ -32,7 +32,7 @@ RE-QA-R3,双方均判出现的等级比较数,607,607,通过,r01_reliability_by_
 RE-QA-R4,全体等级一致率,82.21%,82.21%,通过,r01_reliability_by_dimension.csv;08_manuscript/04_results.md
 RE-QA-R5,全体等级二次加权kappa,0.8638,0.8638,通过,r01_reliability_by_dimension.csv;08_manuscript/04_results.md
 RE-QA-R6,A/B分歧记录数,142,142,通过,r01_reliability_disagreements.csv;08_manuscript/04_results.md
-RE-QA-R7,ADJ-02采纳更正数,4,4,通过,r01_correction_adjudication_change_manifest_v1.csv;08_manuscript/04_results.md
+RE-QA-R7,ADJ-02采纳更正数,4,4,不通过,r01_correction_adjudication_change_manifest_v1.csv;08_manuscript/04_results.md
 RE-QA-M1,第四章结果值,| 模型建构 | 203 | 219 | 92.69% |,存在,通过,08_manuscript/04_results.md
 RE-QA-M2,第四章结果值,| 科学推理 | 219 | 219 | 100.00% |,存在,通过,08_manuscript/04_results.md
 RE-QA-M3,第四章结果值,| 科学论证 | 106 | 219 | 48.40% |,存在,通过,08_manuscript/04_results.md
@@ -43,10 +43,10 @@ RE-QA-M7,第四章结果值,| 科学论证 | 106 | 79 (74.53%) | 16 (15.09%) | 1
 RE-QA-M8,第四章结果值,| 质疑创新 | 84 | 20 (23.81%) | 51 (60.71%) | 5 (5.95%) | 8 (9.52%) |,存在,通过,08_manuscript/04_results.md
 RE-QA-M9,第四章结果值,科学论证与质疑创新共同出现40次，两者并集为150个单元，Jaccard系数为0.2667,存在,通过,08_manuscript/04_results.md
 RE-QA-B1,第四章边界语句,不代表学生实际能力,存在,通过,08_manuscript/04_results.md
-RE-QA-B2,第四章边界语句,不代表教学效果,存在,通过,08_manuscript/04_results.md
+RE-QA-B2,第四章边界语句,不代表教学效果,缺失,不通过,08_manuscript/04_results.md
 RE-QA-B3,第四章边界语句,不进行显著性检验,存在,通过,08_manuscript/04_results.md
-RE-QA-B4,第四章边界语句,全样本主分析不进行分值加权,存在,通过,08_manuscript/04_results.md
-RE-QA-B5,第四章边界语句,项目无法独立验证,存在,通过,08_manuscript/04_results.md
-RE-QA-ME1,第三章编码过程表述,RATER-A/B,存在,通过,08_manuscript/03_methods.md
-RE-QA-ME2,第三章编码过程表述,项目无法独立验证,存在,通过,08_manuscript/03_methods.md
-RE-QA-ME3,第三章编码过程表述,可追溯描述性结果,存在,通过,08_manuscript/03_methods.md
+RE-QA-B4,第四章边界语句,全样本主分析不进行分值加权,缺失,不通过,08_manuscript/04_results.md
+RE-QA-B5,第四章边界语句,项目无法独立验证,缺失,不通过,08_manuscript/04_results.md
+RE-QA-ME1,第三章编码过程表述,RATER-A/B,缺失,不通过,08_manuscript/03_methods.md
+RE-QA-ME2,第三章编码过程表述,项目无法独立验证,缺失,不通过,08_manuscript/03_methods.md
+RE-QA-ME3,第三章编码过程表述,可追溯描述性结果,缺失,不通过,08_manuscript/03_methods.md

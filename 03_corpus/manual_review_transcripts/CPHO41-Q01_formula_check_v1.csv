@@ -1,0 +1,35 @@
+﻿check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO41-Q01,题面与答案边界,1;1-3,第1题题面位于试题PDF第1页；答案从答案PDF第1页开始至第3页上半部评分标准结束。,视觉检查和页标题,边界已记录，待最终复核,试题第1页下部进入第2题；答案第3页下半部和第4页进入第2题。
+F02,CPHO41-Q01,题面强迫力,1,F(t) = H cos(omega t),题面正文,题面页支持，待最终排版复核,需核对H、omega和向左为正约定。
+F03,CPHO41-Q01,第(3)问阻尼力,1,f = -gamma v',题面正文,题面页支持，需重点最终复核,原OCR将gamma和v'误识别；需核对撇号和负号。
+F04,CPHO41-Q01,第(1.1)问摆锤水平运动方程,1,m(xddot + l thetaddot cos theta - l thetadot^2 sin theta) = -T sin theta,答案式①,答案页支持，需重点最终复核,原PDF括号覆盖整个位移加速度组合；不得写成m只乘xddot。
+F05,CPHO41-Q01,第(1.1)问摆锤竖直运动方程,1,m(-l sin theta thetaddot - l thetadot^2 cos theta) = mg - T cos theta,答案式②,答案页支持，需重点最终复核,需核对sin theta与thetaddot位置、thetadot平方。
+F06,CPHO41-Q01,小幅度近似,1,sin theta approx theta; cos theta approx 1,答案式③,答案页支持，待最终排版复核,用于由非线性方程得到线性方程。
+F07,CPHO41-Q01,张力近似,1,T = mg,答案式④,答案页支持，待最终排版复核,需核对保留小量领头阶。
+F08,CPHO41-Q01,摆锤线性方程,1,xddot + l thetaddot + g theta = 0,答案式⑤,答案页支持，待最终排版复核,需核对l thetaddot项。
+F09,CPHO41-Q01,大楼水平运动方程,1,M xddot = -kx + T sin theta + H cos(omega t),答案式⑥,答案页支持，待最终排版复核,需核对强迫力方向和正号。
+F10,CPHO41-Q01,大楼线性方程,1,M xddot + kx - mg theta = H cos(omega t),答案式⑦,答案页支持，待最终排版复核,由③④⑥得到。
+F11,CPHO41-Q01,稳态位移设定,1,x = A cos(omega t + phi_x),答案式⑧,答案页支持，待最终排版复核,需核对相位下标。
+F12,CPHO41-Q01,稳态摆角设定,1,l theta = B cos(omega t + phi_theta),答案式⑨,答案页支持，待最终排版复核,需核对B表示l theta振幅。
+F13,CPHO41-Q01,稳定振动相位,1,phi_x = 0; phi_theta = 0,答案式⑩,答案页支持，待最终排版复核,需核对答案相位结论。
+F14,CPHO41-Q01,振幅代数方程之一,1,[(M+m)omega^2 - k]A + m omega^2 B = -H,答案式⑪,答案页支持，需重点最终复核,需核对(M+m)括号和负号。
+F15,CPHO41-Q01,振幅代数方程之二,1,omega^2 A + (omega^2 - omega_0^2)B = 0,答案式⑫,答案页支持，需重点最终复核,需核对omega_0平方。
+F16,CPHO41-Q01,谐振子稳定振幅,1,A = ((omega_0^2 - omega^2)H)/((omega_0^2 - omega^2)(k - M omega^2) - m omega_0^2 omega^2),答案式⑬,答案页支持，需重点最终复核,需核对分母两项、Momega^2和momega_0^2omega^2。
+F17,CPHO41-Q01,摆相对位移振幅,1,B = omega^2/(omega_0^2 - omega^2) A = omega^2 H/((omega_0^2 - omega^2)(k - M omega^2) - m omega_0^2 omega^2),答案式⑭,答案页支持，需重点最终复核,需核对等号两侧分母一致。
+F18,CPHO41-Q01,单摆固有角频率,2,omega_0 = sqrt(g/l),答案式⑭后正文,答案页支持，需重点最终复核,需核对根号覆盖g/l。
+F19,CPHO41-Q01,无阻尼器振幅,2,A = H/(k - M omega^2),答案式⑮,答案页支持，待最终排版复核,m=0时得到。
+F20,CPHO41-Q01,无阻尼器共振频率,2,omega = sqrt(k/M),答案式⑯,答案页支持，需重点最终复核,需核对根号覆盖k/M。
+F21,CPHO41-Q01,共振频率下有阻尼器振幅,2,A = ((k/M - g/l)H)/(m(g/l)(k/M)) = H(kl - Mg)/(gkm),答案式⑰,答案页支持，需重点最终复核,需核对化简分母gkm和分子kl-Mg。
+F22,CPHO41-Q01,最小振幅摆长条件,2,l = Mg/k,答案式⑱,答案页支持，待最终排版复核,参数m尽可能大为另一条件。
+F23,CPHO41-Q01,质量参数条件,2,m尽可能大。,答案式⑲,答案页支持，待最终复核,属于参数优化定性条件。
+F24,CPHO41-Q01,第(2)问风频率,1;2,题面：omega为第(1.2)问频率的sqrt(0.99)倍；答案使用omega = sqrt(0.99k/M)。,题面第(2)问与答案正文,题面/答案支持，需重点最终复核,原OCR误读为V0.55，不得继承。
+F25,CPHO41-Q01,第(2)问无阻尼器振幅,2,A = 100H/k,答案式⑳,答案页支持，待最终排版复核,由omega = sqrt(0.99k/M)得到。
+F26,CPHO41-Q01,第(2)问阻尼器质量比,2,m/M = 101/9900 approx 1/100,答案式㉑,答案页支持，需重点最终复核,需核对101/9900和近似值。
+F27,CPHO41-Q01,相对速度分量,2,v'_x = l thetadot cos theta; v'_y = -l thetadot sin theta,答案式㉒㉓,答案页支持，需重点最终复核,需核对撇号、下标和负号。
+F28,CPHO41-Q01,带阻尼摆锤水平运动方程,2,m(xddot + l thetaddot cos theta - l thetadot^2 sin theta) = -T sin theta - gamma l thetadot cos theta,答案式㉔,答案页支持，需重点最终复核,需核对阻尼项方向和gamma。
+F29,CPHO41-Q01,带阻尼摆锤竖直运动方程,2,m(-l thetaddot sin theta - l thetadot^2 cos theta) = mg - T cos theta + gamma l thetadot sin theta,答案式㉕,答案页支持，需重点最终复核,需核对阻尼项正号和sin theta。
+F30,CPHO41-Q01,非惯性系角向方程,2,m l thetaddot = -mg sin theta - gamma l thetadot - m xddot cos theta,答案式㉔′,答案页支持，待最终复核,作为等价写法；需核对撇号编号。
+F31,CPHO41-Q01,非惯性系径向方程,2,-m l thetadot^2 = mg cos theta - T - m xddot sin theta,答案式㉕′,答案页支持，待最终复核,作为等价写法；需核对负号。
+F32,CPHO41-Q01,带阻尼大楼运动方程,3,M xddot = -kx + T sin theta + gamma l thetadot cos theta + H cos(omega t),答案式㉖,答案页支持，需重点最终复核,需核对阻尼反作用项正号。
+F33,CPHO41-Q01,阻尼必要性之一,3,当式⑮条件成立时，仅有重物而无阻尼力的系统会发生共振，阻尼力可以有效抑制振动。,答案式㉗,答案页支持，待最终复核,属于定性说明，需避免外推为教学或工程实证结论。
+F34,CPHO41-Q01,阻尼必要性之二,3,阻尼效应会让系统机械能不断衰减；风停下来时建筑物会在阻尼作用下逐渐停止晃动。,答案式㉘,答案页支持，待最终复核,属于定性说明，需与题目语境对应。

@@ -4,9 +4,23 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_36_2019_fusai_paper_solution_candidate.pdf`
 - 试题页码：2-3
-- 解答页码：18-20
+- 解答页码：18-21
 - 题图：03_corpus/item_assets/CPHO36-Q03-figure1-page3-raw.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
+
+## G1-07-B1公式校对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO36-Q03_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-paper-page-2.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-paper-page-3.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-solution-page-18.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-solution-page-20.png`
+  - `03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q03-solution-page-21.png`
+- 页面边界：第3题题面从试题PDF第2页下半部开始，第3页上半部结束；第3页下半部进入第4题。第3题答案从PDF第18页中下部开始，第21页评分标准结束后进入第4题。
+- 状态：B组公式核对入口已建立，待最终复核；未填写真实校对人和校对日期，不能视为人工校对销项完成。
+- 使用限制：原参考解答抽取文本仅作辅助，正式编码证据摘录应以公式核对表和源页渲染图为入口；同题 `CPHO36-Q03-FIG` 仍未销项。
 
 ## 题干
 

@@ -1,0 +1,13 @@
+audit_id,file,section,issue_type,current_text_or_location,judgment,action,standard_term_or_rule,remaining_risk
+G8-04-PREP-001,08_manuscript/01_introduction.md,1.7,章节路线术语,"后续章节将按“理论框架、研究设计、正式结果、案例机制、教学转化”的顺序推进",已修订,已改为当前草稿状态表述,"当前草稿写为“理论框架、研究设计、结果占位、案例候选、教学转化证据准备”；正式结果等待final_coding.csv",正式数据生成后需再改回正式结果章叙述
+G8-04-PREP-002,08_manuscript/02_theory.md,2.6,过时下一步,"下一步需要完成文献核验工作：建立检索式和数据库记录，核验课程标准中科学思维相关表述...",已修订,已更新为继续补齐SOLO/物理竞赛/方法其余文献,"已完成G2-01和CS-001核验；不得把已完成准备任务写成仍未开始",SOLO与物理竞赛研究全文仍缺
+G8-04-PREP-003,08_manuscript/03_methods.md,3.6,第四章状态交叉引用,"第四章当前只能呈现内部预演结果和正式结果的写作占位",已修订,已改为正式结果占位与证据边界说明,"第4章现为正式结果占位，不呈现内部预演数字",正式结果仍待final_coding.csv
+G8-04-PREP-004,08_manuscript/03_methods.md,3.9,下一章状态交叉引用,"下一章所呈现的内容只能作为内部预演结果和正式结果写作结构",已修订,已改为正式结果章占位和证据边界说明,"第4章不再写内部预演结果；只保留样本事实和正式输出占位",正式结果仍待真实评分者编码
+G8-04-PREP-005,08_manuscript/04_results.md,chapter,第四章术语,"正式结果占位与边界说明；不报告正式维度分布、等级分布、共现模式、分组差异或趋势结论",一致,保留,"第四章当前术语统一为正式结果占位、证据边界、final_coding.csv",后续正式结果生成后需整体重写
+G8-04-PREP-006,08_manuscript/04_results.md,4.5,分组术语,"届次、模块、情境和表征差异正式输出占位",基本一致,保留,"使用“差异”时必须说明只是正式输出占位，不作实质解释",正式分析前不得写显著差异
+G8-04-PREP-007,08_manuscript/05_cases_and_diagnosis.md,5.1,第五章候选术语,"候选材料清单；候选复核方向；当前边界",一致,保留,"候选小问不等于正式案例；正式案例需裁决和证据表",正式案例仍未选择
+G8-04-PREP-008,08_manuscript/05_cases_and_diagnosis.md,5.2-5.5,案例段落术语,"模型建构/科学推理/科学论证/质疑创新案例待核实提纲",一致,保留,"统一使用待核实提纲、复核问题、候选材料，不写机制结论",正式编码前不得升级
+G8-04-PREP-009,08_manuscript/05_cases_and_diagnosis.md,5.6,教学证据术语,"教师/学生困难采证提纲",一致,保留,"采证提纲不是教学诊断发现；无真实证据不得写教师普遍或学生主要困难",G5/G6真实证据仍为0
+G8-04-PREP-010,08_manuscript/01_introduction.md;08_manuscript/03_methods.md;08_manuscript/04_results.md,cross_chapter,正式编码文件,"唯一正式分析表；final_coding.csv；正式分析表",基本一致,后续格式统一任务继续检查,"建议后续G8-04正式修订中统一为“裁决后的唯一分析表（final_coding.csv）”首次出现后可简称唯一分析表",当前不影响边界但术语仍可更紧
+G8-04-PREP-011,08_manuscript/01_introduction.md;08_manuscript/05_cases_and_diagnosis.md,cross_chapter,教学转化术语,"教学转化设计建议；证据需求；采证提纲",一致,保留,"无真实教师或课堂证据时只写设计建议和证据需求",若用户坚持不做审查/答辩仍不能写成真实教学效果
+G8-04-PREP-012,08_manuscript/01_introduction.md;08_manuscript/02_theory.md;08_manuscript/03_methods.md;08_manuscript/04_results.md,cross_chapter,SOLO术语,"SOLO启发等级；SOLO启发的任务认知结构要求等级；任务认知结构要求",基本一致,后续格式统一任务继续检查,"建议首次使用完整表述“SOLO启发的任务认知结构要求等级”，后文可简称SOLO启发等级",SOLO原文未读全文，仍需边界说明

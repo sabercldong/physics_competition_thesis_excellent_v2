@@ -1,0 +1,11 @@
+package_id,artifact,role,required_before,source_status,recipient,use_boundary,qa_status,next_action
+PKG-01,04_framework/analysis_unit_and_coding_definitions_formal_draft.md,分析单位和编码定义,G3-04-QA,已存在,评分者A/B,正式草案不是冻结手册,已纳入包,后续根据试编码分歧修订
+PKG-02,04_framework/codebook_v2_formal_draft.csv,维度-等级指标表,G3-04-QA,已存在,评分者A/B,不得作为正式结果,已纳入包,与模板字段保持一致
+PKG-03,04_framework/rater_training_manual_formal_draft.md,评分者培训手册候选稿,G3-04-QA,已存在,评分者A/B,培训材料不代表评分者意见,已纳入包,后续补真实培训记录
+PKG-04,04_framework/boundary_case_bank_formal_draft.csv,边界案例库,G3-04-QA,已存在,评分者A/B,训练风险清单不是标准答案,已纳入包,培训时只讨论规则和证据
+PKG-05,04_framework/evidence_note_and_disagreement_protocol_formal_draft.md,证据和分歧协议,G3-04-QA,已存在,评分者A/B与裁决人,协议草案不代表已裁决,已纳入包,回收后按协议分类分歧
+PKG-06,07_analysis/data/formal_coding_rater_A_template.csv,评分者A空白模板,G4-01,已存在876条,评分者A,空白模板尚未填写,字段已对齐,真实评分者A独立填写
+PKG-07,07_analysis/data/formal_coding_rater_B_template.csv,评分者B空白模板,G4-01,已存在876条,评分者B,空白模板尚未填写,字段已对齐,真实评分者B独立填写
+PKG-08,07_analysis/data/formal_adjudication_template.csv,裁决空白模板,G4-02,已存在876条,裁决人,需A/B编码完成后使用,字段已对齐,分歧生成后填写
+PKG-09,04_framework/rater_training_return_checklist.csv,回收核对表,G3-04-QA,本轮新增,项目负责人,只作QA检查不产生结果,已纳入包,回收A/B模板时逐项检查
+PKG-10,04_framework/rater_training_field_alignment_audit.csv,字段对齐审计,G3-04-QA,本轮新增,项目负责人,只作QA记录,已纳入包,后续随模板变更更新

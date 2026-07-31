@@ -1,0 +1,11 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO40-Q03,第(1)问动力学与纯滚动基本式,9-10,"m ac = m a0 cos(theta) + mg sin(theta) - f; Ic phiddot = fr; vc = r phidot; ac = r phiddot; Ic = (2/5)mr^2; f = (2/5)m ac",答案式①至⑥,答案页支持，待最终排版复核,用于核对相对楔块参考系中的受力、转动方程和纯滚动条件；希腊字母和点号需在正式公式排版中复核。
+F02,CPHO40-Q03,第(1)(i)问水平方向动量关系,10,"m(vc cos(theta) - v0) = Mv0; m(ac cos(theta) - a0) = Ma0",答案式⑦至⑧,答案页支持，待最终排版复核,答案中v0表示楔块速度，a0表示楔块加速度；需避免与其他题中初速度符号混淆。
+F03,CPHO40-Q03,第(1)(i)问楔块加速度,10,"a0 = [(5/7)mg sin(theta) cos(theta)] / [M + m - (5/7)m cos^2(theta)]",答案式⑨,答案页支持，待最终排版复核,与题面第(1)(i)直接对应；分母中的5/7系数和cos平方需重点复核。
+F04,CPHO40-Q03,第(1)(ii)问圆球质心相对楔块加速度,10,"ac = [(5/7)(M + m)g sin(theta)] / [M + m - (5/7)m cos^2(theta)]",答案式⑩,答案页支持，待最终排版复核,与题面第(1)(ii)直接对应；只登记核对入口，不替代正式公式转写。
+F05,CPHO40-Q03,第(1)(iii)问地面对楔块支持力,10,"N = (M + m)g [M + (2/7)m] / [M + m - (5/7)m cos^2(theta)]",答案式⑪至⑭,答案页支持，待最终排版复核,答案另给楔块研究对象解法；本表只保留最终表达式入口。
+F06,CPHO40-Q03,第(1)(iv)问楔块对圆球支持力,11,"N1 = mg cos(theta) [M + (2/7)m] / [M + m - (5/7)m cos^2(theta)]",答案式⑮至⑯,答案页支持，待最终排版复核,与题面第(1)(iv)直接对应；N1下标需保留。
+F07,CPHO40-Q03,第(1)(v)问最小摩擦因数,11,"mu0 = f/N1 = [2(M + m)/(7M + 2m)] tan(theta)",答案式⑰至⑱,答案页支持，待最终排版复核,与题面第(1)(v)直接对应；不得把mu和mu0混写。
+F08,CPHO40-Q03,第(2)问连滚带滑时ac与f,11,"ac = [(M + m)g(sin(theta) - mu cos(theta))] / [M + m - m cos^2(theta) - mu m sin(theta) cos(theta)]; f = mu Mmg / [(M + m)/cos(theta) - m cos(theta) - mu m sin(theta)]",答案式⑲至㉑,答案页支持，需重点排版复核,式㉑在PDF中为复杂分式，本表按可见式登记入口；正式使用前必须对照源页逐式复核。
+F09,CPHO40-Q03,第(2)问接触点P相对楔块速度,11,"phiddot = 5f/(2mr); vP = vc - r phidot = ac Delta t - r phiddot Delta t; vP = {[(M + m)g sin(theta) - mu(m + 7M/2)g cos(theta)] / [M + m - m cos^2(theta) - mu m sin(theta) cos(theta)]} Delta t",答案式㉒至㉔,答案页支持，待最终排版复核,与题面第(2)直接对应；速度方向由答案说明为mu < mu0时P点相对于楔块速度斜向下。
+F10,CPHO40-Q03,答案边界与评分标准,11-12,"第3题答案至PDF第11页结束；PDF第12页开始第4题。第(1)问22分，第(2)问18分。",视觉检查和评分标准,边界已记录，待最终复核,第12页只作为边界确认，不得纳入第3题公式证据。

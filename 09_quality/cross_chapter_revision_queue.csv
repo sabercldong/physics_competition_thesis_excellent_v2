@@ -1,0 +1,13 @@
+queue_id,priority,target_file,target_section,issue_type,current_risk,next_action,blocking_evidence
+G8-01-Q001,P0,08_manuscript/04_results.md,4.2-4.4,内部预演数字误升级风险,维度分布和共现数字可能被后续误当正式结果,后续正文修订时继续保留内部预演警示并加粗或移入附录占位,final_coding.csv缺失
+G8-01-Q002,P0,08_manuscript/04_results.md,4.3,L4高阶结论风险,内部L4记录仍有49条建议待核实和28条题面校对,正式结果前不得解释L4比例或高阶趋势,GATE-03未满足
+G8-01-Q003,P0,08_manuscript/05_cases_and_diagnosis.md,5.5,质疑创新过度解释风险,新情境和开放解释可能被误写成创新思维结论,正式裁决前将质疑创新案例写成候选或边界讨论,P0/P1复核未完成
+G8-01-Q004,P0,08_manuscript/05_cases_and_diagnosis.md,5.6-5.7,教师学生困难证据缺失,当前只有教学诊断假设和证据需求表,没有真实材料时降格为教学转化设计建议,教师/学生/课堂数据缺失
+G8-01-Q005,P0,08_manuscript/03_methods.md,3.4,专家审查表述风险,Codex内部预审不能替代真实专家,若不做外部审查则写为内部预审与研究者复核,expert_review_log.csv缺失
+G8-01-Q006,P0,08_manuscript/03_methods.md,3.5-3.6,真实评分者流程未发生,A/B模板为空且裁决未发生,正式稿只写流程计划和准备状态,真实A/B回收表缺失
+G8-01-Q007,P1,08_manuscript/02_theory.md,2.2,SOLO全文缺口,SOLO原书和1989论文尚未完成关键页码核验,继续保守写SOLO启发并保留待补核验文献,SOLO全文缺失
+G8-01-Q008,P1,08_manuscript/02_theory.md,2.3,两层编码优势证据不足,方法依据只完成部分文献和内部设计,不得写成优越性已被证明,真实一致性和更多方法文献缺失
+G8-01-Q009,P1,08_manuscript/01_introduction.md,1.3/1.6,研究空白与创新候选,PCOMP候选文献未获全文且结果未正式生成,保持研究空白候选和预期贡献语气,物理竞赛研究全文缺失
+G8-01-Q010,P1,08_manuscript/04_results.md,4.5,趋势和差异表述风险,八届样本和内部编码不足以支持显著趋势,正式脚本输出后仍使用克制描述,正式分组比较缺失
+G8-01-Q011,P1,08_manuscript/05_cases_and_diagnosis.md,5.1-5.4,案例证据链缺口,候选案例缺少正式裁决和题干/解答证据表,正式选2至4个案例并补证后再写机制结论,正式案例协议缺失
+G8-01-Q012,P2,08_manuscript/g7_08_reference_appendix_data_prep.md,全文,参考文献和附录定稿风险,当前只是准备清单,等待学校格式与最终参考文献核验后定稿,学校规范缺失

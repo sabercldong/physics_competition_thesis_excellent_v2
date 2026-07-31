@@ -1,0 +1,11 @@
+rule_id,stage,file_role,source_file,return_file_name,owner,required_check,boundary
+FILE-01,发放,A评分者空白模板,07_analysis/data/formal_coding_rater_A_template.csv,formal_coding_rater_A_FILLED_YYYYMMDD.csv,评分者A,发放前确认876条且为空白,回收文件不是正式结果
+FILE-02,发放,B评分者空白模板,07_analysis/data/formal_coding_rater_B_template.csv,formal_coding_rater_B_FILLED_YYYYMMDD.csv,评分者B,发放前确认876条且为空白,回收文件不是正式结果
+FILE-03,发放,独立填写说明,04_framework/rater_independent_coding_instructions_v1.md,rater_independent_coding_instructions_v1.md,项目负责人,随A/B模板同时发放,说明文件不产生研究结论
+FILE-04,发放,交接包冻结说明,04_framework/rater_handoff_lock_v1.md,rater_handoff_lock_v1.md,项目负责人,确认冻结编号一致,冻结交接流程不等于冻结正式结果
+FILE-05,发放,未销项风险提示,04_framework/rater_handoff_unresolved_risks.csv,rater_handoff_unresolved_risks.csv,项目负责人,确认评分者知道待核实处理规则,风险提示不等于风险已解决
+FILE-06,回收,A评分者已填模板,formal_coding_rater_A_FILLED_YYYYMMDD.csv,formal_coding_rater_A_RETURNED_YYYYMMDD_checked.csv,项目负责人,检查记录数取值证据版本日期,未通过检查不得算一致性
+FILE-07,回收,B评分者已填模板,formal_coding_rater_B_FILLED_YYYYMMDD.csv,formal_coding_rater_B_RETURNED_YYYYMMDD_checked.csv,项目负责人,检查记录数取值证据版本日期,未通过检查不得算一致性
+FILE-08,回收后,A/B字段核对结果,formal_coding_rater_A_RETURNED_YYYYMMDD_checked.csv;formal_coding_rater_B_RETURNED_YYYYMMDD_checked.csv,formal_coding_field_check_YYYYMMDD.csv,项目负责人,确认非法取值和空证据为0,只证明可进入一致性计算
+FILE-09,一致性后,分歧清单,formal_coding_field_check_YYYYMMDD.csv,formal_disagreement_log_YYYYMMDD.csv,项目负责人,仅由真实A/B回收表生成,不得用内部预演替代
+FILE-10,裁决,裁决模板,07_analysis/data/formal_adjudication_template.csv,formal_adjudication_FILLED_YYYYMMDD.csv,裁决人,先有分歧清单再裁决,裁决后仍需生成唯一分析表

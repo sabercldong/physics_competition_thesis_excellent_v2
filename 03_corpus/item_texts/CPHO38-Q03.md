@@ -4,7 +4,7 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_38_2021_fusai_paper_solution_candidate.pdf`
 - 试题页码：1
-- 解答页码：8-9
+- 解答页码：8-10（本轮视觉检查确认第10页上半部仍为第3题答案和评分参考；第10页下半部进入第4题）
 - 题图：03_corpus/item_assets/CPHO38-Q03-figure1-page1-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取。公式、特殊符号、图注和OCR错字需人工校对。
 
@@ -24,6 +24,19 @@ C1) 求超球与板碰摘第 1 USER ORE KS SD itv, 和球转动的角速度四,;
 保守力)。                                         _
 第1页,共4页
 ```
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q03`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q03_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q03_formula_check_v1.csv`
+- 题面页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q03-paper-page-1.png`
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q03-solution-page-08.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q03-solution-page-09.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q03-solution-page-10.png`
+
+当前状态：原OCR文本仅保留为错误来源与处理痕迹；正式编码前复核应优先使用V1转写稿、公式核对表和页面证据。经视觉检查，第3题题面完整位于试题PDF第1页底部，第1题和第2题只作前边界确认。第3题答案从PDF第8页底部开始，延续至第10页上半部评分参考结束；第8页上部和第10页下半部只作为边界确认。`CPHO38-Q03-FIG` 尚未关闭，图3a仍需独立图件校对。连续三次碰撞中的力矩符号、分数系数、`v_ix`、`omega_iz`、`J_z=2mr^2/5` 和竖直速度反向关系仍需最终逐式排版复核。
 
 ## 参考解答抽取文本
 

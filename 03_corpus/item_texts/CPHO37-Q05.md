@@ -8,6 +8,20 @@
 - 题图：03_corpus/item_assets/CPHO37-Q05-figure1-page3-raw.png
 - 抽取状态：扫描页OCR抽取，已按页面视觉定位大题边界；公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1人工校对入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-37Q05`
+- 题面V1视觉转写：`03_corpus/manual_review_transcripts/CPHO37-Q05_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO37-Q05_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q05-paper-page-3.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q05-solution-page-14.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q05-solution-page-15.png`
+- 题图证据：`03_corpus/item_assets/CPHO37-Q05-figure1-page3-raw.png`
+- 边界说明：第5题题面位于试题PDF第3页上半部；第3页下半部为第6题，仅作边界确认。答案从PDF第14页页首“五、”开始，至PDF第15页评分标准结束。
+- 状态说明：`CPHO37-Q05-OCR` 已建立V1视觉转写入口；`CPHO37-Q05-FORMULA` 已建立答案公式核对入口；`CPHO37-Q05-FIG` 本轮未销项，图5a裁图仍需后续人工确认或重裁/重绘判断。
+- 使用限制：原OCR文本仅作错误来源对照，不得作为正式编码证据；当前未填写真实校对人和校对日期，不得声称人工校对完成。
+
 ## 题干OCR抽取文本
 
 ```text

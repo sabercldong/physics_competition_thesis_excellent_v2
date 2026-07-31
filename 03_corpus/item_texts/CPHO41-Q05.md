@@ -9,6 +9,20 @@
 - 题图：03_corpus/item_assets/CPHO41-Q05-figure1-page3-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-41Q05`
+- 题面V1转写稿：`03_corpus/manual_review_transcripts/CPHO41-Q05_transcription_v1.md`
+- 答案公式核对入口：`03_corpus/manual_review_transcripts/CPHO41-Q05_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q05-paper-page-3.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q05-paper-page-4.png`（第6题和第7题边界页，不纳入第5题题面）
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q05-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q05-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q05-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q05-solution-page-14.png`（第6题边界页，不纳入第5题答案）
+- 当前状态：第41届第5题OCR已由页面OCR乱码推进为V1视觉转写入口，答案关键公式已建立核对表；尚未填写真实校对人/日期，尚未完成最终排版复核、题图销项或正式编码证据摘录。
+
 ## 题干OCR抽取文本
 
 ```text

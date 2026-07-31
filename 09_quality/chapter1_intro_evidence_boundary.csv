@@ -1,0 +1,7 @@
+claim_id,section,claim,evidence_level,current_evidence,allowed_wording,forbidden_wording,next_requirement
+C1-01,1.1,科学思维四维度选择具有课程标准依据,E2,02_literature/curriculum_standard_verification.md,可写课程标准为四维度提供官方依据,不得写课程标准证明本项目编码框架有效,补充科学思维测评与物理教育研究文献
+C1-02,1.1/1.5,第35至42届复赛试题已形成小问级语料基础,E2,03_corpus/item_index.csv;03_corpus/manual_review_summary.md,可写当前形成219个分析单元并有154条待核项,不得写已完成正式统计或全部文本已无风险,完成人工校对销项并更新语料版本
+C1-03,1.2,本研究分析试题任务要求而非学生真实能力,E1,02_literature/scientific_thinking_st002_reading_notes.md;02_literature/scientific_thinking_st003_reading_notes.md;09_quality/claim_evidence_matrix.csv,可写需区分试题要求与学生能力,不得写试题编码结果代表学生科学思维水平,补充学生作答或测评数据后再讨论能力
+C1-04,1.2/1.5,SOLO只能保守表述为任务认知结构要求的启发来源,E1,02_literature/solo_taxonomy_source_verification.md;02_literature/solo_fulltext_access_audit.md,可写SOLO启发的任务认知结构要求等级,不得写试题即学生SOLO学习结果等级,获得SOLO全文并摘录关键页码
+C1-05,1.3,物理竞赛试题研究空白目前只是候选,E1,02_literature/concept_map_and_gap_candidates.md;02_literature/physics_competition_access_audit.md,可写需要补充小问级科学思维证据的候选方向,不得写已经证明填补研究空白,获取并阅读全文PCOMP候选文献
+C1-06,1.6,研究价值与创新只能写作预期贡献或创新候选,E1,MASTER_PLAN.md;PROJECT_STATUS.md;prep30_manuscript_gate_table.csv,可写完成后可能形成语料库方法和教学转化贡献,不得写已经完成分析工具创新或教学效果验证,完成正式编码裁决分析和教师或课堂证据

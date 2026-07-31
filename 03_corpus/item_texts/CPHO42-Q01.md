@@ -254,3 +254,18 @@ dBm: fremax=%, fexte Pde =,
 第（3）问 12 分，⑱⑲⑳式各 1 分，㉑式 2 分，㉒㉓㉔㉕式各 1 分，㉖式 2 分，㉗式 1 分；
 第（4）问 10 分，㉘式 2 分，㉙㉚㉛㉜㉝㉞式各 1 分，㉟式 2 分。
 ```
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-42Q01`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO42-Q01_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO42-Q01_formula_check_v1.csv`
+- 题面页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q01-paper-page-1.png`（第1题完整位于页面上半部；页面下半部进入第2题）
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q01-solution-page-01.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q01-solution-page-02.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q01-solution-page-03.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q01-solution-page-04.png`（第1题评分标准后进入第2题）
+
+当前状态：原OCR文本仅保留为错误来源与处理痕迹；正式编码前复核应优先使用V1转写稿、公式核对表和页面证据。经视觉检查，第1题完整位于试题PDF第1页上半部，第1页下半部进入第2题；第1题答案从答案PDF第1页开始，延续至第4页中部评分标准结束，第4页下半部进入第2题。题面无独立题图，但分布函数、`z = h` 平面测量定义、`n(t)`、`I(t)`、`t_n/t_I` 和 `sigma_t` 等关键符号仍需最终逐式排版复核。

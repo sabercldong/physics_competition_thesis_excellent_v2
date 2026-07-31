@@ -104,3 +104,15 @@ HOGA, AMHR y
 第 (2) 间 24 分， ORI 分，口B@人四四四式各 2 分，因式3 4, OOORA 27
 第 (3) 6S, MOOKH 24.
 ```
+
+## G1-07-A1 视觉校对转写入口（2026-07-15）
+
+- 任务编号：`G1-07-A1-TRANSCRIBE-37Q07`
+- V1题面转写稿：`03_corpus/manual_review_transcripts/CPHO37-Q07_transcription_v1.md`
+- 答案公式核对入口：`03_corpus/manual_review_transcripts/CPHO37-Q07_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q07-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q07-solution-page-18.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q07-solution-page-19.png`
+- 边界记录：第7题题面完整位于PDF第4页中部；第4页顶部为第6题尾部，第4页下部进入第8题，仅作边界确认。第7题答案从PDF第18页页首开始，至第19页上半部评分标准结束；第19页下半部进入第8题，仅作后边界确认。
+- 状态说明：本入口将原OCR乱码推进为V1视觉转写和公式核对入口，但尚未完成真实人工确认、图件销项、逐式排版复核或正式编码证据摘录。

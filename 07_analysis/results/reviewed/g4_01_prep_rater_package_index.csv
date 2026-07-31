@@ -1,0 +1,11 @@
+﻿artifact_id,path,exists,type,row_count,handoff_use
+coding_manual_internal,04_framework/coding_manual_v2_internal.md,是,markdown,,评分者交接准备
+codebook_internal,04_framework/codebook_v2_internal.csv,是,csv,16,评分者交接准备
+rater_a_template,07_analysis/data/formal_coding_rater_A_template.csv,是,csv,876,评分者交接准备
+rater_b_template,07_analysis/data/formal_coding_rater_B_template.csv,是,csv,876,评分者交接准备
+adjudication_template,07_analysis/data/formal_adjudication_template.csv,是,csv,876,评分者交接准备
+rater_briefing,07_analysis/results/reviewed/prep30_rater_briefing.md,是,markdown,,评分者交接准备
+adjudication_protocol,07_analysis/results/reviewed/prep30_adjudication_protocol.md,是,markdown,,评分者交接准备
+gate_register,07_analysis/results/reviewed/prep30_gate_register.csv,是,csv,5,评分者交接准备
+field_validation,07_analysis/results/reviewed/prep30_formal_coding_field_validation.csv,是,csv,5,评分者交接准备
+manual_priority,07_analysis/results/reviewed/prep30_manual_priority_queue.csv,是,csv,154,评分者交接准备

@@ -1,0 +1,13 @@
+audit_id,file,location,check_type,finding,action,status,remaining_risk
+G8-04-FORMAT-001,08_manuscript/01_introduction.md;08_manuscript/02_theory.md;08_manuscript/03_methods.md;08_manuscript/04_results.md;08_manuscript/05_cases_and_diagnosis.md,全章标题,标题层级,"第1至5章均为单个一级章标题，章内使用二级标题；未发现三级标题混用。",保留,通过,"学校模板若要求不同编号样式，后续需按学校规范转换。"
+G8-04-FORMAT-002,08_manuscript/02_theory.md;08_manuscript/05_cases_and_diagnosis.md,表格,表格格式,"第二章3张表、第五章2张表均有表头、分隔行和一致列数。",保留,通过,"正式排版时仍需按学校三线表或附录格式重排。"
+G8-04-FORMAT-003,08_manuscript/01_introduction.md;08_manuscript/02_theory.md,Mermaid图,代码围栏,"两处Mermaid图均有完整```mermaid围栏和flowchart TD声明。",轻量统一第一章节点术语,已修订,"后续转Word/PDF时Mermaid可能不能直接渲染，需要导出为图片或改为正式图。"
+G8-04-FORMAT-004,08_manuscript/01_introduction.md,技术路线图节点,术语一致性,"第一章技术路线图中“SOLO启发等级框架”不如正文完整，且“结果-问题-策略-任务-评价”与正文长横线写法不一致。",改为“SOLO启发的任务认知结构要求等级框架”和“结果—问题—策略—任务—评价教学转化”,已修订,"SOLO原文仍未完成全文阅读，必须继续保留启发性表述。"
+G8-04-FORMAT-005,08_manuscript/03_methods.md,3.1-3.2,届次范围写法,"第三章正文使用“第35—42届”，与第一章主体写法“第35至42届”不一致。",改为“第35至42届”,已修订,"项目说明和题目候选仍可保留短横线/长横线范围写法；本次只统一正文叙述。"
+G8-04-FORMAT-006,08_manuscript/04_results.md,章前说明与4.1,届次范围写法,"第四章章前说明和样本说明使用“第35—42届”，与正文主体写法不一致。",改为“第35至42届”,已修订,"正式题名或摘要中范围写法需按学校规范再统一。"
+G8-04-FORMAT-007,08_manuscript/03_methods.md,3.5,文件路径,"内部分析候选表、A/B模板、裁决模板和G4-01交接报告只写文件名，检索定位不够直接。",补为项目内相对路径,已修订,"正式稿可保留附录编号替代路径；当前研究材料包阶段优先保留可追溯路径。"
+G8-04-FORMAT-008,08_manuscript/03_methods.md,3.6,文件路径,"`prep30_gate_register.csv`只写文件名，门槛来源定位不够直接。",补为`07_analysis/results/reviewed/prep30_gate_register.csv`,已修订,"该门槛表仍是正式编码前准备输出，不等于正式结果。"
+G8-04-FORMAT-009,08_manuscript/04_results.md,4.5,分组标题,"标题列出届次、模块、情境和表征，但正文同时提到数学工具。",将标题补为“届次、模块、情境、表征和数学工具差异正式输出占位”,已修订,"正式统计前仍不得解释任何分组差异。"
+G8-04-FORMAT-010,08_manuscript/01_introduction.md;08_manuscript/02_theory.md;08_manuscript/03_methods.md;08_manuscript/04_results.md;08_manuscript/05_cases_and_diagnosis.md,引文占位,占位格式,"现有引用均使用[引文占位：来源ID；支持范围；边界]格式，未发现直接把待读全文文献写为正式结论。",保留,通过,"正式参考文献仍需学校格式、页码/定位和引文—bib双向核对。"
+G8-04-FORMAT-011,08_manuscript/04_results.md,章前说明,正式分析文件,"第四章已说明正式图表需等待`final_coding.csv`，但可进一步统一为“裁决后的唯一分析表（final_coding.csv）”。",补入完整表述,已修订,"`final_coding.csv`当前尚未真实生成，不能作为已完成数据引用。"
+G8-04-FORMAT-012,08_manuscript/05_cases_and_diagnosis.md,5.1与5.6,第五章表格语气,"候选案例表和采证提纲表均已避免写成正式案例结论或教学诊断发现。",保留,通过,"若后续没有真实教师/课堂证据，第五章仍需继续定位为设计建议。"

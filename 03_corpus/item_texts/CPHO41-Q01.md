@@ -42,6 +42,24 @@ f=-yv'
 析为什么阻尼力是必不可少的。
 ```
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-41Q01`
+- V1题面转写稿：`03_corpus/manual_review_transcripts/CPHO41-Q01_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO41-Q01_formula_check_v1.csv`
+- 题面页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q01-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q01-paper-page-2.png`（第2题/第3题边界页，不纳入第1题题面）
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q01-solution-page-01.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q01-solution-page-02.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q01-solution-page-03.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO41-Q01-solution-page-04.png`（第2题边界页，不纳入第1题答案）
+- 本轮边界判断：第1题题面位于试题PDF第1页中部至下半部，第1页更下部进入第2题；答案从答案PDF第1页开始，至第3页上半部评分标准结束，第3页下半部和第4页进入第2题。
+- 本轮纠错要点：题面第(2)问频率为第(1.2)问频率的 `sqrt(0.99)` 倍，原OCR中的 `V0.55` 不得继承；答案式①需保留 `m(...)` 对括号内整体加速度表达式的乘积；阻尼力为 `f=-gamma v'`。
+- 状态：`CPHO41-Q01-OCR` 已推进为“V1视觉转写完成，待最终复核”；`CPHO41-Q01-FORMULA` 已推进为“答案公式核对入口完成，待最终复核”。未填写真实校对人和校对日期，不代表人工校对完成。
+- 使用边界：原OCR文本仅作错误来源对照，不得直接用于正式编码证据、正式统计或正式案例结论。
+
 ## 参考解答抽取文本
 
 ```text

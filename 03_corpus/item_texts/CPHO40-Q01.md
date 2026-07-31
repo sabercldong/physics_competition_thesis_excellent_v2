@@ -143,3 +143,17 @@ PUGH REF’
             第（i）小问 16 分，⑨⑪式各 4 分，⑫式 2 分，⑭式 4 分，⑮式 2 分；
             第（ii）小问 8 分，⑯式 2 分，⑰式 4 分，⑱式 2 分
 ```
+
+## G1-07-A1 视觉校对转写入口
+
+任务：`G1-07-A1-TRANSCRIBE-40Q01`
+
+- V1题面转写稿：`03_corpus/manual_review_transcripts/CPHO40-Q01_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO40-Q01_formula_check_v1.csv`
+- 题面页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q01-paper-page-1.png`
+- 答案页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q01-solution-page-06.png`、`CPHO40-Q01-solution-page-07.png`
+- 后边界页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q01-solution-page-08.png`（第2题边界页，不纳入第1题答案公式证据）
+
+本题原OCR文本仅保留为错误来源对照，不得作为正式编码证据直接使用。经视觉检查，第1题题面从试题PDF第1页中部“一、”开始，至同页中下部第(2)(ii)结束；同页下部进入第2题，仅用于边界确认。第1题答案从PDF第6页页首“一、”开始，至第7页中部评分参考结束；第7页下部和第8页进入第2题，均不得纳入第1题答案证据。
+
+当前 `CPHO40-Q01-OCR` 已具备V1视觉转写入口，`CPHO40-Q01-FORMULA` 已具备答案公式核对入口；但 `CPHO40-Q01-FIG` 尚未关闭，图1a仍需对照原PDF确认透镜组虚线框、`H/H'`、物距、像距、薄透镜示意和图号裁边。后续正式排版和编码证据摘录需重点复核 `H'`、`F'`、`O_1/O_2`、`u_1/u_2`、`v_1/v_2`、`l_1/l_2`、等效焦距 `F`、主点位置 `u_H/v_H'` 以及分母 `d - f_1 - f_2` 的符号。

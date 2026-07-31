@@ -4,7 +4,7 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_38_2021_fusai_paper_solution_candidate.pdf`
 - 试题页码：1
-- 解答页码：5-6
+- 解答页码：5-7（本轮视觉检查确认第7页上半部仍为第1题替代解法和评分参考；第7页中下部进入第2题）
 - 题图：03_corpus/item_assets/CPHO38-Q01-figure1-page1-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取。公式、特殊符号、图注和OCR错字需人工校对。
 
@@ -22,6 +22,19 @@ G) 在极坐标系中求所插入的平凹透镜的凹面形状，并表示成�
 Gi) 已知通过平凸透镜后的汇聚光线与主轴的夹伯6 的最大值为g... ，求入射平行圆光束与出射平行圆光束的
 横截面半径之比。
 ```
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q01`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q01_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q01_formula_check_v1.csv`
+- 题面页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-paper-page-1.png`
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-solution-page-05.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-solution-page-06.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-solution-page-07.png`
+
+当前状态：原OCR文本仅保留为错误来源与处理痕迹；正式编码前复核应优先使用V1转写稿、公式核对表和页面证据。经视觉检查，第1题题面位于试题PDF第1页上半部，第1页中下部已进入第2题，第1页底部进入第3题。第1题答案从PDF第5页页首开始，延续至第7页上半部评分参考结束；第7页中下部只作为第2题边界确认。`CPHO38-Q01-FIG` 尚未关闭，图1a仍需独立图件校对。平凸/平凹透镜的撇号变量、极坐标方程、双曲线标准形式、光束半径比 `k` 和 `theta_max` 仍需最终逐式排版复核。
 
 ## 参考解答抽取文本
 

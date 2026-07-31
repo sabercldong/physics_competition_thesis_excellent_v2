@@ -8,6 +8,16 @@
 - 题图：03_corpus/item_assets/CPHO36-Q07-figure1-page6-raw.png
 - 抽取状态：PDF文本层抽取，需人工校对公式、图注与特殊符号。
 
+## G1-07-B1公式核对入口
+
+- 任务：`G1-07-B1-FORMULA-36Q07`
+- 队列：`03_corpus/manual_review_priority_followup.csv` 第078项 `CPHO36-Q07-FORMULA`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO36-Q07_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-B1/CPHO36-Q07-paper-page-5.png` 至 `CPHO36-Q07-paper-page-7.png`；`CPHO36-Q07-solution-page-33.png` 至 `CPHO36-Q07-solution-page-40.png`
+- 当前状态：已建立答案公式核对入口，待最终复核；未填写真实校对人和校对日期。
+- 边界说明：本轮只登记题面常量、参考解答公式、另一解法、单位和评分标准的源页位置，不代表公式、特殊符号、题图、图注或正式编码证据已经完成真实人工销项。
+- 待最终复核重点：第36页圆盘法地表电场表达式、第37至38页光环扩展几何线段分母、第4问30kHz与20MHz频率表述、第40页 `rho_1` 单位和同题 `CPHO36-Q07-FIG` 题图/示意图风险。
+
 ## 题干
 
 ```text

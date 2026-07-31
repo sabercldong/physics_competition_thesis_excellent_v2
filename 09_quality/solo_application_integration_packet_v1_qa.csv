@@ -16,6 +16,6 @@ SAIP-QA-14,SOLO-PHY-003 全文与相关段落,是/是,是；期刊官网PDF 6页
 SAIP-QA-15,SOLO-PHY-003 阅读札记,存在,存在,通过
 SAIP-QA-16,SOLO-PHY-003 拟用BibTeX键,wangyu2023bloomsolo,wangyu2023bloomsolo,通过
 SAIP-QA-17,SOLO-PHY-003 禁止迁移,已登记,已登记,通过
-SAIP-QA-18,原典全文缺口仍保留,存在,存在,通过
+SAIP-QA-18,原典全文缺口仍保留,存在,缺失,不通过
 SAIP-QA-19,建议段落与禁止外推边界,存在,存在,通过
 SAIP-QA-20,一次性接入复跑链,存在,存在,通过

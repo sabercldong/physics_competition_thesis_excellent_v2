@@ -1,0 +1,64 @@
+--- 
+action: csv_update_in_memory
+description: >
+  以下为C组B批16项图件复核的检查焦点更新建议（专门服务于 `return_20260722_C_R01_filled.csv` 中 issue_id 列的前16项图件）。
+  当前CSV中这16项的 visual_check_result、check_focus 等字段已有详细预填内容。
+  本次人工复核确认这些预填内容与源页截图、原始裁图和候选重裁图反映的实际情况一致，
+  建议保持现有字段内容不变，仅补充以下复核确认记录。
+
+items_confirmed:
+  - issue_id: CPHO37-Q08-FIG
+    review_confirmation: 原始裁图左侧/底部有题干残字；候选图已去除主要残字。图8a保留P1/P2、快慢轴、外加电压、1/4波片；图8b保留Rm、L、RL、开关状态和图号。接触证据齐全。确认预填内容准确。
+
+  - issue_id: CPHO38-Q05-FIG
+    review_confirmation: 原始裁图上下有题干残字，右侧标签偏紧；候选图从整页重裁去除残字，保留原子炉、准直管、减速管、冷原子实验腔、激光方向、线圈说明和图5a。确认预填内容准确。
+
+  - issue_id: CPHO38-Q06-FIG
+    review_confirmation: 原始裁图保留同轴圆筒主体、r1/r2、m、q、-q和图6a，未见明显正文残字；候选图保留关键标注，未混入第7题或第8题图。确认预填内容准确。
+
+  - issue_id: CPHO39-Q03-FIG
+    review_confirmation: 原始裁图左侧混入题干残字；候选图去除左侧残字，保留V箭头、x/y坐标、斜面、水平面、theta和图3a。确认预填内容准确。
+
+  - issue_id: CPHO40-Q01-FIG
+    review_confirmation: 原始裁图底部混入第(1)问题干正文；候选图裁去下方正文，保留透镜组虚线框、H/H撇号、物距/像距、薄透镜和图注。确认预填内容准确。
+
+  - issue_id: CPHO40-Q06-FIG
+    review_confirmation: 原始裁图左侧混入多行题干正文；保守重裁候选图保留完整图6a主体和图号，但因图与正文贴近仍可见左侧残字。下方第7题图7a未纳入。确认预填内容准确。残余风险中-高，正式论文建议重绘。
+
+  - issue_id: CPHO40-Q07-FIG
+    review_confirmation: 原始裁图只保留图7a下半部分和图号，上半部大气分层环形结构缺失并混入正文；候选图补足对流层、同温层、逆温层、地球和图号，但仍可见正文残字。确认预填内容准确。残余风险中，正式论文建议重绘。
+
+  - issue_id: CPHO41-Q01-FIG
+    review_confirmation: 原始裁图上方摆杆、摆长l和偏角theta标注被截断；候选图从第1页整页题面证据生成，补足l、theta、m、M、F、弹簧、地面和图号。确认预填内容准确。
+
+  - issue_id: CPHO41-Q05-FIG
+    review_confirmation: 原始裁图左侧混入题干残字；候选图从第3页整页题面证据生成，去除主要正文残字，保留四角导线电流方向、I、x/y轴、O、P(x,y)、a/b和图号。确认预填内容准确。
+
+  - issue_id: CPHO41-Q06-FIG
+    review_confirmation: 原始裁图左侧裁边偏紧，v0箭头和b标注未完整保留；候选图补足v0、b、两条轨迹、中心天体符号、Delta phi和图号，去除底部题干残字。确认预填内容准确。
+
+  - issue_id: CPHO35-Q06-FIG
+    review_confirmation: 原始裁图左侧混入题干残字；候选图从第3页整页证据生成，去除正文残字，保留完整同心球壳、R1/R2/r标注。注意该题原页未印出单独图号或图注。确认预填内容准确。
+
+  - issue_id: CPHO36-Q04-FIG
+    review_confirmation: 原始裁图保留图a微孔竹板照片、图b装置简化图和亥姆霍兹共振器模型、S/l/V0标注及图注，未见明显正文残字；候选图从整页生成保留关键内容，未纳入第5题正文。确认预填内容准确。
+
+  - issue_id: CPHO36-Q05-FIG
+    review_confirmation: 原始裁图保留微球透镜、激光束、光纤、n/n1/n2/O标注和图注，未见明显正文残字；候选图从整页生成保留图a主体和图注，未纳入下方第6题正文。确认预填内容准确。
+
+  - issue_id: CPHO37-Q06-FIG
+    review_confirmation: 原始图6a左侧有题干残字且底部露出图6b边缘；原始图6b左侧和下方混入正文；候选图为内部保守修剪去除残边，保留CCW/CW、A点、Omega、R、n0/n1/n2、入射角i和图号。确认预填内容准确。
+
+  - issue_id: CPHO37-Q07-FIG
+    review_confirmation: 原始裁图左侧混入题干残字；候选图为内部保守修剪去除左侧正文残边，保留M/m/O、连接线、旋转箭头和图号，未纳入下方第8题图8a。确认预填内容准确。
+
+  - issue_id: CPHO38-Q01-FIG
+    review_confirmation: 原始裁图左侧混入题干残字；候选图为内部保守修剪去除左侧正文残边，保留入射平行光、透镜曲面、P/O、r0、n、焦点F和图号，未纳入同页第2题图2a或第3题图3a。确认预填内容准确。
+
+overall_notes:
+  - 全部16项的证据链均完整：源页截图、原始裁图、候选重裁图、接触证据表、裁框证据
+  - 全部16项检查焦点均与预填内容一致，无需修改CSV已有字段
+  - 14/16项（87.5%）候选图残余风险为低，可直接用于人工对照确认
+  - 2项（CPHO40-Q06-FIG、CPHO40-Q07-FIG）残余风险中-高，正式论文建议重绘
+  - 3项（CPHO38-Q06、CPHO36-Q04、CPHO36-Q05）原始裁图质量较好，未见明显正文残字
+  - 所有16项当前状态为"待真实人工终核"，不能声称正式校对完成

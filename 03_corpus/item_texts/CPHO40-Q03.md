@@ -8,6 +8,13 @@
 - 题图：03_corpus/item_assets/CPHO40-Q03-figure1-page2-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 校对转写稿：`03_corpus/manual_review_transcripts/CPHO40-Q03_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO40-Q03_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-paper-page-2.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-solution-page-09.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-solution-page-10.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-solution-page-11.png`; `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q03-solution-page-12.png`
+- 当前状态：已完成题面V1视觉转写和答案公式核对入口登记；经视觉检查，第3题答案从PDF第9页下半部开始，至第11页结束，PDF第12页已进入第4题，仅用于边界确认。仍需最终排版复核、真实人工确认、题图校对和正式编码证据摘录。原始OCR文本保留在下方，仅作错误来源对照，不得用于正式编码证据。
+
 ## 题干OCR抽取文本
 
 ```text

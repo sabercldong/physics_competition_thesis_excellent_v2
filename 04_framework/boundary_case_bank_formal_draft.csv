@@ -1,0 +1,17 @@
+case_id,item_id,dimension,boundary_focus,why_selected,training_question,expected_evidence_to_seek,provisional_boundary,source_file,status
+BC-001,CPHO35-Q02-3,模型建构,L3与L4边界,内部P1复核提示存在递推或一般化线索但需排除复杂计算误判,是否真正要求一般化或递推建模而不仅是长计算,题干是否要求任意次数或一般情形；参考解答是否建立递推结构,待核实L4触发证据,07_analysis/results/reviewed/p1_l4_boundary_checklist.csv,训练候选
+BC-002,CPHO35-Q02-3,科学推理,L3与L4边界,内部P1复核提示L4需补原始证据,推理链是否含递推一般化或优化路径,参考解答中的递推式或任意参数表达；题干目标是否超出固定数值,待核实L4触发证据,07_analysis/results/reviewed/p1_l4_boundary_checklist.csv,训练候选
+BC-003,CPHO35-Q04-2,科学论证,证据薄弱边界,内部P0证据补强清单要求补充题干条件和相邻等级区别,该记录是否只是推导还是要求检验或边界说明,题干是否要求解释或比较；参考解答是否有极限边界或假设辩护,证据不足时不得升高等级,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-004,CPHO35-Q08-4,质疑创新,研究者外加替代解法风险,内部P0提示需证明不是研究者外加替代解法,题目是否明确要求假设处理或方案比较,题干原句是否要求讨论假设；参考解答是否给出方案选择或修正模型,无题干/解答触发则判未出现或待核实,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-005,CPHO36-Q07-5,质疑创新,开放现象解释边界,内部P0提示需证明不是研究者外加替代解法,自然现象题是否真正要求质疑或创新而不是固定模型估算,题干是否提出开放解释或比较；参考解答是否需要修正模型,无明确要求不得因背景新颖触发质疑创新,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-006,CPHO37-Q04-2,模型建构,L4复杂计算误判风险,内部P1复核提示L4待核实且第37届存在OCR/公式校对风险,该题是否因相对论计算复杂而被误判为模型迁移,题干/解答是否要求一般化或模型构造；公式校对是否完成,未校对前标待核实,07_analysis/results/reviewed/p1_l4_boundary_checklist.csv,训练候选
+BC-007,CPHO37-Q05-2,模型建构,L3与L4边界,内部P1复核提示暂保留L4但需题面校对,相对论参考系转换是否构成迁移建模,题干是否要求跨参考系构造；解答是否建立新模型而非套用公式,待题面和公式校对后裁决,07_analysis/results/reviewed/p1_l4_boundary_checklist.csv,训练候选
+BC-008,CPHO38-Q01-2_i,模型建构,L4触发证据,内部P1复核提示暂保留L4但需补证据,分段或一般化模型是否是任务必需,题干条件；参考解答中模型修正或一般化步骤,待补可定位证据,07_analysis/results/reviewed/p1_l4_boundary_checklist.csv,训练候选
+BC-009,CPHO38-Q05-1,科学推理,证据薄弱边界,内部P0提示需补题干条件和相邻等级区别,是否存在完整推理链还是并列公式使用,题干目标；参考解答关键步骤；相邻等级区别,证据不足时保持较低等级或待核实,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-010,CPHO39-Q05-4,质疑创新,替代解法外加风险,内部P0提示需补题干原句或参考解答步骤,是否题目要求替代解释或模型修正,题干原句；参考解答是否比较方案或处理假设失效,无原始证据不得触发质疑创新,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-011,CPHO40-Q01-2_ii,质疑创新,证据薄弱与第40届拆分边界,内部P0提示需补题干条件和相邻等级区别,细分分析单元是否稳定且是否真正触发质疑创新,第40届拆分边界；题干和解答中的假设处理要求,拆分未复核前标待核实,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-012,CPHO42-Q02-1_3,科学论证,相邻等级区别,内部P0提示需补题干条件关键公式和相邻等级区别,该论证是基本理由比较还是系统检验,题干是否要求比较/检验；解答是否包含边界分析或假设辩护,证据决定L1-L3不得凭直觉升等,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-013,CPHO42-Q05-3_3,科学论证,高届次OCR/公式风险,内部P0提示需补关键公式和相邻等级区别,公式或小问边界是否影响论证等级,题面页码；参考解答步骤；公式符号校对状态,未校对前仅作训练候选,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-014,CPHO42-Q06-1_1,模型建构,证据摘记格式训练,内部P0提示需补可定位证据句,评分者能否写出足够可追溯的模型证据,题干条件；参考解答所用模型；页码或小问位置,重点训练证据而非等级结论,07_analysis/results/reviewed/p0_evidence_strengthening_checklist.csv,训练候选
+BC-015,CPHO37-Q01,全部维度,材料可靠性停止条件,人工校对优先队列显示第37届第1题公式和OCR均为P0,题干或公式未校对时是否应停止正式判断,原始PDF题面；公式上下标；单位；参考解答表达式,未校对前不得形成正式编码,07_analysis/results/reviewed/prep30_manual_priority_queue.csv,训练候选
+BC-016,CPHO42-Q03,全部维度,题图与放大图一致性,人工校对清单提示第42届第3题含解答放大图一致性核对,题图边界是否影响模型或推理判定,原题图；解答放大图；端口标注和连接关系,图像未核对前标待核实,03_corpus/manual_review_checklist.csv,训练候选

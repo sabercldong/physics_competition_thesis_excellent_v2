@@ -4,7 +4,7 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_38_2021_fusai_paper_solution_candidate.pdf`
 - 试题页码：2
-- 解答页码：10-11
+- 解答页码：10-12（本轮视觉检查确认第12页上半部仍为第4题答案和评分参考；第12页下半部进入第5题）
 - 题图：03_corpus/item_assets/CPHO38-Q04-figure1-page2-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取。公式、特殊符号、图注和OCR错字需人工校对。
 
@@ -22,6 +22,19 @@ C1) 假设B 的磁算方向与、轴成8 角，凑质必坐标为000,z (Cz>>中)
 (3) 现假设=可以变化,但 B 的磁矩与x 轴所成的角0 = 08 ，求 B 的受力平衡位置  并说明此平衡位置是否为稳
 定平衡位置〈所识不稳定平衡是指; 在小的扰动下，B 在重力的作用下掉落，或者被 A 吸附过去)。
 ```
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q04`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q04_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q04_formula_check_v1.csv`
+- 题面页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q04-paper-page-2.png`
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q04-solution-page-10.png`（第3题尾部边界页，第4题从下半部开始）
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q04-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q04-solution-page-12.png`
+
+当前状态：原OCR文本仅保留为错误来源与处理痕迹；正式编码前复核应优先使用V1转写稿、公式核对表和页面证据。经视觉检查，第4题题面完整位于试题PDF第2页上半部，第2页中部开始进入第5题；第4题答案从PDF第10页下半部开始，延续至PDF第12页上半部评分参考结束，第10页上半部和第12页下半部只作为边界确认。`CPHO38-Q04-FIG` 尚未关闭，图4a仍需独立图件校对。磁矩方向、势能正负号、力矩方向、稳定平衡角和受力平衡位置仍需最终逐式排版复核。
 
 ## 参考解答抽取文本
 

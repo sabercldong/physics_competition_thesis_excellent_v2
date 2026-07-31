@@ -9,6 +9,20 @@
 - 题图：03_corpus/item_assets/CPHO42-Q07-figure1-page5-raw.png
 - 抽取状态：题干使用扫描页OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。题干OCR、公式、特殊符号、图注和图件边缘需人工校对。
 
+## G1-07-A1人工校对入口
+
+- V1题面转写稿：`03_corpus/manual_review_transcripts/CPHO42-Q07_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO42-Q07_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q07-paper-page-5.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q07-solution-page-20.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q07-solution-page-21.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q07-solution-page-22.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q07-solution-page-23.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q07-solution-page-24.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q07-solution-page-25.png`
+- 阶段状态：已建立第42届第7题题面V1视觉转写稿和答案公式核对入口；原OCR文本仅作错误来源对照，不得直接用于正式编码证据。该状态不代表真实人工校对完成、题图销项、公式最终排版复核或正式编码证据摘录完成。
+
 ## 题干OCR抽取文本
 
 ```text

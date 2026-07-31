@@ -4,7 +4,7 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_38_2021_fusai_paper_solution_candidate.pdf`
 - 试题页码：3
-- 解答页码：16-17
+- 解答页码：16-18（本轮视觉检查确认第18页上半部仍为第7题答案和评分参考；第18页下半部进入第8题）
 - 题图：03_corpus/item_assets/CPHO38-Q07-figure1-page3-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取。公式、特殊符号、图注和OCR错字需人工校对。
 
@@ -34,6 +34,19 @@ WEE Aa: 前后轮与地面的正压力均大于零，分别求出前轮和后轮
 
 数值结果保留两位有效数字。
 ```
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q07`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q07_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q07_formula_check_v1.csv`
+- 题面页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q07-paper-page-3.png`
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q07-solution-page-16.png`（第6题尾部边界页，第7题从下半部开始）
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q07-solution-page-17.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q07-solution-page-18.png`
+
+当前状态：原OCR文本仅保留为错误来源与处理痕迹；正式编码前复核应优先使用V1转写稿、公式核对表和页面证据。经视觉检查，第7题完整位于试题PDF第3页中部，第3页上部为第6题尾部，第3页下部进入第8题；第7题答案从PDF第16页下半部开始，延续至PDF第18页上半部评分参考结束，第16页上半部和第18页下半部只作为边界确认。`CPHO38-Q07-FIG` 尚未关闭，图7a仍需独立图件校对。正压力、力矩平衡、后轮驱动力矩符号、传动比、数值代入和摩擦系数下限仍需最终逐式排版复核。
 
 ## 参考解答抽取文本
 

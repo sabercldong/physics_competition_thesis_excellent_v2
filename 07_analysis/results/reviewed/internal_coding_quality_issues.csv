@@ -1,0 +1,1253 @@
+﻿issue_id,severity,category,item_id,dimension,field,finding,recommended_action,status
+RISK-SOURCE-MANUAL-V1,高,版本继承风险,,,,内部底稿的源试编码版本为：{'coding_manual_v1': 876}。,正式编码前按内部V2或后续正式手册重新判读，不能把V1试编码直接视为正式V2结果。,待处理
+RISK-CONFIDENCE-CPHO35-Q01-1-模型建构,中,编码把握度,CPHO35-Q01-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q01-1,中,元数据待核风险,CPHO35-Q01-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q01-1-科学推理,中,编码把握度,CPHO35-Q01-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q01-1-科学论证,中,编码把握度,CPHO35-Q01-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q01-2-模型建构,中,编码把握度,CPHO35-Q01-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q01-2,中,元数据待核风险,CPHO35-Q01-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q01-2-科学推理,中,编码把握度,CPHO35-Q01-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q01-2-科学论证,中,编码把握度,CPHO35-Q01-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-1-模型建构,中,编码把握度,CPHO35-Q02-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q02-1,中,元数据待核风险,CPHO35-Q02-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-1-科学推理,中,编码把握度,CPHO35-Q02-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-1-科学论证,中,编码把握度,CPHO35-Q02-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-2-模型建构,中,编码把握度,CPHO35-Q02-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q02-2,中,元数据待核风险,CPHO35-Q02-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-2-科学推理,中,编码把握度,CPHO35-Q02-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-2-科学论证,中,编码把握度,CPHO35-Q02-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-3-模型建构,中,编码把握度,CPHO35-Q02-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO35-Q02-3-模型建构,中,高等级边界,CPHO35-Q02-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q02-3,中,元数据待核风险,CPHO35-Q02-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-3-科学推理,中,编码把握度,CPHO35-Q02-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO35-Q02-3-科学推理,中,高等级边界,CPHO35-Q02-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-3-科学论证,中,编码把握度,CPHO35-Q02-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-3-质疑创新,中,编码把握度,CPHO35-Q02-3,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-4-模型建构,中,编码把握度,CPHO35-Q02-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q02-4,中,元数据待核风险,CPHO35-Q02-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-4-科学推理,中,编码把握度,CPHO35-Q02-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO35-Q02-4-科学推理,中,高等级边界,CPHO35-Q02-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO35-Q02-4-科学论证,中,编码把握度,CPHO35-Q02-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-1-模型建构,中,编码把握度,CPHO35-Q03-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q03-1,中,元数据待核风险,CPHO35-Q03-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-1-科学推理,中,编码把握度,CPHO35-Q03-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-1-科学论证,中,编码把握度,CPHO35-Q03-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-2-模型建构,中,编码把握度,CPHO35-Q03-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q03-2,中,元数据待核风险,CPHO35-Q03-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-2-科学推理,中,编码把握度,CPHO35-Q03-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-2-科学论证,中,编码把握度,CPHO35-Q03-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-3-模型建构,中,编码把握度,CPHO35-Q03-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q03-3,中,元数据待核风险,CPHO35-Q03-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-3-科学推理,中,编码把握度,CPHO35-Q03-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-3-科学论证,中,编码把握度,CPHO35-Q03-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-4-模型建构,中,编码把握度,CPHO35-Q03-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q03-4,中,元数据待核风险,CPHO35-Q03-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-4-科学推理,中,编码把握度,CPHO35-Q03-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q03-4-科学论证,中,编码把握度,CPHO35-Q03-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-1-模型建构,中,编码把握度,CPHO35-Q04-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q04-1,中,元数据待核风险,CPHO35-Q04-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-1-科学推理,中,编码把握度,CPHO35-Q04-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-1-科学论证,中,编码把握度,CPHO35-Q04-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-2-模型建构,中,编码把握度,CPHO35-Q04-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q04-2,中,元数据待核风险,CPHO35-Q04-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-2-科学推理,中,编码把握度,CPHO35-Q04-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-2-科学论证,中,编码把握度,CPHO35-Q04-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO35-Q04-2-科学论证,中,证据文本薄弱,CPHO35-Q04-2,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-3-模型建构,中,编码把握度,CPHO35-Q04-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q04-3,中,元数据待核风险,CPHO35-Q04-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-3-科学推理,中,编码把握度,CPHO35-Q04-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-3-科学论证,中,编码把握度,CPHO35-Q04-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-4-模型建构,中,编码把握度,CPHO35-Q04-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q04-4,中,元数据待核风险,CPHO35-Q04-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-4-科学推理,中,编码把握度,CPHO35-Q04-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q04-4-科学论证,中,编码把握度,CPHO35-Q04-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-1-模型建构,中,编码把握度,CPHO35-Q05-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q05-1,中,元数据待核风险,CPHO35-Q05-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-1-科学推理,中,编码把握度,CPHO35-Q05-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-1-科学论证,中,编码把握度,CPHO35-Q05-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-2-模型建构,中,编码把握度,CPHO35-Q05-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q05-2,中,元数据待核风险,CPHO35-Q05-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-2-科学推理,中,编码把握度,CPHO35-Q05-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-2-科学论证,中,编码把握度,CPHO35-Q05-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-3-模型建构,中,编码把握度,CPHO35-Q05-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q05-3,中,元数据待核风险,CPHO35-Q05-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-3-科学推理,中,编码把握度,CPHO35-Q05-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q05-3-科学论证,中,编码把握度,CPHO35-Q05-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-1-模型建构,中,编码把握度,CPHO35-Q06-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q06-1,中,元数据待核风险,CPHO35-Q06-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-1-科学推理,中,编码把握度,CPHO35-Q06-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-1-科学论证,中,编码把握度,CPHO35-Q06-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-2-模型建构,中,编码把握度,CPHO35-Q06-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q06-2,中,元数据待核风险,CPHO35-Q06-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-2-科学推理,中,编码把握度,CPHO35-Q06-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-2-科学论证,中,编码把握度,CPHO35-Q06-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-3-模型建构,中,编码把握度,CPHO35-Q06-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q06-3,中,元数据待核风险,CPHO35-Q06-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-3-科学推理,中,编码把握度,CPHO35-Q06-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q06-3-科学论证,中,编码把握度,CPHO35-Q06-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q07-1-模型建构,中,编码把握度,CPHO35-Q07-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO35-Q07-1-模型建构,中,高等级边界,CPHO35-Q07-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q07-1,中,元数据待核风险,CPHO35-Q07-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q07-1-科学推理,中,编码把握度,CPHO35-Q07-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q07-1-科学论证,中,编码把握度,CPHO35-Q07-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q07-1-质疑创新,中,编码把握度,CPHO35-Q07-1,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q07-2-模型建构,中,编码把握度,CPHO35-Q07-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO35-Q07-2-模型建构,中,高等级边界,CPHO35-Q07-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q07-2,中,元数据待核风险,CPHO35-Q07-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q07-2-科学推理,中,编码把握度,CPHO35-Q07-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO35-Q07-2-科学推理,中,高等级边界,CPHO35-Q07-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO35-Q07-2-科学论证,中,编码把握度,CPHO35-Q07-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q07-2-质疑创新,中,编码把握度,CPHO35-Q07-2,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-1-模型建构,中,编码把握度,CPHO35-Q08-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q08-1,中,元数据待核风险,CPHO35-Q08-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-1-科学推理,中,编码把握度,CPHO35-Q08-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-1-科学论证,中,编码把握度,CPHO35-Q08-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-2-模型建构,中,编码把握度,CPHO35-Q08-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q08-2,中,元数据待核风险,CPHO35-Q08-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-2-科学推理,中,编码把握度,CPHO35-Q08-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-2-科学论证,中,编码把握度,CPHO35-Q08-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-3-模型建构,中,编码把握度,CPHO35-Q08-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q08-3,中,元数据待核风险,CPHO35-Q08-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-3-科学推理,中,编码把握度,CPHO35-Q08-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-3-科学论证,中,编码把握度,CPHO35-Q08-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-4-模型建构,中,编码把握度,CPHO35-Q08-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO35-Q08-4-模型建构,中,高等级边界,CPHO35-Q08-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO35-Q08-4,中,元数据待核风险,CPHO35-Q08-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-4-科学推理,中,编码把握度,CPHO35-Q08-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO35-Q08-4-科学推理,中,高等级边界,CPHO35-Q08-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-4-科学论证,中,编码把握度,CPHO35-Q08-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO35-Q08-4-质疑创新,中,编码把握度,CPHO35-Q08-4,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-INNOVATION-CPHO35-Q08-4,高,质疑创新保守复核,CPHO35-Q08-4,质疑创新,present,质疑创新维度被试编码为出现；该维度按内部手册应保守判定。,复核题干是否明确要求处理假设、替代模型、模型失效、开放设计或证据约束的新方案。,待处理
+RISK-CONFIDENCE-CPHO36-Q01-1-模型建构,中,编码把握度,CPHO36-Q01-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q01-1,中,元数据待核风险,CPHO36-Q01-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q01-1-科学推理,中,编码把握度,CPHO36-Q01-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q01-1-科学论证,中,编码把握度,CPHO36-Q01-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q01-2-模型建构,中,编码把握度,CPHO36-Q01-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q01-2,中,元数据待核风险,CPHO36-Q01-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q01-2-科学推理,中,编码把握度,CPHO36-Q01-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q01-2-科学论证,中,编码把握度,CPHO36-Q01-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q02-1-模型建构,中,编码把握度,CPHO36-Q02-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q02-1,中,元数据待核风险,CPHO36-Q02-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q02-1-科学推理,中,编码把握度,CPHO36-Q02-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q02-1-科学论证,中,编码把握度,CPHO36-Q02-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q02-2-模型建构,中,编码把握度,CPHO36-Q02-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q02-2-模型建构,中,高等级边界,CPHO36-Q02-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q02-2,中,元数据待核风险,CPHO36-Q02-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q02-2-科学推理,中,编码把握度,CPHO36-Q02-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q02-2-科学推理,中,高等级边界,CPHO36-Q02-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO36-Q02-2-科学论证,中,编码把握度,CPHO36-Q02-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-1-模型建构,中,编码把握度,CPHO36-Q03-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q03-1,中,元数据待核风险,CPHO36-Q03-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-1-科学推理,中,编码把握度,CPHO36-Q03-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-1-科学论证,中,编码把握度,CPHO36-Q03-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-2-模型建构,中,编码把握度,CPHO36-Q03-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q03-2,中,元数据待核风险,CPHO36-Q03-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-2-科学推理,中,编码把握度,CPHO36-Q03-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-2-科学论证,中,编码把握度,CPHO36-Q03-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-3-模型建构,中,编码把握度,CPHO36-Q03-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q03-3,中,元数据待核风险,CPHO36-Q03-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-3-科学推理,中,编码把握度,CPHO36-Q03-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-3-科学论证,中,编码把握度,CPHO36-Q03-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-4-模型建构,中,编码把握度,CPHO36-Q03-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q03-4,中,元数据待核风险,CPHO36-Q03-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-4-科学推理,中,编码把握度,CPHO36-Q03-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-4-科学论证,中,编码把握度,CPHO36-Q03-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-5-模型建构,中,编码把握度,CPHO36-Q03-5,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q03-5-模型建构,中,高等级边界,CPHO36-Q03-5,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q03-5,中,元数据待核风险,CPHO36-Q03-5,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-5-科学推理,中,编码把握度,CPHO36-Q03-5,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q03-5-科学推理,中,高等级边界,CPHO36-Q03-5,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO36-Q03-5-科学论证,中,编码把握度,CPHO36-Q03-5,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-1-模型建构,中,编码把握度,CPHO36-Q04-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q04-1,中,元数据待核风险,CPHO36-Q04-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-1-科学推理,中,编码把握度,CPHO36-Q04-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-1-科学论证,中,编码把握度,CPHO36-Q04-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-2-模型建构,中,编码把握度,CPHO36-Q04-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q04-2,中,元数据待核风险,CPHO36-Q04-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-2-科学推理,中,编码把握度,CPHO36-Q04-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-2-科学论证,中,编码把握度,CPHO36-Q04-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-3-模型建构,中,编码把握度,CPHO36-Q04-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q04-3,中,元数据待核风险,CPHO36-Q04-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-3-科学推理,中,编码把握度,CPHO36-Q04-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q04-3-科学论证,中,编码把握度,CPHO36-Q04-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-1-模型建构,中,编码把握度,CPHO36-Q05-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q05-1,中,元数据待核风险,CPHO36-Q05-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-1-科学推理,中,编码把握度,CPHO36-Q05-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-1-科学论证,中,编码把握度,CPHO36-Q05-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-2-模型建构,中,编码把握度,CPHO36-Q05-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q05-2,中,元数据待核风险,CPHO36-Q05-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-2-科学推理,中,编码把握度,CPHO36-Q05-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-2-科学论证,中,编码把握度,CPHO36-Q05-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-3-模型建构,中,编码把握度,CPHO36-Q05-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q05-3,中,元数据待核风险,CPHO36-Q05-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-3-科学推理,中,编码把握度,CPHO36-Q05-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q05-3-科学论证,中,编码把握度,CPHO36-Q05-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q06-1-模型建构,中,编码把握度,CPHO36-Q06-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q06-1,中,元数据待核风险,CPHO36-Q06-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q06-1-科学推理,中,编码把握度,CPHO36-Q06-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q06-1-科学论证,中,编码把握度,CPHO36-Q06-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q06-2-模型建构,中,编码把握度,CPHO36-Q06-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q06-2,中,元数据待核风险,CPHO36-Q06-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q06-2-科学推理,中,编码把握度,CPHO36-Q06-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q06-2-科学推理,中,高等级边界,CPHO36-Q06-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO36-Q06-2-科学论证,中,编码把握度,CPHO36-Q06-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-1-模型建构,中,编码把握度,CPHO36-Q07-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q07-1,中,元数据待核风险,CPHO36-Q07-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-1-科学推理,中,编码把握度,CPHO36-Q07-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-1-科学论证,中,编码把握度,CPHO36-Q07-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-2-模型建构,中,编码把握度,CPHO36-Q07-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q07-2,中,元数据待核风险,CPHO36-Q07-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-2-科学推理,中,编码把握度,CPHO36-Q07-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-2-科学论证,中,编码把握度,CPHO36-Q07-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-3-模型建构,中,编码把握度,CPHO36-Q07-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q07-3-模型建构,中,高等级边界,CPHO36-Q07-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q07-3,中,元数据待核风险,CPHO36-Q07-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-3-科学推理,中,编码把握度,CPHO36-Q07-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q07-3-科学推理,中,高等级边界,CPHO36-Q07-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-3-科学论证,中,编码把握度,CPHO36-Q07-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-4-模型建构,中,编码把握度,CPHO36-Q07-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q07-4-模型建构,中,高等级边界,CPHO36-Q07-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q07-4,中,元数据待核风险,CPHO36-Q07-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-4-科学推理,中,编码把握度,CPHO36-Q07-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q07-4-科学推理,中,高等级边界,CPHO36-Q07-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-4-科学论证,中,编码把握度,CPHO36-Q07-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-4-质疑创新,中,编码把握度,CPHO36-Q07-4,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-INNOVATION-CPHO36-Q07-4,高,质疑创新保守复核,CPHO36-Q07-4,质疑创新,present,质疑创新维度被试编码为出现；该维度按内部手册应保守判定。,复核题干是否明确要求处理假设、替代模型、模型失效、开放设计或证据约束的新方案。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-5-模型建构,中,编码把握度,CPHO36-Q07-5,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q07-5-模型建构,中,高等级边界,CPHO36-Q07-5,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO36-Q07-5,中,元数据待核风险,CPHO36-Q07-5,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-5-科学推理,中,编码把握度,CPHO36-Q07-5,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO36-Q07-5-科学推理,中,高等级边界,CPHO36-Q07-5,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-5-科学论证,中,编码把握度,CPHO36-Q07-5,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO36-Q07-5-质疑创新,中,编码把握度,CPHO36-Q07-5,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-INNOVATION-CPHO36-Q07-5,高,质疑创新保守复核,CPHO36-Q07-5,质疑创新,present,质疑创新维度被试编码为出现；该维度按内部手册应保守判定。,复核题干是否明确要求处理假设、替代模型、模型失效、开放设计或证据约束的新方案。,待处理
+RISK-CONFIDENCE-CPHO37-Q01-1-模型建构,中,编码把握度,CPHO37-Q01-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q01-1,中,元数据待核风险,CPHO37-Q01-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q01-1-科学推理,中,编码把握度,CPHO37-Q01-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q01-1-科学论证,中,编码把握度,CPHO37-Q01-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q01-2-模型建构,中,编码把握度,CPHO37-Q01-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q01-2,中,元数据待核风险,CPHO37-Q01-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q01-2-科学推理,中,编码把握度,CPHO37-Q01-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q01-2-科学论证,中,编码把握度,CPHO37-Q01-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q02-1-模型建构,中,编码把握度,CPHO37-Q02-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q02-1,中,元数据待核风险,CPHO37-Q02-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q02-1-科学推理,中,编码把握度,CPHO37-Q02-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q02-1-科学论证,中,编码把握度,CPHO37-Q02-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q02-2-模型建构,中,编码把握度,CPHO37-Q02-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q02-2,中,元数据待核风险,CPHO37-Q02-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q02-2-科学推理,中,编码把握度,CPHO37-Q02-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q02-2-科学论证,中,编码把握度,CPHO37-Q02-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-1-模型建构,中,编码把握度,CPHO37-Q03-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q03-1,中,元数据待核风险,CPHO37-Q03-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-1-科学推理,中,编码把握度,CPHO37-Q03-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-1-科学论证,中,编码把握度,CPHO37-Q03-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-2-模型建构,中,编码把握度,CPHO37-Q03-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q03-2,中,元数据待核风险,CPHO37-Q03-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-2-科学推理,中,编码把握度,CPHO37-Q03-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-2-科学论证,中,编码把握度,CPHO37-Q03-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-3-模型建构,中,编码把握度,CPHO37-Q03-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q03-3,中,元数据待核风险,CPHO37-Q03-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-3-科学推理,中,编码把握度,CPHO37-Q03-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-3-科学论证,中,编码把握度,CPHO37-Q03-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-4-模型建构,中,编码把握度,CPHO37-Q03-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q03-4,中,元数据待核风险,CPHO37-Q03-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-4-科学推理,中,编码把握度,CPHO37-Q03-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q03-4-科学论证,中,编码把握度,CPHO37-Q03-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q04-1-模型建构,中,编码把握度,CPHO37-Q04-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q04-1,中,元数据待核风险,CPHO37-Q04-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q04-1-科学推理,中,编码把握度,CPHO37-Q04-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q04-1-科学论证,中,编码把握度,CPHO37-Q04-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q04-2-模型建构,中,编码把握度,CPHO37-Q04-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q04-2-模型建构,中,高等级边界,CPHO37-Q04-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q04-2,中,元数据待核风险,CPHO37-Q04-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q04-2-科学推理,中,编码把握度,CPHO37-Q04-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q04-2-科学推理,中,高等级边界,CPHO37-Q04-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO37-Q04-2-科学论证,中,编码把握度,CPHO37-Q04-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q05-1-模型建构,中,编码把握度,CPHO37-Q05-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q05-1-模型建构,中,高等级边界,CPHO37-Q05-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q05-1,中,元数据待核风险,CPHO37-Q05-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q05-1-科学推理,中,编码把握度,CPHO37-Q05-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q05-1-科学推理,中,高等级边界,CPHO37-Q05-1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO37-Q05-1-科学论证,中,编码把握度,CPHO37-Q05-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q05-2-模型建构,中,编码把握度,CPHO37-Q05-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q05-2-模型建构,中,高等级边界,CPHO37-Q05-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q05-2,中,元数据待核风险,CPHO37-Q05-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q05-2-科学推理,中,编码把握度,CPHO37-Q05-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q05-2-科学推理,中,高等级边界,CPHO37-Q05-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO37-Q05-2-科学论证,中,编码把握度,CPHO37-Q05-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-1-模型建构,中,编码把握度,CPHO37-Q06-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q06-1,中,元数据待核风险,CPHO37-Q06-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-1-科学推理,中,编码把握度,CPHO37-Q06-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-1-科学论证,中,编码把握度,CPHO37-Q06-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-2-模型建构,中,编码把握度,CPHO37-Q06-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q06-2-模型建构,中,高等级边界,CPHO37-Q06-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q06-2,中,元数据待核风险,CPHO37-Q06-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-2-科学推理,中,编码把握度,CPHO37-Q06-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q06-2-科学推理,中,高等级边界,CPHO37-Q06-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-2-科学论证,中,编码把握度,CPHO37-Q06-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-3-模型建构,中,编码把握度,CPHO37-Q06-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q06-3-模型建构,中,高等级边界,CPHO37-Q06-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q06-3,中,元数据待核风险,CPHO37-Q06-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-3-科学推理,中,编码把握度,CPHO37-Q06-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q06-3-科学推理,中,高等级边界,CPHO37-Q06-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO37-Q06-3-科学论证,中,编码把握度,CPHO37-Q06-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-1-模型建构,中,编码把握度,CPHO37-Q07-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q07-1-模型建构,中,高等级边界,CPHO37-Q07-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q07-1,中,元数据待核风险,CPHO37-Q07-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-1-科学推理,中,编码把握度,CPHO37-Q07-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q07-1-科学推理,中,高等级边界,CPHO37-Q07-1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-1-科学论证,中,编码把握度,CPHO37-Q07-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-2-模型建构,中,编码把握度,CPHO37-Q07-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q07-2-模型建构,中,高等级边界,CPHO37-Q07-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q07-2,中,元数据待核风险,CPHO37-Q07-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-2-科学推理,中,编码把握度,CPHO37-Q07-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q07-2-科学推理,中,高等级边界,CPHO37-Q07-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-2-科学论证,中,编码把握度,CPHO37-Q07-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-3-模型建构,中,编码把握度,CPHO37-Q07-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q07-3-模型建构,中,高等级边界,CPHO37-Q07-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q07-3,中,元数据待核风险,CPHO37-Q07-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-3-科学推理,中,编码把握度,CPHO37-Q07-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q07-3-科学推理,中,高等级边界,CPHO37-Q07-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO37-Q07-3-科学论证,中,编码把握度,CPHO37-Q07-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-1-模型建构,中,编码把握度,CPHO37-Q08-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q08-1,中,元数据待核风险,CPHO37-Q08-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-1-科学推理,中,编码把握度,CPHO37-Q08-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-1-科学论证,中,编码把握度,CPHO37-Q08-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-2-模型建构,中,编码把握度,CPHO37-Q08-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q08-2,中,元数据待核风险,CPHO37-Q08-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-2-科学推理,中,编码把握度,CPHO37-Q08-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-2-科学论证,中,编码把握度,CPHO37-Q08-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-3-模型建构,中,编码把握度,CPHO37-Q08-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q08-3,中,元数据待核风险,CPHO37-Q08-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-3-科学推理,中,编码把握度,CPHO37-Q08-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-3-科学论证,中,编码把握度,CPHO37-Q08-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-4-模型建构,中,编码把握度,CPHO37-Q08-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO37-Q08-4-模型建构,中,高等级边界,CPHO37-Q08-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO37-Q08-4,中,元数据待核风险,CPHO37-Q08-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-4-科学推理,中,编码把握度,CPHO37-Q08-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO37-Q08-4-科学论证,中,编码把握度,CPHO37-Q08-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-1-模型建构,中,编码把握度,CPHO38-Q01-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q01-1-模型建构,中,高等级边界,CPHO38-Q01-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q01-1,中,元数据待核风险,CPHO38-Q01-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-1-科学推理,中,编码把握度,CPHO38-Q01-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q01-1-科学推理,中,高等级边界,CPHO38-Q01-1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-1-科学论证,中,编码把握度,CPHO38-Q01-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-2_i-模型建构,中,编码把握度,CPHO38-Q01-2_i,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q01-2_i-模型建构,中,高等级边界,CPHO38-Q01-2_i,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q01-2_i,中,元数据待核风险,CPHO38-Q01-2_i,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-2_i-科学推理,中,编码把握度,CPHO38-Q01-2_i,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q01-2_i-科学推理,中,高等级边界,CPHO38-Q01-2_i,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-2_i-科学论证,中,编码把握度,CPHO38-Q01-2_i,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-2_ii-模型建构,中,编码把握度,CPHO38-Q01-2_ii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q01-2_ii,中,元数据待核风险,CPHO38-Q01-2_ii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-2_ii-科学推理,中,编码把握度,CPHO38-Q01-2_ii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q01-2_ii-科学论证,中,编码把握度,CPHO38-Q01-2_ii,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q02-1-模型建构,中,编码把握度,CPHO38-Q02-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q02-1,中,元数据待核风险,CPHO38-Q02-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q02-1-科学推理,中,编码把握度,CPHO38-Q02-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q02-1-科学论证,中,编码把握度,CPHO38-Q02-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q02-2-模型建构,中,编码把握度,CPHO38-Q02-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q02-2,中,元数据待核风险,CPHO38-Q02-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q02-2-科学推理,中,编码把握度,CPHO38-Q02-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q02-2-科学论证,中,编码把握度,CPHO38-Q02-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-1-模型建构,中,编码把握度,CPHO38-Q03-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q03-1,中,元数据待核风险,CPHO38-Q03-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-1-科学推理,中,编码把握度,CPHO38-Q03-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-1-科学论证,中,编码把握度,CPHO38-Q03-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-2-模型建构,中,编码把握度,CPHO38-Q03-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q03-2,中,元数据待核风险,CPHO38-Q03-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-2-科学推理,中,编码把握度,CPHO38-Q03-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-2-科学论证,中,编码把握度,CPHO38-Q03-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-3-模型建构,中,编码把握度,CPHO38-Q03-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q03-3,中,元数据待核风险,CPHO38-Q03-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-3-科学推理,中,编码把握度,CPHO38-Q03-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q03-3-科学论证,中,编码把握度,CPHO38-Q03-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-1-模型建构,中,编码把握度,CPHO38-Q04-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q04-1,中,元数据待核风险,CPHO38-Q04-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-1-科学推理,中,编码把握度,CPHO38-Q04-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-1-科学论证,中,编码把握度,CPHO38-Q04-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-2-模型建构,中,编码把握度,CPHO38-Q04-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q04-2,中,元数据待核风险,CPHO38-Q04-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-2-科学推理,中,编码把握度,CPHO38-Q04-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-2-科学论证,中,编码把握度,CPHO38-Q04-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-3-模型建构,中,编码把握度,CPHO38-Q04-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q04-3-模型建构,中,高等级边界,CPHO38-Q04-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q04-3,中,元数据待核风险,CPHO38-Q04-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-3-科学推理,中,编码把握度,CPHO38-Q04-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q04-3-科学推理,中,高等级边界,CPHO38-Q04-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO38-Q04-3-科学论证,中,编码把握度,CPHO38-Q04-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-1-模型建构,中,编码把握度,CPHO38-Q05-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q05-1,中,元数据待核风险,CPHO38-Q05-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-1-科学推理,中,编码把握度,CPHO38-Q05-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-1-科学论证,中,编码把握度,CPHO38-Q05-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO38-Q05-1-科学论证,中,证据文本薄弱,CPHO38-Q05-1,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-2-模型建构,中,编码把握度,CPHO38-Q05-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q05-2,中,元数据待核风险,CPHO38-Q05-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-2-科学推理,中,编码把握度,CPHO38-Q05-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-2-科学论证,中,编码把握度,CPHO38-Q05-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-3-模型建构,中,编码把握度,CPHO38-Q05-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q05-3,中,元数据待核风险,CPHO38-Q05-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-3-科学推理,中,编码把握度,CPHO38-Q05-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-3-科学论证,中,编码把握度,CPHO38-Q05-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-4-模型建构,中,编码把握度,CPHO38-Q05-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q05-4-模型建构,中,高等级边界,CPHO38-Q05-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q05-4,中,元数据待核风险,CPHO38-Q05-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-4-科学推理,中,编码把握度,CPHO38-Q05-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q05-4-科学推理,中,高等级边界,CPHO38-Q05-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO38-Q05-4-科学论证,中,编码把握度,CPHO38-Q05-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-1-模型建构,中,编码把握度,CPHO38-Q06-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q06-1,中,元数据待核风险,CPHO38-Q06-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-1-科学推理,中,编码把握度,CPHO38-Q06-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-1-科学论证,中,编码把握度,CPHO38-Q06-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-2-模型建构,中,编码把握度,CPHO38-Q06-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q06-2,中,元数据待核风险,CPHO38-Q06-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-2-科学推理,中,编码把握度,CPHO38-Q06-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-2-科学论证,中,编码把握度,CPHO38-Q06-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-3-模型建构,中,编码把握度,CPHO38-Q06-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q06-3-模型建构,中,高等级边界,CPHO38-Q06-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q06-3,中,元数据待核风险,CPHO38-Q06-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-3-科学推理,中,编码把握度,CPHO38-Q06-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q06-3-科学推理,中,高等级边界,CPHO38-Q06-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-3-科学论证,中,编码把握度,CPHO38-Q06-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-4-模型建构,中,编码把握度,CPHO38-Q06-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q06-4-模型建构,中,高等级边界,CPHO38-Q06-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q06-4,中,元数据待核风险,CPHO38-Q06-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-4-科学推理,中,编码把握度,CPHO38-Q06-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q06-4-科学推理,中,高等级边界,CPHO38-Q06-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO38-Q06-4-科学论证,中,编码把握度,CPHO38-Q06-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-1-模型建构,中,编码把握度,CPHO38-Q07-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q07-1,中,元数据待核风险,CPHO38-Q07-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-1-科学推理,中,编码把握度,CPHO38-Q07-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-1-科学论证,中,编码把握度,CPHO38-Q07-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-2-模型建构,中,编码把握度,CPHO38-Q07-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q07-2,中,元数据待核风险,CPHO38-Q07-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-2-科学推理,中,编码把握度,CPHO38-Q07-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-2-科学论证,中,编码把握度,CPHO38-Q07-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-3-模型建构,中,编码把握度,CPHO38-Q07-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q07-3,中,元数据待核风险,CPHO38-Q07-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-3-科学推理,中,编码把握度,CPHO38-Q07-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q07-3-科学论证,中,编码把握度,CPHO38-Q07-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-1-模型建构,中,编码把握度,CPHO38-Q08-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q08-1,中,元数据待核风险,CPHO38-Q08-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-1-科学推理,中,编码把握度,CPHO38-Q08-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-1-科学论证,中,编码把握度,CPHO38-Q08-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-2-模型建构,中,编码把握度,CPHO38-Q08-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q08-2-模型建构,中,高等级边界,CPHO38-Q08-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q08-2,中,元数据待核风险,CPHO38-Q08-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-2-科学推理,中,编码把握度,CPHO38-Q08-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q08-2-科学推理,中,高等级边界,CPHO38-Q08-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-2-科学论证,中,编码把握度,CPHO38-Q08-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-3-模型建构,中,编码把握度,CPHO38-Q08-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q08-3-模型建构,中,高等级边界,CPHO38-Q08-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO38-Q08-3,中,元数据待核风险,CPHO38-Q08-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-3-科学推理,中,编码把握度,CPHO38-Q08-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO38-Q08-3-科学推理,中,高等级边界,CPHO38-Q08-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO38-Q08-3-科学论证,中,编码把握度,CPHO38-Q08-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-1-模型建构,中,编码把握度,CPHO39-Q01-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q01-1,中,元数据待核风险,CPHO39-Q01-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-1-科学推理,中,编码把握度,CPHO39-Q01-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-1-科学论证,中,编码把握度,CPHO39-Q01-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-2-模型建构,中,编码把握度,CPHO39-Q01-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q01-2,中,元数据待核风险,CPHO39-Q01-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-2-科学推理,中,编码把握度,CPHO39-Q01-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-2-科学论证,中,编码把握度,CPHO39-Q01-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-3-模型建构,中,编码把握度,CPHO39-Q01-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q01-3-模型建构,中,高等级边界,CPHO39-Q01-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q01-3,中,元数据待核风险,CPHO39-Q01-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-3-科学推理,中,编码把握度,CPHO39-Q01-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q01-3-科学推理,中,高等级边界,CPHO39-Q01-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q01-3-科学论证,中,编码把握度,CPHO39-Q01-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q02-1-模型建构,中,编码把握度,CPHO39-Q02-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q02-1-模型建构,中,高等级边界,CPHO39-Q02-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q02-1,中,元数据待核风险,CPHO39-Q02-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q02-1-科学推理,中,编码把握度,CPHO39-Q02-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q02-1-科学推理,中,高等级边界,CPHO39-Q02-1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q02-1-科学论证,中,编码把握度,CPHO39-Q02-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q02-2-模型建构,中,编码把握度,CPHO39-Q02-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q02-2-模型建构,中,高等级边界,CPHO39-Q02-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q02-2,中,元数据待核风险,CPHO39-Q02-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q02-2-科学推理,中,编码把握度,CPHO39-Q02-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q02-2-科学推理,中,高等级边界,CPHO39-Q02-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q02-2-科学论证,中,编码把握度,CPHO39-Q02-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-1-模型建构,中,编码把握度,CPHO39-Q03-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q03-1,中,元数据待核风险,CPHO39-Q03-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-1-科学推理,中,编码把握度,CPHO39-Q03-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-1-科学论证,中,编码把握度,CPHO39-Q03-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-2-模型建构,中,编码把握度,CPHO39-Q03-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q03-2-模型建构,中,高等级边界,CPHO39-Q03-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q03-2,中,元数据待核风险,CPHO39-Q03-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-2-科学推理,中,编码把握度,CPHO39-Q03-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q03-2-科学推理,中,高等级边界,CPHO39-Q03-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-2-科学论证,中,编码把握度,CPHO39-Q03-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-3-模型建构,中,编码把握度,CPHO39-Q03-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q03-3-模型建构,中,高等级边界,CPHO39-Q03-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q03-3,中,元数据待核风险,CPHO39-Q03-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-3-科学推理,中,编码把握度,CPHO39-Q03-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q03-3-科学推理,中,高等级边界,CPHO39-Q03-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-3-科学论证,中,编码把握度,CPHO39-Q03-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-4-模型建构,中,编码把握度,CPHO39-Q03-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q03-4-模型建构,中,高等级边界,CPHO39-Q03-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q03-4,中,元数据待核风险,CPHO39-Q03-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-4-科学推理,中,编码把握度,CPHO39-Q03-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q03-4-科学论证,中,编码把握度,CPHO39-Q03-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-1-模型建构,中,编码把握度,CPHO39-Q04-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-1-模型建构,中,高等级边界,CPHO39-Q04-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q04-1,中,元数据待核风险,CPHO39-Q04-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-1-科学推理,中,编码把握度,CPHO39-Q04-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-1-科学推理,中,高等级边界,CPHO39-Q04-1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-1-科学论证,中,编码把握度,CPHO39-Q04-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-2-模型建构,中,编码把握度,CPHO39-Q04-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-2-模型建构,中,高等级边界,CPHO39-Q04-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q04-2,中,元数据待核风险,CPHO39-Q04-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-2-科学推理,中,编码把握度,CPHO39-Q04-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-2-科学推理,中,高等级边界,CPHO39-Q04-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-2-科学论证,中,编码把握度,CPHO39-Q04-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-3-模型建构,中,编码把握度,CPHO39-Q04-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-3-模型建构,中,高等级边界,CPHO39-Q04-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q04-3,中,元数据待核风险,CPHO39-Q04-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-3-科学推理,中,编码把握度,CPHO39-Q04-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-3-科学推理,中,高等级边界,CPHO39-Q04-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-3-科学论证,中,编码把握度,CPHO39-Q04-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-4-模型建构,中,编码把握度,CPHO39-Q04-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-4-模型建构,中,高等级边界,CPHO39-Q04-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q04-4,中,元数据待核风险,CPHO39-Q04-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-4-科学推理,中,编码把握度,CPHO39-Q04-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-4-科学论证,中,编码把握度,CPHO39-Q04-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-5-模型建构,中,编码把握度,CPHO39-Q04-5,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-5-模型建构,中,高等级边界,CPHO39-Q04-5,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q04-5,中,元数据待核风险,CPHO39-Q04-5,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-5-科学推理,中,编码把握度,CPHO39-Q04-5,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q04-5-科学推理,中,高等级边界,CPHO39-Q04-5,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q04-5-科学论证,中,编码把握度,CPHO39-Q04-5,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-1-模型建构,中,编码把握度,CPHO39-Q05-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q05-1,中,元数据待核风险,CPHO39-Q05-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-1-科学推理,中,编码把握度,CPHO39-Q05-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-1-科学论证,中,编码把握度,CPHO39-Q05-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO39-Q05-1-科学论证,中,证据文本薄弱,CPHO39-Q05-1,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-2-模型建构,中,编码把握度,CPHO39-Q05-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q05-2,中,元数据待核风险,CPHO39-Q05-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-2-科学推理,中,编码把握度,CPHO39-Q05-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-2-科学论证,中,编码把握度,CPHO39-Q05-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO39-Q05-2-科学论证,中,证据文本薄弱,CPHO39-Q05-2,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-3-模型建构,中,编码把握度,CPHO39-Q05-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q05-3-模型建构,中,高等级边界,CPHO39-Q05-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q05-3,中,元数据待核风险,CPHO39-Q05-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-3-科学推理,中,编码把握度,CPHO39-Q05-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q05-3-科学推理,中,高等级边界,CPHO39-Q05-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-3-科学论证,中,编码把握度,CPHO39-Q05-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-3-质疑创新,中,编码把握度,CPHO39-Q05-3,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-INNOVATION-CPHO39-Q05-3,高,质疑创新保守复核,CPHO39-Q05-3,质疑创新,present,质疑创新维度被试编码为出现；该维度按内部手册应保守判定。,复核题干是否明确要求处理假设、替代模型、模型失效、开放设计或证据约束的新方案。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-4-模型建构,中,编码把握度,CPHO39-Q05-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q05-4-模型建构,中,高等级边界,CPHO39-Q05-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q05-4,中,元数据待核风险,CPHO39-Q05-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-4-科学推理,中,编码把握度,CPHO39-Q05-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q05-4-科学推理,中,高等级边界,CPHO39-Q05-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-4-科学论证,中,编码把握度,CPHO39-Q05-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q05-4-质疑创新,中,编码把握度,CPHO39-Q05-4,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-INNOVATION-CPHO39-Q05-4,高,质疑创新保守复核,CPHO39-Q05-4,质疑创新,present,质疑创新维度被试编码为出现；该维度按内部手册应保守判定。,复核题干是否明确要求处理假设、替代模型、模型失效、开放设计或证据约束的新方案。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-1-模型建构,中,编码把握度,CPHO39-Q06-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q06-1,中,元数据待核风险,CPHO39-Q06-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-1-科学推理,中,编码把握度,CPHO39-Q06-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-1-科学论证,中,编码把握度,CPHO39-Q06-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-2-模型建构,中,编码把握度,CPHO39-Q06-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q06-2-模型建构,中,高等级边界,CPHO39-Q06-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q06-2,中,元数据待核风险,CPHO39-Q06-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-2-科学推理,中,编码把握度,CPHO39-Q06-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q06-2-科学推理,中,高等级边界,CPHO39-Q06-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-2-科学论证,中,编码把握度,CPHO39-Q06-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-3-模型建构,中,编码把握度,CPHO39-Q06-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q06-3-模型建构,中,高等级边界,CPHO39-Q06-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q06-3,中,元数据待核风险,CPHO39-Q06-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-3-科学推理,中,编码把握度,CPHO39-Q06-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q06-3-科学推理,中,高等级边界,CPHO39-Q06-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-3-科学论证,中,编码把握度,CPHO39-Q06-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-4-模型建构,中,编码把握度,CPHO39-Q06-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q06-4-模型建构,中,高等级边界,CPHO39-Q06-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q06-4,中,元数据待核风险,CPHO39-Q06-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-4-科学推理,中,编码把握度,CPHO39-Q06-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q06-4-科学推理,中,高等级边界,CPHO39-Q06-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-4-科学论证,中,编码把握度,CPHO39-Q06-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-5-模型建构,中,编码把握度,CPHO39-Q06-5,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q06-5-模型建构,中,高等级边界,CPHO39-Q06-5,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q06-5,中,元数据待核风险,CPHO39-Q06-5,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-5-科学推理,中,编码把握度,CPHO39-Q06-5,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q06-5-科学推理,中,高等级边界,CPHO39-Q06-5,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-5-科学论证,中,编码把握度,CPHO39-Q06-5,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q06-5-质疑创新,中,编码把握度,CPHO39-Q06-5,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-INNOVATION-CPHO39-Q06-5,高,质疑创新保守复核,CPHO39-Q06-5,质疑创新,present,质疑创新维度被试编码为出现；该维度按内部手册应保守判定。,复核题干是否明确要求处理假设、替代模型、模型失效、开放设计或证据约束的新方案。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-1-模型建构,中,编码把握度,CPHO39-Q07-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q07-1-模型建构,中,高等级边界,CPHO39-Q07-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q07-1,中,元数据待核风险,CPHO39-Q07-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-1-科学推理,中,编码把握度,CPHO39-Q07-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q07-1-科学推理,中,高等级边界,CPHO39-Q07-1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-1-科学论证,中,编码把握度,CPHO39-Q07-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-2-模型建构,中,编码把握度,CPHO39-Q07-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q07-2-模型建构,中,高等级边界,CPHO39-Q07-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q07-2,中,元数据待核风险,CPHO39-Q07-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-2-科学推理,中,编码把握度,CPHO39-Q07-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q07-2-科学推理,中,高等级边界,CPHO39-Q07-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-2-科学论证,中,编码把握度,CPHO39-Q07-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-3-模型建构,中,编码把握度,CPHO39-Q07-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q07-3,中,元数据待核风险,CPHO39-Q07-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-3-科学推理,中,编码把握度,CPHO39-Q07-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-3-科学论证,中,编码把握度,CPHO39-Q07-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-4-模型建构,中,编码把握度,CPHO39-Q07-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q07-4-模型建构,中,高等级边界,CPHO39-Q07-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO39-Q07-4,中,元数据待核风险,CPHO39-Q07-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-4-科学推理,中,编码把握度,CPHO39-Q07-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO39-Q07-4-科学推理,中,高等级边界,CPHO39-Q07-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO39-Q07-4-科学论证,中,编码把握度,CPHO39-Q07-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q01-1_i-模型建构,中,编码把握度,CPHO40-Q01-1_i,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q01-1_i,中,元数据待核风险,CPHO40-Q01-1_i,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q01-1_i-科学推理,中,编码把握度,CPHO40-Q01-1_i,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q01-1_ii-模型建构,中,编码把握度,CPHO40-Q01-1_ii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q01-1_ii,中,元数据待核风险,CPHO40-Q01-1_ii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q01-1_ii-科学推理,中,编码把握度,CPHO40-Q01-1_ii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q01-2_i-模型建构,中,编码把握度,CPHO40-Q01-2_i,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q01-2_i,中,元数据待核风险,CPHO40-Q01-2_i,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q01-2_i-科学推理,中,编码把握度,CPHO40-Q01-2_i,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q01-2_ii-模型建构,中,编码把握度,CPHO40-Q01-2_ii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q01-2_ii,中,元数据待核风险,CPHO40-Q01-2_ii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q01-2_ii-科学推理,中,编码把握度,CPHO40-Q01-2_ii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO40-Q01-2_ii-科学论证,中,证据文本薄弱,CPHO40-Q01-2_ii,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO40-Q01-2_ii-质疑创新,中,证据文本薄弱,CPHO40-Q01-2_ii,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-1-模型建构,中,编码把握度,CPHO40-Q02-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q02-1,中,元数据待核风险,CPHO40-Q02-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-1-科学推理,中,编码把握度,CPHO40-Q02-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-1-科学论证,中,编码把握度,CPHO40-Q02-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-2-模型建构,中,编码把握度,CPHO40-Q02-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q02-2,中,元数据待核风险,CPHO40-Q02-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-2-科学推理,中,编码把握度,CPHO40-Q02-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-2-科学论证,中,编码把握度,CPHO40-Q02-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-3-模型建构,中,编码把握度,CPHO40-Q02-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q02-3,中,元数据待核风险,CPHO40-Q02-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-3-科学推理,中,编码把握度,CPHO40-Q02-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-3-科学论证,中,编码把握度,CPHO40-Q02-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-4-模型建构,中,编码把握度,CPHO40-Q02-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q02-4-模型建构,中,高等级边界,CPHO40-Q02-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q02-4,中,元数据待核风险,CPHO40-Q02-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-4-科学推理,中,编码把握度,CPHO40-Q02-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q02-4-科学推理,中,高等级边界,CPHO40-Q02-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-4-科学论证,中,编码把握度,CPHO40-Q02-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-5-模型建构,中,编码把握度,CPHO40-Q02-5,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q02-5,中,元数据待核风险,CPHO40-Q02-5,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q02-5-科学推理,中,编码把握度,CPHO40-Q02-5,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_i-模型建构,中,编码把握度,CPHO40-Q03-1_i,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q03-1_i,中,元数据待核风险,CPHO40-Q03-1_i,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_i-科学推理,中,编码把握度,CPHO40-Q03-1_i,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_ii-模型建构,中,编码把握度,CPHO40-Q03-1_ii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q03-1_ii,中,元数据待核风险,CPHO40-Q03-1_ii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_ii-科学推理,中,编码把握度,CPHO40-Q03-1_ii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_iii-模型建构,中,编码把握度,CPHO40-Q03-1_iii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q03-1_iii,中,元数据待核风险,CPHO40-Q03-1_iii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_iii-科学推理,中,编码把握度,CPHO40-Q03-1_iii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_iv-模型建构,中,编码把握度,CPHO40-Q03-1_iv,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q03-1_iv,中,元数据待核风险,CPHO40-Q03-1_iv,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_iv-科学推理,中,编码把握度,CPHO40-Q03-1_iv,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_v-模型建构,中,编码把握度,CPHO40-Q03-1_v,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q03-1_v,中,元数据待核风险,CPHO40-Q03-1_v,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_v-科学推理,中,编码把握度,CPHO40-Q03-1_v,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-1_v-科学论证,中,编码把握度,CPHO40-Q03-1_v,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-2-模型建构,中,编码把握度,CPHO40-Q03-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q03-2-模型建构,中,高等级边界,CPHO40-Q03-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q03-2,中,元数据待核风险,CPHO40-Q03-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q03-2-科学推理,中,编码把握度,CPHO40-Q03-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q03-2-科学推理,中,高等级边界,CPHO40-Q03-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO40-Q04-1-模型建构,中,编码把握度,CPHO40-Q04-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q04-1,中,元数据待核风险,CPHO40-Q04-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q04-1-科学推理,中,编码把握度,CPHO40-Q04-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q04-2-模型建构,中,编码把握度,CPHO40-Q04-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q04-2-模型建构,中,高等级边界,CPHO40-Q04-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q04-2,中,元数据待核风险,CPHO40-Q04-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q04-2-科学推理,中,编码把握度,CPHO40-Q04-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q04-2-科学论证,中,编码把握度,CPHO40-Q04-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q04-3-模型建构,中,编码把握度,CPHO40-Q04-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q04-3,中,元数据待核风险,CPHO40-Q04-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q04-3-科学推理,中,编码把握度,CPHO40-Q04-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q04-3-科学论证,中,编码把握度,CPHO40-Q04-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-1-模型建构,中,编码把握度,CPHO40-Q05-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q05-1,中,元数据待核风险,CPHO40-Q05-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-1-科学推理,中,编码把握度,CPHO40-Q05-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_i-模型建构,中,编码把握度,CPHO40-Q05-2_i,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q05-2_i,中,元数据待核风险,CPHO40-Q05-2_i,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_i-科学推理,中,编码把握度,CPHO40-Q05-2_i,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_ii-模型建构,中,编码把握度,CPHO40-Q05-2_ii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q05-2_ii,中,元数据待核风险,CPHO40-Q05-2_ii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_ii-科学推理,中,编码把握度,CPHO40-Q05-2_ii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_iii-模型建构,中,编码把握度,CPHO40-Q05-2_iii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q05-2_iii-模型建构,中,高等级边界,CPHO40-Q05-2_iii,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q05-2_iii,中,元数据待核风险,CPHO40-Q05-2_iii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_iii-科学推理,中,编码把握度,CPHO40-Q05-2_iii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q05-2_iii-科学推理,中,高等级边界,CPHO40-Q05-2_iii,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_iii-科学论证,中,编码把握度,CPHO40-Q05-2_iii,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_iv-模型建构,中,编码把握度,CPHO40-Q05-2_iv,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q05-2_iv-模型建构,中,高等级边界,CPHO40-Q05-2_iv,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q05-2_iv,中,元数据待核风险,CPHO40-Q05-2_iv,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q05-2_iv-科学推理,中,编码把握度,CPHO40-Q05-2_iv,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q05-2_iv-科学推理,中,高等级边界,CPHO40-Q05-2_iv,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-1-模型建构,中,编码把握度,CPHO40-Q06-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q06-1-模型建构,中,高等级边界,CPHO40-Q06-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q06-1,中,元数据待核风险,CPHO40-Q06-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-1-科学推理,中,编码把握度,CPHO40-Q06-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-1-科学论证,中,编码把握度,CPHO40-Q06-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-2-模型建构,中,编码把握度,CPHO40-Q06-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q06-2,中,元数据待核风险,CPHO40-Q06-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-2-科学推理,中,编码把握度,CPHO40-Q06-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-3-模型建构,中,编码把握度,CPHO40-Q06-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q06-3-模型建构,中,高等级边界,CPHO40-Q06-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q06-3,中,元数据待核风险,CPHO40-Q06-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-3-科学推理,中,编码把握度,CPHO40-Q06-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q06-3-科学推理,中,高等级边界,CPHO40-Q06-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-3-科学论证,中,编码把握度,CPHO40-Q06-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-4-模型建构,中,编码把握度,CPHO40-Q06-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q06-4-模型建构,中,高等级边界,CPHO40-Q06-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q06-4,中,元数据待核风险,CPHO40-Q06-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-4-科学推理,中,编码把握度,CPHO40-Q06-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q06-4-科学推理,中,高等级边界,CPHO40-Q06-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO40-Q06-4-科学论证,中,编码把握度,CPHO40-Q06-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-1-模型建构,中,编码把握度,CPHO40-Q07-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q07-1,中,元数据待核风险,CPHO40-Q07-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-1-科学推理,中,编码把握度,CPHO40-Q07-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-2-模型建构,中,编码把握度,CPHO40-Q07-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q07-2,中,元数据待核风险,CPHO40-Q07-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-2-科学推理,中,编码把握度,CPHO40-Q07-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-2-科学论证,中,编码把握度,CPHO40-Q07-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-3-模型建构,中,编码把握度,CPHO40-Q07-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q07-3-模型建构,中,高等级边界,CPHO40-Q07-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q07-3,中,元数据待核风险,CPHO40-Q07-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-3-科学推理,中,编码把握度,CPHO40-Q07-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-3-科学论证,中,编码把握度,CPHO40-Q07-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-3-质疑创新,中,编码把握度,CPHO40-Q07-3,质疑创新,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-INNOVATION-CPHO40-Q07-3,高,质疑创新保守复核,CPHO40-Q07-3,质疑创新,present,质疑创新维度被试编码为出现；该维度按内部手册应保守判定。,复核题干是否明确要求处理假设、替代模型、模型失效、开放设计或证据约束的新方案。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-4-模型建构,中,编码把握度,CPHO40-Q07-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q07-4-模型建构,中,高等级边界,CPHO40-Q07-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q07-4,中,元数据待核风险,CPHO40-Q07-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-4-科学推理,中,编码把握度,CPHO40-Q07-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO40-Q07-4-科学推理,中,高等级边界,CPHO40-Q07-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO40-Q07-4-科学论证,中,编码把握度,CPHO40-Q07-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-1_i-模型建构,中,编码把握度,CPHO40-Q08-1_i,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q08-1_i,中,元数据待核风险,CPHO40-Q08-1_i,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-1_i-科学推理,中,编码把握度,CPHO40-Q08-1_i,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-1_ii-模型建构,中,编码把握度,CPHO40-Q08-1_ii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q08-1_ii,中,元数据待核风险,CPHO40-Q08-1_ii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-1_ii-科学推理,中,编码把握度,CPHO40-Q08-1_ii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-1_iii-模型建构,中,编码把握度,CPHO40-Q08-1_iii,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q08-1_iii,中,元数据待核风险,CPHO40-Q08-1_iii,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-1_iii-科学推理,中,编码把握度,CPHO40-Q08-1_iii,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-2-模型建构,中,编码把握度,CPHO40-Q08-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q08-2,中,元数据待核风险,CPHO40-Q08-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-2-科学推理,中,编码把握度,CPHO40-Q08-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-3-模型建构,中,编码把握度,CPHO40-Q08-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO40-Q08-3,中,元数据待核风险,CPHO40-Q08-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-3-科学推理,中,编码把握度,CPHO40-Q08-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO40-Q08-3-科学论证,中,编码把握度,CPHO40-Q08-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-1_1-模型建构,中,编码把握度,CPHO41-Q01-1_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q01-1_1,中,元数据待核风险,CPHO41-Q01-1_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-1_1-科学推理,中,编码把握度,CPHO41-Q01-1_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-1_2-模型建构,中,编码把握度,CPHO41-Q01-1_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q01-1_2,中,元数据待核风险,CPHO41-Q01-1_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-1_2-科学推理,中,编码把握度,CPHO41-Q01-1_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-1_2-科学论证,中,编码把握度,CPHO41-Q01-1_2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-2-模型建构,中,编码把握度,CPHO41-Q01-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q01-2,中,元数据待核风险,CPHO41-Q01-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-2-科学推理,中,编码把握度,CPHO41-Q01-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-2-科学论证,中,编码把握度,CPHO41-Q01-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-3-模型建构,中,编码把握度,CPHO41-Q01-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q01-3-模型建构,中,高等级边界,CPHO41-Q01-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q01-3,中,元数据待核风险,CPHO41-Q01-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-3-科学推理,中,编码把握度,CPHO41-Q01-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q01-3-科学论证,中,编码把握度,CPHO41-Q01-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-1-模型建构,中,编码把握度,CPHO41-Q02-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-1,中,元数据待核风险,CPHO41-Q02-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-1-科学推理,中,编码把握度,CPHO41-Q02-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_1-模型建构,中,编码把握度,CPHO41-Q02-2_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-2_1,中,元数据待核风险,CPHO41-Q02-2_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_1-科学推理,中,编码把握度,CPHO41-Q02-2_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_2-模型建构,中,编码把握度,CPHO41-Q02-2_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-2_2,中,元数据待核风险,CPHO41-Q02-2_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_2-科学推理,中,编码把握度,CPHO41-Q02-2_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_3-模型建构,中,编码把握度,CPHO41-Q02-2_3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-2_3,中,元数据待核风险,CPHO41-Q02-2_3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_3-科学推理,中,编码把握度,CPHO41-Q02-2_3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_4-模型建构,中,编码把握度,CPHO41-Q02-2_4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-2_4,中,元数据待核风险,CPHO41-Q02-2_4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_4-科学推理,中,编码把握度,CPHO41-Q02-2_4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-2_4-科学论证,中,编码把握度,CPHO41-Q02-2_4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-3-模型建构,中,编码把握度,CPHO41-Q02-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-3,中,元数据待核风险,CPHO41-Q02-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-3-科学推理,中,编码把握度,CPHO41-Q02-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-3-科学论证,中,编码把握度,CPHO41-Q02-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-4_1-模型建构,中,编码把握度,CPHO41-Q02-4_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-4_1,中,元数据待核风险,CPHO41-Q02-4_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-4_1-科学推理,中,编码把握度,CPHO41-Q02-4_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-4_2-模型建构,中,编码把握度,CPHO41-Q02-4_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-4_2,中,元数据待核风险,CPHO41-Q02-4_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-4_2-科学推理,中,编码把握度,CPHO41-Q02-4_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-4_3-模型建构,中,编码把握度,CPHO41-Q02-4_3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q02-4_3,中,元数据待核风险,CPHO41-Q02-4_3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-4_3-科学推理,中,编码把握度,CPHO41-Q02-4_3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q02-4_3-科学论证,中,编码把握度,CPHO41-Q02-4_3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q03-1-模型建构,中,编码把握度,CPHO41-Q03-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q03-1,中,元数据待核风险,CPHO41-Q03-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q03-1-科学推理,中,编码把握度,CPHO41-Q03-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q03-1-科学论证,中,编码把握度,CPHO41-Q03-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q03-2-模型建构,中,编码把握度,CPHO41-Q03-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q03-2-模型建构,中,高等级边界,CPHO41-Q03-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q03-2,中,元数据待核风险,CPHO41-Q03-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q03-2-科学推理,中,编码把握度,CPHO41-Q03-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q03-2-科学论证,中,编码把握度,CPHO41-Q03-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q04-1-模型建构,中,编码把握度,CPHO41-Q04-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q04-1-模型建构,中,高等级边界,CPHO41-Q04-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q04-1,中,元数据待核风险,CPHO41-Q04-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q04-1-科学推理,中,编码把握度,CPHO41-Q04-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q04-1-科学论证,中,编码把握度,CPHO41-Q04-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q04-2-模型建构,中,编码把握度,CPHO41-Q04-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q04-2-模型建构,中,高等级边界,CPHO41-Q04-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q04-2,中,元数据待核风险,CPHO41-Q04-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q04-2-科学推理,中,编码把握度,CPHO41-Q04-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q04-2-科学推理,中,高等级边界,CPHO41-Q04-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO41-Q04-2-科学论证,中,编码把握度,CPHO41-Q04-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-1-模型建构,中,编码把握度,CPHO41-Q05-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q05-1,中,元数据待核风险,CPHO41-Q05-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-1-科学推理,中,编码把握度,CPHO41-Q05-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-2-模型建构,中,编码把握度,CPHO41-Q05-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q05-2,中,元数据待核风险,CPHO41-Q05-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-2-科学推理,中,编码把握度,CPHO41-Q05-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-2-科学论证,中,编码把握度,CPHO41-Q05-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-3-模型建构,中,编码把握度,CPHO41-Q05-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q05-3,中,元数据待核风险,CPHO41-Q05-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-3-科学推理,中,编码把握度,CPHO41-Q05-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-3-科学论证,中,编码把握度,CPHO41-Q05-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-4-模型建构,中,编码把握度,CPHO41-Q05-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q05-4-模型建构,中,高等级边界,CPHO41-Q05-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q05-4,中,元数据待核风险,CPHO41-Q05-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-4-科学推理,中,编码把握度,CPHO41-Q05-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q05-4-科学推理,中,高等级边界,CPHO41-Q05-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO41-Q05-4-科学论证,中,编码把握度,CPHO41-Q05-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-1-模型建构,中,编码把握度,CPHO41-Q06-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q06-1,中,元数据待核风险,CPHO41-Q06-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-1-科学推理,中,编码把握度,CPHO41-Q06-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-2-模型建构,中,编码把握度,CPHO41-Q06-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q06-2,中,元数据待核风险,CPHO41-Q06-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-2-科学推理,中,编码把握度,CPHO41-Q06-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-3-模型建构,中,编码把握度,CPHO41-Q06-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q06-3-模型建构,中,高等级边界,CPHO41-Q06-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q06-3,中,元数据待核风险,CPHO41-Q06-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-3-科学推理,中,编码把握度,CPHO41-Q06-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q06-3-科学推理,中,高等级边界,CPHO41-Q06-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-3-科学论证,中,编码把握度,CPHO41-Q06-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-4-模型建构,中,编码把握度,CPHO41-Q06-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q06-4-模型建构,中,高等级边界,CPHO41-Q06-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q06-4,中,元数据待核风险,CPHO41-Q06-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-4-科学推理,中,编码把握度,CPHO41-Q06-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q06-4-科学推理,中,高等级边界,CPHO41-Q06-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO41-Q06-4-科学论证,中,编码把握度,CPHO41-Q06-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-1-模型建构,中,编码把握度,CPHO41-Q07-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q07-1,中,元数据待核风险,CPHO41-Q07-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-1-科学推理,中,编码把握度,CPHO41-Q07-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-2-模型建构,中,编码把握度,CPHO41-Q07-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q07-2,中,元数据待核风险,CPHO41-Q07-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-2-科学推理,中,编码把握度,CPHO41-Q07-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-3_1-模型建构,中,编码把握度,CPHO41-Q07-3_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q07-3_1,中,元数据待核风险,CPHO41-Q07-3_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-3_1-科学推理,中,编码把握度,CPHO41-Q07-3_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-3_2-模型建构,中,编码把握度,CPHO41-Q07-3_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q07-3_2-模型建构,中,高等级边界,CPHO41-Q07-3_2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q07-3_2,中,元数据待核风险,CPHO41-Q07-3_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-3_2-科学推理,中,编码把握度,CPHO41-Q07-3_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q07-3_2-科学推理,中,高等级边界,CPHO41-Q07-3_2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-3_2-科学论证,中,编码把握度,CPHO41-Q07-3_2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-4-模型建构,中,编码把握度,CPHO41-Q07-4,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q07-4-模型建构,中,高等级边界,CPHO41-Q07-4,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q07-4,中,元数据待核风险,CPHO41-Q07-4,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-4-科学推理,中,编码把握度,CPHO41-Q07-4,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q07-4-科学推理,中,高等级边界,CPHO41-Q07-4,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-4-科学论证,中,编码把握度,CPHO41-Q07-4,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-5_1-模型建构,中,编码把握度,CPHO41-Q07-5_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q07-5_1-模型建构,中,高等级边界,CPHO41-Q07-5_1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q07-5_1,中,元数据待核风险,CPHO41-Q07-5_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-5_1-科学推理,中,编码把握度,CPHO41-Q07-5_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q07-5_1-科学推理,中,高等级边界,CPHO41-Q07-5_1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-5_1-科学论证,中,编码把握度,CPHO41-Q07-5_1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-5_2-模型建构,中,编码把握度,CPHO41-Q07-5_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q07-5_2-模型建构,中,高等级边界,CPHO41-Q07-5_2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO41-Q07-5_2,中,元数据待核风险,CPHO41-Q07-5_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-5_2-科学推理,中,编码把握度,CPHO41-Q07-5_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO41-Q07-5_2-科学推理,中,高等级边界,CPHO41-Q07-5_2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO41-Q07-5_2-科学论证,中,编码把握度,CPHO41-Q07-5_2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q01-1-模型建构,中,编码把握度,CPHO42-Q01-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q01-1,中,元数据待核风险,CPHO42-Q01-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q01-1-科学推理,中,编码把握度,CPHO42-Q01-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q01-2-模型建构,中,编码把握度,CPHO42-Q01-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q01-2,中,元数据待核风险,CPHO42-Q01-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q01-2-科学推理,中,编码把握度,CPHO42-Q01-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q01-3-模型建构,中,编码把握度,CPHO42-Q01-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q01-3-模型建构,中,高等级边界,CPHO42-Q01-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q01-3,中,元数据待核风险,CPHO42-Q01-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q01-3-科学推理,中,编码把握度,CPHO42-Q01-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q01-3-科学推理,中,高等级边界,CPHO42-Q01-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q01-3-科学论证,中,编码把握度,CPHO42-Q01-3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-1_1-模型建构,中,编码把握度,CPHO42-Q02-1_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q02-1_1,中,元数据待核风险,CPHO42-Q02-1_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-1_1-科学推理,中,编码把握度,CPHO42-Q02-1_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q02-1_1-质疑创新,中,证据文本薄弱,CPHO42-Q02-1_1,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-1_2-模型建构,中,编码把握度,CPHO42-Q02-1_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q02-1_2-模型建构,中,高等级边界,CPHO42-Q02-1_2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q02-1_2,中,元数据待核风险,CPHO42-Q02-1_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-1_2-科学推理,中,编码把握度,CPHO42-Q02-1_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q02-1_2-科学推理,中,高等级边界,CPHO42-Q02-1_2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-1_2-科学论证,中,编码把握度,CPHO42-Q02-1_2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-1_3-模型建构,中,编码把握度,CPHO42-Q02-1_3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q02-1_3,中,元数据待核风险,CPHO42-Q02-1_3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-1_3-科学推理,中,编码把握度,CPHO42-Q02-1_3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q02-1_3-科学论证,中,证据文本薄弱,CPHO42-Q02-1_3,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q02-1_3-质疑创新,中,证据文本薄弱,CPHO42-Q02-1_3,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-2_1-模型建构,中,编码把握度,CPHO42-Q02-2_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q02-2_1,中,元数据待核风险,CPHO42-Q02-2_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-2_1-科学推理,中,编码把握度,CPHO42-Q02-2_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q02-2_1-质疑创新,中,证据文本薄弱,CPHO42-Q02-2_1,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-2_2-模型建构,中,编码把握度,CPHO42-Q02-2_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q02-2_2-模型建构,中,高等级边界,CPHO42-Q02-2_2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q02-2_2,中,元数据待核风险,CPHO42-Q02-2_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-2_2-科学推理,中,编码把握度,CPHO42-Q02-2_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q02-2_2-科学推理,中,高等级边界,CPHO42-Q02-2_2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-2_2-科学论证,中,编码把握度,CPHO42-Q02-2_2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-2_3-模型建构,中,编码把握度,CPHO42-Q02-2_3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q02-2_3-模型建构,中,高等级边界,CPHO42-Q02-2_3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q02-2_3,中,元数据待核风险,CPHO42-Q02-2_3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-2_3-科学推理,中,编码把握度,CPHO42-Q02-2_3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q02-2_3-科学推理,中,高等级边界,CPHO42-Q02-2_3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q02-2_3-科学论证,中,编码把握度,CPHO42-Q02-2_3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-1-模型建构,中,编码把握度,CPHO42-Q03-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q03-1-模型建构,中,高等级边界,CPHO42-Q03-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q03-1,中,元数据待核风险,CPHO42-Q03-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-1-科学推理,中,编码把握度,CPHO42-Q03-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-1-科学论证,中,编码把握度,CPHO42-Q03-1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-2_1-模型建构,中,编码把握度,CPHO42-Q03-2_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q03-2_1-模型建构,中,高等级边界,CPHO42-Q03-2_1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q03-2_1,中,元数据待核风险,CPHO42-Q03-2_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-2_1-科学推理,中,编码把握度,CPHO42-Q03-2_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q03-2_1-科学推理,中,高等级边界,CPHO42-Q03-2_1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-2_1-科学论证,中,编码把握度,CPHO42-Q03-2_1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-2_2-模型建构,中,编码把握度,CPHO42-Q03-2_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q03-2_2-模型建构,中,高等级边界,CPHO42-Q03-2_2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q03-2_2,中,元数据待核风险,CPHO42-Q03-2_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-2_2-科学推理,中,编码把握度,CPHO42-Q03-2_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q03-2_2-科学推理,中,高等级边界,CPHO42-Q03-2_2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q03-2_2-科学论证,中,编码把握度,CPHO42-Q03-2_2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q04-1_1-模型建构,中,编码把握度,CPHO42-Q04-1_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q04-1_1,中,元数据待核风险,CPHO42-Q04-1_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q04-1_1-科学推理,中,编码把握度,CPHO42-Q04-1_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q04-1_1-科学论证,中,证据文本薄弱,CPHO42-Q04-1_1,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q04-1_1-质疑创新,中,证据文本薄弱,CPHO42-Q04-1_1,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q04-1_2-模型建构,中,编码把握度,CPHO42-Q04-1_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q04-1_2,中,元数据待核风险,CPHO42-Q04-1_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q04-1_2-科学推理,中,编码把握度,CPHO42-Q04-1_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q04-1_2-科学论证,中,证据文本薄弱,CPHO42-Q04-1_2,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q04-1_2-质疑创新,中,证据文本薄弱,CPHO42-Q04-1_2,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q04-2-模型建构,中,编码把握度,CPHO42-Q04-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q04-2-模型建构,中,高等级边界,CPHO42-Q04-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q04-2,中,元数据待核风险,CPHO42-Q04-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q04-2-科学推理,中,编码把握度,CPHO42-Q04-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q04-2-科学推理,中,高等级边界,CPHO42-Q04-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q04-2-科学论证,中,编码把握度,CPHO42-Q04-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-1-模型建构,中,编码把握度,CPHO42-Q05-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q05-1,中,元数据待核风险,CPHO42-Q05-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-1-科学推理,中,编码把握度,CPHO42-Q05-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-1-科学论证,中,证据文本薄弱,CPHO42-Q05-1,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-1-质疑创新,中,证据文本薄弱,CPHO42-Q05-1,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-2_1-模型建构,中,编码把握度,CPHO42-Q05-2_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q05-2_1,中,元数据待核风险,CPHO42-Q05-2_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-2_1-科学推理,中,编码把握度,CPHO42-Q05-2_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-2_1-科学论证,中,编码把握度,CPHO42-Q05-2_1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-2_1-科学论证,中,证据文本薄弱,CPHO42-Q05-2_1,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-2_1-质疑创新,中,证据文本薄弱,CPHO42-Q05-2_1,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-2_2-模型建构,中,编码把握度,CPHO42-Q05-2_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q05-2_2-模型建构,中,高等级边界,CPHO42-Q05-2_2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q05-2_2,中,元数据待核风险,CPHO42-Q05-2_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-2_2-科学推理,中,编码把握度,CPHO42-Q05-2_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q05-2_2-科学推理,中,高等级边界,CPHO42-Q05-2_2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-2_2-科学论证,中,编码把握度,CPHO42-Q05-2_2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-2_2-质疑创新,中,证据文本薄弱,CPHO42-Q05-2_2,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-3_1-模型建构,中,编码把握度,CPHO42-Q05-3_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q05-3_1-模型建构,中,高等级边界,CPHO42-Q05-3_1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q05-3_1,中,元数据待核风险,CPHO42-Q05-3_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-3_1-科学推理,中,编码把握度,CPHO42-Q05-3_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-3_1-科学论证,中,证据文本薄弱,CPHO42-Q05-3_1,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-3_1-质疑创新,中,证据文本薄弱,CPHO42-Q05-3_1,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-3_2-模型建构,中,编码把握度,CPHO42-Q05-3_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q05-3_2-模型建构,中,高等级边界,CPHO42-Q05-3_2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q05-3_2,中,元数据待核风险,CPHO42-Q05-3_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-3_2-科学推理,中,编码把握度,CPHO42-Q05-3_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q05-3_2-科学推理,中,高等级边界,CPHO42-Q05-3_2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-3_2-科学论证,中,编码把握度,CPHO42-Q05-3_2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-3_3-模型建构,中,编码把握度,CPHO42-Q05-3_3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q05-3_3,中,元数据待核风险,CPHO42-Q05-3_3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q05-3_3-科学推理,中,编码把握度,CPHO42-Q05-3_3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-3_3-科学论证,中,证据文本薄弱,CPHO42-Q05-3_3,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q05-3_3-质疑创新,中,证据文本薄弱,CPHO42-Q05-3_3,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-1_1-模型建构,中,编码把握度,CPHO42-Q06-1_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q06-1_1,中,元数据待核风险,CPHO42-Q06-1_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-1_1-科学推理,中,编码把握度,CPHO42-Q06-1_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-1_1-科学论证,中,编码把握度,CPHO42-Q06-1_1,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q06-1_1-质疑创新,中,证据文本薄弱,CPHO42-Q06-1_1,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-1_2-模型建构,中,编码把握度,CPHO42-Q06-1_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q06-1_2,中,元数据待核风险,CPHO42-Q06-1_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-1_2-科学推理,中,编码把握度,CPHO42-Q06-1_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q06-1_2-科学论证,中,证据文本薄弱,CPHO42-Q06-1_2,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q06-1_2-质疑创新,中,证据文本薄弱,CPHO42-Q06-1_2,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-2_1-模型建构,中,编码把握度,CPHO42-Q06-2_1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q06-2_1,中,元数据待核风险,CPHO42-Q06-2_1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-2_1-科学推理,中,编码把握度,CPHO42-Q06-2_1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q06-2_1-质疑创新,中,证据文本薄弱,CPHO42-Q06-2_1,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-2_2-模型建构,中,编码把握度,CPHO42-Q06-2_2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q06-2_2,中,元数据待核风险,CPHO42-Q06-2_2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-2_2-科学推理,中,编码把握度,CPHO42-Q06-2_2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q06-2_2-科学论证,中,证据文本薄弱,CPHO42-Q06-2_2,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q06-2_2-质疑创新,中,证据文本薄弱,CPHO42-Q06-2_2,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-2_3-模型建构,中,编码把握度,CPHO42-Q06-2_3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q06-2_3-模型建构,中,高等级边界,CPHO42-Q06-2_3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q06-2_3,中,元数据待核风险,CPHO42-Q06-2_3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-2_3-科学推理,中,编码把握度,CPHO42-Q06-2_3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q06-2_3-科学推理,中,高等级边界,CPHO42-Q06-2_3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q06-2_3-科学论证,中,编码把握度,CPHO42-Q06-2_3,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q06-2_3-质疑创新,中,证据文本薄弱,CPHO42-Q06-2_3,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q07-1-模型建构,中,编码把握度,CPHO42-Q07-1,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q07-1-模型建构,中,高等级边界,CPHO42-Q07-1,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q07-1,中,元数据待核风险,CPHO42-Q07-1,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q07-1-科学推理,中,编码把握度,CPHO42-Q07-1,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q07-1-科学推理,中,高等级边界,CPHO42-Q07-1,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q07-1-科学论证,中,证据文本薄弱,CPHO42-Q07-1,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q07-2-模型建构,中,编码把握度,CPHO42-Q07-2,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q07-2-模型建构,中,高等级边界,CPHO42-Q07-2,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q07-2,中,元数据待核风险,CPHO42-Q07-2,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q07-2-科学推理,中,编码把握度,CPHO42-Q07-2,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q07-2-科学推理,中,高等级边界,CPHO42-Q07-2,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-CONFIDENCE-CPHO42-Q07-2-科学论证,中,编码把握度,CPHO42-Q07-2,科学论证,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q07-2-质疑创新,中,证据文本薄弱,CPHO42-Q07-2,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-CONFIDENCE-CPHO42-Q07-3-模型建构,中,编码把握度,CPHO42-Q07-3,模型建构,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q07-3-模型建构,中,高等级边界,CPHO42-Q07-3,模型建构,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-NOTES-REVIEW-CPHO42-Q07-3,中,元数据待核风险,CPHO42-Q07-3,,notes,该记录元数据备注含待人工校对、OCR、公式或复核提示。,在正式编码前对照原始PDF销项相关文本或公式问题。,待处理
+RISK-CONFIDENCE-CPHO42-Q07-3-科学推理,中,编码把握度,CPHO42-Q07-3,科学推理,confidence,Codex试编码把握度为“中”。,正式编码前由评分者重点复核证据句与等级边界。,待处理
+RISK-L4-CPHO42-Q07-3-科学推理,中,高等级边界,CPHO42-Q07-3,科学推理,level,该记录被试编码为 L4，易受“复杂计算等于高阶”误判影响。,按内部V2手册复核是否确有迁移、修正、一般化、递推、优化或开放构造要求。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q07-3-科学论证,中,证据文本薄弱,CPHO42-Q07-3,科学论证,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-EVIDENCE-SHORT-CPHO42-Q07-3-质疑创新,中,证据文本薄弱,CPHO42-Q07-3,质疑创新,evidence,判定证据过短，难以支撑复核。,补充能回到题干或参考解答步骤的证据句。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q01-1,中,人工校对未销项,CPHO35-Q01-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q01-2,中,人工校对未销项,CPHO35-Q01-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q02-1,中,人工校对未销项,CPHO35-Q02-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q02-2,中,人工校对未销项,CPHO35-Q02-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q02-3,中,人工校对未销项,CPHO35-Q02-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q02-4,中,人工校对未销项,CPHO35-Q02-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q03-1,高,人工校对未销项,CPHO35-Q03-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q03-2,高,人工校对未销项,CPHO35-Q03-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q03-3,高,人工校对未销项,CPHO35-Q03-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q03-4,高,人工校对未销项,CPHO35-Q03-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q04-1,中,人工校对未销项,CPHO35-Q04-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q04-2,中,人工校对未销项,CPHO35-Q04-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q04-3,中,人工校对未销项,CPHO35-Q04-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q04-4,中,人工校对未销项,CPHO35-Q04-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q05-1,中,人工校对未销项,CPHO35-Q05-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q05-2,中,人工校对未销项,CPHO35-Q05-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q05-3,中,人工校对未销项,CPHO35-Q05-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q06-1,高,人工校对未销项,CPHO35-Q06-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q06-2,高,人工校对未销项,CPHO35-Q06-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q06-3,高,人工校对未销项,CPHO35-Q06-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q07-1,中,人工校对未销项,CPHO35-Q07-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q07-2,中,人工校对未销项,CPHO35-Q07-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;第35届分值边界复核;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q08-1,中,人工校对未销项,CPHO35-Q08-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q08-2,中,人工校对未销项,CPHO35-Q08-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q08-3,中,人工校对未销项,CPHO35-Q08-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO35-Q08-4,中,人工校对未销项,CPHO35-Q08-4,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;第35届分值边界复核。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q01-1,高,人工校对未销项,CPHO36-Q01-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q01-2,高,人工校对未销项,CPHO36-Q01-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q02-1,中,人工校对未销项,CPHO36-Q02-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q02-2,中,人工校对未销项,CPHO36-Q02-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q03-1,中,人工校对未销项,CPHO36-Q03-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q03-2,中,人工校对未销项,CPHO36-Q03-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q03-3,中,人工校对未销项,CPHO36-Q03-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q03-4,中,人工校对未销项,CPHO36-Q03-4,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q03-5,中,人工校对未销项,CPHO36-Q03-5,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q04-1,中,人工校对未销项,CPHO36-Q04-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q04-2,中,人工校对未销项,CPHO36-Q04-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q04-3,中,人工校对未销项,CPHO36-Q04-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q05-1,中,人工校对未销项,CPHO36-Q05-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q05-2,中,人工校对未销项,CPHO36-Q05-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q05-3,中,人工校对未销项,CPHO36-Q05-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q06-1,中,人工校对未销项,CPHO36-Q06-1,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q06-2,中,人工校对未销项,CPHO36-Q06-2,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q07-1,高,人工校对未销项,CPHO36-Q07-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q07-2,高,人工校对未销项,CPHO36-Q07-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q07-3,高,人工校对未销项,CPHO36-Q07-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q07-4,高,人工校对未销项,CPHO36-Q07-4,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO36-Q07-5,高,人工校对未销项,CPHO36-Q07-5,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q01-1,高,人工校对未销项,CPHO37-Q01-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q01-2,高,人工校对未销项,CPHO37-Q01-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q02-1,高,人工校对未销项,CPHO37-Q02-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q02-2,高,人工校对未销项,CPHO37-Q02-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q03-1,高,人工校对未销项,CPHO37-Q03-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q03-2,高,人工校对未销项,CPHO37-Q03-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q03-3,高,人工校对未销项,CPHO37-Q03-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q03-4,高,人工校对未销项,CPHO37-Q03-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q04-1,高,人工校对未销项,CPHO37-Q04-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q04-2,高,人工校对未销项,CPHO37-Q04-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q05-1,高,人工校对未销项,CPHO37-Q05-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q05-2,高,人工校对未销项,CPHO37-Q05-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q06-1,高,人工校对未销项,CPHO37-Q06-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q06-2,高,人工校对未销项,CPHO37-Q06-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q06-3,高,人工校对未销项,CPHO37-Q06-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q07-1,高,人工校对未销项,CPHO37-Q07-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q07-2,高,人工校对未销项,CPHO37-Q07-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q07-3,高,人工校对未销项,CPHO37-Q07-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q08-1,高,人工校对未销项,CPHO37-Q08-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q08-2,高,人工校对未销项,CPHO37-Q08-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q08-3,高,人工校对未销项,CPHO37-Q08-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO37-Q08-4,高,人工校对未销项,CPHO37-Q08-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q01-1,高,人工校对未销项,CPHO38-Q01-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q01-2_i,高,人工校对未销项,CPHO38-Q01-2_i,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q01-2_ii,高,人工校对未销项,CPHO38-Q01-2_ii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q02-1,高,人工校对未销项,CPHO38-Q02-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q02-2,高,人工校对未销项,CPHO38-Q02-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q03-1,高,人工校对未销项,CPHO38-Q03-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q03-2,高,人工校对未销项,CPHO38-Q03-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q03-3,高,人工校对未销项,CPHO38-Q03-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q04-1,高,人工校对未销项,CPHO38-Q04-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q04-2,高,人工校对未销项,CPHO38-Q04-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q04-3,高,人工校对未销项,CPHO38-Q04-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q05-1,高,人工校对未销项,CPHO38-Q05-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q05-2,高,人工校对未销项,CPHO38-Q05-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q05-3,高,人工校对未销项,CPHO38-Q05-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q05-4,高,人工校对未销项,CPHO38-Q05-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q06-1,高,人工校对未销项,CPHO38-Q06-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q06-2,高,人工校对未销项,CPHO38-Q06-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q06-3,高,人工校对未销项,CPHO38-Q06-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q06-4,高,人工校对未销项,CPHO38-Q06-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q07-1,高,人工校对未销项,CPHO38-Q07-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q07-2,高,人工校对未销项,CPHO38-Q07-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q07-3,高,人工校对未销项,CPHO38-Q07-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q08-1,高,人工校对未销项,CPHO38-Q08-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q08-2,高,人工校对未销项,CPHO38-Q08-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO38-Q08-3,高,人工校对未销项,CPHO38-Q08-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q01-1,高,人工校对未销项,CPHO39-Q01-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q01-2,高,人工校对未销项,CPHO39-Q01-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q01-3,高,人工校对未销项,CPHO39-Q01-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q02-1,中,人工校对未销项,CPHO39-Q02-1,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q02-2,中,人工校对未销项,CPHO39-Q02-2,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q03-1,高,人工校对未销项,CPHO39-Q03-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q03-2,高,人工校对未销项,CPHO39-Q03-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q03-3,高,人工校对未销项,CPHO39-Q03-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q03-4,高,人工校对未销项,CPHO39-Q03-4,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q04-1,高,人工校对未销项,CPHO39-Q04-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q04-2,高,人工校对未销项,CPHO39-Q04-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q04-3,高,人工校对未销项,CPHO39-Q04-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q04-4,高,人工校对未销项,CPHO39-Q04-4,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q04-5,高,人工校对未销项,CPHO39-Q04-5,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q05-1,中,人工校对未销项,CPHO39-Q05-1,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q05-2,中,人工校对未销项,CPHO39-Q05-2,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q05-3,中,人工校对未销项,CPHO39-Q05-3,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q05-4,中,人工校对未销项,CPHO39-Q05-4,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q06-1,高,人工校对未销项,CPHO39-Q06-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q06-2,高,人工校对未销项,CPHO39-Q06-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q06-3,高,人工校对未销项,CPHO39-Q06-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q06-4,高,人工校对未销项,CPHO39-Q06-4,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q06-5,高,人工校对未销项,CPHO39-Q06-5,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题图裁边与图注校对。,优先处理：打开题图与原PDF页对照，确认图形、箭头、标签、图号、图注无缺失；若邻近文字影响论文使用，记录为需重绘，不得删除来源/权属水印。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q07-1,中,人工校对未销项,CPHO39-Q07-1,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q07-2,中,人工校对未销项,CPHO39-Q07-2,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q07-3,中,人工校对未销项,CPHO39-Q07-3,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO39-Q07-4,中,人工校对未销项,CPHO39-Q07-4,,manual_review_checklist,关联待校对问题 1 条；类型：公式与特殊符号校对。,优先处理：对照原始题目和参考解答，核对公式、上下标、希腊字母、矢量、积分/微分符号、单位、题中常量和答案表达式。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q01-1_i,高,人工校对未销项,CPHO40-Q01-1_i,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q01-1_ii,高,人工校对未销项,CPHO40-Q01-1_ii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q01-2_i,高,人工校对未销项,CPHO40-Q01-2_i,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q01-2_ii,高,人工校对未销项,CPHO40-Q01-2_ii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q02-1,高,人工校对未销项,CPHO40-Q02-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q02-2,高,人工校对未销项,CPHO40-Q02-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q02-3,高,人工校对未销项,CPHO40-Q02-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q02-4,高,人工校对未销项,CPHO40-Q02-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q02-5,高,人工校对未销项,CPHO40-Q02-5,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q03-1_i,高,人工校对未销项,CPHO40-Q03-1_i,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q03-1_ii,高,人工校对未销项,CPHO40-Q03-1_ii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q03-1_iii,高,人工校对未销项,CPHO40-Q03-1_iii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q03-1_iv,高,人工校对未销项,CPHO40-Q03-1_iv,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q03-1_v,高,人工校对未销项,CPHO40-Q03-1_v,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q03-2,高,人工校对未销项,CPHO40-Q03-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q04-1,高,人工校对未销项,CPHO40-Q04-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q04-2,高,人工校对未销项,CPHO40-Q04-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q04-3,高,人工校对未销项,CPHO40-Q04-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q05-1,高,人工校对未销项,CPHO40-Q05-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q05-2_i,高,人工校对未销项,CPHO40-Q05-2_i,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q05-2_ii,高,人工校对未销项,CPHO40-Q05-2_ii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q05-2_iii,高,人工校对未销项,CPHO40-Q05-2_iii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q05-2_iv,高,人工校对未销项,CPHO40-Q05-2_iv,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q06-1,高,人工校对未销项,CPHO40-Q06-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q06-2,高,人工校对未销项,CPHO40-Q06-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q06-3,高,人工校对未销项,CPHO40-Q06-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q06-4,高,人工校对未销项,CPHO40-Q06-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q07-1,高,人工校对未销项,CPHO40-Q07-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q07-2,高,人工校对未销项,CPHO40-Q07-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q07-3,高,人工校对未销项,CPHO40-Q07-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q07-4,高,人工校对未销项,CPHO40-Q07-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q08-1_i,高,人工校对未销项,CPHO40-Q08-1_i,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q08-1_ii,高,人工校对未销项,CPHO40-Q08-1_ii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q08-1_iii,高,人工校对未销项,CPHO40-Q08-1_iii,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q08-2,高,人工校对未销项,CPHO40-Q08-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO40-Q08-3,高,人工校对未销项,CPHO40-Q08-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q01-1_1,高,人工校对未销项,CPHO41-Q01-1_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q01-1_2,高,人工校对未销项,CPHO41-Q01-1_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q01-2,高,人工校对未销项,CPHO41-Q01-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q01-3,高,人工校对未销项,CPHO41-Q01-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-1,高,人工校对未销项,CPHO41-Q02-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-2_1,高,人工校对未销项,CPHO41-Q02-2_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-2_2,高,人工校对未销项,CPHO41-Q02-2_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-2_3,高,人工校对未销项,CPHO41-Q02-2_3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-2_4,高,人工校对未销项,CPHO41-Q02-2_4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-3,高,人工校对未销项,CPHO41-Q02-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-4_1,高,人工校对未销项,CPHO41-Q02-4_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-4_2,高,人工校对未销项,CPHO41-Q02-4_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q02-4_3,高,人工校对未销项,CPHO41-Q02-4_3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q03-1,高,人工校对未销项,CPHO41-Q03-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q03-2,高,人工校对未销项,CPHO41-Q03-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q04-1,高,人工校对未销项,CPHO41-Q04-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q04-2,高,人工校对未销项,CPHO41-Q04-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q05-1,高,人工校对未销项,CPHO41-Q05-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q05-2,高,人工校对未销项,CPHO41-Q05-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q05-3,高,人工校对未销项,CPHO41-Q05-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q05-4,高,人工校对未销项,CPHO41-Q05-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q06-1,高,人工校对未销项,CPHO41-Q06-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q06-2,高,人工校对未销项,CPHO41-Q06-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q06-3,高,人工校对未销项,CPHO41-Q06-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q06-4,高,人工校对未销项,CPHO41-Q06-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q07-1,高,人工校对未销项,CPHO41-Q07-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q07-2,高,人工校对未销项,CPHO41-Q07-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q07-3_1,高,人工校对未销项,CPHO41-Q07-3_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q07-3_2,高,人工校对未销项,CPHO41-Q07-3_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q07-4,高,人工校对未销项,CPHO41-Q07-4,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q07-5_1,高,人工校对未销项,CPHO41-Q07-5_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO41-Q07-5_2,高,人工校对未销项,CPHO41-Q07-5_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q01-1,高,人工校对未销项,CPHO42-Q01-1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q01-2,高,人工校对未销项,CPHO42-Q01-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q01-3,高,人工校对未销项,CPHO42-Q01-3,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q02-1_1,高,人工校对未销项,CPHO42-Q02-1_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q02-1_2,高,人工校对未销项,CPHO42-Q02-1_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q02-1_3,高,人工校对未销项,CPHO42-Q02-1_3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q02-2_1,高,人工校对未销项,CPHO42-Q02-2_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q02-2_2,高,人工校对未销项,CPHO42-Q02-2_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q02-2_3,高,人工校对未销项,CPHO42-Q02-2_3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q03-1,高,人工校对未销项,CPHO42-Q03-1,,manual_review_checklist,关联待校对问题 4 条；类型：公式与特殊符号校对;解答放大图一致性核对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q03-2_1,高,人工校对未销项,CPHO42-Q03-2_1,,manual_review_checklist,关联待校对问题 4 条；类型：公式与特殊符号校对;解答放大图一致性核对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q03-2_2,高,人工校对未销项,CPHO42-Q03-2_2,,manual_review_checklist,关联待校对问题 4 条；类型：公式与特殊符号校对;解答放大图一致性核对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q04-1_1,高,人工校对未销项,CPHO42-Q04-1_1,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q04-1_2,高,人工校对未销项,CPHO42-Q04-1_2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q04-2,高,人工校对未销项,CPHO42-Q04-2,,manual_review_checklist,关联待校对问题 2 条；类型：公式与特殊符号校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q05-1,高,人工校对未销项,CPHO42-Q05-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q05-2_1,高,人工校对未销项,CPHO42-Q05-2_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q05-2_2,高,人工校对未销项,CPHO42-Q05-2_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q05-3_1,高,人工校对未销项,CPHO42-Q05-3_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q05-3_2,高,人工校对未销项,CPHO42-Q05-3_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q05-3_3,高,人工校对未销项,CPHO42-Q05-3_3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q06-1_1,高,人工校对未销项,CPHO42-Q06-1_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q06-1_2,高,人工校对未销项,CPHO42-Q06-1_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q06-2_1,高,人工校对未销项,CPHO42-Q06-2_1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q06-2_2,高,人工校对未销项,CPHO42-Q06-2_2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q06-2_3,高,人工校对未销项,CPHO42-Q06-2_3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q07-1,高,人工校对未销项,CPHO42-Q07-1,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q07-2,高,人工校对未销项,CPHO42-Q07-2,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理
+RISK-MANUAL-REVIEW-CPHO42-Q07-3,高,人工校对未销项,CPHO42-Q07-3,,manual_review_checklist,关联待校对问题 3 条；类型：公式与特殊符号校对;题图裁边与图注校对;题干OCR校对。,优先处理：逐页对照原始PDF题面，核对题干文字、题号、小问边界、物理量上下标、单位和条件；不得凭经验补改。,待处理

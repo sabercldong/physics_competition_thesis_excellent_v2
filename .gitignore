@@ -10,3 +10,37 @@ venv/
 *.log
 07_analysis/results/generated/*
 10_outputs/drafts/*
+
+# Human-subjects raw or identifying materials
+99_private_data/
+05_fieldwork/raw_private/
+06_teaching_validation/raw_private/
+*_PRIVATE.csv
+*_private.csv
+*.m4a
+*.mp3
+*.wav
+*.mp4
+*.mov
+
+# Local scratch work and LaTeX build intermediates
+tmp/
+10_outputs/论文初稿_LaTeX/build/*.aux
+10_outputs/论文初稿_LaTeX/build/*.lof
+10_outputs/论文初稿_LaTeX/build/*.lot
+10_outputs/论文初稿_LaTeX/build/*.synctex.gz
+10_outputs/论文初稿_LaTeX/build/*.toc
+
+# Local visual-API experiments containing machine-specific credentials
+03_corpus/manual_review_transcripts/CPHO42-Q02_vision_quickcheck.py
+03_corpus/manual_review_transcripts/CPHO42-Q02_vision_review.py
+03_corpus/manual_review_transcripts/CPHO42-Q02_vision_review.sh
+03_corpus/manual_review_transcripts/CPHO42-Q02_vision_review_v2.py
+03_corpus/manual_review_transcripts/CPHO42-Q02_vision_review_v3.py
+03_corpus/manual_review_transcripts/test_api.py
+03_corpus/manual_review_transcripts/vl_analyze_paper_p4.py
+03_corpus/manual_review_transcripts/vl_analyze_paper_p5.py
+03_corpus/manual_review_transcripts/vl_analyze_solution.py
+03_corpus/manual_review_transcripts/vl_full_analysis.py
+03_corpus/manual_review_transcripts/vl_paper_only.py
+03_corpus/manual_review_transcripts/vl_test.py

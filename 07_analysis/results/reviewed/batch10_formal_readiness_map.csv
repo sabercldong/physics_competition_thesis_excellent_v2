@@ -1,0 +1,6 @@
+﻿formal_task,current_status,blocking_reason,prepared_artifact,next_action
+G4-01 双人独立编码,阻塞,尚无两名真实评分者独立填写的正式编码表；当前仅有Codex内部试编码。,preformal_review_log.csv; pilot_coding_round1_template.csv,完成样本复核后再决定是否进入真实双评分者编码。
+G4-02 分歧裁决与日志,阻塞,尚无真实双评分者分歧数据，不能裁决。,preformal_review_log.csv,真实双评分者完成后再生成分歧日志。
+G4-03 数据清洗与唯一分析表,内部候选已准备，正式版阻塞,正式唯一表必须基于裁决后编码；当前只能生成内部候选表。,internal_analysis_candidate_v0.csv,完成正式编码与裁决后替换输入。
+G4-04 至 G4-08 分析与结果稳健性,内部预演已准备，正式版阻塞,正式分析必须等待正式唯一分析表。,batch10_internal_*,保留为脚本和表格模板，不写入正式结果。
+全局版本边界,高风险,内部底稿源试编码来自coding_manual_v1，不能直接视为V2正式编码。,internal_coding_quality_report.md,按最终手册重新判读或生成修订日志。

@@ -1,0 +1,16 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO40-Q02,第(1)问小扰动运动方程,7,"m r d^2theta/dt^2 = m g sin(theta) - nRT/[r(pi/2-theta)] + nRT/[r(pi/2+theta)]",答案式①,答案页支持，待最终排版复核,用于核对切向动力学方程；左端为m r乘角加速度，正式排版前需对照原页确认r的幂次。
+F02,CPHO40-Q02,第(1)问小量展开,7,"sin(theta) approx theta - theta^3/6; 1/(pi/2-theta) approx 2/pi + 4theta/pi^2 + 8theta^2/pi^3 + 16theta^3/pi^4; 1/(pi/2+theta) approx 2/pi - 4theta/pi^2 + 8theta^2/pi^3 - 16theta^3/pi^4",答案式②,答案页支持，待最终排版复核,用于临界温度和T=Tc三阶项判断；展开系数需重点核对。
+F03,CPHO40-Q02,第(1)问线性化方程与稳定条件,7-8,"d^2theta/dt^2 = (1/r)[g - 8nRT/(pi^2 r m)] theta; stability requires g - 8nRT/(pi^2 r m) < 0",答案式③至④,答案页支持，待最终排版复核,与第(1)问稳定平衡条件直接对应。
+F04,CPHO40-Q02,第(1)问临界温度与T>Tc频率,8,"T > pi^2 m g r/(8nR); T_c = pi^2 m g r/(8nR); omega = sqrt{ (1/r)[8nRT/(pi^2 r m) - g] }",答案式⑤至⑦,答案页支持，待最终排版复核,与第(1)问直接对应；根号范围和T_c下标需保留。
+F05,CPHO40-Q02,第(2)问T=Tc稳定性,8,"d^2theta/dt^2 = -[(24+pi^2)g/(6pi^2 r)] theta^3; theta=0 has restoring force proportional to theta^3, so it is stable",答案式⑧至⑨,答案页支持，待最终排版复核,与第(2)问直接对应；恢复力为三阶小量。
+F06,CPHO40-Q02,第(3)问非零平衡位置方程,8,"m g sin(theta_0) - nRT/[r(pi/2-theta_0)] + nRT/[r(pi/2+theta_0)] = 0; 2nRT/(m g r) = (pi^2/4 - theta_0^2) sin(theta_0)/theta_0",答案式⑩和⑩',答案页支持，待最终排版复核,与第(3)问稳定平衡位置方程直接对应；theta_0 != 0。
+F07,CPHO40-Q02,第(3)问用Tc改写平衡方程,8,"T/T_c = [1 - 4theta_0^2/pi^2] sin(theta_0)/theta_0",答案式⑪,答案页支持，待最终排版复核,题面要求可把T_c视为已知参量；本式用于后续近似。
+F08,CPHO40-Q02,第(3)问T略小于Tc时theta_0近似,8,"T/T_c approx 1 - [(24+pi^2)/(6pi^2)] theta_0^2; theta_0 = +/- sqrt{ [6pi^2/(24+pi^2)] [(T_c-T)/T_c] }",答案式⑫至⑬,答案页支持，待最终排版复核,与第(3)问直接对应；正负号表示左右两侧平衡位置。
+F09,CPHO40-Q02,第(4)问平衡位置附近小扰动方程,8-9,"m r d^2theta/dt^2 = m g sin(theta_0+theta) - nRT/[r(pi/2-theta_0-theta)] + nRT/[r(pi/2+theta_0+theta)]",答案式⑭,答案页支持，待最终排版复核,这里theta表示相对theta_0的微小扰动；正式说明需避免与题面角位置混淆。
+F10,CPHO40-Q02,第(4)问小扰动展开,8-9,"sin(theta_0+theta) approx sin(theta_0)+theta cos(theta_0); 1/(pi/2-theta_0-theta) approx 1/(pi/2-theta_0)+theta/(pi/2-theta_0)^2; 1/(pi/2+theta_0+theta) approx 1/(pi/2+theta_0)-theta/(pi/2+theta_0)^2",答案式⑮至⑰,答案页支持，待最终排版复核,用于推导omega_0(theta_0)。
+F11,CPHO40-Q02,第(4)问omega_0(theta_0),9,"d^2theta/dt^2 = [g cos(theta_0)/r][1 - (tan(theta_0)/theta_0)(pi^2/2+2theta_0^2)/(pi^2/2-2theta_0^2)] theta; omega_0 = sqrt{ [g cos(theta_0)/r][(tan(theta_0)/theta_0)(pi^2/2+2theta_0^2)/(pi^2/2-2theta_0^2)-1] }",答案式⑱至⑲,答案页支持，需重点排版复核,与第(4)问omega_0(theta_0)直接对应；长分式和根号范围需逐项核对。
+F12,CPHO40-Q02,第(4)问温度略大于/略小于Tc的频率依赖,9,"For T>T_c: omega = sqrt{(g/r)[(T-T_c)/T_c]}; for T<T_c and |theta_0|<<1: omega_0 approx sqrt{(g/r)[(24+pi^2)/(3pi^2)] theta_0^2} = sqrt{(2g/r)[(T_c-T)/T_c]}",答案式⑳至㉑,答案页支持，待最终排版复核,与第(4)问温度依赖直接对应；T略大于Tc来自第(1)结果。
+F13,CPHO40-Q02,第(5)问能量积分,9,"integral_0^thetadot m r^2 thetadot d(thetadot) = integral_0^theta [m g sin(theta) - nRT/(r(pi/2-theta)) + nRT/(r(pi/2+theta))] dtheta",答案式㉒,答案页支持，需重点排版复核,答案页公式排版较密；本表登记能量积分入口，正式使用前需对照原页。
+F14,CPHO40-Q02,第(5)问角速度大小,9,"(1/2)m r^2 thetadot^2 = m g(1-cos theta) + (nRT/r) ln(1-4theta^2/pi^2); |thetadot| = sqrt{ [2g/r](1-cos theta) + [2nRT/(m r^2)] ln(1-4theta^2/pi^2) }",答案式㉓至㉔,答案页支持，待最终排版复核,与第(5)问直接对应；对数项为负值，适用角位置需在可达范围内。
+F15,CPHO40-Q02,答案边界与评分标准,9,"第2题评分标准列出第(1)问12分、第(2)问4分、第(3)问7分、第(4)问11分、第(5)问6分；第9页下部开始第3题答案。",视觉检查和评分标准,边界已记录，待最终复核,第9页下部只作边界确认，不得纳入第2题公式证据。

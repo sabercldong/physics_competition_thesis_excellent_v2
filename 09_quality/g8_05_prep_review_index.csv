@@ -1,0 +1,16 @@
+index_id,file,material_type,reviewer_use,current_status,read_first,notes
+G8-05-IDX001,PROJECT_STATUS.md,项目状态,了解当前阶段/已完成/关键阻塞/下一任务,已更新到G8-05-PREP,yes,先看关键阻塞项避免误读正文
+G8-05-IDX002,TASKS.md,任务清单,查看G0-G8完成和阻塞状态,已更新G8-04完成且G8-05进行中,yes,用来判断哪些工作只是准备状态
+G8-05-IDX003,08_manuscript/01_introduction.md,论文正文,审阅研究问题/路线/技术路线/创新候选,证据边界版草稿,yes,重点看研究问题是否收束
+G8-05-IDX004,08_manuscript/02_theory.md,论文正文,审阅科学思维/SOLO/两层编码理论框架,核验式理论草稿,yes,SOLO和竞赛文献仍需补全文
+G8-05-IDX005,08_manuscript/03_methods.md,论文正文,审阅语料/分析单位/编码流程/质量控制,方法准备版草稿,yes,正式评分者和分歧裁决尚未完成
+G8-05-IDX006,08_manuscript/04_results.md,论文正文,审阅结果章结构和正式门槛,正式结果占位,yes,不要当作正式结果章
+G8-05-IDX007,08_manuscript/05_cases_and_diagnosis.md,论文正文,审阅案例候选/教学转化证据需求,内部预备稿,yes,不要当作教学诊断结果
+G8-05-IDX008,09_quality/g8_04_verify_lite_report.md,质量审计,查看第1至5章残留风险核查结论,已完成,yes,确认未把内部预演写成正式结论
+G8-05-IDX009,09_quality/g8_05_prep_review_questions.csv,反馈清单,逐项记录人工确认意见,本轮新增,yes,审阅者可按问题逐项反馈
+G8-05-IDX010,09_quality/g8_05_prep_gap_register.csv,缺口清单,查看致命缺口和补证动作,本轮新增,yes,决定下一步回G4/G5/G2/G0哪条线
+G8-05-IDX011,08_manuscript/reference_readiness_register.csv,引用准备,查看参考文献候选状态,准备清单,optional,正式参考文献格式尚未完成
+G8-05-IDX012,08_manuscript/appendix_material_register.csv,附录准备,查看附录候选材料,准备清单,optional,附录需等待学校模板和正式结果
+G8-05-IDX013,08_manuscript/data_availability_prep_register.csv,数据说明准备,查看数据可用性边界,准备清单,optional,敏感材料不得进入公开复现包
+G8-05-IDX014,07_analysis/results/reviewed/prep30_gate_register.csv,正式编码门槛,查看正式分析阻塞项,准备输出,optional,不是正式结果
+G8-05-IDX015,03_corpus/manual_review_checklist.csv,语料校对,查看154条待核项,待人工销项,optional,正式编码前必须处理或标记风险

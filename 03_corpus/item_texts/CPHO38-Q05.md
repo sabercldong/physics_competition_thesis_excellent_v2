@@ -4,7 +4,7 @@
 
 - 试题文件：`03_corpus/raw_papers/cpho_38_2021_fusai_paper_solution_candidate.pdf`
 - 试题页码：2
-- 解答页码：12-13
+- 解答页码：12-14（本轮视觉检查确认第14页上半仍为第5题答案和评分参考；第14页下半进入第6题）
 - 题图：03_corpus/item_assets/CPHO38-Q05-figure1-page2-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取。公式、特殊符号、图注和OCR错字需人工校对。
 
@@ -36,6 +36,20 @@ Jo(B) = f(B = 0) + BB
 TANASE FEAL h = 6.626x10 Js, BERK SE AHI Ay = 138x107 J/K ，单位原子质让tu=1.66x102 ke 。
 第2页,共4页
 ```
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q05`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q05_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q05_formula_check_v1.csv`
+- 题面页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q05-paper-page-2.png`
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q05-solution-page-11.png`（第4题尾部边界页）
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q05-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q05-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q05-solution-page-14.png`
+
+当前状态：原OCR文本仅保留为错误来源与处理痕迹；正式编码前复核应优先使用V1转写稿、公式核对表和页面证据。经视觉检查，第5题题面从试题PDF第2页中部开始并在本页结束；第2页上半部为第4题尾部。第5题答案从PDF第12页下半部开始，延续至第14页上半部评分参考结束；第12页上半部和第14页下半部只作为边界确认。`CPHO38-Q05-FIG` 尚未关闭，图5a仍需独立图件校对。多普勒公式、频率失谐、塞曼系数 `beta`、磁场函数 `B(z)` 和 `z` 取值范围仍需最终逐式排版复核。
 
 ## 参考解答抽取文本
 

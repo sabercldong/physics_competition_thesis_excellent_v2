@@ -8,6 +8,21 @@
 - 题图：03_corpus/item_assets/CPHO40-Q06-figure1-page4-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务编号：`G1-07-A1-TRANSCRIBE-40Q06`
+- V1题面转写稿：`03_corpus/manual_review_transcripts/CPHO40-Q06_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO40-Q06_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q06-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q06-solution-page-16.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q06-solution-page-17.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q06-solution-page-18.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q06-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO40-Q06-solution-page-20.png`（第7题边界页）
+- 边界记录：第6题题面位于试题PDF第4页中部；答案从PDF第16页下部“六、”开始，至第19页上部评分标准结束，第19页下半部与第20页为第7题边界内容。
+- 当前状态：V1视觉转写完成，答案公式核对入口完成，待最终复核；未填写真实校对人和校对日期，不视为人工销项完成。
+
 ## 题干OCR抽取文本
 
 ```text

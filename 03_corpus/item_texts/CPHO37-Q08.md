@@ -8,6 +8,19 @@
 - 题图：03_corpus/item_assets/CPHO37-Q08-figure1-page4-raw.png;03_corpus/item_assets/CPHO37-Q08-figure2-page5-raw.png
 - 抽取状态：扫描页OCR抽取，已按页面视觉定位大题边界；公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-37Q08`
+- 题面V1转写稿：`03_corpus/manual_review_transcripts/CPHO37-Q08_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO37-Q08_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-paper-page-4.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-paper-page-5.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-solution-page-19.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-solution-page-20.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO37-Q08-solution-page-21.png`
+- 当前状态：原OCR文本仅保留为错误来源和追溯材料；正式编码前应以V1转写稿、公式核对表和页面证据作为复核入口。`CPHO37-Q08-FIG` 尚未销项；半波电压、1/4波片线性化、等效阻抗、并联谐振条件和调制效率表达式需重点最终复核。
+
 ## 题干OCR抽取文本
 
 ```text

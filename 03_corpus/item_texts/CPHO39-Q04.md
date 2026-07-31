@@ -8,6 +8,16 @@
 - 题图：03_corpus/item_assets/CPHO39-Q04-figure1-page2-raw.png
 - 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
 
+## G1-07-B1公式核对入口
+
+- 任务：`G1-07-B1-FORMULA-39Q04`
+- 队列：`03_corpus/manual_review_priority_followup.csv` 第079项 `CPHO39-Q04-FORMULA`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q04_formula_check_v1.csv`
+- 页面证据：`03_corpus/manual_review_renders/G1-07-B1/CPHO39-Q04-paper-page-2.png` 至 `CPHO39-Q04-paper-page-3.png`；`CPHO39-Q04-solution-page-12.png` 至 `CPHO39-Q04-solution-page-19.png`；`CPHO39-Q04-solution-boundary-next-page-20.png`
+- 当前状态：已建立答案公式核对入口，待最终复核；未填写真实校对人和校对日期。
+- 边界说明：本轮只登记题面常量、参考解答公式、图解法、受力图入口和评分标准的源页位置，不代表公式、特殊符号、题图、图注或正式编码证据已经完成真实人工销项。
+- 待最终复核重点：第14页式(14)符号，第15至17页第III象限参数条件中的幂次、不等号和临界条件，第17至19页稳定性推导中的式号、正负号和拐点验证，以及同题 `CPHO39-Q04-FIG` 题图/解题图风险。
+
 ## 题干抽取文本
 
 ```text

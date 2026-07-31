@@ -1,0 +1,5 @@
+source_group,source_id_or_bib_key,current_location,current_status,reason_excluded_from_formal_candidate_list,allowed_temporary_use,required_action_before_formal_reference
+SOLO理论,biggs1989solo,02_literature/references.bib,元数据与摘要已核验但全文待读,未完成全文阅读；不能替代SOLO任务/评价应用的完整论证,仅作工作候选和获取线索,获取SAGE或图书馆全文并填写阅读摘录
+物理竞赛研究,PCOMP-001至PCOMP-005,02_literature/*physics_competition*,题录目录或引用线索已定位但全文未读,未获得合法全文；不能写作既有研究结论或研究空白已证明,仅作全文获取和筛选线索,获取CNKI或期刊全文并完成筛选矩阵与阅读记录
+方法文献,METH-001/METH-002/METH-003/METH-005,02_literature/*content_analysis_reliability*,元数据定位但全文待读,未阅读全文；不能写具体方法要求、阈值或页码,仅作方法文献候选线索,申请学校数据库、合法电子书或馆际互借并补阅读记录
+科学思维测评,ST-001/ST-004,02_literature/scientific_thinking_access_audit.md,访问线索已定位但完整全文未读,未完成全文阅读；不能写成已读文献或正式综述结论,仅作后续全文获取线索,获取完整全文并补筛选矩阵、阅读记录和可支持主张

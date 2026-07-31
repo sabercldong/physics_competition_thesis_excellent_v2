@@ -1,0 +1,16 @@
+check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO40-Q05,第(1)问z方向受力条件,13,"z_hat . eE = ep/(4pi epsilon_0 r_0^3)(3cos^2 theta_0 - 1) = 0; cos theta_0 = +/- sqrt(3)/3",答案式①至②,答案页支持，待最终排版复核,第13页上部为第4题答案尾部；第5题答案从本页下部开始。
+F02,CPHO40-Q05,第(1)问向心力方向条件,14,"F = -3ep/(4pi epsilon_0 r_0^3) cos(theta_0) sin(theta_0) > 0; only cos(theta_0) < 0 is allowed",答案式③至④,答案页支持，待最终排版复核,与圆周运动所需向心力方向直接对应。
+F03,CPHO40-Q05,第(1)问圆周速度,14,"R = r_0 sin(theta_0); F = m v_0^2/R; v_0 = sqrt{[-3ep/(4pi epsilon_0 m r_0^2)] cos(theta_0)(1-cos^2 theta_0)} = sqrt{sqrt(3)ep/(6pi epsilon_0 m r_0^2)}",答案式⑤至⑥,答案页支持，需重点排版复核,根号嵌套和r_0幂次需正式排版复核。
+F04,CPHO40-Q05,第(2)(i)角动量与力矩,14,"L = r x mv = mr^2 dot(theta) n_hat; tau = r x eE = ep sin(theta)/(4pi epsilon_0 r^2) n_hat; n_hat = r_hat x theta_hat",答案式⑦至⑧,答案页支持，待最终排版复核,用于角动量定理；矢量方向符号需复核。
+F05,CPHO40-Q05,第(2)(i)角动量积分,14,"dL/dt = d(mr^2 dot(theta))/dt = ep sin(theta)/(4pi epsilon_0 r^2); L^2 + mep cos(theta)/(2pi epsilon_0) = constant",答案式⑨至⑩,答案页支持，待最终排版复核,由两边乘以L并积分得到。
+F06,CPHO40-Q05,第(2)(i)L(theta),14,"L^2 = [mep/(2pi epsilon_0)] [cos(theta_0) - cos(theta)]",答案式⑪,答案页支持，待最终排版复核,初始静止条件给出初始角动量为零。
+F07,CPHO40-Q05,第(2)(ii)电势与能量守恒,14,"phi = (p . r)/(4pi epsilon_0 r^3) = p cos(theta)/(4pi epsilon_0 r^2); (1/2)m(dot(r)^2 + r^2 dot(theta)^2) + ep cos(theta)/(4pi epsilon_0 r^2) = ep cos(theta_0)/(4pi epsilon_0 r_0^2)",答案式⑫,答案页支持，待最终排版复核,与初始静止条件和能量守恒直接对应。
+F08,CPHO40-Q05,第(2)(ii)径向动量表达,14,"p_r^2/(2m) + L^2/(2mr^2) + ep cos(theta)/(4pi epsilon_0 r^2) = ep cos(theta_0)/(4pi epsilon_0 r_0^2)",答案式⑬,答案页支持，待最终排版复核,其中p_r = m dot(r)，L = mr^2 dot(theta)。
+F09,CPHO40-Q05,第(2)(ii)径向速率,15,"v_r^2 = [ep cos(theta_0)/(2pi m epsilon_0)](1/r_0^2 - 1/r^2); v_r = sqrt{[ep cos(theta_0)/(2pi m epsilon_0)](1/r_0^2 - 1/r^2)}",答案式⑭,答案页支持，需重点排版复核,根号范围和cos(theta_0)符号决定后续有界性判断。
+F10,CPHO40-Q05,第(2)(iii)有界运动条件,15,"if theta_0 < pi/2 then r >= r_0 and motion is unbounded; if theta_0 > pi/2 then r <= r_0; if theta_0 = pi/2 then r = r_0; bounded motion requires theta_0 >= pi/2",答案式⑮及文字判断,答案页支持，待最终排版复核,本项为条件判断，不是统计结论。
+F11,CPHO40-Q05,第(2)(iii)边界情形轨道,15,"when theta_0 = pi/2: L^2 = -[mep/(2pi epsilon_0)] cos(theta) >= 0; r = r_0 and cos(theta) <= 0; trajectory is a semicircle of radius r_0 in the vertical plane with pi/2 <= theta <= 3pi/2",答案式⑯至⑰,答案页支持，待最终排版复核,题目要求的有界边界轨道。
+F12,CPHO40-Q05,第(2)(iv)无界运动微分式,15,"for theta_0 < pi/2: dr/dt = sqrt{[ep cos(theta_0)/(2pi epsilon_0 m)](1/r_0^2 - 1/r^2)}",答案式⑱,答案页支持，待最终排版复核,适用于无界运动条件。
+F13,CPHO40-Q05,第(2)(iv)时间积分,15,"sqrt{ep cos(theta_0)/(2pi epsilon_0 m r_0^2)} dt = r dr/sqrt(r^2-r_0^2) = d sqrt(r^2-r_0^2); sqrt(r^2-r_0^2) - sqrt{ep cos(theta_0)/(2pi epsilon_0 m r_0^2)} t = constant",答案式⑲,答案页支持，需重点排版复核,答案页中换元和根号较密，正式使用前需逐项核对。
+F14,CPHO40-Q05,第(2)(iv)径向距离随时间变化,15-16,"sqrt(r^2-r_0^2) - sqrt{ep cos(theta_0)/(2pi epsilon_0 m r_0^2)} t = 0; r = sqrt{r_0^2 + [ep cos(theta_0)/(2pi epsilon_0 m r_0^2)] t^2}",答案式⑲至⑳,答案页支持，待最终排版复核,第16页顶部为第5题最终结果；第16页下部进入第6题。
+F15,CPHO40-Q05,评分标准与答案边界,16,"本题40分；第(1)问10分；第(2)问30分，其中(i)10分、(ii)6分、(iii)8分、(iv)6分；第16页评分标准后进入第6题答案。",视觉检查和评分标准,边界已记录，待最终复核,第16页下部只作边界确认，不得纳入第5题公式证据。

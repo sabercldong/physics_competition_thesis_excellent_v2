@@ -8,6 +8,20 @@
 - 题图：03_corpus/item_assets/CPHO38-Q02-figure1-page1-raw.png
 - 抽取状态：题干使用页面OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取。公式、特殊符号、图注和OCR错字需人工校对。
 
+## G1-07-A1人工校对入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q02`
+- 题面V1视觉转写：`03_corpus/manual_review_transcripts/CPHO38-Q02_transcription_v1.md`
+- 答案公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q02_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q02-paper-page-1.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q02-solution-page-07.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q02-solution-page-08.png`
+- 题图证据：`03_corpus/item_assets/CPHO38-Q02-figure1-page1-raw.png`
+- 边界说明：第2题题面位于试题PDF第1页中下部；第1页上部为第1题，第1页下部进入第3题，仅作边界确认。答案从PDF第7页中部“二、”开始，延续至PDF第8页评分标准结束；原清单中的解答页码 `7` 已按视觉检查纠偏为 `7-8`。
+- 状态说明：`CPHO38-Q02-OCR` 已建立V1视觉转写入口；`CPHO38-Q02-FORMULA` 已建立答案公式核对入口；`CPHO38-Q02-FIG` 本轮未销项，图2a裁图仍需后续人工确认或重裁/重绘判断。
+- 使用限制：原OCR文本仅作错误来源对照，不得作为正式编码证据；当前未填写真实校对人和校对日期，不得声称人工校对完成。
+
 ## 题干OCR抽取文本
 
 ```text

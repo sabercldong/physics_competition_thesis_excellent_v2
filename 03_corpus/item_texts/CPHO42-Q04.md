@@ -9,6 +9,20 @@
 - 题图：无
 - 抽取状态：题干使用扫描页OCR并经视觉定位大题边界；参考解答使用PDF文本层抽取；题图按渲染页原图裁切，未去除来源/权属水印。题干OCR、公式、特殊符号、图注和图件边缘需人工校对。
 
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-42Q04`
+- 题面转写稿：`03_corpus/manual_review_transcripts/CPHO42-Q04_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO42-Q04_formula_check_v1.csv`
+- 页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q04-paper-page-3.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q04-solution-page-10.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q04-solution-page-11.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q04-solution-page-12.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q04-solution-page-13.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO42-Q04-solution-page-14.png`
+- 状态：已完成题面V1视觉转写和答案公式核对入口；第4题边界已记录，但尚未填写真实校对人/日期，不能视为正式人工校对销项。
+
 ## 题干OCR抽取文本
 
 ```text

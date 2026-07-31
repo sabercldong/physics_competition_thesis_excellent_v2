@@ -1,0 +1,17 @@
+﻿check_id,material_id,source_scope,pdf_pages,formula_or_result,source_basis,check_status,boundary_note
+F01,CPHO37-Q06,答案起始边界,16,第6题答案从PDF第16页页首“六、”开始。第16页含第(1)问全反射条件和第(2)问传播时间推导开头。,视觉检查和答案页标题,边界已记录，待最终复核,PDF第16页为第6题答案起始页。
+F02,CPHO37-Q06,第(1)折射定律,16,n_0 sin i = n_1 sin i',答案式①,答案页支持，待最终排版复核,入射角i和折射角i'需与解题图6a对应核对。
+F03,CPHO37-Q06,第(1)全反射条件,16,i'' >= i_c; sin i_c = n_2/n_1,答案式②③,答案页支持，待最终排版复核,i''为内外层界面入射角；i_c为临界角。
+F04,CPHO37-Q06,第(1)几何关系,16,i' + i'' = pi/2,答案式④,答案页支持，待最终排版复核,角度关系需与解题图6a逐项核对。
+F05,CPHO37-Q06,第(1)入射角条件,16,n_0 sin i = n_1 cos i'' <= n_1 cos i_c = sqrt(n_1^2 - n_2^2); i <= arcsin[sqrt(n_1^2 - n_2^2)/n_0],答案式⑤,答案页支持，需重点最终复核,根号内折射率平方差和分母n_0需重点核对。
+F06,CPHO37-Q06,第(2)实验室系线速率,16,v_CCW = [(c/n_1)+Omega R]/[1+(c/n_1)(Omega R)/c^2] = [c^2+n_1 Omega R c]/[n_1 c+Omega R]; v_CW = [(c/n_1)-Omega R]/[1-(c/n_1)(Omega R)/c^2] = [c^2-n_1 Omega R c]/[n_1 c-Omega R],答案式⑥⑦,答案页支持，需重点最终复核,相对速度变换式、CCW/CW方向和正负号需逐项核对。
+F07,CPHO37-Q06,第(2)传播时间方程,16,v_CCW t_CCW = N 2pi R + Omega R t_CCW; v_CW t_CW = N 2pi R - Omega R t_CW,答案式⑧⑨,答案页支持，需重点最终复核,N匝路径长度和分束器随环运动项需核对。
+F08,CPHO37-Q06,第(2)传播时间,16-17,t_CCW = N 2pi R/(v_CCW - Omega R) = N 2pi R(n_1 c + Omega R)/[c^2-(Omega R)^2]; t_CW = N 2pi R/(v_CW + Omega R) = N 2pi R(n_1 c - Omega R)/[c^2-(Omega R)^2],答案式⑩⑪,答案页支持，需重点最终复核,第二式位于第17页顶部；上下标和正负号需核对。
+F09,CPHO37-Q06,第(2)相位差,17,Delta phi = (2pi c/lambda_0)(t_CCW - t_CW) = (2pi c/lambda_0) [N 4pi R^2 Omega/(c^2-(Omega R)^2)],答案式⑫,答案页支持，需重点最终复核,相位差定义方向和lambda_0需与题面一致。
+F10,CPHO37-Q06,第(2)折射率无关结论,17,由相位差表达式可见Delta phi与介质折射率n_1无关。,答案式⑬和文字说明,答案页支持，待最终复核,该结论只适用于本题模型和答案推导，不得外推为所有光纤陀螺情形。
+F11,CPHO37-Q06,第(3)共振条件,17,L_CW = m lambda_CW; L_CCW = m lambda_CCW,答案式⑭⑮,答案页支持，待最终排版复核,m为同一级次共振模式级次。
+F12,CPHO37-Q06,第(3)旋转腔路径长度,17,L_CW = v_CW t_CW; L_CCW = v_CCW t_CCW,答案式⑯⑰,答案页支持，待最终排版复核,L_CW/L_CCW定义需与频率差定义方向一致。
+F13,CPHO37-Q06,第(3)N=1路径结果,17,v_CW t_CW = 2pi R[c^2 - n Omega R c]/[c^2-(Omega R)^2]; v_CCW t_CCW = 2pi R[c^2 + n Omega R c]/[c^2-(Omega R)^2],答案式⑱⑲,答案页支持，需重点最终复核,答案此处按题意取N=1且n_1=n；n符号需与题面n_1对齐。
+F14,CPHO37-Q06,第(3)频率差,17,Delta f = f_CW - f_CCW = (c/n)(1/lambda_CW - 1/lambda_CCW) = (mc/n)(1/L_CW - 1/L_CCW) = [m Omega/pi][c^2-(Omega R)^2]/[c^2-(n Omega R)^2] approx m Omega/pi,答案式⑳前推导,答案页支持，需重点最终复核,近似条件为R Omega << c；分母中n Omega R项需重点核对。
+F15,CPHO37-Q06,第(3)角速度与频率差关系,17,Omega = (pi/m) Delta f; 等价写法 Omega = [lambda_m0/(2R)] Delta f,答案式⑳,答案页支持，待最终复核,频率差正负方向取决于Delta f定义；正式使用时需说明约定。
+F16,CPHO37-Q06,评分标准与答案结束边界,17,本题共40分；第(1)问10分；第(2)问18分；第(3)问12分。第17页评分标准后第6题结束；PDF第18页为第7题答案。,视觉检查和评分标准,边界已记录，待最终复核,第18页不得纳入第6题公式证据，只可作为后边界确认。
