@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the G8-69 manuscript against the V3 unique coding table."""
+"""Validate the current manuscript against the archived final coding table."""
 
 from __future__ import annotations
 
@@ -129,7 +129,7 @@ current_result_text = "\n".join((abstract_text, intro_text, theory_text, results
 
 required_current_phrases = (
     "221个分析单元",
-    "884条V3唯一编码记录",
+    "884条最终编码记录",
     "模型建构、科学推理、科学论证和质疑创新分别出现于202、221、36和2个单元",
     "模型建构L3、科学推理L3、科学论证L2",
 )
@@ -137,7 +137,7 @@ check(
     "G8-69-QA-09",
     "正文口径",
     all(phrase in current_result_text for phrase in required_current_phrases),
-    "摘要、正文与结论包含V3正式口径和案例标签",
+    "摘要、正文与结论包含正式编码口径和案例标签",
 )
 
 forbidden_current_phrases = (
@@ -156,9 +156,9 @@ check(
 check(
     "G8-69-QA-11",
     "历史边界",
-    "研究早期按219个分析单元形成876条V2记录" in methods_text
-    and "不作为V3正式统计来源" in methods_text,
-    "方法章只以明确历史边界保留V2口径",
+    "研究早期按219个分析单元形成876条编码记录" in methods_text
+    and "不作为正式统计来源" in methods_text,
+    "方法章只以明确历史边界保留早期口径",
 )
 
 figure_names = (
@@ -184,8 +184,9 @@ check("G8-69-QA-15", "LaTeX", not fatal_hits, f"阻断性日志命中={fatal_hit
 check(
     "G8-69-QA-16",
     "解释边界",
-    "不能由100%的出现率推断所有小问结构相同或学生具有相应能力" in abstract_text
-    and "不把比例起伏解释为逐年上升、下降或命题方向变化" in results_text,
+    "科学推理出现于全部221个分析单元" in results_text
+    and "科学推理的主要信息不在“是否出现”" in results_text
+    and "不是据八个届次的数据宣称某一维度逐年上升或下降" in results_text,
     "科学推理饱和与届次描述边界已写入正文",
 )
 
@@ -200,7 +201,7 @@ with QA_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
     writer.writerows(checks)
 
 summary = [
-    "# G8-69 V3论文口径验收报告",
+    "# G8-69 论文正式编码口径验收报告",
     "",
     f"- 检查总数：{len(checks)}",
     f"- 通过：{len(checks) - len(failed)}",
@@ -217,9 +218,9 @@ if failed:
 else:
     summary.extend(
         [
-            "16项检查全部通过。摘要、理论框架、方法章当前口径、第四章、六个案例和结论均与221个分析单元、884条V3唯一编码记录一致。",
+            "16项检查全部通过。摘要、理论框架、方法章、第四章、六个案例和结论均与221个分析单元、884条最终编码记录一致。",
             "",
-            "旧219/876口径只在方法章作为早期V2历史过程出现，并已明确排除出V3正式统计。第四章只引用 `v3_final` 目录中的四幅正式图件；LaTeX日志未发现越界、未定义引用或编译错误。",
+            "早期219/876口径只在方法章作为规则修订过程出现，并已明确排除出正式统计。第四章只引用 `v3_final` 目录中的四幅正式图件；LaTeX日志未发现越界、未定义引用或编译错误。",
         ]
     )
 QA_MD.write_text("\n".join(summary) + "\n", encoding="utf-8")
