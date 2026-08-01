@@ -64,6 +64,10 @@ def location_is_specific(location: str, filename: str) -> bool:
 
 
 def audit(rows: list[dict[str, str]], source_dir: Path) -> tuple[list[dict[str, str]], dict[str, int]]:
+    source_texts = {
+        path.name: path.read_text(encoding="utf-8") for path in source_dir.glob("*.md")
+    }
+    normalized_sources = {name: normalize(text) for name, text in source_texts.items()}
     reason_items: dict[str, set[str]] = collections.defaultdict(set)
     for row in rows:
         reason_items[normalize(row["adjacent_level_exclusion"])].add(row["item_id"])
@@ -72,8 +76,7 @@ def audit(rows: list[dict[str, str]], source_dir: Path) -> tuple[list[dict[str, 
     counts: collections.Counter[str] = collections.Counter()
     for row in rows:
         issues: list[str] = []
-        source_path = source_dir / row["source_text_file"]
-        source = source_path.read_text(encoding="utf-8") if source_path.exists() else ""
+        source = source_texts.get(row["source_text_file"], "")
         question_quote = row["question_evidence_quote"].strip()
         solution_quote = row["solution_evidence_quote"].strip()
         reason = row["adjacent_level_exclusion"].strip()
@@ -82,10 +85,26 @@ def audit(rows: list[dict[str, str]], source_dir: Path) -> tuple[list[dict[str, 
             issues.append("QUESTION_QUOTE_TOO_SHORT")
         if not quote_is_locatable(question_quote, source):
             issues.append("QUESTION_QUOTE_NOT_LOCATABLE")
+            normalized_quote = normalize(question_quote)
+            if len(normalized_quote) >= 8 and any(
+                normalized_quote in text
+                for name, text in normalized_sources.items()
+                if name != row["source_text_file"]
+            ):
+                issues.append("QUESTION_QUOTE_MATCHES_OTHER_FILE")
         if len(normalize(solution_quote)) < 8:
             issues.append("SOLUTION_QUOTE_TOO_SHORT")
         if not quote_is_locatable(solution_quote, source):
             issues.append("SOLUTION_QUOTE_NOT_LOCATABLE")
+            normalized_quote = normalize(solution_quote)
+            if len(normalized_quote) >= 8 and any(
+                normalized_quote in text
+                for name, text in normalized_sources.items()
+                if name != row["source_text_file"]
+            ):
+                issues.append("SOLUTION_QUOTE_MATCHES_OTHER_FILE")
+        if row["source_text_file"] not in row["evidence_location"]:
+            issues.append("EVIDENCE_LOCATION_WRONG_FILE")
         if not location_is_specific(row["evidence_location"], row["source_text_file"]):
             issues.append("EVIDENCE_LOCATION_NOT_SPECIFIC")
         if len(normalize(reason)) < 18 or reason.lower() in GENERIC_REASONS:
