@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-UNIQUE = ROOT / "07_analysis/data/第35至42届科学思维V3唯一编码表.csv"
+UNIQUE = ROOT / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
 RESULTS = ROOT / "08_manuscript/04_results.md"
 CASES = ROOT / "08_manuscript/05_cases_and_diagnosis.md"
 ABSTRACT = ROOT / "08_manuscript/00_abstract_content_draft.md"
@@ -21,8 +21,8 @@ CONCLUSION = ROOT / "08_manuscript/06_conclusion.md"
 TEX = ROOT / "10_outputs/论文初稿_LaTeX/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.tex"
 PDF = ROOT / "10_outputs/论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf"
 LOG = ROOT / "10_outputs/论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.log"
-QA_CSV = ROOT / "09_quality/g8_69_v3_manuscript_qa.csv"
-QA_MD = ROOT / "09_quality/g8_69_v3_manuscript_qa.md"
+QA_CSV = ROOT / "09_quality/g8_69_第三版论文质量检查.csv"
+QA_MD = ROOT / "09_quality/g8_69_第三版论文质量检查.md"
 
 EXPECTED_SHA = "c026c2c48a6ff97987896261b1a3403b35e91c9e619e352809812c0e4095c8d5"
 DIMENSIONS = ("模型建构", "科学推理", "科学论证", "质疑创新")
@@ -114,7 +114,7 @@ check(
     "G8-69-QA-07",
     "统计复算",
     all({level: levels[dimension][level] for level in ("L1", "L2", "L3", "L4")} == EXPECTED_LEVELS[dimension] for dimension in DIMENSIONS),
-    "四维L1至L4频数与V3正式统计一致",
+    "四维L1至L4频数与第三版正式统计一致",
 )
 check("G8-69-QA-08", "案例标签", case_levels == EXPECTED_CASES, f"核对案例分析单元={len(case_levels)}")
 
@@ -162,17 +162,17 @@ check(
 )
 
 figure_names = (
-    "图4-1_四维度出现比例_V3.pdf",
-    "图4-2_四维度等级构成_V3.pdf",
-    "图4-3_各届次维度出现比例_V3.pdf",
-    "图4-4_维度组合分布_V3.pdf",
+    "图4-1_四维度出现比例_第三版.pdf",
+    "图4-2_四维度等级构成_第三版.pdf",
+    "图4-3_各届次维度出现比例_第三版.pdf",
+    "图4-4_维度组合分布_第三版.pdf",
 )
-figure_dir = ROOT / "08_manuscript/figures/v3_final"
+figure_dir = ROOT / "08_manuscript/figures/第三版正式结果"
 check(
     "G8-69-QA-12",
     "图件",
     all((figure_dir / name).exists() and name in results_text for name in figure_names),
-    "第四章引用四幅v3_final正式PDF图件",
+    "第四章引用四幅第三版正式PDF图件",
 )
 check("G8-69-QA-13", "生成物", TEX.exists() and TEX.stat().st_size > 0, f"LaTeX源文件={TEX}")
 check("G8-69-QA-14", "生成物", PDF.exists() and PDF.stat().st_size > 0, f"PDF字节数={PDF.stat().st_size if PDF.exists() else 0}")
@@ -220,7 +220,7 @@ else:
         [
             "16项检查全部通过。摘要、理论框架、方法章、第四章、六个案例和结论均与221个分析单元、884条最终编码记录一致。",
             "",
-            "早期219/876口径只在方法章作为规则修订过程出现，并已明确排除出正式统计。第四章只引用 `v3_final` 目录中的四幅正式图件；LaTeX日志未发现越界、未定义引用或编译错误。",
+            "早期219/876口径只在方法章作为规则修订过程出现，并已明确排除出正式统计。第四章只引用“第三版正式结果”目录中的四幅正式图件；LaTeX日志未发现越界、未定义引用或编译错误。",
         ]
     )
 QA_MD.write_text("\n".join(summary) + "\n", encoding="utf-8")

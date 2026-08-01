@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build V3 sensitivity outputs for alternative analysis-unit weights."""
+"""Build third-edition sensitivity outputs for alternative analysis-unit weights."""
 
 from __future__ import annotations
 
@@ -16,9 +16,9 @@ from matplotlib.ticker import FuncFormatter
 
 
 ROOT = Path(__file__).resolve().parents[2]
-INPUT = ROOT / "07_analysis/data/第35至42届科学思维V3唯一编码表.csv"
-OUTPUT_DIR = ROOT / "07_analysis/results/v3_final/敏感性分析"
-MANUSCRIPT_FIGURE_DIR = ROOT / "08_manuscript/figures/v3_final"
+INPUT = ROOT / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
+OUTPUT_DIR = ROOT / "07_analysis/results/第三版正式结果/敏感性分析"
+MANUSCRIPT_FIGURE_DIR = ROOT / "08_manuscript/figures/第三版正式结果"
 
 DIMENSIONS = ["模型建构", "科学推理", "科学论证", "质疑创新"]
 LEVELS = ["L1", "L2", "L3", "L4"]
@@ -320,7 +320,7 @@ def build_sensitivity_figure(presence_rows: list[dict]) -> None:
     )
     fig.tight_layout(rect=(0, 0.05, 1, 1))
 
-    figure_name = "图4-5_不同权重口径相对分析单元口径的比例变化_V3"
+    figure_name = "图4-5_不同权重口径相对分析单元口径的比例变化_第三版"
     MANUSCRIPT_FIGURE_DIR.mkdir(parents=True, exist_ok=True)
     for target_dir in (OUTPUT_DIR, MANUSCRIPT_FIGURE_DIR):
         stem = target_dir / figure_name
@@ -371,7 +371,7 @@ def write_explanation(
         "",
         "## 分析目的",
         "",
-        "主分析把221个分析单元等权处理。为检查研究者对复合小问的拆分是否放大某些题目的统计权重，本分析增加“原始小问等权”和“大题等权”两种口径，并以同一份V3唯一编码表重新计算四维出现比例与等级构成。",
+        "主分析把221个分析单元等权处理。为检查研究者对复合小问的拆分是否放大某些题目的统计权重，本分析增加“原始小问等权”和“大题等权”两种口径，并以同一份第三版唯一编码表重新计算四维出现比例与等级构成。",
         "",
         "## 单位关系",
         "",
@@ -415,8 +415,8 @@ def write_explanation(
             "- `三种分析单位权重下等级构成.csv`",
             "- `分析单元归属与三种权重.csv`",
             "- `各届分析单位数量与拆分情况.csv`",
-            "- `图4-5_不同权重口径相对分析单元口径的比例变化_V3.png`",
-            "- `图4-5_不同权重口径相对分析单元口径的比例变化_V3.pdf`",
+            "- `图4-5_不同权重口径相对分析单元口径的比例变化_第三版.png`",
+            "- `图4-5_不同权重口径相对分析单元口径的比例变化_第三版.pdf`",
             "",
         ]
     )
@@ -562,7 +562,7 @@ def main() -> None:
         for scheme, _ in SCHEMES[1:]
         for dimension in DIMENSIONS
     )
-    print("PASS: V3 analysis-unit weight sensitivity outputs built")
+    print("PASS: third-edition analysis-unit weight sensitivity outputs built")
     print("analysis_units=221 original_subquestions=209 major_questions=60")
     print(f"maximum_absolute_change={max_change:.4f} percentage points")
     for scheme_name, _ in SCHEMES:

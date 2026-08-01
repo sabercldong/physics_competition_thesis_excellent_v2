@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independently validate the accepted V3 unique table, result tables, and figures."""
+"""Independently validate the accepted third-edition table, results, and figures."""
 
 from __future__ import annotations
 
@@ -304,7 +304,7 @@ def main() -> None:
         f"来源登记{len(source_rows)}行，唯一表SHA-256={coding_hash}",
     )
 
-    manifest_rows = read_rows(figures_dir / "V3结果图件来源登记.csv")
+    manifest_rows = read_rows(figures_dir / "第三版结果图件来源登记.csv")
     figure_errors = []
     for row in manifest_rows:
         png_path = resolve(Path(row["PNG文件"]))

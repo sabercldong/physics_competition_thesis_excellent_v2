@@ -22,7 +22,7 @@
 \begin{table}[H]
 \centering
 \caption{四维度在全部分析单元中的出现分布}
-\label{tab:v3-overall-presence}
+\label{tab:third-edition-overall-presence}
 \begin{tabular}{lrrr}
 \toprule
 维度 & 出现单元数 & 全部单元数 & 出现比例 \\
@@ -39,9 +39,9 @@
 ```{=latex}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.86\linewidth]{08_manuscript/figures/v3_final/图4-1_四维度出现比例_V3.pdf}
+\includegraphics[width=0.86\linewidth]{08_manuscript/figures/第三版正式结果/图4-1_四维度出现比例_第三版.pdf}
 \caption{四维度在221个分析单元中的出现比例}
-\label{fig:v3-overall-presence}
+\label{fig:third-edition-overall-presence}
 \end{figure}
 ```
 
@@ -66,9 +66,9 @@
 ```{=latex}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.88\linewidth]{08_manuscript/figures/v3_final/图4-2_四维度等级构成_V3.pdf}
+\includegraphics[width=0.88\linewidth]{08_manuscript/figures/第三版正式结果/图4-2_四维度等级构成_第三版.pdf}
 \caption{四维度出现单元内部的等级构成}
-\label{fig:v3-level-composition}
+\label{fig:third-edition-level-composition}
 \end{figure}
 ```
 
@@ -96,9 +96,9 @@
 ```{=latex}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.88\linewidth]{08_manuscript/figures/v3_final/图4-4_维度组合分布_V3.pdf}
+\includegraphics[width=0.88\linewidth]{08_manuscript/figures/第三版正式结果/图4-4_维度组合分布_第三版.pdf}
 \caption{221个分析单元的完整维度组合分布}
-\label{fig:v3-combination}
+\label{fig:third-edition-combination}
 \end{figure}
 ```
 
@@ -143,9 +143,9 @@
 ```{=latex}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.94\linewidth]{08_manuscript/figures/v3_final/图4-3_各届次维度出现比例_V3.pdf}
+\includegraphics[width=0.94\linewidth]{08_manuscript/figures/第三版正式结果/图4-3_各届次维度出现比例_第三版.pdf}
 \caption{第35至42届四维度出现比例}
-\label{fig:v3-edition-presence}
+\label{fig:third-edition-edition-presence}
 \end{figure}
 ```
 
@@ -168,9 +168,9 @@
 ```{=latex}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.88\linewidth]{08_manuscript/figures/v3_final/图4-5_不同权重口径相对分析单元口径的比例变化_V3.pdf}
+\includegraphics[width=0.88\linewidth]{08_manuscript/figures/第三版正式结果/图4-5_不同权重口径相对分析单元口径的比例变化_第三版.pdf}
 \caption{不同权重口径相对分析单元等权口径的比例变化}
-\label{fig:v3-unit-weight-sensitivity}
+\label{fig:third-edition-unit-weight-sensitivity}
 \end{figure}
 ```
 

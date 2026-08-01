@@ -373,8 +373,8 @@ def copy_rules_and_pdfs() -> None:
     rules = PACKAGE / "编码规则"
     rules.mkdir(parents=True, exist_ok=True)
     for source in (
-        ROOT / "04_framework/科学思维编码手册_V3.md",
-        ROOT / "04_framework/科学思维编码决策矩阵_V3.csv",
+        ROOT / "04_framework/科学思维编码手册_第三版.md",
+        ROOT / "04_framework/科学思维编码决策矩阵_第三版.csv",
     ):
         shutil.copy2(source, rules / source.name)
 

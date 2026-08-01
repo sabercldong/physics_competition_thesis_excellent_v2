@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build thesis-ready figures from the accepted V3 unique coding table."""
+"""Build thesis-ready figures from the accepted third-edition unique coding table."""
 
 from __future__ import annotations
 
@@ -153,7 +153,7 @@ def build_presence_figure(
         fontsize=8.5,
         color="#4F5963",
     )
-    return save_figure(figure, output_dir, "图4-1_四维度出现比例_V3")
+    return save_figure(figure, output_dir, "图4-1_四维度出现比例_第三版")
 
 
 def build_level_figure(
@@ -230,7 +230,7 @@ def build_level_figure(
         fontsize=8.5,
         color="#4F5963",
     )
-    return save_figure(figure, output_dir, "图4-2_四维度等级构成_V3")
+    return save_figure(figure, output_dir, "图4-2_四维度等级构成_第三版")
 
 
 def build_year_heatmap(
@@ -282,7 +282,7 @@ def build_year_heatmap(
     colorbar.ax.tick_params(labelsize=8.5)
     for spine in axis.spines.values():
         spine.set_visible(False)
-    return save_figure(figure, output_dir, "图4-3_各届次维度出现比例_V3")
+    return save_figure(figure, output_dir, "图4-3_各届次维度出现比例_第三版")
 
 
 def build_combination_figure(
@@ -328,7 +328,7 @@ def build_combination_figure(
         fontsize=8.5,
         color="#4F5963",
     )
-    return save_figure(figure, output_dir, "图4-4_维度组合分布_V3")
+    return save_figure(figure, output_dir, "图4-4_维度组合分布_第三版")
 
 
 def write_manifest(
@@ -337,7 +337,7 @@ def write_manifest(
     source_path: Path,
     source_hash: str,
 ) -> Path:
-    manifest = output_dir / "V3结果图件来源登记.csv"
+    manifest = output_dir / "第三版结果图件来源登记.csv"
     with manifest.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,

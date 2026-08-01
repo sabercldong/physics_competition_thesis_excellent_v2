@@ -12,7 +12,7 @@
 \begin{table}[H]
 \centering
 \caption{入选案例及其任务结构}
-\label{tab:v3-case-selection}
+\label{tab:third-edition-case-selection}
 \footnotesize
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.05}

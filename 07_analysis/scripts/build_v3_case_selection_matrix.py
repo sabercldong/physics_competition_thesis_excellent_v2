@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the full V3 analysis-unit to manuscript-case selection matrix."""
+"""Build the full third-edition analysis-unit to manuscript-case selection matrix."""
 
 from __future__ import annotations
 
@@ -9,8 +9,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-INPUT = ROOT / "07_analysis/data/第35至42届科学思维V3唯一编码表.csv"
-OUTPUT_DIR = ROOT / "07_analysis/results/v3_final/案例选择"
+INPUT = ROOT / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
+OUTPUT_DIR = ROOT / "07_analysis/results/第三版正式结果/案例选择"
 DIMENSIONS = ["模型建构", "科学推理", "科学论证", "质疑创新"]
 
 SELECTIONS = {
@@ -142,7 +142,7 @@ def main() -> None:
         raise ValueError("Selected cases must include a reasoning-L1 contrast")
 
     write_csv(
-        OUTPUT_DIR / "221个分析单元案例选择矩阵_V3.csv",
+        OUTPUT_DIR / "221个分析单元案例选择矩阵_第三版.csv",
         [
             "分析单元编号",
             "届次",
@@ -164,7 +164,7 @@ def main() -> None:
     )
 
     summary = [
-        "# V3案例选择矩阵说明",
+        "# 第三版案例选择矩阵说明",
         "",
         "- 全样本：221个分析单元。",
         "- 正文主案例：6组，涉及10个分析单元。",
@@ -172,15 +172,15 @@ def main() -> None:
         "- 覆盖：模型—推理L3、科学论证正例、质疑创新正例、模型建构未出现、科学推理L1。",
         "- 案例用于解释任务机制，不按入选案例频数推断全样本分布。",
         "",
-        "输出：`221个分析单元案例选择矩阵_V3.csv`。",
+        "输出：`221个分析单元案例选择矩阵_第三版.csv`。",
         "",
     ]
-    (OUTPUT_DIR / "V3案例选择矩阵说明.md").write_text(
+    (OUTPUT_DIR / "第三版案例选择矩阵说明.md").write_text(
         "\n".join(summary),
         encoding="utf-8",
     )
     print(
-        "PASS: V3 case-selection matrix built "
+        "PASS: third-edition case-selection matrix built "
         f"(all_units={len(output)}, selected_units={len(selected)})"
     )
 

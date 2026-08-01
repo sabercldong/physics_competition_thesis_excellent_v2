@@ -1,0 +1,36 @@
+> 本文件由项目已校订的LaTeX题干、参考解答和TikZ图件生成。评分时以本文件为主要阅读文本；需核对原始措辞时查看包内对应届次原始PDF。
+
+# 第37届复赛第3题：负微分电阻RLC振荡电路
+
+## 题干
+
+隧道二极管在特定电压范围内具有负微分电阻 $-R_0$（$R_0>0$）。如图，左侧回路由定值电阻 $R$、电感 $L$、电容 $C$ 和二极管 $D$ 组成；右侧由理想高频扼流圈与理想恒压直流源 $V_0$ 组成。设左侧交流电流为 $i(t)$，且 $i(0)=0$、$\dot i(0)=\beta$。求：（1）$i(t)$ 的一般表达式；（2）谐振条件、谐振电流与频率；（3）阻尼振荡条件、电流与频率；（4）在工作电压范围 $V_{\min}\le V_D\le V_{\max}$ 内，二极管交流部分的最大平均功率及此时 $V_0$。
+
+![CPHO37-Q03-figure1](图件/CPHO37-Q03-figure1.png)
+
+## 参考解答整理
+
+#### （1）一般电流表达式。
+
+左侧回路满足 $$Ri(t)+L\dot i(t)+\frac1C\int_0^t i(t')\,\mathrm dt'-R_0i(t)=0.$$ 微分后得到特征方程 $$L\lambda^2+(R-R_0)\lambda+\frac1C=0.$$ 其根为 $$\lambda_\pm=-\frac{R-R_0}{2L}
+\pm\sqrt{\left(\frac{R-R_0}{2L}\right)^2-\frac1{LC}}.$$ 由初始条件，电流写为 $$\boxed{i(t)=\frac{\beta}{2\sqrt{\left[(R-R_0)/(2L)\right]^2-1/(LC)}}
+\left(e^{\lambda_+t}-e^{\lambda_-t}\right).}$$
+
+#### （2）谐振。
+
+要使能量不随时间耗损且电流周期变化，应有 $$R=R_0.$$ 此时 $$\boxed{i_H(t)=\beta\sqrt{LC}\sin\frac{t}{\sqrt{LC}},
+\qquad f_H=\frac1{2\pi\sqrt{LC}}.}$$
+
+#### （3）RLC阻尼振荡。
+
+能量衰减且仍保持周期变化的条件为 $$R-R_0>0,
+\qquad
+\left(\frac{R-R_0}{2L}\right)^2<\frac1{LC},$$ 即 $$\boxed{R_0<R<R_0+2\sqrt{\frac LC}.}$$ 电流及频率分别为 $$\boxed{i_D(t)=\frac{\beta}{\sqrt{1/(LC)-[(R-R_0)/(2L)]^2}}
+e^{-(R-R_0)t/(2L)}
+\sin\left(\sqrt{\frac1{LC}-\left[\frac{R-R_0}{2L}\right]^2}\,t\right),}$$ $$\boxed{f_D=\frac1{2\pi}\sqrt{\frac1{LC}-\left[\frac{R-R_0}{2L}\right]^2}.}$$
+
+#### （4）最大平均功率。
+
+为在负微分电阻区内获得最大交流电压幅值，直流偏置应取工作范围中点： $$\boxed{V_0=\bar V=\frac{V_{\max}+V_{\min}}2,\qquad
+V_{D\max}=\frac{V_{\max}-V_{\min}}2.}$$ 因此二极管交流部分的最大平均功率为 $$\boxed{\bar P_{\max}=\frac12\frac{V_{D\max}^2}{R_0}
+=\frac{(V_{\max}-V_{\min})^2}{8R_0}.}$$

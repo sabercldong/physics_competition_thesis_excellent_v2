@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Chinese-named descriptive result tables from the accepted V3 unique table."""
+"""Build Chinese-named descriptive result tables from the accepted third-edition unique table."""
 
 from __future__ import annotations
 
@@ -49,9 +49,9 @@ def main() -> None:
     _, index_rows = read_rows(index_path)
 
     if fields != OUTPUT_FIELDS:
-        raise SystemExit("V3唯一编码表字段与G8-68-PREP规范不一致")
+        raise SystemExit("第三版唯一编码表字段与G8-68-PREP规范不一致")
     if len(rows) != EXPECTED_ROWS:
-        raise SystemExit(f"V3唯一编码表应为{EXPECTED_ROWS}行，实际为{len(rows)}行")
+        raise SystemExit(f"第三版唯一编码表应为{EXPECTED_ROWS}行，实际为{len(rows)}行")
     if len(index_rows) != EXPECTED_ITEMS:
         raise SystemExit(f"题目索引应为{EXPECTED_ITEMS}行，实际为{len(index_rows)}行")
     if output_dir.exists() and not output_dir.is_dir():
@@ -312,7 +312,7 @@ def main() -> None:
     report = output_dir / "描述统计生成说明.md"
     with report.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write(
-            "# V3正式描述统计生成说明\n\n"
+            "# 第三版正式描述统计生成说明\n\n"
             f"- 输入唯一编码表：`{input_path}`\n"
             f"- 唯一编码表SHA-256：`{source_hash}`\n"
             f"- 分析单元：{total_items}个\n"

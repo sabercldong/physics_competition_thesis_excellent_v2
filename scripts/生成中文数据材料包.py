@@ -286,12 +286,11 @@ def 分类(相对路径: str) -> str:
 def 材料状态(相对路径: str) -> str:
     当前主文件 = {
         "03_corpus/item_index.csv",
-        "07_analysis/data/final_coding_r01_correction_v1.csv",
-        "07_analysis/data/final_coding_evidence_r01_v1.csv",
+        "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv",
     }
     if 相对路径 in 当前主文件:
         return "当前主数据"
-    if 相对路径.startswith("07_analysis/results/formal_rater_r01/correction_v1/"):
+    if 相对路径.startswith("07_analysis/results/第三版正式结果/"):
         return "当前主分析结果"
     if 相对路径.startswith("07_analysis/results/复分析_G8-34/"):
         return "当前复分析结果"
@@ -565,7 +564,7 @@ def 生成材料包(复制模式: bool) -> None:
 
 ## 一、语料主入口
 
-{中文入口("03_corpus/item_index.csv", "第35至42届219个分析单元题目索引")}
+{中文入口("03_corpus/item_index.csv", "第35至42届221个分析单元题目索引")}
 
 - [原始试题与参考答案（{分类计数.get("03_原始试题与参考答案", 0)}个文件）](./材料链接/03_原始试题与参考答案/)
 - [题目语料与题图（{分类计数.get("04_题目语料与题图", 0)}个文件）](./材料链接/04_题目语料与题图/)
@@ -573,19 +572,19 @@ def 生成材料包(复制模式: bool) -> None:
 
 ## 二、编码与证据主入口
 
-{中文入口("04_framework/coding_manual_v2_internal.md", "当前项目编码手册第二版")}
+{中文入口("04_framework/科学思维编码手册_第三版.md", "科学思维编码手册第三版")}
 
-{中文入口("04_framework/codebook_v2_internal.csv", "当前项目编码规则表第二版")}
+{中文入口("04_framework/科学思维编码决策矩阵_第三版.csv", "科学思维编码决策矩阵第三版")}
 
-{中文入口("07_analysis/data/final_coding_r01_correction_v1.csv", "当前版本化正式编码表（876行）")}
+{中文入口("07_analysis/data/第35至42届科学思维第三版唯一编码表.csv", "当前第三版正式编码表（884行）")}
 
-{中文入口("07_analysis/data/final_coding_evidence_r01_v1.csv", "当前编码证据链（876行）")}
+{中文入口("07_analysis/data/第35至42届科学思维第三版唯一编码表.csv", "当前第三版编码证据链（884行，与编码字段同表保存）")}
 
 - [正式编码与裁决材料](./材料链接/07_正式编码与裁决/)
 
 ## 三、统计结果主入口
 
-{中文入口("07_analysis/results/formal_rater_r01/correction_v1/final_descriptive_output_report.md", "当前描述统计报告")}
+{中文入口("07_analysis/results/第三版正式结果/描述统计生成说明.md", "当前第三版描述统计报告")}
 
 {中文入口("07_analysis/results/复分析_G8-34/最终编码数据复分析报告_G8-34.md", "最终编码数据独立复分析报告")}
 
@@ -593,9 +592,7 @@ def 生成材料包(复制模式: bool) -> None:
 
 ## 四、论文与图册主入口
 
-{中文入口("10_outputs/论文初稿_LaTeX/build/中学生物理竞赛复赛试题的科学思维要求与教学转化研究.pdf", "论文LaTeX阅读版PDF")}
-
-{中文入口("10_outputs/论文初稿_阅读版/中学生物理竞赛复赛试题的科学思维要求与教学转化研究_论文初稿.docx", "论文Word阅读版")}
+{中文入口("10_outputs/论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf", "当前论文LaTeX PDF")}
 
 {中文入口("10_outputs/全量复赛题干解析与TikZ图册/build/全量题干解析与TikZ图册.pdf", "第35至42届全量题干解析与TikZ图册PDF")}
 
@@ -622,8 +619,8 @@ def 生成材料包(复制模式: bool) -> None:
         if 路径.is_file() or 路径.is_symlink()
         if re.search(r"[A-Za-z]", 路径.stem)
     ]
-    当前编码 = 项目根目录 / "07_analysis/data/final_coding_r01_correction_v1.csv"
-    当前证据 = 项目根目录 / "07_analysis/data/final_coding_evidence_r01_v1.csv"
+    当前编码 = 项目根目录 / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
+    当前证据 = 当前编码
 
     def 数据行数(路径: Path) -> int:
         with 路径.open("r", encoding="utf-8-sig", newline="") as 文件:
@@ -656,15 +653,15 @@ def 生成材料包(复制模式: bool) -> None:
         },
         {
             "检查项目": "当前正式编码记录数",
-            "期望": 876,
+            "期望": 884,
             "实际": 数据行数(当前编码),
-            "结果": "通过" if 数据行数(当前编码) == 876 else "失败",
+            "结果": "通过" if 数据行数(当前编码) == 884 else "失败",
         },
         {
             "检查项目": "当前编码证据链记录数",
-            "期望": 876,
+            "期望": 884,
             "实际": 数据行数(当前证据),
-            "结果": "通过" if 数据行数(当前证据) == 876 else "失败",
+            "结果": "通过" if 数据行数(当前证据) == 884 else "失败",
         },
     ]
     写入表格(
@@ -700,9 +697,8 @@ def 生成材料包(复制模式: bool) -> None:
 
 ## 重要边界
 
-- `07_analysis/data/final_coding_r01_correction_v1.csv` 是当前描述性分析使用的版本化编码表。
-- `07_analysis/data/final_coding_evidence_r01_v1.csv` 是与其逐键对应的证据链。
-- `07_analysis/results/formal_rater_r01/correction_v1/` 保存当前主分析输出。
+- `07_analysis/data/第35至42届科学思维第三版唯一编码表.csv` 是当前描述性分析使用的正式编码表，并在同一记录中保存题干、解答和等级判定证据。
+- `07_analysis/results/第三版正式结果/` 保存当前主分析输出。
 - `07_analysis/results/复分析_G8-34/` 保存独立描述性复分析输出。
 - 历史版本和中间过程保留用于追溯，不得替代上述当前主文件。
 - 本包只重组入口和名称，不改变任何源文件内容、证据等级或研究结论。

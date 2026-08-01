@@ -1,0 +1,32 @@
+> 本文件由项目已校订的LaTeX题干、参考解答和TikZ图件生成。评分时以本文件为主要阅读文本；需核对原始措辞时查看包内对应届次原始PDF。
+
+# 第36届复赛第4题：微孔竹板亥姆霍兹共振吸声
+
+## 题干
+
+微孔竹板上的周期性长方形微孔可使孔中空气柱发生简谐振动；单个微孔及其后方空气层可简化为亥姆霍兹共振器，如图。微孔深度为 $l$，孔横截面积为 $S$，单孔后腔体体积为 $V_0$。声波传播视为绝热过程，满足 $v_s=\sqrt{\kappa/\rho}$，其中 $\kappa=-V\Delta p/\Delta V$。已知标准状态 $T=273\,\mathrm{K}$、$p=1.01\times10^5\,\mathrm{Pa}$，空气摩尔质量 $M_{\rm mol}=29.0\,\mathrm{g/mol}$、热容比 $\gamma=7/5$、气体常量 $R=8.31\,\mathrm{J/(K\cdot mol)}$。求：（1）标准状态下空气的密度和声速；（2）共振器吸收声波的频率；（3）吸收 $120\,\mathrm{Hz}$ 和 $200\,\mathrm{Hz}$ 时两种微孔面积之比。
+
+![CPHO36-Q04-figure1](图件/CPHO36-Q04-figure1.png)
+
+## 参考解答整理
+
+#### （1）标准状态下的密度与声速。
+
+理想气体状态方程为 $$pV=\frac{M}{M_{\rm mol}}RT,
+\qquad
+\rho=\frac{M}{V}=\frac{M_{\rm mol}p}{RT}.$$ 故标准状态空气密度为 $$\boxed{\rho_0=1.29\,\mathrm{kg/m^3}.}$$ 绝热过程满足 $pV^\gamma=\text{常量}$。微分后可得 $$\kappa=-V\frac{\Delta p}{\Delta V}=\gamma p,
+\qquad
+v_s=\sqrt{\frac{\gamma p}{\rho}}.$$ 因此标准状态下 $$\boxed{v_{s0}=\sqrt{\frac{(7/5)\times1.01\times10^5}{1.29}}=331\,\mathrm{m/s}.}$$
+
+#### （2）亥姆霍兹共振频率。
+
+微孔内空气柱质量为 $m=\rho Sl$。令空气柱向外位移为 $x$，则腔体体积改变量为 $\Delta V=Sx$，压强变化和回复力为 $$\Delta p=-\frac{\gamma pSx}{V},
+\qquad
+F=S\Delta p=-\frac{\gamma pS^2}{V}x.$$ 由 $m\ddot{x}=F$ 得 $$\ddot{x}=-\omega^2x,
+\qquad
+\omega=\sqrt{\frac{\gamma pS}{\rho lV}}.$$ 将 $V=V_0$ 与 $v_s=\sqrt{\gamma p/\rho}$ 代入，得到 $$\boxed{f_0=\frac{v_s}{2\pi}\sqrt{\frac{S}{lV_0}}.}$$
+
+#### （3）两种孔面积之比。
+
+在 $l$、$V_0$ 和 $v_s$ 相同的条件下，$f\propto\sqrt S$，所以 $$\frac{S_1}{S_2}=\left(\frac{f_{01}}{f_{02}}\right)^2
+=\left(\frac{120}{200}\right)^2.$$ 故 $$\boxed{\frac{S_1}{S_2}=0.36.}$$
