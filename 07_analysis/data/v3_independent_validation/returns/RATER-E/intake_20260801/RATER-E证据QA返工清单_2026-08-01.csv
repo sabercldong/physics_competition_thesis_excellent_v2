@@ -1,0 +1,569 @@
+﻿blind_row_id,blind_unit_no,item_id,dimension,review_present,review_level,issue_codes,question_evidence_quote,solution_evidence_quote,evidence_location,adjacent_level_exclusion,confidence
+BR-001-1,BU-001,CPHO35-Q03-4,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE,（4）求在撤除转轴后，杆再转半圈时 O 、 B 两点的高度差。,撤除转轴后，经过时间 t1，杆再转了半圈，即 ω′t1 = π。设此时 O 、 B 两点的高度差为 h ，即此时杆 B 端的 y 坐标的绝对值。由⑰式得,CPHO35-Q03.md 第(4)问，解答式⑱-⑳,本小问仅将半圈条件ω′t1=π代入第(3)问已建立的轨迹方程yB(t)求高度差，再代入⑥式Lc和⑮式ω′的表达式做代数整理。完全复用第(3)问的抛体+转动叠加模型，未引入新对象、变量或约束。模型建构活动已在第(3)问完成，本问纯属条件代入。,高
+BR-001-2,BU-001,CPHO35-Q03-4,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE,（4）求在撤除转轴后，杆再转半圈时 O 、 B 两点的高度差。,撤除转轴后，经过时间 t1，杆再转了半圈，即 ω′t1 = π。由⑰式得 h = yB(t1) = 2Lc − l − ½g(π/ω′)²。将⑥⑮式代入⑱式得,CPHO35-Q03.md 第(4)问，解答式⑱-⑳,推理涉及两个可区分关系：(a)旋转运动学ω′t1=π确定时间t1=π/ω′，(b)将t1代入轨迹方程yB(t)求高度。两步构成局部推理链，超过L1的单一关系直接推断。但两个关系为顺序代入，非多规律相互约束，也无临界判断或情形分类，故不取L3。,高
+BR-001-3,BU-001,CPHO35-Q03-4,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE,（4）求在撤除转轴后，杆再转半圈时 O 、 B 两点的高度差。,由⑰式得 h = yB(t1)。将⑥⑮式代入⑱式得 h 的最终表达式⑲或⑳。,CPHO35-Q03.md 第(4)问，解答式⑱-⑳,"任务要求输出高度差h的代数表达式。解答为将半圈条件代入已有公式并做代数化简，本质为条件代入和公式整理。该过程不存在独立的待支持主张（如""为什么撤轴后杆再转半圈时高度差取此值""），解答也未围绕任何主张组织证据与理由的论证关系。科学论证要求同时存在主张和证据-理由关系，本小问两者皆缺。",高
+BR-001-4,BU-001,CPHO35-Q03-4,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）求在撤除转轴后，杆再转半圈时 O 、 B 两点的高度差。,撤除转轴后，经过时间 t1，杆再转了半圈，即 ω′t1 = π。,CPHO35-Q03.md 第(4)问,"本小问在给定初始条件（撤轴时质心位置Lc和角速度ω′已由前问确定）和运动模型下求特定时刻高度差。①题面未要求评价""撤轴后杆为自由刚体""""忽略空气阻力""等假设的适用边界；②未要求比较不同求解方法；③未要求在参数改变时修正模型；④未要求自主设计实验验证。四项质疑创新门槛均不满足。",高
+BR-002-1,BU-002,CPHO35-Q04-4,模型建构,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE,（4）在磁阱中运动的原子最容易从 x-y 平面上什么位置逸出？求刚好能够逸出磁阱的原子,解答第(束缚势能 V = μ|Btot|)部分,CPHO35-Q04.md 第(4)问，解答式⑮-⑳,"建模需跳出第(2)问原点附近的谐振近似，回到完整B表达式建立全空间势能面V(x,y)，进行鞍点分析：令y=0降维→V(x,0)→求导找极值→判别极小值(原点)和鞍点(±(4/3)^(1/4)a)→计算逸出能。完整场模型+势能面构造+极值分类三要素相互约束，L3。L2仅两并列要素，不足以覆盖势能面鞍点分析的系统性。",高
+BR-002-2,BU-002,CPHO35-Q04-4,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE,（4）在磁阱中运动的原子最容易从 x-y 平面上什么位置逸出？求刚好能够逸出磁阱的原子,解答第(在 x 轴上(y=0)，由极值条件 dV(x)/dx = 0)部分,CPHO35-Q04.md 第(4)问，解答式⑰-⑳,"推理含：(1)代入完整B→|Btot|→V(x,y)，(2)沿x轴降维，(3)dV/dx=0解三个临界点，(4)判别x=0为极小值、x=±(4/3)^(1/4)a为鞍点，(5)能量差得逸出动能。含极值分类和鞍点识别的关键物理判断，L3。",高
+BR-002-3,BU-002,CPHO35-Q04-4,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）在磁阱中运动的原子最容易从 x-y 平面上什么位置逸出？求刚好能够逸出磁阱的原子,解答第(在 x 轴上(y=0)，由极值条件)部分,CPHO35-Q04.md 第(4)问,任务输出为逸出位置坐标和动能值。解答为标准微积分操作：求导→解方程→判极值类型→算能量差。无独立待支持主张，无证据-理由论证结构。,高
+BR-002-4,BU-002,CPHO35-Q04-4,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）在磁阱中运动的原子最容易从 x-y 平面上什么位置逸出？求刚好能够逸出磁阱的原子,解答第(束缚势能 V = μ|Btot|)部分,CPHO35-Q04.md 第(4)问,在给定Ioffe磁阱模型内求逸出条件。未评价谐近似边界、比较逸出路径、修正磁阱模型或设计囚禁方案。四项门槛不满足。,高
+BR-003-1,BU-003,CPHO35-Q05-3,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE,（3）证明在实验室参考系中原子发出的圆频率为 0 的谱线在磁场中一分为三；并对弱磁场,解答第(将旋转系解⑧式经⑨式变换至实验室系)部分,CPHO35-Q05.md 第(3)问，解答式⑬-⑯,建模：(a)坐标旋转变换⑨式将旋转系解映射回实验室系，(b)简谐振动合成识别频率成分。两可区分模型要素，L2。L1仅需单一映射。,高
+BR-003-2,BU-003,CPHO35-Q05-3,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE,（3）证明在实验室参考系中原子发出的圆频率为 0 的谱线在磁场中一分为三；并对弱磁场,解答第(三种圆频率：ω₊、ω₀、ω₋)部分,CPHO35-Q05.md 第(3)问，解答式⑪-⑯,"推理含：(1)识别三个频率成分ω₊,ω₀,ω₋，(2)弱场条件ωL<<ω₀下二项式展开→ω±≈ω₀±ωL，(3)频率间隔Δω=ωL。含临界条件判断和近似展开，L3。",高
+BR-003-3,BU-003,CPHO35-Q05-3,科学论证,是,L1,SOLUTION_QUOTE_NOT_LOCATABLE,（3）证明在实验室参考系中原子发出的圆频率为 0 的谱线在磁场中一分为三；并对弱磁场,解答第(三种圆频率：ω₊、ω₀、ω₋)部分,CPHO35-Q05.md 第(3)问，解答式⑬⑭,"题面要求""证明...一分为三""。主张=谱线一分为三，证据=实验室系解含三个不同频率成分。一主张一直接证据，L1。",高
+BR-003-4,BU-003,CPHO35-Q05-3,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）证明在实验室参考系中原子发出的圆频率为 0 的谱线在磁场中一分为三；并对弱磁场,解答第(弱磁场近似(ωL<<ω₀))部分,CPHO35-Q05.md 第(3)问,标准塞曼效应经典推导。未评价经典振子模型在量子领域的适用性、比较经典与量子解释、修正模型或设计实验。,高
+BR-004-1,BU-004,CPHO35-Q07-2,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE,（2）图 b 是用波长为 0.15 nm 的平行 X 射线照射 DNA 分子样品后，在距离样品 9.0 cm 的照,解答第(测出条纹的空间周期 X′ 为 4.7 mm)部分,CPHO35-Q07.md 第(2)问，解答式⑫-⑯,完全复用第(1)问的衍射+螺旋几何模型，仅替换测量数据(λ和L)，未引入新模型要素。,高
+BR-004-2,BU-004,CPHO35-Q07-2,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE,（2）图 b 是用波长为 0.15 nm 的平行 X 射线照射 DNA 分子样品后，在距离样品 9.0 cm 的照,解答第(相邻分子链间距 d′ = λ′L′/X′ = 2.9 nm)部分,CPHO35-Q07.md 第(2)问，解答式⑭-⑯,衍射公式求间距d′+螺旋几何求R′和p′，两可区分关系顺序代入，L2。,高
+BR-004-3,BU-004,CPHO35-Q07-2,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）图 b 是用波长为 0.15 nm 的平行 X 射线照射 DNA 分子样品后，在距离样品 9.0 cm 的照,解答第(螺距 p′ = d′/cos(φ′/2) = 3.9 nm)部分,CPHO35-Q07.md 第(2)问,任务输出为半径和螺距数值，纯测量数据代入公式计算。无主张-证据结构。,高
+BR-004-4,BU-004,CPHO35-Q07-2,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）图 b 是用波长为 0.15 nm 的平行 X 射线照射 DNA 分子样品后，在距离样品 9.0 cm 的照,解答第(测出条纹的空间周期 X′)部分,CPHO35-Q07.md 第(2)问,将弹簧衍射方法类比应用于DNA。未评价方法适用性、比较不同结构分析方法、修正模型或设计新方案。,高
+BR-005-1,BU-005,CPHO35-Q08-3,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE,（3）考虑激发态的能级宽度，处于第一激发态的静止原子核 57 Fe* 跃迁到基态时发出的光子,解答第(发射光子频率范围)部分,CPHO35-Q08.md 第(3)问，解答式⑫-⑯,能量守恒、动量守恒、反冲频移、能级宽度均已在(1)(2)建立，本问仅组合比较区间是否重叠，未新建模型。,高
+BR-005-2,BU-005,CPHO35-Q08-3,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE,（3）考虑激发态的能级宽度，处于第一激发态的静止原子核 57 Fe* 跃迁到基态时发出的光子,解答第(共振条件为两区间有重叠，即 νa−Γ/h ≤ νe+Γ/h)部分,CPHO35-Q08.md 第(3)问，解答式⑫-⑯,频率区间定义→重叠条件→等价Γ>ER→ER/Γ≈4.2×10⁵>>1→不能共振。含区间构造和量级比较的关键物理判断，L3。,高
+BR-005-3,BU-005,CPHO35-Q08-3,科学论证,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE,（3）考虑激发态的能级宽度，处于第一激发态的静止原子核 57 Fe* 跃迁到基态时发出的光子,解答第(实际数据 ER/Γ = 4.2×10⁵)部分,CPHO35-Q08.md 第(3)问，解答式⑮⑯,"题目要求""说明理由""。主张=不能共振吸收，证据=ER>>Γ且两频率区间无重叠。需比较两个区间并用数量级证据支撑，涉及比较性论证，L2。",高
+BR-005-4,BU-005,CPHO35-Q08-3,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）考虑激发态的能级宽度，处于第一激发态的静止原子核 57 Fe* 跃迁到基态时发出的光子,解答第(实际数据 ER/Γ = 4.2×10⁵)部分,CPHO35-Q08.md 第(3)问,在给定⁵⁷Fe参数下判断共振可能性。未评价能级宽度推导、比较不同核素、修正反冲模型或设计实验。,高
+BR-006-1,BU-006,CPHO35-Q08-4,模型建构,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE,（4）现将 57Fe 原子核置于晶体中，该原子核在跃迁过程中不发生反冲。现有两块这样的晶,"解答第(无反冲时，发射和吸收光子的能量范围均为 [E₀−Γ, E₀+Γ])部分",CPHO35-Q08.md 第(4)问，解答式⑰-⑳,建模整合三子模型：(a)晶体无反冲效应→能量范围统一，(b)相对论多普勒效应ν′≈ν(1+V/c)，(c)测量方案设计→调V补偿Δν。三要素相互约束，L3。,高
+BR-006-2,BU-006,CPHO35-Q08-4,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE,（4）现将 57Fe 原子核置于晶体中，该原子核在跃迁过程中不发生反冲。现有两块这样的晶,解答第(由多普勒效应 ν′ ≈ ν(1+β))部分,CPHO35-Q08.md 第(4)问，解答式⑰-⑳,无反冲→消除反冲频移→多普勒→共振条件|V|≤2Γc/E₀≈0.19mm/s→逆问题V′≈3cm/s。正反双向多阶段推理，L3。,高
+BR-006-3,BU-006,CPHO35-Q08-4,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）现将 57Fe 原子核置于晶体中，该原子核在跃迁过程中不发生反冲。现有两块这样的晶,解答第(共振条件 |V| ≤ 2Γc/E₀)部分,CPHO35-Q08.md 第(4)问,任务输出为V范围表达式和测量方案原理。解答为多普勒公式代入共振条件解不等式，无主张-证据论证结构。,高
+BR-006-4,BU-006,CPHO35-Q08-4,质疑创新,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE,（4）现将 57Fe 原子核置于晶体中，该原子核在跃迁过程中不发生反冲。现有两块这样的晶,解答第(通过改变吸收晶体速度 V′，当恢复共振吸收时)部分,CPHO35-Q08.md 第(4)问，解答式⑳,"题面要求""试设想如何测量这个变化""。需在给定约束下提出速度调节-共振恢复的测量方案，涉及提出可执行的替代测量方法，L2。L1仅识别局限，此处需提出具体方案。",高
+BR-007-1,BU-007,CPHO36-Q01-2,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE,(2)问几何与力矩起点，第11页仍包含式(10)-(14)、`N_B>0` 条件和评分标准，第11页下部进入第2题，第12页仅作下一题排除边界。,解答几何关系 O′A=O′B=a/√3部分,CPHO36-Q01.md 第(2)问，解答式(5)-(14),建模需建立几何位置关系+力平衡方程+力矩平衡方程(绕多轴)，多个静力学模型要素协调求解支持力变化。L2反映两以上可区分模型要素。,高
+BR-007-2,BU-007,CPHO36-Q01-2,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE,(2)问几何与力矩起点，第11页仍包含式(10)-(14)、`N_B>0` 条件和评分标准，第11页下部进入第2题，第12页仅作下一题排除边界。,解答N_A+N_B+N_C−Q−P=0部分,CPHO36-Q01.md 第(2)问，解答式(5)-(14),几何坐标→力平衡→力矩平衡→对称简化→联立求解→滑移前后差值。多步多约束联立，L3。,高
+BR-007-3,BU-007,CPHO36-Q01-2,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2)问几何与力矩起点，第11页仍包含式(10)-(14)、`N_B>0` 条件和评分标准，第11页下部进入第2题，第12页仅作下一题排除边界。,解答ΔN_B = −(2√3/3)((R−r)/a)部分,CPHO36-Q01.md 第(2)问,任务输出为支持力改变量，纯静力学求解。无独立待支持主张，无证据-理由论证结构。,高
+BR-007-4,BU-007,CPHO36-Q01-2,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2)问几何与力矩起点，第11页仍包含式(10)-(14)、`N_B>0` 条件和评分标准，第11页下部进入第2题，第12页仅作下一题排除边界。,解答N_A=N_C部分,CPHO36-Q01.md 第(2)问,标准静力学问题。未评价刚体假设、比较不同解法、修正模型或设计方案。,高
+BR-008-1,BU-008,CPHO36-Q03-4,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE,(4)求在弹丸的整个加速过程中理想恒流源所做的功:,解答W = ∫₀ᵀ U·I·dt = W₁+W₂+W₃部分,CPHO36-Q03.md 第(4)问，解答式(18)-(19),将总功拆为导轨焦耳热、弹丸焦耳热、感应电动势做功三个物理来源，L2。,高
+BR-008-2,BU-008,CPHO36-Q03-4,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE,(4)求在弹丸的整个加速过程中理想恒流源所做的功:,解答W₁ = (2√2λI²/3)·L^(3/2)部分,CPHO36-Q03.md 第(4)问，解答式(18)-(19),功积分→按来源拆分→逐项代入U(t)和运动学关系→分别积分→合并。多源功的识别和积分，L3。,高
+BR-008-3,BU-008,CPHO36-Q03-4,科学论证,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC,(4)求在弹丸的整个加速过程中理想恒流源所做的功:,"恒流源所做的功:
+(5)在θ=0°的条件下，若导轨和弹丸的电阻均可忽略，求弹丸出射时的动能与理想恒流源所做的功之比.
+```
+
+## 参考解答抽取文本
+
+```text
+三(40 分)、某电磁轨道炮的简化模型如图 a 所示，两圆柱形固定导轨相互平行，其对称轴所在平面与水平
+面的夹角为 θ，两导轨的长均为 L、半径均为 b、每单位长度的电阻均为  ，两导轨之间的最近距离为 d(d
+很小).一弹丸质量为 m(m 较小)的金属弹丸(可视为薄片)置于两导轨之间，弹丸直径为 d、电阻为 R，与导
+轨保持",CPHO36-Q03.md 第(4)问,任务输出为功表达式。纯积分计算，无主张-证据。,高
+BR-008-4,BU-008,CPHO36-Q03-4,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(4)求在弹丸的整个加速过程中理想恒流源所做的功:,解答W = ∫UIdt部分,CPHO36-Q03.md 第(4)问,标准电路能量计算。四项门槛不满足。,高
+BR-009-1,BU-009,CPHO36-Q04-3,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE,(3)为了吸收频率分别为 120Hz 和 200Hz 的声波，相应的两种微孔横截面积之比应为多少?,解答f₀₁/f₀₂ = 120/200 = 0.60部分,CPHO36-Q04.md 第(3)问，解答式(14)-(17),复用(2)的亥姆霍兹共振频率公式f₀∝√S，仅做比值代入。未新建模型。,高
+BR-009-2,BU-009,CPHO36-Q04-3,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE,(3)为了吸收频率分别为 120Hz 和 200Hz 的声波，相应的两种微孔横截面积之比应为多少?,解答S₁/S₂ = (f₀₁/f₀₂)² = 0.36部分,CPHO36-Q04.md 第(3)问，解答式(17),频率比→平方→面积比，两步推理，L2。,高
+BR-009-3,BU-009,CPHO36-Q04-3,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(3)为了吸收频率分别为 120Hz 和 200Hz 的声波，相应的两种微孔横截面积之比应为多少?,解答S₁/S₂ = 0.36部分,CPHO36-Q04.md 第(3)问,任务输出为比值。纯代数代入。,高
+BR-009-4,BU-009,CPHO36-Q04-3,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(3)为了吸收频率分别为 120Hz 和 200Hz 的声波，相应的两种微孔横截面积之比应为多少?,解答频率比 f₀₁/f₀₂部分,CPHO36-Q04.md 第(3)问,标准共振器参数比。四项门槛不满足。,高
+BR-010-1,BU-010,CPHO37-Q03-2,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2)》 问 7 分，回式第一式 2 分，加式各 3 分，@@式2 分:,解答谐振条件 R−Rd=0部分,CPHO37-Q03.md 第(2)问,复用(1)的RLC电路模型，仅取R=Rd参数条件。未新建模型。,高
+BR-010-2,BU-010,CPHO37-Q03-2,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2)》 问 7 分，回式第一式 2 分，加式各 3 分，@@式2 分:,解答谐振频率 ω₀ = 1/√(LC)部分,CPHO37-Q03.md 第(2)问,特征根分析→令实部为零→谐振条件→ω₀。两步推理，L2。,高
+BR-010-3,BU-010,CPHO37-Q03-2,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2)》 问 7 分，回式第一式 2 分，加式各 3 分，@@式2 分:,解答谐振条件部分,CPHO37-Q03.md 第(2)问,任务输出为条件表达式和频率值。无主张-证据。,高
+BR-010-4,BU-010,CPHO37-Q03-2,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2)》 问 7 分，回式第一式 2 分，加式各 3 分，@@式2 分:,解答R−Rd=0部分,CPHO37-Q03.md 第(2)问,标准RLC电路谐振条件推导。四项门槛不满足。,高
+BR-011-1,BU-011,CPHO37-Q03-3,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(3) 要在左侧回路中产生 RLC BET CADET ie) 振幅随时间: 衰减)，须使电路的能量不断随时间耗损，同时,解答阻尼振荡条件 R−Rd>0部分,CPHO37-Q03.md 第(3)问,复用前问电路模型，仅换参数条件。,高
+BR-011-2,BU-011,CPHO37-Q03-3,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(3) 要在左侧回路中产生 RLC BET CADET ie) 振幅随时间: 衰减)，须使电路的能量不断随时间耗损，同时,解答判别式 ((R−Rd)/(2L))² < 1/(LC)部分,CPHO37-Q03.md 第(3)问,判别式判断→欠阻尼条件→复根→通解→初始条件定系数。含临界判断，L3。,高
+BR-011-3,BU-011,CPHO37-Q03-3,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(3) 要在左侧回路中产生 RLC BET CADET ie) 振幅随时间: 衰减)，须使电路的能量不断随时间耗损，同时,解答i(t) = Ae^(−(R−Rd)t/(2L))·sin(部分,CPHO37-Q03.md 第(3)问,任务输出为条件和表达式。无主张-证据。,高
+BR-011-4,BU-011,CPHO37-Q03-3,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC,(3) 要在左侧回路中产生 RLC BET CADET ie) 振幅随时间: 衰减)，须使电路的能量不断随时间耗损，同时,"阻尼振荡条件和最大平均功率表达式需重点最终复核。
+
+## 题干OCR抽取文本
+
+```text
+=. (40 分) 负微分电阻效应是指某些电路或电子元件〈如隧道一极管) 在特定 了 C RECT,
+的电压范围内其电流随端电压增加而减少的特性，该效应可在电路中维持高须拓 Goh |
+SIUM AMOS. 在图 3a EAR oR, DRE BIE, JAE            Yo
+便册一定值电阻R 、一电感三和一电容C囊联组成，回路交流电流记为Xi) ，其       图3a
+右便由一理想的高",CPHO37-Q03.md 第(3)问,标准RLC欠阻尼分析。四项门槛不满足。,高
+BR-012-1,BU-012,CPHO37-Q04-1,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,"(1) 问22 分，四式4分，四图式 3 4, OOOOOOHKE 2 分。",解答相对论粒子运动方程 dp/dt = ev×B部分,CPHO37-Q04.md 第(1)问,回旋运动p=eBR+相对论E²=p²c²+m²c⁴，两要素通过动量连接，L2。,高
+BR-012-2,BU-012,CPHO37-Q04-1,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,"(1) 问22 分，四式4分，四图式 3 4, OOOOOOHKE 2 分。",解答B_min = √(E_S²−m_p²c⁴)/(ecR)部分,CPHO37-Q04.md 第(1)问,R=L/(2π)→p=eBR→E²→Bmin≈3.26T。跨相对论多步推理，L3。,高
+BR-012-3,BU-012,CPHO37-Q04-1,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,"(1) 问22 分，四式4分，四图式 3 4, OOOOOOHKE 2 分。",解答B_min部分,CPHO37-Q04.md 第(1)问,任务输出为磁场值。公式联立求解。无主张-证据。,高
+BR-012-4,BU-012,CPHO37-Q04-1,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC,"(1) 问22 分，四式4分，四图式 3 4, OOOOOOHKE 2 分。","Tevatron 《粒子运行最大回族圆轨
+道的周长为上ss = 6436 m )，可以将一质子加速到的最大能量为ES =1.00x10' MeV 。假设质子在被加
+速过程中始终在垂直于均匀磁场的平面内运动，不计电磁往射引起的能量损失。求该同步加速器 Tevatron
+将质子加速到上述最大能量所需要的磁感应强度的最小值 Rn 。
+
+《2) 高能入射质子用击静下的质子〈旬质子)，可产生反质子下，反应式为
+
+p+p一P+p+p+万
+求能产生反质子时入射质子的最小动能，并判断第1) 问中的 Tevatr",CPHO37-Q04.md 第(1)问,标准加速器参数计算。四项门槛不满足。,高
+BR-013-1,BU-013,CPHO37-Q04-2,模型建构,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2) 考虑多粒子系统洛仓兹不变质量 H 的平方。对于反应前〈相应的量不带撤》 实验室参考系中的粒子体系,解答洛仑兹不变质量平方部分,CPHO37-Q04.md 第(2)问,不变质量方法+阈能条件+跨参考系守恒律整合，L3。,高
+BR-013-2,BU-013,CPHO37-Q04-2,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2) 考虑多粒子系统洛仓兹不变质量 H 的平方。对于反应前〈相应的量不带撤》 实验室参考系中的粒子体系,解答E_A ≥ ((4m_p)²−2m_p²)c²/(2m_p)部分,CPHO37-Q04.md 第(2)问,Lab系M²→CM系M'²→阈能EA=7mpc²→Ek=6mpc²→量级比较。不变质量+跨参考系推理，L3。,高
+BR-013-3,BU-013,CPHO37-Q04-2,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(2) 考虑多粒子系统洛仓兹不变质量 H 的平方。对于反应前〈相应的量不带撤》 实验室参考系中的粒子体系,解答Tevatron加速的质子可以轰击静止靶质子产生反质子部分,CPHO37-Q04.md 第(2)问,事实判断(数值比较)。非论证结构。,高
+BR-013-4,BU-013,CPHO37-Q04-2,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(2) 考虑多粒子系统洛仓兹不变质量 H 的平方。对于反应前〈相应的量不带撤》 实验室参考系中的粒子体系,"阈能
+
+## 来源
+
+- 试题文件：`03_corpus/raw_papers/cpho_37_2020_fusai_paper_solution_candidate.pdf`
+- 试题页码：2
+- 解答页码：12-13
+- 题图：无
+- 抽取状态：扫描页OCR抽取，已按页面视觉定位大题边界；公式、特殊符号、图注和OCR错字需人工校对。
+
+## G1-07-A1人工校对入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-37Q04`
+- 题面V1视觉转写：`03_corpus/manua",CPHO37-Q04.md 第(2)问,标准阈能计算。四项门槛不满足。,高
+BR-014-1,BU-014,CPHO37-Q06-2,模型建构,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2) 考虑沿环路密绕 Y臣光纤，首尾相接于分束器A，光              le»,"解答v_CCW = c/n + ΩR, v_CW = c/n −部分",CPHO37-Q06.md 第(2)问,Sagnac效应：有效速度+传播时间方程+相位差+折射率无关性。多要素干涉模型，L3。,高
+BR-014-2,BU-014,CPHO37-Q06-2,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2) 考虑沿环路密绕 Y臣光纤，首尾相接于分束器A，光              le»,解答Δφ = (2πc/λ₀)(t_CCW−t_CW)部分,CPHO37-Q06.md 第(2)问,有效速度→传播时间联立→解t→Δφ→n约去→与n无关。联立求解+n无关性证明，L3。,高
+BR-014-3,BU-014,CPHO37-Q06-2,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2) 考虑沿环路密绕 Y臣光纤，首尾相接于分束器A，光              le»,解答该相差与介质折射率 n 之间的关系部分,CPHO37-Q06.md 第(2)问,推导结论(Δφ表达式中n约去)，非论证。,高
+BR-014-4,BU-014,CPHO37-Q06-2,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC,(2) 考虑沿环路密绕 Y臣光纤，首尾相接于分束器A，光              le»,"Sagnac效应
+
+## 来源
+
+- 试题文件：`03_corpus/raw_papers/cpho_37_2020_fusai_paper_solution_candidate.pdf`
+- 试题页码：3-4
+- 解答页码：16-17
+- 题图：03_corpus/item_assets/CPHO37-Q06-figure1-page3-raw.png;03_corpus/item_assets/CPHO37-Q06-figure2-page3-raw.png
+- 抽取状态：扫描页OCR抽取，",CPHO37-Q06.md 第(2)问,标准Sagnac推导。四项门槛不满足。,高
+BR-015-1,BU-015,CPHO37-Q07-1,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(1) 描述转动体系辐射的三个物理量可选为系统的转动惯量/、转动角速度@ 和辐射引力波的传播速度c 。引力波,解答P = α·G^A·I^B·ω^C·c^D部分,CPHO37-Q07.md 第(1)问,量纲分析：物理量识别+量纲方程求解，L2。,高
+BR-015-2,BU-015,CPHO37-Q07-1,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(1) 描述转动体系辐射的三个物理量可选为系统的转动惯量/、转动角速度@ 和辐射引力波的传播速度c 。引力波,解答P = α·G²·I²·ω⁶/c⁵部分,CPHO37-Q07.md 第(1)问,量纲分析→P表达式→代入Kepler关系→积分。跨领域推理链，L3。,高
+BR-015-3,BU-015,CPHO37-Q07-1,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(1) 描述转动体系辐射的三个物理量可选为系统的转动惯量/、转动角速度@ 和辐射引力波的传播速度c 。引力波,解答量纲分析部分,CPHO37-Q07.md 第(1)问,无主张-证据。,高
+BR-015-4,BU-015,CPHO37-Q07-1,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(1) 描述转动体系辐射的三个物理量可选为系统的转动惯量/、转动角速度@ 和辐射引力波的传播速度c 。引力波,解答量纲分析部分,CPHO37-Q07.md 第(1)问,标准量纲分析应用。四项门槛不满足。,高
+BR-016-1,BU-016,CPHO37-Q08-2,模型建构,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,(2) 设外加电信号电压为,解答正交偏振器部分,CPHO37-Q08.md 第(2)问,偏振光学系统+λ/4波片偏置线性化，多光学元件协调，L3。,高
+BR-016-2,BU-016,CPHO37-Q08-2,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(2) 设外加电信号电压为,解答T = sin²(Δφ/2)部分,CPHO37-Q08.md 第(2)问,非线性识别+线性化方案，L3。,高
+BR-016-3,BU-016,CPHO37-Q08-2,科学论证,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(2) 设外加电信号电压为,解答1/4 波片所起的作用部分,CPHO37-Q08.md 第(2)问,加与不加波片两种情形比较，L2。,高
+BR-016-4,BU-016,CPHO37-Q08-2,质疑创新,否,未出现,SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,(2) 设外加电信号电压为,解答λ/4部分,CPHO37-Q08.md 第(2)问,标准电路/光学分析。四项门槛不满足。,高
+BR-017-1,BU-017,CPHO37-Q08-3,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(3) 电光调制器的等效电路如图 gb 左于部所示: 电光晶体置于两平行板电      E,解答RC分压部分,CPHO37-Q08.md 第(3)问,RC电路分压模型，L2。,高
+BR-017-2,BU-017,CPHO37-Q08-3,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(3) 电光调制器的等效电路如图 gb 左于部所示: 电光晶体置于两平行板电      E,解答|Vc| ≈ |V|/(ωRsC)部分,CPHO37-Q08.md 第(3)问,复阻抗+高频近似，两步，L2。,高
+BR-017-3,BU-017,CPHO37-Q08-3,科学论证,是,L1,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,(3) 电光调制器的等效电路如图 gb 左于部所示: 电光晶体置于两平行板电      E,"调制效率极低。                      aad
+(4) 为了提高调制效率，添加《即将图 & 中开关合上》 如图 gb FEATURE CE, RN
+负载电阻，Z 为线图的电感》，试证明忆|=|r。
+第5页,共5页
+第5页/共21页
+```
+
+## 参考解答OCR抽取文本
+
+```text
+八、
+《1) 当一东线偏振光沿 呈轴进入晶体，且沿忆方向偏振时，进入晶体后可以分解为治闪和总方向的两个垂直偏振
+分芋。据题给的折射率与电场强度的关系，相应的相位变化量为
+4, Fal -反问",CPHO37-Q08.md 第(3)问,一主张一证据，L1。,高
+BR-017-4,BU-017,CPHO37-Q08-3,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,(3) 电光调制器的等效电路如图 gb 左于部所示: 电光晶体置于两平行板电      E,"RC) litt
+KIA
+电讨基本上落在 R 上，电光晶体调制效率极低。
+(4) 并联电感工和分流电阻尺 《即将图 Sb 中的开关都闭合) 后，调制器系统的有效阻抗满足
+|      i if fb
+7x ar Teak la)                =
+由的式得
+四-天-一                         四
+1        1
+由固式可知，当wu =1/VEC ，调制器阻抗为最大值
+Zon = 2",CPHO37-Q08.md 第(3)问,标准电路/光学分析。四项门槛不满足。,高
+BR-018-1,BU-018,CPHO37-Q08-4,模型建构,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,"(4) 为了提高调制效率，添加《即将图 & 中开关合上》 如图 gb FEATURE CE, RN",解答并联LC谐振部分,CPHO37-Q08.md 第(4)问,LC谐振+阻抗匹配，多电路元件协调，L3。,高
+BR-018-2,BU-018,CPHO37-Q08-4,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,"(4) 为了提高调制效率，添加《即将图 & 中开关合上》 如图 gb FEATURE CE, RN",解答ω = 1/√(LC)部分,CPHO37-Q08.md 第(4)问,谐振条件+阻抗分析，L3。,高
+BR-018-3,BU-018,CPHO37-Q08-4,科学论证,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,"(4) 为了提高调制效率，添加《即将图 & 中开关合上》 如图 gb FEATURE CE, RN",解答|Vc|=|V|部分,CPHO37-Q08.md 第(4)问,谐振vs非谐振比较，L2。,高
+BR-018-4,BU-018,CPHO37-Q08-4,质疑创新,否,未出现,SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,"(4) 为了提高调制效率，添加《即将图 & 中开关合上》 如图 gb FEATURE CE, RN",解答LC部分,CPHO37-Q08.md 第(4)问,标准电路/光学分析。四项门槛不满足。,高
+BR-019-1,BU-019,CPHO38-Q01-2_i,模型建构,是,L3,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,第(2-i)问,解答等光程条件部分,CPHO38-Q01.md 第(2-i)问,双透镜费马原理+极坐标→直角坐标变换，多光学元件系统级建模，L3。,高
+BR-019-2,BU-019,CPHO38-Q01-2_i,科学推理,是,L3,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,第(2-i)问,解答r′ = (1−n′)r₀′/(1−n′cosθ)部分,CPHO38-Q01.md 第(2-i)问,入射面→平凸→平凹→出射等光程→极坐标→直角坐标标准形。多段光程串联推导，L3。,高
+BR-019-3,BU-019,CPHO38-Q01-2_i,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,第(2-i)问,"双曲面。
+[解法（二）
+将③④式代入②式，得
+
+          x 2 + y 2 = r0 (1 − n) + nx
+平方，移项得
+      ( n 2 − 1) x 2 + 2 n (1 − n ) r0 x − y 2 + r0 (1 − n ) 2 = 0
+
+与直角坐标系中双曲线的标准形式
+      (x − g)
+                2
+                         ( y − h )2
+                    −",CPHO38-Q01.md 第(2-i)问,纯推导，无主张-证据。,高
+BR-019-4,BU-019,CPHO38-Q01-2_i,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,第(2-i)问,解答费马原理部分,CPHO38-Q01.md 第(2-i)问,标准光学设计推导。四项门槛不满足。,高
+BR-020-1,BU-020,CPHO38-Q01-2_ii,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,第(2-ii)问,解答k = (r·sinθ_max)/(r′·sinθ_max)部分,CPHO38-Q01.md 第(2-ii)问,几何比值模型，L2。,高
+BR-020-2,BU-020,CPHO38-Q01-2_ii,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,第(2-ii)问,解答k = [(1−n)(1−n′cosθ_max)r₀]/[(部分,CPHO38-Q01.md 第(2-ii)问,r和r′表达式代入，两步，L2。,高
+BR-020-3,BU-020,CPHO38-Q01-2_ii,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,第(2-ii)问,"横截面半径之比。
+```
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q01`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q01_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO38-Q01_formula_check_v1.csv`
+- 题面页面证据：`03_corpus/manual",CPHO38-Q01.md 第(2-ii)问,纯比值计算。,高
+BR-020-4,BU-020,CPHO38-Q01-2_ii,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,第(2-ii)问,"k_v1.csv`
+- 题面页面证据：`03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-paper-page-1.png`
+- 答案页面证据：
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-solution-page-05.png`
+  - `03_corpus/manual_review_renders/G1-07-A1/CPHO38-Q01-solution-page-",CPHO38-Q01.md 第(2-ii)问,标准几何代入。,高
+BR-021-1,BU-021,CPHO38-Q02-2,模型建构,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）问 20 分，⑥⑦⑧式各 4 分，⑨⑩⑪⑫式各 2 分。,解答设水银柱高度为 x：p = p₀+ρgx部分,CPHO38-Q02.md 第(2)问,变质量/变压强热力学+稳定性判断+热一律，多机制约束，L3。,高
+BR-021-2,BU-021,CPHO38-Q02-2,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）问 20 分，⑥⑦⑧式各 4 分，⑨⑩⑪⑫式各 2 分。,解答x = h√(9−4T/T₀)部分,CPHO38-Q02.md 第(2)问,pV=nRT→x(T)→单调→稳定→ΔU→W(大气压+水银势能)→Q。含稳定性判断，L3。,高
+BR-021-3,BU-021,CPHO38-Q02-2,科学论证,是,L1,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）问 20 分，⑥⑦⑧式各 4 分，⑨⑩⑪⑫式各 2 分。,解答x 随 T 单调递减，过程 B 可以缓慢稳定地发生部分,CPHO38-Q02.md 第(2)问,主张=可稳定发生，证据=x(T)单调递减。一主张一证据，L1。,高
+BR-021-4,BU-021,CPHO38-Q02-2,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）问 20 分，⑥⑦⑧式各 4 分，⑨⑩⑪⑫式各 2 分。,"缓慢加热，水银的动能可以忽略。
+]
+（2）设过程 B 中水银柱的高度为 x ，若该过程可以缓慢稳定地发生，则要求水银柱高度在不断减小的过程中，满
+足气体状态方程的 x 始终有解。设对应于 x 的封闭气体压强为 p ，体积为 V ，温度为 T ，则
+                           p = p0 +  gx = 3 gh +  gx                             ⑨",CPHO38-Q02.md 第(2)问,标准热力学分析。,高
+BR-022-1,BU-022,CPHO38-Q03-2,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）问 22 分，⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲式各 2 分。,解答v₂_x = (3/7)v₁_x − (4/7)rω₁_z部分,CPHO38-Q03.md 第(2)问,与(1)同一碰撞模型，仅碰撞面从上板换为下板，摩擦力方向取反。未新建模型。,高
+BR-022-2,BU-022,CPHO38-Q03-2,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）问 22 分，⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲式各 2 分。,解答ω₂_z = −(10/7)(v₁_x/r) − (3/7)部分,CPHO38-Q03.md 第(2)问,将(1)的递推公式中摩擦力方向取反后代入，两步推理，L2。,高
+BR-022-3,BU-022,CPHO38-Q03-2,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）问 22 分，⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲式各 2 分。,解答v₂_x部分,CPHO38-Q03.md 第(2)问,递推代入。无主张-证据。,高
+BR-022-4,BU-022,CPHO38-Q03-2,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）问 22 分，⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲式各 2 分。,"碰撞第 2 次后球心速度的水平分其mm, AUBREY IIE e,, ，
+(3) 求超球与板碰搞第 3 次后球心带度的水半分址wm, 和球转动的角述度 ww。
+提示;已知一质量为放、半径为的均质球体绕过球心的币的转动导基为v = Qe? 5 5 EERIE PTT BR ER
+体，它在硬板面上的反足可视为是完全弹性的，换言之，在接触点无滑动，它在接触点受到前摩擦力与正压力时产
+生的切向形变和法向形变可视为是弹性的，为简化起见，假设这丙种形变是彼此无关的《因而相应的弹力各自均为
+保守力)。",CPHO38-Q03.md 第(2)问,标准碰撞递推。,高
+BR-023-1,BU-023,CPHO38-Q03-3,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,"(3) 求超球与板碰搞第 3 次后球心带度的水半分址wm, 和球转动的角述度 ww。",解答v₃_x = (3/7)v₂_x + (4/7)rω₂_z部分,CPHO38-Q03.md 第(3)问,同一碰撞模型第三次递推应用。未新建模型。,高
+BR-023-2,BU-023,CPHO38-Q03-3,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,"(3) 求超球与板碰搞第 3 次后球心带度的水半分址wm, 和球转动的角述度 ww。",解答v₃_x = −(333/343)v₀_x − (52/34部分,CPHO38-Q03.md 第(3)问,第三次递推代入，两步推理，L2。,高
+BR-023-3,BU-023,CPHO38-Q03-3,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,"(3) 求超球与板碰搞第 3 次后球心带度的水半分址wm, 和球转动的角述度 ww。",解答v₃_x部分,CPHO38-Q03.md 第(3)问,递推计算。,高
+BR-023-4,BU-023,CPHO38-Q03-3,质疑创新,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,"(3) 求超球与板碰搞第 3 次后球心带度的水半分址wm, 和球转动的角述度 ww。",解答碰撞第 3 次部分,CPHO38-Q03.md 第(3)问,标准递推。,高
+BR-024-1,BU-024,CPHO38-Q04-3,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）最后，考虑球从上板向下板射出与下板相碰（第 3 次碰撞），类似于⑨⑩式有,解答F = −dV/dz = −3μ₀μ²/(4πz⁴) + m部分,CPHO38-Q04.md 第(3)问,力平衡F=0+稳定性∂²V/∂z²判据，两模型要素，L2。,高
+BR-024-2,BU-024,CPHO38-Q04-3,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）最后，考虑球从上板向下板射出与下板相碰（第 3 次碰撞），类似于⑨⑩式有,解答z = (3μ₀μ²/(4πmg))^(1/4)部分,CPHO38-Q04.md 第(3)问,令F=0解平衡位置→二阶导数判稳定性。两步推理，L2。,高
+BR-024-3,BU-024,CPHO38-Q04-3,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）最后，考虑球从上板向下板射出与下板相碰（第 3 次碰撞），类似于⑨⑩式有,解答该位置是不稳定的部分,CPHO38-Q04.md 第(3)问,任务输出为平衡位置和稳定性判断。推导结论，非论证。,高
+BR-024-4,BU-024,CPHO38-Q04-3,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）最后，考虑球从上板向下板射出与下板相碰（第 3 次碰撞），类似于⑨⑩式有,"受力平衡位置  并说明此平衡位置是否为稳
+定平衡位置〈所识不稳定平衡是指; 在小的扰动下，B 在重力的作用下掉落，或者被 A 吸附过去)。
+```
+
+## G1-07-A1 视觉校对转写入口
+
+- 任务：`G1-07-A1-TRANSCRIBE-38Q04`
+- V1转写稿：`03_corpus/manual_review_transcripts/CPHO38-Q04_transcription_v1.md`
+- 公式核对表：`03_corpus/manual_review_transcript",CPHO38-Q04.md 第(3)问,标准势能分析。,高
+BR-025-1,BU-025,CPHO38-Q05-1,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）问 14 分，①②③式各 2 分，④⑤式各 4 分；,解答(1/2)mv₀² = (1/2)k_BT部分,CPHO38-Q05.md 第(1)问,能量均分定理直接应用，单一标准模型。未达到需要从情境转化的建模门槛。,高
+BR-025-2,BU-025,CPHO38-Q05-1,科学推理,是,L1,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）问 14 分，①②③式各 2 分，④⑤式各 4 分；,解答v₀ = √(k_BT/m) = 360 m/s部分,CPHO38-Q05.md 第(1)问,能量均分定理→v₀表达式→数值代入。单步推理，L1。,高
+BR-025-3,BU-025,CPHO38-Q05-1,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）问 14 分，①②③式各 2 分，④⑤式各 4 分；,解答v₀ = 360 m/s部分,CPHO38-Q05.md 第(1)问,纯数值计算。,高
+BR-025-4,BU-025,CPHO38-Q05-1,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）问 14 分，①②③式各 2 分，④⑤式各 4 分；,"方均根速率w 的40K 原子一直被激光共振减速至静止所需
+的距离是多少?
+(3) 不考虑磁场的影响，试计算激光频率应该比原子静止时的激光共振频率减小多少才能与以方均根速率wm (向
+着光源方向) 运动的原子发生共振跃迁?
+(4) 已知在磁场的作用下，原子对应的跃迁的频率随磁感应强度变大而线性变小〈塞曼效应)
+Jo(B) = f(B = 0) + BB
+式中,系数6= -1.00x10"" HzT 。假设在准直答出口处(== 0 ) PK BEES TTA v, 朝激光射来的方向运动，
+同时假设在准",CPHO38-Q05.md 第(1)问,标准热学计算。,高
+BR-026-1,BU-026,CPHO39-Q01-2,模型建构,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC,（2）反射镜移动后，可以观察到多少个干涉亮条纹（计及中心亮斑）？,"m = 17                                                                ⑬
+（3）设液体的折射率为 n ，如解题图 1a 所示。图中，  、i 分别是光线的入射
+角、折射角。由折射定律有
+          sin  = n sin i
+                                                                                      解题图 1a
+当石",CPHO39-Q01.md 第(2)问,复用(1)的等倾干涉模型，仅代入Δd后的光程差求条纹数。未新建模型。,高
+BR-026-2,BU-026,CPHO39-Q01-2,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）反射镜移动后，可以观察到多少个干涉亮条纹（计及中心亮斑）？,解答(2π/λ)·2(d−Δd)(1−cosγ_M) = (m−部分,CPHO39-Q01.md 第(2)问,光程差方程→代入Δd→解m。两步推理，L2。,高
+BR-026-3,BU-026,CPHO39-Q01-2,科学论证,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）反射镜移动后，可以观察到多少个干涉亮条纹（计及中心亮斑）？,"m = 17                                                                ⑬
+（3）设液体的折射率为 n ，如解题图 1a 所示。图中，  、i 分别是光线的入射
+角、折射角。由折射定律有
+          sin  = n sin i
+                                                                                      解题图 1a
+当石",CPHO39-Q01.md 第(2)问,任务输出为整数。纯代入。,高
+BR-026-4,BU-026,CPHO39-Q01-2,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）反射镜移动后，可以观察到多少个干涉亮条纹（计及中心亮斑）？,"干涉亮条纹（计及中心亮斑）？
+（3）使用此干涉仪测量某一透明液体的折射率，将扁平的石英空槽插入迈克尔逊干涉仪的一个臂，使得石英槽的
+表面与臂的方向垂直。然后调节石英槽与臂之间的夹角，使之改变  = 5.00 ；在角度改变过程中，干涉场中心明暗
+变化了 10 个周期。现将待测液体注入石英槽，如图 1b 所示。再次调节石英槽的倾斜角度，使其恢复到与臂垂直，
+在此过程中，干涉场中心明暗变化了 17 个周期。已知照明光波长为 633 nm ，石英槽内壁间距为 t = 2.00 mm ，空气
+的折射率",CPHO39-Q01.md 第(2)问,标准干涉计算。,高
+BR-027-1,BU-027,CPHO39-Q03-1,模型建构,是,L2,EVIDENCE_LOCATION_NOT_SPECIFIC,（1）第 1 次碰撞前的球心速度和球的自转角速度；,"由质心运动定理得到
+                                                        a x = g sin  , a y = − g cos          ①
+球从出射到落下期间做抛体运动，球心在时刻 t 的速度为（以球抛出瞬间为时间零点）
+                                                    v x = gt sin  , v y = V − gt cos          ②
+相对于",CPHO39-Q03.md 第(1)问,抛体运动模型求碰前速度，两要素(抛体+碰前状态)，L2。,高
+BR-027-2,BU-027,CPHO39-Q03-1,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）第 1 次碰撞前的球心速度和球的自转角速度；,"解答v_x = 2V tanθ, v_y = −V部分",CPHO39-Q03.md 第(1)问,抛体→飞行时间T→碰前速度分量。两步推理，L2。,高
+BR-027-3,BU-027,CPHO39-Q03-1,科学论证,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）第 1 次碰撞前的球心速度和球的自转角速度；,解答v_x = 2V tanθ部分,CPHO39-Q03.md 第(1)问,纯运动学计算。,高
+BR-027-4,BU-027,CPHO39-Q03-1,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）第 1 次碰撞前的球心速度和球的自转角速度；,"抛体运动，球心在时刻 t 的速度为（以球抛出瞬间为时间零点）
+                                                    v x = gt sin  , v y = V − gt cos          ②
+相对于其初始位置的位移为
+                     1 2                       1 2
+                x=     gt sin  ,   y = Vt −     gt cos ",CPHO39-Q03.md 第(1)问,标准运动学。,高
+BR-028-1,BU-028,CPHO39-Q04-4,模型建构,是,L2,EVIDENCE_LOCATION_NOT_SPECIFIC,（4）在 S 参考系中，分象限画出对杆所受到的相对于 P 点的力矩有贡献的受力示意图（对于分布性的力，仅需示,"分象限画出对杆所受到的相对于 P 点的力矩有贡献的受力示意图（对于分布性的力，仅需示
+意性地画出其对 P 点力矩有贡献的等效合力）
+                     ，查看是否可能出现平衡位形，以检验（3）中分析的结果；
+（5）试讨论（3）中所确定的杆的各个平衡位形的稳定性。
+```
+
+## 参考解答抽取文本
+
+```text
+四、
+（1）（i）在 L 系中：
+   杆的运动可以分解为质心的运动和杆绕质心的转动。质心的运动是随 P 点绕 O 轴作角速度为  的匀速圆周运动
+和随杆绕 P",CPHO39-Q04.md 第(4)问,分四象限分析重力矩和离心力等效合力矩，两力+四象限并列分析，L2。,高
+BR-028-2,BU-028,CPHO39-Q04-4,科学推理,是,L2,EVIDENCE_LOCATION_NOT_SPECIFIC,（4）在 S 参考系中，分象限画出对杆所受到的相对于 P 点的力矩有贡献的受力示意图（对于分布性的力，仅需示,"第 I 象限不可能有平衡位形 ㉖                                                         第 II 象限可以有平衡位形 ㉗
+
+
+
+
+                  R      P                                         R                                 2a
+          O",CPHO39-Q04.md 第(4)问,逐象限判断力矩方向→是否可能平衡。四象限并列推理，L2。,高
+BR-028-3,BU-028,CPHO39-Q04-4,科学论证,是,L2,EVIDENCE_LOCATION_NOT_SPECIFIC,（4）在 S 参考系中，分象限画出对杆所受到的相对于 P 点的力矩有贡献的受力示意图（对于分布性的力，仅需示,"以检验（3）中分析的结果；
+（5）试讨论（3）中所确定的杆的各个平衡位形的稳定性。
+```
+
+## 参考解答抽取文本
+
+```text
+四、
+（1）（i）在 L 系中：
+   杆的运动可以分解为质心的运动和杆绕质心的转动。质心的运动是随 P 点绕 O 轴作角速度为  的匀速圆周运动
+和随杆绕 P 点作圆周运动的合运动。因此杆质心的平动动能为
+
+                                   1
+                          ELCk =     m[",CPHO39-Q04.md 第(4)问,主张=受力图验证(3)结论，证据=逐象限力矩对照。需比较两种方法，L2。,高
+BR-028-4,BU-028,CPHO39-Q04-4,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4）在 S 参考系中，分象限画出对杆所受到的相对于 P 点的力矩有贡献的受力示意图（对于分布性的力，仅需示,"受力示意图（对于分布性的力，仅需示
+意性地画出其对 P 点力矩有贡献的等效合力）
+                     ，查看是否可能出现平衡位形，以检验（3）中分析的结果；
+（5）试讨论（3）中所确定的杆的各个平衡位形的稳定性。
+```
+
+## 参考解答抽取文本
+
+```text
+四、
+（1）（i）在 L 系中：
+   杆的运动可以分解为质心的运动和杆绕质心的转动。质心的运动是随 P 点绕 O 轴作角速度为  的匀速圆周运动
+和随杆绕 P 点作圆周运动的合运动。因此杆质心的平动动能为",CPHO39-Q04.md 第(4)问,标准受力分析。,高
+BR-029-1,BU-029,CPHO39-Q04-5,模型建构,是,L3,EVIDENCE_LOCATION_NOT_SPECIFIC,（5）试讨论（3）中所确定的杆的各个平衡位形的稳定性。,"微扰法。
+  在平衡位形附近  =  E +  （   1 ），对 S 系中⑬式给出的合力矩 L合 ( E +  ) 做小量  展开，有
+
+                                                                                                          2
+                      L合 ( E +  ) = mga sin( E +  ) +",CPHO39-Q04.md 第(5)问,微扰法+势能二阶导数法，两种等价判稳方法+各象限平衡角结果整合，L3。,高
+BR-029-2,BU-029,CPHO39-Q04-5,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（5）试讨论（3）中所确定的杆的各个平衡位形的稳定性。,解答第 II 象限：d²E_Sp/dθ² > 0，势能极小，稳定部分,CPHO39-Q04.md 第(5)问,逐象限二阶导数符号分析→判稳。含临界条件cos³θ₀=−3g/(4ω²a)，L3。,高
+BR-029-3,BU-029,CPHO39-Q04-5,科学论证,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（5）试讨论（3）中所确定的杆的各个平衡位形的稳定性。,解答第 II 象限...稳定平衡；第 IV 象限...不稳定平衡部分,CPHO39-Q04.md 第(5)问,系统论证各象限平衡的稳定性，需比较四个象限的判稳结果，L3。,高
+BR-029-4,BU-029,CPHO39-Q04-5,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（5）试讨论（3）中所确定的杆的各个平衡位形的稳定性。,"稳定性
+
+## 来源
+
+- 试题文件：`03_corpus/raw_papers/cpho_39_2022_fusai_paper_solution_candidate.pdf`
+- 试题页码：2-3
+- 解答页码：12-19
+- 题图：03_corpus/item_assets/CPHO39-Q04-figure1-page2-raw.png
+- 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
+
+## G1-07-B1公式核对入口
+
+- 任务：",CPHO39-Q04.md 第(5)问,标准稳定性分析。,高
+BR-030-1,BU-030,CPHO39-Q05-1,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）设加载于弹簧 2 下端的作用力随时间变化的关系为 F (t ) ，写出弹簧 1 的长度 x1 (t ) 及小球加速度 x1 ( t ) 所满足的,解答mẍ₁ = −kx₁ + mg + F(t)部分,CPHO39-Q05.md 第(1)问,受力分析：弹簧恢复力+重力+外加驱动力，两独立力源识别，L2。,高
+BR-030-2,BU-030,CPHO39-Q05-1,科学推理,是,L1,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）设加载于弹簧 2 下端的作用力随时间变化的关系为 F (t ) ，写出弹簧 1 的长度 x1 (t ) 及小球加速度 x1 ( t ) 所满足的,解答mẍ₁ = −kx₁ + mg + F(t)部分,CPHO39-Q05.md 第(1)问,牛顿第二定律直接写方程。单步推理，L1。,高
+BR-030-3,BU-030,CPHO39-Q05-1,科学论证,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）设加载于弹簧 2 下端的作用力随时间变化的关系为 F (t ) ，写出弹簧 1 的长度 x1 (t ) 及小球加速度 x1 ( t ) 所满足的,"运动方程。
+（2）在一个简单模型中，假设 F (t ) 与时间 t 的关系为
+
+                                                  0     t0
+                                         F (t ) = 
+                                                   t   t0
+
+其中  为大于零的常量，它的大小对应力加载的快慢。求在该力的作用下弹",CPHO39-Q05.md 第(1)问,列方程，无主张-证据。,高
+BR-030-4,BU-030,CPHO39-Q05-1,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）设加载于弹簧 2 下端的作用力随时间变化的关系为 F (t ) ，写出弹簧 1 的长度 x1 (t ) 及小球加速度 x1 ( t ) 所满足的,"F(t)`、`alpha` 和不等号方向。
+- 式①至⑭中的二阶导数、平衡位置上横线、`omega^2=k/m`、`sqrt(m/k)`、`x1(t)` 与 `x2(t)`。
+- 式⑮至㉔中的 `alpha` 阈值、`arcsin` 自变量、相位区间端点开闭和 `x1` 单调性的点号。
+- 式㉕至㉙中的给定 `L` 条件、`omega=sqrt(k/m)` 代入、确保弹簧2先断与同时断裂的等/不等式差异。
+
+## 题干抽取文本
+
+```text
+五、（40 分）两根相同的理想轻弹簧，劲度系数均为",CPHO39-Q05.md 第(1)问,列标准运动方程。,高
+BR-031-1,BU-031,CPHO39-Q05-3,模型建构,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）记某一弹簧先被拉断的时刻为 t0 ，根据（2）中的结果，,解答Δx = x₁−x₂ = (α/ωk)(mgω/α−sinω部分,CPHO39-Q05.md 第(3)问,Δx比较模型+α参数分区+sinωt相位区间分析+单调性简化。多要素通过参数和相位相互约束，L3。,高
+BR-031-2,BU-031,CPHO39-Q05-3,科学推理,是,L3,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）记某一弹簧先被拉断的时刻为 t0 ，根据（2）中的结果，,解答α < g√(km) 时弹簧1必然先断部分,CPHO39-Q05.md 第(3)问,Δx符号分析→参数阈值α<g√(km)→α≥g√(km)时相位区间判断→单调性证明→实验解释。含参数分区和相位分析，L3。,高
+BR-031-3,BU-031,CPHO39-Q05-3,科学论证,是,L1,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）记某一弹簧先被拉断的时刻为 t0 ，根据（2）中的结果，,解答α越大（加载越快），拉断下弹簧2的可能性越大部分,CPHO39-Q05.md 第(3)问,主张=α越大弹簧2先断可能性越大，证据=参数趋势分析。一主张一证据，L1。,高
+BR-031-4,BU-031,CPHO39-Q05-3,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）记某一弹簧先被拉断的时刻为 t0 ，根据（2）中的结果，,"断裂模型
+
+## 来源
+
+- 试题文件：`03_corpus/raw_papers/cpho_39_2022_fusai_paper_solution_candidate.pdf`
+- 试题页码：3
+- 解答页码：20-23
+- 题图：无
+- 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
+
+## G1-07-B1公式核对入口
+
+- 公式核对表：`03_corpus/manual_review_transcripts/CPHO39-Q05_for",CPHO39-Q05.md 第(3)问,标准力学断裂分析。,高
+BR-032-1,BU-032,CPHO39-Q05-4,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）给定临界长度为 L ，要确保弹簧 2 先被拉断，试确定  需满足的关系式。有无可能两弹簧同时被拉断？若有，,解答t₀ = kL/α部分,CPHO39-Q05.md 第(4)问,时间反解+条件代入，两模型要素衔接，L2。,高
+BR-032-2,BU-032,CPHO39-Q05-4,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）给定临界长度为 L ，要确保弹簧 2 先被拉断，试确定  需满足的关系式。有无可能两弹簧同时被拉断？若有，,解答sin(ωkL/α) > (mg/α)√(k/m)部分,CPHO39-Q05.md 第(4)问,x₂=L→t₀→代入Δx条件→判据。两步推理，L2。,高
+BR-032-3,BU-032,CPHO39-Q05-4,科学论证,是,L1,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）给定临界长度为 L ，要确保弹簧 2 先被拉断，试确定  需满足的关系式。有无可能两弹簧同时被拉断？若有，,解答确保弹簧2先被拉断部分,CPHO39-Q05.md 第(4)问,主张=条件式确保弹簧2先断，证据=代入推导。一主张一证据，L1。,高
+BR-032-4,BU-032,CPHO39-Q05-4,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4）给定临界长度为 L ，要确保弹簧 2 先被拉断，试确定  需满足的关系式。有无可能两弹簧同时被拉断？若有，,"临界长度 L 所对应的  满足的关系式。
+```
+
+## 参考解答抽取文本
+
+```text
+五、
+（1）根据牛顿第二定律和胡克定律，弹簧 1 的长度 x1 (t ) 及小球加速度 x1 ( t ) 满足的运动方程为
+                                   mx1 = − kx1 + mg + F (t ) ①              3分
+
+（2）这是一个振动方程。解此方程可以得到 x1(t)（包含两个待定常量）",CPHO39-Q05.md 第(4)问,标准条件推导。,高
+BR-033-1,BU-033,CPHO39-Q06-5,模型建构,否,未出现,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（5）根据（3）和（4）的结果，求出金属两端（ x = − L 和 x = + L ）的电势差和温度差的比值（即金属的 Seebeck,解答S = [U(L)−U(−L)]/[T(L)−T(−L)]部分,CPHO39-Q06.md 第(5)问,调用(3)(4)已导出的E_x和dT/dx求比值。纯代数整理，未新建模型。,高
+BR-033-2,BU-033,CPHO39-Q06-5,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（5）根据（3）和（4）的结果，求出金属两端（ x = − L 和 x = + L ）的电势差和温度差的比值（即金属的 Seebeck,解答S = (e/k_B − √T₀/(eρc))⁻¹部分,CPHO39-Q06.md 第(5)问,E_x=−dU/dx积分→ΔU→代入ΔT→S。两步推理，L2。,高
+BR-033-3,BU-033,CPHO39-Q06-5,科学论证,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（5）根据（3）和（4）的结果，求出金属两端（ x = − L 和 x = + L ）的电势差和温度差的比值（即金属的 Seebeck,"Seebeck 系数为
+                                                                                              −1
+                              dU − E x ( x ) d x   E ( x)  e    T 
+                           S=    =               =− x    = − 0 ",CPHO39-Q06.md 第(5)问,公式代入求比值。,高
+BR-033-4,BU-033,CPHO39-Q06-5,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（5）根据（3）和（4）的结果，求出金属两端（ x = − L 和 x = + L ）的电势差和温度差的比值（即金属的 Seebeck,"Seebeck系数整体负一次方和评分标准中的式号引用。该入口不代表真实人工逐式校对完成。
+
+## 题干抽取文本
+
+```text
+六、
+ （60 分）金属内部有温度梯度时可以在其两端产生电动势，该效应被应用
+                                                                              −            +       y
+于热电偶温度计等。为了分析此现象，现建立一个简单的经典玩具模型，如图",CPHO39-Q06.md 第(5)问,标准热电系数计算。,高
+BR-034-1,BU-034,CPHO39-Q07-3,模型建构,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）试在本题模型近似下，求夸克物质的定体摩尔热容                                            和热容比 （定压摩尔热容与定体摩尔热容的比值）。,解答U_m = N_A Ē = 3RT部分,CPHO39-Q07.md 第(3)问,内能→C_V→C_P→γ，单一热力学关系链，L2。,高
+BR-034-2,BU-034,CPHO39-Q07-3,科学推理,是,L2,SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）试在本题模型近似下，求夸克物质的定体摩尔热容                                            和热容比 （定压摩尔热容与定体摩尔热容的比值）。,解答γ = C_P/C_V = 4/3部分,CPHO39-Q07.md 第(3)问,U_m=3RT→C_V=3R→C_P=4R→γ=4/3。三步标准公式代入，L2。,高
+BR-034-3,BU-034,CPHO39-Q07-3,科学论证,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）试在本题模型近似下，求夸克物质的定体摩尔热容                                            和热容比 （定压摩尔热容与定体摩尔热容的比值）。,"热容比 （定压摩尔热容与定体摩尔热容的比值）。
+
+（4）假设铅核-铅核碰撞的早期产物形成的“火球”近似为球形，半径约为 3.0  10 −15 m ，其中的夸克物质温度约为
+400 MeV/k B 。此后，“火球”迅速膨胀降温，至温度约为 150 MeV/k B 时，夸克物质中的夸克开始被束缚在一起形
+
+成质子和中子。假设“火球”的膨胀降温过程可近似为准静态的绝热过程，求出质子和中子刚刚形成时“火球”的半
+径。",CPHO39-Q07.md 第(3)问,纯热力学公式。,高
+BR-034-4,BU-034,CPHO39-Q07-3,质疑创新,否,未出现,EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）试在本题模型近似下，求夸克物质的定体摩尔热容                                            和热容比 （定压摩尔热容与定体摩尔热容的比值）。,"夸克物质状态方程
+
+## 来源
+
+- 试题文件：`03_corpus/raw_papers/cpho_39_2022_fusai_paper_solution_candidate.pdf`
+- 试题页码：4
+- 解答页码：27-29
+- 题图：无
+- 抽取状态：PDF文本层抽取，并按页面视觉定位题图；公式、特殊符号、图注和个别抽取错字需人工校对。
+
+## G1-07-B1公式核对入口
+
+- 任务编号：`G1-07-B1-FORMULA-39Q07`
+- 公式核对表：`03_corpus/manu",CPHO39-Q07.md 第(3)问,标准热力学量推导。,高
+BR-035-1,BU-035,CPHO40-Q01-1_ii,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,"（ii）物距u1（用l,h1,l2和s表示）。",u1=sl2(l1+l)/[l(l1-l2)]。,CPHO40-Q01.md,复用(1-i)的薄透镜模型，仅反解u1。未新建模型。,高
+BR-035-2,BU-035,CPHO40-Q01-1_ii,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（ii）物距u1。,将F代入u1=F(1+l/l1)得u1表达式。,CPHO40-Q01.md,单步代数反解，L1。,高
+BR-035-3,BU-035,CPHO40-Q01-1_ii,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（ii）物距u1。,u1=sl2(l1+l)/[l(l1-l2)]。,CPHO40-Q01.md,纯代数变形。,高
+BR-035-4,BU-035,CPHO40-Q01-1_ii,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（ii）物距u1。,F=sl1l2/[l(l1-l2)]。,CPHO40-Q01.md,标准代数。,高
+BR-036-1,BU-036,CPHO40-Q02-2,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）当温度T=Tc时判断活塞在管中央时平衡稳定性。,d^2theta/dt^2=-((24+pi^2)/(6pi^2))(g/r)theta^3。恢复力正比于theta^3，稳定。,CPHO40-Q02.md,高阶展开分析，需对(1)模型高阶应用，L2。,高
+BR-036-2,BU-036,CPHO40-Q02-2,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）判断Tc时稳定性。,运动方程展开得d^2theta/dt^2~-theta^3。恢复力正比于theta^3，稳定平衡。,CPHO40-Q02.md,高阶展开+恢复力符号判断。两步推理，L2。,高
+BR-036-3,BU-036,CPHO40-Q02-2,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）判断稳定性。,该位置是稳定平衡位置。,CPHO40-Q02.md,推导结论。,高
+BR-036-4,BU-036,CPHO40-Q02-2,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）稳定性。,d^2theta/dt^2。,CPHO40-Q02.md,标准。,高
+BR-037-1,BU-037,CPHO40-Q03-1_ii,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（ii）匀质圆球质心相对于楔块的加速度a_c。,a_c=(5/7)(M+m)g sin theta/[M+m-(5/7)m cos^2 theta]。,CPHO40-Q03.md,利用(1-i)结果和运动学关系求a_c。L2。,高
+BR-037-2,BU-037,CPHO40-Q03-1_ii,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（ii）求a_c。,a_c表达式代入。,CPHO40-Q03.md,条件代入。L2。,高
+BR-037-3,BU-037,CPHO40-Q03-1_ii,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（ii）求a_c。,a_c=...,CPHO40-Q03.md,纯计算。,高
+BR-037-4,BU-037,CPHO40-Q03-1_ii,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（ii）求a_c。,a_c。,CPHO40-Q03.md,标准。,高
+BR-038-1,BU-038,CPHO40-Q03-1_iii,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（iii）地面对楔块的支持力N。,N=(M+m)g*(M+2m/7)/[M+m-(5/7)m cos^2 theta]。,CPHO40-Q03.md,竖直力平衡直接计算。未新建模型。,高
+BR-038-2,BU-038,CPHO40-Q03-1_iii,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（iii）求N。,体系质心加速度->N。,CPHO40-Q03.md,单步力平衡。L1。,高
+BR-038-3,BU-038,CPHO40-Q03-1_iii,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（iii）求N。,N=...,CPHO40-Q03.md,纯计算。,高
+BR-038-4,BU-038,CPHO40-Q03-1_iii,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（iii）求N。,N。,CPHO40-Q03.md,标准。,高
+BR-039-1,BU-039,CPHO40-Q03-1_iv,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（iv）楔块对圆球的支持力N1。,N1=mg cos theta*(M+2m/7)/[M+m-(5/7)m cos^2 theta]。,CPHO40-Q03.md,垂直斜面力平衡。未新建模型。,高
+BR-039-2,BU-039,CPHO40-Q03-1_iv,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（iv）求N1。,楔块参考系中N1+ma0 sin theta=mg cos theta。,CPHO40-Q03.md,单步力平衡。L1。,高
+BR-039-3,BU-039,CPHO40-Q03-1_iv,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（iv）求N1。,N1=...,CPHO40-Q03.md,纯计算。,高
+BR-039-4,BU-039,CPHO40-Q03-1_iv,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（iv）求N1。,N1。,CPHO40-Q03.md,标准。,高
+BR-040-1,BU-040,CPHO40-Q04-1,模型建构,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）已知a，求b表达式。,由几何关系得b=a+4R cot(theta/2)。,CPHO40-Q04.md,圆柱相切纯几何关系。单一标准模型，L1。,高
+BR-040-2,BU-040,CPHO40-Q04-1,科学推理,是,L1,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）求b。,b=a+4R cot(theta/2)。,CPHO40-Q04.md,单步几何推导。L1。,高
+BR-040-3,BU-040,CPHO40-Q04-1,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）求b。,b=a+4R cot(theta/2)。,CPHO40-Q04.md,纯几何。,高
+BR-040-4,BU-040,CPHO40-Q04-1,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）求b。,几何关系。,CPHO40-Q04.md,标准。,高
+BR-041-1,BU-041,CPHO40-Q05-2_iii,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（iii）theta0满足什么条件时点电荷运动范围有界？,v_r^2符号分析：theta0<pi/2无界，theta0>=pi/2有界。,CPHO40-Q05.md,需比较两theta0范围动力学差异。L2。,高
+BR-041-2,BU-041,CPHO40-Q05-2_iii,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（iii）运动有界条件。,能量+角动量->径向方程->符号分析->条件判断。,CPHO40-Q05.md,含径向方程、符号分析和临界条件判断，L3。,高
+BR-041-3,BU-041,CPHO40-Q05-2_iii,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（iii）有界条件。,theta0>=pi/2时有界。,CPHO40-Q05.md,推导结论。,高
+BR-041-4,BU-041,CPHO40-Q05-2_iii,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（iii）条件。,v_r。,CPHO40-Q05.md,标准。,高
+BR-042-1,BU-042,CPHO40-Q07-2,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）求声速与温度关系，讨论各层变化。,v_s^2=gamma RT/mu。对流层降低、同温层不变、逆温层增大。,CPHO40-Q07.md,声速公式+温度分布代入。L2。,高
+BR-042-2,BU-042,CPHO40-Q07-2,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）讨论声速变化。,v_s^2=gamma RT/mu代入各层T(z)。,CPHO40-Q07.md,两步推理。L2。,高
+BR-042-3,BU-042,CPHO40-Q07-2,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）声速变化。,v_s^2=gamma RT/mu。,CPHO40-Q07.md,纯分析。,高
+BR-042-4,BU-042,CPHO40-Q07-2,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）声速。,v_s。,CPHO40-Q07.md,标准。,高
+BR-043-1,BU-043,CPHO40-Q07-3,模型建构,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）分析不同入射角声波折射和反射行为。,sin theta_o=(v_o/v_i)sin theta_i。临界角~65.61度。,CPHO40-Q07.md,斯涅尔+分层介质+全反射整合。L3。,高
+BR-043-2,BU-043,CPHO40-Q07-3,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）分析折射和反射。,斯涅尔->临界角->入射角分区行为。,CPHO40-Q07.md,含临界角判断和两区行为分类，L3。,高
+BR-043-3,BU-043,CPHO40-Q07-3,科学论证,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）不同入射角行为。,theta_i<theta_im折射，theta_i>theta_im全反射。,CPHO40-Q07.md,比较两种入射角范围的传播行为。L2。,高
+BR-043-4,BU-043,CPHO40-Q07-3,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3）折射反射。,sin theta_o。,CPHO40-Q07.md,标准。,高
+BR-044-1,BU-044,CPHO40-Q07-4,模型建构,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4）四种配置下大气声波导传播分析。,球面几何视线+全反射波导条件。同在平流层可远距离传播。,CPHO40-Q07.md,几何+声学+波导综合建模。L3。,高
+BR-044-2,BU-044,CPHO40-Q07-4,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4）四种配置分析。,几何分析+波导条件+各配置距离估算。,CPHO40-Q07.md,多配置比较+波导判断。L3。,高
+BR-044-3,BU-044,CPHO40-Q07-4,科学论证,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）四种配置。,只有同在平流层才可通过波导远距离传播。,CPHO40-Q07.md,系统比较四种配置，排除三种。需逐项定性排除论证，L3。,高
+BR-044-4,BU-044,CPHO40-Q07-4,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4）传播。,几何。,CPHO40-Q07.md,标准。,高
+BR-045-1,BU-045,CPHO40-Q08-1_i,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（i）阴极电子至少需要多大加速电压。,eU>=E_K。U_min=20.1kV。,CPHO40-Q08.md,能量条件直接求解。未新建模型。,高
+BR-045-2,BU-045,CPHO40-Q08-1_i,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（i）求U_min。,U_min=E_K/e=20.1kV。,CPHO40-Q08.md,单步推理。L1。,高
+BR-045-3,BU-045,CPHO40-Q08-1_i,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（i）U_min。,20.1kV。,CPHO40-Q08.md,纯计算。,高
+BR-045-4,BU-045,CPHO40-Q08-1_i,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（i）电压。,eU。,CPHO40-Q08.md,标准。,高
+BR-046-1,BU-046,CPHO40-Q08-1_ii,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（ii）连续X射线最短波长。,lambda_min=hc/(eU)~=0.0617nm。,CPHO40-Q08.md,单一公式直接代入。,高
+BR-046-2,BU-046,CPHO40-Q08-1_ii,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（ii）lambda_min。,lambda_min=hc/(eU)=0.0617nm。,CPHO40-Q08.md,单步。L1。,高
+BR-046-3,BU-046,CPHO40-Q08-1_ii,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（ii）波长。,0.0617nm。,CPHO40-Q08.md,纯计算。,高
+BR-046-4,BU-046,CPHO40-Q08-1_ii,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（ii）波长。,hc/lambda。,CPHO40-Q08.md,标准。,高
+BR-047-1,BU-047,CPHO40-Q08-3,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）说明散射谱双峰来源及宽度差异。,lambda1峰来自康普顿散射，lambda0峰来自瑞利散射。lambda1较宽因靶电子动量分布。,CPHO40-Q08.md,两散射机制区分模型。L2。,高
+BR-047-2,BU-047,CPHO40-Q08-3,科学推理,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）双峰来源。,康普顿vs瑞利散射。,CPHO40-Q08.md,解释而非推理。,高
+BR-047-3,BU-047,CPHO40-Q08-3,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）解释。,lambda1。,CPHO40-Q08.md,纯解释。,高
+BR-047-4,BU-047,CPHO40-Q08-3,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3）解释。,散射。,CPHO40-Q08.md,标准。,高
+BR-048-1,BU-048,CPHO41-Q01-2,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）求螺旋线导体轴线上z>0区域B大小。,B=mu0 nI0*Delta h/(2sqrt(R^2+z^2))。,CPHO41-Q01.md,Biot-Savart积分+对称性分析。L2。,高
+BR-048-2,BU-048,CPHO41-Q01-2,科学推理,是,L2,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）求B。,B=mu0 nI0*Delta h/(2sqrt(R^2+z^2))。,CPHO41-Q01.md,积分+对称性。两步推理，L2。,高
+BR-048-3,BU-048,CPHO41-Q01-2,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）求B。,B表达式。,CPHO41-Q01.md,纯积分。,高
+BR-048-4,BU-048,CPHO41-Q01-2,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）B。,dB。,CPHO41-Q01.md,标准。,高
+BR-049-1,BU-049,CPHO41-Q01-3,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3）求在z>0区域磁感应强度的大小。,B=mu0 nI0*Delta h/(2sqrt(R^2+z^2))。,CPHO41-Q01.md,复用(2)的螺旋线磁场模型。未新建模型。,高
+BR-049-2,BU-049,CPHO41-Q01-3,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）求B大小。,B=mu0 nI0*Delta h/(2sqrt(R^2+z^2))。,CPHO41-Q01.md,单步代入。L1。,高
+BR-049-3,BU-049,CPHO41-Q01-3,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3）B。,B表达式。,CPHO41-Q01.md,纯积分。,高
+BR-049-4,BU-049,CPHO41-Q01-3,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3）B。,dB。,CPHO41-Q01.md,标准。,高
+BR-050-1,BU-050,CPHO41-Q02-4_1,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4.1）证明用两个正电荷可模拟此偶极子，并求等效电荷量。,电势匹配：q1/(4pi epsilon0 r1)+q2/(4pi epsilon0 r2)=q d cos theta/(4pi epsilon0 r^2)。,CPHO41-Q02.md,电势多极展开与等效电荷映射。L2。,高
+BR-050-2,BU-050,CPHO41-Q02-4_1,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4.1）证明并求等效电荷量。,电势匹配+泰勒展开+系数比较。,CPHO41-Q02.md,两步推理。L2。,高
+BR-050-3,BU-050,CPHO41-Q02-4_1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4.1）证明。,"q1,q2表达式。",CPHO41-Q02.md,推导。,高
+BR-050-4,BU-050,CPHO41-Q02-4_1,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4.1）等效电荷。,电势展开。,CPHO41-Q02.md,标准。,高
+BR-051-1,BU-051,CPHO41-Q02-4_2,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4.2）问电荷系能否稳定悬浮？,Earnshaw定理：纯静电场中不能实现稳定平衡。,CPHO41-Q02.md,Earnshaw定理直接应用。L2。,高
+BR-051-2,BU-051,CPHO41-Q02-4_2,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4.2）能否稳定悬浮？,Earnshaw定理->不能。,CPHO41-Q02.md,定理应用。单步，L1。,高
+BR-051-3,BU-051,CPHO41-Q02-4_2,科学论证,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4.2）能否？,纯静电场中不能稳定平衡。,CPHO41-Q02.md,主张=不能悬浮。证据=Earnshaw定理。L1。,高
+BR-051-4,BU-051,CPHO41-Q02-4_2,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4.2）悬浮。,Earnshaw。,CPHO41-Q02.md,标准。,高
+BR-052-1,BU-052,CPHO41-Q02-4_3,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4.3）讨论如何通过引入随时间变化的电场实现悬浮。,Earnshaw定理仅适用于静电场。交变场可改变有效势能实现Paul阱悬浮。,CPHO41-Q02.md,静电场局限识别+动态场方案。L2。,高
+BR-052-2,BU-052,CPHO41-Q02-4_3,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4.3）讨论交变场实现悬浮。,交变场等效势能+稳定条件。,CPHO41-Q02.md,方案讨论。L2。,高
+BR-052-3,BU-052,CPHO41-Q02-4_3,科学论证,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4.3）如何实现悬浮。,交变电场->等效势能->稳定区。,CPHO41-Q02.md,方案论证。L2。,高
+BR-052-4,BU-052,CPHO41-Q02-4_3,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4.3）悬浮。,交变场。,CPHO41-Q02.md,标准。,高
+BR-053-1,BU-053,CPHO41-Q03-1,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）导出g(r)表达式和平衡条件。,g(r)=GM(<r)/r^2。dp/dr=-rho g。,CPHO41-Q03.md,球壳积分+流体静力平衡。两模型要素，L2。,高
+BR-053-2,BU-053,CPHO41-Q03-1,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）导出g(r)和平衡条件。,g(r)=GM(<r)/r^2。dp/dr=-rho g。,CPHO41-Q03.md,两步推理。L2。,高
+BR-053-3,BU-053,CPHO41-Q03-1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）平衡条件。,dp/dr=-rho g。,CPHO41-Q03.md,推导结果。,高
+BR-053-4,BU-053,CPHO41-Q03-1,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）g(r)。,g=GM/r^2。,CPHO41-Q03.md,标准。,高
+BR-054-1,BU-054,CPHO41-Q04-1,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）求两个构型下每个球的总电磁能E_EM。,E_self=Q^2/(8pi epsilon0 a)。E_inter(一体)=Q^2/(4pi epsilon0 d)。E_inter(二体)=-Q^2/(4pi epsilon0 d)。,CPHO41-Q04.md,自身能+相互作用能两种构型计算。两子模型，L2。,高
+BR-054-2,BU-054,CPHO41-Q04-1,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）求总电磁能。,自能+互能。两构型代数值不同。,CPHO41-Q04.md,两步计算。L2。,高
+BR-054-3,BU-054,CPHO41-Q04-1,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）电磁能。,E=Q^2/(8pi epsilon0 a)。,CPHO41-Q04.md,纯计算。,高
+BR-054-4,BU-054,CPHO41-Q04-1,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）电磁能。,W。,CPHO41-Q04.md,标准。,高
+BR-055-1,BU-055,CPHO41-Q04-2,模型建构,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）求两个构型的自旋角速度之比和转动惯量变化。,Delta I=-2E_EM/c^2。L守恒->Delta omega。,CPHO41-Q04.md,电磁质能+等效转动惯量+角动量守恒。多物理量整合，L3。,高
+BR-055-2,BU-055,CPHO41-Q04-2,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）求角速度比和变化。,电磁质量贡献->惯量变化->角速度变化。,CPHO41-Q04.md,跨领域推理链。L3。,高
+BR-055-3,BU-055,CPHO41-Q04-2,科学论证,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）两种构型结果及关系。,一体构型加速，二体构型减速。,CPHO41-Q04.md,比较两构型差异。L2。,高
+BR-055-4,BU-055,CPHO41-Q04-2,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）角速度。,Delta I。,CPHO41-Q04.md,标准。,高
+BR-056-1,BU-056,CPHO41-Q05-2,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）求辐射出的总能量，讨论光子球条件。,E=mc^2*eta。光子球r=3GM/c^2。,CPHO41-Q05.md,标准吸积盘模型直接应用。未新建模型。,高
+BR-056-2,BU-056,CPHO41-Q05-2,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2）求辐射能量和光子球。,质能转换效率+广义相对论光子球半径。,CPHO41-Q05.md,两独立物理量计算。L2。,高
+BR-056-3,BU-056,CPHO41-Q05-2,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）辐射能量。,E=mc^2*eta。,CPHO41-Q05.md,纯计算。,高
+BR-056-4,BU-056,CPHO41-Q05-2,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）光子球。,r=3GM/c^2。,CPHO41-Q05.md,标准。,高
+BR-057-1,BU-057,CPHO41-Q07-1,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）求超导环中感生电流I和磁矩m。,I=-(pi a^2/L)Delta B。m=pi a^2 I。,CPHO41-Q07.md,法拉第+电感直接计算。单一标准模型应用。,高
+BR-057-2,BU-057,CPHO41-Q07-1,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）求I和m。,epsilon=-d Phi/dt=-pi a^2 dB/dt。I=epsilon/L。m=pi a^2 I。,CPHO41-Q07.md,法拉第+电感+磁矩。两步链，L2。,高
+BR-057-3,BU-057,CPHO41-Q07-1,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,"（1）I,m。",I=-(pi a^2/L)Delta B。,CPHO41-Q07.md,纯计算。,高
+BR-057-4,BU-057,CPHO41-Q07-1,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,"（1）I,m。",epsilon。,CPHO41-Q07.md,标准。,高
+BR-058-1,BU-058,CPHO41-Q07-2,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2）求超导环与点磁矩受力。,U=-(mu0 m^2)/(2pi z^3)。F=-dU/dz。,CPHO41-Q07.md,磁偶极子间相互作用力。单一标准模型。,高
+BR-058-2,BU-058,CPHO41-Q07-2,科学推理,是,L2,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）求受力。,相互作用能+求导。F=(3mu0 m^2)/(2pi z^4)。,CPHO41-Q07.md,两步推理。L2。,高
+BR-058-3,BU-058,CPHO41-Q07-2,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）受力。,F=(3mu0 m^2)/(2pi z^4)。,CPHO41-Q07.md,纯计算。,高
+BR-058-4,BU-058,CPHO41-Q07-2,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2）受力。,U=-mB。,CPHO41-Q07.md,标准。,高
+BR-059-1,BU-059,CPHO41-Q07-3_1,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3.1）恒定外磁场中移动超导环，求环内电流。,"v_x,v_z运动产生感生电流。",CPHO41-Q07.md,同一电磁感应模型下的参数变化分析。未新建模型。,高
+BR-059-2,BU-059,CPHO41-Q07-3_1,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3.1）求环内电流并解释力来源。,三分量速度下的磁通量变化率计算。,CPHO41-Q07.md,多分量推理链，L3。,高
+BR-059-3,BU-059,CPHO41-Q07-3_1,科学论证,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3.1）解释力由梯度作用产生。,"F_x=m_x dB/dx, F_z=m_z dB/dz。与点偶极子一致。",CPHO41-Q07.md,比较分力与总梯度力。L2。,高
+BR-059-4,BU-059,CPHO41-Q07-3_1,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3.1）电流。,epsilon=...,CPHO41-Q07.md,标准。,高
+BR-060-1,BU-060,CPHO41-Q07-3_2,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3.2）求磁场梯度不为零时环的受力。,F=grad(m B)=m_x dB/dx + m_z dB/dz。,CPHO41-Q07.md,梯度力公式直接应用。未新建模型。,高
+BR-060-2,BU-060,CPHO41-Q07-3_2,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3.2）求受力。,F=m_x dB/dx+m_z dB/dz。,CPHO41-Q07.md,单步梯度力。L1。,高
+BR-060-3,BU-060,CPHO41-Q07-3_2,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3.2）受力。,F表达式。,CPHO41-Q07.md,纯计算。,高
+BR-060-4,BU-060,CPHO41-Q07-3_2,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3.2）受力。,grad mB。,CPHO41-Q07.md,标准。,高
+BR-061-1,BU-061,CPHO41-Q07-4,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）考虑重力后求悬浮平衡条件。,F_magnetic+mg=0。m_z dB/dz=mg。,CPHO41-Q07.md,力平衡整合磁力+重力。两力模型，L2。,高
+BR-061-2,BU-061,CPHO41-Q07-4,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4）求悬浮平衡条件。,力平衡方程+稳定性二阶导数。,CPHO41-Q07.md,平衡+稳定性。两步推理，L2。,高
+BR-061-3,BU-061,CPHO41-Q07-4,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4）平衡条件。,m_z dB/dz=mg。,CPHO41-Q07.md,推导。,高
+BR-061-4,BU-061,CPHO41-Q07-4,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4）悬浮。,F=0。,CPHO41-Q07.md,标准。,高
+BR-062-1,BU-062,CPHO41-Q07-5_1,模型建构,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（5.1）考虑超导环运动方程，求小振动的平衡位置和频率。,F=-mg+m_z dB/dz。势能二阶展开->简谐振动。,CPHO41-Q07.md,动力学模型+势能展开+简谐近似。多步整合，L3。,高
+BR-062-2,BU-062,CPHO41-Q07-5_1,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（5.1）求小振动平衡和频率。,运动方程+平衡解+二阶展开->频率表达式。,CPHO41-Q07.md,含动态平衡和线性化，L3。,高
+BR-062-3,BU-062,CPHO41-Q07-5_1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（5.1）小振动。,omega表达式。,CPHO41-Q07.md,推导。,高
+BR-062-4,BU-062,CPHO41-Q07-5_1,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（5.1）振动。,d^2z/dt^2。,CPHO41-Q07.md,标准。,高
+BR-063-1,BU-063,CPHO41-Q07-5_2,模型建构,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（5.2）考虑超导环电感变化对小振动频率的修正。,L(z)变化->m变化->附加恢复力->频率修正。,CPHO41-Q07.md,电感参数的空间依赖与动力学耦合。多物理场耦合建模，L3。,高
+BR-063-2,BU-063,CPHO41-Q07-5_2,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（5.2）求修正频率。,电感变化修正m->修正力常数->修正频率。,CPHO41-Q07.md,多步耦合修正链。L3。,高
+BR-063-3,BU-063,CPHO41-Q07-5_2,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（5.2）频率修正。,修正后omega。,CPHO41-Q07.md,推导。,高
+BR-063-4,BU-063,CPHO41-Q07-5_2,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（5.2）修正。,L(z)。,CPHO41-Q07.md,标准。,高
+BR-064-1,BU-064,CPHO42-Q01-1,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）求小车在轨道顶端不飞起的v0最小值和vP最小值。,N>=0+能量守恒。v0_min^2=gR(h/R+1)。vP_min=sqrt(gR)。,CPHO42-Q01.md,轨道约束+能量守恒。两模型要素，L2。,高
+BR-064-2,BU-064,CPHO42-Q01-1,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,"（1）求v0_min,vP_min。",N>=0+能量守恒解v0_min。vP时半径最大。,CPHO42-Q01.md,两步推理。L2。,高
+BR-064-3,BU-064,CPHO42-Q01-1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）v0_min。,v0_min^2=gR(h/R+1)。,CPHO42-Q01.md,纯计算。,高
+BR-064-4,BU-064,CPHO42-Q01-1,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）速度。,N>=0。,CPHO42-Q01.md,标准。,高
+BR-065-1,BU-065,CPHO42-Q01-3,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）vP_min时小车出轨道时速度方向？,N=0脱轨条件直接判断。,CPHO42-Q01.md,复用N=0脱轨模型。未新建模型。,高
+BR-065-2,BU-065,CPHO42-Q01-3,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3）v_R方向？,脱轨时N=0，v_R沿径向。,CPHO42-Q01.md,脱轨条件直接判断。单步推理，L1。,高
+BR-065-3,BU-065,CPHO42-Q01-3,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3）方向。,沿径向。,CPHO42-Q01.md,推导结论。,高
+BR-065-4,BU-065,CPHO42-Q01-3,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3）方向。,N=0。,CPHO42-Q01.md,标准。,高
+BR-066-1,BU-066,CPHO42-Q01-4,模型建构,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（4）分析时间延迟tau的物理原因并推导其公式。,考虑地球引力时间膨胀效应。tau~=(2GM/c^3)ln(...)。,CPHO42-Q01.md,广义相对论引力时间延迟+积分。多要素整合，L3。,高
+BR-066-2,BU-066,CPHO42-Q01-4,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（4）推导tau公式。,史瓦西度规+光速径向坐标依赖+积分。,CPHO42-Q01.md,相对论多步推导链。L3。,高
+BR-066-3,BU-066,CPHO42-Q01-4,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4）时间延迟。,tau表达式。,CPHO42-Q01.md,推导。,高
+BR-066-4,BU-066,CPHO42-Q01-4,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（4）延迟。,度规。,CPHO42-Q01.md,标准。,高
+BR-067-1,BU-067,CPHO42-Q02-2_1,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2.1）导出放大电路电压传输特性v_o=f(v_i)。,基尔霍夫定律+理想运放虚短+二极管分段。,CPHO42-Q02.md,理想运放+反馈网络。L2。,高
+BR-067-2,BU-067,CPHO42-Q02-2_1,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2.1）导出v_o=f(v_i)。,虚短+节点电流+二极管通断分段。,CPHO42-Q02.md,分段推导。两类分支，L2。,高
+BR-067-3,BU-067,CPHO42-Q02-2_1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2.1）v_o。,分段函数。,CPHO42-Q02.md,纯推导。,高
+BR-067-4,BU-067,CPHO42-Q02-2_1,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2.1）特性。,虚短。,CPHO42-Q02.md,标准。,高
+BR-068-1,BU-068,CPHO42-Q03-1,模型建构,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）小球运动到最高点时绳中张力与曲率半径。,T+mg=mv^2/rho。最高点张力为0时v=sqrt(g rho)。,CPHO42-Q03.md,圆周运动向心力方程。单一标准模型，L1。,高
+BR-068-2,BU-068,CPHO42-Q03-1,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）张力和曲率半径。,向心力方程代入最高点条件。,CPHO42-Q03.md,单步推理。L1。,高
+BR-068-3,BU-068,CPHO42-Q03-1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）张力和曲率半径。,T+mg=mv^2/rho。,CPHO42-Q03.md,纯公式。,高
+BR-068-4,BU-068,CPHO42-Q03-1,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）张力。,T。,CPHO42-Q03.md,标准。,高
+BR-069-1,BU-069,CPHO42-Q03-2_1,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2.1）当小球到达最低点D时木块的速度。,水平动量守恒+机械能守恒联立。,CPHO42-Q03.md,动量+能量+几何约束。两守恒律整合，L2。,高
+BR-069-2,BU-069,CPHO42-Q03-2_1,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2.1）求木块速度。,动量守恒+能量守恒。v_M=2mu/(M+m)。,CPHO42-Q03.md,两步守恒联立。L2。,高
+BR-069-3,BU-069,CPHO42-Q03-2_1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2.1）木块速度。,v_M=2mu/(M+m)。,CPHO42-Q03.md,纯计算。,高
+BR-069-4,BU-069,CPHO42-Q03-2_1,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2.1）速度。,动量守恒。,CPHO42-Q03.md,标准。,高
+BR-070-1,BU-070,CPHO42-Q03-2_2,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（2.2）绳子被拉断时木块移动距离。,几何约束+动量守恒。,CPHO42-Q03.md,同一碰撞模型下的几何分析。未新建模型。,高
+BR-070-2,BU-070,CPHO42-Q03-2_2,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（2.2）求木块移动距离。,绳长约束+木块位移方程。,CPHO42-Q03.md,几何约束+运动学。L2。,高
+BR-070-3,BU-070,CPHO42-Q03-2_2,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2.2）距离。,x表达式。,CPHO42-Q03.md,纯计算。,高
+BR-070-4,BU-070,CPHO42-Q03-2_2,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2.2）距离。,几何。,CPHO42-Q03.md,标准。,高
+BR-071-1,BU-071,CPHO42-Q05-1,模型建构,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）求矩形脉冲和三角脉冲的频谱函数F(omega)。,Fourier变换。F_rect=A tau*sinc。F_tri=(A tau/2)*sinc^2。,CPHO42-Q05.md,傅里叶变换两种脉冲。L2。,高
+BR-071-2,BU-071,CPHO42-Q05-1,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）求F(omega)。,矩形直接积分。三角用卷积=矩形*矩形。,CPHO42-Q05.md,两步不同积分方法。L2。,高
+BR-071-3,BU-071,CPHO42-Q05-1,科学论证,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）频谱。,A tau*sinc。,CPHO42-Q05.md,纯积分。,高
+BR-071-4,BU-071,CPHO42-Q05-1,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）频谱。,Fourier。,CPHO42-Q05.md,标准。,高
+BR-072-1,BU-072,CPHO42-Q05-3_2,模型建构,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（3.2）为使信号不失真，tau和omega_c应满足什么条件？,群速展宽Delta omega tau^2*kappa z<<1。相位失真条件。,CPHO42-Q05.md,多物理机制：群速色散+脉冲展宽+保真条件。L3。,高
+BR-072-2,BU-072,CPHO42-Q05-3_2,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3.2）不失真条件和shape factor。,相位失真+振幅失真双重分析。临界条件。,CPHO42-Q05.md,两种失真机制和临界分析。L3。,高
+BR-072-3,BU-072,CPHO42-Q05-3_2,科学论证,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（3.2）条件解释。,相位约束omega_c。振幅约束tau。,CPHO42-Q05.md,需区分两类失真。L2。,高
+BR-072-4,BU-072,CPHO42-Q05-3_2,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（3.2）条件。,tau条件。,CPHO42-Q05.md,标准。,高
+BR-073-1,BU-073,CPHO42-Q06-1_1,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1.1）求金属丝电阻与温度T的关系式。,R=R0*exp(b(1/T-1/T0))。b=E_c/(2k_B)。,CPHO42-Q06.md,热激活载流子密度模型。单一标准模型。,高
+BR-073-2,BU-073,CPHO42-Q06-1_1,科学推理,是,L1,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1.1）R(T)。,n~exp(-E_c/(2kT))->rho~exp(E_c/(2kT))->R(T)。,CPHO42-Q06.md,载流子密度->电阻率。单步，L1。,高
+BR-073-3,BU-073,CPHO42-Q06-1_1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1.1）R(T)。,R=R0*exp(b(1/T-1/T0))。,CPHO42-Q06.md,纯代入。,高
+BR-073-4,BU-073,CPHO42-Q06-1_1,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1.1）电阻。,n~exp。,CPHO42-Q06.md,标准。,高
+BR-074-1,BU-074,CPHO42-Q06-2_3,模型建构,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,"（2.3）由反射和透射功率求平衡温度T1,T2。",能量平衡P_abs=P_rad。双向方程。,CPHO42-Q06.md,复用前问的能量平衡模型。未新建模型。,高
+BR-074-2,BU-074,CPHO42-Q06-2_3,科学推理,是,L2,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,"（2.3）求T1,T2。",前向吸收=前向辐射。后向吸收=后向辐射。联立。,CPHO42-Q06.md,双向能量平衡。L2。,高
+BR-074-3,BU-074,CPHO42-Q06-2_3,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,"（2.3）T1,T2。","T1,T2表达式。",CPHO42-Q06.md,纯方程求解。,高
+BR-074-4,BU-074,CPHO42-Q06-2_3,质疑创新,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（2.3）温度。,P_abs=P_rad。,CPHO42-Q06.md,标准。,高
+BR-075-1,BU-075,CPHO42-Q07-1,模型建构,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC,（1）分析质子在磁场中运动，求反射条件。,Lorentz力+磁矩守恒+磁镜效应。mu=v_perp^2/B守恒。,CPHO42-Q07.md,磁镜效应+磁矩守恒+反射条件。多物理量约束，L3。,高
+BR-075-2,BU-075,CPHO42-Q07-1,科学推理,是,L3,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC,（1）求反射条件。,磁矩守恒->B_max/B_min关系->反射条件表达式。,CPHO42-Q07.md,多步推导含绝热不变量的应用。L3。,高
+BR-075-3,BU-075,CPHO42-Q07-1,科学论证,否,未出现,QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）反射条件。,mu守恒。,CPHO42-Q07.md,推导。,高
+BR-075-4,BU-075,CPHO42-Q07-1,质疑创新,否,未出现,QUESTION_QUOTE_TOO_SHORT|QUESTION_QUOTE_NOT_LOCATABLE|SOLUTION_QUOTE_TOO_SHORT|SOLUTION_QUOTE_NOT_LOCATABLE|EVIDENCE_LOCATION_NOT_SPECIFIC|ADJACENT_REASON_TOO_GENERIC|ADJACENT_REASON_REUSED_ACROSS_ITEMS,（1）反射。,B变化。,CPHO42-Q07.md,标准。,高
