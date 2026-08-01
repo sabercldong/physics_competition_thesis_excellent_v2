@@ -46,8 +46,8 @@ def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
         return list(reader.fieldnames or []), list(reader)
 
 
-def validate(path: Path, mode: str) -> list[str]:
-    template_fields, template_rows = read_csv(TEMPLATE)
+def validate(path: Path, mode: str, template: Path = TEMPLATE) -> list[str]:
+    template_fields, template_rows = read_csv(template)
     fields, rows = read_csv(path)
     errors: list[str] = []
 
@@ -101,9 +101,15 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("path", nargs="?", type=Path, default=TEMPLATE)
     parser.add_argument("--mode", choices=("template", "filled"), default="template")
+    parser.add_argument(
+        "--template",
+        type=Path,
+        default=TEMPLATE,
+        help="用于核对固定字段的空白模板；新版交接包应传入包内模板。",
+    )
     args = parser.parse_args()
 
-    errors = validate(args.path.resolve(), args.mode)
+    errors = validate(args.path.resolve(), args.mode, args.template.resolve())
     if errors:
         print(f"FAIL errors={len(errors)}")
         for error in errors[:100]:
