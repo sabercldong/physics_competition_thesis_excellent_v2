@@ -159,6 +159,8 @@ def build_questions() -> dict[str, str]:
     QUESTION_OUTPUT.mkdir(parents=True, exist_ok=True)
     image_output = QUESTION_OUTPUT / "图件"
     shutil.copytree(ATLAS / "markdown/assets", image_output, dirs_exist_ok=True)
+    atlas_markdown_output = ATLAS / "markdown"
+    atlas_markdown_output.mkdir(parents=True, exist_ok=True)
     generated: dict[str, str] = {}
     for edition, count in QUESTION_COUNTS.items():
         for question in range(1, count + 1):
@@ -168,6 +170,9 @@ def build_questions() -> dict[str, str]:
             markdown = markdown_from_tex(tex, qid, image_output).replace("(图件/", "(图件/")
             markdown = display_text(markdown) + "\n"
             (QUESTION_OUTPUT / f"{qid}.md").write_text(markdown, encoding="utf-8")
+            atlas_markdown = markdown.replace("(图件/", "(assets/")
+            atlas_markdown = "\n".join(line.rstrip() for line in atlas_markdown.splitlines()) + "\n"
+            (atlas_markdown_output / f"{qid}.md").write_text(atlas_markdown, encoding="utf-8")
             generated[qid] = markdown
     return generated
 

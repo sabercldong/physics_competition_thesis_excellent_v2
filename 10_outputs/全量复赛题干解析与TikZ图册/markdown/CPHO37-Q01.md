@@ -1,58 +1,30 @@
+> 本文件由项目已校订的LaTeX题干、参考解答和TikZ图件生成。评分时以本文件为主要阅读文本；需核对原始措辞时查看包内对应届次原始PDF。
+
 # 第37届复赛第1题：高铁空气弹簧劲度系数模型
 
-## 题干整理
+## 题干
 
-空气弹簧包含主气室、附加气室和阀门。平衡时主气室压强、体积为 $p_{10}$、$V_{10}$，附加气室体积为 $V_2$。有效承载面积为 $A_e$，向下位移为 $y$，并有
+高铁空气弹簧由主气室、附加气室及阀门组成，如图。平衡时主气室压强、体积分别为 $p_{10}$、$V_{10}$，附加气室容积为 $V_2$，大气压强为 $p_0$。主气室对簧上负载的竖直作用力为 $F=(p_1-p_0)A_e$。在小振幅条件下，主气室体积和有效承载面积随负载相对平衡位置的向下位移 $y$ 线性变化： $$\frac{\mathrm dV_1}{\mathrm dy}=-\alpha,\qquad
+\frac{\mathrm dA_e}{\mathrm dy}=\beta,\qquad \alpha,\beta>0.$$ 求阀门关闭、阀门打开时，分别在等温与绝热条件下空气弹簧劲度系数 $K=\mathrm dF/\mathrm dy$ 与 $A_e$ 的关系。
 
-$$
-\frac{\mathrm dV_1}{\mathrm dy}=-\alpha,
-\qquad
-\frac{\mathrm dA_e}{\mathrm dy}=\beta.
-$$
+![CPHO37-Q01-figure1](assets/CPHO37-Q01-figure1.png)
 
-求阀门关闭、打开时，在等温和绝热条件下的劲度系数。
+## 参考解答整理
 
-## 解析整理
+#### 统一推导。
 
-### 1. 统一关系
+用多方过程方程 $$p_1V_1^n=\text{常量}$$ 统一处理两种热力学过程。由 $F=(p_1-p_0)A_e$，有 $$K=(p_1-p_0)\frac{\mathrm dA_e}{\mathrm dy}
++\frac{\mathrm dp_1}{\mathrm dy}A_e.$$ 对过程方程微分，并代入 $\mathrm dV_1/\mathrm dy=-\alpha$、$\mathrm dA_e/\mathrm dy=\beta$，阀门关闭时得到通式 $$K=\frac{\alpha n p_{10}V_{10}^n}{V_1^{n+1}}A_e
++\beta\left[p_{10}\left(\frac{V_{10}}{V_1}\right)^n-p_0\right].$$
 
-$$
-F=(p_1-p_0)A_e,
-\qquad p_1V_1^n=\text{常量},
-$$
+#### （1）阀门关闭。
 
-$$
-K=\frac{\alpha n p_{10}V_{10}^n}{V_1^{n+1}}A_e
-+\beta\left[p_{10}\left(\frac{V_{10}}{V_1}\right)^n-p_0\right].
-$$
+上下乘客变化缓慢时，气体近似等温，$n=1$： $$\boxed{K=\frac{\alpha p_{10}V_{10}}{V_1^2}A_e
++\beta\left(\frac{p_{10}V_{10}}{V_1}-p_0\right).}$$ 剧烈振动时可近似绝热。由 $C_V=\frac52R$， $$\gamma=\frac{C_P}{C_V}=\frac{C_V+R}{C_V}=\frac75.$$ 于是 $$\boxed{K=\frac{7\alpha p_{10}V_{10}^{7/5}}{5V_1^{12/5}}A_e
++\beta\left[p_{10}\left(\frac{V_{10}}{V_1}\right)^{7/5}-p_0\right].}$$
 
-### 2. 阀门关闭
+#### （2）阀门打开。
 
-等温过程：
-
-$$
-K=\frac{\alpha p_{10}V_{10}}{V_1^2}A_e
-+\beta\left(\frac{p_{10}V_{10}}{V_1}-p_0\right).
-$$
-
-绝热过程，$\gamma=7/5$：
-
-$$
-K=\frac{7\alpha p_{10}V_{10}^{7/5}}{5V_1^{12/5}}A_e
-+\beta\left[p_{10}\left(\frac{V_{10}}{V_1}\right)^{7/5}-p_0\right].
-$$
-
-### 3. 阀门打开
-
-低频时两气室整体等温：
-
-$$
-K=\frac{\alpha p_{10}(V_{10}+V_2)}{(V_1+V_2)^2}A_e
-+\beta\left[\frac{p_{10}(V_{10}+V_2)}{V_1+V_2}-p_0\right].
-$$
-
-高频时附加气室来不及参与，结果仍为主气室绝热表达式。
-
-## 图件与依据
-
-TikZ 图重绘簧上负载、主气室、附加气室、阀门和位移方向。题干、公式和图件依据 `CPHO37-Q01.md`、`CPHO37-Q01_formula_check_v1.csv` 和题图核对入口。
+低频、缓慢变形时，主气室与附加气室压强相同，二者作为整体作等温变化： $$\boxed{K=\frac{\alpha p_{10}(V_{10}+V_2)}{(V_1+V_2)^2}A_e
++\beta\left[\frac{p_{10}(V_{10}+V_2)}{V_1+V_2}-p_0\right].}$$ 高频、快速变形时，来不及通过连通管流动的气体仅限于主气室，因此仍为主气室的绝热结果： $$\boxed{K=\frac{7\alpha p_{10}V_{10}^{7/5}}{5V_1^{12/5}}A_e
++\beta\left[p_{10}\left(\frac{V_{10}}{V_1}\right)^{7/5}-p_0\right].}$$

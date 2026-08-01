@@ -1,66 +1,29 @@
+> 本文件由项目已校订的LaTeX题干、参考解答和TikZ图件生成。评分时以本文件为主要阅读文本；需核对原始措辞时查看包内对应届次原始PDF。
+
 # 第38届复赛第4题：两枚小永磁针的相互作用与平衡
 
-## 题干整理
+## 题干
 
-两枚小永磁针均可看作磁矩大小为 $\mu=IS$ 的小电流环，$S=\pi R^2$。磁针 $A$ 固定在原点，其磁矩沿 $+x$ 方向；磁针 $B$ 位于正下方 $(0,0,z)$，$z\gg R$，其磁矩与 $x$ 轴成 $\theta$ 角。竖直向下取为 $+z$ 方向。
+一枚小永磁针可视为半径很小的电流环，其磁矩大小为 $\mu=IS$，其中 $I$ 为环电流强度、$S=\pi R^2$，磁矩方向与电流环平面垂直并满足右手螺旋关系。两枚小磁针 $A$、$B$ 的磁矩大小均为 $\mu$、质量均为 $m$。取竖直向下为 $z$ 轴正向，$A$ 固定在原点 $O$，磁矩沿 $x$ 轴正向；$B$ 位于 $A$ 正下方。已知真空磁导率 $\mu_0$ 和重力加速度大小 $g$。
 
-![电流环磁矩与两磁偶极子相对位置](assets/CPHO38-Q04-figure4a.png)
+设 $B$ 的质心坐标为 $(0,0,z)$，且 $z\gg R$；其磁矩与 $x$ 轴夹角为 $\theta$。求：（1）$A$、$B$ 间的相互作用势能；（2）在 $z$ 不变时的稳定平衡角 $\theta_{\text{稳}}$；（3）当 $\theta=\theta_{\text{稳}}$ 而 $z$ 可变化时的受力平衡位置，并判断其稳定性。
 
-## 解析整理
+![CPHO38-Q04-figure4a](assets/CPHO38-Q04-figure4a.png)
 
-### 1. 相互作用势能
+## 参考解答整理
 
-$A$ 在 $B$ 所在位置产生的远场为
+#### （1）远场磁场与相互作用势能。
 
-$$
-\mathbf B_A=-\frac{\mu_0\mu}{4\pi z^3}\mathbf e_x.
-$$
+把 $A$ 看作磁偶极子。由毕奥--萨伐尔定律在 $z\gg R$ 下展开并对环积分，$B$ 所在位置的磁场为 $$\mathbf B_A=-\frac{\mu_0\mu}{4\pi z^3}\,\mathbf e_x.$$ 取 $\boldsymbol\mu_B$ 与磁场垂直时的势能为零，则 $$\boxed{E_p=-\boldsymbol\mu_B\cdot\mathbf B_A
+=\frac{\mu_0\mu^2\cos\theta}{4\pi z^3}.}$$
 
-因此
+#### （2）磁矩指向的稳定平衡。
 
-$$
-\boxed{E_p=\frac{\mu_0\mu^2\cos\theta}{4\pi z^3}}.
-$$
+在 $z$ 固定时，重力势能不影响对 $\theta$ 的判定，总势能可写为 $$V(\theta)=\frac{\mu_0\mu^2\cos\theta}{4\pi z^3}-mgz.$$ 外力矩大小为 $$M=-\frac{\mathrm dV}{\mathrm d\theta}
+=\frac{\mu_0\mu^2\sin\theta}{4\pi z^3}.$$ 因此可能的平衡角为 $\theta=0,\pi$。又有 $$\frac{\mathrm d^2V}{\mathrm d\theta^2}
+=-\frac{\mu_0\mu^2\cos\theta}{4\pi z^3}.$$ 在 $\theta=0$ 处二阶导数为负，在 $\theta=\pi$ 处为正，故 $$\boxed{\theta_{\text{稳}}=\pi.}$$
 
-### 2. 稳定磁矩方向
+#### （3）竖直方向的受力平衡。
 
-固定 $z$ 时，
-
-$$
-V(\theta)=\frac{\mu_0\mu^2\cos\theta}{4\pi z^3}-mgz,
-\qquad
-M=-\frac{\mathrm dV}{\mathrm d\theta}
-=\frac{\mu_0\mu^2\sin\theta}{4\pi z^3}.
-$$
-
-平衡候选为 $\theta=0$ 和 $\theta=\pi$。由于 $\theta=\pi$ 对应势能极小，
-
-$$
-\boxed{\theta_{\text{稳}}=\pi}.
-$$
-
-### 3. 竖直平衡位置
-
-代入 $\theta=\pi$ 后，竖直方向合力为
-
-$$
-F=-\frac{3\mu_0\mu^2}{4\pi z^4}+mg.
-$$
-
-所以
-
-$$
-\boxed{z_0=\left(\frac{3\mu_0\mu^2}{4\pi mg}\right)^{1/4}}.
-$$
-
-在此处
-
-$$
-\frac{\mathrm d^2V}{\mathrm dz^2}=-\frac{3\mu_0\mu^2}{\pi z_0^5}<0,
-$$
-
-故竖直方向平衡不稳定。
-
-## 图件与依据
-
-题干依据 `CPHO38-Q04_transcription_v1.md`；公式依据 `CPHO38-Q04_formula_check_v1.csv` 与答案第10至12页。左侧电流环为原题图4a的TikZ重绘；右侧仅为题设相对位置的辅助示意。
+令 $\theta=\pi$，以竖直向下为 $z$ 正向。由 $F=-\mathrm dV/\mathrm dz$ 得 $$F=-\frac{3\mu_0\mu^2}{4\pi z^4}+mg.$$ 令 $F=0$，受力平衡位置为 $$\boxed{z_0=\left(\frac{3\mu_0\mu^2}{4\pi mg}\right)^{1/4}.}$$ 在该处 $$\frac{\mathrm d^2V}{\mathrm dz^2}
+=-\frac{3\mu_0\mu^2}{\pi z_0^5}<0.$$ 故该点为势能极大值，对竖直扰动不稳定：$B$ 下移时重力占优而继续下落，上移时磁吸引占优而趋向 $A$。

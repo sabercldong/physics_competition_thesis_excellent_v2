@@ -11,8 +11,20 @@
 
 ## 参考解答整理
 
+#### （1.1）初始静止电子的动量与能量。
+
 洛伦兹力方程为 $$\frac{\mathrm d\boldsymbol p}{\mathrm dt}=-e(\boldsymbol E+\boldsymbol v\times\boldsymbol B),\qquad
 \epsilon=\sqrt{m_e^2c^4+p^2c^2}.$$ 由 $kc=\omega$ 和初始静止条件，答案给出横向动量 $$p_x=\frac{eE_0}{\omega}\sin(kz-\omega t),\qquad p_y=0.$$ 能量与纵向动量满足守恒关系 $\epsilon-cp_z=m_ec^2$，于是 $$p_z=\frac{p_x^2}{2m_ec},\qquad
-\epsilon=m_ec^2+\frac{e^2E_0^2\sin^2(kz-\omega t)}{2m_e\omega^2}.$$ 令 $\tau=z-ct$，电子位置可写成隐函数；其中 $$x=\frac{eE_0[\cos(kz-\omega t)-1]}{m_e\omega^2},\qquad y=0,$$ 并由 $\int_0^\tau\sin^2(k\tau)\,\mathrm d\tau=\tau/2-\sin(2k\tau)/(4k)$ 得到 $z$ 的相应关系。第（2）问在固定初始能量下，以 $\theta_0$ 参数化初始动量并对相位取极值；完整长式见答案第12至13页，本整理不转抄未经逐项排版复核的长分式。
+\epsilon=m_ec^2+\frac{e^2E_0^2\sin^2(kz-\omega t)}{2m_e\omega^2}.$$
 
-第（3）问先由能流密度的周期平均得到 $$I=\left\langle|\boldsymbol S|\right\rangle=\frac{E_0^2}{2\mu_0c},\qquad E_0^2=2\mu_0cI.$$ 代入辐射阻尼率并积分一个周期，答案写为 $$\frac{\Delta\epsilon}{\epsilon_0}=-\frac{1}{1+\dfrac{2\pi m_e^4c^5}{e^4\mu_0^2I\epsilon_0\lambda}}\approx-40\%.$$
+#### （1.2）电子位置与时间的关系。
+
+令 $\tau=z-ct$，电子位置可写成隐函数；其中 $$x=\frac{eE_0[\cos(kz-\omega t)-1]}{m_e\omega^2},\qquad y=0,$$ 并由 $\int_0^\tau\sin^2(k\tau)\,\mathrm d\tau=\tau/2-\sin(2k\tau)/(4k)$ 得到 $z$ 的相应关系。
+
+#### （2）给定初始能量时的最大增能。
+
+在固定初始能量下，以 $\theta_0$ 参数化初始动量并对相位取极值；完整长式见答案第12至13页，本整理不转抄未经逐项排版复核的长分式。
+
+#### （3）一个周期内的辐射阻尼能量损失。
+
+先由能流密度的周期平均得到 $$I=\left\langle|\boldsymbol S|\right\rangle=\frac{E_0^2}{2\mu_0c},\qquad E_0^2=2\mu_0cI.$$ 代入辐射阻尼率并积分一个周期，答案写为 $$\frac{\Delta\epsilon}{\epsilon_0}=-\frac{1}{1+\dfrac{2\pi m_e^4c^5}{e^4\mu_0^2I\epsilon_0\lambda}}\approx-40\%.$$

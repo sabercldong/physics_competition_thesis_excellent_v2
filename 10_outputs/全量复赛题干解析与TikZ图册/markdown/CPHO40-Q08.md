@@ -6,7 +6,7 @@
 
 采用X射线光谱与光电子能谱方法研究物质结构，仪器结构如图所示。X射线管由电子枪阴极和金属阳极构成，阴极产生的电子经电压加速后撞击金属阳极，产生连续的轫致辐射谱和分立的特征谱。选取特定波长的特征X射线照射材料靶，分别探测出射X射线和光电子。已知 $$R_\infty=10973731\ \mathrm{m^{-1}},\qquad hc=1240\ \mathrm{nm\cdot eV}.$$
 
-![CPHO40-Q08-figure8a](图件/CPHO40-Q08-figure8a.png)
+![CPHO40-Q08-figure8a](assets/CPHO40-Q08-figure8a.png)
 
 #### （1）X射线管。
 
@@ -20,7 +20,7 @@
 
 在$\theta=135^\circ$处测得图所示两个光谱峰，峰值波长分别为$\lambda_0$和$\lambda_1$。说明两个峰的来源，并解释$\lambda_1$峰比$\lambda_0$峰宽的原因。
 
-![CPHO40-Q08-figure8b](图件/CPHO40-Q08-figure8b.png)
+![CPHO40-Q08-figure8b](assets/CPHO40-Q08-figure8b.png)
 
 ## 参考解答整理
 

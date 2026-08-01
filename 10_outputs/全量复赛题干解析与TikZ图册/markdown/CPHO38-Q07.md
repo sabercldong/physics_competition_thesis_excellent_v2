@@ -1,77 +1,35 @@
+> 本文件由项目已校订的LaTeX题干、参考解答和TikZ图件生成。评分时以本文件为主要阅读文本；需核对原始措辞时查看包内对应届次原始PDF。
+
 # 第38届复赛第7题：汽车斜坡加速与车轮附着条件
 
-## 题干整理
+## 题干
 
-汽车在倾角为 $\theta$ 的斜坡上加速。前、后轮各合并为质量 $m$、半径 $r$ 的均质圆柱，轮轴间距为 $L$；车身质量为 $M$，质心在两轴中点正上方，高度为 $h$。车轮转动惯量为
+如图，一简化汽车在倾角为 $\theta$ 的斜坡上运动。前轮（两个前轮合并视为质量 $m$ 的物体）和后轮（两个后轮合并视为质量 $m$ 的物体）均为半径 $r$ 的均质圆柱刚体，前后轮轴相距 $L$；车身质量为 $M$，质心位于两轴正中，距轮轴平面高度为 $h$。轮胎与地面的摩擦系数为 $\mu$，最大静摩擦力按滑动摩擦力处理；忽略空气阻力及车轴摩擦。每个车轮组的转动惯量为 $$J=\frac12mr^2.$$
 
-$$
-J=\frac12mr^2.
-$$
+求：（1）无滑动上坡加速时前、后轮正压力 $N_{\text{前}}$、$N_{\text{后}}$ 及前轮不离地的最大安全加速度；（2）发动机向后轮施加顺时针力矩 $\tau_{\text{轮}}$ 时的车身加速度；（3）对给定 A 型电动汽车，分别计算水平路面和 $30^\circ$ 上坡时的最大加速度，并给出不发生滑动所需的最小摩擦系数。给定 $M=1.8\times10^3\,\mathrm{kg}$、$h=0.10\,\mathrm m$、$r=0.40\,\mathrm m$、$L=2.9\,\mathrm m$、$\tau=4.0\times10^2\,\mathrm{N\,m}$、$r_i=10$，车轮质量相对车身质量可忽略，$g=9.8\,\mathrm{m/s^2}$。
 
-发动机向后轮施加顺时针力矩 $\tau_{\text{轮}}$。给定 A 型电动汽车的 $M,h,r,L,\tau,r_i$ 等参数，求正压力、安全加速度、车身加速度以及无滑动所需的摩擦系数。
+![CPHO38-Q07-figure7a](assets/CPHO38-Q07-figure7a.png)
 
-![汽车斜坡模型与受力](assets/CPHO38-Q07-figure7a.png)
+## 参考解答整理
 
-## 解析整理
+#### （1）正压力与安全加速度。
 
-### 1. 正压力和前轮离地边界
+取 $x$ 轴沿坡面向上、$y$ 轴垂直坡面向上。前、后轮轴对车身的支撑力满足 $$F_{x}=M(a+g\sin\theta),\qquad
+F_{y,\text{前}}+F_{y,\text{后}}=Mg\cos\theta,$$ 并有相对车身质心的力矩平衡 $$F_{y,\text{前}}\frac L2+F_xh-F_{y,\text{后}}\frac L2=0.$$ 代入 $F_{y,\text{前}}=N_{\text{前}}-mg\cos\theta$、$F_{y,\text{后}}=N_{\text{后}}-mg\cos\theta$，得 $$\boxed{N_{\text{前}}=mg\cos\theta+\frac12Mg\cos\theta
+-\frac hL M(a+g\sin\theta),}$$ $$\boxed{N_{\text{后}}=mg\cos\theta+\frac12Mg\cos\theta
++\frac hL M(a+g\sin\theta).}$$ 令 $N_{\text{前}}=0$，前轮刚好离地，对应安全上限为 $$\boxed{a_{\text{安全}}=
+\frac{(2m+M)L}{2Mh}g\cos\theta-g\sin\theta.}$$
 
-取沿坡面向上为 $x$ 正方向。由车身受力和相对质心的力矩平衡，
+#### （2）无滑动驱动时的加速度。
 
-$$
-N_{\text{前}}=mg\cos\theta+\frac12Mg\cos\theta
--\frac hL M(a+g\sin\theta),
-$$
+以逆时针为车轮转动的正方向。无滑动约束给出 $$\alpha_{\text{前}}=\alpha_{\text{后}}=-\frac ar.$$ 前轮转动方程与 $J=mr^2/2$ 给出 $$F_{x,\text{前}}r=J\alpha_{\text{前}},
+\qquad F_{x,\text{前}}=-\frac m2a.$$ 整车沿斜面方向的运动方程和后轮转动方程为 $$F_{x,\text{前}}+F_{x,\text{后}}-(M+2m)g\sin\theta=(M+2m)a,$$ $$-\tau_{\text{轮}}+F_{x,\text{后}}r=J\alpha_{\text{后}}.$$ 联立可得 $$\boxed{a=\frac{\tau_{\text{轮}}/r-(M+2m)g\sin\theta}{M+3m}.}$$
 
-$$
-N_{\text{后}}=mg\cos\theta+\frac12Mg\cos\theta
-+\frac hL M(a+g\sin\theta).
-$$
+#### （3）数值结果与附着条件。
 
-令 $N_{\text{前}}=0$，得到前轮不离地的安全上限：
-
-$$
-\boxed{a_{\text{安全}}=
-\frac{(2m+M)L}{2Mh}g\cos\theta-g\sin\theta}.
-$$
-
-### 2. 后轮驱动时的加速度
-
-无滑动约束与前轮转动方程给出
-
-$$
-\alpha_{\text{前}}=\alpha_{\text{后}}=-\frac ar,
-\qquad F_{x,\text{前}}=-\frac m2a.
-$$
-
-再联立整车的沿坡面运动方程和后轮转动方程，
-
-$$
-\boxed{a=\frac{\tau_{\text{轮}}/r-(M+2m)g\sin\theta}{M+3m}}.
-$$
-
-### 3. A 型车数值与附着条件
-
-变速器效率为 $100\%$，因此
-
-$$
-\tau_{\text{轮}}=\tau r_i.
-$$
-
-忽略车轮质量后，题解给出
-
-$$
-\boxed{a(0^\circ)=5.6\,\mathrm{m/s^2},\qquad
-a(30^\circ)=0.66\,\mathrm{m/s^2}}.
-$$
-
-无滑动需要 $|F_{x,\text{前}}|\le\mu N_{\text{前}}$、$|F_{x,\text{后}}|\le\mu N_{\text{后}}$。两种路况对应
-
-$$
-\boxed{\mu_{\min}(0^\circ)=1.09,\qquad
-\mu_{\min}(30^\circ)=1.25}.
-$$
-
-## 图件与依据
-
-题干依据 `CPHO38-Q07_transcription_v1.md`；公式依据 `CPHO38-Q07_formula_check_v1.csv` 与答案第16至18页。左图重绘原题图7a，右图为沿坡面动力学辅助示意。
+变速器效率为 $100\%$ 时，传递给车轮的力矩为 $$\tau_{\text{轮}}=\frac{\tau\omega}{\omega_{\text{轮}}}=\tau r_i.$$ 对 A 型车，$m\ll M$，因而 $$\boxed{a(0^\circ)=5.6\,\mathrm{m/s^2},\qquad
+a(30^\circ)=0.66\,\mathrm{m/s^2}.}$$ 前、后轮不打滑应分别满足 $$|F_{x,\text{前}}|\le\mu N_{\text{前}},\qquad
+|F_{x,\text{后}}|\le\mu N_{\text{后}}.$$ 在 $m\ll M$ 的近似下，前轮摩擦力为零。题解代入后轮受力得到 $$N_{\text{后}}\big|_{\theta=0}=9.2\times10^3\,\mathrm N,
+\qquad F_{x,\text{后}}\big|_{\theta=0}=1.0\times10^4\,\mathrm N,$$ $$N_{\text{后}}\big|_{\theta=30^\circ}=8.0\times10^3\,\mathrm N,
+\qquad F_{x,\text{后}}\big|_{\theta=30^\circ}=1.0\times10^4\,\mathrm N.$$ 因此两种路况分别要求 $$\boxed{\mu_{\min}(0^\circ)=1.09,\qquad
+\mu_{\min}(30^\circ)=1.25.}$$
