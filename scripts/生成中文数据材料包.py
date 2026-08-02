@@ -37,9 +37,11 @@ from pathlib import Path
 ]
 
 扫描根文件 = [
+    "材料总入口.md",
     "00_READ_ME_FIRST.md",
     "MASTER_PLAN.md",
     "AGENTS.md",
+    "PROJECT_TREE.txt",
     "PROJECT_STATUS.md",
     "TASKS.md",
     "CHANGELOG.md",
@@ -235,7 +237,14 @@ def 收集材料() -> list[Path]:
 def 分类(相对路径: str) -> str:
     if 相对路径 in {"00_READ_ME_FIRST.md", "MASTER_PLAN.md", "AGENTS.md"}:
         return "01_原始项目材料"
-    if 相对路径 in {"PROJECT_STATUS.md", "TASKS.md", "CHANGELOG.md", "DATA_MANAGEMENT.md"}:
+    if 相对路径 in {
+        "材料总入口.md",
+        "PROJECT_TREE.txt",
+        "PROJECT_STATUS.md",
+        "TASKS.md",
+        "CHANGELOG.md",
+        "DATA_MANAGEMENT.md",
+    }:
         return "11_质量核查与证据台账"
     if 相对路径.startswith("scripts/"):
         return "13_复现程序"
@@ -294,17 +303,31 @@ def 材料状态(相对路径: str) -> str:
         return "当前主分析结果"
     if 相对路径.startswith("07_analysis/results/复分析_G8-34/"):
         return "当前复分析结果"
+    if 相对路径.startswith("10_outputs/当前有效材料_Markdown版/"):
+        return "当前阅读材料"
     if 相对路径.startswith(("03_corpus/raw_papers/", "03_corpus/raw_solutions/")):
         return "原始依据"
     if 相对路径.startswith("03_corpus/item_texts/"):
         return "当前题目语料"
     if 相对路径.endswith(
         (
-            "中学生物理竞赛复赛试题的科学思维要求与教学转化研究.pdf",
+            "全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf",
             "全量题干解析与TikZ图册.pdf",
         )
     ):
         return "当前成果"
+    if any(
+        片段 in 相对路径
+        for 片段 in (
+            "handoff_RATER-C/",
+            "handoff_RATER-D/",
+            "handoff_RATER-E/",
+            "return_RATER-C/",
+            "return_RATER-D/",
+            "return_RATER-E/",
+        )
+    ):
+        return "未接收的评阅材料"
     if any(片段 in 相对路径 for 片段 in ("/archive/", "/drafts/", "historical", "placeholder")):
         return "历史或中间版本"
     if "template" in 相对路径.lower():
@@ -564,6 +587,8 @@ def 生成材料包(复制模式: bool) -> None:
 
 ## 一、语料主入口
 
+{中文入口("10_outputs/当前有效材料_Markdown版/00_开始阅读.md", "当前有效材料Markdown总入口")}
+
 {中文入口("03_corpus/item_index.csv", "第35至42届221个分析单元题目索引")}
 
 - [原始试题与参考答案（{分类计数.get("03_原始试题与参考答案", 0)}个文件）](./材料链接/03_原始试题与参考答案/)
@@ -596,6 +621,8 @@ def 生成材料包(复制模式: bool) -> None:
 
 {中文入口("10_outputs/全量复赛题干解析与TikZ图册/build/全量题干解析与TikZ图册.pdf", "第35至42届全量题干解析与TikZ图册PDF")}
 
+{中文入口("10_outputs/答辩PPT/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示_答辩PPT.pptx", "当前答辩PPT")}
+
 - [论文图表与章节源稿](./材料链接/10_论文图表与章节源稿/)
 - [论文与图册全部成果](./材料链接/12_论文与图册成果/)
 
@@ -621,10 +648,22 @@ def 生成材料包(复制模式: bool) -> None:
     ]
     当前编码 = 项目根目录 / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
     当前证据 = 当前编码
+    当前索引 = 项目根目录 / "03_corpus/item_index.csv"
+    当前阅读根 = 项目根目录 / "10_outputs/当前有效材料_Markdown版"
+    当前论文 = 项目根目录 / "10_outputs/论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf"
+    当前图册 = 项目根目录 / "10_outputs/全量复赛题干解析与TikZ图册/build/全量题干解析与TikZ图册.pdf"
 
     def 数据行数(路径: Path) -> int:
         with 路径.open("r", encoding="utf-8-sig", newline="") as 文件:
             return sum(1 for _ in csv.DictReader(文件))
+
+    题目Markdown = list((当前阅读根 / "02_试题题干与参考解答").glob("CPHO??-Q??.md"))
+    评分Markdown = list((当前阅读根 / "03_逐题评分标准").glob("CPHO??-Q??_评分标准.md"))
+    当前不可读文本 = []
+    for 路径 in 当前阅读根.rglob("*.md"):
+        内容 = 路径.read_text(encoding="utf-8")
+        if "�" in 内容 or re.search(r"[\ue000-\uf8ff]", 内容):
+            当前不可读文本.append(路径)
 
     检查 = [
         {
@@ -662,6 +701,42 @@ def 生成材料包(复制模式: bool) -> None:
             "期望": 884,
             "实际": 数据行数(当前证据),
             "结果": "通过" if 数据行数(当前证据) == 884 else "失败",
+        },
+        {
+            "检查项目": "当前分析单元数",
+            "期望": 221,
+            "实际": 数据行数(当前索引),
+            "结果": "通过" if 数据行数(当前索引) == 221 else "失败",
+        },
+        {
+            "检查项目": "逐题Markdown数",
+            "期望": 60,
+            "实际": len(题目Markdown),
+            "结果": "通过" if len(题目Markdown) == 60 else "失败",
+        },
+        {
+            "检查项目": "逐题评分标准Markdown数",
+            "期望": 60,
+            "实际": len(评分Markdown),
+            "结果": "通过" if len(评分Markdown) == 60 else "失败",
+        },
+        {
+            "检查项目": "当前Markdown不可读字符",
+            "期望": 0,
+            "实际": len(当前不可读文本),
+            "结果": "通过" if not 当前不可读文本 else "失败",
+        },
+        {
+            "检查项目": "当前论文PDF",
+            "期望": "存在且非空",
+            "实际": 当前论文.stat().st_size if 当前论文.exists() else 0,
+            "结果": "通过" if 当前论文.exists() and 当前论文.stat().st_size > 0 else "失败",
+        },
+        {
+            "检查项目": "当前全量图册PDF",
+            "期望": "存在且非空",
+            "实际": 当前图册.stat().st_size if 当前图册.exists() else 0,
+            "结果": "通过" if 当前图册.exists() and 当前图册.stat().st_size > 0 else "失败",
         },
     ]
     写入表格(

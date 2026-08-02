@@ -11,6 +11,7 @@ import sys
 import zipfile
 from collections import defaultdict
 from pathlib import Path
+from urllib.parse import unquote
 from xml.etree import ElementTree
 
 
@@ -239,7 +240,12 @@ def build_pdf_companions(questions: dict[str, str]) -> list[tuple[str, str]]:
         ]
         for question in range(1, QUESTION_COUNTS[edition] + 1):
             qid = f"CPHO{edition}-Q{question:02d}"
-            pieces.append(split_question_markdown(questions[qid], mode))
+            section = split_question_markdown(questions[qid], mode)
+            section = section.replace(
+                "(图件/",
+                "(../02_试题题干与参考解答/图件/",
+            )
+            pieces.append(section)
         target = PDF_OUTPUT / target_name
         target.write_text("\n\n".join(pieces), encoding="utf-8")
         mappings.append((source_name, str(target.relative_to(OUTPUT))))
@@ -370,27 +376,65 @@ def build_school_templates() -> list[tuple[str, str]]:
 
 
 def write_navigation(mappings: list[tuple[str, str]]) -> None:
-    navigation = """# 当前有效材料Markdown版
+    navigation = """# 当前有效材料总入口
 
-本目录只收录当前研究和论文交付直接使用的材料，不重复保存历史草稿、旧编码版本和过程性复核文件。
+> 本目录只收录当前研究和论文交付直接使用的材料。历史草稿、旧编码版本和过程性复核文件不在本目录里混用。
 
-## 建议阅读顺序
+| 项目 | 当前数量或版本 |
+|---|---:|
+| 复赛届次 | 第35至42届 |
+| 大题 | 60道 |
+| 原始小问 | 209个 |
+| 分析单元 | 221个 |
+| 科学思维编码 | 884条 |
+| 当前编码版本 | 第三版 |
 
-1. `08_论文/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.md`
-2. `02_试题题干与参考解答/` 中的60份逐题Markdown
-3. `05_编码框架/科学思维编码手册_第三版.md`
-4. `06_正式编码/第35至42届科学思维第三版唯一编码表.md`
-5. `07_统计结果/`
-6. `03_逐题评分标准/评分标准总索引.md`
+## 直接打开
+
+1. [论文全文Markdown](./08_论文/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.md)
+2. [60道试题题干与参考解答](./02_试题题干与参考解答/)
+3. [60道逐题评分标准索引](./03_逐题评分标准/评分标准总索引.md)
+4. [科学思维编码手册第三版](./05_编码框架/科学思维编码手册_第三版.md)
+5. [221个分析单元索引](./06_正式编码/第35至42届221个分析单元索引.md)
+6. [884条正式编码](./06_正式编码/第35至42届科学思维第三版唯一编码表.md)
+7. [统计结果](./07_统计结果/)
+8. [答辩PPT文字稿](./09_答辩材料/答辩PPT文字稿.md)
+9. [华东师范大学格式材料](./10_学校格式模板/)
+10. [材料包质量检查](./11_质量检查.md)
+
+## 可视化成果
+
+- [当前论文PDF](../论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf)
+- [第35至42届全量题干解析与TikZ图册PDF](../全量复赛题干解析与TikZ图册/build/全量题干解析与TikZ图册.pdf)
+- [当前答辩PPT](../答辩PPT/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示_答辩PPT.pptx)
+
+## 文字与图件说明
+
+- 60道题干与解答均使用已校订的LaTeX文本生成，不使用原PDF中的低质量自动文本层。
+- 题图与解题图已以TikZ或校订图件纳入逐题Markdown，图件链接可直接打开。
+- “原始PDF对应文本”用于快速通读同一届试题；正式分析仍以逐题Markdown和题目索引为准。
 
 ## 版本说明
 
-正式名称统一写作“第三版”。源数据中为保持历史主键稳定而保留的旧记录编号，不作为论文或交接材料中的版本名称使用。
+正式名称统一写作“第三版”。源数据中为保持历史主键稳定而保留的旧记录编号，不作为论文或交接材料中的版本名称。
 """
     (OUTPUT / "00_开始阅读.md").write_text(navigation, encoding="utf-8")
-    lines = ["# 非Markdown文件与对应Markdown关系", "", "| 原文件 | 对应Markdown |", "|---|---|"]
+    lines = [
+        "# 非Markdown文件与对应Markdown关系",
+        "",
+        "本表用于从PDF、CSV、DOCX或PPTX直接进入可阅读的Markdown文本。",
+        "",
+        "| 原文件 | 对应Markdown |",
+        "|---|---|",
+    ]
     for source, target in sorted(set(mappings)):
-        lines.append(f"| `{source}` | `{target}` |")
+        source_link = f"[`原文件`](../../{source})<br>`{source}`"
+        target_path = OUTPUT / target
+        if target_path.exists():
+            target_link = f"[`打开Markdown`](./{target})<br>`{target}`"
+        else:
+            target_link = f"`{target}`"
+        lines.append(f"| {source_link} | {target_link} |")
     (OUTPUT / "01_材料对应关系.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -400,26 +444,50 @@ def validate() -> None:
     if len(question_files) != 60 or len(score_files) != 60:
         raise RuntimeError(f"逐题Markdown数量异常：题目{len(question_files)}，评分{len(score_files)}")
     markdown_files = list(OUTPUT.rglob("*.md"))
-    unreadable = []
-    version_tokens = []
+    unreadable: list[Path] = []
+    version_tokens: list[Path] = []
+    empty_files: list[Path] = []
+    broken_links: list[tuple[Path, str]] = []
+    link_pattern = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
     for path in markdown_files:
         text = path.read_text(encoding="utf-8")
+        if not text.strip():
+            empty_files.append(path)
         if "�" in text or re.search(r"[\ue000-\uf8ff]", text):
             unreadable.append(path)
         if re.search(r"(?i)v3", text):
             version_tokens.append(path)
+        for raw_target in link_pattern.findall(text):
+            target = unquote(raw_target.strip().strip("<>").split("#", 1)[0])
+            if not target or target.startswith(("http://", "https://", "mailto:")):
+                continue
+            resolved_target = (path.parent / target).resolve()
+            if resolved_target == (OUTPUT / "11_质量检查.md").resolve():
+                continue
+            if not resolved_target.exists():
+                broken_links.append((path, raw_target))
     if unreadable:
         raise RuntimeError(f"Markdown存在不可识别字符：{unreadable[:3]}")
     if version_tokens:
         raise RuntimeError(f"Markdown仍出现V3写法：{version_tokens[:3]}")
+    if empty_files:
+        raise RuntimeError(f"Markdown存在空文件：{empty_files[:3]}")
+    if broken_links:
+        raise RuntimeError(f"Markdown存在断链：{broken_links[:3]}")
+    image_files = list((QUESTION_OUTPUT / "图件").glob("*.png"))
+    pdf_companions = list(PDF_OUTPUT.glob("*.md"))
     report = [
         "# Markdown材料包质量检查",
         "",
         f"- Markdown文件总数：{len(markdown_files) + 1}",
         f"- 清晰题干与解答：{len(question_files)}/60",
         f"- 逐题评分标准：{len(score_files)}/60",
+        f"- 题图与解题图：{len(image_files)}张",
+        f"- 原始PDF对应文本：{len(pdf_companions)}/10",
         "- 正式编码：221个分析单元、884条记录",
         "- 不可识别字符：0",
+        "- 空Markdown文件：0",
+        "- Markdown断链：0",
         "- 旧版英文缩写：0",
         "- 结论：通过",
     ]

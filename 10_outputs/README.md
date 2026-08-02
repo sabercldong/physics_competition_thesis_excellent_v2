@@ -1,22 +1,39 @@
 # 输出目录说明
 
-## 当前可使用的工作稿
+## 当前交付件
 
-`drafts/ECNU_非全日制专硕论文工作稿_R01_v17.docx` 是当前自动生成的六章非提交工作稿，含中英文摘要内容工作稿。它用于审阅文本组织、表格、图件与26项限边界候选参考文献，并有输入哈希清单与新鲜度QA。
+| 成果 | 入口 |
+|---|---|
+| 论文PDF | [全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf](./论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf) |
+| 论文LaTeX源稿 | [论文初稿_LaTeX](./论文初稿_LaTeX/) |
+| 60道试题全量图册 | [全量题干解析与TikZ图册.pdf](./全量复赛题干解析与TikZ图册/build/全量题干解析与TikZ图册.pdf) |
+| 答辩PPT | [全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示_答辩PPT.pptx](./答辩PPT/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示_答辩PPT.pptx) |
+| 当前有效材料 | [Markdown总入口](./当前有效材料_Markdown版/00_开始阅读.md) |
+| 全量中文目录 | [当前主数据导航](./论文数据材料_中文整理版/当前主数据导航.md) |
 
-V17不是匿名送审版、答辩版、归档版或正式提交版：它不含真实个人信息、封皮/签名页、当期学院格式终验或中文逐页版式验收。当前环境缺少可用CJK字体，不能以LibreOffice渲染替代Word/WPS中的中文排版检查。
+## 当前数据口径
 
-## 可交付材料包
+- 第35至42届，共60道复赛理论大题。
+- 题面共209个原始小问，按可独立判定的认知任务拆分为221个分析单元。
+- 第三版唯一编码表共884条记录，即221个分析单元乘以4个科学思维。
+- 题干、参考解答、题图与解题图均有可读Markdown或TikZ入口。
+- 60道大题均建有逐题评分标准Markdown，具体来源在每份文件内标明。
 
-- 冻结编码与证据链：`07_analysis/data/final_coding_r01_correction_v1.csv`、`final_coding_evidence_r01_v1.csv`；
-- 描述统计、图件与资格QA：`07_analysis/results/formal_rater_r01/correction_v1/`、`09_quality/r01_results_eligibility_qa_v1.csv`；
-- 六章Markdown与候选参考文献：`08_manuscript/`；
-- 可复跑命令：`07_analysis/reproducibility_protocol.md`；
-- 30项关键文件的SHA-256快照：`material_package/R01_current_material_package_manifest_v1.csv`（复跑前先执行快照校验）；
-- 内部非提交交接包：运行 `07_analysis/scripts/build_r01_internal_material_package.py --force` 后生成 `material_package/R01_internal_handoff_v1/`；默认29项，不含原始试卷/解答或V17；
-- 全链路健康检查：`python3 07_analysis/scripts/validate_r01_full_package_healthcheck.py`，汇总当前14项门禁；
-- 当前材料包边界与缺口：`09_quality/current_material_package_audit_v2.md`。
+## 目录分工
 
-## 最终输出前仍需闭合
+- `当前有效材料_Markdown版/`：供阅读、审阅和交接，只收录当前有效材料。
+- `论文数据材料_中文整理版/`：供全项目检索与追溯，同时包含历史和过程材料的中文链接。
+- `论文初稿_LaTeX/`：保存论文源稿、图表、参考文献与编译成果。
+- `全量复赛题干解析与TikZ图册/`：保存60道大题的LaTeX、Markdown、图件和整册PDF。
+- `答辩PPT/`：保存答辩演示文件及相关素材。
+- `drafts/`、`archive/`和带有历史标记的文件：只用于追溯，不作为当前交付件。
 
-学校当期格式、匿名送审与AI披露规则、关键理论/竞赛文献全文、第35届正式分值，以及真实教师/学生/课堂证据（仅在希望主张教学验证时）均未闭合。不得把当前材料包写作最终定稿或教学效果证据。
+## 重建与检查
+
+```bash
+python3 scripts/生成当前有效材料Markdown包.py
+python3 scripts/检查项目材料质量.py
+python3 scripts/生成中文数据材料包.py
+```
+
+这三个入口分别负责重建当前Markdown材料、检查材料健康状态、重建全量中文目录。
