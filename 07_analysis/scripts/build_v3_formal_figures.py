@@ -333,6 +333,105 @@ def build_combination_figure(
     return save_figure(figure, output_dir, f"图4-4_维度组合分布_{VERSION_LABEL}")
 
 
+def build_edition_level_composition_figure(
+    grouped: dict[str, dict[str, dict[str, str]]],
+    output_dir: Path,
+) -> tuple[Path, Path]:
+    """Compare model-construction and reasoning levels within each edition."""
+    items_by_year: dict[tuple[str, str], list[dict[str, dict[str, str]]]] = (
+        defaultdict(list)
+    )
+    for item_rows in grouped.values():
+        example = next(iter(item_rows.values()))
+        items_by_year[(example["year"], example["competition_no"])].append(item_rows)
+    year_keys = sorted(items_by_year)
+    categories = ("未出现", "L1", "L2", "L3")
+    colors = ("#D9DEE3", "#DCEAF3", "#8FBFD2", "#2F6F95")
+
+    figure, axes = plt.subplots(1, 2, figsize=(10.2, 5.9), sharey=True)
+    y_positions = np.arange(len(year_keys))
+    for axis, dimension in zip(axes, ("模型建构", "科学推理")):
+        left = np.zeros(len(year_keys))
+        for category, color in zip(categories, colors):
+            percentages = []
+            counts = []
+            for key in year_keys:
+                items = items_by_year[key]
+                count = sum(
+                    item[dimension]["level"] == category
+                    for item in items
+                )
+                counts.append(count)
+                percentages.append(count / len(items) * 100)
+            values = np.array(percentages)
+            bars = axis.barh(
+                y_positions,
+                values,
+                left=left,
+                height=0.62,
+                color=color,
+                edgecolor="white",
+                linewidth=0.55,
+                label=category,
+            )
+            for row_index, (bar, value, count) in enumerate(zip(bars, values, counts)):
+                if value >= 12.0:
+                    axis.text(
+                        left[row_index] + value / 2,
+                        bar.get_y() + bar.get_height() / 2,
+                        f"{count}\n{value:.0f}%",
+                        ha="center",
+                        va="center",
+                        fontsize=7.7,
+                        linespacing=0.9,
+                        color="white" if category == "L3" else "#263238",
+                    )
+            left += values
+        axis.set_title(dimension, fontsize=11.5, pad=9)
+        axis.set_xlim(0, 100)
+        axis.set_xticks(range(0, 101, 20))
+        axis.set_xlabel("该届分析单元构成（%）", fontsize=9.5)
+        axis.xaxis.grid(True, color="#D9DEE3", linewidth=0.7)
+        axis.spines["left"].set_visible(False)
+        axis.tick_params(axis="y", length=0)
+        style_axis(axis)
+
+    axes[0].set_yticks(
+        y_positions,
+        [
+            f"第{competition_no}届（{year}，n={len(items_by_year[(year, competition_no)])}）"
+            for year, competition_no in year_keys
+        ],
+    )
+    axes[0].invert_yaxis()
+    handles, labels = axes[1].get_legend_handles_labels()
+    figure.legend(
+        handles,
+        labels,
+        ncol=4,
+        loc="lower center",
+        bbox_to_anchor=(0.5, 0.005),
+        frameon=False,
+        handlelength=1.7,
+        columnspacing=1.7,
+    )
+    figure.subplots_adjust(left=0.20, right=0.99, top=0.91, bottom=0.15, wspace=0.12)
+    figure.text(
+        0.99,
+        0.055,
+        "注：百分比以各届全部分析单元为分母；两维度各届均无L4。",
+        ha="right",
+        va="bottom",
+        fontsize=8.4,
+        color="#4F5963",
+    )
+    return save_figure(
+        figure,
+        output_dir,
+        f"图4-6_模型建构与科学推理分届次等级构成_{VERSION_LABEL}",
+    )
+
+
 def write_manifest(
     output_dir: Path,
     figure_pairs: list[tuple[str, str, Path, Path]],
@@ -398,6 +497,10 @@ def main() -> None:
     level_png, level_pdf = build_level_figure(grouped, output_dir)
     year_png, year_pdf = build_year_heatmap(grouped, output_dir)
     combination_png, combination_pdf = build_combination_figure(grouped, output_dir)
+    edition_level_png, edition_level_pdf = build_edition_level_composition_figure(
+        grouped,
+        output_dir,
+    )
     source_hash = file_sha256(input_path)
     manifest = write_manifest(
         output_dir,
@@ -406,12 +509,18 @@ def main() -> None:
             ("图4-2", "四维度等级构成", level_png, level_pdf),
             ("图4-3", "各届次维度出现比例", year_png, year_pdf),
             ("图4-4", "维度组合分布", combination_png, combination_pdf),
+            (
+                "图4-6",
+                "模型建构与科学推理分届次等级构成",
+                edition_level_png,
+                edition_level_pdf,
+            ),
         ],
         input_path,
         source_hash,
     )
     print(f"source_sha256={source_hash}")
-    print("figures=4")
+    print("figures=5")
     print(f"output_dir={output_dir}")
     print(f"manifest={manifest}")
 

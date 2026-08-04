@@ -30,6 +30,11 @@ tmp/
 10_outputs/论文初稿_LaTeX/build/*.lot
 10_outputs/论文初稿_LaTeX/build/*.synctex.gz
 10_outputs/论文初稿_LaTeX/build/*.toc
+10_outputs/华东师大2025格式论文/build/*.aux
+10_outputs/华东师大2025格式论文/build/*.lof
+10_outputs/华东师大2025格式论文/build/*.lot
+10_outputs/华东师大2025格式论文/build/*.synctex.gz
+10_outputs/华东师大2025格式论文/build/*.toc
 
 # Local visual-API experiments containing machine-specific credentials
 03_corpus/manual_review_transcripts/CPHO42-Q02_vision_quickcheck.py

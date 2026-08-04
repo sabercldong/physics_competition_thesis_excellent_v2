@@ -2,7 +2,7 @@
 
 本章有目的地选取六个复赛小问，分析题设条件、参考解答与科学思维要求之间的关系，并据此提出教学任务设计建议。案例分析的重点不在于复述完整解答，而在于识别解题过程中的关键转折：条件如何决定模型，模型如何引出关系链，结论又如何通过比较、检验或边界说明获得物理意义。
 
-## 5.1 案例选择与边界
+## 5.1 案例选择与说明
 
 ### 5.1.1 案例选择原则
 
@@ -35,7 +35,7 @@
 
 案例分析以题面和参考解答为依据。相关研究可作为案例阅读的补充参照，但不改变本文的题目版本、参数条件和全样本统计口径。\textsuperscript{[28]}
 
-### 5.1.2 正例、边界例与反例的覆盖
+### 5.1.2 正例、对照例与反例的覆盖
 
 六个主案例涉及10个分析单元，另加入第35届第8题两个相邻小问作为对照。案例集合既包含模型建构和科学推理均为L3的高整合任务，也包含模型建构未出现、科学推理L1的低结构单元；既包含科学论证正例，也包含质疑创新正例及同题反例。第40届第3题第（1）问的五个分析单元尤其显示：同一连续解答中，模型建构可由L3降至未出现或L1，不能把整道大题复制为同一标签。
 
@@ -603,6 +603,52 @@ V'\simeq-\frac{\Delta\nu}{\nu_0}c.
 
 从评价角度看，这些任务都应兼顾结果与过程。教师既可检查最终表达式或图示，也可检查条件是否进入相应关系、比较对象是否保持一致、约束方程是否对应正确对象、临界判断是否有量值依据；对于测量设计，还应检查待测量、可控量和可观察信号是否闭合。评价重点不只是区分“算对”与“算错”，而是定位条件提取、模型组织、关系推演、结论说明和方案构造中的具体缺口。
 
+图5-8将六个主案例压缩为“任务结构—关键认知操作—可观察产出”三列。左列不是知识点分类，而是题目组织条件与关系的方式；中列指出解题者必须完成的关键工作；右列则把该工作转换为可提交、可比较和可反馈的作品形式。这样，跨知识模块的案例可以在保持物理差异的同时获得共同的教学设计语言。
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  every node/.style={font=\small},
+  task/.style={thesisbox,text width=3.00cm,minimum height=0.72cm,inner xsep=5pt,fill=ThesisBlue!10},
+  action/.style={thesisbox,text width=3.30cm,minimum height=0.72cm,inner xsep=5pt,fill=ThesisGold!13},
+  product/.style={thesisbox,text width=3.20cm,minimum height=0.72cm,inner xsep=5pt,fill=ThesisTeal!12}
+]
+  \node[task,fill=ThesisNavy,text=white,font=\small\bfseries] (th) {任务结构};
+  \node[action,right=5mm of th,fill=ThesisNavy,text=white,font=\small\bfseries] (ah) {关键认知操作};
+  \node[product,right=5mm of ah,fill=ThesisNavy,text=white,font=\small\bfseries] (ph) {可观察产出};
+
+  \node[action,below=2.4mm of ah] (a1) {把题设条件接入连续物理关系};
+  \node[task] (t1) at (th |- a1) {条件—关系链};
+  \node[product] (p1) at (ph |- a1) {条件表、关系链图};
+  \node[action,below=2.4mm of a1] (a2) {建立分支并固定共同比较量};
+  \node[task] (t2) at (th |- a2) {状态分类—比较};
+  \node[product] (p2) at (ph |- a2) {分支表、比较说明};
+  \node[action,below=2.4mm of a2] (a3) {说明保留项、忽略项与适用范围};
+  \node[task] (t3) at (th |- a3) {近似条件建模};
+  \node[product] (p3) at (ph |- a3) {近似说明、变量图};
+  \node[action,below=2.4mm of a3] (a4) {固定模式、方向约定和比较对象};
+  \node[task] (t4) at (th |- a4) {同对象比较};
+  \node[product] (p4) at (ph |- a4) {对象卡、比较表};
+  \node[action,below=2.4mm of a4] (a5) {对应对象、方程与运动约束};
+  \node[task] (t5) at (th |- a5) {多对象约束};
+  \node[product] (p5) at (ph |- a5) {对象图、联立关系表};
+  \node[action,below=2.4mm of a5] (a6) {把比例关系转化为临界条件};
+  \node[task] (t6) at (th |- a6) {阈值判断};
+  \node[product] (p6) at (ph |- a6) {判断表、传播路径图};
+
+  \foreach \r in {1,...,6} {
+    \draw[thesisarrow] (t\r.east) -- (a\r.west);
+    \draw[thesisarrow] (a\r.east) -- (p\r.west);
+  }
+\end{tikzpicture}
+\caption{六类任务结构、关键认知操作与可观察产出的对应关系}
+\label{fig:cross-case-task-product-map}
+\end{figure}
+```
+
+图5-8也说明，同一种教学支架不能机械套用于所有复赛题。条件链适合用箭头关系图，状态分类需要分支表，多对象约束则需要把方程明确归属于相应研究对象；支架形式应由任务结构决定。
+
 ### 5.9.2 基于案例的三组任务设计
 
 六则案例可按任务重点分为三组。第一组包括偏转角和声波折射案例：前者要求把变化的入射条件放入同一条关系链，后者要求把温度差转化为声速比和临界条件。相应产出可采用条件表、判断表、代数推演和传播图。
@@ -620,6 +666,33 @@ V'\simeq-\frac{\Delta\nu}{\nu_0}c.
 ### 5.10.1 任务、支架、产出与反馈
 
 六个案例共同形成“任务结构—学习任务—支架—可观察产出—反馈要点”的设计链条。任务结构说明题目的关键工作，学习任务规定学生需要完成什么，支架帮助学生进入复杂问题，可观察产出为检查提供依据，反馈要点则把学生作品重新带回条件、模型、关系与结论边界。
+
+图5-9显示这一设计链条不是单向地把题目“讲完”，而是依据学生作品中的可见信息返回任务和支架。反馈所针对的是条件遗漏、关系断裂、比较对象混淆或边界说明不足等具体问题；修订后的作品再进入下一轮检查。
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=3.5mm,
+  every node/.style={font=\small},
+  phase/.style={thesisbox,text width=2.08cm,minimum height=1.25cm,inner xsep=5pt}
+]
+  \node[phase,fill=ThesisBlue!11] (structure) {识别任务结构\\题目的关键物理工作};
+  \node[phase,right=of structure,fill=ThesisGold!13] (task) {转化学习任务\\明确学生完成动作};
+  \node[phase,right=of task,fill=ThesisLavender!12] (support) {配置支架\\条件表、关系图或分支表};
+  \node[phase,right=of support,fill=ThesisTeal!12] (product) {形成可观察产出\\保留推理与修订痕迹};
+  \node[phase,right=of product,fill=ThesisRust!11] (feedback) {证据化反馈\\定位缺口并要求修订};
+  \draw[thesisarrow] (structure) -- (task);
+  \draw[thesisarrow] (task) -- (support);
+  \draw[thesisarrow] (support) -- (product);
+  \draw[thesisarrow] (product) -- (feedback);
+  \draw[thesisarrow] (feedback.south) .. controls +(0,-1.00) and +(0,-1.00) ..
+    node[below,font=\footnotesize,align=center] {依据作品证据调整任务与支架} (structure.south);
+\end{tikzpicture}
+\caption{从试题任务结构到作品反馈的教学转化闭环}
+\label{fig:instructional-conversion-loop}
+\end{figure}
+```
 
 | 任务结构 | 学习任务与可观察产出 | 可提供的支架 | 反馈要点 |
 |---|---|---|---|
@@ -647,7 +720,7 @@ V'\simeq-\frac{\Delta\nu}{\nu_0}c.
 
 评价记录不应直接把学生的单次作答换算成“模型建构L3”或“科学推理L2”等研究编码等级。论文中的编码等级用于描述试题任务要求，课堂评价则服务于理解学生作品中的具体表现，两者虽可在任务结构上相互参照，却属于不同层面的判断。将二者分开，可以避免用试题分析替代学习评价，也能使未来的教学研究在收集真实作品后保持清晰的证据边界。
 
-六个案例的共同方法是把“题目要求”拆成可见的任务产出，而不是把题目编码直接翻译成对学习者的心理判断。除条件—关系链、状态分类和近似建模外，谐振腔案例强调比较对象与方向约定，楔块案例强调对象划分与约束联立，声波案例强调临界条件的量化判断。后续若开展教师案例评审，可请审查者只评价任务材料是否清楚、产出是否可观察、评价项是否可操作，并把教师对学生表现或课堂效果的判断另行记录，避免不同证据类型混为同一结论。
+六个案例的共同方法是把“题目要求”拆成可见的任务产出，而不是把题目编码直接翻译成对学习者的心理判断。除条件—关系链、状态分类和近似建模外，谐振腔案例强调比较对象与方向约定，楔块案例强调对象划分与约束联立，声波案例强调临界条件的量化判断。教师使用这些材料时，可以分别检查任务说明是否清楚、学生产出是否可观察、反馈要求是否具体。
 
 ### 5.10.4 竞赛题评讲的组织与反馈
 
@@ -725,7 +798,7 @@ V'\simeq-\frac{\Delta\nu}{\nu_0}c.
 
 相邻的物理课堂研究将科学能力转化为任务、可观察子能力和描述性量规，并强调模型推理、证据推理与反馈修订之间的联系。这为本章把条件表、状态分支、近似说明和对象—约束表设计为可提交产出提供了方法参照；由于研究对象和课程情境不同，本文只借鉴“任务—产出—反馈”的组织方式。\textsuperscript{[29, 30, 31]}
 
-物理探究与问题解决研究还提示，可把“结论—证据或理由—适用限制”以及“预测—核对—比较—说明”组织为连续任务，并使问题表征、条件假设、方案计划、关键依据和结果检查与任务复杂度相称。这些原则支持第五章对关系图、比较说明和边界核对的设计，但不提供本研究课堂效果的直接证据。\textsuperscript{[32, 33, 34, 35]}
+物理探究与问题解决研究还提示，可把“结论—证据或理由—适用限制”以及“预测—核对—比较—说明”组织为连续任务，并使问题表征、条件假设、方案计划、关键依据和结果检查与任务复杂度相称。这些原则支持第五章对关系图、比较说明和条件核对的设计。\textsuperscript{[32, 33, 34, 35]}
 
 若将上述设计用于真实课堂，应保存题目版本、作答情境、学生原始作品、过程性产出、评价规则和修订信息，为后续分析提供完整记录。\textsuperscript{[36, 37, 38]}
 

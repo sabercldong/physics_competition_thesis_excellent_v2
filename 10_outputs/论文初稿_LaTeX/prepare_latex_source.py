@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = ROOT / "10_outputs/论文初稿_LaTeX"
 COMBINED_MD = OUTPUT_DIR / "论文初稿_合并源稿.md"
-TEX_FILE = OUTPUT_DIR / "全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.tex"
+TEX_FILE = OUTPUT_DIR / "全国中学生物理竞赛复赛试题的科学思维要求与教学启示.tex"
 REFERENCE_MAPPING = ROOT / "09_quality/r01_candidate_references_mapping_v1.csv"
 METADATA_FILE = OUTPUT_DIR / "华东师范大学论文元数据.json"
 SOURCES = [

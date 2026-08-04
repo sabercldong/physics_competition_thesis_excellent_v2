@@ -369,14 +369,14 @@ def build_manuscript_and_presentation() -> list[tuple[str, str]]:
     presentation_output.mkdir(parents=True, exist_ok=True)
 
     merged = ROOT / "10_outputs/论文初稿_LaTeX/论文初稿_合并源稿.md"
-    thesis_target = manuscript_output / "全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.md"
+    thesis_target = manuscript_output / "全国中学生物理竞赛复赛试题的科学思维要求与教学启示.md"
     thesis_target.write_text(display_text(merged.read_text(encoding="utf-8")) + "\n", encoding="utf-8")
 
     pptx = ROOT / "10_outputs/答辩PPT/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示_答辩PPT.pptx"
     ppt_target = presentation_output / "答辩PPT文字稿.md"
     ppt_target.write_text("# 答辩PPT文字稿\n\n" + extract_pptx_text(pptx) + "\n", encoding="utf-8")
     return [
-        ("10_outputs/论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf", str(thesis_target.relative_to(OUTPUT))),
+        ("10_outputs/华东师大2025格式论文/build/全国中学生物理竞赛复赛试题的科学思维要求与教学启示.pdf", str(thesis_target.relative_to(OUTPUT))),
         (str(pptx.relative_to(ROOT)), str(ppt_target.relative_to(OUTPUT))),
         ("10_outputs/全量复赛题干解析与TikZ图册/build/全量题干解析与TikZ图册.pdf", "02_试题题干与参考解答/逐题60份Markdown"),
     ]
@@ -416,7 +416,7 @@ def write_navigation(mappings: list[tuple[str, str]]) -> None:
 
 ## 直接打开
 
-1. [论文全文Markdown](./08_论文/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.md)
+1. [论文全文Markdown](./08_论文/全国中学生物理竞赛复赛试题的科学思维要求与教学启示.md)
 2. [60道试题题干与参考解答](./02_试题题干与参考解答/)
 3. [60道逐题评分标准索引](./03_逐题评分标准/评分标准总索引.md)
 4. [科学思维编码手册第三版](./05_编码框架/科学思维编码手册_第三版.md)
@@ -429,7 +429,7 @@ def write_navigation(mappings: list[tuple[str, str]]) -> None:
 
 ## 可视化成果
 
-- [当前论文PDF](../论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf)
+- [当前论文PDF](../华东师大2025格式论文/build/全国中学生物理竞赛复赛试题的科学思维要求与教学启示.pdf)
 - [第35至42届全量题干解析与TikZ图册PDF](../全量复赛题干解析与TikZ图册/build/全量题干解析与TikZ图册.pdf)
 - [当前答辩PPT](../答辩PPT/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示_答辩PPT.pptx)
 

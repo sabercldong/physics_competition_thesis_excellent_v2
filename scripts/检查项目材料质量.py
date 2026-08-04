@@ -90,7 +90,7 @@ def 生成检查() -> tuple[list[dict[str, object]], list[dict[str, object]], di
         编码按单元[分析单元].add(当前维度)
 
     断链 = 本地链接错误()
-    论文PDF = 项目根目录 / "10_outputs/论文初稿_LaTeX/build/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示.pdf"
+    论文PDF = 项目根目录 / "10_outputs/华东师大2025格式论文/build/全国中学生物理竞赛复赛试题的科学思维要求与教学启示.pdf"
     图册PDF = 项目根目录 / "10_outputs/全量复赛题干解析与TikZ图册/build/全量题干解析与TikZ图册.pdf"
     答辩PPT = 项目根目录 / "10_outputs/答辩PPT/全国中学生物理竞赛复赛理论试题的科学思维要求及教学设计启示_答辩PPT.pptx"
 
