@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import argparse
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -19,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
 OUTPUT_DIR = ROOT / "07_analysis/results/第三版正式结果/敏感性分析"
 MANUSCRIPT_FIGURE_DIR = ROOT / "08_manuscript/figures/第三版正式结果"
+VERSION_LABEL = "第三版"
 
 DIMENSIONS = ["模型建构", "科学推理", "科学论证", "质疑创新"]
 LEVELS = ["L1", "L2", "L3", "L4"]
@@ -32,6 +34,23 @@ COLORS = {
     "大题等权": "#C15F3C",
 }
 ROMAN_SPLIT_RE = re.compile(r"^\d+-[ivxlcdm]+$", re.IGNORECASE)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", type=Path, default=INPUT)
+    parser.add_argument("--output-dir", type=Path, default=OUTPUT_DIR)
+    parser.add_argument(
+        "--manuscript-figure-dir",
+        type=Path,
+        default=MANUSCRIPT_FIGURE_DIR,
+    )
+    parser.add_argument("--version-label", default=VERSION_LABEL)
+    return parser.parse_args()
+
+
+def resolve(path: Path) -> Path:
+    return path if path.is_absolute() else ROOT / path
 
 
 def read_rows(path: Path) -> list[dict[str, str]]:
@@ -320,7 +339,7 @@ def build_sensitivity_figure(presence_rows: list[dict]) -> None:
     )
     fig.tight_layout(rect=(0, 0.05, 1, 1))
 
-    figure_name = "图4-5_不同权重口径相对分析单元口径的比例变化_第三版"
+    figure_name = f"图4-5_不同权重口径相对分析单元口径的比例变化_{VERSION_LABEL}"
     MANUSCRIPT_FIGURE_DIR.mkdir(parents=True, exist_ok=True)
     for target_dir in (OUTPUT_DIR, MANUSCRIPT_FIGURE_DIR):
         stem = target_dir / figure_name
@@ -371,7 +390,7 @@ def write_explanation(
         "",
         "## 分析目的",
         "",
-        "主分析把221个分析单元等权处理。为检查研究者对复合小问的拆分是否放大某些题目的统计权重，本分析增加“原始小问等权”和“大题等权”两种口径，并以同一份第三版唯一编码表重新计算四维出现比例与等级构成。",
+        f"主分析把221个分析单元等权处理。为检查研究者对复合小问的拆分是否放大某些题目的统计权重，本分析增加“原始小问等权”和“大题等权”两种口径，并以同一份{VERSION_LABEL}重新计算四维出现比例与等级构成。",
         "",
         "## 单位关系",
         "",
@@ -403,9 +422,9 @@ def write_explanation(
     lines.extend(
         [
             "",
-            f"三种口径下，四维出现比例的最大绝对变化为{max_change:.2f}个百分点。模型建构始终居于高位，科学推理始终为100%，科学论证明显低于前两者，质疑创新仍接近零；因此，论文关于四维相对分布的核心描述不因分析单位权重改变而变化。",
+            f"三种口径下，四维出现比例的最大绝对变化为{max_change:.2f}个百分点。科学推理始终为100%，模型建构保持高位，科学论证明显低于前两者，质疑创新仍接近零；因此，论文关于四维相对分布的核心描述不因分析单位权重改变而变化。",
             "",
-            f"等级构成的最大绝对变化为{max_level_change:.2f}个百分点。模型建构和科学推理在三种口径下均以L3为主，质疑创新的两个正例均为L2；科学论证的L1与L2较为接近，分析单元等权和原始小问等权时L2略多，大题等权时则转为L1略多。因此，科学论证更稳妥的概括是“主要集中于L1至L2”，不宜把其中某一级写成稳定优势等级。",
+            f"等级构成的最大绝对变化为{max_level_change:.2f}个百分点。模型建构和科学推理在三种口径下均以L3为主，质疑创新的两个正例均为L2；科学论证仍主要分布在L1至L2。因而，等级解释应同时报告具体数量和权重口径，不把单一级别概括为跨口径的稳定优势。",
             "",
             "等级构成表使用各口径下相应维度的加权出现量为分母，不能与全样本出现比例混用。",
             "",
@@ -415,8 +434,8 @@ def write_explanation(
             "- `三种分析单位权重下等级构成.csv`",
             "- `分析单元归属与三种权重.csv`",
             "- `各届分析单位数量与拆分情况.csv`",
-            "- `图4-5_不同权重口径相对分析单元口径的比例变化_第三版.png`",
-            "- `图4-5_不同权重口径相对分析单元口径的比例变化_第三版.pdf`",
+            f"- `图4-5_不同权重口径相对分析单元口径的比例变化_{VERSION_LABEL}.png`",
+            f"- `图4-5_不同权重口径相对分析单元口径的比例变化_{VERSION_LABEL}.pdf`",
             "",
         ]
     )
@@ -442,10 +461,14 @@ def validate_outputs(
         for row in presence_rows
     }
     expected_baseline = {
-        "模型建构": 100 * 202 / 221,
-        "科学推理": 100.0,
-        "科学论证": 100 * 36 / 221,
-        "质疑创新": 100 * 2 / 221,
+        dimension: 100
+        * sum(
+            row["present_label"] == "是"
+            for row in enriched
+            if row["dimension"] == dimension
+        )
+        / 221
+        for dimension in DIMENSIONS
     }
     for dimension, expected in expected_baseline.items():
         actual = values[("分析单元等权", dimension)]
@@ -488,6 +511,12 @@ def validate_outputs(
 
 
 def main() -> None:
+    global INPUT, OUTPUT_DIR, MANUSCRIPT_FIGURE_DIR, VERSION_LABEL
+    args = parse_args()
+    INPUT = resolve(args.input)
+    OUTPUT_DIR = resolve(args.output_dir)
+    MANUSCRIPT_FIGURE_DIR = resolve(args.manuscript_figure_dir)
+    VERSION_LABEL = args.version_label.strip() or "第三版"
     rows = read_rows(INPUT)
     units = unique_units(rows)
     enriched = add_keys_and_weights(rows, units)

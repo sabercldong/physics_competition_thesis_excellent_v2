@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import argparse
 from collections import defaultdict
 from pathlib import Path
 
@@ -11,21 +12,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
 OUTPUT_DIR = ROOT / "07_analysis/results/第三版正式结果/案例选择"
+VERSION_LABEL = "第三版"
 DIMENSIONS = ["模型建构", "科学推理", "科学论证", "质疑创新"]
 
 SELECTIONS = {
-    "CPHO41-Q06-3": ("主案例一", "条件—关系链；模型与推理L3"),
+    "CPHO41-Q06-3": ("主案例一", "条件—关系链；高整合模型与推理"),
     "CPHO41-Q07-4": ("主案例二", "状态分类—比较；科学论证正例"),
-    "CPHO42-Q04-2": ("主案例三", "近似条件建模；模型与推理L3"),
-    "CPHO37-Q06-3": ("主案例四", "同对象比较；模型与推理L3"),
-    "CPHO40-Q03-1_i": ("主案例五（组内）", "多对象约束；模型与推理L3"),
+    "CPHO42-Q04-2": ("主案例三", "近似条件建模；高整合模型与推理"),
+    "CPHO37-Q06-3": ("主案例四", "同对象比较；高整合模型与推理"),
+    "CPHO40-Q03-1_i": ("主案例五（组内）", "多对象约束与联立关系"),
     "CPHO40-Q03-1_ii": (
         "主案例五（组内对照）",
         "同一原始小问内模型未出现、推理L1",
     ),
-    "CPHO40-Q03-1_iii": ("主案例五（组内）", "同一原始小问内模型与推理L2"),
-    "CPHO40-Q03-1_iv": ("主案例五（组内）", "同一原始小问内模型与推理L2"),
-    "CPHO40-Q03-1_v": ("主案例五（组内）", "同一原始小问内模型L1、推理L2"),
+    "CPHO40-Q03-1_iii": ("主案例五（组内）", "同一原始小问内局部模型与推理链"),
+    "CPHO40-Q03-1_iv": ("主案例五（组内）", "同一原始小问内标准映射与单步推理"),
+    "CPHO40-Q03-1_v": ("主案例五（组内）", "同一原始小问内标准模型与局部推理链"),
     "CPHO40-Q07-3": ("主案例六", "阈值判断；科学论证正例"),
     "CPHO35-Q08-3": (
         "相邻小问对照A",
@@ -38,8 +40,20 @@ SELECTIONS = {
 }
 
 
-def read_rows() -> list[dict[str, str]]:
-    with INPUT.open(encoding="utf-8-sig", newline="") as handle:
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", type=Path, default=INPUT)
+    parser.add_argument("--output-dir", type=Path, default=OUTPUT_DIR)
+    parser.add_argument("--version-label", default=VERSION_LABEL)
+    return parser.parse_args()
+
+
+def resolve(path: Path) -> Path:
+    return path if path.is_absolute() else ROOT / path
+
+
+def read_rows(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8-sig", newline="") as handle:
         rows = list(csv.DictReader(handle))
     if len(rows) != 884:
         raise ValueError(f"Expected 884 records, found {len(rows)}")
@@ -75,7 +89,11 @@ def boundary_tags(codes: dict[str, tuple[str, str]]) -> str:
 
 
 def main() -> None:
-    rows = read_rows()
+    args = parse_args()
+    input_path = resolve(args.input)
+    output_dir = resolve(args.output_dir)
+    version_label = args.version_label.strip() or "第三版"
+    rows = read_rows(input_path)
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in rows:
         grouped[row["item_id"]].append(row)
@@ -142,7 +160,7 @@ def main() -> None:
         raise ValueError("Selected cases must include a reasoning-L1 contrast")
 
     write_csv(
-        OUTPUT_DIR / "221个分析单元案例选择矩阵_第三版.csv",
+        output_dir / f"221个分析单元案例选择矩阵_{version_label}.csv",
         [
             "分析单元编号",
             "届次",
@@ -164,7 +182,7 @@ def main() -> None:
     )
 
     summary = [
-        "# 第三版案例选择矩阵说明",
+        f"# {version_label}案例选择矩阵说明",
         "",
         "- 全样本：221个分析单元。",
         "- 正文主案例：6组，涉及10个分析单元。",
@@ -172,15 +190,15 @@ def main() -> None:
         "- 覆盖：模型—推理L3、科学论证正例、质疑创新正例、模型建构未出现、科学推理L1。",
         "- 案例用于解释任务机制，不按入选案例频数推断全样本分布。",
         "",
-        "输出：`221个分析单元案例选择矩阵_第三版.csv`。",
+        f"输出：`221个分析单元案例选择矩阵_{version_label}.csv`。",
         "",
     ]
-    (OUTPUT_DIR / "第三版案例选择矩阵说明.md").write_text(
+    (output_dir / f"{version_label}案例选择矩阵说明.md").write_text(
         "\n".join(summary),
         encoding="utf-8",
     )
     print(
-        "PASS: third-edition case-selection matrix built "
+        f"PASS: {version_label} case-selection matrix built "
         f"(all_units={len(output)}, selected_units={len(selected)})"
     )
 

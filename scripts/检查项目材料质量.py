@@ -75,7 +75,7 @@ def 生成检查() -> tuple[list[dict[str, object]], list[dict[str, object]], di
             旧版本写法.append(路径)
 
     索引路径 = 项目根目录 / "03_corpus/item_index.csv"
-    编码路径 = 项目根目录 / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
+    编码路径 = 项目根目录 / "07_analysis/data/作者授权采用分析版/第35至42届科学思维作者授权采用分析表.csv"
     索引数据 = 读取表格(索引路径)
     编码数据 = 读取表格(编码路径)
     索引分析单元 = {str(行.get("item_id", "")) for 行 in 索引数据}

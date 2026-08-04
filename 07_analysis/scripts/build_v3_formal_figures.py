@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build thesis-ready figures from the accepted third-edition unique coding table."""
+"""Build thesis-ready figures from a validated 884-row coding table."""
 
 from __future__ import annotations
 
@@ -23,12 +23,14 @@ DIMENSION_COLORS = ("#2A6F97", "#3A7D44", "#C15F3C", "#7A5195")
 LEVEL_COLORS = ("#DCEAF3", "#9BC3D8", "#4E8FB5", "#1F5673")
 EXPECTED_ROWS = 884
 EXPECTED_ITEMS = 221
+VERSION_LABEL = "第三版"
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--version-label", default="第三版")
     parser.add_argument("--force", action="store_true")
     return parser.parse_args()
 
@@ -153,7 +155,7 @@ def build_presence_figure(
         fontsize=8.5,
         color="#4F5963",
     )
-    return save_figure(figure, output_dir, "图4-1_四维度出现比例_第三版")
+    return save_figure(figure, output_dir, f"图4-1_四维度出现比例_{VERSION_LABEL}")
 
 
 def build_level_figure(
@@ -230,7 +232,7 @@ def build_level_figure(
         fontsize=8.5,
         color="#4F5963",
     )
-    return save_figure(figure, output_dir, "图4-2_四维度等级构成_第三版")
+    return save_figure(figure, output_dir, f"图4-2_四维度等级构成_{VERSION_LABEL}")
 
 
 def build_year_heatmap(
@@ -282,7 +284,7 @@ def build_year_heatmap(
     colorbar.ax.tick_params(labelsize=8.5)
     for spine in axis.spines.values():
         spine.set_visible(False)
-    return save_figure(figure, output_dir, "图4-3_各届次维度出现比例_第三版")
+    return save_figure(figure, output_dir, f"图4-3_各届次维度出现比例_{VERSION_LABEL}")
 
 
 def build_combination_figure(
@@ -328,7 +330,7 @@ def build_combination_figure(
         fontsize=8.5,
         color="#4F5963",
     )
-    return save_figure(figure, output_dir, "图4-4_维度组合分布_第三版")
+    return save_figure(figure, output_dir, f"图4-4_维度组合分布_{VERSION_LABEL}")
 
 
 def write_manifest(
@@ -337,7 +339,7 @@ def write_manifest(
     source_path: Path,
     source_hash: str,
 ) -> Path:
-    manifest = output_dir / "第三版结果图件来源登记.csv"
+    manifest = output_dir / f"{VERSION_LABEL}结果图件来源登记.csv"
     with manifest.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(
             handle,
@@ -373,7 +375,9 @@ def write_manifest(
 
 
 def main() -> None:
+    global VERSION_LABEL
     args = parse_args()
+    VERSION_LABEL = args.version_label.strip() or "第三版"
     input_path = resolve(args.input)
     output_dir = resolve(args.output_dir)
     if not input_path.is_file():

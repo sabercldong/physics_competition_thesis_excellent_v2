@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Build a self-contained RATER-F package from the curated LaTeX atlas."""
+"""Build a self-contained anonymous reviewer package from the curated atlas."""
 
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import re
@@ -21,6 +22,8 @@ INDEX_SOURCE = (
     / "独立盲评材料索引_75单元.csv"
 )
 DOWNLOADS = Path.home() / "Downloads"
+REVIEWER_CODE = "RATER-F"
+REVIEWER_PROFILE = "具有高中物理教学、物理竞赛教学或物理教育研究经验"
 PACKAGE_NAME = "RATER-F真实独立盲评材料包_清洗版_20260801"
 PACKAGE = DOWNLOADS / PACKAGE_NAME
 ZIP_PATH = DOWNLOADS / f"{PACKAGE_NAME}.zip"
@@ -236,7 +239,7 @@ def build_blank_tables(index_rows: list[dict[str, str]]) -> None:
 
     write_csv(PACKAGE / "独立盲评材料索引_75单元.csv", normalized_index, list(normalized_index[0]))
     write_csv(
-        PACKAGE / "第35至42届独立盲评编码表_RATER-F_空白300行.csv",
+        PACKAGE / f"第35至42届独立盲评编码表_{REVIEWER_CODE}_空白300行.csv",
         blind_rows,
         list(blind_rows[0]),
     )
@@ -245,13 +248,15 @@ def build_blank_tables(index_rows: list[dict[str, str]]) -> None:
 
 def write_instructions() -> None:
     (PACKAGE / "00_开始前必读.md").write_text(
-        """# RATER-F开始前必读
+        f"""# {REVIEWER_CODE}开始前必读
 
 本材料包用于一名新的真实评分者完成独立盲评。包内没有既有标签、作者决定或统计结果。
 
+本包登记的匿名专业背景为：{REVIEWER_PROFILE}。
+
 请按以下顺序工作：
 
-1. 阅读 `01_RATER-F评分者操作指令.md`；
+1. 阅读 `01_{REVIEWER_CODE}评分者操作指令.md`；
 2. 阅读 `编码规则` 中的编码手册和决策矩阵；
 3. 按 `独立盲评材料索引_75单元.csv` 的顺序完成75个分析单元；
 4. 主要阅读 `清晰排版题目与解答` 中的MD或43题PDF；
@@ -263,12 +268,12 @@ def write_instructions() -> None:
 """,
         encoding="utf-8",
     )
-    (PACKAGE / "01_RATER-F评分者操作指令.md").write_text(
-        """# RATER-F真实独立盲评操作指令
+    (PACKAGE / f"01_{REVIEWER_CODE}评分者操作指令.md").write_text(
+        f"""# {REVIEWER_CODE}真实独立盲评操作指令
 
 ## 一、评分者资格
 
-评分者必须是真实存在、此前未参与本项目编码或裁决的人，并具备高中物理教学、物理竞赛教学或物理教育研究经验。开始前不得查看论文统计、既有标签或其他评分者结果。
+评分者必须是真实存在、此前未参与本项目编码或裁决的人。本包登记的专业背景为：{REVIEWER_PROFILE}。开始前不得查看论文统计、既有标签或其他评分者结果。
 
 ## 二、逐单元工作流程
 
@@ -303,39 +308,37 @@ def write_instructions() -> None:
 """,
         encoding="utf-8",
     )
-    (PACKAGE / "02_RATER-F匿名独立性声明_回填.md").write_text(
-        """# RATER-F匿名独立性声明
+    (PACKAGE / f"02_{REVIEWER_CODE}匿名独立性声明_回填.md").write_text(
+        f"""# {REVIEWER_CODE}匿名独立性声明
 
 我声明：本文件由本人在未查看既有编码、作者复核结果和统计结果的条件下独立完成。本人逐题阅读了材料包中的题干、参考解答、TikZ图件和编码规则，所有判断均为本人意见，未使用模板或自动批量方式代填。
 
-- 匿名评分者代号：
-- 专业背景：
+- 匿名评分者代号：{REVIEWER_CODE}
+- 专业背景：{REVIEWER_PROFILE}
 - 实际编码起止日期：
 - 完成行数：
 - 回填文件名：
-- 签名或确认：
+- 匿名确认（填写{REVIEWER_CODE}确认）：
 """,
         encoding="utf-8",
     )
-    (PACKAGE / "03_RATER-F真实身份留存表_仅私下回传作者.md").write_text(
-        """# RATER-F真实身份留存表
+    (PACKAGE / "03_匿名信息保护说明.md").write_text(
+        f"""# {REVIEWER_CODE}匿名信息保护说明
 
-本文件只私下交给作者保存，不上传公开项目。
+本材料包和回填文件只使用匿名代号 `{REVIEWER_CODE}`。请勿在任何文件中填写真实姓名、学号、单位、班级、电话号码、电子邮箱、签名图片或其他可识别个人身份的信息。
 
-- 真实姓名：
-- 工作单位或专业身份：
-- 联系方式：
-- 与作者的关系：
-- 是否参与过本项目前期编码或裁决：
-- 是否在编码前看过既有标签或统计结果：
-- 本人确认独立完成75个单元、300行编码：
-- 实际签名：
-- 日期：
+作者线下确认评分者符合以下条件即可，不在公开项目中建立姓名对应表：
+
+- 评分者真实存在；
+- 专业背景与“{REVIEWER_PROFILE}”一致；
+- 此前未参与本项目编码或裁决；
+- 正式编码前未查看第三版标签、其他评分者结果或一致性统计；
+- 300行由评分者本人独立完成。
 """,
         encoding="utf-8",
     )
     (PACKAGE / "04_完成前自检清单.md").write_text(
-        """# RATER-F完成前自检清单
+        f"""# {REVIEWER_CODE}完成前自检清单
 
 - [ ] 编码表正好300行，前10列未改动，后10列无空值；
 - [ ] 75个分析单元均完成四个维度，进度表75行全部登记；
@@ -345,7 +348,7 @@ def write_instructions() -> None:
 - [ ] 没有通用模板理由，没有用省略号替代引文；
 - [ ] `否`只对应`未出现`，`是`只对应L1至L4；
 - [ ] 置信度按实际判断填写，没有机械地全部标高；
-- [ ] 已填写匿名声明和真实身份私下留存表；
+- [ ] 已填写匿名声明，所有交回文件均未写入真实个人信息；
 - [ ] 交回文件未由作者或他人二次修改。
 """,
         encoding="utf-8",
@@ -511,7 +514,7 @@ def build_clean_sources(question_ids: list[str]) -> list[dict[str, str]]:
 
 
 def validate_package(index_rows: list[dict[str, str]], qa_rows: list[dict[str, str]]) -> None:
-    blind_path = PACKAGE / "第35至42届独立盲评编码表_RATER-F_空白300行.csv"
+    blind_path = PACKAGE / f"第35至42届独立盲评编码表_{REVIEWER_CODE}_空白300行.csv"
     blind_rows = read_csv(blind_path)
     if len(index_rows) != 75 or len(blind_rows) != 300 or len(qa_rows) != 43:
         raise SystemExit("75单元、300行或43题数量不符合预期")
@@ -557,7 +560,10 @@ def validate_package(index_rows: list[dict[str, str]], qa_rows: list[dict[str, s
         text = text_path.read_text(encoding="utf-8")
         if PRIVATE_USE.search(text) or "�" in text or "{#{" in text or "QQAB" in text:
             raise SystemExit(f"材料包仍含乱码或残留标记：{text_path}")
-    forbidden_names = ("RATER-C", "RATER-D", "RATER-E", "author_only", "对照密钥", "最终编码")
+    other_reviewers = tuple(
+        f"RATER-{letter}" for letter in "CDEFG" if f"RATER-{letter}" != REVIEWER_CODE
+    )
+    forbidden_names = other_reviewers + ("author_only", "对照密钥", "最终编码")
     for path in PACKAGE.rglob("*"):
         if any(value in path.name for value in forbidden_names):
             raise SystemExit(f"包内含禁止文件名：{path}")
@@ -585,6 +591,21 @@ def write_manifest_and_zip() -> str:
 
 
 def main() -> None:
+    global REVIEWER_CODE, REVIEWER_PROFILE, PACKAGE_NAME, PACKAGE, ZIP_PATH
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--reviewer-code", default=REVIEWER_CODE)
+    parser.add_argument("--profile", default=REVIEWER_PROFILE)
+    parser.add_argument("--package-name", default=PACKAGE_NAME)
+    args = parser.parse_args()
+    if not re.fullmatch(r"RATER-[A-Z0-9]+", args.reviewer_code):
+        raise SystemExit("评分者代号必须采用RATER-X格式")
+    REVIEWER_CODE = args.reviewer_code
+    REVIEWER_PROFILE = args.profile.strip()
+    PACKAGE_NAME = args.package_name.strip()
+    if not REVIEWER_PROFILE or not PACKAGE_NAME:
+        raise SystemExit("专业背景和材料包名称不得为空")
+    PACKAGE = DOWNLOADS / PACKAGE_NAME
+    ZIP_PATH = DOWNLOADS / f"{PACKAGE_NAME}.zip"
     if PACKAGE.exists():
         shutil.rmtree(PACKAGE)
     PACKAGE.mkdir(parents=True)

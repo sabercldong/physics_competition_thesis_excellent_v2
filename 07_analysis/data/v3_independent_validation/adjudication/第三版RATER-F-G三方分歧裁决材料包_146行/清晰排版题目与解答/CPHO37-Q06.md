@@ -1,0 +1,53 @@
+> 本文件由项目已校订的LaTeX题干、参考解答和TikZ图件生成。评分时以本文件为主要阅读文本；需核对原始措辞时查看包内对应届次原始PDF。
+
+# 第37届复赛第6题：光纤陀螺仪与Sagnac效应
+
+## 题干
+
+光纤陀螺仪利用Sagnac效应测量转动角速度。半径为 $R$ 的光纤环路以角速度 $\Omega$ 逆时针转动，固定在环上的分束器 $A$ 将相干光分成沿逆时针（$\mathrm{CCW}$）和顺时针（$\mathrm{CW}$）传播的两束光，如图所示。真空光速为 $c$。
+
+![CPHO37-Q06-figure6a](图件/CPHO37-Q06-figure6a.png)
+
+（1）如图，光纤由折射率分别为 $n_1$、$n_2$ 的内、外两层介质构成，且 $n_1>n_2$。端口外介质折射率为 $n_0$。求使光能在光纤内传输时，输入端入射角 $i$ 的条件。
+
+![CPHO37-Q06-figure6b](图件/CPHO37-Q06-figure6b.png)
+
+（2）沿环路密绕 $N$ 匝光纤，首尾相接于分束器 $A$。介质折射率为 $n_1$，真空波长为 $\lambda_0$。求两束光的传播时间 $t_{\mathrm{CCW}}$、$t_{\mathrm{CW}}$ 和相位差，并说明相位差与 $n_1$ 的关系。
+
+（3）谐振式光学陀螺仪含有沿逆时针方向转动的光学环形腔，半径为 $R$，角速度为 $\Omega$，且 $R\Omega\ll c$。腔中介质折射率为 $n_1$。静止时同一级次 $m$ 的模式满足 $2\pi R=m\lambda_{m0}$。求旋转时顺、逆时针共振模式频率差 $\Delta f$ 与 $\Omega$ 的关系。
+
+## 参考解答整理
+
+#### （1）光纤端口入射条件。
+
+设光在端口处的折射角为 $i'$，到内外层界面时的入射角为 $i''$。折射定律、全反射条件和几何关系分别为 $$n_0\sin i=n_1\sin i',\qquad
+i''\geqslant i_c,\qquad \sin i_c=\frac{n_2}{n_1},\qquad
+i'+i''=\frac\pi2.$$ 故 $$n_0\sin i=n_1\cos i''\leqslant n_1\cos i_c
+=\sqrt{n_1^2-n_2^2},$$ 即 $$\boxed{i\leqslant\arcsin\frac{\sqrt{n_1^2-n_2^2}}{n_0}.}$$
+
+#### （2）Sagnac相位差。
+
+在实验室系中，两束光的线速度为 $$v_{\mathrm{CCW}}=
+\frac{c/n_1+\Omega R}{1+(c/n_1)(\Omega R)/c^2},
+\qquad
+v_{\mathrm{CW}}=
+\frac{c/n_1-\Omega R}{1-(c/n_1)(\Omega R)/c^2}.$$ 环路随分束器运动，故传播时间满足 $$v_{\mathrm{CCW}}t_{\mathrm{CCW}}=N2\pi R+\Omega Rt_{\mathrm{CCW}},
+\qquad
+v_{\mathrm{CW}}t_{\mathrm{CW}}=N2\pi R-\Omega Rt_{\mathrm{CW}}.$$ 图标出了传播期间分束器由 $A(t=0)$ 移至 $A(t)$ 的弧长 $\Omega Rt$，这正是两个传播路程出现正、负修正项的几何原因。
+
+![CPHO37-Q06-solution-sagnac](图件/CPHO37-Q06-solution-sagnac.png)
+
+解得 $$\boxed{t_{\mathrm{CCW}}=
+\frac{N2\pi R(n_1c+\Omega R)}{c^2-(\Omega R)^2},\qquad
+t_{\mathrm{CW}}=
+\frac{N2\pi R(n_1c-\Omega R)}{c^2-(\Omega R)^2}.}$$ 于是相位差为 $$\boxed{\Delta\varphi=
+\frac{2\pi c}{\lambda_0}(t_{\mathrm{CCW}}-t_{\mathrm{CW}})
+=\frac{8\pi^2NR^2\Omega c}{\lambda_0[c^2-(\Omega R)^2]}.}$$ 由此可见，在本题模型中 $\Delta\varphi$ 与光纤介质折射率 $n_1$ 无关。
+
+#### （3）谐振模式频率分裂。
+
+对同一级次 $m$ 的两类共振模式，分别有 $$L_{\mathrm{CW}}=m\lambda_{\mathrm{CW}},\qquad
+L_{\mathrm{CCW}}=m\lambda_{\mathrm{CCW}}.$$ 由旋转腔中的传播路程可得频率差 $$\Delta f=f_{\mathrm{CW}}-f_{\mathrm{CCW}}
+=\frac{m\Omega}{\pi}
+\frac{c^2-(\Omega R)^2}{c^2-(n_1\Omega R)^2}.$$ 在 $R\Omega\ll c$ 下，忽略二阶小量， $$\Delta f\approx\frac{m\Omega}{\pi}.$$ 故环形腔转动角速度可写为 $$\boxed{\Omega=\frac\pi m\Delta f
+=\frac{\lambda_{m0}}{2R}\Delta f.}$$

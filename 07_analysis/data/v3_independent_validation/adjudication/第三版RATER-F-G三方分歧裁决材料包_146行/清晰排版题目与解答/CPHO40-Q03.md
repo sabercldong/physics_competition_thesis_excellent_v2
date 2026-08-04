@@ -1,0 +1,62 @@
+> 本文件由项目已校订的LaTeX题干、参考解答和TikZ图件生成。评分时以本文件为主要阅读文本；需核对原始措辞时查看包内对应届次原始PDF。
+
+# 第40届复赛第3题：楔块上匀质圆球的滚动与滑动
+
+## 题干
+
+如图，倾角为 $\theta$、质量为 $M$ 的三角形楔块放在光滑的水平地面上。其斜面上有一个质量为 $m$、半径为 $r$ 的匀质圆球；圆球从静止开始自由向下运动，整个过程中楔块不发生转动。重力加速度大小为 $g$。设圆球与楔块间的静摩擦因数和滑动摩擦因数均为 $\mu$。
+
+![CPHO40-Q03-figure1](图件/CPHO40-Q03-figure1.png)
+
+1.  若 $\mu$ 足够大，使圆球无滑动地滚下，求：
+
+    1.  楔块相对于地面的加速度大小 $a_0$；
+
+    2.  圆球质心相对于楔块的加速度大小 $a_c$；
+
+    3.  地面对楔块的支持力大小 $N$；
+
+    4.  楔块对圆球的支持力大小 $N_1$；
+
+    5.  使匀质圆球保持无滑动滚动所需的最小摩擦因数 $\mu_0$。
+
+2.  若 $\mu<\mu_0$，且楔块斜面足够长，求圆球由静止运动 $\Delta t$ 后，其与楔块接触点 $P$ 相对于楔块的速度。
+
+## 参考解答整理
+
+取沿斜面向下为正方向。在相对于楔块静止的参考系中，圆球质心的运动方程、转动方程和无滑动约束分别为 $$ma_c=ma_0\cos\theta+mg\sin\theta-f,
+\qquad I_C\ddot\varphi=fr,$$ $$v_c=r\dot\varphi,
+\qquad a_c=r\ddot\varphi,
+\qquad I_C=\frac25mr^2.$$ 因此 $f=\frac25ma_c$。又由地面参考系中体系水平方向动量守恒， $$m(v_c\cos\theta-v_0)=Mv_0,
+\qquad m(a_c\cos\theta-a_0)=Ma_0.$$
+
+#### （1）（i）楔块相对于地面的加速度。
+
+联立可得 $$a_0=\boxed{\frac{5mg\sin\theta\cos\theta}
+{7(M+m)-5m\cos^2\theta}}.$$
+
+#### （1）（ii）圆球质心相对于楔块的加速度。
+
+$$a_c=\frac{5(M+m)g\sin\theta}
+{7(M+m)-5m\cos^2\theta}.$$
+
+#### （1）（iii）地面对楔块的支持力。
+
+将楔块和圆球视为整体，竖直方向质心加速度为 $$a_y=-\frac{ma_c\sin\theta}{M+m}.$$ 由竖直方向牛顿第二定律，以及垂直斜面方向的平衡关系，得到 $$N=(M+m)g\,
+\frac{M+\frac27m}{M+m-\frac57m\cos^2\theta}.$$
+
+#### （1）（iv）楔块对圆球的支持力。
+
+$$N_1=mg\cos\theta\,
+\frac{M+\frac27m}{M+m-\frac57m\cos^2\theta}.$$
+
+#### （1）（v）保持无滑动滚动的最小摩擦因数。
+
+从 $\mu_0=f/N_1$ 得到维持纯滚动的临界摩擦因数 $$\mu_0=\frac{2(M+m)}{7M+2m}\tan\theta.$$
+
+#### （2）发生滑动后接触点的相对速度。
+
+当 $\mu<\mu_0$ 时，圆球发生滚动和滑动。此时 $f=\mu N_1$，联立圆球与楔块的关系，可得 $$a_c=\frac{(M+m)g(\sin\theta-\mu\cos\theta)}
+{M+m-m\cos^2\theta-\mu m\sin\theta\cos\theta}.$$ 接触点相对于楔块的速度为 $v_P=v_c-r\dot\varphi$，于是 $$v_P=
+\frac{(M+m)g\sin\theta-\mu\left(m+\frac72M\right)g\cos\theta}
+{M+m-m\cos^2\theta-\mu m\sin\theta\cos\theta}\,\Delta t.$$ 当 $\mu=\mu_0$ 时上式给出 $v_P=0$，与纯滚动条件一致；当 $\mu<\mu_0$ 时，接触点相对楔块沿斜面向下运动。

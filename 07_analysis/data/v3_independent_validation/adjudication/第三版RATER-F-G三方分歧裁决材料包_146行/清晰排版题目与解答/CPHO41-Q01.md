@@ -1,0 +1,36 @@
+> 本文件由项目已校订的LaTeX题干、参考解答和TikZ图件生成。评分时以本文件为主要阅读文本；需核对原始措辞时查看包内对应届次原始PDF。
+
+# 第41届复赛第1题：高楼调谐质量阻尼器的受迫振动
+
+## 题干
+
+高层建筑在风的作用下会发生晃动。将大楼简化为质量为 $M$、劲度系数为 $k$ 的谐振子，在其上安装质量为 $m$、摆长为 $l$ 的刚性轻杆摆锤；风力取水平方向的强迫力 $$F(t)=H\cos\omega t.$$ 大楼仅沿水平方向运动，摆锤在图示竖直平面内摆动，不计空气阻力。
+
+（1.1）求大楼在强迫力作用下稳定振动的振幅；（1.2）求没有阻尼器时振幅最大的风频率，并说明阻尼器参数满足什么条件时可最大限度减小该频率下的受迫振动。
+
+（2）若风频率是第（1.2）问所得频率的 $\sqrt{0.99}$ 倍，先求无阻尼器时大楼的振幅；再取第（1.2）问的调谐条件，求使振幅降为无阻尼器时 $1\%$ 所需的质量比 $m/M$。
+
+（3）实际阻尼器将摆锤浸在固定于大楼的油池中。油相对于油池静止，摆锤与油的相对速度为 $\boldsymbol v'$ 时，所受阻尼力为 $\boldsymbol f=-\gamma\boldsymbol v'$。在不作小幅度近似的条件下写出系统运动方程组，并说明阻尼力不可缺少的原因。
+
+![CPHO41-Q01-structure](图件/CPHO41-Q01-structure.png)
+
+## 参考解答整理
+
+#### （1.1）稳定振幅。
+
+小幅度下耦合方程为 $\ddot x+l\ddot\theta+g\theta=0$、$M\ddot x+kx-mg\theta=H\cos\omega t$。令 $\omega_0^2=g/l$，稳定位移振幅为 $$A=\frac{(\omega_0^2-\omega^2)H}{(\omega_0^2-\omega^2)(k-M\omega^2)-m\omega_0^2\omega^2}.$$
+
+#### （1.2）共振频率与调谐条件。
+
+无阻尼建筑物在 $\omega=\sqrt{k/M}$ 共振；为最大抑制该频率，可取 $$\boxed{l=Mg/k}.$$
+
+#### （2）质量比。
+
+当 $\omega=\sqrt{0.99k/M}$ 时，无阻尼振幅为 $100H/k$；按上述调谐条件将其降至1%需 $$\boxed{m/M=101/9900\approx1/100}.$$
+
+#### （3）含阻尼时的非线性运动方程。
+
+摆锤相对油的速度分量为 $$v'_x=l\dot\theta\cos\theta,
+\qquad v'_y=-l\dot\theta\sin\theta.$$ 设摆杆张力为 $T$，对摆锤和大楼分别应用牛顿第二定律，得到 $$m\left(\ddot x+l\ddot\theta\cos\theta-l\dot\theta^2\sin\theta\right)
+=-T\sin\theta-\gamma l\dot\theta\cos\theta,$$ $$m\left(-l\ddot\theta\sin\theta-l\dot\theta^2\cos\theta\right)
+=mg-T\cos\theta+\gamma l\dot\theta\sin\theta,$$ $$M\ddot x=-kx+T\sin\theta+\gamma l\dot\theta\cos\theta+H\cos\omega t.$$ 这组三式没有使用小角近似。阻尼一方面抑制调谐系统可能出现的共振，另一方面持续耗散机械能，使风停后大楼和摆锤逐渐停振。

@@ -279,15 +279,34 @@ def build_framework_and_coding() -> list[tuple[str, str]]:
         encoding="utf-8",
     )
 
-    unique = ROOT / "07_analysis/data/第35至42届科学思维第三版唯一编码表.csv"
+    unique = ROOT / "07_analysis/data/作者授权采用分析版/第35至42届科学思维作者授权采用分析表.csv"
+    adoption = ROOT / "07_analysis/data/作者授权采用分析版/三方分歧交叉审计后采用记录.csv"
     _, coding_rows = read_csv(unique)
+    adoption_fields, adoption_rows = read_csv(adoption)
+    adoption_by_id = {row["review_row_id"]: row for row in adoption_rows}
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in coding_rows:
         grouped[row["item_id"]].append(row)
-    lines = ["# 第35至42届科学思维第三版唯一编码表", "", f"对应源文件：`{unique.relative_to(ROOT)}`", ""]
+    lines = [
+        "# 第35至42届科学思维作者授权采用分析表",
+        "",
+        f"对应源文件：`{unique.relative_to(ROOT)}`",
+        f"分歧采用依据：`{adoption.relative_to(ROOT)}`",
+        "",
+        "第三版基线保持不变；146条分歧记录的正式理由和证据位置以分歧采用表为准。",
+        "",
+    ]
     for item_id, rows in grouped.items():
         lines.extend([f"## {item_id}：{display_text(rows[0]['required_output'])}", ""])
         for row in sorted(rows, key=lambda value: DIMENSIONS.index(value["dimension"])):
+            adopted = adoption_by_id.get(row["review_row_id"])
+            reason = adopted["采用依据"] if adopted else row["author_review_reason"]
+            evidence_location = adopted["证据位置"] if adopted else row["post_review_evidence_location"]
+            adjacent_review = (
+                "见正式采用依据中的存在性门槛与相邻等级说明"
+                if adopted
+                else row["adjacent_level_review"]
+            )
             lines.extend(
                 [
                     f"### {row['dimension']}：{row['present_label']} / {row['level']}",
@@ -297,14 +316,19 @@ def build_framework_and_coding() -> list[tuple[str, str]]:
                     f"- 解答引文：{display_text(row['solution_quote'])}",
                     f"- 解答位置：{display_text(row['solution_location'])}",
                     f"- 必要认知活动：{display_text(row['necessary_cognitive_activity'])}",
-                    f"- 判定理由：{display_text(row['author_review_reason'])}",
-                    f"- 相邻等级核对：{display_text(row['adjacent_level_review'])}",
-                    f"- 证据定位：{display_text(row['post_review_evidence_location'])}",
+                    f"- 判定理由：{display_text(reason)}",
+                    f"- 相邻等级核对：{display_text(adjacent_review)}",
+                    f"- 证据定位：{display_text(evidence_location)}",
                     "",
                 ]
             )
-    coding_target = CODING_OUTPUT / "第35至42届科学思维第三版唯一编码表.md"
+    coding_target = CODING_OUTPUT / "第35至42届科学思维作者授权采用分析表.md"
     coding_target.write_text("\n".join(lines), encoding="utf-8")
+    adoption_target = CODING_OUTPUT / "三方分歧交叉审计后采用记录.md"
+    adoption_target.write_text(
+        rows_to_markdown("三方分歧交叉审计后采用记录", adoption, adoption_fields, adoption_rows),
+        encoding="utf-8",
+    )
     if len(coding_rows) != 884 or len(grouped) != 221:
         raise RuntimeError(f"正式编码数量异常：{len(grouped)}个单元/{len(coding_rows)}条记录")
     return [
@@ -312,12 +336,13 @@ def build_framework_and_coding() -> list[tuple[str, str]]:
         (str(matrix.relative_to(ROOT)), str(matrix_target.relative_to(OUTPUT))),
         (str(item_index.relative_to(ROOT)), str(item_target.relative_to(OUTPUT))),
         (str(unique.relative_to(ROOT)), str(coding_target.relative_to(OUTPUT))),
+        (str(adoption.relative_to(ROOT)), str(adoption_target.relative_to(OUTPUT))),
     ]
 
 
 def build_results() -> list[tuple[str, str]]:
     RESULT_OUTPUT.mkdir(parents=True, exist_ok=True)
-    source_root = ROOT / "07_analysis/results/第三版正式结果"
+    source_root = ROOT / "07_analysis/results/作者授权采用分析版"
     mappings: list[tuple[str, str]] = []
     for source in sorted(source_root.rglob("*")):
         if not source.is_file():
@@ -387,7 +412,7 @@ def write_navigation(mappings: list[tuple[str, str]]) -> None:
 | 原始小问 | 209个 |
 | 分析单元 | 221个 |
 | 科学思维编码 | 884条 |
-| 当前编码版本 | 第三版 |
+| 当前编码版本 | 作者授权采用分析版（第三版基线保留） |
 
 ## 直接打开
 
@@ -396,7 +421,7 @@ def write_navigation(mappings: list[tuple[str, str]]) -> None:
 3. [60道逐题评分标准索引](./03_逐题评分标准/评分标准总索引.md)
 4. [科学思维编码手册第三版](./05_编码框架/科学思维编码手册_第三版.md)
 5. [221个分析单元索引](./06_正式编码/第35至42届221个分析单元索引.md)
-6. [884条正式编码](./06_正式编码/第35至42届科学思维第三版唯一编码表.md)
+6. [884条正式编码](./06_正式编码/第35至42届科学思维作者授权采用分析表.md)
 7. [统计结果](./07_统计结果/)
 8. [答辩PPT文字稿](./09_答辩材料/答辩PPT文字稿.md)
 9. [华东师范大学格式材料](./10_学校格式模板/)
@@ -416,7 +441,7 @@ def write_navigation(mappings: list[tuple[str, str]]) -> None:
 
 ## 版本说明
 
-正式名称统一写作“第三版”。源数据中为保持历史主键稳定而保留的旧记录编号，不作为论文或交接材料中的版本名称。
+正式统计使用“作者授权采用分析版”；“第三版”保留为独立编码比较与分歧复核的冻结基线。源数据中为保持历史主键稳定而保留的旧记录编号，不作为论文结论的数据版本。
 """
     (OUTPUT / "00_开始阅读.md").write_text(navigation, encoding="utf-8")
     lines = [
